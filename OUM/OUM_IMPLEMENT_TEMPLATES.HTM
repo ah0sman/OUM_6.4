@@ -1,0 +1,359 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Implement Templates</title>
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Implement  Templates</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="OUM_HOME.HTM">Home</option>
+                    <option value="020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" id="CurrPageNav" accesskey="c" title="Current Page Navigation" onchange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#RD">[RD] Business Requirements</option>
+                            <option value="#RA">[RA] Reqiuirements Analysis</option>
+                            <option value="#MC">[MC] Mapping and Configuration</option>
+                            <option value="#AN">[AN] Analysis</option>
+                            <option value="#DS">[DS] Design</option>
+                            <option value="#IM">[IM] Implementation</option>
+                            <option value="#TE">[TE] Testing</option>
+                            <option value="#PT">[PT] Performance Management</option>
+                            <option value="#TA">[TA] Technical Architecture</option>
+                            <option value="#CV">[CV] Data Acquisition and Conversion</option>
+                            <option value="#DO">[DO] Documentation</option>
+                            <option value="#OCM">[OCM] Organizational Change Management</option>
+                            <option value="#TR">[TR] Training</option>
+                            <option value="#TS">[TS] Transition</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2><a name="RD"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[RD] Business Requirements</a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-001_BUSINESS_AND_SYSTEM_OBJECTIVES.DOCX" target="_blank">RD,001 Business and System Objectives</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-005_SYSTEM_CONTEXT_DIAGRAM.PPTX" target="_blank">RD.005 System Context Diagram-PowerPoint</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD005_SYSTEM_CONTEXT_DIAGRAM.ZIP" target="_blank">RD.005 System Context Diagram-Visio Template and Stencil</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.DOCX" target="_blank">RD.011 Future Process Model-Word</a></li>
+  <li>    <a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.PPTX" target="_blank">RD.011 Future Process Model-PowerPoint</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-012_PRESENT_AND_FUTURE_ORG_STRUCTURES.DOCX" target="_blank">RD.012 Present and Future Organization Structures</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-015_KEY_BUS_STRATEGIES_AND_OBJECTIVES.DOCX" target="_blank">RD.015 Key Business Strategies and Objectives</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-020_HIGH_LEVEL_BUSINESS_DESCRIPTIONS.DOCX" target="_blank">RD.020 High-Level Business Descriptions</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-030_CURRENT_PROCESS_MODEL.DOCX" target="_blank">RD.030 Current Process Model</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-034_CURRENT_BUSINESS_BASELINE_METRICS.DOCX" target="_blank">RD.034 Current Business Baseline Metrics</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-042_GLOSSARY.DOCX" target="_blank">RD.042 Glossary</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">RD.045 MoSCoW List-Excel</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.DOCX" target="_blank">RD.045 MoSCoW List-Word</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-065_DOMAIN_MODEL.DOCX" target="_blank">RD.065 Domain Model</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-070_AUDIT_AND_CONTROL_REQUIREMENTS.DOCX" target="_blank">RD.070 Audit and Control Requirements</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/ARCHITECTURE_DESCRIPTION.DOCX" target="_blank">Architecture Description</A> (RA.140, RA.035, AN.040 and DS.040)</li>
+  <li> <A href="040_TEMPLATES_AND_GUIDANCE/RD/RD-140_REQUIREMENTS_SPECIFICATION.DOCX" target="_blank">RD.140 Requirements Specification</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RD/REVIEW_RESULTS.DOCX" target="_blank">RD.150 Review Results</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="RA" id="RA"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[RA]  Requirements Analysis </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-015_BUSINESS_USE_CASE_MODEL.DOCX" target="_blank">RA.015 Business Use Case Model</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA015_BUSINESS_USE_CASE_MODEL.ZIP" target="_blank">RA.015 Business Use Case Model-Visio Template and Stencil</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-021_USER_STORY.DOCX" target="_blank">RA.021 User Story</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-023_USE_CASE_MODEL.DOCX" target="_blank">RA.023 Use Case Model-Word</A></li>
+  <li>    <A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-023_USE_CASE_MODEL.PPTX" target="_blank">RA.023Use Case Model-PowerPoint</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA023_USE_CASE_MODEL.ZIP" target="_blank">RA.023 Use Case Model-Visio Template and Stencil</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA.024 Use Case Specification-Word</A></li>
+  <li><A
+				href="040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.PPTX"
+				target="_blank">RA.024 Use Case Specification-PowerPoint</A></li>
+  <li><a href="../ENV/040_TEMPLATES_AND_GUIDANCE/IP/IP-014_SERVICE_PORTFOLIO.XLSX" target="_blank">RA.025 Service Portfolio</a> (Envision !P.014)</li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA-027_CANDIDATE_BUSINESS_RULES.XLSX" target="_blank">RA.027 Candidate Business Rules</a></li>
+  <li> <A href="040_TEMPLATES_AND_GUIDANCE/RA/REVIEW_RESULTS.DOCX" target="_blank">RA.030 Review Results</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA-055_BUSINESS_PROCEDURE_DOCUMENTATION.DOCX" target="_blank">RA.055 Business Procedure Documentation</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-085_VALIDATED_FUNCTIONAL_PROTOTYPE.DOCX" target="_blank">RA.085 Validated Functional Prototype</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/REVIEW_RESULTS.DOCX" target="_blank">RA.095 Review Results</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA-160_DATA_SOURCE_GAP_MATRIX.DOCX" target="_blank">RA.160 Data Source Gap Matrix</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/RA/RA-170_HIGH_LEVEL_DATA_QUALITY_ASSESSMENT.DOCX" target="_blank">RA.170 HIgh-Level Data Quality Assessment</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/RA/REVIEW_RESULTS.DOCX" target="_blank">RA.180 Review Results</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="MC" id="MC"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[MC] Mapping and Configuration </a></h2>
+<ul>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-010_BUSINESS_DATA_STRUCTURES.DOCX" target="_blank">MC.010 Business Data Structures</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-020_BUSINESS_DATA_STRUCTURE_SETUPS.DOCX" target="_blank">MC.020 Business Data Structure Setups</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-030_BUSINESS_REQUIREMENTS_MAPPING_FORM.DOCX" target="_blank">MC.030 Business Requirements Mapping Form</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-040_SETUP_INFORMATION.DOCX" target="_blank">MC.040 Setup Information </a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-050_APPLICATION_SETUP.XLSX" target="_blank">MC.050 Application Setup-Excel</a></li>
+  <li>    <a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-050_APPLICATION_SETUP_DOCUMENT.DOCX" target="_blank">MC.050 Application Setup Document-Word</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-055_APPLICATION_CONFIG_CHANGE_DOCUMENT.DOCX" target="_blank">MC.055 Application Configuration Change Document</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-060_FUNCTIONAL_SECURITY_SETUP_INFORMATION.XLSX" target="_blank">MC.060 Functional Security Setup Information</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-080_CPW_STRATEGY_AND_PLAN.DOCX" target="_blank">MC.080 Configuration Prototyping Workshop Strategy and Plan </a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-090_REPORTING_FIT_ANALYSIS.XLSX" target="_blank">MC.090 Reporting Fit Analysis</a></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="AN" id="AN"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[AN] Analysis </a></h2>
+<ul>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/AN/ANALYSIS_MODEL.DOCX" target="_blank">AN.050 Analysis Model</a> (AN.060)</li>
+  <li> <a href="../ENV/040_TEMPLATES_AND_GUIDANCE/IP/IP-014_SERVICE_PORTFOLIO.XLSX" target="_blank">AN.080 Service Portfolio</a> (Envision, IP.014)</li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/AN/AN-085_SERVICE_CONTRACT.DOCX" target="_blank">AN.085 Service Contract</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/AN/AN-085_PROJECT_CONTRACTS_PORTFOLIO.XLSX" target="_blank">AN.085 Project Contracts Portfolio</a></li>
+  <li> <a href="040_TEMPLATES_AND_GUIDANCE/AN/AN-100_ANALYSIS_SPECIFICATION.DOCX" target="_blank">AN.100 Analysis Specification</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/AN/REVIEW_RESULTS.DOCX" target="_blank">AN.110 Review Results</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="DS" id="DS"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[DS] Design </a></h2>
+<ul>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/DS/DS-020_APPLICATION_EXTENSION_STRATEGY.DOCX" target="_blank">DS.020 Application Extension Strategy</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/DS/DS-140_DESIGN_SPECIFICATION.DOCX" target="_blank">DS.140 Design Specification</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/DS/DS-150_LOGICAL_DATABASE_DESIGN.DOCX" target="_blank">DS.150 Logical Database Design</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DS/REVIEW_RESULTS.DOCX" target="_blank">DS.160 Review Results</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="IM" id="IM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[IM] Implementation </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/IM/IM-007_DEVELOPMENT_ENVIRONMENT.DOCX" target="_blank">IM.007 Development Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/IM/IM-040_PHYSICAL_DATABASE_DESIGN.DOCX" target="_blank">IM.040 Physical Database Design</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/IM/REVIEW_RESULTS.DOCX" target="_blank">IM.060 Review Results</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/IM/IM-090_INSTALLATION_INSTRUCTIONS.DOCX" target="_blank">IM.090 Installation Instructions</a></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="TE" id="TE"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[TE] Testing </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-005_TESTING_REQUIREMENTS.DOCX" target="_blank">TE.005 Testing Requirements</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-010_TESTING_STRATEGY.DOCX" target="_blank">TE.010 Testing Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-015_INTEGRATION_TEST_PLAN.DOCX" target="_blank">TE.015 Integration Test Plan</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-018_STATIC_TEST_DATA.DOCX" target="_blank">TE.018 Static Test Data</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-020_UNIT_TEST_CHECKLISTS.DOCX" target="_blank">TE.020 Unit Test Checklists</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-020_UNIT_TEST_SCENARIOS.DOCX" target="_blank">TE.020 Unit Test Scenarios</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-025_SYSTEM_TEST_SCENARIOS.DOCX" target="_blank">TE,025 System Test Scenarios</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-035_INTEGRATION_TEST_SCENARIOS.DOCX" target="_blank">TE.035 Integration Test Scenarios</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-038_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">TE.038 Integration Test Environment</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-040_INTEGRATION_TEST_RESULTS.DOCX" target="_blank">TE.040 Integration Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-045_VALIDATED_INTEGRATIONS.DOCX" target="_blank">TE.045 Validated Integrations </A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-050_SYSTEM_TEST_PLAN.DOCX" target="_blank">TE.050 System Test Plan</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-060_SYSTEM_TEST_ENVIRONMENT.DOCX" target="_blank">TE.060 System Test Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-070_SYSTEM_TEST_RESULTS.DOCX" target="_blank">TE.070 System Test Results</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-076_UPGRADE_TEST_ANALYSIS.DOCX" target="_blank">TE.076 Upgrade Test Analysis</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-080_SYSTEMS_INTEGRATION_TEST_PLAN.DOCX" target="_blank">TE.080 Systems Integration Test Plan</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-085_SYSTEMS_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">TE.085 Systems Integration Test Environment</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-090_SYSTEMS_INTEGRATION_TEST_SCENARIOS.DOCX" target="_blank">TE.090 Systems Integration Test Scenarios</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-100_SYSTEMS_INTEGRATION_TEST_RESULTS.DOCX" target="_blank">TE.100 Systems Integration Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-110_ACCEPTANCE_TEST_ENVIRONMENT.DOCX" target="_blank">TE.110 Acceptance Test Environment</A></li>
+  <li>  <A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-120_ACCEPTANCE_TEST_RESULTS.DOCX" target="_blank">TE.120 Acceptance Test Results</A>  </li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="PT" id="PT"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[PT] Performance Management </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-020_PERFORMANCE_MANAGEMENT_REQUIREMENTS_AND_STRATEGY.DOCX" target="_blank">PT.020 Performance Management Requirements and Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-030_PERFORMANCE_TESTING_STRATEGY.DOCX" target="_blank">PT.030 Performance Testing Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-040_PERFORMANCE_TESTING_MODELS_AND_SCENARIOS.DOCX" target="_blank">PT.040 Performance Testing Models and Scenarios</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-050_PERFORMANCE_TEST_SCRIPTS_AND_PROGRAMS_DESIGN.DOCX" target="_blank">PT.050 Performance Test Scripts and Programs Design</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-060_DESIGNED_PERFORMANCE_TEST_DATA.DOCX" target="_blank">PT.060 Designed Performance Test Data</A></li>
+  <li>    <A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-060_DESIGNED_TEST_LOAD_PROGRAMS.DOCX" target="_blank">PT.060 Designed Test Load Programs</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-080_PERFORMANCE_TEST_ENVIRONMENT.DOCX" target="_blank">PT.080 Performance Test Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-100_PERFORMANCE_TEST_RESULTS.DOCX" target="_blank">PT.100 Performance Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/PT/PT-110_PERFORMANCE_TEST_REPORT.DOCX" target="_blank">PT.110 Performance Test Report</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="TA" id="TA"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[TA] Technical Architecture </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-020_TA_REQUIREMENTS_AND_STRATEGY.DOCX" target="_blank">TA.020 Technical Architecture Requirements and Strategy</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TA/TA-030_INTEGRATION_ARCHITECTURE_STRATEGY.DOCX" target="_blank">TA.030 Integration Architecture Strategy</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-040_REPORTING_AND_INFORMATION_ACCESS_STRATEGY.DOCX" target="_blank">TA.040 Reporting and Information Access Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-050_DISASTER_RECOVERY_STRATEGY.DOCX" target="_blank">TA.050 Disaster Recovery Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-060_SYSTEM_OPERATIONS_AND_MANAGEMENT_STRATEGY.DOCX" target="_blank">TA.060 System Operations and Management Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-070_INITIAL_ARCHITECTURE_AND_APPLICATION_MAPPING.DOCX" target="_blank">TA.070 Initial Architecture and Application Mapping</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-080_BACKUP_AND_RECOVERY_STRATEGY.DOCX" target="_blank">TA.080 Backup and Recovery Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-090_SECURITY_AND_CONTROL_STRATEGY.DOCX" target="_blank">TA.090 Security and Control Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-100_SYSTEM_MANAGEMENT_GUIDE.DOCX" target="_blank">TA.100 System Management Guide</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-110_OPERATIONAL_TESTING_PLAN.DOCX" target="_blank">TA.110 Operational Testing Plan</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-120_OPERATIONAL_TEST_RESULTS.DOCX" target="_blank">TA.120 Operational Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-130_BACKUP_AND_RECOVERY_TEST_RESULTS.DOCX" target="_blank">TA.130 Backup and Recovery Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-140_DISASTER_RECOVERY_TEST_RESULTS.DOCX" target="_blank">TA.140 Disaster Recovery Test Results</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-150_FINAL_PLATFORM_AND_NETWORK_ARCHITECTURE.DOCX" target="_blank">TA.150 Final Platform and Network Architecture</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TA/TA-160_SYSTEM_CAPACITY_PLAN.DOCX" target="_blank">TA.160 System Capacity Plan</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a></a><a name="CV"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[CV] Data Acquisition and Conversion</a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-010_DATA_ACQ_AND_CONVERSION_REQUIREMENTS.DOCX" target="_blank">CV.010 Data Acquisition and Conversion Requirements</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-020_DATA_ACQ_CONVERSION_AND_DATA_QUAL_STRATEGY.DOCX" target="_blank">CV.020 Data Acquisition, Conversion and Data Quality Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-025_DATA_ACQ_AND_CONVERSION_STANDARDS.DOCX" target="_blank">CV.025 Data Acquisition and Conversion Standards</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/CV/CV-027_DATA_MAPPING.DOCX" target="_blank">CV.027 Data Mapping</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-030_CONVERSION_ENVIRONMENT.DOCX" target="_blank">CV.030 Conversion Environment (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-035_MANUAL_CONVERSION_PROCEDURES.DOCX" target="_blank">CV.035 Manual Conversion Procedures (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-040_CONVERSION_COMPONENT_DESIGNS.DOCX" target="_blank">CV.040 Conversion Component Designs (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-050_CONVERSION_TEST_PLANS.DOCX" target="_blank">CV.050 Conversion Test Plans (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-055_CONVERSION_COMPONENTS.DOCX" target="_blank">CV.055 Conversion Components (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-064_INSTALLED_CONVERSION_COMPONENTS.DOCX" target="_blank">CV.064 Installed Conversion Components (Initial Load)</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/CV/CV-065_CONVERTED_AND_VERIFIED_DATA.DOCX" target="_blank">CV.065 Converted and Verified Data (Initial Load)</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="DO" id="DO"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[DO] Documentation </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-010_DOCUMENTATION_REQUIREMENTS_AND_STRATEGY.DOCX" target="_blank">DO.010 Documentation Requirements and Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-020_DOCUMENTATION_STANDARDS_AND_PROCEDURES.DOCX" target="_blank">DO.020 Documentation Standards and Procedures</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-040_DOCUMENT_ENVIRONMENT.DOCX" target="_blank">DO.040 Documentation Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-060_USER_REFERENCE_MANUAL.DOCX" target="_blank">DO.060 User Reference Manual</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-070_USER_GUIDE.DOCX" target="_blank">DO.070 User Guide</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/DO/DO-080_TECHNICAL_REFERENCE_MATERIAL.DOCX" target="_blank">DO.080 Technical Reference Material</A></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="OCM" id="OCM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[OCM] Organizational Change Management </a></h2>
+<ul>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-010_AD_HOC_COMMUNICATIONS_STRATEGY_APPROACH.DOCX" target="_blank">OCM.010 Ad Hoc Communications Strategy and Approach </a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-020_EXEC_ALIGNMENT_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM.020 Executive Alignment Workshop Materials</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-020_EXEC_ALIGNMENT_WORKSHOP.PPTX" target="_blank">OCM.020 Executive Alignment Workshop Presentation</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-030_EXECUTIVE_BUS_OBJECTIVES_AND_GOV_RULES.DOCX" target="_blank">OCM.030 Executive Business Objectives and Governance Rules</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-040_SPONSORSHIP_PROGRAM.DOCX" target="_blank">OCM.040 Sponsorship Program</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-050_TEAM_BLDG_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM.050 Team-Building Workshop Materials</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-070_MGRS_PROJ_ALIGNMENT_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM.070 Managers Project Alignment Workshop Materials</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-090_CHANGE_AGENT_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM.090 Change Agent Workshop Materials</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-110_CHANGE_READINESS_ASSESSMENT_STRATEGY_TOOLS.DOCX" target="_blank">OCM.110 Change Readiness Assessment Strategy and Tools</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-120_CR_ASSESSMENT_ANALYSIS_AND_RECOMMENDATIONS.PPTX" target="_blank">OCM.120 Change Readiness Assessment Analysis and Recommendations</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-130_COMMUNICATION_STRATEGY.DOCX" target="_blank">OCM.130 Communication Strategy</a></li>
+  <li>    <a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-130_CHANGE_MGMT_ROADMAP.DOCX" target="_blank">OCM.130 Change Management Roadmap</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-140_COMMUNICATION_CAMPAIGN.DOCX">OCM.140 Communication Campaign</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-155_CMRCC_EFF_ASSESSMENT.DOCX" target="_blank">OCM.155 Change Management Roadmap and Communication Campaign Effectiveness Assessment</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-160_BUSINESS_PROCESS_IMPACT_INVENTORY.DOCX" target="_blank">OCM.160 Business Process Impact Inventory </a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-170_JOB_IMPACT_ANALYSIS.DOCX" target="_blank">OCM.170 Job Impact Analysis</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-180_JOB_IMPACT_DIAGNOSIS.DOCX" target="_blank">OCM.180 Job Impact Diagnosis</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-190_HR_TRANSITION_PLAN.DOCX" target="_blank">OCM.190 HR Transition Plan</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-200_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM.200 Managers Unit and Department Impact Workshop Materials</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-220_IT_ALIGNMENT_DIAGNOSIS_GRID.DOCX" target="_blank">OCM.220 IT Alignment Diagnosis Grid</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-230_IT_TRANSITION_PLAN.DOCX" target="_blank">OCM.230 IT Transition Plan</a></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/OCM/OCM-250_ORG_EFFECTIVENESS_ASSESSMENT.DOCX" target="_blank">OCM.250 Organizational Effectiveness Assessment</a></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="TR" id="TR"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[TR] Training </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-020_PROJECT_TEAM_LEARNING_PLAN.DOCX" target="_blank">TR.020 Project Team Learning Plan</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-030_WORKING_LEARNING_ENVIRONMENT.DOCX" target="_blank">TR.030 Working Learning Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-050_PROJECT_TEAM_LRNG_EVENTS_ADMIN.DOCX" target="_blank">TR.050 Project Team Learning Events Administration</A></li>
+  <li>    <a href="040_TEMPLATES_AND_GUIDANCE/TR/TR-TRAINING_PREPARATION_CHECKLIST.DOCX" target="_blank">TR.050 Training Preparation Checklist</a></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-060_USER_LEARNING_NEEDS_ANALYSIS.DOCX" target="_blank">TR.060 User Learning Needs Analysis</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-070_USER_LEARNING_PLAN.DOCX" target="_blank">TR.070 User Learning Plan</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-080_USER_LEARNINGWARE.DOCX" target="_blank">TR.080 User Learningware</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-090_CONFIGURED_USER_LEARNING_ENVIRONMENT.DOCX" target="_blank">TR.090 Configured User Learning Environment</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TR/TR-100_USER_LEARNING_EVENTS_ADMINISTRATION.DOCX" target="_blank">TR.100 User Learning Events Administration</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TR/TR-TRAINING_PREPARATION_CHECKLIST.DOCX" target="_blank">TR.100 Training Preparation Checklist</a></li>
+</ul>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="TS" id="TS"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM" target="_blank" class="style1">[TS] Transition </a></h2>
+<ul>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TS/TS-020_CUTOVER_STRATEGY.DOCX" target="_blank">TS.020 Cutover Strategy</A></li>
+  <li><A href="040_TEMPLATES_AND_GUIDANCE/TS/TS-030_INSTALLATION_PLAN.DOCX" target="_blank">TS.030 Installation Plan</A></li>
+  <li><a href="040_TEMPLATES_AND_GUIDANCE/TS/TS-040_PRODUCTION_SUPPORT_INFRASTRUCTURE_DESIGN.DOCX" target="_blank">TS.040 Production Support Infrastructure Design</a></li>
+</ul>
+<!-- InstanceEndEditable -->
+<P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,1669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Project Delivery Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Project Delivery Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#PJMG">Configuration Management (CM) Process Guidance</option>
+                            <option value="#ERG">Envision Roadmap (ER) Process Guidance</option>
+                            <option value="#BAG">Enterprise Business Analysis (BA) Process Guidance</option>
+                            <option value="#EAG">Enterprise Architecture (EA) Process Guidance</option>
+                            <option value="#IPG">IT Portfolio Management (IP) Process Guidance</option>
+                            <option value="#RDG">Business Requirements (RD) Process Guidance</option>
+                            <option value="#RAG">Requirements Analysis (RA) Process Guidance</option>
+                            <option value="#DSG">Design (DS) Process Guidance</option>
+                            <option value="#IMG">Implementation (IM) Process Guidance</option>
+                            <option value="#TEG">Testing (TE) Process Guidance</option>
+                            <option value="#TAG">Technical Architecture (TA) Process Guidance</option>
+                            <option value="#CVG">Data Acquisition and Conversion (CV) Process Guidance</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("PJM");
+  Effect.BlindDown("ER");
+  Effect.BlindDown("BA");
+  Effect.BlindDown("EA");
+  Effect.BlindDown("IP");
+  Effect.BlindDown("RD");
+  Effect.BlindDown("RA");
+  Effect.BlindDown("DS");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TE");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("CV");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("PJM");
+  Effect.BlindUp("ER");
+  Effect.BlindUp("BA");
+  Effect.BlindUp("EA");
+  Effect.BlindUp("IP");
+  Effect.BlindUp("RD");
+  Effect.BlindUp("RA");
+  Effect.BlindUp("DS");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TE");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("CV");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85" height="34"><p><a href="../../../OUM_HOME_SOA_PROJECT_DELIVERY.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) PROJECT DELIVERY SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for SOA project delivery. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col" width="45%" height="26">SOA Project Delivery - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th scope"col" width="43%"><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <TBODY>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Configuration Management </div></th>
+    </TR>
+  <tbody id="PJM">
+    <TR valign="top">
+      <TD valign="top"><a href="#CM040">CM.040 Create and Execute Software Configuration Management Plan </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">CM.040 Create and Execute Software Configuration Management Plan </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CM050">CM.050 Create and Execute Software Release Management Plan </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Envision Roadmap </div></th>
+  </TR>
+  <tbody id="ER">
+    <TR valign="top">
+      <TD valign="top"><a href="#ER130">ER.130 Produce MoSCoW Improvement List </a></TD>
+      <TD><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Enterprise Business Analysis </div></th>
+  </TR>
+  <tbody id="BA">
+    <TR valign="top">
+      <TD valign="top"><a href="#BA012">BA.012 Define Business Scope </a></TD>
+      <TD><DIV align=left><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA040">BA.040 Create Enterprise Function or Process Model </a></TD>
+      <TD><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA050">BA.050 Develop Enterprise Domain Model (Business Entities) </a></TD>
+      <TD><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities) </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA060">BA.060 Perform High-Level Use Case Discovery </a></TD>
+      <TD><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">BA.060 Perform High-Level Use Case Discovery </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Enterprise Architecture</div></th>
+  </TR>
+  <tbody id="EA">
+    <TR valign="top">
+      <TD valign="top"><a href="#EA010">EA.010 Review Architecture Principles, Guidelines and Standards </a></TD>
+      <TD><DIV align=left><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA075">EA.075 Develop Technology Reference Architectures </a></TD>
+      <TD><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">IT Portfolio Management </div></th>
+  </TR>
+  <tbody id="IP">
+    <TR valign="top">
+      <TD valign="top"><a href="#IP080">IP.080 Maintain Repository of Artifacts</a></TD>
+      <TD><DIV align=left> <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/IP_080_MAINTAIN_REP_OF_ARTIFACTS_OVERVIEW.HTM" target="_blank">IP.080 Maintain Repository of Artifacts</a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Business Requirements </div></th>
+  </TR>
+  <tbody id="RD">
+    <TR valign="top">
+      <TD valign="top"><a href="#RD011">RD.</a><a href="#RD011">011 Develop Future Process Model </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD020">RD.020 Obtain High-Level Business Descriptions </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_020_OBTAIN_HL_BUS_DESCRIPTIONS_OVERVIEW.HTM" target="_blank">RD.020 Obtain High-Level Business Descriptions </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD045">RD.045 Prioritize Requirements (MoSCoW) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW) </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD055">RD.055 Detail Supplemental Requirements</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">RD.055 Detail Supplemental Requirements</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD065">RD.065 Develop Domain Model (Business Entities) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Requirements Analysis </div></th>
+  </TR>
+  <tbody id="RA">
+    <TR valign="top">
+      <TD valign="top"><a href="#RA019">RA.019 Define Project Reference Architecture </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_019_DEFINE_PROJECT_REF_ARCH_OVERVIEW.HTM" target="_blank">RA.019 Define Project Reference Architecture </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RA023">RA.023 Develop Use Case Model </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RA024">RA.024 Develop Use Case Details </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RA025">RA.025 Identify Candidate Services </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">RA.025 Identify Candidate Services </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RA026">RA.026 Populate Services Repository </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_026_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">RA.026 Populate Services Repository</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RA085">RA.085 Validate Functional Prototype </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_085_VALIDATE_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.085 Validate Functional Prototype </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Design</div></th>
+  </TR>
+  <tbody id="DS">
+    <TR valign="top">
+      <TD valign="top"><a href="#DS040">DS.040 Develop Design Architecture Description </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">DS.040 Develop Design Architecture Description </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#DS070">DS.070 Define SOA Implementation Strategy</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">DS.070 Define SOA Implementation Strategy </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Implementation</div></th>
+  </TR>
+  <tbody id="IM">
+    <TR valign="top">
+      <TD valign="top"><a href="#IM010">IM.010 Develop Functional Prototype </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_010_DEVELOP_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.010 Develop Functional Prototype </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IM050">IM.050 Implement Components</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IM060">IM.060 Perform Component Review </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_060_PERFORM_COMPONENT_REVIEW_OVERVIEW.HTM" target="_blank">IM.060 Perform Component Review </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Testing</div></th>
+  </TR>
+  <tbody id="TE">
+    <TR valign="top">
+      <TD valign="top"><a href="#TE010">TE.010 Develop Testing Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE015">TE.015 Develop Integration Test Plan </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE020">TE.020 Develop Unit Test Scripts </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE030">TE.030 Perform Unit Tests </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Tests </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE040">TE.040 Perform Integration Test </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040 Perform Integration Test </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Technical Architecture </div></th>
+  </TR>
+  <tbody id="TA">
+    <TR valign="top">
+      <TD valign="top"><a href="#TA020">TA.020 Define Technical Architecture Requirements and Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TA030">TA.030 Define Integration Requirements and Strategy</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_030_DEFINE_INTEGRATION_REQTS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">TA.030 Define Integration Requirements and Strategy</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TA090">TA.090 Develop Security and Control Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_090_DEVELOP_SEC_AND_CONTROL_STRATEGY_OVERVIEW.HTM" target="_blank">TA.090 Develop Security and Control Strategy </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Data Acquisition and Conversion</div></th>
+  </TR>
+  <tbody id="CV">
+    <TR valign="top">
+      <TD valign="top"><a href="#CVG">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CVG">CV.030 Prepare Conversion Environment (Initial Load) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_030_PREPARE_CONVERSION_ENVIRONMENT_OVERVIEW.HTM" target="_blank">CV.030 Prepare Conversion Environment (Initial Load) </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CVG">CV.040 Design Conversion Components (Initial Load) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.040 Design Conversion Components (Initial Load) </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CVG">CV.055 Implement Conversion Components (Initial Load) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.055 Implement Conversion Components (Initial Load) </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CVG">CV.060 Perform Conversion Component Unit Test (Initial Load) </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_060_PERFORM_CONV_COMPONENT_UNIT_TEST_OVERVIEW.HTM" target="_blank">CV.060 Perform Conversion Component Unit Test (Initial Load) </a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PJMG id="PJMG"></A></B>CONFIGURATION MANAGEMENT (CM) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=CM040 id="CM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">CM.040 Create and Execute the Software Configuration Management Plan</a> </h4>
+<p>As part of the Portfolio Management Strategy for SOA, you should define the version management strategy for the relevant assets, and thereafter synchronize change management with this strategy. Review the section &ldquo;Service Versioning Strategy&rdquo; in the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">Service Lifecycle</a> technique for more information. In initial SOA implementations there may not be an Enterprise strategy around Portfolio Management. In that situation you will need to define enough structure to support the implementation, and encourage the enterprise to develop the Portfolio Management Strategy in conjunction with the initial implementation of SOA within the Enterprise.
+<hr WIDTH="100%">
+  <h4><B><A
+name=CM050 id="CM050"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute the Software Release Management Plan</a></h4>
+  <p>A software release refers to the creation and availability of a new version of computer software product or a group of configuration items.</p>
+  <p> Release planning is the activity of determining a feasible combination of dates, features, components and resourcing for the next release of an existing software product.</p>
+  <h5>PREREQUISITES</h5>
+  <p>There are many prerequisites for this task according to the methodology. Unfortunately, the customer may not have all of the desired prerequisites and in some instances, they may not necessary if this is going to be a pure integration delivery. However, for both the Pragmatic and Tactical SOA approaches, the Configuration Management Plan and Processes (CM.010) is a required prerequisite.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=ERG id="ERG"></A></B>ENVISION ROADMAP (ER) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=ER130 id="ER130"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List</a></h4>
+  <p> When a new Enterprise Requirement has been identified, either as a request for reuse of an existing asset, or as an extension to an existing asset, or as a complete new asset, this needs to be prioritized. Each requirement will have an assigned ownership. For further details about this, review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique.</p>
+  <p><a href="#TOP">Back to Top</a>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=BAG id="BAG"></A></B>ENTERPRISE BUSINESS ANALYSIS (BA) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=BA012 id="BA012"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope </a></h4>
+  <p> SOA requirements management is somewhat different from traditional requirements management. In a traditional approach, requirements could be managed in project scope, i.e. each project is defining and managing its own requirements to create a solution in the scope of the project. But in SOA the goal is to share services and as a consequence projects will need to start sharing the corresponding requirements as well. Therefore, it is important to manage the requirements related to services at enterprise level. Depending on the service engineering approach, this may also lead to the need to manage all requirements at the enterprise level, to make requirements visible across projects hence supporting the service identification and discovery approach. Scoping requirements at the enterprise level, rather than at the application or project level enables project architecture and planning exercises to remain connected to the overall enterprise SOA.</p>
+  <p>The Business Scope indicates the domain within which the Requirements Management Process should be defined and executed for SOA. This gives the boundaries for the work that should be performed using tasks from both Envision and Implement focus areas.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=BA040 id="BA040"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Business Process Model</a></h4>
+  <p> The Enterprise Function or Business Process Models should be created or updated whenever required based on new or updated models developed as part of a project. The project models should be classified following the taxonomy of the function or business process model (see the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique). It will then be easier to identify any possible duplicates or overlaps in the Enterprise Repository. </p>
+  <p>When the project-level models duplicate models in the Enterprise Repository, you should further examine the project requirements to see whether there is a 100% fit with the Enterprise requirements, or whether the fit is only partial. If there is a 100% fit, this should be marked for potential reuse. If the fit is only partial, you should consider whether it would be feasible to extend the current function with the new requirements. If there is no fit, the new requirements should be registered in the Enterprise Repository for possible later reuse.</p>
+  <p>For further details about this, review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique.<a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank"><br>
+    </a><br>
+  During Service Identification and Discovery, the Enterprise Function or Business Process Model may be used as a basis for Functional Activity Analysis. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=BA050 id="BA050"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities)</a></h4>
+  <p>The Enterprise Domain Model should be created or updated whenever that is required based on new models developed in a project. The project models should be classified following the taxonomy of the domain model. It will then be easier to identify any possible duplicates or overlaps in the Enterprise Repository. </p>
+  <p>When there are duplicates in the models, you should look further into the documented requirements to verify whether there is a 100% fit, or whether the fit is only partial. If there is a 100% fit, this should be marked as a potential reuse. If it is only partial, consider whether it would be feasible to extend the current function with the new requirements. If there is no fit, the new requirements should be registered in the Enterprise Repository for possible later reuse.</p>
+  <p> For further details about this, review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique. </p>
+  <p>During Service Identification and Discovery, the Enterprise Domain Model is used as a basis for Data Model Analysis. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <hr WIDTH="100%">
+  <h4><A
+name=BA060 id="BA060"></A><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">BA.060 Perform High-Level Use Case Discovery</a></h4>
+  <p> The High-Level Use Cases should be created or updated whenever that is required based on use cases being identified during a project. The use cases should be classified following the taxonomy of the Use Case Model. It will then be easier to identify any possible duplicates or overlaps in the Enterprise Repository. </p>
+  <p>When there are duplicates in the models, you should look further into the documented requirements to verify whether there is a 100% fit, or whether the fit is only partial. If there is a 100% fit, this should be marked as a potential reuse. If it is only partial, consider whether it would be feasible to extend the current function with the new requirements. If there is no fit, the new requirements should be registered in the Enterprise Repository for possible later reuse.</p>
+  <p> For further details about this, review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique.</p>
+  <p> During Service Identification and Discovery, the High-Level Uses Cases are used as a basis for Functional Activity Analysis. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=EAG id="EAG"></A></B>ENTERPRISE ARCHITECTURE (EA) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=EA010 id="EA010"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a> </h4>
+  <p> You should define all the architectural standards and polices you will need for service engineering. This includes:</p>
+  <ul>
+    <li>Define a strategy to identify the right service granularity. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">Service Boundary Analysis</a> technique for details about this. </li>
+    <li>Define a service scoring schema. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for details about this.</li>
+    <li>Define architectural policies. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for details about this. </li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA075 id="EA075"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures </a></h4>
+  <p>When determining the Technology Reference Architecture for SOA &ndash; called the SOA Reference Architecture &ndash; there are certain elements that should be covered. For any situation that involves a set of SOA services of any significant size, or if the enterprise has embraced SOA as an IT strategy, it is important to determine and document a consistent strategy for service implementation. Failure to establish such a strategy might result in an inconsistent service implementation and may negate the advantages of using a SOA approach by greatly hampering reuse. </p>
+  <p>Therefore, during this task, you define the SOA Reference Architecture that will be used at the enterprise level, one of the most important parts being the definition of the layers of the SOA architecture. The SOA Reference Architecture should describe:</p>
+  <ul>
+    <li> how services should be implemented in the enterprise architecture</li>
+    <li> what kind of services should be located where (in what layer or tier)</li>
+    <li>what access and communication mechanisms should be used</li>
+    <li>a target schedule for implementation over a several year period</li>
+  </ul>
+  <p>The SOA Reference Architecture should cover:</p>
+  <ol>
+    <li>Service Definition - What is a service, service scope, service lifecycle, etc.?</li>
+    <li>Conceptual View - service types and layers (for example, connectivity, data, decision, business, business process, presentation services and associated rules and guidelines for each layer or service type)</li>
+    <li>SOA Infrastructure - covers components (for example, a service bus) to perform service routing, service orchestration, governance, management, etc. </li>
+    <li>SOA Security - includes service authorization, identity federation, etc. </li>
+    <li>Implementation - tools and technology for implementing the previous points</li>
+    <li>Deployment - covers service packaging and a service deployment strategy </li>
+    <li>Patterns and Design Guidelines - includes best practices and design patterns</li>
+  </ol>
+  <p>Guidelines for points 1 and 2 above are available in the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique. </p>
+  <h6>Service Definition</h6>
+  <p>Most people have a different understanding of what is a service, depending of their background, level of experience with SOA, etc. The first part of the SOA Reference Architecture is concerned with defining what is a service, what is it's composition, etc. See the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more guidance. </p>
+  <h6>Service Layers </h6>
+  <p>SOA layers provide a means to organize application user interfaces and services in similar groupings. There is not necessarily a direct relationship between SOA service layers and the physical infrastructure tiers. SOA service layering is chiefly concerned with establishing the architectural decoupling such that processes and data can be more readily distributed and deployed. It allows for defining different types of services and then the different policies or rules that apply to them. For example, you may define that a data service must use objects from the enterprise canonical data model, whereas a presentation service does not. </p>
+  <p>See the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more details on how to do this. </p>
+  <p>One aspect in particular that needs to be considered while defining possible SOA service layers is their granularity. The following three aspects are the most important ones that can help you in determining the right granularity:</p>
+  <blockquote>
+    <p><b>Business Suitability</b></p>
+    <p>Ideally a service supports an atomic operation of a business task. It provides just enough functionality needed for that task. Whenever making it simpler makes it more general, this will increase the level of reusability of the service. </p>
+    <p>One service that handles a customer with addresses as well as all the orders the customer can place is likely too big. You probably cannot reuse it for some other business task that only involves handling a customer and no order lines (for example, for security reasons). </p>
+    <p><b>Performance and Size </b></p>
+    <p>Services are called remotely and therefore require a roundtrip, and so a performance overhead is incurred. You therefore want to reduce the calls to a service as much as possible, as long as that does result in services having too many responsibilities (see previous point). For example, rather than identifying a service that handles one order as well as another service that handles one order line, you identify one service that handles an order together with its order lines.</p>
+    <p>Furthermore, services are limited in the size of the messages they can process efficiently. When a message becomes too big, it will require too many resources to process. Transactions and State operations should be self-contained as much as , to reduce the risk that the state gets lost when a service fails to complete. When a service stores data this should be done in exactly one transaction, and failure of a service should not result in corrupting the data. In other words: between two calls the data will always be in a valid state. </p>
+    <p><b>Integration Considerations </b></p>
+    <p>During this analysis, try and look at the number of partner links to maximize the business logic to have services that are self-contained. Try designing components that do not have a fine granularity. </p>
+    <p>There are several ways to approach the integration analysis for defining the integrations and the canonicals. One approach is to think of a hub and spoke model where there is a single canonical that can be used for the services.&nbsp; Another approach is to have a unique canonical for each service. A finally approach may be to utilize an ESB (Enterprise Service Bus) architecture.</p>
+  </blockquote>
+  <h6>Service Infrastructure</h6>
+  <p>The details of the infrastructure required to run the SOA is also an important part of the SOA Reference Architecture. This may include a choice of Enterprise Service Bus, Enterprise Repository, BPM tooling, etc. In this section, describe the functions that the components you need carry out and how these components interact with each other. It is recommended to leave this section technology and product agnostic and detail the products in the Implementation section below. </p>
+  <h6>SOA Security Strategy</h6>
+  <p>The SOA Security Strategy should include the solutions for the following: </p>
+  <ul>
+    <li>Service authorization: including how the security is handled at the service level, how authorization policies are managed (locally or centrally)</li>
+    <li>Identity propagation: how user identity is passed from one service down to the next </li>
+    <li>Service Provisioning: who is allowed to use which services (users or other type of resources in terms of roles), how these services should be used and accessed, and how authorization should be granted </li>
+  </ul>
+  <p>This section should also include a description of how the provisioning process should be monitored, to support governance on the security by the architecture. This aspect should also cover how alerts/reports should be created depending on how services are used (such as halts, interruptions, decline and so on). This should be documented both from a service provider and a service consumer point of view. </p>
+  <h6>Implementation</h6>
+  <p> The &quot;Implementation View&rdquo; of the SOA Reference Architecture describes the technology and products required to implement the SOA Reference Architecture defined so far. </p>
+  <h6>Deployment Options </h6>
+  <p> Services may be packaged individually or as a group, independently of each other or as part of a common release cycle. In this step, define which strategy the enterprise adopts including the criteria for grouping services, release cycles, etc.<br>
+  See the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a> technique for more details on how to perform this step. </p>
+  <h6>Patterns and Design Guidelines </h6>
+  <p>General <b>SOA service design principles</b>:</p>
+  <ul>
+    <li><b>Design for Reuse</b> - The practitioner should determine the appropriate level of granularity. Design pattern should be employed during the service design. Always pay close attention to interoperability in a heterogeneous IT environment. Make sure your design will survive the disparate and heterogeneous environment.</li>
+    <li><b>Design for Agility</b> - The practitioner should consider service virtualization and transparency. Make sure the implementation can be done independently. Try to make your design flexible and extensible by using integration design patterns.</li>
+    <li><b>Standard for Compliancy</b> - Make your design standard compliant, where appropriate. Prevent over-standardizing, as (among others) that might jeopardize agility. </li>
+    <li><b>Database Design</b> - There should also be design standards for database tables. Oftentimes, this is not required because integration consultants deal mainly with existing data stores and data models.</li>
+    <li><b>Security</b> - Incorporate a security model into your design from the start. Always think about security and performance during your design. </li>
+    <li> <b>Performance</b> - High availability and performance will be critical to the success of any SOA project.</li>
+    <li> Transactions - Transaction management is critical to B2B integration, for example.</li>
+    <li> <b>Quality of Service</b> - QoS is a critical element of any SOA undertaking.</li>
+    <li> <b>Service Interoperability</b> - In order to provide or consume a &lsquo;Business Service&rsquo;, the involved systems/partners must agree on the interaction pattern with the corresponding business semantics along with the message binding contracts and policies such as enveloping, addressing, reliability and security profiles for every business service and action pair. The <a href="SOA_INTEROP_GUIDELINES.HTM" target="_blank"> SOA Project Delivery Service Interoperability Guidelines</a> provide guidelines, patterns and templates to capture all the necessary information related to service interoperability.</li>
+    <li><b>Reporting/Monitoring</b> - Consider adding BAM sensors or using BPEL &quot;naive table.&quot; </li>
+  </ul>
+  <p>Use of <b>Design Patterns</b> should be followed whenever possible. Some of the typical integration design patterns include: </p>
+  <ul>
+    <li><b>Canonicals</b> - Use canonical (common) formats for data representation. Terms associated with canonicals are Common Information Model, Common Object Model, and (standardized) Business Object Definitions. If a Data Hub is being used this may also impose a canonical form that will have to be supported (or mapped to) as well. </li>
+    <li><b>Content Based Routing</b> - Use content based routing to map canonical data types to multiple endpoint data types.</li>
+    <li><b>Process Orchestration</b> - Use the BPEL engine and workflow engine to handle process orchestration, manual intervention, and fault handling and notification. The BPEL engine acts as a service broker that orchestrates services.</li>
+    <li><b>ESB</b> - Use ESB to transform and enrich data and route data to endpoints.</li>
+  </ul>
+  <p><b>Naming standards</b> should be defined for all project components. The naming standards should be tailored to the products used within the solution (i.e., BPEL PM, B2B). At a minimum, the focus of naming standards should cover: </p>
+  <ul>
+    <li>service operation names</li>
+    <li>event types</li>
+    <li>BPEL process names</li>
+    <li>BPEL activity names</li>
+    <li>Java packages</li>
+  </ul>
+  <p>At a minimum, <b>coding standards</b> should address:</p>
+  <ul>
+    <li>Common WSDL design standards such as standard fault replies for synchronous web services/business processes</li>
+    <li>Common error handling approach for BPEL processes</li>
+    <li>Common logging approach</li>
+    <li>How to define the standard canonicals</li>
+  </ul>
+  <p> <b>Contract/Interface First</b> - Define the interface first. Interfaces determine the contract between service consumers and providers.</p>
+  <ul>
+    <li> <b>Coarse Grain Documents</b> - Provide document on coarse-grained service.</li>
+    <li> <b>Asynchronous Interactions</b> - Pay special attention to asynchronous interactions between service consumer and provider.</li>
+    <li> <b>Undo/Cancel Operations</b> - Create a strategy to support transactional services. Determine which services should have the undo/cancel/roll back operation. Determine how you should implement the rollback service.</li>
+    <li> <b>Version Control</b> - Establish a version control mechanism for services, preferably under the guidance of SOA Governance policies for this purpose. Services will evolve and a version control process and mechanism for implementing and monitoring versioning will be important for longer term enterprise SOA efforts.</li>
+    <li> <b>WS-I, Wrapped Document Style</b> - Pay attention to Web-Service Interoperability (WS-I) if your solution involves inter-enterprise service orchestration. WS-I creates, promotes and supports generic protocols for the interoperable exchange of messages between Web services. In this context, &quot;generic protocols&quot; are protocols that are independent of any action indicated by a message, other than those actions necessary for its secure, reliable and efficient delivery, and &quot;interoperable&quot; means suitable for multiple operating systems and multiple programming languages.</li>
+    <li> <b>WSIF Binding to Java, JCA</b> - Consider WSIF for Java binding and integrating with endpoint through JCA. </li>
+  </ul>
+  <p> <b>Connectivity and messaging mechanisms</b>:</p>
+  <ul>
+    <li> <b>Consider the use of UDDI registry for services</b> - Oracle has a UDDI registry product bundled with the application server.</li>
+    <li> <b>JCA Adapters</b> - JCA adapter is extensively used for integration with backend systems. Practitioners should understand the mechanism of JCA and ways to implement integrations using JCA adapter. </li>
+    <li><b>Service Virtualization</b> - Virtual services are the exposed interfaces that a consumer connects to in Web Services. It is not the &quot;real&quot; implemented service interface. Rather, it is a service contract that has a different set of attributes defining the service interface and provides a contract to which the service consumer can connect. It is an abstraction layer between the service consumer and the actual service interface. Whenever the service interface or address needs to be changed, the service consumer will not be affected because the consumer is interacting with the virtual service interface. Another important characteristic of service virtualization is that it creates a policy enforcement layer where SOA governance can be implemented and executed. With the virtual service and supporting abstract layer, services, trust domains, and platform implementations can be chosen at run time according to policies. </li>
+  </ul>
+  <p> <b>Process Orchestration, Workflows and Rules</b>:</p>
+  <ul>
+    <li> <b>BPEL</b> - BPEL PM is the ideal language for designing and deployment of service orchestration.</li>
+    <li> <b>XSLT Transformation</b> - XSLT is the must-have skill for designing and implementing BPEL process. </li>
+    <li> <b>Human Workflow Service</b> - In many cases, human intervention is required in a business flow. BPRL PM provides out-of-the-box workflow services for customization. Basic understanding of human workflow concepts and Java servlet, JSP programming is essential for successful customization of a human workflow. </li>
+    <li> <b>Consider implementing Rules</b> - Rules-based &quot;Decision Support Service&quot; for complex transformations via Oracle Rules Engine.</li>
+    <li> <b>Notification Service</b> - You have to have a notification service for critical event notification.</li>
+    <li> <b>Error Hospital Service</b> - The Error handling framework should be in place to take care of any errors.</li>
+    <li> <b>ESB Binding and Wiring</b> - Consider using ESB for connectivity and content based routing.</li>
+    <li> <b>Tracing and Debugging</b> - BPEL provides a nice tool for tracing and logging.</li>
+    <li> <b>Iterative Development</b> - Always follow the iterative development method.</li>
+    <li> <b>Unit Testing</b> - Integration development should have unit testing.</li>
+    <li> Business Rules Engine - SOA-based design recognizes that services deal with differing degrees of rule logic complexity. In particular, it is considered a best practice to separate process flow rules from complex transformation or calculation rules. With the emergence of Business Rules engine technology, Integration/Enterprise Architects should consider a Business Rules Engine as part of the solution when such complex transformations are needed. Best practice calls for delegation to a Decision Support Service implemented via rules engines that encapsulates business rules creation, maintenance, and management for large rules sets to a centralized repository. The Business Process Developer should be able to leverage the rule engine resource to create highly maintainable processes with simple and easy to maintain flows. You should review the OUM tasks that are specific to business rules:</li>
+  </ul>
+  <table border="1" title="OUM Tasks Specific to Business Rules" summary="This table lists the OUM tasks that are specific to business rules.  The column headings are Task ID, Task Name, Work Product Name and Phase.  There are subheadings for Envision and Implement.">
+    <tr bgcolor="#BEBEBE">
+      <th scope="col">Task ID </th>
+      <th scope="col">Task Name </th>
+      <th scope="col">Work Product Name </th>
+      <th scope="col">Phase</th>
+    </tr>
+    <tr valign="top" bgcolor="#CCCCCC">
+      <th colspan="4" scope="rowgroup"><div align="left">Envision</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">BA.080</div></th>
+      <td>Identify Candidate Enterprise Business Rules </td>
+      <td>Candidate Business Rules </td>
+      <td>Initiate</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">IP.030</div></th>
+      <td>Analyze Business Rules </td>
+      <td>Business Rules Analysis </td>
+      <td>Initiate</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">EA.160</div></th>
+      <td>Define Business Rules Implementation Strategy </td>
+      <td>Business Rules Implementation Strategy </td>
+      <td>Initiate</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">BA.110</div></th>
+      <td>Maintain Business Rules</td>
+      <td>Maintained Business Rules </td>
+      <td>Maintain and Evolve </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">IP.080</div></th>
+      <td>Maintain Repository of Artifacts (for Business Rules) </td>
+      <td>Maintained Repository of Artifacts (for Business Rules)</td>
+      <td>Maintain and Evolve </td>
+    </tr>
+    <tr valign="top" bgcolor="#CCCCCC">
+      <th colspan="4" scope="rowgroup"><div align="left">Implement</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.027.1</div></th>
+      <td>Identify Candidate Business Rules </td>
+      <td>Candidate Business Rules </td>
+      <td>Inception</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.028.1</div></th>
+      <td>Populate Business Rules Repository </td>
+      <td>Populated Business Rules Repository </td>
+      <td>Inception</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.027.2</div></th>
+      <td>Identify Candidate Business Rules </td>
+      <td>Candidate Business Rules </td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.028.2</div></th>
+      <td>Populate Business Rules Repository </td>
+      <td>Populated Business Rules Repository </td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">AN.070.1</div></th>
+      <td>Analyze Business Rules </td>
+      <td>Business Rules Analysis </td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">DS.060</div></th>
+      <td>Define Business Rules Implementation Strategy </td>
+      <td>Business Rules Implementation Strategy </td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">DS.110.1</div></th>
+      <td>Design Business Rules </td>
+      <td>Business Rules Design</td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">IM.055.1</div></th>
+      <td>Perform Business Rules Implementation (Rules Engine) </td>
+      <td>Implemented Business Rules (Rules Engine) </td>
+      <td>Elaboration</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.027.3</div></th>
+      <td>Identify Candidate Business Rules </td>
+      <td>Candidate Business Rules </td>
+      <td>Construction</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">RA.028.3</div></th>
+      <td>Populate Business Rules Repository </td>
+      <td>Populated Business Rules Repository </td>
+      <td>Construction</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">AN.070.2</div></th>
+      <td>Analyze Business Rules </td>
+      <td>Business Rules Analysis </td>
+      <td>Construction</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">DS.110.2</div></th>
+      <td>Design Business Rules </td>
+      <td>Business Rules Design</td>
+      <td>Construction</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">IM.055.2</div></th>
+      <td>Perform Business Rules Implementation (Rules Engine) </td>
+      <td>Implemented Business Rules (Rules Engine) </td>
+      <td>Construction</td>
+    </tr>
+  </table>
+  <p>The <a href="../../../../ENV/040_TEMPLATES_AND_GUIDANCE/EA/EA-075_SOA_REFERENCE_ARCHITECTURE.DOCX" target="_blank">SOA Reference Architecture</a> template can be used to document this task. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=IPG id="IPG"></A></B>IT PORTFOLIO MANAGEMENT (IP) PROCESS GUIDANCE </h3>
+  <h4><B><A
+name=IP080 id="IP080"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/IP_080_MAINTAIN_REP_OF_ARTIFACTS_OVERVIEW.HTM" target="_blank">IP.080 Maintain Repository of Artifacts</a></h4>
+  <p> Service Engineering will, in addition to the service asset itself, require other assets along the service lifecycle, such as models. If there are no existing meta models for those other assets, or if the meta models do not support SOA, then you will need to create or update these meta models as part of this task. You need to do this unless there is another initiative to define meta models for these artifacts. Either way, you need to be certain that the meta models support what is needed by SOA.</p>
+  <p>When a meta-model update is required, you will identify or define the taxonomy that should be used for all artifacts that are related to a SOA, with exception of the taxonomies for Projects, Applications and Services, as these are defined in their respective tasks, <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/GV_092_DETERMINE_PROJECTS_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Projects Meta Data Description (GV.092)</a>, <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/GV_094_DETERMINE_APPLICATIONS_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Applications Meta Data Description (GV.094)</a> and <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/GV_096_DETERMINE_SERVICES_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Services Meta Data Description (GV.096)</a>. You thereby perform the step &ldquo;Determine Asset Type Taxonomies&rdquo;. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique to perform this task. </p>
+  <p>There may already be an Enterprise Repository available, or the organization has only decided which Enterprise Repository should be used, but it is not yet available, or ther eis no Enterprise Repository. The Enterprise Repository is needed to store and maintain all the required types of artifacts. For SOA, the Enterprise Repository should store all the service definitions, as well as the artifacts that are needed along the lifecycle of the service. The actual implementation of the assets in the Enterprise Repository is performed as part of the task, <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/GV_100_IMPLEMENT_GOVERNANCE_OVERVIEW.HTM" target="_blank">Implement Governance (GV.100)</a>.</p>
+  <p> For the type of assets you need for SOA, in addition to determining the taxonomies, you should perform these steps these materials are not already available : </p>
+  <ul>
+    <li>Determine asset type lifecycle <br>
+    to determine the lifecycle of the assets related to SOA, with the exception of Projects, Applications and Service as that is performed in their respective tasks (GV.092, GV.094 and GV.096 as mentioned above) <br>
+    </li>
+    <li>For these assets, determine asset type properties <br>
+    to determine how the assets should be documented in relation to SOA<br>
+    </li>
+    <li>Determine assets relationships<br>
+    to determine how these assets are required throughout the identified Service Lifecycle. </li>
+  </ul>
+  <p>All of this work is all required to define a proper Portfolio Management Strategy for SOA. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique for more information on this.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=RDG id="RDG"></A></B>BUSINESS REQUIREMENTS (RD) PROCESS GUIDANCE </h3>
+  <h4><B><A
+name=RD011 id="RD011"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model </a> </h4>
+  <p>When the Future Process Model has been developed during a project, the model should be verified against the Enterprise Repository for reuse. You should verify this as early as possible, after having defined only the highest levels of the process model, to see whether you can identify any duplicates or partial duplicates that you may reuse in your modeling efforts. This verification should be done multiple times during the process, as you might discover new aspects along the way, which may result in new mappings. You should classify your future process model following the process model taxonomy. That makes it easier to identify any duplicates. </p>
+  <p>Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique for further information about this.</p>
+  <p>During Service Identification and Discovery, the Future Process Model may be used as a basis for Functional Activity Analysis. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <p>In this task, you define the future business model in the form of integrated process flows based on the business processes supported by the new applications.</p>
+  <h5>PREREQUISITES</h5>
+  <p>There are many prerequisites for this task according to the methodology. Unfortunately, the customer may not have all of the desired prerequisites and in some instances, they may not necessary if this is going to be a pure integration delivery. For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Portfolio - Candidate Services (ENV.BA.090)</div></th>
+      <td>Tentative</td>
+      <td>Optional</td>
+      <td>For the Pragmatic SOA Approach, obtain the enterprise-level documents if they are available. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Process Improvement Options (ENV.BA.090)</div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Business and System Objectives are used to determine what should be the content of the new application. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">System Context Diagram (RD.005) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The System Context Diagram provides the boarders for the Future Process Model. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Current Process Model (RD.030) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>Use material from the Current Process Model to gain an understanding of the processes and systems that support the current business. It may identify processes that offer opportunities for process improvement in cycle time, cost, and quality. It may also show major processes that are candidates for process redesign.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Current Business Baseline Metrics (RD.034) </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>For projects where the focus is on business performance improvement, the Current Business Baseline Metrics is used to identify the critical performance areas that need to be focused on while developing the Future Process Model. Without this baseline, any business performance improvement (or degradation) becomes very subjective.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business Use Case Model (RA.015) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>If the Business Use Case Model is not available, you may need to create it as part of this effort. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Skilled Project Team (TR.050)</div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The project team members must understand application concepts and capabilities in order to develop process models based on leading practices. This prerequisite helps them understand what process steps are supplied by application-specific functions.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business Process Reengineering (BPR) Studies </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>Business Process Reengineering Studies are only appropriate if process change is relevant, and earlier business process change tasks were not carried out &mdash; most significantly, Detail System and Business Objectives (RD.001) and Obtain High-Level Business Descriptions (RD.020). Process reengineering studies may recommend the complete overhaul of current processes to be supported by the new applications. The output of a BPR study may, in fact, provide most of the content of the Future Process Model.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Future Business Strategy </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>This is probably part of the requirements; however, if not, It would make sense to understand so that the services could account for future direction.</td>
+    </tr>
+  </table>
+  <p>In a purely tactical approach, it would be best to tackle the delivery of the Future Process Model from the bottom-up. This involves decomposing the application and identifying sources of functionality to service-enable.</p>
+  <p>After reviewing the functional requirements, take the following approach when attempting to create a business process model:</p>
+  <ol>
+    <li>Note the key verbs and associated nouns.</li>
+    <li> Focus on the &ldquo;what.&rdquo;</li>
+    <li> Replace application specific logic with business terminology.</li>
+  </ol>
+  <p>For the data requirement decomposition, consider the following guidelines:</p>
+  <ol>
+    <li>Review requirements, noting the nouns.</li>
+    <li>Understand relationships between business entities.</li>
+    <li>Convert pronouns into business entities.</li>
+    <li>Identify possible actions on entities by noting verbs and create a CRUD matrix.</li>
+    <li>Construct domain data hierarchy detailing source, authorities, and semantic communities.</li>
+  </ol>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RD020 id="RD020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_020_OBTAIN_HL_BUS_DESCRIPTIONS_OVERVIEW.HTM" target="_blank">RD.020 Obtain High-Level Business Descriptions</a></h4>
+  <p>In this task, you collect high-level information about how the users conduct their business for those areas under investigation.</p>
+  <p>For Tactical SOA and Pragmatic SOA, though this is a required task, the following guidelines apply as engaging in a tactical manner may mean that the requirements have already been identified and the workshops have already been completed.</p>
+  <ul>
+    <li>Obtain the documents produced by the customer&rsquo;s workshops. Keep in mind, that many times these documents are incomplete and are written in the customer&rsquo;s peculiar industry vocabulary. </li>
+    <li> Obtain a glossary from the customer.</li>
+    <li> Any follow up discussions or clarifications to the requirements document delivered by the customer need to be added as an addendum to the requirements document.</li>
+    <li> Obtain the functional and non-functional requirements of the proposed application.</li>
+  </ul>
+  <p>If an enterprise repository exists, then follow the steps outlined in the OUM.</p>
+  <p>For those situations where no enterprise repository exists, create a &ldquo;repository.&rdquo; The repository could be as simple as a spreadsheet. Consider the following Information for each requirement:</p>
+  <ul>
+    <li>Name</li>
+    <li>Classification</li>
+    <li>Status
+        <ul>
+          <li>Proposed</li>
+          <li>Assigned</li>
+          <li>In Progress</li>
+          <li>Implemented</li>
+          <li>Partially Implemented</li>
+          <li>Retired</li>
+        </ul>
+    </li>
+    <li>Type
+        <ul>
+          <li>Shared</li>
+          <li>Not Shared</li>
+          <li>Owner</li>
+        </ul>
+    </li>
+    <li>Version</li>
+  </ul>
+  <h5>PREREQUISITES</h5>
+  <P>For SOA implementations, consider the following for this task: </P>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Configured Enterprise Repository (GV.098) </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>If available, use the Configured Enterprise Repository to check for existing process models and add to or update the process models in the repository. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+      <td>Tentative</td>
+      <td>Optional</td>
+      <td>For the Pragmatic SOA Approach, obtain the enterprise-level objectives if available. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Future Process Model (RD.011) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>During the project that is executed in combination with this view, high-level business requirements are collected and used as input to the modeling tasks. When the requirements are gathered, you should check for duplicates in the Enterprise Repository. You need to update the Enterprise Repository with the new requirements. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique for more details about this.</p>
+  <hr WIDTH="100%">
+  <h4><A
+name=RD045 id="RD045"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW)</a> </h4>
+  <p> When the requirements for the project have been identified, you should also know what kind of requirements may be implemented: </p>
+  <ul>
+    <li>Through reuse of services (services already implemented, or to be developed in other projects or as part of this project), </li>
+    <li>As an extension to existing services</li>
+    <li>Not as a service </li>
+  </ul>
+  <p>This is important information when prioritizing. A requirement that can be implemented through reuse may get a higher priority than it otherwise would have as it may be considered to be &quot;low hanging fruit.&quot; For further details, review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique. </p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RD055 id="RD055"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">RD.055 Detail Supplemental Requirements</a></h4>
+  <p>During this task, you identify enterprise-level tasks and policies.</p>
+  <p> If the Envision task, GV.030, Discover or Define Policies (or its equivalent) has been previously done for SOA at an enterprise level, then these policies should be used here. If GV.030 or its equivalent has not been done, then depending on business needs, SOA Governance Policies should be identified and created for this specific project. </p>
+  <p> At the enterprise level, architects have to determine the enterprise governance policies for the SOA project. Examples of governance policies include service acquisition policies, service lifecycle policies, and architecture/design policies.</p>
+  <p> Service acquisition policies provide guidelines and regulations about how a service should be acquired:</p>
+  <ul>
+    <li> whether to reuse existing application functionality,</li>
+    <li> whether to acquire third-party software,</li>
+    <li> or whether to custom build a new application to provide the service.</li>
+  </ul>
+  <p> Service lifecycle policies govern the following aspects of a service lifecycle:</p>
+  <ul>
+    <li> service specification approval, standards policies - answer the question &quot;what, where, how a standard should be used?&quot;</li>
+    <li> certification and testing policies</li>
+    <li> change management policies</li>
+    <li> production support policies</li>
+    <li> service publishing policies</li>
+    <li> publication (code) change control </li>
+  </ul>
+  <p> Architecture design policies govern the following aspects:</p>
+  <ul>
+    <li> Service Layering Policies - Why should we use service layering? How do we achieve layered SOA?</li>
+    <li> Service Dependency - determines how services depend on each other (independent services, cyclic dependent services, and cycle dependent services)</li>
+  </ul>
+  <p> Service Design Policies cover aspects of what is needed to design services including:</p>
+  <ul>
+    <li>invocation (Asynchronous and Synchronous?) </li>
+    <li> parameter types (RPC, SOAP, etc.) </li>
+    <li> exception handling </li>
+    <li> transaction behavior </li>
+  </ul>
+  <p>Reporting requirements must address the monitoring of the SOA solution as well as management level reporting needs. Typical reporting requirements fall into the following areas:</p>
+  <ul>
+    <li><b>System Health</b> - This reporting is for operations and technical support personnel and provides reporting on the overall health of the solution. The focus is on the hardware and software, and provides such statistics as CPU utilization, memory utilization, event processing errors, message volumes, etc. BAM can be a valuable asset to monitoring system health (see the KPI discussion hereafter) and should be used from the start for, at least, this purpose.</li>
+    <li><b>B2B</b> - Reporting showing partner communication volumes and errors. Typically, a B2B solution provides such reporting or custom reports are developed from the B2B data store. Sometimes you have to come up with data schema and data conversion strategy, etc.</li>
+    <li><b>Key Performance Indicators (KPI)</b> - With the emergence of BAM solutions, reporting on key performance indicators for executive and management level is supported. This should be implemented using a top-down process of identifying the KPI reporting needs and mapping the data requirements to the events being processed by the integration solution. Integration architects should try their best to incorporate BAM into system monitoring and management solutions. BAM monitors business metrics such as KPI and Service-Level Agreements in real-time. BAM enables IT staff to analyze real-time data to identify bottlenecks and exceptions. With BAM, corresponding (automated or manual) actions can be performed to meet the business needs. BAM requirements should be captured in this task.</li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RD065 id="RD065"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model </a></h4>
+  <p> When the Domain Model has been developed during a project, the model should be verified against the Enterprise Repository for reuse. You should verify this as early as possible to see whether you can identify any duplicates or partial duplicates that you may reuse in your modeling efforts. Frequently, the same data types or entities are used in multiple projects. To prevent multiple definitions of the same entity, you should verify this as early as possible. You should perform this type of verification multiple times during the process, as you might discover new aspects along the way, which may result in new mappings. You should classify your domain model following the domain model taxonomy. That makes it easier to identify duplicates. </p>
+  <p>You should review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique for further information about this.</p>
+  <p>During Service Identification &amp; Discovery, the Domain Model may be used as a basis for Data Model Analysis. You should review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Enterprise Domain Model (ENV.BA.050) </div></th>
+      <td>Partial</td>
+      <td>Optional</td>
+      <td>For the Pragmatic SOA Approach, obtain the enterprise-level documents if they are available. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Business and System Objectives are used to determine the content of the new application.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">High-Level Business Descriptions (RD.020) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The High-Level Business Descriptions identify the required business objects and their relationships.</td>
+    </tr>
+  </table>
+  <p>Consider the following additional guidelines when developing the Domain Model:</p>
+  <ol>
+    <li> Leverage the Enterprise Domain Model if it exists, as it relates to the application.</li>
+    <li> Identify the Domain Model for the application(s) to be built or integrated.</li>
+    <li> Use the &ldquo;repository&rdquo; (spreadsheet) to model the services that have been chosen.</li>
+  </ol>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3 align="left"> <B><A
+name=RAG id="RAG"></A></B>REQUIREMENTS ANALYSIS (RA) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=RA019 id="RA019"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_019_DEFINE_PROJECT_REF_ARCH_OVERVIEW.HTM" target="_blank">RA.019 Define Project Reference Architecture </a> </h4>
+  <p>During this task you define the SOA Project Reference Architecture. </p>
+  <p>During project start up, you should check and get an understanding of the existing SOA strategy and determine specific project implications. This includes checking the SOA Reference Architecture (EA.075) at the enterprise level and understanding the service portfolio management strategy. If a SOA Reference Architecture or a service portfolio management strategy are lacking in the enterprise, you should create them in the context of the project with the view to extend them to the enterprise whenever appropriate.</p>
+  <p>One aspect in particular that needs to be considered while defining possible SOA service layers is their granularity. The following three factors are the most important in helping to determine the right granularity:</p>
+  <p><b>Business Suitability </b></p>
+  <p>Ideally, a service supports an atomic operation of a business task. It provides just enough functionality needed for that task. Whenever making it simpler makes it more general, this will increase the level of reusability of the service.</p>
+  <p>One service that handles a customer with addresses as well as all the orders the customer can place is likely too big. You probably cannot reuse it for some other business task that only involves handling a customer and no order lines (for example, for security reasons). </p>
+  <p><b>Performance and Size </b></p>
+  <p>Services are called remotely and therefore require a roundtrip, and the resulting performance overhead. You therefore want to minimize the calls to a service as much as possible, as long as that does result in services having too many responsibilities (see previous point). For example, rather than identifying a service that handles one order as well as another service that handles one order line, you identify one service that handles an order together with its order lines.</p>
+  <p>Furthermore, services are limited in the size of the messages they can process efficiently. When a message becomes too big, it will require too many resources to process. Transactions and State operations should, to the extent possible, be self-contained to reduce the risk that state get lost when a service fails to complete. When a service stores data this should be done in exactly one transaction and failure of a service should not result in corrupting the data. In other words, between two calls the data will always be in a valid state.</p>
+  <p><b>Integration Considerations </b></p>
+  <p>During this analysis, try and look at the number of partner links to maximize the business logic to have services that are self-contained. Try designing components that do not have a fine granularity. </p>
+  <p>There are several ways to approach the integration analysis for defining the integrations and the canonicals. One approach is to think of a hub and spoke model where there is a single canonical that can be used for the services.&nbsp; Another approach is to have a unique canonical for each service. A final approach may be to utilize an ESB (Enterprise Service Bus) architecture.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA023 id="RA023"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model </a></h4>
+  <p>When you have developed the Use Case Model during a project, the use cases should be verified against the Enterprise Repository for reuse. You should verify this as early as possible to see whether you can identify any duplicates or partly duplicates that you may reuse in your modeling efforts. It is often that the same or similar use cases are used in multiple projects. To prevent duplicates across the Enterprise, you should verify this as early as possible. You should perform this type of verification multiple times during the process, as you might discover new aspects along the way, which may result in new mappings. You should classify your use cases following the use case model taxonomy. That makes it easier to identify any duplicates.</p>
+  <p> Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique for further information about this.<br>
+      <br>
+  During Service Identification &amp; Discovery, the Use Case Model may be used as a basis for Functional Activity Analysis. Review the <a href="../../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more information about this.</p>
+  <h5>PREREQUISITES</h5>
+  <p>There are many prerequisites for this task and a simplified Use Case Model may be sufficient for Tactical and Pragmatic SOA Approaches. For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business Use Case Model (RA.015)</div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>The Business Use Case Model is refined into the consistent Use Case Model. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">System Context Diagram (RD.005) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the System Context Diagram as a basis to identify new actors and use cases or to detail those identified in the Business Use Case Model. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Future Process Model (RD.011) </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>The Business Use Case Model and Future Process Model serve as input together with the initial Use Case Model to determine refined versions of use cases and additional use cases.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">High-Level Business Descriptions (RD.020) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>The High-Level Business Descriptions are used as a basis to identify new actors and use cases or to detail those identified in the Business Use Case Model.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Current Process Model (RD.030) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>The Current Process Model is used as a basis to identify new actors and use cases or to detail those identified in the Business Use Case Model.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Current Business Baseline Metrics (RD.034) </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>The Current Business Baseline Metrics is used as a basis to identify new actors and use cases or to detail those identified in the Business Use Case Model.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA024 id="RA024"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details</a> </h4>
+  <p>As Use Cases will provide the base for the design, it is strongly recommended to detail a use case with Business Process Diagrams using the BPMN (Business Process Modeling Notation), as this will be the base for the design of the business process to implement. A Business Process Diagram is similar to a UML Activity Diagram. BPMN has a clearly defined mapping to BPEL4WS. </p>
+  <p>At this point, enough details of the use cases should be available to begin identifying the services required to satisfy the use case. You therefore might consider utilizing business interaction diagrams (see Business Interaction Diagram
+      <!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003100330030003700300037003400330034000000</w:data>
+</xml><![endif]-->
+  below), which documents the interaction between the orchestration layer and services.</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_BUS_INT_DIAG.gif" alt="Example Business Interaction Diagram" width="586" height="361" title="Example Business Interaction Diagram"></p>
+  <p align="center"><b>Business Interaction Diagram </b></p>
+  <p>These diagrams are very similar to UML Sequence Diagrams. In the center of the business interaction diagram is the business process or orchestration lane. To the left of the orchestration lane is the client of the orchestration service. For each interaction/event between the client and orchestration layer, the diagram indicates the services invoked and the operation called.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA025 id="RA025"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">RA.025 Identify Candidate Services </a></h4>
+  <p>This task is about identifying new service candidates and discovering reuse of existing services.</p>
+  <p>Consider the following guidelines order to identify the candidate services:</p>
+  <ol>
+    <li>For those circumstances where the organization has not defined a SOA reference architecture, start with the SOA reference architecture defined by Oracle.</li>
+    <li> Use the guidelines and principles for each of the service layers that have been established by the reference architecture.</li>
+    <li> Leverage the Domain Model and business process models identified as part of the service requirements management tasks.</li>
+    <li> Record service candidates according to the organization&rsquo;s requirements. A spreadsheet is a good template to start with. Subsequent steps will want to add meta-data to each of the service candidates.</li>
+  </ol>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Future Process Model (RD.011)</div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>Use this work product to identify candidate services. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Current Process Model (RD.030) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use this work product to identify candidate services. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Domain Model (RD.065)</div></th>
+      <td>Partial</td>
+      <td>Optional</td>
+      <td>Use this work product to identify candidate services. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Use Case Model (RA.023) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use this work product to identify candidate services. </td>
+    </tr>
+  </table>
+  <p>As noted in the OUM task description for RA.025, you can identify candidate services from either domain models or business process models through the high-level use cases that emerge.</p>
+  <p> Another approach that is not explicitly mentioned in the OUM task description involves leveraging subject matter experts with deep domain knowledge to elicit candidate services. You can use the domain modeling or business process modeling exercise to elicit candidate services from such experts, or engage in ancillary techniques after the models are built such as CRC exercises originally used in OOAD. CRC exercises also work best when bounded by specific high level use cases, and thus fit well with the recommended service discovery flow in OUM.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA026 id="RA026"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_026_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">RA.026 Populate Services Repository </a></h4>
+  <p> Not mentioned in the task description for RA.026, is the strong link between the Design Time Service Repository and SOA Governance. The services repository can serve as an instrument of design time governance if it is also a metadata catalog. With appropriate tagging of business and technology assets such as design patterns and service descriptions, it is possible to use the repository with IDEs and run-time registries to implement governance policies. For clarity OUM separates the concepts of populating a design-time repository from registering services in a run-time registry. However, in practice the trend is to closely link the repository and registry. </p>
+  <p> Task Step 2 in RA.026 refers to defining a service template. Such a definition should include the following (these should be high-level definitions as each section will be defined in detail in the Design phase):</p>
+  <table border="1" title="Service Definition Characteristics" summary="This table lists characteristics in the first column followed by a Description in the second column.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">Item</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Name </div></th>
+      <td>The name of the service</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Description</div></th>
+      <td>An overview description of the service</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Type </div></th>
+      <td>Synchronous/Asynchronous</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Functional Domain </div></th>
+      <td>Human Resources, Accounting, Manufacturing, etc. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Classification </div></th>
+      <td>As an example, you could use Component Layer, Data Layer, Business Layer and Workflow Layer. There are other ways of classifying are possible. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Process Rules</div></th>
+      <td>Detailed service processing logic</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Formats </div></th>
+      <td>The inbound and outbound message formats. If applicable, define the fault message format for synchronous services. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Security Requirements </div></th>
+      <td>Any security requirements in relation to client authentication and authorization and data encryption</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Applications</div></th>
+      <td> Identify the data sources (for example, application, database) this service must interact with to complete its functionality. Details of the application interface used for communication. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Dependency </div></th>
+      <td>Any other services this service depends on for functionality. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Human Workflow </div></th>
+      <td>If applicable, details of human workflow capabilities this service must provide.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Data Persistence</div></th>
+      <td>Setting up the dehydration tables</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Performance Goals and Measures</div></th>
+      <td> Setting up the dehydration tables</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Exception Handling</div></th>
+      <td>Describe any exceptions and exception handling logic. Define criteria for when faults are generated by the service.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA085 id="RA085"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_085_VALIDATE_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.085 Validate Functional Prototype</a> </h4>
+  <p>In SOA implementation, a typical scenario will be BPEL with Workflow implementation. In this case, the human workflow work list application's user interface typically addresses human workflow within business process and reporting requirements. Complexities of the workflow interface need to be defined which will include custom screen development using BPEL workflow API. BPEL designers and developers should work with the ambassador users to verify and validate the functionality listed in the requirement for the functional prototype.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=DSG id="DSG"></A></B>DESIGN (DS) PROCESS GUIDANCE</h3>
+  <p>The Design process of a SOA implementation is focused on the development of services and the orchestration of those services. Ingrained in the SOA approach is the design and development of loosely coupled services that can be orchestrated and re-orchestrated, as business needs change. Since BPEL is standardized on WSDL, such adaptability is inherent within the SOA approach. </p>
+  <h4><b><a
+name=DS040 id="DS040"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">DS.040 Develop Design Architecture Description </a></h4>
+  <p>The purpose of this task is to update the system&rsquo;s architecture to add design-related details that establish a set of components to be designed, to determine the structure of those components within the system at runtime, and to determine guidelines for proceeding with detailing the design of the identified components. </p>
+  <p>One step is to identify <b>Design Guidelines</b> that should be applied during Service Design. If there is a SOA Reference Architecture (EA.075) in place, then it should contain design principles to which each project should adhere. Use this as a starting point for your Design Guidelines. If a SOA Reference Architecture is not available, and there is limited availability fo other architecture artifacts, start with the OUM Reference Architecture guidelines available through the Envision <a href="../../../../ENV/OUM_HOME_RAP.HTM" target="_blank">Reference Architecture Planning</a> view.</p>
+  <p>The next step is to determine the <b>Module View</b> for each service. Here, you determine all technical components that will be required for the service, such as XSD's, WSDL's, (reusable) Java functions you may need, and so on. </p>
+  <p>The SOA integration architect should present a holistic view of the architecture leveraging the software components provided by Oracle. Try to design each layer with the corresponding software component in mind.</p>
+  <p>For example, when you design the orchestration layer, you might want to consider ESB as the transport, transformation, and routing service component for that layer. Additionally, you might want to classify services depending on their logic and the business area they are serving. For example, you can classify services into infrastructure services, business logic services, utility services, EIS (Enterprise Information Systems) Services which typically includes CRM and ERP systems, process control services which typically represents automated and manual operations, security services, etc. </p>
+  <p>This document should provide high-level architectural details for the logical (module) view and the physical (execution) view. The logical view addresses the primary modules within the SOA solution including app servers, BPEL engines, LDAP servers, databases, web services manager, enterprise monitor components, and services. The physical view maps the various components defined in the logical view to the hardware upon which they will be deployed. Other items addressed in this document are in areas of high availability (app server clustering) and scalability (clustering and load balancers). </p>
+  <p>Note that the JMS servers should be defined. Consider BPEL server clustering, and networking firewalls for both the external and internal network, using a proxy server. If AQ is to be used then AQ affinity should be considered for high performance and the initial size of the AQ should be defined. Consider using RAC. Many customers such as financial institutions will prefer to have different layers of firewalls (in some cases, at least 4). Such security and performance considerations need to be accommodated. Also, some customers may require keeping certain data in certain geographic locations. Such factors need to be considered here, also.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DS070 id="DS070"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">DS.070 Define SOA Implementation Strategy </a></h4>
+  <p>In this task, you define how and when your projects services are going to be released. You determine if they are going to be released as one or several groups or individually and which service(s) should be released first.</p>
+  <p>This task is highly influenced by the requirements that are defined in the enterprise SOA Reference Architecture (EA.075) and Project Reference Architecture (RA.019). However, if this is being done in a tactical manner (in absence of EA.075 or RA.019), look at the requirements pertaining to the initial/project-level services that are implemented at the first stage. Work with the customer project manager to prioritize these needs and create a plan based on the tasks identified. When creating the implementation plan, consider the applications/projects that are dependent on these services and their schedules. </p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Technology Reference Architectures (ENV.EA.075) </div></th>
+      <td>Partial</td>
+      <td>Optional</td>
+      <td>If available, use the Technology (SOA) Reference Architecture to gather details on the enterprise version of the SOA Reference Architecture and Roadmap for guidance on developing the SOA Reference Architecture and Roadmap at the project level.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Project Reference Architecture (RA.019) </div></th>
+      <td>Partial</td>
+      <td>Optional</td>
+      <td>Use the Project (SOA) Reference Architecture to understand the service deployment strategy, if any. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Architecture Description (RD.130/RA.035/AN.040/DS.040) </div></th>
+      <td>Partial</td>
+      <td>Optional</td>
+      <td>The design portion of this work product (DS.040) produces the service contracts upon which the service design should be based.</td>
+    </tr>
+  </table>
+  <p><a href="#TOP">Back to Top</a> </p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=IMG id="IMG"></A></B>IMPLEMENTATION (IM) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=IM010 id="IM010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_010_DEVELOP_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.010 Develop Functional Prototype </a></h4>
+  <p>Development of a functional prototype normally is done iteratively. Primary focus is on the development of services and business process orchestration flow. Since services are self-contained, 'black box' solutions, service development can be distributed across development staff for concurrent development.</p>
+  <p>To support an iterative design of the business process, service skeletons can be developed early on. A service skeleton is an actual service that implements the service interface but returns hard coded or configurable reply data. A common approach is to build skeleton services that read XML reply data from a file. This allows the business process developers to build a full orchestration solution that communicates with the 'skeleton' services. The orchestration developers can make changes to the reply data as needed for developing and unit testing the flow logic. Once actual service implementations are ready, they can be incrementally incorporated into the business process.</p>
+  <p> During the implementation, consider creating common testing components that can used for handling inbound and outbound messages from the external system to the integration. Some items to consider:</p>
+  <ul>
+    <li>Develop a way to test a message event that is executed from an external system and a way to trigger an external system.</li>
+    <li>Develop simple components for networking tests to external systems.</li>
+    <li>Define and set up the integration option data, which is used to change the message at runtime.</li>
+    <li>Know and use pre-developed integration patterns.</li>
+    <li>Put together a library of commonly used components.</li>
+    <li>Set up simple testing prototypes for use with all adapters. </li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=IM050 id="IM050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</a> </h4>
+  <p>In this task, you implement the components of your application. A component is the physical packaging of model elements, such as design classes created in the Design process. Components have a trace relationship to the model elements they implement. Some standard types of components include executables, files containing source code, library etc. This task focuses on developing and maintaining components (fixing defects when the class has been tested).</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="294" scope="col">Prerequisite</th>
+      <th width="71" scope="col">Pragmatic</th>
+      <th width="66" scope="col">Tactical</th>
+      <th width="664" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Reviewed Design Model (DS.160) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Reviewed Design Model provides the necessary input to develop the components for the application.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=IM060 id="IM060"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_060_PERFORM_COMPONENT_REVIEW_OVERVIEW.HTM" target="_blank">IM.060 Perform Component Review</a> </h4>
+  <p>Unit testing can occur at several levels. In addition to testing an individual component, the following levels should be considered:</p>
+  <ul>
+    <li><b>Service Unit Testing</b> - Services can be unit-tested by invoking the services through the service interface definition. A testing framework that provides for programmatic and repeatable testing should be pursued. The name is a little bit misleading here, but an automated testing framework like Apache JUnit plus Cactus can be used for this type of testing. In principle Service Unit Testing is the peer of the business system-testing task that governs Component Integration Testing.</li>
+    <li><b>Orchestration Testing</b> - Utilizing actual or 'stub' services, the services orchestration flow can be tested for correct logic design and error handling.&nbsp; It is very important that the test suite adequately cover negative test scenarios for the end-to-end integration. A messaging layer is common in integration implementations and full negative testing should be applied to minimize the chance of messages getting &ldquo;backed up&rdquo; on a message queue and preventing further processing. Using an automated testing framework like Apache JUnit with Cactus can also support Orchestration Testing. In principle, Orchestration Testing is the peer to System Testing (when restricted to services of the system being developed) and Systems Integration Testing (where it involves services of external systems).</li>
+  </ul>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3 class=HeadingBar><B><A
+name=TEG id="TEG"></A></B>TESTING (TE) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=TE010 id="TE010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy</a></h4>
+  <p>In a Strategic SOA approach, identify requirements related to test environment(s), how tests are performed, and acceptance criteria in a centralized or distributed deployment environment.</p>
+  <p>In a Pragmatic SOA approach, depending on the direction set in the earlier phase (Service Analysis phases), find the requirement, if any, for a centralized test environment. If available, identify the testing strategy, collect metrics, and define acceptance criteria.</p>
+  <p>In a Tactical SOA Approach, the requirements needs to address how the tests are performed, what metrics are collected, and the acceptance criteria in a project deployment environment.</p>
+  <p>The purpose of this task is to develop the project direction as it relates to testing. This should include how testing should be performed in the various stages of the project, which tools should be used (if any) and how, what metrics should be collected, how test data should be produced, and what testing environments should be used in the tests. The strategy should also define the acceptance criteria of the solution.</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="360" scope="col">Prerequisite</th>
+      <th width="72" scope="col">Pragmatic</th>
+      <th width="67" scope="col">Tactical</th>
+      <th width="596" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Configuration Management Plan and Processes (PJM.CM.010) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The environments that will be used for testing should be synchronized with the promotion levels defined in the Configuration Management Plan and Processes.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Business and System Objectives states the objectives to be met by the new system. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Use Case Specification (RA.024) </div></th>
+      <td>Required</td>
+      <td>Tentative</td>
+      <td>The Use Case Specification provides use case scenarios that lead to test scenarios that need to be tested in the various tests, and therefore is an input to the Testing Strategy.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Requirements (TE.005) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Testing Strategy must be in line with the Testing Requirements as the strategy describes how the requirements will be satisfied.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Data Acquisition and Conversion Requirements (CV.010) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Data Acquisition and Conversion Requirements indicate which business objects will be converted and where data may be used during testing.</td>
+    </tr>
+  </table>
+  <p>A testing strategy for the integration components within SOA architecture should be defined. As with any testing strategy, the goal is a repeatable process that provides full test coverage of the components, services, and processes that compose the SOA framework. Adding to the testing types that have been identified in the core method, a strategy should also cover the following:</p>
+  <ul>
+    <li>Service Testing - Services can be tested by invoking the services through the service interface definition. A testing framework that provides for programmatic and repeatable testing should be pursued. When Service Unit Testing has been addressed during the task IM.060 Perform Quality Assurance on J2EE Components testing at this stage might restrict itself to reviewing the unit tests of IM.060 and enhance them wherever necessary.</li>
+    <li>Business Process Testing - Business process testing typically falls in the system integration test phase.&nbsp; As with the unit testing identified above, it is highly important that the test suite adequately covers negative test scenarios for the end-to-end integration. A messaging layer is common in integration implementations, and full negative testing should be applied to minimize the chance of messages getting &ldquo;backed up&rdquo; on a message queue and prevent further processing. When Orchestration Testing has been addressed during the task Perform Component Review (IM.060) on the J2EE Components using an automated testing framework, this can be used as a starting point for Business Process Testing. Depending on the coverage provided by that test, Business Process Testing might be restricted to reviewing the unit tests and enhancing them wherever necessary. </li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TE015 id="TE015"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan</a></h4>
+  <p>In this task, you develop the Integration Test Plan, which you use as a guide to perform the integration tests that are performed during the iterations in the Elaboration and Construction phases. The Integration Test Plan is produced iteratively along with the development iterations to ensure that the plan reflects what is actually developed in the iterations</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="360" scope="col">Prerequisite</th>
+      <th width="72" scope="col">Pragmatic</th>
+      <th width="67" scope="col">Tactical</th>
+      <th width="596" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Baseline Project Workplan (PJM.WM.010) </div></th>
+      <td>Optional</td>
+      <td>Optional</td>
+      <td>Use the Baseline Project Work plan is understand how integration testing activities have been planned</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Quality Management Plan (PJM.QM.010) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the Quality Management Plan to see how quality will be ensured and how that is related to testing.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Requirements (TE.005) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>Use the Testing Requirements and Testing Strategy to understand how the integration tests should be performed.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Strategy (TE.010) </div></th>
+      <td>Required</td>
+      <td>Tentative</td>
+      <td>Use the Testing Requirements and Testing Strategy to understand how integration tests should be performed.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Domain Model (RD.065) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the Domain Model to identify and define test types, test items, and features to be tested. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Use Case Model (RA.023) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the Use Case Model to identify and define test types, test items, and features to be tested. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Conversion Component Designs (Initial Load) (CV.040) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the Conversion Component Designs (Initial Load) to identify and define test types, test items, and features to be tested.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">System Management Guide (TA.100) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>Use the System Management Guide to identify and define test types, test items, and features to be tested.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TE020 id="TE020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts</a></h4>
+  <p>In this task, you develop the scripts to test individual components. The tests validate that the components inputs, outputs, and processing logic function as required. The task is mainly performed in parallel with the actual development of the components. Thinking through how the component should be tested increases the understanding of what the component should do or produce. Also, the component can be immediately tested when developed. As part of the task, you also prepare common checklists that are used in performing unit testing for each type of primary or supporting component. This is done prior to developing individual unit test scripts for each unit test.</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="360" scope="col">Prerequisite</th>
+      <th width="72" scope="col">Pragmatic</th>
+      <th width="67" scope="col">Tactical</th>
+      <th width="596" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Reviewed Design Model (DS.160) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Reviewed Design Model contains the use case realization - design and the designed classes. The Business Rules Design describes the functionality and business rules that should be implemented. They are used as your primary guide in developing unit test scripts.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Reviewed Requirements Specification (RD.150) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Reviewed Requirements Specification captures the original requirements and helps you understand how the component being tested fits into the larger business process.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Requirements (TE.005) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Testing Requirements provides the requirements for testing. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Strategy (TE.010) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>The Testing Strategy provides the testing approach and strategy.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TE030 id="TE030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Test</a></h4>
+  <p>In this task, you test application components on an individual basis to verify that the inputs, outputs, and processing logic of each application component functions without errors. Unit testing is most often performed in the development environment, but it is also possible to use a separate testing environment. The task is performed in parallel with the actual development of the components.</p>
+  <h5>PREREQUISITES</h5>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="360" scope="col">Prerequisite</th>
+      <th width="72" scope="col">Pragmatic</th>
+      <th width="67" scope="col">Tactical</th>
+      <th width="596" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Requirements (TE.005) </div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Testing Requirements provides the requirements for testing. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Testing Strategy (TE.010) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>The Testing Strategy provides the testing approach and strategy.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Unit Test Scripts (TE.020)</div></th>
+      <td>Required</td>
+      <td>Required</td>
+      <td>The Unit Test Scripts provides the prerequisite seed data, the detailed steps, and the expected results of the test.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TE040 id="TE040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040 Perform Integration Test</a></h4>
+  <p>In this task, you perform the appropriate integration tests during each development iteration, both in the Elaboration and Construction phases. Test the components based on the plan outlined in the Integration Test Plan using the scenarios described in the Integration Test Scenarios.</p>
+  <h4>PREREQUISITES</h4>
+  <p>For SOA implementations, consider the following for this task: </p>
+  <table border="1" title="Prerequisites" summary="This table lists work products that could be prerequisites for this task.">
+    <tr bgcolor="#CCCCCC">
+      <th width="360" scope="col">Prerequisite</th>
+      <th width="72" scope="col">Pragmatic</th>
+      <th width="67" scope="col">Tactical</th>
+      <th width="596" scope="col">Usage</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Integration Test Plan (TE.015) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>This work product provides the plan of how to perform integration tests.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Integration Test Scenarios (TE.035) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>This work product provides the scenarios that should be tested.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Integration Test Environment (TE.038) </div></th>
+      <td>Required</td>
+      <td>Optional</td>
+      <td>This work product contains all components that should be tested as part of integration testing.</td>
+    </tr>
+  </table>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=TAG id="TAG"></A></B>TECHNICAL ARCHITECTURE (TA) PROCESS GUIDANCE </h3>
+  <p>In case of a SOA, the Technical Architecture process requires a sharp focus on the infrastructure for a SOA deployment project. By exposing its business systems as services, a business can expose itself to unpredictable load levels and a hostile security environment. The importance of the technical infrastructure can therefore hardly be overstated.</p>
+  <p>The architecture approach of an SOA integration implementation should follow the guidance as provided in the SOA introduction.</p>
+  <h4><B><A
+name=TA020 id="TA020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy</a> </h4>
+  <p>Adding to what has been described in the task guidelines of the core method, during this task you will focus on the following subjects:</p>
+  <ul>
+    <li>Functional/pictorial overview</li>
+    <li>Technical operations overview</li>
+    <li>Fault handling and retry logic (foreign system unavailability)</li>
+    <li>A detailed technical description (data mappings, APIs used, database interactions)</li>
+  </ul>
+  <p>For integration solutions requiring B2B, the trading partner agreement must be captured for each trading partner with which the solution will interact. The document should address such B2B topics as the B2B protocol standard used, message formats, message types, partner interactions, contact information, and SLAs. </p>
+  <p>Key performance indicators should be defined that will drive management BAM (Business Activity Monitoring) dashboards. Definition of the KPI parameters and resulting graphs/reports will highlight any extra data they needs to be captured as part of the normal business events.</p>
+  <p>The business events identified in the Requirements Analysis section should be utilized for capacity planning. Useful input for hardware sizing estimates is a table of business events that must be processed by an integration solution. An inventory table of all events should include the following columns at a minimum:</p>
+  <table border="1" title="Inventory Table Columns" summary="This inventory of events table lists the minimum columns that should be included.  The first column lists the column and the second column provides a description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">Column</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Event Name </div></th>
+      <td>A user assigned name for the message event. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Type </div></th>
+      <td>A description of the message type/format (that is, EDI X12 855, CIDX Order Create). </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Average Size </div></th>
+      <td>Average size of the message event. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Transformation Complexity</div></th>
+      <td><p>Transformation complexity indicator:</p>
+          <ul>
+            <li>Low - less than 100 node transformation</li>
+            <li>Medium - 100 to 500 node transformation</li>
+            <li>High - 500+ node transformation</li>
+          </ul>
+          <p>This assignment is subjective and data transformation complexity should be considered.</p></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Source System </div></th>
+      <td>The source system where the business event originates.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Source Protocol </div></th>
+      <td>The transfer protocol (that is, FTP, HTTP, SOAP, AS2) for the source event.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Source Format </div></th>
+      <td>A description of the native format of the source event. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Destination System </div></th>
+      <td><p>The destination system where the event must be delivered.</p>
+          <p>Note: Multiple destination systems may need to be defined.</p></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Destination Protocol</div></th>
+      <td>The protocol to communicate with the destination system.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Destination Format </div></th>
+      <td>The protocol to communicate with the destination system. </td>
+    </tr>
+  </table>
+  <p>Also, for integration solutions that require interfacing with external trading partners, the following information is useful for capturing the volumes required by a B2B solution. This information is typically captured in a spreadsheet.</p>
+  <table border="1" title="Columns for Integration Solutions that Require Interfacing with External Trading Partners" summary="This table lists the useful information (Column) for integration solutions that require interfacing with external trading partners. The first column is the Column and the second column provides a Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">Column</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Partner Name </div></th>
+      <td>Name of partner. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Contact Info </div></th>
+      <td>Contact information for trading partner. Should provide management, development, and support staff.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Exchange Protocol</div></th>
+      <td>RNIF/AS2/Generic</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Document Protocol </div></th>
+      <td><p>RosettaNet, EDI X12, EDI EDIFACT, Custom</p></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Transport Protocol </div></th>
+      <td>HTTP/HTTPS, Email, File/FTP</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Type </div></th>
+      <td>Message types to be handled as defined in the document protocol. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Direction </div></th>
+      <td>Direction of message type (referenced from customer company).</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Volume </div></th>
+      <td><p>Volume of messages; peak times; also should address growth scenarios over 2 to 5 years. </p></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Message Size </div></th>
+      <td>Average message size; largest message size. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Non-Repudiation</div></th>
+      <td>Non-repudiation requirements. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Service Level Agreements </div></th>
+      <td>Time to acknowledge requirements, retry limits. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="left">Security Requirements </div></th>
+      <td>Define security requirements for message exchange. Address MIME and S / MIME. </td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4> <B><A
+name=TA030 id="TA030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_030_DEFINE_INTEGRATION_REQTS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">TA.030 Define Integration Requirements and Strategy</a> </h4>
+  <p>By following the methodology and tasks listed in this SOA Integration Supplemental Guide, practitioners will have a solid ground upon which they can perform requirements analysis and create an integration strategy. For example, practitioners should be able to perform service identification by the ways of top-down domain decomposition and bottom-up event/process tracing. The deliverable for those tasks will be the consolidated version of an Enterprise service portfolio and candidate service table. By performing detailed use case development according to the service table, practitioners will be able to capture the relevant services and deliver use case realizations accordingly. Once you perform the RD tasks listed in this guide, you will then be able to define a clear high-level, definition of the SOA enterprise integration strategy. Even if your project does not require an Enterprise service portfolio, but is a more typical Integration effort, this OUM guidelines should be used by the practitioner to ensure all requirements and strategy are well articulated ahead of actual implementations.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TA090 id="TA090"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_090_DEVELOP_SEC_AND_CONTROL_STRATEGY_OVERVIEW.HTM" target="_blank">TA.090 Develop Security and Control Strategy </a> </h4>
+  <p>Security requirements for integration need to address the following areas:</p>
+  <ul>
+    <li>Services - Define the client authentication and authorization requirements for service access. Services can exist as web services, EJBs, JMS, etc. and appropriate security access requirements need to be defined.</li>
+    <li>Business Process/Orchestration - Similar to services defined above, business processes can exist as services to other clients and applications for enforcement of central business rules. Appropriately exposing these processes to authorized users should be addressed. </li>
+    <li>B2B - Define the partner authentication and authorization requirements.</li>
+    <li>Data Encryption - The requirement to encrypt data applies to all of the previous sections. Certain information such as passwords or Social Security Numbers may need to be encrypted for privacy. Or perhaps the entire message may need to be encrypted. Even if non-sensitive data is being handled, guaranteeing data integrity with the use of digital signatures may also be required. This is typical in B2B integration scenarios. </li>
+  </ul>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=CVG id="CVG"></A></B>DATA ACQUISITION AND CONVERSION (CV) PROCESS GUIDANCE</h3>
+  <p>For most integration projects, Data Acquisition and Conversion tasks are core tasks rather than optional. However, in integration projects, this work is often done for each disparate integration point (whether A2A or B2B) so that there may be dozens of data conversions (often called data mappings in integration projects). In addition, these conversions or mappings are executed in-line every time an integration point is used.</p>
+  <p>Data Acquisition and Conversion for integration projects is a much more extensive aspect of projects than in typical development projects which likely required only a one time batch conversion. In fact, using SOA and relevant support technologies to manage continuous and complex integration data mapping is one of the major justifications for SOA Integration. Each of the following tasks will need to be completed for each integration point.</p>
+  <ul>
+    <li>
+      <h4><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy</a><br>
+          <a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_030_PREPARE_CONVERSION_ENVIRONMENT_OVERVIEW.HTM" target="_blank">CV.030 Define Conversion Environment (Initial Load) </a><br>
+          <a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.040 Design Conversion Components (Initial Load) </a><br>
+          <a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.055 Implement Conversion Components (Initial Load) </a><br>
+          <a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_060_PERFORM_CONV_COMPONENT_UNIT_TEST_OVERVIEW.HTM" target="_blank">CV.060 Perform Conversion Component Unit Test (Initial Load) </a></h4>
+    </li>
+  </ul>
+  <p>You should follow the OUM guidance for these tasks.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,397 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>IM Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[IM] IMPLEMENTATION</h2>
+<!--BeginProcessDesc--><p>Through a number of steps, mostly iterative, the final application is developed within the Implementation process. The results from the Design process are used to implement the system in terms of source code for components, scripts, executables etc. During this process, developers also implement and perform testing on software components.</p>
+<p>Implementation is the main focus of the Construction phase, but it starts early in the Inception phase in order to implement the architecture baseline (trial architecture and prototype). During Transition, it occurs in order to handle any defects or bugs discovered while testing and releasing the system.</p>
+<p>The main work product or output of this process is the final iteration build that is ready to be tested. In addition, the Architecture Description, initially developed in the Business Requirements process and enhanced in the Requirements Analysis , Analysis and Design processes, is also enriched with the Implementation View to create the Architectural Implementation.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/IM_Process.jpg" alt="Implementation Process Flow Diagram" width="710" height="738" border="1" title="Implementation Process Flow Diagram"></p>
+<P> <A 
+href="#TOP">Back to Top</A>&nbsp; </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Depending on your project (e.g., large, complex, etc.), the project manager may designate an Implementation team leader and/or team leaders for the various prototypes being built or even team leaders for development teams. If the project manager designates team leaders, they are responsible for leading their team and reviewing the work products produced by their team. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders. </p>
+<p> The process of developing the system is iterative. The Implementation process starts off with a Conceptual Prototype (IM.005). This is a mockup prototype that contains the functional requirements known at this time, and is done as early as possible in the Inception phase. How the prototype is made depends on the tools you have available, but it may be as simple as using flip charts, whiteboards or presentations. It is important to get a first cut verification on the developers' understanding of the requirements demonstrating what the screens/pages may contain when developed. There might very well be known requirements with lower priorities that have not been prototyped, because the end of the timebox is reached before the completion of these requirements. The prototype is used as a communication means between the Ambassador Users and Developers to determine any further requirements and verify the existing requirements for the development of the new application. Through the prototype, the Ambassador Users can verify the requirements and easily identify shortcomings/misunderstandings.
+<p style="margin-bottom: 0;"> The process continues with two new prototypes, the Functional Prototype (IM.010), and the User Interface Standards Prototype (IM.085). The main purpose of the Functional Prototype is to communicate the functional requirements between the ambassador users and developers. In most situations, the feedback from the Conceptual Prototype leads to updates in both requirements and design, and gives a new starting point for the Functional Prototype. This prototype is delivered towards the end of each iteration in the Elaboration phase, and if possible is preferably a fully generated prototype containing the functional requirements known at the time based on the decisions made during the workshops. </p>
+<p>The main purpose of the User Interface Standards Prototype is to agree how the new application should look in general terms, and what kind of general features should be used. The User Interface Standards Prototype is validated by the ambassador users, and other participants that are familiar with corporate standards. The result of the prototype should feed into the projects Design and Build Standards (DS.050). </p>
+<p> The next task is another prototype, the Architectural Foundation (IM.020). This task should start as early as possible during the Elaboration phase. The Architectural Foundation has a different focus than the previous ones, namely to address architectural design decisions. What is prototyped depends on the type of system that should be built, and where the architectural challenges may be found. However, the prototype usually takes the form of ideas on how the major components should be built. It may also be used to test the integration of technical products and services to be used for the system. The purpose of the prototype is to mitigate technological risks that may be encountered. The biggest technological risks are inherent in how the components of a design fit together rather than in the components themselves. The prototype is discussed with the key customer representatives, and the outcome of this discussion provides the input for the Construction phase. The outcome can be to add new requirements, to add more detail, or may even result in changing the existing requirements or tools and technologies to be used. </p>
+<p> When moving into the Construction phase, the system is developed through a number of predefined iterations. We start with updating the Architecture Description that was last updated in the Design process (DS.040) with the implementation view, also called the code view. The code architecture view contains files and directories. Modules and interfaces from the module view are partitioned into source files in a particular programming language. The source files are organized into directories. This document will be updated throughout the process whenever necessary. When the Architectural Implementation has been defined, you start planning the system integrations required by the current iteration as a sequence of builds. This is the planning part of the Integrate Services (IM.080) task. </p>
+<p> During the Implement Database (IM.040) task, the physical database is produced based on the Logical Database Design that was created in the Design process (DS.150). During the Implement Components (IM.050) task, the actual components of the application are built. A component is the physical packaging of model elements, such as design classes created in the Design process. Components have a trace relationship to the model elements they implement. Some standard types of components include executables, files containing source code, library etc. This task is immediately followed by the Perform Component Review (IM.060) task where the components are unit tested, and a peer-review is performed, and where the main purpose is to discover errors in the components. </p>
+<p> When the components are complete for a build, they are integrated into the logical assembly of components (IM.070) to which they belong. A logical assembly, can consist of components, services, interfaces, business rules and other logical assemblies of components from previous builds. An implementation logical assembly is manifested by a packaging mechanism in the Implementation environment, for example, a package in java. This task ensures that the role and requirements of a logical assembly (use cases and scenarios) are identified as part of the iteration and correctly implemented.</p>
+<p> Finally, all the components and services are integrated into the build of the system that should be delivered as part of an iteration (IM.080). This activity focuses on creating an integration build plan describing all the (smaller) builds required in an iteration including the services (for example, middleware, system services). Each build then expands upwards to the application-specific layers and is integrated according to plan. For each build, the functionality that should be implemented and the parts of the implementation model that will be affected are described. The system integrator selects the right versions of the code (corresponding to the components and services within the iteration), compiles them and puts them together. Software should be built incrementally in manageable steps so that each step yields small integration or test problems. The executable version of the software is then subject to integration tests. </p>
+<p> How you define your implementation iterations, and how intertwined the process will be with the other processes (RD, RA, AN and DS) depends mainly on the size of the system to be built, the complexity of the application, and the kind and number of skilled resources available (both for the customer and developer organizations). Iterations can roughly be defined as either growing, or additional. A growing approach focuses on delivering the same components through a number of iterations, with each iteration providing more detail and refinements to each component. An additional approach focuses on adding different (new) components for each iteration. Most often you will use a combination of the two approaches, but with one approach providing the main focus, or one main focus per business use case. </p>
+<p style="margin-bottom: 0;"> What main approach you choose again depends on the project situation. For example, for very complex or completely new (uncertain) business areas, it may be difficult to use the additional approach as you need some iterations to explore and investigate before you find the final solution. On the other hand, for simple business areas where the requirements are clear and unambiguous, the additional approach can be used with success. It is likely, that the more the growing approach is used, the more intertwined the Implementation process will be with the other processes as the nature of that type of iterations is to get feedback on both requirements, analysis and design, which then again should be reflected in the other processes. In that situation, all the new/changed requirements must be evaluated and given MoSCoW priorities so that it can be brought into the new development iteration. At the end of the next incremental iteration, the ambassador user again verifies whether the accepted changes have been included, and also verifies whether the requirements are complete and correct. Naturally, this does not go on indefinitely. The number of iterations must be decided up front, and there should not be too many to ensure that the reviewers keep focused to find gaps and inconsistencies as soon as possible. </p>
+<p style="margin-top: 0;"><br>
+  Before choosing which approach to use, you should also be aware that the additional approach is nothing else than a number of mini-waterfall cycles, as you will not refine the same components, just build smaller bits before releasing them. This means that if you use this approach partly or fully, you will not have the possibility to incorporate changes to already developed components as part of the implementation process. </p>
+<p> Within each iteration, the developers develop components according to the given MoSCoW priorities. The developer has a certain amount of time (a timebox) to deliver the next version. It is therefore vital that the priorities are properly managed as there is usually not enough time to develop all functionality. Ambassador Users tend to classify everything as a Must have, which results in an impossible job for the developers as they cannot actually prioritize their job. This may result in the undesired situation that not all of the Must Have functionality can be developed, while some less important parts have. This principle must be completely understood by the Ambassador Users, as well as the developers. The developers must be able to trust the priorities they have been provided. </p>
+<p> Provide a fixed set of components, including the priorities for those components to each developer, so that the developer can work as independently as possible during a set timebox. However, monitor that the effort between each developer is similar in order to prevent one developer struggling to complete the Must have requirements, while another is already working on the Could have components. Also, make sure that developers do not invent functionality because they think that something would be really nice for the users.</p>
+<p><span class="style7">*This process has <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#IM" target="_blank">Application Implementation supplemental process guidance</a>.</span></p>
+<p><A
+href="#TOP">Back to Top</A>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>Application Implementations </h4>
+<p>This process has supplemental guidance that should be considered if you are doing an application implementation. Use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a> to access all application implementation supplemental information. You can also go directly to the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#IM" target="_blank">Implementation process supplemental guidance</a>.</p>
+<p style="margin-bottom:0;"><A 
+href="#TOP">Back to Top</A>&nbsp;</p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Implementation process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.005.1</div></th>
+    <td><a href="../030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop Conceptual Prototype&nbsp;</a></td>
+    <td>Conceptual Prototype</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.005.2</div></th>
+    <td><a href="../030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop Conceptual Prototype&nbsp;</a></td>
+    <td>Conceptual Prototype</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.007.1</div></th>
+    <td><a href="../030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Development Environment</a> </td>
+    <td>Development Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.010</div></th>
+    <td><a href="../030_TASK/IM_010_DEVELOP_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop Functional Prototype</a></td>
+    <td>Functional Prototype</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.020</div></th>
+    <td><a href="../030_TASK/IM_020_DEVELOP_ARCH_FOUNDATION_OVERVIEW.HTM" target="_blank">Develop Architectural Foundation </a></td>
+    <td>Architectural Foundation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.040.1</div></th>
+    <td><a href="../030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database</a></td>
+    <td>Implemented Database&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.053.1</div></th>
+    <td><a href="../030_TASK/IM_053_REGISTER_SERVICES_OVERVIEW.HTM" target="_blank">Register Services </a></td>
+    <td>Populated Services Registry </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.055.1</div></th>
+    <td><a href="../030_TASK/IM_055_PERFORM_BUS_RULES_IMPLEMENTATION_OVERVIEW.HTM" target="_blank">Perform Business Rules Implementation (Rules Engine)</a> </td>
+    <td>Implemented Business Rules (Rules Engine) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.060.1</div></th>
+    <td><a href="../030_TASK/IM_060_PERFORM_COMPONENT_REVIEW_OVERVIEW.HTM" target="_blank">Perform Component Review</a> </td>
+    <td>Component Review Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.085</div></th>
+    <td><a href="../030_TASK/IM_085_DEVELOP_USER%20INTERFACE_STANDARDS_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop User Interface Standards Prototype</a> </td>
+    <td>User Interface Standards Prototype</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.007.2</div></th>
+    <td><a href="../030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Development Environment</a> </td>
+    <td>Development Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.040.2</div></th>
+    <td><a href="../030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database</a></td>
+    <td>Implemented Database&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.050</div></th>
+    <td><a href="../030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">Implement Components</a>&nbsp;</td>
+    <td>Implemented Components&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.053.2</div></th>
+    <td><a href="../030_TASK/IM_053_REGISTER_SERVICES_OVERVIEW.HTM" target="_blank">Register Services</a></td>
+    <td>Populated Services Registry </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.055.2</div></th>
+    <td><a href="../030_TASK/IM_055_PERFORM_BUS_RULES_IMPLEMENTATION_OVERVIEW.HTM" target="_blank">Perform Business Rules Implementation (Rules Engine)</a></td>
+    <td>Implemented Business Rules (Rules Engine) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.060.2</div></th>
+    <td><a href="../030_TASK/IM_060_PERFORM_COMPONENT_REVIEW_OVERVIEW.HTM" target="_blank">Perform Component Review</a></td>
+    <td>Component Review Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.070</div></th>
+    <td><a href="../030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">Assemble Components</a> </td>
+    <td>Assembled Components </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.080</div></th>
+    <td><a href="../030_TASK/IM_080_INTEGRATE_SERVICES_OVERVIEW.HTM" target="_blank">Integrate Services</a> </td>
+    <td>Integrated Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.090</div></th>
+    <td><a href="../030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">Create Installation Routines</a> </td>
+    <td>Installation Routines </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Implementation process are:</p>
+<ul>
+  <li>Validate the requirements via delivered prototypes and components to refine these work products to optimally meet the business requirements within the set project timeframe.</li>
+  <li>Plan iterations, their builds and the system integrations required for each iteration. </li>
+  <li>Implement the design classes and components through well-written and tested components that meet the functional and non-functional requirements according to the MoSCoW priorities. </li>
+  <li>Document the component design in an accessible way, facilitating and supporting future maintenance of the system. </li>
+</ul>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Implementation process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="15%" scope="col">Name</th>
+    <th width="82%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application / Product Specialist</td>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Perform services registration. If possible, you may want use a business analyst with extensive SOA architecture experience. Perform rules implementation. If possible, you may want use a business analyst with extensive business rules experience. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Determine and set up the database schema structure, create and set up database. Preserve database integrity, tune performance, give advice, control allocation of disk space, monitor space usage, and generate DDL scripts.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DD</th>
+    <td>Database Designer</td>
+    <td>Create physical database design, assist in analyzing column usage, define constraints, create the authorization scheme, specify initial database configuration, and provide volume estimates.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DES</th>
+    <td>Designer</td>
+    <td>Design graphical interface for the Conceptual Prototype.&nbsp;Ensure that the Functional Prototype is in line with the generic graphical user interface design. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Lead the team responsible for building the Conceptual Prototype. Create the Conceptual Prototype. Lead the team responsible for building the Functional Prototype. Create the Functional Prototype and ensure that the most useful use cases are prototyped within the given timeframe. Build the prototypes that make up the Architectural Foundation. Create database objects and database object logic for both the logical and physical database design. Create database object test scripts and procedures.&nbsp; Test the database objects and the database object logic. Review Design Model mapping with database. Preserve database integrity, tune performance, give advice, control allocation of disk space, monitor space usage, and generate DDL scripts. Lead the team of developers and implement the components. Lead the team of developers and implement the component interfaces and help define subsystem integration constraints. Lead peer-reviews of the packages. Perform code review on components. A lead application developer may be designated to review the components from the point of view of design. Create the Installation Routines.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">QM</th>
+    <td>Quality Manager </td>
+    <td>Review components from the point of view of testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td>Prepare parts of the application environment.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Assist in the creation of the graphical interface for the prototypes by providing information about business rules and requirements and generic rules and requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td><span class="style7">Participate in Development Environment setup. </span>Lead the development of the prototypes that make up the Architectural Foundation. Participate in the peer-review of implemented components in order to assure adherence to the architecture. Coordinate the offshore software developers and the technical activities related to the implementation the defined architecture. Manage issues related to services integration. Plan and subsequently build the system in each iteration.&nbsp;You may wish to use a system architect who specializes in system integration. Lead the team responsible for building the User Interface Standards Prototype. Build the User Interface Standards Prototype.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA (IA) </th>
+    <td>System Architect <br>
+    (Information Archtiect) </td>
+    <td>Participate in the peer-review of the database in order to assure adherence to the Information Architecture. Preserve database integrity, tune performance, give advice, control allocation of disk space, monitor space usage, and generate DDL scripts when offshore resources are utilized. Preferably, this should be done by a system architect that specializes in Information Architecture.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Assist in interpreting requirements, and provide input to the creation of the prototypes, including interpretation of relevant business rules. Validate the prototypes that make up the Architectural Foundation and provide information about existing system. Assist in finding existing graphical user interface rules and provide information for setting up a set of suggested rules.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td><span class="style7">Ensure that physical resources are in place in time, and that proper software licenses are obtained. </span></td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p> The critical success factors of the Analysis process also apply to the Implementation process. Additional critical success factors are:
+<ul>
+  <li><b>A Well Thought Out Build and Iteration Plan:</b> It is important, up front, to determine the number of iterations through which the system should be delivered in the Construction phase. It must be clear what kind of approach should be used (growing, additional, or a combination), and which requirements are included in each iteration. If the system to develop is large, you may want to split the build into a number of partitions that each go through a number of iterations. For each iteration, a build plan should be created. It is recommended to build the iteration through a number of smaller manageable builds. </li>
+  <li><b>Good Understanding of Prioritizing/Timeboxing Principle by Both Developers and Users:</b> The users that determine the priorities must understand the MoSCoW principle and the effect of setting priorities. It is important that they understand that there is a large risk of an undesired effect if they prioritize too much as Must have, as the developer will not know what functionality is the most critical, and may therefore start with developing less critical components. On the other hand, the developer must understand the importance of developing according to the given priorities. If the developer sees dependencies/links with lesser prioritized requirements, this should be flagged. &nbsp; </li>
+  <li><b>Visible Dependencies:</b> For each change or new requirement that may come up during this process, it is important to determine the impact of the change. This task is made easier by keeping visible dependencies, from the lowest level, all the way up to the Use Case Model. </li>
+  <li><b>Adequate Developers Skills (Tools, etc.):</b> The skills of the development team are especially critical in this process. OUM focuses on keeping the same resources throughout the life cycle of the project. Therefore, these resources need a combined set of skills so that they can take on different roles, as they become appropriate for each phase and process. OUM is new to many developers who may feel uncomfortable without the structures and procedures of a traditional (waterfall) development approach. Developers need to deliver quickly, meeting fixed deadlines, often from minimal requirements. Because a OUM project is focused on quick delivery, there is normally no time for training on the job. If there are inexperienced OUM participants on the project, there should be at least one experienced practitioner (who is not on the critical path) coaching. It is also important that the developers know the capabilities and limitations of the available technology. </li>
+  <li><b>Clear Focus on Delivering Quality Solutions at Each Iteration in Order to Maintain the Confidence of the User Community:</b> When delivering small builds in iterations, using timeboxes, there is a strong focus on delivering quickly, and it is tempting to make short cuts just to be able to deliver. Keeping focus on delivering quality solutions throughout the process, and in particular during the peer-reviews prevents an &quot;I'll fix that later&quot; mentality.</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

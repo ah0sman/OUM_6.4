@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TS Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[TS] TRANSITION</h2>
+<!--BeginProcessDesc--><p> The goal of the Transition process is to install the solution (which includes providing installation procedures) and then take it into production. It begins early in the project by defining the specific requirements for cutover to the new application system. It then includes tasks to carry out the elements of that strategy such as developing an Installation Plan, preparing the Production Environment, performing the cutover, and decommissioning any legacy systems. Legacy system decommissioning is performed when a legacy system exists that is being replaced by the new solution that is now in production.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/TS_Process.jpg" alt="Transition Process Flow Diagram" width="710" height="593" border="1" title="Transition Process Flow Diagram"></p>
+<P><A 
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>During the Transition process, we focus on installing the solution (which includes providing installation procedures) and then going production. It begins early in the project by defining the specific requirements for cutover (TS.020.1 and TS.020.2) to the new application system. It then includes tasks to carry out the elements of that strategy such as developing an Installation Plan (TS.030), preparing the Production Environment (TS.050), performing the cutover (TS.060), and decommissioning any legacy systems (TS.070).
+<p>In a project using the OUM approach, the business organization becomes familiar with, and progressively accepts, the new system as it is developed. Transfer of knowledge about the system to the business staff is an integrated part of the development process. The Transition team should involve the same ambassador users who have been involved from the start.
+<p>The Production/Hosting Environment (TS.050), which is designed in the Technical Architecture process, is constructed as part of the Transition process. This includes installation and configuration of all servers, network hardware, operating systems, test and monitoring systems in time to accommodate launching of the new system on the Internet.
+<h4>Production Preparation</h4>
+<p>The Transition process has the following requirements in the period before production starts:
+<ul>
+  <li> continued use of the problem reporting and tracking system</li>
+  <li> close monitoring and resolution of risks and issues</li>
+  <li> a common commitment to a successful production start</li>
+</ul>
+<p>When an existing system is being replaced, there are three techniques for going production.
+<ul>
+  <li> phased</li>
+  <li> parallel</li>
+  <li> replacement</li>
+</ul>
+<p>In the <b>phased</b> technique, partitions of the new system enter production use one at a time, while the legacy system's corresponding subsystems are shutdown in the same sequence. This allows for a gradual move to the new system causing disruption in fewer internal user groups at once. This is not common but may be appropriate for some solutions which have clearly-defined partitions that are not interdependent. This approach can also allow newly-trained users to use their part of the system while other users are still being trained. A downside to this technique is that you may need to develop temporary solutions to make the old and new parts work together as a whole.
+<p>In the <b>parallel</b> technique for going production, the new system goes production while the old system is still running. This is not a common approach for Internet solutions that replace another Internet solution as it would be very difficult to keep two different stores running simultaneously, particularly at the same URL. However, for other types of replacements, this might be an option. The users use both systems at once. This can cause consistency problems if data is not consistently entered in both systems. However, running the legacy system in a read-only mode is a common practice. This also contributes to lowering risk as there is a backup option available if something should go wrong.
+<p>Another parallel option is to pick a single user, a group of users or a few officers to be a pilot for the new system, while other groups still use the old system. This may be a good option when there is a large number of user groups that work as separate units. This may also be a benefit when converting data as you may not need to convert all data immediately, only the data that is relevant for that user group. A downside of this method is that you may need to build new interfaces between the old and the new system, similar to the phased technique.
+  
+<p>With the <b>replacement</b> technique, the legacy system is shut down when the new system goes production. This saves resources since you do not need both the new and old systems at the same time. This is riskier than the other two options because it means that you do not have access to the old system if anything should go wrong. The Cutover Strategy could provide for a series of test launches where the new system replaces the old for short periods of time.
+<p>The type of rollout that you plan affects the design of the data conversion programs. A phased rollout requires data to be converted in steps &#8212; a different problem than converting all data at once. If the Cutover Strategy is not stable, it is better to proceed with a phased Transition approach, either by business unit or geographical location. This approach still leaves open the possibility of a replacement rollout.
+<p> <A 
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Transition process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.020.1</div></th>
+    <td><a href="../030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">Define Cutover Strategy</a></td>
+    <td> Cutover Strategy</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.020.2</div></th>
+    <td><a href="../030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">Define Cutover Strategy</a>&nbsp;</td>
+    <td> Cutover Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.030</div></th>
+    <td><a href="../030_TASK/TS_030_DEVELOP_INSTALLATION_PLAN_OVERVIEW.HTM" target="_blank">Develop Installation Plan</a>&nbsp;</td>
+    <td> Installation Plan&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.040</div></th>
+    <td><a href="../030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">Design Production Support Infrastructure</a> </td>
+    <td>Production Support Infrastructure Design </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.050</div></th>
+    <td><a href="../030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">Prepare Production Environment</a></td>
+    <td> Production Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.052</div></th>
+    <td><a href="../030_TASK/TS_052_IMPLEMENT_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">Implement Production Support Infrastructure</a> </td>
+    <td>Production Support Infrastructure </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.054</div></th>
+    <td><a href="../030_TASK/TS_054_PERFORM_PRE_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Perform Pre-Upgrade Steps</a> </td>
+    <td>Pre-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.055</div></th>
+    <td><a href="../030_TASK/TS_055_UPGRADE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">Upgrade Production Environment</a> </td>
+    <td>Upgraded Production Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.056</div></th>
+    <td><a href="../030_TASK/TS_056_PERFORM_POST_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Perform Post-Upgrade Steps</a> </td>
+    <td>Post-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.057</div></th>
+    <td><a href="../030_TASK/TS_057_REVISE_APPLICATION_SETUPS_OVERVIEW.HTM" target="_blank">Revise Application Setups</a> </td>
+    <td>Configured Applications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.058</div></th>
+    <td><a href="../030_TASK/TS_058_VERIFY_PROD_READINESS_OVERVIEW.HTM" target="_blank">Verify Production Readiness</a> </td>
+    <td>Production-Ready System </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.060</div></th>
+    <td><a href="../030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">Go Production</a></td>
+    <td>System In Production</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.070</div></th>
+    <td><a href="../030_TASK/TS_070_SHUT_DOWN_LEGACY_SYSTEM_OVERVIEW.HTM" target="_blank">Shut Down Legacy System</a></td>
+    <td>Legacy System Shut Down</td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Transition process are:
+<ul>
+  <li> Install the new system into the Production Environment system.</li>
+  <li> Set up support functions.</li>
+  <li> Take the new system smoothly into production .</li>
+</ul>
+<p><A 
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Transition process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="4%" scope="col">Role ID </th>
+    <th width="12%" scope="col">Name</th>
+    <th width="84%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>For application implementations, you may need a business analyst to set up and configure the application software. If not doing an application implementation, you may not need a business analyst and you can allocate this effort equally to the system administrator, database administrator and system architect. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Define installation procedures for installing the database and set up and configure the production database. Ensure that all users have proper access to the database. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Define installation procedures for installing the application software.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">QM</th>
+    <td>Quality Manager </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td> Install and configure system software, tools and application code. Coordinate and manage the Go Production effort and decommission the existing system.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst</td>
+    <td> Define Cutover Strategy, identify resources, and plan for cutover. Gain information from users, technical and managerial staff and prepares the Cutover Strategy. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td> Review installation procedures and provide input. Set up and configure the production application server and ensure that all users have proper access to the application server. Coordinate and manage any offshore Go Production effort. Decommission any offshore existing system. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TE</th>
+    <td>Tester</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TRS</th>
+    <td>Training Specialist </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BLM</th>
+    <td>Business Line Manager </td>
+    <td> Provide information for the Cutover Strategy. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager</td>
+    <td>Provide information for the Cutover Strategy. Review possible cutover techniques and resource requirements. Ensure availability and commitment of personnel, and the availability of hardware, software and facilities.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">ISM</th>
+    <td>IS Manager </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">OS</th>
+    <td>IS Operations Staff </td>
+    <td> Define installation procedures for installing hardware and system software and install and configure hardware, network, etc.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td> Provide information for the Cutover Strategy. Start providing production support for the new application system. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">USR</th>
+    <td>User</td>
+    <td> Provide information throughout the process. Use the new application system.</td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are as follows:
+<ul>
+  <li><b>Project Team Commitment to the Time and Resources Required to Produce Transition:</b> The Transition process may be the most critical part of the whole project, and you are dependent on the customer's own resources to make it a successful Transition into Production. Ensure that the customer chooses a time to go into production where everyone required is available.</li>
+  <li><b>On Time and Successful Delivery and Installation of Externally Provided Components (Hardware, Software):</b> Naturally, it is critical that both the hardware and software that should be used in Production is available and installed on time. Ensure that the customer makes preparation for any purchase/renting of the Production Environment on time, and plan sufficient time for installing the application. </li>
+  <li><b>Available and Committed Support Staff Who Are Able and Willing to Implement the New Solution:</b> When the new system goes into Production, the support staff must be prepared for this task. Ensure that the support staff is appointed at an early stage in the project so that they get proper training before the system goes into Production. </li>
+  <li><b>Committed User Involvement and Sense of Ownership:</b> Users have been involved during the whole project and should feel an ownership of the new application. However, there is a larger user mass out there that should use the system. The customer's own users should be informed well in advance about what is coming, why it is coming, and about decisions that have been made and why, to ensure that there are no surprises. This is definitely a challenge if a new system is replacing an old one. </li>
+  <li><b>On Target Technical Architecture to Support the Expected Data Volumes and Number of Users:</b> The chosen technical architecture must reflect the expected data volumes and number of users. A well thought through capacity plan must reflect this. If the volumes are uncertain or are expected to grow, you should consider building a technical architecture that is easily expanded. </li>
+  <li><b>Successful Testing and Validation:</b> The system should not go into Production unless it has been properly and successfully tested. Ensure that sufficient test cases are built and run through and that critical bugs are fixed. </li>
+  <li><b>Adequate Slack Time to Allow for Unexpected Situations:</b> This is the time where &quot;everything that can go wrong, will go wrong.&quot; The point is that there are always unexpected fallbacks. Therefore you should have a good contingency plan. </li>
+  <li><b>Well-Understood Problem Tracking and Resolution System:</b> When the system goes into Production, you should use some mechanism for the users to get support and to report problems. This mechanism must be well understood by both the users and the support staff. </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

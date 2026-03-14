@@ -1,0 +1,674 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Reference Architecture Planning Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Reference Architecture Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#MG">Mobilization Guidance</option>
+                            <option value="#BITDG">Business and IT Drivers Guidance</option>
+                            <option value="#CRG">Current Reality Guidance</option>
+                            <option value="#FVG">Future Vision Guidance</option>
+                            <option value="#RG">Roadmap Guidance</option>
+                            <option value="#PDG">Post-Delivery Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("M");
+  Effect.BlindDown("MM");
+  Effect.BlindDown("DA");
+  Effect.BlindDown("MS");
+  Effect.BlindDown("PDP");
+  Effect.BlindDown("PD");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("M");
+  Effect.BlindUp("MM");
+  Effect.BlindUp("DA");
+  Effect.BlindUp("MS");
+  Effect.BlindUp("PDP");
+  Effect.BlindUp("PD");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_RAP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) REFERENCE ARCHITECTURE PLANNING SUPPLEMENTAL TASK GUIDELINES</h2>
+<p> This document contains OUM supplemental task guidance for the execution of a service based on the SOA Reference Architecture Planning View. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. </li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overviews.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for the areas.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">SOA Reference Architecture Planning - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MG">Mobilization</a></div></th>
+    </TR>
+  <tbody id="M">
+    <TR valign="top">
+      <TD valign="top"><a href="#BT030">PJM.BT.030 Identify Project Stakeholders </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">PJM.BT.030 Identify Project Stakeholders </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER015">ER.015 Conduct Enterprise Maturity Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015 Conduct Enterprise Maturity Assessment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#SM010">PJM.SM.010 Define and Confirm Scope </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">PJM.SM.010 Define and Confirm Scope </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER020">ER.020 Determine Envision Engagement Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER030">ER.030 Set and Agree on Plan for Envision Engagement</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER050">ER.050 Validate and Agree on Envision Engagement Plan </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope= "rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#BITDG">Business and IT Drivers</a></div></th>
+  </TR>
+  <tbody id="MM">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0501">PJM.STM.050.1 Conduct Team Orientation</a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA010">BA.010 Identify Business Strategy </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1801">ER.180.1 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#CRG">Current Reality </a></div></th>
+  </TR>
+  <tbody id="DA">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0502">PJM.STM.050.2 Conduct Team Orientation</a></TD>
+      <TD><DIV align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA010">EA.010 Review Architecture Principles, Guidelines and Standards </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA030">EA.030 Identify Current Enterprise Architecture </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP010">IP.010 Inventory Projects </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_010_INVENTORY_PROJECTS_OVERVIEW.HTM" target="_blank">IP.010 Inventory Projects </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1802">ER.180.2 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#FVG">Future Vision </a></div></th>
+  </TR>
+  <tbody id="MS">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0503">PJM.STM.050.3 Conduct Team Orientation</a></TD>
+      <TD><DIV align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><p><a href="#EA075">EA.075 Develop Technology Reference Architectures</a></p></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1803">ER.180.3 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#RG">Roadmap</a></div></th>
+  </TR>
+  <tbody id="PDP">
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#EA060">EA.060 Identify Architectural Gaps and Improvement Options </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#STM0504">PJM.STM.050.4 Conduct Team Orientation</a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#IP040">IP.040 Identify Candidate Projects </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#ER170">ER.170 Develop Future State Transition Plan </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#BA0171">BA.017.1 Determine Metrics Collection and Reporting Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.1 Determine Metrics Collection and Reporting Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1804">ER.180.4 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left>
+          <div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></div>
+        </div>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#PDG">Post Delivery </a></div></th>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#CMM040">PJM.CMM.040 Document Lessons Learned </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">PJM.CMM.040 Document Lessons Learned </a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MG id="MG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">MOBILIZATION GUIDANCE</a></h3>
+<p>During Mobilization the foundation for the engagement is made. This includes scoping of the engagement, determining of the level of effort, and identifying enterprise participants and scheduling constraints. It also includes the identification and discovery of relevant existing enterprise documentation, the identification and assignment of the required enterprise resources, including the level of effort required and schedule for these enterprise resources.</p>
+<p>Customization of this view or combining elements of this view with other SOA views should be done at this point of time. In fact, if multiple views are combined, then the Mobilization Phases of each view are effectively combined in order to fully scope, schedule, and staff the engagement.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="BT030" id="BT030"></a><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">BT.030 Identify Project Stakeholders </a></h4>
+<p>The main focus is on the second step of the task,&ldquo;Identify customer (end user) stakeholders.&quot;</p>
+<p>IDENTIFY CUSTOMER PARTICIPANTS AND AVAILABILITY</p>
+<p>Engagements based on this view produces results that are highly tailored to the individual organization. The architecture and Roadmap require frequent input and discussion from various stakeholders across the organization. As such, the success of this type of engagements depends greatly on the availability of key participants and their ability to elaborate on business and technical issues that affect the outcome. At this point, it is necessary for the organization to identify by name the participants and their availability. Commencement of the engagement is dependent upon the availability of the participants.</p>
+<p> The key enterprise participants represent stakeholders of various disciplines. Each has a key role in determining the architectural vision, the drivers that shape the vision, and an understanding of how current and future projects may help realize that vision. The three types of stakeholders are:</p>
+<ul>
+  <li><b>Business Executives</b> &ndash; The business stakeholders are responsible for speaking with the &ldquo;voice of the business.&rdquo; They represent the affected business unit(s). They must describe the business goals and drivers, expectations for SOA, and what is needed from IT. There must be at least one business stakeholder involved and, ideally, there would be one from each business unit affected by the architecture.</li>
+  <li> <b>IT Executives</b> &ndash; The IT stakeholders are responsible for providing information about IT drivers and expectations for SOA, the organization and governance model, funding models, and details of in-flight and planned projects. There must be at least one IT executive involved. If the business consists of multiple IT organizations, then representation from each organization affected by the architecture is recommended.</li>
+  <li> <b>Enterprise Architecture</b> &ndash; The enterprise architecture group is responsible for providing information about current enterprise architecture and desired architectural direction. It will include items such as security infrastructure, databases, network topology, integration strategies, technologies, products, etc. Not all organizations have a physically distinct enterprise architecture group that sets direction across the organization&rsquo;s entire IT environment. The function may be satisfied by a loosely assembled group of senior portfolio or project architects. In this case, it is important to have adequate representation to achieve buy-in from all project teams that will be affected by the architecture.</li>
+</ul>
+<p>The following Participation Matrix summarizes, by phase, the activities in which each participant may be involved. Red outlined boxes indicate that the stakeholder plays a primary role in that area of the engagement. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_BT030_CPM.PNG" width="772" height="318" title="Example Participation Matrix summarizing, by phase, the activities in which each participant may be involved. Red outlined boxes indicate that the stakeholder plays a primary role in that area of the engagement. "></p>
+<p>Basically, the engagement begins with a focus on defining business and IT drivers, and transitions into a more technical focus. Therefore, availability of business and IT executives is most important up front. There is more overall involvement required from the technical audience, but the technical steps tend to follow the business workshops.</p>
+<p> <b>Business executives (or IT Liaisons)</b> must be available to participate in interviews or workshops during the (Business and IT Drivers area of delivery and be available to review the results later during the same area. The interview/workshop is expected to be up to a half day in length, and ideally all business executives attend together. The final workshop may take another half day depending on the number of participants and time it takes to reach consensus. Beyond this area, business executives are encouraged to attend the final presentations of each subsequent area.</p>
+<p> <b>IT executives</b> are primarily involved in interviews or workshops in the first two areas of the engagement. The workshops could range from 4-8 hours each, depending on the depth of material covered. Optionally, IT executives may participate in Future Vision architecture workshops. They are also encouraged to attend the final presentations of each subsequent area.</p>
+<p> The <b>enterprise architecture</b> group is instrumental to the completion of Current Reality, Future Vision, and Roadmap. They will be involved in a series of workshops, and will take part in the initial elaboration and final review of delivery materials. Other than attending the initial and final workshops, participation is recommended, but not essential, in the Business and IT Drivers area.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER015" id="ER015"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015 Conduct Enterprise Maturity Assessment</a></h4>
+<p>During this type of engagement, the maturity assessment is about conducting an assessment to determine the SOA maturity. Consider having the organization complete a SOA Self Assessment.</p>
+<p> Enterprise representatives assigned to the SOA Reference Architecture engagement should take the SOA Self Assessment during Mobilization. The findings are then analyzed and synthesized prior to the start of the Business and IT Drivers area. The results are used to help determine the length of the engagement and to better understand the organization&rsquo;s strengths and weaknesses with regards to SOA.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=SM010 id="SM010"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></h4>
+<h5>Determine Project Requirements and Work Products</h5>
+<p>Review the following guidance for ER.020, Determine Envision Engagement Strategy and ER.030, Set and Agree on Plan for Envision Engagement for how engagements are run and what kind of work products should be expected.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><a name="ER020" id="ER020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy</a><br>
+    <a name="ER030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></h4>
+<p>During Mobilization, you should determine the strategy for the engagement and make the detailed plan. Below are some guidelines for each area of the engagement.</p>
+<h5>Mobilization</h5>
+<p>Mobilization is designed to help ensure a successful delivery of the SOA Reference Architecture engagement. It is primarily performed by the lead enterprise architect, but may include other team members as needed. The intent of this area is to identify enterprise participants and their scheduling concerns and to develop a better understanding of the level of effort required to deliver the service for a particular organization. The high-level workflow of Mobilization is shown below.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_MOB_WF.PNG" alt="High-Level Mobilization Workflow" width="510" height="148" title="High-Level Mobilization Workflow"></p>
+<p>The color lines indicate a specific area of expertise or competency that is required in multiple areas of the engagement. A number of roles would fit into one of these. Using this kind of color-coding, including a name indicating the competency it represents, provides the ability to divide effort between multiple people based on competency. Such a colored line is later referred to as a competency swimlane. Each person belonging to a competency swimlane can easily determine where there is required effort for each area of the engagement. </p>
+<h5>Business and IT Drivers</h5>
+<p> As the reference architecture defines a future state vision, it is important for that vision to satisfy the needs and objectives of the business and IT. The purpose of this area is to determine what those needs and objectives are. During the Business &amp; IT Drivers area executives from the Lines of Business (LOB), and IT department(s) are interviewed to get their perspective on drivers that might affect future vision enterprise architecture. It is also a good opportunity to discuss SOA and how they perceive its effects on the company. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_BITD_WF.PNG" alt="High-Level Business and IT Drivers Workflow" width="509" height="216" title="High-Level Business and IT Drivers Workflow"></p>
+<p>This area primarily involves persons from the Business competency swimlane since the focus is on business and IT drivers. Other than the engagement kickoff workshop, which is the primary responsibility of people from the engagement lead enterprise architect competency swimlane, all other activities are mostly related to the Business competency swimlane. People from the Technical Infrastructure competency swimlane may participate in the kickoff workshop, but are not required for any other activity in this area.</p>
+<h5>Current Reality</h5>
+<p>The purpose of this area is to obtain an understanding of the current state of IT. Topics of interest span both technical and business concerns. From a technical perspective, you collect information on current enterprise architecture, including key systems, infrastructure, and security, delivery channels, as well as development and operations and management technologies, and deployed products. In addition, you interview IT executives regarding the current and future projects.</p>
+<p> The results of this area are formalized into a Current Reality Definition document, and an executive level presentation. Information about the existing enterprise architecture and current and future projects will factor into the Roadmap document.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_CR_WF.PNG" alt="High-Level Current Reality Workflow" width="542" height="369" title="High-Level Current Reality Workflow"></p>
+<p align="left">Following the kickoff meeting, the people from the Business and Technical Infrastructure competency swimlanes are involved in the information gathering activities. Once the initial results are gathered and formalized, the engagement lead enterprise architect analyzes the findings, develops the draft of the current state work product and prepares for the workshop to finalize findings. After the workshop, the engagement project manager prepares and delivers the executive presentation to complete the Current Reality area. </p>
+<h5 align="left">Future Vision </h5>
+<p align="left">The purpose of Future Vision area is to define a future vision for IT based on SOA. The vision should be traceable to the business drivers, IT objectives, anticipated SOA benefits, and architecture principles that have already been defined, as well as those that arise as a result of workshops conducted during this area. The output of this area is the SOA Reference Architecture document, which describes the vision and the factors used to create it.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_FV_WF.PNG" alt="High-Level Future Vision Workflow" width="542" height="273" title="High-Level Future Vision Workflow"></p>
+<p align="left">The basic formula to arrive at the Future Vision is:</p>
+<ol>
+  <li> Business drivers should influence IT objectives.</li>
+  <li> Business drivers and IT objectives should be used to influence the prioritization of SOA benefits.</li>
+  <li> Architecture principles and guidelines should be established to define SOA for the organization in a way that achieves desired SOA benefits.</li>
+  <li> Data, integration, and security architecture futures are defined with respect to SOA strategy.</li>
+  <li> Technologies and products map to defined SOA strategy . </li>
+  <li> SOA strategy, architecture decisions, principles and guidelines, technologies and products formulate the Future Vision (2-3 years out).</li>
+  <li> Principles and guidelines should direct future development efforts towards convergence on the Future Vision.</li>
+  <li> Common vocabulary should be established to unify perceptions about SOA and Future Vision architecture.</li>
+  <li> Governance and funding models should support the attainment of the Future Vision.</li>
+  <li> Reference architecture should document the Future Vision and factors mentioned above used to establish the vision.</li>
+</ol>
+<p align="left"> As the Future Vision focuses on a technical vision, the information gathering activities belong to the Technical Infrastructure competency swimlane. The engagement lead competency swimlane assists by providing leadership in the form of handling kickoff and finalization workshops, and delivery of the executive presentation.</p>
+<h5 align="left">Roadmap</h5>
+<p align="left">The purpose of the Roadmap area is to produce a Roadmap for the organization that describes a pragmatic way to achieve their Future Vision goals. In previous areas, Current Reality and Future Vision were defined. A gap analysis can be obtained by comparing these two states and documenting the differences. Essentially, the Roadmap lays out incremental steps over time to close the gap between Current State and Future Vision.</p>
+<p align="left"> In order to create a manageable level of scope, the Roadmap is not intended to include all aspects of Future Vision SOA. The focus should be limited to core aspects, such as infrastructure plans and infrastructure services. It may also include some connectivity services if specific services have been identified as key reusable enterprise assets. The Roadmap should not attempt to address other types of services, such as business and presentation services, nor should it stray from SOA infrastructure into related areas such as enterprise data rationalization and composite application delivery.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_R_WF.PNG" alt="High-Level Roadmap Workflow" width="568" height="304" title="High-Level Roadmap Workflow"></p>
+<p align="left">Over the course of this area, you will work with the organization to:</p>
+<ol>
+  <li> Define the gap between Current Reality and Future Vision to determine what is needed.</li>
+  <li>Lay out incremental steps to outline the Roadmap.</li>
+  <li>Review a small number of applicable current and future projects and infrastructure initiatives for needed infrastructure contributions.</li>
+  <li>Map needs and contributions to steps in the Roadmap.</li>
+  <li>Formulate, review, and finalize the Roadmap.</li>
+</ol>
+<p align="left"> The Roadmap area involves the Engagement Lead and the Technical Infrastructure competency swimlanes. Activities such as the kickoff workshop, Roadmap finalization workshop, and executive presentation primarily involve people from the Engagement Lead competency swimlane. Activities focused on gathering and evaluating technical information are designated as belonging to the Technical Infrastructure competency swimlane.</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER050" id="ER050"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan </a></h4>
+<p>At the end of Mobilization, when you have produced a plan for the engagement, you need to validate and gain agreement with the organization prior to starting the Business and IT Drivers area.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=BITDG id="BITDG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">BUSINESS AND IT DRIVERS GUIDANCE</a> </h3>
+<p>This is actually the first area of the actual engagement execution. During Business and IT Drivers, the business and IT drivers are collected that affect future vision reference architecture decisions. You should also collect the benefits and challenges that management perceives to be associated with SOA. The results are factored into reference architecture workshops and listed in the reference architecture document.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=STM0501 id="STM0501"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.1 Conduct Team Orientation</a></h4>
+<p>At the beginning of each area of the engagement (with the exception of the first, Mobilization), this team orientation is typically executed as a kickoff workshop. The intent is to bring together all people that will be expected to contribute to the service to discuss what will be taking place. The kickoff workshop typically covers what is expected as a result of the engagement as a whole or the area in question, what kind of activities it includes and what kind of involvement is expected from the enterprise participants. In addition, where appropriate, it educates the organization on the terminology and concepts relevant for the area.
+<p>The Business and IT Drivers kickoff workshop is actually the kickoff for the whole engagement. It also serves to inform enterprise stakeholders that they have management backing and their participation is required. Therefore, when you set the meeting schedule, you should arrange for an appropriate management representative to present parts of the workshop, preferably as an introduction, and if possible also at the end during the summary of the workshop.
+  
+<p> The workshop provides an opportunity to explain what the engagement as a whole entails, what it is meant to provide for the organization, what participation is needed and what to expect as the result of the engagement. In addition, the kickoff meeting is a good opportunity to outline who the enterprise participants are and provide a rough timeline of their activities. Doing so provides the forum for discussion about who should be participating and allows people the chance to volunteer or decline involvement up front.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA010 id="BA010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></h4>
+<p> You do not build a full Motivational Model, but should understand the Business Strategy in the context of the engagement.</p>
+<p> You would typically execute the following task steps:</p>
+<ul>
+  <li> Gather and review existing strategy material.</li>
+  <li> Prepare and conduct interviews or conduct workshop with strategy owners.</li>
+  <li> Identify relevant business objectives. </li>
+</ul>
+<p> In addition, you should try to obtain a list of current IT objectives.</p>
+<h5>Prepare and Conduct Interviews or Conduct Workshop with Strategy Owners</h5>
+<h6>Perform Business Interviews</h6>
+<p> The intent of the business interviews is to obtain an understanding of the key business drivers affecting the company. Example business drivers are: </p>
+<ul>
+  <li>increased cross sell and up sell</li>
+  <li>increased self service adoption</li>
+  <li>improve process flexibility</li>
+  <li>reduced call center cost</li>
+</ul>
+<p>Business drivers should be obtained from the most senior business executives willing to participate. In some cases, that might be representatives from the LOB, and in other cases it might be IT liaisons to the LOBs. If multiple organizations are taking part in the service, then multiple interviews may be needed to get input across each LOB. Business executives should also be asked about their plans for SOA &ndash; what they feel it means to them, both in terms of benefits and challenges. The results of their SOA Self Assessments (ER.015) would provide a good starting point for this discussion.</p>
+<h6> Perform IT Interviews</h6>
+<p> Following the business interviews, IT executives are interviewed to obtain a list of current IT objectives. Example IT objectives are: rationalize business processes into reusable services, increase visibility into siloed data, etc. During the interview it would be helpful to provide the list of business drivers as a reference. Ideally, business drivers will map to a set of IT objectives, which helps provide continuity to the vision strategy. SOA should also be discussed with IT executives in order to understand their perceived benefits and challenges. SOA Assessment results can be factored into the discussion.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1801 id="ER1801"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.1 Prepare for and Present Solution Recommendation</a></h4>
+<p> You end the Business IT and Drivers area with a workshop to finalize the results of the area. You use the three task steps from the base task during this type of engagement, but the preparation is more extensive. Use the following additional guidance.</p>
+<h5>Workshop Preparations </h5>
+<p>The preparation of the executive presentation for the Business and IT Drivers area consists a workshop where the results are verified and finalized. The outputs from the Business and IT Drivers area should be formalized into the draft version of a findings document that is sent out to all business and IT executive participants for review and comments. The document should be short and to the point; simply list the findings. </p>
+<p><b>INPUT:</b> List of Business Drivers, List of It Objectives, Combined SOA Benefits, SOA Challenges</p>
+<p><b>OUTPUT:</b> draft Findings document</p>
+<p><b>RESOURCES:</b> Business stream consultants gather and formalize results. The engagement lead enterprise architect is responsible for producing and distributing the document draft.</p>
+<h5>Workshop to Finalize Results</h5>
+<p>The purpose of this workshop is to provide the opportunity for all who participated in the interviews to get together and finalize the results. The workshop may be skipped if very few executives are involved in the process and minimal edits were received to the findings document. The workshop should consist of a presentation that covers the findings, and the opportunity to discuss, challenge, accept, modify, or reject each.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=CRG id="CRG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">CURRENT REALITY GUIDANCE</a> </h3>
+<p>In order to provide a starting point for the SOA Infrastructure Roadmap, an understanding of the current state of IT must be obtained. An assortment of workshops, interviews, and questionnaires may be used to collect information on the current enterprise architecture, infrastructure, technologies, and products, as well as IT organizational structures, governance, and project funding models. The Current Reality area involves both business and technical resources, but with an extra emphasis on staff with Technical Infrastructure knowledge, as most information gathered pertains to areas of technology. A Current Reality Definition document and executive presentation are produced, and the current reality is used as a starting point for the infrastructure roadmap.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><B><A
+name=STM0502 id="STM0502"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.2 Conduct Team Orientation</a></h4>
+<p>At the beginning of each area of the engagement (with the exception of the first, Mobilization), this team orientation is typically executed as a kickoff workshop. The intent is to bring together all people that will be expected to contribute to the service to discuss what will be taking place. The kickoff workshop typically covers what is expected as a result of the engagement as a whole or the area in question, what kind of activities it includes and what kind of involvement is expected from the enterprise participants. In addition, where appropriate, it educates the organization on the terminology and concepts relevant for the area.
+<p>Current Reality should begin with a kickoff meeting to discuss what has been accomplished so far with the engagement and what will be taking place in this following area. It provides a good opportunity to refresh everyone&rsquo;s perspective on the purpose of the engagement and the importance of continued support and participation.
+<p> The meeting agenda should include an overview of the tasks that make up this area and participants that will be involved. A schedule of activities and expected completion dates should be agreed upon.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><B><A
+name=EA010 id="EA010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards </a></h4>
+<p>This task is executed in parallel with EA.030, Identify Current Architecture, during these kind of engagements. For the review of the architecture principles and guidelines, you would typically execute the first 3 task steps of EA.010 during the Current Reality area, but not require any sign-off. </p>
+<p> The architecture principles and guidelines of specific interest are:</p>
+<ul>
+  <li> Current enterprise-wide SOA or general architecture principles </li>
+  <li> Current principles of reuse, e.g., services, components, frameworks, etc.</li>
+</ul>
+<p><b>Note:</b> As a point of clarity, the following definitions should be used:</p>
+<blockquote>
+  <p> <b>Principle</b> &ndash; An unequivocal statement defining the future vision reference architecture. Principles should dictate direction and require formal permission for variance.</p>
+  <p> <b>Guideline</b> &ndash; Guidance to architects and designers on how to implement the architecture principles in given scenarios. Guidelines represent a suggested course of action, less stringent than principles.</p>
+</blockquote>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=EA030 id="EA030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a></h4>
+<p>This task is executed in parallel with EA.010, Review Enterprise Architecture Principles, Guidelines and Standards, during these kinds of engagements. You perform a current reality assessment on the enterprise architecture. This is executed early in the engagement, as part of the Current Reality area. </p>
+<p> Use the base task guidelines in EA.030 to execute this task. Following the Current Reality kickoff meeting, it should be clear who to speak with concerning enterprise architecture, and what method of gathering information is most appropriate. </p>
+<p> In addition to the steps described in the base task guidelines, while talking with IT executives, it would be beneficial to discuss current and future projects (IP.010). The intent is to get an understanding of which projects might be capable of being the first to contribute to the SOA infrastructure. Later, in the Roadmap area, the objective will be to identify 1-3 projects that can help to deliver on the Infrastructure Roadmap Plan.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=IP010 id="IP010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_010_INVENTORY_PROJECTS_OVERVIEW.HTM" target="_blank">IP.010 Inventory Projects</a> </h4>
+<p>During the Current Reality area, it is beneficial to discuss current and future projects with the IT executives. The intent is to gain an understanding of which projects might be capable of being the first to contribute to the SOA infrastructure. Later, in the Roadmap area, the objective will be to identify 1-3 projects that can help to deliver on the Infrastructure Roadmap Plan.</p>
+<p> For the task step, &ldquo;Document cost and objectives,&rdquo; you are only interested in the objectives of each project. At this point, you will not go as far as to investigate any overlap and redundancy.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1802 id="ER1802"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.2 Prepare for and Present Solution Recommendation</a></h4>
+<p>You end the Current Reality area with a workshop to finalize the results of the area. In addition, at the end of Current Reality, you conduct an executive presentation. The preparation of the executive presentation consists a workshop where the results are verified and finalized. You use the three task steps from the base task during this type of engagement, but the preparation is more extensive. Use the following additional guidance.</p>
+<h5>Workshop Preparations </h5>
+<p> Information gathered during the Current Reality area is used to produce an initial draft of the Current State Definition document. The document should be sent out for review by all enterprise participants involved in this point of the engagement.</p>
+<p> <b>INPUT:</b> Current State Enterprise Architecture and IT Information</p>
+<p> <b>OUTPUT:</b> draft Current Reality Definition</p>
+<p> <b>RESOURCES:</b> Business and Technical Infrastructure Stream consultants gather and formalize results. The engagement lead enterprise architect is responsible for producing and distributing the document draft.</p>
+<h5> Workshop to Finalize Results</h5>
+<p> The purpose of this workshop is to provide the opportunity for all who participated in the Current Reality area to get together and finalize the results. The workshop should consist of a presentation that covers the findings, and the opportunity to discuss, challenge, accept, modify, or reject each finding.</p>
+<h5>Conduct Executive Presentation</h5>
+<p> At the end of the Current Reality area you should hold an executive presentation in addition to the workshop. Highlights of the Current State should be formalized into an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement project manager should determine attendance of other representatives. The intent is to share findings and results with executive management, and also to re-introduce the next area of the engagement and the benefits it provides. This also serves as an executive checkpoint on the progress of the engagement, effectively a go/no-go decision point to continue with the next area. If the organization elects not to continue with the engagement, then plans to terminate the effort must be made.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=FVG id="FVG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">FUTURE VISION GUIDANCE</a> </h3>
+<p>The purpose of Future Vision is to help the organization define a future vision SOA reference architecture, roughly 2-3 years out. Using a series of workshops, you will guide the enterprise representatives through various aspects of SOA, infrastructure, and technology. The result is an SOA reference architecture that is tailored to the organization&rsquo;s business and IT drivers, vocabulary, technology preferences, and architectural standards. The Future Vision area mostly involves Technical Infrastructure and Engagement Lead resources. The SOA Reference Architecture document and executive presentation are produced during this area. The future vision also factors into the infrastructure roadmap.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=STM0503 id="STM0503"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.3 Conduct Team Orientation</a></h4>
+<p>At the beginning of each area of the engagement (with the exception of the first, Mobilization), this team orientation is typically executed as a kickoff workshop. The intent is to bring together all people that will be expected to contribute to the service to discuss what will be taking place. The kickoff workshop typically covers what is expected as a result of the engagement as a whole or the area in question, what kind of activities it includes and what kind of involvement is expected from the enterprise participants. In addition, where appropriate, it educates the organization on the terminology and concepts relevant for the area.
+<p>Future Vision should begin with a kickoff meeting to discuss what has been accomplished so far with the engagement and what will be taking place in this following area. It provides a good opportunity to refresh everyone&rsquo;s perspective on the purpose of the engagement and the importance of continued support and participation.
+<p> The meeting agenda should include an overview of the tasks that make up this area and participants that will be involved. A schedule of activities and expected completion dates should be agreed upon.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><B><A
+name=EA075 id="EA075"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures</a></h4>
+<p>When determining the Technology Reference Architecture for SOA &ndash; called the SOA Reference Architecture &ndash; there are certain elements that should be covered. For any situation that involves a set of SOA services of any significant size, or if the enterprise has embraced SOA as an IT strategy, it is important to determine and document a consistent strategy for service implementation. Failure to establish such a strategy might result in an inconsistent service implementation and may negate the advantages of using a SOA approach by greatly hampering reuse. </p>
+<p>Therefore, during this task, you define the SOA Reference Architecture that will be used at the enterprise level, one of the most important parts being the definition of the layers of the SOA architecture. The SOA Reference Architecture should describe how services should be implemented in the enterprise architecture, what kind of services should be located where (in what layer or tier), and what access and communication mechanisms should be used as well as define a target for implementation over a few years.</p>
+<p>The SOA Reference Architecture should cover:</p>
+<ol>
+  <li>Service Definition - What is a service, service scope, service lifecycle, etc.?</li>
+  <li>Conceptual View - service types and layers (for example, connectivity, data, decision, business, business process, presentation services and associated rules and guidelines for each layer or service type</li>
+  <li>SOA Infrastructure - covers components (for example, a service bus) to perform service routing, service orchestration, governance, management, etc. </li>
+  <li>SOA Security - includes service authorization, identity federation, etc. </li>
+  <li>Implementation - tools and technology for implementing the previous points</li>
+  <li>Deployment - covers service packaging, and a service deployment strategy </li>
+  <li>Patterns and Design Guidelines - includes best practices, and design patterns</li>
+</ol>
+<p>Guidelines for points 1 and 2 above are available in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique. Some of these topics also relate to the Enterprise Architecture Principles, Guidelines and Standards (EA.010) and may need to be recorded in the Enterprise Repository as enterprise-wide rules. </p>
+<h5>Workshop Preparations </h5>
+<p>The Future Vision for the SOA Reference Architecture is preferably crafted from a series of workshops that address various aspects of enterprise architecture and the project lifecycle. The number of workshops may vary depending on the availability of key participants, the number of participants, and the efficiency with which each topic can be covered.</p>
+<p>As preparation to the SOA Reference Architecture workshop, consider:</p>
+<ul>
+  <li>the business strategy defined in the Business Strategy (BA.010)</li>
+  <li>the current enterprise architecture as defined in the Enterprise Architecture Principles, Guidelines and Standards (EA.010) , the Current Enterprise Architecture (EA.030), the Supplemental Enterprise Requirements (ER.100) and the Current Architectural Challenges (EA.050)</li>
+  <li>the best practices described below </li>
+</ul>
+<h6>Service Definition</h6>
+<p>Most people have a different understanding of what is a service, depending of their background, level of experience with SOA, etc. The first part of the SOA Reference Architecture is concerned with defining what is a service, what is it's composition, etc. See the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more details. </p>
+<h6>Service Layers </h6>
+<p>SOA layers provide a means to organize application user interfaces and services in similar groupings. There is not necessarily a direct relationship between SOA service layers and the physical infrastructure tiers. SOA service layering is chiefly concerned with establishing the architectural decoupling such that processes and data can be more readily distributed and deployed. It allows for defining different types of services and then the different policies or rules that apply to them. For example, you may define that a data service must use objects from the enterprise canonical data model, whereas a presentation service does not. </p>
+<p>See the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more details on how to perform this step. </p>
+<h6>Required Service Infrastructure</h6>
+<p>The details of the infrastructure required to run the SOA is also an important part of the SOA Reference Architecture. This may include a choice of Enterprise Service Bus, Enterprise Repository, BPM tooling, etc. In this section, describe the functions that the components you need carry out and how these components interact with each-other. It is recommended to leave this section technology and product agnostic and detail the products in the Implementation section below. </p>
+<h6>SOA Security Strategy</h6>
+<p>The SOA Security Strategy should include the solutions for the following: </p>
+<ul>
+  <li>Service authorization: including how the security is handled at the service level, how authorization policies are managed (locally or centrally)</li>
+  <li>Identity propagation: how user identity is passed from one service down to the next </li>
+  <li>Service Provisioning: who is allowed to use which services (users or other type of resources in terms of roles), how these services should be used and accessed, and how authorization should be granted </li>
+</ul>
+<p>This section should also include a description of how the provisioning process should be monitored, to support governance on the security by the architecture. This aspect should also cover how alerts/reports should be created depending on how services are used (such as halts, interruptions, decline and so on). This should be documented both from a service provider and a service consumer point of view. </p>
+<h6>Implementation </h6>
+<p> The &quot;Implementation View&rdquo; of the SOA Reference Architecture describes the technology and products required to implement the SOA Reference Architecture defined so far. </p>
+<h6>Deployment Options </h6>
+<p> Service may be packaged individually or as a group, independently of each other or as part of a common release cycle. In this step, define which strategy the enterprise adopts including the criteria for grouping services, release cycles, etc. See the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a> technique for more details on how to perform this step. </p>
+<p>The <a href="../../../040_TEMPLATES_AND_GUIDANCE/EA/EA-075_SOA_REFERENCE_ARCHITECTURE.DOCX" target="_blank">SOA Reference Architecture</a> template can be used to document this task. </p>
+<h5>Workshop</h5>
+<p>The workshops should follow a common basic format where a topic, or set of topics is presented with some recommendations, and enterprise participants engage in relevant discussions to support, modify, or refute the recommendations. Recommendations should be in the form of principles and guidelines that address architecture concerns. Participants should be encouraged to engage in discussions to determine if the recommended principles and guidelines are in line with their ideals as well as their business drivers and IT objectives. They may suggest principles and guidelines in addition to what is recommended. Participants should be encouraged to give careful consideration to the topics to be discussed beforehand so they are prepared to make recommendations and decisions.</p>
+<p> Workshops should be conducted to cover architecture principles, guidelines, and vision for the following topics:</p>
+<blockquote>
+  <p><b>Service Definition</b> &ndash; How to define a service, e.g., implementation, interface, and contract, recommended interface types, message types, schema rules, contract management<br>
+      <b>Service Lifecycle</b> &ndash; Includes service identification, development, testing, deployment, discovery, versioning, deprecation, and decommission guidelines <br>
+      <b>Infrastructure Services</b> &ndash; How to classify infrastructure services, what services already exist, and what should be built, etc.<br>
+      <b>Security Services</b> &ndash; Possible security services, e.g., fine grained entitlements, auditing, etc.<br>
+      <b>Connectivity Services</b> &ndash; Definition of connectivity services, access mechanisms, (e.g., messaging systems, technologies, strategies)<br>
+      <b>Data Services</b> &ndash; Definition of data services, purpose with the SOA and BPM environments, , data access strategies, and data formats<br>
+      <b>Business Services</b> &ndash; Definition of business services, types of services, (e.g., simple synchronous, composition, workflow, process, and orchestration), and principles that apply to each type of business service<br>
+      <b>Presentation Services</b> &ndash; Definition of presentation services, types of services, and rules that apply<br>
+      <b>Composite Applications</b> &ndash; Enterprise portals, workflow processes, B2B orchestrations that leverage shared services<br>
+      <b>OA&amp;M Architecture</b> &ndash; The role services and SOA infrastructure will play on OA&amp;M, including operational and BPM metrics and the collection of key performance indicators<br>
+      <b>Business Process Architecture</b> &ndash; How SOA and BPM can be combined; top-down service identification approach<br>
+      <b>Data Architecture</b> &ndash; (optional) How SOA will affect: data architecture, plans for enterprise data management, common schemas, and data transformation<br>
+      <b>Enterprise Social Computing</b> &ndash; How SOA may be intended to complement ESC efforts<br>
+      <b>Event-Driven Architecture</b> &ndash; (optional) How SOA will affect: EDA, event generation, collection, processing, and reaction to event conditions<br>
+      <b>Integration Architecture</b> &ndash; How SOA will affect: integration architecture, integration technologies, products and security<br>
+      <b>Security Architecture</b> &ndash; The affect SOA has on security, how applications and services should be secured in the future, what needs to be built, etc.<br>
+      <b>SOA Service Infrastructure</b> &ndash; Necessary components, (e.g., ESBs, registries, O&amp;M tools, service monitoring and compliance tools), and deployment strategy and configurations<br>
+      <b>Technology Mapping</b> &ndash; Preferred standards, current and future products<br>
+      <b>SOA Modeling Approach</b> &ndash; Determine types of models necessary to capture and communicate service relationships, dependencies, and deployment strategy. If available, use the <a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank"> Modeling Strategy for the Enterprise (ER.070)</a> as an input to determine the SOA Modeling Approach.</p>
+</blockquote>
+<p>The recommendations can be culled from a common SOA reference architecture that covers all areas mentioned above using a &ldquo;same as, except &hellip;&rdquo; approach. </p>
+<p> Throughout each workshop, you should:</p>
+<ul>
+  <li> Provide sound recommendations based on industry best practices.</li>
+  <li> Elaborate on recommendations as needed so they are well understood.</li>
+  <li> Facilitate meaningful discussions among the participants.</li>
+  <li> Guide the audience toward a conclusion that satisfies the organization&rsquo;s desires.</li>
+  <li> Encourage additional recommendations by enterprise participants.</li>
+  <li> Capture all decisions and supporting contextual information to include in the reference architecture document.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1803 id="ER1803"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.3 Prepare for and Present Solution Recommendation</a></h4>
+<p>You end the Future Vision area with a workshop to finalize the results of the area. In addition, at the end of Future Vision, you conduct an executive presentation. The preparation of the executive presentation consists a workshop where the results are verified and finalized. You use the three task steps from the base task during this type of engagement, but the preparation is more extensive. Use the following additional guidance.</p>
+<h5>Workshop Preparations </h5>
+<p> Information gathered during the Future Vision area is used to produce an initial draft of the organization SOA Reference Architecture document. The document should be sent out for review by all enterprise participants involved at this point of the engagement.</p>
+<p> <b>INPUT:</b> results of Future Vision area workshops </p>
+<p> <b>OUTPUT:</b> draft organization SOA Reference Architecture</p>
+<p> <b>RESOURCES:</b> Technical Infrastructure Stream consultants gather and formalize results. The engagement lead enterprise architect is responsible for producing and distributing the document draft.</p>
+<h5> Workshop to Finalize Results</h5>
+<p> The purpose of this workshop is to provide the opportunity for all who participated in the Future Vision area to get together and finalize the results. The workshop should consist of a presentation that covers the findings, and the opportunity to discuss, challenge, accept, modify, or reject each finding.</p>
+<h5>Conduct Executive Presentation</h5>
+<p> At the end of the Future Vision area you should hold an executive presentation in addition to the workshop. Highlights of the Future Vision should be formalized into an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement project manager should determine attendance of other representatives. The intent is to share findings and results with executive management, and also to re-introduce the next area of the engagement and the benefits it provides. This also serves as an executive checkpoint on the progress of the engagement, effectively a go/no-go decision point to continue with the next area. If the organization elects not to continue with the engagement, then plans to terminate the effort must be made.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=RG id="RG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">ROADMAP GUIDANCE</a></h3>
+<p>The Roadmap area of this view provides the organization with an infrastructure roadmap. Its purpose is to plan an incremental transition from the current state of infrastructure to the future vision. The team uses information from the Current State and Future Vision phases to produce a preliminary gap analysis. Then you work with the organization to finalize the gap analysis, plan roadmap increments, and identify 1-3 projects that may contribute to the infrastructure transition. Projects are then interviewed to further qualify their infrastructure plans and finalize the roadmap. Based on the Future Vision, and comparing it to the Current State, determine how the results of the Roadmap best can be measured and define a Metrics Collection and Reporting Strategy that can be used throughout the process for improvement. This area mostly involves the technical infrastructure and engagement lead resources. The result is an Infrastructure Roadmap document and a final executive presentation.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=EA060 id="EA060"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a></h4>
+<p> During the Roadmap area, you perform a preliminary gap analysis based on the differences between Current State and Future Vision. The analysis should focus on the following areas that pertain to Roadmap objectives:</p>
+<ul>
+  <li>physical SOA infrastructure, e.g., ESBs, service registries, security products, networks, etc.</li>
+  <li>infrastructure services and key connectivity services</li>
+  <li>SOA tools and technologies for development, testing, deployment, and O&amp;M</li>
+  <li>organizational related gaps, such as governance and funding model concerns</li>
+</ul>
+<p>Organizational gaps and roadmap are covered in full detail in the <a href="../../../OUM_HOME_GP.HTM" target="_blank">SOA Governance Planning View</a>. As part of this area, you should acknowledge obvious gaps in organization and governance that affect the ability to support a SOA Infrastructure Roadmap. If an engagement has already been executed based on the SOA Governance Planning View, then pertinent information can be obtained from the results of that service. Otherwise, such an engagement could be included as a recommended step in the SOA Infrastructure Roadmap.</p>
+<p>Preliminary findings should be included in the Roadmap kickoff workshop (see the following STM.050.4) for the purpose of jump starting the discussions. In addition to the gap analysis, any information collected regarding key future projects, SOA initiatives, planned infrastructure changes, or existing milestones should be included in the presentation.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=STM0504 id="STM0504"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.4 Conduct Team Orientation</a></h4>
+<p>At the beginning of each area of the engagement (with the exception of the first, Mobilization), this team orientation is typically executed as a kickoff workshop. The intent is to bring together all people that will be expected to contribute to the service to discuss what will be taking place. The kickoff workshop typically covers what is expected as a result of the engagement as a whole or the area in question, what kind of activities it includes and what kind of involvement is expected from the enterprise participants. In addition, where appropriate, it educates the organization on the terminology and concepts relevant for the area.
+<p>The purpose of the Roadmap kickoff workshop is twofold. First, it provides an opportunity to introduce the final area of the engagement and discuss the objectives, steps, type of participation required, work product, and level of detail of the work product. Second, it helps to solidify the foundation for the Roadmap and key participants involved in the process.
+<p> The workshop should begin with a presentation to outline the Roadmap area of the engagement, followed by a presentation of initial findings. The initial findings would consist of all the information relevant to the Roadmap collected over the previous areas, such as key projects, infrastructure plans, etc., as well as the preliminary gap analysis. Discussions should then take place to produce the following results:
+<ul>
+  <li> agreement on gap analysis findings</li>
+  <li> agreement on Roadmap phases (for implementation of the Roadmap), including phase durations, themes, objectives</li>
+  <li> mapping of any planned infrastructure changes to phases </li>
+  <li> list of candidate projects (1-3) that should provide value toward meeting phase objectives</li>
+  <li> contact information for each candidate project</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4 align="left"><B><A
+name=IP040 id="IP040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects</a> </h4>
+<p>During the Roadmap area, following the roadmap kickoff workshop, a small number of projects may be identified as candidates to contribute infrastructure enhancements toward achieving the Future Vision. The first task step of the base task guidelines, &ldquo;Determine candidate projects,&rdquo; is executed in combination with the following task ER.170, Determine Future State Transition Plan. The projects that are of interest are either future projects, either already identified, or identified as part of this process, or new releases for long-term projects.</p>
+<p> When executing task steps 2 and 3 of the base task guidelines to determine the goals and dependencies, you should follow up by interviewing the project manager and chief architect of each project, if already identified. In addition to the purpose of the steps, you should determine what the project can contribute to and what the expected timeframe would be. Results can then be mapped back to the Roadmap Plan (ER.170).</p>
+<p> Ideally, the people being interviewed are already involved in the SOA Reference Architecture Planning engagement, understand the reference architecture, and are in agreement with the SOA vision. If not, then it would be advisable to invite a senior enterprise representative that will be/is involved in the project (perhaps the enterprise architect and/or enterprise executive sponsor) in order for them to get a better understanding of the engagement initiative. The intent is to ensure the project team that the Roadmap effort has executive backing and is in line with enterprise architecture initiatives. You should be prepared to brief the project team on aspects of the reference architecture that would apply to its infrastructure work products. This is to ensure that work products adhere to principles and guidelines outlined in the reference architecture.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER170" id="ER170"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></h4>
+<p>During the Roadmap area, following the Roadmap kickoff workshop, you execute this task combined with IP.040, Identify Candidate Projects. That means that the step, &ldquo;Provide a transition plan,&rdquo; typically will be made through the identification of candidate projects. Please review the supplemental guidelines for IP.040, Identify Candidate Projects for more details about how to identify the relevant projects.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA0171 id="BA0171"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.1 Determine Metrics Collection and Reporting Strategy </a></h4>
+<p>When the Future Vision is clear and the strategy is determined on how to achieve that vision, you should start to determine the areas relevant for metrics collection to be able to measure the results against the vision. Executing this task as part of the Roadmap area will make it clear how the effect of the new Reference Architecture should be measured, and if required to act upon. By using the Metrics Collection and Reporting Strategy defined during this task, the actual benefits will be measured, and if the expected benefits are not achieved within the expected timeframe, it allows the organization to make early changes and corrective actions.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1804 id="ER1804"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.4 Prepare for and Present Solution Recommendation</a></h4>
+<p>You end the Roadmap area with a workshop to finalize the results of the area. In addition, at the end of Roadmap, you conduct an executive presentation. The preparation of the executive presentation consists a workshop where the results are verified and finalized. You use the three task steps from the base task during this type of engagement, but the preparation is more extensive. Use the following additional guidance.</p>
+<h5> Workshop Preparations</h5>
+<p> Information gathered during the Roadmap area during the workshops and in the interviews is used to produce an initial draft of the SOA Infrastructure Roadmap document. The document should be sent out for review by all enterprise participants involved at this point of the engagement.</p>
+<p> <b>INPUT:</b> results of Roadmap area workshops and interviews </p>
+<p> <b>OUTPUT:</b> draft SOA Infrastructure Roadmap document </p>
+<p> <b>RESOURCES:</b> Technical Infrastructure Stream consultants gather and formalize results. The engagement lead enterprise architect is responsible for producing and distributing the document draft.</p>
+<h5> Workshop to Finalize Results</h5>
+<p> The purpose of this workshop is to provide the opportunity for all who participated in the Roadmap area to get together and finalize the results. The workshop should consist of a presentation that covers the findings, and the opportunity to discuss, challenge, accept, modify, or reject each finding.</p>
+<h5>Conduct Executive Presentation</h5>
+<p> At the end of the Roadmap area you should hold an executive presentation in addition to the workshop. Highlights of the Roadmap should be formalized into an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement project manager should determine attendance of other representatives. The intent is to share findings and results with executive management, and also to re-introduce the next area of the engagement and the benefits it provides. This also serves as an executive checkpoint on the progress of the engagement, effectively a go/no-go decision point to continue with the next area. If the organization elects not to continue with the engagement, then plans to terminate the effort must be made.</p>
+<p> The discussion following this end presentation of the engagement may identify some questions or challenges that need to be addressed for the engagement to be accepted. It should be positioned, during the presentation, that the enterprise executive sponsor takes responsibility for the resolution of any such unresolved items. This alleviates any need to get the enterprise executive audience back together to deliver another version of the presentation, and expedites the completion of deliverables by creating a single interface point. When the take-away items are completed to the satisfaction of the executive sponsor, the engagement project leader should obtain written approval of the acceptance of the engagement. This acceptance is done as part of Post Delivery, task SM.050 - Gain Acceptance.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PDG id="PDG"></A></B><a href="SRAP_OVERVIEW.HTM#SRAPOD" target="_blank">POST DELIVERY GUIDANCE</a></h3>
+<p>Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned.</p>
+<h4><B><A
+name=CMM040 id="CMM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></h4>
+<p>After the project has been delivered and accepted any feedback should be summarized and submitted to Oracle's Global Methods team at <a href="mailto:ominfo_us@oracle.com">ominfo_us@oracle.com</a>. Feedback should include the following:
+<ul>
+  <li> overall experience, both positive and negative regarding the use of the Planning view</li>
+  <li>major challenges and roadblocks encountered during service delivery and how these issues were addressed</li>
+  <li>suggested improvements to the delivery process</li>
+  <li>suggested improvements to the templates</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

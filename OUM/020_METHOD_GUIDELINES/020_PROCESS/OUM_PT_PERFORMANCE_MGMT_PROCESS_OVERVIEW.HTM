@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PT Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Tools">Tools</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[PT] PERFORMANCE MANAGEMENT</h2>
+<!--BeginProcessDesc--><p> The objective of the Performance Management process is to proactively define, construct, and execute an effective approach to managing performance throughout the project implementation lifecycle in order to validate that the performance of the system or system components is aligned with the user's requirements and expectations when the system is implemented.&nbsp; Performance Management is not limited to conducting a performance test or an isolated tuning exercise, although both those activities may be part of the overall Performance Management strategy.</p>
+<p>It should be noted that where Performance Management process is going to be performed in a holistic manner (majority of tasks within process), a separate performance management project is typically performed versus attempting to perform all the tasks within the same project where component design, test, and build is occurring.</p>
+<p>To succeed, Performance Management must be oriented around the user view of performance. Traditional approaches to Performance Management use a top-down approach that evaluates overall system health and then drills down into any issues apparent at a system level.&nbsp; DBAs and Performance tuners evaluate the wide variety of system statistics and try to find evidence of problems that should be remediated.&nbsp; In some cases where there is a system wide constraint, this approach can succeed, but if the performance "problem" is related to a failure of a particular transaction to meet its performance objective, considerable time can be spent without effectively addressing the actual problem the users are experiencing. When the problem is poor performance with important business transactions but a top-down approach is&nbsp;used, time may be spent on unrelated transactions or system wide configuration, resulting in no discernible improvement from a user perspective.&nbsp;Effective performance management must begin with identifying the key business transactions and associated performance expectations and requirements early in the Inception and Elaboration phases and implementing the appropriate standards, controls, monitoring checkpoints, testing and metrics to ensure that transactions meet the performance expectations as the project progresses through elaboration, construction, transition and production.&nbsp; Field experience has repeatedly shown that attempting to manage performance from a system perspective without a clear view of the user expectations does not produce the desired result.</p>
+<p>Failure to begin the Performance Management process in the project's early phases or to identify the key business transactions and their performance requirements can lead to a significant amount of reactive, unplanned work in the later phases of Construction, Transition or after Production.&nbsp; In some cases, this approach has led to a lack of user acceptance and in the worst cases, project cancellation. Time spent developing a Performance Management strategy and establishing the appropriate controls and checkpoints to validate that&nbsp; performance has been sufficiently considered during the design, build and implementation will save valuable time spent in reactive tuning at the end of the project while raising user satisfaction.&nbsp; The Performance Management process should not end with the&nbsp; production implementation, but should continue after the system is implemented to monitor performance of the implemented system and to provide the appropriate corrective actions in the event performance begins to degrade. </p>
+<p>If the project scope includes formal performance testing, the performance test objectives, scope and strategy will be defined in the Performance Testing Strategy (PT.030). Performance Testing uses a top down approach, and it can be used to either validate a model of the entire solution or focus on a particular component of a solution. Performance testing can establish the expected the solution or component under test and can be used to validate that the production performance will acceptable for the business or if changes are required to meet the performance objectives.&nbsp; Performance Testing should represent the final validation, not the first evaluation of performance.&nbsp; If Performance Testing is the only Performance Management technique used, there is considerable risk that:</p>
+<ul>
+  <li>Significant code rework may be identified.</li>
+  <li>Issues identified cannot be resolved without impacting the project timelines.</li>
+  <li>Performance issues may still occur in Production that were not identified during the testing process.</li>
+</ul>
+<p>The requirements that drive Performance Management also impact Technical Architecture (TA) and the two processes are closely related.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p> </p>
+<hr width="100%">
+<h3><a name="ProcessFlow"
+ id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/PT_Process.jpg" alt="Performance Management Process Flow Diagram" width="710" height="985" border="1" title="Performance Management Process Flow Diagram"></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p> </p>
+<hr width="100%">
+<h3><a name="Approach"
+ id="Approach"></a>APPROACH</h3>
+<p>Depending on your project (e.g., large, complex, etc.), the project manager may designate a Performance Management team leader. In some projects the performance management effort is a &quot;sub-project&quot; to the overall software implementation effort. If the project manager designates a Performance Management team leader, they are responsible for leading the Performance Management process and reviewing the work products. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders. </p>
+<p>The Conduct Performance Management Workshop (PT.010) task is the first step in the Performance Management process.&nbsp; The Performance Management Workshop familiarizes the customer with the concepts of proactive Performance Management, the need to define performance requirements for business critical transactions, establishment of metrics and monitoring related to performance management, Service-Level Agreements (SLA) and the appropriate use of Performance Testing.&nbsp;The workshop also provides a mechanism to gather information on performance needs and expectations that should be used to develop the Performance Management Requirements and Strategy (PT.020 ).</p>
+<p>In projects that delegate the bulk of responsibility for Performance Management and Performance Testing to the customer, a Performance Management workshop must be conducted&nbsp; to make the customer aware of the expectations and requirements associated with their responsibility as well as to share best practice approaches and experiences of other customers.</p>
+<p>After the Performance Management Workshop, the Performance Management process continues with the definition of the Performance Management Requirements and Strategy (PT.020 ).&nbsp; The PT.020 documents the business critical transactions and their performance requirements, what metrics will be established and reported, what monitoring or instrumentation will be implemented and what control processes will be put in place.&nbsp; If the project will conduct formal performance testing, a Performance Testing Strategy (PT.030) should be created which defines the scope and objectives of Performance Testing for the project and outlines the strategy that will be used to execute the Performance Test.&nbsp; The specific transaction scenarios and models are defined in the Performance Test Transaction Models and Scenarios (PT.040), design of test scripts and programs is documented in the Performance Test Scripts and Programs Design (PT.050), and any test data or load programs required are documented in the Performance Test Data and Load Programs Design (PT.060).</p>
+<p>The Performance Management team defines the scope of testing and relates it to point-in-time snapshots of the transactions expected in the real production system.&nbsp; Technical analysts create or set up transaction programs to simulate system processing within the scope of the test and populate a volume test database against which to execute the transactions. Once the system and database administrators have created the test environment, the project team executes the test and the final results are documented. </p>
+<p> The general requirements for Performance Management are similar for all projects, although the details may vary considerably.&nbsp; Performance requirements should be tied to the user's expectations and the most important transactions should receive priority.&nbsp; Most projects have a subset of business transactions that are considered more critical than others, either because they have high execution rates, or because there is an impact to business processing if the transactions fail to complete within a particular window of time.</p>
+<p>A project implementing an application suite with limited customization or extensions, may require a fairly simple performance management strategy that identifies and prioritizes the business critical transactions, establishes the techniques and metrics that will be used to monitoring actual performance and defines the process to identify, track and resolve problems.&nbsp; On the opposite end of the spectrum, a new software engineering effort will require the above activities and should implement additional measures such as code reviews for performance, proactive scanning for sub optimal components, detailed performance testing of individual components and automated performance testing in order to validate that the solution meets the performance objectives. In many cases the system and database level statistics may not provide a complete view of performance at a user transaction level.&nbsp; Instrumentation at the technical level or at the application level may be necessary to collect the appropriate information and allow meaningful reporting of performance metrics. </p>
+<h4>Performance Management in Production </h4>
+<p> The need for Performance Management does not end after the project has implemented. Metrics and monitoring established to measure system performance are critical post implementation processes in order to validate that system performance remains within acceptable parameters.&nbsp; Changes to workload, user volumes or other factors can introduce performance issues.&nbsp; Failure to proactively monitor and measure production performance may lead to situations where although performance is degrading over time, nothing is noticed until there is a highly visible production "crisis". Customers who invest in automated testing tools may be able to take advantage of that investment to validate changes planned in the production environment.</p>
+<p> <a href="#TOP">Back to Top</a>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=Tools id="Tools"></A>TOOLS</h3>
+<table width="100%"  border="1" title="Tools" summary="This table lists any helpful tools for the process.  It is organized with Tool, Guidance and Application/Note columns.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Tool</th>
+    <th scope="col">Guidance</th>
+    <th scope="col">Application/Note</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Oracle Application Test Suite (OATS) Testing and Quality Management Tools</div></th>
+    <td><div align="left">This process has supplemental guidance for using using Oracle Application Test Suite (OATS) Testing and Quality Management Tools. Use the following to access the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TQMT/TQMT_PROCESS_GUIDELINES.HTM#PT" target="_blank">process-specific supplemental guidance</a>. To access all Oracle Application Test Suite (OATS) Testing and Quality Management Tools supplemental information, use the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TQMT/TQMT_SUPP_GUIDE.HTM" target="_blank">OUM Testing and Quality Management Tools Supplemental Guide</a>.</div></td>
+    <td><div align="left"> Oracle<span class="style1"></span> Application Test Suite (OATS) Testing and Quality Management Tools is a complementary Oracle suite of tools that is used to manage software testing for a project as well as to develop test automation and performance testing, when used together these tools can be used to maximize system performance and ensure the quality and success of a project.</div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>&nbsp;
+<p>
+<hr width="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Implementation process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.010</div></th>
+    <td><a href="../030_TASK/PT_010_CONDUCT_PERFORMANCE_MANAGEMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Performance Management Workshop<br>
+    </a></td>
+    <td>Performance Management Workshop Results</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.020</div></th>
+    <td><a href="../030_TASK/PT_020_DEFINE_PERF_MGMT_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">Define Performance Management Requirements and Strategy<br>
+    </a></td>
+    <td>Performance Management Requirements and Strategy&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.030</div></th>
+    <td><a href="../030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">Define Performance Testing Strategy&nbsp;</a></td>
+    <td>Performance Testing Strategy&nbsp; </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.040</div></th>
+    <td><a href="../030_TASK/PT_040_IDENTIFY_PERF_TEST_MODELS_AND_SCENARIOS_OVERVIEW.HTM" target="_blank">Identify Performance Testing Models and Scenarios<br>
+    </a></td>
+    <td>Performance Testing Models and Scenarios&nbsp; </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.050</div></th>
+    <td><a href="../030_TASK/PT_050_DESIGN_PERF_TEST_SCRIPTS_PGMS_OVERVIEW.HTM" target="_blank">Design Performance Test Scripts and Programs<br>
+    </a></td>
+    <td>Performance Test Scripts and Programs Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.060</div></th>
+    <td><a href="../030_TASK/PT_060_DESIGN_PERF_TEST_DATA_LOAD_PGMS_OVERVIEW.HTM" target="_blank">Design Performance Test Data and Load Programs<br>
+    </a></td>
+    <td>Performance Test Data and Load Programs Design</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.070</div></th>
+    <td><a href="../030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM" target="_blank">Build Performance Test Scripts and Programs<br>
+    </a></td>
+    <td>Performance Test Scripts and Programs</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.080</div></th>
+    <td><a href="../030_TASK/PT_080_CONSTRUCT_PERF_TEST_ENVIRONMENT_AND_DATABASE_OVERVIEW.HTM" target="_blank">Construct Performance Test Environment and Database<br>
+    </a></td>
+    <td>Performance Test Environment and Database</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.090</div></th>
+    <td><a href="../030_TASK/PT_090_CONDUCT_PERFORMANCE_TEST_DRESS_REHEARSAL_OVERVIEW.HTM" target="_blank">Conduct Performance Test Dress Rehearsal</a></td>
+    <td> Validated Performance Test Environment and Environment</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.100</div></th>
+    <td><a href="../030_TASK/PT_100_EXECUTE_PERFORMANCE_TEST_OVERVIEW.HTM" target="_blank">Execute Performance Test</a></td>
+    <td>Performance Test Results&nbsp; </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.110</div></th>
+    <td><a href="../030_TASK/PT_110_CREATE_PERFORMANCE_TEST_REPORT_OVERVIEW.HTM" target="_blank">Create Performance Test Report</a></td>
+    <td>Performance Test Report</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Production Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.120</div></th>
+    <td><a href="../030_TASK/PT_120_CONDUCT_PRODUCTION_PERFORMANCE_MANAGEMENT_OVERVIEW.HTM" target="_blank">Conduct Production Performance Management<br>
+    </a></td>
+    <td>Managed Production Environment</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>&nbsp; </p>
+<p> </p>
+<hr width="100%">
+<h3><a
+ name="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The objectives of Performance Management are:</p>
+<ul>
+  <li>Identify the set of critical business transactions and document their performance requirements.</li>
+  <li>Identify and document any system wide or overall performance expectations or Service-Level Agreements.</li>
+  <li>Determine scope, objectives and strategy of the Performance Testing effort and describe the process to interpret test results.</li>
+  <li>Identify specific performance metrics and the methods to monitor, collect and report them.</li>
+  <li>Establish specific quality controls relating to performance.</li>
+  <li>Establish processes and procedures to identify, track and resolve performance problems.</li>
+  <li>increase user satisfaction and system acceptance by minimizing performance related issues.</li>
+  <li>Reduce effort required for reactive performance remediation.</li>
+  <li>Define a method to evaluate the performance impact of a change to software or hardware.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>&nbsp; </p>
+<p></p>
+<hr width="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS</h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><a href="#TOP">Back to Top</a>&nbsp; </p>
+<p> </p>
+<hr width="100%">
+<h3><a
+ name="KeyResp" id="KeyResp"></a>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process: </p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Implementation process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="12%" scope="col">Name</th>
+    <th width="85%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Assist in identification of key business transactions and performance expectations.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Participate in the preparation of the Information Architecture for the environment to support performance testing. Provide support for the execution of the performance testing dress rehearsal. Provide support for the data base environment used in Performance Testing. Monitor database and application, resolve performance issues, report DB and application metrics.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Participate in the process of performance requirement analysis. Define specific performance requirements for the application.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">NE</th>
+    <td>Network Engineer </td>
+    <td>Monitor network activity during the test.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td>Install application software. Provide support for the performance testing. Provide support for Performance Management activities such as running standard application reports on transaction performance, applying and testing patches and upgrades.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Provide input on projected volumes and scenarios, review and approve the development of the Performance Testing Models and Scenarios. Provide support for the test scenarios used in Performance Testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Conduct the interviews, prepare workshop presentation and recommendations, facilitate workshop session. You may wish to include an additional System Architect that specializes in system integration to participate in the process of performance requirement analysis. Familiarize the customer with the goals and objectives of the workshop, assist in gathering performance requirements. Provide information on technical architecture design and performance implications. Develop the Performance Management Requirements and Strategy. Develop Performance Testing Strategy. Develop the Performance Testing Models and Scenarios. Oversee, review and approve the design of of the Performance Test Scripts and Programs. Design test components with regard to the technical architecture of the application. Review and approve the Performance Test Data and Load Programs Design. Oversee, review and approve the Performance Test Transaction Programs. Code the most complex components. Participate in the preparation of the technical architecture environment to support performance testing. Review and approve the Performance Test Environment and Database. Supervise and oversee the Performance Test Dress Rehearsal. Oversee the execution of the performance test. Assist tester in the execution of the performance test by addressing issues and question related to the technical architecture. Review and approve Performance Testing Results.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA (IA) </th>
+    <td>System Architect (Information Architect) </td>
+    <td>Assist test team in designing test components with regard to the data architecture of the application. Preferably, this should be done by a system architect that specializes in Information Architecture.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TE</th>
+    <td>Tester</td>
+    <td>Design the Performance Test Scripts and Programs. Design the performance test data and load programs. Create Performance Test Transaction Programs. Executes performance test. Execute the performance test. Compile test results and prepare report.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Identify key business transactions and performance expectations. Defines business performance objectives and requirements. Review and approve the Performance Testing Strategy. Assist test team with identification of test data requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CDA</th>
+    <td>Customer Data Administrator </td>
+    <td>Identify existing performance management process, procedures, standards, SLAs. Participate in the process of requirement analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager</td>
+    <td>Coordinate the interview schedule for the workshop, assist in gathering performance requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td>Participate in the process of performance requirement analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">OS</th>
+    <td>IS Operations Staff </td>
+    <td>Identify existing Performance Management process, procedures, standards, SLAs. Participate in the process of performance requirement analysis. Set up hardware and system software configuration. Set up hardware and system software configuration. Monitor hardware and system software configuration, resolve performance issues, report system metrics.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td>Participate in the process of performance requirement analysis. Provide support for the creation of the Performance Testing environment. Provide support for the creation of the Performance Testing Environment. Log performance issues, track resolution and notify users.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>&nbsp; </p>
+<p> </p>
+<hr width="100%">
+<h3><a
+ name="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are: </p>
+<ul>
+  <li>An understanding that system performance is measured from the user perspective, regardless of what operating or system statistics show</li>
+  <li>User participation in identification of the critical transaction set and the associated performance requirements</li>
+  <li>Proactive establishment of standards, code reviews and other processes so that performance issues can be found quickly and resolved promptly</li>
+  <li>Establishment of appropriate metrics so that performance can be evaluated and reported in a way meaningful to the system users in addition to the technical system administrators</li>
+  <li>Implementation of automated monitoring</li>
+  <li>Establishment of the appropriate process to identify, track and resolve performance issues that do arise.&nbsp; Resolving a performance issue may involve parties that work in a variety of organizations (users, DBA staff, Unix administrators, network administrators, developers, vendors). Establishment of a Performance Management "owner" who has the responsibility to manage this virtual team will greatly increase the success of a performance management effort.</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

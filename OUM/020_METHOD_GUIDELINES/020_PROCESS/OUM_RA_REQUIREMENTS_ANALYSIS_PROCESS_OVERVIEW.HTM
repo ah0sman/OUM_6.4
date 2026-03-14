@@ -1,0 +1,434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>RA Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[RA] REQUIREMENTS ANALYSIS</h2>
+<!--BeginProcessDesc--><p> In the Requirements Analysis process, the functional and supplemental requirements identified and prioritized during the Business Requirements process are analyzed further into a Use Case Model that is further refined by adding use case details in order to establish a more precise understanding of the requirements. The process of creating use cases helps ensure that the models and the associated system processes satisfy the business requirements. The Use Case Model is used as the basis for the solution development. This process helps provide structure and shape to the entire solution. The Use Case Model is used to document in detail the requirements of the system in a format that both the customer and the developers of the system can easily understand. </p>
+<p> The Use Case Model is dynamic and is changed as the teams' understanding develops with the system. The resulting business requirement models are maintained throughout the project lifecycle as understanding of the requirements deepens. </p>
+<p> The main work products or outputs of this process are the Use Case Model, a prototype of the user interface, and a high-level description of the software architecture. The work products from this process are used in data modeling and as a basis for system design.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/RA_Process.jpg" alt="Requirements Analysis Process Flow Diagram" width="776" height="1350" border="1" title="Requirements Analysis Process Flow Diagram"></p>
+<P><A
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Depending on your project (for example, large, complex, etc.), the project manager may designate a Requirements Analysis team leader and/or team leaders for various other reasons that the project manager deems necessary. If the project manager designates team leaders, they are responsible for leading their team and reviewing the work products produced by their team. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders. </p>
+<p>In the Requirements Analysis process, the requirements captured during the Business Requirements process are analyzed.&nbsp; In short, the requirements are refined and structured via a Use Case Model in order to establish a more precise understanding of the requirements.&nbsp; The Use Case Model is used as the basis for the solution development. This process helps provide structure and shape to the entire solution.&nbsp; Detailed Use Case Models are used to document the requirements of the system in order for the customer as well as the developers to more easily understand the system requirements.
+<p> The requirements are first formed into a Business Use Case Model (RA.015). In this model, the business processes are described in terms of business use cases and actors that correspond to the business processes and business roles, such as a customer. It shows the business from the usage perspective and shows how it provides value to the actors. The use cases that are relevant to the business are modeled, just enough to understand the context of the new system. The Domain Model (from the Business Requirements process) is often created in parallel with the Business Use Case model to model all the relevant business entities that relate to the Business Use Case Model. Most often this is done as part Business Requirements Workshop(s). This is an iterative process, and when reviewing the Business Use Case model, you may discover incompleteness or inconsistencies in the other models (Future Process Model RD.011), and therefore you may need to update these as a result.
+<p>The Business Use Case Model is further detailed into the Use Case Model (RA.023) where new actors and use cases are identified. Also here the workshop is a good technique to use. Go through each use case to identify the detailed use cases and actors, and thereafter provide the Use Case Specification (RA.024). Use the priorities given in the MoSCoW List (RD.045) to determine which use cases to go through first. When identifying the detailed use cases, each use case gets their own priority that will be used when defining the Use Case Specification (RA.024). While determining the Use Case Specification, new use cases may be identified that should be reflected in the Use Case Model. Therefore, these tasks are often done in parallel, and iteratively.
+<p>Further the use cases and scenarios that capture the new system's critical functionality are identified, reviewed and prioritized. A goal matrix is produced based on the Business and System Objectives (RD.001). This is all brought into the Architecture Description (RD.130) during Develop High-Level Software Architecture Description (RA.035).
+<p> Other important work products are the Validated Conceptual Prototype (RA.030), the Validated Functional Prototype (RA.085) and the Validated User Interface Standards Prototype (RA.095). These prototypes were produced in the Implementation process and are walked through with the users. Any feedback that results in either added/changed/refined requirements or changed priorities is recorded in an appropriate tool. The changes are then, depending on priorities, updated into the various requirement models.
+<p>Finally, a team with system analysts, ambassador users, designers, architects, and testers review the Use Case Model and Use Case Specifications (RA.180). As a result of such a review, new defects and change requests can be triggered.
+<p> Although interim outputs and diagrams are required for review purposes, ultimately, there is only one set of final work products from the process. The main work product of this process is the Use Case Model, a prototype of the user interface. Also during the process, the Architecture Description work product (RD.130) is updated by the Develop High-Level Software Architecture Description (RA.035) task.
+<p> <span class="style7">*This process has <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#RA" target="_blank">Application Implementation supplemental process guidance</a>.</span>
+<p><A
+href="#TOP">Back to Top</A>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>Application Implementations </h4>
+<p>This process has supplemental guidance that should be considered if you are doing an application implementation. Use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a> to access all application implementation supplemental information. You can also go directly to the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#RA" target="_blank">Requirements Analysis process supplemental guidance</a>.</p>
+<p><A
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS</h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Requirements Analysis process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.010</div></th>
+    <td><a href="../030_TASK/RA_010_SIMULATE_BUSINESS_PROCESS_OVERVIEW.HTM" target="_blank">Simulate Business Process </a></td>
+    <td> Business Process Simulation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.015</div></th>
+    <td><a href="../030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Business Use Case Model</a></td>
+    <td> Business Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.019</div></th>
+    <td><a href="../030_TASK/RA_019_DEFINE_PROJECT_REF_ARCH_OVERVIEW.HTM" target="_blank">Define Project Reference Architecture </a></td>
+    <td>Project Reference Architecture </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.021.1</div></th>
+    <td><a href="../030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">Capture User Stories</a></td>
+    <td>User Story </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.023.1</div></th>
+    <td><a href="../030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td> Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.025.1</div></th>
+    <td><a href="../030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.027.1</div></th>
+    <td><a href="../030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.028.1</div></th>
+    <td><a href="../030_TASK/RA_028_POPULATE_BUS_RULES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Business Rules Repository </a></td>
+    <td>Populated Business Rules Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.030.1</div></th>
+    <td><a href="../030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank"><span class="style3">Validate Conceptual Prototype</span></a></td>
+    <td>Validated Conceptual Prototype</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.021.2</div></th>
+    <td><a href="../030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">Capture User Stories</a></td>
+    <td>User Story </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.023.2</div></th>
+    <td><a href="../030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td> Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.024.1</div></th>
+    <td><a href="../030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">Develop Use Case Details</a></td>
+    <td>Use Case Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.025.2</div></th>
+    <td><a href="../030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.026.1</div></th>
+    <td><a href="../030_TASK/RA_026_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Services Repository </a></td>
+    <td>Populated Services Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.027.2</div></th>
+    <td><a href="../030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.028.2</div></th>
+    <td><a href="../030_TASK/RA_028_POPULATE_BUS_RULES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Business Rules Repository </a></td>
+    <td>Populated Business Rules Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.030.2</div></th>
+    <td><a href="../030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank"><span class="style3">Validate Conceptual Prototype</span></a></td>
+    <td>Validated Conceptual Prototype</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.035</div></th>
+    <td><a href="../030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">Develop High-Level Software Architecture Description</a></td>
+    <td>Architecture Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.055.1</div></th>
+    <td><a href="../030_TASK/RA_055_DOCUMENT_BUS_PROCEDURES_OVERVIEW.HTM" target="_blank">Document Business Procedures </a></td>
+    <td>Business Procedure Documentation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.085</div></th>
+    <td><a href="../030_TASK/RA_085_VALIDATE_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Validate Functional Prototype </a></td>
+    <td>Validated Functional Prototype </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.095</div></th>
+    <td><a href="../030_TASK/RA_095_VALIDATE_USER_INTERFACE_STANDARDS_PROTOTYPE_OVERVIEW.HTM" target="_blank">Validate User Interface Standards Prototype</a></td>
+    <td>Validated User Interface Standards Prototype</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.160</div></th>
+    <td><a href="../030_TASK/RA_160_CONDUCT_BUS_DATA_SOURCE_GAP_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct Business Data Source Gap Analysis </a></td>
+    <td>Business Data Source Gap Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.170.1</div></th>
+    <td><a href="../030_TASK/RA_170_CONDUCT_DATA_QUALITY_ASSESSMENT_OVERVIEW.HTM" target="_blank">Conduct Data Quality Assessment </a></td>
+    <td>High-Level Data Quality Assessment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.180.1</div></th>
+    <td><a href="../030_TASK/RA_180_REVEW_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Review Use Case Model</a></td>
+    <td>Reviewed Use Case Model</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.021.3</div></th>
+    <td><a href="../030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">Capture User Stories</a></td>
+    <td>User Story </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.023.3</div></th>
+    <td><a href="../030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td> Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.024.2</div></th>
+    <td><a href="../030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">Develop Use Case Details</a></td>
+    <td>Use Case Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.025.3</div></th>
+    <td><a href="../030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.026.2</div></th>
+    <td><a href="../030_TASK/RA_026_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Services Repository </a></td>
+    <td>Populated Services Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.027.3</div></th>
+    <td><a href="../030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.028.3</div></th>
+    <td><a href="../030_TASK/RA_028_POPULATE_BUS_RULES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Business Rules Repository </a></td>
+    <td>Populated Business Rules Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.055.2</div></th>
+    <td><a href="../030_TASK/RA_055_DOCUMENT_BUS_PROCEDURES_OVERVIEW.HTM" target="_blank">Document Business Procedures </a></td>
+    <td>Business Procedure Documentation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.170.2</div></th>
+    <td><a href="../030_TASK/RA_170_CONDUCT_DATA_QUALITY_ASSESSMENT_OVERVIEW.HTM" target="_blank">Conduct Data Quality Assessment </a></td>
+    <td>High-Level Data Quality Assessment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.180.2</div></th>
+    <td><a href="../030_TASK/RA_180_REVEW_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Review Use Case Model</a></td>
+    <td>Reviewed Use Case Model</td>
+  </tr>
+</table>
+<P><A
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Requirements Analysis process are:</p>
+<ul>
+  <li>Shape and structure the system to be developed. This is achieved by analyzing and describing the system requirements in such a way as to be easily understood by the system developers. The emphasis is now on the internals of the system. The structure of the new system determines the maintainability, adaptability, and resilience to change aspects of the system. </li>
+  <li>Define clear, concise, consistent, testable and unambiguous use cases following the priorities that are given throughout the process.</li>
+  <li>Define a basis for the High-Level Software Architecture Description identifying the use cases that are most architecturally significant to the new system and prioritize the use cases and project goals accordingly.</li>
+</ul>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Requirements Analysis process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="13%" scope="col">Name</th>
+    <th width="84%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Develop the business use cases.&nbsp;Facilitate the workshops where the business use cases are modeled. Define SOA Layering Architecture. Identify and document candidate business services. Identify and document candidate business rules. Populate the Business Rules Repository. Conduct working sessions.  Gather and document the procedures supporting the business processes enabled by the system.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Prepare for, and walkthrough the Conceptual Prototype, and gather new understanding of requirements. Prepare the Conceptual Prototype Workshop, invite participants, and lead the workshop. Provide expertise on development tools and how they are to be used. Walk the user through the Functional Prototype. Optionally, the developer records agreed changes and additions that can be reviewed after the walkthrough. You may choose to use an additional lead application developer to lead the Validate Functional Prototype Walkthrough Workshop. Assist in presenting the User Interface Standards Prototype. Optionally, develop a custom report to present the information during or after the walkthrough. Lead the Validate User Interface Standards Prototype Walkthrough. Lead the Use Case Model Walkthrough. Present the Use Case Model and Use Case Specifications. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">QM</th>
+    <td>Quality Manager </td>
+    <td>Review the Use Case Model and Use Case Specifications from the point of view of the Testing process. Gain understanding of the internal structure of the application.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Develop the Use Case Model and use cases.&nbsp;Facilitate the workshops where the use cases are modeled.&nbsp;Detail the use cases. Participate in Conceptual Prototype Workshop to ensure that it fits within the overall architecture (as far as known). Assist in the prioritization based on the documented business goals of the project. Assist in the validation of the Functional Prototype and advise on the impact of proposed changes on the requirements. Assist in the validation of the User Interface Standards Prototype and advise on the impact of proposed changes. Participate in the review meeting in order to verify if the Use Case Model and Use Case Specifications realize the requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Define SOA Layering Architecture. Identify and document candidate business services. Decide on, define, format and populate the services repository. Develop Architecture Description by prioritizing the use cases based on architecture risks and documented business goals of the project. Provide input and advice on the architectural consequences of particular gaps and alternatives. Assist in validating that the standard reports and forms, provided with the functionality being implemented, support the implementing organization&rsquo;s requirements. Participate in the review meeting to verify if the Use Case Model and Use Case Specifications are compatible with the architecture.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA (IA) </th>
+    <td>System Architect (Information Architect) </td>
+    <td> Identify any gaps in the source systems for meeting the information requirements of the target system. Identify information (data) quality issues early in the development cycle and establish appropriate escalation and resolution of those issues. Preferably, this should be done by a system architect that specializes in Information Architecture.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Provide information to create the business use cases and use cases and add detail to the use cases. Participate in the Conceptual Prototype Workshop to ensure that the requirements have been properly prototyped. Provide assistance in prioritizing the uses cases, goals and business units. Participate in working sessions and help identify setup parameters. Examine the Functional Prototype and give feedback to the developers. Provide information on the organization&rsquo;s reporting requirements. Examine the User Interface Standards Prototype and give feedback to the developers. Provide assistance in Identifying data quality issues early in the development cycle and establish appropriate escalation and resolution of those issues. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CDA</th>
+    <td>Customer Data Administrator </td>
+    <td> Provide assistance in Identifying any gaps in the source systems for meeting the information requirements of the target system. Provide assistance in Identifying data quality issues early in the development cycle and establish appropriate escalation and resolution of those issues. </td>
+  </tr>
+</table>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of the Business Requirements process also apply to the Requirements Analysis process. Additional critical success factors are: </p>
+<ul>
+  <li> <b>Access to Information Related to the Existing Business Processes and Systems:</b> As part of the process to identify main business cases and internal and external actors, it is important to have access to existing business processes and systems affected by the project objectives. Although a new system should be built, and we should be careful not to be constrained by current business processes, it is useful to get an understanding of the current basis. This will make it easier to understand the users business, and may also help the user to untie from old ideas and constraints in the old system. Existing systems may be of vital importance as they may become important actors in the new system. </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

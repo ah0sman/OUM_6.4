@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>MC.030 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" -->
+            <h1>Task Overview </h1>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                        <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation"
+ onchange="MM_jumpMenu('parent',this,1)">
+                          <option value="#TOP" selected="selected"></option>
+                          <option value="#Activity">Activity</option>
+                          <option value="#WP">Work Product</option>
+                          <option value="#TaskSteps">Task Steps</option>
+                          <option value="#Approach">Approach</option>
+                          <option value="#SG">Supplemental Guidance</option>
+                          <option value="#Roles">Method Roles</option>
+                          <option value="#Prerequisites">Prerequisites</option>
+                          <option value="#Templates">Templates and Tools</option>
+                          <option value="#WPDetails">Work Product Details</option>
+                          <option value="#QualCrit">Quality Criteria</option>
+                        </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>MC.030 - MAP BUSINESS REQUIREMENTS </h2>
+<!--BeginDesc--><p>The purpose of  this task is to assess the fit of standard application and system features to the detailed business requirements as reflected in the Future Process Model (RD.011), Use Case Model (RA.023), and Use Case Specification (RA.024), as well as requirements detailed in the Supplemental Requirements (RD.055), Reporting Fit Analysis (MC.090), Audit and Control Requirements (RD.070), and the MoSCoW List (RD.045). Outcomes from the execution of this task may include one or more of the following:</p>
+<ul>
+  <li> A determination of how standard application and system features can be employed to satisfy the requirements,</li>
+  <li> A description of &ldquo;workarounds&rdquo; that might be used to get around an application gap to a business requirement, and</li>
+  <li> Identification of application extensions, custom software modules, or enhancements needed to satisfy requirements. </li>
+</ul><!--EndDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, this task is used to assess the fit of the new release to the detailed business requirements. The Future Process Model (RD.011) and the Use Case Model (RA.023) describe the business requirements that are then mapped to the functionality in the new applications release. For upgrade projects, this task should also include an update to the customer&rsquo;s existing requirements mapping artifacts</p><!--EndSUDesc-->
+<hr width="100%">
+<h3><a name="Activity" id="Activity"></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTGBRE_GATHER_BUS_REQTS_ELABORATION.HTM" target="_blank">B.ACT.GBRE Gather Business Requirements - Elaboration </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Mapped Business Requirements</b></p>
+<p>The work product shows the results of mapping detailed business requirements to standard application and system features. This task generates the Business Requirements Mapping (BRMs) Forms for complex requirements and gaps. The compilation of all of the BRM Forms represents the complete work product. </p>
+<p>Consider using the MS Excel version of the MoSCoW List (RD.045) template to map detailed business requirements to standard application and system features and reserve preparation of Business Requirements Mapping Forms for complex requirements and gaps. Use the RD.045 MoSCoW List tab to list the detailed business requirements and populate columns B, D, E, etc. to document the mapping results. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Train all assigned team members in the use of the methods and tools for mapping.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Review high-level gaps, and the approach to resolve these gaps.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Review Future Process Model and Use Case Models for target processes in need of mapping.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Conduct mapping sessions to assess detailed application fit and create or revise alternatives to business requirements. Map future business requirements to application features, programs, reports, and other standard modules.</td>
+    <td>Process Scenario Solution </td>
+    <td>This component requires the following information:
+        <ul>
+          <li>Process Step Number &mdash; a unique sequence number for each task</li>
+          <li>System/Module &mdash; a reference to the application system module that satisfies this task requirement</li>
+          <li>Application navigation path or transaction zone &mdash; information describing entry form used for system-assisted tasks</li>
+          <li>Ref Manual Page/Line &mdash; a topical essay or other narrative in an application, user or technical reference manual</li>
+          <li>Tools &mdash; reports or other mechanisms used in completing the task successfully</li>
+          <li>Solution Type &mdash; used to designate workaround/extension; use &ldquo;W&rdquo; if there is a non-system workaround that is acceptable, although not necessarily optimal; use &ldquo;E&rdquo; if there is a need for extension (complete a Mapped Business Requirement form for all tasks coded with &ldquo;E&rdquo;)</li>
+          <li>BRM Ref Number &mdash; Business Requirement Mapping Form control number; optional unless Solution Type is &ldquo;E&rdquo;</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Document major requirements. </td>
+    <td>Mapping Source </td>
+    <td>This component facilitates the analysis and comparison between current solution to a business requirement and to a proposed solution.
+		<br>
+		<br>
+        The mapping source requires the following information:
+        <ul>
+          <li>Process &mdash; a brief description of the process</li>
+          <li>Business Area &mdash; a code designating the mapping team responsible for this process</li>
+          <li>Date &mdash; date form is being initiated</li>
+          <li>Control Number &mdash; a unique identifier for each business process (for example, 6-character code in format AAA.999, where AAA represents the subprocess, and 999 is a unique 3-digit code assigned sequentially from a log maintained by each team)</li>
+          <li>Mapping Team &mdash; either the process modeling, design, or mapping team responsible for this business process</li>
+          <li>Process Owner &mdash; the agent with overall responsibility for the process; could be the customer of the process, or the supplier (one who fulfills the request)</li>
+          <li>Librarian &mdash; the person charged with maintaining this work product and interfacing with other teams in order to maintain control and proper alignment with integration goals</li>
+          <li>Priority &mdash; determined at each team&rsquo;s discretion; this is a good place to identify Core Processes</li>
+          <li>Core &mdash; an identification of major, driver processes that affect or influence business objectives</li>
+          <li>Source Type &mdash; indicate whether the BRM Form will document a gap or a design note</li>
+          <li>Author &mdash; originator&rsquo;s name</li>
+          <li>Ref Doc &mdash; reference to some other formal requirement description source document (usually such a document already exists and the BRM initiator simply wishes to avoid rekeying its contents on the BRM Form)</li>
+          <li>Use Case Reference Number &mdash; Use case control number that is the parent of this BRM Form (also enter process step number)</li>
+    </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Prepare Requirements Essay. </td>
+    <td>Requirements Essay </td>
+    <td>The Requirements Essay is used to describe the requirements in terms of business objectives rather than application features. It should clearly define the reasons for the requirement along with any supporting information. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Perform process research; look for and document alternatives. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Identify current versus proposed process steps and assess the feasibility of proposed alternatives.</td>
+    <td>Current versus Proposed </td>
+    <td>This component documents the current process steps planned for elimination or modification, including the expected effect on cycle time, cost, and other resources. The section can be duplicated to show both current and proposed processes.
+        <ul>
+          <li>Practices &mdash; narrative description of customary or usual actions</li>
+          <li>Policies &mdash; principles, plans or courses of action, especially as dictated by management</li>
+          <li>Procedures &mdash; narrative description of sequence of steps to be followed</li>
+          <li>Seq &mdash; process step number</li>
+          <li>Ref/Description &mdash; a brief description, beginning with an action verb, that captures the purpose and deliverable task; alternatively, could include a reference to another document (or just use the use case step description)</li>
+          <li>Activity &mdash; optionally may be used for activity-based analysis purposes</li>
+          <li>Action &mdash; ADD/DEL/CHG status for the sequence number</li>
+          <li>Cost/Time/Resource &mdash; measurable resource usage by the sequence number</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Document alternatives. Record possible&nbsp;alternatives for application gaps.</td>
+    <td>Mapping Solution</td>
+    <td>This component details the type and nature of the solution in a descriptive format.
+        <ul>
+          <li>Workaround &mdash; description of the proposed method for getting around an application gap to a business requirement</li>
+          <li>Application Enhancement &mdash; description of the custom modification to the application whose implementation will result in satisfaction of the business requirement</li>
+          <li>Reengineering Opportunity &mdash; description of simplification, elimination or enhancement of the target process</li>
+          <li>Solution/Design Document Reference &mdash; if available, a document number for high-level or detailed design planned to satisfy the requirement</li>
+          <li>Mechanism &mdash; resources that influence the process; people, tools, or machines affected by the BRM proposal</li>
+          <li>Interfaces &mdash; description of system interface requirements necessary to satisfy the requirement</li>
+          <li>Solution Technique &mdash; description and type of application feature that will satisfy the requirement (configuration, setup, flexfield, alert, report, form, and so on)</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Document major operating and policy decisions.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Secure acceptance of the Mapped Business Requirements. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="Approach" id="Approach"></a>APPROACH</h3>
+<p>The Map Business Requirements task generates Business Requirements Mapping (BRMs) Forms for complex requirements and gaps. The combination of these documents represents the Mapped Business Requirements.</p>
+<h4>Definition of Mapping</h4>
+<p>Mapping is a set of activities that begins during the presales cycle, continues during the initial stages of the project (gathering of identified business requirements and application gap materials), becomes more formalized during the Inception phase, and concludes during Elaboration with the creation of Mapped Business Requirements.</p>
+<p>Mapping a business process means:</p>
+<ul>
+  <li>proving designs through demonstration</li>
+  <li> identifying gaps in the application</li>
+  <li> proposing feasible bridges to gaps</li>
+</ul>
+<p>The following list includes some broader connotations of the term mapping:</p>
+<ul>
+  <li>the basis for establishing application fit to business requirements, identifying gaps, and proposing alternatives</li>
+  <li> the formal linkage of Future Process Model (RD.011) to application features</li>
+</ul>
+<p>In this regard, mapping describes the evolution of process design for a business process. The business processes and associated use case models will continue to evolve and be supplemented and improved throughout all mapping tasks. The formal mapping task, however, is very specific in that it documents key business requirements and proposed alternatives in much more detail than generally described in a business process model or use case.</p>
+<h4>Mapping Teams Organized</h4>
+<p>Organize mapping teams around the same grouping as process design teams. This means that the same teams will work on Future Process Model development, as well as Use Case completion and BRM Form creation.</p>
+<p> The skills required for a mapping team are similar to those for a process design team, except that mapping typically includes a heavier concentration on detailed recommend alternatives. Detailed application knowledge becomes more important during mapping.</p>
+<p>Key users should participate in mapping sessions. It is best to perform mapping as near as possible to the actual location in which most of the process tasks take place, in order to have access to key users, and to be able to witness process execution as questions arise. Capture decisions made and agreements reached so that the final product reflects the proposed business process design.</p>
+<p>It is very important that the configuration management role be properly executed, especially with regard to the following areas:</p>
+<ul>
+  <li>updating  BRM Forms providing work product status</li>
+  <li> setting up configuration management (to help encourage proper use of tools and cataloging of work products)</li>
+  <li> tracking events, use cases, and BRM Forms in order to help maintain integrity (addressing all identified gaps)</li>
+</ul>
+<p>Always organize mapping sessions for efficiency by publishing a thorough agenda that includes:</p>
+<ul>
+  <li> session location and duration</li>
+  <li> role assignments</li>
+  <li> the business process to be mapped</li>
+  <li> activities and sequence</li>
+  <li> the inputs required (like prerequisite deliverables) and assignments for bringing them</li>
+  <li> the expected outputs and criteria for successful closure of the mapping session</li>
+</ul>
+<h4>Mapping Process</h4>
+<p>It may be hard to separate mapping activities from those of business process design, especially in the following situations: </p>
+<ul>
+  <li>The project is small or its target business area contains few business processes.</li>
+  <li> The project team is pursuing rapid implementation and therefore wants to complete deliverables in parallel as much as possible.</li>
+  <li> The process design team is intact through the mapping stage, and therefore process design and mapping form more of a continuum.</li>
+</ul>
+<p>Update the Future Process Model  as a record of your mapping progress. In addition to updating Future Process Model, create BRM Forms as needed. This document is a proposal for changes to some process design detail (at the process step level) that needs approval or specification. It is a description of the proposal. If a business requirement maps 100 percent to the application, it may not be necessary to create any BRM Forms for that business process.</p>
+<p>When mapping, keep the following step-savers in mind:</p>
+<ul>
+  <li>Address critical business processes identified by the organization before seeking resolution to minor issues that crop up in business process designs and maps.</li>
+  <li> Use standard system features, functions, and reports whenever possible.</li>
+  <li> Use extensibility features, such as descriptive flexfield.</li>
+</ul>
+<p>New business requirements could emerge during a mapping session. Verify that these new requirements fit within the scope of the project before adding them to the business requirements list. Set aside time to finalize these requirements.</p>
+<h4>Detailed Fit Assessment</h4>
+<p>During the development of the Future Process Model (RD.011), encourage teams to perform an initial assessment of application fit to business requirements. Documenting this information will provide an important input into detailed mapping.</p>
+<p>Complete a BRM Form for those steps on the Future Process Model (RD.011) with a gap (or whenever you need a detailed requirement more thoroughly investigated). A BRM Form is like a placeholder and usually results in an Application Extension Definition and Estimates (MC.100) document. After process refinements and decisions are made, Design activities may begin, resulting in Application Setup Documents (MC.050). </p>
+<h4>Solution to Application Gaps</h4>
+<p>There are many types of alternatives to application gaps, ranging from large subsystems to localized modifications (configuration, setup, flexfield, alert, report, and form), to simple workarounds. You still may want to create a BRM Form just for emphasis when approving a workaround built into the Future Process Model. The revised process reflects the approach dictated by the workaround and downstream users, and reviewers of the process are able to use the reasons and support information.</p>
+<p> Examples of large-scale subsystems are:</p>
+<ul>
+  <li> custom security architecture</li>
+  <li> reporting systems</li>
+  <li> critical enterprise interfaces</li>
+</ul>
+<p>It is best to avoid very detailed documentation in the BRM Form. Think of the BRM Form as a record of key decisions, or as a placeholder in anticipation of additional detailed design documentation.</p>
+<p>Adequately bridging gaps is the primary purpose of the BRM Form. Consider these tips when mapping and creating BRM Forms:</p>
+<ul>
+  <li>Design alternatives for the desired state of the business, rather than directly mapping to current needs.</li>
+  <li> Always implement workarounds before designing and building a custom extension.</li>
+  <li> When multiple alternatives are available, choose the alternative that supports organization goals or broad business areas, rather than satisfying the needs of a single department or user.</li>
+</ul>
+<p>In order to obtain rapid implementation, consider these mapping tips:</p>
+<ul>
+  <li>Get quick closure on gaps.</li>
+  <li> Push hard on perceived gaps &mdash; up to 80 percent of the initial gaps identified may actually be found to be unnecessary.</li>
+  <li> Ask the question, &ldquo;What does the application do?&rdquo; in order to keep the mapping session moving.</li>
+  <li> Adjust business processes to fit standard application functionality.</li>
+  <li> Pay special attention to prioritizing gaps in order to manage scope and budgeted resources properly.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<p> </p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4> BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#MC030" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>Siebel Customer Relationship Management (CRM)</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Siebel CRM implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_TASK_GUIDELINES.HTM#MC030" target="_blank">task-specific supplemental guidance</a>. To access all Siebel CRM supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_SUPP_GUIDE.HTM" target="_blank">OUM Siebel CRM Supplemental Guide</a>.</p>
+<h4>WebCenter (formerly E20) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Webcenter implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_TASK_GUIDELINES_ELABORATION.HTM#MC030" target="_blank">task-specific supplemental guidance</a>. To access all WebCenter supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_SUPP_GUIDE.HTM" target="_blank">OUM WebCenter Supplemental Guide</a>.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="29%" scope="col"><div align="left">Role</div></th>
+    <th width="65%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Business Analyst </div></th>
+    <td>Provide knowledge and guidance regarding the customer's existing business procedures, activities and functions. </td>
+    <td><div align="center">50</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Application/Product Specialist </div></th>
+    <td>Provide knowledge and guidance regarding the functionality, capabilities and implementation strategies for the product(s) being implemented.</td>
+    <td><div align="center">25</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">System Architect </div></th>
+    <td>Provide input and advice on the architectural consequences of particular gaps and alternatives. </td>
+    <td><div align="center">25</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Business Line Manager </div></th>
+    <td>Provide specific examples of business rules and procedures. </td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Ambassador User </div></th>
+    <td>Provide specific examples of business transaction forms, reports, data, etc. </td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p></p>
+<hr width="100%">
+<h3><a
+ name="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th scope="col"><div align="left">Prerequisite</div></th>
+    <th scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Future Process Model (RD.011) </div></th>
+    <td>The Future Process Model describes the future state business processes. </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Use Case Model (RA.023)</div></th>
+    <td>The Use Case Model is helpful for identifying functional requirements that are described via a use case. </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Use Case Specification (RA.024)</div></th>
+    <td>The Use Case Specifications detail functional requirements that are described via a use case. </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Supplemental Requirements (RD.055)</div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Reporting Fit Analysis (MC.090)</div></th>
+    <td>The Reporting Fit Analysis provides a disposition of every report requirement. </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MoSCoW List (RD.045)</div></th>
+    <td>The MoSCoW List provides the prioritized list of requirements. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p></p>
+<hr width="100%">
+<h3><a
+ name="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="29%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="71%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/MC/MC-030_BUSINESS_REQUIREMENTS_MAPPING_FORM.DOCX" target="_blank">MC-030_BUSINESS_REQUIREMENTS_MAPPING_FORM.DOCX</a></div></th>
+    <td>MS Word </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p> </p>
+<hr width="100%">
+<h3><a
+ name="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>This section is not yet available.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Does the Business Requirements Mapping Form include an organization of mapping alternatives?</li>
+  <li>Does it eliminate non-value-added steps?</li>
+  <li>Does it provide the best method to implement selected alternatives?</li>
+  <li> Are the reporting and messaging needs of custom extensions covered?</li>
+  <li> Are special or additional implementation steps needed?</li>
+  <li>Does it include perceived shortfalls and required system enhancement?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

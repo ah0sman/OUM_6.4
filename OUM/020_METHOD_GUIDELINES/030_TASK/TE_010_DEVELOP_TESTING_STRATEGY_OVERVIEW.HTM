@@ -1,0 +1,502 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TE.010 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>TE.010 - DEVELOP TESTING STRATEGY</h2>
+<!--BeginDesc--><p>The purpose of this task is to define the testing strategy for the project.</p><!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+Document the project direction as it relates to testing. This  includes how testing should be performed in the various stages of the project, which tools should be used (if any) and how, what metrics should be collected, how test data should be produced and what testing environments should be used in the tests. The strategy should also define the acceptance criteria of the solution.
+<p>Specific considerations include test data to be used, system interfaces, the scope of testing, the types of testing, testing scenarios and integration testing, data loads, and ad hoc access if required. It defines the recommended approach to testing, and how to manage testing errors, the types of tests to run, what is required to run the tests (including the test environment requirements), when and how (for example, manual versus automated) to run them. It also includes the sequence in which to run the tests. The aim is to identify test cases and procedures with a minimum overlap, to test the most important use cases, and to test requirements that are associated with the highest risks. </p>
+<p>At a minimum, the Testing Strategy must address all of the requirements documented in the Testing Requirements.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTDPS_DEFINE_PROJECT_STRATEGY.HTM" target="_blank">B.ACT.DPS Define Project Strategy </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Testing Strategy</b></p>
+<p>The work product for this task is the Testing Strategy. Based on the characteristics of the system to be built, specific testing activities may be more or less important to a successful implementation. Specific considerations include converted data, performance, system interfaces, the scope of testing, the types of testing, and the significance, or critical nature, of the system to the business. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review the Reviewed Project Approach to verify whether something has been determined about testing (PJM.BT.060).</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Review the Testing Requirements (TE.005) to ensure that the Testing Strategy will support these requirements. </td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Obtain and review any existing test plans and standards.</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine testing objectives and benefits.</td>
+    <td>Objectives and Benefits </td>
+    <td>The Objectives and Benefits components list the objectives of the Testing Strategy, and the benefits that should be provided by following this strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Identify the scope of the testing, testing types and relationships to other projects and systems.</td>
+    <td>Scope</td>
+    <td>The Scope defines the tests that should be performed, and what needs to be confirmed in the various tests. It also includes the interfaces with other systems that should be tested.<br>
+		<br>
+        Work with ambassador users in deciding the testing approach, and the type of tests that need to be performed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Develop Testing Approach </td>
+    <td>Approach </td>
+    <td>The Approach describes how the various testing tasks should be performed in the project. Determine for each test the approach and the focus for each phase and iteration.<br>
+		<br>
+        The Approach looks at the characteristics of the system to be built, technical risks, and plans the breadth and depth of the testing effort. It influences tasks related to test planning, test types, test script development, and test execution.<br>
+		<br>
+        Review the OUM Testing work products with the project team and obtain agreement on those suitable for the project.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Determine required test data.</td>
+    <td>Test Data<br>
+		<br>
+        Converted Data Sources<br>
+        <br>
+        Other Test Data</td>
+    <td>The Test Data component lists the kinds of test data that are required for the various tests. It defines  how to obtain the test data, and when it will be needed. It documents the requirements for test scripts and test data and explains how they will be managed.<br>
+		<br>
+        The Converted Data Sources component specifies which converted data sources are required for the tests.<br>
+		<br>The Other Test Data component specifies which other kind of test data will be required, or test data that will be needed before the data have been converted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Determine constraints for the test.</td>
+    <td>Constraints</td>
+    <td>The Constraints document all the constraints in which the testing must occur and that may impact the way testing activities must be performed. Document the constraints in the following categories: Time, Required System Resources, Business and Technical. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Determine use of testing tools and testing environments.</td>
+    <td>Testing Tools<br>
+		<br>
+      	Testing Environments</td>
+    <td>Both Testing Tools and Testing Environments might have been defined as part of the Testing Requirements. If this has not been done, you should do that as part of the Testing Strategy, and if it has already been defined, you should verify whether the tools and environments best support the chosen Testing Strategy. This should include the identification and documentation of the configurations of test environments and capacity requirements.<br>
+		<br>
+        The Testing Tools component describes the testing tools that will be available for the various test, and with what purpose they will be used. Review with the project team any existing testing tools they may have used and assess their fitness of use on the project.<br>
+		<br>
+        The Testing Environments components describe for each test that should be performed, which testing environment will be used.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Document Acceptance Criteria.</td>
+    <td>Acceptance Criteria </td>
+    <td>The Acceptance Criteria show the actual criteria for the customer to accept the final system. This information is normally a part of the contract, but you may decide to duplicate the information here as it might be that not every project participant has access to the contract. Most often the acceptance criteria is based on an accepted level of known defects/problems of different criticality.<br>
+    <br>
+    Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific custom BI supplemental guidance</a>.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Document how problem management will be performed.</td>
+    <td>Problem Management </td>
+    <td>Problem Management is normally determined as part of the Manage, Issue and Problem Management process. Problem management should be adopted at the overall project level.&nbsp; Therefore, the Testing process uses the same Issue and Problem Management process that each of the other OUM processes use, so therefore this section would only include a reference to the documents that describe the Issue and Problem Management procedures. Review the Manage Issue and Problem Management Process with the customer.
+        <ul>
+          <li>Indicate the tool (e.g., MS Excel, Bugzilla) that will be used for Issue and Problem Management. The defect categories for example, functionality, navigation, usability, manual data, conversion data, performance, help text, or test script are documented using the tool. In addition, the fix priority categories (for example, critical, high, medium, and low) and expected time of completion are held in this system. </li>
+          <li>Insert a process diagram that shows the Issue and Problem reporting and resolution steps.</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Determine critical success factors.</td>
+    <td>Critical Success Factors </td>
+    <td>The Critical Success Factors associated with meeting the objectives of the process within the context of the overall project are also identified within this component.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">13</div></th>
+    <td>Determine risk and contingency plans </td>
+    <td>Risk and Contingency Plans </td>
+    <td>Any risks and their associated contingency plans are documented in the Risk and Contingency Plans component. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">14</div></th>
+    <td>Determine testing metrics and collection mechanisms.</td>
+    <td>Testing Metrics and Measures </td>
+    <td>The Testing Metrics and Measures describe the testing metrics and measures that should be collected at the various tests during the project. This also gives a high-level idea of the amount of the testing that needs to be done.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">15</div></th>
+    <td>Review and comment on the Testing Strategy. </td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">16</div></th>
+    <td>Review, approve and sign off on (cover page) Testing Requirements.</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Use the Testing Strategy to document the testing strategy, the approach, and the scope of testing involved. The Testing Strategy includes a listing of the types of testing, and the purpose of each testing task. Unless it has been described in the Testing Requirements, the strategy also contains a description of the required testing environments, what tests will use which environment and the tools that will be used to perform testing. Define how to manage testing errors, the types of tests to run, what is required to run the tests (including the test environment requirements), when and how (for example, manual versus automated) to run them. The aim should be to identify test cases and procedures with a minimum overlap, to test the most important use cases, and to test requirements that are associated with the highest risks.</p>
+<p>In the Testing Strategy you establish or provide the following:</p>
+<ul>
+  <li> a list of testing requirements</li>
+  <li> an understanding of the type and purpose of each testing task</li>
+  <li> an understanding of the work products for each testing task</li>
+  <li> an overview of the testing tools</li>
+  <li> detailed acceptance criteria for testing</li>
+</ul>
+<p>Obtain a formal acceptance of the testing approach from the customer.</p>
+<h4> Scope and Approach </h4>
+<p>In an OUM project, test results are accepted whenever the system performs in a way that meets the business needs. In order to achieve a business-oriented measure of fitness for purpose, the emphasis in testing should be placed on whether the business process, with its supporting application system, meets the objectives stated in Business and System Objectives (RD.001). You should describe all aspects of the Testing process in simple terms. </p>
+<p>OUM recommends a testing approach that allows for continuous integration. This means that you perform integration tests (on use cases as well as on any additional identified group of interrelated components) as part of the iterations, and a system test at the end of each iteration. This system test at the end of each iteration is not a full system test, in the same way as the test that is performed at the end of the last iteration, but should, at a minimum, cover the essential system test procedures. As part of the Testing Requirements (TE.005), you should have documented what kind of test scenarios should be performed at the end of each iteration at an overview level. Document, in more detail, the approach that should be taken for earlier system tests (TE.070) versus the final system test in the Testing Strategy. Which approach to choose is dependent on the size or complexity of the application, as well as available testing resources and environments. For small, relatively simple applications, you might choose to do a full system test, but for a large and complex project this might not be feasible.</p>
+<p>The approach you choose to use may also vary depending on how far you have approached in your project. For example, if you have already delivered a version of the application to production, you may want to approach the iterative development in a way where you typically would deliver a release at the end of each iteration. If that is the case, you need to perform a full system test (for the areas that are affected) at the end of each iteration to prevent production problems.</p>
+<p>Integration Tests are performed continuously during the iteration, whenever components (or use cases) are ready for integration testing.</p>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Test Scripts and Scenarios </h4>
+Test scripts and test scenarios are used to guide the Testing process and record the test results. Test script development should be based on key project work products, requirements, acceptance criteria and risks. OUM recommends that test scripts for unit tests and test scenarios for integration tests are produced as early as possible, and the developer developing the actual components should be involved. In particular for unit testing, OUM recommends that the test scripts are produced by the developer before the actual code has been produced. This allows the developer to think through the problem in a different manner than when the component first is developed, and eases the testing of the component after it has been developed. In a similar way, OUM recommends that the Integration Test Scenarios for testing the use cases are produced before the components that implement the use cases are developed . By doing that, it becomes more clear how the components should interact in a certain scenario. For more details about these work products, see the guidelines for Unit Test Scripts (TE.020) and Integration Test Scenarios (TE.035). The Testing Strategy should document how these tests should be performed, and how and when their related scripts and scenarios should be produced.
+<h4> Test Data </h4>
+<p>Make sure that the requirements for testing data are clearly defined, so that the customer organization receives clear instructions about what must be delivered and when, together with the consequences for project deadlines of failing to deliver the test data on the planned dates. </p>
+<p> Use this task as an opportunity to ask for test data. Where existing systems are to be replaced, conversion planning should take into account the need, in the Testing process, for real business data, in volumes that will support progressive volume testing appropriate to each stage of development. Real business data is a benefit because users cannot relate to fake data in screens and reports. During early development iterations, you will probably have to manage with developer-created data. There is little point in loading converted, real business data before the Database Design (DS.060) and the Implemented Database (IM.040) are stable. </p>
+<p>However, consider the following regarding test data: </p>
+<ul>
+  <li>Can data be manually entered?</li>
+  <li>Can data be automatically generated using tools?</li>
+  <li>Can data be sourced from production or test systems?</li>
+  <li>Is the data of sufficient quality and quantity for testing?</li>
+</ul>
+<h4>Test Environments </h4>
+<p> Test environments should be developed in parallel with Configuration Management planning.</p>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Tool Support </h4>
+<p> Testing tools can be of enormous benefit in improving testing coverage, reducing the time developers and users need to spend on tedious Testing tasks and developing test scripts (that become test records). In an iterative approach to Testing, testing tools can be beneficial in enabling automated regression testing that can be performed in batch runs overnight or during lunch breaks. Investigate what testing tools are available for the platforms, protocols and the user interface type used in the project, and make an appropriate recommendation to the project sponsor. You may also want to test some different testing tools, produce some prototypes to see what tool is the most effective in your project situation. </p>
+<p>There are several things to consider when looking into tools for test support, such as:</p>
+<ul>
+  <li>Review functional testing capabilities.</li>
+  <li>Review performance testing capabilities (if no formal performance test is being performed).</li>
+  <li>Review Test Case Management capabilities.</li>
+  <li>Review capabilities to support defect management/configuration management.</li>
+  <li>Does the tool reduce the effort needed to develop and manage test scripts?</li>
+  <li>Does the tool improve the effectiveness of testing?</li>
+  <li>Does the tool automate test execution?</li>
+  <li>How does the tool make tests more repeatable?</li>
+</ul>
+<p>Be prepared to cope with some difficulties in using testing tools when the components and the Database Design change during development. Flexibility of the testing tools, and if possible integration with version control and document management tools, will help to make testing go smoothly. Also take into account any training needs associated with testing tools. Training in the use of testing tools can provide, as a side benefit, training in testing techniques. </p>
+<p>Testing tools supply some or all of the following features:</p>
+<ul>
+  <li> test case management</li>
+  <li> test results and reporting</li>
+  <li> test defects management</li>
+  <li> regression testing</li>
+  <li> stress testing</li>
+</ul>
+<h5>Test Case Management</h5>
+<p> This is one of the most important tools available to support the lifecycle of Testing. Features of a good tool will allow you to create a test case repository for reuse in the development of specific testing scripts. There are numerous tools that will allow the testing manager to determine the state of each test script and whether the scripts are currently under development or are ready to be executed. </p>
+<h5>Test Results and Reporting</h5>
+<p> Determine the reports required for your project and whether you need to develop additional reports. Standardize the test result classifications (for example, pass, fail, skipped, or not executed). Verify whether the test tools have result compilation and reporting capabilities, and how users access this information.</p>
+<h5>Test Defects Management</h5>
+<p> Determine your test defect workflow. Many tools support standard workflow states but also allow customizations. The Testing Requirements and Strategy must clarify and standardize the defect workflow in the tool (for example, open, assigned, fixed, verified, or closed).</p>
+<h5>Regression Testing</h5>
+<p>Determine your level of regression testing automation. Regression test automation is now a very realistic option. Current tools feature the ability to record user actions and &ldquo;learn&rdquo; GUI objects, capturing this information into test scripts. You can then generalize the scripts to use variable data, enabling the scripts&rsquo; execution to be data-driven. If your organization is considering automating its regression testing, clearly define your automation goals and plan extra time for script development and generalization. Place test scripts under configuration control and update the scripts each time the application is updated.</p>
+<h5>Relationship to Performance Testing</h5>
+<p> The Testing process does not address volume and stress testing; these are the subjects of the Performance Management (PT) process. Coordinate with the Performance Management team on your project so that you can share resources, business processes, and automation tools. Depending on how many configurations the Performance Management team plans to evaluate, you may be able to schedule one of the tests on the same configuration on which you are planning to run the system test.</p>
+<h4> Reuse </h4>
+<p> Try to reuse testing components where possible, both within and between iterations. Reusable components might include: </p>
+<ul>
+  <li> Test scenarios (threads) and sequences </li>
+  <li> Test scripts and scripted data for automated testing </li>
+  <li> Test drivers (harnesses) </li>
+</ul>
+<h4> Validation Strategy </h4>
+<p> An essential element of the OUM approach is the continuous involvement of ambassador users and adviser users, who progressively validate both the application system and the defined requirements. In contrast to a waterfall approach, in which requirements are all defined at the start of the project and validated at its end, the OUM approach is designed to allow the requirements to be refined during collaborative development. Ideally there is only a short delay between the user participants defining a requirement and the developers presenting pages/screens and other user-visible parts of the system. </p>
+<h4> User Validation During Development </h4>
+<p>For each type of test, document to what extend is it expected that customer resources should be involved. However, if you do involve customer resources in the Testing activities, keep in mind that the developer organization still is responsible, with the exceptions of the Acceptance Test. The users participation does not change that. </p>
+<p>Also, consider a testing approach where you pair the tester with an Ambassador User having the appropriate functional knowledge. This often results in better understanding for both the tester and the user, and will often result in better error detection, but may also result in improved requirements (that may be implemented in a later iteration if prioritized so). In this way you deliver a system that better complies to the actual business and system requirements. Less surprises and corrections will be needed during the full system test or acceptance test. </p>
+<p>You need to document a commitment to user participation and availability. A certain amount of negotiation is usually needed to obtain the necessary levels. Creative compromise might be required. For example, you might agree that: </p>
+<ul>
+  <li> All ambassador users will be available for reviews on certain days of the week during certain hours, except during scheduled &ldquo;busy periods.&rdquo; </li>
+  <li> All ambassador users will be available to answer questions or to make appointments by telephone during office hours. </li>
+  <li> Ambassador users will be contacted before 09.00 if they are needed on the same day. </li>
+  <li> One of the ambassador users will always be present in the project room during specified hours on working days. </li>
+  <li> A named user will be assigned from each site or office, to participate in requirements workshops and during later stages of testing and validation. </li>
+  <li> Review comments will be logged in a tracking system or sent to a dedicated email account.</li>
+  <li> A limited number of reviews or workshops will be arranged during weekends. </li>
+  <li> Developers and ambassador users will meet for a working lunch on certain days of the week.</li>
+</ul>
+<h4>Testing Metrics and Measures </h4>
+<p>A part of the testing process is to determine what testing metrics should be collected and measured against. This may be different for the various tests, and may even differ per iteration, depending on what is the objective of the test in question, and how the measure should be used.</p>
+<p>By collecting these kind of figures you may get an idea of how well the testing is performed (too few in the beginning of the project often indicates that it is not sufficiently tested, or not well enough), how the application evolves (if the number of successfully completed test scenarios increases significantly this seems like a healthy progress), and so on. Also often the acceptance criteria, or end criteria for a test is based on such figures. </p>
+<p>Determine what kind of testing metrics you will use in the project, and how they should be measured, used and collected. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4>Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<h4>SOA Project Delivery Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Project Delivery implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific supplemental guidance</a>. To access all SOA Project Delivery supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">OUM SOA Project Delivery Supplemental Guide</a>. </p>
+<h4>Technique Guidance for Service-Oriented Architecture Implementations </h4>
+<p>If your project involves SOA implementation, the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing</a> technique provides important guidance for testing services. </p>
+<h4>WebCenter</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Webcenter implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_TASK_GUIDELINES_ELABORATION.HTM#TE010" target="_blank">task-specific supplemental guidance</a>. To access all WebCenter supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_SUPP_GUIDE.HTM" target="_blank">OUM WebCenter Supplemental Guide</a>.</p>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col"><div align="left">Role</div></th>
+    <th width="61%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Tester </div></th>
+    <td>Develop Testing Strategy. For some projects, this may be a lead tester. </td>
+    <td><div align="center">100</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="33%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="67%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Configuration Management Plan and Processes (PJM.CM.010) </div></th>
+    <td>The environments that will be used for testing should be synchronized with the promotion levels defined in the Configuration Management Plan and Processes. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+    <td>The Business and System Objectives states the objectives to be met by the new system. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.1) </div></th>
+    <td>The Use Case Specification provides use case scenarios that lead to test scenarios that need to be tested in the various tests, and therefore is an input to the Testing Strategy. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Testing Requirements (TE.005.2) </div></th>
+    <td>The Testing Strategy must be in line with the Testing Requirements as the strategy describes how the requirements will be satisfied. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Data Acquisition and Conversion Requirements (CV.010)</div></th>
+    <td>The Data Acquisition and Conversion Requirements indicate which business objects will be converted, and where data may be used during testing.</td>
+  </tr>
+</table>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE010" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col"><div align="left">Technique</div></th>
+    <th width="67%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></div></th>
+    <td><div align="left">Use this technique to help you define the testing strategy for services. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a></div></th>
+    <td><div align="left">Use this technique to understand where service testing fits in the overall SOA service lifecycle. </div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="67%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/TE/TE-010_TESTING_STRATEGY.DOCX" target="_blank">TE-010_TESTING_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS</h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Testing Strategy is used in the following ways: </p>
+<ul>
+  <li> by the customer organization to increase confidence in the OUM approach </li>
+  <li> by the developers, testers and users on the project team to understand the approach for testing the solution components, and to explain to developers and users what is expected of them in an OUM project with regards to testing</li>
+  <li>by the project manager to understand the approach and impact of this on dependent tasks</li>
+</ul>
+<p> Distribute the Testing Strategy as follows: </p>
+<ul>
+  <li> to the project sponsor </li>
+  <li> to the customer project manager </li>
+  <li> to other stakeholders </li>
+  <li> to all team members </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li>Have the Customer&rsquo;s IT systems&rsquo; quality policies been discussed before arriving at the testing approach?</li>
+  <li>Does the document make clear what is expected from the customer organization in relation to validation and testing? </li>
+  <li>Are the consequences of failure to deliver adequate test data at the time it is needed, clearly stated? </li>
+  <li>Is the project team able and willing to perform and document testing as described in this document? </li>
+  <li>Are the testing scope and objectives clearly identified?</li>
+  <li>Are the testing types clearly communicated in this deliverable?</li>
+  <li>Are specific critical success factors and risks to testing documented?</li>
+  <li>Are all resource and tool requirements that could impact the testing process stated and understood?</li>
+  <li>Are the metrics and measures defined in a way they can be collected?</li>
+  <li>Are the problem management workflow tool details covered and is the resolution process detailed out?</li>
+  <li>Is it clear from this deliverable what is expected from the Testing process?</li>
+  <li>Will test script development be based on key project work products?</li>
+  <li>Will the testing be objective and performed by an independent test team where feasible and appropriate (other than the programmers responsible for the component)?</li>
+  <li>Will the problem management process be functional as soon as testing begins, and will it ensure that only valid and non-duplicated defects are processed?</li>
+  <li>Has there been planned for multiple iterations for each testing task to allow for a higher density of testing for the current test iteration and scheduled fixes for the next iteration?</li>
+  <li>Will planning for the systems integration test start early, as it will involve multiple projects, systems, and organizations?</li>
+  <li>Has the scope of the regression test been clearly defined?</li>
+  <li>Has an automated tool been considered to perform regression testing?</li>
+  <li>Will locking, response time, and stress testing use process-based testing scripts?</li>
+  <li>Will testing components be categorized by their relative importance to the business for defect prioritization and testing?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

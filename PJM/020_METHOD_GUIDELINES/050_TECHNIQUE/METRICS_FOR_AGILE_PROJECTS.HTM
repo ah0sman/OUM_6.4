@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Metrics for Agile Projects Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>METRICS FOR AGILE PROJECTS</h2>
+<p>The goal of this technique is to provide guidance on additional metrics that can be applied to OUM projects.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Agile Project Metrics</b> - The Agile Project Metrics are information that should supplement the traditional metrics and earned value management on a project using an agile approach. Agile project management emphasizes short increments of product development and delivering incremental updates of the product based on the continuously elaborated project requirements.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%" border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique.  The headings are No., the Step, Component (if the step results in a Component), and Description." >
+  <tr valign="top" bgcolor="CCCCCC">
+    <th scope="col">No.</th>
+    <th scope="col">Step</th>
+    <th scope="col">Component</th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">1</th>
+    <td>Collect data and generate metric reporting.</td>
+    <td>Metric Data and Reports</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">2</th>
+    <td>Analyze metrics and take corrective action, as appropriate.</td>
+    <td>None</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Collect Data and Generate Metric Reporting </h4>
+<p>Collect the appropriate metrics to collect and report for the project. Projects that are less complex and/or shorter in duration may have less rigorous reporting needs than projects that are more complex and longer in duration. In addition, some projects may be governed by Program Management Offices (PMOs) that require certain metrics to be tracked and reported. Several types of metrics and their applicability are described below.</p>
+<h5>BURNDOWN CHART</h5>
+<p> Once the overall scope of the project has been set, progress can be tracked using a simple Burndown Chart. A simple Burndown Chart is a line chart used to track progress. The Burndown Chart can show various metrics regarding project progress including use cases completed so far (which is an indication of the team&rsquo;s velocity), estimated hours remaining, features completed, estimated effort remaining, etc. The metric tracked should be meaningful to the project team and project manager to measure progress and the team&rsquo;s internal productivity.</p>
+<p> The use of Burndown Charts as a measurement and reporting tool provides many of the benefits of Earned Value Management (EVM) a traditional project management process for measuring project progress, but in a different form. If the Burndown Charts are kept current and analyzed regularly, project managers can use them as a key indicator of project progress, potential issues and risks.</p>
+<p>There are two types of Burndown Charts used in Scrum namely the release Burndown Chart and the sprint Burndown Chart. </p>
+<p>A release Burndown Chart is a graphical representation of work remaining to be done the number of planned sprints within a release. A Burndown Chart is created by plotting outstanding work units remaining to be completed (such as the backlog of M&rsquo;s and S&rsquo;s from the MoSCoW List) on the vertical axis, with an indicator of the sprint timeline usually a sprint number along the horizontal axis. A release Burndown Chart could be done without using Scrum and would indicate scheduled days within an OUM iteration along the horizontal axis. This technique could be applied and included as a graphic to visually depict an iteration plan in OUM.</p>
+<p align="center"><img src="../../010_COMMON_FILES/RELEASEBURNDOWN.jpg" alt="Example Release Burndown Chart" width="864" height="424" title="Example Release Burndown Chart"></p>
+<p align="center"><b>Example Release Burndown Chart</b></p>
+<p>A sprint Burndown Chart is a graphical representation of work remaining to be done versus time remaining within a single sprint. A Burndown Chart is created by plotting outstanding work units remaining to be completed in the sprint on the vertical axis, with an indicator of the sprint timeline usually in number of days, or weeks remaining within the Scrum sprint (similar to scheduled days within OUM iterations) along the horizontal. For an OUM project not applying Scrum this is the equivalent to the total number of days of work planned for during an iteration on an OUM project. This technique can be used to give the team an early indicator when they are off-pace with target timeframes, early on before too much of the time allotted for the sprint has passed, well before the end of the sprint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SPRINTBURNDOWN.jpg" alt="Example Sprint Burndown Chart" width="576" height="376" title="Example Sprint Burndown Chart"></p>
+<p align="center"><b>Example Sprint Burndown Chart</b></p>
+<p>Burndown Charts are also important in project estimating since they give an idea of the team&rsquo;s capacity. During backlog grooming meetings, the scrum master, product owner and scrum team can start to see a trend for how much work the team is typically able to complete during an individual sprint. </p>
+<p>Velocity, which refers to the speed at which a team can implement and test use cases and change requests (that is, how much of the product backlog the team can complete), is reflected in the Burndown Charts by showing the progress made so far versus the planned/estimated progress. Velocity is the measurement of the number of units of work the team accomplishes per sprint. Another popular type of chart is a Burn up chart, which gives an indication work done over time. Although not used as often, a burn up chart records the work done (units) on the vertical axis and the sprint timeline across the horizontal axis. </p>
+<p align="left">The Burndown Chart examples above track progress by showing a decrease in the remaining project hours. A project team can select any measure they deem relevant to measure progress such as the number of use cases completed, scenarios completed, days remaining, etc.</p>
+<h6 align="left"><b>Reading a Burndown Chart</b></h6>
+<table border="1" title="Visual Cues for Reading a Burndown Chart" summary="This table lists the Visual Cues (with an example) and their associated meaning for reading a Burndown Chart.  It has columns for Visual Cue and Meaning.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Visual Cue </th>
+    <th scope="col">Meaning</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><p align="left">Flat Line      
+        <p align="left"><img src="../../010_COMMON_FILES/MAP_CUE_FL.PNG" alt="Flat Line Visual Cue" width="80" height="1" title="Flat Line Visual Cue"></th>
+    <td>The team is not making progress as expected.
+                <ul>
+                  <li>Technical Issues </li>
+                  <li>Organizational Barrier </li>
+                  <li>Team Productivity Issues </li>
+                  <li>Architecture Issues </li>
+                </ul>
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">
+        <p>Upward Moving Line</p>
+        <p><img src="../../010_COMMON_FILES/MAP_CUE_UML.PNG" alt="Upward Moving Line Visual Cue" width="80" height="22" title="Upward Moving Line Visual Cue"></p>
+    </div></th>
+    <td>New requirements were added, bug fixes are identified or use cases previously considered complete have moved back into development.
+          <ul>
+            <li><b>Positive:</b> Sign of interaction with the customer.</li>
+            <li><b>Negative:</b> Indication of scope creep or gold plating</li>
+          </ul>
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">
+        <p>Choppy Line that Slopes Up and Down </p>
+        <p><img src="../../010_COMMON_FILES/MAP_CUE_CL.PNG" alt="Choppy Line that Slopes Up and Down Visual Cue" width="78" height="36" title="Choppy Line that Slopes Up and Down Visual Cue"></p>
+    </div></th>
+    <td>Unforeseen complexities are arising.
+          <ul>
+            <li> Level of team experience.</li>
+            <li>Use cases more complex than thought.</li>
+            <li>Poor planning and/or estimating.</li>
+          </ul>
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">
+        <p>Expected Line Movement</p>
+        <p><img src="../../010_COMMON_FILES/MAP_CUE_ELM.PNG" alt="Expected Line Movement Visual Cue" width="80" height="24" title="Expected Line Movement Visual Cue"> </p>
+    </div></th>
+    <td>The team is successful at:
+          <ul>
+            <li>Predicting the team velocity.</li>
+            <li>Selecting the right features.</li>
+            <li>Determining the right number of use cases to include in the iteration.</li>
+          </ul>
+    </td>
+  </tr>
+</table>
+<h5><b>AGILE EARNED VALUE MANAGEMENT (EVM) FOR OUM</b></h5>
+<p>Agile EVM can bridge the gap between the traditional EVM used to predict and evaluate project progress and an agile project&rsquo;s need for more immediate and relevant measurements. As in traditional EVM, EVM for agile projects requires initial baselines such as number of planned iterations, number of planned use cases in a release, and planned budget for the release. Also needed are the total number of use cases completed, number of iterations completed, actual cost and the number of use cases added or removed from the current release.</p>
+<h6><b> Agile Earned Value Definitions for OUM</b></h6>
+<table border="1" title="Agile EVM Metrics" summary="This table lists the various earned value management (EVM) metrics and their associated meaning.  The column headings are Agile EVM Metric and Meaning.">
+  <tr bgcolor="#CCCCCC">
+    <th width="239" scope="col">Agile EVM Metric </th>
+    <th width="618" scope="col">Meaning</th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PUC (Planned Use Cases)</div></th>
+    <td>Total number of use cases planned for this release</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PW (Planned Weeks)</div></th>
+    <td>Total number of planned development weeks</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BAC (Budget at Completion)</div></th>
+    <td>Total budget for the release</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AW (Actual Weeks)</div></th>
+    <td>Number of development weeks elapsed to date</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CUC (Completion Use Cases)</div></th>
+    <td>Number of use cases completed to date</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PPC (Planned Percent Complete)</div></th>
+    <td>AW/PW</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">APC (Actual Percent Complete)</div></th>
+    <td>CUC/PUC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AC (Actual Cost)</div></th>
+    <td>Total budge spent to date</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PV (Planned Value)</div></th>
+    <td>Budgeted cost of the use cases that were scheduled to e completed as of this point in the project; PPC * BAC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EV (Earned Value)</div></th>
+    <td>Budgeted cost for the use cases actually completed as of today; APC * BAC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV (Cost Variance)</div></th>
+    <td>Difference between planned schedule and actual time spent; EV - AC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">SV (Schedule Variance)</div></th>
+    <td>Difference between planned schedule and actual time spent; EV - PV</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CPI (Cost Performance Index)</div></th>
+    <td>EV / AC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">SPI (Schedule Performance Index)</div></th>
+    <td>EV / PV</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ETC (Estimate to Complete)</div></th>
+    <td>Based on current state, how much additional budget is needed to complete the release; 1/CPI * (BAC &ndash; EV)</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EAC (Estimate at Completion)</div></th>
+    <td>Based on the current state, how much additional budget is needed to complete this release; EAC &ndash; AC + ETC</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Estimate Time to Complete</div></th>
+    <td>Based on the current state, the total estimated time needed to complete the release; 1/SPI * PW</td>
+  </tr>
+</table>
+<h6 align="left"><b>Agile EVM Example</b></h6>
+<p align="left">The budget for a given release is $100,000 for a completion of 100 use cases. At this time, the project has completed 25 of the use cases at a cost of $20,000.</p>
+<p align="left"> Actual percent complete = 25 completed use cases/100 use cases = 25% complete.</p>
+<p align="left"> EV &ndash; actual percent complete x total budget = $25,000.</p>
+<p>These modifications make EVM concepts more compatible with the agile techniques which lay at the foundation of OUM, while providing a familiar terminology and reporting mechanism. </p>
+<p><b>Note:</b> The EVM metrics noted above can also be applied at the iteration or phase level depending on the project&rsquo;s reporting needs.</p>
+<h4>Analyze Metrics and Take Corrective Action</h4>
+<p>Analyze the agile metrics and if necessary initiate actions which will turn the project in a way such that it better aligns with the goals, expectations, and ultimate results laid out in the project management plan.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>The following templates and tools are available to assist with this technique:</p>
+<table width="100%"  border="1" id="TempsTools" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th width="50%" scope="row"><div align="left"><a href="BURNDOWN%20CHART.XLSX" target="_blank">Burndown Chart Spreadsheet </a></div></th>
+    <td width="50%">MS EXCEL </td>
+  </tr>
+  <tr valign="top">
+    <th width="50%" scope="row"><div align="left"><a href="RELEASEBURNDOWN.PPTX" target="_blank">Release Burndown Chart </a></div></th>
+    <td width="50%">MS POWERPOINT </td>
+  </tr>
+  <tr valign="top">
+    <th width="50%" scope="row"><div align="left"><a href="SPRINTBURNDOWN.PPTX" target="_blank">Sprint Burndown Chart </a></div></th>
+    <td width="50%">MS POWERPOINT </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col">Task</th>
+    <th width="50%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a><a href="../030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank"> (Manage) </a></div></th>
+    <td>Use this technique to measure actual project accomplishments against what was planned for agile projects.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th width="50%" scope="row"><div align="left"><a href="../030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">WM.040 Track Schedule Performance (Manage) </a></div></th>
+    <td width="50%">Use this technique to measure actual project accomplishments against what was planned for agile projects.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th width="50%" scope="row"><div align="left"><a href="../030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances (Manage) </a></div></th>
+    <td width="50%">Use this technique to measure actual budget expended against what was planned for agile projects.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<p>This section is not yet available.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

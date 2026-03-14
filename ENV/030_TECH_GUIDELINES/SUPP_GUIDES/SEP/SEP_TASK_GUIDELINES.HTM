@@ -1,0 +1,1268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Engineering Planning Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Engineering Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#MG">Mobilization Guidance</option>
+                            <option value="#SARG">Service Architecture Guidance</option>
+                            <option value="#SANG">Service Analysis Guidance</option>
+                            <option value="#SDG">Service Delivery Guidance</option>
+                            <option value="#SMG">Service Management Guidance</option>
+                            <option value="#WUG">Wrap-Up Guidance</option>
+                            <option value="#PDG">Post Delivery Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("M");
+  Effect.BlindDown("SAR");
+  Effect.BlindDown("SAN");
+  Effect.BlindDown("SD");
+  Effect.BlindDown("SM");
+  Effect.BlindDown("WU");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("M");
+  Effect.BlindUp("SAR");
+  Effect.BlindUp("SAN");
+  Effect.BlindUp("SD");
+  Effect.BlindUp("SM");
+  Effect.BlindUp("WU");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SEP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) ENGINEERING PLANNING SUPPLEMENTAL TASK GUIDELINES</h2>
+<p> This document contains OUM supplemental task guidance for the execution of a service based on the SOA Engineering Planning view. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. </li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for the areas.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">SOA Engineering Planning - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MG">Mobilization</a></div></th>
+    </TR>
+  <tbody id="M">
+    <TR valign="top">
+      <TD valign="top"><a href="#SM010">PJM.SM.010 Define and Confirm Scope </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">PJM.SM.010 Define and Confirm Scope </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER020">ER.020 Determine Envision Engagement Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER030">ER.030 Set and Agree on Plan for Envision Engagement </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#SARG">Service Architecture </a></div></th>
+  </TR>
+  <tbody id="SAR">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM050">PJM.STM.050 Conduct Team Orientation</a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA010">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA075">EA.075 Develop Technology Reference Architectures </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1801">ER.180.1 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#SANG">Service Analysis </a></div></th>
+  </TR>
+  <tbody id="SAN">
+    <TR valign="top">
+      <TD valign="top"><a href="#EA095SAN">EA.095 (.1,.2,.3) Review Enterprise Software Development Process </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0171">BA.017.1 Determine Metrics Collection and Reporting Strategy </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1802">ER.180.2 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#SDG">Service Delivery </a></div></th>
+  </TR>
+  <tbody id="SD">
+    <TR valign="top">
+      <TD valign="top"><a href="#EA095SD">EA.095 (.4,.5,.6,.7) Review Enterprise Software Development Process </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0172">BA.017.2 Determine Metrics Collection and Reporting Strategy </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1803">ER.180.3 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#SMG">Service Management </a></div></th>
+  </TR>
+  <tbody id="SM">
+    <TR valign="top">
+      <TD valign="top"><a href="#EA095SM">EA.095 (.8,.9) Review Enterprise Software Development Process </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0173">BA.017.3 Determine Metrics Collection and Reporting Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#ER1804">ER.180.4 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#WUG">Wrap-Up</a></div></th>
+  </TR>
+  <tbody id="WU">
+    <TR valign="top">
+      <TD valign="top"><a href="#EA095WU">EA.095.10 Review Enterprise Software Development Process </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0174">BA.017.4 Determine Metrics Collection and Reporting Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#ER1805">ER.180.5 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#PDG">Post Delivery </a></div></th>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CMM040">PJM.CMM.040 Document Lessons Learned </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">PJM.CMM.040 Document Lessons Learned </a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MG id="MG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">MOBILIZATION GUIDANCE</a></h3>
+<p>Mobilization begins with the qualification of the effort to scope the engagement to best meet the needs of the organization. An engagement may be based solely on this view, but may also be increased to cover multiple views to produce a more full-featured planning and delivery engagement. In particular it may be combined with the SOA Modeling Planning view. It may also be scoped back to focus on only a subset of the six areas covered in this view, streams, tasks, and work products, while omitting others.</p>
+<h5>Create Engagement Strategy and Plan</h5>
+<p>Use a set of interviews and meetings with the organization to assess the maturity of the organization with respect to SOA and specifically, SOA engineering. Clarify the objectives and scope of the engagement. Identify the stakeholders from the organization needed to participate and create a detailed project plan. Agree on the scope and plan with the organization.</p>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Assess and understand the maturity of the organization and suggest a scope for the engagement. Be familiar with the material from SOA Reference Architecture Planning and all OUM techniques available for this engagement.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Support the enterprise architect on assessment and identify the topics relevant for the organization. Needs to be a specialist on OUM with project experience in SOA engineering.</TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Agree on the scope of the engagement. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Identify the stakeholders needed in the engagement and ensure their availability and commitment</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Provide insight into the SOA strategy and approach of the organization. Responsible for enterprise SOA or enterprise architecture in general at the organization.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Provide insight into the approach to SOA and how this is mapped into the Software Development Lifecycle (SDLC) of the organization. Responsible for the SDLC of the organization.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><a
+name=SM010 id="SM010"></a></b><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></h4>
+<h5>Determine Engagement Scope</h5>
+<p> The engagement lead is primarily responsible for determining the scope of the engagement. The areas and work products should be aligned with organization objectives, and the activities should support successful completion of the work products.
+<p>There are common areas of SOA engineering that are common across all SOA deployments and should be covered by any organization adopting SOA. The depiction below provides a summary of the OUM SOA engineering approach:
+<p align="center"><img src="../../../010_COMMON_FILES/SE_APPROACH.PNG" alt="SOA Engineering Approach" width="745" height="433" title="SOA Engineering Approach">
+<p>Topics covered by SOA engineering include:
+<ul>
+  <li>Service Architecture: Defines the basic terminology and taxonomy around services</li>
+  <li> Service Lifecycle: Define the lifecycle of a services and the basic meta model needed to support collaboration across projects</li>
+  <li> Versioning: Defines a common versioning strategy for services and identifies migration strategies to minimize impact on consumers</li>
+  <li> Standards and Guidelines: Introduces an approach to identify and manage architectural policies for services. This approach can be used to standardize and harmonize the service landscape.</li>
+  <li> Requirements Management: Provides a process for harvesting requirements in a manner that naturally facilitates service identification and discovery. </li>
+  <li> Service Identification and Discovery: Establishes the procedures around identifying service candidates, as well as discovering reuse candidates from the existing service catalog. Takes the process from identification and discovery, through the justification processes required to determine if an existing service can be viable for reuse in the proposed manner, or if the proposed service candidate should be realized as a shared service.</li>
+  <li>Release Planning: Provides the ground works necessary for planning for project and service deliveries within an SOA.</li>
+  <li>Service Definition: Takes the identified service candidates and defines the service boundaries and resulting service contracts.</li>
+  <li>Service Design: Provides the best practices and procedures required to design services from the service contract and produce the service interface. </li>
+  <li> Service Implementation: Provides the guidelines for effectively and efficiently developing shared services. </li>
+  <li>Service Testing: Defines the strategy that should be taken with respect to ensuring the appropriate level of quality for delivered shared services. The information obtained through service testing is also used to enable Service Deployment. </li>
+  <li>Service Deployment: Defines the guidelines and practices that need to be considered when deploying services into a shared environment. </li>
+  <li>Service Operation, Administration and Maintenance (OA&amp;M): Covers the Operation, Administration and Maintenance guidelines required for supporting the SOA operational environment. OA&amp;M is not simply about keeping the environment operational, but enabling reuse and evolution, in addition to measuring the SOA adoption and success.</li>
+</ul>
+<p>With the proper engineering approach in place, the SOA can be started from the ground up and will grow effectively from project to project.
+<p>In addition to determining the topics for SOA engineering, you should strongly consider including instrumentation for monitoring and management related to the other subjects the organization chooses to include in the scope of the engagement. Instrumentation, with respect to business and particularly IT has been around for a long time. However, it has not generally been utilized as a core component of any particular IT strategy. Quite often it is introduced as an afterthought, or as a missed requirement. Many view the addition of instrumentation to be a bottleneck or unnecessary overhead. This reasoning typically stems from those who have been forced to add instrumentation as a reactive measure after a project has been completed.
+<p>When addressed up front and architected for accordingly such as we suggest in this view, instrumentation may be engineered to have as little footprint as possible, and in some cases is minimal. This is rarely the case when it is added in band-aid fashion after project completion. Therefore, it is recommended that you make strong arguments for including this as part of the scope of the engagement.</p>
+<p>A number of meetings, phone calls, or emails can be used to finalize the scope with the organization. Organization objectives may originate from sources such as:
+<ul>
+  <li>Meetings</li>
+  <li>Findings from previous SOA assessments</li>
+  <li>Architect input from a current engagement</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER020" id="ER020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy</a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank"><br>
+</a><a name="ER030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></h4>
+<h5> Determine Staffing, Schedule and Level of Effort</h5>
+<p>Applying SOA engineering to an enterprise typically takes four to eight weeks, possibly slightly longer when instrumentation is included in the engagement. Topic areas are developed through a series of facilitated workshops, where each topic is addressed with the appropriate leadership team members provided by the organization. In these workshops, the organization will need to demonstrate the current approach to that topic. Then OUM collateral is used to discuss best practices and methods. The organization approach will be refined based on the discussion. The policies and procedures developed through the workshops are then formalized through documentation of the findings. It will then be in the responsibility of the organization to apply needed changes to their documents.</p>
+<p>Once the engagement has been scoped, the engagement lead should determine a level of effort (LOE) for each delivery area and stream, which will combine into an estimate for the engagement as a whole. A number of factors can affect the estimate in addition to the common factors, such as:
+<ul>
+  <li>the availability of enterprise materials on their SDLC or SOA engineering process documentation, etc. </li>
+  <li>the availability and maturity of a SOA Reference Architecture</li>
+  <li>the availability of existing experience regarding instrumentation for monitoring and management </li>
+</ul>
+<p>If this material is not available, effort must be included to collect or even create this kind of material as it is an important input to this kind of engagement.
+<p>The following additional risk factors may have an impact on the estimation of effort:
+<ul>
+  <li>the overall maturity of project governance </li>
+  <li> the maturity of the organization with respect to SOA</li>
+  <li> the number of LOBs involved</li>
+</ul>
+<p> Add additional effort if the organization needs to be introduced to basic SOA disciplines or if basic IT engineering methods need to be discussed.</p>
+<h5>Create and Deliver Exhibit</h5>
+<p> When determining the strategy for the engagement, you should consider the existing enterprise situation. The development of the strategy and a plan for the engagement duration of the engagement can vary, depending on the size and complexity of the project. The strategy and plan should be concluded with proposal document or presentation to the organization where the go/no-go decision is received.</p>
+<p>You can use the following questions as an assistance to scope the engagement, if not already answered through the previous steps: </p>
+<ul>
+  <li>What are the primary goals for undertaking this engagement?</li>
+  <li>What are the success criteria for this engagement?</li>
+  <li>Are there specific dates that need to be met?</li>
+  <li>How soon are you looking to get started?</li>
+  <li>Roughly how many concurrent development projects does your IT organization run?</li>
+  <li>How large and mature is your Enterprise Architect and project architect community?</li>
+  <li>Has business strategy been defined, and if so, what method was used to define it (e.g., strategy map, balanced scorecard, etc.)?</li>
+  <li>Have IT goals and initiatives been defined and mapped to business strategy?</li>
+  <li>What SDLC processes or methodology do you follow?</li>
+  <li>How important is SOA to the future of your IT organization?</li>
+  <li>Has your enterprise architecture team attempted to create taxonomy of business functions, processes, services, and data? If so, how far along are they?</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=SARG id="SARG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">SERVICE ARCHITECTURE GUIDANCE</a> </h3>
+<p> Service Architecture starts with the engagement kickoff and educating the organization in the concepts of SOA engineering. It also helps familiarize them with the terminology that will be used throughout the engagement. The workshops covered in Service Architecture include the following:
+<ul>
+    <li>a kickoff aimed at introducing the organization to SOA engineering</li>
+    <li>Service Architecture workshop to define a common baseline Service Architecture and Governance </li>
+</ul>
+  <h5>Kickoff </h5>
+  <p> Prepare and conduct a kickoff meeting with all attendees of the engagement. During the kickoff, the audience will need to be introduced to the scope of the engagement and the project plan. Ensure everybody agrees to the project plan and is available as needed.  
+  <h5>Define Service Architecture </h5>
+  <p>Review the SOA reference architecture of the organization and identify the definition and components of a service, the versioning strategy, and the layered service architecture. Review the enterprise repository meta-model with respect to the lifecycle of a service, all dependent assets and the taxonomies used. Compare the current status with best practices as documented in OUM. Prepare and conduct a workshop on Service Architecture to share the current definition, discuss problem or missing areas and define a common baseline for all further activities. Summarize the findings in a Service Architecture document.  
+  <p> If the organization has already a good maturity on SOA reference architecture or a reference architecture planning engagement has been executed before, this task can be reduced to just presenting the findings as part of the kickoff meeting. However, you should ensure that all participants of the upcoming tasks are familiar with the terminology, taxonomy and basics around services.  
+  <h5> Architecture Wrap-Up</h5>
+  <p> Prepare and conduct reviews of the Service Architecture document. Prepare and conduct a short presentation summarizing the changes to be applied. The presentation may be combined with the presentations of the other area wrap-ups into a presentation conducted during the final Service Engineering Wrap-Up. 
+  <h5>Key Responsibilities</h5>
+  <p>This area involves the following roles: </p>
+  <TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Create a presentation for the kickoff and lead the meeting. Review the organization's SOA reference architecture and enterprise repository meta model. Create the presentation for and conduct the Service Architecture workshop. Review the Service Architecture document and the findings presentation. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Prepare and present an overview of Oracle&rsquo;s enterprise SOA and SOA engineering for the kickoff meeting. Support the preparation of the Service Architecture workshop and create the Service Architecture document. Organize, review and finalize the document. Create and present the finding presentation at the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+        <TD width="80%" align="left" valign="top">Introduce the kickoff workshop sharing the objectives and importance of the project. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+        <TD width="80%" align="left" valign="top">Attend the kickoff meeting and control stakeholder participation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Prepare and present an overview on the SOA enterprise architecture of the organization for the kickoff meeting. Provide and support the review of the SOA enterprise architecture. Attend the Service Architecture workshop. Review and sign the Service Architecture document. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+        <TD width="80%" align="left" valign="top">Prepare and present an overview on the enterprise repository and the meta model relevant for SOA at the kickoff meeting. Provide and support the review of the enterprise repository. Attend the Service Architecture workshop. Review and sign the Service Architecture document. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Prepare and present an overview on the SDLC of the organization for the kickoff meeting. Provide and support the review of the method to enforce architectural policies. Attend the Service Architecture workshop. Review the Service Architecture document. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Configuration Manager </th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of configuration management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Project Manager </th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of project management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Business Analyst</th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of business analysis.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">System Architect </th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of system architecture.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Designer</th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of software design.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Developer</th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of development.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Quality Manager </th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of quality management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">IS Operations Staff </th>
+        <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of operations.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <h5>Techniques </h5>
+  <p>The following activities are available to assist in this area: </p>
+  <TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Motivational Modeling area.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Technique Note </b></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a></th>
+        <TD width="80%" align="left" valign="top">This technique provides assistance on service definition and architectural policy management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">Service Lifecycle </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the service lifecycle and the asset types needed for SOA.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the meta model for the asset types needed for SOA. </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p><br>
+      <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=STM050 id="STM050"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 - Conduct Team Orientation</a></h4>
+  <h5>Kickoff Workshop (SOA Engineering Overview)</h5>
+  <p>You start the engagement using a kickoff workshop. During this workshop, you should introduce the focus areas of the SOA Engineering Approach and the scope of SOA engineering. Familiarize the participants with the terminology that will be used throughout the engagement.
+  <p>The workshop will also be used to detail the scope of SOA engineering to be implemented with the engagement, as this may vary from one organization to the next.
+  <p><b>INPUT:</b> Overview on Service Engineering.ppt
+  <p><b>OUTPUT:</b> Organization has a clear understanding of what is SOA engineering and what is not. Organization has a clear understanding of the high-level SOA Engineering Approach.
+  <p><a href="#TOP">Back to Top</a>  
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA010 id="EA010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 - Review Architecture Principles, Guidelines and Standards</a></h4>
+  <p> Initial principles, standards and guidelines for SOA should be determined as part of a SOA Engineering Planning Engagement. Often the first standards are identified during a Service Architecture Workshop where you also look into the SOA Reference Architecture and the Services Implementation Strategy. Please see the task guidance for the <a href="#EA075">EA.075, Develop Technology Reference Architecture</a>, below for more details about such a workshop.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA075 id="EA075"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures </a></h4>
+  <p>When determining the Technology Reference Architecture for SOA &ndash; called the SOA Reference Architecture &ndash; there are certain elements that should be covered. For any situation that involves a set of SOA services of any significant size, or if the enterprise has embraced SOA as an IT strategy, it is important to determine and document a consistent strategy for service implementation. Failure to establish such a strategy might result in an inconsistent service implementation and may negate the advantages of using a SOA approach by greatly hampering reuse. </p>
+  <p>Therefore, during this task, you define the SOA Reference Architecture that will be used at the enterprise level, one of the most important parts being the definition of the layers of the SOA architecture. The SOA Reference Architecture should describe how services should be implemented in the enterprise architecture, what kind of services should be located where (in what layer or tier), and what access and communication mechanisms should be used as well as define a target for implementation over a few years.</p>
+  <p>The SOA Reference Architecture should cover:</p>
+  <ol>
+    <li>Service Definition - What is a service, service scope, service lifecycle, etc.?</li>
+    <li>Conceptual View - service types and layers (for example, connectivity, data, decision, business, business process, presentation services and associated rules and guidelines for each layer or service type</li>
+    <li>SOA Infrastructure - covers components (for example, a service bus) to perform service routing, service orchestration, governance, management, etc. </li>
+    <li>SOA Security - includes service authorization, identity federation, etc. </li>
+    <li>Implementation - tools and technology for implementing the previous points</li>
+    <li>Deployment - covers service packaging, and a service deployment strategy </li>
+    <li>Patterns and Design Guidelines - includes best practices, and design patterns</li>
+  </ol>
+  <p>Guidelines for points 1 and 2 above are available in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique.</p>
+  <p>In a SOA Engineering Planning engagement, the SOA Reference Architecture should be determined during a Service Architecture Workshop, where you also look into Enterprise Architecture Principles, Guidelines and Standards (EA.010) as well as the SOA Reference Architecture.</p>
+  <h5>Service Architecture Workshop</h5>
+  <p>As for every workshop, you need to be well prepared. Ensure that you have someone delivering the workshop with a good knowledge about Service Architecture. Read the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique as a preparation. In the end, the organization needs to decide the course that they will take with respect to Service Architecture.</p>
+  <p>It is recommended that you start the workshop with a high level overview of the OUM, as well as the recommended approach to SOA engineering. You should base this on the information in the technique guide. Continue to facilitate discussion amongst the enterprise participants to define a SOA Reference Architecture and from there, a detailed set of standards and guidelines with respect to service architecture. You need to be well prepared to participate in the discussion and provide guidance whenever required in addition to facilitating the workshop.</p>
+  <p>During the workshop preparation you should think forward with respect to an enterprise-specific SOA approach and during the workshop guide the organization against making decisions that may break other areas of the approach that have not been discussed yet. This workshop should be scheduled to last for a full day.<br>
+      <br>
+      <b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Architecture for which the organization has agreed to adopt. </p>
+  <p>At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5>Document Service Architecture Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the SOA Reference Architecture, and Service Architecture standards, policies and guidelines agreed upon by the organization. You should also formulate the Services Implementation Strategy that describes the strategy on how to move from the current situation to the future Service Architecture. You may use the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique as a template to speed the delivery of this document. Ensure that all aspects of the technique guide that are not relevant to the organization are removed from the document delivered to the organization.</p>
+  <p> <b>INPUT:</b> Notes from the Service Architecture Workshop</p>
+  <p><b>OUTPUT:</b> Service Architecture Document</p>
+  <p>The <a href="../../../040_TEMPLATES_AND_GUIDANCE/EA/EA-075_SOA_REFERENCE_ARCHITECTURE.DOCX" target="_blank">SOA Reference Architecture</a> template can be used to document this task.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1801 id="ER1801"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.1 Prepare for and Present Solution Recommendation</a></h4>
+  <h5> Reviews </h5>
+  <p> A SOA Engineering Planning engagement is performed through a number of workshops, and where the workshop results are documented into a proper format that will be used for the rest of the engagement. Each workshop result must be presented back to the organization to ensure that it captures their perspective provided in the workshops. The organization should be expected to review the documentation prior to the review presentation and will be given time to provide additional feedback during the review. </p>
+  <p><b>INPUT:</b> Documents delivered as result of one or multiple workshops.<br>
+      <br>
+      <b>OUTPUT:</b> Feedback Presentation </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=SANG id="SANG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">SERVICE ANALYSIS GUIDANCE</a></h4>
+  <p>During Service Analysis you develop the Service Analysis portion of the enterprise SOA approach. The procedures and policies covered by Service Analysis coincide closely with the types of activities typical of traditional software engineering analysis practices but additionally take into account the needs of the SOA. The workshops covered in Service Analysis are aimed at defining the approach to the following:</p>
+  <ul>
+    <li>Requirements Management</li>
+    <li>Service Identification and Discovery</li>
+    <li>SOA Release Planning</li>
+  </ul>
+  <h5>Define Approach to Requirements Management</h5>
+  <p>Review the current approach to requirements management and compare with best practices as documented in OUM. Prepare and conduct a workshop on requirements management to share the current requirements analysis process, discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a SOA Requirements Process document.</p>
+  <h5>Define Approach to Service Identification and Discovery</h5>
+  <p>Review the current approach to service identification and discovery and compare with best practices as documented in OUM. Prepare and conduct a workshop on service identification and discovery to share the current analysis process, discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Identification and Discovery Process document.</p>
+  <h5>Define Approach to SOA Release Planning </h5>
+  <p>Review the current approach to release planning and discovery and compare with best practices as documented in OUM. Prepare and conduct a workshop on SOA release planning to share the current planning process, how dependencies are managed across service reuse and discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a SOA Release Planning Process document.</p>
+  <h5>Define Instrumentation Data and Metrics for Service Analysis </h5>
+  <p>When you have defined the approaches to Requirements, Management, Service Identification and Discovery, and SOA Release Planning, you should be able to determine what kind of information can be collected during the different processes and be used as instrumentation data. You would typically do this in separate workshops, where you first determine how you want to instrument the Service Analysis area, and thereafter determine what kind of metrics you need to measure the efficiency of the Service Analysis processes. </p>
+  <h5>Service Analysis Wrap-Up </h5>
+  <p>Prepare and conduct reviews of the documents created. Prepare and conduct a short presentation summarizing the changes to be applied and where instrumentation should be included. The presentation may be combined with the presentations of the other area wrap-ups into a presentation conducted during the final Service Engineering Wrap-Up. </p>
+  <h5>Key Responsibilities </h5>
+  <p>This area involves the following roles: </p>
+  <TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Support preparations for the workshops. Attend the workshops and review the finding documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Prepare and conduct the workshops. Create the documents and organize the document reviews. Create and present the finding presentation at the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+        <TD width="80%" align="left" valign="top">Control stakeholder participation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of enterprise architecture. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of asset management. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of SDLC methodology. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Configuration Manager </th>
+        <TD align="left" valign="top">Attend the SOA Release Planning workshop and review the SOA Release Planning Process document. Represent the interests of configuration management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Project Manager </th>
+        <TD align="left" valign="top">Attend the SOA Release Planning workshop and review the SOA Release Planning Process document. Represent the interests of project management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Business Analyst</th>
+        <TD align="left" valign="top">Attend the Requirements Management and Service Identification and Discovery workshops and review the documents. Represent the interests of business analysis.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">System Architect </th>
+        <TD align="left" valign="top">Attend the Requirements Management and Service Identification and Discovery workshops and review the documents. Represent the interests of system architecture.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">IS Operations Staff </th>
+        <TD align="left" valign="top">Attend the SOA Release Planning workshop and review the SOA Release Planning Process document. Represent the interests of operations.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <h5>Techniques </h5>
+  <p>The following activities are available to assist in this area: </p>
+  <TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Motivational Modeling area.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="27%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+        <th scope="col" width="73%" bgColor=#CCCCCC><b>Technique Note </b></th>
+      </TR>
+      <TR>
+        <th scope="row" width="27%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a></th>
+        <TD width="73%" align="left" valign="top">This technique provides assistance on service definition and architectural policy management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">Service Lifecycle </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the service lifecycle and the asset types needed for SOA.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the meta model for the asset types needed for SOA. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on requirements management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service identification and discovery. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">Service Boundary Analysis </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service boundary analysis. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning </a></th>
+        <TD align="left" valign="top">This technique provides assistance on release planning in SOA. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring </a></th>
+        <TD align="left" valign="top">This technique provides assistance on how to instrument and what kind of metrics may be relevant for Service Analysis. </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA095SAN id="EA095SAN"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 &ndash; Review Enterprise Software Development Process</a></h4>
+  <p> During this task you should review the organizations software development process, and determine what kind of adjustments would be necessary to support the services development process. Many enterprises struggle with inconsistency across deliveries for projects that need to coexist, which also is an inhibitor to reuse and agility and is addressed by the adoption of a sound enterprise-class SOA approach.</p>
+  <p>Enterprise SOA Engineering and Management requires that the method for delivering projects that will utilize SOA must be executed with a consistent strategy from inception through delivery and into steady state. Therefore in this task, we will further analyze and improve analysis, delivery and management of services within the organization&rsquo;s software delivery process. </p>
+  <h5>Assess Customer Software Development Process</h5>
+  <p>This step is about gathering the current software development process of the organization. Try to get written information on the current development processes and the guidelines and best practices on software development. Identify how the organization has mapped SOA engineering to his processes and guidelines. The As-Is situation will be further analyzed in the next steps and will be validated against the specific requirements arising from SOA projects.</p>
+  <p> If an assessment of the organization&rsquo;s SOA strategy was done prior to this engagement, review the results of the assessment with respect to SOA engineering to identify the weaknesses and strengths in the current approach.</p>
+  <h5>Identify Gaps or Areas for Improvement</h5>
+  <p>There are a number of areas of the organization software development process that should be investigated in detail for this type of engagement:</p>
+  <ul>
+    <li>Service Analysis:
+        <ul>
+          <li> Requirements Management (EA.095.1) </li>
+          <li>Service Identification and Discovery (EA.095.2) </li>
+          <li>Service Release Planning (EA.095.3) </li>
+        </ul>
+    </li>
+  </ul>
+  <p> For each of the areas where there is a need for improvement, it is recommended that you use a workshop to determine the possible improvements and prepare estimates.</p>
+  <h5>Refine Requirements Management</h5>
+  <p> Review the requirements management process of the organization. Analyze how the organization is managing requirements and models across projects. SOA intends to create reuse across projects across the Enterprise. For that purpose it is important to manage project requirements on Enterprise level. This will enable the projects to discover commonality and reuse on requirements level already.</p>
+  <p>For mapping business strategy to a service portfolio, it is important to manage the dependencies between requirements, models, services and projects centrally based on a business taxonomy. The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique provides leading practices on this topic. </p>
+  <p>Conduct a workshop on requirements management to create a To-be picture on Requirements Management together with the stakeholders of the organization. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p> <b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding SOA Requirements Management, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document SOA Requirements Management Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the SOA Requirements Management processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the SOA Requirements Management Workshop</p>
+  <p><b>OUTPUT:</b> SOA Requirements Management Document</p>
+  <h5>Refine Service Identification and Discovery Approach</h5>
+  <p> Review the analysis process of the organization in Envision and in Implement with respect to Service Identification and Discovery. Analyze the approach chosen and try to gather business alignment created with the approach.</p>
+  <p>In a successful SOA, creation of new services and reuse goes hand in hand. Experience has shown that it is not valuable to delivery all functionalities as services. On the other hand, some of the functionality that currently resides inside applications should be surfaced as shared services.</p>
+  <p>It is very important that the analysis process allows, and perhaps even enforces, reuse as early as possible to ensure a good result from the service implementation. To prevent service sprawl, new services should be clearly justified against benefits and risks before being implemented. Please review the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique on best practices and guidelines.</p>
+  <p>Conduct a Workshop on Service Identification and Discovery to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Identification and Discovery, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5>Document Service Identification and Discovery Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Identification and Discovery processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Identification and Discovery Workshop</p>
+  <p><b>OUTPUT:</b> Service Identification and Discovery Document</p>
+  <h5>Refine Service Release Planning Discipline</h5>
+  <p> Review the release planning process of the organization. Analyze how the organization is solving dependencies across projects arising from SOA.</p>
+  <p>To support business agility it is important to allow for a flexible release management for services. But the more reuse SOA creates, the more dependencies need to be managed. Instead of synchronizing the enterprise on major releases over the year, the release management should allow for parallel deployment of several versions on a service in order to decouple the lifecycles of the applications and systems from the service lifecycles. The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a> technique provides more information on this topic. </p>
+  <p>Conduct a Workshop on SOA Release Planning to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding SOA Release Planning, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document SOA Release Planning Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the SOA Release Planning processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the SOA Release Planning Workshop </p>
+  <p><b>OUTPUT:</b> SOA Release Planning Document</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=BA0171 id="BA0171"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.1 Determine Metrics Collection and Reporting Strategy </a></h4>
+  <p>When you execute this task at this point of time, you already know the area of focus, which is Service Analysis. Of course, you can detail the area even more if you want to limit the task to cover only a subset of Service Analysis, for example, only Service Identification and Discovery. It all depends on what kind of pain points exists for Service Analysis, and what kind of goals the organization has related to the service engineering process.</p>
+  <p> The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring</a> technique contains guidelines on both what kind of instrumentation data may be relevant for Service Analysis, as well as a set of metrics that may be used as a starting point when executing this task.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1802 id="ER1802"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.2 Prepare for and Present Solution Recommendation</a></h4>
+  <h5> Reviews </h5>
+  <p> A SOA Engineering Planning engagement is performed through a number of workshops, and where the workshop results are documented into a proper format that will be used for the rest of the engagement. Each workshop result must be presented back to the organization to ensure that it captures their perspective provided in the workshops. The organization should be expected to review the documentation prior to the review presentation and will be given time to provide additional feedback during the review. </p>
+  <p><b>INPUT:</b> Documents delivered as result of one or multiple workshops.<br>
+      <br>
+      <b>OUTPUT:</b> Feedback Presentation </p>
+  <p> <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=SDG id="SDG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">SERVICE DELIVERY GUIDANCE</a></h3>
+  <p>Service Delivery covers the core engineering processes and guidelines required to define, design, construct and test services. The workshops covered in Service Delivery are aimed at defining the approach to the following:</p>
+  <ul>
+    <li>Service Definition </li>
+    <li>Service Design </li>
+    <li>Service Implementation</li>
+    <li>Service Testing </li>
+  </ul>
+  <h5>Define Approach to Service Definition</h5>
+  <p>Review the current approach to service definition and the meta model on service contracts and compare with best practices as documented in OUM. Prepare and conduct a workshop on service definition to share the current definition process, the current use of service contracts, discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Definition Process document.</p>
+  <h5>Define Approach to Service Design </h5>
+  <p>Review the current approach to service design and the meta model on service interfaces and compare with best practices as documented in OUM. Prepare and conduct a workshop on service design to share the current design process, service design guidelines, discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Design Process document.</p>
+  <h5>Define Approach to Service Implementation </h5>
+  <p>Review the current approach to service implementation and the meta model on service implementation and compare with best practices as documented in OUM. Prepare and conduct a workshop on service implementation to share the current implementation process, implementation guidelines and discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Implementation Process document.</p>
+  <h5>Define Approach to Service Testing </h5>
+  <p>Review the current approach to service testing and the meta model on test plans and test cases and compare with best practices as documented in OUM. Prepare and conduct a workshop on service testing to share the testing process, discuss service testing strategies and discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Testing Process document.</p>
+  <h5>Define Instrumentation Data and Metrics for Service Delivery </h5>
+  <p>When you have defined the approaches to Service Definition, Service Design, Service Implementation and Service Testing, you should be able to determine what kind of information can be collected during the different processes and be used as instrumentation data. You would typically do this in separate workshops, where you first determine how you want to instrument the Service Delivery area, and thereafter determine what kind of metrics you need to measure the efficiency of the Service Delivery processes. </p>
+  <h5>Service Delivery Wrap-Up</h5>
+  <p>Prepare and conduct reviews of the documents created. Prepare and conduct a short presentation summarizing the changes to be applied and where instrumentation should be included. The presentation may be combined with the presentations of the other area wrap-ups into a presentation conducted during the final Service Engineering Wrap-Up. </p>
+  <h5>Key Responsibilities </h5>
+  <p>This area involves the following roles: </p>
+  <TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Support preparations for the workshops. Attend the workshops and review the finding documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Prepare and conduct the workshops. Create the documents and organize the document reviews. Create and present the finding presentation at the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+        <TD width="80%" align="left" valign="top">Control stakeholder participation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of enterprise architecture. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of asset management. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of SDLC methodology. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">System Architect </th>
+        <TD align="left" valign="top">Attend the workshops and review the documents. Represent the interests of system architecture.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Designer</th>
+        <TD align="left" valign="top">Attend the Service Definition and Service Design workshops and review the documents. Represent the interests of software design.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Developer</th>
+        <TD align="left" valign="top">Attend the workshops and review the documents. Represent the interests of development.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Quality Manager </th>
+        <TD align="left" valign="top">Attend the workshops and review the documents. Represent the interests of quality management.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <h5>Techniques </h5>
+  <p>The following activities are available to assist in this area: </p>
+  <TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Motivational Modeling area.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="27%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+        <th scope="col" width="73%" bgColor=#CCCCCC><b>Technique Note </b></th>
+      </TR>
+      <TR>
+        <th scope="row" width="27%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a></th>
+        <TD width="73%" align="left" valign="top">This technique provides assistance on service definition and architectural policy management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">Service Lifecycle </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the service lifecycle and the asset types needed for SOA.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the meta model for the asset types needed for SOA. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on requirements management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DEFINITION.HTM" target="_blank">Service Definition </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service definition. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">Service Boundary Analysis </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service boundary analysis. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DESIGN.HTM" target="_blank">Service Design </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service design. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_IMPLEMENTATION.HTM" target="_blank">Service Implementation </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service implementation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service testing.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring </a></th>
+        <TD align="left" valign="top">This technique provides assistance on how to instrument and what kind of metrics may be relevant for Service Delivery. </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p><br>
+      <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA095SD id="EA095SD"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 &ndash; Review Enterprise Software Development Process</a></h4>
+  <p> During this task you should review the organization software development process, and determine what kind of adjustments would be necessary to support the services development process. Many enterprises struggle with inconsistency across deliveries for projects that need to coexist, which also is an inhibitor to reuse and agility and is addressed by the adoption of a sound enterprise-class SOA approach.</p>
+  <p>Enterprise SOA Engineering and Management requires that the method for delivering projects that will utilize SOA must be executed with a consistent strategy from inception through delivery and into steady state. Therefore in this task we will further analyze and improve analysis, delivery and management of services within the organization&rsquo;s software delivery process. </p>
+  <h5>Assess Customer Software Development Process</h5>
+  <p>This step is about gathering the current software development process of the organization. Try to get written information on the current development processes and the guidelines and best practices on software development. Identify how the organization has mapped SOA engineering to his processes and guidelines. The As-is situation will be further analyzed in the next steps and will be validated against the specific requirements arising from SOA projects.</p>
+  <p> If an assessment of the organization&rsquo;s SOA strategy was done prior to this engagement, review the results of the assessment with respect to SOA engineering to identify the weaknesses and strengths in the current approach.</p>
+  <h5>Identify Gaps or Areas for Improvement</h5>
+  <p>There are a number of areas of the organization software development process that should be investigated in detail for this type of engagement:</p>
+  <ul>
+    <li>Service Delivery:
+        <ul>
+          <li>Service Definition (EA.095.4)</li>
+          <li>Service Design (EA.095.5) </li>
+          <li>Service Implementation (EA.095.6) </li>
+          <li>Service Testing (EA.095.7) </li>
+        </ul>
+    </li>
+  </ul>
+  <p> For each of the areas where there is a need for improvement, it is recommended that you use a workshop to determine the possible improvements and prepare estimates.</p>
+  <h5>Refine Service Definition</h5>
+  <p> Review the solution definition process of the organization regarding service definition. Analyze how the organization identifies the boundaries and granularity of the services. Ensure the organization is familiar with the concept of service contracts. Analyze how the contracts are defined and managed.</p>
+  <p>Gather how the organization ensures services meet expectations from business. Test the approach the organization has chosen on some sample requirements in parallel with two different teams and check both teams identify similar services with the same boundaries. In order to enable reuse it is important that all the projects spilt requirements into services along similar boundaries. </p>
+  <p>For more information review the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">Service Boundary Analysis</a> technique.</p>
+  <p>Conduct a Workshop on Service Definition to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop. </p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">Service Boundary Analysis</a> technique.</p>
+  <p> <b>OUTPUT:</b> Service Definition which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document Service Definition Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Definition processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Definition Workshop</p>
+  <p><b>OUTPUT:</b> Service Definition Document</p>
+  <h5> Refine Service Design Process</h5>
+  <p> Analyze the design process of the organization with respect to service design. Analyze how the style of the service interface is gathered and published.</p>
+  <p>Service interfaces are the meeting point between service consumers and providers. Therefore particular attention should be given to the design of interfaces, especially since it is likely to be called by consumers of different types and technology. Please review the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DESIGN.HTM" target="_blank">Service Design</a> technique for best practices on service design. </p>
+  <p>Conduct a Workshop on Service Design to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DESIGN.HTM" target="_blank">Service Design</a> technique. </p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Design, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document Service Design Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Design processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Design Workshop </p>
+  <p><b>OUTPUT:</b> Service Design Document</p>
+  <h5> Refine Service Implementation Process</h5>
+  <p> Analyze the implementation process of the organization. Analyze how services are implemented and how the organization ensures quality of delivery from implementation.</p>
+  <p>Check if the organization is familiar with unit testing and analyze how this is applied or even enforced in the process. More on this topic can be found in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_IMPLEMENTATION.HTM" target="_blank">Service Implementation</a> technique. </p>
+  <p>Conduct a Workshop on Service Design to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_IMPLEMENTATION.HTM" target="_blank">Service Implementation</a> technique.</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Implementation, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document Service Implementation Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Implementation processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Implementation Workshop</p>
+  <p><b>OUTPUT:</b> Service Implementation Document</p>
+  <h5> Refine Service Testing Concept</h5>
+  <p> Analyze the testing concept of the organization. Analyze how the organization covers service based testing in collaboration with testing of projects and systems.</p>
+  <p>Gather the method the organization uses to validate the functionality of a service. Some enterprises spend a lot of time on project integration testing. This can be improved by designing test strategies on service level. Please review the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing</a> technique on the concept of service-based testing. </p>
+  <p>Conduct a Workshop on Service Testing to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop.</p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Testing, for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document Service Testing Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Testing processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Testing Workshop </p>
+  <p><b>OUTPUT:</b> Service Testing Document</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=BA0172 id="BA0172"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.2 Determine Metrics Collection and Reporting Strategy </a></h4>
+  <p>When you execute this task at this point of time, you already know the area of focus, which is Service Delivery. Once again, you can pinpoint the area even more if you want to limit the task to cover only a subset of Service Delivery, for example, only Service Definition. It all depends on what kind of pain points exists for Service Delivery, and what kind of goals the organization has related to the service engineering process.</p>
+  <p> The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring</a> technique contains guidelines on both what kind of instrumentation data may be relevant for Service Delivery, as well as a set of metrics that may be used as a starting point when executing this task.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1803 id="ER1803"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.3 Prepare for and Present Solution Recommendation</a></h4>
+  <h5> Reviews </h5>
+  <p> A SOA Engineering Planning engagement is performed through a number of workshops, and where the workshop results are documented into a proper format that will be used for the rest of the engagement. Each workshop result must be presented back to the organization to ensure that it captures their perspective provided in the workshops. The organization should be expected to review the documentation prior to the review presentation and will be given time to provide additional feedback during the review. </p>
+  <p><b>INPUT:</b> Documents delivered as result of one or multiple workshops.<br>
+      <br>
+      <b>OUTPUT:</b> Feedback Presentation </p>
+  <p> <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=SMG id="SMG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">SERVICE MANAGEMENT GUIDANCE</a></h3>
+  <p>Service Management covers the activities to transition and operate services. The workshops covered in Service Management are aimed at defining the approach to the following:</p>
+  <ul>
+    <li>Service Deployment </li>
+    <li>Service Operations, Administration and Maintenance (OA&amp;M) </li>
+  </ul>
+  <h4>Define Approach to Service Deployment </h4>
+  <p>Review the current approach to service deployment and the deployment technique and compare with best practices as documented in OUM. Prepare and conduct a workshop on service deployment to share the current deployment strategy and discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service Deployment Strategy document.</p>
+  <h5>Define Approach to Service Operations, Administration and Maintenance (OA&amp;M)</h5>
+  <p>Review the current approach to service OA&amp;M including policies and procedures and compare with best practices as documented in OUM. Prepare and conduct a workshop on service OA&amp;M to share policies and procedures and discuss problem or missing areas and define an approach to be used for SOA engineering. Summarize the findings in a Service OA&amp;M Policies and Procedures document.</p>
+  <h5>Define Instrumentation Data and Metrics for Service Delivery </h5>
+  <p>When you have defined the approaches to Service Deployment and Service Operations, Administration and Maintenance (OA&amp;M), you should be able to determine what kind of information can be collected during the different processes and be used as instrumentation data. You would typically do this in separate workshops, where you first determine how you want to instrument the Service Management area, and thereafter determine what kind of metrics you need to measure the efficiency of the Service Management processes. </p>
+  <h5>Service Management Wrap-Up</h5>
+  <p>Prepare and conduct reviews of the documents created. Prepare and conduct a short presentation summarizing the changes to be applied and where instrumentation should be included. The presentation may be combined with the presentations of the other area wrap-ups into a presentation conducted during the final Service Engineering Wrap-Up. </p>
+  <h5>Key Responsibilities </h5>
+  <p>This area involves the following roles: </p>
+  <TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Support preparations for the workshops. Attend the workshops and review the finding documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Prepare and conduct the workshops. Create the documents and organize the document reviews. Create and present the finding presentation at the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+        <TD width="80%" align="left" valign="top">Control stakeholder participation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of enterprise architecture. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of asset management. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top"> Attend the workshops representing the interests of SDLC methodology. Review and sign the documents. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">System Architect </th>
+        <TD align="left" valign="top">Attend the Service Deployment workshop and review the Service Deployment Strategy document. Represent the interests of system architecture.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Designer</th>
+        <TD align="left" valign="top">Attend the workshops and review the documents. Represent the interests of software design.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Developer</th>
+        <TD align="left" valign="top">Attend the Service Deployment workshop and review the Service Deployment Strategy document. Represent the interests of development.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Quality Manager </th>
+        <TD align="left" valign="top">Attend the Service Deployment workshop and review the Service Deployment Strategy document. Represent the interests of quality management.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">IS Operations Staff </th>
+        <TD align="left" valign="top">Attend the workshops and review the documents. Represent the interests of operations.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <h5>Techniques </h5>
+  <p>The following activities are available to assist in this area: </p>
+  <TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Motivational Modeling area.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="27%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+        <th scope="col" width="73%" bgColor=#CCCCCC><b>Technique Note </b></th>
+      </TR>
+      <TR>
+        <th scope="row" width="27%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a></th>
+        <TD width="73%" align="left" valign="top">This technique provides assistance on service definition and architectural policy management. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">Service Lifecycle </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the service lifecycle and the asset types needed for SOA.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></th>
+        <TD align="left" valign="top">This technique provides assistance on the meta model for the asset types needed for SOA. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></th>
+        <TD align="left" valign="top">This technique provides assistance on service packaging and deployment. </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring </a></th>
+        <TD align="left" valign="top">This technique provides assistance on how to instrument and what kind of metrics may be relevant for Service Management.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>      <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA095SM id="EA095SM"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 &ndash; Review Enterprise Software Development Process</a></h4>
+  <p> During this task you should review the organization software development process, and determine what kind of adjustments would be necessary to support the services development process. Many enterprises struggle with inconsistency across deliveries for projects that need to coexist, which also is an inhibitor to reuse and agility and is addressed by the adoption of a sound enterprise-class SOA engineering.</p>
+  <p>Enterprise SOA Engineering and Management requires that the method for delivering projects that will utilize SOA must be executed with a consistent strategy from inception through delivery and into steady state. Therefore in this task we will further analyze and improve analysis, delivery and management of services within the organization&rsquo;s software delivery process. </p>
+  <h5>Assess Customer Software Development Process</h5>
+  <p>This step is about gathering the current Software Development Process of the organization. Try to get written information on the current development processes and the guidelines and best practices on software development. Identify how the organization has mapped SOA engineering to his processes and guidelines. The As-is situation will be further analyzed in the next steps and will be validated against the specific requirements arising from SOA projects.</p>
+  <p> If an assessment of the organization&rsquo;s SOA strategy was done prior to this engagement, review the results of the assessment with respect to SOA engineering to identify the weaknesses and strengths in the current approach.</p>
+  <h5>Identify Gaps or Areas for Improvement</h5>
+  <p>There are a number of areas of the organization software development process that should be investigated in detail for this type of engagement:</p>
+  <ul>
+    <li>Service Management
+        <ul>
+          <li> Service Packaging and Deployment (EA.095.8)</li>
+          <li>Service Operations, Administration and Management (OA&amp;M) (EA.095.9) </li>
+        </ul>
+    </li>
+  </ul>
+  <p> For each of the areas where there is a need for improvement, it is recommended that you use a workshop to determine the possible improvements and prepare estimates.</p>
+  <h5> Refine Service Packaging and Deployment Strategy</h5>
+  <p> In this step analyze the deployment strategy of the organization. Check the strategy for services in the different staging environments and analyze, if the packaging strategy support for decoupled service lifecycles.</p>
+  <p>In order to enable business agility, services should be managed as entities on its own. Consider a service to be a smaller sized application that can be packaged and deployed as independent unit, which is very important for decoupling the service lifecycle from the lifecycle of applications. The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment</a> technique provides more information on this. </p>
+  <p>Conduct a Workshop on Service Testing to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop. </p>
+  <p><b>INPUT:</b> <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment</a> technique</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Deployment Strategy for which the organization has agreed to adopt. At this point, note format is appropriate for capturing the output from the workshop.</p>
+  <h5> Document Service Architecture Findings</h5>
+  <p> Formalize the notes taken from the workshop into a document covering the Service Deployment Strategy, processes, standards, policies and guidelines agreed upon by the organization.</p>
+  <p><b>INPUT:</b> Notes from the Service Deployment Strategy Workshop</p>
+  <p><b>OUTPUT:</b> Service Deployment Strategy Document</p>
+  <h5>Refine Operations, Administration and Management (OA&amp;M) Strategy</h5>
+  <p> Analyze the OA &amp; M strategy of the organization. Gather how the organization manages services and depending assets at design and runtime.</p>
+  <p>In order to enable run-time governance, the operations team must be able to monitor Service Level Agreements (SLA) for services. The SLAs that a service offers to its consumers should be managed as part of a contract. But as services can be shared across several consumers the load created by each consumer also needs to be considered. To do that, the operations team can use the concept of a usage agreement where each consumer will agree upon the terms and conditions of service usage. Monitoring the SLAs for a service therefore includes monitoring of the service provider as well as monitoring of service usage per consumer. </p>
+  <p>In order to ensure effective collaboration between the various stakeholders in the engineering process, it is recommended to use an Enterprise Repository to manage all the assets (such as services, contracts, requirements, etc.) and their relationships. List the types of assets used during the engineering process as identified in the previous steps and analyze how the assets are managed. Define the asset meta-data needed for collaboration between the stakeholders and if not already available try to derive a meta-model for the SOA engineering assets. Asset meta-data includes asset attributes, classification and relationships. The results should be considered in the context of a Service Portfolio Management initiative which will be responsible for creating, enhancing and maintaining the SOA engineering assets in the Enterprise repository. </p>
+  <p>Conduct a Workshop on Service Management to decide with the organization how to improve their process. Then update the organization&rsquo;s approach according to the findings of the workshop. You might consider splitting the workshop between design time governance and run-time governance.</p>
+  <p><b>OUTPUT:</b> Understanding of the customized approach regarding Service Operations, Administration and Maintenance, for which the organization has agreed to adopt.</p>
+  <h5> Document Service OA&amp;M Findings</h5>
+  <p><b>INPUT:</b> Notes from the Service OA&amp;M Workshop </p>
+  <p><b>OUTPUT:</b> Service OA&amp;M Document</p>
+  <p>Formalize the notes taken from the workshop into a document covering the Service OA&amp;M processes, procedures and guidelines agreed upon by the organization.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h5><B><A
+name=BA0173 id="BA0173"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.3 Determine Metrics Collection and Reporting Strategy </a></h5>
+  <p>When you execute this task at this point of time, you already know the area of focus, which is Service Management. Once again, you can pinpoint the area even more if you want to limit the task to cover only a subset of Service Management, for example, only Service Deployment. It all depends on what kind of pain points exists for Service Management, and what kind of goals the organization has related to the service engineering process.</p>
+  <p> The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring</a> technique contains guidelines on both what kind of instrumentation data may be relevant for Service Management, as well as a set of metrics that may be used as a starting point when executing this task.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h5><B><A
+name=ER1804 id="ER1804"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.4 Prepare for and Present Solution Recommendation</a></h5>
+  <h5> Reviews </h5>
+  <p> A SOA Engineering Planning engagement is performed through a number of workshops, and where the workshop results are documented into a proper format that will be used for the rest of the engagement. Each workshop result must be presented back to the organization to ensure that it captures their perspective provided in the workshops. The organization should be expected to review the documentation prior to the review presentation and will be given time to provide additional feedback during the review. </p>
+  <p><b>INPUT:</b> Documents delivered as result of one or multiple workshops.<br>
+      <br>
+      <b>OUTPUT:</b> Feedback Presentation </p>
+  <p> <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=WUG id="WUG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">WRAP-UP GUIDANCE</a></h3>
+  <p> During Wrap-Up, all work products are finalized for the engagement and prepared for project sign-off. The completed approach is presented back to the organization to wrap-up the engagement. </p>
+  <h5>Service Engineering Wrap-Up</h5>
+  <p>Review all documents created and ensure consistency across the whole approach. You may want to combine all documents regarding changes to the engineering process into one SOA Engineering Approach document. Similarly, you may want to combine all documents regarding instrumenting each area into a single SOA Engineering Instrumentation and Metrics document. </p>
+  <p>For the process changes, create a summary presentation providing an overview on the SOA Engineering Approach created and a summary on changes the organization will need to implement. For the instrumentation of the processes, create a summary presentation showing what areas should be monitored with what purpose (what goals and objectives should be measured), and what kind of instrumentation should be used.</p>
+  <p>Prepare and conduct a wrap-up meeting with all attendees of the engagement. During the wrap-up meeting, collect feedback from the organization and share ideas about next steps.</p>
+  <h5>Key Responsibilities </h5>
+  <p>This area involves the following roles: </p>
+  <TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+        <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top">Review all documents and support preparations of the summary presentation. Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top">Review all documents. Create and present the summary presentation at the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Cusotmer Project Sponsor </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting and sign all documents created. </TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+        <TD width="80%" align="left" valign="top">Attend the wrap-up meeting and control stakeholder participation.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+        <TD width="80%" align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">System Architect </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Configuration Manager </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Project Manager </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Business Analyst </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Designer</th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Developer</th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Quality Manager </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">IS Operations Staff </th>
+        <TD align="left" valign="top"> Attend the wrap-up meeting.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p><br>
+      <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=EA095WU id="EA095WU"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095.10 &ndash; Review Enterprise Software Development Process</a></h4>
+  <h5>Review and Document Findings</h5>
+  <p> Review the SOA engineering method defined with the organization. Check the changes agreed upon have been documented and the organization has assigned responsibilities for implementing the changes.</p>
+  <p>Consider creating a document that summarizes the software development process for services as defined in this task or at least the changes to the current development process. Forward this document to all stakeholders for review to ensure consistency in the new approach.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=BA0174 id="BA0174"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.4 Determine Metrics Collection and Reporting Strategy </a></h4>
+  <p>When you execute this task at this point of time, it is about wrapping up what you have already determined as part of the previous areas. Execute the task step, Determine metrics collection and reporting strategy. Review the result from this step for each area. It is recommended that you combine all the results into a single document, and create a overview in the front summarizing the various means for tracking progress toward the identified goals, including what kind of metrics will be required, and how the result should be reported. This is a necessary step toward verifying consistency between the processes and metrics notations.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1805 id="ER1805"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.5 Prepare for and Present Solution Recommendation</a></h4>
+  <h5> Reviews </h5>
+  <p> A SOA Engineering Planning engagement is performed through a number of workshops, and where the workshop results are documented into a proper format that will be used for the rest of the engagement. Each workshop result is presented back to the organization to ensure that it captures their perspective provided in the workshops. The organization should be expected to review the documentation prior to the review presentation and will be given time to provide additional feedback during the review. </p>
+  <p><b>INPUT:</b> Documents delivered as result of one or multiple workshops.<br>
+      <br>
+      <b>OUTPUT:</b> Feedback Presentation </p>
+  <p> The discussion following this end presentation of the engagement may identify some questions or challenges that need to be addressed for the engagement to be accepted. It should be positioned, during the presentation, that the enterprise executive sponsor takes responsibility for the resolution of any such unresolved items. This alleviates any need to get the enterprise executive audience back together to deliver another version of the presentation, and expedites the completion of deliverables by creating a single interface point. When the take-away items are completed to the satisfaction of the executive sponsor, the engagement project leader should obtain written approval of the acceptance of the engagement. This acceptance is done as part of Post Delivery, task SM.050 - Gain Acceptance.</p>
+  <p> <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=PDG id="PDG"></A></B><a href="SEP_OVERVIEW.HTM#SEPOD" target="_blank">POST DELIVERY GUIDANCE</a></h3>
+  <p>Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned.</p>
+  <h4><B><A
+name=CMM040 id="CMM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></h4>
+  <p>After the project has been delivered and accepted any feedback should be summarized and submitted to Oracle's Global Methods team at <a href="mailto:ominfo_us@oracle.com">ominfo_us@oracle.com</a>. Feedback should include the following:
+  <ul>
+    <li> overall experience, both positive and negative regarding the use of the Planning view</li>
+    <li>major challenges and roadblocks encountered during service delivery and how these issues were addressed</li>
+    <li>suggested improvements to the delivery process</li>
+    <li>suggested improvements to the templates</li>
+  </ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

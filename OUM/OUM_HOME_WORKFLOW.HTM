@@ -1,0 +1,564 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OUM Implement Core Workflow View</title>
+<!-- InstanceEndEditable -->
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Implement Core Workflow View</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="OUM_HOME.HTM">Home</option>
+                    <option value="020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#IT">OUM is Iterative</option>
+                            <option value="#HS">OUM is Scalable</option>
+                            <option value="#ICW">Implement Core Workflow Processes and Flow</option>
+                            <option value="#ONE">One Workflow - Two Parallel and Complimentary Paths</option>
+                            <option value="#SI">Implement Core Workflow Represents a Single Iteration</option>
+                            <option value="#SHIFTS">Emphasis Shifts from Iteration to Iteration</option>
+                            <option value="#BUTD">Build Up Versus Tailor Down</option>
+                            <option value="#TWP">Tasks and Work Products</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2 align="left">IMPLEMENT CORE WORKFLOW </h2>
+<p align="left">The OUM Implement Focus Area contains a comprehensive set of method materials to support the development and implementation of Oracle-based business solutions. However, with so much important material being included in OUM, it is easy for practitioners to become overwhelmed and not be able to isolate and comprehend the essential pieces that are required for a particular project or situation.</p>
+<p>The OUM Implement Core Workflow view was created to identify the core activities and tasks within the Implement focus area. This view should serve to accelerate the understanding of OUM by new practitioners and help to keep project teams focused on these tasks. The Implement Core Workflow also highlights the tasks that are at the heart of the Implement focus area. These are the tasks that are essential to many of the projects that are supported by the method.
+<p>One of the philosophical underpinnings of OUM is to make the method serve you, rather than serving the method. In order to accomplish this, OUM adopts the philosophy of &quot;building up&quot; a workplan rather than &quot;tailoring down&quot;. The Implement Core Workflow provides a good starting point for building up a project workplan.
+<p>Finally, the Implement Core Workflow helps keep project teams focused on the essentials &#8212; the most important pieces of work that are required to be successful on an OUM Implement project.
+<p align="center"><img src="010_COMMON_FILES/HL_CORE_WORKFLOW.PNG" alt="OUM Core Workflow" width="794" height="401" title="OUM Core Workflow">
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A>
+<hr WIDTH="100%">
+<h3><a name="IT"></a>OUM IS ITERATIVE </h3>
+<p class="style2">If the Implement Core Workflow were to be executed only once during a project, OUM would be a &ldquo;waterfall&rdquo; method. It has been broadly recognized and documented that the highest quality results, and lowest overall costs, can be achieved using an iterative method. An iterative approach embraces requirements change by building processes into the project that allow for refining requirements while also maintaining a strong focus on cost and scope containment.</p>
+<p class="style2">Since OUM is an iterative approach to implementing software systems, it is essential that practitioners first understand the concepts of iterations as they are explained in the OUM Method Overview. OUM&rsquo;s iterative approach asks that practitioners, &ldquo;Think a little - do a little. Think a little more &ndash; do a little more.&rdquo; Iteration is not about doing things over and over. Iteration is really about three things:</p>
+<ul>
+  <li class="style2">Progressive Refinement. OUM suggests &ldquo;going broad first, then deep&rdquo; &ndash; early iterations deal with the breadth of the system, while later iterations focus on the details.</li>
+  <li class="style2">Responding to Change. The ability to respond to and embrace change that inevitably happens during the project lifecycle. This is not &ldquo;unbridled&rdquo; change. OUM also suggests developing a strong definition for the scope of the project using specific artifacts so that you know when there has been a change of scope.</li>
+  <li class="style2"><span class="style3">Fighting Parkinson's Law. Breaking up large chunks of time into shorter chunks to avoid the effects of Parkinson&rsquo;s Law that states, &ldquo;Work grows to fill available time.&rdquo; Humans need short time horizons to enable them to stay focused on a set of clearly defined objectives.</span></li>
+</ul>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A> </p>
+<hr WIDTH="100%">
+<h3><a name="HS"></a>OUM IS SCALABLE </h3>
+<p>OUM can be scaled in a number of dimensions. You should do no more than is necessary to satisfy the requirements of the project and appropriately address risks. The Implement Core Workflow, along with OUM's diverse set of views supports our philosophy of &quot;building up&quot; a workplan rather than &quot;tailoring down.&quot; In addition to the workflow and views, you should follow these steps when considering the tasks to include in your OUM-based workplan:</p>
+<ol>
+  <li>Start from a core set of tasks.</li>
+  <li>Add tasks as you identify scope and risk.
+      <ul>
+        <li>Tasks related to:
+            <ul>
+              <li>Architecture</li>
+              <li>Business Rules</li>
+              <li>Services</li>
+              <li>Reporting, etc. </li>
+            </ul>
+        </li>
+        <li>Processes
+            <ul>
+              <li>Performance Management</li>
+              <li>Technical Architecture</li>
+              <li>Data Acquisition and Conversion</li>
+              <li>Organizational Change Management, etc.</li>
+            </ul>
+        </li>
+      </ul>
+  </li>
+  <li>Consider the depth to which you will execute specific tasks.
+      <ul>
+        <li>Tasks are placeholders for work.</li>
+        <li>They are highly scalable.</li>
+        <li>Tasks can vary from &quot;a bit of thinking&quot; to &quot;the development of a comprehensive work product.&quot; </li>
+      </ul>
+  </li>
+  <li>Combine tasks and work products.
+      <ul>
+        <li>Define an appropriate set of work products or deliverables.</li>
+        <li>Define&quot;just enough&quot; documentation and ceremony.</li>
+        <li>If you don't need it, don't produce it. </li>
+      </ul>
+  </li>
+</ol>
+<p><b>Start from a core set of tasks.</b> Consider using the Implement Core Workflow along with an OUM view that best matches the needs of your project. Remember, views tend to be a superset of tasks related to a particular solution, discipline or technology. Therefore, the Implement Core Workflow and views should be used together to achieve the right balance for your project. Even the OUM Implement Core Workflow may contain tasks that are not required for a particular project. In fact, very small projects may only require one task or a handful of tasks. </p>
+<p><b>Add tasks as you identify scope and risk.</b> Once you have established the core of what you need to accomplish, add tasks as you identify scope and risk on your project. First consider additional tasks based on the following risk areas:</p>
+<ul>
+  <li>Personnel - team experience </li>
+  <li>Criticality - consequences of failure of the software </li>
+  <li>Team Size</li>
+  <li>Dynamism - percentage of the requirements that you anticipate will change each month</li>
+  <li>Culture - corporate culture of the project team and the customer</li>
+</ul>
+<p>Once you have determined additional tasks based on an analysis of these risk factors,consider adding tasks for the following:</p>
+<ul>
+  <li>Architecture - Consider how much custom software or integration will be required. As complexity grows, the importance of architecture grows. If the architecture is anything more than simple, consider adding architecture tasks.</li>
+  <li>Business Rules - Will the project include a significant number of business rules? If so, consider adding business rule tasks.</li>
+  <li>Service-Oriented Architecture - Is service-oriented architecture (SOA) the chosen architectural style for the project or enterprise? If so, you should add SOA tasks.</li>
+  <li>OUM Processes - Consider adding tasks for all or part of the OUM processes. Consider each process. Portions of Technical Architecture, Transition and Performance Management, at the very least will be part of nearly all projects.</li>
+</ul>
+<p><b>Consider the depth to which you will execute specific tasks.</b> Placing a task into an OUM iteration plan or onto an OUM workplan is not a binary event. Tasks are not all or nothing. You must consider the depth to which you should execute tasks on an OUM project. In fact, the depth to which you execute a task will change from iteration to iteration. Too much or too little discipline, or work, are both risky.</p>
+<p>You must consider the depth to which you will execute a task during each iteration. Under the proper circumstances, spending the time to simply consider a task can constitute executing the task. This is a perfectly acceptable practice and is often preferable to eliminating the task altogether. Tasks are there to remind you of the process and order of the work.</p>
+<p>For example, assume that you are at the beginning of an iteration of the Construction phase of an OUM project. You might think that it is long past the time to execute the task &ldquo;Develop Business and System Objectives&rdquo; &ndash; and you would be correct. However, while you should not go back and redo the task, if you don&rsquo;t spend a few minutes to consider whether the objectives have changed, then you run the risk of not aligning with the objectives.</p>
+<p>In the same way, requirements related tasks must also be &ldquo;considered&rdquo; during later phases. If requirements have changed, then the project must consider the changes. Of course, that does not mean that the changing requirements will be incorporated into the scope of the project free of charge. But to deliver the project without considering new or changing requirements may mean low user satisfaction or a system that does not meet the needs of the business. </p>
+<p>The OUM approach is intended to help you provide a strong definition of scope against which to evaluate changing requirements. First, this helps you identify when the requirements have changed. Second, this aids you in determining how the costs associated with changed requirements will be addressed.</p>
+<p><b>Combine tasks and work products.</b> Finally, consider whether it is advisable or appropriate to combine tasks or to execute your project using OUM activities &#8212; which are groupings of tasks. You also may see fit to combine several of OUM's work products into a single artifact or user deliverable. While OUM provides templates for many of the tasks, it is not advisable to create documents for each task.</p>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A> </p>
+<hr WIDTH="100%">
+<h3><a name="ICW" id="ICW"></a>IMPLEMENT CORE WORKFLOW PROCESSES AND FLOW</h3>
+<p>The Implement Core Workflow is primarily focused in the first three phases &ndash; Inception, Elaboration, and Construction. The workflow covers tasks in 7 processes &ndash; Business Requirements, Requirements Analysis, Mapping and Configuration, Analysis, Design, Implementation, and Testing.</p>
+<p>These processes contain the core elements that are required to establish the project&rsquo;s scope and elicit and document the requirements. While the purpose of a software implementation project is to &ldquo;implement software,&rdquo; the success or failure of such a project is usually determined in these important processes. The most difficult part of implementing good software is not the configuration and implementation of the software itself. It is to gain an appropriate understanding of the requirements of the users and of the business so that the software can be configured and implemented to support those requirements. </p>
+<p><b>Here is the complete Implement Core Workflow with links to the tasks and work products table at the end of this view. Place your cursor over the area of interest in the diagram and click.</b></p>
+<div align="center"><img src="010_COMMON_FILES/CORE_WORKFLOW.PNG" alt="Implement Core Workflow with Task Details" width="927" height="697" border="0" usemap="#Map" title="Implement Core Workflow with Task Details">
+  <map name="Map">
+    <area shape="rect" coords="4,115,122,272" href="#OB" alt="Go to Objectives Tasks and Work Products" title="Go to Objectives Tasks and Work Products">
+    <area shape="rect" coords="135,121,253,695" href="#DR" alt="Go to Document Requirements Tasks and Work Products" title="Go to Document Requirements Tasks and Work Products">
+    <area shape="rect" coords="264,121,389,366" href="#MR" alt="Go to Map Requirements Tasks and Work Products" title="Go to Map Requirements Tasks and Work Products">
+    <area shape="rect" coords="467,3,586,277" href="#CO" alt="Go to Configure Tasks and Work Products" title="Go to Configure Tasks and Work Products">
+    <area shape="rect" coords="405,310,521,647" href="#AD" alt="Go to Analyze and Design Components Tasks and Work Products" title="Go to Analyze and Design Components Tasks and Work Products">
+    <area shape="rect" coords="536,309,650,596" href="#IC" alt="Go to Implement Components Tasks and Work Products" title="Go to Implement Components Tasks and Work Products">
+    <area shape="rect" coords="660,121,780,329" href="#IN" alt="Go to Integrate Tasks and Work Products" title="Go to Integrate Tasks and Work Products">
+    <area shape="rect" coords="791,119,908,330" href="#TE" alt="Go to Test Tasks and Work Products Title="go to test tasks and work products">
+  </map>
+</div>
+<p>The OUM Implement Core Workflow is executed during each iteration in the Inception, Elaboration, and Construction phases of OUM &ndash; though the emphasis will be different for each iteration. </p>
+<p> The boxes in the Implement Core Workflow above do not represent any specific construct within OUM. The intent is to present a high level conceptual view. Therefore the diagram is a conceptual look at the core workflow. </p>
+<p> The workflows begins with determining or reviewing the objectives for the project. Next, we gather requirements in the form of a System Context Diagram, Future Process Model, and Use Case Diagram, which define the scope for the project.We will prioritize these high-level requirements on our MoSCoW List. In later iterations, we add more detailed Future Process Models and Use Case Specifications, as required.</p>
+<p>The next step is to &ldquo;map&rdquo; the requirements onto the products or applications that have been chosen. This is often referred to as &ldquo;Fit/Gap&rdquo; or &ldquo;Map and Gap.&rdquo; Essentially, an analysis of the requirements is done to determine which requirements can be met by configuring the Oracle product set and which requirements will drive the development of custom application software. </p>
+<p>This is the point where the core workflow splits into two parallel sub-flows. For those requirements that are satisfied by products, the configurations are determined and recorded. For the &ldquo;Gaps&rdquo; that have been identified, further analysis of the functional requirements and corresponding design of the custom components is completed to develop the models and specifications necessary to develop the custom extensions or custom application software. Those components are then implemented into software.</p>
+<p>Ultimately, the sub flows converge as the custom components are integrated with the configured product software. The resulting integrated system is tested.</p>
+<p>Remember, the core workflow is a high-level look at OUM. It is designed to speed a user&rsquo;s understanding of OUM, but it is not an exhaustive look at what the method can support. While the workflow is executed in each iteration, tasks or steps may be skipped in any given iteration. </p>
+<p>It is again important to remember that use of the models defined in OUM will differ between projects. While OUM supports the development of use cases to capture all of the functional requirements, we typically recommend that use cases be developed only to explore the details of functional requirements that are not fully supported by product-based functionality. If a more agile approach is being employed, OUM supports the use of user stories to capture requirements.</p>
+<p>For example, it is not necessary to develop a complete set of use cases for the Oracle E-Business Suite, only for the custom extensions or custom application software being developed to satisfy the unique project requirements. On the other hand, other Oracle products involve complex &ldquo;configurations&rdquo; that would benefit from the development of detailed use cases and analysis and design artifacts that are part of the Custom Development sub-flow. Also, some projects begin with a predefined solution. In that case, the proposed Future Process Models or use cases may already be defined. The &ldquo;Map Requirements&rdquo; block is then used to map the proposed solution against the customer requirements. This approach often uses some sort of functional prototype &ndash; often referred to as a conference room pilot &ndash; to accomplish the mapping activities.</p>
+<p>To reiterate, the Implement Core Workflow represents a single workflow, but there are also two paths (sub-flows) that can be followed. The sub-flows share some tasks, while they diverge in some areas. However, most projects will probably use both sub-flows. That is, even a project where a large portion of the functional requirements can be satisfied by using standard product functionality and thereby follows the Configuration sub-flow, often has some user-unique requirements that are not fully satisfied by the product. These &ldquo;gaps&rdquo; might require some custom developed application software and would also make use of the Custom Development sub-flow.</p>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A> </p>
+<hr WIDTH="100%">
+<h3><a name="ONE"></a>ONE WORKFLOW - TWO PARALLEL AND COMPLEMENTARY PATHS</h3>
+<p>As we touched on in the previous section, the Implement Core Workflow is really the combination of two parallel and complementary sub-flows. Using one sub-flow does NOT preclude using the other. Both sub-flows can and very often are appropriate on a single project. </p>
+<h4><a name="MC"></a>Configuration Sub-Flow</h4>
+<p>The Configuration sub-flow supports making the appropriate configuration choices within the product software to support the specific user requirements.</p>
+<p>This sub-flow also includes the definition of any Business Data Structures that may be required. Some examples of these are: Chart of Accounts, Multi-Organization Setups, or Trading Community Architecture.</p>
+<h4><a name="CD"></a>Custom Development Sub-Flow</h4>
+<p align="left">The Custom Development sub-flow seeks to support the requirements that cannot be fully satisfied by commercial-off-the-shelf (COTS) products. It supports analyzing the functional requirements and gaps to create a design for user software or very complex &quot;configurations&quot; that are required to satisfy those requirements. This sub-flow is intended to cover the complete range of custom software from complex, orchestrated business processes down to minor form or user interface updates.</p>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A>
+<hr WIDTH="100%">
+<h3><a name="SI"></a>THE IMPLEMENT CORE WORKFLOW REPRESENTS A SINGLE ITERATION</h3>
+<p>It is essential to remember that in OUM&rsquo;s iterative approach to system development, the Implement Core Workflow represents a single iteration. OUM Implement is divided into phases &ndash; Inception, Elaboration, Construction, Transition and Production. Each of these phases may contain one or more iterations. The number of iterations in a given phase is generally based upon the planned duration of the phase and the volume of work that will be required.</p>
+<p>Nominally, OUM recommends one iteration for Inception, two iterations for Elaboration, and three iterations for Construction. Iterations typically last at least two weeks and not more than 6 weeks, with 2-4 weeks being optimal. By dividing the work into these chunks and focusing on the highest risk items in each chunk (or iteration), OUM helps project teams remain risk-focused. It is important to remember that the high-level Project Workplan, including planned phase and iteration milestones and durations should be established at the outset of the project. OUM does not take the approach of &ldquo;iterating until we&rsquo;re done&rdquo; as that is a recipe for scope creep and project management chaos.</p>
+<p>The key concept is that the Implement Core Workflow is repeated during every iteration of a project. This is the center of OUM&rsquo;s iterative approach. That is not to say that every task is executed during every iteration. The intent is that every task should be &ldquo;considered&rdquo; during every iteration. This is what was meant in step 3 above, Consider the depth to which you will execute specific tasks.</p>
+<p>Tasks are not binary bits of work. They are really placeholders to remind the project team of the process they should follow. The attention devoted to each task will vary by project, by phase, and by iteration. Again, simply considering a task during a given iteration may actually constitute executing that task.</p>
+<p>However, if you look closely at the OUM&rsquo;s work breakdown structure, you notice most of the Implement Core Workflow tasks appear in only one or two phases. To fully support the idea that &ldquo;the workflow is repeated during every iteration of a project,&rdquo; we could have placed all the Implement Core Workflow tasks in every phase. Instead, we have taken the approach of &ldquo;pre-tailoring&rdquo; OUM by including tasks only in those phases where we expect that task to include a significant amount of work.</p>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A> </p>
+<hr WIDTH="100%">
+<h3><a name="SHIFTS" id="SHIFTS"></a>THE EMPHASIS SHIFTS FROM ITERATION TO ITERATION</h3>
+<p align="center"><img src="010_COMMON_FILES/CORE_SHIFT.PNG" alt="How the Core Workflow Shifts from Iteration to Iteration" width="779" height="229" title="How the Core Workflow Shifts from Iteration to Iteration"></p>
+<p>While the Implement Core Workflow is executed in every iteration, the emphasis of the work shifts from phase to phase and from iteration to iteration.</p>
+<p> This is one of the places where an iterative and incremental approach differs from a waterfall approach. For example, in a waterfall approach, the phases would be named Requirements, Analysis, Design, Implement, Test, etc. The objectives of those phases would be to complete the Requirements, Analysis, etc. Most modern software methods have adopted an iterative approach as this typically creates higher quality software that provides a better match to the user requirements. Such methods recognize that users will gain a deeper understanding of their requirements or that requirements may change, to some degree, during the development lifecycle. Rather than resist these inevitable changes, iterative methods allow for some change to happen &ndash; even embrace change - but include techniques and processes for managing costs and scope within this framework.</p>
+<p> OUM has adopted a set of industry standard lifecycle milestones that guide project teams on maintaining the proper focus during a specific phase. Inception is focused on the Lifecycle Objective Milestone, Elaboration is focused on the Lifecycle Architecture Milestone, while Construction is focused on developing the Initial Operational Capability of the system. Each of these milestones also has a more detailed set of objectives that support that milestone.<br>
+</p>
+<p align="center"><img src="010_COMMON_FILES/CORE_SHIFT2.PNG" alt="How the Core Workflow Shifts from Inception to Elaboration to Construction" width="960" height="537" title="How the Core Workflow Shifts from Inception to Elaboration to Construction"></p>
+<p>In early iterations of an OUM project &ndash; in the Inception phase or early in Elaboration, for example &ndash; the emphasis in on eliciting and documenting the requirements by executing the Business Requirements and Requirements Analysis tasks. However, there may be some effort expended on Analysis, Design and Implementation tasks. For example, during Inception you might develop and review a Conceptual Prototype. In Elaboration, you might develop a Functional Prototype and then conducted a detailed validation of that prototype with key users, in a conference room pilot. In later iterations, the focus shifts toward Design, Implementation, and testing tasks.</p>
+<p> However, there may be some incremental change or refinement of the requirements. As with all projects, when these requirement changes modify the scope, those changes must go through a change management process to determine how they will be funded. An iterative and incremental approach is not a license for unmanaged change and it is not an invitation for a user free-for-all. Instead, it provides a structured approach for creating a system that provides an optimal match with end user requirements.</p>
+<p> Another example is that even during an iteration of Construction you might consider whether the Business and System Objectives for the project have changed. This is different from the exhaustive work that you did in Inception, but simply a few minutes spent to review the objectives. If nothing has changed, then no work is really done, but you have actually completed the task and refreshed your focus on those objectives. However, if the objectives have changed for some reason, then it is essential that the project team be made aware of the changes.</p>
+<p> While the task &ndash; Detail Business and System Objectives (RD.001) &ndash; does not appear in the Construction phase in the OUM work breakdown structure, just spending a few minutes to consider the task during Construction has actually constitutes executing the task. Therefore, you may not show the task on your workplan, but, as a project manager or team lead, keeping in mind the Implement Core Workflow will help you to proceed through each iteration in an orderly fashion.</p>
+<p> The following illustrations depict the shifting emphasis of the Implement Core Workflow in Inception, Elaboration, and Construction. The example below depicts a &quot;Solution-Driven Applications Example.&quot; In this type of project, a predefined solution is brought to the project and the business requirements are mapped to the solution to determine if there are any gaps that might require complex configuration or custom software. If this were a Requirements-Driven example or a WebCenter or Enterprise Performance Management (EPM) implementation project, this example might be slightly different. <br>
+</p>
+<p><img src="010_COMMON_FILES/CORE_SHIFT_INCEPTION.PNG" alt="Solution-Driven Applications Example - Core Workflow in Inception Phase" width="917" height="520" title="Solution-Driven Applications Example - Core Workflow in Inception Phase"></p>
+                <p align="center"><img src="010_COMMON_FILES/CORE_SHIFT_ELABORATION.PNG" alt="Solution-Driven Applications Example - Core Workflow in Elaboration Phase" width="912" height="517" title="Solution-Driven Applications Example - Core Workflow in Elaboration Phase"></p>
+                    <p align="right"><img src="010_COMMON_FILES/CORE_SHIFT_CONSTRUCTION.PNG" alt="Solution-Driven Applications Example - Core Workflow in Construction Phase" width="912" height="509" title="Solution-Driven Applications Example - Core Workflow in Construction Phase"></p>
+<p><A href="#TOP">B</A><A href="#TOP">ack to Top</A> </p>
+<hr WIDTH="100%">
+<h3 align="left"><a name="BUTD"></a>BUILD UP VERSUS TAILOR DOWN</h3>
+<p align="left">OUM has adopted a philosophy of building up a level of method discipline, rather than tailoring down. For further reading on agility and discipline, see <a href="050_REFERENCE_FILES/OUM_REFERENCES.htm#balancing" target="_blank"><i>Balancing Agility and Discipline: A Guide for the Perplexed</i></a>. The OUM Implement Core Workflow can be used as the starting point for this build up. Even so, in certain cases the Implement Core Workflow can be further reduced. For example, on certain projects only configuration changes are considered to be in scope and no custom development is done.</p>
+<p align="left"> Tailoring can also be done by varying the level of emphasis or documentation that is produced by a particular task. On smaller projects where a high degree of agility is required and criticality of the system is low, the project may choose to rely more on tacit knowledge and reduce the amount of documentation produced by a particular task. On larger projects, or projects that have geographically dispersed teams, or where the system is critical to the business, the amount of discipline or documentation may be increased.</p>
+<p align="left"> The Implement Core Workflow also does not show every task that could be executed in a given iteration. For example, tasks related to business rules and services have intentionally been omitted to simplify this view. Projects that require these tasks should &ldquo;build up&rdquo; their workplan to include OUM&rsquo;s rules or services tasks, as required. Supporting processes like Technical Architecture, Performance Management, Documentation, etc. have also not been shown, but should be added, as required.</p>
+<p align="left">To reiterate, the Implement Core Workflow, along with OUM's diverse set of views, supports building up a workplan. In support of this, OUM provides a generic <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/OUM_PROJECT_WORKPLAN_FILES.ZIP" target="_blank">Project Workplan</a>, in Microsoft Project format, that can be copied and tailored for your project. The OUM Project Workplan includes tasks from OUM Manage and OUM Implement and can be: </p>
+<ul>
+  <li>executed at the activity level or the task level</li>
+  <li>tailored easily for most Implement views, including for the Core Workflow </li>
+</ul>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3 align="left"><a name="TWP" id="TWP"></a>IMPLEMENT CORE WORKFLOW TASKS AND WORK PRODUCTS</h3>
+<table width="100%"  border="1" title="Implement Core Workflow Tasks and Work Products" summary="This table provides links to all the Implement Core Workflow Task Overviews and templates, if available. It is organized with ID, Task, Work Product and Template columns with subheadings for each Core Workflow box.">
+  <tr valign="top" bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+    <th scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a name="OB"></a>Objectives</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RD.001</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM"
+				target="_blank"> Detail Business and System Objectives </A></td>
+    <td>Business and System Objectives </td>
+    <td><A
+				href="040_TEMPLATES_AND_GUIDANCE/RD/RD-001_BUSINESS_AND_SYSTEM_OBJECTIVES.DOCX"
+				target="_blank">Business and System Objectives </A> </td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a name="DR"></a>Document Requirements</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RD.005</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM"
+				target="_blank">Create System Context Diagram</A></td>
+    <td>System Context Diagram</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-005_SYSTEM_CONTEXT_DIAGRAM.PPTX" target="_blank">System Context Diagram-PowerPoint </a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RD/RD005_SYSTEM_CONTEXT_DIAGRAM.ZIP" target="_blank">System Context Diagram-Visio Template and Stencil</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RD.045</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM"
+				target="_blank">Prioritize Requirements (MoSCoW)</A></td>
+    <td>MoSCoW List</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">MoSCoW List-Excel<br>
+      </a><A
+				href="040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.DOCX"
+				target="_blank">MoSCoW List-Word</A> <BR>
+      <A href="040_TEMPLATES_AND_GUIDANCE/RD/GENERIC_WORKSHOP_NOTES.DOCX"
+				target="_blank">Generic Workshop Notes</A><BR>
+      <A href="040_TEMPLATES_AND_GUIDANCE/RD/GENERIC_WORKSHOP_SCHEDULE.DOCX"
+				target="_blank">Generic Workshop Schedule and Workshop Preparation Notes</A></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RD.011</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM"
+				target="_blank">Develop Future Process Model</A></td>
+    <td>Future Process Model</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.DOCX" target="_blank">Future Process Model-Word</a><br>
+        <a href="040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.PPTX" target="_blank">Future Process Model-PowerPoint</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RD.065</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM"
+				target="_blank">Develop Domain Model (Business Entities)</A></td>
+    <td>Domain Model</td>
+    <td><A
+				href="040_TEMPLATES_AND_GUIDANCE/RD/RD-065_DOMAIN_MODEL.DOCX"
+				target="_blank">Domain Model</A></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RA.023</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td>Use Case Model</td>
+    <td><A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-023_USE_CASE_MODEL.DOCX"
+				target="_blank">Use Case Model-Word</A><br>
+        <A href="040_TEMPLATES_AND_GUIDANCE/RA/RA-023_USE_CASE_MODEL.PPTX"
+				target="_blank">Use Case Model-PowerPoint</A><br>
+        <a href="020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM#VisioTemp" target="_blank">Use Case Model-Visio Template and Stencil</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RA.024</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">Develop Use Case Details</a></td>
+    <td>Use Case Specification</td>
+    <td><A
+				href="040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.DOCX"
+				target="_blank">Use Case Specification-Word</A><br>
+        <A
+				href="040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.PPTX"
+				target="_blank">Use Case Specification-PowerPoint</A></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IM.005</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM"
+				target="_blank">Develop Conceptual Prototype</A></td>
+    <td>Conceptual Prototype</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RA.030</div></th>
+    <td><A
+				href="020_METHOD_GUIDELINES/030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM"
+				target="_blank">Validate Conceptual Prototype</A></td>
+    <td>Validated Conceptual Prototype</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IM.010</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/IM_010_DEVELOP_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop Functional Prototype</a></td>
+    <td>Functional Prototype</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">RA.085</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/RA_085_VALIDATE_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Validate Functional Prototype</a></td>
+    <td>Validated Functional Prototype</td>
+    <td><A
+				href="040_TEMPLATES_AND_GUIDANCE/RA/RA-085_VALIDATED_FUNCTIONAL_PROTOTYPE.DOCX"
+				target="_blank">Validated Functional Prototype</A></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.010</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/MC_010_DEFINE_BUS_DATA_STRUCTURES_OVERVIEW.HTM" target="_blank">Define Business Data Structures</a></div></td>
+    <td><div align="left">Business Data Structures</div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-010_BUSINESS_DATA_STRUCTURES.DOCX" target="_blank">Business Data Structures</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a name="MR"></a>Map Requirements</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.030</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/MC_030_MAP_BUSINESS_REQUIREMENTS_OVERVIEW.HTM" target="_blank">Map Business Requirements</a></td>
+    <td>Mapped Business Requirements</td>
+    <td><A
+				href="040_TEMPLATES_AND_GUIDANCE/RA/RA-085_VALIDATED_FUNCTIONAL_PROTOTYPE.DOCX"
+				target="_blank">Validated Functional Prototype</A></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.110</div></th>
+    <td><a href="020_METHOD_GUIDELINES/030_TASK/MC_110_DEFINE_GAP_RESOLUTIONS_OVERVIEW.HTM" target="_blank">Define Gap Resolutions</a></td>
+    <td>Gap Resolutions</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a name="CO"></a>Configure</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.020</div></th>
+    <td><div align="left"><A
+        href="020_METHOD_GUIDELINES/030_TASK/MC_020_DEFINE_BUS_DATA_STRUCTURE_SETUPS_OVERVIEW.HTM"
+        target="_blank">Define Business Data Structure Setups</A></div></td>
+    <td><div align="left">Business Data Structure Setups</div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-020_BUSINESS_DATA_STRUCTURE_SETUPS.DOCX" target="_blank">Business Data Structure Setups</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.050</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">Define Application Setups</a></div></td>
+    <td><div align="left">Application Setup Documents</div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-050_APPLICATION_SETUP.XLSX" target="_blank">Application Setup-Excel</a><br>
+        <a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-050_APPLICATION_SETUP_DOCUMENT.DOCX" target="_blank">Application Setup Document-Word</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.070</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/MC_070_PREPARE_CONFIG_PROTOTYPE_ENV_OVERVIEW.HTM" target="_blank">Prepare Configuration Prototype Environment </a></div></td>
+    <td><div align="left">Configuration Prototype Environment </div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MC.080</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/MC_080_CONDUCT_CONFIG_PROTOTYPE_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Configuration Prototyping Workshop</a></div></td>
+    <td><div align="left">Validated Configuration </div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/MC/MC-080_CPW_STRATEGY_AND_PLAN.DOCX" target="_blank">Configuration Prototyping Workshop Strategy and Plan</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a name="AD"></a>Analyze and Design Components</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">AN.050</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank"> Analyze Data</a></div></td>
+    <td><div align="left">Data Analysis </div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/AN/ANALYSIS_MODEL.DOCX" target="_blank">Analysis Model</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">AN.060</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/AN_060_ANALYZE_BEHAVIOR_OVERVIEW.HTM" target="_blank">Analyze Behavior</a></div></td>
+    <td><div align="left">Behavior Analysis</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">AN.090</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/AN_090_ANALYZE_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Analyze User Interface</a></div></td>
+    <td><div align="left">User Interface Analysis</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">DS.080</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></div></td>
+    <td><div align="left">Software Component Design</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">DS.090</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">Design Data</a></div></td>
+    <td><div align="left">Component Data Design</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">DS.100</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">Design Behavior</a></div></td>
+    <td><div align="left">Component Behavior Design</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">DS.130</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Design User Interface</a></div></td>
+    <td><div align="left">User Interface Design</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">DS.150</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></div></td>
+    <td><div align="left">Logical Database Design</div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/DS/DS-150_LOGICAL_DATABASE_DESIGN.DOCX" target="_blank">Logical Database Design</a></div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="4" scope="rowgroup"><div align="left"><a name="IC"></a>Implement Components</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IM.040</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database</a></div></td>
+    <td><div align="left">Implemented Database&nbsp;</div></td>
+    <td><div align="left"><A
+				href="040_TEMPLATES_AND_GUIDANCE/IM/IM-040_PHYSICAL_DATABASE_DESIGN.DOCX"
+				target="_blank">Physical Database Design</A></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IM.050</div></th>
+    <td><div align="left"><A
+				href="020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM"
+				target="_blank">Implement Components</A></div></td>
+    <td><div align="left">Implemented Components</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IM.070</div></th>
+    <td><div align="left"><A
+				href="020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM"
+				target="_blank">Assemble Components</A></div></td>
+    <td><div align="left">Assembled Components</div></td>
+    <td><div align="left">Refer to the Task Overview for guidance.</div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="4" scope="rowgroup"><div align="left"><a name="IN"></a>Integrate</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TE.060</div></th>
+    <td><div align="left"><A href="020_METHOD_GUIDELINES/030_TASK/TE_060_PREPARE_SYSTEM_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare System Test Environment</A></div></td>
+    <td><div align="left">System Test Environment </div></td>
+    <td><div align="left"><A href="040_TEMPLATES_AND_GUIDANCE/TE/TE-060_SYSTEM_TEST_ENVIRONMENT.DOCX" target="_blank">System Test Environment</A></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TE.085</div></th>
+    <td><div align="left"><A
+				href="020_METHOD_GUIDELINES/030_TASK/TE_085_PREPARE_SYSTEMS_INT_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Systems Integration Test Environment</A></div></td>
+    <td><div align="left">Systems Integration Test Environment </div></td>
+    <td><div align="left"><a href="040_TEMPLATES_AND_GUIDANCE/TE/TE-085_SYSTEMS_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">Systems Integration Test Environment</a></div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="4" scope="rowgroup"><div align="left"><a name="TE"></a>Test</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TE.070</div></th>
+    <td><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">Perform System Test</a></div></td>
+    <td><div align="left">System-Tested Applications</div></td>
+    <td><div align="left"><A
+				href="040_TEMPLATES_AND_GUIDANCE/TE/TE-070_SYSTEM_TEST_RESULTS.DOCX"
+				target="_blank">System Test Results</A></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TE.100</div></th>
+    <td><div align="left"><A
+				href="020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM"
+				target="_blank">Perform Systems Integration Test</A></div></td>
+    <td><div align="left">Integration-Tested System</div></td>
+    <td><div align="left"><A
+				href="040_TEMPLATES_AND_GUIDANCE/TE/TE-100_SYSTEMS_INTEGRATION_TEST_RESULTS.DOCX"
+				target="_blank">Systems Integration Test Results</A></div></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

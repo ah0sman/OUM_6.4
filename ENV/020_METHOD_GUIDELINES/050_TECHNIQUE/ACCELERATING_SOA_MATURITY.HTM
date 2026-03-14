@@ -1,0 +1,790 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Accelerating SOA Maturity Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>ACCELERATING SERVICE-ORIENTED ARCHITECTURE (SOA) MATURITY</h2>
+<p>The purpose of this technique is to provide a set of metrics used to measure and monitor changes in SOA maturity. The metrics presented do not represent a complete set, but should be used to discuss potential areas of applying metrics to assist an organization in measuring SOA maturity levels in addition to changes observed in the active SOA. The instrumented data used in support of the metrics collected in this document come from many different sources. In some cases the organization will not be able or willing to collect the data, or in other cases, the organization may collect the data differently. Therefore it is important to understand what metrics are best suited for the particular organization and work with the organization in determining the source of data to be instrumented to support the defined metrics.</p>
+<p> If at all possible, execute a SOA Maturity Assessment prior to defining SOA maturity based metrics. This will provide the benchmark for measurement, in addition to providing input with respect to short-term and long-term goals and priorities of the organization around their SOA. For more information about how to execute a SOA Maturity Assessment, please review the Oracle practitioner guide, <i>Creating an SOA Roadmap</i>, available through oracle.com. </p>
+<p> Achieving maturity in SOA is a primary goal of any organization adopting a Service Oriented Architecture. In support of that goal, the rate of maturity with respect to the adopted SOA IT strategy is something every organization strives to maximize.</p>
+<p> At a minimum, organizations should take the time to periodically assess their SOA maturity level, and plan with respect to maturing in either one or more specific areas or evenly across all areas. In order to accomplish this, they first need to establish a baseline to measure and plan SOA maturity. The best way to achieve this is through the use of a SOA Maturity Matrix. This matrix is used as the foundation for this document. The metrics defined in this document utilize instrumentation collected through instrumenting the engineering, operational, and runtime processes. This technique will provide more accurate and timely data in support of changing maturity levels observed against the maturity matrix. More information about the maturity matrix can be found in Oracle practitioner guide, <i>Creating an SOA Roadmap</i>, available through oracle.com. </p>
+<p>It is important to note that not all components of SOA maturity can necessarily be measured through the use of data collected through general day-to-day operational, runtime and engineering processes. Some data simply has to be harvested by examining the SOA from many different areas that will remain subjective with respect to interpretation. In these cases, the mechanism proposed by the assessment service involving interviewing several different individuals on the same indicators is the best way to understand current maturity levels.</p>
+<h4>SOA Instrumentation for the Purpose of Accelerating SOA Maturity </h4>
+<p>Measuring maturity levels and more importantly changes in maturity levels requires identifying metrics in support of maturity based performance indicators which span larger periods of time. Understanding how the data changes over smaller samples taken within the examination area will assist an organization in understanding when and where potential maturity levels are changing. </p>
+<p>The best tool for understanding maturity levels and changes within is to utilize trend based metrics. Trends involve sampling data over smaller, uniform periods of time, and plotting the changes between samples over extended periods. The sample size, and total length of the trend used will vary from organization to organization based on the amount of activity within the SOA program. For instance, if an organization is only producing one to two projects a year, with potentially only a handful of services, they most likely can utilize a quarterly, or at a minimum, monthly sample size extending over a several year period. On the other side, an organization that produces a large number of projects and services in a year would probably benefit from a weekly sample size, spanning the past year.</p>
+<p>Trends provide an interesting perspective with respect to understanding maturity. The illustration below provides a sample trend:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASOAM_INTRO.PNG" alt="Sample Trend Illustration" width="409" height="375" title="Sample Trend Illustration"></p>
+<p>There are three areas that should be examined when analyzing trend based results:</p>
+<ul>
+  <li><b>Inflection Points:</b> Inflection points represent places on the trend where there is an apparent change in direction. In many instances, these represent a change in direction with respect to measured maturity.</li>
+  <li><b>Increasing and Decreasing Trends:</b> As the graph rises and or falls, it typically represents areas of active maturity change. An increase does not necessarily indicate a positive maturity change; the desired direction is typically dependant on the way in which the data is presented.</li>
+  <li><b>Level Areas:</b> Level areas on the trend indicate that there is really no active change in either direction. Level areas are important as they indicate that a current maturity level is being sustained. They may still require attention because they may be experienced at the end of a lengthy decreasing trend in SOA maturity with respect to the indicator measured.</li>
+</ul>
+<p>When analyzing trends, it is important to consider that the information observed may be a little misleading. Just because the graph of a trend appears to be moving in a negative direction (as least with respect to general interpretation guidance), it does not mean that there is an actual change in maturity. The result may be because of a change in business patterns, or brought upon by a significant business event. What needs to take place when a negative (or even positive) change in the trend graph is apparent is an investigation into the potential reason for the change. If there is indeed a problem, then appropriate plans and actions should be put in place to either ensure continuation of a positive trend, or the eventual reversal of a negative trend.</p>
+<p>Finally, when changes are executed by the SOA, they should be noted, and plotted against the affected trend analysis, that way the effect of the change may be analyzed. The illustration below provides an example:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASOAM_INTRO2.PNG" alt="Illustration of Plotting SOA Changes Against Affected Trend Analysis" width="409" height="375" title="Illustration of Plotting SOA Changes Against Affected Trend Analysis"></p>
+<p>By plotting points where strategy changes took place, the apparent impact on the measure can be analyzed. If possible, the change should be plotted on several metrics (if not all) to see if there were any correlated impacts which were unforeseen, that may become apparent when plotting the strategy change across various trends.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>SOA Maturity Instrumentation Metrics</b> &ndash; The SOA Maturity Instrumentation Metrics contains all the metrics that the customer has decided to collect and measure upon to identify the areas applicable for improvement to accelerate their SOA maturity. In many cases, measuring SOA maturity is grounded in subjectivity, but there are a number of key performance indicators that can be defined and supported through the use of instrumentation that will provide a basis for identifying and understanding changes in maturity levels. The use of instrumentation provides concrete evidence in support of changing maturity levels, and can be used to understand when negative trends are taking place. If used effectively, the information can be acted on to make strategy changes to minimize the impacts of negative trends, and reverse the trends with the goal of minimizing the time required to reach optimized SOA at a maximum adoption level.</p>
+<p> It is not intended to apply every metric in this technique for every customer. Further, there may be new metrics that need to be considered, so one should not be limited by the metrics defined in this technique. Each customer will be at a different level of maturity, and will have different goals and priorities for their SOA program. It is important to define maturity metrics around these goals and priorities. In many case it is not realistic for an organization to improve across all eight domains at once. Priorities should be established with respect to where the organization needs to go next, and a plan utilizing metrics defined in support of the priorities, should be executed to monitor for regressions or potential changing points in maturity. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Determine areas of the SOA Domain Model for which you want to monitor SOA maturity.</td>
+    <td>Monitoring Domains </td>
+    <td> This component describes the domains of the SOA Domain Model that should be focused on for monitoring the customers SOA Maturity.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine metrics notation. </td>
+    <td>Metric Notation Standards </td>
+    <td>This component describes which notation is used to describe all the metrics that are used in the next chapters.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine required business and strategy metrics. </td>
+    <td>Business and Strategy Metrics </td>
+    <td>This component includes all the metrics belonging to the Business &amp; Strategy domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine required architecture metrics. </td>
+    <td>Architecture Metrics </td>
+    <td>This component includes all the metrics belonging to the Architecture domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine required infrastructure metrics. </td>
+    <td>Infrastructure Metrics </td>
+    <td>This component includes all the metrics belonging to the Infrastructure domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Determine required information metrics. </td>
+    <td>Information Metrics </td>
+    <td>This component includes all the metrics belonging to the Information domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Determine required operations, administration and management (OA&amp;M) metrics. </td>
+    <td>OA&amp;M Metrics </td>
+    <td>This component includes all the metrics belonging to the OA&amp;M domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Determine required projects, portfolios and services metrics. </td>
+    <td>Projects, Portfolios and Services Metrics </td>
+    <td>This component includes all the metrics belonging to the Projects, Portfolios &amp; Services domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Determine required organization metrics. </td>
+    <td>Organization Metrics</td>
+    <td>This component includes all the metrics belonging to the Organization domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Determine required governance metrics. </td>
+    <td>Governance Metrics</td>
+    <td>This component includes all the metrics belonging to the Governance domain. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Determine Areas of the SOA Domain Model</h4>
+<p>First you need to determine which areas that are the most important to focus on for the customer in monitoring their SOA Maturity. To be able to do that, you need to get an understanding of the current status. Therefore you should preferably start with a SOA Maturity Assessment (if not done already) to determine level of SOA maturity of each domain. Once again, refer to the Oracle practitioner guide, <i>Creating an SOA Roadmap</i>, available through oracle.com for more details on how to execute a SOA Maturity Assessment. </p>
+<p> When this has been done, you should use the results from the SOA Maturity Assessment as an input to a workshop where you with the customer will determine what areas should have the most focus. You should do this by walking through each domain and prioritize.</p>
+<h5>The SOA Domain Model</h5>
+<p>The SOA Maturity Assessment is designed to look at the current state of the organization and measure the maturity, adoption, completeness, and effectiveness related to SOA. The current state can then be analyzed to identify inhibitors to SOA adoption. Remedies for the inhibitors are identified and prioritized based on the impact and costs. The results are documented where details of the current state, the inhibitors, the remedies and the recommended initiatives, approaches, and priorities are provided. </p>
+<p>This provides a pragmatic analysis of the actual business needs and the opportunities that can be addressed through an SOA implementation. It identifies opportunities for cost savings, organizational efficiencies and increased utilization of existing IT assets. Therefore this is also a good starting point to identify which areas are relevant for metrics collection.</p>
+<p>The SOA Maturity Model includes over ninety capabilities that capture the best practices that Oracle has collected over many years working with a wide variety of companies, and additional capabilities are added as more best practices emerge. The SOA Maturity Model uses the concept of domains to classify and organize the related capabilities. As you can see in the figure below, there are eight domains in the maturity model:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MATURITY_MODEL.PNG" alt="SOA Maturity Model showing the Eight Domains" width="605" height="415" title="SOA Maturity Model showing the Eight Domains"></p>
+<p align="center"><b>SOA Maturity Model </b></p>
+<p><b>Business &amp; Strategy</b> - This domain contains capabilities that provide the high-level constructs that allow the SOA initiative to proceed. This includes such things as business motivation, expected benefits, guiding principles, expected costs, funding model, etc.</p>
+<p><b>Architecture</b> - This domain contains capabilities concerning the definitions of the overall architecture and guidelines for various practitioners to ensure adherence to the architecture.</p>
+<p> <b>Infrastructure</b> - This domain contains capabilities concerning the service infrastructure and tools that provide the technical foundation for the SOA initiative.</p>
+<p><b>Information</b> - This domain contains capabilities concerning the information aspects of SOA, e.g., providing Information as a Service (IAAS). This includes shared data models, message formats and schemas, master data management, content management, etc.</p>
+<p><b>Operations, Administration&amp; Management</b> - This domain contains capabilities concerning the post deployment aspects of solutions based on a service-oriented architecture.</p>
+<p><b>Projects, Portfolios &amp; Services </b> - This domain contains capabilities concerning the planning and building of services and the service usage guidelines of service consumers.</p>
+<p><b>Organization</b> - This domain contains capabilities concerning the development of corporate competency around SOA including the organizational structure and skills development.</p>
+<p><b>Governance - </b> This domain contains capabilities concerning the governance structures and processes that support and guide the SOA efforts. Maturity and adoption of adequate amount of governance is a leading indicator of the overall SOA success.</p>
+<hr WIDTH="100%">
+<h4>Determine Metrics Notation </h4>
+<p>There are several different ways to notate metric computations. A few basic requirements are necessary when selecting a notation:</p>
+<ol>
+  <li> It must be understood at a relatively high-level.</li>
+  <li> Ambiguity should be avoided.</li>
+  <li> It should precisely illustrate the computation briefly and clearly.</li>
+</ol>
+<p> For the purpose of this technique, a relatively simple notation has been selected which meets these criteria. In this notation there are two main clauses:</p>
+<ul>
+  <li><b>Expression:</b> This clause specifies the way data is computed and aggregated for the metric. The result is the data set necessary to display or analyze the result.</li>
+  <li><b>Data:</b> This clause defines the data and its conceptual source that is utilized within the metric. It illustrates the relationship between the data utilized within the Computation clause with respect to its source within the Conceptual Instrumentation data collected from the Service Engineering processes.</li>
+</ul>
+<p> For the purpose of describing the notation a sample computation has been illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCRT.PNG" alt="Sample Metric Computation. The top portion of the above illustration represents the title for the metric. The center provides the metric&rsquo;s expression, and the lower portion represents the data required in the computation." width="626" height="529" title="Sample Metric Computation. The top portion of the above illustration represents the title for the metric. The center provides the metric&rsquo;s expression, and the lower portion represents the data required in the computation."></p>
+<p align="center"><b>Sample Metric Computation</b></p>
+<p align="left"> The top portion of the above illustration represents the title for the metric. The center provides the metric&rsquo;s expression, and the lower portion represents the data required in the computation.</p>
+<h5>The Expression Clause</h5>
+<p><b>Statement: for each &lt;target&gt;</b> - The <i>for each</i> clause is used to iterate over the <i>&lt;target&gt;</i> entity or entities. <i>for each</i> clauses may be nested.</p>
+<p><b>Statement: where (conditions)</b> - The <i>where</i> clause is used to provide conditions for the <i>for each</i> clause in which it is nested. The (<i>conditions</i>) statement is optional, and if omitted it means that all entities referenced within appropriate level of the expression will be included in the calculation.</p>
+<p><b>Input: t1 &amp; t2</b> - The starting time and ending time for the computation is represented as t1 (starting time) and t2 (ending time).</p>
+<p><b>Input: sample</b> - If sample is provided as the &lt;<i>target</i>&gt; of a <i>for each</i> clause, then it is providing the time period to break up the results over. For instance if t1 = Jan 1, 2000 and t2=Dec 31, 2007 and the sample is specified as 1 year; then the <i>for each</i> will take 8 iterations (one for each year). This allows for flexibility, as the sample may be set to something finer grained, or even set to the entire time period.</p>
+<p><b>Referencing Variables:</b> - Variables are identified within the Data clause (see below). If a variable references an entity, an element within the entity can be referenced by using the &ldquo;.&rdquo; separator. For instance from the example above, referencing the <i>Service Reuse List</i> of the <i>Project</i> entity would be achieved as follows: <b>p.Service Reuse List.</b></p>
+<p><b>Booleans:</b> - In the expression it is sometimes necessary to count against a Boolean expression. Therefore, mathematically, when Boolean are used in expressions, 0 is the mathematical representation for <i>false</i> and 1 is the mathematical representation for <i>true</i>.</p>
+<h5>The Data Clause</h5>
+<p> The Data clause contains definitions for the list of variables used in the <i>Expression</i> clause, and maps them to the source within the conceptual instrumentation data from which they originated. A variable can be specified against an entire conceptual instrumentation entity, or elements within entities.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Business &amp; Strategy Metrics </h4>
+<p>If you have decided that you should focus on the Business &amp; Strategy domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Achieving maturity in the Business &amp; Strategy domain means the following areas should be considered:</p>
+<ul>
+  <li>Construction Costs &amp; Funding Strategies</li>
+  <li>Business and IT Benefits</li>
+  <li>Business Sponsorship and support SOA Roadmap</li>
+  <li>SOA-Enabled Business Strategies</li>
+  <li>Business Process Architecture</li>
+</ul>
+<p> The metrics presented in this section are designed to monitor for changing maturity levels within the Business &amp; Strategy domain, and provide guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively monitor maturity within this domain.</p>
+<h5><b> <a name="RSCT"></a></b>Reuse vs. Service Creation - Trend</h5>
+<p> The Reuse vs. Service Creation &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MRSCT.PNG" alt="The Reuse vs. Service Creation &ndash; Trend Metric" width="637" height="559" title="The Reuse vs. Service Creation &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Reuse vs. Service Creation - Trend</b></p>
+<p align="left">&nbsp;</p>
+<p><b>Purpose:</b> Understanding the rate of new service creation with respect to the rate of service reuse is important to understanding the overall effectiveness of the SOA program, especially with respect to building the right services.</p>
+<p><b>Computation:</b> This metric computes the percentage of services being validated for reuse by consumers vs. service candidates being justified for realization. The data is collected across multiple, uniform samples in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARSCT.PNG" alt="Analysis for Reuse vs. Service Creation - Trend - 1 " width="406" height="291" title="Analysis for Reuse vs. Service Creation - Trend - 1 "></p>
+<p align="center"><b>Analysis: Reuse vs. Service Creation - Trend - 1 </b></p>
+<p align="left"><b>Interpretation:</b> It is not uncommon for a new SOA to initially have a large number of new service creations justified, that may be sustained over some period of time. Further, it is also not uncommon for reuse levels to be initially low. However, the rate of reuse should typically never be below the rate of service creation, as this means that services are being created with no consumers. The wider the gap between a reuse curve which is under the creation curve, the more concern there should be from a cost and benefits standpoint. The example above shows an extreme case, where it is very likely that the SOA is producing very little from a cost and benefits perspective and probably has an overall negative perception from the business.</p>
+<p align="left"> The figure below illustrates another scenario that should be considered as negative from a cost and benefits perspective:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARSCT2.PNG" alt="Analysis for Reuse vs. Service Creation - Trend - 2" width="406" height="258" title="Analysis for Reuse vs. Service Creation - Trend - 2"></p>
+<p align="center"><b>Analysis: Reuse vs. Service Creation - Trend - 2 </b></p>
+<p align="left"><b>Interpretation:</b> In this scenario the service creation and reuse trends follow very similar paths. This scenario indicates that for each service created the reuse level is not much more than a uniform small number (e.g., &gt;= 1 but &lt;= 5). This type reuse model is acceptable for high-value, agility enabling services, but is not very good for highly reusable, lower level services, which typically are the first ones to be created, and reused often (in an effective SOA). Again this trend warrants a closer look especially with respect to the types of services being justified and the projected reuse levels on those services. This model, if sustained over a long period of time does not lead to an overly cost effective SOA.</p>
+<h5 align="left">Technology Justification Failures - Trend</h5>
+<p align="left"> The Technology Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MTJFT.PNG" alt="Technology Justification Failures &ndash; Trend Metric" width="643" height="554" title="Technology Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Technology Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When service candidates are presented for justification as shared services, there are many reasons to deny a particular service candidate for realization as a shared service. Technology impact is one of those reasons. When technology is determined to be the main inhibitor for realization of the service candidate as a one or more shared services, it indicates that the organization does not possess the technology, or is unwilling to invest in the technology necessary to realize the service candidate.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of technology based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ATJFT.PNG" alt="Analysis for Technology Justification Failures - Trend" width="404" height="281" title="Analysis for Technology Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Technology Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing the percentage of justification failures due to technology impact is the goal. Any observed areas of increasing trend or sustained high levels should be examined closely. If a particular technology or component of the architecture is missing that could be added to achieve justification for service candidates denied in the examination area then an investment should be considered. This has an obvious impact on the Business &amp; Strategy domain. If services, especially those of high reuse or agility potential are not being realized because of a gap in technology, then an investment should be considered as the overall potential observed from the SOA is being limited.</p>
+<h5 align="left">QoS Justification Failures - Trend</h5>
+<p align="left"> The QoS Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MQOSJFT.PNG" alt="QoS Justification Failures &ndash; Trend Metric" width="637" height="554" title="QoS Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: QoS Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When service candidates are presented for justification as shared services, there are many reasons to deny a particular service candidate for realization as a shared service. QoS feasibility is one of those reasons. When QoS is determined to be the main inhibitor for realization of the service candidate for potentially one or more shared services, it indicates that the organization does not believe the realization of the service for the expected demand on the service in the shared environment is feasible, or is unwilling to invest in the changes necessary to realize the service candidate and achieve expected QoS levels.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of QoS based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AQOSJFT.PNG" alt="Analysis for QoS Justification Failures - Trend" width="404" height="281" title="Analysis for QoS Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: QoS Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing the percentage of justification failures due to QoS feasibility is the goal. Any observed areas of increasing trend or sustained high levels should be examined closely. If a particular technology or component of the architecture is missing that could be added to achieve justification for service candidates denied in the examination area then an investment should be considered. This has an obvious impact on the Business &amp; Strategy domain. If services, especially those of high reuse or agility potential are not being realized because of a gap in technology, then an investment should be considered as the overall potential observed from the SOA is being limited.</p>
+<h5 align="left">Capacity Reuse Justification Failures - Trend</h5>
+<p align="left"> The Capacity Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MCRJFT.PNG" alt="Capacity Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Capacity Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Capacity Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is available capacity. When a reuse candidate is denied for capacity reasons, it means that there is insufficient capacity available to service the consumer (based on the requested amount of consumption), and the organization is not willing to invest in the changes necessary to increase the capacity necessary to service this consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of capacity based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ACRJFT.PNG" alt="Analysis for Capacity Reuse Justification Failures - Trend" width="404" height="289" title="Analysis for Capacity Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Capacity Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing the amount of capacity based reuse validation failures is always the goal. If there is insufficient capacity, and an inability to expand capacity within the SOA&rsquo;s operational environment then the overall effectiveness of the strategy will be at risk. These types of validation failures may be acceptable periodically, especially when the needs of the consumer are unrealistic, but generally the service should be designed for reuse, and the environment it is placed in should be architected for scalability. An increasing trend in this metric must be viewed negatively with respect to maturity in the Business &amp; Strategy domain.</p>
+<h5 align="left"> Security Reuse Justification Failures - Trend</h5>
+<p align="left"> The Security Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSRJFT.PNG" alt="Security Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Security Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is security. There are two potential possibilities that may come into play with respect to security being the reason for denying reuse. The first is that simply the consumer should not be allowed to access the capabilities of the service. The second is that the security capabilities necessary to allow the consumer access to the service is simply not available, and the organization is not willing to invest in the changes necessary to enable these security capabilities.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of security based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASRJFT.PNG" alt="Analysis for Security Reuse Justification Failures - Trend" width="404" height="287" title="Analysis for Security Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> In this case, increasing trends in security related validation failures are interesting, but do not necessarily require action. Basically, if the examination area shows a large number of denials taking place because inadequate security technology is in place to support the consumer, then action should be considered to realize this technology in order to prevent future denials for the same reason. The inability for a viable consumer to not be able to reuse an existing service for this reason is a definite inhibitor with respect to the Business &amp; Strategy domain. Analysis should be taken to determine if making the investment to fill this security gap will pay for itself in reuse savings.</p>
+<h5 align="left"> Agility Candidate Justifications - Trend</h5>
+<p align="left"> The Agility Candidate Justifications &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MACJT.PNG" alt="Agility Candidate Justifications &ndash; Trend Metric" width="638" height="554" title="Agility Candidate Justifications &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Agility Candidate Justifications - Trend</b></p>
+<p align="left"><b>Purpose:</b> Agility is one of the key goals that organizations seek to achieve with respect to their SOA. Monitoring trends in services justified for the purpose of agility provides important information with respect to achieving maturity with SOA.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of service candidate justifications where the primary reason for justification is agility. This metric measures this value with respect to the rest of the reasons why service candidates are being justified for realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AACJT.PNG" alt="Analysis for Agility Candidate Justifications - Trend" width="404" height="281" title="Analysis for Agility Candidate Justifications - Trend"></p>
+<p align="center"><b>Analysis: Agility Candidate Justifications - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Typically services that are realized for the purpose of providing increased agility to the business come with a high value with respect to potential business value generated through the realization of the service. These particular types of services do not necessarily require a large number of reuse instances to be valuable in the organization. An increasing trend in these types of services is definitely viewed as an increase in maturity with respect to the Business &amp; Strategy domain, as it is indicative of more services being created with higher strategic value. One cautionary note is that these services should rarely be created without at least one consumer as they typically require more investment to produce. Therefore, when increasing trends in agility enabling services are observed, the Service Reuse versus Creation metric (see the <a href="#RSCT">Reuse vs. Service Creation</a> above) should also be observed. (It may be worth creating a specific version of this metric which only measures reuse of agility enabling services versus the creation of these types of services.)</p>
+<p align="left"> With respect to the Business Process &amp; Strategy domain, an increase in agility based service population indicates that more services are being created that are in direct support of the business, and that there is a likelihood that increased business alignment is being achieved through IT.</p>
+<h5 align="left">Design: Reuse Justification Failures - Trend</h5>
+<p align="left"> The Design: Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MDRJFT.PNG" alt="Design: Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Design: Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Design: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is when the service is not designed in a way that would make it appropriate for reuse by the consumer. When a reuse candidate is denied for design reasons, it means that the service was not designed to meet the demands of this particular consumer, and the organization is not willing to invest in the changes necessary redesign the service to meet the demands of this consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of design based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ADRJFT.PNG" alt="Analysis for Design: Reuse Justification Failures - Trend" width="404" height="301" title="Analysis for Design: Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Design: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing this trend variable is the goal of every SOA. Any increasing trend, or sustained high-level of design based denials is an indicator that services are not being designed with enough flexibility to support a sufficient majority of consumers that are emerging to realize the services.</p>
+<h5 align="left">Requirements: Reuse Justification Failures - Trend</h5>
+<p align="left"> The Requirements: Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MRRJFT.PNG" alt="Requirements: Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Requirements: Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Requirements: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is when the service does not meet the specific requirements demanded by the consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of requirements based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARRJFT.PNG" alt="Analysis for Requirements: Reuse Justification Failures - Trend" width="404" height="338" title="Analysis for Requirements: Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Requirements: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> When requirements mismatches are determined to be the cause for service reuse validation failures it may be stemming from two potential problems. One, the requirements gathering process, and service design process is not thinking broadly enough with respect to potential consumers; or two, the discovery process is failing, in that the service was never designed for use by the proposed consumer.</p>
+<p align="left"> In the event of the first case, there is a negative impact with respect to the Business &amp; Strategy domain, because services that should have been designed for use by consumers are being denied because the requirements were not considered. In order to prevent further damage, closer scrutiny should be given to the service definition and design processes where a wider audience of potential consumers needs to be considered with respect to defining and designing the services capabilities. This process does not necessarily need to ensure that the requirements are fulfilled in the current release of the service, but it should ensure that adding the requirements later will require as little impact to existing consumers as possible. </p>
+<h5 align="left">Justified Major Service Version Change - Trend</h5>
+<p align="left"> The Justified Major Service Version Change &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MJMSVCT.PNG" alt="Justified Major Service Version Change &ndash; Trend Metric" width="665" height="555" title="Justified Major Service Version Change &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Justified Major Service Version Change - Trend</b></p>
+<p align="left"><b>Purpose:</b> Major service version changes have the potential for a large disruptive impact on the consumers of a service, and may be viewed very negatively against overall SOA effectiveness, especially if many are observed. This metric is designed to monitor the amount of major service versions being undertaken to support additional consumers.</p>
+<p align="left"> <b>Computation:</b> This metric totals the number of major service version changes approved to existing services over multiple samples of uniform length. The data is used for the purpose of trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AJMSVCT.PNG" alt="Analysis for Justified Major Service Version Change - Trend" width="404" height="254" title="Analysis for Justified Major Service Version Change - Trend"></p>
+<p align="center"><b>Analysis: Justified Major Service Version Change - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Major service version changes should be held to a minimum, and organizations should define target levels for this metric. Any observed increasing trend, or sustained high value with respect to this metric is a red flag with respect to overall SOA effectiveness, as it represents a breakdown in flexibility and the ability of the organization to cope with change.</p>
+<p align="left"> High or increasing trends noticed through analyzing this metric represent negatively towards maturity in the Business &amp; Strategy domain as major service changes are typically disruptive and potentially expensive.</p>
+<h5 align="left">Service Creation by Category - Trend</h5>
+<p align="left"> The Service Creation by Category &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSCCT.PNG" alt="Service Creation by Category &ndash; Trend Metric" width="582" height="518" title="Service Creation by Category &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Creation by Category - Trend</b></p>
+<p align="left"><b>Purpose:</b> Understanding the rate of growth with respect to services of varying category is important in understanding the types of services that are currently (and historically) produced by the service factory. Different categories of services represent different capabilities and values with respect to the SOA. For instance, utility services are typically highly reusable, but typically do not directly provide any business value (other than assist IT in getting things done faster); whereas business services are typically reused but provide direct business value.</p>
+<p align="left"> <b>Computation:</b> This metric totals service creation by category where the services originated from service candidates approved for realization within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASCCT.PNG" alt="Analysis for Service Creation by Category - Trend" width="402" height="309" title="Analysis for Service Creation by Category - Trend"></p>
+<p align="center"><b>Analysis: Service Creation by Category - Trend</b></p>
+<p align="left"><b>Interpretation:</b> A positive maturity indicator with respect to the Business Process and Strategy domain is the existence, or increasing production of Business, and Business Process services. These types of services, if justified correctly, are typically developed in direct support of the business strategy and or business processes.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Architecture Metrics </h4>
+<p>If you have decided that you should focus on the Architecture domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Monitoring maturity in the Architecture domain means the following areas should be considered: </p>
+<ul>
+  <li>Reference Architecture and associated roadmap</li>
+  <li> Manageability/Availability</li>
+  <li>Performance and Scalability</li>
+  <li>Flexibility</li>
+</ul>
+<p> The metrics presented in this section are designed to monitor for changing maturity levels within the Architecture domain, and provide guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively improve maturity within this domain.</p>
+<h5>Service Architecture Conformance - Trend</h5>
+<p> The Service Architecture Conformance &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSACT.PNG" alt="Service Architecture Conformance &ndash; Trend Metric" width="626" height="524" title="Service Architecture Conformance &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Architecture Conformance - Trend</b></p>
+<p><b>Purpose:</b> Conformance to the Service Architecture is a fundamental element of achieving consistency through the service engineering factory. Consistency is important because it is a major component of achieving flexibility, and overall manageability of the assets delivered into the SOA. This metric examines services being delivered into the operational SOA environment. In particular it computes a trend of those services that conform to the predefined Service Architecture versus those that do not.</p>
+<p> <b>Computation:</b> This metric computes a percentage for each sample size of the number of services being delivered through the engineering factory which conform to the Service Architecture versus those that do not.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASACT.PNG" alt="Analysis for Service Architecture Conformance - Trend" width="404" height="306" title="Analysis for Service Architecture Conformance - Trend"></p>
+<p align="center"><b>Analysis: Service Architecture Conformance - Trend</b></p>
+<p><b>Interpretation:</b> The goal is to maximize conformance to the Service Architecture. Obviously areas of downward trend are a concern and need to be examined more closely. Target levels should be established within the organization as goals to achieve the next level of maturity. It is quite common to see downward trends (or flat trends at a low percentage rate) in relatively new SOAs, but an optimized SOA with a broad adoption level (such as Cross Divisional or wider) will most certainly have a conformance level very close to 100%.</p>
+<p> A downward trend or flat area observed at a low percentage should be examined closer. To examine this closer, a Service Architecture Non-Conformance metric which breaks down non-conformance by reason should be examined across the area of interest. This metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSNCST.PNG" alt="Service Architecture Non-Conformance metric which breaks down non-conformance by reason" width="700" height="518" title="Service Architecture Non-Conformance metric which breaks down non-conformance by reason"></p>
+<p align="center"><b>Metric: Service Architecture Non Conformance Summary - Trend</b></p>
+<p><b>Purpose:</b> This metric measures the general reasoning provided for allowing a service&rsquo;s delivery to deviate from the service architecture. The following reasons are possible:</p>
+<ul>
+  <li><b>Schedule:</b> This value is provided when service delivery deviates from the reference architecture in order to meet a schedule constraint.</li>
+  <li><b>Packaging/Deployment:</b> This value is provided when service delivery deviates from the reference architecture because of packaging and or deployment issues.</li>
+  <li><b>Security:</b> This value is provided when service delivery deviates from the reference architecture in order to meet specific security requirements.</li>
+  <li><b>QoS:</b> This value is provided when service delivery deviates from the reference architecture in order to specific QoS requirements.</li>
+</ul>
+<p> <b>Computation:</b> This metric simply totals non-conforming services by reason id. The services counted are limited to the provided time parameters to allow for isolation in the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASNCST.PNG" alt="Analysis for Service Architecture Non Conformance Summary - Trend" width="590" height="352" title="Analysis for Service Architecture Non Conformance Summary - Trend"></p>
+<p align="center"><b>Analysis: Service Architecture Non Conformance Summary - Trend</b></p>
+<p><b>Interpretation:</b> With respect to Architecture, a high number of deviations may be indicative of problems with the Reference Architecture, or gaps (such as in technology) in the Architecture that may need to be filled. The following provides a summary by reason:</p>
+<ul>
+  <li><b>Schedule:</b> If a high value is allocated to schedule constraints, then a closer look at the capacity of the service factory, in addition to overall engineering efficiency should be looked at. Conformance deviations related to schedule can be potentially dangerous with respect to overall SOA effectiveness, and in general is a poor reason for deviation from the reference architecture. This value should be very low, and deviations of this kind should be avoided if at all possible.</li>
+  <li><b>Packaging/Deployment:</b> A high number of deviations for reason of packaging and deployment indicate that it may be worth taking a closer look at the service hosting environments. These types of deviations may impact the overall agility achieved through the SOA, as inappropriately packaging services may create unnecessary dependencies which creates a large impact for service evolution.</li>
+  <li><b>Security:</b> A high number beside this reason indicates that it may be worth taking a look at enhancing the security technology with respect to the service hosting environment. A high value here may also warrant a look at the <a href="SERVICE_ENGINEERING_PROCESS_MONITORING.HTM#SCJF" target="_blank">Service Candidate Justification Failures</a> metric. If a high number of justification failures is attributed to Technology these justification failures may be due to a lack of security infrastructure, furthering the justification for investment in this area.</li>
+  <li><b>QoS:</b> A high number beside this reason indicates that it may be worth taking a look at enhancing the QoS capabilities with respect to the service hosting environment. A high value here may also warrant a look at the <a href="SERVICE_ENGINEERING_PROCESS_MONITORING.HTM#SCJF" target="_blank">Service Candidate Justification Failures</a> metric. If a high number of justification failures is attributed to Technology these justification failures may be due to a lack of infrastructure capability related to QoS, furthering the justification for investment in this area.</li>
+</ul>
+<h5>Production Regression Defects - Trend</h5>
+<p> The Production Regression Defects &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MPRDT.PNG" alt="Production Regression Defects &ndash; Trend Metric" width="611" height="519" title="Production Regression Defects &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Production Regression Defects - Trend</b></p>
+<p><b>Purpose:</b> Regression defects observed against services represent a break-down in overall service evolution quality, and may lead to problems with respect to trust in the service factory and overall SOA strategy by service consumers. A break down in trust may lead to a lengthy test cycle from the consumer side prior to the release of any changes to services which can greatly hinder the SOA&rsquo;s ability to deliver change rapidly. This metric monitors the number of regression defects recorded against services, which should be closely monitored in order to prevent any breakdown in trust between the service factory and its consumers.</p>
+<p> <b>Computation:</b> This metric simply counts the number of regression defects opened against services over the sample periods and provides a trend of change in regressions recorded across each sample.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_APRDT.PNG" alt="Analysis for Production Regression Defects - Trend" width="404" height="308" title="Analysis for Production Regression Defects - Trend"></p>
+<p align="center"><b>Analysis: Production Regression Defects - Trend</b></p>
+<p><b>Interpretation:</b> The goal is to keep regressions at a very low level. Any area of increasing trend or flat areas recorded at high-levels need to be examined closely. There are multiple reasons for regressions, one of which may be indicative of a breakdown or failure with respect to the versioning strategy. Other areas which may require a closer look include the test standards established. In this case, examining defects and the services that they are recorded against may lead to answers. In the area of interest, look at the following:</p>
+<ul>
+  <li>How many regressions are recorded against services of a particular category? A high number against a single category may mean that testing strategies may need to be tightened for those types of services.</li>
+  <li>How many regressions are recorded against services of a particular scope? This may indicate a problem in a localized service factory, or that testing strategies may need to be tightened against that particular scope of service.</li>
+  <li>What type of change was recorded against the new service version? Major, minor, or point? A high number recorded against any particular type of change, may require closer examination of the evolution process.</li>
+</ul>
+<h5>SLA Violations - Trend </h5>
+<p> The SLA Violations &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSLAVT.PNG" alt="SLA Violations &ndash; Trend Metric" width="611" height="563" title="SLA Violations &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: SLA Violations - Trend</b></p>
+<p><b>Purpose:</b> SLA violations indicate the breach of a contract by a service provider with respect to its consumers. Typically, these are not functional in nature; however they do lead to a lowered perception of the SOA, and a reduced amount of trust from the consumer with respect to the services offered through the SOA. Monitoring trends in SLA violations will help the SOA leadership to ensure a high level of quality with respect to the service levels offered by the SOA and narrow down areas where unacceptable breakdowns in service levels have been observed.</p>
+<p> <b>Computation:</b> This metric utilizes runtime data collected against the operational environment. The metric counts SLA violation instances recorded during runtime operations over a set of sample periods which is used to generate a trend of observed SLA violations.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASLAVT.PNG" alt="Analysis for SLA Violations - Trend" width="404" height="246" title="Analysis for SLA Violations - Trend"></p>
+<p align="center"><b>Analysis: SLA Violations - Trend</b></p>
+<p><b>Interpretation:</b> The obvious goal is to sustain a very low level of SLA violations observed against the operational SOA environment. Any area of increasing trend or level areas observed at a high point in the graph need to be closely examined. With respect to Architecture, general scalability and availability capabilities should be examined. Further, test strategy should be checked for accuracy with respect to capacity planning. SOA leadership should define acceptable levels of SLA violations, as well as those targeted with respect to predefined goals. This metric should be used to monitor the SOAs performance against these goals.</p>
+<h5>Trouble Ticket Outages - Trend</h5>
+<p> The Trouble Ticket Outages &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MTTOT.PNG" alt="Trouble Ticket Outages &ndash; Trend Metric" width="611" height="510" title="Trouble Ticket Outages &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Trouble Ticket Outages - Trend</b></p>
+<p><b>Purpose:</b> Trouble tickets resulting in outages are obviously the most disruptive, and play a negative effect to the overall observed SLA offered from IT and its ability to sustain operational uptime.</p>
+<p> <b>Computation:</b> This metric simply counts trouble tickets that resulted in outages across multiple, contiguous samples. The results can be used to create a trend representing outage occurrence levels observed against the operational environment.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ATTOT.PNG" alt="Analysis for Trouble Ticket Outages - Trend" width="404" height="247" title="Analysis for Trouble Ticket Outages - Trend"></p>
+<p align="center"><b>Analysis: Trouble Ticket Outages - Trend</b></p>
+<p><b>Interpretation:</b> The goal is to minimize or sustain a level of zero outages. Any are of increasing trend, or observed flat areas at high levels should be taken seriously. From an architecture perspective, outages may be the result of scalability, or availability issues stemming from the reference architecture. In order to get more detail, the actual root cause for a sample of these trouble incidents should be examined. Further application of technology or engineering may be viable to prevent future recurrence and lower the overall level of outages observed in the operational environment.</p>
+<h5>Technology Justification Failures - Trend</h5>
+<p> The Technology Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MTECHJFT.PNG" alt="Technology Justification Failures &ndash; Trend Metric" width="643" height="554" title="Technology Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Technology Justification Failures - Trend</b></p>
+<p><b>Purpose:</b> When service candidates are presented for justification as shared services, there are many reasons to deny a particular service candidate for realization as a shared service. Technology impact is one of those reasons. When technology is determined to be the main inhibitor for realization of the service candidate as one or more shared services, it indicates that the organization does not possess the technology, or is unwilling to invest in the technology necessary to realize the service candidate.</p>
+<p> <b>Computation:</b> This metric computes the percentage of technology based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ATECHJFT.PNG" alt="Analysis for Technology Justification Failures - Trend" width="404" height="281" title="Analysis for Technology Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Technology Justification Failures - Trend</b></p>
+<p><b>Interpretation:</b> Minimizing the percentage of justification failures due to technology impact is the goal. Any observed areas of increasing trend or sustained high levels should be examined closely. If a particular technology or component of the architecture is missing that could be added to achieve justification for service candidates denied in the examination area then an investment should be considered. </p>
+<h5>QoS Justification Failures - Trend</h5>
+<p> The QoS Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MQOSJFT.PNG" alt="QoS Justification Failures &ndash; Trend Metric" width="637" height="554" title="QoS Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: QoS Justification Failures - Trend</b></p>
+<p><b>Purpose:</b> When service candidates are presented for justification as shared services, there are many reasons to deny a particular service candidate for realization as a shared service. QoS feasibility is one of those reasons. When QoS is determined to be the main inhibitor for realization of the service candidate for potentially one or more shared services, it indicates that the organization does not believe the realization of the service for the expected demand on the service in the shared environment is feasible, or is unwilling to invest in the changes necessary to realize the service candidate and achieve expected QoS levels.</p>
+<p> <b>Computation:</b> This metric computes the percentage of QoS based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AQOSJFT.PNG" alt="Analysis for QoS Justification Failures - Trend" width="404" height="281" title="Analysis for QoS Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: QoS Justification Failures - Trend</b></p>
+<p><b>Interpretation:</b> Minimizing the percentage of justification failures due to QoS feasibility is the goal. Any observed areas of increasing trend or sustained high levels should be examined closely. If a particular technology or component of the architecture is missing that could be added to achieve justification for service candidates denied in the examination area then an investment should be considered.</p>
+<h5>Secuirty Reuse Justification Failures - Trend </h5>
+<p align="left"> The Security Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSRJFT.PNG" alt="Security Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Security Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is security. There are two potential possibilities that may come into play with respect to security being the reason for denying reuse. The first is that simply the consumer should not be allowed to access the capabilities of the service. The second is that the security capabilities necessary to allow the consumer access to the service is simply not available, and the organization is not willing to invest in the changes necessary to enable these security capabilities.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of security based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASRJFT.PNG" alt="Analysis for Security Reuse Justification Failures - Trend" width="404" height="287" title="Analysis for Security Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> In this case, increasing trends in security related validation failures are interesting, but do not necessarily require action. Basically, if the examination area shows a large number of denials taking place because inadequate security technology is in place to support the consumer, then action should be considered to realize this technology in order to prevent future denials for the same reason.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Infrastructure Metrics </h4>
+<p>If you have decided that you should focus on the Infrastructure domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Monitoring maturity in the Infrastructure domain means the following areas should be considered: </p>
+<ul>
+  <li>Shared Infrastructure Services </li>
+  <li>Service Consumption Control </li>
+  <li>Security Infrastructure </li>
+  <li>Availability</li>
+  <li>Policy Enforcement</li>
+  <li>Grid</li>
+</ul>
+<p> The metrics presented in this section are designed to monitor for changing maturity levels within the Infrastructure domain, and provide guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively improve maturity within this domain.</p>
+<h5 align="left">Capacity Reuse Justification Failures - Trend</h5>
+<p align="left"> The Capacity Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MCRJFT.PNG" alt="Capacity Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Capacity Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Capacity Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is available capacity. When a reuse candidate is denied for capacity reasons, it means that there is insufficient capacity available to service the consumer (based on the requested amount of consumption), and the organization is not willing to invest in the changes necessary to increase the capacity necessary to service this consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of capacity based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ACRJFT.PNG" alt="Analysis for Capacity Reuse Justification Failures - Trend" width="404" height="289" title="Analysis for Capacity Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Capacity Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing the amount of capacity based reuse validation failures is always the goal. If there is insufficient capacity, and an inability to expand capacity within the SOA&rsquo;s operational environment then the overall effectiveness of the strategy will be at risk. These types of validation failures may be acceptable periodically, especially when the needs of the consumer are unrealistic, but generally the service should be designed for reuse, and the environment it is placed in should be architected for scalability. An increasing trend in this metric must be viewed negatively with respect to maturity in the Business &amp; Strategy domain.</p>
+<p>With respect to the Infrastructure domain, a negative trend experienced in this metric may be the result of poor planning of infrastructure rollout, which is inhibiting reuse. Additional planning or additional cycles may be necessary with respect to expansion of the infrastructure in support of the reference architecture to prevent future or sustained problems with respect to capacity.</p>
+<h5>Security Reuse Justification Failures - Trend</h5>
+<p align="left"> The Security Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSRJFT.PNG" alt="Security Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Security Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is security. There are two potential possibilities that may come into play with respect to security being the reason for denying reuse. The first is that simply the consumer should not be allowed to access the capabilities of the service. The second is that the security capabilities necessary to allow the consumer access to the service is simply not available, and the organization is not willing to invest in the changes necessary to enable these security capabilities.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of security based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASRJFT.PNG" alt="Analysis for Security Reuse Justification Failures - Trend" width="404" height="287" title="Analysis for Security Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Security Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> In this case, increasing trends in security related validation failures are interesting, but do not necessarily require action. Basically, if the examination area shows a large number of denials taking place because inadequate security technology is in place to support the consumer, then action should be considered to realize this technology in order to prevent future denials for the same reason. The inability for a viable consumer to not be able to reuse an existing service for this reason is a inhibitor with respect to the Infrastructure domain as sufficient technology has not been invested in to support a wide enough variety of consumers. Analysis should be taken to determine if making the investment to fill this security gap will pay for itself in reuse (and other) savings.</p>
+<h5>SLA Violations - Trend</h5>
+<p> The SLA Violations &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSLAVT.PNG" alt="SLA Violations &ndash; Trend Metric" width="611" height="563" title="SLA Violations &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: SLA Violations - Trend</b></p>
+<p><b>Purpose:</b> SLA violations indicate the breach of a contract by a service provider with respect to its consumers. Typically, these are not functional in nature; however they do lead to a lowered perception of the SOA, and a reduced amount of trust from the consumer with respect to the services offered through the SOA. Monitoring trends in SLA violations will help the SOA leadership to ensure a high level of quality with respect to the service levels offered by the SOA and narrow down areas where unacceptable breakdowns in service levels have been observed.</p>
+<p> <b>Computation:</b> This metric utilizes runtime data collected against the operational environment. The metric counts SLA violation instances recorded during runtime operations over a set of sample periods which is used to generate a trend of observed SLA violations.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASLAVT.PNG" alt="Analysis for SLA Violations - Trend" width="404" height="246" title="Analysis for SLA Violations - Trend"></p>
+<p align="center"><b>Analysis: SLA Violations - Trend</b></p>
+<p><b>Interpretation:</b> The obvious goal is to sustain a very low level of SLA violations observed against the operational SOA environment. Any area of increasing trend or level areas observed at a high point in the graph need to be closely examined. With respect to the Infrastructure domain, considerations with respect to actively controlling consumption through infrastructure or engineering techniques should be considered in areas of increasing or sustained high SLA violation levels. If already in place, these components may need to be more closely examined as there may be a breakdown in their effectiveness.</p>
+<h5>Trouble Ticket Outages - Trend</h5>
+<p> The Trouble Ticket Outages &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MTTOT.PNG" alt="Trouble Ticket Outages &ndash; Trend Metric" width="611" height="510" title="Trouble Ticket Outages &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Trouble Ticket Outages - Trend</b></p>
+<p><b>Purpose:</b> Trouble tickets resulting in outages are obviously the most disruptive, and play a negative effect to the overall observed SLA offered from IT and its ability to sustain operational uptime.</p>
+<p> <b>Computation:</b> This metric simply counts trouble tickets that resulted in outages across multiple, contiguous samples. The results can be used to create a trend representing outage occurrence levels observed against the operational environment.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ATTOT.PNG" alt="Analysis for Trouble Ticket Outages - Trend" width="404" height="247" title="Analysis for Trouble Ticket Outages - Trend"></p>
+<p align="center"><b>Analysis: Trouble Ticket Outages - Trend</b></p>
+<p><b>Interpretation:</b> The goal is to minimize or sustain a level of zero outages. Any area of increasing trend, or observed flat areas at high levels should be taken seriously. With respect to the Infrastructure domain if it is determined that many of the outages are the result of over consumption; considerations with respect to actively controlling consumption through infrastructure or engineering techniques should be considered in areas of increasing or sustained high outage levels. If already in place, these components may need to be more closely examined as there may be a breakdown in their effectiveness.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Information Metrics </h4>
+<p>If you have decided that you should focus on the Information domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Monitoring maturity in the Information domain means the following areas should be considered: </p>
+<ul>
+  <li>Data Reference Model </li>
+  <li>Master Data </li>
+  <li>Data Governance </li>
+  <li>Metadata Management </li>
+  <li>Data Quality</li>
+</ul>
+<p>There are no predefined metrics presented for this domain. </p>
+<hr WIDTH="100%">
+<h4>Determine Required QA&amp;M Metrics </h4>
+<p>If you have decided that you should focus on the QA&amp;M domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Monitoring maturity in the OA&amp;M domain means the following areas should be considered: </p>
+<ul>
+  <li>Service Operations </li>
+  <li>Security Management </li>
+  <li>Service Management </li>
+  <li>Capacity Management </li>
+  <li>Problem Management</li>
+  <li>Demand Management</li>
+  <li>Change Management </li>
+</ul>
+<p>There are no predefined metrics presented for this domain. </p>
+<hr WIDTH="100%">
+<h4>Determine Required Projects, Portfolios and Services Metrics </h4>
+<p>If you have decided that you should focus on the Projects, Portfolios and Services domain, you should now look at metrics that could be relevant for this area.</p>
+<p> Monitoring maturity in the Projects, Portfolios and Services domain means the following areas should be considered: </p>
+<ul>
+  <li>Service Portfolio Management </li>
+  <li>Existing Applications </li>
+  <li>Key &quot;In-Flight&quot; Projects </li>
+  <li>Infrastructure Construction Plans </li>
+  <li>Service Engineering Process</li>
+</ul>
+<p>The metrics presented in this section are designed to monitor for changing maturity levels within the Project, Portfolios, and Services domain, and provide guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively improve maturity within this domain.</p>
+<h5>Production Service Defects - Trend</h5>
+<p> The Production Service Defects &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MPSDT.PNG" alt="Production Service Defects &ndash; Trend Metric" width="611" height="519" title="Production Service Defects &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Production Service Defects - Trend</b></p>
+<p><b>Purpose:</b> Defects encountered in the operational environment that originate from services speaks to a breakdown in quality with respect to the services delivered through the service factory. Obviously, a large number of service defects will result in reduced trust in the SOA and reduced effectiveness. Monitoring trends with respect to service defects is an important aspect of maintaining adequate quality and perceived quality observed through the service factory.</p>
+<p> <b>Computation:</b> This metric simply totals the number of defects recorded against services over each sample period. The totals do not include service defects resulting from regressions or change control issues, as these types of defects point to separate areas of concern. </p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_APSDT.PNG" alt="Analysis for Production Service Defects - Trend" width="404" height="236" title="Analysis for Production Service Defects - Trend"></p>
+<p align="center"><b>Analysis: Production Service Defects - Trend</b></p>
+<p><b>Interpretation:</b> Minimizing the number of production encountered service defects is the obvious goal. Organizations should set target levels for this metric and strive to keep levels a low as possible. It is not uncommon to see higher numbers in new or immature SOAs, but a key indicator of quality is low trending numbers observed through this metric.</p>
+<p> With respect to the Project, Portfolios, and Services domain, the primary building blocks of any SOA are the services that it produces. If poor quality is delivered, then there is an obvious negative impact with respect to maturity within this domain. Unacceptable levels observed, should result in closer examination of the quality control processes within the service engineering factory.</p>
+<h5>Production Regression Defects - Trend</h5>
+<p> The Production Regression Defects &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MPRDT.PNG" alt="Production Regression Defects &ndash; Trend Metric" width="611" height="519" title="Production Regression Defects &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Production Regression Defects - Trend</b></p>
+<p><b>Purpose:</b> Regression defects observed against services represent a break-down in overall service evolution quality, and may lead to problems with respect to trust in the service factory and overall SOA strategy by service consumers. A break down in trust may lead to a lengthy test cycle from the consumer side prior to the release of any changes to services which can greatly hinder the SOA&rsquo;s ability to deliver change rapidly. This metric monitors the number of regression defects recorded against services, which should be closely monitored in order to prevent any breakdown in trust between the service factory and its consumers.</p>
+<p> <b>Computation:</b> This metric simply counts the number of regression defects opened against services over the sample periods and provides a trend of change in regressions recorded across each sample.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_APRDT.PNG" alt="Analysis for Production Regression Defects - Trend" width="404" height="308" title="Analysis for Production Regression Defects - Trend"></p>
+<p align="center"><b>Analysis: Production Regression Defects - Trend</b></p>
+<p><b>Interpretation:</b> The goal is to keep regressions at a very low level. Any area of increasing trend or flat areas recorded at high-levels need to be examined closely. There are multiple reasons for regressions, one of which may be indicative of a breakdown or failure with respect to the versioning strategy. Other areas which may require a closer look include the test standards established. In this case, examining defects and the services that they are recorded against may lead to answers. In the area of interest, look at the following:</p>
+<ul>
+  <li>How many regressions are recorded against services of a particular category? A high number against a single category may mean that testing strategies may need to be tightened for those types of services.</li>
+  <li>How many regressions are recorded against services of a particular scope? This may indicate a problem in a localized service factory, or that testing strategies may need to be tightened against that particular scope of service.</li>
+  <li>What type of change was recorded against the new service version? Major, minor, or point? A high number recorded against any particular type of change, may require closer examination of the evolution process.</li>
+</ul>
+<p>With respect to the Project, Portfolios, and Services domain, the primary building blocks of any SOA are the services that it produces. If poor quality is delivered when evolving services, then there is an obvious negative impact with respect to maturity within this domain. Unacceptable levels observed, should result in closer examination of the quality control processes within the service engineering factory particularly around regression testing.</p>
+<h5>Service Creation by Category - Trend</h5>
+<p align="left"> The Service Creation by Category &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSCCT.PNG" alt="Service Creation by Category &ndash; Trend Metric" width="582" height="518" title="Service Creation by Category &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Creation by Category - Trend</b></p>
+<p align="left"><b>Purpose:</b> Understanding the rate of growth with respect to services of varying category is important in understanding the types of services that are currently (and historically) produced by the service factory. Different categories of services represent different capabilities and values with respect to the SOA. For instance, utility services are typically highly reusable, but typically do not directly provide any business value (other than assist IT in getting things done faster); whereas business services are typically reused but provide direct business value.</p>
+<p align="left"> <b>Computation:</b> This metric totals service creation by category where the services originated from service candidates approved for realization within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASCCT.PNG" alt="Analysis for Service Creation by Category - Trend" width="402" height="309" title="Analysis for Service Creation by Category - Trend"></p>
+<p align="center"><b>Analysis: Service Creation by Category - Trend</b></p>
+<p align="left"><b>Interpretation:</b> The trend with respect to services being created by any particular type provides important information with respect to the Project, Portfolios, and Services domain. A breakdown by service category is provided below:</p>
+<ul>
+  <li><b>Utility/Access Service:</b> In most SOAs a spike is observed early on in the construction of utility services. This is important because utility services represent the basic technical building blocks of any SOA, and are typically highly reusable, especially with respect to the constructions/composition of higher level services. They are also typically used to facilitate consistency across established basic technical standards (e.g., exception handling, logging, security, versioning, routing, consumption control, access to legacy systems, etc) Over time, the rate of utility based services should decrease. If this type of trend is not observed, closer examination should take place to more clearly understand why these essential services are not being created as expected to the maturity level observed within the organization.</li>
+  <li><b>Data Service:</b> The data service also follows a similar trend to the utility service, but may not necessarily experience a downward trend as the SOA expands over time (like the utility service most likely will). Data services typically add some level of business value, but are not typically directly exposed at the business level. These services are essential in ensuring that data is presented and worked against with correct business context (rather than just raw data). If unusual amounts of data services are being created, they should be examined to ensure that they are not just exposing data directly from data sources.</li>
+  <li><b>Business Services:</b> These services typically provide direct business value, and are understood in the business context. They are typically not as reusable as data and utility based services, but typically lead to the ability to construct composite business applications, or composite business services and or processes. They typically lead to increased agility, and represent a milestone with respect to SOA maturity.</li>
+  <li><b>Business Process Service:</b> Like business services, there services provide direct business value. These services represent reusable business processes. They ensure consistency with respect to business process execution across the business. Again, these services go a long way to enabling agility within the organization and represent a significant level of maturity with respect to SOA maturity. A closer examination of Business Process Services should observe these services are being composed partly, or in whole, buy business and data services.</li>
+  <li><b>Presentation Services:</b> These services are rather neutral with respect to SOA maturity. In many organizations a steady increase in output of presentation services will be observed, but this trend may vary significantly based on the domain and type of business (or scope of the business) adopting SOA.</li>
+</ul>
+<h5>Service Creation by Scope - Trend</h5>
+<p align="left"> The Service Creation by Scope &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSCST.PNG" alt="Service Creation by Scope &ndash; Trend Metric" width="587" height="518" title="Service Creation by Scope &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Creation by Scope - Trend</b></p>
+<p><b>Purpose:</b> Understanding the rate of growth with respect to services of varying scope is important in understanding the types of services that are currently (and historically) produced by the service factory. Different scopes of services represent different capabilities and values with respect to the SOA adoption. For instance, intra-application services represent a very low level with respect to adoption, while enterprise wide services indicate that the services are being created to service the entire enterprise.</p>
+<p> <b>Computation:</b> This metric totals service creation by scope where the services originated from service candidates approved for realization within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASCST.PNG" alt="Analysis for Service Creation by Scope - Trend" width="404" height="308" title="Analysis for Service Creation by Scope - Trend"></p>
+<p align="center"><b>Analysis: Service Creation by Scope - Trend</b></p>
+<p><b>Interpretation:</b> The trend with respect to services being created by any particular type provides important information with respect to the Project, Portfolios, and Services domain. A breakdown by service scope is provided below: </p>
+<ul>
+  <li><b>Intra-Application:</b> These services are created for the purpose of facilitate reuse within a particular application or project, and are not intended for reuse outside the scope of the application. These types of services represent the lowest measurable form with respect to SOA adoption, as they provide very little value back to the business.</li>
+  <li><b>Line of Business:</b> These services are created with the purpose of servicing a single line of business. They represent the first basic step with regards to SOA adoption within an organization.</li>
+  <li><b>Enterprise:</b> These services are created with the purpose of services multiple lines of business, or even the entire enterprise. They represent a significant advancement with respect to the adoption level of SOA in the enterprise. A high rate or construction needs to be examined closely with respect to service category however, as if all services created at the enterprise scope are utility services, it does not signify a large increase with respect to maturity and adoption.</li>
+  <li><b>Inter-Enterprise:</b> These services are intended for usage outside the business boundaries. These services are considered to be somewhat neutral with respect to maturity and adoption. In many cases they are dependent on the type of business with respect to their existence and usage. </li>
+</ul>
+<h4>Justified Minor Service Version Change - Trend</h4>
+<p align="left"> The Justified Minor Service Version Change &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MJMINSVCT.PNG" alt="Justified Minor Service Version Change &ndash; Trend Metric" width="672" height="576" title="Justified Minor Service Version Change &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Justified Minor Service Version Change - Trend</b></p>
+<p><b>Purpose:</b> Minor version changes are typically viewed as neutral with respect to SOA maturity. However, they need to be monitored with respect to regression defects reported. Since minor version changes symbolize a change to a service that should be deemed backwards compatible, then it should have no impact on existing consumers upon deployment. This metric correlates minor version changes with regression defect trends, so that any anomaly can be noted and investigated.</p>
+<p> <b>Computation:</b> This metric collects (separately) totals of approved minor version changes to services, and regression defects encountered in the operational environment. The totals are collected over several samples of uniform size allowing for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AJMINSVCT.PNG" alt="Analysis for Justified Minor Service Version Change - Trend" width="404" height="321" title="Analysis for Justified Minor Service Version Change - Trend"></p>
+<p align="center"><b>Analysis: Justified Minor Service Version Change - Trend</b></p>
+<p><b>Interpretation:</b> This metric is interested in any correlation between changes in the rate of minor version changes to services with respect to the number of regression defects encountered in the production environment. Minor version changes should be perceived as seamless, and any correlation between an increase in minor version changes and a noticed increase in regression defects is a negative with respect to overall quality of perceived from the Project, Portfolios, and Services domain, and places downward pressure on overall SOA maturity and adoption.</p>
+<h5 align="left">Design: Reuse Justification Failures - Trend</h5>
+<p align="left"> The Design: Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MDRJFT.PNG" alt="Design: Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Design: Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Design: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is when the service is not designed in a way that would make it appropriate for reuse by the consumer. When a reuse candidate is denied for design reasons, it means that the service was not designed to meet the demands of this particular consumer, and the organization is not willing to invest in the changes necessary redesign the service to meet the demands of this consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of design based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ADRJFT.PNG" alt="Analysis for Design: Reuse Justification Failures - Trend" width="404" height="301" title="Analysis for Design: Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Design: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Minimizing this trend variable is the goal of every SOA. Any increasing trend, or sustained high-level of design based denials is an indicator of poor service design from a methodology and process perspective. If services are not designed in a way that is either easily extensible, or highly flexible to meet the demands of a wide variety of consumers, then the service delivery process is flawed. Quite often high numbers in this particular metric is indicative of an organization that is still focused on just delivering the service in the fastest way possible with respect to the current requirements. This strategy is ineffective for an SOA as it typically will result in a high number of service reuse validation failures, or a large number of significant service version changes (which may represent a large, negative impact on overall SOA responsiveness).</p>
+<h5>Requirements: Reuse Justification Failures - Trend</h5>
+<p align="left"> The Requirements: Reuse Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MRRJFT.PNG" alt="Requirements: Reuse Justification Failures &ndash; Trend Metric" width="652" height="520" title="Requirements: Reuse Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Requirements: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are discovered for potential reuse, there is a validation process that should be executed to ensure that the service to be consumed is appropriate for the consumers needs. There are many reasons to deny a particular service for reuse by a particular consumer. One of those reasons is when the service does not meet the specific requirements demanded by the consumer.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of requirements based service reuse validation failures with respect to the rest of the reasons why service reuse requests are being denied. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARRJFT.PNG" alt="Analysis for Requirements: Reuse Justification Failures - Trend" width="404" height="338" title="Analysis for Requirements: Reuse Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Requirements: Reuse Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> When requirements mismatches are determined to be the cause for service reuse validation failures it may be stemming from two potential problems. One, the requirements gathering process, and service design process is not thinking broadly enough with respect to potential consumers; or two, the discovery process is failing, in that the service was never designed for use by the proposed consumer.</p>
+<p align="left"> In the event of the first case, there is a negative impact with respect to the Business &amp; Strategy domain, because services that should have been designed for use by consumers are being denied because the requirements were not considered. In order to prevent further damage, closer scrutiny should be given to the service definition and design processes where a wider audience of potential consumers needs to be considered with respect to defining and designing the services capabilities. This process does not necessarily need to ensure that the requirements are fulfilled in the current release of the service, but it should ensure that adding the requirements later will require as little impact to existing consumers as possible. </p>
+<h5 align="left">Justified Major Service Version Change - Trend</h5>
+<p align="left"> The Justified Major Service Version Change &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MJMSVCT.PNG" alt="Justified Major Service Version Change &ndash; Trend Metric" width="665" height="555" title="Justified Major Service Version Change &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Justified Major Service Version Change - Trend</b></p>
+<p align="left"><b>Purpose:</b> Major service version changes have the potential for a large disruptive impact on the consumers of a service, and may be viewed very negatively against overall SOA effectiveness, especially if many are observed. This metric is designed to monitor the amount of major service versions being undertaken to support additional consumers.</p>
+<p align="left"> <b>Computation:</b> This metric totals the number of major service version changes approved to existing services over multiple samples of uniform length. The data is used for the purpose of trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AJMSVCT.PNG" alt="Analysis for Justified Major Service Version Change - Trend" width="404" height="254" title="Analysis for Justified Major Service Version Change - Trend"></p>
+<p align="center"><b>Analysis: Justified Major Service Version Change - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Major service version changes should be held to a minimum, and organizations should define target levels for this metric. Any observed increasing trend, or sustained high value with respect to this metric is a red flag with respect to overall SOA effectiveness, as it represents a breakdown in flexibility and the ability of the organization to cope with change.</p>
+<p align="left">High or increasing trends noticed through analyzing this metric represent negatively towards maturity in Project, Portfolios, and Services domain. Negative results experienced through this metric represent a break-down in the engineering factory as sufficient flexibility is not being designed into services. Changes to the service delivery processes may be necessary in order to prevent a continuation of negative trending.</p>
+<h5>Release Plan Impacts (Factory Capacity) - Trend</h5>
+<p align="left"> The Release Plan Impacts (Factory Capacity) &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MRPIFCT.PNG" alt="Release Plan Impacts (Factory Capacity) &ndash; Trend Metric" width="663" height="559" title="Release Plan Impacts (Factory Capacity) &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Release Plan Impacts (Factory Capacity) - Trend</b></p>
+<p><b>Purpose:</b> Service factory capacity is something that should be continuously monitored in a highly active SOA. When release schedule impacts occur for reason of factory capacity limits, then the SOA will not be as productive, and is constrained by the resources available to deliver shared services.</p>
+<p> <b>Computation:</b> This metric totals the number of release schedule impacts that occurred over each uniform sample area where the reason for the impact was a lack of sufficient service factory resources to deliver per the requested schedule.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARPIFCT.PNG" alt="Analysis for Release Plan Impacts (Factory Capacity) - Trend" width="404" height="312" title="Analysis for Release Plan Impacts (Factory Capacity) - Trend"></p>
+<p align="center"><b>Analysis: Release Plan Impacts (Factory Capacity) - Trend</b></p>
+<p><b>Interpretation:</b> Obviously sustaining a minimal number of these types of schedule impacts is optimal, and in a mature SOA there will be few (if any) on average. If the service factory is becoming overloaded, there are a couple potential reasons. One is that the service candidate justification process needs to be tightened up because too many candidates are getting through, that potentially are of lower priority. This is disruptive because the overall schedule for higher priority activities may be impacted. The second is that the service candidate justification process is working properly, but there simply is not enough resource assigned to the service factory to handle the sustained requests for service delivery. In this situation, small spikes may be acceptable, but areas of lengthy trend increases, or sustained high levels warrant possible adding additional resources to the service factory.</p>
+<h5>Service/Project Delivery Schedule Conformance - Trend</h5>
+<p align="left"> The Service/Project Delivery Schedule Conformance &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSPDSCT.PNG" alt="Service/Project Delivery Schedule Conformance &ndash; Trend Metric" width="746" height="568" title="Service/Project Delivery Schedule Conformance &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service/Project Delivery Schedule Conformance - Trend</b></p>
+<p><b>Purpose:</b> Measuring overall conformance to delivery schedules is an important component of monitoring with respect to any IT strategy. This metric provides the ability to track project and service deliveries separately with respect to conformance their release schedules.</p>
+<p> <b>Computation:</b> This metric simply computes the totals of service and project delivery misses with respect to their release schedules separately over multiple samples of uniform length. The data can then be utilized for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASPDSCT.PNG" alt="Analysis for Service/Project Delivery Schedule Conformance - Trend" width="404" height="330" title="Analysis for Service/Project Delivery Schedule Conformance - Trend"></p>
+<p align="center"><b>Analysis: Service/Project Delivery Schedule Conformance - Trend</b></p>
+<p><b>Interpretation:</b> Again, minimizing the number of schedule misses is the goal. Service schedule misses may be more disruptive than individual project misses as multiple projects may be affected by delays in service delivery. Obviously if an increasing trend is noticed in either types of deliveries then corrective action should be taken to first determine the reason for the misses, and what needs to be done to ensure that either the estimation process is corrected, or the delivery process is streamlined (or both).</p>
+<hr WIDTH="100%">
+<h4>Determine Required Organization Metrics </h4>
+<p>If you have decided that you should focus on the Organization domain, you should now look at metrics that could be relevant for this area.</p>
+<p>Monitoring maturity in the Organization domain means the following areas should be considered: </p>
+<ul>
+  <li>Organizational Structure</li>
+  <li>Education and Training </li>
+  <li>Knowledge and Skill Sets </li>
+  <li>Architecture Authority</li>
+</ul>
+<p>There is only one metric presented in this section which is designed to be a part of the process to monitor for changing maturity levels within the Organization domain. It contains guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively improve maturity within this domain.</p>
+<h5>Skill-Set Candidate Justification Failures - Trend</h5>
+<p align="left"> The Skill-Set Candidate Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSSCJFT.PNG" alt="Skill-Set Candidate Justification Failures &ndash; Trend Metric" width="637" height="554" title="Skill-Set Candidate Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Skill-Set Candidate Justification Failures - Trend</b></p>
+<p><b>Purpose:</b> When service candidates are presented for justification as shared services, there are many reasons to deny a particular service candidate for realization as a shared service. Skill Set is one of those reasons. When skill set is determined to be the main inhibitor for realization of the service candidate as one or more shared services, it indicates that the organization does not possess the appropriate skill, or is unwilling to invest in the training necessary to realize the service candidate.</p>
+<p> <b>Computation:</b> This metric computes the percentage of skill set based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASSCJFT.PNG" alt="Analysis for Skill-Set Candidate Justification Failures - Trend" width="404" height="322" title="Analysis for Skill-Set Candidate Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Skill-Set Candidate Justification Failures - Trend</b></p>
+<p><b>Interpretation:</b> Minimizing levels observed in this metric is the goal. Any increasing trend in skill set based service candidate justification failures, or sustained high levels of such failures places significant downward pressure on SOA maturity. This particular metric points directly at the Organization domain, as skill sets is a primary component of this domain. This also plays negatively against the Business &amp; Strategy domain as services, which may potentially offer a great deal of value to the organization, are not being realized.</p>
+<p> Increasing scrutiny should be given to the types of service candidates being denied over the examination area to determine training, or external hiring may be necessary to prevent the continuation of the negative trend.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Governance Metrics </h4>
+<p>If you have decided that you should focus on the Governance domain, you should now look at metrics that could be relevant for this area.</p>
+<p>Monitoring maturity in the Governance domain means the following areas should be considered: </p>
+<ul>
+  <li>Standards Vitality </li>
+  <li>Governance Process and Tools </li>
+  <li>Policy Management</li>
+</ul>
+<p>The metrics presented in this section are designed to monitor for changing maturity levels within the Governance domain, and provide guidance with respect to how to properly interpret and utilize the information presented through the metric to effectively improve maturity within this domain.</p>
+<h5>Service Candidate Justification Ratio - Trend</h5>
+<p align="left"> The Service Candidate Justification Ratio &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSCJRT.PNG" alt="Service Candidate Justification Ratio &ndash; Trend Metric" width="637" height="554" title="Service Candidate Justification Ratio &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Candidate Justification Ratio - Trend</b></p>
+<p><b>Purpose:</b> The rate at which services are being justified needs to be monitored. The service candidate justification process is the gateway to service population, and is the controlling mechanism with respect to creating the correct services. This process needs to be taken seriously within the organization. The rate of service candidate justification can mean different things depending on the maturity level of the organization.</p>
+<p> <b>Computation:</b> This metric computes a percentage of service candidates being justified for several sample periods of uniform length. Trend analysis can then be utilized to interpret changes in levels over time.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASCJRT.PNG" alt="Analysis for Service Candidate Justification Ratio - Trend" width="404" height="281" title="Analysis for Service Candidate Justification Ratio - Trend"></p>
+<p align="center"><b>Analysis: Service Candidate Justification Ratio - Trend</b></p>
+<p><b>Interpretation:</b> Inflection points, representing a change in either direction can be an indicator of either positive or negative maturity change. For instance, a relatively new SOA will probably experience an increasing trend in service justifications as it gets rolling. However, as the service population grows, this should level off and eventually begin to decline. A change in direction with respect to this trend may also be brought upon by a change to the business such as an acquisition, or some other significant business event. This trend may also be watched with respect to the service category and scope trends. To track growth with respect to particular types of services, the overlay with the category trend is included below as an example:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_EXSCJRT.PNG" alt="Analysis for Service Justification Percentage vs. Service Category " width="402" height="309" title="Analysis for Service Justification Percentage vs. Service Category "></p>
+<p align="center"><b>Analysis: Service Justification % vs. Service Category </b></p>
+<p>In the example above, there is a spike in service justifications observed near the center of the graph. It may be worth examining the relationship to the types of services produced shortly after. In this scenario it looks like there was a small spike in data services delivered. What brought this on? Does the process need to be tightened? Or are the data services necessary to support a change in business direction or some other event?</p>
+<h5>Service Enablement Candidate Justifications - Trend</h5>
+<p align="left"> The Service Enablement Candidate Justifications &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MSECJT.PNG" alt="Service Enablement Candidate Justifications &ndash; Trend Metric" width="700" height="554" title="Service Enablement Candidate Justifications &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Service Enablement Candidate Justifications - Trend</b></p>
+<p><b>Purpose:</b> Service enablement, in most scenarios, represents a form of low hanging fruit approach to service justification. This reasoning indicates that the service will be relatively easy to realize as a shared service as its function already exists within the current set of IT systems and the migration necessary to make the functions available as a shared service are feasible. These types of justifications need to be monitored closely; they may be an indicator that many services are being realized because there is little effort needed to do so, however, higher priority, or services that will provide increased value to the business may be passed on because too much effort is being spent on realizing existing function within the business.</p>
+<p> <b>Computation:</b> This metric computes the percentage of service candidate justifications where the primary reason for justification is service enablement. This metric measures this value with respect to the rest of the reasons why service candidates are being justified for realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ASECJT.PNG" alt="Analysis for Service Enablement Candidate Justifications - Trend" width="404" height="301" title="Analysis for Service Enablement Candidate Justifications - Trend"></p>
+<p align="center"><b>Analysis: Service Enablement Candidate Justifications - Trend</b></p>
+<p><b>Interpretation:</b> The key to focus on with respect to interpreting this metric is that easy does not always equate to necessary. Just because a service candidate is perceived as easy to create does not mean that it should be automatically approved for realization, especially if other services that should be given more relevance with respect to business value are being passed on, or the service factory is becoming over burdened and schedule impacts are taking place because of insufficient service factory capacity. Any increasing trend or sustained high value with respect to service enablement justifications should be examined closely. In general, the amount of services justified for reason of service enablement should be minimal or tightly watched with respect to overall service factory capacity.</p>
+<p> An example correlation between the two metrics is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_EXSECJT.PNG" alt="Analysis for Service Enablement Candidate Percentage vs. Factory Capacity Release Plan Impacts" width="404" height="301" title="Analysis for Service Enablement Candidate Percentage vs. Factory Capacity Release Plan Impacts"></p>
+<p align="center"><b>Analysis: Service Enablement Candidate % vs. Factory Capacity Release Plan Impacts </b></p>
+<p align="left">In the scenario above, it is clear that Service Enablement justifications may have been miscalculated, as the service factory was already operating at full capacity since schedule impacts were being observed due to insufficient service factory resource. In this case, it is quite likely that service enabling services is responsible for project and service delivery delays, in addition to the denial of service justifications for other types of services where service factory capacity was taken into consideration.</p>
+<h5 align="left">Reuse Candidate Justifications vs. Reuse - Trend</h5>
+<p align="left"> The Reuse Candidate Justifications vs. Reuse &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MRCJVRT.PNG" alt="Reuse Candidate Justifications vs. Reuse &ndash; Trend Metric" width="695" height="561" title="Reuse Candidate Justifications vs. Reuse &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Reuse Candidate Justifications vs. Reuse - Trend</b></p>
+<p align="left"><b>Purpose:</b> When services are justified for the purpose of high reuse potential, then monitoring should take place to ensure that reuse speculation is actually resulting in increased reuse. This metric is designed to monitor reuse levels with respect to service candidate justifications based on perceived reuse levels.</p>
+<p align="left"> <b>Computation:</b> This metric computes totals of both reuse justification instances and actual validated reuse instances over multiple samples of uniform size. This allows the two trends to be plotted independently and analyzed together.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARCJVRT.PNG" alt="Analysis for Reuse Candidate Justifications vs. Reuse - Trend - 1" width="404" height="311" title="Analysis for Reuse Candidate Justifications vs. Reuse - Trend - 1"></p>
+<p align="center"><b>Analysis: Reuse Candidate Justifications vs. Reuse - Trend - 1 </b></p>
+<p align="left"><b>Interpretation:</b> Simply put, a spike in reuse justifications should result in some form of increasing trend in actual reuse observed with a time delay. The illustration above provides a trend that does not identify any particular problems with respect to this correlation. The illustration below, on the other hand, is indicative of a justification process problem:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_ARCJVRT2.PNG" alt="Analysis for Reuse Candidate Justifications vs. Reuse - Trend - 2" width="404" height="312" title="Analysis for Reuse Candidate Justifications vs. Reuse - Trend - 2"></p>
+<p align="center"><b>Analysis: Reuse Candidate Justifications vs. Reuse - Trend - 2 </b></p>
+<p align="left">From the scenario depicted above, there is an obvious issue with the justification process. There is a noticeable increase in service candidate justifications for the reason of high reuse potential; however, there is no real noticeable increasing trend in actual reuse. The justification process should be tightened. This type of scenario places downward pressure from a governance perspective.</p>
+<h5 align="left">Project Impact Candidate Extension Justification Failures - Trend</h5>
+<p align="left"> The Project Impact Candidate Extension Justification Failures &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MPICEJFT.PNG" alt="Project Impact Candidate Extension Justification Failures &ndash; Trend Metric" width="698" height="554" title="Project Impact Candidate Extension Justification Failures &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Project Impact Candidate Extension Justification Failures - Trend</b></p>
+<p align="left"><b>Purpose:</b> Proposed changes to services, when the expected changes is greater than a point release, such as a defect fix, need also be passed through the service candidate justification process. This is necessary to ensure that the correct changes are made to services and control is maintained and governed with respect to service evolution. When services are denied the ability to evolve, there may be a potential breakdown with respect to the SOAs ability to accept change, and this trend should be monitored closely.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of project impact based service candidate justification failures with respect to the rest of the reasons why service candidates are being denied realization. Only candidates that are being justified for extension are considered in the data. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_APICEJFT.PNG" alt="Analysis for Project Impact Candidate Extension Justification Failures - Trend" width="404" height="328" title="Analysis for Project Impact Candidate Extension Justification Failures - Trend"></p>
+<p align="center"><b>Analysis: Project Impact Candidate Extension Justification Failures - Trend</b></p>
+<p align="left"><b>Interpretation:</b> The goal is to minimize this trend. When service extensions are being denied for reason of project impact it is an indicator of overall program management ineffectiveness. Increasing trends or sustained high levels indicate that the SOA program is flawed because it has not been adequately established to accept change.</p>
+<h5 align="left">Agility Candidate Justifications - Trend</h5>
+<p align="left"> The Agility Candidate Justifications &ndash; Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_MACJT.PNG" alt="Agility Candidate Justifications &ndash; Trend Metric" width="638" height="554" title="Agility Candidate Justifications &ndash; Trend Metric"></p>
+<p align="center"><b>Metric: Agility Candidate Justifications - Trend</b></p>
+<p align="left"><b>Purpose:</b> Agility is one of the key goals that organizations seek to achieve with respect to their SOA. Monitoring trends in services justified for the purpose of agility provides important information with respect to achieving maturity with SOA.</p>
+<p align="left"> <b>Computation:</b> This metric computes the percentage of service candidate justifications where the primary reason for justification is agility. This metric measures this value with respect to the rest of the reasons why service candidates are being justified for realization. The data is collected over multiple samples of unified length in order to provide for trend analysis.</p>
+<p align="center"><img src="../../010_COMMON_FILES/ASM_AACJT.PNG" alt="Analysis for Agility Candidate Justifications - Trend" width="404" height="281" title="Analysis for Agility Candidate Justifications - Trend"></p>
+<p align="center"><b>Analysis: Agility Candidate Justifications - Trend</b></p>
+<p align="left"><b>Interpretation:</b> Typically services that are realized for the purpose of providing increased agility to the business come with a high value with respect to potential business value generated through the realization of the service. These particular types of services do not necessarily require a large number of reuse instances to be valuable in the organization. An increasing trend in these types of services is definitely viewed as an increase in maturity with respect to the Business &amp; Strategy domain, as it is indicative of more services being created with higher strategic value. One cautionary note is that these services should rarely be created without at least one consumer as they typically require more investment to produce. </p>
+<p align="left">With respect to the Governance domain, an increase in agility targeted services indicates that potential maturing may be taking place in the service justification process. A rapid increase in this trend should be examined with caution however, as it may actually mean a breakdown in the service justification process. Further, a rapid increase in these types of services is rare in a relatively new (or immature) SOA, and quite often indicates a problem in the service justification process. Quite often these types of services are best constructed as composites from lower level services, and if an SOA has not invested in developing these types of services, then the higher level services are typically much less realistic, or are much more difficult to justify (early on).</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a><b>TECHNIQUE USAGE </b></h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="43%" scope="col">Task</th>
+    <th width="57%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy (Envision) </a></div></th>
+    <td>This technique provides a set of metrics used to measure and monitor changes in SOA maturity.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have you documented a common notation for the metrics?</li>
+  <li>Are the areas that should be monitored well documented, including a reference to business strategy or business objectives? </li>
+  <li>Are metrics defined for all areas that should be monitored? </li>
+  <li>Is every metric documented using the common notification?</li>
+  <li>Has the purpose for each metric been documented properly?</li>
+  <li>Is it clear for each metric how the underlying data should be captured?</li>
+  <li>Have you documented how the result of each metric should be interpreted? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

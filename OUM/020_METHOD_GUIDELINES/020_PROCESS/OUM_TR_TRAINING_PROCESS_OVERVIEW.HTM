@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TR Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[TR] TRAINING </h2>
+<!--BeginProcessDesc--><p>The objective of the Training process is to make sure that the project team is adequately trained to begin the tasks necessary to start the project and the users are adequately trained to take on the tasks of running the new application system.</p><!--EndProcessDesc-->
+<p>In a commercial off-the-shelf (COTS) application implementation, the project team may also need to be trained on the applications being installed in order to bring the project team up to a level of application proficiency in order to complete the process of developing and testing the Business Procedure Documentation.</p>
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center" style="margin-bottom: 0;"><img src="../../010_COMMON_FILES/TR_Process.jpg" alt="Training Process Flow Diagram" width="710" height="759" border="1" title="Training Process Flow Diagram"></p>
+<P> <A 
+href="#TOP">Back to Top</A>&nbsp; </P>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The Training process ensures that the project team is adequately trained to begin the tasks necessary to start the project and the users are adequately trained to take on the tasks of running the new application system. The Training team may also train the company&rsquo;s applications maintenance personnel, help desk personnel, and the acceptance test team.</p>
+<p> The Training process encompasses the following areas:</p>
+<ul>
+  <li>Training Materials</li>
+  <li>Education andTtraining</li>
+  <li> Training Methods</li>
+  <li> Training Administration</li>
+  <li> Training Environments</li>
+</ul>
+<h4 class="style1" style="margin-bottom: 0;">Training Materials</h4>
+<p class="style1"> Training courses are role- and process-based. <span class="style3">When the custom applications require custom developed training material, existing project artifacts should be utilized as source documents. </span>Training materials should follow the <span class="style3">use cases and business process models that are carried forward into the Documentation and Training processes and used to develop the documentation and training materials, as appropriate. The </span>User Guide and User Reference can be used for training users; the systems operations documentation for training administrators; and the Technical Reference for training systems administrators, analysts, designers, and IS operations staff. Help desk training may require some additional documentation, such as frequently asked questions and answers. Trainers and courseware developers should orient their material toward roles and jobs, and not components. To retain the students&rsquo; attention and avoid overwhelming them with information, break training sessions into manageable pieces that focus on clear objectives. Include labs that provide hands-on interaction with the system and encourage confidence in the students&rsquo; ability to use the system.</p>
+<p class="style1"> Achieve substantial savings in time and resources by designing the Documentation approach in such a way that, if need be, you can revise the documentation in later project phases. For example, you can use refined business process flow diagrams in the user manuals and in user training.</p>
+<p class="style1"> For most commercial off-the-shelf (COTS) software, the provider offers standard classes covering the basic product features and functions. Create custom classes or other types of training, as necessary, to suit the needs of each project. </p>
+<h4 class="style1">Education and Training</h4>
+<p>OUM distinguishes between education and training. Education provides an understanding of the fundamentals of how the business operates in a certain type of environment. <span class="style3">Training is about learning the standard or developed applications and skills courses.</span></p>
+<p class="style1"><span class="style3">Use education when preparing project team members, users, or analysts to tackle implementation challenges and accept ownership of new business processes. It provides guidance on industry reference and leading practices information while clarifying the operational and financial flow of the company. More importantly, it explains why and how the company expects to achieve success, and if relevant to the project team how successful companies in similar industries have achieved success and thereby encourages the use of proven practices, concepts, and business process metrics.</span></p>
+<p class="style1"><span class="style3"> Training provides the basis for setting up and using the application(s). For large organizations, OUM encourages the use of the train-the-trainer approach; the project staff or software provider staff trains the company instructors who in turn teach the users. OUM concentrates on providing information on the setup, technical, and functional aspects of the application(s) and tools to the project team.</span></p>
+<h4 class="style1"> Training Methods</h4>
+<p class="style1">Two training techniques are available: direct training and train-the-trainers.</p>
+<p class="style1"> In direct training, members of the project team should staff the trainer positions. However, if there are large numbers of users to train, the trainer should be someone experienced in providing training.</p>
+<p class="style1"> In-house trainers teaching the courses is called the train-the-trainer approach. In this case an instructor, who should be a member of the team, trains the trainer. The trainer then trains the users and has assistance from an outside resource with strong knowledge.</p>
+<h5 class="style1">Training versus Learning</h5>
+<p class="style1" style="margin-top: 0;"> The field of andragogy (adult learning) makes a clear distinction between training and learning. Whereas training is often a one-time occurrence, driven by the trainer rather than the learner, it stops short of providing the actual performance results expected from a skilled performer. Learning expands the concept of training so it applies to an entire process where a learner participates in learning events organized in a structured path that favors gradual learning from simple to more complex. Learning here is better mapped to the ways adults learn and is generally self-driven by the learner. It includes repetition activities, reinforcement and measurement to ensure that the learning has actually occurred and is now translated into the expected behavioral performance. It is also delivered in a variety of formats to cater to the variety of adult learning styles.</p>
+<h4 class="style1">Training Administration</h4>
+<p class="style1"> If you have many students to train, hold multiple classes and limit each class size to 20 or fewer. Make sure the equipment available in the training environment is similar to the equipment students will use at their normal work sites. Only being trained in those functions relevant to their job would allow students to retain more, but logistical constraints do not always permit this degree of specialization. You must balance factors such as distance to the training site, number of classes, covered material, and class duration.</p>
+<p class="style1"> Make sure you have the highest level of training retention. Aim to train the users as close as possible to the date of their start with the production system, so they can exercise their new knowledge immediately.</p>
+<p class="style1"> Efficient training administration demonstrates a high level of commitment to the success of the new system.</p>
+<h4 class="style1">Training Environments</h4>
+<p class="style1"> Just as it is important to use final documentation as a tool in training, it is very important to construct training environments that reflect real production data and system configuration.</p>
+<p class="style1"> Since the creation of training environments is often on the critical path, it is very important to plan ahead and train users with scenarios that were successful during business system testing. In this way, training stays focused on real business flows and information. </p>
+<h5 class="style3">Multi-Site and Iterative and Incremental Approach Considerations</h5>
+<p class="style3"> Deploying applications to multiple sites at different points in time can have major impacts on training as follows:</p>
+<ul>
+  <li> repeating classes periodically over a long period of time</li>
+  <li> possibly having to tune material if different business units have varying policies and procedures</li>
+  <li> classes occurring at various sites simultaneously, requiring database instances for each site for all student exercises to occur without conflict</li>
+  <li> updating training materials based on lessons learned from previous deployments and production use of the new applications</li>
+</ul>
+<h4 class="style1">Tools</h4>
+<h5 class="style1">Oracle Tutor </h5>
+<p>Oracle Tutor provides users with relevant process documentation and learning materials. These materials are process- or role-based, easy to update, cost-effective and developed in conjunction with the implementation. Oracle Tutor helps apply functionality specific to Oracle Applications within the context of the organization&rsquo;s unique set of policies and procedures. The product is comprised of three components: an authoring tool, a publishing tool, and a repository of Oracle Application courseware and procedure document objects.</p>
+<p class="style1"><A 
+href="#TOP">Back to Top</A>&nbsp;</p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work product s for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Training process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.010.1</div></th>
+    <td><a href="../030_TASK/TR_010_DEFINE_TRAINING_STRATEGY_OVERVIEW.HTM" target="_blank">Define Training Strategy</a></td>
+    <td>Education and Training Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.020</div></th>
+    <td><a href="../030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">Prepare Project Team Learning Plan</a></td>
+    <td> Project Team Learning Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.030</div></th>
+    <td><a href="../030_TASK/TR_030_PREPARE_PROJECT_TEAM_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Project Team Learning Environment</a> </td>
+    <td><span class="style1">Project Team Learning Environment </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.040</div></th>
+    <td><a href="../030_TASK/TR_040_DEVELOP_PROJECT_TEAM_LEARNINGWARE_OVERVIEW.HTM" target="_blank">Develop Project Team Learningware</a> </td>
+    <td>Define Training Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.050</div></th>
+    <td><a href="../030_TASK/TR_050_CONDUCT_PROJECT_TEAM_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">Conduct Project Team Learning Events</a></td>
+    <td>Skilled Project Team </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.010.2</div></th>
+    <td><a href="../030_TASK/TR_010_DEFINE_TRAINING_STRATEGY_OVERVIEW.HTM" target="_blank">Define Training Strategy</a></td>
+    <td>Education and Training Strategy </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.060</div></th>
+    <td><span class="style1"><a href="../030_TASK/TR_060_CONDUCT_USER_LEARNING_NEEDS_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct User Learning Needs Analysis</a></span></td>
+    <td>User Learning Needs Analysis </td>
+  </tr>
+  <th scope="row"><div align="left">TR.070</div></th>
+      <td><span class="style1"><a href="../030_TASK/TR_070_DEVELOP_USER_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">Develop User Learning Plan</a></span></td>
+      <td>User Learning Plan </td>
+  </tr><th scope="row"><div align="left">TR.080</div></th>
+      <td><span class="style1"><a href="../030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM" target="_blank">Develop User Learningware</a></span></td>
+      <td>User Learningware </td>
+  </tr><th scope="row"><div align="left">TR.090</div></th>
+      <td><span class="style1"><a href="../030_TASK/TR_090_PREPARE_USER_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare User Learning Environment</a></span></td>
+      <td>Configured User Learning Environment </td>
+  </tr><th scope="row"><div align="left">TR.100.1</div></th>
+      <td><span class="style1"><a href="../030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">Conduct User Learning Events</a></span></td>
+      <td>Skilled Users </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <th scope="row"><div align="left">TR.100.2</div></th>
+      <td><span class="style1"><a href="../030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">Conduct User Learning Events</a></span></td>
+      <td>Skilled Users </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p><span class="style1">The objectives of the Training process are: </span></p>
+<ul>
+  <li>Train the project team to begin the tasks necessary to start the project.</li>
+  <li>Provide users with the skills and knowledge to use the features and functions of the system within their respective job roles.</li>
+  <li>Achieve a smooth transition from the old system to the new system.</li>
+  <li> Assist in gaining company-wide acceptance of the new system.</li>
+</ul>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Training process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="15%" scope="col">Name</th>
+    <th width="82%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application/Product Specialist </td>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td><span class="style1">Obtain sample business cases, and load demo data. </span>Conduct interviews and prepare list of proposed courses and the roles of attendees. Research availability of standard courses. Schedule courses.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CMS</th>
+    <td>Change Management Specialist </td>
+    <td>Assist in conducting the learning needs analysis. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td><span class="style1">Provide database administration for setting up the training environments. </span>Install and configure the training database. Ensure all users have access to the database. Provide support during training.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td><span class="style1">Assist in administering the project team and user learning environments, including ensuring hardware is correctly configured: installing, configuring, maintaining operating and development software, and controlling access to the environments. Install and configure hardware and operating system. Install and configure application code. Ensure that login IDs and responsibilities exist for the students. Provide support during training. Install training environment. Convert data and package and test training database. Provide support during training.</span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TW</th>
+    <td>Technical Writer </td>
+    <td> Help develop and edit training materials.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TRS</th>
+    <td>Training Specialist </td>
+    <td>Define learning requirements, prepare learning plan, produce learning material, and deliver courses. <span class="style1">Review sample business cases and demo data. </span>Perform class dry-runs. Train the users, administrators, and other trainers. Provide and evaluate course evaluations.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BLM</th>
+    <td>Business Line Manager </td>
+    <td>Provide information about organizational performance measures, and ways in which the units operate and respond to events in order to achieve those objectives. Describe requirements for organizational acceptance. Participate in events.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager</td>
+    <td> Ensure availability and commitment of company personnel. Ensure availability of hardware, software, and facilities.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPS</th>
+    <td>Customer Project Sponsor </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td>Assist in installing and configuring environments needed during the project and maintaining database access controls. Provide information on current expertise level and roles performed. Provide availability information.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">USR</th>
+    <td>User</td>
+    <td>Provide information on computer literacy level and roles performed. Provide availability information. Participate in Training events.</td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are: </p>
+<ul>
+  <li>clear and detailed strategy</li>
+  <li>early involvement of trainers</li>
+  <li>committed user involvement</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

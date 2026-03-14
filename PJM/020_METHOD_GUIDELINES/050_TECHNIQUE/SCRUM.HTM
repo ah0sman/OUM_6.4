@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Scrum Technique Overview</title>
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+<style type="text/css">
+<!--
+.style2 {color: #000000}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>MANAGING AN OUM PROJECT USING SCRUM</h2>
+<p>The purpose of this technique is to provide a high-level guide for managing a Scrum-based project using the Oracle Unified Method (OUM) as the method and source of work products. It is not intended to be a comprehensive technique for Scrum nor OUM; rather it introduces some important characteristics of Scrum and presents techniques on how you can add Scrum principles to an OUM project. While focused on applying Scrum on an OUM project, the concepts are relevant to the various other &ldquo;flavors&rdquo; of agile methods such as XP and Crystal.</p>
+<h3>OVERVIEW</h3>
+<h4>What is Scrum? </h4>
+<p>Scrum is one of the agile processes and is an adaptive project management approach based on the concept that the individuals developing the software are in a position to most positively improve the development of that software.</p>
+<p> Scrum was created in 1993 by Jeff Sutherland. The term &ldquo;scrum&rdquo; is borrowed from an analogy used in the 1986 study by Takeuchi and Nonaka (Takeuchi), published in the Harvard Business Review. In the study, the authors equated high-performance, cross-functional teams to the packs formed by Rugby teams.</p>
+<p> Scrum is a framework and is independent of any specific engineering practices. Therefore, the Scrum framework can be used in conjunction with other agile approaches, like OUM.</p>
+<h4>Short Primer on Scrum Terminology</h4>
+<p align="left">Scrum is comprised of three roles and four ceremonies.</p>
+<h5 align="left"><a name="ROLES"></a>Scrum Roles</h5>
+<p align="left"><b>Product Owner</b> &ndash; The Product Owner represents the user population and is responsible for the business return on on the project. The product owner prioritizes the work in terms of it's importance to the business. The product owner works with the team by selecting items from the backlog, grooming these items with additional information, and prioritizing them at times by working across different business areas within the business. </p>
+<p align="left"><b>ScrumMaster</b> &ndash; The ScrumMaster helps the rest of the Scrum team follow the process. The ScrumMaster has a good understanding of the Scrum framework and is able to coach and train others in how to apply Scrum technique as the project management approach. The ScrumMaster serves in the role of a facilitator/coach and ensures that the team is functional and productive and agrees upon what it means to be &quot;done&quot; with each item on the Sprint Backlog by the end of each sprint. The ScrumMaster protects the Scrum approach and removes impediments to the team's approach. </p>
+<p align="left"><b>Development Team</b>  &ndash; The team is cross-functional and self-organizing; accountable to get the work done during the agreed upon timeframe. The team, not the product owner, choose the amount of work that can be completed during a sprint. The more a team works together, the better their prediction for the amount of work they can accomplish in a  specific sprint. <span class="style2">Successful Scrum teams often fall into a sustainable pace or <b>cadence</b> (think flow or rhythm) as they move from sprint to sprint. The more cadence improves, the more accurately the team can determine a reasonable amount of work to include in each sprint.</span></p>
+<h5 align="left"><a name="CEREMONIES"></a>Scrum Ceremonies</h5>
+<p><b>Sprint Planning</b> &ndash; The team meets with the product owner to choose a set of goals to deliver during a sprint. </p>
+<p><b>Daily Scrum</b> &ndash; The team meets each day to share progress and barriers. During this meeting, which is timeboxed to 15 minutes each team member answers the following: </p>
+<ul>
+  <ul>
+    <li> What did I do yesterday (last working day)?</li>
+    <li> What am I going to do today?</li>
+    <li> What barriers are preventing me from moving forward?</li>
+  </ul>
+</ul>
+<p><b>Sprint Reviews</b> &ndash; The team demonstrates to the product owner and/or stakeholders the results of what it has completed during the sprint. </p>
+<p> <b>Sprint Retrospectives</b> &ndash; The team meets to determine for ways to improve the product and the process.</p>
+<p><b><a href="#TOP">Back to Top</a> </b></p>
+<hr width="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<h4>Scrum Artifacts (Work Products):</h4>
+<ul>
+  <li><a href="../../../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-021_USER_STORY.DOCX" target="_blank">User Story</a> - The User Story provides requirements when using a Scrum approach to managing an OUM project. It should be noted that User Stories are meant to be done in a short form, either on an index card or half sheet of paper.<br>
+    <br>
+  </li>
+  <li><a href="../../../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">Product Backlog</a> &ndash; the prioritized list of desired project outcomes/features remaining to be implemented in the product, as shown below: </li>
+</ul>
+<p align="center"><b><img src="../../010_COMMON_FILES/SCRUM_PROD_BL.GIF" alt="Product Backlog Example" width="744" height="338" title="Product Backlog Example"></b></p>
+<ul>
+  <li><a href="../../../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">Sprint Backlog</a> &ndash; a subset of work from the Product Backlog that the team agrees to complete in a sprint, which is divided into tasks, as shown below:</li>
+</ul>
+<P align="center"><b><img src="../../010_COMMON_FILES/SCRUM_SPRINT_BL.GIF" alt="Sprint Backlog Example" width="744" height="376" title="Sprint Backlog Example"></b></P>
+<ul>
+  <li><a href="METRICS_FOR_AGILE_PROJECTS.HTM#Templates" target="_blank">Burndown Chart</a> &ndash; a snapshot of the work remaining (a team can have two charts: one for the sprint and one for the overall project). Burndown Charts represent remaining work on a vertical axis with deadlines or time frames on the horizontal axis. Burndown charts can be used to show the team's velocity. Velocity is how much work (from the product backlog effort) a team can handle in one sprint. Velocity is estimated for the first sprint and then fine-tuned with each subsequent sprint. It is used for sprint planning and release forecasting. Check out the <span class="style1"><a href="#SAMG">links to the Scrum Alliance and Mountain Goat Software web sites</a> <span class="style2">below for further information on Burndown Charts and velocity and Scrum in general. Refer to the</span> <a href="METRICS_FOR_AGILE_PROJECTS.HTM" target="_blank">Metrics for Agile Projects</a> <span class="style2">technique for more information on calculating velocity using Burndown Charts.</span></span> Below is an example Burndown Chart.</li>
+</ul>
+<P align="center"><b><img src="../../010_COMMON_FILES/SCRUM_BURNDOWN.GIF" alt="Example Burndown Chart" width="480" height="271" title="Example Burndown Chart"></b></P>
+<P><b><a href="#TOP">Back to Top</a> </b></P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS</h3>
+<table width="100%" border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique.  The headings are No., the Step, Component (if the step results in a Component), and Description." >
+  <tr valign="top" bgcolor="CCCCCC">
+    <th scope="col"><b>No.</b></th>
+    <th scope="col"><b>Step</b></th>
+    <th scope="col"><b>Component</b></th>
+    <th scope="col"><b>Description</b></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><b>1</b></th>
+    <td>Conduct Sprint Planning. </td>
+    <td>Product Backlog<br>
+		<br>
+        Sprint Backlog</td>
+    <td>The Product Backlog is the prioritized list of desired project outcomes/features remaining to be implemented in the product.<br>
+		<br>
+       Sprint Backlog is a subset of work from the Product Backlog that the team agrees to complete in a sprint, which is divided into tasks.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><b>2</b></th>
+    <td>Conduct Daily Scrum meeting.</td>
+    <td>Sprint Backlog</td>
+    <td><p>Development team meets every morning to assess it's progress. <br>
+    Asking three questions: </p>
+      <ul> 
+        <li> What did I do yesterday (last working day)?</li>
+        <li> What am I going to do today?</li>
+        <li> What barriers are preventing me from moving forward?</li>
+    </ul>      </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><b>3</b></th>
+    <td>Conduct Sprint Review.</td>
+    <td>Sprint Backlog </td>
+    <td>Scrum team meets with stakeholders and they review the output of the sprint. It is also normal to update the product backlog during the sprint review, as items are considered complete. New ideas may come up as a result of something they saw at the sprint review. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><b>4</b></th>
+    <td>Conduct Sprint Retrospective.</td>
+    <td>&nbsp;</td>
+    <td>Scrum team meets to discuss how well things went (tools, relationships of people and tools) and what didn't go so well. Potential improvements are also discussed. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Scrum Framework in a Nutshell</h4>
+<p>Below is an overview of the Scrum framework:</p>
+<p align="center"><b><img src="../../010_COMMON_FILES/SCRUM_FRAMEWORK.GIF" alt="Scrum Framework Illustration" width="478" height="267" title="Scrum Framework Illustration"></b></p>
+<p>A Product Backlog of desired product features is maintained over the course of the project. Items may be deleted or added at any time during the project. It is prioritized by the product owner and items with the highest priority are completed first. It is progressively refined during the course of a project, meaning lower priority items are intentionally course-grained.</p>
+<p>Scrum projects progress in a series of sprints, which are kicked off by the sprint planning meeting. During each sprint, typically a two to four week period, the team creates an increment of the software product. </p>
+<p>During the Sprint Planning meeting, it is determined which items from the Product Backlog will be included in the upcoming sprint. During this meeting, the product owner informs the team of the items in the Product Backlog that should be completed. The team then develops estimates and commits to how much of the items they can complete during the next sprint. The selected items, along with the more detailed tasks for completing the requirements, compose the Sprint Backlog.</p>
+<p>During a sprint, the Sprint Backlog is frozen, which means that the requirements are set for that sprint and cannot be changed. A sprint is usually two to four weeks in length (but  one to three weeks, are also acceptable) and there can be no changes to the Sprint Backlog during the sprint. The team meets each day for the Daily Scrum meeting to assess its progress. </p>
+<p>As the sprint progresses, the ScrumMaster coaches the team, removes barriers and keeps the team focused on the goal(s) of the particular sprint. At the end of the sprint, the increment should be potentially shippable, which means it is ready to deliver to a customer, put into production, or demonstratable to the product owner and/or stakeholders. </p>
+<p align="left">The sprint ends with a Sprint Review and retrospective. Items from the Sprint Backlog that are not complete are rolled to a future sprint. The cycle continues until the project objectives are met, the budget is depleted or a deadline is reached. The Scrum framework ensures the items with the highest business value are addressed during the course of the project.</p>
+<h4>OUM Driven by Scrum </h4>
+<p>The Scrum framework can be applied during projects which include complex custom software development. OUM uses the Manage Focus Area - Project Management Method (OUM Manage) to provide a framework in which projects can be planned, estimated, controlled, and tracked in a consistent manner. </p>
+<p> The following sections discuss how to apply the Scrum framework in the context of the OUM Manage phases. </p>
+<h5><a name="PS"></a>Approach to Project Start Up</h5>
+<p>The Project Start Up phase of OUM Manage is designed to establish the successful start of any OUM project. Therefore on an agile project, the project manager will still be responsible for conducting the necessary start up, establishing the project infrastructure and securing project resources.</p>
+<p>Looking at the Project Start Up phase of OUM Manage, you see that the key output of this phase is the Project Management Framework, which is the start of the Project Management Plan (PMP). You may think that in a Scrum project the level of documentation implied in the PMP is not required or is incompatible with an agile approach. However, this is not the case since agile is focused on just enough documentation created just in time to create working software.</p>
+<p>On an agile project, as well as any OUM project, documents are created and maintained only to the extent necessary to support the project and the required development. On agile projects, the elements of the PMP are developed in a collaborative environment with the entire team and many PMP elements can be documented on flip-charts, white boards or in the case of a dispersed team &ndash; electronic collaboration tools.</p>
+<p>Also, keep in mind that in the Bid Transition process, it will be vital to ensure the customer is aware that an agile approach is going to be followed for the project. The contract, whether implicit or explicit, must reflect the fact that in an agile approach, requirements can and will change as more information is uncovered during the course of the engagement. </p>
+<p>The customer must understand that scope can be variable in a Scrum project since the time and cost sides of the triangle are often fixed. The figure below represents the &quot;Project Management Triangle,&quot; where each side represents a constraint. One side of the triangle cannot be changed without affecting the others.</p>
+<p align="center"><b><img src="../../010_COMMON_FILES/SCRUM_TRIANGLE.GIF" alt="Project Management Triple Constraints Triage of Scope, Cost and Scheudule" width="450" height="246" title="Project Management Triple Constraints Triage of Scope, Cost and Scheudule"></b></p>
+<p>In the situation where a project runs into many issues, scope can be impacted to the extent that the full functionality expected may not be delivered. Scrum, through its nature, trades off between scope and schedule by freezing schedule and adjusting scope as necessary. </p>
+<p>To have a successful Scrum project, at a minimum the customer must recognize the business and cultural benefits of Scrum and agility and be willing to establish the necessary project organizational structure that includes self-managing, dedicated teams of cross-functional resources. </p>
+<h5><a name="ROLEPM"></a>Role of Project Manager on a Scrum Project</h5>
+<p>Agile projects do not require project managers to directly manage the detailed activities of the team and the Scrum process does not list project manager as an official role. Instead, the project manager&rsquo;s main responsibility is to set the team up for success and then provide support to the team from the outside. In some cases, a Scrum Team may include a project administrator to handle communications, project reporting, contract administration, etc.</p>
+<p>Agile projects do not require project managers to directly manage the detailed activities of the team and the Scrum process does not list project manager as an official role. Instead, the project manager&rsquo;s main responsibility is to set the team up for success and then provide support to the team from the outside. In some cases, a Scrum Team may include a project administrator to handle communications, project reporting, contract administration, etc. </p>
+<p>An agile project manager&rsquo;s primary goal is to enable the team to solve its own problems and develop solutions. Activities such as conducting team health assessments, removing organizational barriers and allowing for failure become central to the agile project manager&rsquo;s role. In the case of an agile project, the project manager essentially becomes a coach to the team. The key skills necessary for any agile project manager are facilitation and collaboration.</p>
+<h5><a name="PEC"></a>Approach to Project Execution and Control</h5>
+<p>Similar to OUM, Scrum is iterative and incremental. There are components of Scrum and OUM which are comparable and complimentary. The table below discusses how to incorporate Scrum principles and tools in an OUM project.</p>
+<h5>Comparable Scrum and OUM Components</h5>
+<table width="100%" role="presentation" border="1" align="center">
+  <tr>
+    <th height="52" align="left" nowrap="nowrap"> <p>Scrum</p></th>
+    <th align="left" nowrap="nowrap">OUM</th>
+  </tr>
+  <tbody>
+    <tr bgcolor="#CCCCCC">
+      <th width="30%" height="52" align="left" nowrap="nowrap"> <p><i>Sprint</i></p></th>
+      <th width="40%" align="left" nowrap="nowrap"><i>Iteration</i></th>
+    </tr>
+    <tr align="right" bgcolor="#ffffff">
+      <td colspan="2" align="left" class="Normal"><p>A sprint consists of a two to four week timebox with precise entry and closure points: the sprint planning meeting and the sprint review. Probably the most polemic comparison with OUM would be comparing the sprint with the iteration. However, this is a common misunderstanding in OUM as well. The sprint is somewhat equivalent to a two to four week iteration. Both a sprint/Scrum and an iteration/OUM cover activities of Analysis/Design/Construction/Test/Documentation. However, in a sprint you are supposed to focus on finishing the whole Sprint Backlog. In the case of the iteration the team may be working on analysis of a subset of use cases while they may also be working on testing another subset of use cases that were developed in the previous iteration. Therefore in OUM, an iteration may be covered by several sprints.</p></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th height="52" align="left" nowrap="nowrap"> <p><i>Product Backlog </i></p></th>
+      <th align="left" nowrap="nowrap"><i>MoSCoW List </i></th>
+    </tr>
+    <tr align="right" bgcolor="#ffffff">
+      <td colspan="2" align="left" class="Normal"><p>In Scrum there is a Product Backlog which is a prioritized list of requirements for the given project. This is equivalent to the MoSCoW List in OUM. Simply stated, the MoSCoW List registers the known business requirements. Each requirement is classified by the first letter of: Must, Should, Could or Won&rsquo;t. For more information on the MoSCoW List, please see OUM task, RD.045 &ndash; Prioritize Requirements (MoSCoW).</p></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th height="52" align="left" nowrap="nowrap"> <p><i>Sprint Backlog </i></p></th>
+      <th align="left" nowrap="nowrap"><i>M's and S's from MoSCoW</i></th>
+    </tr>
+    <tr align="right" bgcolor="#ffffff">
+      <td colspan="2" align="left" class="Normal"><p>The Sprint Backlog consists of the items selected by the product owner to be addressed during the current sprint. The Sprint Backlog is created during the sprint planning meeting. This is equivalent to the top priority items in the MoSCoW List (the Musts and Shoulds) for a given iteration, along with the associated tasks to accomplish during the sprint.</p></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th height="52" align="left" nowrap="nowrap"> <p><i>Sprint Reviews/Retrospectives</i></p></th>
+      <th align="left" nowrap="nowrap"><i>Iteration Reviews </i></th>
+    </tr>
+    <tr align="right" bgcolor="#ffffff">
+      <td colspan="2" align="left" class="Normal"><p>Sprint and iteration reviews both involve reviewing the product produced during the sprint or iteration and ensuring it meets the quality standards and identifying items to be included in future sprints/iterations. Sprint retrospectives and iteration reviews also include an examination of the project processes and making corrections to improve team efficiency and effectiveness.</p></td>
+    </tr>
+  </tbody>
+</table>
+<h5>A Note Regarding Use Cases and Agile Projects</h5>
+<p align="left">As you know, OUM is business process and use case-driven and therefore makes extensive use of uses cases in capturing, analyzing and tracking requirements. Many experts in the agile community, including Alistair Cockburn, are proponents of use cases over other agile techniques such as user stories since these other techniques tend to be too unstructured, particularly for larger projects. The decision whether to write use cases or utilize another agile requirements management technique should be driven by your customer&rsquo;s preference as well as your own experience and comfort level with use cases versus other techniques. </p>
+<p>On an agile project, as with any other OUM project, it is advisable that use cases be written to the detail necessary to drive out the significant risks and understand the requirements of the system. In general OUM prescribes writing use cases at the user goal level, also known as &ldquo;sea level&rdquo;.</p>
+<h5>Scrum Framework Applied to the OUM Implement Focus Area </h5>
+<p>Scrum and the OUM Implement Focus Area employed together provides the structure needed for robust requirements analysis and definition provided by OUM, while being able to take advantage of Scrum&rsquo;s highly collaborative and agile development characteristics. OUM also provides the guidance for the tasks needed to transition and release software into product, often a complex and challenging endeavor.</p>
+<p>The following figure depicts how the Scrum framework is effectively applied on an OUM project.</p>
+<p align="center"><b><img src="../../010_COMMON_FILES/SCRUM_OUM.GIF" alt="Illustration of How the Scrum Framework is Applied to an OUM Project" width="570" height="426" title="Illustration of How the Scrum Framework is Applied to an OUM Project"></b></p>
+<h5><a name="INCELAB"></a>Inception and Elaboration</h5>
+<p>Inception and Elaboration are shown on the diagram above in a condensed format. One of the key success factors of any project is the ability of the project team to identify and validate customer requirements. In OUM, requirements are understood at a high-level in the OUM Manage Project Start Up phase. At this early stage, the project direction and goals are understood and requirements are often defined at a coarse-grained level. </p>
+<p>We begin the first iteration of the Inception phase with the goal of refining the requirements and nailing down the project scope. Requirements are further refined in the subsequent iterations of the Inception and Elaboration phases and are documented in the MoSCoW List, which as we saw above, represents the Product Backlog in the Scrum framework.</p>
+<h5><a name="CONST"></a>Construction</h5>
+<p>The OUM Construction phase is where the heart of the Scrum framework is leveraged. Iterations take the form of two to four week sprints. Each sprint starts with the sprint planning meeting where the highest priority items from the MoSCoW List are selected to be completed by the product owner. Keep in mind that in OUM, the priority of requirements is also determined by complexity, risk and dependencies.</p>
+<p>At the end of each sprint, a tested, potentially shippable increment of the product will be produced. Further Construction iterations (sprints) may be required to continue to build additional requirements into the product until the point where the project is ready to move into the Transition phase. </p>
+<h5><a name="TRANS"></a>Transition</h5>
+<p>The OUM Transition phase is comparable to the concept of the Scrum &ldquo;release sprint&rdquo; where final testing is performed. A release sprint does not add functionality to the product, rather it is used to apply all of the tasks required to put the product into production. The software product will be updated and refined during the Transition phase as necessary based on the testing results.</p>
+<h5><a name="PROD"></a>Production</h5>
+<p>Additional requirements may be uncovered while the new system is in Production. These may take the form of change-requests or emergency fixes. The new requirements are added to the MoSCoW List (Product Backlog) and will be prioritized by the product owner.</p>
+<h5>OUM Manage Processes Impacted by Scrum</h5>
+<p>The approach taken to the following OUM Manage processes needs to be altered from the traditional plan-based approach during the course of an agile project:</p>
+<h6><a name="SM" id="SM"></a>[SM] Scope Management </h6>
+<p>The agile strategy is to fix cost and schedule, and then apply effort to implement the highest value/priority features as defined by the customer (the Product Owner in the case of a Scrum project). Therefore in an agile project, scope planning is done as part of release planning. Scope verification and project acceptance is accomplished within the iteration as product features are tested and accepted by owners/customers. </p>
+<p> A project manager should give heavy consideration to the dynamic nature of the requirements when developing the Change Management Process and executing scope control. The Change Management Process should be flexible regarding scope but should not necessarily provide automatic approval without regard to risk and the project&rsquo;s budget and schedule constraints.</p>
+<p> Scope change control is handled by the management of the Product Backlog. Assessing and challenging the Product Backlog on a regular basis is paramount to successful scope change control. The Product Backlog should be monitored on a regular basis to track how much work is being added to the backlog versus how much is actually getting accomplished during each sprint.</p>
+<h6><a name="WM" id="WM"></a>[WM] Work Management </h6>
+<p>Project planning is a collaborative effort involving the whole team. During the planning meetings, project plans are developed indicating the expected release date and the features to be included. Also during the planning meetings, iteration plans indicating the level of effort in implementing a set of features within the defined timebox are evolved. Managing the work plan involves facilitating the team in their ongoing iterative planning efforts. The plans are then shared in the most visible way possible.</p>
+<p>The product Burndown Chart will provide a view into the project&rsquo;s progress and the team&rsquo;s internal productivity. The chart should show a steady decline in the remaining estimated project effort. Flat lines will indicate a lack of progress possibly due to technical issues, organizational barriers or team productivity deficiencies. Upward moving lines are the first indications of scope creep or may be caused by unforeseen complexities or a lack of team experience. Both a flat and upward trending line should also trigger a re-examination of the plans and estimates created to that point in the project.</p>
+<h6><a name="QM"></a>[QM] Quality Management</h6>
+<p align="left">Quality Management is executed throughout an agile project since working code is developed on an incremental basis at a rapid pace. In agile practices, the entire team contributes to defining, maintaining, and enhancing the quality of the evolving product and the iterative process.</p>
+<p align="left">Through the daily Scrum meetings, the team has a means of measuring the results of the iterative project. The team can see how things are working/not working on a day-to-day basis and make the appropriate adjustments.</p>
+<p>Quality Management is divided into two processes within OUM &ndash; Quality Assurance and Quality Control:</p>
+<p> Quality Assurance (QA) is defined in OUM as applying the planned, systematic quality activities and any ongoing processes to ensure that the project employs all delivery processes needed to meet requirements. On an agile project, it is recommended that the team contain dedicated QA resources who participate in decision-making on a daily basis, throughout the entire project. Their input during Inception and Elaboration helps developers write better code and consider more scenarios.</p>
+<p> Quality Control (QC) is defined in OUM as the process of monitoring specific project results to determine whether they comply with relevant quality standards and identifying ways to eliminate causes of unsatisfactory results. On an agile project, the monitoring is done within the iteration. The entire team is involved in making sure that the features and functionality coded meets the customer&rsquo;s expectations.</p>
+<p> The Quality Management Plan will be developed, to the extent necessary, by the entire project team as they determine what tools and technology they will use in writing, running, and reporting tests and results. Product owners must also be involved, since they will be defining and executing the acceptance tests. It is important in Scrum, as in any other agile development process, that the definition of &ldquo;done&rdquo; be clearly defined, with inputs from the project team and the product owner, before each sprint.</p>
+<h6><a name="STM" id="STM"></a>[STM] Staff Management </h6>
+<p>As mentioned above, the agile team is a cross-functional self-organizing team. Therefore, on an agile project there are neither formal organization charts nor extensive status reports, rather the team self-manages through regular check-ins on the product and process. At the daily scrum meetings, the team collaboratively examines what they have accomplished so far, examines and analyzes priorities and makes decisions about how to continue. This requires the agile project manager to exercise collaboration and facilitation skills while removing roadblocks to allow the team to function at the highest level possible.  </p>
+<h6><a name="RKM" id="RKM"></a>[RKM] Risk Management </h6>
+<p>The topic of Risk Management is highly debated within the agile community. Members of the agile community disagree on whether explicit risk management is required, Scrum&rsquo;s to manage all types of risk and who should do risk management. The recommendation of OUM (an underlying tenet of which is risk-focused) is that product related risks can be managed effectively within the Scrum. However, risks which are not requirements related and/or are external to the product (issues with vendors or other third-parties, external factors which could cause project delays, etc.) should be escalated to the project manager for resolution.</p>
+<p>Agile development, due to its iterative nature, implicitly makes risk management a part of the project life cycle. Agile project teams will address risk throughout the project as a part of daily meetings, iteration planning meetings, release planning meetings, and review meetings.</p>
+<p> As part of the Product Backlog process, the Scrum team should sort requirements by value and risk and work on the risky requirements long enough to correctly identify and mitigate the risk. The project manager should work with the team to understand which risks cannot be handled through Scrum and facilitate the appropriate action for resolution.</p>
+<h6><a name="IPM" id="IPM"></a>[IPM] Issue and Problem Management </h6>
+<p>Issues and problems should be handled in a similar manner to risks on an agile project. Issues and problems should be addressed by the entire team. Those issues and problems that are determined to be external to the project team should be escalated to the project manager.</p>
+<h5><a name="PC"></a>Approach to Project Closure</h5>
+<p>As with the previous phases, many of the tasks within the Project Closure phase will be a collaborative event for the entire team. As a result, the staff should not be released until the very end of Project Closure. Project Acceptance, since it occurs throughout the life of an agile project, should be a low-ceremony event. The future system enhancements will be stored on the project backlog (MoSCoW List) and can be used to jump-start a future project.</p>
+<h4>Conclusion</h4>
+<p>OUM and Scrum are different yet similar approaches to solving the same problems with the same objectives. </p>
+<p>Scrum is sold as &ldquo;agile method&rdquo; in which the team is allowed to work with fewer interruptions, avoiding creating useless documentation (of course keeping the value added documentation) and streamlining the development process avoiding too much management overhead. Because of these characteristics, it is said that Scrum is better for small teams and small systems. Scrum may be used in larger projects with the addition of some more tools, tasks and control. In fact, there is often a &quot;blended&quot; approach. This is especially important from the perspective of a software company, such as Oracle. In this scenario, a project manager doesn't need to manage the entire project in the traditional sense. A traditional plan-based approach may be used to set up environments, onboard the team and prepare for the upcoming sprints. Some may prefer to call this Sprint 0. Then Sprints can be run for the functional prototyping using COTS software and capturing configuration details, development of components that are not a part of a COTS (commercial off the shelf) system may be developed later on using OUM in a Scrum approach. </p>
+<p>OUM has characteristics of the Unified Process and DSDM (both Agile Methods) with the addition of leading-practices developed during the course of Oracle Consulting projects. OUM is aligned with industry standards in project management, requirements gathering techniques, business process analysis and software engineering, It also offers material for many types and sizes of software development and delivery scenarios. </p>
+<p> Because of this, OUM has a large number of tasks, deliverables and recommendations. It is comparable to a &ldquo;rod&iacute;zio&rdquo; (a typical Brazilian all-you-can-eat restaurant known for the huge variety of options). Like a &ldquo;rod&iacute;zio&rdquo; customer, an OUM project manager must choose the tasks that make sense in that specific situation &ndash; an intention of eating everything won&rsquo;t end well.</p>
+<p> Therefore, OUM project managers should keep project priorities aligned with the customer/sponsor and with the team, avoid unnecessary documentation, avoid non-value added tasks and most of all, and facilitate team work.</p>
+<p> As with any OUM project, it is recommended that the project manager build the project workplan by starting with the appropriate pre-tailored view for the type of project under consideration (Solution-Driven Application Implementation, Requirements-Driven Application Implementation, etc.) and scaling the project for the given circumstances. The project workplan should focus on the tasks included in the OUM Implement Core Workflow, which identifies the core tasks within the Implement focus area.</p>
+<p> Understanding and incorporating Scrum principles and tools in an OUM project is possible and may improve delivery. Both approaches are compatible and can complement each other when applied correctly.</p>
+<h4>References</h4>
+<table width="100%" role="presentation">
+  <tr>
+    <td height="33"><ul>
+        <li>Takeuchi and Nonaka. a. (n.d.). <a href="http://harvardbusinessonline.hbsp.harvard.edu/b01/en/common/item_detail.jhtml?id=86116" target="_blank">http://harvardbusinessonline.hbsp.harvard.edu/b01/en/common/item_detail.jhtml?id=86116</a>.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Schwaber, Ken. 2004. <i>Agile Project Management with Scrum</i>. Redmond, WA.: Microsoft Press</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a name="SAMG"></a><a href="http://scrumalliance.org" target="_blank">http://scrumalliance.org</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://www.mountaingoatsoftware.com" target="_blank">http://www.mountaingoatsoftware.com</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Larmen, Craig. 2004. <i>Agile &amp; Iterative Development; A Managers Guide</i>. Boston, MA.: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Bittner, Kurt. 2007. <i>Managing Iterative Software Development Projects</i>. Boston, MA: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Boehm, B. and R. Turner. 2004. <i>Balancing Agility and Discipline: A Guide for the Perplexed</i>. Boston, MA: Addison-Wesley</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Cockburn, A. 2002. <i>Agile Software Development</i>. Boston, MA: Addison-Wesley.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Cohn, Mike, 1962 -. <i>Agile estimating and Planning</i>, Upper Saddle River, NJ: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><i>A Guide to the Project Management Body of Knowledge (PMBOK&reg; Guide)</i> &ndash; Fourth Edition, Newton Square PA: Project Management Institute, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://www.agilemanifesto.org" target="_blank">http://www.agilemanifesto.org</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://en.wikipedia.org/wiki/Scrum_%28development%29" target="_blank">http://en.wikipedia.org/wiki/Scrum_%28development%29</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://alistair.cockburn.us" target="_blank">http://alistair.cockburn.us</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://www.controlchaos.com/" target="_blank">http://www.controlchaos.com/</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://martinfowler.com/articles/itsNotJustStandingUp.html" target="_blank">http://martinfowler.com/articles/itsNotJustStandingUp.html</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://Agilesoftwaredevelopment.com/scrum" target="_blank">http://Agilesoftwaredevelopment.com/scrum</a></li>
+    </ul></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES</h3>
+<p><b>The following templates and tools are available to assist with this technique: </b></p>
+<table width="100%"  border="1" id="TempsTools" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Template File Name </div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-021_USER_STORY.DOCX" target="_blank">RA-021_USER_STORY.DOCX</a></div></th>
+    <td>MS WORD - This template includes both a short form User Story template and a longer form that can be used if more detail is needed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">RD-045_MOSCOW_LIST.XLSX</a> (Product Backlog and Spring Backlog) </div></th>
+    <td>MS EXCEL - When using a Scrum approach, use the Product Backlog and Sprint Backlog sheets. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="BURNDOWN%20CHART.XLSX" target="_blank">Burndown Chart</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><b>Task</b></th>
+    <th scope="col"><div align="left"><b>Usage</b></div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../010_PHASE/PJM_A_PROJECT_STARTUP_PHASE_OVERVIEW.HTM" target="_blank">Project Start Up (Manage)</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Project Start Up phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../010_PHASE/PJM_B_PROJECT_EXEC_AND_CONTROL_PHASE_OVERVIEW.HTM" target="_blank">Project Execution and Control (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Project Execution and Control phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../010_PHASE/PJM_B_PROJECT_EXEC_AND_CONTROL_PHASE_OVERVIEW.HTM" target="_blank">Project Closure (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Project Closure phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">IPM.040 Manage Issues and Problems (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Issues and Problems Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">RKM.030 Develop Risk Management System (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Risk Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">SM.030 Manage Scope (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Scope Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Staff Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Work Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan (Manage) </a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in Work Management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM" target="_blank">Inception</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Inception phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM" target="_blank">Elaboration</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Elaboration phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM" target="_blank">Construction</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Construction phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM" target="_blank">Transition</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Transition phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM" target="_blank">Production</a></div></th>
+    <td>Use this technique for guidance on how to apply Scrum in the Production phase. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">RA.021 Capture User Stories</a></div></th>
+    <td>Use this technique to understand how to manage an OUM project using the Scrum approach. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW) </a></div></th>
+    <td>Use this technique to understand how to manage an OUM project using the Scrum approach. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../010_SHARED_FILES/OUM_ROLES.HTM" target="_blank">OUM Project Roles </a></div></th>
+    <td>Use this technique to understand how to manage an OUM project using the Scrum approach. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>This section is not yet available.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

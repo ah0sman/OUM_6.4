@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Project Start Up Phase Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Phase Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation"
+ onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#Processes">Processes</option>
+                            <option value="#Tips">Tips and Techniques</option>
+                            <option value="#TasksDel">Tasks and Work Products</option>
+                            <option value="#Dependencies">Activity Flow Diagram</option>
+                            <option value="#Risk">Risk Management</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[PS] PROJECT START UP</h2>
+<!--BeginPhaseDesc-->
+<p>The purpose of the Project Start Up phase is to provide strong and clear directions for producing a product or service which delivers identified benefits or purpose for the business. During the Project Start Up phase, resources are allocated to accomplish specific objectives, satisfy needs, and set expectations through a planned and organized approach. </p>
+<p>A key output of the Project Start Up phase, the Project Management Plan, provides the necessary objectives, strategies, plans, methods, tools, resources and procedures to achieve the expected benefits or purpose in the  business. The Project Start Up phase is considered the most important phase in the project. The tasks within the Project Execution and Control phase are built on the foundation established in Project Start Up.</p>
+<!--EndPhaseDesc-->
+<p>There must be a strong commitment to perform the project from the business and the prime supplier. A forum should be established to share the project's status, risks and issues with the key stakeholders and obtain feedback.</p>
+<p>The following lists contains prerequisites that must exist in the project organization in order to deliver the solution completely and satisfactorily. These prerequisites must be in place prior to the Project Execution and Control phase. </p>
+<div align="left">
+  <ul>
+    <li>Funding of the project is documented and signed-off</li>
+    <li>Statement of the work is documented and signed-off</li>
+    <li>Required financial approvals achieved</li>
+    <li>Required resources received</li>
+    <li>When subcontracting, subcontractor agreement is documented and signed-off</li>
+    <li>Project planning is completed</li>
+    <li>Infrastructure is established</li>
+    <li>Required project training is prepared</li>
+    <li>Project team orientation is prepared</li>
+    <li>Project control-cycle is developed and documented including tracking and taking corrective actions</li>
+    <li>Configuration Management and scope change procedures are developed </li>
+    <li>Quality Management including project acceptance procedures are developed</li>
+  </ul>
+  <p><a href="#Top">Back to Top</a></p>
+  <hr width="100%">
+  <h3><a NAME="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+  <p>The following is a list Project Start Up phase objectives:</p>
+  <ul>
+    <li>Objectives, needs and expectations allocated to the project are documented, controlled, and baselined for project planning and control.</li>
+    <li>Project plans, work products, and tasks are kept consistent with the agreed upon objectives, needs and expectations allocated to the project.</li>
+    <li>Project estimates are documented for use in planning and control of the project.</li>
+    <li>The prime contractor selects and secures qualified subcontractors and resources.</li>
+    <li>The prime contractor and the subcontractor agree to their commitments to each other.</li>
+    <li>Affected parties agree to their commitment related to the project.</li>
+    <li>Quality assurance tasks are planned.</li>
+    <li>Configuration management tasks are planned.</li>
+    <li>Project infrastructure is established.</li>
+    <li>Project acceptance procedure and criteria is documented and agreed between parties.</li>
+    <li>Project control cycle is documented and approved between parties.</li>
+    <li>Project training and project orientation is prepared.</li>
+    <li>Obtain sponsors approval to proceed.</li>
+  </ul>
+  <p><a href="#Top">Back to Top</a></p>
+  <hr width="100%">
+  <h3><a id="Processes" name="Processes"></a>PROCESSES</h3>
+  <p>The Manage context diagram illustrates the processes within the Project Start Up phase.</p>
+  <p align="center"><img src="../../010_COMMON_FILES/PJM_PHASES_PROCESS.GIF" alt="Manage Phases and Processes" width="712" height="538" title="Manage Phases and Processes"></p>
+  <p><a href="#Top">Back to Top</a></p>
+  <hr width="100%">
+  <h3><a id="Tips" name="Tips"></a>TIPS AND TECHNIQUES </h3>
+  <p>Best practice suggests the key Project Start Up activities are shown on the project plan. These activities are generally short term, lasting no longer than four to six weeks even on the largest of projects.</p>
+  <p>The level of granularity of Project Start Up tasks shown on the Gantt chart cannot be prescribed. This level depends on many factors. Factors include the role of all involved during Project Start Up and the size and complexity of the project. It is recommended that key activities arising from Project Start Up are shown as discrete tasks on the Gantt chart. </p>
+  <p>See the <a href="../../050_REFERENCE_FILES/OUM_MANAGE_WORKPLAN.MPP" target="_blank">Manage example workplan</a> (in MS Project) for an example of the Project Start Up activities and sequence. </p>
+  <p>An objective of the Project Start Up phase is to understand and influence the expectations of key project stakeholders. Document and communicate your vision of the project to the Project Sponsor, key stakeholders, management, and the project team. Evaluate the project proposal as your starting point for Project Start Up. How have expectations been set? Have there been changes since the project proposal was accepted? </p>
+  <h4>Set Expectations Early</h4>
+  <p>The initial scoping in the Project Start Up phase covers all areas of known risk, working policies, agreed approaches, communication, and implementation strategies. Original project proposals or Project Charters may already include some of these topics. However, in creating the original project proposal, assumptions may have been used. During Project Start Up, you must verify all the documented and undocumented assumptions.</p>
+  <p><b>Note:</b> The main objective of the Project Start Up phase is to prepare the Project Management Plan. To conduct the project without the Project Management Plan, you risk not having a point of reference for change control, and must rely heavily on verbal commitments, which can often lead to serious misunderstandings and disputes about what was agreed to. </p>
+  <p>In some cases, clarification and justification may be needed before approving work products. The Project Management Plan can be used to explain why certain methods, approaches, and techniques were used. If organized correctly it can serve as the vehicle for justifying why and how project tasks are being performed. Within this context, the planning for reuse should be established to increase productivity and reduce costs as well as risks. Reuse of work products will help to reduce the risk of the project since these provide actual examples of previous project work. </p>
+  <p>The following illustrates the key project management components of the Project Management Plan</p>
+  <p align="center"><img src="../../010_COMMON_FILES/PROJECT_MANAGEMENT_PLAN_ILLUSTRATION.jpg" alt="Manage tasks that contribute to the Project Management Framework and Plan" width="649" height="571" title="Manage tasks that contribute to the Project Management Framework and Plan"></p>
+  <h4>Obtain Initial Agreement </h4>
+  <p>Arrange for a review with key stakeholders, if possible upon starting the project. The purpose of the review is to determine the overall health of a project and its prospects for success, check the completeness of plans, and ensure a clear understanding of project control and completion procedures. </p>
+  <p><b>Suggestion:</b> Use start up meetings to communicate the plans to the project stakeholders. Consider separate meetings for  management and project staff. A formal presentation should be delivered to the project sponsor, as a minimum.</p>
+  <p>The primary techniques you use in this process during Project Start Up are stakeholder analysis, risk assessment, interviewing, negotiation, and presentation. Use these techniques to discover and cater to all factors which could ultimately jeopardize the project&#8217;s success. </p>
+  <h4>Scrum </h4>
+  <p>If you are using a Scrum approach, use the <a href="../050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a> technique. Use this <a href="../050_TECHNIQUE/SCRUM.HTM#PS" target="_blank">link</a> to access the phase-specific guidance for Scrum. </p>
+  <p> <A 
+href="#TOP">Back to Top</A>
+  <hr width="100%">
+  <h3><b><a id="TasksDel" name="TasksDel"></a></b>TASKS AND WORK PRODUCTS</h3>
+  <p>This phase includes the following tasks:</p>
+  <table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks (with links) and work products for the Manage Project Start Up phase.  It is organized with ID, Task, Work Product, Key and Type columns with subheadings for each activity.">
+    <tr bgcolor="#BEBEBE">
+      <th scope="col">ID</th>
+      <th scope="col">Task</th>
+      <th scope="col">Work Product</th>
+      <th scope="col"><div align="center">Key</div></th>
+      <th scope="col"><div align="center">Type</div></th>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Review Bid and Contract </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.010</div></th>
+      <td><div align="left"><a href="../030_TASK/BT010_REVIEW_AND_ANALYZE_BID_MATERIAL.HTM" target="_blank">Review and Analyze Bid Material </a></div></td>
+      <td><div align="left">Reviewed Bid Material </div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.020</div></th>
+      <td><div align="left"><a href="../030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">Review and Confirm Business Case </a></div></td>
+      <td><div align="left">Reviewed Business Case </div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.030</div></th>
+      <td><div align="left"><a href="../030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">Identify Project Stakeholders </a></div></td>
+      <td><div align="left"> Identified Project Stakeholders </div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.040</div></th>
+      <td><div align="left"><a href="../030_TASK/BT040_REVIEW_AND_ACCEPT_PROJECT_BUDGET.HTM" target="_blank">Review and Accept Project Budget </a></div></td>
+      <td><div align="left">Accepted Project Budget</div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">RKM.020</div></th>
+      <td><div align="left"><a href="../030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">Conduct Baseline Risk Assessment</a></div></td>
+      <td><div align="left">Baseline Risk Assessment</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Review Project Assets with Customer </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.050</div></th>
+      <td><div align="left"><a href="../030_TASK/BT050_REVIEW_CONTRACT_WITH_CUSTOMER.HTM" target="_blank">Review Contract with Customer </a></div></td>
+      <td><div align="left">Reviewed Contract </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.060</div></th>
+      <td><div align="left"><a href="../030_TASK/BT060_REVIEW_PROJECT_APPROACH_WITH_CUSTOMER.HTM" target="_blank">Review Project Approach with Customer</a></div></td>
+      <td><div align="left">Reviewed Project Approach </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.070.1</div></th>
+      <td><div align="left"><a href="../030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Management Plan </a></div></td>
+      <td><div align="left">Project Management Plan </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Validate Scope, Stakeholders and OCM Strategy </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">SM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">Define and Confirm Scope</a></div></td>
+      <td><div align="left">Validated Scope </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">CMM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/CMM010_CONDUCT_PROJECT_STAKEHOLDER_ANALYSIS.HTM" target="_blank">Conduct Project Stakeholder Analysis </a></div></td>
+      <td><div align="left">Project Stakeholder Analysis </div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">OCHM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">Understand  Customer's Organization Change Management Strategy</a></div></td>
+      <td><div align="left">Customer's Organization Change Management Strategy</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Develop Workplan </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">WM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">Develop Baseline Project Workplan</a></div></td>
+      <td><div align="left">Baseline Project Workplan</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Develop Staff Plan and Budget </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">FM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">Refine Project Budget</a></div></td>
+      <td><div align="left">Approved Project Budget </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">STM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">Plan Resource Requirements </a></div></td>
+      <td><div align="left">Resource Requirements </div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">STM.030</div></th>
+      <td><div align="left"><a href="../030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">Staff the Project</a></div></td>
+      <td><div align="left">Staffed Project</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">STM.040</div></th>
+      <td><div align="left"><a href="../030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">Prepare Project Orientation Guide</a></div></td>
+      <td><div align="left">Project Orientation Guide</div></td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Establish Governance </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">SM.020</div></th>
+      <td><div align="left"><a href="../030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">Develop Scope Change Management Processes</a></div></td>
+      <td><div align="left">Scope Change Management Processes </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">FM.020</div></th>
+      <td><div align="left"><a href="../030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">Develop Financial Management Plan</a></div></td>
+      <td><div align="left">Financial Management Plan</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">WM.020</div></th>
+      <td><div align="left"><a href="../030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">Develop Work Management Execution and Control Processes and Policies </a></div></td>
+      <td><div align="left">Work Management Plan </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">RKM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">Develop Risk Management Plan </a></div></td>
+      <td><div align="left">Risk Management Plan </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IPM.010</div></th>
+      <td><div align="left"><a href="../030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">Develop Issue Management Strategy</a></div></td>
+      <td><div align="left">Issue Management Strategy</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IPM.020</div></th>
+      <td><div align="left"><a href="../030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">Develop Problem Management Strategy</a></div></td>
+      <td><div align="left">Problem Management Strategy</div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">STM.020</div></th>
+      <td><a href="../030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">Develop Staff Management Plan</a></td>
+      <td>Staff Management Plan</td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">CMM.020</div></th>
+      <td><a href="../030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">Develop Project Team Communication Plan</a></td>
+      <td>Project Team Communication Plan </td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">QM.010</div></th>
+      <td><a href="../030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">Develop Quality Management Plan</a></td>
+      <td>Quality Management Plan</td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">QM.020</div></th>
+      <td><a href="../030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">Develop and Document Quality Control and Reporting Process</a></td>
+      <td>Quality Control and Reporting Process </td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">CM.010</div></th>
+      <td><a href="../030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">Develop Configuration Management Strategy and Processes</a></td>
+      <td>Configuration Management Strategy and Processes</td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">CM.030</div></th>
+      <td><a href="../030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Documentation Management Plan </a></td>
+      <td>Documentation Management Plan </td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IFM.010</div></th>
+      <td><a href="../030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">Develop Infrastructure Management Plan</a></td>
+      <td>Infrastructure Management Plan</td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">PCM.010</div></th>
+      <td><a href="../030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">Develop Procurement Strategy and Process</a></td>
+      <td>Procurement Strategy and Process</td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">OCHM.020</div></th>
+      <td><a href="../030_TASK/OCHM020_IDENTIFY_CHANGE_MANAGEMENT_WARNING_SIGNS.HTM" target="_blank">Identify Change Management Warning Signs</a></td>
+      <td>Change Management Warning Signs</td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">BT.070.2</div></th>
+      <td><div align="left"><a href="../030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Management Plan </a></div></td>
+      <td><div align="left">Project Management Plan </div></td>
+      <td><div align="center">Y</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th colspan="5" scope="rowgroup"><div align="left">Establish Project Infrastructure </div></th>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">FM.030</div></th>
+      <td><a href="../030_TASK/FM030_SET_UP_TIME_AND_EXPENSE_TRACKING.HTM" target="_blank">Set up Time and Expense Tracking</a></td>
+      <td>Time and Expense Tracking</td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">RKM.030</div></th>
+      <td><a href="../030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">Develop Risk Management System</a></td>
+      <td>Risk Management System</td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IPM.030</div></th>
+      <td><a href="../030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">Develop Issue and Problem Management System</a></td>
+      <td>Issue and Problem Management System</td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">CM.020</div></th>
+      <td><a href="../030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">Obtain Configuration Management Tools </a></td>
+      <td>Configuration Management Tools </td>
+      <td><div align="center">&nbsp;</div></td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IFM.020</div></th>
+      <td><a href="../030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank">Establish Team Work Environment</a></td>
+      <td>Established Team Work Environment</td>
+      <td>&nbsp;</td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">IFM.030</div></th>
+      <td><a href="../030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank">Establish Technical Infrastructure</a></td>
+      <td>Established Technical Infrastructure</td>
+      <td>&nbsp;</td>
+      <td><div align="center">Core</div></td>
+    </tr>
+    <tr>
+      <th scope="row"><div align="left">PCM.020</div></th>
+      <td><a href="../030_TASK/PCM020_PROCURE_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Procure Goods and Contracted Services</a></td>
+      <td>Service Orders</td>
+      <td>&nbsp;</td>
+      <td><div align="center">Core</div></td>
+    </tr>
+  </table>
+  <p><a href="#Top">Back to Top</a></p>
+  <p></p>
+  <hr width="100%">
+  <h3><a id="Dependencies"
+ name="Dependencies"></a>ACTIVITY FLOW DIAGRAM </h3>
+  <p align="center"><img src="../../010_COMMON_FILES/PROJECT_START_UP_DEPENDENCY1.GIF" alt="Project Start Up Phase Flow Diagram - Page 1" width="601" height="594" title="Project Start Up Phase Flow Diagram - Page 2"></p>
+  <p>&nbsp;</p>
+  <p align="center"><img src="../../010_COMMON_FILES/PROJECT_START_UP_DEPENDENCY2.GIF" alt="Project Start Up Phase Flow Diagram - Page 2" width="601" height="594" title="Project Start Up Phase Flow Diagram - Page 2"></p>
+  <p><a href="#Top">Back to Top</a></p>
+  <p></p>
+  <hr width="100%">
+  <h3><a id="Risk" name="Risk"></a>RISK MANAGEMENT </h3>
+  The most likely areas of risk during Project Start Up are the following:
+  <ul>
+    <li>External</li>
+    <ul>
+      <li>Lacking of project sponsor</li>
+      <li>Insufficient resources available</li>
+      <li>Interfaces between projects not considered</li>
+      <li>The facilities are not conductive for project work</li>
+    </ul>
+    <li>Management</li>
+    <ul>
+      <li>Low management attention, or management does not hold the project team accountable</li>
+      <li>Missing contingency</li>
+    </ul>
+    <li>Planning</li>
+    <ul>
+      <li>Unclear objectives </li>
+      <li>Unclear scope and work products </li>
+      <li>Insufficient number of milestones </li>
+      <li>Plan is too informal</li>
+      <li>Not an appropriate project organization</li>
+      <li>Adequate control cycle is not developed</li>
+    </ul>
+    <li>Resources</li>
+    <ul>
+      <li>Anticipated resources fail to appear</li>
+      <li>No organized approach for sharing information</li>
+    </ul>
+    <li>Methods and Tools</li>
+    <ul>
+      <li>Employing different, incompatible tools</li>
+    </ul>
+  </ul>
+  <p><a href="#Top">Back to Top</a></p>
+  <p></p>
+  <hr width="100%">
+  <h3><a id="CritSucFactors"
+ name="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+  <p>These factors have been shown to be critical to the success of this phase:</p>
+  <ul>
+    <li>The business objectives, scope and work products are understood by the project team and documented in the Project Management Plan. </li>
+    <li>There is a committed project sponsor from the organization who makes sure that other members of the company share this commitment to the project.</li>
+    <li>Effective hand over of the engagement from the bid manager. </li>
+    <li>The necessary resources have been identified and committed to the project in order to complete it within the planned time frame.</li>
+    <li>A realistic and achievable project and financial plan has been developed including all project activities, tasks and resources. </li>
+    <li>Project infrastructure is completely and correctly implemented before the majority of the project team are on site. </li>
+    <li>The project plan and procedures have been communicated to the organization and project team and are well understood by all. </li>
+    <li>The project team provides input to the project workplan and is committed to the success of the workplan.</li>
+    <li>There is committed sponsorship for the project. </li>
+    <li>Risk assessment has been completed with plans for mitigation. </li>
+    <li>Change control is implemented. </li>
+    <li>Configuration management has been implemented. </li>
+    <li>Expectations have been discussed, understood, and the management of expectations is part of the Project Team Communication Plan. </li>
+    <li>Scope, objectives, and approach are agreed on and understood by all parties.</li>
+  </ul>
+</div>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

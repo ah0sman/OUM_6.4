@@ -1,0 +1,678 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TE Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Tools">Tools</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[TE] TESTING</h2>
+<!--BeginProcessDesc-->
+<p> The Testing process is an integrated approach to testing the quality and conformance of all elements of the new system. Therefore, it is closely related to the review tasks in the Quality Management (QM) process in the Manage focus area and to the definition and refinement of requirements in the Business Requirements process. The Testing process addresses both functional testing and testing of supplemental requirements (with the exception of performance testing as this is done in the Performance Management process, and operational testing, backup and recovery testing and disaster recovery testing as these are done in the Technical Architecture process). It also includes systems integration testing for projects with requirements for interfaces to external systems. </p>
+<p> Testing should start as early as possible in the project, and developed components should be integrated and tested as an integrated set, as early as possible. This means that testing should start after the very first iteration in Elaboration. This allows for early discovery of errors that eventually reduces the risk of project delays that often are caused by heightened error detection at the end of the project. </p>
+<p> Testing activities are a shared responsibility of developers, quality assurance engineers, and ambassador users, working together as an integrated project team. The Testing process presupposes that there is a highly visible user interface from which system events can be driven and results validated. The higher proportion of artifacts that are visible to the ambassador users (for example, user interfaces and reports) the more they will be able to participate in the Testing process.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/TE_Process.jpg" alt="Testing Process Flow Diagram" width="872" height="1289" border="1" title="Testing Process Flow Diagram"></p>
+<P><A 
+href="#TOP">Back to Top</A> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p class="style1">Depending on your project (e.g., large, complex, etc.), the project manager may designate a Testing team leader and/or team leaders for various other reasons that the project manager deems necessary. If the project manager designates team leaders, they are responsible for leading their team and reviewing the work products produced by their team. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders.
+  
+<p class="style1">The intent of the Testing process is to provide a formal and effective approach to the challenge of testing. Its approach is integral to the entire development effort, and structured to build upon itself. Done well, the primary deliverable is high quality software and early delivery of a dependable system with real business benefits.
+<p class="style2">The Testing process starts off with determining the Testing Requirements (TE.005) and continues in determining the Testing Strategy (TE.010). These documents should provide the foundation for what kind of tests should be performed and how testing should be performed during the whole projects lifecycle. <span class="style1">This also covers the acceptance criteria. The customer takes an active role in these tasks, and approves the final work products.</span>
+<p class="style2">OUM recommends that testing is started as early as possible in the project lifecycle. Every component should be tested in a Unit Test (TE.030). A <a name="UNITTEST"></a>unit test is a test of a distinct unit of functionality. A unit of functionality is not directly dependent on the completion of another unit of functionality. Unit tests are the finest level of granularity in testing. Examples of units are:
+<ul>
+  <li> a single method within a Java application </li>
+  <li> a function or procedure of PL/SQL</li>
+  <li> a check constraint</li>
+  <li> a business rule (when using Oracle Business Rules)</li>
+  <li> an operation of a service</li>
+  <li> anything that has a clear defined interface and based on some input is expected to return some predictable result or perform some predictable action. </li>
+</ul>
+<p class="style2">The unit test is automated as much as possible and performed using the Unit Test Scripts (TE.020).
+<p class="style2">The unit test is the first test that is performed as part of the Testing process. When a unit test is completed with success, the component is integrated with other components developed during the iteration.
+  
+<p class="style2">These components are then tested in an integration test (TE.040). In OUM, integration testing is twofold:
+<ol>
+  <li>use case testing</li>
+  <li>additional integration testing (for example, test the interaction, or linkage, between related application extension modules)</li>
+</ol>
+First, as use cases are completed, they are tested. The use case scenarios (Main Success Scenario and Alternate Scenarios) are transformed into Integration Test Scenarios (TE.035) and used to execute an integration test to verify the use case. Second, you may decide to perform additional integration testing on a group of interrelated components (for example, test the interaction, or linkage, between related application extension modules). In this way, you allow for early discovery of integration problems. These tests are performed as a continuous process throughout the iteration. As soon as a component is ready for test, and has passed the unit test, it goes on to the integration test. This presents a challenge in that you always have to have the Integration Test Environment (TE.038) up-to-date and consistent with the developed components. Also, keep in mind that use cases are also developed iteratively and therefore, you may need to test a use case more than once during the iteration.
+<p class="style2">At the end of each iteration, you perform a system test (TE.070) to see whether all the components (and use cases) that have been developed so far work together as a whole. The integration system test is a high-level integration test that validates the integration of ALL the components that have been developed during the iteration. If you have grouped your development components into a number of smaller partitions that are iterated as separate iteration groups, you should at this point also test the integration between all the partitions that have been completed in the iteration. Again, the earlier the integration between the partitions is tested, the earlier integration issues can be discovered and dealt with. In projects where the partitions are tightly coupled (the partitions are tightly related and dependent on each other), users can perform some of this integration testing informally as part of the prototype validation tasks (RA.085 - Validate Functional Prototype) to discover possible issues even earlier. The system test is performed following the System Test Scenarios (TE.025) in the System Test Environment (TE.060).
+<p class="style2" style="margin-bottom: 0;">As the system evolves through the iterations, all the testing scripts and scenarios must also evolve through the process as new or changed functionality is known and implemented. This means that you need to update the Unit Test Scripts, Integration Test Scenarios and System Test Scenarios to be consistent with what is developed. Also, in a similar way, the testing environments need to be refreshed to be consistent with the actual development.
+<p class="style2">Testing of generated and reused components is only performed at a functional level using black-box techniques, except for any components that are modified after generation or reuse.
+<p class="style2" style="margin-bottom: 0;">At the end of all the iterations, you perform a final full system test (TE.070). At this point, all components should be ready and the integration between components, and partitions should be complete. This test is often more complete than the previous iterations of the system test, but this depends on the chosen approach for system testing. During the earlier iterations of the system test, you generally use a subset of the System Test Scenarios (TE.025) but for the final system test, you test them all. </p>
+<p class="style2" style="margin-top:0;"><br>
+  Your chosen approach for your project should be documented in the Testing Strategy (TE.010).</p>
+<p class="style2" style="margin-bottom: 0;">The last test that is performed before handing the system over to the customer for the acceptance test is the systems integration test (TE.100). This test is performed only if the system integrates with other systems. During this test all the Systems Integration Test Scenarios (TE.090) are tested. The purpose of the test is to test whether all integration points work as they should, and that the business flows that cover more than a single system perform as expected. The system is in this way tested thoroughly, using both black-box and white-box techniques, before it is delivered to the customer for the acceptance test. </p>
+<p class="style2"><span class="style3">In a Custom BI project, after the creation and population of the Production Environment, the development team walks through business critical data and data access components.</span></p>
+<p class="style2"><span class="style3"> Finally, the ambassador users validate the solution against the critical business requirements during the acceptance test, to confirm that the system is ready to go into production. </span></p>
+<h4 class="style4">Testing Requirements</h4>
+<p class="style2">The Testing process starts off by defining the Testing Requirements (TE.005). An established, universal rule of software testing is that before you can run a test (or perform a test step), you need to know the correct outcome of that test (or test step).
+<p class="style2">In a project using a waterfall approach, the testing focus is on conformance with defined requirements. The lack of complete and detailed requirements at the start of a OUM project makes close collaboration between developers and users a necessity. Requirements are developed, documented and prioritized throughout the lifecycle of a OUM approach project. Also the testing requirements may evolve throughout the project, in particular for projects where they still are in the learning process for this type of projects.
+<p class="style2">The Testing Requirements (TE.005) specifies what type of tests should be performed, for what purpose, at what project stage they should be performed, to what level, and with what kind of output should be produced, such as the form and scope of test reports.
+<p class="style2">The testing requirements are detailed through the project. It attempts to take full advantage of all opportunities that contribute to the identification of testing requirements. For example, you identify business scenarios while developing the Business Use Case Model (RA.015), and they contribute to unit, integration, system, and systems integration testing. Your functional modeling produces testing requirements that are specific to use case testing. User interface and functional testing is performed with reference to the Functional Prototype (IM.010). The Integration Architecture Strategy (TA.030) contributes to the systems integration testing requirements. These detailed requirements are documented in the work products describing testing scenarios and sequences.
+<p class="style2">Testing is performed progressively against functional and supplemental requirements as the requirements are defined and the components are delivered. Regression testing is essential, and should be automated, wherever possible, using standard tools. A <a name="REGRESSIONTEST"></a>regression test is a test to uncover whether previously working software stops to work as intended.</p>
+<p class="style2"><span class="style3">Also, the business Domain Model (data model), the data acquisition approach, data access approach and administration approach help identify business or functional test requirements. The Technical Architecture process identifies supplemental requirements in such areas as integration, security and availability, from which you plan supplemental (non-functional) testing. </span></p>
+<h4><span class="style4"><a name="TESTRATEGY"></a>Testing Strategy </span></h4>
+<p class="style1" style="margin-bottom: 0;">The Testing Strategy describes the actual approach that should be used for the different kind of tests that should be performed as described in the Testing Requirements. It describes the project direction as it relates to testing. It includes how testing should be performed in the various stages of the project, which tools should be used (if any), how and what metrics should be collected, how test data should be produced and what testing environments should be used in the tests. The strategy also defines the acceptance criteria of the solution.
+<p class="style1">In a project where components are developed and evolved through a number of iterations, it is important to document how the tests should be performed as part of each iteration, as the focus should differ dependent in which iteration you perform the test. A component developed in the first iteration is likely to change when feedback has been received as part of the validation, so less effort should be spent to discover all errors, but just as much as it fits the purpose for that phase in the project. The test should become more complete throughout the iterations, and at the last iteration, it should be as complete as possible.
+  
+<p class="style1">Also, for the iteration system tests versus the final system test, you should document how much and what kind of scenarios should be tested as part of each test.
+<p class="style1">The <a name="TEAPPROACH"></a>testing approach describes the method that should be used for testing. Many existing approaches to testing do not fully utilize common testing information. Testing activities can be disassociated with each other, and you can end up reinventing material instead of reusing it. Your Testing Strategy (TE.010) should define an integrated and proportionate approach. This is described in the Testing Strategy and/or test plans. 
+<h4 class="style4">Test Planning and Test Design</h4>
+<p class="style2">Test planning should be started early in the project lifecycle. A test plan is a guide for how a specific test should be performed at various stages of the project. A <a name="TEPLAN"></a>test plan is produced iteratively along with the development iterations to ensure that the plan reflects what is actually developed in the iterations. The test plan details the approach described in the Testing Strategy, and includes information about tester roles and responsibilities, test types, test data and test estimates and scheduling. The test plan evolves from high-level test cases into more detailed test cases.
+<p class="style2"><a name="TECASE"></a>A test case is a set of conditions or variables under which a tester will determine whether an application or software system is working correctly or not. A test case could be a step in a test scenario, or a part of a test suite.
+<p class="style2">A <a name="TESCENARIO"></a>test scenario is a test often formed as a scenario, or hypothetical story. The scenarios should be based on likely occurrences, most often built based on use case scenarios, or business processes. A scenario should include steps to execute a test from end-to-end. The test scenario may be used to test whether functional or supplemental requirements are met. Each scenario is described including the objectives for the test scenario, the setup requirements for the test, what the pre-conditions are to be able to perform the test, and the required test data on a detailed level. It includes detailed steps that are needed to execute the test, and each step contains the expected result.
+<p class="style2"> A <a name="TESUITE"></a>test suite is a collection of test cases that should be used to test a software program to show that it has some specified set of behaviors. A test suite often contains detailed instructions or goals for each collection of test cases and information on the system configuration to be used during testing, including the required test data on a detailed level. A group of test cases may also contain prerequisite states or steps, and descriptions of the following tests. A test suite and a test scenario are used interchangeably.
+<p class="style2">The term, test scenario is used interchangeably with test suite. If you use both terms, the difference is typically that a scenario is based upon some story or process, where a suite does not necessarily need to be based upon some story or process. Using that distinction, every test scenario is a test suite, but not every test suite is a scenario.
+  
+<p class="style2">An executable test suite is a test scenario that can be executed by a program, typically by means of a test harness or automated test framework (such as JUnit).
+<p class="style2">A <a name="TESCRIPT"></a>test script is a collection of test cases that should be used to test a software program to show that it has some specified set of behaviors. These steps are often executed automatically, but can just as well be executed manually.
+<p class="style2">The <a name="TESEQ"></a>test sequence is the order in which something is tested.
+<p class="style2">A <a name="TEITEM"></a>test item is something that should be tested. This could be indicated on various levels. As the lowest level test items (the actual implemented components) will vary during the iterations, at an early stage the test items may be indicated on a higher level for example, functional/non-functional area, application, subsystem, module.
+<p class="style2">A <a name="TETYPE"></a>test type is any possible kind of test to which a test item can be subjected (functional and non-functional). Test items evolve through iterations, and therefore the test types may also evolve with the iterations. In the early iterations, the test types typically are to focus on the basics and foundations of the test item. <a name="TECRITERIA"></a>Test criteria describe the conditions under which a test has passed or failed. This is documented for each test item and for each test that should be performed. The test criteria might vary depending on the iteration level of the test item, as in an early iteration it is likely, and acceptable, that there are more errors than there should be at the end of the last iteration.
+<p class="style2">The test plans need to be revised, as requirements are refined by the ambassador users or as the solution's design changes. The continuity of the project team is assumed in an OUM project and reduces the need for early, detailed test planning that is typical of a waterfall approach.
+<p class="style2">You start the test planning in the Elaboration phase with the development of the Integration Test Plan (TE.015). This plan contains the formal procedures for testing the Use Case Model, the Analysis Model, the Design Model and the Architectural Implementation and the updates to these models that occur during the project by testing the individual use cases as well as other identified related components together to make sure that they can be executed in a way that is consistent with what the users expect, and that the integration between those components works together as a whole, in order to detect possible problems, inconsistencies and omissions. At this level, you should be able to concentrate on testing aspects of the integration between the components rather than the individual components.
+<p class="style2">Next, you start developing the first version of the System Test Plan (TE.050) that is used for the system tests (TE.070.1) at the end of each iteration. The System Test Plan (TE.050) is updated in Construction as requirements are refined and eventually become more stable. The most updated version of the plan is used for each system test, and the final version is used for the final system test at the end of all the iterations.
+  
+<p class="style2">The Systems Integration Test Plan (TE.080) is created at the end of the Elaboration phase, when the interface requirements and models have become relatively stable. However, this plan must also be updated if there are any changes that impact the plan.
+<p class="style2">The planning of the acceptance test is a customer task. However, you should assist the customer in the acceptance test planning (TE.082) and motivate the customer to start planning the acceptance test as early as possible. This would give a valuable feedback on what their expectations are to the final work product. You might, based on this, discover discrepancies in the understanding of parts of the system.
+<p class="style2" style="margin-bottom: 0;">Designing tests is a key element of the Testing process and, in practice, contributes to defect prevention. The review of requirements during the design of a test scenario, test sequence or individual test, can often prompt a change to the component, partition or system design or even to refining those requirements.
+<p class="style2">Tests are designed in the Develop Unit Test Scripts (TE.020), Create Integration Test Scenarios (TE.035), Create System Test Scenarios (TE.025), and Create Systems Integration Test Scenarios (TE.084) tasks. In these tasks, test scripts, test case and test scenarios are created based on use case scenarios (RA.015/RA.023), use case realizations (RA.024), and supplemental requirements (RD.055/RA.024). These scripts and scenarios are developed iteratively to ensure that they evolve as the requirements evolve.
+  
+<p class="style2">In particular, the Systems Integration Test Scenarios (TA.090) contains test scenarios that focus on the interaction between the systems. The Integration Architecture Strategy (TA.030) and the High-Level Business Process Model (RD.011) are important inputs to determine these test scenarios.
+<h4><span class="style4">Test Data</span></h4>
+<p class="style2" style="margin-bottom: 0;">OUM emphasizes the need for early testing with real business data that usually must be converted from legacy systems or developed from new data sources (for example, catalog data). As well as supporting more effective and realistic testing, users find it easier to test a system that contains recognizable business data. You should analyze the data domains (or equivalence classes) in order to make sure that they are all covered in batch loading or during manual data entry as appropriate. Sufficient code data should be loaded into the code tables as early as possible.
+<p class="style2">Also for the prototype validations, it is recommended to use as much realistic data as possible. All test data, both for prototype validation and other testing, is produced as part of the Prepare Static Test Data (TE.018) task. However, as the requirements are changing through the process, it might be too much of an effort to produce a full set of test data during early tests. Therefore, focus on providing test data for the most stable areas first, such as reference data (code tables).
+  
+<h4 class="style4">Test Management</h4>
+<p class="style2">The Testing process defines the defect tracking, resolution, and regression test infrastructures required for providing dependable defect correction and trend analysis. This is based on standard tools and integrated with the Manage focus area Configuration Management (CM) process.
+<h4 class="style4">Components and Integration Testing</h4>
+<p class="style2"><a name="INTEGTE"></a>Integration testing is testing the integration of solution components (or test items).
+<p class="style2">As in all structured approaches to testing, the Testing process in OUM emphasizes early testing (and verification in general) at each appropriate level. Not only is it important to start early with the testing of each individual component (unit testing), but it is also important to validate the developed use cases and any other additional integration testing between those components as early as possible. Including this as an integral part of the development process allows for early discovery of integration issues, and eventually makes the solution more solid.
+<p class="style5" style="margin-bottom: 0">Components included in the project would typically fit into one of the following categories, the generated components, the reused components and the hand-coded components. All components, independent on how they are produced and unit tested, should move on to the integration test as soon as the unit test has been completed to ensure that they work properly as a whole. The unit test for the various types of components may vary.
+<p class="style5">For the generated components, adequate review of the use case design effectively prevents defects at the component level. Less unit testing is often required for these components. However, additional testing is needed in cases where the component has been modified after generation. For generated components, such modifications should be avoided, however, because of the regression testing overhead they entail.
+  
+<p class="style2" style="margin-bottom: 0;">Reused components require, at a minimum, functional testing, followed by user review and validation. A <a name="FUNCTIONTEST"></a>function test is designed from a business perspective and is used to ensure that the software delivers to the expectation and requirements of the business.
+<p class="style2">Hand-coded programs should be both white-box and black-box tested. Adequate review of the design prevents many defects. Involve ambassador users in the design in order to reduce the time and effort needed in testing and reworking later.
+  
+<p class="style2" style="margin-bottom: 0;">Where the component has a visible user interface (for example, a web page or operator's report), it is beneficial if the ambassador user takes part in the integration test (TE.040). However, the responsibility that a proper test is performed following the Integration Test Scenarios (TE.035), is still with the person in the role as a tester. The purpose of inviting the user to join the test, is to allow for an even earlier discovery of discrepancies in the understanding of the requirements.
+<p class="style2">Wherever possible, make effective use of standard testing tools.
+<p class="style5" style="margin-bottom: 0;">To allow for continuous integration throughout the iterations, you need an Integration Testing Environment (TE.038) that contains all the most up-to-date components. This can be a challenge and makes proper configuration management a must. When a component is complete and unit tested, it should be released in the Integration Test Environment as soon as possible, so that the integration can be tested. </p>
+<p class="style5">The integration test of the components are continuously tested as part of the task Perform Integration Test (TE.040) and Perform System Test (TE.070) tasks.</p>
+<h4 class="style4">System Testing</h4>
+<p class="style5">The preparation of the System Test Environment (TE.060) must be done early to make certain the customer has all the required hardware and software in place when the setup of the environment starts.</p>
+<p class="style5" style="margin-bottom: 0;">At the end of each iteration, you should perform a system test to validate the integration between all components that have been developed so far. This allows for an early discovery of integration issues.</p>
+<p class="style5" style="margin-bottom: 0">Therefore, the system test (TE.070) can be performed as many times as there are iterations in the Elaboration and Construction phases. The last system test is performed at the end of the last iteration in the Construction phase.</p>
+<p class="style5" style="margin-bottom: 0">The system test is performed according to the System Test Plan (TE.050), using the System Test Scenarios (TE.025). The system tests that are performed at the end of each iteration, may not be as complete as the final system test. The size of the system test may vary from testing that everything compiles correctly as a whole, to a complete test of all the System Test Scenarios. The approach you choose is often dependent on how the tests can be performed, and thereby how much effort is involved in the test. Generally, the system test is more substantial If most of the scenarios can be tested using testing tools. If most scenarios must be tested manually, the test is often less thorough as it takes too much time to complete them all. However, you should choose a number of key scenarios to test in order to discover possible key integration issues. </p>
+<p class="style5">Adequate review of the system design prevents many defects at the system level. Involve ambassador users in the high-level design reviews in order to reduce the time and effort needed in testing and reworking later. Make as much as possible effective use of the standard testing tools. Testing should, at a minimum, cover all of the Must have and Should have requirements. Testing of Could have requirements should be given a lower priority but make sure that the implementation of any such requirements does not compromise data integrity or application stability. Having said that, code that should have been system tested, but falls out of the test because of a low priority should not be delivered for acceptance testing. Therefore, all code that should be released into acceptance testing must be properly tested. </p>
+<p class="style2">At the system level, some testing for supplemental requirements is performed. Performance testing is performed as part of the Performance Management process. </p>
+<p class="style2">When planning testing of supplemental requirements, refer to the Security and Control Strategy (TA.090), and the Supplemental Requirements (RD.055). &nbsp;<span class="style5">Operational testing, backup and recovery testing and disaster recovery testing are performed as part of the Technical Architecture process.</span></p>
+<h4 class="style4">Systems Integration Testing</h4>
+<p class="style2">Systems integration testing is performed where external systems interface to the new system. The procedures and tools involved in systems integration testing depend upon the nature of the interface, the operating environment and procedures of the external system, and the kind of solution chosen <span class="style1">(for example, XML, messaging, flat files, transparent gateways, procedural gateways or ODBC)</span>. Special attention should be given to testing when interfacing to other databases (for example, locking situations). </p>
+<h4 class="style4">Acceptance Testing</h4>
+<p class="style2" style="margin-bottom: 0;"><a name="ACCEPTTEST"></a>Acceptance tests are typically used for end user acceptance and are often performed manually.
+<p class="style2">Performing the acceptance test is a customer task, but helping the customer to both plan and perform a proper acceptance test will decrease the risk for future problems. Assist the customer in the planning of the acceptance test (TE.082), and motivate the customer to start with this at the end of the Elaboration phase. Seeing the customers expectations while planning the acceptance test may reveal misunderstandings that then can be handled at an earlier stage.
+<p class="style2">When the test is performed by the customer, you should support the customer as part of the Support Acceptance Test (TE.120) task. The ambassador users along with other users test the system following the given priorities of the requirements. This test should be performed with full production data volumes, but in a separate Acceptance Test Environment (TE.110).
+  
+<h4 class="style6">Test Metrics</h4>
+<p class="style2">For the purpose of process improvement, test metrics should be collected. Some of these are defined in the Quality Plan and others in the Testing Strategy. Some are also used as an acceptance criteria. Typical test metrics include: </p>
+<ul class="style2" style="margin-bottom: 0;">
+  <li>number and category of defects per component
+  <li>number and category of defects per subsystem
+  <li>number and category of defects per iteration (per partition)
+  <li>average effort taken to correct a defect in each category
+  <li>number of defects found per hour of testing, by category
+  <li>number of defects per use case point </li>
+</ul>
+<h4>Project Learning </h4>
+<p class="style5" style="margin-bottom: 0;">As multiple tests are performed through a number of iterations, both in the Elaboration phase, and the Construction phase, you gain experience in which aspects of the tests work well and those that may not work that well. This may depend on a number of aspects, such as, the project members experience and type of application. At the end of each iteration, plan a lessons learned workshop, involving all participants that have been involved in the test, including participants from development and configuration control. </p>
+<p class="style5">Adjust your testing approach according to your experience, and update the test plans accordingly.</p>
+<p> <A 
+href="#TOP">Back to Top</A>
+<hr WIDTH="100%">
+<h3><A 
+name=Tools id="Tools"></A>TOOLS</h3>
+<table width="100%"  border="1" title="Tools" summary="This table lists any helpful tools for the process.  It is organized with Tool, Guidance and Application/Note columns.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Tool</th>
+    <th scope="col">Guidance</th>
+    <th scope="col">Application/Note</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Oracle Application Test Suite (OATS) Testing and Quality Management Tools</div></th>
+    <td><div align="left">This process has supplemental guidance for using using Oracle Application Test Suite (OATS) Testing and Quality Management Tools. Use the following to access the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TQMT/TQMT_PROCESS_GUIDELINES.HTM#TE" target="_blank">process-specific supplemental guidance</a>. To access all Oracle Application Test Suite (OATS) Testing and Quality Management Tools supplemental information, use the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TQMT/TQMT_SUPP_GUIDE.HTM" target="_blank">OUM Testing and Quality Management Tools Supplemental Guide</a>.</div></td>
+    <td><div align="left"> Oracle<span class="style1"></span> Application Test Suite (OATS) Testing and Quality Management Tools is a complementary Oracle suite of tools that is used to manage software testing for a project as well as to develop test automation and performance testing, when used together these tools can be used to maximize system performance and ensure the quality and success of a project.</div></td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS</h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Testing process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.005.1</div></th>
+    <td><a href="../030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">Determine Testing Requirements</a></td>
+    <td> Testing Requirements</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.005.2</div></th>
+    <td><a href="../030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">Determine Testing Requirements</a></td>
+    <td>Testing Requirements</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.010</div></th>
+    <td><a href="../030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">Develop Testing Strategy</a></td>
+    <td>Testing Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.015.1</div></th>
+    <td><a href="../030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop Integration Test Plan</a></td>
+    <td>Integration Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.018.1</div></th>
+    <td><a href="../030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">Prepare Static Test Data</a></td>
+    <td>Static Test Data</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.020.1</div></th>
+    <td><a href="../030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">Develop Unit Test Scripts</a></td>
+    <td>Unit Test Scripts</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.025.1</div></th>
+    <td><a href="../030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+    <td>System Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.025.2</div></th>
+    <td><a href="../030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+    <td>System Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.030.1</div></th>
+    <td><a href="../030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">Perform Unit Test</a></td>
+    <td>Unit-Tested Components </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.035.1</div></th>
+    <td><a href="../030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create Integration Test Scenarios</a></td>
+    <td>Integration Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.038.1</div></th>
+    <td><a href="../030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM">Prepare Integration Test Environment</a></td>
+    <td>Integration Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.040.1</div></th>
+    <td><a href="../030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Integration Test</a></td>
+    <td>Integration-Tested Components</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.045</div></th>
+    <td><a href="../030_TASK/TE_045_VALIDATE_INTEGRATION_PACKAGES_OVERVIEW.HTM" target="_blank">Validate Integration Packages </a></td>
+    <td>Validated Integrations </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.050.1</div></th>
+    <td><a href="../030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop System Test Plan</a></td>
+    <td>System Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.060.1</div></th>
+    <td><a href="../030_TASK/TE_060_PREPARE_SYSTEM_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare System Test Environment</a></td>
+    <td>System Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.070.1</div></th>
+    <td><a href="../030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">Perform System Test</a></td>
+    <td>System-Tested Applications</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.072.1</div></th>
+    <td><a href="../030_TASK/TE_072_TEST_PRE_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Pre-Upgrade Steps</a> </td>
+    <td>Packaged Software Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.073.1</div></th>
+    <td><a href="../030_TASK/TE_073_TEST_PACKAGED_SW_UPGRADE_OVERVIEW.HTM" target="_blank">Test Packaged Software Upgrade</a></td>
+    <td>Pre-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.074.1</div></th>
+    <td><a href="../030_TASK/TE_074_TEST_POST_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Post-Upgrade Steps</a> </td>
+    <td>Post-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.075.1</div></th>
+    <td><a href="../030_TASK/TE_075_PERFORM_POST_UPGRADE_RECON_TESTING_OVERVIEW.HTM" target="_blank">Perform Post-Upgrade Reconciliation Testing</a> </td>
+    <td>Reconciliation Test Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.076.1</div></th>
+    <td><a href="../030_TASK/TE_076_REVIEW_UPGRADE_TEST_RESULTS_OVERVIEW.HTM" target="_blank">Review Upgrade Test Results</a> </td>
+    <td>Upgrade Test Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.080</div></th>
+    <td><a href="../030_TASK/TE_080_DEVELOP_SYSTEMS_INT_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop Systems Integration Test Plan</a></td>
+    <td>Systems Integration Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.082</div></th>
+    <td><a href="../030_TASK/TE_082_DEVELOP_ACCEPTANCE_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop Acceptance Test Plan</a></td>
+    <td>Acceptance Test Plan</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.015.2</div></th>
+    <td><a href="../030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop Integration Test Plan</a></td>
+    <td>Integration Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.018.2</div></th>
+    <td><a href="../030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">Prepare Static Test Data</a></td>
+    <td>Static Test Data</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.019.1</div></th>
+    <td><a href="../030_TASK/TE_019_COLLECT_ASSESS_REFINE_KPI_MEASUREMENTS_OVERVIEW.HTM" target="_blank">Collect, Assess and Refine KPI Measurements</a></td>
+    <td>Key Business Strategies and Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.020.2</div></th>
+    <td><a href="../030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">Develop Unit Test Scripts</a></td>
+    <td>Unit Test Scripts</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.025.3</div></th>
+    <td><a href="../030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+    <td>System Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.030.2</div></th>
+    <td><a href="../030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">Perform Unit Test</a></td>
+    <td>Unit-Tested Components </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.035.2</div></th>
+    <td><a href="../030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create Integration Test Scenarios</a></td>
+    <td>Integration Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.038.2</div></th>
+    <td><a href="../030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM">Prepare Integration Test Environment</a></td>
+    <td>Integration Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.040.2</div></th>
+    <td><a href="../030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Integration Test</a></td>
+    <td>Integration-Tested Components</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.050.2</div></th>
+    <td><a href="../030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop System Test Plan</a></td>
+    <td>System Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.060.2</div></th>
+    <td><a href="../030_TASK/TE_060_PREPARE_SYSTEM_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare System Test Environment</a></td>
+    <td>System Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.065</div></th>
+    <td><a href="../030_TASK/TE_065_PERFORM_INSTALLATION_TEST_OVERVIEW.HTM" target="_blank">Perform Installation Test</a> </td>
+    <td> Tested Installation Routines </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.070.2</div></th>
+    <td><a href="../030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">Perform System Test</a></td>
+    <td>System-Tested Applications</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.072.2</div></th>
+    <td><a href="../030_TASK/TE_072_TEST_PRE_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Pre-Upgrade Steps</a></td>
+    <td>Packaged Software Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.073.2</div></th>
+    <td><a href="../030_TASK/TE_073_TEST_PACKAGED_SW_UPGRADE_OVERVIEW.HTM" target="_blank">Test Packaged Software Upgrade</a></td>
+    <td>Pre-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.074.2</div></th>
+    <td><a href="../030_TASK/TE_074_TEST_POST_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Post-Upgrade Steps</a></td>
+    <td>Post-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.075.2</div></th>
+    <td><a href="../030_TASK/TE_075_PERFORM_POST_UPGRADE_RECON_TESTING_OVERVIEW.HTM" target="_blank">Perform Post-Upgrade Reconciliation Testing</a></td>
+    <td>Reconciliation Test Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.076.2</div></th>
+    <td><a href="../030_TASK/TE_076_REVIEW_UPGRADE_TEST_RESULTS_OVERVIEW.HTM" target="_blank">Review Upgrade Test Results</a></td>
+    <td>Upgrade Test Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.085</div></th>
+    <td> <a href="../030_TASK/TE_085_PREPARE_SYSTEMS_INT_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Systems Integration Test Environment</a> </td>
+    <td>Systems Integration Test Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.090</div></th>
+    <td><a href="../030_TASK/TE_090_DEVELOP_SYSTEMS_INT_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Develop Systems Integration Test Scenarios</a> </td>
+    <td> Systems Integration Test Scenarios </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.100</div></th>
+    <td><a href="../030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Systems Integration Test</a></td>
+    <td>Integration-Tested System</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.105</div></th>
+    <td><a href="../030_TASK/TE_105_PREPARE_USERS_FOR_TESTING_OVERVIEW.HTM" target="_blank">Prepare Users for Testing</a> </td>
+    <td>Prepared Users for Testing </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.110</div></th>
+    <td><a href="../030_TASK/TE_110_PREPARE_ACCEPTANCE_TEST_ENV_OVERVIEW.HTM" target="_blank">Prepare Acceptance Test Environment</a></td>
+    <td>Acceptance Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.120</div></th>
+    <td><a href="../030_TASK/TE_120_SUPPORT_ACCEPTANCE_TEST_OVERVIEW.HTM" target="_blank">Support Acceptance Test</a></td>
+    <td>Acceptance Test Results</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Production Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.019.2</div></th>
+    <td><a href="../030_TASK/TE_019_COLLECT_ASSESS_REFINE_KPI_MEASUREMENTS_OVERVIEW.HTM" target="_blank">Collect, Assess and Refine KPI Measurements</a></td>
+    <td>Key Business Strategies and Objectives</td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Testing process are:</p>
+<ul>
+  <li>Produce usable systems, yielding early business benefits.</li>
+  <li class="style5">Validate that the requirements are met.
+  <li class="style5">Improve quality of the system by early identification of defects
+  <li>Secure project resources needed for testing. Obtain early user acceptance through participation in progressive validation.</li>
+    <li>Obtain early user acceptance <span class="style1">on quality, suitability and meeting functional requirements</span> through participation in progressive validation.</li>
+    <li>Introduce Testing activities early in the software development lifecycle. </li>
+    <li>Provide for traceability from tests to prioritized requirements.</li>
+    <li> Build on and reuse Testing work products in all phases of the process.</li>
+    <li class="style3">Secure ambassador user acceptance of the solution against critical business requirements.</li>
+    <li class="style3">Validate the business critical data and data access components prior to production release.</li>
+</ul>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Testing process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="13%" scope="col">Name</th>
+    <th width="84%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Assist in creating the Unit Test Scripts. <span class="style6">Provide input to preparation material for acceptance testing.</span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Install and configure the user acceptance test database.&nbsp; Ensure all user acceptance testers have access to the database.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DD</th>
+    <td>Database Designer</td>
+    <td>Participate in determining what kind of data is required to execute the tests and participate in quality checking of the test data.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Create Unit Test Scripts. Perform the unit test. <span class="style6">Walk through problems from the installation test with the system administrator, and provide other required assistance. </span>Provide support for user acceptance tests by answering questions and helping resolve potential issues. Represent the project team.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td>Install application software.&nbsp; Provide support for the testing. <span class="style6">Perform the installation test. </span>Install and configure hardware and operating system.&nbsp; Install and configure application code.&nbsp; Ensure that login IDs exist for the user acceptance testers. Support user acceptance tests.&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Determine and document the Testing Requirements. Assist in creating the Unit Test Scripts. Oversee, review and approve the development of the System Test Scenarios. Assist in performing the unit test. Assist the customer in developing the Acceptance Test Plan. Support user acceptance testing by providing assistance about business requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Participate in the preparation of the technical architecture environment to support testing. Support user acceptance testing by providing assistance about system architecture.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA (IA) </th>
+    <td>System Architect (Information Architect) </td>
+    <td>Participate in determining what kind of information (data) is required to execute the tests. Participate in the preparation of the Information Architecture for the environment to support testing. Support user acceptance testing by providing assistance about Information Architecture. Preferably, this should be done by a system architect that specializes in Information Architecture.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TE</th>
+    <td>Tester</td>
+    <td>Develop Testing Strategy and Integration Test Plan. Develop the System Test Scenarios. Create the Integration Test Scenarios. Provide support for the creation of the various Testing environments and prepare Testing tools. Perform quality check of the environments. For some projects, this may be a lead tester. Develop test details and perform test. Review test details and monitor test results. Provide support for integration tests by reconciling differences between design requirements and the application and represent the project team. Develop System Test Plan. Perform the system test. Manage the system test. Answer questions and resolve potential issues. Represent the project team. Monitor test execution and results. Develop the Systems Integration Test Plan. Assist the customer in developing the Acceptance Test Plan. Develop the Systems Integration Test Scenarios. Oversee, review and approve the development of the Systems Integration Test Scenarios. Perform the systems integration test. Manage the systems integration test. Provide support for systems integration test by answering questions and helping resolve potential issues. <span class="style6">Assist the Validation Coordinator in preparing material and the test instruction class for acceptance testing. </span>Ensure facilities, hardware, and software are configured and installed properly. Ensure availability of facilities coordinator, system administrator, and database administrator. Ensure facilities, hardware, and software are configured and installed properly for acceptance testing. Ensure availability of facilities for acceptance testing. Review and resolve any issues that arise for acceptance testing.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Participate in the determining the Testing Requirements. Assist in providing appropriate test data to execute the tests and participate in quality checking the test data. Review the System Test Scenarios to verify relevance relative to business. <span class="style7">Participate in the various tests. </span>Review the System Integration Test Scenarios to verify relevance relative to business. <span class="style6">Provide input to preparation and class material for acceptance testing. </span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CDA</th>
+    <td>Customer Data Administrator </td>
+    <td>Assist in providing appropriate test data to execute the tests and participate in quality checking the test data.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager</td>
+    <td>Ensure availability and commitment of users.&nbsp; Ensure availability of hardware, software and facilities. Develop sense of teamwork and ownership of the new application. Review and resolve any issues that arise from acceptance testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">OS</th>
+    <td>IS Operations Staff </td>
+    <td>Set up hardware and system software configuration for the various Testing environments. Provide support for the Acceptance Test Environment.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td>Provide support for the creation of the various Testing environments. Provide support for the Acceptance Test Environment. Provide support for the user acceptance tests.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">USR</th>
+    <td>User</td>
+    <td><span class="style6">Read preparation material and attends test instruction class for acceptance testing. </span>Ensure the application functions properly so that user acceptance testing can begin. Conduct user acceptance tests and log results.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">VC</th>
+    <td>Validation Coordinator </td>
+    <td><span class="style7">Develop the Acceptance Test Plan. </span><span class="style6">Lead the production of the preparation material, prepares and conduct the test instruction class for acceptance testing. </span><span class="style5">Lead and coordinate the user acceptance test from the customer side. </span></td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are: </p>
+<ul>
+  <li><b>A Project Plan that Endorses an Integrated Testing Approach:</b> Only if the testing is planned throughout the project as an integrated part of the iterations, will it be tested. Therefore, ensure that testing is a visible task on the Project Plan for each build and iteration. </li>
+  <li><b>The Development of Testable Requirements:</b> Requirements can be of different quality. Requirements where you cannot define a proper Testing Strategy are often vague and confusing. While making or reviewing the requirements, determine how they can be tested. If it is difficult or impossible to find a testing approach, a clarification and/or detailing of the requirement must be performed. </li>
+  <li><b>Design for Testability:</b> In a similar way as for the requirements, the design must also be testable. </li>
+  <li><b>Effective Verification of Analysis, Design and Test Planning in Order to Prevent Defects and Reduce the Test and Rework Effort:</b> Testing must start before the actual components have been developed. The models (Analysis, Design) must be tested (reviewed) each time they are created/updated. Detecting errors at this level will prevent those errors being taken further into the next level. </li>
+  <li><b>User Commitment and Availability to Provide Progressive Validation:</b> One of the reasons for an integrated testing approach is to get early feedback on the designed or developed components. Having users take part in this validation makes the benefit even larger, as you get early feedback on errors, misunderstandings and even changes in requirements. Therefore, it is important to get the users committed to making themselves available and taking part in this task. </li>
+  <li><b>Effective Testing Through Use of Standard Tools:</b> A number of tests are repetitive and can be made more productive by using either tools/components that are available on the market or those that you build yourselves. </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

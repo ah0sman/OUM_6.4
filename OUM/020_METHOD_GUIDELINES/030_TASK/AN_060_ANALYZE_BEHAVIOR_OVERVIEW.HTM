@@ -1,0 +1,482 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AN.060 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>AN.060 - ANALYZE BEHAVIOR</h2>
+<!--BeginDesc--><p>The purpose of this task is to determine the system behavior that is required to satisfy the functional requirements that have been documented in the use cases.</p>
+<p>This task may be done in parallel with Analyze Data (AN.050) and Analyze User Interface (AN.090) and is performed for every use case package documented in the Package Diagram in the Architecture Description (RD.130)</p>
+<p>To accomplish this task, you review the Use Case Specification (RA.024) for each Use Case in the Package. Each step of each scenario is analyzed to determine what the system must do to perform that behavior. Once those operations are identified, they are allocated to specific processes, modules, or classes within the use case package.</p><!--EndDesc-->
+<!--BeginAIDesc--><p>In a commercial off-the-shelf (COTS) application implementation, this task is generally performed only when there is a need to gain further clarification of the data required to support a Use Case Package. This typically applies to requirements that are to be satisfied through custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other information systems.</p><!--EndAIDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>As an example, a step in a use case scenario states that:</p>
+<ul>
+  <li>The system displays the student's record to the user </li>
+</ul>
+<p>Then during this task you might define the system operations to be:</p>
+<ol>
+  <li>Query the database using the student&rsquo;s ID as the key. </li>
+  <li> Calculate the students GPA using the GPA formula business rule.</li>
+  <li> Format the student&rsquo;s information for viewing.</li>
+  <li> Display the student&rsquo;s information on the screen.</li>
+</ol>
+<p>You would then allocate those operations to specific portions of the system for execution. This give specific details that will later be used to validate the logic that needs to be implemented in the design. </p>
+<p> The standard and recommended approach and notation for completing this task is to use a UML class diagram and possibly a UML Sequence Diagram (Task Steps 1-7). This task may also be accomplished using a Non-UML approach that uses other notational or textual techniques including <em>entity-relationship diagrams (ERD&rsquo;s)</em>, <em>functional decomposition charts</em>, or <em>process mapping diagrams</em> (Task Steps 1 &ndash; 3A).</p>
+<p> If a UML class diagram is used for this task, the goal is to find and assign controller classes and boundary classes and add them to the entity classes found in the Domain Model (RD.065) thus creating an Analysis Class Diagram. Operations derived from each use case are added to each class being developed. Also attributes and associations will be updated or created and added to the Analysis Class Diagram. Depending on the non-functional requirements and your architecture you may need to consider event dependencies, persistence, and object communication aspects that are independent of any specific design. Finally, the results of the updated analysis class diagram will be reviewed for functional completeness. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>AN.060.1</h4>
+<p><a href="../040_ACTIVITY/BACTAE_ANALYZE_ELAB.HTM" target="_blank">B.ACT.AE Analyze - Elaboration </a></p>
+<h4>AN.060.2</h4>
+<p><a href="../040_ACTIVITY/CACTAC_ANALYZE_CONST.HTM" target="_blank">C.ACT.AC Analyze - Construction </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Behavior Analysis</b></p>
+<p>The resulting work product of the Behavior Analysis is an Analysis Class Diagram. This Analysis Class Diagram is also updated by the Data Analysis (AN.050). The Behavior Analysis adds the operations, additional attributes, associations, roles, responsibilities, specializations and generalizations required to support the Use Case Package. </p>
+<p>To accomplish this you may update the Domain Model (RD.065) to capture the results of analyzing the data requirements of the Use Case Package. If no Domain Model is available, develop a UML class diagram to support each Use Case Package.</p>
+<p> You might also produce some intermediate diagrams (such as sequence, activity, or state diagrams) that help develop the analysis class diagram and can also provide insight into missing business rules and/or behavior. </p>
+<p> If desired, the Data Analysis (AN.050), Behavior Analysis (AN.060), and Interface Analysis (AN.090) may be organized into an Analysis Specification (AN.100) for each Use Case Package identified in the Package Diagram contained in the Architecture Description (RD.130).</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p> If your project is using a UML approach you should follow steps 1 through 7, skipping step 3A. If your project is using a non-UML approach, you should follow steps 1, 2, and 3A only.</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review functional requirements: Use Case Model (RA.023), Use Case Specification (RA.024), Domain Model (RD.065), Supplemental Requirements (RD.055), and Candidate Business Rules (RA.027).</td>
+    <td>None</td>
+    <td>The <b>Use Case Model</b> forms the basis for visualizing the basic functionality of your system from the actor's perspective. The <b>Use Case Specification</b> provides the detailed description of the actor's interaction with the system. This diagram and the specification is developed during Requirement Analysis and refined during Analysis.<br>
+		<br>
+        The <b>Domain Model</b> is a class diagram showing the entities, their characteristics, and relationships that are relevant to the problem being solved. The terminology in this diagram is made up of the language of the user.<br>
+		<br>
+        Some requirements may come in the form of a <b>Supplemental Requirements</b> documenting detailed non-functional requirements in text. The <b>Candidate Business Rules</b> also provides information that will be turned into behavior in the system. After all some object or process must be responsible for seeing to it that each rule is followed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td><p>Systematize Use Case Descriptions.</p>
+        <p>&nbsp;</p></td>
+    <td><p>Use Case Specification (RA.024)</p>
+        <p>Activity Diagram<br>
+        Sequence Diagram<br>
+        State Diagram </p></td>
+    <td>If necessary the <b>Use Case Specification</b> gets updated with information about what the system must do (not how to do it) in order to accomplish the scenarios within the use case.<br>
+		<br>
+        For complex use cases, it may be necessary to diagram the use case. If the scenario flow is very sequential then use a Sequence Diagram. If the use case has a number of alternatives and error flows consider use an <b>Activity Diagram</b> or <b>Flow Chart</b>. If the use case scenarios are very complex with many intertwined paths consider using a <b>State Diagram</b>.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Find Analysis Classes or entities.<br>
+        <br>
+		(UML Approach)</td>
+    <td>Sequence Diagram </td>
+    <td>The <b>Sequence Diagram</b> contains a depiction of the relationship between boundary, control, and entity classes, one for each major use case scenario.<br>
+        <br>
+		The <b>Analysis Model</b> is an accumulation of all the classes showing attributes, operations, and associations that will support the functionality described in the use cases.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3A</div></th>
+    <td>Define systems operations.<br>
+        <br>
+		(Non-UML Approach)</td>
+    <td>For non-UML Approach, you may se an ERD, Functional Decomposition Chart, Process Mapping Diagram </td>
+    <td>Define the system&rsquo;s operations and assign them to a specific process or module within the package.<br>
+		<br>
+        (Skip remaining tasks steps if you are using the non-UML Approach.)</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Allocate behavior. </td>
+    <td>None</td>
+    <td>Review the <b>Use Case Specifications</b> to decide which classes should own the behavior described in those specifications. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Update Analysis Classes.</td>
+    <td>Analysis Class Diagram </td>
+    <td>The <b>Analysis Class Diagram</b> is updated showing all the operations assigned to each class. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Find analysis mechanisms. </td>
+    <td>Use Case Realization Diagram, Analysis Class diagram, Package Diagram </td>
+    <td>Annotate the classes in the <b>Analysis Class Diagram</b> with information that is design independent related to persistence of objects, error handling, event notification, and special message handling. Organize these classes into a <b>Package Diagram</b> as groupings by use case and by domain. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Review for functional coverage. </td>
+    <td>Analysis Class Diagram </td>
+    <td>Perform a quality check on your <b>Analysis Class Diagram</b> to ensure that in aggregate the classes have the operation behavior necessary to accomplish the functional requirements as specified in the use cases.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4> Review Functional Requirements</h4>
+<p> During this first step you are gathering and reviewing all the material that has been generated to date that contains functional / behavioral requirements. The objective of this task is to get a high level sense of what needs further analysis. During this task you should consider the following questions: </p>
+<ul>
+  <li> Which use cases are well written with lots of detail? </li>
+  <li> Which use cases are ambiguous, unclear, and have a lot of missing information? </li>
+  <li> Do the use case scenarios contain information about what the system is doing or purely about the interaction between the Actors and the system? </li>
+  <li> How much duplication of behavior exists across the use cases? </li>
+  <li> Are there similar pieces of scenarios repeated in two or more use cases? </li>
+  <li> Are there operations documented on any of the classes in the Domain Class Diagram? </li>
+  <li> Is it clear where the business rules tie in with the use cases? </li>
+  <li> Are some of the business rules specific to a single class? </li>
+</ul>
+<h4>Systematize Use Case Descriptions</h4>
+<p> Use cases are a great way of soliciting functional requirements from users. First and foremost they should reflect the interaction between the Actors and the system. During analysis you need to augment the use case specification with information that describes what (not how) the system does to accomplish the actor's goals. This often involves describing what the system is doing and when it is doing it to conform to some business rule. </p>
+<p> For example, the use case may simply say, &ldquo;System uses the name and SSN to search for any previously entered profile information.&rdquo; This does not say what the system needs to do in order to provide that information. More detail is needed here that describes what the system must do. The use case may be augmented to provide clarity. For example: </p>
+<blockquote>
+  <p><em> &ldquo;When the system receives the SSN from the actor, the system first checks to see if it is a valid SSN associated with this student. The system requests student admission information from the Admissions system using the SSN. If the SSN is not found in the Admissions system then the system tells the student of the error and requests a corrected SSN from the student. If the SSN is valid, the system then checks that the name of the student that is logged in is the same as the name of the student listed in the admission information. If the names do not match, this use case terminates in failure with an error message to the student and a notification is sent to the registrar&rsquo;s office. If the names match this use case proceeds to the next step.&rdquo; </em></p>
+</blockquote>
+<p> The goal of improving the use case is to make clear exactly what the system needs to do and what data is needed at each step to fulfill the goals of the actor.</p>
+<p> It is not recommended that you specify exacting details for every line of every scenario of every use case. Focus on areas of ambiguity found during step one's review. Focus on areas in your use cases that are critical to the success of the project. </p>
+<p> As has been often said, a picture is worth a thousand words. So a diagram can say a lot in a small amount of space. At this point you should consider augmenting your use cases with sequence, activity or state diagrams. </p>
+<p> <b>Sequence Diagram:</b> In those cases where the main success scenario has many steps with a few short alternatives consider using a sequence diagram. The sequence diagram is good for representing a simple flow of sequenced interactions. When you represent a scenario as a UML sequence diagram, create a lifeline for each actor and a lifeline to represent the system. The steps in the scenario become the messages in the sequence. </p>
+<p> <b>Activity Diagram:</b> If you have a use case that is highly interactive it may be better to diagram it as a flow of behaviors in an activity diagram. Activity diagrams lend themselves to exploring use cases that do not really have a &ldquo;main success scenario as much as they have many equal alternative successful scenarios. The following diagram shows the &ldquo;Allocate Assets&rdquo; use case in a portfolio management system: </p>
+<p> Another kind of activity diagram for use cases involves using swim lanes. The actors each have their own swim lane and the system gets its own swim lane. Then the behavioral steps of the actors and the system are laid out as an activity diagram. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN060_ACT_DIAGRAM.JPG" alt="Example Activity Diagram using Swim Lanes and Use Cases" width="577" height="289" title="Example Activity Diagram using Swim Lanes and Use Cases"></p>
+<p> <b>State Diagram:</b> On some occasions it seems that every step in a use case potentially leads to every other step in the use case. These are highly dynamic use cases with just a few steps but these few steps can be combined in many ways to form lots of alternatives. These use case often have many steps that loop back to earlier steps. For this situation, use a state diagram. </p>
+<p> Each interactive step of the use case becomes an event on the state diagram. The behavior that the system must perform is described as entry, do, and exit actions within the states. </p>
+<h4>Find Analysis Classes (UML Approach)</h4>
+<p><i><b> Follow step 3 if you are using a UML approach on your project. Skip to 3A, is you are using a non-UML approach </b></i></p>
+<p> During this step you will find those classes that will be necessary to accomplish or &ldquo;realize&rdquo; a given use case. This step is performed for each use case. Taken together all the classes you find during this step will form the analysis model. </p>
+<p> To find analysis classes, do the following for each use case: </p>
+<ol>
+  <li>Review your domain model for all classes that have the information needed by this use case. </li>
+  <li> Add those classes as entity classes on the analysis model. </li>
+  <li> Add a new class to the analysis model and mark it as a controller class. Give it a name like &ldquo;Asset Allocation Manager&rdquo; or &ldquo;Registration Session Manger.&rdquo; This class will coordinate all the other classes to ensure that the use case scenarios are followed. At runtime an instance of the control class does not do things other than to tell other objects what to do and when to do it. </li>
+  <li> For each place in a use case scenario where the system must communicate with an Actor, create a boundary class and add it to the analysis model. The boundary classes are responsible for implementing user interfaces and back-end interfaces with other external systems. </li>
+  <li> Add relationships between the controller, boundary, and entity classes where there needs to be communication between them. </li>
+  <li> Build a sequence diagram showing the interactions among the controller, entity and boundary classes. These diagrams should follow from the text of your use case scenarios or the diagrams you developed in step two above. </li>
+</ol>
+<p> The following Analysis Model shows the classes found for a simple drop course scenario. The Course and Professor are entity classes from the Domain Model. The Drop Course Manager is the controller class. The user interface or boundary classes are the Drop Session View, the Course View, and the Professor View. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN060_CL_DROPCOURSE_ANAL_MODEL.JPG" alt="Example Analysis Model showing the Classes for a Simple Drop Course Scenario" width="404" height="519" title="Example Analysis Model showing the Classes for a Simple Drop Course Scenario"></p>
+<p align="left">&nbsp;</p>
+<p> The following sequence diagram shows simplified behavior from an analysis perspective for the main success scenario of the drop course use case. Do not try to perform design at this stage.</p>
+<p align="center"><img src="../../010_COMMON_FILES/AN060_SEQ_DAIGRAM.JPG" alt="Sequence Diagram showing simplified behavior from an analysis perspective for the main success scenario of the Drop Course use case" width="625" height="379" title="Sequence Diagram showing simplified behavior from an analysis perspective for the main success scenario of the Drop Course use case"></p>
+<h4>Define Systems Operations (Non-UML Approach) </h4>
+<p> Assign each of the tasks documented or diagrammed in Step to to a specific process, module, or class within the package. This can be done using a variety of notations including an entity-relationship diagram (ERD), functional decomposition, or even a simple process mapping diagram. </p>
+<p> If you are using an alternate, non-UML approach you can skip the remaining steps in this tasks. </p>
+<h4>Allocate Behavior to Classes </h4>
+<p> At this stage, you consider which class should perform the behavior you outlined in step 2 &amp; 3 when you systematized the use cases and found analysis classes. Those diagrams you put together in that step will help as well. Review the sequence diagrams you put together when finding analysis classes. Any class on these diagrams that is receiving a message should have the responsibility to receive that message. You can show this on the analysis class diagram as an operation on the class receiving the message. Any class sending a message should have an operation definition in which the class has the responsibility for sending that message to an instance of the other class. </p>
+<p> Entity classes will contain behavior related to their attributes, such as business validation rules. </p>
+<p> Control classes are assigned behavior that represents the major events of the use case scenario. They should embody the flow of control of the use case. For example, when the user indicates to the system that they want to remove a strategic allocation in a financial portfolio, the control class would have an operation such as:</p>
+<p> + removeAllocation ( type : allocationType, asset : AssetAllocation) </p>
+<p> Boundary classes should be assigned behavior that gets information from entity classes for display or to pass to another external system. They may also have behavior for requesting information from a human actor or another system. </p>
+<h4>Update Analysis Classes </h4>
+<p> For entity classes, you should be able to determine many of the required attributes based on the attributes identified in the domain model. The entity classes are used to model information that will be persistent. </p>
+<p> The boundary or interface classes are used to model interaction between the application and its actors. Those classes that should interact with human actors need attributes representing the items that the user either need to manipulate or see for information purpose. The boundary classes that are used by system actors will need attributes required by the communication devices the actor uses. </p>
+<p> A controller class as the name implies, is responsible for controlling class interactions inside a use case.&nbsp; There will only be a few attributes required for controller classes. Many controller classes will not have any attributes, while others do need some attributes of a temporal nature, such as derived, summarized or accumulated values. </p>
+<p> The following is a partial Analysis Model. Notice the icons in the upper right hand corner of the class, they indicate the stereotype of the class &mdash; controller, entity, or boundary. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN060_ANAL_CLASS.JPG" alt="Partial Analysis Model Example with icons in upper right hand corner of class indicating stereotype" width="661" height="478" title="Partial Analysis Model Example with icons in upper right hand corner of class indicating stereotype"></p>
+<p align="left">&nbsp;</p>
+<blockquote>
+  <h5><em> Identify additional associations </em></h5>
+  <p> View the diagram to identify required associations between classes. The links that are shown on these diagrams may result in associations. Be aware that you should only model those associations that are required for the use case realizations. You may also identify possible aggregations among objects. You should also define the multiplicity of these additional associations.</p>
+  <h5> I<em>dentify possible generalizations</em></h5>
+  <p> Use the class diagrams to identify commonalities between various analysis classes. A generalization is often referred to as an &quot;is a kind of&quot; relationship. For example, an analysis class &quot;Vehicle&quot; may be a generalization for a &quot;Car&quot; and a &quot;Truck.&quot; A car &quot;is a kind of&quot; Vehicle, and a truck &quot;is a kind of&quot; Vehicle. </p>
+  <h5><em> Identify special requirements </em></h5>
+  <p> Determine for each class any special requirements that may apply. Use the special requirements identified in the Analyzed Use Cases as the input. This would typically be non-functional requirements, such as volumes, and usage frequencies. </p>
+</blockquote>
+<h4>Find Analysis Mechanisms</h4>
+<p> There are a variety of mechanisms that an application will use at runtime. These include persistence, inter-process communication, error handling, event notification, and messaging between objects. On any given project these mechanisms may already be decided upon when the architecture is chosen. However for many projects analysis of persistence details are necessary. </p>
+<p> Persistence relates preserving the life of an object&rsquo;s information beyond any given application runtime. Characteristics such as object size, number of instances, and access frequency may be determined during behavior analysis. As an example consider the Student class. The attributes of each Student object will take up anywhere between 5 and 20 Kbytes of space. Since there are 2,000 students in the university so there should be about 3,000 Student objects at any one time. During the registration period, about 100 students will be created or deleted each day; there will be up to 500 updates to student records per hour; and there will be up to 1,000 reads of student per hour. </p>
+<p> Be careful to specify mechanisms that are independent of the any specific design solution. The persistence information above is independent of whether we use a relational database or flat file solution. It is independent of how we access the data using SQL or java persistence approach like Hibernate. </p>
+<h4>Review for Functional Coverage</h4>
+<p> During this last step you will review the analysis model to see if it has all the required functionality. The basic idea is to simply go back to the use case specifications and the non-functional requirements to see if you can &ldquo;walk through&rdquo; the classes and accomplish the behavior of the use cases. </p>
+<p> A walk through is best performed as a team. Someone reads the use case while another person or persons looks at the class diagrams. Is there a class that has behavior assigned to it that can perform a step in a use case scenario? Do several classes come together to accomplish the required behavior? </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4>Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#AN060" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#AN0601" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="32%" scope="col"><div align="left">Role</div></th>
+    <th width="62%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Designer</div></th>
+    <td>The designer defines and maintains the responsibilities, attributes, relationships and special requirements of the classes making sure that each class fulfills its requirements. This person is also responsible for the analysis of packages within which the classes are maintained. There may be several designers depending on the size of the project, each of which may be responsible for certain classes and packages assigned to them. </td>
+    <td><div align="center">60</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Developer</div></th>
+    <td>Review the Behavior Analysis in order to assure that they are compatible with the architecture. This person is also responsible for analyzing the more complex packages and classes.</td>
+    <td><div align="center">20</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect</div></th>
+    <td>Participate in definition and review of the Behavior Analysis to gain an understanding of the application and its architecture.</td>
+    <td><div align="center">20</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<h4>AN.060.1</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="32%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="68%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description</div></th>
+    <td>The Conceptual View (AN.040) of the Architecture Description defines the use case packages to be analyzed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Domain Model (RD.065) or Analysis Class Diagram or Data Model </div></th>
+    <td>The Domain Model contains the significant business objects, represented as a UML class diagram, which provide an important input to analyze classes. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Model (RA.023.1) </div></th>
+    <td>The Use Case Model provides a graphical view of the use cases and the actors that trigger/support them. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.1) </div></th>
+    <td>The Use Case Specification provides all the use cases along with each their corresponding details and that is what is analyzed in this task. </td>
+  </tr>
+</table>
+<h4>AN.060.2</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="32%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="68%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description</div></th>
+    <td>Updates to the Architecture Description (including updates made by RA.035 and AN.040) may impact the use case package being analyzed and must be taken into account. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.2) </div></th>
+    <td>The Use Case Specification provides all the use cases along with each their corresponding details and that is what is analyzed in this task. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Data Design (DS.090.1)</div></th>
+    <td>Development of the interaction diagram as part of the Data Design may impact the use case analysis, and vice versa. Therefore these tasks are often done in parallel.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Reviewed Use Case Model (RA.180.2) </div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="32%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="68%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">ANALYSIS_MODEL.DOC</div></th>
+    <td>MS WORD - Update the Analysis Model created in AN.050 with the Behavior Analysis details.</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="32%" scope="col"><div align="left">Tool</div></th>
+    <th width="68%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/GettingStartedWithUMLClassModeling.pdf" target="_blank">Getting Started with UML Class Modeling </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/class_diagram_viewlet_swf.html" target="_blank">Class Diagram Viewlet </a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Examples" title="Examples" summary="This table lists any example work products for this task with any relevant comments. It is organized with columns for Example and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="32%" scope="col"><div align="left">Example</div></th>
+    <th width="68%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../010_COMMON_FILES/MODELS/AN060_ACTIVITY_MODEL.HTM" target="_blank">Analysis Model-Activity Model</a><br>
+            <a href="../../010_COMMON_FILES/MODELS/AN060_COLLAB_MODEL.HTM" target="_blank">Analysis Model-Collaboration Model</a><br>
+            <a href="../../010_COMMON_FILES/MODELS/AN060_SEQUENCE_MODEL.HTM" target="_blank">Analysis Model-Sequence Model</a> </div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../010_COMMON_FILES/MODELS/CLASS_MODEL.HTM" target="_blank">Class Model </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The output from the Analyze Behavior task is used in the following ways: </p>
+<ul>
+  <li> as an input to the use case design </li>
+  <li> as a verification that the use case realizations are properly understood </li>
+</ul>
+<p>Distribute the output from this task as follows: </p>
+<ul>
+  <li> to the development team </li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Does each class diagram represent one aspect of the system? </li>
+  <li> Does each class diagram only contain elements that are needed to understand that aspect of the system? </li>
+  <li> Are the class diagrams laid out so that they are easily read? </li>
+  <li> Does each analysis class contain a not to large and well-defined set of responsibilities (or, would it have been better to split into more and smaller classes)? </li>
+  <li> Do the analysis classes contain only analysis information, that is, there are no implementation aspects included? </li>
+  <li> Are the attributes for each class (if many) organized in a logical manner? </li>
+  <li> Are the responsibilities for each class (if many) organized in a logical manner? </li>
+  <li> For each step in the use case scenarios, can you find a combination of interacting objects whose classes have the responsibilities necessary for completing that step in the scenario? </li>
+  <li> For each use case is there a class or combination of classes (usually control classes) that are responsible for controlling the flow of the scenarios of the use case? </li>
+  <li> Are there boundary classes for each major user interface needed by each use case? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,955 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Modeling Planning Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Modeling Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#MG">Mobilization Guidance</option>
+                            <option value="#MMG">Motivational Modeling Guidance</option>
+                            <option value="#DAG">Domain Analysis Guidance</option>
+                            <option value="#MSG">Model Specificaion Guidance</option>
+                            <option value="#PDPG">Project Delivery Planning Guidance</option>
+                            <option value="#PDG">Post Delivery Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("M");
+  Effect.BlindDown("MM");
+  Effect.BlindDown("DA");
+  Effect.BlindDown("MS");
+  Effect.BlindDown("PDP");
+  Effect.BlindDown("PD");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("M");
+  Effect.BlindUp("MM");
+  Effect.BlindUp("DA");
+  Effect.BlindUp("MS");
+  Effect.BlindUp("PDP");
+  Effect.BlindUp("PD");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SMP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) MODELING PLANNING SUPPLEMENTAL TASK GUIDELINES</h2>
+<p> This document contains OUM supplemental task guidance for the execution of a service based on the SOA Modeling Planning View. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. </li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overviews. </p>
+<p><b><a name="Note"></a>Note on Delivery Roles </b></p>
+<p> This document mentions three roles: engagement lead, business stream and technical stream. These are roles, not actual resources and as such a given person may carry out more than one role and a role may be staffed by more than one person. The skills and tasks required by each role are:</p>
+<p> Engagement Lead: This role is responsible for overall management of onsite activities, including overall schedule, quality of work products, and executive presentations. As an engagement manager, he/she must be able to lead other practitioners and manage tasks, work products and scheduling as related to this service. The engagement lead is staffed at the beginning of the engagement (Mobilization), and plays the key role in scoping the service offering to meet enterprise needs. Throughout delivery, the engagement lead will lead kickoff meetings and enterprise presentations. This person will be responsible for finalizing and presenting work products and will act as team lead when multiple consultants are involved in the delivery. The engagement lead will remain on the engagement until all Post-Delivery activities are completed. </p>
+<p>Business Stream: this role is responsible for performing all non-management tasks pertaining to the formulation of a business motivation model and development of a stakeholder library. It may be staffed by a senior practitioner with sufficient business acumen and facilitation skills. The practitioner must be able to facilitate workshops, interview business and IT executives, communicate effectively, gather information and present it in a clear and logical manner.<br>
+    <br>
+  Technical Stream: this role is responsible for performing all non-management tasks related to architecture and technology. It may be staffed by an architect or technical practitioner with equivalent skills. The practitioner must be well versed in modeling techniques (such as UML, BPMN, ERD) and principles and best practices of SOA. He/she must be able to facilitate workshops, communicate effectively, gather information and present it in a clear and logical manner.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for the areas.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">SOA Modeling Planning - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MG">Mobilization</a></div></th>
+    </TR>
+  <tbody id="M">
+    <TR valign="top">
+      <TD valign="top"><a href="#SM010">PJM.SM.010 Define and Confirm Scope </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">PJM.SM.010 Define and Confirm Scope </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER020">ER.020 Determine Envision Engagement Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER030">ER.030 Set and Agree on Plan for Envision Engagement</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MMG">Motivational Modeling </a></div></th>
+  </TR>
+  <tbody id="MM">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM050">PJM.STM.050 Conduct Team Orientation</a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA010">BA.010 Identify Business Strategy </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER130">ER.130 Produce MoSCoW Improvement List</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1801">ER.180.1 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#DAG">Domain Analysis </a></div></th>
+  </TR>
+  <tbody id="DA">
+    <TR valign="top">
+      <TD valign="top"><a href="#BA012">BA.012 Define Business Scope</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA015">BA.015 Conduct Enterprise Stakeholder Assessment</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_015_CONDUCT_ENTERPRISE_STAKEHOLDER_ASSESSMENT_OVERVIEW.HTM" target="_blank">BA.015 Conduct Enterprise Stakeholder Assessment </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER0701">ER.070.1 Define Modeling Strategy For the Enterprise </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070 Define Modeling Strategy For the Enterprise</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1802">ER.180.2 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MSG">Model Specification </a></div></th>
+  </TR>
+  <tbody id="MS">
+    <TR valign="top">
+      <TD valign="top"><a href="#ER0702">ER.070.2 Define Modeling Strategy For the Enterprise </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070 Define Modeling Strategy For the Enterprise</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#GV096">GV.096 Determine Services Meta Data Description </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_096_DETERMINE_SERVICES_META_DATA_DESC_OVERVIEW.HTM" target="_blank">GV.096 Determine Services Meta Data Description </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA040">BA.040 Create Enterprise Function or Business Process Model </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Business Process Model </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA050">BA.050 Develop Enterprise Domain Model (Business Entities) </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities) </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1803">ER.180.3 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#PDPG">Project Delivery Planning </a></div></th>
+  </TR>
+  <tbody id="PDP">
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#EA095">EA.095 Review Enterprise Software Development Process </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD height="20" valign="top"><a href="#ER1804">ER.180.4 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#PDG">Post Delivery </a></div></th>
+  </TR>
+  <tbody id="PD">
+    <TR valign="top">
+      <TD valign="top"><a href="#CMM040">PJM.CMM.040 Document Lessons Learned </a></TD>
+      <TD><DIV align=left>
+          <div align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">PJM.CMM.040 Document Lessons Learned </a></div>
+        </div>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MG id="MG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">MOBILIZATION GUIDANCE</a></h3>
+<p>Mobilization begins with the qualification of the effort to scope the engagement to best meet the needs of the organization. An engagement may be based solely on this view, but may also be increased to cover multiple OUM views or tasks to produce a more fully featured planning and delivery engagement; in particular it may be combined with the SOA Engineering Planning View. It may also be scoped back to focus on only a subset of the five areas covered in this view, streams, tasks, and work products, while omitting others. </p>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Mobilization Key Responsibilities" summary="This table list the key roles involved in Mobilization.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Assess and understand the maturity of the organization and suggest a scope for the engagement. Be familiar with the material from Oracle Reference Architecture (ORA) and all OUM techniques available for this engagement.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Support the enterprise architect on asset management topics relevant for the organization. Must be familiar with OUM and have project experience in service engineering and modeling. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Support the enterprise architect on assessment and identify the topics relevant for the organization. Must be familiar with OUM and have project experience in service engineering.</TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Agree on the scope of the engagement. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Identify the stakeholders needed in the engagement and ensure their availability and commitment</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Executive </th>
+      <TD width="80%" align="left" valign="top">Provide insight into the business and IT strategy of the organization. Responsible for strategic decisions and overall IT portfolio planning. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Provide insight into the overall usage of modeling techniques at the organization. Responsible for enterprise SOA or enterprise architecture in general at the organization.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Provide insight into the usage and meta model of the enterprise repository of the organization. Responsible for the enterprise repository of the organization.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Provide insight into the approach to SOA and which modeling techniques are used at the different stages in the SDLC of the organization. Responsible for the SDLC of the organization.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><br>
+    <a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=SM010 id="SM010"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></h4>
+<h5>Determine Engagement Scope</h5>
+<p>The engagement lead is primarily responsible for determining the scope of the engagement. The areas and work products should be aligned with organization objectives, and the activities should support successful completion of the work products. When determining the scope of the engagement, you need to be clear how much should be included to best meet the needs of the organization. An engagement may be solely based on this view, but may also be increased to cover multiple views to produce a more full-featured planning and delivery engagement. In particular it may be combined with the <a href="../../../OUM_HOME_SEP.HTM" target="_blank">SOA Engineering Planning View</a>.
+<p>You may also decide to reduce scope, to only focus on certain aspects covered in this view.
+<p> A number of meetings, phone calls, or emails can be used to finalize the scope with the organization. Organization objectives may originate from sources such as:
+<ul>
+  <li> meetings</li>
+  <li>findings from previous SOA assessments</li>
+  <li>architect input from a current engagement</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER020" id="ER020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy</a><br>
+    <a name="ER030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></h4>
+<h5> Determine Staffing, Schedule and Level of Effort</h5>
+<p>Once the engagement has been scoped, the engagement lead should determine a level of effort (LOE) for each delivery area and stream, which will combine into an estimate for the engagement as a whole. A number of factors can affect the estimate, such as:
+<ul>
+  <li>the availability of enterprise input materials including, but not limited to, business models, organization charts, sample models, service engineering process documentation, etc.</li>
+  <li>the prior completion of other any service offerings, such as, an engagement based on the <a href="../../../OUM_HOME_SEP.HTM">SOA Engineering Planning View</a></li>
+  <li>the level of commitment of organization participants (i.e., their ability to dedicate time for workshops and other activities) </li>
+</ul>
+<h5>Create and Deliver Proposal or Statement of Work (SOW)</h5>
+<p> When determining the strategy for the engagement, you should consider the organization's existing situation, and review the following techniques as input</p>
+<ul>
+  <li><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/MOTIVATION_MODEL.HTM" target="_blank">Motivational Modeling</a></li>
+  <li><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/BUS_SCOPE_DEFINITION.HTM" target="_blank">Business Scope Definition</a></li>
+  <li><a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank"> Functional or Process Modeling</a></li>
+  <li><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/EDM_DATA_OWN_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Ownership Approach</a></li>
+  <li><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/EDM_DATA_REL_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Relationship Approach</a></li>
+  <li><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling</a></li>
+</ul>
+<p>The development of the strategy and a plan for the duration of the engagement can vary, depending on the size and complexity of the project. The strategy and plan should be concluded with proposal document or presentation to the organization where the go/no-go decision is received.</p>
+<p>You can use the following questions as an assistance to scope the engagement, if not already answered through the previous steps: </p>
+<ul>
+  <li>What are the primary goals for undertaking this engagement?</li>
+  <li>What are the success criteria for this engagement?</li>
+  <li>Are there specific dates that need to be met?</li>
+  <li>How soon are you looking to get started?</li>
+  <li>Roughly how many concurrent development projects does your IT organization run?</li>
+  <li>How large and mature is your Enterprise Architect and project architect community?</li>
+  <li>Has business strategy been defined, and if so, what method was used to define it (e.g., strategy map, balanced scorecard, etc.)?</li>
+  <li>Have IT goals and initiatives been defined and mapped to business strategy?</li>
+  <li>What SDLC (Software Development Lifecycle) processes or methodology do you follow?</li>
+  <li>How important is SOA to the future of your IT organization?</li>
+  <li>What modeling do you do now in support of SOA?</li>
+  <li>Has your Enterprise Architecture team attempted to create taxonomy of business functions, processes, services, and data? If so, how far along are they?</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MMG id="MMG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">MOTIVATIONAL MODELING GUIDANCE</a></h3>
+<p>Motivational Modeling is used to capture business motivation and map it to IT and technology initiatives. This provides the ability to trace IT activities back to business goals and justify efforts and expenditures related to initiatives such as: </p>
+<ul>
+  <li> Development Projects</li>
+  <li>Business Process Analysis and Design</li>
+  <li>Service Engineering</li>
+  <li>Infrastructure Procurement and Deployment</li>
+</ul>
+<p> Business motivation can be used as an input to project prioritization, business process justification, and service justification. It may also serve as an input to identifying Key Performance Indicators (KPIs), which feed into the instrumentation and monitoring strategy. For these reasons Motivational Modeling should be undertaken prior to an engagement based on the SOA Engineering Planning View.</p>
+<p>The work product from Motivational Modeling is a Business Motivational Model (BMM) that is based on the process described in <a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010, Identify Business Strategy</a>. The work product will most often be in the form of a presentation to management stakeholders.</p>
+<p>This process can consume and extend pre-existing enterprise motivational models, or documented business goals and/or objectives, or it may be delivered without the benefit of such materials. </p>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Motivational Modeling Key Responsibilities" summary="This table list the key roles involved in Motivational Modeling.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Create a presentation for the kickoff and lead the meeting. Execute the business Motivational Modeling process with the organization. Create the business Motivational Model and the Motivational Mapping and traceability documents. Organize the document review and finalize the document. Create and present the findings presentation at the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Attend the kickoff meeting and the wrap-up meeting. Represent the interest of asset management. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Prepare and present an overview of the consulting organization's Enterprise SOA approach and Service Modeling Framework for the kickoff meeting. Provide support on the business Motivational Modeling process. Review the business Motivational Model and the Motivational Mapping and traceability documents as well as the findings presentation. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Introduce the kickoff workshop, sharing the objectives and importance of the project. Attend the Motivational Modeling wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Attend kickoff meeting and control stakeholder participation. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Executive </th>
+      <TD width="80%" align="left" valign="top">Prepare and present an overview on the organization's business and IT strategy for the kickoff meeting. Support the business Motivational Modeling process. Review and sign the business Motivational Model and the Motivational Mapping and traceability documents. Attend the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Prepare and present an overview on the modeling techniques used at the organization for the kickoff meeting. Support the business Motivational Modeling process. Review and sign the business Motivational Model and the Motivational Mapping and traceability documents. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Prepare and present an overview of the enterprise repository and the meta model relevant for modeling for the kickoff meeting. Attend the wrap-up meeting. Represent the interests of asset management.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Attend the kickoff meeting and the wrap-up meeting. Represent the interests of SDLC methodology.</TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Business Analyst </th>
+      <TD align="left" valign="top">Attend the kickoff meeting and the Service Architecture workshop. Represent the interests of business analysis.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Techniques </h5>
+<p>The following activities are available to assist in this area: </p>
+<TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Motivational Modeling area.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Technique Note </b></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/MOTIVATION_MODEL.HTM" target="_blank">Motivational Modeling </a></th>
+      <TD width="80%" align="left" valign="top">This technique provides assistance on the business Motivational Modeling (BMM) and describes the activities needed to create a BMM.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><br>
+    <a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=STM050 id="STM050"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 - Conduct Team Orientation</a></h4>
+<p>It is recommended to have a kickoff workshop at the beginning of the engagement, as well as when you start the Domain Analysis.
+<h5>Kickoff Workshop</h5>
+<p>A good way to initiate the on-site activities related to this view is to hold a kickoff workshop. The intent is to bring together all people that will be expected to contribute during the engagement to discuss what will take place. The workshop should begin with the enterprise executive sponsor presenting why the organization is undertaking this effort and the importance it has. This serves to inform the enterprise stakeholders that there is senior management backing, and that participation of stakeholders is required.
+<p>The workshop also provides an opportunity to level-set everyone on what the engagement entails, what it is meant to provide for the organization, what participation is needed, and what to expect as the result of the service. The engagement lead should present this part of the workshop. In addition, the kickoff meeting is a good opportunity to outline who the enterprise participants are, why they have been asked to be involved, and a rough timeline of their activities. Doing so provides the forum for discussion about who should be participating and allows people the chance to volunteer or decline involvement up front. It is also a good forum to discuss the benefits that the engagement will have for the organization and answer questions that people might have about modeling or SOA in general.
+<p>The Kickoff Workshop can either conclude after presenting the material mentioned above, or it may continue with activities related to motivational modeling (see next step below). The decision of whether or not to continue should be based on availability of participants. If the representatives needed for these steps are able to continue, then the meeting may proceed with that segment of the audience remaining and all others dismissed.
+<p><b>INPUT:</b> Kickoff presentation, existing enterprise motivation materials
+<p><b>OUTPUT:</b> Possible updates to engagement participants and schedule
+<p><b>RESOURCES:</b> The primary resource is the engagement lead. Other resources may assist with the presentation and workshop.
+<h5>Domain Analysis Kickoff</h5>
+<p> During a Domain Analysis Workshop you should present key concepts of OUM and in particular those related to Domain Analysis. Concepts in this context include a definition of domains, stakeholders, concerns, models, viewpoints, views, and how they relate to each other.
+<p>The engagement lead should deliver this overview and be prepared to answer questions the organization might have about the concepts.
+<p>The workshop presentation can also include an overview of how the engagement is proceeding.
+<p><b>INPUT:</b> Modeling Concepts presentation
+<p><b>RESOURCES:</b> The primary resource is the engagement lead. Other resources may assist with the presentation and workshop.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA010 id="BA010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></h4>
+<h5> Perform Business Motivational Modeling Process</h5>
+<p> To perform the Motivational Modeling process, use the motivational modeling part of this task, Identity Business Strategy (BA.010). In addition, there is a technique guidance for <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/MOTIVATION_MODEL.HTM" target="_blank">Motivational Modeling</a>. The approach described in this techniques guidance should be followed in its entirety, culminating with the development of a Strategy Map, Motivational Model, and Technical Initiative Mapping.</p>
+<p>It is quite common for businesses to engage in some form of business motivational modeling in order to define goals for their organization. These goals can pertain to the entire company or a specific segment such as a line of business (LOB). They may be captured in a number of ways either through formal processes, such as Balanced Scorecards, TQM, etc., or through informal ad hoc means. Since the goal is to leverage existing materials whenever possible, any existing documentation pertaining to business goals, objectives, and initiatives should be collected and reviewed.</p>
+<p>You may or may not have the opportunity to review these materials in advance. In either case, the intent of this step is to review them with the organization during a workshop in order to qualify them as valid inputs to the process. This will help eliminate inputs that are not fully accepted or recognized by the organization, and provide an opportunity to add additional context for clarification as needed.</p>
+<p>Begin by offering a description of terms, which can be found in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/MOTIVATION_MODEL.HTM" target="_blank">Motivational Modeling</a> technique. The review can continue by mapping (or translating) existing organization materials to these terms. This will set the stage for the next steps of the modeling process.</p>
+<p>The following Motivational Modeling Workflow has been color coded to indicate which roles have responsibility for conducting workshops and developing work products (also see the <a href="#Note">Note on Delivery Roles</a> above).<br>
+  <a name="BA010pic"></a></p>
+<p align="center"><img src="../../../010_COMMON_FILES/Business_Tech_stream.jpg" alt="Motivational Modeling Wokflow Color Coded to Indicate which Roles have Responsibility for Conducting Workshops and Developing Work Products" width="984" height="561" title="Motivational Modeling Diagram Color Coded to Indicate which Roles have Responsibility for Conducting Workshops and Developing Work Products"></p>
+<p>Notice that most activities pertain to the Business Stream, and activities handled by the Technical Stream begin as the Business Stream completes. If these streams are staffed by different people, then the technical staff should be ready to accept and review the preliminary output of the business staff as the final step before the transition takes place. Technical staff may wish to attend the final activity (Define Initiatives) at a minimum in order to come up to speed on the engagement quickly and be ready to continue to move the process forward without unnecessary delays.</p>
+<p> <b>INPUT:</b> Existing enterprise motivation materials </p>
+<p><b>OUTPUT:</b> Draft of Business Motivational Model, Technical Initiative Mapping</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER130 id="ER130"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List</a></h4>
+<p> At the end of Motivational Modeling, a number of technical initiatives have been identified that need to be prioritized. This is preferably done as a last step during the <a href="#BA010">Motivational Modeling Workshop</a>.</p>
+<p><b>INPUT:</b> Draft of Business Motivational Model, Technical Initiative Mapping</p>
+<p><b>OUTPUT:</b> Technical Initiative Mapping and Prioritization</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1801 id="ER1801"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.1 Prepare for and Present Solution Recommendation</a></h4>
+<h4> Reviews </h4>
+<p> At the end of the Motivational Modeling stage, a review and finalization of the work products produced, and a presentation of these work products to the organization is performed.</p>
+<h5> Review and Finalize Work Products</h5>
+<p> During the review and finalization of the work products, all notes and findings from the workshops are processed into a coherent management presentation. It may involve follow-up meetings with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p>The input and outputs of this step depend on where you are in the engagement. Consultants that facilitated workshops are responsible for collecting information and developing the slides. The engagement lead is responsible for ensuring the overall quality and completeness of the presentation. </p>
+<p>At the end of Model Specification, outputs will include a completed Model Library, a Functional Hierarchy Model, and a Data Hierarchy Model. The hierarchy models are not expected to be 100% complete since such an effort could take many months to finish. The Functional Model should have at least levels 0 and 1 completed, and include the definition of all lower levels. See the <a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling </a>technique for more information on the levels. The Data Model should be complete for enough entities in order to provide a pattern for the organization to finish developing the model. Work may involve follow-up meetings or conversations with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p><b>INPUT:</b> a draft of Business Motivational Model, Technical Initiative Mapping and Prioritization</p>
+<p><b>OUTPUT:</b> Motivational Modeling Presentation</p>
+<h5> Present Work Products</h5>
+<p> All the work products (based on the outputs listed above) are delivered to the organization as well as an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement lead should determine the attendance of the consulting organization's representatives. The intent is to share findings and results with executive management, and also to re-introduce the next stage and the benefits it provides.</p>
+<p><b>INPUT:</b> Motivational Modeling Presentation<br>
+    <br>
+    <b>OUTPUT:</b> Management Presentation</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=DAG id="DAG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">DOMAIN ANALYSIS GUIDANCE</a> </h3>
+<p>Domain Analysis is used to define the domain that this modeling engagement will address, define the target audience models are created for, and define the models themselves. It is a necessary precursor to Model Specification.</p>
+<p>Domain Analysis provides a way to scope the modeling strategy for SOA to a specific boundary that is relevant to the organization. The boundary can align with organizational boundaries, business processes, products, systems, applications, or any combination of these. This permits different groups within a large company to follow different modeling approaches, each tailored to meet their own individual needs and satisfy their constituents.</p>
+<p> Once the domain has been defined, the stakeholders for that domain are identified and models are proposed that will address stakeholders&rsquo; concerns. Since stakeholders each have unique concerns that can be addressed via models, a Viewpoint Library will be developed to provide a reusable set of modeling criteria that can be leveraged on future SOA development projects.<br>
+  The work products from Domain Analysis include: </p>
+<ul>
+  <li>Domain Boundary Definition</li>
+  <li>Stakeholder Library</li>
+  <li>Model Library</li>
+  <li>Viewpoint Library</li>
+</ul>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Domain Analysis Key Responsibilities" summary="This table list the key roles involved in Domain Analysis.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Create a presentation for the Modeling Concept workshop and lead the workshop. Execute the Domain Analysis process with the organization. Create the Domain Boundary Definition document, the Stakeholder Library, the Model Library and the Viewpoint Library. Organize the document review and finalize the document. Create and present the findings presentation at the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Attend the workshop and support the Domain Analysis process regarding implementation of the libraries in an enterprise repository. Support the organization in updating the meta model of the enterprise repository. Create and present an overview on the changes suggested / applied to the organization's enterprise repository for the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Provide support for the Modeling Concept workshop and the Domain Analysis process. Review the Domain Boundary Definition document, the Stakeholder Library, the Model Library and the Viewpoint Library, as well as the findings presentation. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Attend the Domain Analysis wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Control stakeholder participation. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Attend the workshop and support the Domain Analysis process representing the interests of enterprise architecture. Review and sign the documents created. Attend the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Attend the workshop and support the Domain Analysis process representing the interests of asset management. Enable an implementation platform for the libraries, for example, by enhancing the meta model in the enterprise repository. Review and sign the documents created. Attend the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Attend the wrap-up meeting. Represent the interests of SDLC methodology.</TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Business Analyst </th>
+      <TD align="left" valign="top">Attend the workshop and support the Domain Analysis process representing the interests of business analysis. Review and sign the documents created. Attend the wrap-up meeting.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Techniques </h5>
+<p>The following activities are available to assist in this area: </p>
+<TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Domain Analysis area.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Technique Note </b></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/STAKEHOLDER_CAPTURING.HTM" target="_blank">Stakeholder Capturing </a></th>
+      <TD width="80%" align="left" valign="top">This technique provides assistance on stakeholder analysis. </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><br>
+    <a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA012 id="BA012"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope </a></h4>
+<p> This task is part of the Domain Analysis that also consists of the following tasks:</p>
+<ul>
+  <li>Define Business Scope (BA.012) - for the Modeling Domain under consideration</li>
+  <li>Conduct Enterprise Stakeholder Assessment (BA.015)</li>
+  <li>Define Modeling Strategy for the Enterprise (ER.070)</li>
+</ul>
+<p>The Domain Definition process presented in this task, Define Business Scope (BA.012), describes how the modeling domain can be defined using various means such as organization boundaries, process boundaries, system boundaries, etc. This process should be used to scope the focus to a specific domain. Although it may equate to the entire company or division, it may also need to be defined using this boundary analysis method.</p>
+<p>This process should preferably be executed in a workshop environment with the enterprise executive sponsor in attendance. Other attendees could include business analysts, enterprise architects and portfolio managers.</p>
+<p>A discussion ahead of time with the executive sponsor could be used to provide insight on how complex the domain analysis process might be. If a simple domain is expected, such as the entire company or division, then this process may be executed as a very brief presentation on how boundaries can be defined, concluding either with a motion to collectively agree on the boundary offered by the executive sponsor, or simply a statement describing what the execute sponsor&rsquo;s directive is (if negotiation is not in order).</p>
+<p>If the boundary is expected to be less straightforward, then a more interactive workshop is in order. The workshop can begin with an overview on how boundaries can be defined and continue with a facilitated session to agree on a method to develop the boundary, and agreement on what the boundary will be. The agreed upon boundary should be captured by the delivery team and formalized into a diagram, a statement, or document if necessary.</p>
+<p>This activity is considered part of the <a href="#BA010pic">Business Stream</a> and should be driven by consultants assigned to that stream. The engagement lead should be in attendance to kick off the meeting, help to ensure it moves along a desired path, and help capture information that is discussed during the workshop.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA015 id="BA015"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_015_CONDUCT_ENTERPRISE_STAKEHOLDER_ASSESSMENT_OVERVIEW.HTM" target="_blank">BA.015 Conduct Enterprise Stakeholder Assessment </a></h4>
+<p>This task is part of the Domain Analysis that also consists of the following tasks:</p>
+<ul>
+  <li>Define Business Scope (BA.012)</li>
+  <li>Conduct Enterprise Stakeholder Assessment (BA.015)</li>
+  <li>Define Modeling Strategy for the Enterprise (ER.070)</li>
+</ul>
+<p>OUM provides a simple process to identify and catalog stakeholders. This process should be executed in a workshop environment with participants that understand the engineering processes most often used within the domain as well as the typical stakeholders involved in those processes. The workshop participants could be the same as in the previous workshop (Business Scope Definition).</p>
+<p>The intent is to capture a list of stakeholders and provide background information to develop a stakeholder library. A list of common stakeholders and descriptions can be found in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/STAKEHOLDER_CAPTURING.HTM" target="_blank">Stakeholder Capturing </a>technique. This can be used as a starting point for brainstorming the list of potential stakeholders. The list should be refined as detail is added to further define each stakeholder/role. The final list should be collected and documented by the delivery team. </p>
+<p>This is part of <a href="#BA010pic">Business Stream</a>. The engagement lead should be in attendance to kick off the meeting, help to ensure it moves along a desired path, and help capture information that is discussed during the workshop.</p>
+<p><b>INPUT:</b> Any pre-existing List of Stakeholders or List of Viewpoints (EA.015) the organization might have. </p>
+<p><b>OUTPUT:</b> Stakeholder Library, Viewpoint Library (EA.015)</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER0701 id="ER0701"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070.1 Define Modeling Strategy for the Enterprise</a></h4>
+<p> This task is partly performed in both the Domain Analysis and Model Specification stages. Please refer to the task description for details of how to perform it.</p>
+<p>The following steps are performed as part of Domain Analysis:</p>
+<ul>
+  <li>Capture stakeholder concerns by category.</li>
+  <li>Propose models.</li>
+  <li>Sort by model and formulate viewpoints.</li>
+  <li>Formalize viewpoints.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1802 id="ER1802"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.2 Prepare for and Present Solution Recommendation</a></h4>
+<h5> Reviews </h5>
+<p> At the end of the Domain Analysis stage, a review and finalization of the work products produced, and a presentation of these work products to the organization is performed.</p>
+<h5> Review and Finalize Work Products</h5>
+<p> During the review and finalization of the work products, all notes and findings from the workshops are processed into a coherent management presentation. It may involve follow-up meetings with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p>The input and outputs of this step depend on where you are in the engagement. Consultants that facilitated workshops are responsible for collecting information and developing the slides. The engagement lead is responsible for ensuring the overall quality and completeness of the presentation. </p>
+<p><b>INPUT:</b> findings for a Domain Boundary Definition, Stakeholder Library, Viewpoint Library, and outline of the Model Library</p>
+<p><b>OUTPUT:</b> Domain Boundary Definition, Stakeholder Library, Viewpoint Library, and outline of the Model Library</p>
+<h5> Present Work Products</h5>
+<p> All the work products (based on the outputs listed above) are delivered to the organization as well as an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement lead should determine the attendance of the consulting organization's representatives. The intent is to share findings and results with executive management, and also to re-introduce the next stage and the benefits it provides.</p>
+<p><b>INPUT:</b> Domain Boundary Definition, Stakeholder Library, Viewpoint Library, and outline of the Model Library<br>
+    <br>
+    <b>OUTPUT:</b> Management Presentation</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MSG id="MSG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">MODEL SPECIFICATION GUIDANCE</a></h3>
+<p>Model Specification is used to drive out the details of the models identified during Domain Analysis. It is a technical delivery with a strong emphasis on modeling techniques, standards, and tools.</p>
+<p>One output from Domain Analysis is a list of models that are needed in order to address the concerns of key stakeholders. Though the models were identified, they were not defined to a level of detail that would ensure consistency. Model Specification builds on Domain Analysis by adding all the necessary detail.</p>
+<p>In addition to model details, Model Specification also includes activities to collect samples and develop meta-models. These artifacts round out the Model Library, which is one of the work products. </p>
+<p>Other work products Model Specification include Hierarchy Models for business functions (and processes) and data. Hierarchy Models are a way to categorize and visualize important business and IT constructs at a domain or enterprise level. The Functional and Data Hierarchies depict functions, processes, activities, data sources, and entities at the domain level, which helps with ensuring IT strategy is geared towards delivering against the business strategy, and with planning exercises such as project prioritization, service justification and service discovery. Finally the service models are used to depict individual services and their relationships. Unique to OUM, a service modeling notation is provided in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling</a> technique.</p>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Model Specification Key Responsibilities" summary="This table list the key roles involved in Model Specification.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Create the Model Library and define the functional and data taxonomy. Organize the review of the library and the changes to the enterprise repository. Create and present the findings presentation at the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top"> Support the organization applying any changes to the enterprise repository. Review the library and the changes to the enterprise repository as well as the findings repository as well as the findings presentation. Create and present an overview of the changes suggested / applied to the organization's enterprise repository for the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Support creation of the Model Library by constructing the sample models. Support the definition of the functional and data taxonomies. Review the library and the changes to the enterprise repository as well as the findings presentation. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Attend the Model Specification wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Control stakeholder participation. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Support the creation of the Model Library and the definition of the functional and data taxonomy. Review and sign the library creation documents. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Support the creation of the Model Library and the definition of the functional and data taxonomy. Implement any changes to the enterprise repository of the organization. Review and sign the library creation documents. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Attend the wrap-up meeting. Represent the interests of SDLC methodology.</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Techniques </h5>
+<p>The following activities are available to assist in this area: </p>
+<TABLE width="100%" border=1 title="Techniques" summary="This table list any techniques that are available to assist with the Model Specification area.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="30%" height="26" bgColor=#CCCCCC><div align="left">Technique Guidance </div></th>
+      <th scope="col" width="70%" bgColor=#CCCCCC><b>Technique Note </b></th>
+    </TR>
+    <TR>
+      <th scope="row" width="30%" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling </a></th>
+      <TD width="70%" align="left" valign="top">This technique provides assistance on the UML modeling of services. </TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top"><a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling </a></th>
+      <TD align="left" valign="top">This technique provides assistance on functional and process modeling. </TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/EDM_DATA_OWN_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Ownership Approach</a></th>
+      <TD align="left" valign="top">This technique provides assistance on enterprise domain modeling based on a data ownership approach. </TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top"><a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/EDM_DATA_REL_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Relationship Approach</a></th>
+      <TD align="left" valign="top">This technique provides assistance on enterprise domain modeling based on a data relationship approach. </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><br>
+    <a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER0702 id="ER0702"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070.2 Define Modeling Strategy for the Enterprise</a></h4>
+<p> This task is partly performed in both the Domain Analysis and Model Specification stages. Please refer to the task description for details of how to perform it.</p>
+<p> The following steps are performed as part of Model Specification:</p>
+<ul>
+  <li>Define detailed model specifications</li>
+  <li>Construct sample models.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=GV096 id="GV096"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_096_DETERMINE_SERVICES_META_DATA_DESC_OVERVIEW.HTM" target="_blank">GV.096 Determine Services Meta Data Description </a></h4>
+<p> You perform parts of this task as part of Model Specification.</p>
+<h5>Customize Meta Models</h5>
+<p>During the task, you determine the meta models for the models that the organization will use. You may use known meta models as input, and customize whenever necessary. </p>
+<p>A meta model is a model that describes the elements, rules, and relationships of a type or class of models in an abstract way. It provides an abstract pattern with which to structure actual instances of models. Meta models are used to communicate the valid structure of a model, constraining it to a desired form.</p>
+<p>To use an example, a view of a Service can be that it is made up of a Contract, an Interface, and an Implementation. The meta model below, depicts these relationships and cardinalities.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/Service_Profile_metamodel.jpg" alt="Example Meta Model Depicting Relationships and Cardinalities" width="577" height="486" border="1" title="Example Meta Model Depicting Relationships and Cardinalities"></p>
+<p>In this example, all Service Models should follow the rules set forth in the Services Meta Model. Doing so ensures that a service will not have more or fewer components and that each service built using this type of model will be consistent with the reference architecture. </p>
+<p><b>Note:</b> this example is an extract from the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling</a> technique, specifically about modeling services for your SOA.</p>
+<p> <b>INPUT:</b> Existing, relevant meta models, if any. </p>
+<p><b>OUTPUT:</b> Enterprise version of meta models.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA040 id="BA040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Business Process Model</a></h4>
+<p> The first part of this task is performed during Model Specification.</p>
+<p>A Functional Hierarchy Model is a way to define a taxonomy of business functions, processes, activities, etc. By creating this type of categorization, it is possible to look at the business at a high level, see everything that is important to the business, and determine which areas to focus on when doing strategic planning. </p>
+<p>The <a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique (specifically the Enterprise Functional Model Notation section) and the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/FUNCTIONAL_PROJECT_IDENTIFICATION.HTM" target="_blank">Functional Project Identification</a> technique provide a great deal of insight into the development of a hierarchical model. These documents describe how the model should be created, how it may be populated, and how it is leveraged during portfolio planning and project delivery.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SMP_modeling_proc.jpg" alt="SOA Modeling Planning Process" width="228" height="289" title="SOA Modeling Planning Process"></p>
+<p>Model Specification includes the development of a Functional Hierarchy Model, however it does not include portfolio planning. The information required to deliver a Functional Hierarchy Model can be found in the <a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique. </p>
+<p>The process, shown at left, involves 3 steps: scoping the functional levels, defining the levels, and populating the top levels for the enterprise (or the given domain). </p>
+<p>The intent of this process is to map out the business at a high level and provide a skeleton that can be filled in later by the organization. It is recommended that you stop once level 1 has been completed (as the method recommends), but you may also choose to continue to drive as deep into populating the hierarchy model as the organization wishes to go. The organization can fill in the remainder of the model later, as time permits. Please refer to the <a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique for an explanation of the levels.</p>
+<p>This process has a greater focus on business-related concepts than technical concepts.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=BA050 id="BA050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities)<br>
+</a></h4>
+<p> Parts of this task, in particular the data ownership approach, are performed during Model Specification. A Data Hierarchy Model should be created. This kind of model provides a way to visualize IT data at the enterprise or domain level. This visualization takes higher-level concepts into account, such as data sources, data ownership, and data semantics. As the scope of data exposure increases via strategies such as SOA and BPM, sources, ownership, and semantics become more relevant strategic concerns.</p>
+<p>The <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/EDM_DATA_OWN_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Ownership Approach</a> technique provides a great deal of insight into the development of a hierarchical data model. This technique describes how the model should be created, how it may be populated, and how it is leveraged during portfolio planning and project delivery.</p>
+<p>This Model Specification includes the development of a Data Hierarchy Model, but does not include project identification. The process, shown below, involves 4 steps: identifying key data sources, identifying key data entities, identifying data authorities, and defining semantic community boundaries.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/Process_Hierarchical_Data Model.jpg" alt="Hierarchical Data Process Model" width="576" height="293" title="Hierarchical Data Process Model"><br>
+</p>
+<p align="left">The intent of this process is to locate key entities and sources of data, determine who is responsible for its management, and what parts of the enterprise share common semantics. This information will prove to be invaluable as logical data models, canonical models, process models, and data services are considered.</p>
+<p align="left">This process requires you to consider how data is managed and viewed from an organizational standpoint. It is more concerned with business semantics and authority than traditional data architecture. Although knowledge of data architecture is valuable, the primary efforts will involve understanding and articulating semantic differences and helping the organization to navigate authorities and produce a model with the consensus of all involved parties. For this reason it has been included in the Business Stream. A simple example data hierarchy model is shown below.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/Hierarchical_Data Model.jpg" alt="Example Data Hierarchy Model" width="576" height="236" title="Example Data Hierarchy Model"></p>
+<p align="left"><b>OUTPUT:</b> Organization Data Hierarchy Model</p>
+<p align="left"><b>RESOURCES:</b> Business Stream consultants and engagement lead</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1803 id="ER1803"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.3 Prepare for and Present Solution Recommendation</a></h4>
+<h5> Reviews </h5>
+<p> At the end of the Model Specification stage, a review and finalization of the work products produced, and a presentation of these work products to the organization is performed.</p>
+<h5> Review and Finalize Work Products</h5>
+<p> During the review and finalization of the work products, all notes and findings from the workshops are processed into a coherent management presentation. It may involve follow-up meetings with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p>The input and outputs of this step depend on where you are in the engagement. Consultants that facilitated workshops are responsible for collecting information and developing the slides. The engagement lead is responsible for ensuring the overall quality and completeness of the presentation. </p>
+<p>At the end of Model Specification, outputs will include a completed Model Library, a Functional Hierarchy Model, and a Data Hierarchy Model. The hierarchy models are not expected to be 100% complete since such an effort could take many months to finish. The Functional Model should have at least levels 0 and 1 completed, and include the definition of all lower levels. See the <a href="../../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling </a>technique for more information on the levels. The Data Model should be complete for enough entities in order to provide a pattern for the organization to finish developing the model. Work may involve follow-up meetings or conversations with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p><b>INPUT:</b> an outline of the Model Library</p>
+<p><b>OUTPUT:</b> Model Library, Functional Hierarchy Model, and Data Hierarchy Model</p>
+<h5> Present Work Products</h5>
+<p> All the work products (based on the outputs listed above) are delivered to the organization as well as an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement lead should determine the attendance of the consulting organization's representatives. The intent is to share findings and results with executive management, and also to re-introduce the next stage and the benefits it provides.</p>
+<p><b>INPUT:</b> Model Library, Functional Hierarchy Model, and Data Hierarchy Model<br>
+    <br>
+    <b>OUTPUT:</b> Management Presentation</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PDPG id="PDPG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">PROJECT DELIVERY PLANNING GUIDANCE</a></h3>
+<p>Project Delivery Planning is used to determine where modeling activities need to be inserted into the organization&rsquo;s software development lifecycle (SDLC). This activity requires knowledge of the organization&rsquo;s SDLC as well as an understanding of the modeling efforts for which you need to account.</p>
+<p>During Domain Analysis and Model Specification a model library and viewpoint library were created. These artifacts will act as inputs to this process. They will be merged with the organization&rsquo;s SDLC in order to determine where additional modeling activities need to be performed. </p>
+<p>It is highly likely that modeling activities already take place within the organization&rsquo;s delivery process. The intent of Project Delivery Planning is to ensure that any additional modeling pertaining to SOA is performed, and at the proper time.</p>
+<p> The intention of inclusion of modeling activities in the organization&rsquo;s SDLC is that it should result in an enhancement to the organization&rsquo;s existing process rather than the adoption of a new process. </p>
+<p>There may be important steps missing in the organization&rsquo;s process with regard to service engineering. If the organization has not thoroughly considered changes to their SDLC to account for service engineering, they may need to explore OUM further, in particular related to service engineering, or participate in an engagement based on the SOA Service Engineering Planning View. This will help ensure that engineering steps are in place in addition to modeling activities.</p>
+<h5>Key Responsibilities</h5>
+<p>This area involves the following roles: </p>
+<TABLE width="100%" border=1 title="Model Specification Key Responsibilities" summary="This table list the key roles involved in Model Specification.  The columns are Role and Responsiblity with subheadings for Implementing Organization and Client (User) roles.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="20%" height="26" bgColor=#CCCCCC><div align="left">Role</div></th>
+      <th scope="col" width="80%" bgColor=#CCCCCC><b>Responsibility</b></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Implementing Organization</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Review the CRU matrix and the Modeling Strategy document as well as the findings presentation. Attend the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Review the organization's SDLC and create the CRU matrix and the Modeling Strategy document. Organize the review of the documents. Create and present the findings presentation at the wrap-up meeting. </TD>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor=#CCCCCC><div align="left">Customer (User)</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Sponsor </th>
+      <TD width="80%" align="left" valign="top">Attend the Project Delivery Planning wrap-up meeting and sign all documents created. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Customer Project Manager </th>
+      <TD width="80%" align="left" valign="top">Attend the Project Delivery Planning wrap-up meeting and control stakeholder participation. </TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Architect </th>
+      <TD width="80%" align="left" valign="top">Support the review and update of the modeling approach. Review and sign the documents. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Enterprise Repository Manager </th>
+      <TD width="80%" align="left" valign="top">Allow access to the modeling assets in the enterprise repository along the SDLC. Review and sign the documents created. Attend the wrap-up meeting.</TD>
+    </TR>
+    <TR>
+      <th scope="row" width="20%" align="left" valign="top">Methodologist</th>
+      <TD width="80%" align="left" valign="top">Support the review and update of the modeling approach. Review and sign the documents created. Attend the wrap-up meeting. </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4 align="left"><B><A
+name=EA095 id="EA095"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process</a></h4>
+<p>During the project delivery planning, you should review the organization&rsquo;s software development process to identify what kinds of models are currently used, and to determine where the identified models best will fit in the process.</p>
+<h5>Assess Customer Software Development Process</h5>
+<p> Begin this effort by reviewing the organization&rsquo;s existing service engineering process. If the organization has adopted OUM, then their version of the OUM-based process simply needs to be captured, and in particular related to service engineering. They may already have adopted OUM for other type of engagements, or they may have already have adjusted the process for Service Engineering, but still be lacking the description of where the models should fit within the process.</p>
+<p> If Software Development Lifecycle (SDLC) activities specifically designed for service engineering have not been defined, then the starting point will be the organization&rsquo;s SDLC. The process should be laid out in block diagram form similar to the process depicted below.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/sample_sdlc.jpg" alt="Example Software Development Lifecycle Process" width="627" height="51" title="Example Software Development Lifecycle Process"></p>
+<p>Note that this example reflects a typical waterfall approach. No iterations, cycles within the process, or reverse directional flows are indicated. This is intentional since the purpose of the exercise is to determine the location of modeling activities rather than to fully document the SDLC process. At this point it is better to simplify the diagram by including all phases rather than all transitions.</p>
+<p>Once the phases have been identified, the next step is to consider where activities related to service engineering take place. Borrowing heavily from service engineering terminology, the following activities should be identified:</p>
+<ul>
+  <li>SOA Requirements Processing &ndash; where project requirements are examined and categorized into an enterprise-level taxonomy, such as a Functional Hierarchy Model as developed during Model Specification.</li>
+  <li>Service Identification and Discovery &ndash; where existing services that match project (functional and data) requirements can be discovered and where project requirements are evaluated to determine if they should be developed as services.</li>
+  <li>Release Planning &ndash; where project schedules are updated to reflect separate threads of engineering for new service development, existing service versioning, and the convergence of service engineering with other development efforts into composite application integration, testing, and deployment.</li>
+  <li>Service Definition &ndash; where the service is defined, boundaries are identified, and the service contract is specified.</li>
+  <li>Service Design &ndash; where high level service design, such as component design, is performed and the service interface is specified.</li>
+  <li>Service Implementation &ndash; where the service is developed and unit tested.</li>
+  <li>Service Test Case Development &ndash; where test cases are written based on the service contract and interface; (black box testing).</li>
+  <li>Service Testing &ndash; where services are tested independently of the application(s) that will use them.</li>
+  <li>Composite Application Integration Testing &ndash; where services are integrated with the intended applications and tested as a full solution.</li>
+  <li>Service Deployment &ndash; production deployment of services including executable code, infrastructure configurations, and supporting schemas, policy files, etc.</li>
+</ul>
+<p> Note that this step will involve the discussion of service engineering approach in order to come to a consensus on which steps are to be performed and how the steps will be identified and described. If none of this has been determined earlier, it is recommended that an engagement based on the <a href="../../../OUM_HOME_SEP.HTM" target="_blank">SOA Engineering Planning View</a> is suggested, as this will define in detail how these activities can be performed.</p>
+<p> In the worst case, this step could include a mini SOA Service Engineering session to educate the organization on best practices for service engineering. Ideally the session can be scoped to simply determine what tasks need to be performed. The organization can go back later and fully document the new SDLC process.</p>
+<p>Merging these activities with the basic SDLC phases might produce a result similar to the following:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/Sample_sdlc_with_svcs.jpg" alt="Example of Merging Activities with the Basic Software Development Lifecycle Phases" width="305" height="291" title="Example of Merging Activities with the Basic Software Development Lifecycle Phases"><br>
+</p>
+<h5 align="left">Review Current Modeling Process</h5>
+<p> When the organization SDLC is clear, you should review the modeling activities performed as part of this process. It is quite likely that the organization is already doing some form of modeling within their current SDLC. At this point you will identify the models they are creating and where in the process they are being created. These models are added to the diagram as shown below.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/Current_model_enhance.jpg" alt="Example ofAdding Models to the Software Development Lifecycle" width="455" height="322" title="Example ofAdding Models to the Software Development Lifecycle"></p>
+<h5>Identify Gaps or Areas for Improvement</h5>
+<p>Now that the current process has been fully defined, the next step is to associate the creation of the previously identified SOA models with the process. This involves going through the model library, model by model, and determining where in the SDLC process each model applies. It should be noted where the model is initially created, where it might be enhanced or updated, and where it is used or read.</p>
+<p>This activity actually provides two results. The first is an update to the SDLC for project managers in order to properly account for and assign tasks, track progress, and estimate project time and effort. The project manager would mostly be interested in points of the process where models are created and updated. Since modeling requires effort, it must be understood what the effort is and when it needs to be performed. </p>
+<p>The second output is a matrix of modeling activities to SDLC activities. It can be developed as a spreadsheet with models or viewpoints on one axis and SDLC activities on the other. Where models and SDLC activities intersect, a &ldquo;C&rdquo;, &ldquo;R&rdquo;, and/or &ldquo;U&rdquo; is placed if that model is created, read, or updated as part of the SDLC activity. The following table is an example using a service process, and Service Model Viewpoints.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SMP_VP.JPG" alt="Example Matrix of Modeling Activities to Software Development Lifecycle Activities" width="572" height="589" title="Example Matrix of Modeling Activities to Software Development Lifecycle Activities">
+<p>This matrix should be maintained along with the model library in order to illustrate where models are applied in the development process.</p>
+<p>It must be noted that a great deal of information is provided in the OUM tasks and technique documents pertaining to applying modeling activities to the development process, as referred to earlier in this document. </p>
+<h5>Review and Document Findings</h5>
+<p> Once all new models have been accounted for in the organization&rsquo;s SDLC, the results should be documented as the work product for this task. If the organization has an up-to-date SDLC document, the modeling activities can be added as an addendum.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=ER1804 id="ER1804"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.4 Prepare for and Present Solution Recommendation</a></h4>
+<h5> Reviews </h5>
+<p> At the end of the Project Delivery Planning stage, a review and finalization of the work products produced and a presentation of these work products to the organization is performed. </p>
+<h5> Review and Finalize Work Products</h5>
+<p>During the review and finalization of the work products, all notes and findings from the workshops are processed into a coherent management presentation. It may involve follow-up meetings with the organization to clarify or elaborate on some of the topics discussed.</p>
+<p>The input and outputs of this step depend on where you are in the engagement. Consultants that facilitated workshops are responsible for collecting information and developing the slides. The engagement lead is responsible for ensuring the overall quality and completeness of the presentation. </p>
+<p><b>INPUT:</b> an initial draft of a document depicting modeling activities included within the organization's SDLC process</p>
+<p><b>OUTPUT:</b> Version 1.0 of a document depicting modeling activities included within the organization's SDLC process and a final presentation</p>
+<h5> Present Work Products</h5>
+<p>All the work products (based on the outputs listed above) are delivered to the organization as well as an executive presentation. The executive sponsor of this service should determine the attendance of enterprise representatives. The engagement lead should determine the attendance of the consulting organization's representatives. The intent is to share findings and results with executive management, and also to re-introduce the next stage and the benefits it provides.</p>
+<p><b>INPUT:</b> Version 1.0 of a document depicting modeling activities included within the organization's SDLC process and a final presentation<br>
+    <br>
+    <b>OUTPUT:</b> Management Presentation</p>
+<p> The discussion following this end presentation of the engagement may identify some questions or challenges that need to be addressed for the engagement to be accepted. It should be positioned, during the presentation, that the enterprise executive sponsor takes responsibility for the resolution of any such unresolved items. This alleviates any need to get the enterprise executive audience back together to deliver another version of the presentation, and expedites the completion of deliverables by creating a single interface point. When the take-away items are completed to the satisfaction of the executive sponsor, the engagement project leader should obtain written approval of the acceptance of the engagement. This acceptance is done as part of Post Delivery, task SM.050 - Gain Acceptance.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PDG id="PDG"></A></B><a href="SMP_OVERVIEW.HTM#SGPOD" target="_blank">POST DELIVERY GUIDANCE</a></h3>
+<p>Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned.</p>
+<h4><B><A
+name=CMM040 id="CMM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></h4>
+<p>After the project has been delivered and accepted any feedback should be summarized and submitted to Oracle's Global Methods team at <a href="mailto:ominfo_us@oracle.com">ominfo_us@oracle.com</a>. Feedback should include the following:    
+<ul>
+  <li> overall experience, both positive and negative regarding the use of the Planning view</li>
+  <li>major challenges and roadblocks encountered during service delivery and how these issues were addressed</li>
+  <li>suggested improvements to the delivery process</li>
+  <li>suggested improvements to the templates</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

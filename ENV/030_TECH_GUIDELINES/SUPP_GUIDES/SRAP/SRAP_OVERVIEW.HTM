@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Reference Architecture Planning Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Reference Architecture Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#WHAT">What is SOA Reference Architecture Planning?</option>
+                            <option value="#WHEN">When Do You Use the SOA Reference Architecture Planning View</option>
+                            <option value="#WHATPROC">SOA Reference Architecture Planning Overview</option>
+                            <option value="#WHATPROG">What Other Views Relate to the SOA Governance Planning View?</option>
+                            <option value="#HOWOUM">How Does SOA Reference Architecture Planning Relate to OUM?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_RAP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) REFERENCE ARCHITECTURE PLANNING OVERVIEW </h2>
+<h3><b><A 
+name=WHAT id="WHAT"></A></b>WHAT IS SOA REFERENCE ARCHITECTURE PLANNING?</h3>
+<p>The SOA Reference Architecture Planning View and Supplemental Guide are used to help organizations develop an architectural vision for SOA, as well as a plan, referred to as a roadmap, to execute against that vision. The vision defines a set of principles and architecture to create consistency across the enterprise. The roadmap defines a set of incremental steps to progress an organization from their current state of SOA infrastructure to their architectural vision. As with all SOA planning views, this view is used to plan one particular aspect of the SOA strategy and can be combined with other SOA planning views based on the organization&rsquo;s needs.</p>
+<p>As organizations begin to embrace SOA for the value and benefits it offers, they realize the need to create consistency across the enterprise in various areas of architecture and technology. They need to establish a common set of principles to drive the convergence to a desired vision. The SOA Reference Architecture Planning view presents an effective and pragmatic plan to achieve that vision.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRAP_OV_SMM.PNG" alt="SOA Maturity Model" width="522" height="415" title="SOA Maturity Model"></p>
+<p>Referring to the SOA Maturity Model above, the primary focus of the SOA Reference Architecture View is the Architecture Domain, however certain aspects of other domains are touched upon as they relate to reference architecture and infrastructure development plans. The view provides a reference architecture tailored to the objectives and architectural vision of the organization, and a roadmap for the establishment of SOA infrastructure based on current and future development projects. The reference architecture describes a future vision of SOA, roughly 2-3 years out, based on business and IT objectives, drivers, and principles. It provides guidance for future projects around architecture, technologies, products, and best practices to drive convergence on a common, unified vision of SOA. It documents the organization and governance and funding model perceived by the business to support the SOA vision. And it addresses the effects SOA will have on manageability, availability, scalability and security.</p>
+<p>The roadmap defines a set of incremental steps to progress an organization from their current state of SOA infrastructure to their architectural vision. In collaboration with the organization, relevant information is captured about the business, the current state and vision of IT, and key in-flight and future projects, and with that as a basis develop the SOA reference architecture and infrastructure roadmap. </p>
+<p>This view does not attempt to satisfy all aspects of the organization and governance, projects and applications, and building blocks domains. To clarify the coverage this service provides, the following limitations are mentioned:</p>
+<ul>
+  <li><b>Business and Strategy</b> &ndash; One of the first actions should be to review the business strategy and the business benefits of the SOA so as to tailor the reference architecture to the business and ensure this work will bring real value and serve the business.</li>
+  <li> <b>Organization</b> &ndash; The Roadmap for the implementation of the SOA Reference Architecture defined later in this engagement takes into account the specifics of the organization and how the organization can absorb the changes. If it proves difficult to see how the current organization can roll out the target architecture it may be that a change in organization is required. In this case it is recommended to follow the SOA Governance view to review the governance model, which includes a review of the supporting organization.</li>
+  <li> <b>Governance</b> &ndash; As for the organization itself, the governance is an important part of the success of the rollout of SOA in general and of the SOA reference architecture in particular. If it is determined that future vision architecture is not aligned with Governance and funding plans, then it is recommended to use the SOA Governance view in an engagement to create the necessary alignment for successful SOA.</li>
+  <li> <b>Projects Portfolio and Services</b> &ndash; This view includes an infrastructure roadmap that maps out infrastructure construction plans with regards to key in-flight and future projects. However, an engagement based on this view should preferably be limited to a small number of projects (1-3), and to be scoped to infrastructure concerns only. There should be no attempt to map out all current and future projects. The view is neither intended to use in the planning other SOA assets, such as business services and composite applications.</li>
+  <li> <b>Operations, Administration and Management</b> &ndash; The rollout of the SOA reference architecture and underlying SOA infrastructure will have an impact on the operations, administration and management. Although this view may not cover the details of these aspects, it will be an significant input for the operation teams as the reference architecture will also cover the implementation and deployment of the infrastructure as well as the roadmap for rollout out the various infrastructure components.</li>
+  <li> Information &ndash; Parts of the SOA reference architecture may directly cover the information aspect of the SOA, such as the choice to create (or not) data services or the need for Master Data Management for instance.</li>
+</ul>
+<h4>Next Generation Infrastructure</h4>
+<p>As companies transition from siloed organizations, applications, and data to the fluid form of IT environment that SOA offers, it is important to consider the foundation that this transition will be built upon. A fluid IT environment requires shared infrastructure and well established common standards. For example, in the not too distant past, new systems often had to include their own proprietary networks, client hardware, and security mechanisms. The lack of commonly accepted standards, coupled with the mindset of autonomous development teams helped foster the build-out of very siloed applications. Over time, as standards emerged around network, security, and communications protocols, a common infrastructure began to emerge. New systems no longer had to include these elements. Instead, they adopted the new universally accepted standards and technologies that allowed them to leverage common infrastructure. This helped to improve the state of application integration and reduce the cost of new applications at the same time.</p>
+<p> Since then, even more aspects of computing have re-emerged as shared infrastructure. For example, disk subsystems and tape backup silos are now quite common. These shared assets have replaced proprietary peripherals by offering standards-based access at greatly reduced cost. In each case the justification was the same &ndash; why continue to promote costly proprietary solutions when shared infrastructure and open standards save time and money?</p>
+<p> SOA offers a continuation of this trend. The next generation infrastructure can include even more value in the form of shared services as well as the capabilities to discover, version control, monitor, and access those services. This next generation infrastructure is an important concept for organizations to consider as part of their future vision. In doing so, they should be aware of infrastructure components that are needed and the benefit of products built specifically for this vision. Products that are no longer tied to expensive, proprietary technologies, but instead offer universal access via open standards at a reduced cost of ownership.</p>
+<p> This view can be used to help define an organization's next generation IT infrastructure. Through the creation of SOA reference architecture, this infrastructure is defined, given purpose, and established on a roadmap.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHEN id="WHEN"></A></b>WHEN DO YOU USE THE SOA REFERENCE ARCHITECTURE PLANNING VIEW?</h3>
+<p>This view can best be used when in a situation where the organization has a need to develop an architectural vision for SOA, and a plan to execute against that vision. The organization has a need to create consistency across the enterprise in various areas of architecture and technology, and to establish a common set of principles to drive convergence on a desired vision, as well as a pragmatic plan to achieve that vision. </p>
+<p> However, not all situations are ideal. Some organizations may be just considering SOA, while others may only be approaching SOA at a departmental level. The most suitable organization is:</p>
+<ul>
+  <li> embarking on a SOA transformation, that is, the organization's future IT vision includes SOA as a strategy</li>
+  <li> backed by the organization's Line(s) of Business (LOBs), and senior IT management</li>
+  <li> acknowledges the importance of a &ldquo;service infrastructure&rdquo; and is in need of defining their vision in the form of a reference architecture</li>
+  <li> in need of a roadmap to plan their SOA infrastructure build-out</li>
+  <li> able to schedule time of their key stakeholders to participate sufficiently in the engagement</li>
+</ul>
+<p>The organization may have already taken steps to create a SOA, or may be just beginning to articulate a vision. Either way, the current level of SOA maturity is not important, but is useful to know during scoping. </p>
+<h4>Value Proposition</h4>
+<p> The use of this SOA Reference Architecture Planning View provides the following value and work products:</p>
+<ul>
+  <li>It establishes an SOA reference architecture, aligned with business strategy and drivers, to guide future projects towards a common SOA vision. The reference architecture is a higher level of abstraction than ordinary project architectures, as it is meant to provide guidance to all projects as opposed to being a specification for any one project. The reference architecture represents a desired future vision, approximately 2-3 years into the future.</li>
+  <li> It provides a roadmap to plan the build-out of SOA infrastructure, e.g., infrastructure assets, such as ESB, registry, and security products, and common infrastructure services, such as security, logging, and error handling services. Certain legacy application connectivity services may also be included, as appropriate. The roadmap includes 1-3 current or future projects identified by the organization for deployment on the SOA infrastructure in the roadmap planning horizon.</li>
+  <li> It helps drive agility through the specification of standards-based development and common reusable interfaces.</li>
+  <li> It helps maximize flexibility and reusability of existing applications and infrastructure.</li>
+  <li> It helps realize reliability, scalability, availability and security across the enterprise.</li>
+  <li> It enables on-going management of the SOA reference architecture and SOA roadmap.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROC id="WHATPROC"></a></b>SOA REFERENCE ARCHITECTURE PLANNING OVERVIEW </h3>
+<p>The following is a high-level workflow for the SOA Reference Architecture Planning View: </p>
+<p align="center"><a name="SRAPOD" id="SRAPOD"></a><img src="../../../010_COMMON_FILES/RAP_OVERVIEW.PNG" alt="SOA Reference Architecture Planning High-Level Workflow" width="1023" height="781" title="SOA Reference Architecture Planning High-Level Workflow"></p>
+<p>There are six areas in the SOA Reference Architecture Planning view, each with its own set of tasks.</p>
+<p><b>MOBILIZATION</b> &ndash; During Mobilization the foundation for the engagement is made. This includes scoping of the engagement, determining of the level of effort, and identifying enterprise participants and scheduling constraints. It also includes the identification and discovery of relevant existing enterprise documentation, the identification and assignment of the required enterprise resources, including the level of effort required and schedule for these enterprise resources.</p>
+<p>Customization of this view or combining elements of this view with other SOA views should be done at this point of time. In fact, if multiple views are combined, then the Mobilization Phases of each view are effectively combined in order to fully scope, schedule, and staff the engagement. Additional guidance on Mobilization can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#MG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>. </p>
+<p><b>BUSINESS AND IT DRIVERS</b> &ndash; This is actually the first area of the actual engagement execution. During Business and IT Drivers, the business and IT drivers are collected that affect future vision reference architecture decisions. You should also collect the benefits and challenges that management perceives to be associated with SOA. The results are factored into reference architecture workshops and listed in the reference architecture document. Additional guidance on Business and IT Drivers can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#BITDG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>.</p>
+<p><b>CURRENT REALITY</b> &ndash; In order to provide a starting point for the SOA Infrastructure Roadmap, an understanding of the current state of IT must be obtained. An assortment of workshops, interviews, and questionnaires may be used to collect information on the current enterprise architecture, infrastructure, technologies, and products, as well as IT organizational structures, governance, and project funding models. The Current Reality area involves both business and technical resources, but with an extra emphasis on staff with Technical Infrastructure knowledge, as most information gathered pertains to areas of technology. A Current Reality Definition document and executive presentation are produced, and the current reality is used as a starting point for the infrastructure roadmap. Additional guidance on Current Reality can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#CRG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>.</p>
+<p> <b>FUTURE VISION</b> &ndash; The purpose of Future Vision is to help the organization define a future vision SOA reference architecture, roughly 2-3 years out. Using a series of workshops, you will guide the enterprise representatives through various aspects of SOA, infrastructure, and technology. The result is an SOA reference architecture that is tailored to the organization&rsquo;s business and IT drivers, vocabulary, technology preferences, and architectural standards. The Future Vision area mostly involves Technical Infrastructure and Engagement Lead resources. The SOA Reference Architecture document and executive presentation are produced during this area. The future vision also factors into the infrastructure roadmap. Additional guidance on Future Vision can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#FVG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>.</p>
+<p align="left"><b>ROADMAP</b> &ndash; The Roadmap area of this view provides the organization with an infrastructure roadmap. Its purpose is to plan an incremental transition from the current state of infrastructure to the future vision. The team uses information from the Current State and Future Vision phases to produce a preliminary gap analysis. They you work with the organization to finalize the gap analysis, plan roadmap increments, and identify 1-3 projects that may contribute to the infrastructure transition. Projects are then interviewed to further qualify their infrastructure plans and finalize the roadmap. This area mostly involves the Technical Infrastructure and Engagement Lead resources. The result is an Infrastructure Roadmap document and a final executive presentation. Additional guidance on Roadmap can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#RG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>.</p>
+<p align="left">Review the supplemental task guidance for <a href="SRAP_TASK_GUIDELINES.HTM#ER030" target="_blank">ER.030, Set and Agree Plan for Envision Engagement</a> for more details about how this type of engagement may be planned.</p>
+<p><b>POST DELIVERY</b> - Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned. Additional guidance on Post Delivery can be found in the <a href="SRAP_TASK_GUIDELINES.HTM#PDG" target="_blank">SOA Reference Architecture Planning Task Guidelines</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROG id="WHATPROG"></a></b>WHAT OTHER VIEWS RELATE TO THE SOA REFERENCE ARCHITECTURE PLANNING VIEW? </h3>
+<p>Refer to the <A 
+href="../../../../OUM/OUM_HOME_SOAINOUM.HTM" target=_blank>SOA in OUM</A> page for access as well as descriptions for all the SOA views in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES SOA REFERENCE ARCHITECTURE PLANNING RELATE TO OUM? </h3>
+<p>The SOA Reference Architecture Planning process has been mapped to the Envision focus area of Oracle Unified Method to help show which tasks would typically be performed during each of the four areas from Mobilization to Roadmap. </p>
+<p>See the <a href="../../../050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">mapping document</a> and <a href="../../../OUM_HOME_RAP.HTM" target="_blank">SOA Reference Architecture Planning</a> view for applicable OUM tasks. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

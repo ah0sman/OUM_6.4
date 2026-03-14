@@ -1,0 +1,533 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>RA.024 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>RA.024 - DEVELOP USE CASE DETAILS</h2>
+<!--BeginDesc-->
+<p>The purpose of this task is to define the details for each use case within the Use Case Model (RA.023). The process begins during the Inception phase and iteratively continues throughout the Elaboration phase for each use case under consideration.&nbsp; The template that is used for writing use case details is called the Use Case Specification. The template for this task contains sections that define requirements and other elements of information that are important to understand the actor&rsquo;s needs; thus enabling a design and implementation of a solution to best meet those needs. The primary focus of this task is to identify and write requirements in the form of scenarios; step-by-step descriptions of interactions between the Actor(s) and the system under discussion (SuD). There are three types of scenarios: </p>
+<ol>
+  <li> <b>Main Success Scenario</b>: Describes the most frequent path chosen by the actor while interacting with the use case.&nbsp; This scenario does not include conditional branches, but instead focuses on describing the sequential steps from the start of the use case to the end. The Main Success Scenario is also known as the Basic Flow.</li>
+  <li> <b>Alternate Scenarios</b>: Describes the conditional paths that branch from the Main Success Scenario (Basic Flow); perform some alternate steps, and then return back to the main flow.</li>
+  <li> <b>Exception Scenarios</b>: Describes the conditional paths that branch from the Main or Alternate Scenarios; perform some alternate steps, but does not return back to the flow from which it came. </li>
+</ol>
+<p>Use case details are made up of the following: </p>
+<ul>
+  <li>Pre-Conditions and Post-Conditions</li>
+  <li>Trigger</li>
+  <li> Basic Flow (that is, the Main Success Scenario) </li>
+  <li>Alternate Flows (An Alternate Flow includes only the unique steps of an Alternate Scenario plus any additional post-conditions.) </li>
+  <li>Exception Flows (An Exception Flow includes only the unique steps of an Exception Scenario plus the failed post-conditions.) </li>
+  <li>Extensions or Inclusions (use case interdependencies)</li>
+</ul>
+<p>The first iteration of creating use case details is to simply list the scenarios for a given use case without describing the details. Subsequently, these scenarios will be iteratively refined until all the details are described.&nbsp; This can be done initially via workshops or interviews with users and system analysts, and then iteratively refined independently.</p><!--EndDesc-->
+<!--BeginAIRDDesc--><p>In a commercial off-the-shelf (COTS) application implementation employing a requirements-driven approach, the Use Case Model complements business process models in helping the implementation team gain a thorough understanding of business requirements. At a minimum, you should perform this task for those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. Completion of this task for all other business requirements is considered best practice, as it will contribute to a better understanding of requirements and can be leveraged to prepare a number of other required work products downstream, such as test scenarios and business procedures documentation.</p><!--EndAIRDDesc-->
+<!--BeginAISDDesc--><p>In a commercial off-the-shelf (COTS) application implementation employing a solution-driven approach, this task is generally performed only for those requirements that must be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. However, the development of the Use Case Model for other requirements should also be considered for the solution-driven approach whenever a more thorough understanding of business requirements is deemed necessary.</p><!--EndAISDDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, this task involves a review of the customer's existing Use Case Specifications as a means of understanding how actors currently interact with the system.</p><!--EndSUDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>RA.024.1</h4>
+<p><a href="../040_ACTIVITY/BACTDUCD_DEVELOP_USE_CASE_DETAILS.HTM" target="_blank">B.ACT.DUCD Develop Use Case Details </a></p>
+<h4>RA.024.2</h4>
+<p><a href="../040_ACTIVITY/CACTFR_FINALIZE_REQUIREMENTS.HTM" target="_blank">C.ACT.FR Finalize Requirements </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Use Case Specification</b></p>
+<p>The Use Case Specification is comprised of a set of use case details (specifications) for each individual use case, preferably at the end in fully-dressed formats. The following supplementary documentation may also be included:</p>
+<ul>
+  <li>Data Formats</li>
+  <li>Business Rules</li>
+  <li>UI Requirements</li>
+  <li>Performance Requirements</li>
+  <li>Availability Requirements </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Define the scope and purpose of the use case.</td>
+    <td>Context of Use<br>
+        <br>
+        Scope and Level</td>
+    <td>Write a brief statement explaining the goal of the actor when using the behavior that the use case describes. The <b>Context of Use</b> also includes the frequency and under what conditions the use case is executed.<br>
+		<br>
+        <b>Scope</b> describes the level in which the system is inserted in the use case.<br>
+        - Am I checking up on organization or on system? <br>
+        - Am I describing its internal structure or not? <br>
+		<br>
+        In general, OUM prescribes writing Use Case Specifications as system black-box scope level. In this case, anything that the actor is aware the system is doing, is shown in the Use Case Specification. See the work product appendix for a list of all of the design scope descriptions that can be used.<br>
+		<br>
+        <b>Level</b> - In general, OUM prescribes writing Use Case Specifications as user-goal level. See the work product appendix for a list of the other levels that could be used.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Identify the Primary and Secondary Actors.</td>
+    <td>Primary and Secondary Actors </td>
+    <td>List the primary actor(s) who triggers the use case and the secondary actor(s) who supports the functionality</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Identify Stakeholder and Interest for the use case.</td>
+    <td>Stakeholder and Interest </td>
+    <td>Name the stakeholders and a brief description of their interest in the use case.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>List Assumptions.</td>
+    <td>Assumptions</td>
+    <td>Identify any assumptions; an assumption is a fact that we hope is true, but we will not test to ensure it is true. These assumptions should be considered risks and should be specific to this use case. You should list any <strong>Assumptions</strong> about the use case that will assist the reader in understanding the intended functionality.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Identify Pre-Conditions.</td>
+    <td>Pre-Conditions</td>
+    <td>The <b>Pre-Conditions</b> identify conditions that should be satisfied in all scenarios before any scenario (main or alternate) can begin. A pre-condition is a fact that we will test to ensure it is true before allowing the use case to start.<br>
+		<br>
+        Use the defined actor and goal information from the Use Case Model (RA.023).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Identify Post-Condition.</td>
+    <td>Post-Condition</td>
+    <td>The <strong>Post-Condition </strong>component describes the state the system will be in after the use case finishes successfully. Often refers to the state of the data (i.e. A purchase order has been entered into the system).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Identify the Trigger for the use case.</td>
+    <td>Trigger</td>
+    <td>The <b>Trigger</b> is the action that is performed by the actor who is the initiator for the use case. Generally, it corresponds to the first sentence of the brief use case description from the Use Case Model (RA.023) and is the same as the first step of the Main Success Scenario. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Write the Main Success Scenario.</td>
+    <td>Main Success Scenario </td>
+    <td>The <strong>Main Success Scenario</strong> contains usually 3 to 9 steps with descriptions of how the interaction with the system satisfies the primary actor goal. Use the left hand side of the table to indicate what the actor does, and the right hand side to indicate what the system does. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Write the Extension - Alternate flow scenarios.<br>
+		<br>
+		For each step in the main success scenario, identify failure and extension conditions. Before treating the exceptions, brainstorm all the possible alternatives (failures or alternate success paths) for each step.</td>
+    <td>Extension - Alternate Flows<br>
+        <br>
+		Alternate Flow Post-Conditions</td>
+    <td>The E<b>xtension - Alternate Flows</b> are extension points which start from one of the steps in the Main Success Scenario and continues to describe the steps to correct the condition and returns to the main flow.<br>
+		<br>
+        Each alternate flow may produce <b>Alternate Flow Post-Conditions</b> that augment those stated for the main success scenario.<br>
+        <br>
+       <b>Technology and Data Variations List</b> (optional) Extensions serve to express that what the system does is different from the main success scenario, occasionally you want to express that there are several different ways it can be done. What is happening is the same, but how it is done may vary. Almost always this is because there are some technology variations you need to capture, or some differences in the data captured.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Write the Exception flow scenarios.<br>
+		<br>
+        First identify the extension conditions and only after that start detailing the recovery steps that handle them.</td>
+    <td>Exception Flows<br>
+        <br>
+		Exception Flow Failed Post-Condition(s)</td>
+    <td>The <b>Exception Flows</b> are extension points which start from one of the steps in the Main Success Scenario or an Alternate Flow and continues to describe the steps that cause the use case to fail.&nbsp;Describe any steps that would cause the actor to leave the use case without achieving the intended goal. These flows do not return to the Main Success Scenario.<br>
+		<br>
+        <b>Exception Flow Failed Post-Conditions</b> that describe what needs to happen when the actor leaves the main flow and cannot complete the main goal of the use case.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Consider relationship with other use cases and actors. Use with care the UML relationships with other use cases (includes and extends). Also consider to generalize use cases.</td>
+    <td>Includes and Extends Relationships<br>
+        <br><br>
+		New relationships of Actors and Use Cases<br>
+        <br>
+        Use Case Generalizations</td>
+    <td>The <b>Includes and Extends Relationships</b> and the <b>New Relationships of Actors and Use Cases</b> identifies the relationships with other use cases. This is an Advanced Use Case Diagramming technique. If they exist, note the Includes and Extends relationships (references to other use cases) within the Main or Extension - Alternate scenarios.<br>
+		<br>
+        Thinking about which actors use one use case can reveal that some actors are redundant. However, do not spend too much time on this. At this point, it is better to have more actors than miss an important one. Do not forget that actors are roles. If necessary, you can map one actor as a specialization of another one. (that is, AP Actor can be used to indicate anyone from the AP Department such as the AP Clerk, AP Supervisor, etc.)
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>For each use case, consider what updates are needed to other supplemental material. Use cases should not make direct reference to data formats or include user interface details. It is important that use cases become as stable as possible and these types of information make use cases less&nbsp;resilient to change and more difficult to read. Nonetheless, this information can be stored in supplemental work product components so that the information is not lost. However, avoid going into too much details and getting <em>analysis paralysis. </em></td>
+    <td>Glossary<br>
+		<br>
+        Data Dictionary<br>
+		<br>
+        Business Rules<br>
+		<br>
+        References<br>
+		<br>
+        Decisions</td>
+    <td>Store information on any terms in the <b>Glossary</b>.<br>
+		<br>
+        The <b>Data Dictionary</b> includes a conceptual class diagram, some user interface prototyping and other supplemental documents.<br>
+		<br>
+        Generally, business rules should be included in a supplemental document. <b>Business rule</b> information should be stored in the Business Rules. Occasionally, there are business rules that only makes sense in the context of the use case and these may be included with that use case as a text note.<br>
+		<br>
+		Include references to other artifacts that may provide additional information in <b>References</b><br>
+		<br>
+        Store information on key decisions made to resolve issues under <b>Decisions</b></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p> Remember that OUM is an iterative process. This task is performed as part of an iterated task group. See the approach section for RA.023, Develop Use Case Model for guidelines on how the use cases can be grouped and iterated. Use cases help the functional and technical developers standardize requirements to ensure the data model supports the required business functions. Detail is added during the development cycle to better define the data and functional models.</p>
+<p> Normally you would first detail the more risky and architecturally-significant use cases as these use cases would have the highest priority. Sometimes this process results in new actors, use cases or risks being considered. This is one of the practices that make OUM risk-driven. </p>
+<p> Developing use case details is best done in the order of the task steps above.&nbsp;Specifically, prevent identifying extensions too soon, as one can easily loose valuable time by getting lost in too much detail too early. </p>
+<strong>Involve the ambassador users in this process as much as possible to help identify the use case details. Dependant on the kind of use cases, you can effectively use workshops in this process. </strong>
+<p>Use a peer-review process to assure quality and completeness of the use cases before making the model available to a broader public. </p>
+<p>During this process, new actors and use cases may be discovered. This should be reflected in the Use Case Model (RA.023), and sometimes even in the Business Use Case Model (RA.015). Ensure that your models are updated when necessary.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4>Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#RA024" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#RA0241" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>Siebel Customer Relationship Management (CRM)</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Siebel CRM implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_TASK_GUIDELINES.HTM#RA024" target="_blank">task-specific supplemental guidance</a>. To access all Siebel CRM supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_SUPP_GUIDE.HTM" target="_blank">OUM Siebel CRM Supplemental Guide</a>.</p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#RA024" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<h4>SOA Project Delivery Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Project Delivery implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_TASK_GUIDELINES.HTM#RA024" target="_blank">task-specific supplemental guidance</a>. To access all SOA Project Delivery supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">OUM SOA Project Delivery Supplemental Guide</a>. </p>
+<h4>WebCenter (formerly E20) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Webcenter implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_TASK_GUIDELINES_ELABORATION.HTM#RA0241" target="_blank">task-specific supplemental guidance</a>. To access all WebCenter supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_SUPP_GUIDE.HTM" target="_blank">OUM WebCenter Supplemental Guide</a>.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="18%" scope="col"><div align="left">Role</div></th>
+    <th width="76%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Analyst</div></th>
+    <td>Detail the use cases.&nbsp;</td>
+    <td><div align="center">100</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ambassador User</div></th>
+    <td>Provide information to detail the use cases.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<h4>RA.024.1</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="36%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="64%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Model (RA.023.2)</div></th>
+    <td>The use cases in the Use Case Model are those that are detailed in this task, following the priorities given for each use case.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Validated Conceptual Prototype (RA.030)</div></th>
+    <td>The review of the Conceptual Prototype may reveal requirements that should be reflected in the use cases.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Reviewed Analysis Model (AN.110)Reviewed Design Model (DS.160) </div></th>
+    <td>The Reviewed Analysis Model and Reviewed Design Model provide details that should be taken into account while detailing the use cases.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description (RD.130.1) </div></th>
+    <td>The Architecture Description describe factors that influence application architecture and describe strategies how to deal with these factors. These factors and strategies should be taken into account while detailing the use cases. </td>
+  </tr>
+</table>
+<h4>RA.024.2</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="36%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="64%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Model (RA.023.3)</div></th>
+    <td>The use cases in the Use Case Model are those that are detailed in this task, following the priorities given for each use case.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Validated Functional Prototype (RA.085)</div></th>
+    <td>The review of the Functional Prototype may reveal new or changes to requirements that should be reflected in the Use Case Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Reviewed Analysis Model (AN.110) Reviewed Design Model (DS.160) </div></th>
+    <td>While analyzing and designing the use cases, refinements and corrections in the Use Case Model may be necessary.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architectural Prototype (IM.020) </div></th>
+    <td>The outcome of this prototype may result in new requirements that should be reflected in use case details.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Reviewed Requirements Specification (RD.150.2) </div></th>
+    <td>The Reviewed Requirements Specification may influence the use case details. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Technique</div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../050_TECHNIQUE/USE_CASE_LEVELS.HTM" target="_blank">Use Case Levels</a></div></th>
+    <td><div align="left">This technique provides guidance in utilizing Cockburn's symbols to indicate the design scope and goal level of use case documentation. It is very useful for for projects where systems involve a large degree of custom development.</div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_USE_CASE_SPECIFICATION.DOCX</a></div></th>
+    <td>MS WORD - Use this template if you choose to create the Use Case Specification in MS Word.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.PPTX" target="_blank">RA-024_USE_CASE_SPECIFICATION.PPTX</a></div></th>
+    <td>MS POWERPOINT - Use this template if you choose to create the Use Case Specification in MS PowerPoint.</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Tool</div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/gswUseCaseModeling.pdf" target="_blank">Getting Started with Use Case Modeling </a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/gettingstartedwithactivitymodeling.pdf" target="_blank">Getting Started with Activity Modeling</a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/use_case_details_viewlet_swf.html" target="_blank">Use Case Details Viewlet </a></div></th>
+    <td>JDeveloper - You can use JDeveloper use case templates in fully-dressed and casual formats.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/activity_diagram_viewlet_swf.html" target="_blank">Activity Diagram Viewlet</a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="ExampleScen" title="Example Scenarios" summary="This table lists any example scenario information for this task with any relevant comments. It is organized with columns for Example Scenario and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left"><a name="EXAMPLES" id="EXAMPLES"></a>Example Scenario</div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM">FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD (OUM) </a></div></th>
+    <td>Provides a scenario example that will be useful when performing this task</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Examples" title="Examples" summary="This table lists any example work products for this task with any relevant comments. It is organized with columns for Example and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Example</div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC001_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC001_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC001 Monitor Supplier Performance for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC002_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC002_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC002 Acknowledge Product Receipt for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC003_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC003_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC003 Create Online Sales Order for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC004_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC004_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC004 Request Online Bid for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC005_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC005_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC005 Apply Rebates for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC006_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC006_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC006 Process Supplier Financial Entries for Ski-NOW Case Study Example </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RA/Examples/RA-024_SKI_NOW_UC007_USE_CASE_SPECIFICATION.DOCX" target="_blank">RA-024_SKI_NOW_UC007_USE_CASE_SPECIFICATION.DOCX </a></div></th>
+    <td>UC007 Capture Recycling Pickup for Ski-NOW Case Study Example </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS</h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Use Case Specification is used in the following ways: </p>
+<ul>
+  <li>to represent an important part of the functional requirements</li>
+  <li>to verify customer and Oracle Consulting understanding of the project scope</li>
+  <li>to drive project execution and assist in task prioritization</li>
+  <li>to assist in linking the models from the requirement to the tested code (traceability)</li>
+  <li>as the basis for effort estimation (in the beginning through the Actor-Goal List and at the end of Elaboration, not only the scope is better understood but also the architecture has been tested and the team can create a more precise estimate)</li>
+  <li>to assist in eliciting all functions, users of the system and exceptions the system should support</li>
+</ul>
+<p> Distribute the Use Case Specification as follows: </p>
+<ul>
+  <li>at the very beginning of the process, to user representatives, executives, project managers, analysts and system architects for examination </li>
+  <li>later, to the project team as a strategic tool</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Is the main scenario too long (i.e., more than 10 steps)? </li>
+  <li> Is each step a phrase stating a goal that succeeds? </li>
+  <li> Does each step indicate who is responsible for the action (actor or system)? </li>
+  <li> Are the&nbsp;the&nbsp;use&nbsp;cases&nbsp;free&nbsp;of any references to user interface or data format&nbsp;details? A use case visual sketch/prototype can be created but the use case text itself should not make direct references to it. </li>
+  <li> Are there any IF statements (preferably use validate)? </li>
+  <li>Is the system capable of identifying the conditions?</li>
+  <li>Is every use case provided with enough detail to be able to realize it?</li>
+</ul>
+<p> Check task, Develop Use Case Model (RA.023), for additional quality criteria for use cases.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

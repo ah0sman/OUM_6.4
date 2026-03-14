@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PT.030 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>PT.030 - DEFINE PERFORMANCE TESTING STRATEGY </h2>
+<!--BeginDesc-->
+<p>The purpose of this  task is to define the scope and objectives of Performance Testing for the project and outline the strategy that will be used to conduct the performance test.&nbsp; The approach to performance testing is top down in nature and attempts to tie the transaction model and database used for performance testing back to actual or predicted scenarios (point-in-time processing snapshots) in the production system. Although other approaches to the problem exist, they tend to be more bottom-up in nature, with the result that relating the results back to the actual system being modeled is difficult and unclear. Performance tests typically are a simulation of complex systems and require resources with the appropriate skills to interpret the results, approximate the impact to the planned production system and develop recommendations to improve performance.</p>
+<p>If your project includes Performance Testing, you should perform this task.</p><!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTPPM_PLAN_PERFORMANCE_MGMT.HTM" target="_blank">B.ACT.PPM Plan Performance Management </a></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Performance Testing Strategy</b></p>
+<p>The work product documents the scope, objectives, strategy and requirements for the project Performance Testing effort. It outlines the Performance Testing approach that is to be followed, and the strategy for achieving the stated objectives. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td> Review the Project Management Plan (PMP) and other relevant project library documents for requirements related to Performance Testing.<br></td>
+    <td>None</td>
+    <td>See Prerequisites below.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Document the context for the Performance Testing.</td>
+    <td>Introduction</td>
+    <td>The Introduction details the purpose of the work product, provides background information on the project, and includes references to related documents.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Identify Performance Testing scope and objectives </td>
+    <td>Scope and Objectives<br></td>
+    <td>The Scope statement describes the scope of Performance Testing for the project in as much detail as possible. Scope statements define which solution elements are in or out of scope for the project. Examples of elements that can define the scope include:
+        <ul>
+          <li> Specific Business Processes or Functions within to be Performance Tested </li>
+          <li>Applications to be tested </li>
+          <li>Technical Architecture Configurations to be tested</li>
+          <li>Interfaces, Data Conversion Programs, and Databases included in Performance Testing Scope</li>
+        </ul>
+        It is equally important to clearly articulate which project elements are out of scope for the formal Performance Test effort. Elements that are out of scope should be covered by the Performance Management processes put in place in the Performance Management Requirements and Strategy (PT.020)<br>
+		<br>
+        The Objectives describe the specific goals and objectives of the Performance Test. It is critical that the objective be clearly defined and agreed to by key project stakeholders, particularly the business representatives.&nbsp; The test objectives will drive much of the test design and planning.&nbsp; For example, if one of the objectives is to test alternative architectures selected to host the application, it may be necessary to coordinate with the hardware vendor to arrange for testing at a test site where a variety of servers can be made available.&nbsp; If the objective is to validate the select production architecture has sufficient capacity to handle a series of phased rollouts, then the performance test models must be designed to simulate the user volumes over time.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Identify Performance Testing approach and strategy and critical success factors. Define policies and procedures unique to Performance Testing. Identify Performance Testing dependencies to the main project and other subprojects. </td>
+    <td>Approach</td>
+    <td>The Approach describes the process, policies and procedures, project dependencies, and the technical background for Performance Testing. The description of the process should include a high-level discussion of the tasks and work products, including any variations from the methodology standard Performance Testing process that have been adopted for the project. A glossary of terms defining specific terminology associated with the process or selected tools should be included. Key process milestones, the constraints that affect the Performance Testing Process, any assumptions made, and the relationship of the process to other systems projects and initiatives already underway should be documented.<br>
+		<br>
+        The subproject policies and procedures should be related to the corresponding policies and procedures adopted for the main project. If the subproject is to use different polices, procedures or standards from the main project in any of the key control and reporting areas, the work product should document the differences in detail, explaining why they differ. Examples of areas where the subproject will typically inherit standards and procedures from the main project are listed below:
+        <ul>
+          <li> Project Management Plan (PMP) </li>
+          <li> Issue Management and Resolution </li>
+          <li> Change Management </li>
+          <li>Reporting Format </li>
+          <li>Reporting Relationship to the Main Project </li>
+          <li>Acceptance </li>
+          <li> Project Policies and Procedures </li>
+          <li>Subproject Team Meetings </li>
+          <li>Logistics and Administrative Support </li>
+        </ul>
+        The project dependencies section of the component should describe the dependencies between Performance Testing and other processes or subprojects taking place within the overall implementation project. The technical background should describe the technical circumstances affecting the approach to the project. Examples of the points that may be included are:
+        <ul>
+          <li>Dependency on the Conversion subproject for production quality data</li>
+          <li>Dependency on the development effort for completion of custom components (including packaged software Extensions, Modifications, Localizations and Interfaces) included in the Performance Test scope</li>
+          <li>Implementation sites, particularly testing to simulate geographically distributed users</li>
+          <li>Technical Architecture</li>
+          <li>Major System or Application Requirements</li>
+          <li>Innovative or Unusual Technical Requirements</li>
+        </ul>
+        In relation to the statements about the technical circumstances for the project, the work product should define the requirements for the environments that will be necessary to support the subproject. Typically, at least one separate environment will be needed for controlled performance test measurements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Identify the mechanism for executing the performance tests. Establish the Performance Test environment requirements and define the strategy for obtaining a test database. Establish high-level test execution procedures. Establish the procedures for backing up the test environment and refreshing the test environment after an execution cycle. </td>
+    <td>Technical Strategy </td>
+    <td>The Technical Strategy describes the technical strategy for Performance Testing, including the means for executing the tests, the database and environment preparation and maintenance, and the tools that are to be used. Specific areas that you should highlight include:
+        <ul>
+          <li>Transaction Models - specific scenarios or models of system processing that should be included in the tests in order to meet the test objectives</li>
+          <li>Transaction Execution - how transactions are to be executed in the tests; a key decision is whether an automated load testing tool is to be used</li>
+          <li>Database Construction - the strategy to be used for constructing the test database, loading or maintaining setup data, planned reuse of other project data or programs </li>
+          <li>Performance Monitoring - how monitoring of performance is to be done during the tests and the specific measurements to be taken</li>
+          <li> Test Execution and Refresh - specific techniques for execution of the tests and refresh of the test environment after completion of a test cycle </li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Document the test technical architecture. </td>
+    <td>Technical Architecture </td>
+    <td>The Technical Architecture describes the technical architecture of the Performance Test environment. It should include both the technical architecture of the system under test, as well as support and boundary systems. For example, if automated testing is planned, the test technical architecture should include any special servers that act as test driver machines processing the automated test tool software. Include a diagram of the technical architecture of the test environment. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Describe the resource requirements needed to support the testing process. Document the technical test infrastructure requirements. Document the staffing requirements for the tests. </td>
+    <td>Resource Requirements </td>
+    <td>The Resource Requirements component describes the specific resources needed for Performance Testing which may include resources in the areas of:
+        <ul>
+          <li>Software </li>
+          <li>Hardware and Networks</li>
+          <li>Hardware and Software Delivery Schedule</li>
+          <li>Staff</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Document specific tool requirements for the testing process.</td>
+    <td>Tool Requirements </td>
+    <td>The Tool Requirements component describes the specific tool requirements identified for building, executing, and monitoring the performance tests. Include the following areas:
+        <ul>
+          <li>Application Development</li>
+          <li>Automated Performance Testing</li>
+          <li>Performance Monitoring and Other System Management Tools</li>
+          <li>Configuration Management</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Reporting Results</td>
+    <td>Reporting Requirements</td>
+    <td>The Reporting Requirement component should define what type of information will be collected during the test execution and what results will be reported.&nbsp; A mechanism to collect and report results that will demonstrate that the test has met the objectives defined is required.&nbsp; Although the Oracle technology stack is well instrumented, thought must be given to which metrics are most appropriate to report and if objective include testing of components that are not easily instrumented, such as network performance, end-to-end business process execution times, etc. then a method to collect the information will be required.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td> Identify risks in the strategy.</td>
+    <td>Risks</td>
+    <td>Performance Testing has a number of inherent risks. The Risks component describes the risks related to the Performance Testing effort. Examples of risks areas are:
+        <ul>
+          <li>Timeline constraints related to Performance Test dependencies such as the completion of Conversion or Development</li>
+          <li>Lack of an automated testing tool needed for performance measurements to meet the scope and objectives of the project</li>
+          <li>Lack of availability of expert resources</li>
+          <li> Lack of an environment that can fully simulate the planned production environment to conduct the testing</li>
+          <li>inability to construct sufficiently detailed system models due to time or cost constraints</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Critical Success Factors</td>
+    <td>Critical Success Factors</td>
+    <td>The Critical Success Factors for Performance Testing include:
+        <ul>
+          <li>Clearly defined scope and objectives</li>
+          <li>Business and Development involvement </li>
+          <li>Appropriate skills on the Testing team</li>
+          <li>Appropriate infrastructure and tool support</li>
+          <li>Early identification of test data requirements</li>
+          <li>Inclusion of Performance Testing within an overall Performance Management process to provide the final validation of performance, not the initial review</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Review the work product with project, IT managers and key functional representatives. Secure acceptance for the Performance Testing Strategy. </td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4> Performance Test Objectives</h4>
+<p>Performance Testing is a method for assessing the performance characteristics of specific application transactions at a point in time, using measurements of resource consumption and transaction response times. The primary objective of a performance test is to understand how workload characteristics affect performance within a given hardware, software and database environment. If the test results fail to meet the performance requirements or expectations, there are typically two options; tune the application and the environment until the necessary results are achieved, or adjust the architecture being used to process the workload.</p>
+<p>Performance Testing is not the same thing as benchmark testing or stress testing, although before the Performance Management workshop (PT.010) customers may not grasp the distinctions between the types of tests.&nbsp; A performance test is designed to simulate a realistic production workload running on the planned production hardware and software. Benchmarks and stress tests typically do not attempt to simulate realistic user workloads and may be not be constrained by architectural limitations.&nbsp; Benchmark tests are designed to provide pure comparisons between a variety of hardware or software configurations. They are typically constructed with a somewhat simplistic, limited&nbsp; transaction mix and may use highly optimized hardware configurations to achieve their goals. Stress tests tend to focus on determining the upper limits of architecture capacity or transaction throughput, and are usually designed to execute a limited sets of transactions run at very high volumes.</p>
+<p>Performance Testing can be used to validate individual transaction performance, validate that the production hardware selected can accommodate the anticipated workload or may provide input to the capacity planning process. Performance Testing can also be used to validate ongoing capacity for a phased implementation with a number of additional users added to the system over a period of time or to establish a baseline for regression testing of workload or architectural changes. Performance Testing is not an appropriate method to provide functional recommendations, or validate processing gaps. the test may provide information about the processing speed of certain business processes, which can be useful in suggesting process improvement options and the relative timing of interdependent tasks. However, unless categorically stated as an objective, the processing speed of specific end to end business processes is not usually the central goal and including that as an objective can significantly increase the complexity of the test.&nbsp;Determining the specific objectives is a critical component of Performance Testing, as the objectives will drive the selection of scenarios and models including in the test process.</p>
+<p>Once the the Performance Testing Strategy is defined and documented, it should be reviewed and accepted by key project stakeholders, including both IT and Business representatives before progressing with the rest of the performance testing.</p>
+<h4>Performance Test Scope</h4>
+A performance test is a simulation of workload, and like all simulations it is subject to a number of risks.&nbsp; It is common for users to expect that Performance Testing will cover "all" the workload, while in reality, the effort to construct a test that exercised every possible transaction within even a relatively small application would be a highly complex and resource intensive effort that can not be justified in terms of benefit received.&nbsp; Performance Testing must focus on a subset of key transactions that have been identified as critical to the implementation effort. Due to constraints related to environment support or other reasons, integration with boundary systems may have to be limited within formal performance testing, as often these systems may not be able to provide an isolated environment strictly for performance testing.&nbsp; It is most appropriate for the business to drive the selection of transactions to be included within the performance test scenarios and equally important for them to understand and agree to the exclusion of some transactions from the performance test scope.&nbsp; Performance Testing is only one aspect of the overall performance management process in a project and&nbsp; the alternative methods for identification of transaction performance issues as documented in the Performance Management Requirements and Strategy (PT.020) should be used for application workload that is considered out of scope for formal Performance Testing.<br>
+<h4>Performance Testing Strategy</h4>
+<p>The strategy used to conduct performance testing depends on the size and complexity of the implementation, as well as the resources available.&nbsp; Performance Testing can be a complex process and may require a significant investment in resources.&nbsp; If automating testing is used, there may also be a requirement to purchase testing tools and to staff the project with resources who know the tool. The Performance Testing Strategy should consider the level of risk associated with poor performance in the implemented system and the probability of issue occurring.&nbsp; The effort, complexity and cost of Performance Testing must be related to the effort to mitigate these risks.</p>
+<h4>Automated or Manual Performance Testing</h4>
+<p>If the scope of the transactions included in Performance Testing is limited to key batch programs only, it may not be necessary to conduct an automated performance test.&nbsp; Test scenarios that include heavy online transaction process typically will require automation and potentially a testing tool to manage and execute the process. It is possible to conduct manual Performance Testing of online transactions, but this approach is not recommended due to the problems associated with acquiring sufficient resources to product the desired volumes and the difficulty in accurately producing the same workload in the various iterations of the test execution. The process of testing is typically a cycle of execution, determining what changes should be made and retesting to validate the changes produce the desired impact.&nbsp; An automated test is much more effective and predictive than a series of manually executed tested.&nbsp; If use of testing tools are planned, the customer may have to purchase the tool or potentially increase the amount of licenses they have available to meet the objectives of the test.&nbsp; If a purchase will be required, be that the project manager has a clear understanding of the procurement requirement and validate that the process can be completed within the timeline of the testing plan.</p>
+<h4>Testing Risks</h4>
+<p> While Performance Testing is a valuable process that can help to identify any performance issues prior to the implementation of a production system, the process is an artificial construct and cannot exactly simulate all the complex interactions and processing that will take place in a production system.&nbsp; As such there are some inherent risks in the process, such as the risk of interpreting of results obtained from a relatively subset of processes and the risk that transactions not identified as included within&nbsp; the performance test scope could potentially cause performance issues in the production system.</p>
+<p> If the scope includes multiple simultaneous online processes, an automated testing tool is likely to be required to help manage the processing. Use of these tools can require additional tasks and or expertise, resulting in an extra layer of complexity to all phases of a performance test. An automated test should be thought of as a mini-implementation project, and be subject to controls and testing similar to any other implementation effort.&nbsp; Common errors are to use the tools to inadvertently drive more workload than actual production users would really generate by failing to properly space transactions or account for "think time" or to introduce an artificial&nbsp; constraint that affects performance that might never occur in a live system, such as 1000 users all accessing the same item number simultaneously. The subsequent tasks in the Performance Management process, Identify Performance Testing Models and Scenarios (PT.040), Design Performance Test Scripts and Programs (PT.050), Design Performance Test Data and Load Programs (PT.060), Build Performance Test Scripts and Programs (PT.070) and Conduct Performance Test Dress Rehearsal (PT.090) have been designed to reduce testing risks that could be introduced by the Testing process.</p>
+<p> The alternative to using automated tools is to conduct the tests manually. This approach reduces the the need for additional tools and expertise, but puts greater demand on the time of users and limits the scope of what you can achieve, while raising the risk that the results of the testing may not as complete or comprehensive. In smaller projects with limited resources and time, it is possible to merge the Performance Testing of the system with the Testing and employ the users performing the system test to manually evaluate performance at the same time. In this approach,&nbsp; the Performance Testing goals and objectives risk being overcome by those of the Testing, resulting in a Performance Test that cannot be successfully extrapolated to production performance. Typically this approach cannot simulate expected production transaction rates and volumes related to specific periods of peak demand in the real system, thus it has a lower probability of uncovering performance risks related to system load constraints. A performance test conducted manually using newly trained system users may lead to lower than expected performance results due to lack of unfamiliarity with the system processes and inefficient data entry. If forced to conduct a manual project, it is critical to manage the expectations of results so that they do not overstate what such an approach can hope to accomplish.  </p>
+<h4>Project Organization</h4>
+<p> In a large and complex implementation project, Performance Testing may need to be a separate subproject because of its size and complexity, with resources fully devoted to the Performance testing effort.</p>
+<h4>Hardware Vendor Coordination </h4>
+<p> Hardware vendors should have up-to-date metrics for the capacity and performance of their servers. The vendor may also offer technical consulting services with consultants that are familiar with the type of applications you are attempting to implement and Performance Testing methods. Discuss your Performance Testing and capacity planning requirements with your hardware vendor representative and establish the levels of assistance they can provide for this task.&nbsp; In some cases, the execution of the performance test itself will occur at a hardware vendor testing facility in order to provide a variety of servers or processing options.&nbsp; If that is the case, scheduling of the test execution becomes critical as the testing facilities typically have limited availability.</p>
+<h4>Resources </h4>
+<p>Applications that use formal Performance Testing tend to be highly complex and since the test cannot completely simulate the expected production workload, there is often a need to extrapolate or interpret the results.&nbsp; Additionally, the test effort is often run as a sub-project and has numerous dependencies to other project streams, particularly development and conversion.&nbsp; A performance test lead with the appropriate technical and project management skills is required. Typically staffing also includes a DBA and tuning support.&nbsp; If the testing is automated, you need technical analysts who are experienced in the automated testing tool chosen, or you need to arrange learning events for the identified technical analysts on the project. If the testing is manual, you need to arrange for enough coordinated user resources to manually enter the transactions at test execution time. </p>
+<h4>Performance Test Environment</h4>
+<p>The Performance Testing team should have access to an environment for development of any special transaction programs or scripts.&nbsp; The test should be executed in a separate controlled environment that is as similar as possible to&nbsp; (or is) the real Production Environment. The team needs access to a fully functioning installation of the application and&nbsp; any third party applications or boundary systems.&nbsp; Setup data that mimics the Production Environment as closely as possible should be used. If the project realities make it impossible to fully simulate the production environment and compromises are necessary, the testing must still be conducted in a controlled environment, insulated from the miscellaneous transactions and processing of other project users on the system.</p>
+<p> It is possible to conduct some level of performance testing using a server or an environment shared with the wider project team, but this approach can significantly increase the complexity of performance testing.&nbsp; The testing may scheduled for times outside normal working hours, which can introduce resource constraints.&nbsp; Often performance tests require specific data related to the test scripts or programs to operate as designed and if other users share the environment, a strategy to manage the test data will be required.</p>
+<h4> Performance Test Data</h4>
+<p> The performance of applications running on the Oracle database can be significantly affected by both the quantity and quality of the data.&nbsp; Ideally, Performance Testing should be run on an environment populated with a full complement of production quality data.&nbsp; In reality, this is a goal that can be difficult to achieve.&nbsp; If the project has a conversion effort, then conversion may be able to provide at least a subset of production quality data that can be used for testing.&nbsp; If the transactions being tested are driven by transactional data that is not included in conversion, such as open orders, open POs, etc., it may be necessary to design a method to pre-populate such data in order to improve the accuracy of the performance test results.&nbsp; Constructing data that can not be obtained from other project sources can significant increase&nbsp; both the effort and complexity of Performance Testing.</p>
+<p> When determining the test data requirement, consider whether the intention is for the test to be a "one time only" event or a reusable test that the customer intends to use to validate future system enhancements or changes.&nbsp; If the test is intended to be reuseable,&nbsp; the test data to drive and support the testing must also be available, so relying on specific conversion data, for example, is not a workable strategy for a test that may be rerun months after the application as gone into production.&nbsp; In such a situation, consider developing data selection scripts, that can be reused to find appropriate data that meets the test requirements from either the current or future database. This type of requirement may add additional effort to the test plan.</p>
+<h4> Reporting Results</h4>
+<p> The results of performance testing should be designed to demonstrate that the test has achieved the agreed upon test objectives.&nbsp; The specific data and metrics that will be collected during the test should be determined ahead of time.&nbsp; Some automated testing tools provide fairly robust reporting capabilities that can be leveraged.&nbsp; Some test objectives may require additional data collection, or perhaps even instrumentation built into the application under test.&nbsp; If the testing will be conducted on a platform that differs from the proposed production platform, such as a smaller lab environment the results will be less precise and may require extrapolation.&nbsp; The Performance Testing Strategy should discuss any assumptions or estimating techniques planned and the potential for a margin of error.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4> Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#PT030" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#PT030" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#PT030" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="29%" scope="col"><div align="left">Role</div></th>
+    <th width="65%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect</div></th>
+    <td>Develop Performance Testing Strategy.<br>
+		<br>
+        If a Performance Management team leader has been designated, 10% of this time would be allocated to this individual, leaving 90% allocated to the system architect. The team leader would then review and approve the Performance Testing Strategy.</td>
+    <td><div align="center">100</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ambassador User</div></th>
+    <td>Review and approve the Performance Testing Strategy.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>&nbsp; * Participation level not estimated.</p>
+<p>The following additional roles may participate in this task:</p>
+<ul>
+  <li>Network Engineer (NE) - Assist the test team with network testing and identification of network demands outside of the project scope.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a
+ name="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="29%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="71%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Management Plan (Manage)</div></th>
+    <td>The Project Management Plan provides a high-level discussion of the scope of the testing, what performance concerns, risks or questions it should address, and how the project should be organized and run.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Performance Management Workshop Results (PT.010) </div></th>
+    <td>These results provide information on performance needs and expectations.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Performance Management Requirements and Strategy (PT.020) </div></th>
+    <td> The Performance Management Requirements and Strategy provides information about the the overall project Performance Management and which project elements are out of scope for the formal Performance Test effort.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Physical Resource Plan (PJM.IFM.030)</div></th>
+    <td> The Physical Resource Plan provides information about the environment strategy for the overall project and may include information about the environment resources for performance testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Supplemental Requirements (RD.055) </div></th>
+    <td> Any generic performance requirements are described as part of the Supplemental Requirements. The strategy for performance testing will be dependent on what kind of performance requirements there are, how strict they are, and what type of components will be performance critical. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024) </div></th>
+    <td> Specific performance requirements for a use case are provided as part of the Use Case Specification. The Performance Testing Strategy will be dependent on what kind of use cases are performance critical. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Technical Architecture Workshop Results (TA.010)<br>
+        Architecture Requirements and Strategy (TA.020) </div></th>
+    <td>These work products should contain early capacity and system requirements. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="28%" scope="col"><div align="left">Technique</div></th>
+    <th width="72%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></div></th>
+    <td><div align="left">Use this technique to help you define the testing strategy for services. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a></div></th>
+    <td><div align="left">Use this technique to understand where service testing fits in the overall SOA service lifecycle. </div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr width="100%">
+<h3><a
+ name="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="27%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="73%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/PT/PT-030_PERFORMANCE_TESTING_STRATEGY.DOCX" target="_blank">PT-030_PERFORMANCE_TESTING_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a
+ name="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The Performance Testing Strategy is used in the following ways: </p>
+<ul>
+  <li>to establish the Performance Testing scope and objective and approach</li>
+  <li>to obtain agreement from key project stakeholders</li>
+  <li>to obtain sign-off approval for the requirements and resources needed</li>
+  <li>to raise awareness of dependencies between the Performance Testing subproject and other project teams</li>
+  <li>to increase the understanding about the requirements for the Performance Test Environment </li>
+</ul>
+<p> Distribute the Performance Testing Strategy as follows: </p>
+<ul>
+  <li>to project manager who should sign off the Performance Testing requirements and resources needed</li>
+  <li>to key ambassador users who should sign off on the scope of applications to be tested</li>
+  <li> to IS manager who should sign off the Performance Testing Strategy </li>
+  <li> to Performance Testing team members </li>
+  <li> to system, database, and network administrators who are responsible for configuring and managing the Performance Test Environment and Database (PT.080)</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p> Use the following criteria to help check the quality of this work product: </p>
+<ul>
+  <li> Are the project scope and objectives clearly identified? </li>
+  <li> Are specific critical success factors and risks documented? </li>
+  <li> Has the impact of dependent tasks from other processes been taken into account? </li>
+  <li> Are the Performance Testing requirements clearly defined? </li>
+  <li> Is the strategy understood by those on the distribution list for this work product? </li>
+  <li> Are all resource and tool requirements that could affect Performance Testing stated and understood? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

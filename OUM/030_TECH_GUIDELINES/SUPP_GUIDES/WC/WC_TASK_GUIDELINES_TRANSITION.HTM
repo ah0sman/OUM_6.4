@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WebCenter Task Guidelines - Transition Phase</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">WebCenter Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#FDG">Finalize Documentation Guidance</option>
+                            <option value="#PPEG">Prepare Production Environment Guidance</option>
+                            <option value="#GPG">Go Production Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("FD");
+  Effect.BlindDown("PPE");
+  Effect.BlindDown("GP");
+  Effect.BlindDown("DS");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("CV");
+  Effect.BlindDown("DO");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("FD");
+  Effect.BlindUp("PPE");
+  Effect.BlindUp("GP");
+  Effect.BlindUp("DS");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("CV");
+  Effect.BlindUp("DO");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_WC.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>WEBCENTER SUPPLEMENTAL TASK GUIDELINES - TRANSITION PHASE </h2>
+<p>This document contains OUM supplemental task guidance for WebCenter projects. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for activities.">
+  <tr bgcolor="#BEBEBE">
+    <th width="45%" height="26" scope="col">WebCenter - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th width="43%" scope="col"><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">D.ACT.FD Finalize Documentation</div></th>
+    </tr>
+  <tbody id="FD">
+    <tr valign="top">
+      <td valign="top"><a href="#DO110">DO.110 Finalize Documentation</a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_110_FINALIZE_DOCUMENTATION_OVERVIEW.HTM" target="_blank">DO.110 Finalize Documentation</a></div></td>
+    </tr>
+  </tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">D.ACT.PPE Prepare Production Environment</div></th>
+    </tr>
+  <tbody id="PPE">
+    <tr valign="top">
+      <td valign="top"><a href="#TS050">TS.050 Prepare Production Environment</a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">TS.050 Prepare Production Environment</a></div></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">D.ACT.GP Go Production </div></th>
+  </tr>
+  <tbody id="GP">
+    <tr valign="top">
+      <td valign="top"><a href="#TS052">TS.052 Implement Production Support Infrastructure</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_052_IMPLEMENT_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.052 Implement Production Support Infrastructure</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TS058">TS.058 Verify Production Readiness</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_058_VERIFY_PROD_READINESS_OVERVIEW.HTM" target="_blank">TS.058 Verify Production Readiness</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TS060">TS.060 Go Production</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">TS.060 Go Production</a></td>
+    </tr>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a
+ name="FDG" id="FDG"></a>D.ACT.FD FINALIZE DOCUMENTATION GUIDANCE</h3>
+<h4><a name="DO110" id="DO110"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_110_FINALIZE_DOCUMENTATION_OVERVIEW.HTM" target="_blank">DO.110 Finalize Documentation</a></h4>
+<h5>OVERVIEW</h5>
+<p align="left">During the Transition phase, minor revisions or changes to the software system may cause updates to any or all of the documentation work products. This task covers the incorporation of any of those changes into the Documentation work products.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="PPEG" id="PPEG"></a>D.ACT.PPE PREPARE PRODUCTION ENVIRONMENT</h3>
+<h4 align="left"><A
+name=TS050 id="TS050"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">TS.050 Prepare Production Environment </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task addresses the installation and configuration of the database, WebCenter, and any custom extensions intended for Production use. </p>
+<h5 align="left">APPROACH</h5>
+<div align="left">
+  <ul>
+    <li>Prepare Production Hardware:
+        <ul>
+          <li> Operating System</li>
+          <li>File Structures</li>
+          <li>Networking Software</li>
+        </ul>
+    </li>
+    <li>Prepare WebCenter (Installation and Configuration):
+        <ul>
+          <li>Database</li>
+          <li>WebLogic Server</li>
+          <li>IDM</li>
+          <li>WebCenter</li>
+          <li>WebCenter Extensions (including custom extensions)</li>
+        </ul>
+    </li>
+  </ul>
+</div>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4 align="left"><a
+ name="GPG" id="GPG"></a>D.ACT.GP GO PRODUCTION GUIDANCE </h4>
+<h4 align="left"><A
+name=TS052 id="TS052"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_052_IMPLEMENT_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.052 Implement Production Support Infrastructure </a></h4>
+<h5>OVERVIEW</h5>
+<p>Activate the support personnel and procedures for the new business system and review requirements for support-related services from software suppliers, contractors, help desks, and other support services.</p>
+<h5 align="left">APPROACH</h5>
+<p align="left">The Production Support Infrastructure involves implementing the operational infrastructure documented in the Production Support Infrastructure Design (TS.040). It should address the following:</p>
+<div align="left">
+  <ul>
+    <li>handling of inquiry calls</li>
+    <li>call and response tracking</li>
+    <li>system direction for all types of audiences</li>
+    <li>links to external support mechanisms or sources</li>
+    <li>performance metrics information for support</li>
+    <li>personnel (response, history retention, follow-up, accuracy, audit, etc.)</li>
+    <li>backup resources and tools<br>
+    </li>
+  </ul>
+</div>
+<hr WIDTH="100%">
+<div align="center">
+  <h4 align="left"><A
+name=TS058 id="TS058"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_058_VERIFY_PROD_READINESS_OVERVIEW.HTM" target="_blank">TS.058 Verify Production Readiness </a></h4>
+  <p align="center"><img src="../../../010_COMMON_FILES/WC_TS058.JPG" alt="Illustration of Trained Users and Ready System" width="581" height="280" title="Illustration of Trained Users and Ready System"></p>
+  <h5 align="left">OVERVIEW</h5>
+  <p align="left">Formally verify that the organization&rsquo;s systems, host facilities, local area networks (LANs), wide area networks (WANS), and people are prepared for Production. This is the final approval step before the cutover to the new Production system.</p>
+  <hr align="left" WIDTH="100%">
+  <h4 align="left"><A
+name=TS060 id="TS060"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">TS.060 Go Production</a></h4>
+  <p align="center"><img src="../../../010_COMMON_FILES/WC_TS060.JPG" alt="Illustration of Trained Users using the System" width="268" height="323" title="Illustration of Trained Users using the System"></p>
+  <h5 align="left">OVERVIEW</h5>
+  <p align="left">Take the new WebCenter system and put it into Production use. The new system is now part of the business and is being used to satisfy business needs.</p>
+  <h5 align="left">APPROACH</h5>
+  <div align="left">
+    <ul>
+      <li>The System in Production (SIP) is used by trained users and supported by trained administrators.<br>
+      </li>
+      <li>It replaces any legacy systems identified for replacement by the new WebCenter system.<br>
+      </li>
+      <li>You have certified that all aspects of the system are operational. </li>
+    </ul>
+  </div>
+</div>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

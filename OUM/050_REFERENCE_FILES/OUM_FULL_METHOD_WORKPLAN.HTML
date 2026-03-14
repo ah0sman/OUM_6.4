@@ -1,0 +1,4687 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM_NOPAGENAV.DWT" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OUM Full Method WBS</title>
+<!-- InstanceEndEditable -->
+<link href="../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../OUM_HOME.HTM"><img src="../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../CLOUD_HOME.htm"><img src="../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="88%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Full Method Work Breakdown Structure</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM_HOME.HTM">Home</option>
+                    <option value="../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<TABLE width="100%" BORDER summary="This table shows the work breakdown structure for all of OUM. The column headings are Seq, ID, Task Name, Work Product and Predecessors.">
+  <TR valign="top" BGCOLOR="#CCCCCC">
+    <th NOWRAP scope="col">Seq</th>
+    <TH ALIGN=left NOWRAP scope="col">ID</TH>
+    <TH ALIGN=left NOWRAP scope="col">Task Name</TH>
+    <TH ALIGN=left NOWRAP scope="col">Work Product</TH>
+    <TH ALIGN=left NOWRAP scope="col"><b>Predecessors</b></TH>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>1</th>
+    <TD ALIGN=left><b>OUM</b></TD>
+    <TD ALIGN=left><DIV><B>Oracle Unifed Method </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>2</th>
+    <TD ALIGN=left><b>Full</b></TD>
+    <TD ALIGN=left><DIV><B>OUM - Full Method Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>3</th>
+    <TD ALIGN=left><b>PS</b></TD>
+    <TD ALIGN=left><DIV><B>Project Start Up</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>4</th>
+    <TD ALIGN=left><b>PS.ACT.RBC</b></TD>
+    <TD ALIGN=left><DIV><B>Review Bid and Contract</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>5</th>
+    <TD ALIGN=left>PS.BT.010</TD>
+    <TD ALIGN=left><DIV>Review and Analyze Bid Material</DIV></TD>
+    <TD ALIGN=left>Reviewed and Analyzed Bid Material</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>6</th>
+    <TD ALIGN=left>PS.BT.020</TD>
+    <TD ALIGN=left><DIV>Review and Confirm Business Case</DIV></TD>
+    <TD ALIGN=left>Confirmed Business Case</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>7</th>
+    <TD ALIGN=left>PS.BT.030</TD>
+    <TD ALIGN=left><DIV>Identify Project Stakeholders</DIV></TD>
+    <TD ALIGN=left>Identified Project Stakeholders</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>8</th>
+    <TD ALIGN=left>PS.BT.040</TD>
+    <TD ALIGN=left><DIV>Review and Accept Project Budget</DIV></TD>
+    <TD ALIGN=left>Accepted Project Budget</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>9</th>
+    <TD ALIGN=left>PS.RKM .020</TD>
+    <TD ALIGN=left><DIV>Conduct Baseline Risk Assessment</DIV></TD>
+    <TD ALIGN=left>Baseline Risk Assessment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>10</th>
+    <TD ALIGN=left><b>PS.ACT.RPAC</b></TD>
+    <TD ALIGN=left><DIV><B>Review Project Assets with Customer </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>4</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>11</th>
+    <TD ALIGN=left>PS.BT.050</TD>
+    <TD ALIGN=left><DIV>Review Contract with Customer </DIV></TD>
+    <TD ALIGN=left>Reviewed Contract</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>12</th>
+    <TD ALIGN=left>PS.BT.060</TD>
+    <TD ALIGN=left><DIV>Review Project Approach with Customer </DIV></TD>
+    <TD ALIGN=left>Reviewed Project Approach</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>13</th>
+    <TD ALIGN=left>PS.BT.070.1</TD>
+    <TD ALIGN=left><DIV>Create Project Management Plan </DIV></TD>
+    <TD ALIGN=left>Project Management Plan </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>14</th>
+    <TD ALIGN=left><b>PS.ACT.VSSOS</b></TD>
+    <TD ALIGN=left><DIV><B>Validate Scope, Stakeholders and OCM Strategy</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>10</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>15</th>
+    <TD ALIGN=left>PS.SM.010</TD>
+    <TD ALIGN=left><DIV>Define and Confirm Scope</DIV></TD>
+    <TD ALIGN=left>Validated Scope</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>16</th>
+    <TD ALIGN=left>PS.CMM.010</TD>
+    <TD ALIGN=left><DIV>Conduct Project Stakeholder Analysis</DIV></TD>
+    <TD ALIGN=left>Project Stakeholder Analysis</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>17</th>
+    <TD ALIGN=left>PS.OCHM.010</TD>
+    <TD ALIGN=left><DIV>Understand Customer's Organizational Change Management Strategy</DIV></TD>
+    <TD ALIGN=left>Customer's Organizational Change Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>18</th>
+    <TD ALIGN=left><b>PS.ACT.DW</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>14</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>19</th>
+    <TD ALIGN=left>PS.WM.010</TD>
+    <TD ALIGN=left><DIV>Develop Baseline Project Workplan</DIV></TD>
+    <TD ALIGN=left>Baseline Project Workplan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>20</th>
+    <TD ALIGN=left><b>PS.ACT.DSPB</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Staff Plan and Budget</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>14</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>21</th>
+    <TD ALIGN=left>PS.FM.010</TD>
+    <TD ALIGN=left><DIV>Refine Project Budget</DIV></TD>
+    <TD ALIGN=left>Approved Project Budget</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>22</th>
+    <TD ALIGN=left>PS.STM.010</TD>
+    <TD ALIGN=left><DIV>Plan Resource Requirements</DIV></TD>
+    <TD ALIGN=left>Resource Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>23</th>
+    <TD ALIGN=left>PS.STM.030</TD>
+    <TD ALIGN=left><DIV>Staff Project</DIV></TD>
+    <TD ALIGN=left>Staffed Project</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>24</th>
+    <TD ALIGN=left>PS.STM.040</TD>
+    <TD ALIGN=left><DIV>Prepare Orientation Guide(s)</DIV></TD>
+    <TD ALIGN=left>Orientation Guide</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>25</th>
+    <TD ALIGN=left><b>PS.ACT.EG</b></TD>
+    <TD ALIGN=left><DIV><B>Establish Governance </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>18,20</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>26</th>
+    <TD ALIGN=left>PS.SM.020</TD>
+    <TD ALIGN=left><DIV>Develop Scope Change Management Processes</DIV></TD>
+    <TD ALIGN=left>Scope Change Management Procedures</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>27</th>
+    <TD ALIGN=left>PS.FM.020</TD>
+    <TD ALIGN=left><DIV>Develop Financial Management Plan</DIV></TD>
+    <TD ALIGN=left>Financial Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>28</th>
+    <TD ALIGN=left>PS.WM.020</TD>
+    <TD ALIGN=left><DIV>Develop Work Management Execution and Control Processes and Policies</DIV></TD>
+    <TD ALIGN=left>Work Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>29</th>
+    <TD ALIGN=left>PS.RKM.010</TD>
+    <TD ALIGN=left><DIV>Develop Risk Management Plan</DIV></TD>
+    <TD ALIGN=left>Risk Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>30</th>
+    <TD ALIGN=left>PS.IPM.010</TD>
+    <TD ALIGN=left><DIV>Develop Issue Management Strategy</DIV></TD>
+    <TD ALIGN=left>Issue Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>31</th>
+    <TD ALIGN=left>PS.IPM.020</TD>
+    <TD ALIGN=left><DIV>Develop Problem Management Strategy</DIV></TD>
+    <TD ALIGN=left>Problem Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>32</th>
+    <TD ALIGN=left>PS.STM.020</TD>
+    <TD ALIGN=left><DIV>Develop Staff Management Plan</DIV></TD>
+    <TD ALIGN=left>Staff Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>33</th>
+    <TD ALIGN=left>PS.CMM.020</TD>
+    <TD ALIGN=left><DIV>Develop Project Team Communication Plan</DIV></TD>
+    <TD ALIGN=left>Project Team Communication Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>34</th>
+    <TD ALIGN=left>PS.QM.010</TD>
+    <TD ALIGN=left><DIV>Develop Quality Management Plan</DIV></TD>
+    <TD ALIGN=left>Quality Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>35</th>
+    <TD ALIGN=left>PS.QM.020</TD>
+    <TD ALIGN=left><DIV>Develop and Document Quality Control and Reporting Process</DIV></TD>
+    <TD ALIGN=left>Quality Control and Reporting Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>36</th>
+    <TD ALIGN=left>PS.CM.010</TD>
+    <TD ALIGN=left><DIV>Develop Configuration Management Strategy and Processes</DIV></TD>
+    <TD ALIGN=left>Configuration Management Plan and Processes</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>37</th>
+    <TD ALIGN=left>PS.CM.030</TD>
+    <TD ALIGN=left><DIV>Create Project Documentation Management Plan</DIV></TD>
+    <TD ALIGN=left>Documentation Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>38</th>
+    <TD ALIGN=left>PS.IFM.010</TD>
+    <TD ALIGN=left><DIV>Develop Infrastructure Management Plan</DIV></TD>
+    <TD ALIGN=left>Infrastructure Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>39</th>
+    <TD ALIGN=left>PS.PCM.010</TD>
+    <TD ALIGN=left><DIV>Develop Procurement Strategy and Process</DIV></TD>
+    <TD ALIGN=left>Procurement Strategy and Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>40</th>
+    <TD ALIGN=left>PS.OCHM.020</TD>
+    <TD ALIGN=left>Identify Change Management Warning Signs</TD>
+    <TD ALIGN=left>Change Management Warning Signs</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>41</th>
+    <TD ALIGN=left>PS.BT.070.2</TD>
+    <TD ALIGN=left><DIV>Create Project Management Plan </DIV></TD>
+    <TD ALIGN=left>Project Management Plan </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>42</th>
+    <TD ALIGN=left><b>PS.ACT.EPI</b></TD>
+    <TD ALIGN=left><DIV><B>Establish Project Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>18,20</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>43</th>
+    <TD ALIGN=left>PS.FM.030</TD>
+    <TD ALIGN=left><DIV>Set Up Time and Expense Tracking</DIV></TD>
+    <TD ALIGN=left>Time and Expense Tracking</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>44</th>
+    <TD ALIGN=left>PS.RKM.030</TD>
+    <TD ALIGN=left><DIV>Develop Risk Management System</DIV></TD>
+    <TD ALIGN=left>Risk Management System</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>45</th>
+    <TD ALIGN=left>PS.IPM.030</TD>
+    <TD ALIGN=left><DIV>Develop Issue and Problem Management System</DIV></TD>
+    <TD ALIGN=left>Issue and Problem Management System</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>46</th>
+    <TD ALIGN=left>PS.CM.020</TD>
+    <TD ALIGN=left><DIV>Obtain Configuration Management Tools</DIV></TD>
+    <TD ALIGN=left>Configuration Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>47</th>
+    <TD ALIGN=left>PS.IFM.020</TD>
+    <TD ALIGN=left><DIV>Establish Team Work Environment</DIV></TD>
+    <TD ALIGN=left>Team Work Environment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>48</th>
+    <TD ALIGN=left>PS.IFM.030</TD>
+    <TD ALIGN=left><DIV>Establish Technical Infrastructure</DIV></TD>
+    <TD ALIGN=left>Established Technical Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>49</th>
+    <TD ALIGN=left>PS.PCM.020</TD>
+    <TD ALIGN=left><DIV>Procure Goods and Contracted Services</DIV></TD>
+    <TD ALIGN=left>Service Orders</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>50</th>
+    <TD ALIGN=left><b>PEC</b></TD>
+    <TD ALIGN=left><DIV><B>Project Execution and Control</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>51</th>
+    <TD ALIGN=left><b>PEC.ACT.MSAA</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Scope, Acceptance and Approvals</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>52</th>
+    <TD ALIGN=left>PEC.SM.030</TD>
+    <TD ALIGN=left><DIV>Manage Scope</DIV></TD>
+    <TD ALIGN=left>Managed Scope</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>53</th>
+    <TD ALIGN=left>PEC.SM.040</TD>
+    <TD ALIGN=left><DIV>Manage Acceptance</DIV></TD>
+    <TD ALIGN=left>Managed Acceptance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>54</th>
+    <TD ALIGN=left><b>PEC.ACT.MPF</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Finances</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>55</th>
+    <TD ALIGN=left>PEC.FM.040</TD>
+    <TD ALIGN=left><DIV>Manage Project Financials</DIV></TD>
+    <TD ALIGN=left>Managed Project Finances</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>56</th>
+    <TD ALIGN=left><b>PEC.ACT.MPW</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>57</th>
+    <TD ALIGN=left>PEC.WM.030</TD>
+    <TD ALIGN=left><DIV>Manage Project Workplan</DIV></TD>
+    <TD ALIGN=left>Project Workplan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>58</th>
+    <TD ALIGN=left>PEC.WM.040</TD>
+    <TD ALIGN=left><DIV>Track Schedule Performance</DIV></TD>
+    <TD ALIGN=left>Scheduled Performance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>59</th>
+    <TD ALIGN=left>PEC.WM.070</TD>
+    <TD ALIGN=left><DIV>Schedule Workshop(s) </DIV></TD>
+    <TD ALIGN=left>Workshop Schedule </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>60</th>
+    <TD ALIGN=left><b>PEC.ACT.MRIP</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Risks, Issues and Problems</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>61</th>
+    <TD ALIGN=left>PEC.RKM.040</TD>
+    <TD ALIGN=left><DIV>Manage Risk</DIV></TD>
+    <TD ALIGN=left>Managed Risk</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>62</th>
+    <TD ALIGN=left>PEC.RKM.050</TD>
+    <TD ALIGN=left><DIV>Monitor and Control Risk</DIV></TD>
+    <TD ALIGN=left>Assessed Risk</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>63</th>
+    <TD ALIGN=left>PEC.IPM.040</TD>
+    <TD ALIGN=left><DIV>Manage Issues and Problems</DIV></TD>
+    <TD ALIGN=left>Managed Issues and Problems</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>64</th>
+    <TD ALIGN=left><b>PEC.ACT.OMT</b></TD>
+    <TD ALIGN=left><DIV><B>Orient and Manage Team</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>65</th>
+    <TD ALIGN=left>PEC.QM.030</TD>
+    <TD ALIGN=left><DIV>Conduct Project Team Quality Management Orientation</DIV></TD>
+    <TD ALIGN=left>Project Team Quality Management Orientation</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>66</th>
+    <TD ALIGN=left>PEC.STM.050</TD>
+    <TD ALIGN=left><DIV>Conduct Team Orientation(s)</DIV></TD>
+    <TD ALIGN=left>Oriented Team</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>67</th>
+    <TD ALIGN=left>PEC.STM.060</TD>
+    <TD ALIGN=left><DIV>Manage Project Team</DIV></TD>
+    <TD ALIGN=left>Managed Project Team</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>68</th>
+    <TD ALIGN=left><b>PEC.ACT.MCOP</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Communications and OCM Plans</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>69</th>
+    <TD ALIGN=left>PEC.CMM.030</TD>
+    <TD ALIGN=left><DIV>Manage Project Team Communication</DIV></TD>
+    <TD ALIGN=left>Managed Project Team Communication</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>70</th>
+    <TD ALIGN=left>PEC.OCHM.030</TD>
+    <TD ALIGN=left><DIV>Execute Change and Communication Plan</DIV></TD>
+    <TD ALIGN=left>Executed Change and Communication Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>71</th>
+    <TD ALIGN=left><b>PEC.ACT.MPQ</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Quality</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>72</th>
+    <TD ALIGN=left>PEC.QM.040</TD>
+    <TD ALIGN=left><DIV>Manage Quality Control</DIV></TD>
+    <TD ALIGN=left>Quality Control</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>73</th>
+    <TD ALIGN=left>PEC.QM.050</TD>
+    <TD ALIGN=left><DIV>Perform Quality Assurance</DIV></TD>
+    <TD ALIGN=left>Managed Quality Assurance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>74</th>
+    <TD ALIGN=left><b>PEC.ACT.CECRM</b></TD>
+    <TD ALIGN=left><DIV><B>Create and Execute Configuration and Release Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>75</th>
+    <TD ALIGN=left>PEC.CM.040</TD>
+    <TD ALIGN=left><DIV>Create and Execute Software Configuration Management Plan</DIV></TD>
+    <TD ALIGN=left>Software Configuration Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>76</th>
+    <TD ALIGN=left>PEC.CM.050</TD>
+    <TD ALIGN=left><DIV>Create and Execute Software Release Management Plan</DIV></TD>
+    <TD ALIGN=left>Software Release Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>77</th>
+    <TD ALIGN=left>PEC.CM.060</TD>
+    <TD ALIGN=left><DIV>Create and Execute Environment and Patch Management Plan</DIV></TD>
+    <TD ALIGN=left>Environment and Patch Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>78</th>
+    <TD ALIGN=left>PEC.CM.070</TD>
+    <TD ALIGN=left><DIV>Create and Execute Configuration Management Control Plan</DIV></TD>
+    <TD ALIGN=left>Configuration Management Control Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>79</th>
+    <TD ALIGN=left><b>PEC.ACT.MMI</b></TD>
+    <TD ALIGN=left><DIV><B>Manage and Maintain Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>80</th>
+    <TD ALIGN=left>PEC.IFM.040</TD>
+    <TD ALIGN=left><DIV>Manage and Maintain Infrastructure</DIV></TD>
+    <TD ALIGN=left>Maintained Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>81</th>
+    <TD ALIGN=left><b>PEC.ACT.APGCS</b></TD>
+    <TD ALIGN=left><DIV><B>Administer Procurement of Goods and Contracted Services</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>82</th>
+    <TD ALIGN=left>PEC.PCM.030</TD>
+    <TD ALIGN=left><DIV>Administer Procurement of Goods and Contracted Services</DIV></TD>
+    <TD ALIGN=left>Managed Procurement of Goods and Services</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>83</th>
+    <TD ALIGN=left><b>INIT</b></TD>
+    <TD ALIGN=left><DIV><B>Initiate</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>84</th>
+    <TD ALIGN=left><b>INIT.ACT.PEF</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Envision Foundation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>25</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>85</th>
+    <TD ALIGN=left>INIT.ER.010</TD>
+    <TD ALIGN=left><DIV>Create Business Case for Envision Engagement</DIV></TD>
+    <TD ALIGN=left>Customer Envision Engagement Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>86</th>
+    <TD ALIGN=left>INIT.EA.001</TD>
+    <TD ALIGN=left><DIV>Justify and Engage Enterprise Architects</DIV></TD>
+    <TD ALIGN=left>Assigned Enterprise Architect</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>87</th>
+    <TD ALIGN=left>INIT.ER.040</TD>
+    <TD ALIGN=left><DIV>Research Enterprise</DIV></TD>
+    <TD ALIGN=left>Enterprise Research Findings </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>88</th>
+    <TD ALIGN=left>INIT.ER.045</TD>
+    <TD ALIGN=left><DIV>Establish Executive Sponsorship</DIV></TD>
+    <TD ALIGN=left>Committed Executive Sponsorship</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>89</th>
+    <TD ALIGN=left>INIT.BA.010</TD>
+    <TD ALIGN=left><DIV>Identify Business Strategy</DIV></TD>
+    <TD ALIGN=left>Business Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>90</th>
+    <TD ALIGN=left>INIT.BA.012</TD>
+    <TD ALIGN=left><DIV>Define Business Scope</DIV></TD>
+    <TD ALIGN=left>Business Scope</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>91</th>
+    <TD ALIGN=left>INIT.BA.015</TD>
+    <TD ALIGN=left><DIV>Conduct Enterprise Stakeholder Assessment</DIV></TD>
+    <TD ALIGN=left>Enterprise Stakeholder Inventory</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>92</th>
+    <TD ALIGN=left>INIT.GV.010</TD>
+    <TD ALIGN=left><DIV>Define Governance Strategy</DIV></TD>
+    <TD ALIGN=left>Governance Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>93</th>
+    <TD ALIGN=left>INIT.BA.017.1</TD>
+    <TD ALIGN=left><DIV>Determine Metrics Collection and Reporting Strategy</DIV></TD>
+    <TD ALIGN=left>Metrics Collection and Reporting Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>94</th>
+    <TD ALIGN=left>INIT.BA.018.1</TD>
+    <TD ALIGN=left><DIV>Establish Current Baseline Metrics</DIV></TD>
+    <TD ALIGN=left>Current Baseline Metrics</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>95</th>
+    <TD ALIGN=left>INIT.BA.020</TD>
+    <TD ALIGN=left><DIV>Document Enterprise Organization Structures</DIV></TD>
+    <TD ALIGN=left>Enterprise Organization Structures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>96</th>
+    <TD ALIGN=left>INIT.BA.025</TD>
+    <TD ALIGN=left><DIV>Determine Operating Model</DIV></TD>
+    <TD ALIGN=left>Validated Operating Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>97</th>
+    <TD ALIGN=left>INIT.EA.002</TD>
+    <TD ALIGN=left><DIV>Review External Reference Architectures</DIV></TD>
+    <TD ALIGN=left>External Reference Architectures Review</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>98</th>
+    <TD ALIGN=left>INIT.ER.015</TD>
+    <TD ALIGN=left><DIV>Conduct Enterprise Maturity Assessment</DIV></TD>
+    <TD ALIGN=left>Maturity Analysis and Recommendations Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>99</th>
+    <TD ALIGN=left>INIT.ER.020</TD>
+    <TD ALIGN=left><DIV>Determine Envision Engagement Strategy</DIV></TD>
+    <TD ALIGN=left>Envision Engagement Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>100</th>
+    <TD ALIGN=left><b>INIT.ACT.PD</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for Discovery</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>83</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>101</th>
+    <TD ALIGN=left>INIT.EOCM.010</TD>
+    <TD ALIGN=left><DIV>Create and Manage Ad Hoc Communications</DIV></TD>
+    <TD ALIGN=left>Ad Hoc Communications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>102</th>
+    <TD ALIGN=left>INIT.ER.025</TD>
+    <TD ALIGN=left><DIV>Educate Enterprise on Area of Focus</DIV></TD>
+    <TD ALIGN=left>Educated Enterprise</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>103</th>
+    <TD ALIGN=left>INIT.ER.030</TD>
+    <TD ALIGN=left><DIV>Set and Agree on Plan for Envision Engagement</DIV></TD>
+    <TD ALIGN=left>Envision Engagement Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>104</th>
+    <TD ALIGN=left>INIT.ER.050</TD>
+    <TD ALIGN=left><DIV>Validate and Agree on Envision Engagement Plan</DIV></TD>
+    <TD ALIGN=left>Agreed on Envision Engagement Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>105</th>
+    <TD ALIGN=left><b>INIT.ACT.CEAWE</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Executive Alignment Workshop - Envision</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>83</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>106</th>
+    <TD ALIGN=left>INIT.EOCM.020</TD>
+    <TD ALIGN=left><DIV>Prepare for Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Alignment Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>107</th>
+    <TD ALIGN=left>INIT.EOCM.030</TD>
+    <TD ALIGN=left><DIV>Conduct Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Business Objectives and  Governance Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>108</th>
+    <TD ALIGN=left>INIT.EOCM.040</TD>
+    <TD ALIGN=left><DIV>Build and Deploy Sponsorship Program</DIV></TD>
+    <TD ALIGN=left>Sponsorship Program</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>109</th>
+    <TD ALIGN=left><b>INIT.ACT.DMCEC</b></TD>
+    <TD ALIGN=left><DIV><B>Define and Maintain Common Enterprise Concepts</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>83</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>110</th>
+    <TD ALIGN=left>INIT.BA.030.1</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Glossary</DIV></TD>
+    <TD ALIGN=left>Enterprise Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>111</th>
+    <TD ALIGN=left>INIT.EA.010.1</TD>
+    <TD ALIGN=left><DIV>Review Architecture Principles, Guidelines and Standards</DIV></TD>
+    <TD ALIGN=left>Architecture Principles, Guidelines and Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>112</th>
+    <TD ALIGN=left>INIT.ER.070</TD>
+    <TD ALIGN=left><DIV>Define Modeling Strategy for the Enterprise</DIV></TD>
+    <TD ALIGN=left>Enterprise Modeling Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>113</th>
+    <TD ALIGN=left><b>INIT.ACT.EDGI</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Gather Information (As Is)</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>83,99,104</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>114</th>
+    <TD ALIGN=left>INIT.EOCM.050</TD>
+    <TD ALIGN=left><DIV>Assess Enterprise Change Readiness </DIV></TD>
+    <TD ALIGN=left>Preliminary Enterprise Change Readiness Assessment </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>115</th>
+    <TD ALIGN=left>INIT.EOCM.060</TD>
+    <TD ALIGN=left><DIV>Prepare Project Team for Client Culture</DIV></TD>
+    <TD ALIGN=left>Prepared Project Team</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>116</th>
+    <TD ALIGN=left>INIT.EOCM.070</TD>
+    <TD ALIGN=left><DIV>Identify Change Agent Structure</DIV></TD>
+    <TD ALIGN=left>Change Agent Structure</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>117</th>
+    <TD ALIGN=left>INIT.ER.080</TD>
+    <TD ALIGN=left><DIV>Obtain Existing Reference Material</DIV></TD>
+    <TD ALIGN=left>Existing Reference Material</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>118</th>
+    <TD ALIGN=left>INIT.ER.090</TD>
+    <TD ALIGN=left><DIV>Conduct Solution Readiness Assessment</DIV></TD>
+    <TD ALIGN=left>Solution Readiness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>119</th>
+    <TD ALIGN=left>INIT.GV.015</TD>
+    <TD ALIGN=left><DIV>Review Current Governance Model</DIV></TD>
+    <TD ALIGN=left>Current Governance Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>120</th>
+    <TD ALIGN=left>INIT.GV.020.1</TD>
+    <TD ALIGN=left><DIV>Determine Regulatory and Business Mandates</DIV></TD>
+    <TD ALIGN=left>Mandate Matrix</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>121</th>
+    <TD ALIGN=left>INIT.BA.040</TD>
+    <TD ALIGN=left><DIV>Create Enterprise Function or Process Model</DIV></TD>
+    <TD ALIGN=left>Enterprise Function or Process Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>122</th>
+    <TD ALIGN=left>INIT.BA.050</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Domain Model (Business Entities)</DIV></TD>
+    <TD ALIGN=left>Enterprise Domain Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>123</th>
+    <TD ALIGN=left>INIT.BA.055</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Knowledge Flow</DIV></TD>
+    <TD ALIGN=left>Enterprise Knowledge Flow</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>124</th>
+    <TD ALIGN=left>INIT.BA.058</TD>
+    <TD ALIGN=left><DIV>Develop Business Architecture</DIV></TD>
+    <TD ALIGN=left>Business Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>125</th>
+    <TD ALIGN=left>INIT.BA.060.1</TD>
+    <TD ALIGN=left><DIV>Perform High-Level Use Case Discovery</DIV></TD>
+    <TD ALIGN=left>High-Level Use Cases</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>126</th>
+    <TD ALIGN=left>INIT.EA.030</TD>
+    <TD ALIGN=left><DIV>Identify Current Enterprise Architecture</DIV></TD>
+    <TD ALIGN=left>Current Enterprise Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>127</th>
+    <TD ALIGN=left>INIT.EA.040</TD>
+    <TD ALIGN=left><DIV>Analyze Capabilities</DIV></TD>
+    <TD ALIGN=left>Capability Analysis Results </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>128</th>
+    <TD ALIGN=left>INIT.GV.030.1</TD>
+    <TD ALIGN=left><DIV>Discover or Define Policies</DIV></TD>
+    <TD ALIGN=left>Governance Policies Catalog</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>129</th>
+    <TD ALIGN=left>INIT.EA.050</TD>
+    <TD ALIGN=left><DIV>Identify Current Architectural Challenges</DIV></TD>
+    <TD ALIGN=left>Current Architectural Challenges</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>130</th>
+    <TD ALIGN=left>INIT.GV.092</TD>
+    <TD ALIGN=left><DIV>Determine Projects Meta Data Description</DIV></TD>
+    <TD ALIGN=left>Project Meta Data Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>131</th>
+    <TD ALIGN=left>INIT.IP.010</TD>
+    <TD ALIGN=left><DIV>Inventory Projects</DIV></TD>
+    <TD ALIGN=left>IT Project Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>132</th>
+    <TD ALIGN=left>INIT.GV.094</TD>
+    <TD ALIGN=left><DIV>Determine Applications Meta Data Description</DIV></TD>
+    <TD ALIGN=left>Applications Meta Data Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>133</th>
+    <TD ALIGN=left>INIT.IP.012</TD>
+    <TD ALIGN=left><DIV>Inventory Applications</DIV></TD>
+    <TD ALIGN=left>IT Application Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>134</th>
+    <TD ALIGN=left>INIT.IP.015</TD>
+    <TD ALIGN=left><DIV>Conduct Portfolio Analysis</DIV></TD>
+    <TD ALIGN=left>Portfolio Analysis Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>135</th>
+    <TD ALIGN=left>INIT.BA.065</TD>
+    <TD ALIGN=left><DIV>Review Business-IT SLA</DIV></TD>
+    <TD ALIGN=left>Business-IT SLA Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>136</th>
+    <TD ALIGN=left>INIT.BA.067</TD>
+    <TD ALIGN=left><DIV>Review Business Capacity Plan</DIV></TD>
+    <TD ALIGN=left>Business Capacity Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>137</th>
+    <TD ALIGN=left>INIT.GV.096</TD>
+    <TD ALIGN=left><DIV>Determine Services Meta Data Description</DIV></TD>
+    <TD ALIGN=left>Services Meta Data Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>138</th>
+    <TD ALIGN=left>INIT.GV.098</TD>
+    <TD ALIGN=left><DIV>Determine Other Meta Data Descriptions</DIV></TD>
+    <TD ALIGN=left>Other Meta Data Descriptions</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>139</th>
+    <TD ALIGN=left>INIT.IP.014</TD>
+    <TD ALIGN=left><DIV>Inventory Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>140</th>
+    <TD ALIGN=left>INIT.ER.100</TD>
+    <TD ALIGN=left><DIV>Define Enterprise Supplemental Requirements</DIV></TD>
+    <TD ALIGN=left>Enterprise Supplemental Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>141</th>
+    <TD ALIGN=left>INIT.EA.057</TD>
+    <TD ALIGN=left><DIV>Review Business Capacity Plan</DIV></TD>
+    <TD ALIGN=left>Business Capacity Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>142</th>
+    <TD ALIGN=left><b>INIT.ACT.EDBPD</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Brainstorm, Prioritize and Discover Entry Points</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>112</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>143</th>
+    <TD ALIGN=left>INIT.BA.045</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Business Context Diagram</DIV></TD>
+    <TD ALIGN=left>Enterprise Business Context Diagram</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>144</th>
+    <TD ALIGN=left>INIT.GV.040</TD>
+    <TD ALIGN=left><DIV>Determine Organizational Impact of Governance</DIV></TD>
+    <TD ALIGN=left>Impact Study and List of Proposed Organizational Changes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>145</th>
+    <TD ALIGN=left>INIT.EA.060</TD>
+    <TD ALIGN=left><DIV>Identify Architectural Gaps and Improvement Options</DIV></TD>
+    <TD ALIGN=left>Architectural Gaps and Improvement Options</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>146</th>
+    <TD ALIGN=left>INIT.EA.065</TD>
+    <TD ALIGN=left><DIV>Identify Enterprise IT Strategy</DIV></TD>
+    <TD ALIGN=left>Enterprise IT Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>147</th>
+    <TD ALIGN=left>INIT.ER.110.1</TD>
+    <TD ALIGN=left><DIV>Perform Benefit Analysis</DIV></TD>
+    <TD ALIGN=left>Benefit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>148</th>
+    <TD ALIGN=left>INIT.BA.060.2</TD>
+    <TD ALIGN=left><DIV>Perform High-Level Use Case Discovery</DIV></TD>
+    <TD ALIGN=left>High-Level Use Cases</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>149</th>
+    <TD ALIGN=left>INIT.EA.075</TD>
+    <TD ALIGN=left><DIV>Develop Technology Reference Architectures</DIV></TD>
+    <TD ALIGN=left>Technology Reference Architectures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>150</th>
+    <TD ALIGN=left>INIT.BA.070</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Candidate Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>151</th>
+    <TD ALIGN=left>INIT.IP.020</TD>
+    <TD ALIGN=left><DIV>Analyze Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Proposed Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>152</th>
+    <TD ALIGN=left>INIT.IP.025</TD>
+    <TD ALIGN=left><DIV>Populate Services Repository</DIV></TD>
+    <TD ALIGN=left>Populated Services Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>153</th>
+    <TD ALIGN=left>INIT.BA.080</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Enterprise Business Rules</DIV></TD>
+    <TD ALIGN=left>Candidate Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>154</th>
+    <TD ALIGN=left>INIT.IP.030</TD>
+    <TD ALIGN=left><DIV>Analyze Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>155</th>
+    <TD ALIGN=left>INIT.BA.090</TD>
+    <TD ALIGN=left><DIV>Identify Process Improvement Options</DIV></TD>
+    <TD ALIGN=left>Process Improvement Options</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>156</th>
+    <TD ALIGN=left>INIT.ER.120.1</TD>
+    <TD ALIGN=left><DIV>Identify and Mitigate Future EA Risks</DIV></TD>
+    <TD ALIGN=left>Future Architectural Risks</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>157</th>
+    <TD ALIGN=left>INIT.ER.130.1</TD>
+    <TD ALIGN=left><DIV>Produce MoSCoW Improvement List</DIV></TD>
+    <TD ALIGN=left>MoSCoW Improvement List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>158</th>
+    <TD ALIGN=left>INIT.EA.095</TD>
+    <TD ALIGN=left><DIV>Review Enterprise Software Development Process</DIV></TD>
+    <TD ALIGN=left>Enterprise Software Development Process</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>159</th>
+    <TD ALIGN=left>INIT.IP.040</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Projects</DIV></TD>
+    <TD ALIGN=left>Candidate Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>160</th>
+    <TD ALIGN=left><b>INIT.ACT.EDF</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Finish</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>141</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>161</th>
+    <TD ALIGN=left>INIT.ER.140</TD>
+    <TD ALIGN=left><DIV>Share Product Strategies with Enterprise</DIV></TD>
+    <TD ALIGN=left>Informed Enterprise</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>162</th>
+    <TD ALIGN=left>INIT.ER.150</TD>
+    <TD ALIGN=left><DIV>Review Discovery Findings</DIV></TD>
+    <TD ALIGN=left>Reviewed Discovery Findings</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>163</th>
+    <TD ALIGN=left><b>INIT.ACT.DSPC</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Solution and Present to Customer </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>141,159</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>164</th>
+    <TD ALIGN=left>INIT.GV.050.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Processes</DIV></TD>
+    <TD ALIGN=left>Policy Implementation Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>165</th>
+    <TD ALIGN=left>INIT.GV.060.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Tooling</DIV></TD>
+    <TD ALIGN=left>Governance Policy Tooling</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>166</th>
+    <TD ALIGN=left>INIT.GV.070.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Metrics</DIV></TD>
+    <TD ALIGN=left>Measurements Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>167</th>
+    <TD ALIGN=left>INIT.GV.080.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Monitoring Processes</DIV></TD>
+    <TD ALIGN=left>Policy Monitoring Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>168</th>
+    <TD ALIGN=left>INIT.GV.090.1</TD>
+    <TD ALIGN=left><DIV>Determine Funding Model</DIV></TD>
+    <TD ALIGN=left>Funding Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>169</th>
+    <TD ALIGN=left>INIT.GV.100.1</TD>
+    <TD ALIGN=left><DIV>Implement Governance</DIV></TD>
+    <TD ALIGN=left>Governance Implementation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>170</th>
+    <TD ALIGN=left>INIT.ER.160</TD>
+    <TD ALIGN=left><DIV>Develop Desired Future State</DIV></TD>
+    <TD ALIGN=left>Desired Future State</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>171</th>
+    <TD ALIGN=left>INIT.ER.165</TD>
+    <TD ALIGN=left><DIV>Identify Capability Challenges</DIV></TD>
+    <TD ALIGN=left>Capability Challenges</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>172</th>
+    <TD ALIGN=left>INIT.ER.167</TD>
+    <TD ALIGN=left><DIV>Determine Remediation Approaches</DIV></TD>
+    <TD ALIGN=left>Remediation Approaches</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>173</th>
+    <TD ALIGN=left>INIT.EA.110</TD>
+    <TD ALIGN=left><DIV>Develop Future State Enterprise Architecture</DIV></TD>
+    <TD ALIGN=left>Future State Enterprise Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>174</th>
+    <TD ALIGN=left>INIT.EA.120</TD>
+    <TD ALIGN=left><DIV>Develop Information Architecture</DIV></TD>
+    <TD ALIGN=left>Information Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>175</th>
+    <TD ALIGN=left>INIT.EA.130</TD>
+    <TD ALIGN=left><DIV>Develop Technology Architecture</DIV></TD>
+    <TD ALIGN=left>Technology Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>176</th>
+    <TD ALIGN=left>INIT.EA.140</TD>
+    <TD ALIGN=left><DIV>Develop Applications Architecture</DIV></TD>
+    <TD ALIGN=left>Applications Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>177</th>
+    <TD ALIGN=left>INIT.EA.150</TD>
+    <TD ALIGN=left><DIV>Define Transitional Architectures</DIV></TD>
+    <TD ALIGN=left>Transitional Architectures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>178</th>
+    <TD ALIGN=left>INIT.EA.160</TD>
+    <TD ALIGN=left><DIV>Define Business Rules Implementation Strategy</DIV></TD>
+    <TD ALIGN=left>Business Rules Implementation Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>179</th>
+    <TD ALIGN=left>INIT.ER.170</TD>
+    <TD ALIGN=left><DIV>Develop Future State Transition Plan</DIV></TD>
+    <TD ALIGN=left>Future State Transition Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>180</th>
+    <TD ALIGN=left>INIT.EA.170</TD>
+    <TD ALIGN=left><DIV>Identify Integration Requirements</DIV></TD>
+    <TD ALIGN=left>Integration Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>181</th>
+    <TD ALIGN=left>INIT.IP.050.1</TD>
+    <TD ALIGN=left><DIV>Prioritize Projects</DIV></TD>
+    <TD ALIGN=left>Prioritized Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>182</th>
+    <TD ALIGN=left>INIT.ER.110.2</TD>
+    <TD ALIGN=left><DIV>Perform Benefit Analysis</DIV></TD>
+    <TD ALIGN=left>Benefit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>183</th>
+    <TD ALIGN=left>INIT.IP.060</TD>
+    <TD ALIGN=left><DIV>Develop IT Portfolio Plan</DIV></TD>
+    <TD ALIGN=left>IT Portfolio Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>184</th>
+    <TD ALIGN=left>INIT.EA.190</TD>
+    <TD ALIGN=left><DIV>Define Product Implementation Prioritization</DIV></TD>
+    <TD ALIGN=left>Product Implementation Prioritization Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>185</th>
+    <TD ALIGN=left>INIT.ER.180</TD>
+    <TD ALIGN=left><DIV>Prepare for and Present Solution Recommendations</DIV></TD>
+    <TD ALIGN=left>Solution Recommendations</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>186</th>
+    <TD ALIGN=left>INIT.EA.200</TD>
+    <TD ALIGN=left><DIV>Define Development Framework nd Policy Guidelines</DIV></TD>
+    <TD ALIGN=left>Development Framework</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>187</th>
+    <TD ALIGN=left><b>INIT.ACT.PTI</b></TD>
+    <TD ALIGN=left><DIV><B>Plan Transition to Implementation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>162</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>188</th>
+    <TD ALIGN=left>INIT.ER.190</TD>
+    <TD ALIGN=left><DIV>Review Business Feedback and Identify Opportunities</DIV></TD>
+    <TD ALIGN=left>Opportunities Task List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>189</th>
+    <TD ALIGN=left>INIT.ER.200</TD>
+    <TD ALIGN=left><DIV>Prepare for Transition to Sales or Services</DIV></TD>
+    <TD ALIGN=left>Opportunities Action Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>190</th>
+    <TD ALIGN=left><b>ME</b></TD>
+    <TD ALIGN=left><DIV><B>Maintain and Evolve</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>191</th>
+    <TD ALIGN=left><b>ME.ACT.ME</b></TD>
+    <TD ALIGN=left><DIV><B>Maintain and Evolve</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>192</th>
+    <TD ALIGN=left>ME.BA.017.2</TD>
+    <TD ALIGN=left><DIV>Determine Metrics Collection and Reporting Strategy</DIV></TD>
+    <TD ALIGN=left>Metrics Collection and Reporting Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>193</th>
+    <TD ALIGN=left>ME.BA.018.2</TD>
+    <TD ALIGN=left><DIV>Establish Current Baseline Metrics</DIV></TD>
+    <TD ALIGN=left>Current Baseline Metrics</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>194</th>
+    <TD ALIGN=left>ME.BA.100</TD>
+    <TD ALIGN=left><DIV>Maintain Enterprise Business Models</DIV></TD>
+    <TD ALIGN=left>Maintained Enterprise Business Models</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>195</th>
+    <TD ALIGN=left>ME.BA.110</TD>
+    <TD ALIGN=left><DIV>Maintain Business Rules</DIV></TD>
+    <TD ALIGN=left>Maintained Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>196</th>
+    <TD ALIGN=left>ME.BA.030.2</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Glossary</DIV></TD>
+    <TD ALIGN=left>Enterprise Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>197</th>
+    <TD ALIGN=left>ME.EA.010.2</TD>
+    <TD ALIGN=left><DIV>Review Architecture Principles, Guidelines and Standards</DIV></TD>
+    <TD ALIGN=left>Architecture Principles, Guidelines and Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>198</th>
+    <TD ALIGN=left>ME.GV.020.2</TD>
+    <TD ALIGN=left><DIV>Determine Regulatory and Business Mandates</DIV></TD>
+    <TD ALIGN=left>Mandate Matrix</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>199</th>
+    <TD ALIGN=left>ME.GV.030.2</TD>
+    <TD ALIGN=left><DIV>Discover or Define Policies</DIV></TD>
+    <TD ALIGN=left>Governance Policies Catalog</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>200</th>
+    <TD ALIGN=left>ME.GV.050.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Processes</DIV></TD>
+    <TD ALIGN=left>Policy Implementation Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>201</th>
+    <TD ALIGN=left>ME.GV.060.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Tooling</DIV></TD>
+    <TD ALIGN=left>Governance Policy Tooling</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>202</th>
+    <TD ALIGN=left>ME.GV.070.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Metrics</DIV></TD>
+    <TD ALIGN=left>Measurements Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>203</th>
+    <TD ALIGN=left>ME.GV.080.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Monitoring Processes</DIV></TD>
+    <TD ALIGN=left>Policy Monitoring Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>204</th>
+    <TD ALIGN=left>ME.GV.090.2</TD>
+    <TD ALIGN=left><DIV>Determine Funding Model</DIV></TD>
+    <TD ALIGN=left>Funding Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>205</th>
+    <TD ALIGN=left>ME.GV.100.2</TD>
+    <TD ALIGN=left><DIV>Implement Governance</DIV></TD>
+    <TD ALIGN=left>Governance Implementation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>206</th>
+    <TD ALIGN=left>ME.GV.110</TD>
+    <TD ALIGN=left><DIV>Monitor and Analyze Governance Processes</DIV></TD>
+    <TD ALIGN=left>Governance Implementation Improvement Proposal</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>207</th>
+    <TD ALIGN=left>ME.ER.120.2</TD>
+    <TD ALIGN=left><DIV>Identify and Mitigate Future EA Risks</DIV></TD>
+    <TD ALIGN=left>Future State Risks</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>208</th>
+    <TD ALIGN=left>ME.ER.130.2</TD>
+    <TD ALIGN=left><DIV>Produce MoSCoW Improvement List</DIV></TD>
+    <TD ALIGN=left>MoSCoW Improvement List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>209</th>
+    <TD ALIGN=left>ME.EA.210</TD>
+    <TD ALIGN=left><DIV>Maintain Enterprise Architecture Models</DIV></TD>
+    <TD ALIGN=left>Maintained Enterprise Architecture Models</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>210</th>
+    <TD ALIGN=left>ME.IP.050.2</TD>
+    <TD ALIGN=left><DIV>Prioritize Projects</DIV></TD>
+    <TD ALIGN=left>Prioritize Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>211</th>
+    <TD ALIGN=left>ME.IP.070</TD>
+    <TD ALIGN=left><DIV>Execute and Maintain IT Portfolio and Programs</DIV></TD>
+    <TD ALIGN=left>Maintained IT Portfolio and Programs</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>212</th>
+    <TD ALIGN=left>ME.IP.080</TD>
+    <TD ALIGN=left><DIV>Maintain Repository of Artifacts</DIV></TD>
+    <TD ALIGN=left>Maintained Repository of Artifacts</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>213</th>
+    <TD ALIGN=left>ME.ER.210</TD>
+    <TD ALIGN=left><DIV>Monitor Current Situation and Pursue Relevant Updates</DIV></TD>
+    <TD ALIGN=left>Monitored Current Situation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>214</th>
+    <TD ALIGN=left><b>A</b></TD>
+    <TD ALIGN=left><DIV><B>Inception</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>215</th>
+    <TD ALIGN=left><b>A.ACT.GBRI</b></TD>
+    <TD ALIGN=left><DIV><B>Gather Business Requirements - Inception</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>26,267</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>216</th>
+    <TD ALIGN=left>A.RD.001</TD>
+    <TD ALIGN=left><DIV>Detail Business and System Objectives</DIV></TD>
+    <TD ALIGN=left>Business and System Objectives</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>217</th>
+    <TD ALIGN=left>A.RD.003</TD>
+    <TD ALIGN=left><DIV>Identify Viewpoints</DIV></TD>
+    <TD ALIGN=left>Viewpoints List</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>218</th>
+    <TD ALIGN=left>A.RD.005</TD>
+    <TD ALIGN=left><DIV>Create System Context Diagram</DIV></TD>
+    <TD ALIGN=left>System Context Diagram</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>219</th>
+    <TD ALIGN=left>A.RD.011.1</TD>
+    <TD ALIGN=left><DIV>Develop Future Process Model</DIV></TD>
+    <TD ALIGN=left>Future Process Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>220</th>
+    <TD ALIGN=left>A.RD.020</TD>
+    <TD ALIGN=left><DIV>Obtain High-Level Business Descriptions</DIV></TD>
+    <TD ALIGN=left>High-Level Business Descriptions</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>221</th>
+    <TD ALIGN=left>A.RA.010</TD>
+    <TD ALIGN=left><DIV>Simulate Business Process</DIV></TD>
+    <TD ALIGN=left>Business Process Simulation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>222</th>
+    <TD ALIGN=left>A.RA.015</TD>
+    <TD ALIGN=left><DIV>Develop Business Use Case Model</DIV></TD>
+    <TD ALIGN=left>Business Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>223</th>
+    <TD ALIGN=left>A.RD.065</TD>
+    <TD ALIGN=left><DIV>Develop Domain Model (Business Entities)</DIV></TD>
+    <TD ALIGN=left>Domain Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>224</th>
+    <TD ALIGN=left>A.RD.012</TD>
+    <TD ALIGN=left><DIV>Document Present and Future Organization Structures</DIV></TD>
+    <TD ALIGN=left>Present and Future Organization Structures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>225</th>
+    <TD ALIGN=left>A.RD.015</TD>
+    <TD ALIGN=left><DIV>Determine KPI Collection and Reporting Strategy</DIV></TD>
+    <TD ALIGN=left>Key Business Strategies and Objectives</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>226</th>
+    <TD ALIGN=left><b>A.ACT.ECBB</b></TD>
+    <TD ALIGN=left><DIV><B>Establish Current Business Baseline</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>227</th>
+    <TD ALIGN=left>A.RD.030</TD>
+    <TD ALIGN=left><DIV>Develop Current Business Process Model</DIV></TD>
+    <TD ALIGN=left>Current Process Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>228</th>
+    <TD ALIGN=left>A.RD.034</TD>
+    <TD ALIGN=left><DIV>Document Current Business Baseline Metrics</DIV></TD>
+    <TD ALIGN=left>Current Business Baseline Metrics</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>229</th>
+    <TD ALIGN=left><b>A.ACT.GR</b></TD>
+    <TD ALIGN=left><DIV><B>Gather Solution Requirements</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>230</th>
+    <TD ALIGN=left>A.RD.042.1</TD>
+    <TD ALIGN=left><DIV>Develop Glossary</DIV></TD>
+    <TD ALIGN=left>Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>231</th>
+    <TD ALIGN=left>A.RD.045.1</TD>
+    <TD ALIGN=left><DIV>Prioritize Requirements (MoSCoW)</DIV></TD>
+    <TD ALIGN=left>MoSCoW List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>232</th>
+    <TD ALIGN=left>A.RD.055</TD>
+    <TD ALIGN=left><DIV>Detail Supplemental Requirements</DIV></TD>
+    <TD ALIGN=left>Supplemental Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>233</th>
+    <TD ALIGN=left>A.RD.130.1</TD>
+    <TD ALIGN=left><DIV>Develop Baseline Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>234</th>
+    <TD ALIGN=left>A.RA.019</TD>
+    <TD ALIGN=left><DIV>Define Project Reference Architecture</DIV></TD>
+    <TD ALIGN=left>Project Reference Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>235</th>
+    <TD ALIGN=left>A.RA.021.1</TD>
+    <TD ALIGN=left><DIV>Capture User Stories</DIV></TD>
+    <TD ALIGN=left>User Story</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>236</th>
+    <TD ALIGN=left>A.RA.023.1</TD>
+    <TD ALIGN=left><DIV>Develop Use Case Model</DIV></TD>
+    <TD ALIGN=left>Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>237</th>
+    <TD ALIGN=left>A.RA.025.1</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Candidate Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>238</th>
+    <TD ALIGN=left>A.RA.027.1</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Business Rules</DIV></TD>
+    <TD ALIGN=left>Candidate Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>239</th>
+    <TD ALIGN=left>A.RA.028.1</TD>
+    <TD ALIGN=left><DIV>Populate Business Rules Repository</DIV></TD>
+    <TD ALIGN=left>Populated Business Rules Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>240</th>
+    <TD ALIGN=left><b>A.ACT.PSUIA</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Software Upgrade Impact Analysis</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>241</th>
+    <TD ALIGN=left>A.TA.004</TD>
+    <TD ALIGN=left><DIV>Perform Technical Architecture Impact Analysis</DIV></TD>
+    <TD ALIGN=left>Technical Architecture Impact Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>242</th>
+    <TD ALIGN=left>A.RD.134</TD>
+    <TD ALIGN=left><DIV>Identify New Software Release Changes</DIV></TD>
+    <TD ALIGN=left>Release Changes Summary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>243</th>
+    <TD ALIGN=left>A.RD.136</TD>
+    <TD ALIGN=left><DIV>Perform Custom Extension Impact Analysis</DIV></TD>
+    <TD ALIGN=left>Custom Extension Impact Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>244</th>
+    <TD ALIGN=left>A.RD.138</TD>
+    <TD ALIGN=left><DIV>Perform Data Impact Analysis</DIV></TD>
+    <TD ALIGN=left>Data Impact Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>245</th>
+    <TD ALIGN=left>A.MC.090.1</TD>
+    <TD ALIGN=left><DIV>Conduct Reporting Fit Analysis</DIV></TD>
+    <TD ALIGN=left>Reporting Fit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>246</th>
+    <TD ALIGN=left><b>A.ACT.CR</b></TD>
+    <TD ALIGN=left><DIV><B>Consolidate Solution Requirements</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>228</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>247</th>
+    <TD ALIGN=left>A.RD.140.1</TD>
+    <TD ALIGN=left><DIV>Create Requirements Specification</DIV></TD>
+    <TD ALIGN=left>Requirements Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>248</th>
+    <TD ALIGN=left>A.RD.150.1</TD>
+    <TD ALIGN=left><DIV>Review Requirements Specification</DIV></TD>
+    <TD ALIGN=left>Reviewed Requirements Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>249</th>
+    <TD ALIGN=left>A.ACT.CCPI</TD>
+    <TD ALIGN=left><DIV><B>Create Conceptual Prototype - Inception</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>228</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>250</th>
+    <TD ALIGN=left>A.IM.005.1</TD>
+    <TD ALIGN=left><DIV>Develop Conceptual Prototype</DIV></TD>
+    <TD ALIGN=left>Conceptual Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>251</th>
+    <TD ALIGN=left>A.RA.030.1</TD>
+    <TD ALIGN=left><DIV>Validate Conceptual Prototype</DIV></TD>
+    <TD ALIGN=left>Validated Conceptual Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>252</th>
+    <TD ALIGN=left><b>A.ACT.GSP</b></TD>
+    <TD ALIGN=left><DIV><B>Gather Supporting Requirements</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214,228</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>253</th>
+    <TD ALIGN=left>A.CV.010</TD>
+    <TD ALIGN=left><DIV>Define Data Acquisition and Conversion Requirements</DIV></TD>
+    <TD ALIGN=left>Data Acquisition and Conversion Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>254</th>
+    <TD ALIGN=left><b>A.TE.005.1</b></TD>
+    <TD ALIGN=left><DIV>Determine Testing Requirements</DIV></TD>
+    <TD ALIGN=left>Testing Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>255</th>
+    <TD ALIGN=left>A.PT.010</TD>
+    <TD ALIGN=left><DIV>Conduct Performance Management Workshop</DIV></TD>
+    <TD ALIGN=left>Performance Management Workshop Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>256</th>
+    <TD ALIGN=left>A.TA.010</TD>
+    <TD ALIGN=left><DIV>Conduct Technical Architecture Workshop</DIV></TD>
+    <TD ALIGN=left>Technical Architecture Workshop Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>257</th>
+    <TD ALIGN=left>A.DO.010</TD>
+    <TD ALIGN=left><DIV>Define Documentation Requirements and Strategy</DIV></TD>
+    <TD ALIGN=left>Documentation Requirements and Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>258</th>
+    <TD ALIGN=left>A.RD.070</TD>
+    <TD ALIGN=left><DIV>Determine Audit and Control Requirements</DIV></TD>
+    <TD ALIGN=left>Audit And Control Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>259</th>
+    <TD ALIGN=left><b>A.ACT.SKSD</b></TD>
+    <TD ALIGN=left><DIV><B>Specify Key Structure Definition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>260</th>
+    <TD ALIGN=left>A.MC.010.1</TD>
+    <TD ALIGN=left><DIV>Define Business Data Structures</DIV></TD>
+    <TD ALIGN=left>Business Data Structures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>261</th>
+    <TD ALIGN=left>A.MC.020</TD>
+    <TD ALIGN=left><DIV>Define Business Data Structure Setups</DIV></TD>
+    <TD ALIGN=left>Business Data Structure Setups</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>262</th>
+    <TD ALIGN=left><b>A.ACT.CMAHC</b></TD>
+    <TD ALIGN=left><DIV><B>Create and Manage Ad Hoc Communications</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>26</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>263</th>
+    <TD ALIGN=left>A.OCM.010</TD>
+    <TD ALIGN=left><DIV>Create and Manage Ad Hoc Communications</DIV></TD>
+    <TD ALIGN=left>Ad Hoc Communications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>264</th>
+    <TD ALIGN=left><b>A.ACT.CEAW</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Executive Alignment Workshop</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>265</th>
+    <TD ALIGN=left>A.OCM.020</TD>
+    <TD ALIGN=left><DIV>Prepare for Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Alignment Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>266</th>
+    <TD ALIGN=left>A.OCM.030</TD>
+    <TD ALIGN=left><DIV>Conduct Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Execution Plan / Governance Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>267</th>
+    <TD ALIGN=left>A.OCM.040</TD>
+    <TD ALIGN=left><DIV>Build and Deploy Sponsorship Program</DIV></TD>
+    <TD ALIGN=left>Sponsorship Program</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>268</th>
+    <TD ALIGN=left><b>A.ACT.TPT</b></TD>
+    <TD ALIGN=left><DIV><B>Train Project Team</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>26</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>269</th>
+    <TD ALIGN=left>A.TR.010.1</TD>
+    <TD ALIGN=left><DIV>Define Training Strategy</DIV></TD>
+    <TD ALIGN=left>Education and Training Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>270</th>
+    <TD ALIGN=left>A.TR.020</TD>
+    <TD ALIGN=left><DIV>Prepare Project Team Learning Plan</DIV></TD>
+    <TD ALIGN=left>Project Team Learning Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>271</th>
+    <TD ALIGN=left>A.TR.030</TD>
+    <TD ALIGN=left><DIV>Prepare Project Team Learning Environment</DIV></TD>
+    <TD ALIGN=left>Project Team Learning Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>272</th>
+    <TD ALIGN=left>A.TR.040</TD>
+    <TD ALIGN=left><DIV>Develop Project Team Learningware</DIV></TD>
+    <TD ALIGN=left>Project Team Learningware</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>273</th>
+    <TD ALIGN=left>A.TR.050</TD>
+    <TD ALIGN=left><DIV>Conduct Project Team Learning Events</DIV></TD>
+    <TD ALIGN=left>Skilled Project Team</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>274</th>
+    <TD ALIGN=left><b>A.ACT.CAWI</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Alignment Workshops - Inception</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>263</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>275</th>
+    <TD ALIGN=left>A.OCM.050</TD>
+    <TD ALIGN=left><DIV>Prepare for Team-Building Workshop</DIV></TD>
+    <TD ALIGN=left>Team-Building Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>276</th>
+    <TD ALIGN=left>A.OCM.060</TD>
+    <TD ALIGN=left><DIV>Conduct Team-Building Workshop</DIV></TD>
+    <TD ALIGN=left>Cohesive Project Team</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>277</th>
+    <TD ALIGN=left>A.OCM.070</TD>
+    <TD ALIGN=left><DIV>Design Managers Project Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Managers Project Alignment Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>278</th>
+    <TD ALIGN=left>A.OCM.080</TD>
+    <TD ALIGN=left><DIV>Conduct Managers Project Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Aligned Managers</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>279</th>
+    <TD ALIGN=left>A.OCM.090</TD>
+    <TD ALIGN=left><DIV>Design Change Agent Workshop</DIV></TD>
+    <TD ALIGN=left>Change Agent Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>280</th>
+    <TD ALIGN=left>A.OCM.100</TD>
+    <TD ALIGN=left><DIV>Conduct Change Agent Workshop</DIV></TD>
+    <TD ALIGN=left>Enabled Change Agents</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>281</th>
+    <TD ALIGN=left><b>A.ACT.CCRA</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Change Readiness Assessment</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>263</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>282</th>
+    <TD ALIGN=left>A.OCM.110</TD>
+    <TD ALIGN=left><DIV>Develop Change Readiness  Assessment Strategy and Tools</DIV></TD>
+    <TD ALIGN=left>Change Readiness Assessment Strategy and Tools</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>283</th>
+    <TD ALIGN=left>A.OCM.120</TD>
+    <TD ALIGN=left><DIV>Conduct Change Readiness Assessment and Analyze Data</DIV></TD>
+    <TD ALIGN=left>Readiness Assessment Analysis and Recommendations</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>284</th>
+    <TD ALIGN=left>A.OCM.130</TD>
+    <TD ALIGN=left><DIV>Build Communication Strategy and Change Management Roadmap</DIV></TD>
+    <TD ALIGN=left>Communication Strategy and Change Management Roadmap</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>285</th>
+    <TD ALIGN=left><b>A.ACT.DCMRCCI</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy Change Management Roadmap and Communication Campaign - Inception</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>280</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>286</th>
+    <TD ALIGN=left>A.OCM.140</TD>
+    <TD ALIGN=left><DIV>Develop Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Communication Campaign</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>287</th>
+    <TD ALIGN=left>A.OCM.150.1</TD>
+    <TD ALIGN=left><DIV>Conduct Change Management Roadmap and Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Events</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>288</th>
+    <TD ALIGN=left><b>A.ACT.LO</b></TD>
+    <TD ALIGN=left><DIV><B>Lifecycle Objective Milestone</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>214,228,239,245,251,258,267</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>289</th>
+    <TD ALIGN=left>A.PMC.LO</TD>
+    <TD ALIGN=left><DIV>Lifecycle Objective Milestone</DIV></TD>
+    <TD ALIGN=left>Lifecycle Objective Milestone</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>290</th>
+    <TD ALIGN=left><b>B</b></TD>
+    <TD ALIGN=left><DIV><B>Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>291</th>
+    <TD ALIGN=left><b>B.ACT.DPS</b></TD>
+    <TD ALIGN=left><DIV><B>Define Project Strategy</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>292</th>
+    <TD ALIGN=left>B.DS.020</TD>
+    <TD ALIGN=left><DIV>Define Application Extension Strategy</DIV></TD>
+    <TD ALIGN=left>Application Extension Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>293</th>
+    <TD ALIGN=left>B.TE.005.2</TD>
+    <TD ALIGN=left><DIV>Determine Testing Requirements</DIV></TD>
+    <TD ALIGN=left>Testing Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>294</th>
+    <TD ALIGN=left>B.TE.010</TD>
+    <TD ALIGN=left><DIV>Develop Testing Strategy</DIV></TD>
+    <TD ALIGN=left>Testing Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>295</th>
+    <TD ALIGN=left>B.CV.020</TD>
+    <TD ALIGN=left><DIV>Define Data Acquisition, Conversion and Data Quality Strategy</DIV></TD>
+    <TD ALIGN=left>Data Acquisition, Conversion and Data Quality Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>296</th>
+    <TD ALIGN=left>B.DO.020</TD>
+    <TD ALIGN=left><DIV>Define Documentation Standards and Procedures</DIV></TD>
+    <TD ALIGN=left>Documentation Standards and Procedures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>297</th>
+    <TD ALIGN=left>B.TR.010.2</TD>
+    <TD ALIGN=left><DIV>Define Training Strategy</DIV></TD>
+    <TD ALIGN=left>Education and Training Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>298</th>
+    <TD ALIGN=left>B.TS.020.1</TD>
+    <TD ALIGN=left><DIV>Define Cutover Strategy</DIV></TD>
+    <TD ALIGN=left>Cutover Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>299</th>
+    <TD ALIGN=left><b>B.ACT.DI</b></TD>
+    <TD ALIGN=left><DIV><B>Define Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>300</th>
+    <TD ALIGN=left>B.TA.020</TD>
+    <TD ALIGN=left><DIV>Define Technical Architecture Requirements and Strategy</DIV></TD>
+    <TD ALIGN=left>Technical Architecture Requirements and Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>301</th>
+    <TD ALIGN=left>B.TA.030</TD>
+    <TD ALIGN=left><DIV>Define Integration Requirements and Strategy</DIV></TD>
+    <TD ALIGN=left>Integration Architecture Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>302</th>
+    <TD ALIGN=left>B.TA.040</TD>
+    <TD ALIGN=left><DIV>Define Reporting and Information Access Strategy</DIV></TD>
+    <TD ALIGN=left>Reporting and Information Access Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>303</th>
+    <TD ALIGN=left>B.TA.050</TD>
+    <TD ALIGN=left><DIV>Define Disaster Recovery Strategy</DIV></TD>
+    <TD ALIGN=left>Disaster Recovery Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>304</th>
+    <TD ALIGN=left>B.TA.060</TD>
+    <TD ALIGN=left><DIV>Define System Operations and Management Strategy</DIV></TD>
+    <TD ALIGN=left>System Operations and Management Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>305</th>
+    <TD ALIGN=left>B.TA.070</TD>
+    <TD ALIGN=left><DIV>Define Initial Architecture and Application Mapping</DIV></TD>
+    <TD ALIGN=left>Initial Architecture and Application Mapping</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>306</th>
+    <TD ALIGN=left>B.TA.080</TD>
+    <TD ALIGN=left><DIV>Define Backup and Recovery Strategy</DIV></TD>
+    <TD ALIGN=left>Backup and Recovery Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>307</th>
+    <TD ALIGN=left>B.TA.090</TD>
+    <TD ALIGN=left><DIV>Develop Security and Control Strategy</DIV></TD>
+    <TD ALIGN=left>Security and Control Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>308</th>
+    <TD ALIGN=left><b>B.ACT.PEE</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Environments - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287,298</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>309</th>
+    <TD ALIGN=left>B.IM.007.1</TD>
+    <TD ALIGN=left><DIV>Prepare Development Environment</DIV></TD>
+    <TD ALIGN=left>Development Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>310</th>
+    <TD ALIGN=left>B.TE.018.1</TD>
+    <TD ALIGN=left><DIV>Prepare Test Data</DIV></TD>
+    <TD ALIGN=left>Test Data</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>311</th>
+    <TD ALIGN=left>B.TE.038.1</TD>
+    <TD ALIGN=left><DIV>Prepare Integration Test Environment</DIV></TD>
+    <TD ALIGN=left>Integration Test Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>312</th>
+    <TD ALIGN=left>B.TE.060.1</TD>
+    <TD ALIGN=left><DIV>Prepare System Test Environment</DIV></TD>
+    <TD ALIGN=left>System Test Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>313</th>
+    <TD ALIGN=left>B.CV.030.1</TD>
+    <TD ALIGN=left><DIV>Prepare Conversion Environment (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Environment (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>314</th>
+    <TD ALIGN=left>B.DO.040</TD>
+    <TD ALIGN=left><DIV>Prepare Documentation Environment</DIV></TD>
+    <TD ALIGN=left>Documentation Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>315</th>
+    <TD ALIGN=left><b>B.ACT.GBRE</b></TD>
+    <TD ALIGN=left><DIV><B>Gather Business Requirements - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>316</th>
+    <TD ALIGN=left>B.RD.011.2</TD>
+    <TD ALIGN=left><DIV>Develop Future Process Model</DIV></TD>
+    <TD ALIGN=left>Future Process Model</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>317</th>
+    <TD ALIGN=left>B.RA.055.1</TD>
+    <TD ALIGN=left><DIV>Document Business Procedures</DIV></TD>
+    <TD ALIGN=left>Business Procedure Documentation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>318</th>
+    <TD ALIGN=left>B.MC.030</TD>
+    <TD ALIGN=left><DIV>Map Business Requirements</DIV></TD>
+    <TD ALIGN=left>Mapped Business Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>319</th>
+    <TD ALIGN=left>B.TA.006</TD>
+    <TD ALIGN=left><DIV>Define Technical Prototype Subprojects</DIV></TD>
+    <TD ALIGN=left>Technical Prototype Approach</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>320</th>
+    <TD ALIGN=left><b>B.ACT.DTP</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Test Plans</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>290</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>321</th>
+    <TD ALIGN=left>B.TE.015.1</TD>
+    <TD ALIGN=left><DIV>Develop Integration Test Plan</DIV></TD>
+    <TD ALIGN=left>Integration Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>322</th>
+    <TD ALIGN=left>B.TE.050.1</TD>
+    <TD ALIGN=left><DIV>Develop System Test Plan</DIV></TD>
+    <TD ALIGN=left>System Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>323</th>
+    <TD ALIGN=left>B.TE.080</TD>
+    <TD ALIGN=left><DIV>Develop Systems Integration Test Plan</DIV></TD>
+    <TD ALIGN=left>Systems Integration Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>324</th>
+    <TD ALIGN=left>B.TE.082</TD>
+    <TD ALIGN=left><DIV>Develop Acceptance Test Plan</DIV></TD>
+    <TD ALIGN=left>Acceptance Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>325</th>
+    <TD ALIGN=left><b>B.ACT.SSC</b></TD>
+    <TD ALIGN=left><DIV><B>Specify Software Configuration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>326</th>
+    <TD ALIGN=left>B.MC.010.1</TD>
+    <TD ALIGN=left><DIV>Define Business Data Structures </DIV></TD>
+    <TD ALIGN=left>Business Data Structures </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>327</th>
+    <TD ALIGN=left>B.MC.040</TD>
+    <TD ALIGN=left><DIV>Gather Setup Information </DIV></TD>
+    <TD ALIGN=left>Setup Information </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>328</th>
+    <TD ALIGN=left>B.MC.050.1</TD>
+    <TD ALIGN=left><DIV>Define Application Setups</DIV></TD>
+    <TD ALIGN=left>Application Setup Documents</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>329</th>
+    <TD ALIGN=left>B.MC.055</TD>
+    <TD ALIGN=left>Document Application Configuration Changes</TD>
+    <TD ALIGN=left>Application Configuration Change Document </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>330</th>
+    <TD ALIGN=left>B.MC.060</TD>
+    <TD ALIGN=left><DIV>Document Functional Security </DIV></TD>
+    <TD ALIGN=left>Functional Security Setup Information </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>331</th>
+    <TD ALIGN=left><b>B.ACT.PVC</b></TD>
+    <TD ALIGN=left><DIV><B>Prototype and Validate  Configuration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>324</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>332</th>
+    <TD ALIGN=left>B.TE.025.1</TD>
+    <TD ALIGN=left><DIV>Create System Test Scenarios</DIV></TD>
+    <TD ALIGN=left>system Test Scenarios </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>333</th>
+    <TD ALIGN=left>B.MC.070</TD>
+    <TD ALIGN=left><DIV>Prepare Configuration Prototype Environment </DIV></TD>
+    <TD ALIGN=left>Configuration Prototype Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>334</th>
+    <TD ALIGN=left>B.MC.080</TD>
+    <TD ALIGN=left><DIV>Conduct Configuration Prototyping Workshop </DIV></TD>
+    <TD ALIGN=left>Validated Configuration </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>335</th>
+    <TD ALIGN=left>B.MC.090.2</TD>
+    <TD ALIGN=left><DIV>Conduct Reporting Fit Analysis</DIV></TD>
+    <TD ALIGN=left>Reporting Fit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>336</th>
+    <TD ALIGN=left><b>B.ACT.PGA</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Gap Analysis </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>314,330</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>337</th>
+    <TD ALIGN=left>B.MC.100</TD>
+    <TD ALIGN=left><DIV>Define and Estimate Application Extensions</DIV></TD>
+    <TD ALIGN=left>Application Extension Definition and Estimates</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>338</th>
+    <TD ALIGN=left>B.MC.110</TD>
+    <TD ALIGN=left><DIV>Define Gap Resolutions</DIV></TD>
+    <TD ALIGN=left>Gap Resolutions</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>339</th>
+    <TD ALIGN=left><b>B.ACT.DUCM</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Use Case Model </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>314,335</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>340</th>
+    <TD ALIGN=left>B.RA.021.2</TD>
+    <TD ALIGN=left><DIV>Capture User Stories</DIV></TD>
+    <TD ALIGN=left>User Story</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>341</th>
+    <TD ALIGN=left>B.RA.023.2</TD>
+    <TD ALIGN=left><DIV>Develop Use Case Model</DIV></TD>
+    <TD ALIGN=left>Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>342</th>
+    <TD ALIGN=left><b>B.ACT.CCPE</b></TD>
+    <TD ALIGN=left><DIV><B>Create Conceptual Prototype - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>338</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>343</th>
+    <TD ALIGN=left>B.IM.005.2</TD>
+    <TD ALIGN=left><DIV>Develop Conceptual Prototype</DIV></TD>
+    <TD ALIGN=left>Conceptual Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>344</th>
+    <TD ALIGN=left>B.RA.030.2</TD>
+    <TD ALIGN=left><DIV>Validate Conceptual Prototype</DIV></TD>
+    <TD ALIGN=left>Validated Conceptual Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>345</th>
+    <TD ALIGN=left><div align="left"><b>B.ACT.CS</b></div></TD>
+    <TD ALIGN=left><DIV><B>Consolidate Specification</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>314,338</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>346</th>
+    <TD ALIGN=left>B.RD.042.2</TD>
+    <TD ALIGN=left><DIV>Develop Glossary</DIV></TD>
+    <TD ALIGN=left>Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>347</th>
+    <TD ALIGN=left>B.RD.045.2</TD>
+    <TD ALIGN=left><DIV>Prioritize Requirements (MoSCoW)</DIV></TD>
+    <TD ALIGN=left>MoSCoW List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>348</th>
+    <TD ALIGN=left>B.RD.140.2</TD>
+    <TD ALIGN=left><DIV>Create Requirements Specification</DIV></TD>
+    <TD ALIGN=left>Requirements Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>349</th>
+    <TD ALIGN=left>B.RD.150.2</TD>
+    <TD ALIGN=left><DIV>Review Requirements Specification</DIV></TD>
+    <TD ALIGN=left>Reviewed Requirements Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>350</th>
+    <TD ALIGN=left>B.RA.025.2</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Candidate Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>351</th>
+    <TD ALIGN=left>B.RA.027.2</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Business Rules</DIV></TD>
+    <TD ALIGN=left>Candidate Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>352</th>
+    <TD ALIGN=left>B.RA.028.2</TD>
+    <TD ALIGN=left><DIV>Populate Business Rules Repository</DIV></TD>
+    <TD ALIGN=left>Populated Business Rules Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>353</th>
+    <TD ALIGN=left>B.RA.180.1</TD>
+    <TD ALIGN=left><DIV>Review Use Case Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>354</th>
+    <TD ALIGN=left><b>B.ACT.BSA</b></TD>
+    <TD ALIGN=left><DIV><B>Baseline Software Architecture</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>344</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>355</th>
+    <TD ALIGN=left>B.RA.035</TD>
+    <TD ALIGN=left><DIV>Develop High-Level Software Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>356</th>
+    <TD ALIGN=left>B.AN.040.1</TD>
+    <TD ALIGN=left><DIV>Develop Analysis Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>357</th>
+    <TD ALIGN=left>B.DS.040.1</TD>
+    <TD ALIGN=left><DIV>Develop Design Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>358</th>
+    <TD ALIGN=left><div align="left"><b>B.ACT.DUCD</b></div></TD>
+    <TD ALIGN=left><DIV><B>Develop Use Case Details </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>353</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>359</th>
+    <TD ALIGN=left>B.RA.024.1</TD>
+    <TD ALIGN=left><DIV>Develop Use Case Details</DIV></TD>
+    <TD ALIGN=left>Use Case Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>360</th>
+    <TD ALIGN=left><b>B.ACT.AE</b></TD>
+    <TD ALIGN=left><DIV><B>Analyze - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>357</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>361</th>
+    <TD ALIGN=left>B.AN.035.1</TD>
+    <TD ALIGN=left><DIV>Update Existing Analysis Specification</DIV></TD>
+    <TD ALIGN=left>Updated Analysis Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>362</th>
+    <TD ALIGN=left>B.AN.050.1</TD>
+    <TD ALIGN=left><DIV>Analyze Data</DIV></TD>
+    <TD ALIGN=left>Data Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>363</th>
+    <TD ALIGN=left>B.AN.060.1</TD>
+    <TD ALIGN=left><DIV>Analyze Behavior</DIV></TD>
+    <TD ALIGN=left>Behavior Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>364</th>
+    <TD ALIGN=left>B.AN.070.1</TD>
+    <TD ALIGN=left><DIV>Analyze Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>365</th>
+    <TD ALIGN=left>B.AN.080.1</TD>
+    <TD ALIGN=left><DIV>Analyze Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Proposed Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>366</th>
+    <TD ALIGN=left>B.AN.085.1</TD>
+    <TD ALIGN=left><DIV>Define Service</DIV></TD>
+    <TD ALIGN=left>Service Definition</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>367</th>
+    <TD ALIGN=left>B.RA.026.1</TD>
+    <TD ALIGN=left><DIV>Populate Services Repository</DIV></TD>
+    <TD ALIGN=left>Populated Services Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>368</th>
+    <TD ALIGN=left>B.AN.090.1</TD>
+    <TD ALIGN=left><DIV>Analyze User Interface</DIV></TD>
+    <TD ALIGN=left>User Interface Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>369</th>
+    <TD ALIGN=left>B.AN.100.1</TD>
+    <TD ALIGN=left><DIV>Prepare Analysis Specification</DIV></TD>
+    <TD ALIGN=left>Analysis Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>370</th>
+    <TD ALIGN=left>B.AN.110.1</TD>
+    <TD ALIGN=left><DIV>Review Analysis Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Analysis Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>371</th>
+    <TD ALIGN=left><b>B.ACT.DE</b></TD>
+    <TD ALIGN=left><DIV><B>Design - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>359</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>372</th>
+    <TD ALIGN=left>B.DS.035.1</TD>
+    <TD ALIGN=left><DIV>Update Existing Design Specification</DIV></TD>
+    <TD ALIGN=left>Updated Design Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>373</th>
+    <TD ALIGN=left>B.DS.050</TD>
+    <TD ALIGN=left><DIV>Determine Design and Build Standards</DIV></TD>
+    <TD ALIGN=left>Design and Build Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>374</th>
+    <TD ALIGN=left>B.DS.060</TD>
+    <TD ALIGN=left><DIV>Define Business Rules Implementation Strategy</DIV></TD>
+    <TD ALIGN=left>Business Rules Implementation Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>375</th>
+    <TD ALIGN=left>B.DS.070</TD>
+    <TD ALIGN=left><DIV>Define SOA Implementation Strategy</DIV></TD>
+    <TD ALIGN=left>SOA Implementation Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>376</th>
+    <TD ALIGN=left>B.DS.080.1</TD>
+    <TD ALIGN=left><DIV>Design Software Components</DIV></TD>
+    <TD ALIGN=left>Software Component Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>377</th>
+    <TD ALIGN=left>B.DS.090.1</TD>
+    <TD ALIGN=left><DIV>Design Data</DIV></TD>
+    <TD ALIGN=left>Component Data Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>378</th>
+    <TD ALIGN=left>B.DS.100.1</TD>
+    <TD ALIGN=left><DIV>Design Behavior</DIV></TD>
+    <TD ALIGN=left>Component Behavior Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>379</th>
+    <TD ALIGN=left>B.DS.110.1</TD>
+    <TD ALIGN=left><DIV>Design Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>380</th>
+    <TD ALIGN=left>B.DS.120.1</TD>
+    <TD ALIGN=left><DIV>Design Services</DIV></TD>
+    <TD ALIGN=left>Service Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>381</th>
+    <TD ALIGN=left>B.DS.130.1</TD>
+    <TD ALIGN=left><DIV>Design User Interface</DIV></TD>
+    <TD ALIGN=left>User Interface Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>382</th>
+    <TD ALIGN=left>B.DS.140.1</TD>
+    <TD ALIGN=left><DIV>Prepare Design Specification</DIV></TD>
+    <TD ALIGN=left>Design Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>383</th>
+    <TD ALIGN=left>B.DS.150.1</TD>
+    <TD ALIGN=left><DIV>Develop Database Design</DIV></TD>
+    <TD ALIGN=left>Logical Database Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>384</th>
+    <TD ALIGN=left>B.DS.160.1</TD>
+    <TD ALIGN=left><DIV>Review Design Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Design Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>385</th>
+    <TD ALIGN=left><b>B.ACT.DCCTSE</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Custom Component  Test Scripts - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>370</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>386</th>
+    <TD ALIGN=left>B.TE.020.1</TD>
+    <TD ALIGN=left><DIV>Develop Unit Test Scripts</DIV></TD>
+    <TD ALIGN=left>Unit Test Scripts</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>387</th>
+    <TD ALIGN=left>B.TE.035.1</TD>
+    <TD ALIGN=left><DIV>Create Integration Test Scenarios</DIV></TD>
+    <TD ALIGN=left>Integration Test Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>388</th>
+    <TD ALIGN=left><b>B.ACT.DSTSE</b></TD>
+    <TD ALIGN=left><DIV><B>Develop System Test Scenarios - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>330,370</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>389</th>
+    <TD ALIGN=left>B.TE.025.2</TD>
+    <TD ALIGN=left><DIV>Create System Test Scenarios</DIV></TD>
+    <TD ALIGN=left>System Test Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>390</th>
+    <TD ALIGN=left><b>B.ACT.DVCSP</b></TD>
+    <TD ALIGN=left><DIV><B>Develop and Validate Custom Software Prototypes</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>370</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>391</th>
+    <TD ALIGN=left>B.IM.010</TD>
+    <TD ALIGN=left><DIV>Develop Functional Prototype</DIV></TD>
+    <TD ALIGN=left>Functional Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>392</th>
+    <TD ALIGN=left>B.RA.085</TD>
+    <TD ALIGN=left><DIV>Validate Functional Prototype</DIV></TD>
+    <TD ALIGN=left>Validated Functional Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>393</th>
+    <TD ALIGN=left>B.IM.020</TD>
+    <TD ALIGN=left><DIV>Develop Architectural Foundation</DIV></TD>
+    <TD ALIGN=left>Architectural Foundation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>394</th>
+    <TD ALIGN=left>B.IM.085</TD>
+    <TD ALIGN=left><DIV>Develop User Interface Standards Prototype</DIV></TD>
+    <TD ALIGN=left>User Interface Standards Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>395</th>
+    <TD ALIGN=left>B.RA.095</TD>
+    <TD ALIGN=left><DIV>Validate User Interface Standards Prototype</DIV></TD>
+    <TD ALIGN=left>Validated User Interface Standards Prototype</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>396</th>
+    <TD ALIGN=left>B.IM.040.1</TD>
+    <TD ALIGN=left><DIV>Implement Database</DIV></TD>
+    <TD ALIGN=left>Implemented Database</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>397</th>
+    <TD ALIGN=left>B.IM.053.1</TD>
+    <TD ALIGN=left><DIV>Register Services</DIV></TD>
+    <TD ALIGN=left>Populated Services Registry</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>398</th>
+    <TD ALIGN=left>B.IM.055.1</TD>
+    <TD ALIGN=left><DIV>Perform Business Rules Implementation (Rules Engine)</DIV></TD>
+    <TD ALIGN=left>Implemented Business Rules (Rules Engine)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>399</th>
+    <TD ALIGN=left>B.IM.060.1</TD>
+    <TD ALIGN=left><DIV>Perform Component Review</DIV></TD>
+    <TD ALIGN=left>Component Review Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>400</th>
+    <TD ALIGN=left><b>B.ACT.PCCTE</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Custom Component Testing - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>384,389</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>401</th>
+    <TD ALIGN=left>B.TE.030.1</TD>
+    <TD ALIGN=left><DIV>Perform Unit Test</DIV></TD>
+    <TD ALIGN=left>Unit-Tested Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>402</th>
+    <TD ALIGN=left>B.TE.040.1</TD>
+    <TD ALIGN=left><DIV>Perform Integration Test</DIV></TD>
+    <TD ALIGN=left>Integration-Tested Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>403</th>
+    <TD ALIGN=left>B.TE.045</TD>
+    <TD ALIGN=left><DIV>Validate Integration Packages </DIV></TD>
+    <TD ALIGN=left>Validated Integrations </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>404</th>
+    <TD ALIGN=left><b>B.ACT.PSTE</b></TD>
+    <TD ALIGN=left><DIV><B>Perform System Test - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>307,387</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>405</th>
+    <TD ALIGN=left>B.TE.070.1</TD>
+    <TD ALIGN=left><DIV>Perform System Test</DIV></TD>
+    <TD ALIGN=left>System-Tested Applications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>406</th>
+    <TD ALIGN=left><b>B.ACT.VUPE</b></TD>
+    <TD ALIGN=left><DIV><B>Validate Upgrade Process - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>324</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>407</th>
+    <TD ALIGN=left>B.TE.072.1</TD>
+    <TD ALIGN=left><DIV>Test Pre-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Pre-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>408</th>
+    <TD ALIGN=left>B.TE.073.1</TD>
+    <TD ALIGN=left><DIV>Test Packaged Software Upgrade</DIV></TD>
+    <TD ALIGN=left>Packaged Software Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>409</th>
+    <TD ALIGN=left>B.TE.074.1</TD>
+    <TD ALIGN=left><DIV>Test Post-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Post-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>410</th>
+    <TD ALIGN=left>B.TE.075.1</TD>
+    <TD ALIGN=left><DIV>Perform Post-Upgrade Reconciliation Testing</DIV></TD>
+    <TD ALIGN=left>Reconciliation Test Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>411</th>
+    <TD ALIGN=left>B.TE.076.1</TD>
+    <TD ALIGN=left><DIV>Review Upgrade Results</DIV></TD>
+    <TD ALIGN=left>Upgrade Test Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>412</th>
+    <TD ALIGN=left><b>B.ACT.PPM</b></TD>
+    <TD ALIGN=left><DIV><B>Plan Performance Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>413</th>
+    <TD ALIGN=left>B.PT.020</TD>
+    <TD ALIGN=left><DIV>Define Performance Management Requirements and Strategy</DIV></TD>
+    <TD ALIGN=left>Performance Management Requirements and Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>414</th>
+    <TD ALIGN=left>B.PT.030</TD>
+    <TD ALIGN=left><DIV>Define Performance Testing Strategy</DIV></TD>
+    <TD ALIGN=left>Performance Testing Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>415</th>
+    <TD ALIGN=left>B.PT.040</TD>
+    <TD ALIGN=left><DIV>Identify Performance Testing Models and Scenarios</DIV></TD>
+    <TD ALIGN=left>Performance Testing Models and Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>416</th>
+    <TD ALIGN=left>B.PT.050</TD>
+    <TD ALIGN=left><DIV>Design Performance Test Scripts and Programs</DIV></TD>
+    <TD ALIGN=left>Performance Test Scripts and Programs Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>417</th>
+    <TD ALIGN=left>B.PT.060</TD>
+    <TD ALIGN=left><DIV>Design Performance Test Data and Load Programs</DIV></TD>
+    <TD ALIGN=left>Performance Test Data and Load Programs Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>418</th>
+    <TD ALIGN=left><b>B.ACT.PACDE</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare to Acquire and Convert Data - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>290</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>419</th>
+    <TD ALIGN=left>B.CV.025</TD>
+    <TD ALIGN=left><DIV>Define Data Acquisition and Conversion Standards</DIV></TD>
+    <TD ALIGN=left>Data Acquisition and Conversion Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>420</th>
+    <TD ALIGN=left>B.RA.160</TD>
+    <TD ALIGN=left><DIV>Conduct Business Data Source Gap Analysis</DIV></TD>
+    <TD ALIGN=left>Business Data Source Gap Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>421</th>
+    <TD ALIGN=left>B.CV.027.1</TD>
+    <TD ALIGN=left><DIV>Perform Data Mapping</DIV></TD>
+    <TD ALIGN=left>Data Mapping</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>422</th>
+    <TD ALIGN=left>B.RA.170.1</TD>
+    <TD ALIGN=left><DIV>Conduct Data Quality Assessment</DIV></TD>
+    <TD ALIGN=left>High-Level Data Quality Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>423</th>
+    <TD ALIGN=left>B.CV.035.1</TD>
+    <TD ALIGN=left><DIV>Define Manual Conversion Procedures (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Manual Conversion Procedures (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>424</th>
+    <TD ALIGN=left>B.CV.040.1</TD>
+    <TD ALIGN=left><DIV>Design Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Component Designs (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>425</th>
+    <TD ALIGN=left>B.CV.050.1</TD>
+    <TD ALIGN=left><DIV>Prepare Conversion Test Plans (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Test Plans (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>426</th>
+    <TD ALIGN=left>B.CV.055.1</TD>
+    <TD ALIGN=left><DIV>Implement Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>427</th>
+    <TD ALIGN=left>B.CV.060.1</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Unit Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Unit-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>428</th>
+    <TD ALIGN=left>B.CV.062.1</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Business Object Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Business Object-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>429</th>
+    <TD ALIGN=left>B.CV.063.1</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Validation Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Validation-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>430</th>
+    <TD ALIGN=left><b>B.ACT.PBPII</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Business Process Impact Inventory </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>314</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>431</th>
+    <TD ALIGN=left>B.OCM.160</TD>
+    <TD ALIGN=left><DIV>Prepare Business Process Impact Inventory </DIV></TD>
+    <TD ALIGN=left>Sponsorship Program Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>432</th>
+    <TD ALIGN=left><b>B.ACT.DCMRCCE</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy Change Management Roadmap and Communication Campaign - Elaboration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>287</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>433</th>
+    <TD ALIGN=left>B.OCM.150.2</TD>
+    <TD ALIGN=left><DIV>Conduct Change Management Roadmap and Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Events</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>434</th>
+    <TD ALIGN=left>B.OCM.155.1</TD>
+    <TD ALIGN=left><DIV>Monitor Change Management Roadmap and Communication Campaign Effectiveness</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Campaign Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>435</th>
+    <TD ALIGN=left><b>B.ACT.LA</b></TD>
+    <TD ALIGN=left><DIV><B>Lifecycle Architecture Milestone</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>298,314,324,330,344,353,370,389,404,416</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>436</th>
+    <TD ALIGN=left>B.PMC.LA</TD>
+    <TD ALIGN=left><DIV>Lifecycle Architecture Milestone</DIV></TD>
+    <TD ALIGN=left>Lifecycle Architecture Milestone</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>437</th>
+    <TD ALIGN=left><b>C</b></TD>
+    <TD ALIGN=left><DIV><B>Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>438</th>
+    <TD ALIGN=left><b>C.ACT.FR</b></TD>
+    <TD ALIGN=left><DIV><B>Finalize Requirements</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>439</th>
+    <TD ALIGN=left>C.RD.042.3</TD>
+    <TD ALIGN=left><DIV>Develop Glossary</DIV></TD>
+    <TD ALIGN=left>Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>440</th>
+    <TD ALIGN=left>C.RD.045.3</TD>
+    <TD ALIGN=left><DIV>Prioritize Requirements (MoSCoW)</DIV></TD>
+    <TD ALIGN=left>MoSCoW List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>441</th>
+    <TD ALIGN=left>C.RD.130.2</TD>
+    <TD ALIGN=left><DIV>Develop Baseline Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>442</th>
+    <TD ALIGN=left>C.RA.021.3</TD>
+    <TD ALIGN=left><DIV>Capture User Stories</DIV></TD>
+    <TD ALIGN=left>User Story</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>443</th>
+    <TD ALIGN=left>C.RA.023.3</TD>
+    <TD ALIGN=left><DIV>Develop Use Case Model</DIV></TD>
+    <TD ALIGN=left>Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>444</th>
+    <TD ALIGN=left>C.RA.024.2</TD>
+    <TD ALIGN=left><DIV>Develop Use Case Details</DIV></TD>
+    <TD ALIGN=left>Use Case Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>445</th>
+    <TD ALIGN=left>C.RA.025.3</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Candidate Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>446</th>
+    <TD ALIGN=left>C.RA.027.3</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Business Rules</DIV></TD>
+    <TD ALIGN=left>Candidate Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>447</th>
+    <TD ALIGN=left>C.RA.028.3</TD>
+    <TD ALIGN=left><DIV>Populate Business Rules Repository</DIV></TD>
+    <TD ALIGN=left>Populated Business Rules Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>448</th>
+    <TD ALIGN=left>C.RA.180.2</TD>
+    <TD ALIGN=left><DIV>Review Use Case Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Use Case Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>449</th>
+    <TD ALIGN=left><b>C.ACT.AC</b></TD>
+    <TD ALIGN=left><DIV><B>Analyze - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>436</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>450</th>
+    <TD ALIGN=left>C.AN.035.2</TD>
+    <TD ALIGN=left><DIV>Update Existing Analysis Specification</DIV></TD>
+    <TD ALIGN=left>Updated Analysis Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>451</th>
+    <TD ALIGN=left>C.AN.040.2</TD>
+    <TD ALIGN=left><DIV>Develop Analysis Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architecture Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>452</th>
+    <TD ALIGN=left>C.AN.050.2</TD>
+    <TD ALIGN=left><DIV>Analyze Data</DIV></TD>
+    <TD ALIGN=left>Data Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>453</th>
+    <TD ALIGN=left>C.AN.060.2</TD>
+    <TD ALIGN=left><DIV>Analyze Behavior</DIV></TD>
+    <TD ALIGN=left>Behavior Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>454</th>
+    <TD ALIGN=left>C.AN.070.2</TD>
+    <TD ALIGN=left><DIV>Analyze Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>455</th>
+    <TD ALIGN=left>C.AN.080.2</TD>
+    <TD ALIGN=left><DIV>Analyze Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Proposed Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>456</th>
+    <TD ALIGN=left>C.AN.085.2</TD>
+    <TD ALIGN=left><DIV>Define Service</DIV></TD>
+    <TD ALIGN=left>Service Definition</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>457</th>
+    <TD ALIGN=left>C.RA.026.2</TD>
+    <TD ALIGN=left><DIV>Populate Services Repository</DIV></TD>
+    <TD ALIGN=left>Populated Services Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>458</th>
+    <TD ALIGN=left>C.AN.090.2</TD>
+    <TD ALIGN=left><DIV>Analyze User Interface</DIV></TD>
+    <TD ALIGN=left>User Interface Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>459</th>
+    <TD ALIGN=left>C.AN.100.2</TD>
+    <TD ALIGN=left><DIV>Prepare Analysis Specification</DIV></TD>
+    <TD ALIGN=left>Analysis Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>460</th>
+    <TD ALIGN=left>C.AN.110.2</TD>
+    <TD ALIGN=left><DIV>Review Analysis Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Analysis Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>461</th>
+    <TD ALIGN=left><b>C.ACT.DC</b></TD>
+    <TD ALIGN=left><DIV><B>Design - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>447</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>462</th>
+    <TD ALIGN=left>C.DS.035.2</TD>
+    <TD ALIGN=left><DIV>Update Existing Design Specification</DIV></TD>
+    <TD ALIGN=left>Updated Design Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>463</th>
+    <TD ALIGN=left>C.DS.040.2</TD>
+    <TD ALIGN=left><DIV>Develop Design Architecture Description</DIV></TD>
+    <TD ALIGN=left>Architectural Design Description</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>464</th>
+    <TD ALIGN=left>C.DS.080.2</TD>
+    <TD ALIGN=left><DIV>Design Software Components</DIV></TD>
+    <TD ALIGN=left>Software Component Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>465</th>
+    <TD ALIGN=left>C.DS.090.2</TD>
+    <TD ALIGN=left><DIV>Design Data</DIV></TD>
+    <TD ALIGN=left>Component Data Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>466</th>
+    <TD ALIGN=left>C.DS.100.2</TD>
+    <TD ALIGN=left><DIV>Design Behavior</DIV></TD>
+    <TD ALIGN=left>Component Behavior Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>467</th>
+    <TD ALIGN=left>C.DS.110.2</TD>
+    <TD ALIGN=left><DIV>Design Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>468</th>
+    <TD ALIGN=left>C.DS.120.2</TD>
+    <TD ALIGN=left><DIV>Design Services</DIV></TD>
+    <TD ALIGN=left>Service Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>469</th>
+    <TD ALIGN=left>C.DS.130.2</TD>
+    <TD ALIGN=left><DIV>Design User Interface</DIV></TD>
+    <TD ALIGN=left>User Interface Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>470</th>
+    <TD ALIGN=left>C.DS.140.2</TD>
+    <TD ALIGN=left><DIV>Prepare Design Specification</DIV></TD>
+    <TD ALIGN=left>Design Specification</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>471</th>
+    <TD ALIGN=left>C.DS.150.2</TD>
+    <TD ALIGN=left><DIV>Develop Database Design</DIV></TD>
+    <TD ALIGN=left>Logical Database Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>472</th>
+    <TD ALIGN=left>C.DS.160.2</TD>
+    <TD ALIGN=left><DIV>Review Design Model</DIV></TD>
+    <TD ALIGN=left>Reviewed Design Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>473</th>
+    <TD ALIGN=left><b>C.ACT.PTP</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Test Planning</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>474</th>
+    <TD ALIGN=left>C.TE.015.2</TD>
+    <TD ALIGN=left><DIV>Develop Integration Test Plan</DIV></TD>
+    <TD ALIGN=left>Integration Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>475</th>
+    <TD ALIGN=left>C.TE.050.2</TD>
+    <TD ALIGN=left><DIV>Develop System Test Plan</DIV></TD>
+    <TD ALIGN=left>System Test Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>476</th>
+    <TD ALIGN=left><b>C.ACT.PEC</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Environments - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>477</th>
+    <TD ALIGN=left>C.IM.007.2</TD>
+    <TD ALIGN=left><DIV>Prepare Development Environment</DIV></TD>
+    <TD ALIGN=left>Development Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>478</th>
+    <TD ALIGN=left>C.TE.018.2</TD>
+    <TD ALIGN=left><DIV>Prepare Test Data</DIV></TD>
+    <TD ALIGN=left>Test Data</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>479</th>
+    <TD ALIGN=left>C.TE.038.2</TD>
+    <TD ALIGN=left><DIV>Prepare Integration Test Environment</DIV></TD>
+    <TD ALIGN=left>Integration Test Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>480</th>
+    <TD ALIGN=left><b>C.ACT.DCCTSC</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Custom Component  Testing - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>459</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>481</th>
+    <TD ALIGN=left>C.TE.020.2</TD>
+    <TD ALIGN=left><DIV>Develop Unit Test Scripts</DIV></TD>
+    <TD ALIGN=left>Unit Test Scripts</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>482</th>
+    <TD ALIGN=left>C.TE.035.2</TD>
+    <TD ALIGN=left><DIV>Create Integration Test Scenarios</DIV></TD>
+    <TD ALIGN=left>Integration Test Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>483</th>
+    <TD ALIGN=left><b>C.ACT.DSTSC</b></TD>
+    <TD ALIGN=left><DIV><B>Develop System Test Scenarios - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433,459</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>484</th>
+    <TD ALIGN=left>C.TE.025.3</TD>
+    <TD ALIGN=left><DIV>Create System Test Scenarios</DIV></TD>
+    <TD ALIGN=left>System Test Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>485</th>
+    <TD ALIGN=left><b>C.ACT.DSITS</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Systems Integration Test Scenarios </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>459</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>486</th>
+    <TD ALIGN=left>C.TE.090</TD>
+    <TD ALIGN=left><DIV>Develop Systems Integration Test Scenarios</DIV></TD>
+    <TD ALIGN=left>Systems Integration Test Scenarios</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>487</th>
+    <TD ALIGN=left><b>C.ACT.ICC</b></TD>
+    <TD ALIGN=left><DIV><B>Implement Custom Components </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>459</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>488</th>
+    <TD ALIGN=left>C.IM.040.2</TD>
+    <TD ALIGN=left><DIV>Implement Database</DIV></TD>
+    <TD ALIGN=left>Implemented Database</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>489</th>
+    <TD ALIGN=left>C.IM.050</TD>
+    <TD ALIGN=left><DIV>Implement Components</DIV></TD>
+    <TD ALIGN=left>Implemented Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>490</th>
+    <TD ALIGN=left>C.IM.053.2</TD>
+    <TD ALIGN=left><DIV>Register Services</DIV></TD>
+    <TD ALIGN=left>Populated Services Registry</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>491</th>
+    <TD ALIGN=left>C.IM.055.2</TD>
+    <TD ALIGN=left><DIV>Perform Business Rules Implementation (Rules Engine)</DIV></TD>
+    <TD ALIGN=left>Implemented Business Rules (Rules Engine)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>492</th>
+    <TD ALIGN=left>C.IM.060.2</TD>
+    <TD ALIGN=left><DIV>Perform Component Review</DIV></TD>
+    <TD ALIGN=left>Component Review Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>493</th>
+    <TD ALIGN=left>C.IM.070</TD>
+    <TD ALIGN=left><DIV>Assemble Components</DIV></TD>
+    <TD ALIGN=left>Assembled Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>494</th>
+    <TD ALIGN=left>C.IM.080</TD>
+    <TD ALIGN=left><DIV>Integrate Services</DIV></TD>
+    <TD ALIGN=left>Integrated Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>495</th>
+    <TD ALIGN=left>C.IM.090</TD>
+    <TD ALIGN=left><DIV>Create Installation Routines</DIV></TD>
+    <TD ALIGN=left>Installation Routines</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>496</th>
+    <TD ALIGN=left>C.TE.065</TD>
+    <TD ALIGN=left><DIV>Perform Installation Test</DIV></TD>
+    <TD ALIGN=left>Tested Installation Routines</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>497</th>
+    <TD ALIGN=left><b>C.ACT.PCCTC</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Custom Component Testing - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>478,485</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>498</th>
+    <TD ALIGN=left>C.TE.030.2</TD>
+    <TD ALIGN=left><DIV>Perform Unit Test</DIV></TD>
+    <TD ALIGN=left>Unit-Tested Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>499</th>
+    <TD ALIGN=left>C.TE.040.2</TD>
+    <TD ALIGN=left><DIV>Perform Integration Test</DIV></TD>
+    <TD ALIGN=left>Integration-Tested Components</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>500</th>
+    <TD ALIGN=left><b>C.ACT.PST</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for System Test</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>474,531</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>501</th>
+    <TD ALIGN=left>C.MC.050.2</TD>
+    <TD ALIGN=left><DIV>Define Application Setups</DIV></TD>
+    <TD ALIGN=left>Application Setup Documents</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>502</th>
+    <TD ALIGN=left>C.TE.060.2</TD>
+    <TD ALIGN=left><DIV>Prepare System Test Environment</DIV></TD>
+    <TD ALIGN=left>System Test Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>503</th>
+    <TD ALIGN=left><b>C.ACT.PSTC</b></TD>
+    <TD ALIGN=left><DIV><B>Perform System Test - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>495,498</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>504</th>
+    <TD ALIGN=left>C.TE.070.2</TD>
+    <TD ALIGN=left><DIV>Perform System Test</DIV></TD>
+    <TD ALIGN=left>System-Tested Applications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>505</th>
+    <TD ALIGN=left>C.RA.055.2</TD>
+    <TD ALIGN=left><DIV>Document Business Procedures</DIV></TD>
+    <TD ALIGN=left>Business Procedure Documentation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>506</th>
+    <TD ALIGN=left>C.TE.019.1</TD>
+    <TD ALIGN=left><DIV>Collect, Assess and Refine KPI Measurements</DIV></TD>
+    <TD ALIGN=left>Key Business Strategies and Objectives</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>507</th>
+    <TD ALIGN=left><b>C.ACT.PSIT</b></TD>
+    <TD ALIGN=left><DIV><B>Perform Systems Integration Test</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>501</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>508</th>
+    <TD ALIGN=left>C.TE.085</TD>
+    <TD ALIGN=left><DIV>Prepare Systems Integration Test Environment </DIV></TD>
+    <TD ALIGN=left>Systems Integration Test Environment </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>509</th>
+    <TD ALIGN=left>C.TE.100</TD>
+    <TD ALIGN=left><DIV>Perform Systems Integration Test</DIV></TD>
+    <TD ALIGN=left>Integration-Tested System</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>510</th>
+    <TD ALIGN=left><b>C.ACT.PPT</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for Performance Testing</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>511</th>
+    <TD ALIGN=left>C.PT.070</TD>
+    <TD ALIGN=left><DIV>Build Performance Test Scripts and Programs</DIV></TD>
+    <TD ALIGN=left>Performance Test Scripts and Programs</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>512</th>
+    <TD ALIGN=left>C.PT.080</TD>
+    <TD ALIGN=left><DIV>Construct Performance Test Environment and Database</DIV></TD>
+    <TD ALIGN=left>Performance Test Environment and Database</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>513</th>
+    <TD ALIGN=left>C.PT.090</TD>
+    <TD ALIGN=left><DIV>Conduct Performance Test Dress Rehearsal</DIV></TD>
+    <TD ALIGN=left>Validated Performance Test and Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>514</th>
+    <TD ALIGN=left><b>C.ACT.PT</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>515</th>
+    <TD ALIGN=left>C.TA.100</TD>
+    <TD ALIGN=left><DIV>Define System Management Procedures</DIV></TD>
+    <TD ALIGN=left>System Management Guide</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>516</th>
+    <TD ALIGN=left>C.TA.110</TD>
+    <TD ALIGN=left><DIV>Define Operational Testing Plan</DIV></TD>
+    <TD ALIGN=left>Operational Testing Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>517</th>
+    <TD ALIGN=left>C.TA.150</TD>
+    <TD ALIGN=left><DIV>Define Final Platform and Network Architecture</DIV></TD>
+    <TD ALIGN=left>Final Platform and Network Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>518</th>
+    <TD ALIGN=left>C.TA.160</TD>
+    <TD ALIGN=left><DIV>Define System Capacity Plan</DIV></TD>
+    <TD ALIGN=left>System Capacity Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>519</th>
+    <TD ALIGN=left><b>C.ACT.PCO</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for Cutover</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>520</th>
+    <TD ALIGN=left>C.TS.020.2</TD>
+    <TD ALIGN=left><DIV>Define Cutover Strategy</DIV></TD>
+    <TD ALIGN=left>Cutover Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>521</th>
+    <TD ALIGN=left>C.TS.030</TD>
+    <TD ALIGN=left><DIV>Develop Installation Plan</DIV></TD>
+    <TD ALIGN=left>Installation Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>522</th>
+    <TD ALIGN=left>C.TS.040</TD>
+    <TD ALIGN=left><DIV>Design Production Support Infrastructure</DIV></TD>
+    <TD ALIGN=left>Production Support Infrastructure Design</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>523</th>
+    <TD ALIGN=left><b>C.ACT.TI</b></TD>
+    <TD ALIGN=left><DIV><B>Test Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>512</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>524</th>
+    <TD ALIGN=left>C.TA.120</TD>
+    <TD ALIGN=left><DIV>Conduct Operational Testing</DIV></TD>
+    <TD ALIGN=left>Operational Test Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>525</th>
+    <TD ALIGN=left>C.TA.130</TD>
+    <TD ALIGN=left><DIV>Conduct Backup and Recovery Test</DIV></TD>
+    <TD ALIGN=left>Backup and Recovery Test Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>526</th>
+    <TD ALIGN=left>C.TA.140</TD>
+    <TD ALIGN=left><DIV>Conduct Disaster Recovery Test</DIV></TD>
+    <TD ALIGN=left>Disaster Recovery Test Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>527</th>
+    <TD ALIGN=left><b>C.ACT.PACDC</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare to Acquire and Convert Data - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>528</th>
+    <TD ALIGN=left>C.CV.027.2</TD>
+    <TD ALIGN=left><DIV>Perform Data Mapping</DIV></TD>
+    <TD ALIGN=left>Data Mapping</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>529</th>
+    <TD ALIGN=left>C.RA.170.2</TD>
+    <TD ALIGN=left><DIV>Conduct Data Quality Assessment</DIV></TD>
+    <TD ALIGN=left>High-Level Data Quality Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>530</th>
+    <TD ALIGN=left>C.CV.035.2</TD>
+    <TD ALIGN=left><DIV>Define Manual Conversion Procedures (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Manual Conversion Procedures (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>531</th>
+    <TD ALIGN=left>C.CV.040.2</TD>
+    <TD ALIGN=left><DIV>Design Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left> Conversion Component Designs (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>532</th>
+    <TD ALIGN=left>C.CV.050.2</TD>
+    <TD ALIGN=left><DIV>Prepare Conversion Test Plans (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Test Plans (initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>533</th>
+    <TD ALIGN=left><b>C.ACT.ACDC</b></TD>
+    <TD ALIGN=left><DIV><B>Acquire and Convert Data - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>474,525</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>534</th>
+    <TD ALIGN=left>C.CV.030.2</TD>
+    <TD ALIGN=left><DIV>Prepare Conversion Environment (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Conversion Environment (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>535</th>
+    <TD ALIGN=left>C.CV.055.2</TD>
+    <TD ALIGN=left><DIV>Implement Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Implemented Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>536</th>
+    <TD ALIGN=left>C.CV.060.2</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Unit Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Unit-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>537</th>
+    <TD ALIGN=left>C.CV.062.2</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Business Object Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Business Object-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>538</th>
+    <TD ALIGN=left>C.CV.063.2</TD>
+    <TD ALIGN=left><DIV>Perform Conversion Component Validation Test (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Validation-Tested Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>539</th>
+    <TD ALIGN=left>C.CV.064.1</TD>
+    <TD ALIGN=left><DIV>Install Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Installed Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>540</th>
+    <TD ALIGN=left>C.CV.065.1</TD>
+    <TD ALIGN=left><DIV>Convert and Verify Data (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Converted and Verified Data (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>541</th>
+    <TD ALIGN=left>C.CV.068.1</TD>
+    <TD ALIGN=left><DIV>Clean Data</DIV></TD>
+    <TD ALIGN=left>Clean Legacy Data</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>542</th>
+    <TD ALIGN=left><b>C.ACT.VUPC</b></TD>
+    <TD ALIGN=left><DIV><B>Validate Upgrade Process - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>531</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>543</th>
+    <TD ALIGN=left>C.TE.072.2</TD>
+    <TD ALIGN=left><DIV>Test Pre-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Pre-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>544</th>
+    <TD ALIGN=left>C.TE.073.2</TD>
+    <TD ALIGN=left><DIV>Test Packaged Software Upgrade</DIV></TD>
+    <TD ALIGN=left>Packaged Software Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>545</th>
+    <TD ALIGN=left>C.TE.074.2</TD>
+    <TD ALIGN=left><DIV>Test Post-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Post-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>546</th>
+    <TD ALIGN=left>C.TE.075.2</TD>
+    <TD ALIGN=left><DIV>Perform Post-Upgrade Reconciliation Testing</DIV></TD>
+    <TD ALIGN=left>Reconciliation Test Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>547</th>
+    <TD ALIGN=left>C.TE.076.2</TD>
+    <TD ALIGN=left><DIV>Review Upgrade Test Results</DIV></TD>
+    <TD ALIGN=left>Upgrade Test Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>548</th>
+    <TD ALIGN=left><b>C.ACT.PD</b></TD>
+    <TD ALIGN=left><DIV><B>Produce Documentation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>549</th>
+    <TD ALIGN=left>C.DO.060</TD>
+    <TD ALIGN=left><DIV>Publish User Reference Manual</DIV></TD>
+    <TD ALIGN=left>User Reference Manual</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>590</th>
+    <TD ALIGN=left>C.DO.070</TD>
+    <TD ALIGN=left><DIV>Publish User Guide</DIV></TD>
+    <TD ALIGN=left>User Guide</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>551</th>
+    <TD ALIGN=left>C.DO.080</TD>
+    <TD ALIGN=left><DIV>Publish Technical Reference Material</DIV></TD>
+    <TD ALIGN=left>Technical Reference Material</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>552</th>
+    <TD ALIGN=left>C.DO.100</TD>
+    <TD ALIGN=left><DIV>Produce Online Help</DIV></TD>
+    <TD ALIGN=left>Online Help</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>553</th>
+    <TD ALIGN=left><b>C.ACT.DCMRCCC</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy Change Management Roadmap and Communication Campaign - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>554</th>
+    <TD ALIGN=left>C.OCM.150.3</TD>
+    <TD ALIGN=left><DIV>Conduct Change Management Roadmap and Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Events</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>555</th>
+    <TD ALIGN=left>C.OCM.155.2</TD>
+    <TD ALIGN=left><DIV>Monitor Change Management Roadmap and Communication Campaign Effectiveness </DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Campaign Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>556</th>
+    <TD ALIGN=left>C.ACT.CJIA</TD>
+    <TD ALIGN=left><DIV><B>Conduct Job Impact Analysis</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>557</th>
+    <TD ALIGN=left>C.OCM.170</TD>
+    <TD ALIGN=left><DIV>Collect and Analyze Job Change Data</DIV></TD>
+    <TD ALIGN=left>Job Impact Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>558</th>
+    <TD ALIGN=left>C.OCM.180</TD>
+    <TD ALIGN=left><DIV>Determine Impact of Job Changes</DIV></TD>
+    <TD ALIGN=left>Job Impact Diagnosis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>559</th>
+    <TD ALIGN=left>C.OCM.190</TD>
+    <TD ALIGN=left><DIV>Prepare HR Transition Plan</DIV></TD>
+    <TD ALIGN=left>HR Transition Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>560</th>
+    <TD ALIGN=left><b>C.ACT.CMAWC</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Managers Alignment Workshop - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>554</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>561</th>
+    <TD ALIGN=left>C.OCM.200</TD>
+    <TD ALIGN=left><DIV>Design Managers Unit and Department Impact Workshop</DIV></TD>
+    <TD ALIGN=left>Managers Unit and Department Impact Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>562</th>
+    <TD ALIGN=left>C.OCM.210</TD>
+    <TD ALIGN=left><DIV>Conduct Managers Unit and Department Impact Workshop</DIV></TD>
+    <TD ALIGN=left>Enabled Managers</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>563</th>
+    <TD ALIGN=left><b>C.ACT.DEUT</b></TD>
+    <TD ALIGN=left><DIV><B>Design End-User Training</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>433</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>564</th>
+    <TD ALIGN=left>C.TR.060</TD>
+    <TD ALIGN=left><DIV>Conduct User Learning Needs Analysis</DIV></TD>
+    <TD ALIGN=left>User Learning Needs Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>565</th>
+    <TD ALIGN=left>C.TR.070</TD>
+    <TD ALIGN=left><DIV>Develop User Learning Plan</DIV></TD>
+    <TD ALIGN=left>User Learning Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>566</th>
+    <TD ALIGN=left><b>C.ACT.BEUT</b></TD>
+    <TD ALIGN=left><DIV><B>Build End-User Training</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>561</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>567</th>
+    <TD ALIGN=left>C.TR.080</TD>
+    <TD ALIGN=left><DIV>Develop User Learningware</DIV></TD>
+    <TD ALIGN=left>User Learningware</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>568</th>
+    <TD ALIGN=left>C.TR.090</TD>
+    <TD ALIGN=left><DIV>Prepare User Learning Environment</DIV></TD>
+    <TD ALIGN=left>Configured User Learning Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>569</th>
+    <TD ALIGN=left><b>C.ACT.TEUC</b></TD>
+    <TD ALIGN=left><DIV><B>Train End Users - Construction</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>564</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>570</th>
+    <TD ALIGN=left>C.TR.100.1</TD>
+    <TD ALIGN=left><DIV>Conduct User Learning Events</DIV></TD>
+    <TD ALIGN=left>Skilled Users</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>571</th>
+    <TD ALIGN=left><b>C.ACT.IOC</b></TD>
+    <TD ALIGN=left><DIV><B>Initial Operational Capability Milestone</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>436,459,501,505,512,517,531,540</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>572</th>
+    <TD ALIGN=left>C.PMC.IOC</TD>
+    <TD ALIGN=left><DIV>Initial Operational Capability Milestone</DIV></TD>
+    <TD ALIGN=left>Initial Operational Capability Milestone</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>573</th>
+    <TD ALIGN=left><b>D</b></TD>
+    <TD ALIGN=left><DIV><B>Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>574</th>
+    <TD ALIGN=left><b>D.ACT.SUAT</b></TD>
+    <TD ALIGN=left><DIV><B>Support User Acceptance Test</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>575</th>
+    <TD ALIGN=left>D.TE.105</TD>
+    <TD ALIGN=left><DIV>Prepare Users for Testing</DIV></TD>
+    <TD ALIGN=left>Prepared Users for Testing</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>576</th>
+    <TD ALIGN=left>D.TE.110</TD>
+    <TD ALIGN=left><DIV>Prepare Acceptance Test Environment</DIV></TD>
+    <TD ALIGN=left>Acceptance Test Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>577</th>
+    <TD ALIGN=left>D.TE.120</TD>
+    <TD ALIGN=left><DIV>Support Acceptance Test</DIV></TD>
+    <TD ALIGN=left>Acceptance Test Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>578</th>
+    <TD ALIGN=left><b>D.ACT.CPTST</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Performance Test</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>579</th>
+    <TD ALIGN=left>D.PT.100</TD>
+    <TD ALIGN=left><DIV>Execute Performance Test</DIV></TD>
+    <TD ALIGN=left>Performance Test Results</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>580</th>
+    <TD ALIGN=left>D.PT.110</TD>
+    <TD ALIGN=left><DIV>Create Performance Test Report</DIV></TD>
+    <TD ALIGN=left>Performance Test Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>581</th>
+    <TD ALIGN=left><b>D.ACT.PPE</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Production Environment </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>582</th>
+    <TD ALIGN=left>D.TS.050</TD>
+    <TD ALIGN=left><DIV>Prepare Production Environment</DIV></TD>
+    <TD ALIGN=left>Production Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>583</th>
+    <TD ALIGN=left>D.TS.054</TD>
+    <TD ALIGN=left><DIV>Perform Pre-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Pre-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>584</th>
+    <TD ALIGN=left>D.TS.055</TD>
+    <TD ALIGN=left><DIV>Upgrade Production Environment</DIV></TD>
+    <TD ALIGN=left>Upgraded Production Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>585</th>
+    <TD ALIGN=left>D.TS.056</TD>
+    <TD ALIGN=left><DIV>Perform Post-Upgrade Steps</DIV></TD>
+    <TD ALIGN=left>Post-Upgrade Checklist</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>586</th>
+    <TD ALIGN=left>D.TS.057</TD>
+    <TD ALIGN=left><DIV>Revise Application Setups</DIV></TD>
+    <TD ALIGN=left>Configured Applications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>587</th>
+    <TD ALIGN=left><b>D.ACT.CDT</b></TD>
+    <TD ALIGN=left><DIV><B>Convert Data - Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>579</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>588</th>
+    <TD ALIGN=left>D.CV.064.2</TD>
+    <TD ALIGN=left><DIV>Install Conversion Components (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Installed Conversion Components (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>589</th>
+    <TD ALIGN=left>D.CV.065.2</TD>
+    <TD ALIGN=left><DIV>Convert and Verify Data (Initial Load)</DIV></TD>
+    <TD ALIGN=left>Converted and Verified Data (Initial Load)</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>590</th>
+    <TD ALIGN=left>D.CV.068.2</TD>
+    <TD ALIGN=left><DIV>Clean Data</DIV></TD>
+    <TD ALIGN=left>Clean Legacy Data</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>591</th>
+    <TD ALIGN=left><b>D.ACT.DCMRCCT</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy Change Management Roadmap and Communication Campaign - Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>592</th>
+    <TD ALIGN=left>D.OCM.150.4</TD>
+    <TD ALIGN=left><DIV>Conduct Change Management Roadmap and Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Events</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>593</th>
+    <TD ALIGN=left>D.OCM.155.3</TD>
+    <TD ALIGN=left><DIV>Monitor Change Management Roadmap and Communication Campaign Effectiveness</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Campaign Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>594</th>
+    <TD ALIGN=left><b>D.ACT.CITA</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct IT Alignment</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>595</th>
+    <TD ALIGN=left>D.OCM.220</TD>
+    <TD ALIGN=left><DIV>Prepare Assessment of Impact on IT Groups</DIV></TD>
+    <TD ALIGN=left>IT Alignment Diagnosis Grid</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>596</th>
+    <TD ALIGN=left>D.OCM.230</TD>
+    <TD ALIGN=left><DIV>Prepare IT Transition Plan</DIV></TD>
+    <TD ALIGN=left>IT Transition Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>597</th>
+    <TD ALIGN=left><b>D.ACT.TEUT</b></TD>
+    <TD ALIGN=left><DIV><B>Train End Users - Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>598</th>
+    <TD ALIGN=left>D.TR.100.2</TD>
+    <TD ALIGN=left><DIV>Conduct User Learning Events</DIV></TD>
+    <TD ALIGN=left>Skilled Users</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>599</th>
+    <TD ALIGN=left><b>D.ACT.FD</b></TD>
+    <TD ALIGN=left><DIV><B>Finalize Documentation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>569</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>600</th>
+    <TD ALIGN=left>D.DO.110</TD>
+    <TD ALIGN=left><DIV>Finalize Documentation</DIV></TD>
+    <TD ALIGN=left>Finalized Documentation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>601</th>
+    <TD ALIGN=left><b>D.ACT.GP</b></TD>
+    <TD ALIGN=left><DIV><B>Go Production</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>572,576,579,585,595</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>602</th>
+    <TD ALIGN=left>D.TS.052</TD>
+    <TD ALIGN=left><DIV>Implement Production Support Infrastructure</DIV></TD>
+    <TD ALIGN=left>Production Support Infrastructure</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>603</th>
+    <TD ALIGN=left>D.TS.058</TD>
+    <TD ALIGN=left><DIV>Verify Production Readiness</DIV></TD>
+    <TD ALIGN=left>Production-Ready System</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>604</th>
+    <TD ALIGN=left>D.TS.060</TD>
+    <TD ALIGN=left><DIV>Go Production</DIV></TD>
+    <TD ALIGN=left>System in Production</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>605</th>
+    <TD ALIGN=left>D.TS.070</TD>
+    <TD ALIGN=left><DIV>Shut Down Legacy System</DIV></TD>
+    <TD ALIGN=left>Legacy System Shut Down</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>606</th>
+    <TD ALIGN=left><b>D.ACT.SP</b></TD>
+    <TD ALIGN=left><DIV><B>System in Production Milestone</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>572,576,579,585,595,599</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>607</th>
+    <TD ALIGN=left>D.PMC.SP</TD>
+    <TD ALIGN=left><DIV>System in Production Milestone</DIV></TD>
+    <TD ALIGN=left>System in Production Milestone</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>608</th>
+    <TD ALIGN=left><b>E</b></TD>
+    <TD ALIGN=left><DIV><B>Production</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>609</th>
+    <TD ALIGN=left><b>E.ACT.MPSP</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Production System Performance</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>610</th>
+    <TD ALIGN=left>E.PT.120</TD>
+    <TD ALIGN=left><DIV>Conduct Production Performance Management</DIV></TD>
+    <TD ALIGN=left>Managed Production Environment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>611</th>
+    <TD ALIGN=left><b>E.ACT.EPS</b></TD>
+    <TD ALIGN=left><DIV><B>Evaluate Production System</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>612</th>
+    <TD ALIGN=left>E.PS.005</TD>
+    <TD ALIGN=left><DIV>Manage Transition to Steady-State Operations </DIV></TD>
+    <TD ALIGN=left>Steady-State Operations </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>613</th>
+    <TD ALIGN=left>E.TE.019.2</TD>
+    <TD ALIGN=left><DIV>Collect, Assess and Refine KPI Measurements</DIV></TD>
+    <TD ALIGN=left>Key Business Strategies and Objectives</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>614</th>
+    <TD ALIGN=left>E.PS.010</TD>
+    <TD ALIGN=left><DIV>Audit System</DIV></TD>
+    <TD ALIGN=left>System Evaluation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>615</th>
+    <TD ALIGN=left><b>E.ACT.RPP</b></TD>
+    <TD ALIGN=left><DIV><B>Resolve Production Problems</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>616</th>
+    <TD ALIGN=left>E.PS.050</TD>
+    <TD ALIGN=left><DIV>Analyze Problems</DIV></TD>
+    <TD ALIGN=left>Fault Corrections</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>617</th>
+    <TD ALIGN=left>E.PS.060</TD>
+    <TD ALIGN=left><DIV>Monitor and Respond to System Problems</DIV></TD>
+    <TD ALIGN=left>Problem Log</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>618</th>
+    <TD ALIGN=left>E.PS.065</TD>
+    <TD ALIGN=left><DIV>Post Go-Live Support</DIV></TD>
+    <TD ALIGN=left>Post Go-Live Support </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>619</th>
+    <TD ALIGN=left><b>E.ACT.DCMRCCP</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy Change Management Roadmap and Communication Campaign - Production</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>620</th>
+    <TD ALIGN=left>E.OCM.150.5</TD>
+    <TD ALIGN=left><DIV>Conduct Change Management Roadmap and Communication Campaign</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Events</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>621</th>
+    <TD ALIGN=left>E.OCM.155.4</TD>
+    <TD ALIGN=left><DIV>Monitor Change Management Roadmap and Communication Campaign Effectiveness</DIV></TD>
+    <TD ALIGN=left>Change Management Roadmap and Communication Campaign Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>622</th>
+    <TD ALIGN=left><b>E.ACT.PF</b></TD>
+    <TD ALIGN=left><DIV><B>Plan for Future</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>623</th>
+    <TD ALIGN=left>E.RD.160</TD>
+    <TD ALIGN=left><DIV>Convert Project Views to Reusable Viewpoints</DIV></TD>
+    <TD ALIGN=left>New Reusable Viewpoints</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>624</th>
+    <TD ALIGN=left>E.PS.135</TD>
+    <TD ALIGN=left><DIV>Determine Future Functional Enhancements</DIV></TD>
+    <TD ALIGN=left>Future Functional Enhancements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>625</th>
+    <TD ALIGN=left>E.PS.140</TD>
+    <TD ALIGN=left><DIV>Plan Enhancements</DIV></TD>
+    <TD ALIGN=left>Future MoSCoW List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>626</th>
+    <TD ALIGN=left>E.OCM.250</TD>
+    <TD ALIGN=left><DIV>Measure Organizational Change Effectiveness</DIV></TD>
+    <TD ALIGN=left>Organizational Effectiveness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>627</th>
+    <TD ALIGN=left><b>E.ACT.DITTP</b></TD>
+    <TD ALIGN=left><DIV><B>Deploy IT Transition Plan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>604</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>628</th>
+    <TD ALIGN=left>E.OCM.260</TD>
+    <TD ALIGN=left><DIV>Implement IT Transition Plan</DIV></TD>
+    <TD ALIGN=left>Aligned IT Organization</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>629</th>
+    <TD ALIGN=left><b>E.ACT.SO</b></TD>
+    <TD ALIGN=left><DIV><B>Sign-Off Milestone</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>609,618</b></div></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>630</th>
+    <TD ALIGN=left>E.PMC.SO</TD>
+    <TD ALIGN=left><DIV>Sign-Off Milestone</DIV></TD>
+    <TD ALIGN=left>Sign-Off Milestone</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>631</th>
+    <TD ALIGN=left><b>PC</b></TD>
+    <TD ALIGN=left><DIV><B>Project Closure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>632</th>
+    <TD ALIGN=left><b>PC.ACT.GA</b></TD>
+    <TD ALIGN=left><DIV><B>Gain Acceptance</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>625</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>633</th>
+    <TD ALIGN=left>PC.SM.050</TD>
+    <TD ALIGN=left><DIV>Gain Acceptance</DIV></TD>
+    <TD ALIGN=left>Final Acceptance Certificate</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>634</th>
+    <TD ALIGN=left><b>PC.ACT.CPC</b></TD>
+    <TD ALIGN=left><DIV><B>Close Processes and Contract</B></DIV></TD>
+    <TD ALIGN=left>Closed Processes and Contract</TD>
+    <TD ALIGN=left><b>628</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>635</th>
+    <TD ALIGN=left>PC.SM.060</TD>
+    <TD ALIGN=left><DIV>Close Scope Management</DIV></TD>
+    <TD ALIGN=left>Closed Scope Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>636</th>
+    <TD ALIGN=left>PC.SM.070</TD>
+    <TD ALIGN=left><DIV>Identify Future System Enhancements</DIV></TD>
+    <TD ALIGN=left>Future System Enhancements</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>637</th>
+    <TD ALIGN=left>PC.FM.050</TD>
+    <TD ALIGN=left><DIV>Close Project Financials</DIV></TD>
+    <TD ALIGN=left>Closed Project Financials</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>638</th>
+    <TD ALIGN=left>PC.WM.060</TD>
+    <TD ALIGN=left><DIV>Close Work Management</DIV></TD>
+    <TD ALIGN=left>Closed Work Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>639</th>
+    <TD ALIGN=left>PC.RKM.060</TD>
+    <TD ALIGN=left><DIV>Conduct Post-Production Risk Assessment</DIV></TD>
+    <TD ALIGN=left>Post-Production Risk Assessment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>640</th>
+    <TD ALIGN=left>PC.IPM.050</TD>
+    <TD ALIGN=left><DIV>Produce Final Issue and Problem Report and Close Log(s)</DIV></TD>
+    <TD ALIGN=left>Closed Issue and Problem Log</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>641</th>
+    <TD ALIGN=left>PC.STM.070</TD>
+    <TD ALIGN=left><DIV>Release Staff</DIV></TD>
+    <TD ALIGN=left>Released Staff</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>642</th>
+    <TD ALIGN=left>PC.CMM.060</TD>
+    <TD ALIGN=left><DIV>Submit Final Reports</DIV></TD>
+    <TD ALIGN=left>Final Reports</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>642</th>
+    <TD ALIGN=left>PC.QM.060</TD>
+    <TD ALIGN=left><DIV>Conduct Post Production Quality Review</DIV></TD>
+    <TD ALIGN=left>Post-Production Quality Review</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>644</th>
+    <TD ALIGN=left>PC.CM.080</TD>
+    <TD ALIGN=left><DIV>Close Configuration Management</DIV></TD>
+    <TD ALIGN=left>Closed Configuration Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>645</th>
+    <TD ALIGN=left>PC.IFM.050</TD>
+    <TD ALIGN=left><DIV>Close Infrastructure</DIV></TD>
+    <TD ALIGN=left>Closed Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>646</th>
+    <TD ALIGN=left>PC.PCM.040</TD>
+    <TD ALIGN=left><DIV>Close Contract</DIV></TD>
+    <TD ALIGN=left>Closed Contract</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>647</th>
+    <TD ALIGN=left>PC.OCHM.040</TD>
+    <TD ALIGN=left><DIV>Establish Follow-Up Process</DIV></TD>
+    <TD ALIGN=left>Follow-Up Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>648</th>
+    <TD ALIGN=left><b>PC.ACT.DLLAP</b></TD>
+    <TD ALIGN=left><DIV><B>Document Lessons Learned and Archive Project</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>628</b></TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>649</th>
+    <TD ALIGN=left>PC.CMM.040</TD>
+    <TD ALIGN=left><DIV>Document Lessons Learned</DIV></TD>
+    <TD ALIGN=left>Lessons Learned</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>650</th>
+    <TD ALIGN=left>PC.CMM.050</TD>
+    <TD ALIGN=left><DIV>Turn Over Project Documentation (Project Archives)</DIV></TD>
+    <TD ALIGN=left>Project Archives</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>651</th>
+    <TD ALIGN=left><b>PGM</b></TD>
+    <TD ALIGN=left><DIV><B>Program Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>652</th>
+    <TD ALIGN=left><b>PGM.ACT.PGM</b></TD>
+    <TD ALIGN=left><DIV><B>Perform PGM Program Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right valign="top">
+    <th scope="row" ALIGN=center>653</th>
+    <TD ALIGN=left>PGM.PMC.PGMSUM1</TD>
+    <TD ALIGN=left><DIV>Perform Program Management Activities</DIV></TD>
+    <TD ALIGN=left>Program Management Activities</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><b><IMG src="../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </b></P>
+<P align="left"><b>    <a href="../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Business Process to Use Case</title>
+<!-- InstanceEndEditable -->
+<link href="../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../OUM_HOME.HTM"><img src="../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../CLOUD_HOME.htm"><img src="../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>From Business Process to Use Case</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM_HOME.HTM">Home</option>
+                    <option value="../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Introduction">Introduction</option>
+                            <option value="#RARD">Requirements Definition and Requirements Analysis</option>
+                            <option value="#ANALYSIS">Analysis</option>
+                            <option value="#DESIGN">Design</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD</h2>
+<h3><A name=Introduction id="Introduction"></A>INTRODUCTION</h3>
+<p>The purpose of this guidance is to help the reader &#8220;discover&#8221; how the process from specifying business processes, going to use case descriptions and resulting in the implementation of services (in this example using BPEL) might look like in practice in the context of the Oracle Unified Method (OUM). 
+<p>Two of the most frequently asked question about OUM are:
+<ul>
+  <li> How do business processes relate to use cases?</li>
+  <li>What actually happens as you develop use cases through the phases of OUM?</li>
+</ul>
+<p>The following content explores both these important and often misunderstood topics. It moves from business requirement to business processes to business use cases to narrower types of use cases and illustrates how detail gets added along the way. Many important aspects of how SOA relates to OUM are also illustrated.</p>
+<p>The case used is of moderate complexity. When specific features that are not covered in the case but for which it turns out at they need to be addresses as well, the case can be extended to include them. An obvious example would be business rules. 
+<p>After you have reviewed the &quot;discovery&quot; scenario below, It is recommended that you also review the <a href="OUM_REQUIREMENT_TRACEABILITY.HTM" target="_blank">Traceability of Requirements </a>through the <a href="OUM_REQUIREMENT_TRACEABILITY.HTM#INCEPTION" target="_blank">Inception</a>, <a href="OUM_REQUIREMENT_TRACEABILITY.HTM#ELABORATION" target="_blank">Elaboration</a>, and <a href="OUM_REQUIREMENT_TRACEABILITY.HTM#CONSTRUCTION" target="_blank">Construction</a> Phase Model diagrams of OUM to understand the flow of Requirements through the various models provided by OUM. You will also want to reference the <a href="../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details</a> task guideline, work product template and sample use cases.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a name="RARD" id="RARD"></a>REQUIREMENTS DEFINITION AND REQUIREMENTS ANALYSIS</h3>
+<h4>The Business Process</h4>
+<p>The following activity diagram documents a business process concerning the application of a parking permit by a resident of some municipality.</p>
+<p align="center"><img src="../010_COMMON_FILES/ProcUC1.png" alt="Activity Diagram Documenting a Business Process for the Application of a Parking Permit by a Resident of a Municipality" width="837" height="334" title="Activity Diagram Documenting a Business Process for the Application of a Parking Permit by a Resident of a Municipality"> </p>
+<p>This is a true &#8220;business process&#8221;, as it only concerns business level actors like people, or organization units, and totally abstracts from any system supporting it. The whole process could be manual, for all you know.</p>
+<h4>Transformation to Use Case</h4>
+<p>The same business flow can be documented as a use case description, typically of the scope &#8220;enterprise&#8221;. In this case, it also concerns a business use case, as it describes how the resident communicates with Parking Services, which in this context is an organization. As a use case the same business process would look something like the following:</p>
+<table width="75%"  border="1" title="Transforming a Business Flow into a Use Case" summary="This table shows the previous business flow documented as a use case description, typically of the scope &ldquo;enterprise&rdquo;.">
+  <tr>
+    <th width="19%" scope="row"><div align="left">PRIMARY ACTOR</div></th>
+    <td width="54%">Resident</td>
+    <td>LEVEL</td>
+    <td><img src="../010_COMMON_FILES/UseCaseLevelkite.jpg" width="25" height="19"></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">STAKEHOLDERS</div></th>
+    <td colspan="3"><ul>
+        <li>Resident (wants to be able to park his car near his house)</li>
+        <li> Parking Services (wants to make sure that permits are only granted to eligible residents, and that sufficient parking lots are available)</li>
+        <li> Neighbor (does not want too many cars in the street) <br>
+        </li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GOAL</div></th>
+    <td colspan="3">A Resident Applies for a Parking Permit, and gets rejected with justification or receives a Parking Permit (which could be after having been put on a waiting list).</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"></div></th>
+    <td colspan="3"><p>1. Resident applies for a parking permit</p>
+        <p>2. Parking Services validates if the Resident is eligible for a Parking Permit</p>
+        <p>3. Parking Services verifies that sufficient parking lots are available</p>
+        <p>4. Parking Services creates the Parking Permit</p>
+        <p>5. Parking Services notifies the Resident that the permit is ready for collection</p>
+        <p>6. Resident collects the Parking Permit</p>
+        <b>Extensions</b>
+        <p>2a Resident is not eligible</p>
+        <blockquote>
+          <p>2a1 Notify the Resident of the rejection with justification</p>
+          <p>2a2 scenario ends</p>
+        </blockquote>
+        <p>3a No parking lots available</p>
+        <blockquote>
+          <p>3a1 Parking Services notifies the Resident that the Application has been put on the waiting list.</p>
+          <p>3a2 The Resident notifies Parking Services of its decision to accept the waiting list.</p>
+          <p>3a3 Return to step 4</p>
+          <blockquote>
+            <p>3a2a application withdrawn</p>
+            <p>3a2a1 Parking Services removes the application from the waiting list</p>
+            <p>3a2a2 scenario ends</p>
+          </blockquote>
+      </blockquote></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TRIGGERS</div></th>
+    <td colspan="3">A Resident applies for a Parking Permit</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PRECONDITIONS</div></th>
+    <td colspan="3"><ul>
+        <li>The resident owns a car and does not have a parking permit for that location.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MINIMAL SUCCESS GUARANTEE</div></th>
+    <td colspan="3"><ul>
+        <li>It should be clear what the state is of the Parking Permit Application.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">SUCCESS GUARANTEE</div></th>
+    <td colspan="3"><ul>
+        <li>The resident has obtained his parking permit or has obtained a proper justification for rejection of the request.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BUSINESS RULES</div></th>
+    <td colspan="3"><ul>
+        <li>When the resident does not accept the waiting list explicitly he is assumed to have done so, beginning two working days before the Parking Permit has been created.</li>
+        <li>The Resident is obliged to pay the fee for at least the first quarter, unless the application has been withdrawn at least two working days before printing.</li>
+        <li> The Resident is eligible for a parking permit only when he owns the concerning vehicle, when he is enlisted in the Electoral Register, and when he actually is a Resident of the municipality.</li>
+        <li> P.M. the rules that specify how the waiting list is being processed</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">SUPPLEMENTARY REQUIREMENTS</div></th>
+    <td colspan="3"><ul>
+        <li>All notifications from Parking Services to other parties must allow for multi-channel handling (written in letter, email, SMS, messages on a Resident Portal).</li>
+    </ul></td>
+  </tr>
+</table>
+<p>During requirements capturing with use cases, initially it might suffice to document only the stakeholders, goal and main success scenario together with some business rules. This is where the Business Requirements process normally is limited to. The example use case has been worked out to a greater level of detail, which would typically be done in the Requirements Analysis process.
+<p>Although there is a thin line between Business Requirements and Requirements Analysis, it is good to recognize the difference as doing so offers better opportunities to develop use cases in iterations.
+<h5>How Use Cases Add Value</h5>
+<p> Compared for example with the situation where only a business process diagram is available, adding use cases adds value in that a (detailed) use case description provides the opportunity to specify aspects of the business process that goes beyond that of what you can express with only a diagram. </p>
+<p> One of those aspects is stakeholders that are not directly involved in the process. In some cases identifying such stakeholders might give reason to extend the scope of the use case, like identifying the stakeholder &#8220;Neighbor&#8221; might have lead to considering to include in the business process a step that notifies them as well.
+<p> Other aspects that the diagram does not cover are the goals, the triggers, preconditions, and postconditions of the use case. All of them helping to validate the use case and some of them providing useful input for the next step in which the use case is going to be analyzed.
+<p> An advantage of putting it down in writing that may not be so clear at first sight is that by forcing yourself to express the business process in words might help you to discover flaws and omissions in the original process.
+<p> The value of putting effort in converting a business process into a use case description is not always easy to determine. It depends on many factors like the ability of people reviewing the business process to identify flaws in it, or how easy it is to correct errors later in the process. Probably the best advice would be: when in doubt, don&#8217;t hesitate and just do it. In case of the example the business process has been converted into a use case description in less than half an hour. The total process took much more time, but that was because the business process model needed to be corrected, because of errors found while describing the use case.
+<h4>Drilling Down</h4>
+<p> When looking at the business process you might notice that each activity actually is a use case of its own, most of them being at the level of user goal use cases (which is a use case for which the user can execute it in one session and walk away happily after that). The only exception might be the Validate Parking Permit use case, that for that reason has been drilled down further to investigate.</p>
+<p> The result is the following Validate Parking Permit Application business process model:</p>
+<p align="center"><img src="../010_COMMON_FILES/ProcUC2.png" alt="Resulting Validate Parking Permit Application Business Process Model" width="675" height="402" title="Resulting Validate Parking Permit Application Business Process Model"></p>
+<p>As illustrated above, a couple of other organizations are involved in the validation, possibly making it a lengthy process, and initially suggesting that the upper level activity indeed is not a user goal level use case. But what if the other organizations have automated services available that respond within minutes? What this shows is that the level of a use case in some cases depends on the options for implementing it. This certainly is true in case of a Service Oriented Architecture.</p>
+<p>For the following it will be assumed that such services do exist, making the Validate Parking Permit Application activity indeed an activity at the level of user goal use cases. In the context of the Oracle Unified Method this automatically classifies the diagram above part of the <i>use case details</i> rather than a <i>business process</i>.</p>
+<p>However, the question if it is a business process model, or just use case details, is just an academic one. What is important is that you have a clear idea of when a business process needs to be further detailed. It is advisable to drill them down to the level of user goals, for the following reasons:</p>
+<ul>
+  <li> User goals provide the most effective level to start from and create system use cases from business use cases to describe what the system should do (*). For example, it is at the level of user-goal business use cases that you will decide whether a goal will be kept manual or supported by a system.</li>
+</ul>
+<ul>
+  <li> You typically either implement a user goal level use case or you do not implement it at all, making the optimal unit to estimate and trace requirements from there. </li>
+</ul>
+<p>(*) Business use cases have the business as subject and are written by business analysts to document business processes. System use cases have the system as subject and are written by system developers to document how actors communicate with the system to achieve their goals. </p>
+<h4>Service Discovery</h4>
+<p> Assuming that the requirements so far point to a solution using a Service Oriented Architecture, it is important to discover the services in the requirements. This is not only important for creating the application architecture but also provides important input to the estimating process.</p>
+<p> One of the reasons to do business process modeling in the first place is that it relates very well to a Service Oriented Architecture, which makes implementation of the business process itself possible. You can imagine that the Parking Permit process is implemented as a longer running process that may take weeks to complete. But that will not be the only service involved, as the Parking Permit process itself needs other services to complete.</p>
+<p> There are several approaches to discover services. One of them being by reviewing a business process and identify where the transitions are from an activity of one actor (swimlane) to that of another. In general this indicates a candidate service. In the example the candidate services are in the activities: </p>
+<ul>
+  <li> Apply for Parking Permit</li>
+  <li> Notify Resident of Waiting List</li>
+  <li> Notify Parking Service of decision</li>
+  <li> Notify Resident Permit Ready for Collection</li>
+  <li> Collect Parking Permit</li>
+  <li> Verify Vehicle Ownership</li>
+  <li> Verify Electoral Register</li>
+  <li> Verify Residence</li>
+</ul>
+<p> The Apply for Parking Permit obviously is the starting point for the Parking Permit process itself. You can imagine that the web site of the municipality provides some form that the resident can fill out and on submit calls the Parking Permit process.</p>
+<p> The Notify Resident of Rejection, Notify Resident of Waiting List and Notify Resident Permit Ready for Collection (from Parking Services to the Resident) are candidate services whereby the Parking Service process needs to call out some provider that handles multi-channel notifications to third parties. Whether this will be one service that can handle some generic notification, or three different services that each handle a specific notification type, or any other combination, is a design decision and at this stage is yet to be determined.</p>
+<p> The Notify Parking Services of Decision points to yet another candidate service that the Resident can call to get the application removed from the waiting list.</p>
+<p> The Verify Vehicle Ownership, Verify Electoral Register and Verify Residence already have been indicated as existing services. However, if they were not, creating them would have been outside the scope of the Parking Permit process, as those services would then have to be created by third parties not involved in the project.</p>
+<p> From the last example above, we can conclude that transitions to activities within the scope of secondary actors that are not within the scope of the project, only indicate calls to external services. </p>
+<h4>Conceptual Prototype</h4>
+<p> Any use case that has a user interface associated with it, might be detailed with a conceptual screen layout. Note that a conceptual screen layout is not a design, as it does not specify an actual screen layout, let alone aspects like styling. It&#8217;s main purpose is to specify which data should be shown, and should be validated during the review.</p>
+<p>For example the use case Apply For Parking Permit could be detailed with a screen layout as follows: </p>
+<table border="1" title="Example Screen Layout for Apply for Parking Permit Use Case" summary="This table shows how the use case, Apply for Parking Permit could be detailed with a screen layout.">
+  <tr>
+    <th scope="row"><div align="left">Prompt</div></th>
+    <td>Attribute</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Social Security Number </div></th>
+    <td>[socialSecurityNumber]</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Name</div></th>
+    <td>[firstName] [lastName] </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Address</div></th>
+    <td>[house number] [street] [city] ([state] or [province]) [postal code] [country]</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">License Plate Number</div></th>
+    <td><u>licenseplateNumber</u></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Comments</div></th>
+    <td><u>comments</u></td>
+  </tr>
+</table>
+<p>Legend: [ ] = display only, __ = input fields.</p>
+<p>Other use cases that may require some conceptual layout are the following:</p>
+<ul>
+  <li> Notify Resident of Rejection (mail/email/SMS)</li>
+  <li>Notify Resident of Waiting List (mail/email/SMS)</li>
+  <li>Notify Parking Services of Decision (mail, screen)</li>
+  <li> Notify Resident Permit Ready for Collection (mail/email/SMS)</li>
+</ul>
+<p> When analyzing the Validate Parking Permit Application use case, you may find that the Parking Services wants to be able to override the decision that comes out of the verification, for example by blocking a parking permit for someone that appears to hire a garage box (which none of the external organizations would note). In that case that use case also would require a conceptual screen layout.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="ANALYSIS" id="ANALYSIS"></a>ANALYSIS</h3>
+<h4><a name="ANALYMODEL"></a>Analysis Model</h4>
+<p>What kind of artifacts should be created during the Analysis process depends on the nature of the use cases and the architecture that is going to be used to implement them. The most apparent candidates for adding detail are activity or sequence diagrams, class diagrams and (where useful) collaboration diagrams (used to describe how various &#8220;components&#8221; work together). For SOA projects also message descriptions and message transformations are obvious candidates.
+<p>For services that support more than one operation you also need to specify the names of each individual operation, as well as the types of their input and output messages.
+<p>Depending on its granularity, a service supports a summary use case (like the Parking Permit process), a user goal use case (like Apply for Parking Permit) or a subfunction use case. No example of the latter has been included, but you can imagine that for each separate channel (letter, email, SMS) a subfunction use case could be created that describes a generic notification services that can be used to send all kind of notifications to third parties.
+<p>Unless parallel development is be done where other (parts of the) system(s) depend on a service to be build, at this point there is not much value in specifying the exact WSDL of the service. For any external service you use, you need to have at least the WSDL location if not the WSDL itself.
+<h5>Activity Diagrams</h5>
+<p>When there is a flow involved, it might be useful to create an activity diagram. An obvious example would be a use case for a service that will be implemented as a BPEL process. As already noted, the activity diagram for the Validate Parking Application is an example of that. But use cases that involve a user interface with a complex screen flow, also are good candidates.
+<h5>Class Diagrams</h5>
+<p>When there is data involved, a class diagram seems to be the obvious choice to document that. Many people doing SOA projects never seem to make a class diagram. Realize though that class diagrams add as much value to SOA projects as they for example do to pure Java/XML projects, as messages are about handling data as well. Having class diagrams available can add great value to optimizing the process of defining message formats and transformations.
+<p>When analyzing the Parking Permit use case the following classes can be recognized: Resident, Parking Permit Application, and Parking Permit. A distinction has been made between Parking Permit Application and Parking Permit, as not all applications will result in a permit, and the application follows a process with statuses that do not apply to the permit itself and vise verse.
+<p>Not very explicit in the description but obviously needed if you think about it, is a notion of an Area. You will need this in the process of determining if there are sufficient parking lots available. You might argue that the reason for not having discovered this earlier is because the way the waiting list is being processed has not been worked out to the proper level of detail.
+<p>The class diagram for the Parking Permit use case could look as in the following figure:
+<p align="center"><img src="../010_COMMON_FILES/ProcUC3.png" alt="Class Diagram for the Parking Permit Use Case" width="582" height="295" title="Class Diagram for the Parking Permit Use Case">
+<h5> Message Descriptions</h5>
+<p>What format to use for a message descriptions probably foremost depends on who needs to validate it. Some people will prefer more &#8220;logical&#8221; descriptions in Word, while more technical oriented people probably have no problems with XSD&#8217;s. </p>
+<p> Mind that to be able to create XSD&#8217;s that translate 1:1 to an implementation, it is important to understand the technique of implementing messaging. For example, initially one XSD has been created for the Resident and one for the Parking Permit Application, only to discover that it was more practical to create one XSD containing both and use that as the format for the message going from the resident to the Parking Process service. If you pay more attention to detailing the Apply for ParkingPermit use case, you probably would find that out up front.
+<p>For the sake of example the response message has been kept simple by returning a string stating that the application has been received successfully. The description of the request message looks as follows:</p>
+<table width="29%" border="1" role="presentation">
+  <tr>
+    <td><pre>
+        <code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;windows-1252&quot; ?&gt;
+&lt;xsd:schema xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;
+            xmlns=&quot;http://xmlns.oracle.com/ParkingPermitProcess&quot;
+            targetNamespace=&quot;http://xmlns.oracle.com/ParkingPermitProcess&quot;
+            elementFormDefault=&quot;qualified&quot;&gt;
+  &lt;xsd:element name=&quot;parkingPermitApplication&quot;&gt;
+    &lt;xsd:annotation&gt;
+      &lt;xsd:documentation&gt;
+        Message format to be used to call the Apply for Parking Permit service.
+      &lt;/xsd:documentation&gt;
+    &lt;/xsd:annotation&gt;
+    &lt;xsd:complexType&gt;
+      &lt;xsd:sequence&gt;
+        &lt;xsd:element name=&quot;applicationDate&quot; type=&quot;xsd:date&quot;/&gt;
+        &lt;xsd:element name=&quot;areaCode&quot; type=&quot;xsd:string&quot;/&gt;
+        &lt;xsd:element name=&quot;licensePlateNumber&quot; type=&quot;xsd:string&quot;/&gt;
+        &lt;xsd:element name=&quot;status&quot; type=&quot;xsd:string&quot;/&gt;
+        &lt;xsd:element name=&quot;comments&quot; type=&quot;xsd:string&quot;/&gt;
+        &lt;xsd:element name=&quot;resident&quot; type=&quot;resident&quot;/&gt;
+      &lt;/xsd:sequence&gt;
+    &lt;/xsd:complexType&gt;
+  &lt;/xsd:element&gt;
+  &lt;xsd:complexType name=&quot;resident&quot;&gt;
+    &lt;xsd:sequence&gt;
+      &lt;xsd:element name=&quot;socialSecurityNumber&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;firstName&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;lastName&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;street&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;houseNumber&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;postalCode&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;city&quot; type=&quot;xsd:string&quot;/&gt;
+      &lt;xsd:element name=&quot;email&quot; type=&quot;xsd:string&quot;/&gt;
+    &lt;/xsd:sequence&gt;
+  &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;
+        </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+<p>Other message descriptions that need to be made are the request and response messages for the Verify Ownership, Verify Electoral Registers and Verify Residence use cases.<br>
+  You should keep the message descriptions separate from the use case descriptions, to support reuse. Refer to them from the use case descriptions instead.
+<h5>Message Transformations</h5>
+<p>How messages are transformed from one format to the other depends on the situation. For example, in case of BPEL, transformations can be done by doing one or more assign operations or by using an XSLT transformation, which in both cases may involve complex XPath queries or regular expressions.
+<p>For this reason transformations probably are best described in text, as has been done in the following example:</p>
+<table border="1" title="Message Transformation Example" summary="This table shows an example of message transformation described in text.">
+  <tr>
+    <th scope="row"><div align="left">Parking Permit Application </div></th>
+    <td>Ownership Validation</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><em>Source/Transformation</em></div></th>
+    <td><em>Target</em></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">SocialSecurityNumber</div></th>
+    <td>SocialSecurityNumber</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">LicensePlateNumber</div></th>
+    <td>LicensePlateNumber</td>
+  </tr>
+</table>
+<p>The example is trivial in that transformation consists of using a subset of the fields of the source and mapping those 1:1 on fields of the target message.
+<p>You can image than in practice often more complex transformations need to be done, for example in case of n:m mappings. In practice using a two-column format often suffices, where the (left) Source/Transformation column specifies which source fields are involved and any logic that needs to be applied to that, and where the (right) Target column specifies what the (single) target field is.
+<p>As with message formats you should keep the message transformations separate from the use case descriptions to support reuse.
+<h4>Where to Stop</h4>
+<p>Once the analysis model has been worked out to a sufficient level of detail, you are ready for the design. What &#8220;sufficient&#8221; means in this context, depends on many factors, the most important ones being the following:
+<h5>Nature of Engagement</h5>
+<p>In some cases a formal process needs to be followed that requires every change of the specifications to be approved up-front. On the other side of the spectrum there is the agile approach by which part of the (detailed) requirements are captured while validating iterations of a working program.
+<h5>Skills and Habits of Developers</h5>
+<p>Developers are most comfortable with what they are used used to working with. However, you should be aware that when every developer involved needs to get used to one broadly accepted way of creating specifications almost always outclasses the situation in which developers need to get used to as many different styles as there are other developers. Not to mention the effort that needs to be put into the validation process involved with that. </p>
+<p> For most projects that involve requirements analysis, class models are very useful to developers, even in the case of BPEL development.
+<h5>Application and Technical Architecture</h5>
+<p>The development of data-oriented systems that depend on a well-structured database can highly benefit from creating a detailed class diagram. In case of use cases that involve a user interface, activity diagrams normally only add value when there is a complex dialog involved.
+<p>For SOA projects that primarily deal with messaging it probably suffices to detail classes to the level that all attributes and their types are known. Message formats and transformations often need to be worked out in detail. In general, activity or sequence diagrams add great value to business processes and services, as they support a more effective implementation.
+<p>Other architectures, for example identity management/security, on their turn require yet other details.
+<p>A final remark that needs to be made at this point is that use case analysis should not be confused for a technical design. Although some people state that class models, and activity diagrams that describe system-internal behavior, are &#8220;technical&#8221; they actually only capture detailed requirements or validate higher-level requirements from a different angle.
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="DESIGN" id="DESIGN"></a>DESIGN</h3>
+<h4>Project Review</h4>
+<p>The design involves mapping the analysis to artifacts that actually are implemented. Assuming that the Technical Architecture dictates a Service Oriented Architecture that uses BPEL to implement services and service orchestration, the design would at least include the following:</p>
+<ul>
+  <li>XSD&#8217;s</li>
+  <li> WSDL&#8217;s</li>
+  <li> A diagram design of the BPEL processes to implement</li>
+  <li>A database design (that supports retrieval of resident information and storage and retrieval of parking permits and their applications) </li>
+</ul>
+<p>An example of an XSD already has been provided. Including WSDL&#8217;s in this case would not add much value, and a database design is too obvious. A design of the BPEL process to implement, in this case sufficiently has been provided by the activity diagrams already created. This probably will often be the case.</p>
+<p> To show how the implementation might look like the following two BPEL process diagrams are included.<br>
+  A part of the ParkingPermitProcess looks as follows:</p>
+<p align="center"><img src="../010_COMMON_FILES/ProcUC4.png" alt="BPEL Process Diagram for a part of the ParkingPermitProcess" width="510" height="788" title="BPEL Process Diagram for a part of the ParkingPermitProcess"></p>
+<p>Not surprisingly the initial business process diagram and the implementing BPEL process flow look very similar. </p>
+<p>The same holds true for the user goal level Validate Parking Permit use case that looks as in the following picture (that actually zooms in on the ValidateParkingPermitApplication step of the previous picture):</p>
+<p align="center"><img src="../010_COMMON_FILES/ProcUC5.png" alt="User Goal Level Validate Parking Permit Use Case" width="1029" height="736" title="User Goal Level Validate Parking Permit Use Case"></p>
+<p>In practice, you can imagine a human workflow step to be included that supports manual intervention of the outcome by Parking Services.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

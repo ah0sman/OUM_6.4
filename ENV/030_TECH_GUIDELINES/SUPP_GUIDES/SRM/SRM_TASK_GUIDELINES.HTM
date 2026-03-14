@@ -1,0 +1,747 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Roadmap Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left"> SOA Roadmap Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#CSA">Current State Assessment Guidance</option>
+                            <option value="#FVD">Future Vision Assessment Guidance</option>
+                            <option value="#GA">Gap Analysis Guidance</option>
+                            <option value="#ASAS">Activity Selection &amp; Scheduling Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("M");
+  Effect.BlindDown("MM");
+  Effect.BlindDown("DA");
+  Effect.BlindDown("MS");
+  Effect.BlindDown("PDP");
+  Effect.BlindDown("PD");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("M");
+  Effect.BlindUp("MM");
+  Effect.BlindUp("DA");
+  Effect.BlindUp("MS");
+  Effect.BlindUp("PDP");
+  Effect.BlindUp("PD");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SOA_ROADMAP.HTM" target="_blank"><br>
+		Back to View</a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) ROADMAP SUPPLEMENTAL TASK GUIDELINES</h2>
+<p> This document contains OUM supplemental task guidance for the execution of a service based on the SOA Roadmap view. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. </li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overviews.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for areas.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">SOA Roadmap - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center"><b>OUM Task Overview <BR>
+      </b></DIV></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#CSA">Current State Assessment</a></div></th>
+    </TR>
+  <tbody id="M">
+    <TR valign="top">
+      <TD valign="top"><a href="#BA012">BA.012 Define Business Scope</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA015">BA.015 Conduct Enterprise Stakeholder Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_015_CONDUCT_ENTERPRISE_STAKEHOLDER_ASSESSMENT_OVERVIEW.HTM" target="_blank">BA.015 Conduct Enterprise Stakeholder Assessment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER0151">ER.015.1 Conduct Enterprise Maturity Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.1 Conduct Enterprise Maturity Assessment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER040">ER.040 Research Enterprise</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER080">ER.080 Obtain Existing Reference Material </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_080_OBTAIN_EXISTING_REFERENCE_MATERIAL_OVERVIEW.HTM" target="_blank">ER.080 Obtain Existing Reference Material </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER0152">ER.015.2 Conduct Enterprise Maturity Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.2 Conduct Enterprise Maturity Assessment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER0153">ER.015.3 Conduct Enterprise Maturity Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.3 Conduct Enterprise Maturity Assessment </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#FVD">Future Vision Definition</a></div></th>
+  </TR>
+  <tbody id="MM">
+    <TR valign="top">
+      <TD valign="top"><a href="#BA010">BA.010 Identify Business Strategy</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1601">ER.160.1 Develop Desired Future State</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160 Develop Desired Future State</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1602">ER.160.2 Develop Desired Future State</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160 Develop Desired Future State</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER110">ER.110 Perform Benefit Analysis </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110 Perform Benefit Analysis </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#EA010">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#GA">Gap Analysis</a></div></th>
+  </TR>
+  <tbody id="DA">
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1651">ER.165.1 Identify Capability Challenges </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.1 Identify Capability Challenges </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1652">ER.165.2 Identify Capability Challenges </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.2 Identify Capability Challenges </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1653">ER.165.3 Identify Capability Challenges </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.3 Identify Capability Challenges </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER167">ER.167 Determine Remediation Approaches </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_167_DETERMINE_REMEDIATION_APPROACHES_OVERVIEW.HTM" target="_blank">ER.167 Determine Remediation Approaches </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#ASAS">Activity Selection and Scheduling</a></div></th>
+  </TR>
+  <tbody id="MS">
+    <TR valign="top">
+      <TD valign="top"><a href="#ER130">ER.130 Produce MoSCoW Improvement List </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER170">ER.170 Develop Future State Transition Plan </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP040">IP.040 Identify Candidate Projects </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP050">IP.050 Prioritize Projects </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.050 Prioritize Projects </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0701"> BA.070.1 Identify Candidate Services </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank"> BA.070.1 Identify Candidate Services </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP0201">IP.020.1 Analyze Services </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">IP.020.1 Analyze Services </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA0702"> BA.070.2 Identify Candidate Services </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank"> BA.070.2 Identify Candidate Services </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP0202">IP.020.2 Analyze Services </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">IP.020.2 Analyze Services </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IP060">IP.060 Develop IT Portfolio Plan </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_060_DEVELOP_IT_PORTFOLIO_PLAN_OVERVIEW.HTM" target="_blank">IP.060 Develop IT Portfolio Plan </a></DIV></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><B><A name=CSA id="CSA"></A></B></b>CURRENT STATE ASSESSMENT</h3>
+<p>The current state assessment is based on the Oracle SOA Maturity Model. The SOA Maturity Model includes over ninety capabilities that capture the best practices that Oracle has collected over many years working with a wide variety of companies. These capabilities provide the detail necessary to accurately measure and guide the progress of a SOA initiative. Focusing the current state assessment on these specific capabilities ensures a focused scope for the assessment.</p>
+<p> For more information on the Oracle SOA Maturity Model, go to the Creating an SOA Roadmap document accessible from the IT Strategies from Oracle (ITSO) web site via the <a href="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM#SOALINKS" target="_blank">Supplemental Guidance</a> page.</p>
+<p>The current state assessment should be tightly time-boxed to ensure timely completion of the assessment. The size and complexity of an organization determines the actual amount of time that must be allocated to the assessment. Nominally, two weeks is the amount of time required. The underlying goal is not to fully capture an IT environment current state; rather it is to evaluate the current state relative to the capabilities that are required to successfully adopt SOA.</p>
+<p>At the end of the Current State Assessment you will have completed the SOA Assessment Results. This includes the maturity and adoption score for each of the capabilities in the SOA Maturity Matrix. Additionally, the assessment team will have an understanding of the current state and should have collected known issues and problems that were identified and discussed during the interview process.</p>
+<p>An overview of the Current State Assessment workflow is as follows:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_CSA.PNG" alt="Current State Assessment Workflow" width="923" height="489" title="Current State Assessment Workflow"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><br>
+    <a name="BA012" id="BA012"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">BA.012 Define Business Scope</a></h4>
+<h5> Define Scope </h5>
+<p> Before beginning the actual assessment, it is vital that the scope of the assessment is determined and that all involved parties agree to the defined scope. For example, the scope could be limited to a single division or line-of-business within a larger enterprise. Or the scope could be limited to a single geographic location. The scope defines both the scope of the assessment <i>and</i>, ultimately, the scope of the roadmap.
+<p>When doing this you would typically execute task step 1, Create Business Scope Definition, and depending on the result, execute one or multiple of the remaining steps in the task.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=BA015 id="BA015"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_015_CONDUCT_ENTERPRISE_STAKEHOLDER_ASSESSMENT_OVERVIEW.HTM" target="_blank">BA.015 Conduct Enterprise Stakeholder Assessment</a> </h4>
+<h5>Identify Interview Participants</h5>
+<p> To be able to determine which participants should be interviewed as part of the assessment, perform a stakeholder assessment. With the information you have available, identify the key stakeholders (step 3 of the task), their base concerns, interest and influence (step 5).
+<p> Choose the participants that ensure that all capabilities within the SOA Maturity Model can be accurately scored. The following table describes the typical areas of interest and interview participants:</p>
+<table border="1" title="Typical Areas of Interest and Interview Participants" summary="This table lists typical areas of interest and their associated interview participants.">
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Area of Interest </div></th>
+    <th scope="col">Typical Participant </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Objectives </div></th>
+    <td>VP of Business Units<br>
+      LOB IT </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IT Objectives </div></th>
+    <td>CIO<br>
+      VP of Application Development<br>
+      VP of IT Infrastructure</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Enterprise Architecture </div></th>
+    <td>VP of Enterprise Architecture<br>
+      Enterprise Architect(s) </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Program Management </div></th>
+    <td>PMO Manager<br>
+      Project Manager(s) </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Development Process </div></th>
+    <td>Application Architect(s)<br>
+      Business Analyst(s)<br>
+      Development Lead(s)<br>
+      Methodologist<br>
+      Build Manager<br>
+      CM Manager<br>
+      QA Manager</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Operations</div></th>
+    <td>Director of Operations<br>
+      Administrator(s) </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Security</div></th>
+    <td>Chieft Security Architect</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ER0151"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.1 Conduct Enterprise Maturity Assessment </a></h4>
+<h5>Identify Interview Participants</h5>
+<p>Based on the stakeholder assessment, determine the final list of participants that should be interviewed as part of the assessment.
+  
+<h5>Determine Interview Schedule</h5>
+<p>When you have selected the participants you need to interview, determine an interview schedule. The goal is to limit the length of the Current State Assessment by creating a compacted schedule. It may be necessary to delay the start of the assessment to accommodate the participants' schedules. Ideally, try to fit the all the interviews into approximately a two week period. Time before or between interviews can be productive time spent reviewing documentation (i.e., the next task).
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><a name="ER040"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a><br>
+<a name="ER080"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_080_OBTAIN_EXISTING_REFERENCE_MATERIAL_OVERVIEW.HTM" target="_blank">ER.080 Obtain Existing Reference Material</a></h4>
+<h5>Gather and Review Relevant Documents</h5>
+<p>When you have completed the list of interview participants and know the scope of the assessment, gather as much information as possible about the enterprise situation relevant for the assessment as part of the preparation for the interviews. Execute the tasks steps 3, 4 and 5 of ER.040, but as the purpose is prepare for the interviews, it is not necessary to produce a Discovery Map presentation as a result of this task.
+<p> You should also gather any other relevant existing information that may be useful for your interviews preparation. Preferably, the documents to review should be the existing documents that describe various aspects of the current IT environment and SOA initiative. This allows the assessment team to ask more focused questions in the interviews and also provides the opportunity to ask questions about the written material for clarification or to resolve conflicting information. The following list gives some examples of the types of documents that should be gathered and reviewed:
+<ul>
+  <li>Balanced Score Card, Strategy Map (or similar business strategy/goals document)</li>
+  <li> Enterprise Architecture Document(s)</li>
+  <li> Project Management Handbook(s)</li>
+  <li> Software Development Process Document(s)</li>
+  <li> Operational Process and Procedures Document(s)</li>
+  <li> Corporate Security Policies</li>
+  <li> Organizational Structure Document</li>
+  <li> SOA Program Document(s)</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a href="#TOP"><b><a name="ER0152" id="ER0152"></a></b></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.2 Conduct Enterprise Maturity Assessment</a> </h4>
+<h5>Perform Interviews</h5>
+<p> Before each interview the assessment team should review the SOA Maturity Model to identify capabilities that are particularly relevant for the person being interviewed. It is NOT recommended that the assessment team simply ask a question for each of the capabilities. Rather the interview team should ask open ended questions that allow the interviewee to describe how things are currently done and to identify any problems that currently exists. Remember, the interviewees are the experts on what goes on within the organization being evaluated, so encourage them to explain the current situation.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a href="#TOP"><b><a name="ER0153" id="ER0153"></a></b></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015.3 Conduct Enterprise Maturity Assessment</a> </h4>
+<h5>Assign Capability Scores</h5>
+<p>Once the interviews have been completed and the documents have been reviewed, each of the capabilities in the SOA Maturity Matrix should be scored for both maturity and adoption. These scores provide the raw data that is analyzed during Gap Analysis. The SOA Maturity Model includes a description for each level of maturity and each level of adoption for each capability. When scoring a capability, the scores selected should be the scores where the descriptions of maturity level and adoption level most accurately match the current situation based on the information collected in interviews and from the documents reviewed. Although there is always some level of subjectivity when measuring capability, the goal is to provide an objective measure. This allows future measurements to be performed by a different assessment team, yet still provide results that can be used to accurately measure progress.
+<p> Frequently, when the assessment results are presented there are questions and even disagreements about the score that was assigned. Therefore, it is important that in addition to the score, the assessment team also records the rational for assigning the maturity and adoption scores. This rational could include quotes from interviews or specific sections from the documents that were reviewed.
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><b><B><A
+name=FVD id="FVD"></A></B></b>FUTURE VISION DEFINITION </h3>
+<p>The Future Vision Definition focuses solely on the high-level goals and principles that will be used to guide the entire SOA initiative. Do not attempt to create a detailed future state vision. While a more detailed future vision is required to achieve successful SOA adoption, it is not something that must be created prior to creating the initial SOA Roadmap. The initial phases of the SOA Roadmap may focus on creating the detailed SOA future vision.</p>
+<p>The SOA Vision Definition answers the following questions:</p>
+<ol>
+  <li>What is goal of the SOA initiative?</li>
+  <li> What is the organizational scope of the SOA initiative?</li>
+  <li> What are the benefits that SOA is expected to deliver to the organization?</li>
+  <li> What are the guiding principles for the SOA initiative?</li>
+</ol>
+<p>These questions must be answered by the executive(s) leading the SOA initiative. This is accomplished in a facilitated workshop. Nominally, the workshop should take about two hours, but may take longer if there is no pre-existing understanding of SOA or there is substantial disagreement on why SOA is being pursued.</p>
+<p>At the end of Future Vision Definition, you have a completed SOA Vision Definition. This contains the scope of the initiative, the expected benefits, and the guiding principles to achieve the goal and the benefits. This vision for the SOA initiative can be captured in a single summary slide and used to educate and align the organization with the SOA initiative. The figure below shows an example of such a summary slide:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_SOA_VD.PNG" alt="Example Single Summary Slide for SOA Vision Defintion" width="624" height="454" title="Example Single Summary Slide for SOA Vision Defintion"></p>
+<p> This picture clearly shows the goal and scope of the SOA initiative. It also shows that the SOA principles will be enforced across the entire SOA initiative and that the SOA initiative is expected to deliver the prioritized benefits. </p>
+<p>An overview of the Future Vision Definition workflow is as follows:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_FVD.PNG" alt="Future Vision Defintion Workflow" width="631" height="233" title="Future Vision Defintion Workflow"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=BA010 id="BA010"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 - Identify Business Strategy</a> </h4>
+<h5>Define Goal</h5>
+<p>Review the Business Strategy and identify areas relevant for SOA. In particular, task steps 4 (Determine Vision, Mission and/or Values) and 6 (Determine Goals, Objectives, Targets and Initiatives) are relevant. Use this as an input to prepare the goals of the SOA initiative. This should help you in answering the question, &ldquo;What is the goal of the SOA initiative?&rdquo; above. The goal being defined should be the goal for the SOA initiative after having executed the roadmap.
+<p>The recommended roadmap planning horizon is 2-3 years; therefore the goal should be the goal of the SOA initiative 2-3 years from now. The following table provides some example goal statements:
+<table border="1" title="Example Goal Statements" summary="This table lists example goal statements in the first column following by a score for each statement in the Score column.  The score is used during Gap Analysis and will be explained in more detail later.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left"><a name="GS"></a>Goal Statement</div></th>
+    <th scope="col"><div align="center">Score</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Develop experience building services to provide a foundation for further investments in SOA.</div></th>
+    <td><p align="center">1</p></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Apply SOA to a limited set of projects to demonstrate the benefits of SOA and build credibility with the business owners.</div></th>
+    <td><div align="center">2</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Drive widespread sharing and reuse by consistently applying SOA concepts.</div></th>
+    <td><div align="center">3</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Improve business/IT alignment and drive business value by measuring and managing to key performance indicators.</div></th>
+    <td><p align="center">4</p></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Support new business initiatives and exploit new revenue opportunities enabled by SOA.</div></th>
+    <td><p align="center">5</p></td>
+  </tr>
+</table>
+<p>The goal statements in the above table are used to gauge the extent and complexity of the entire SOA initiative and are listed in order of increasing difficulty. It should be obvious that accomplishing the first goal statement is far less difficult than accomplishing the fifth goal statement. Greater organizational maturity is required to achieve the more difficult goals for SOA. Of course, the benefits provided by SOA are commensurably greater as well. The Score column in the table is used (and will be explained) during <a href="#GA">Gap Analysis</a>.
+<p><a href="#TOP">Back to Top</a>
+<hr width="100%">
+<h4><b><b><a name=ER1601 id="ER1601"></a></b></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160.1 Develop Desired Future State</a></h4>
+<h5>Define Organizationl Scope</h5>
+<p>Once you have determined the SOA Goal statement (see <a href="#BA010">BA.010 Identify Business Strategy</a>), you should answer the second question above, &ldquo;What is the organizational scope of the SOA initiative?&rdquo; The organizational scope defines which departments, divisions, lines-of-business, etc., are included in the SOA initiative. The most common scopes are either division or enterprise, but other options are possible depending on the company's organizational structure. The following table provides example levels of scope for the SOA initiative.</p>
+<table border="1" title="Example Levels of Scope" summary="This table lists example SOA initiative scope statements in the first column following by a score in the second column. The score is used during Gap Analysis and will be explained later.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left"><b><a name="SIS"></a>SOA Initiative Scope</b></div></th>
+    <th scope="col"><div align="center"><b>Score</b></div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">A small number of projects will be applying service-orientation. </div></th>
+    <td><p align="center">1</p></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">One or more business units will use SOA to address all of their projects. </div></th>
+    <td><div align="center">2</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">The SOA initiative will span all business units within a single division. </div></th>
+    <td><div align="center">3</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">The SOA initiative will span multiple divisions within the enterprise. </div></th>
+    <td><p align="center">4</p></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">The SOA initiative will span the entire enterprise.</div></th>
+    <td><p align="center">5</p></td>
+  </tr>
+</table>
+<p>Defining the scope of the SOA initiative is essential to determining a roadmap. With greater scope, the number of organizational boundaries that must be crossed increases. This increases the complexity of the effort, and, therefore, requires greater organizational maturity. The Score column in the table is used (and will be explained) during <a href="#GA">Gap Analysis</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><b><b><a name=ER1602 id="ER1602"></a></b></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160.2 Develop Desired Future State</a><b><br>
+      <b><a name=ER110 id="ER110"></a></b></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110 Perform Benefit Analysis</a> </h4>
+<h5>Define Expected Benefit</h5>
+<p>Finally, you should identify the list of expected SOA benefits that the organization realistically can achieve within the given timeframe, and with a successful adoption of SOA. This will help answer the third question,&ldquo;What are the benefits that SOA is expected to deliver to the organization?&rdquo;</p>
+<p>There are many different benefits that an organization can realize by successfully adopting SOA. However, not all benefits can be realized in parallel. When creating a SOA Roadmap, emphasis should be placed on the benefits that are highest priority and leave the lower priority benefits for later phases. The list below shows examples of possible benefits from SOA adoption.</p>
+<ul>
+  <li>rapid deployment of applications </li>
+  <li> unified, simplified data access</li>
+  <li> transition to a responsive, flexible, and extensible infrastructure</li>
+  <li> flexible architecture that enables business and IT agility</li>
+  <li> ability to support cross functional and cross divisional processes</li>
+  <li> effective use of external service providers</li>
+  <li> single implementation and enterprise-view of business services</li>
+  <li> operational improvements</li>
+  <li> service granularity recognized by a business user</li>
+  <li> skill-set portability</li>
+  <li> standardize process and technologies </li>
+  <li> standards based integration</li>
+  <li> quicker re-composition of business processes</li>
+  <li> integration with business partners</li>
+  <li> de-commissioning of older applications </li>
+  <li> better visibility into business processes</li>
+  <li> incremental development and deployment </li>
+  <li> business process standardization</li>
+  <li> decoupling of applications Productivity gains</li>
+</ul>
+<p>These benefits can be used as a starting place to identify the benefits that an organization hopes to achieve via SOA adoption. The above list is by no means a complete list. Part of the SOA Vision Definition is to create a list of possible SOA benefits and prioritize the list. Once a list has been created, the benefits should be prioritized based on the business and IT objectives of the organization. The easiest way to prioritize the benefits is to assign a high, medium, or low prioritization to each possible benefit. Roughly one third of the possible benefits should be in each prioritization, i.e., it is not helpful to list all the possible benefits as high priority.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=EA010 id="EA010"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a> </h4>
+<h5>Define Guiding Principles</h5>
+<p>The SOA Vision Definition is completed by defining a number of guiding principles. This answers the final question, &ldquo;What are the guiding principles for the SOA initiative?&rdquo; The principles should be defined to support the highest prioritized benefits, and should thereby provide enforceable guidance to the SOA initiative. The following list provides some example guiding principles.</p>
+<ul>
+  <li>Every service must be documented following company standards.</li>
+  <li> Apply a consistent and controlled service identification process.</li>
+  <li> Utilize a standards-based service infrastructure.</li>
+  <li> Data is owned by the enterprise.</li>
+  <li> Enterprise data should be accessed via shared services.</li>
+  <li> Avoid use of point-to-point connections.</li>
+  <li> Reuse existing services wherever possible.</li>
+  <li> Buy before build, reuse before enhance, and enhance before build new.</li>
+</ul>
+<p>The guiding principles should be sufficiently clear and detailed so that the principles can be enforced across the entire scope of the SOA initiative and on specific projects that fall under the purview of the initiative. The principles should also serve as a foundation to make more specific decisions in the future.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><b><B><A
+name=GA id="GA"></A></B></b>GAP ANALYSIS</h3>
+<p>During Gap Analysis, the current state of the SOA initiative (as measured during the <a href="#CSA">Current State Assessment</a> above) is compared with the goal for the initiative (defined during <a href="#FVD">Future Vision Definition</a> above). The gap between these two is then analyzed to determine the causes and identify remediation approaches.</p>
+<p>The maturity and adoption scores from the Current State Assessment measure the progress of a SOA initiative and, more importantly, identifies specific capabilities that are lacking or lagging and are therefore inhibiting the SOA initiative. The gap between where the organization is currently and where they need to be to achieve their goal is broken down by capability domain (from the SOA Maturity Model) to identify lagging domains. It is further broken down by individual capability to identify specific capabilities that are lacking or lagging. The following diagram illustrates the workflow.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_GA.PNG" alt="Gap Analysis Workflow" width="755" height="433" title="Gap Analysis Workflow"></p>
+<p>Once the lagging capabilities have been identified, a remediation approach for each of the identified inhibitors is determined from industry best practices and prior Oracle experience.</p>
+<p>At the end of the Gap Analysis, you have the Recommendation Activities at domain level. This includes an understanding of which domains and which individual capabilities are inhibiting the successful achievement of the goal of the SOA initiative. Additionally, it includes identified remediation activities that address the lagging domains and capabilities. These remediation activities provide the primary input into the roadmap creation process.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER1651 id="ER1651"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.1 Identify Capability Challenges</a> </h4>
+<h5>Identify Problem Domains</h5>
+<p>The first step of Gap Analysis is to identify the domains that exhibit the largest gap between current maturity and the maturity needed to achieve the SOA goal. The gap for the domains can be visually represented by a spider (aka radar) graph as shown below:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_GA_VVCM.PNG" alt="Example Spider Graph" width="624" height="431" title="Example Spider Graph"><a name="VVCM"></a></p>
+<p align="center"><b>Vision versus Current Maturity</b></p>
+<p>The Vision level is determined by the following formula:</p>
+<p><img src="../../../010_COMMON_FILES/SRM_GA&#173;_VF.PNG" alt="Vision Level Formula" width="362" height="89" title="Vision Level Formula"></p>
+<p>Where <b>G</b><kbd><b>S</b></kbd> is the score from the <a href="#GS">goal statement</a> and <b>S<kbd>S</kbd></b> is the score from the scope of the <a href="#SIS">SOA initiative</a>. This formula maps the goal statement to a level of maturity necessary to reach that goal. The scope of the initiative is used as a modifier if the scope score is greater than the goal score, i.e., it takes greater maturity to achieve success on a broader scope. The vision score (<b>V<kbd>S</kbd></b>) is then mapped to the maturity levels in the SOA Maturity Model by applying the simple formula: 1=Ad Hoc, 2=Opportunistic, &hellip; , 5=Optimized. </p>
+<p>For the example in the spider graph shown above, the Vision level was derived using this formula as follows:</p>
+<blockquote>
+  <p>Goal Statement - Drive widespread sharing and reuse by consistently applying SOA concepts.</p>
+  <p>Scope Statement - The SOA initiative will span multiple divisions within the enterprise.</p>
+</blockquote>
+<p>So <b>G</b><kbd><b>S</b></kbd> = 3, <b>S<kbd>S</kbd></b> = 4, and <b>V<kbd>S</kbd></b> = (3+4)/2 = 3.5. The 3.5 score mapped to the maturity levels yields a vision maturity half way between Systematic and Managed. This Vision level of maturity is what is plotted in the spider graph figure.</p>
+<p>The Current Maturity level for each domain is calculated by simply averaging the maturity score for each capability within the domain. This provides an average maturity for each of the eight domains which is then plotted in the spider graph.</p>
+<p>Plotting the Current Maturity relative to the Vision (as shown in the spider graph above) provides a visual representation of the gap between where the organization is with respect to SOA and where it needs to be to meet the goal of the SOA initiative. In this example, the graph clearly shows that the Projects, Portfolios &amp; Services domain is the area requiring the most attention followed closely by the Business &amp; Strategy and Infrastructure domains.</p>
+<p>This analysis should be fed into <a href="#ASAS">Activity Selection and Scheduling</a>. In this example, initial activities in the roadmap should center on addressing the lagging capabilities in the Projects, Portfolios and Services, Business and Strategy, and Infrastructure domains.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER1652 id="ER1652"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.2 Identify Capability Challenges</a> </h4>
+<h5>Identify Outlier Capabilities</h5>
+<p>Outlier capabilities are capabilities where the maturity and the adoption are significantly out of sync. This usually indicates a capability that should receive attention early in the roadmap. The outlier capabilities can be easily detected by plotting the maturity and adoption score for each capability in a scatter plot as shown in the following figure:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_GA_CSP.PNG" alt="Example Capabilities Scatter Plot" width="624" height="400" title="Example Capabilities Scatter Plot"></p>
+<p align="center"><b>Capabilities Scatter Plot </b></p>
+<p>As shown in the above graph, the maturity and adoption scores for capabilities usually fall along the diagonal when plotted against each other. In the above example, there are two scores that are significantly off the diagonal, one well above the diagonal and one well below the diagonal. The capability well above the diagonal is a capability from the Architecture domain. The capability well below the diagonal is a capability from the Infrastructure domain. The analyst will need to review the actual capability scores to identify exactly which capabilities yielded the outlier points on the graph. </p>
+<p>A capability that falls well above the diagonal indicates a capability that is done very well within a relatively small area of the organization. In this example, there is a capability at a Systematic level of maturity done within a single project. Fostering greater adoption of this capability provides an easy win for the SOA initiative i.e. there is no need to develop greater competency for this capability within the organization since it already exists within the organization. Some training or mentoring can spread the ability more broadly within the organization.</p>
+<p>A capability well below the diagonal indicates a capability that is done poorly (or in a non-SOA compliant fashion) very broadly. In this example, there is a capability being done at a No SOA level of maturity across the entire division. Corrective action needs to be taken for this capability since if left uncorrected, it will inhibit (and probably already has inhibited) the SOA initiative.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER1653 id="ER1653"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">ER.165.3 Identify Capability Challenges</a> </h4>
+<h5>Identify Lagging Capabilities</h5>
+<p>The lagging capabilities would typically require attention in early phases of the roadmap. These are the capabilities that plot nearer the lower left corner in the scatter plot above. Capability heat maps can be used to visually identify these low maturity capabilities as shown in the following figure:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_GA_CHM.PNG" alt="Example Capabilities Heat Map" width="758" height="367" title="Example Capabilities Heat Map"></p>
+<p align="center"><b>Capabilities Heat Map</b></p>
+<p align="left">The capabilities heat map colors each of the capabilities based on the maturity score recorded for that capability. The above diagram shows the color coding legend as well as each capability with color coding applied. The capabilities are organized by the domains used in the SOA Maturity Model. The heat map draws immediate attention to the capabilities that require attention. In the above example, there are three capabilities in the Business and Strategy domain (SOA Project Funding Strategy, SOA Program Funding Strategy, and Guiding Principles) that scored at the No SOA level of maturity. These capabilities should be addressed in early phases of the SOA Roadmap. Likewise, there are six capabilities in the Projects, Portfolios and Services domain that scored at the No SOA level of maturity. These capabilities should also be addressed in early phases of the SOA Roadmap. It should come as no surprise that these two domains were also identified in the spider figure, <a href="#VVCM">Vision versus Current Maturity</a> as lagging domains. </p>
+<p>You should review each capability with a low score and determine whether it is a top priority, a low priority, or unimportant from a roadmap creation perspective. If a capability is deemed unimportant for a particular organization, it should be removed from the maturity model and the graphics should be regenerated. This should be done with caution. A capability should only be removed if it is clearly not appropriate for the SOA initiative at this organization.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER167 id="ER167"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_167_DETERMINE_REMEDIATION_APPROACHES_OVERVIEW.HTM" target="_blank">ER.167 Determine Remediation Approaches</a> </h4>
+<h5>Determine Remediation Approaches</h5>
+<p>At this point in Gap Analysis, the problem domains have been identified and the problem capabilities within each domain have also been identified. The next step is to identify remedies for each problem domain and capability. Obviously, the remedies depend on the problem being addressed and frequently have some aspect that is organization specific. Therefore, unfortunately, it is not possible to provide a prescriptive approach to determining remediation activities for all 90+ capabilities. However, there are some general guidelines based on the domains that can usually be applied to creating remediation activities, as shown in the table below:</p>
+<table width="100%" border="1" title="Remediation Approaches" summary="This table lists domains in the first column with some general guidelines that can usually be applied to creating remediation activities in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col" width="20%"><div align="left"><b>Domain</b></div></th>
+    <th scope="col" width="80%"><div align="left"><b>Remediation Approach </b></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Business &amp; Strategy </div></th>
+    <td width="80%"><p align="left">Remediation for this domain and the capabilities within this domain usually requires executive management decisions and directives. A common remediation activity is a facilitated workshop with appropriate executives to define the necessary strategies, make decisions, and formulate directives.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Architecture</div></th>
+    <td width="80%"><div align="left">Low scores in this domain usually indicate the lack of a reference architecture for the SOA initiative, or if the reference architecture exists, it lacks completeness and details. Remediation usually entails workshops with enterprise architects to specify a complete, detailed reference architecture.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Infrastructure</div></th>
+    <td width="80%"><div align="left">Low scores in this domain usually indicate that the service infrastructure is lacking significant elements. Infrastructure installation and configuration type projects are common remediation activities.</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Information</div></th>
+    <td width="80%"><p align="left">Low scores in this domain usually indicate issues with the information architecture, data quality approach, and/or information stewardship. Common remediation activities are workshops to address the causes for the low scores.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Operations, Administration &amp; Management </div></th>
+    <td width="80%"><p align="left">Remediation activities for low scores in this domain usually entail definition, documentation, and enforcement of SOA compatible.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">OA&amp;M Procedures </div></th>
+    <td width="80%">Low scores could be due to lacking SOA knowledge/skills or could be due to a low maturity of OA&amp;M in general.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Projects, Portfolios &amp; Services </div></th>
+    <td width="80%">Low scores in this domain usually indicate a lack of SOA compatible management and delivery processes. Common remediation activities entail workshops to modify existing management and delivery processes to inject SOA best practices.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Organization</div></th>
+    <td width="80%">Low scores in this domain usually indicate that roles and responsibilities appropriate for SOA have not been instituted within the organization. There may also be a lack of SOA knowledge/skills. Common remediation activities include developing training plans and workshops to define the necessary roles and responsibilities. Remediation may also require organization restructuring.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row" width="20%"><div align="left">Governance</div></th>
+    <td width="80%">Most organizations have existing IT governance in place, so low scores in this domain usually indicate that governance has not been extended to cover SOA. Remediation usually requires a workshop to define and institute the governance extensions required for SOA. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><b><B><A
+name=ASAS id="ASAS"></A></B></b>ACTIVITY SELECTION AND SCHEDULING</h3>
+<p>During Activity Selection and Scheduling, prioritize the remedies that you identified during Gap Analysis and use this to create a plan, called the SOA Roadmap. Projects are evaluated to select the projects that will provide the highest benefit versus the cost, complexity, and risk. The service portfolio is derived from the needs of the projects.</p>
+<p>There are five steps in Activity Selection and Scheduling:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS.PNG" alt="Activity Selection and Scheduling Workflow" width="923" height="528" title="Activity Selection and Scheduling Workflow"></p>
+<p align="left">At the end of the Activity Selection and Scheduling you have a completed SOA Roadmap. This roadmap includes a detailed initial phase and less detailed subsequent phases. The SOA Roadmap provides guidance for achieving the goal of the SOA initiative via a series of much smaller transitions. Ideally, each of the smaller transitions has its own individual business benefit, but it is frequently necessary to invest a little up front to reap larger benefits later.</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER130 id="ER130"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List</a></h4>
+<h5>Determine Program Activities</h5>
+<p>The first step when determining the program activities is to prioritize the remediation activities identified in the Gap Analysis. Top priority is usually given to remediation activities that focus on the domain with lowest current maturity score. Top priority remediation activities are usually the first activities in the roadmap since the results from these activities are leveraged across the solution and service delivery efforts.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=ER170 id="ER170"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan</a> </h4>
+<h5>Determine Program Activities</h5>
+<p>After the program activities have been prioritized, determine when each of the activities should best be executed, and split the SOA Roadmap into phases. </p>
+<p> Program-level activities frequently entail changes with wide-ranging impacts. For example, changing the software development process (to inject service-oriented best practices) impacts all development teams within the scope of the SOA initiative.</p>
+<p> Organizational changes can be even more taxing. Therefore, it is usually necessary to undertake these changes in a series of iterations. These iterations become the phases of the overall SOA Roadmap. At a high level, this can be shown graphically as illustrated by the figure below:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_IMOT.PNG" alt="Example of Applying Organizational Changes Graphically" width="786" height="372" title="Example of Applying Organizational Changes Graphically"><a name="IMOT"></a></p>
+<p align="center"><b>Increasing Maturity Over Time</b></p>
+<p align="left">The graph illustrates three iterations each increasing maturity of one or more domains until the desired vision level of maturity is achieved. Notice that the first phase focuses on bringing all domains up to the <b>Opportunistic</b> level of maturity. This means that the first phase will include remedy activities for the Business &amp; Strategy, Infrastructure, and Projects, Portfolios &amp; Services domains. Once near parity is achieved across domains, follow-on phases address the eight domains more uniformly to keep the SOA initiative progressing smoothly. </p>
+<p align="left">The amount of change introduced by an iteration must not exceed the organization's ability to absorb that change; therefore the scope of each iteration must be carefully planned. Likewise, the duration of each iteration must be long enough to accomplish some meaningful progress, yet remain short enough to minimize risk and maintain a continuous pace of incremental progress.</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=IP040 id="IP040"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects</a><b><br>
+      <B><A
+name=IP050 id="IP050"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.050 Prioritize Projects</a></h4>
+<h5>Select Projects</h5>
+<p>Projects should be selected related to the chosen activities where the intention is that each iteration should increase the maturity of the organization while also providing business value. To see what kind of projects already have been identified in the enterprise have a look at the Initial IT Portfolio Plan (IP.010), if available.</p>
+<p>Usually the program-level activities do not produce quantifiable business value. Rather, it is the solution development efforts that create measurable business value. Therefore, a successful SOA Roadmap must select projects that:</p>
+<ol>
+  <li>Provide measurable business value.</li>
+  <li> Are amenable to a service-oriented approach.</li>
+  <li> Advance the SOA initiative.</li>
+</ol>
+<p>The first of these criteria is a standard requirement for traditional project portfolio planning. The second criteria should be used to eliminate certain projects from further analysis. For example, a project to deploy a maintenance release of a legacy application is not a good candidate for inclusion in the SOA Roadmap. (However, a major upgrade to a legacy application might be a good candidate.)</p>
+<p>The third criterion is what is added to traditional project portfolio planning. The additional criteria used to rank projects for inclusion in the SOA Roadmap include:</p>
+<ul>
+  <li> benefits in line with the prioritized SOA benefits (defined during Future Vision)</li>
+  <li> adherence to the SOA principles (defined during Future Vision)</li>
+  <li> functional needs available from already existing shared services</li>
+  <li> functional overlap with other projects</li>
+  <li> data requirements overlap with other projects</li>
+  <li> ability to leverage existing service infrastructure</li>
+  <li> infrastructure needs aligned with the SOA Reference Architecture</li>
+</ul>
+<p>There may also be new risks associated with taking a service-oriented approach to a project. These risks can be specific to the project or might be associated with the SOA initiative itself. For example, if there is no experience or defined best practices for the service infrastructure, a project using the service infrastructure has additional risk associated with that usage. Selecting projects, therefore, requires balancing all these new SOA factors with the traditional factors (e.g. cost, complexity, benefits, risks). </p>
+<p>Below, you can see an example graphic that shows the analysis results for six different projects for the three aspects complexity, effort and benefits:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_CVE.PNG" width="426" height="260" title="Example Graphic that shows the Analysis Results for six different Projects for the three Aspects Complexity, Effort and Benefits"></p>
+<p align="center"><b>Complexity versus Effort versus Benefit Analysis</b></p>
+<p>The size of the bubble represents the relative benefit that the project would provide and the bubble is plotted versus the complexity and effort for the project. Large bubbles toward the upper right corner are the projects that are expected to provide the greatest benefit for the least effort and complexity. From this analysis, Project 2 is the best choice and Projects 1, 3 and 6 are also contenders for inclusion in the roadmap. The next step is to analyze the risk associated with the projects. This analysis is shown in the next figure:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_BR.PNG" alt="Example Benefit to Risk Ratio Analysis" width="443" height="296" title="Example Benefit to Risk Ratio Analysis"></p>
+<p align="center"><b>Benefit to Risk Ratio Analysis</b></p>
+<p>This graph plots the benefit to risk ratio for each of the projects. The higher the number, the greater the benefits from the project as compared to the risks for the project. This graph clearly shows that Project 2 and Project 3 are the best projects to include in the SOA Roadmap. Project 1, which was a contender from the cost and complexity perspective, is clearly not a good choice due to the high risk versus benefit.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=BA0701 id="BA0701"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">BA.070.1 Identify Candidate Services</a><b> <br>
+      <B><A
+name=IP0201 id="IP0201"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">IP.020.1 Analyze Services</a> </h4>
+<h5>Identify Service Modifications</h5>
+<p> Having selected the projects that will become part of the SOA Roadmap, the next step is to identify services and candidate services that should be included in the roadmap. Look at the Service Portfolio (IP.014) to see what kind of services have already been identified, if available.</p>
+<p>One of the selection criteria used for the projects was the amount of functionality that was already available from existing services. Now, it is important to see whether it may be necessary to make any modifications to these services to support the new project. There are two main types of changes:</p>
+<ol>
+  <li>Increase the performance or capacity of the service.</li>
+  <li> Implement functional enhancements to the service.</li>
+</ol>
+<p>The new project may require that additional capacity or better performance than the existing service currently provides. Essentially, these are non-functional changes to the service to make it usable by the new project. Another possibility is that the existing service needs enhanced functionality to support the new project. Ideally, the changes can be done in a backward compatible manner; thereby allowing existing consumers of the services to move to the new version deployed to support the new project. Notice that a service versioning strategy should be in place to support these types of changes.</p>
+<p>Extensive efforts to modify an existing service may provide less value than building a new, different shared service. Therefore, service modifications are also fed into the service candidate selection process described in the next section. Either type of change to existing services needs to be incorporated into the SOA Roadmap. Obviously, the projects that use the services have a dependency on the service modification activities, and this dependency must be captured in the roadmap.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=BA0702 id="BA0702"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">BA.070.2 Identify Candidate Services</a><b> <br>
+      <B><A
+name=IP0202 id="IP0202"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">IP.020.2 Analyze Services</a> </h4>
+<h5>Idetnify Service Candidates</h5>
+<p> The projects selected for inclusion in the SOA Roadmap can also lead to the creation of new shared services. The projects therefore need to be analyzed to identify the service candidates. There are three primary areas to analyze to identify the service candidates:</p>
+<ol>
+  <li>functional overlap between projects</li>
+  <li> business process tasks that are common across projects</li>
+  <li> common data requirements across projects</li>
+</ol>
+<p>Any of these three areas could entail access to an existing system. It is also possible that the overlap between projects is entirely new functionality or data that does not currently exist anywhere in the organization. In this case, the service candidate would be designed to provide this new functionality or data. Service candidate identification and analysis is a large topic in itself, and as such, is beyond the scope of this process. You may find details about this process in the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique overview. However, once the service candidates have been identified, a selection process should be applied to these similar to the process used for the projects. </p>
+<p>Below, you can see an example graphic of service candidate analysis that shows a decision basis score for five service candidates and one service modification:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_SCA.PNG" alt="Example Service Candidate Analysis" width="426" height="359" title="Example Service Candidate Analysis"></p>
+<p align="center"><b>Service Candidate Analysis </b></p>
+<p>Here a positive <b>Decision Basis Score</b> indicates a service candidate that should be realized into a shared service. Thus, service candidates 2, 5, and the Service Modification A should be included in the SOA Roadmap. Service candidates 1, 3, and 4 should not be realized (at this time). The service candidates that are selected are included in the SOA Roadmap. Service candidates (and service modifications) that are not selected should be recorded for future iterations of the roadmap. Although the service candidate did not make the cut for this iteration of the roadmap, it might very well make the cut in a future iteration.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><B><A
+name=IP060 id="IP060"></A></B></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IP_060_DEVELOP_IT_PORTFOLIO_PLAN_OVERVIEW.HTM" target="_blank">IP.060 Develop IT Portfolio Plan</a> </h4>
+<h5> Define Schedule </h5>
+<p> The final step in the SOA Roadmap is to define the schedule for the Roadmap. This schedule should be the schedule for the entire SOA initiative; thus it is the high-level schedule that illustrates the ordering and dependency relationships between program-level activities, the selected projects, service modifications, and the selected service candidates.</p>
+<p>The schedule defined here should be the schedule for the entire SOA initiative; thus it is the high-level schedule that illustrates the ordering and dependency relationships between program-level activities, the selected projects, service modifications, and the selected service candidates. The high-level phases of the SOA Roadmap were shown in figure, <a href="#IMOT">Increasing Maturity Over Time</a>, that you can see in the supplemental guidance for ER.170 above. However, this figure does not include actual timelines since that could not be determined until the projects, service modifications, and service candidates were identified. The steps to put together the schedule are as follows:</p>
+<ol>
+  <li>Create the program level activities schedule.</li>
+  <li>Create high-level project schedule.</li>
+  <li>Determine delivery dates for service modifications.</li>
+  <li> Determine delivery dates for service candidates.</li>
+</ol>
+<p>The first activity of defining the schedule is to determine the start date and duration for the program level activities. These are the initial activities put into the SOA Roadmap.</p>
+<p> The next step is to determine the start dates for the selected projects. Projects that are expected to leverage the outcomes of the program level activities (usually all projects) should not begin in earnest until the program-level activities complete. Some overlap is allowed since the earliest phases of a project (e.g., Inception) can usually commence before the program-level activities are completed. The end date for the project is determined by effort, complexity, and resource availability. Sometimes the end date is mandated by business needs. In either case, the end date for the project is put into the schedule.</p>
+<p> The delivery dates for the service modifications are determined by the needs of the project requiring the changes. Generally, the service modifications must be available in time for project integration testing. Of course, an earlier delivery date is certainly acceptable and is, in fact, preferable.</p>
+<p> Finally, the delivery dates for the selected service candidates are determined. These delivery dates are also driven by the needs of the project requiring the new service. Again, the delivery date should meet or beat the date the integration testing for the project will begin. Additionally, the interface definition for the new service(s) should be available to support detailed design for the project.</p>
+<p> At this point, any resource constraints need to be incorporated into the schedule. This may require that start dates are delayed or durations may increase. Once these constraints have been included, a schedule can be created and might look something like the schedule shown in the next figure:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_RP1S.PNG" alt="Example Roadmap Phase 1 Schedule" width="943" height="664" title="Example Roadmap Phase 1 Schedule"></p>
+<p align="center"><b>Roadmap Phase 1 Schedule</b></p>
+<p>The above schedule begins with three program-level activities to address the three domains (Business &amp; Strategy, Projects, Portfolios &amp; Services, and Infrastructure) that scored below the Opportunistic maturity level. The results from the program level activities are then disseminated to all the projects and service candidate realization activities shown in the bottom half of the figure. The two projects, two service candidates, and service modification that were selected for inclusion in the roadmap are included in the schedule. The schedule also shows the dependencies between the service realization efforts and the two projects. Both the dependency on the service interface definition and the service deployment are shown since both of these dependencies are important from a scheduling perspective.</p>
+<p>The schedule also shows the Infrastructure Project that deploys and configures new components to the service infrastructure needed by the projects and the services. This service infrastructure project is focused purely on realizing the service infrastructure defined in the SOA Reference Architecture. The Infrastructure Planning (that was part of the program level activities) defines what technologies and products are deployed by the Infrastructure Project.</p>
+<p>As discussed earlier, the detail in the initial phase of the SOA Roadmap will be much greater than the detail provided for the later phases. The later phases likely include additional program-level activities and more projects and the service candidates on which they are dependent, but will contain less detail. An example of such a schedule is shown in the next figure:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SRM_ASAS_SRSP.PNG" alt="Example Roadmap Subsequent Phases Schedule" width="763" height="556" title="Example Roadmap Subsequent Phases Schedule"></p>
+<p align="center"><b>SOA Roadmap Subsequent Phases</b></p>
+<p>The first phase schedule was broken down into weeks but only covered two quarters. This schedule covers the entire planning horizon (three years) but with significantly less detail. The projects chosen for the first phase were relatively short in duration and effort. This is to help ensure early wins for the SOA initiative. Subsequent phases can then afford to undertake more complex efforts (e.g., legacy sun-setting) that could take years to complete.</p>
+<p>Subsequent phases will also likely have additional infrastructure projects that continue to build out the reference architecture. The capabilities of the reference architecture built out in each phase depend on the needs of the projects and services that are included in the phase.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

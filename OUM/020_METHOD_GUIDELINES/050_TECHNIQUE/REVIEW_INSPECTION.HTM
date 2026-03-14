@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Review-Inspection Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview </h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>REVIEW AND INSPECTION (PEER REVIEW)</h2>
+<p>The purpose of this technique is to assist in providing techniques for peer (design) reviews. This technique was prepared by reviewing industry practices and references for object-oriented design peer reviews. This technique was written with the assumption that the reviewers understand UML models and can review them for consistency and traceability. This technique is not meant to describe the exact features of each model, you should refer to the OUM task for the corresponding model for details on how to prepare the model. The technique is meant to be used to conduct a peer (design) review, but can be applied anytime consistency and traceability across models is being examined. </p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Review Results</b> - The Review Results documents the findings of a peer review of a collection of OUM work products.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th scope="rowgroup" colspan="4"><div align="left">Parallel Reading - Looking for Consistency across the models that have been prepared</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Sequence x Class Diagrams</td>
+    <td>Review Results </td>
+    <td>Check to make sure that the class diagram for the system describes classes and their relationships in such a way that the behaviors specified in the sequence diagrams are correctly captured. The classes and objects specified in the sequence diagram should appear in the class diagram.<br>
+        <br>
+      Next, check that the class diagram describes relationships, behaviors, and conditions that capture the dynamic services as described on the sequence diagram.<br>
+      <br>
+      Read a sequence diagram to understand the system services described and how the system should implement those services. <br>
+      <br>
+      Identify and inspect the related class diagrams, to determine that the corresponding system objects are described accurately.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>State diagrams x Class Description</td>
+    <td>Review Results </td>
+    <td>Verify that the classes are defined in a way that can capture the functionality specified by the state diagrams.<br>
+        <br>
+      Read the state diagram to understand the possible states of the object and the actions that trigger transitions between them.<br>
+      <br>
+      Locate the class or class hierarchy, attributes, and behaviors on the class description that correspond to the concepts on the state diagram.<br>
+      <br>
+      Compare the class description to the state diagram to make sure that the class, as described, captures the appropriate functionality.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Sequence x State Diagrams</td>
+    <td>Review Results </td>
+    <td>To verify that every state transition for an object can be achieved by the messages sent and<br>
+      received by that object.<br>
+      <br>
+      Read the state diagram to understand the possible states of the object and the actions that trigger transitions between them. <br>
+      <br>
+      Read the sequence diagrams to understand how the transition actions are achieved by messages that are sent and received by the relevant object.<br>
+      <br>
+      Make sure that all transition actions are accounted for.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Class diagrams x Class Descriptions</td>
+    <td>Review Results </td>
+    <td>To verify that the detailed descriptions of classes contain all the information necessary according to the class diagram, and that the description of classes is clear and concise. <br>
+        <br>
+      Read the class diagram to understand the necessary properties of the classes in the system.<br>
+      <br>
+      Review the class descriptions for extraneous information. </td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th scope="rowgroup" colspan="4"><div align="left">Apply Traceability Reading Techniques - Checking traceability from one artifact to another </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Class Descriptions x Requirements Description</td>
+    <td>Review Results </td>
+    <td>Verify that the concepts and services that are described by the functional requirements are captured appropriately by the class descriptions.<br>
+        <br>
+      Read the requirements description to understand the functionality described.<br>
+      <br>
+      Compare the class descriptions to the requirements to verify if the requirements were captured appropriately.<br>
+      <br>
+      Review the class description and functional requirements to make sure that all appropriate concepts correspond between the documents.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">6</th>
+    <td>Sequence Diagrams x Use Cases </td>
+    <td>Review Results </td>
+    <td>Validate that the sequence diagrams describe an appropriate combination of objects and messages that work to capture the functionality described by the use case.<br>
+        <br>
+      Identify the functionality described by a use case, and important concepts of the system that are necessary to achieve that functionality.<br>
+      <br>
+      Identify and inspect the related sequence diagrams, to validate the corresponding functionality is described accurately and whether behaviors and data are represented in the right order. <br>
+      <br>
+      Compare the diagrams to determine whether they represent the same <a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#DOM2">domain</a> concepts.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">7</th>
+    <td>State Diagrams x Requirements Description and Use Cases</td>
+    <td>Review Results </td>
+    <td><p>Validate that the state diagrams describe appropriate states of objects and events that trigger state changes as described by the requirements and use cases. <br>
+            <br>
+        Read the state diagram to get a basic understand the object it is modeling.<br>
+        <br>
+        Read the requirements description to determine the possible states of the object, which states are adjacent to each other, and events that cause the state changes. <br>
+        <br>
+        Read the Use cases and determine the events that can cause state changes. </p>
+        <p>Read the state diagram to determine if the states described are consistent with the requirements and if the transitions are consistent with the requirements and use cases.</p></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>In an OUM based project, some larger development efforts may require the use of more rigorous review and inspection techniques. A peer review is meant to ensure that software artifacts are complete, consistent, unambiguous, and contain as few details as possible to effectively support subsequent system development. Reviews are used to improve the quality of system design and code.</p>
+<p>Reviews rely on people understanding, in order to detect potential defects. Reviews can be performed as soon as a work product is written and can be used with different types of artifacts and notations. OUM recommends that reviews require an individual to inspect a particular artifact and then meet as a team to discuss and record defects, which are then sent to the work product author to be revised. </p>
+<p>When a review is done within a team, technical expertise about the quality of the software is shared among the team. For early adopter OUM projects that are being mentored by experienced individuals, this can be a powerful technique to ensure that the project team is developing consistent and complete work products. Developers become familiar with the idea of reading each other's work products and and this leads to improved quality of the work products being produced over time. </p>
+<p>Reviews depend on human effort, and therefore, some non-technical issues may become a factor:</p>
+<ul>
+  <li>reviewers level of expertise</li>
+  <li>size of artifact can cause the reviewer to be overwhelmed</li>
+  <li>reviewers will have their own ideas about what is important </li>
+  <li>reviewers can be affected by political or personal issues</li>
+</ul>
+<p>For these reasons it is important to have a structured approach to performing effective inspections. </p>
+<p>During Inception, the Business Context Diagram and the business use cases may be developed. Review the two in parallel to ensure that actors described in the business use cases are also present on the Business Context Diagram, and business units described in the Business Context Diagram also have some context in the business Use Cases being described. If not, explain in the text of the models why this is not the case.</p>
+<p>Also in Inception, prepare the System Use Case Model (RA.023). Review it against the System Context Diagram (RA.015) to make sure that the system actors are consistent, and the data flows into and out of the system are going to be consumed by one (or more) of the use cases on the System Use Case Diagram.</p>
+<p>During Elaboration, prepare the System Use Case Details (RA.024) portion of the System Use Case Model. Review it against the Domain Model to ensure that any composite data groups &ldquo;Customer Detail&rdquo; are defined and therefore non-ambiguous. If not, the attributes should be specifically named in the step of the RA.024 where they are produced or consumed. If you are identifying candidate services for a SOA architecture, you should provide the traceability to these through a repository, or through the use of the Services Repository template (AN.085). For object-oriented analysis work, analyze the data (AN.050) and behavior (AN.060) using a class diagram. Then, develop the component diagrams (DS.050) to describe the detailed design for a software component of the system.</p>
+<p> During Construction, prepare the component diagrams, and sequence diagrams that assist in understanding the design and interaction of the components of the system. These should each have traceability back to the package (and therefore, the use case) from which they originated. There will be designs for some of the less architecturally-significant use cases in Construction, but it is most likely that design work was completed at the end of Elaboration. Optionally, this information may have been prepared in a Design Specification (DS.140), and a review based on this technique may or may not apply depending on the nature of the project.</p>
+<p>Work product reading techniques should be used to improve the effectiveness of inspections by providing procedural guidelines that can be used by individual reviewers to examine a given work product and identify defects. Reading techniques are meant to capture knowledge about best practices for defect detection in a procedure that can be followed. This technique describes reading techniques for the purpose of defect detection of high-level object-oriented design diagrams represented using Unified Modeling Language (UML). </p>
+<p>Each reading technique can be thought of as a set of procedural guidelines that reviewers can follow, step-by-step, to examine a set of diagrams and detect defects. The types of defects on which the techniques are focused is listed in the following table:</p>
+<table width="100%"  border="1" title="Types of Defects" summary="This table lists the types of defects in the first column following by a description in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Type of Defect </div></th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Omission</div></th>
+    <td> One or more design diagrams that should contain some concept from a requirement on the MoSCoW List (RD.045) or Supplemental Requirements (RD.055) do not contain a representation for that concept. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Incorrect Fact</div></th>
+    <td>A design diagram contains a misrepresentation of a concept described in a requirement on the MoSCoW List (RD.045) or Supplemental Requirements (RD.055).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Inconsistency</div></th>
+    <td>A representation of a concept in one design diagram disagrees with a representation of the same concept in either the same or another design diagram. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Ambiguity</div></th>
+    <td>A representation of a concept in the design is unclear, and could cause a user of the document (developer, low-level designer, etc.) to misinterpret or misunderstand the meaning of the concept. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Extraneous Information </div></th>
+    <td>The design includes information that, while true, does not apply to this domain and should not be included in the design. </td>
+  </tr>
+</table>
+<p>Applying these as an OUM technique, review each group of diagrams that could possibly be compared against each other. For example, use cases need to be compared to interaction diagrams (when interaction diagrams are done as part of the project) to detect weather the functionality described in the use case was captured and all the concepts and expected behaviors of this functionality were represented. The set of reading techniques is is illustrated in the diagram below. We differentiate parallel (comparisons of documents within a single iteration) from traceability (comparisons of documents between increments) reading.</p>
+<p>While parallel reading is meant to identify whether all of the design artifacts are describing the same system, traceability reading attempts to verify whether those design artifacts represent the right system, which is described by the requirements and use cases. So, the goal is that when all the techniques are used together, the quality issues in the design are covered. If the development team is not using the full set of [OUM] UML design artifacts, then the corresponding review techniques need not be applied, without impact to the design review. </p>
+<p>The parallel techniques should be performed before the traceability techniques, however, a subset or reordering of the techniques may be chosen based on important attributes of the design to be reviewed.</p>
+<p align="center"><img src="../../010_COMMON_FILES/OOREADINGTECH.gif" alt="Illustration of Reading Techniques" width="764" height="460" title="Illustration of Reading Techniques"></p>
+<p align="center"><b>Reading Techniques </b></p>
+<p align="left">The main idea in applying traceabiltiy reading is to understand whether all the high-level design artifacts are representing the same system. Keep in mind, that the artifacts should model the same system information but from different perspectives. UML organizes the artifacts and different types of information based on the type of system information they contain.</p>
+<p align="center"><img src="../../010_COMMON_FILES/OOREADINGROLES.gif" alt="Illustration of Organizing Reading with Three Readers" width="560" height="505" title="Illustration of Organizing Reading with Three Readers"></p>
+<p align="center"><b>Organizing Reading with Three Readers </b></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>The following templates and tools are available to assist with this technique: </p>
+<table width="100%"  border="1" id="TempsTools" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Template File Name </div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/AN/REVIEW_RESULTS.DOCX" target="_blank">REVIEW RESULTS.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">DS.160 Review Design Model </a></div></th>
+    <td>Use this technique to validate UML models, if they are part of your project. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have all models for the iteration been reviewed?</li>
+  <li>Was the Review Results template prepared for each set of models being reviewed?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Modeling Planning Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Modeling Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#WHAT">What is SOA Modeling Planning?</option>
+                            <option value="#WHEN">When Do You Use SOA Modeling Planning?</option>
+                            <option value="#WHATPROC">SOA Modeling Planning Overview</option>
+                            <option value="#WHATPROG">What Other Views Relate to the SOA Modeling Planning View?</option>
+                            <option value="#HOWOUM">How Does SOA Modeling Planning Relate to OUM?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SMP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) MODELING PLANNING OVERVIEW </h2>
+<h3><b><A 
+name=WHAT id="WHAT"></A></b>WHAT IS SOA MODELING PLANNING?</h3>
+<p>The SOA Modeling Planning View and Supplemental Guide are used for the planning of modeling activities in conjunction with SOA project delivery, and the development of a Motivational Model (as part of the Business Strategy Identification), process and data models, and service meta models. A service based on this view can be executed in a series of four optional areas. This view is designed to prepare organizations to incorporate modeling into their service engineering process. It should be used as a guideline for engagements that are delivered to organizations that want to plan for modeling in their SOA delivery process and define models in support of such efforts. As with all SOA planning views, this view is used to plan one particular aspect of the SOA strategy and can be combined with other SOA planning views based on the organization&rsquo;s needs.</p>
+<p><b>NOTE:</b> OUM uses the term view to mean &ldquo;an initial tailoring of the workplan specific to a focus area, discipline, service offering or technology/product architecture&rdquo;. This document also uses the terms view and viewpoint in line with the IEEE 1471 standard: a view is &ldquo;a representation of the overall architecture that is meaningful to one or more stakeholders&rdquo;. In other words these two uses of the term view do not contradict each other but rather apply the same principle in two different contexts: OUM views are method views and IEEE 1471 views are architecture views. This document is part of an OUM view which, among others, describes how to define architecture views for your projects.</p>
+<p>As SOA and other enterprise Information Technology (IT) initiatives such as BPM and data management become commonplace in the industry, the need to holistically categorize, visualize and manage interrelated assets increases. Categorization and visualization are most effectively done using models. In addition, for SOA, models can play a key role in service identification, analysis, design, deployment, and discovery. They help to clarify complex ideas and provide a means to share information in a way that people with different backgrounds can relate. Since most IT organizations already do some form of modeling, applying models to SOA and service engineering is a natural course of action.</p>
+<p>Recognizing the need for a modeling strategy to support enterprise-computing initiatives, OUM include tasks for enterprise modeling. It includes an overall modeling approach as well as strategies for modeling business motivation, processes, functions, data, and services in support of service engineering. This is carried forward in various OUM views, including this SOA Modeling Planning view.</p>
+<h4>Background</h4>
+<p>This view is designed to help organizations define their modeling strategy to support SOA. It provides a means to determine which models are required and the specifications that each model should adhere to. It formalizes the structure of SOA concepts in the form of meta-models, as well as the relationships between models and the steps in the delivery process where they are created. </p>
+<p>This view also develops a strategy to model processes, functions, and data holistically in support of enterprise level architecture initiatives such as SOA, BPM, and logical data modeling. It also includes business motivational modeling to help organizations align IT objectives such as SOA and BPM with business goals.</p>
+<p> Four specific types of modeling are addressed in this view: </p>
+<ol>
+  <li>the development of enterprise-wide (or domain-wide) models to holistically categorize and discover processes, business functions, and data, and identify services that to support them</li>
+  <li> the creation of process, functional, and data modes that help to facilitate service identification</li>
+  <li>business motivational modeling used to support project, process, and service candidate evaluation, and traceability throughout the service lifecycle</li>
+  <li>service models used to illustrate and communicate aspects of service engineering</li>
+</ol>
+<p>Although models can be valuable tools to convey ideas, designs, and patterns, they take time to create. It is important to create models that serve a necessary purpose, and to create them at the proper level of abstraction, with the proper content. Since models may be developed for many different types of audiences, a formalized model specification approach is beneficial.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHEN id="WHEN"></A></b>WHEN DO YOU USE THE SOA MODELING PLANNING VIEW </h3>
+<p>The most likely opportunity for the use of this view is immediately after an engagement following the <a href="../SEP/SEP_OVERVIEW.HTM">SOA Engineering Planning View</a>, where the engineering process has been defined and a modeling strategy is lacking. It is also recommended to be proposed as part of any strategic SOA engagement as it is an important part of the SOA planning effort and all organizations should at least consider it. </p>
+<p>As always, it is important that the organization understands the purpose of the engagement, its scope, and work products. The following value and work products are available for the organization as part of this view:</p>
+<ul>
+  <li>a Motivational Model based on business goals that can be used to prioritize and justify projects, processes, services, and infrastructure - Technology initiatives, such as BPM and SOA are mapped to the model to show traceability to business goals.</li>
+  <li> identification of stakeholders, concerns, and models that are important to the SOA initiative</li>
+  <li> a Viewpoint Library that guides model development throughout the planning and delivery process</li>
+  <li>meta models that are used to create consistent service models</li>
+  <li>a mapping of the modeling efforts to the organization&rsquo;s service engineering process</li>
+</ul>
+<p>The following are not considered part of this view: </p>
+<ul>
+  <li>SOA service implementation efforts</li>
+  <li> POCs</li>
+  <li>organization support efforts</li>
+  <li>product demos or alternate vendor product face-offs </li>
+  <li>product or technology training classes </li>
+</ul>
+<p>Main Objectives of this OUM View:</p>
+<ul>
+  <li>It helps organizations be more successful with SOA.</li>
+  <li>It complements the SOA Engineering Planning view by defining the modeling strategy for service engineering.</li>
+</ul>
+<p> <a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROC id="WHATPROC"></a></b>SOA MODELING PLANNING OVERVIEW </h3>
+<p align="center"><a name="SGPOD" id="SGPOD"></a><img src="../../../010_COMMON_FILES/SMP_OVERVIEW.PNG" alt="SOA Modeling Planning High-Level Workflow" width="1029" height="751" title="SOA Modeling Planning High-Level Workflow"></p>
+<p>There are six areas in the SOA Planning View, each with its own set of tasks.</p>
+<p><b>MOBILIZATION</b> - Mobilization begins with the qualification of the effort to scope the engagement to best meet the needs of the organization. An engagement may be based solely on this view, but may also be increased to cover multiple OUM views or tasks to produce a more fully featured planning and delivery engagement; in particular it may be combined with the SOA Engineering Planning View. It may also be scoped back to focus on only a subset of the five areas areas covered in this view, streams, tasks, and work products, while omitting others. Additional guidance on Mobilization can be found in the <a href="SMP_TASK_GUIDELINES.HTM#MG" target="_blank">SOA Modeling Planning Task Guidelines</a>. </p>
+<p><b>MOTIVATIONAL MODELING</b> - Motivational Modeling is used to capture business motivation and map it to IT and technology initiatives. This provides the ability to trace IT activities back to business goals and justify efforts and expenditures. Additional guidance on Motivational Modeling can be found in the <a href="SMP_TASK_GUIDELINES.HTM#MMG" target="_blank">SOA Modeling Planning Task Guidelines</a>.</p>
+<p><b>DOMAIN ANALYSIS</b> - Domain Analysis is used to define the domain that this modeling engagement will address, define the target audience models are created for, and define the models themselves. It is a necessary precursor to Model Specification. Additional guidance on Domain Analysis can be found in the <a href="SMP_TASK_GUIDELINES.HTM#DAG" target="_blank">SOA Modeling Planning Task Guidelines</a>.</p>
+<p> <b>MODEL SPECIFICATION</b> - Model Specification is used to drive out the details of the models identified during Domain Analysis. It is a technical delivery with a strong emphasis on modeling techniques, standards, and tools. Additional guidance on Model Specification can be found in the <a href="SMP_TASK_GUIDELINES.HTM#MSG" target="_blank">SOA Modeling Planning Task Guidelines</a>.</p>
+<p><b>PROJECT DELIVERY PLANNING</b> - Project Delivery Planning is used to determine where modeling activities need to be inserted into the organization&rsquo;s software development lifecycle (SDLC). This activity requires knowledge of the organization&rsquo;s SDLC as well as an understanding of the modeling efforts for which you need to account. Additional guidance on Project Delivery Planning can be found in the <a href="SMP_TASK_GUIDELINES.HTM#PDPG" target="_blank">SOA Modeling Planning Task Guidelines</a>.</p>
+<p><b>POST DELIVERY</b> - Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned. Additional guidance on Post Delivery can be found in the <a href="SMP_TASK_GUIDELINES.HTM#PDG" target="_blank">SOA Modeling Planning Task Guidelines</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROG id="WHATPROG"></a></b>WHAT OTHER VIEWS RELATE TO THE SOA MODELING PLANNING VIEW? </h3>
+<p>Refer to the <A 
+href="../../../../OUM/OUM_HOME_SOAINOUM.HTM" target=_blank>SOA in OUM</A> page for access as well as descriptions for all the SOA views in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES SOA MODELING PLANNING RELATE TO OUM? </h3>
+<p>The SOA Modeling Planning process has been mapped to the Envision focus area of Oracle Unified Method to help show which tasks would typically be performed during each of the five areas from Mobilization to Project Delivery Planning. </p>
+<p>See the <a href="../../../050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">mapping document</a> and <a href="../../../OUM_HOME_SMP.HTM" target="_blank">SOA Modeling Planning</a> view for applicable OUM tasks. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

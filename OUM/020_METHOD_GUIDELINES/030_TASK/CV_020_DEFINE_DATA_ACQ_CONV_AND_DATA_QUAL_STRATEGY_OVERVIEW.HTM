@@ -1,0 +1,762 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>CV.020 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>CV.020 - DEFINE DATA ACQUISITION, CONVERSION AND DATA QUALITY STRATEGY</h2>
+<!--BeginDesc--><p>The purpose of  this task is to use the Data Acquisition and Conversion Requirements to develop how the data is to be extracted, transported, loaded, transformed and converted or loaded from all data sources into the new system, as well as define the strategy and criteria for ensuring ongoing data integrity. This includes identifying and specifying the requirements for the identification, escalation, and resolution of data quality issues. Lastly, a high-level assessment of the source data should be performed as part of this task in order to effectively verify the strategy for data quality. </p>
+<p>In order to avoid unnecessary programming effort, it is recommended that you fully investigate alternative solutions for conversion of data from legacy systems, early in the project. In many cases, this provides both a significant savings in effort and a reduction in risk to the schedule.</p><!--EndDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, the majority of data will be copied from existing tables using standard Oracle migration utilities. However, there may be some objects where it is more appropriate to use custom written data migration routines. Therefore, the focus of this task becomes the definition of the strategy for the creation and management of any such custom migration routines.</p><!--EndSUDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>In OUM, the Data Acquisition and Conversion process captures information for data acquisition, data conversion and data quality. Although very close to the other project development activities, it is not unusual to have Data Acquisition and Conversion iterations with different objectives. This process also contains specific characteristics, recommendations, tools, and techniques in Oracle projects. </p>
+<p>On the other hand, Data Acquisition and Conversion should be understood as a sub-project following the same principles of OUM. The work should be iterated and prioritized. A base architecture should be established and tested before committing too much resource. </p>
+<p>Lastly, the term &quot;ETL&quot; refers to the steps of extracting, transforming and loading data from data sources to target sources during the Data Acquisition and Conversion process. It should be noted that in some cases &quot;T&quot; (transformation) may be as minimal as encoding or decoding source data during extraction and loading steps, or transformation may not occur at all for some solutions. </p>
+<p><b>Attention:</b> Findings made during this task may impact the MoSCoW List.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTDPS_DEFINE_PROJECT_STRATEGY.HTM" target="_blank">B.ACT.DPS Define Project Strategy </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Data Acquisition, Conversion and Data Quality Strategy</b></p>
+<p>The work product records the strategy for meeting the previously defined requirements. It has three major components:</p>
+<ul>
+  <li>Data Acquisition Strategy</li>
+  <li>Data Conversion Strategy</li>
+  <li>Data Quality Strategy</li>
+</ul>
+<p> The Data Acquisition Strategy defines the scope and objectives as well as the critical success factors and risks associated with the data extraction, transportation, transformation and data loads to support the solution. It describes the business&rsquo; conversion and interface requirements. Topics include: </p>
+<ul>
+  <li> data acquisition techniques for extract, transport (move), transform (map)</li>
+  <li> data conversion</li>
+  <li> refresh strategies</li>
+  <li> load frequencies</li>
+  <li> data availability</li>
+  <li> inbound processes outbound interfaces</li>
+  <li> data to be converted</li>
+  <li> functional requirements for extracting and loading the data</li>
+  <li> requirements for validating and cleaning up both extract and load</li>
+  <li> error condition handling</li>
+</ul>
+In addition, it lists all of the system interfaces (both automated and manual) that interact with the data warehouse solution. Information contained should include the interfaces that provide input to the warehouse and the interfaces that receive output from the warehouse. The report contains the following information for each interface:
+<ul>
+  <li> the type of interface</li>
+  <li> the name of the source or destination system</li>
+  <li> the system location</li>
+  <li>the type of database</li>
+  <li> if it is an automated system interface</li>
+  <li> a brief description or purpose of the interface</li>
+  <li> the data flows</li>
+  <li>flat file formats</li>
+</ul>
+<p>The Data Conversion Strategy is intended to provide a road map for performing the conversion of data from the legacy system(s) to the new  system. </p>
+<p>The Data Quality Strategy defines the strategy and criteria for ensuring ongoing data integrity. This includes identifying and specifying the approach for the identification, escalation, and resolution of data quality issues. </p>
+<ul>
+  <li> data management and movement of data between data warehouse components</li>
+  <li> error and exception handling methods</li>
+  <li> data cleansing criteria</li>
+  <li> audit and control processes</li>
+  <li> data standards for naming metadata and database objects</li>
+  <li> data ownership guidelines and reconciliation processes</li>
+  <li> data issue resolution strategies</li>
+  <li> escalation policies</li>
+  <li> modes of communication</li>
+</ul>
+<P>Lastly, the Data Quality Strategy also includes a High-Level Data Quality Assessment that documents findings related to source data, it&rsquo;s integrity, availability, ability to meet business requirements, and overall quality. It includes issues and possible approaches to resolution.</P>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Provide an introduction for the document.</td>
+    <td>Introduction</td>
+    <td>The Introduction describes the work product and how it is used. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Document any pertinent background information. </td>
+    <td>Background</td>
+    <td>The Background describes how the system is used by your customer management and any other pertinent information you wish to include.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Document any pertinent overview information. </td>
+    <td>Data Acquisition and Conversion Overview </td>
+    <td>This component provides details on how the Data Acquisition and Conversion process is used to realize the data acquisition, data conversion and data quality requirements of the project.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Review the appropriate Technical Architecture (TA) work products.</td>
+    <td>Data Acquisition - Strategy - Logical Architecture </td>
+    <td><p>This component provides the basic information about the logical architecture of the data solution and its components. The main reason why this section is included is to describe the &ldquo;data stores&rdquo; that are referenced in the data flow definitions.
+        <p>Note that the term &ldquo;data store&rdquo; is used for architectural components of the solution, that are used as a source and/or target of a data flow, i.e., a data store can be a Staging Area, Data Warehouse, Data Mart, OLAP Area, etc.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Document source system information for all the data sources identified in the approved Data Acquisition and Conversion Requirements (CV.010).</td>
+    <td>Data Acquisition - Strategy - Source Systems </td>
+    <td>This component provides source system information for all the data sources. There may be multiple interfaces from each source system, each interface with different format, frequency and/or content. For the purpose of this component, &ldquo;interface&rdquo; is defined as a set of files or tables that are extracted and transferred at the same time using the same extraction and data transfer method. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Document the target systems and interfaces to the target system.</td>
+    <td>Data Acquisition - Strategy - Target Systems </td>
+    <td>This component of the task documents the target systems. Note there might be multiple interfaces from each source system, each interface with different format, frequency and/or content. If there is no target system (i.e., the data is used for reporting only) then delete this section. For the purpose of this component, &ldquo;interface&rdquo; is defined as a set of files or tables that are extracted and transferred at the same time using the same extraction and data transfer method. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Analyze the required source and target system interfaces and required business functionality and prepare a list of data flows needed to support the requirements.</td>
+    <td>Data Acquisition - Strategy - Data Flows </td>
+    <td><p>This component includes a diagram that represents data flows. Examples of are provided in the template. Data flow is a process that takes data from a source interface (or data store) and it loads the target data store (or output interface), e.g., a data flow processes data from a particular source system and it loads it into the staging area. Another data flow then loads target data warehouse from the staging area.
+              <p>Data flows described in this section correspond to the processes or jobs executed when running and refreshing the data warehouse.
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td><p>Review the business requirements regarding the initial and historical data in order to document each requirement. Get the sign off from the customer for the initial and historical load requirements.<br>
+      <br>
+    *Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>.    </td>
+    <td>Data Acquisition - Data Load Strategy - Initial and Historical Loads </td>
+    <td>The Initial and Historical Loads component provides a table listing the requirements for the initial or historical loads from source systems. It is important to note for each requirement how many months (days) of data have to be loaded, whether the historical data is available, what is the expected volume of data and whether it is possible to load the historical data with the processes developed for regular updates.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Provide guidelines for raising errors, notifying administrators and enabling error recovery.</td>
+    <td>Data Acquisition - Data Load Strategy - Error Handling Strategy </td>
+    <td>This component describes strategies for raising errors, notifying administrators and recovery steps after the error is resolved.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Review the Data Acquisition and Conversion Requirements, specifically the Data Conversion sections. </td>
+    <td>Data Conversion - Requirements </td>
+    <td>This component lists the legacy system entities being converted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Review the Data Acquisition and Conversion Requirements, specifically the Data Conversion sections. </td>
+    <td>Data Conversion - Constraints and Assumptions </td>
+    <td>This component lists any constraints and assumptions on which the tasks, resources, and conversion execution strategies are based. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Develop a simple, effective and quick approach to convert only the data needed to provide business benefits in the initial production period. </td>
+    <td>Data Conversion - Conversion Approach </td>
+    <td>The Conversion Approach describes the general approach that will be used to guide the conversion portion of the Data Acquisition and Conversion process. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">13</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Define the objectives of data quality in detail. </td>
+    <td>Data Quality - Objectives</td>
+    <td>This component defines the objectives of the data quality management in the solution. The following areas are described in this component:
+              <ul>
+                <li>Data Quality Overview</li>
+                <li>Data Quality Measures</li>
+                <li>Data Quality Objectives</li>
+            </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">14</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Provide the detail requirements for the Data Quality processes.</td>
+    <td>Data Quality - Processes </td>
+    <td>This component provides the description of the processes related to the data quality. The following processes will be designed in such a way in order for the solution to meet the data quality objectives.
+              <ul>
+                <li>Data Transfer </li>
+                <li>Data Cleansing </li>
+                <li>Audit and Control</li>
+                <li>Error and Exception Handling</li>
+            </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">15</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Provide the detail requirements for the Data Quality ownership.</td>
+    <td>Data Quality - Data Ownership</td>
+    <td>This component defines the ownership of data quality components and responsibility for solving end escalating data quality related issues. Include the following sections.
+              <ul>
+                <li>Data Ownership </li>
+                <li>Issue Resolution </li>
+                <li>Escalation Hierarchy</li>
+            </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">16</div></th>
+    <td>Document the transformation rules in a table. </td>
+    <td>Data Quality - Transformation Details </td>
+    <td>This component defines the data quality transformations.</td>
+  </tr>
+</table>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#BCV020" target="_blank">task-specific Application Implementation supplemental  guidance</a>.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Data Acquisition and Conversion Overview</h4>
+<p>Provide specific information on how the OUM method and Data Acquisition and Conversion process is used to realize the data acquisition, data conversion and data quality requirements of the project. Include the following:</p>
+<ul>
+  <li>Project Management - The Manage Focus Area (Project Management) is used to manage OUM projects and as such will also be used to manage the Data Acquisition and Conversion process. Refer to the Project Management Plan (PMP) for specific information (e.g., for Issue and Problem Management and Configuration Management). Any project management information for Data Acquisition and Conversion that deviates from what is specified in the (PMP or is in addition to what can be found in the PMP should be included (e.g., any additional version control procedures for the development of the components and data files). Issue tracking procedures and supporting tools must support the correction of errors in legacy data. The workflow for these errors might be different from the one used to process application and database errors. It may be also different from the project issue tracking system although usually the same tools are used. Version control procedures and supporting tools must support versioning of data files and of any CV components that have to be written. Again, the same Configuration Management system (version control) should be used for all project work products.</li>
+  <li>Task and Work Products - Provide a list of tasks and work products which will be performed. </li>
+  <li>Team Organization - Define the roles and associated skills needed to perform the Data Acquisition and Conversion process. Describe the team organization for the project and document which Oracle and customer team members are responsible for each defined role. Establish the requirement for human resources with these skills. The following sections should be included; Conversion Team and Roles and Responsibilities. </li>
+  <li>Resource Requirements - List the resource requirements. Identify and document the physical resources, in terms of development tools, Oracle products, hardware and other resources. Include the following sections: Software, Hardware Environment, Network/File Transport, Staffing and Other. </li>
+  <li>Project Standards - If your chosen approach involves the use of technologies and languages that are not used in other parts of the project, then you need to obtain and deploy appropriate standards and guidelines. Document the project standards including the standards for application development tools, conversion tools, source control, version control, system management tools, and work product naming conventions. The following sections should be included: Tool Standards and Work Product Naming Standards. The standards mentioned in this component should be specific to the Data Acquisition and Conversion process. If there are no process-specific standards which are applicable to the Data Acquisition and Conversion project then refer to the overall OUM project standards. </li>
+  <li>Data Cleanup Process - Except in the rare event of cast-iron certainty that the legacy source data is of very high quality, you need to allow time for data cleanup. The responsibility for this activity, and for obtaining the resources to do the work, must be unambiguously located with the customer data administrator (and not with the core team). Remember to consider that data can be cleaned in the source system, in temporary structures or in the target system. List the legacy system objects or domains (business groupings of data) which need to be cleaned up. Cleanup can be performed as a pre-conversion or a post-conversion activity. Include sections for Data Cleanup and Key Data Translations. An example of data cleanup is the same customer entered in the legacy system multiple times due to using capitals, mixed case, abbreviations, etc. It should also list key data translations which can be thought of as data cleanup. An example of a data translation is to translate all YES to Y. Data translations can be coded into the interface programs or performed in the interface or temporary table prior to loading into the production tables.</li>
+  <li>Testing Strategy - If your chosen approach involves the use of technologies and languages that are not used in other parts of the project, you need to develop a specific testing strategy for the Data Acquisition and Conversion components. The lead QA should be able to perform this step. </li>
+  <li> Acceptance Criteria - In most projects, data quality is given a high priority, although not always explicitly. As part of the Data Acquisition, Conversion and Data Quality Strategy, you should give consideration to criteria for acceptance and rejection of data. Consider for example the following scenario. You are converting data from a mainframe DB2 database in which no constraints have been enforced. You have been told that the referential integrity of the source data has been enforced during the previous 15 years by CICS and COBOL programs. Now you have agreed on a new data model with relationships that will be enforced in an Oracle database by means of constraints. On the initial data load, 75% of the records are rejected by the loader program with constraint violation errors. Before you arrive at this situation, agree with the customer data administrator and if necessary with business managers how these rejected records will be analyzed, how the data errors will be corrected and by whom. A firm and preemptive statement at this stage that &quot;of course we are not going to turn off our constraints to accommodate inconsistent data&quot; is recommended. State the conditions and acceptance criteria which must be met before the conversion is signed off as successful. Include the following sections; Delivery and Data Acceptance. </li>
+  <li> Project Milestones - It is important to establish milestones for Data Acquisition and Conversion. In addition to the milestones for delivery of the Conversion Components and cleaned data, establish checkpoints to review the progress of the Data Acquisition and Conversion process, so that the project manager can receive early indications of any developing problems. The major Data Acquisition and Conversion milestones should be made visible in the Project Management Plan. These milestones are not limited to the specific CV tasks within OUM. Other milestones that are important to the Data Acquisition and Conversion process which may be part of another OUM process should also be listed. An example of a milestone is the conversion instance is ready to be loaded or a conversion tool has been installed. </li>
+  <li>Metrics - Before starting on Data Acquisition and Conversion, establish numbers for the data to be converted. Find out how many tables, files, records and so on are to be converted. Aim to keep the volumes down to the minimum subset required at production start. If the users ask for everything to be converted, ask them to justify this in terms of business benefits. </li>
+  <li>Risks - Identify any perceived risks which could keep this strategy from being implemented. Identify, assess and mitigate the risks. Data Acquisition and Conversion is a relatively risky part of any development project. The project manager, assisted by the team leader for the Data Acquisition and Conversion process, should identify, assess and mitigate data conversion risks. For example, give consideration to the following:
+      <ul>
+        <li>risks to schedule - Delays in data conversion can impact other parts of the project. It is advisable to get firm and public commitments from those responsible for legacy systems that usable data will be available on the agreed dates. Unlike other parts of the project plan, you should not have significant slack in the Data Acquisition and Conversion part of the workplan.</li>
+        <li> risks to budget - Assess the potential for additional resources, for example, if the data quality turns out to be so bad that the only practical approach is to hire temporary staff to enter data manually into the new system. Check that there is budget provision against this risk. </li>
+        <li> risks to quality - The value of the new system to the business will be reduced if bad data from the old system is loaded into the new system. Develop and implement a Data Acquisition, Conversion and Data Quality Strategy that will deliver a gain in data quality. </li>
+      </ul>
+  </li>
+</ul>
+<h4>Data Acquisition</h4>
+<p> The primary objective of the Data Acquisition component of this task is to draw out a strategy for the overall data acquisition of data and to identify any approaches, considerations and constraints. The goal is to describe all the data extraction interface components, data transportation mechanisms, change data capture methods and corresponding constraints so that they may be addressed during the design. </p>
+<h5>DATA ACQUISITION - STRATEGY - LOGICAL ARCHITECTURE </h5>
+<p>Review the appropriate Technical Architecture (TA) work products. Copy or create an appropriate logical architecture diagram that shows all the major components including the data stores and dependencies between them. Describe each data store and its purpose. Make sure all the required data stores are listed. </p>
+<p>Document each data store in a table including the following: </p>
+<ul>
+  <li>Seq &ndash; sequence number</li>
+  <li>Data Store &ndash; short name of the data store</li>
+  <li>Purpose &ndash; purpose of the data store</li>
+  <li>Comment &ndash; any additional comments</li>
+</ul>
+<h5>DATA ACQUISITION - STRATEGY - SOURCE SYSTEMS </h5>
+<p>Provide a table listing each identified source system and their types. Be sure the list is accurate and has all required sign offs or approvals. Remember to include data source types that typically include RDBMS, Files, Dun Bradstreet data, etc.</p>
+<p>For each source system interface, document the following information in a table:</p>
+<ul>
+  <li>Seq &ndash; sequence number</li>
+  <li>Source System &ndash; short name of the source system</li>
+  <li>Target System &ndash; short name of the target system (usually there is only one target system (e.g., data warehouse), but in more complex environments there might be multiple target systems)</li>
+  <li>Interface Name &ndash; short name of the interface (if there is only one interface for the given system, the interface name is usually the same as the system name)</li>
+  <li>Interface Frequency &ndash; frequency with which the data are extracted, i.e., monthly, weekly, daily or online (for message based transfers)</li>
+  <li>Interface Type &ndash; type and format of the interface, e.g., flat files, RDBMS access (pull), message transfer (push) etc.</li>
+  <li>Increment/Full &ndash; indicate whether the interface is incremental or whether it provides always the complete (full) set of data</li>
+  <li>Change Capture Method &ndash; in case the interface is incremental indicate how the change capture is performed for the interface</li>
+  <li>Transport Method &ndash; describe how data is transferred over the network. For files describe the file transfer tool or protocol, for RDBMS access describe how RDBMS is accessed etc.</li>
+  <li>Content &ndash; shortly describe content of the interface, e.g., by listing the main entities within this interface</li>
+  <li>Comment &ndash; any comments relevant to the interface</li>
+</ul>
+<h5>DATA ACQUISITION - STRATEGY - TARGET SYSTEMS </h5>
+<p>Provide a table listing each target system and their types. List the target systems and their types as required by the MoSCoW List (RD.045) and other requirements documents. Be sure the list is accurate and has all required signoff's or approvals.</p>
+<p>For each target system interface document the following information in the table:</p>
+<ul>
+  <li>Seq &ndash; sequence number</li>
+  <li>Source System &ndash; short name of the source system (usually there is only one source system (e.g., data warehouse), but in more complex environments there might be multiple source systems)</li>
+  <li>Target System &ndash; short name of the target system </li>
+  <li>Interface Name &ndash; short name of the interface (if there is only one interface for the given system, the interface name is usually the same as the system name)</li>
+  <li>Interface Frequency &ndash; frequency with which the data are extracted, i.e., monthly, weekly, daily or online (for message based transfers)</li>
+  <li>Interface Type &ndash; type and format of the interface, e.g., flat files, RDBMS access (pull), message transfer (push) etc.</li>
+  <li>Increment/Full &ndash; indicate whether the interface is incremental or whether it provides always the complete (full) set of data</li>
+  <li>Change Capture Method &ndash; in case the interface is incremental indicate how the change capture is performed for the interface</li>
+  <li>Transport Method &ndash; describe how data is transferred over the network. For files describe the file transfer tool or protocol, for RDBMS access describe how RDBMS is accessed etc.</li>
+  <li>Content &ndash; shortly describe content of the interface, e.g., by listing the main entities within this interface</li>
+  <li>Comment &ndash; any comments relevant to the interface</li>
+</ul>
+<h5>DATA ACQUISITION - STRATEGY - DATA FLOWS </h5>
+<p>This component should accurately depict the data flow architecture to be used for this project and capture information on the components in the data flow. </p>
+<p>Prepare data flow diagrams. If there are many data flows, it is usually better to prepare several diagrams, each describing flows for a particular subject area. Document the data flows in a table. Make sure the data flows characteristics are consistent with the source interface frequency and availability. Use a numbering system to identify each data flow in the diagram for future reference purposes.</p>
+<p>Insert a graphical representation of the data flow. Indicate which ETL functionality is implemented by each stage (extraction, transfer, transformation, cleansing, aggregation etc.) Use the data stores and source / target interfaces identified in previous diagrams.</p>
+<p>Document the following characteristics of a data flow in a table with the following information:</p>
+<ul>
+  <li>Seq &ndash; sequence number of the data flow</li>
+  <li>Source &ndash; data flow source. It can be either a source system interface or a data store within the data warehouse.</li>
+  <li>Target &ndash; data flow target. It can be either a data store within the data warehouse or a target interface.</li>
+  <li>Data Flow Name &ndash; short name of the data flow</li>
+  <li>Data Flow Purpose &ndash; purpose of the data flow, i.e., what is the function of the data flow</li>
+  <li>Data Flow Frequency &ndash; frequency with which the data flow should be executed. The frequency should correspond to the frequency of source system interfaces.</li>
+  <li>Dependencies &ndash; indicate any dependencies on other data flows or external conditions</li>
+  <li>Comment &ndash; any additional comments relevant to the data flow</li>
+</ul>
+<h5>DATA ACQUISITION - DATA LOAD - STRATEGY - INITIAL AND HISTORICAL LOADS </h5>
+<p> Review the business requirements regarding the initial and historical data in order to document each requirement. Make sure that both the historical loads and initial loads are included (i.e., list everything that has to be loaded before the target system can be refreshed on regular basis with the current data). Get the sign off from the customer for the initial and historical load requirements. </p>
+<p>Try to capture information on history data and the impact on that can be analyzed. The volume of business history data in terms of starting date (e.g., all the transaction from 1.1.2004 or 6 month of initial history), number of rows or by size of data (how many GB or TB of data) is helpful.</p>
+<p>Indicate whether the initial history can be loaded using the ETL modules developed for the current data or whether special processes for historical data load are needed. If the historical data is available in the same format as the regular updates, it is usually possible to use the same processes and modules as for the regular updates. However, if the format of historical data is different or there are different business rules needed to process historical data then it is necessary to develop modules for the historical data load. It is necessary to be aware of this need as it may significantly change the project scope.</p>
+<p>Document the requirements in a table format. It is important to note for each requirement how many months (days) of data have to be loaded, whether the historical data is available, what is the expected volume of data and whether it is possible to load the historical data with the processes developed for regular updates. Include the following information: </p>
+<ul>
+  <li>Seq &ndash; sequence number of historical load requirement</li>
+  <li>Source System &ndash; name of the source system</li>
+  <li>Interface Name &ndash; name of the interface</li>
+  <li>Entities &ndash; list of entities to be populated by historical load</li>
+  <li>Months to be Loaded &ndash; how many months (days, years) of history should be loaded</li>
+  <li>Number of Loads &ndash; how many loads will be required (e.g., if the requirement is to load 12 months of history and only monthly data are processed, than this will require 12 loads. However, if the loads are on the daily basis, than the loads will require 365 loads for each day in a year)</li>
+  <li>Is Data Available &ndash; indicate whether the historical data are available. If the data are not available then the historical loads are not feasible.</li>
+  <li>Expected Volume per Load &ndash; indicate expected number of rows to be loaded per each load. This figure can be used to estimate how much time it will take to perform historical loads.</li>
+  <li>Possible to Use Regular Processes &ndash; indicate whether the historical loads will need special modules and processes or whether regular processes can be used.</li>
+  <li>Comment &ndash; add any comment related to historical and initial loads</li>
+</ul>
+<h5>DATA ACQUISITION - DATA LOAD - STRATEGY - ERROR HANDLING STRATEGY</h5>
+<p>Provide guidelines for raising errors, notifying administrators and enabling error recovery. All exceptional conditions need to be identified up front and addressed in the design. </p>
+<p>Reporting errors while running the ETL processes need to be discussed with customer and escalation paths have to be identified and clearly communicated. </p>
+<p>This section is primarily aimed at developers working on the ETL components. It provides guidelines for raising errors and how to design the modules and processes in order to enable error recovery.</p>
+<p>Any errors that arise while running the ETL processes have to be captured and handled properly in order to successfully operate the data warehouse system.</p>
+<h6>Error Handling Approach </h6>
+<p>Describe the how errors are handled. Describe both errors raised by the tool (e.g., OWB) and exceptions programmatically raised by components. Define the how to programmatically raise exceptions from all the component types used in the project.</p>
+<p>Describe how errors, warnings and messages are logged.</p>
+<h6>Error Notification Approach </h6>
+<p>Describe the notification process executed when an error occurs. Define who should receive the notifications and how to react to notifications.</p>
+<h6>Error Recovery Approach </h6>
+<p>Describe how the system will recover from an error. Include guidelines for designing the modules in a way that enables graceful error recovery.</p>
+<p>The typical requirement is to design the components to be repeatable, i.e., it should be possible to repeat the module if the previous execution has failed. That way the process can be restarted from the point where it was stopped because of error.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Data Conversion </h4>
+<p> You need to develop a simple, effective and quick approach that converts only the data needed to provide business benefits in the initial production period. In doing this, you should aim to minimize the programming effort needed. Take into account the following factors: </p>
+<ul>
+  <li> the quality of data in the legacy system and the degree of confidence that can be assigned to statements about the quality of this data - In particular, investigate whether the data is consistent with the Existing System Data Model (if available). If the data is coming from a database without constraints, then you should be prepared for inconsistencies. </li>
+  <li> the source data business transformation rules - If these are not fully defined, the team will need to spend some effort on defining the data transformation rules. </li>
+  <li> closeness of fit between the legacy system data model(s) and the new data requirements </li>
+  <li> whether the source databases are Oracle or non-Oracle - If they are non-Oracle, you should investigate use of appropriate Oracle integration and data architecture tools. </li>
+  <li> possibilities for reuse (for example, data extraction programs and associated file formats) - There is no point in defining a new file format if there is an existing one that can be used, with supporting code. </li>
+</ul>
+<p> The conventional approach to data conversion has been to use a mixture of automated conversion using flat files, and manual data entry. The latter is still an option worth considering when data volumes are small or where legacy data quality is suspect. But there are other options that should be considered. These include the use of database links by which data can be copied directly from source databases into temporary tables </p>
+<p> If the source database is not an Oracle database, then you need to investigate other Oracle tools which would be appropriate in support of the customer's overall architecture. </p>
+<p>Consider also the use of tools that can automatically document and transform your data.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#BCV020" target="_blank">task-specific Application Implementation supplemental guidance</a>.</p>
+<h4>Data Quality </h4>
+<p>Review the Data Acquisition and Conversion Requirements (CV.010) for details about the types of sources and their data formats. Review the Data Quality components of CV.010 to identify high-level issues relating to data ownership and broad processes for resolving data quality issues. Use the information in the Data Quality component of CV.010 as a starting point to develop the Data Quality Strategy. The strategy should build on these high-level issues by adding the specific data quality requirements. These include error and exception handling criteria and any data cleansing requirements to be met. </p>
+<p>The Data Quality component of the Data Acquisition, Conversion and Data Quality Strategy defines data quality in the solution for the business, and also identifies ownership of the data, resolution of issues and escalation hierarchies that define the procedures related to the everyday operation and administration. This information is used in subsequent tasks to produce components to address data quality requirements, and to ensure adherence to standards. Test cases are also defined to address the issues identified in this document.</p>
+<h5>DATA QUALITY - OBJECTIVES </h5>
+<p>Provide an overview for data quality and define the data quality measures (KPIs) and define the objectives of the data quality management in the solution. </p>
+<h6>Data Quality Overview </h6>
+<p> Provide the general concerns regarding data quality in this section. This section should define what data quality is at a high level with respect to the implemented solution. If there are some particular aspects of the quality important for the implemented solution they should be mentioned here.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h6>Data Quality Measures </h6>
+<p> This section defines the data quality measures (KPIs). </p>
+<p> Interview the ambassador users about the data quality needs, i.e., what are the data quality requirements the system should have in order to meet the business needs. Collect the data quality measures from ambassador users. Note the definition of data quality measures and acceptable values is usually a responsibility of a business analyst. Ask the business analyst to focus on the most important entities and attributes to be measured.</p>
+<p>Describe the data quality measures in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of the measure</li>
+  <li>Business Entity &ndash; entity that is subject of the measure</li>
+  <li>Business Attribute &ndash; attribute that is subject of the measure</li>
+  <li>KPI &ndash; name of the measure</li>
+  <li>Description &ndash; description of the measure, i.e., how the measure is calculated</li>
+  <li>Acceptable value &ndash; what is the acceptable value for business</li>
+</ul>
+<p>Data quality measures are usually defined as &ldquo;how many records do not meet particular quality criteria&rdquo;. Some of the possible criteria that can be measured are:</p>
+<ul>
+  <li>Missing Data Values &ndash; data that should have value are missing, including both mandatory fields and analytical fields.</li>
+  <li>Domain Value Errors &ndash; data do not correspond to the domain definition (e.g., unexpected or unknown codes, formats etc.)</li>
+  <li>Duplicate Occurrences &ndash; multiple records that represent a single real world entity. Typically customers or addresses are duplicated several times.</li>
+  <li>Business Rules Violation &ndash; data do not conform to business rules, for example two fields have valid values but the combination of these values is not allowed.</li>
+  <li>Reconciliation Errors &ndash; data in the data warehouse do not correspond with the same data from another surrogate data source (e.g., comparing sum of balances on customer accounts and sum of balances on GL accounts).</li>
+</ul>
+<p>Data quality measures should be normalized in order to be able to define ranges that are acceptable or not acceptable to business, e.g., balances on customer accounts are considered correct if the sum of balances on customer balances do not differ more than 0.2% of the balance on GL account.</p>
+<h6>Data Quality Objectives </h6>
+<p>This section states the objectives for data quality. Document the identified data quality objectives. It is important to enter only those objectives, that were identified and which are essential for the solution. </p>
+<p>Interview the ambassador users about the data quality needs, i.e., what are the data quality requirements the system should have in order to meet the business needs. Enter the identified data quality objectives. It is important to enter only those objectives, that were identified and which are essential for the solution. </p>
+<p>Describe the data quality objectives in a table. Include the following: </p>
+<ul>
+  <li>ID &ndash; unique identification of the objective</li>
+  <li>Objective &ndash; short name of the objective</li>
+  <li>Description &ndash; description of the objective</li>
+  <li>How to Measure &ndash; how to determine the objective is met</li>
+  <li>Related KPIs &ndash; KPIs related to the objective</li>
+</ul>
+<p>If it is not possible to put the objectives into a tabular form delete the table and use a free text.</p>
+<p>Be careful when completing this component. Non-realistic and non-measurable data quality objectives can significantly extend the scope of the project and could have impact on the acceptance of the project. It is important to enter only those objectives, that were identified and which are essential for the business and the solution.</p>
+<p>If possible, the objectives should be measurable, i.e., the objectives might be based on the data quality measures defined in the previous section.</p>
+<p>It is usually useful to clearly state that the data warehouse is not responsible for the errors caused by the source system and that the data quality is not a function of one system or one role. Instead, all the applications, architects, information producers and knowledge workers have to take responsibility for continually improving the data quality.</p>
+<p>The following is a list of inherent data quality characteristics (i.e., data quality measures that do not depend on how the data is used) that could be used in this section:</p>
+<ul>
+  <li>Definition Conformance &ndash; consistency of the data definition and actual data values. For example, if an item &quot;Loan Maturity Date&ldquo; is described as &quot;the date when a loan matures&ldquo; and the system populates the field with the contractual value but it does not update the value in case the loan is restructured, the value is incorrect.</li>
+  <li>Completeness &ndash; if all required fields have data present the data is complete. The measure is the percentage of records that have a value for a particular field. For example, it might be important to know for how many customers the attribute &quot;Profession&ldquo; is missing &ndash; if the number is large, reports broken up by this field will be distorted.</li>
+  <li>Business Rule Conformance &ndash; this characteristic measures conformance of data to its domain and business rules. The measure is the percentage of records that conform to the business rule. For example, the business rule states that &quot;all current accounts with overdraft which are in credit are not classified&ldquo;. This characteristic measures how many records fail this rule.</li>
+  <li>Accuracy to Surrogate Source &ndash; how the data agrees with the data in the original source of data. The measure is the percentage of records that correspond to the &quot;authoritative&ldquo; data source. For example, financial reconciliation that compares balances on general ledger accounts against balances of customer accounts. Another example is how company names correspond to the external register of companies.</li>
+  <li>Accuracy to Reality - how the data agrees with the real world object or event. This measure is considered the highest measure of information quality. Though data might be accurate to surrogate source they still might not be accurate to reality. This measure must be evaluated by physical data assessment.</li>
+  <li>Precision &ndash; precision is defined by the right level of granularity in data values. The measure is the percentage of records that have the required degree of granularity. If multiple processes are using the data the precision then the lowest granularity must be used. For example, for marketing it is sufficient to have locations on the level of regions while direct mail requires location accurate to address point.</li>
+  <li>Nonduplication &ndash; non-duplication measures whether data has one to one relationship with real world objects or events. The measure is the percentage of records that are duplicated, i.e. two or more records correspond to one real world object or event. Duplication is especially problem if data are maintained redundantly across independent databases. Typical example is duplication of customers.</li>
+  <li>Concurrency of Distributed Data &ndash; lag between data is changed or inserted in one database and propagated to another database. The measure is the duration required to move the data from one place to another. Concurrency can cause problems with missed opportunity (information is not available in time) or with discrepancy of reports coming from different sources being out of sync.</li>
+</ul>
+<p>The following is a list of pragmatic data quality characteristics (i.e. data quality measures that measure how the data is presented, used and whether it is complete and relevant for users and processes that use the data) that could be used in this section:</p>
+<ul>
+  <li>Accessibility &ndash; degree how difficult it is to access data on demand. There is a potential accessibility (does the company and/or department possess the data?) and actual accessibility (how easy it is to access the data?). Included in the accessibility is also the speed with which the data are retrieved and presented.</li>
+  <li>Timeliness &ndash; availability of data to support a given process within the time plan defined for the process. This characteristics measures whether the timing of data flow is acceptable.</li>
+  <li>Contextual Clarity &ndash; degree to which the data presentation enables knowledge workers to understand the meaning and to avoid errors and misunderstandings. This is a subjective measure of the way how the information is presented.</li>
+  <li>Derivation Integrity &ndash; correctness of calculations performed from other data. The measure shows the percentage of correctly calculated records. In order to measure this characteristic it is necessary to have a precise definition of the calculation.</li>
+  <li>Usability &ndash; how easy it is to use and understand the presented information. This is a subjective measure of the degree to which the information presented is efficiently usable for its purpose to support a process or a decision.</li>
+  <li>Fact Completeness &ndash; characteristic of having the right data with the right quality to support a given process. This measure is not fulfilled if some facts are missing or not having required quality.</li>
+</ul>
+<h5>DATA QUALITY - PROCESSES </h5>
+<P>Review the high-level Data Quality Processes component in the Data Acquisition and Conversion Requirements (CV.010). Describe the processes related to the data quality. They should be designed in order for the solution to meet the data quality objectives.</P>
+<h6>Data Transfer </h6>
+<p> Collect the relevant reference information and information from workshops and identify possible data extraction and data transfer issues. Propose and document methods to ensure the source data are available with the required frequency and at the required time. Propose and document methods to ensure the extracted data meets the referential integrity requirements. Propose and document methods to ensure the files transferred over the network are complete (i.e., all files are transferred) and not corrupted. Propose and document methods to ensure the correct character set and/or data format conversion takes place. Propose and document methods to ensure the files (or messages) are produced and processed in the right order (sequencing). Propose and document methods to ensure the source data are available in the expected structure and format (i.e., detect and prevent unexpected changes of source structure). Optionally provide a diagram showing the data transfer process and places where the data transfer checks take place.</p>
+<p>Describe the data quality considerations related to data transfer in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of the data quality requirement related to data transfer</li>
+  <li>Source System &ndash; if the requirement is specific to a particular system</li>
+  <li>Source File or Entity &ndash; if the requirement is specific to a particular source file</li>
+  <li>Source Type &ndash; provide the type of source data</li>
+  <li>Data Quality Requirement &ndash; short name of the data quality requirement</li>
+  <li>Description &ndash; description of the data quality requirement and how to handle to requirement</li>
+</ul>
+<p>Depending on the data extraction and transfer approach it is necessary to include in this section methods ensuring the following characteristics of the data transfer process:</p>
+<ul>
+  <li>Source data is available at the required time.</li>
+  <li>Source data meets the referential integrity requirements.</li>
+  <li>Data files are complete and not corrupted.</li>
+  <li>The expected character set and data format conversion takes place.</li>
+  <li>Files or messages are produced and transferred in right order.</li>
+  <li>Files are in the expected structure and format.</li>
+</ul>
+<p>Describe in the document how the data quality requirements related to data transfer will be handled, i.e., what is the method and tools to meet these requirements.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h5>DATA CLEANSING </h5>
+<p>Determine the requirements for data cleansing. The work product template provides strategies that you may want to consider this stage.</p>
+<p>Review the data cleansing requirements from workshops. Optionally, a table with the data cleansing rules can be directly distributed to ambassador users to collect the feedback from users. Review the data quality assessment of source systems. Identify the data quality issues that could be subject to data cleansing and agree on the rules with the business. Document the data cleansing rules in the document. Document the transformations in the Transformation Details or (alternatively) in a separate document. Update and extend the data cleansing rules as new information about source data quality and user requirements is available. </p>
+<p>Describe the data cleansing rules in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of the data cleansing rule</li>
+  <li>Business Entity &ndash; entity the rule is related to</li>
+  <li>Business Attribute &ndash; attribute the rule is related to</li>
+  <li>Cleansing Rule &ndash; short name of the cleansing rule</li>
+  <li>Description &ndash; description of the cleansing rule</li>
+  <li>Tools &ndash; how the cleansing rule will be implemented</li>
+</ul>
+<p>If necessary, provide free text describing how the cleansing rules are implemented, stored and maintained.</p>
+<p>The data cleansing rules should be agreed on by all the business users of the data warehouse. This is especially important for the enterprise data warehouse (EDW) that is used by many departments with many different views of the data. If business users cannot agree on a rule, the rule should not be implemented in the EDW and it should be moved to a particular data mart.</p>
+<p>The data cleansing rules should be stored in a metadata repository if possible. </p>
+<p>Note that the data cleansing rules are only partially known at the time of Definition and Requirements Analysis. Usually the new rules are discovered when more data are processed and the system (prototype) is tested. However, from the project management point of view, it is necessary to freeze the set of implemented data cleansing rules at some point in time because otherwise the scope of the project is forever changing. This is especially important for fixed price implementations.</p>
+<p>More detailed descriptions of the transformations for specific cases can be provided in the Transformation Details component.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#BCV020" target="_blank">task-specific Application Implementation supplemental guidance</a>.</p>
+<h5>Audit and Control </h5>
+<p>Describe audit and control procedures needed to ensure that all the data from the source systems are correctly loaded into the target system and that the data meet the required business and technical checks.</p>
+<p> Review the business checks requirements from workshops. Optionally the table with the business checks can be directly distributed to ambassador users. Review the data quality assessment of source systems. Identify the data quality issues that should be monitored via technical checks and agree the rules with business. Identify the technical checks to be implemented in order to ensure the ETL processes within the target system work correctly. Document the business and technical checks in the document. Update and extend the checks as new information about source data quality and user requirements is available. </p>
+<p>Describe the technical and business checks in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of the technical or business check</li>
+  <li>Business Entity &ndash; entity the check is related to</li>
+  <li>Business Attribute &ndash; attribute the check is related to</li>
+  <li>Check Rule &ndash; short name of the technical or business check</li>
+  <li>Description &ndash; description of the technical or business check</li>
+  <li>Resolution &ndash; how to handle records not meeting the check</li>
+</ul>
+<p>If necessary, provide free text describing how the cleansing rules are implemented, stored and maintained.</p>
+<p>The data business and technical checks should be stored in a metadata repository if possible. </p>
+<p>For each business and technical check it is necessary to document what is the resolution of the check. The resolution might be to</p>
+<ul>
+  <li>Raise error (stop processing until the problem is resolved)</li>
+  <li>Load only the data meeting the checks</li>
+  <li>Mark the data not meeting the checks</li>
+  <li>Produce a report listing records not meeting the checks</li>
+</ul>
+<p>Note that the business and technical checks may only be partially known at this time. Usually the new checks are discovered when more data are processed and the system (prototype) is tested. However, from the project management point of view, it is necessary to freeze the set of implemented checks at some point in time because otherwise the scope of the project is forever changing. This is especially important for fixed price implementations.</p>
+<h5>Error and Exception Handling </h5>
+<p>List the various exceptions and error conditions, how they are trapped and resolved.</p>
+<p>For each error condition identified in Data Transfer, Data Cleansing and Audit and Control processes, design and document a method on how the error should be handled and reported. Document the following information in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of an error or exception</li>
+  <li>Error/Exception &ndash; short name of an error or exception</li>
+  <li>Process &ndash; name of the process or component the error is raised</li>
+  <li>Priority &ndash; priority of error resolution</li>
+  <li>Description &ndash; description of an error or exception</li>
+  <li>Notification/Reporting Requirements &ndash; how to notify users and/or administrators the error was raised (e.g. send a notification to an administrator, distribute report to end users etc.)</li>
+  <li>Resolution &ndash; how to resolve the error (e.g. wait until the error is corrected and restart the process, repeat the process from the beginning, ignore the error and continue, etc.)</li>
+</ul>
+<p>Include a process diagram that illustrates how users are notified by the system if there is an error or exception and how they are resolved.</p>
+<h4>DATA QUALITY - DATA OWNERSHIP</h4>
+<h5>Data Ownership</h5>
+<p>Identify the owners of each data component. For each data component, document the data ownership in the table. Decide whether to structure responsibility for data components according to subject areas, source systems, both or other criteria. This decision has to be confirmed by the customer. Identify roles, departments or individuals responsible for data ownership. Confirm the data ownership with the customer. </p>
+<p>Data ownership is usually structured according to subject areas, source systems or both. Source system ownership is almost always available, i.e. there should be a person or department who is responsible for a particular system and data extracts from this system. However, it is advantageous to have also somebody responsible for a particular subject area to solve data definition and business rules issues that span multiple source systems.</p>
+<p>For each data component document the data ownership in the table:</p>
+<ul>
+  <li>ID &ndash; unique identification of a data component</li>
+  <li>Component &ndash; name of the subject area or source system</li>
+  <li>Environment &ndash; indicate for which environment is the ownership valid</li>
+  <li>Data Owner &ndash; who is the data owner of the component</li>
+  <li>Owner Contact Detail &ndash; document contact information of a data owner.</li>
+</ul>
+<p>The data ownership has to be agreed on and eventually signed off by the customer.</p>
+<h5>Issue Resolution</h5>
+<p>Define how issues are resolved. For each issue, document the resolution and responsibility in the table. Identify data quality related issues that cannot be resolved automatically. Use the issues described in previous chapters for a list of such issues. Define resolution process and expected resolution time for these issues. The resolution time should be based on the impact of issues on data availability, subsequent processes, etc. Identify roles, departments or individuals responsible for solving the issues. Confirm the responsibilities with the customer. </p>
+<p>This section is focused on the data quality issues that cannot be resolved automatically and that require some level of human interaction. For each of such issue it is necessary to document who should solve the issue, how and how fast.</p>
+<p>For each issue type document responsibility for resolution of the issue in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of an issue type</li>
+  <li>Issue Type &ndash; short description of the issue type</li>
+  <li>Responsible Role - who is primarily responsible for solving the issue</li>
+  <li>Resolution &ndash; what is the expected way how the issue should be solved</li>
+  <li>Expected Resolution Time &ndash; when the issue should be resolved</li>
+</ul>
+<p>The issue responsibility has to be agreed on and eventually signed off by the customer. </p>
+<h5>Escalation Hierarchy</h5>
+<p>Define how issues are escalated in case initial resolution fails or further notification is needed. For each issue, document an escalation hierarchy in a table. For each issue defined in the previous component, identify an escalation hierarchy. Confirm the escalation hierarchy with the customer. </p>
+<p>The escalation hierarchy defines the severity of the problem that must be tackled at each level. This is to be used in conjunction with the issue resolution section above.</p>
+<p>If possible, define the method of reporting errors back to the data owner and include correction procedures. Otherwise errors will be escalated to ever-higher levels of disinterested management. The ideal would be a closed loop that results in error correction within a predetermined period.</p>
+<p>For each issue type, document escalation procedure and hierarchy in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of an issue type</li>
+  <li>Issue Type &ndash; short description of the issue type</li>
+  <li>Responsible Role - who is primarily responsible for solving the issue</li>
+  <li>Escalation Role &ndash; to whom the unsolved issue should be escalated or who should be notified when an issue is reported</li>
+  <li>When to Escalate &ndash; when the issue should be escalated (e.g., if the issue is not solved within 1 business date, etc.)</li>
+  <li>Escalation Process &ndash; describe the escalation process (e.g., send mail, document the issue in a helpdesk system, etc.)</li>
+</ul>
+<p>The issue escalation hierarchy has to be agreed on and eventually signed off by the customer. </p>
+<h4>DATA QUALITY - TRANSFORMATION DETAILS </h4>
+<p> Identify the data transformation requirements collected in workshops with ambassador users. Agree on the transformation rules with ambassador users. Document each data quality transformation rule in a table:</p>
+<ul>
+  <li>ID &ndash; unique identification of the transformation</li>
+  <li>Business Entity &ndash; entity the transformation is related to</li>
+  <li>Business Attribute &ndash; attribute the transformation is related to</li>
+  <li>Transformation &ndash; short name of the transformation</li>
+  <li>Description &ndash; description of the transformation using either the pseudo code or free text (depending on the transformation type)</li>
+</ul>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>Application Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing an application implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#BCV020" target="_blank">task-specific supplemental guidance</a>. To access all application implementation supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a>.</p>
+<h4>Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>Siebel Customer Relationship Management (CRM)</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Siebel CRM implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_TASK_GUIDELINES.HTM#CV020" target="_blank">task-specific supplemental guidance</a>. To access all Siebel CRM supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_SUPP_GUIDE.HTM" target="_blank">OUM Siebel CRM Supplemental Guide</a>.</p>
+<h4>SOA Project Delivery Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Project Delivery implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_TASK_GUIDELINES.HTM#CVG" target="_blank">task-specific supplemental guidance</a>. To access all SOA Project Delivery supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">OUM SOA Project Delivery Supplemental Guide</a>. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Role</div></th>
+    <th width="58%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect (Information Architect) </div></th>
+    <td>Formulate the projects Data Acquisition, Conversion and Data Quality Strategy. Contact appropriate technical experts for advice if necessary.&nbsp;Develop a testing strategy for data conversion modules. Identify, assess and mitigate data conversion risks. Define issue-tracking procedures. Preferably, this should be done by a system architect that specializes in Information Architecture.<br>
+		<br>
+        If a Data Acquisition and Conversion team leader has been designated, 60% of this time would be allocated to this individual, leaving 20% allocated to the system architect. The team leader would then develop a testing strategy for data conversion modules and identify, assess and mitigate data conversion risks, and define issue-tracking procedures.</td>
+    <td><div align="center">80</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Application/Product Specialist </div></th>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. </td>
+    <td><div align="center">20</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer Data Administrator </div></th>
+    <td>&nbsp;</td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer System Architect (Information Architect) </div></th>
+    <td>&nbsp;</td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IS Operations Staff&nbsp;</div></th>
+    <td>Provide information on data to be converted and current application structure.&nbsp;</td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">User</div></th>
+    <td>Provide information on data to be converted.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="36%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="64%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Relevant existing reference material </div></th>
+    <td>Review any documents provided by the customer on existing data sources, as well as any meeting notes on volume of data, access restrictions on existing data sources or any findings from Data Assessment/Customer Workshops.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MoSCoW List (RD.045) </div></th>
+    <td>Use the MoSCoW List to identify target systems.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Data Design (DS.090) </div></th>
+    <td>The data the new system uses is detailed in the Data Design. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Data Acquisition and Conversion Requirements (CV.010) </div></th>
+    <td>The Data Acquisition and Conversion Requirements defines the scope and objectives as well as the critical success factors and risks associated with the data acquisition and conversion.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/CV/CV-020_DATA_ACQ_CONVERSION_AND_DATA_QUAL_STRATEGY.DOCX" target="_blank">CV-020_DATA_ACQ_CONVERSION_AND_DATA_QUAL_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Data Acquisition, Conversion and Data Quality Strategy is used in the following ways: </p>
+<ul>
+  <li> by the Data Acquisition and Conversion project leader to communicate to the customer the strategy you plan on using to successfully acquire/convert their legacy data to the new Oracle system(s) </li>
+  <li> by the Data Acquisition and Conversion team to help the customer clearly document their requirements </li>
+  <li> by the Data Acquisition and Conversion team as a road map for performing the acquisition/conversion - All members of the team, both application development and business team members, should understand and follow the same strategy </li>
+  <li> by the project manager to understand how the Data Acquisition and Conversion team plans to perform the acquisition/conversion, what the customer's conversion requirements are, and how the effort may impact the overall project </li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p> Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li>Have all systems identified in the Data Acquisition and Conversion Requirements (CV.010) been considered and the constraints addressed?</li>
+  <li>Has the strategy been communicated clearly in the work product?</li>
+  <li> Are the conversion requirements clearly defined? </li>
+  <li>Have all legacy applications and objects been considered? </li>
+  <li>Has the level of detail and history to be converted been defined? </li>
+  <li> Is the strategy understood by those on the distribution list for this work product? </li>
+  <li> Are all assumptions, constraints, and risks which could impact the conversion process stated and understood? </li>
+  <li> Has sufficient effort been expended on seeking alternative approaches that will perform the data conversion quicker, cheaper and at lower risk to the project? </li>
+  <li>Has the ambassador user, who should validate the data ownership, issue resolution processes, points of escalation and the other data quality requirements reviewed the document? </li>
+  <li>Does the work product describe methods for ensuring consistent and error prone data transfer from the data quality point of view?</li>
+  <li>Does the work product describe methods for handling exceptions and errors that have been identified?</li>
+  <li>Does the work product describe the checks performed in the Audit and Control section? Even if no business checks have been identified the document should contain a minimum set of technical checks.</li>
+  <li>Does the work product describe data cleansing requirements and methods how to implement the data cleansing requirements? If no data cleansing requirements have been identified the document should state so.</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

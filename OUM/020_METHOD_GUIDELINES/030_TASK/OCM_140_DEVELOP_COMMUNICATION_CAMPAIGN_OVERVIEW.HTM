@@ -1,0 +1,467 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OCM.140 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDESC">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>OCM.140 - DEVELOP COMMUNICATION CAMPAIGN </h2>
+<!--BeginDesc-->
+<p>The purpose of  this task is to take the Communication Strategy and Change Management Roadmap  and design the essential communication components to create the Communication Campaign.</p><!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>The Communication Campaign provides a process and tools to communicate effectively with stakeholders throughout the project and includes detailed communication activities and timing.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Activity" id="Activity"></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/AACTDCMRCCI_DEPLOY_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_INCEPTION.HTM" target="_blank">A.ACT.DCMRCCI Deploy Change Management Roadmap/Communication Campaign - Inception </a></p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Communication Campaign</b></p>
+<p>The Communication Campaign includes activities and a two-way communication initiative organized by audience, expectations, issues, speaker, and preferred communication channels to communicate the right information to the right people using the right vehicle at the right time.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review the Change Readiness Assessment Analysis and Recommendations (OCM.120) and the Communication Strategy and Change Management Roadmap (OCM.130).</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Confirm target groups. </td>
+    <td>Target Group </td>
+    <td>The Target Groups are the groups that are targeted for the change management event or communication.<br>
+		<br>
+        Use the Stakeholder Analysis created in the Change Readiness Assessment Strategy and Tools (OCM.110) to help confirm target groups.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Select communication channels.</td>
+    <td>Communication Vehicles</td>
+    <td>The Communication Vehicles are the most effective communication delivery methods for each target group.<br>
+		<br>
+        Use the Internal Communication Channel Audit created with the Ad Hoc Communications (OCM.010) that identifies and records in spreadsheet format all communication channels currently in use in the customer organization, their frequency, person responsible and audience.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine communication media. </td>
+    <td>Communication Media</td>
+    <td>The Communication Media is the type of content delivered via the communication vehicle, e.g., a Progress Report (media) delivered via email (vehicle) for each target group or audience.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Develop key messages. </td>
+    <td>Key Messages </td>
+    <td>The Key Messages are tailored in the Communication Campaign to mitigate issues identified. They are designed in a way to way a change momentum</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Using the information gathered in the previous steps, add the necessary communication details to the Communication Campaign. </td>
+    <td>  Communication Campaign</td>
+    <td>The  Communication Campaign translates the Communication Strategy into an actionable plan.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The purpose of the  Communication Campaign is to define key messages per audience, including media, frequency, delivery resources and reinforcement methods. It is built on the Communication Strategy, incorporating the communication focus areas in detail and defining the level of commitment desired. The  Communication Campaign supports the change effort and provides the vehicles for generating the two-way communications around the key messages related to the project. It is aligned with project milestones and builds momentum for change. The communication is built by audiences, which are the target groups already identified during the Change  Readiness Assessment (OCM.110, OCM.120 and OCM.130). </p>
+<p>The  Communication Campaign:</p>
+<ul>
+  <li>Helps individuals prepare for, understand and accept changes in their work environment</li>
+  <li>Informs and involves all affected groups whose commitment will be required</li>
+  <li>Provides accurate information to keep stakeholders focused</li>
+  <li>Reduces rumors and performance dips</li>
+  <li>Provides timely information, using a multi-media approach, tailored to various audience groups</li>
+  <li> Sustains the interest and energy of the team members and business representatives</li>
+</ul>
+<p>In the task, Build Communication Strategy and Change Management Roadmap (OCM.130), the initial components of the Communication Campaign were created with activities (Action to Implement) that are aligned with the identified issues and challenges, or potential risks (Impacts/Issues to Manage) that need to be managed. This process includes an initial timeframe for completion or resolution in order to mitigate potential risks with the project. It also incorporates the anticipated risks identified in the Change Readiness Assessment activity for each stakeholder group.</p>
+<p>Using communication objectives from the Communication Strategy (OCM.130), define key messages per audience, including media, frequency, delivery resources and reinforcement methods and the level of commitment desired. The fully defined Communication Campaign includes the change management activities that relate to communications along with a two-way communication initiative organized by audience, expectations, issues, speaker, and preferred communication channels to ensure that the right information is communicated to the right people using the right vehicle at the right time. It identifies communication events and key messages, as well as the deployment date and accountability measures. It is aligned with the customer's culture and the project milestones, builds momentum for change and leverages the current customer communication vehicles.</p>
+<p> The Communication Campaign is ongoing, tailored, and two-way. One of the primary requirements of an effective Communication Campaign is that it provides opportunities for gathering information as well as disseminating it.</p>
+<h4>Review Work Products </h4>
+<p>The Change Readiness Assessment Analysis and Recommendations is designed to help the organization in being proactive in addressing current project challenges. It was used to build the initial Communication Campaign. Use the Change Readiness Assessment Analysis and Recommendations to:</p>
+<ul>
+  <li> Help identify key challenges by population group</li>
+  <li> Determine the organization's willingness to participate in the project</li>
+  <li> Uncover past failures and successes of like projects</li>
+</ul>
+<p>The initial information for the Communication Campaign was created in OCM.130 and identified Impacts/Issues to Manage (risks) and Actions to Implement. In this task, you will continue to build the Communication Campaign by confirming and/or adding the following details: </p>
+<ul>
+  <li> Any additional anticipated risks (Impacts/Issues to Manage)</li>
+  <li> Communication events and key messages per risk identified (Key Messages) </li>
+  <li> Accountable person who will carry the message (Accountability) </li>
+  <li> Identify deployment date and accountability measures (Timeframe) </li>
+  <li> Create communications that address project risk (Action to Implement) </li>
+  <li> Help structure communications (Action to Implement) </li>
+  <li> Identify areas of special attention within the organization</li>
+  <li> Leverage the customer&rsquo;s communication channels</li>
+</ul>
+<h4>Confirm Target Groups </h4>
+<p>Identify the different audiences affected by the project in the Communication Campaign. Organize and prioritize groups requiring communication. Document and group the different audiences that need to be included in the communication -- key players, decision makers, users, and general audiences. Use the Stakeholder Analysis created in the Change Readiness Assessment Strategy and Tools (OCM.110) to help confirm target groups. </p>
+<p>All communication initiatives (Action to Implement) are built per audience. This is the most efficient way to reach people with their communication preferences and managing their specific expectations, fears and concerns. This approach per audience provides the opportunity to tailor messages to reach and mobilize properly impacted people. This ensures that the Communication Campaign addresses the key stakeholders as well as builds a strong foundation for:</p>
+<ul>
+  <li> Assisting in building a strong relevant and timely communication foundation</li>
+  <li> Ensuring the correct level of messaging is reaching the appropriate audiences</li>
+  <li> Creating messages that are relevant to the customer audience</li>
+  <li> Validating the various audiences for message delivery</li>
+</ul>
+<p> Usually the audiences are confirmed with the change agents or with the project managers.</p>
+<p>Start with the Stakeholder Analysis created in the Change Readiness Assessment Strategy and Tools (OCM.110) to help confirm target groups. Use a Key Stakeholder List, Core Project Team and Key Player List to identify who is affected by the project to ensure that messages can be targeted to meet the needs and challenges of specific groups. </p>
+<p><b>Key Stakeholder List</b> - This list includes the impacted groups identified during the Organizational Readiness Assessment. You may also want to include the change agent as an audience for the Communication Campaign. During the Communication Campaign, some communications will have to reach all employees to explain project progress and to prepare them for the upcoming change. For this reason, a general audience will be created meaning that the communication initiative will be sent to all employees.</p>
+<p><b>Core Project Team</b> - The core project team members will communicate frequently during the creation of the solution and it is crucial to keep them well informed and ensure that they will communicate the right information during their work. Key messages from the project team are the key to mitigating risks and keeping the project on time and on budget. The project team is also the group with the most intimate knowledge of where the project is, and where it is going.</p>
+<p><b>Key Player List</b> - Key players must be included in the communication audience. In fact, the Steering Committee is considered as an audience. The change agents are also an audience due to close work done with them. The customer&rsquo;s customers can also be considered as an audience. </p>
+<p>The purpose of identifying the target groups is to organize and prioritize the groups requiring specific communication in order to validate the messages for delivery throughout the project. Many of the messages about the project will be generic for all stakeholders; some will be targeted to a specific audience. For each of these audiences, the following questions must be answered:</p>
+<ul>
+  <li>Who is the audience?</li>
+  <li>What behavior do we need of them?</li>
+  <li>How will the new technology affect them?</li>
+  <li>How significant are they to the success of the project?</li>
+  <li>What is their current level of commitment?</li>
+  <li>What role(s) will they play?</li>
+  <li>What are their major concerns?</li>
+  <li>Who should communicate the messages to them? </li>
+</ul>
+<h4>Select Communication Channels </h4>
+<p>Identify the most appropriate and effective communication delivery method (vehicle) for each communication within the customer culture. </p>
+<p>In organizations, there are different ways to reach people based on the culture, the past communication experience and the leadership style. Some channels may be more efficient than others for reaching people during a project. The communication channels are used to reach audiences in different ways. Examples of channels are:</p>
+<ul>
+  <li> Staff Meetings where the most important topics are communicated </li>
+  <li>Official communication channels, such as, the corporate newsletter </li>
+  <li>New channels created by the project, for example, Communication Cascade &ndash; from project team to Advisory Committee to Steering Committee</li>
+  <li>The natural networking that is efficient in organizations who prefer the person to person communication channel</li>
+  <li> Technology Communication Channels, such as, the Corporate web site, blogs or e-mail</li>
+</ul>
+<p>Refer to the Internal Communication Channel Audit created with the Ad Hoc Communications (OCM.010) that identifies and records in spreadsheet format all communication channels currently in use in the customer organization, their frequency, person responsible and audience. For each communication, determine which communication vehicle is the most efficient based on organizational risks in place, the audience&rsquo;s communication needs and the timeframe of the project. Consider the following:</p>
+<ul>
+  <li> Creating a newsletter for the project could be an efficient vehicle. It is frequent, based on the project priorities and milestones.</li>
+  <li> A web site is also a good vehicle for a worldwide implementation as It is a good way to reach many people in a very short period of time.</li>
+  <li> Email is good for mass delivery of important messages when working in a decentralized environment.</li>
+  <li> Management information decks are good for communicating project progress to management level employees.</li>
+  <li> One on one staff town hall meetings are also good for communicating high level project progress as well as confirming project vision and goals.</li>
+</ul>
+<p>The Change Agent Structure can also be a delivery method. They are usually selected for using the natural networking and follow the natural communication channel, and are people from the organization that can assist the change and training team with distributing information, and identifying additional communication training needs that cannot be easily identified from a remote location. Activities they are typically engaged in are:</p>
+<ul>
+  <li> Performing Audience Assessments, (Identifying groups at their locations needing specific and targeted information regarding the Project)</li>
+  <li> Helping to identify communication vehicles, (The best way to communicate these messages, i.e., e-mail, newsletters&hellip;)</li>
+  <li> Assist in identifying change and communications needs throughout the project</li>
+  <li> Providing content for and validate project level communications (verbiage appropriate to specific locations)</li>
+  <li> Facilitating a swift review/approval process when team members in their location need to review and approve communication</li>
+  <li> Supporting change management ad communications work stream activities as needed</li>
+</ul>
+<p>Delivering the right message at the right time to the right audience is a communication mantra. The Communication Campaign outlines a multi-media approach utilizing existing communication channels where possible so that interested individuals can easily locate the information. In many cases, a message may be delivered through several channels to reach a broader base of impacted audiences. </p>
+<p>As the project matures, the list of channels, the nature of the key messages, and the frequency of those messages will change. In the early phases of a major transition, awareness is an acceptable level of commitment for most audiences, and communications can be fairly generic. However, as the program moves toward rollout and impacted stakeholders need to make strides in the direction of involvement and commitment, the nature and frequency of communication must be adapted to support the altered requirements. </p>
+<p>To summarize, for each Action to Implement:</p>
+<ul>
+  <li>Identify appropriate and effective communication delivery methods within the project. </li>
+  <li>Identify how communications are most effectively received within the organization. </li>
+  <li>Identify key communicators within the organization. </li>
+  <li>Determine who will be the speaker responsible for the delivery of each key message.</li>
+  <li>Determine most effective person to deliver targeted messages.</li>
+</ul>
+<p>The goal is to ensure that messages with meaning are delivered by the people that matter and that communications are taken seriously.</p>
+<p>The organization is responsible for the following:</p>
+<ul>
+  <li>Creating where are we now messages keeping readers informed on project progress.</li>
+  <li> Developing key (WIIFM &#8212; What&rsquo;s in it for me) messages.</li>
+  <li> Allowing the organization to feel they have ownership in the change.</li>
+</ul>
+<h4>Determine Communication Media </h4>
+<p>Determine the type of content (media) delivered to the audience, as well as the different types of vehicles that will be used to effectively deliver key project messages (Action to Implement) to the correct audiences, such as:</p>
+<ul>
+  <li> Project Progress Updates</li>
+  <li> Specific Change Updates</li>
+  <li> Focused Group Communications</li>
+  <li> Company-Wide Group Announcements</li>
+  <li> Management Updates</li>
+</ul>
+<p> To ensure that the right messages are delivered to the right audience in a way that the information can be received and understood, the organization&rsquo;s capability to use various methods of communication should be considered. The goal is to determine the proper messaging for delivery as well as document the most effective media for delivery of messages in order to encourage readership and effective delivery of messages by sending the right information to the right audience. Examples of media that could be utilized throughout the project are:</p>
+<ul>
+  <li>Corporate web site/intranet</li>
+  <li>Blog</li>
+  <li>Email</li>
+  <li>Newsletter</li>
+  <li>Management Updates</li>
+  <li>Face-to-Face Meetings </li>
+</ul>
+<p>Each audience may have different preferences or technical capability to receive messages. For example, some employees may not have access to the web or e-mail and would not be able to access electronically delivered messages. The media will be determined by the organization&rsquo;s communication culture and the audience preferences or system constraints.</p>
+<p>A general rule of thumb for determining which media will be most effective in reaching a particular audience or conveying a key message is to choose the richest medium possible within the constraints of the situation; richness being judged by the number of information cues it provides. The richest medium is one-on-one communication, which offers the opportunity to observe visual and auditory cues (for example, tone of voice) and receive immediate feedback. Any medium that creates one-way communication, such as a poster or a newsletter, is a lean medium.</p>
+<p>The organization is responsible for the following:</p>
+<ul>
+  <li>Creating effective delivery of customer communications.</li>
+  <li> Ensuring that messages are delivered at the right level.</li>
+  <li> Encouraging readership of key messages.</li>
+</ul>
+<h4>Develop Key Messages </h4>
+<p>The Communication Campaign should address the communication needs of the organization. Include just-in-time messaging in a language the organization can understand and support.</p>
+<p>Key messages are a major component of an organizational communication initiative, and the accuracy of these messages is pivotal to success. Key messages are high level, include a link between the program and the organization&rsquo;s strategic intent, and are generic in that they can live for the entire lifecycle of the program. One or more of the key messages will be part of every piece of communication that is developed. Key messages answer the following questions:</p>
+<ul>
+  <li>What is the program or project?</li>
+  <li>What should I expect?</li>
+  <li>Why is this happening?</li>
+  <li>How will my work be affected?</li>
+  <li>What is happening now?</li>
+  <li>When is the project happening?</li>
+</ul>
+<p>Key message must convince stakeholders that the change is necessary, that the benefits are real, that the project is viable, and that the change is inevitable. While many messages will be generic in nature, meaning they are intended for a broad audience, there will also be tailored messages to specific audiences that are tailored to mitigate risks and concerns. </p>
+<p>The key messages are built to manage specific situations, decrease fears and concerns and in some situation to manage expectations to avoid deception. The key messages have to be clear, concise and jargon free. Some major key messages can be used more than one time to increase their understanding. Each message is created to manage a risk (Impacts/Issues to Manage) selected from the Communication Campaign. They are also adapted to the speaker leadership in the organization and the role of the speakers in the project.</p>
+<p>To help individuals prepare for, understand and accept changes in their work environment, it is crucial to select the most credible speaker to deliver the message. Consider the following:</p>
+<ul>
+  <li> Who has the credibility for this audience?</li>
+  <li> Who has the right leadership to leverage the message?</li>
+  <li> Who can reach more people by carrying this message?</li>
+  <li> What is the right position level for communicating this message (executives, director, manager or a change agent)?</li>
+</ul>
+<p>It is also important to inform and involve all affected groups whose commitment will be required. Key messages should:</p>
+<ul>
+  <li>Provide accurate information to keep stakeholders focused and reduce rumors and performance dips.</li>
+  <li>Provide timely information, using a multi-media approach, tailored to various audience groups.</li>
+  <li>Sustain the interest and energy of the team members and business representatives.</li>
+</ul>
+<p>The objectives of the key messages are to:</p>
+<ul>
+  <li> Manage expectations and reactions. </li>
+  <li> Increase awareness.</li>
+  <li> Create buy-in. </li>
+  <li> Develop targeted just-in-time messages.</li>
+  <li> Identify critical communication points. </li>
+  <li> Foster two-way communication.</li>
+</ul>
+<p> The organization is responsible for the following:</p>
+<ul>
+  <li>Providing the calendar for project communication.</li>
+  <li>Defining events, delivery and audience into a single source executable document.</li>
+  <li> Moving employees through the stages of commitment.</li>
+</ul>
+<h4>Create Communication Campaign </h4>
+<p>The Communication Campaign includes:</p>
+<ul>
+  <li>Target Group (Audience)</li>
+  <li>Impacts/Issues to Manage (Risks)</li>
+  <li>Action to Implement (Mitigation Plan)</li>
+  <li>Key Messages</li>
+  <li>Accountability</li>
+  <li>Timeline (including Status) </li>
+</ul>
+<p>The initial Communication Strategy and Change Management Roadmap  (OCM.130) defined the timeline and descriptions of activities to be conducted (Action to Implement) in order to mitigate risk (Impacts/Issues to Manage) and increase the organization's capacity to undertake or sustain the proposed changes. Using the information gathered, incorporate the necessary communication details to the Communication Campaign.</p>
+<p>The Communication Campaign is complete, when:</p>
+<ul>
+  <li> The audiences are confirmed.</li>
+  <li> The medium for communicating the message is selected based on the audience preferences.</li>
+  <li> The impacts are determined.</li>
+  <li> The actions to put in place are identified and assigned.</li>
+  <li> The key messages are designed and aligned with the action to put in place.</li>
+  <li> The speakers are identified and accountable to carry the messages.</li>
+  <li> A specific date is assigned to each communication initiative.</li>
+  <li> The status of the message is documented and cataloged.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="18%" scope="col"><div align="left">Role</div></th>
+    <th width="76%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Change Management Specialist</div></th>
+    <td>Develop Communication Campaign to involve, inform and generate buy-in from the stakeholders. Provide expertise in the selection of the communication channels that are most compatible with the organization's culture and stakeholders' preferred sources of information. Drive the design of the Communication Campaign in terms of key messages, timing, repetition, feedback mechanisms, etc. </td>
+    <td><div align="center">100</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer Communication Specialist </div></th>
+    <td>Participate in the creation and development of the Communication Campaign with its key messages and selecting communication mediums. Act as spokesperson for the project.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="37%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="63%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ad Hoc Communications (OCM.010) </div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Executive Business Objectives and /Governance Rules (OCM.030)</div></th>
+    <td>The Executive Business Objectives and Governance Rules captures the decisions made during the Executive Alignment Workshop about project vision, objectives, and success criteria in order to communicate them to the project team, middle managers, and end users and manage the impact of the project on the organization as well as to mitigate organizational risks. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Change Readiness Assessment Analysis and Recommendations (OCM.120) </div></th>
+    <td>Translate the findings and recommendations in the Change Readiness Assessment Analysis and Recommendations into an actionable plan that will increase the organization's capacity to undertake and sustain the proposed changes. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Communication Strategy and Change Management Roadmap (OCM.130)</div></th>
+    <td>The Communication Strategy and Change Management Roadmap were used to start building the Communication Campaign, which is what you are updating in this task with the communication details. The Communication Strategy and Change Management Roadmap were used to link communication initiatives with identified risks. This was done to ensure a proactive approach in the communication delivery process as well as to develop strong and meaningful messages for the reader. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="64%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/OCM/OCM-140_COMMUNICATION_CAMPAIGN.DOCX" target="_blank">OCM-140_COMMUNICATION_CAMPAIGN.DOCX</a></div></th>
+    <td>MS WORD -  Use the information from the Communication Strategy (OCM.130) to create the Communication Campaign by adding the essential communication components.
+    </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Communication Campaign is used: </p>
+<ul>
+  <li>to manage issues and challenges</li>
+  <li> to conduct the change and communication events around the key communication themes</li>
+</ul>
+<p>The Communication Campaign should address the following:</p>
+<ul>
+  <li>target audience reaction</li>
+  <li> an approach describing message, objective, events, media, and timeline per audience</li>
+  <li>communication agents&rsquo; assignment definition</li>
+  <li>required resources and logistics for deployment</li>
+  <li>communication schedule </li>
+</ul>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

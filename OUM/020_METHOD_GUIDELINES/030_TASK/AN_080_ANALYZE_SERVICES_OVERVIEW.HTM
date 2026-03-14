@@ -1,0 +1,509 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AN.080 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>AN.080 - ANALYZE SERVICES</h2>
+<!--BeginDesc-->
+<p>The purpose of  this task is to analyze all the candidate services listed in the Service Portfolio - Candidate Services (RA.025). Once this task is completed, the Service Portfolio is updated to contain the list of service candidates that are required to support the project requirements. The service candidates are organized to indicate how to move forward with each candidate.</p>
+<p>For SOA services you will typically have a list with required new services, a list of change requests against existing services, and a list of reuse requests for existing services proposed by the project. </p>
+<p>For Cloud services, you may choose to organize the service candidates similarly if the enterprise is the provider of Cloud SaaS services. However, in other Cloud scenarios, you may find another approach for organizing the services to be more suitable. </p>
+<p>In addition, the proposed services are registered in the Enterprise Repository to allow other projects to discover the proposed changes. </p>
+<p>It is a leading practice to have the proposed services from the project reviewed by service portfolio management and enterprise architecture. For each entry on any of the lists in the Service Portfolio, define who should be given the responsibility of delivering each service. For most points, the delivery and reuse or consumption of services will be the responsibility of the project. However, in the case of existing services that need revisions, the delivery will often need to be provided by the original creators, or owners of that service (either internal or external if the provider is external to the enterprise).</p><!--EndDesc-->
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>AN.080.1</h4>
+<p><a href="../040_ACTIVITY/BACTAE_ANALYZE_ELAB.HTM" target="_blank">B.ACT.AE Analyze - Elaboration </a></p>
+<h4>AN.080.2</h4>
+<p><a href="../040_ACTIVITY/CACTAC_ANALYZE_CONST.HTM" target="_blank">C.ACT.AC Analyze - Construction </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Service Portfolio - Proposed Services</b></p>
+<p>The Proposed Services includes both the set of services the project proposes as new services to be created by the project team and the set of existing services the project plans to consume. </p>
+<p>When an Enterprise Repository has been established, the service portfolio is updated with the new services or service versions.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Perform classification.</td>
+    <td>Classified Service Candidate </td>
+    <td>The Classified Service Candidates shows how the service candidates are classified against the classifications defined by Service Portfolio Management. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine evaluation and weighting criteria.</td>
+    <td>Evaluation and Weighting Criteria</td>
+    <td>The Evaluation and Weighting Criteria explains the method and criteria against which each service candidate will be analyzed. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Evaluate candidates. </td>
+    <td>Evaluated Service Candidates </td>
+    <td>The Evaluated Service Candidates list all the service candidates with their evaluation result and reasoning.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine dependencies. </td>
+    <td>Service Dependencies </td>
+    <td>The Service Dependencies describes existing service dependencies. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Assign ownership. </td>
+    <td>Service Candidate Ownership</td>
+    <td>The Service Candidates Ownership documents the Identified owner for each service candidate.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Update the Service Portfolio. </td>
+    <td>Service Portfolio - Proposed Services </td>
+    <td>The updated Service Portfolio - Proposed Services is updated with the results of the analysis. When an Enterprise Repository is being used, the Service Portfolio is part of the repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Perform service traceability. </td>
+    <td>Service Traceability </td>
+    <td>The Service Traceability shows the traceability from requirements (use cases, business processes, or supplemental requirements) to the service(s) that should implement the requirements. Optionally, you can use the MoSCoW List-Excel (RD.045) for traceabiilty of requirements when there is no Enterprise Repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Review results. </td>
+    <td>Service Assets </td>
+    <td>Review the results of your analysis.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Perform Classification</h4>
+<p>Here you perform a first categorization of all the new service candidates you have identified so far. Typically you will use some predefined categories that may have been defined by the Service Portfolio Management process of the Enterprise. If no classification of categories have been defined earlier, then it will be your responsibility to develop one that is appropriate for the situation. </p>
+<p> During this exercise, you may discover new candidate services. If so, include these in the list of candidates, and document these in a similar way as defined by the service portfolio management process and the enterprise repository. If a service cannot be classified against exactly one category, this typically shows a service boundary violation. For each boundary violated, you should split the service to fit. As a result you may see a single candidate service become multiple candidate services, each with a finer granularity than the original. In that case, check the repository again to avoid creation of a duplicate. In that case, check the repository again to not create a duplicate. For SOA Services, refer to the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a> technique for more information.</p>
+<p>For each new candidate service proposed for the project:</p>
+<ul>
+  <li>Select a category for the service from the Service Category List, based on the service goal and its capabilities;</li>
+  <li>If the service fits more than one category:<br>
+      <ul>
+        <li>Find out the reasons for the multiplicity of categories.</li>
+        <li>Refactor the service to create fine-grained services and ensure that each new service is of a single category.</li>
+        <li>Aggregate fine-grained service to form coarse-grained services, where applicable.</li>
+        <li>Select category for each newly discovered service candidate.</li>
+        <li>Ensure that every new service created through refactoring is not a duplicate.</li>
+      </ul>
+  </li>
+</ul>
+<p> SOA Services Example:</p>
+<p> In a time management project, the Time Management Service is a process service that manages the submission of invoices based on employee timesheet submitted for projects. </p>
+<p>The Time Management Service (service candidate) includes the following capabilities: </p>
+<ul>
+  <li>Get hours worked by project and customer.</li>
+  <li>Verify timesheet.</li>
+  <li>Invoice customer for billable hours.</li>
+  <li>Update employee personal information.</li>
+  <li>Update employee hours worked on a project.</li>
+</ul>
+<p> The service is classified as follows:</p>
+<ul>
+  <li>Data (entity) service &ndash; it provides the capability to maintain employee information related to time keeping.</li>
+  <li>Business Process service &ndash; it manages the process of submitting an invoice to a customer.</li>
+</ul>
+<p>Further analysis of the components of the service operations results in the refactoring the service into three services:</p>
+<ul>
+  <li> Employee Service &ndash; this is an entity-type services that manages employee information.</li>
+  <li> Time Management Service &ndash; this service manages time for employees and projects.</li>
+  <li>Invoice Service &ndash; computes an invoice to be submitted to customers.</li>
+</ul>
+<p>The Domain Model shown below is used to allocate responsibilities to each service based on the classes in the model.</p>
+<p align="center"> <img src="../../010_COMMON_FILES/AN080_Domain.jpg" alt="Example Domain Model allocating responsibilities to each service based on the classes in the model" width="576" height="397" title="Example Domain Model allocating responsibilities to each service based on the classes in the model"></p>
+<h4>Determine Evaluation and Weighting Criteria </h4>
+<p>Before starting the evaluation of the service candidates, you need to determine exactly what should be evaluated. For example for a SOA engagement, you typically evaluate whether or not you want to develop or reuse a candidate. However, for a Cloud type of engagement you may evaluate whether a service candidate is appropriate for the cloud, and if so whether it is best suited to be deployed in a private or public cloud. You will also need to determine the evaluation criteria, and what weighting criteria you will use for of those evaluation criteria. </p>
+<p>The evaluation criteria must be chosen so that you will be able to validate the benefits and evaluate the risks for either developing each new service, or for reusing or consuming a known existing service (internally or externally). </p>
+<p>If the service candidates are SOA service candidates, consider evaluating for the following types benefits: </p>
+<ul>
+  <li> benefit arising due to the planned scope of the service candidate, e.g., on what level will it be available, e.g., multi-enterprise, enterprise, intra-application (LOB), inter-application</li>
+  <li> level of reusability of the service candidate, i.e., probability of additional consumers having an interest on the service candidate - A service may also be deemed to be an intra-application service. </li>
+  <li> level of business agility created by the service candidate - that is, will a change in the business process be accommodated by the service model </li>
+  <li> level of enterprise compliance created by the service candidate </li>
+  <li> enablement to create the service candidate from already existing assets - can the service be created by composing other services, existing or planned</li>
+</ul>
+<p>Also if the service candidates are SOA service candidates, consider the following risks factors: </p>
+<ul>
+  <li> availability of the skill set to create the functionality in sharable style </li>
+  <li> need and availability of additional tools or technology needed to create a sharable service </li>
+  <li> impact on all projects incurred by realizing a shared service </li>
+  <li> level of difficulty to realize all requirements as a shared service</li>
+  <li>ability to create a service that satisfies the service level agreement, such as response time under the projected demand scenarios</li>
+  <li>availability of runtime governance technology that monitors service execution and enforces service policies</li>
+  <li>availability of security control</li>
+</ul>
+<p>See the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery</a> technique for more guidance in the justification criteria for SOA services. </p>
+<p>On the other hand, if the service candidates are cloud service candidates, you may consider evaluating against a completely different set of criteria, such as the following:</p>
+<ul type="disc">
+  <li>What are the availability requirements?</li>
+  <li>What are the latency requirements?</li>
+  <li>Are there any government regulations to consider?</li>
+  <li>What are the security requirements? </li>
+  <li>and other similar questions</li>
+</ul>
+<p>There are many organizations, including Oracle, that have defined candidate cloud selection tools. Refer to the <a href="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM#CLOUDLINKS" target="_blank">Cloud Resources</a> on the <a href="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM" target="_blank">Supplemental Guidance</a> page for further information. </p>
+<p>The whole purpose of the analysis is to maximize the business benefit ensuring that you best meet the requirements, and minimizing the risks for the organization.</p>
+<h4>Evaluate Candidates </h4>
+<p>For each new candidate, evaluate against all criteria as defined in the previous step that are relevant for the type of service candidate. </p>
+<p>When you have evaluated a service candidate against the criteria, you should be able to determine the potential business value of moving forward with the candidate, and how it fits the requirements. You should also be able to determine the potential risks, and whether the risks can be mitigated. For each service candidate, you should summarize the potential business benefits, and the known risks, including potential risk mitigation strategies.</p>
+<p>Reflect the results of the benefits and risks analysis and decide if the candidate can be abandoned. Abandoned candidates need to be further analyzed in application scope to decide upon an implementation strategy.</p>
+<h5>VALIDATE SERVICE REUSE </h5>
+<p> For each service listed to be reused with or without revisions, or each service listed to be consumed from another supplier, follow the validation process to prove the usability in the scope of the current project. Consider the following aspects: </p>
+<ul>
+  <li>prove that the requirements match (between the current project and the existing service), especially if the service needs to be updated for reuse. In the case that updates are needed, how important are those requirements? Is it feasible to reuse even if updates are not granted?</li>
+  <li> verify that the reuse of a service is authorized in the scope and requirements of the current project. </li>
+  <li> determine if the capacity provided by the current services fits the new needs, or that capacity can be enhanced to the load expected from the current project</li>
+</ul>
+<p> The <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery</a> technique provides more guidance on the reuse validation process. </p>
+<p> In the case of using an existing known service, contact the owner of the service (internal or external) that you are evaluating for reuse. Preferably, you work together with the service originator to consider the new requirements and to decide whether the service can be reused, or if the requirements themselves need to change.</p>
+<h5>ANALYZE THE QUALITY OF SERVICE (QoS) REQUREMENTS  </h5>
+<p>For each new service candidate, identify the QoS attributes that include: </p>
+<ul>
+  <li>expected response time by operation </li>
+  <li>scalability &ndash; demand (requests per minute) at peak hours and average</li>
+  <li>trends &ndash; demand forecast for the service and especially operations (functions) that are most critical</li>
+  <li>availability requirements</li>
+  <li>security provisions</li>
+</ul>
+<p> For each existing service expected to be used:</p>
+<ul>
+  <li>Analyze the additional demand that the project will generate. </li>
+  <li>Capture service level requirements for the project. Use the information to discuss the new demand with the service owner. </li>
+  <li>Forecast the demand for a planning horizon such as 1-2 years. </li>
+</ul>
+<h6>Example:</h6>
+<p> The service candidate Time Recording Service is a new service, which exposes an existing COTS application. It is expected to increase the demand on the existing legacy application. Analysis suggests the following non-functional requirements, derived from the use case descriptions, or the equivalent requirements document.</p>
+<p>Response time</p>
+<ul>
+  <li>submit timesheet &ndash; 1-3 seconds</li>
+  <li>get timesheet by employee &ndash; 3-5 seconds</li>
+</ul>
+<p>Demand</p>
+<ul>
+  <li> peak demand - 25,000 requests per minute, between 10am -11:30am</li>
+  <li>average demand &ndash; 12,000 requests per minute </li>
+</ul>
+<h5>ANALYZE CHANGES TO EXISTING SERVICES </h5>
+<p> Identify existing services that the project requires to reuse and identify changes that will be needed for reuse.</p>
+<p>Changes may include, among others:</p>
+<ul>
+  <li>additional operations</li>
+  <li>changes to the signature of existing operations &ndash; Consider adding operations so that to minimize the impact on existing consumers.</li>
+  <li>logic changes &ndash; Changes to the logic of one or more operations.</li>
+</ul>
+<h4>Determine Dependencies </h4>
+<p>Investigate any dependencies for the service. For a SOA composite service candidate, what are the dependencies to other services? Do they exist and can they be reused, or do they also need to be developed? For a cloud service candidate, what affinities exist to other components, and what level of affinity exist? </p>
+<h4>Assign Ownership</h4>
+<p> Each new service candidate should have an assigned owner. Typically, services should have a business owner. Check with the business sponsor for the project ownership of new service candidates. Typically, the business sponsor will become the owner. But a different owner may be applicable as well, for example, if the service provides access to a legacy system owned by a different line of business. </p>
+<p>If the service candidate is provided by an external supplier, the external supplier is the owner, but you should also identify an internal &ldquo;owner&rdquo;, to ensure the required sponsorship.</p>
+<p> Typically, for services that need to be changed, the owner will not be changed. </p>
+<h4>Update the Service Portfolio </h4>
+<p> Depending on the governance approach chosen, you may need to document the results of your analysis. Specifically, if you want to be able to provide your results to the business, or if you need to initiate a review of your results, a document summarizing the results can be very helpful. </p>
+<p> Update the Service Portfolio you created in task RA.025. Add a new chapter &ldquo;Analysis Results&rdquo; document the results of the analysis, including potential new service candidates, new service usage candidates or new service revision candidates.</p>
+<p> When an Enterprise Repository is being used, the Service Portfolio should be considered to be an asset-type stored within the enterprise repository. The list of new service candidates proposed should have an entry for each new service candidate added to the enterprise repository with status proposed (if not already done as part of Envision work). Create all dependency links to models, requirements, etc. that apply. </p>
+<p>For each service that needs to be changed for reuse, create a new version of the service asset already available in the Enterprise Repository. Update the links to the new model versions and requirement versions.</p>
+<p>For each service used in the project, regardless if that service is to be reused or is a new service, create a usage agreement asset in the enterprise repository in proposed state and link it to the service asset. If already known, link to the consuming part as well, i.e., another service or an application. In the case where a new application is a new consumer of the service, you might need to create a new asset for the application. Analyze the business requirements to understand the expected load the project will create on the services. For that purpose, analyze the expected increase in volume the business expects over time including peak times on day, week and year. Attach the information to the usage agreement and if already possible translate the business forecast into number of requests against the service. </p>
+<p>Review the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM">IT Asset Management</a> technique for further details on the meta data descriptions for services and usage agreements.</p>
+<p>If you use an enterprise repository, you may use a report generated from the repository to include the description of the service in the work product. In addition, you may provide the protocol for the justification of the service. </p>
+<p>You may also use the tool to create a list for the new service version when that is appropriate. Also, when relevant, you may provide a change requests needed for existing services. For that purpose you can collect the changes resulting from the review of the project requirements, list those requirements to be addressed as a result of the change request.</p>
+<p>Before the list for proposed service usage, you should consider including the business forecast you have used to describe the load on each service. The list will need to contain all services to which you have created a usage agreement and should provide a short description covering the scope of planned usage. You may copy this from the Service Portfolio created in RA.025.</p>
+<p>If the organization does not have a physical Enterprise Repository, and previous services have been captured in the Service Portfolio template (IP.014), use that same Service Portfolio template (IP.014) to capture the Proposed Services in the same format. This will allow you to easily merge a candidate service into the Service Portfolio at a later point, as appropriate.</p>
+<h4>Perform Service Traceability</h4>
+<p>All services should be traceable to specific textual requirements, high-level use cases, business processes, or supplemental requirements. Linking the services to those requirements provides useful information for later, in particular for change impact analysis and test preparation.</p>
+<p>During the task to identify candidate services (RA.015), you should already have documented the origin of the candidate (i.e., the source of discovery). Services that were originally discovered via captured requirements, policies, domain models, etc. should be revisited to see whether they can be mapped to use cases or to a high-level business process. If, so add the corresponding dependency to the Enterprise Repository.</p>
+<h4>Review the Results</h4>
+<p> If the governance process defines an external review of your results, you can use the Service Portfolio as handover to the reviewing team or person. In that case, the reviewer will be responsible for changing each service candidate state from proposed, to validated or declined.</p>
+<p> Otherwise, you should ask for an enterprise architect to support you on the review of your analysis. Change the state of the services to validated or declined according to your results. </p>
+<p> For all declined candidates, new versions or usage agreements for an alternative solution need to be identified possibly triggering another analysis cycle. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4> BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#AN0801" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#AN080" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="18%" scope="col"><div align="left">Role</div></th>
+    <th width="76%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Analyst</div></th>
+    <td>Analyze services.</td>
+    <td><div align="center">50</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect </div></th>
+    <td>Analyze services. If possible, you may want use a system architect with extensive SOA experience.</td>
+    <td><div align="center">50</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<h4>AN.080.1</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="26%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="74%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Governance Implementation (ENV.GV.100)</div></th>
+    <td>If an Enterprise Repository is in use, the Governance Implementation (that is, the related policies and processes) describes how to govern the proposed services and their relationships to other IT assets. In addition, ensure that the final proposed services and their relationships are added/updated in the repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Service Portfolio - Candidate Services (RA.025.2)</div></th>
+    <td>The document provides the scope for the analysis and will be updated with the results </td>
+  </tr>
+</table>
+<h4>AN.080.2</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="26%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="74%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Service Portfolio - Proposed Services (AN.080.1) </div></th>
+    <td>Update the Service Portfolio with new and refined services.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Governance Implementation (ENV.GV.100)</div></th>
+    <td>If an Enterprise Repository is in use, the Governance Implementation (that is, the related policies and processes) describes how to govern the proposed services and their relationships to other IT assets. In addition, ensure that the final proposed services and their relationships are added/updated in the repository.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="21%" scope="col"><div align="left">Technique</div></th>
+    <th width="79%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></div></th>
+    <td><div align="left">Use this technique to access information on the meta data descriptions for services and usage agreements. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a></div></th>
+    <td><div align="left">Use this technique to understand the service lifecycle and the Enterprise Repository assets used. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis </a></div></th>
+    <td><div align="left">Use this technique to understand how to define services in the right level of granularity using boundary analysis. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery </a></div></th>
+    <td><div align="left">Use this technique to understand the approach to discover, reuse and identify new service candidates with the help of models and requirement documents. Includes a description of the justification process to analyze benefits and risks. </div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="21%" scope="col"><div align="left">Technique</div></th>
+    <th width="79%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/040_TEMPLATES_AND_GUIDANCE/IP/IP-014_SERVICE_PORTFOLIO.XLSX" target="_blank">IP-014_SERVICE_PORTFOLIO.XLSX</a> </div></th>
+    <td><div align="left">MS EXCEL - If the organization does not have a physical Enterprise Repository, and SOA services have been captured in the Service Portfolio template (IP.014), use the Service Portfolio template (IP.014) to capture the Proposed Services in the same format as the Service Portfolio. This will allow you to easily merge a candidate service into the Service Portfolio at a later point, as appropriate.</div></td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="ExampleScen" title="Example Scenarios" summary="This table lists any example scenario information for this task with any relevant comments. It is organized with columns for Example Scenario and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left"><a name="EXAMPLES" id="EXAMPLES"></a>Example Scenario</div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM" target="_blank">FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD (OUM) </a></div></th>
+    <td>Provides a scenario example that will be useful when performing this task</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="21%" scope="col"><div align="left">Tool</div></th>
+    <th width="79%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="http://www.oracle.com/technetwork/middleware/repository/overview/index.html" target="_blank">Oracle Enterprise Repository </a></div></th>
+    <td>The Oracle Enterprise Repository is a COTS Enterprise Repository tool solution that is used to establish and maintain an Enterprise Repository. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The Service Portfolio &ndash; Proposed Services work product is used in the following ways:</p>
+<ul>
+  <li>to understand which services are proposed to best support the project requirements</li>
+  <li>to provide enough understanding of the proposed services, to be able to make a final decision for implementation</li>
+</ul>
+<p>Distribute the Service Portfolio &ndash; Proposed Services as follows:</p>
+<ul>
+  <li>to requirements stakeholders for review of the suggested services supporting the requirements</li>
+  <li>to (candidate) service owners for review</li>
+  <li>to enterprise architects for review</li>
+  <li>to decision makers (individuals or boards) for final decision</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li>Have all service candidates been classified against the classifications defined by the Service Portfolio Management process of the enterprise (if present)?</li>
+  <li>Has the evaluation and weighting criteria for the analysis been clearly documented?</li>
+  <li>Has each service candidate been evaluated and weighted consistently against the same evaluation and weighting criteria?</li>
+  <li>Has each service candidate any dependencies been documented?</li>
+  <li>Has an owner been assigned to each service candidate?</li>
+  <li>Have the service candidates been included or updated within the Enterprise Repository?</li>
+  <li>Is there a clear trace from requirement to each service candidate?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

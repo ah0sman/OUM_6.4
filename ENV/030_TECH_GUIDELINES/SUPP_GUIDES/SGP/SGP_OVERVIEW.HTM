@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Governance Planning Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Governance Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#WHAT">What is SOA Governance Planning?</option>
+                            <option value="#WHEN">When Do You Use the SOA Governance Planning View</option>
+                            <option value="#WHATPROC">SOA Governance Planning Overview</option>
+                            <option value="#WHATPROG">What Other Views Relate to the SOA Governance Planning View?</option>
+                            <option value="#HOWOUM">How Does SOA Governance Planning Relate to OUM?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_GP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) GOVERNANCE PLANNING OVERVIEW </h2>
+<h3><b><A 
+name=WHAT id="WHAT"></A></b>WHAT IS SOA GOVERNANCE PLANNING?</h3>
+<p>The SOA Governance Planning View and Supplemental Guide are used to help organizations build a SOA Governance Model that manages the SOA key assets. Many enterprises struggle with SOA adoption, and one of the reasons is that the benefits of SOA do not come automatically. A company needs an appropriate SOA Governance Model that manages the SOA key assets such as Services, Reference Architecture and the Service Infrastructure Layer. Performing a planning engagement based on this view, provides a roadmap for the adoption of SOA Governance tailored to the manner in which a given organization works. During the engagement, you work with the organization to capture relevant information about Governance structures and practices, facilitate the development of the Governance vision and work with the organization&rsquo;s staff to develop the Governance Roadmap. As with all SOA planning views, this view is used to plan one particular aspect of the SOA strategy and can be combined with other SOA planning views based on the organization&rsquo;s needs.</p>
+<p>The view is not intended to cover all aspects of SOA Governance but to focus on some key structures, processes and tools that an organization would initially require. To assist with this process, a SOA Governance Framework will be used to develop an organization SOA Governance Model: </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_FW_PNG.png" alt="SOA Governance Framework" width="799" height="412" title="SOA Governance Framework"></p>
+<p>Performing a planning engagement based on this view, you will provide:</p>
+<ul>
+  <li> A roadmap for the adoption of SOA governance tailored to the manner in which a given organization works.</li>
+  <li> The roadmap defines a set of pragmatic, incremental steps, organized into themes, to progress an organization from their current organizational structures and governance practices to their own vision for workable SOA governance. </li>
+</ul>
+<p>During the engagement, you work with the organization to capture relevant information about governance structures and practices, facilitate the development of the governance vision and work with the organization&rsquo;s staff to develop the governance roadmap.</p>
+<h4>What is Governance?</h4>
+<p>Governance is the harvesting and management of key assets owned by an organization to promote and enforce their use for maximum business benefit. Governance takes many forms and has gained more coverage recently due to financial scandals resulting in new compliance procedures/policies. These procedures and policies are established and administered to an environment to influence and enforce the action and behaviors that align with the business needs.</p>
+<p>Examples of governance are Corporate, IT, Architecture and now SOA Governance. Corporate governance manages key assets such as Financial, Intellectual property while IT governance covers all aspects of investment and risk management across all applications, systems, hardware, software and IT. In this view, we are looking further into SOA Governance. </p>
+<h4>Why Do We Need SOA Governance?</h4>
+<p>The benefits of SOA do not come automatically and therefore a company should have an appropriate SOA Governance model that manages the SOA key assets such as Services, Reference Architecture and the Service Infrastructure Layer. </p>
+<TABLE width="100%" title="SOA Benefits and Their Challenges" summary="This table lists the benefits of SOA in the first two columns and the Challenges of Achieving the Benefits of SOA in the last two columns.">
+  <TBODY>
+    <TR>
+      <th scope="col" height="26" colspan="2"><div align="center">Benefits of SOA </div></th>
+      <th scope="col" colspan="2"><div align="center"><b>Challenges of Achieving the Benefits of SOA</b></div></th>
+    </TR>
+    <TR>
+      <TD width="25%" align="left" valign="top"><ul>
+          <li>Business Agility</li>
+      </ul></TD>
+      <TD width="25%" align="left" valign="top"><ul>
+          <li>Unified Infrastructure </li>
+      </ul></TD>
+      <TD width="25%" align="left" valign="top"><ul>
+          <li>Lack of Tools </li>
+      </ul></TD>
+      <TD width="25%" align="left" valign="top"><ul>
+          <li>Maturity of Web Services Standards </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>IT Agility</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Business Process Standardization </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Standards Proliferation</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Service Sprawl</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Flexible Architecture </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Agile Development</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Confusing Priorities </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Registry Sprawl </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Productivity Gains </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Incremental Development </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Standards Compliance</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>&quot;Right-Click Architecture&quot; </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Effective Use of External Service Providers</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Incremental Deployment</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Business/IT Relationship </li>
+      </ul></TD>
+      <TD align="left" valign="top"><div align="left">
+          <ul>
+            <li>Culture Change </li>
+          </ul>
+      </div></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Faster Deployment</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Operational Improvement </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Multiple Silo-ed SOAs </li>
+      </ul></TD>
+      <TD align="left" valign="top"><div align="left">
+          <ul>
+            <li>Change Management </li>
+          </ul>
+      </div></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Skill-Set Portability</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>IT Aligned with Business </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Lack of SOA Roadmap </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Lack of Appropriate Operational Processes </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Optimal User Experience </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Unified Data Access </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Lack of Best Practices </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Lack of Skills and Experience </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Reuse of Services </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Re-Purposing of Services </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Organization Friction</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Hype versus Reality </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Standards Based </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>De-Commissioning of Older Applications </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Enterprise vs. LOB Decisions </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Lack of Means to Measure Progress</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Effective Integration with Business Partners </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Outsource Enablement </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Funding</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>...</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><ul>
+          <li>Quicker Re-Composition of Business Processes </li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>...</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Charge-Back Models </li>
+      </ul></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>Enterprises have stated that a lack of organizational and governance model is a leading inhibitor of SOA adoption as highlighted by an InfoWorld SOA Research.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/LACK_OF_SOA_GOV.PNG" alt="Leading SOA Inhibitors Showing Lack of Gorverance as a Leading SOA Inhibitor" width="552" height="374" title="Leading SOA Inhibitors Showing Lack of Gorverance as a Leading SOA Inhibitor"></p>
+<p>Even the organizations that have embarked on SOA are coming to the conclusion that an in-appropriate governance model is a leading inhibitor to achieving the benefits that SOA offers.</p>
+<p>The type of challenges an organization encounters is very much dependent on where the organization is on the SOA adoption curve.</p>
+<h4>What is SOA Governance?</h4>
+<TABLE width="32%" border=1 align="center" role="presentation">
+  <TBODY>
+    <TR>
+      <TD width="68%" align="left" valign="top"><div align="center">&ldquo;An Agile and efficient decision and accountability framework to effectively encourage and assist in realizing the benefits of SOA&rdquo;</div></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>There is sometimes confusion at what exactly SOA Governance is. This confusion has mainly been initiated from some WSM and Registry vendors in which they position their products as SOA Governance tools. In effect these tools govern SOA Operational Governance and tend not to focus on the other areas of SOA Governance.</p>
+<p>SOA transforms the way that IT is delivered to the business and in doing so, the way in which IT itself operates. Therefore, the business must undertake a number of evolutionary changes for that transformation to be successful. Previous attempts to transform the enterprise through re-use of IT assets have met with limited success, and in general, shortcomings in functionality definition, change management design, project management or technology have been cited as the reasons for poor results. In all cases, no matter how much improvement could have been made in any one discipline, it is important to note that a pivotal factor was the absence of meaningful and sustainable organization and Governance principles. </p>
+<p>So SOA Governance is not only the operational governance of services but also the design time aspects and the supporting artifacts that dictate the policies, controls, processes, structures and standards that a company utilizes to build their own unique SOA Governance Model.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_TRIANGLE.PNG" alt="SOA Governance Triangle Showing the Three Sides of Design-Time, Operations and Meta-Governance" width="578" height="244" title="SOA Governance Triangle Showing the Three Sides of Design-Time, Operations and Meta-Governance"></p>
+<p align="left">SOA Governance must not be seen as a standalone and silo function but takes it direction from many sources, as shown in the figure below:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_SOURCES.PNG" alt="SOA Governance Sources" width="651" height="304" title="SOA Governance Sources"></p>
+<p align="left">Therefore, there is no one SOA Governance Model that is applicable to every company because of various differences between each company such as:</p>
+<ul>
+  <li>existing organization structures in place</li>
+  <li>existing governance in place </li>
+  <li>SOA maturity level</li>
+  <li>geographical</li>
+  <li>political consideration</li>
+  <li>size of corporation, etc. </li>
+</ul>
+<h4 align="left">What is a SOA Governance Model?</h4>
+<p>As already stated, there is no single SOA Governance Model that is applicable to every organization. Therefore, the following questions must be answered for every organization:</p>
+<ul>
+  <li>What decisions needs to be made for an organization to have effective SOA Governance?</li>
+  <li> Who should make these SOA Governance decisions?</li>
+  <li> How will these SOA Governance decisions be made and monitored?</li>
+  <li> What structures, process, communication, and tools should be deployed?</li>
+</ul>
+<p>The following shows the areas that should be considered as part of a high-level SOA Governance Model:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_AREAS.PNG" alt="Example High-Level SOA Governance Model" width="755" height="439" title="Example High-Level SOA Governance Model"></p>
+<p>Once a SOA Governance Model has been defined it allows:</p>
+<ul>
+  <li>the enablement of the definition of policies and processes to guide management into making effective SOA decisions</li>
+  <li> the definition of the structures that enable the policies and processes</li>
+  <li> the management of all SOA assets, not just services</li>
+  <li> aids in minimizing or avoiding potential conflicts of interest and in making decisions that are fair to all parties</li>
+  <li> the collaboration from stakeholders to adhere to processes and authority structures</li>
+  <li> the encouragement/enforcement of authorized groups towards SOA architecture and cultural orientation</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHEN id="WHEN"></A></b>WHEN DO YOU USE THE SOA GOVERNANCE PLANNING VIEW?</h3>
+<p>This view can best be used when the organization does not have a SOA Governance Model in place and needs to devise a plan to adopt SOA Governance as part of their overall SOA adoption plan.</p>
+<p>Frequently, organizations have a technical plan and capability for SOA adoption, but need more assistance with the necessary governance to allow their SOA implementation to take root on an institutional level to realize the full benefits of SOA. In general, it is intended that this view should support this process.</p>
+<p>Consider using this view for every SOA engagement in terms of the following four entry points to verify whether it is appropriate or not.</p>
+<p><img src="../../../010_COMMON_FILES/SOA_GOV_ENTRY_POINTS.PNG" width="294" height="265" align="left"></p>
+<TABLE role="presentation">
+  <TBODY>
+    <TR>
+      <TD align="left" valign="top"><p>Business-Led Projects: If the project is cross-organizational in impact, a SOA Governance Planning engagement will be timely if SOA Governance is not already mature.</p>
+          <p>&nbsp;</p></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Mega Projects: A SOA Governance Planning engagement is almost certainly needed at least to review the existing SOA Governance in the case where it is already mature.</p>
+          <p>&nbsp;</p></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>IT-Led Projects: If the project is small (within a division, piloting technology rather than rolling out services to a number of projects or divisions) then it is likely too early for a SOA Governance Planning engagement.</p>
+          <p>&nbsp;</p></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Process Projects: If the project is too small in nature, the organization is usually in the early stages of adoption; therefore, there would be no need for this view.</p></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>Value Proposition</p>
+<p> The use of this SOA Governance Planning View provides the following benefits:</p>
+<ul>
+  <li>a shared understanding among SOA stakeholders from the business and IT sides of an organization as to the need, requirements, vision and execution plan for SOA governance</li>
+  <li>the definition of workable SOA governance organizational structures for the organization, and the roles and responsibilities of the participants in those organizational structures</li>
+  <li>the identification of needed policies, practices, processes and guidelines for SOA governance</li>
+  <li>the definition of a means to communicate governance artifacts and decisions that affect SOA adoption across the organization</li>
+  <li>the definition of a roadmap to achieve the defined governance organization structures, policies, practices, processes and guidelines incrementally to reduce risk and prioritize to deliver the greatest benefit at the earliest time</li>
+  <li>the realization by organizations that a governance model needs to be continuously reviewed and re-aligned if they want to be successful in executing SOA</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROC id="WHATPROC"></a></b>SOA GOVERNANCE PLANNING OVERVIEW </h3>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_OV_INTRO.PNG" alt="SOA Governance Planning Overview" width="884" height="217" title="SOA Governance Planning Overview"></p>
+<p>The Current Reality &ndash; Future Vision &ndash; Roadmap concept is applied for this view. The scope of each area must be carefully defined to make sure it fits the customer&rsquo;s needs and expectations. The Current Reality &ndash; Future Vision &ndash; Roadmap section of the engagement (which forms the main part of the engagement) should be conducted in a time-boxed fashion, and it is important to be aware that these areas may not be contiguous.</p>
+<h4>Workflow and Stream </h4>
+<p>The following is a high-level workflow that describes the areas and themes in the SOA Governance Planning View: </p>
+<p align="center"><a name="SGPOD"></a><img src="../../../010_COMMON_FILES/SGP_OVERVIEW.PNG" alt="SOA Governance Planning High-Level Workflow" width="986" height="674" title="SOA Governance Planning High-Level Workflow"></p>
+<p>There are five areas in the SOA Governance Planning view, each with its own set of tasks.</p>
+<p><b>MOBILIZATION</b> &ndash; Once the organization has agreed that a SOA Governance Planning engagement meets their needs, Mobilization can begin. Mobilization must be done thoroughly as it is all too easy to over-promise and under-deliver if the boundaries for the engagement and the content of the deliverables are not spelled out properly, or if the resources needed to execute the engagement are unavailable. Taking the time and making the effort to set and close scope properly will result in a smooth engagement and a satisfied organization. Additional guidance on Mobilization can be found in the <a href="SGP_TASK_GUIDELINES.HTM#MG" target="_blank">SOA Governance Planning Task Guidelines</a>. </p>
+<p><b>CURRENT REALITY</b> &ndash; A pragmatic and effective Roadmap cannot be built until there is a common understanding on the current situation. Many organizations will comment that &ldquo;we know what&rsquo;s wrong&rdquo; or similar. Simply put, unless there is a wide consensus as to what is right and wrong (a true benchmark), it is difficult to put in place the steps to take them where they want to go. Without Current Reality, the proposed Roadmap will probably be built from assumptions, hearsay and conjecture. Even worse, the roadmap could be so generic that it will be of little use to the organization.</p>
+<p>Therefore, once there is a shared agreement as to where the organization is today, the next step is to conduct a current reality assessment. The current reality assessment provides important information on baseline conditions and helps determine what changes will have the greatest positive impact on the organization. The current reality assessment also provides early indication of potential areas of resistance or implementation barriers. Additional guidance on Current Reality can be found in the <a href="SGP_TASK_GUIDELINES.HTM#CRG" target="_blank">SOA Governance Planning Task Guidelines</a>. </p>
+<p> <b>FUTURE VISION</b> &ndash; The Future Vision is not about defining the structures and processes required for the organization to execute their next project. The Future Vision area is about defining the optimal structures and supporting processes to which the organization can transition over a 2-3 year period while at the same time not over emphasizing the current barriers to success. It is important to understand that there is no &ldquo;one size fits all&rdquo; Governance Model; therefore, a collaborative approach is the most pragmatic approach to jointly design the appropriate SOA Governance Model. An agreed on Future Vision Governance Model gives the Roadmap area a solid foundation on which to build a pragmatic, effective and incremental Roadmap. Additional guidance on Future Vision can be found in the <a href="SGP_TASK_GUIDELINES.HTM#FVG" target="_blank">SOA Governance Planning Task Guidelines</a>.</p>
+<p align="left"><b>ROADMAP</b> &ndash; The Roadmap area addresses how to transition from the Current Reality to the defined Future Vision in a pragmatic and effective manner. Additional guidance on the Roadmap area can be found in the <a href="SGP_TASK_GUIDELINES.HTM#RG" target="_blank">SOA Governance Planning Task Guidelines</a>.</p>
+<p><b>POST DELIVERY</b> - Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned. Additional guidance on Post Delivery can be found in the <a href="SGP_TASK_GUIDELINES.HTM#PDG" target="_blank">SOA Governance Planning Task Guidelines</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROG id="WHATPROG"></a></b>WHAT OTHER VIEWS RELATE TO THE SOA GOVERNANCE PLANNING VIEW? </h3>
+<p>Refer to the <A 
+href="../../../../OUM/OUM_HOME_SOAINOUM.HTM" target=_blank>SOA in OUM</A> page for access as well as descriptions for all the SOA views in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES SOA GOVERNANCE PLANNING RELATE TO OUM? </h3>
+<p>The SOA Governance Planning process has been mapped to the Envision focus area of Oracle Unified Method to help show which tasks would typically be performed during each of the four areas from Mobilization to Roadmap. </p>
+<p>See the <a href="../../../050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">mapping document</a> and <a href="../../../OUM_HOME_GP.HTM" target="_blank">SOA Governance Planning</a> view for applicable OUM tasks. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,335 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Enterprise Security Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Enterprise Security Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#INTRO">Introduction</option>
+                            <option value="#WHATSP">What are the Security Principles?</option>
+                            <option value="#WHATSD">What are the Security Domains?</option>
+                            <option value="#WHATSF">What are the Security Framework and Services?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+    <table width="93" align="right">
+      <tr>
+        <td width="82"><p><a href="../../../OUM_HOME_ES.HTM" target="_blank"><br>
+            Back to View </a> </p></td>
+      </tr>
+    </table>
+<h2> ENTERPRISE SECURITY OVERVIEW</h2>
+<h3><A 
+name=INTRO id="INTRO"></A>INTRODUCTION</h3>
+<p>As organizations evolve their IT architectures, embracing new technologies and computing strategies, they must be diligent in their efforts to ensure security. As Internet commerce web-based computing and now cloud computing emerges, new types of attacks and threats emerge as well. Along with this came government regulations around protecting personal information, payment data, financial records, archives, audit data, etc. To keep up, an enterprise-level security architecture must be versatile and expandable. It must be able to grow and evolve with the organization, support new business initiatives and technology strategies, and handle the types of threats that may emerge. The architecture must be able to accommodate many different types of information, applications, and users.</p>
+<p>Enterprise Security is a strategic approach that should be based on a solid, holistic framework encompassing all of an organization's Information Security requirements, not just those of individual projects. The framework should be based on a reference architecture that takes into account key security principles, such as, 'Defense in Depth' and 'Least Privileges'. By taking this approach to Information Security, organizations can ensure that the components of their Information Security Architecture address all business critical Information and are driven by the requirements of the business.</p>
+<p>As organizations grow and tend to move from a modular, loosely-coupled, point solution based architecture to a more standards based, comprehensive strategic infrastructure, they tend to adopt processes and follow common principles of information security that reshape and redefine the way organizations manage security. Enterprise Security should follow the principle tenets of information security: confidentiality, integrity, and availability (CIA).</p>
+<p align="center"><b>CONFIDENTIALITY</b> &#8211; Prevent disclosure of information to unauthorized individuals or systems.</p>
+<p align="center"> <b>INTEGRITY</b> &#8211; When data cannot be modified undetectably.</p>
+<p align="center"> <b>AVAILABILITY</b> &#8211; For any information system to serve its purpose, the information must be available when it is needed.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/ES_CIA.GIF" alt="Enterprise Security CIA Triangle" width="357" height="284" title="Enterprise Security CIA Triangle"></p>
+<p>The intersection between users, applications and data is a fundamental concept in security architecture. It involves classification of users and resources in order to properly grant access rights, which in turn help provide confidentiality and integrity. Organizations are advised to examine, and continually re-examine their security goals and architecture. They must define security policies and mechanisms to ensure that sensitive resources are only made available to the right people, and that the organization can determine, at any time, &quot;who has access to what.&quot;</p>
+<p>The key concepts of Confidentiality, Integrity and Availability should be applicable for key components that constitute the organization infrastructure: application, data and users. There are security strategies associated with each of these infrastructure components and adopting those allows an organization to grow and evolve, support new business initiatives and technology strategies, and handle the types of threats that may emerge.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHATSP id="WHATSP"></A></b>WHAT ARE THE SECURITY PRINCIPLES OF AN ENTERPRISE?</h3>
+<p>Security in an organization should be pervasive in nature, and it should touch every organization process and domain. If security is a part of an organization&rsquo;s daily business operations, it leads to smart behavior on the part of the organization and provides increased awareness of the threats and risks. Looking at the enterprise from an Information Security perspective, the key focus is to protect the most important piece of the organization: information. The following security principles are based on Oracle expertise and align with the industry best practices that enterprise&rsquo;s use to define the Information Security Architecture:</p>
+<ul>
+  <li><b>Defense in Depth</b> &#8211; Failure of a single component of the security architecture must not compromise the entire IT environment.</li>
+  <li><b>Least Privilege</b> &#8211; Users and other consumers of resources must operate using the least set of privileges necessary to complete the job.</li>
+  <li><b>Security as a Service</b> &#8211; Business solutions must be designed to consume common security services where possible as opposed to implementing custom security logic and replicating copies of security data.</li>
+  <li><b>Identity Federation</b> &#8211; Security infrastructure must provide identity mapping, credential mapping, and identity propagation necessary to support federation across security domains.</li>
+  <li><b>Secure Web Services</b> &#8211; End-to-end system security and adherence to other security principles must not be compromised by the use of Web Services.</li>
+  <li><b>Secure Management of Security Information</b> &#8211; Security information such as users, credentials, groups, roles, attributes, must be managed centrally (holistically) across the entire organization in a secure and auditable manner.</li>
+  <li><b>Active Threat Detection and Analysis</b> &#8211; Security infrastructure must be capable of detecting abnormal behavior and adapting accordingly to protect vulnerable resources.</li>
+  <li><b>Secure, Complete Audit Trail</b> &#8211; The security system must be able to identify when changes have been made to data within the organization, what changes have been made, and by whom.</li>
+  <li><b>Data Security</b> &#8211; The confidentiality, integrity, and availability of data must be ensured at all times.</li>
+  <li><b>System Availability</b> &#8211; Systems must be adequately protected to ensure their intended degree of availability, but not overly constrained by security measures to unnecessarily impede normal operations.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="WHATSD" id="WHATSD"></a>WHAT ARE THE SECURITY DOMAINS THAT ARE APPLICABLE TO AN ENTERPRISE? </h3>
+<p>Oracle security is based on the above security principles and utilizes the security domains defined by the International Information Systems Security Certification Consortium (ISC)<sup>2</sup>&#8482;. These security domains apply to the critical information assets of organization: application, data, and users. Based on the (ISC)<sup>2</sup> standards, the following security realms applicable are: </p>
+<ul>
+  <li><b>Access Control</b> &#8211; a collection of mechanisms that work together to create a security architecture to protect the assets of the information system
+      <ul>
+        <li>Authentication</li>
+        <li>Authorization</li>
+        <li>Audit</li>
+        <li>User Management</li>
+        <li>Identity Administration <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Telecommunications and Network Security</b> &#8211; discusses network structures, transmission methods, transport formats and security measures used to provide availability, integrity and confidentiality
+      <ul>
+        <li>Network Architecture and Design</li>
+        <li>Communication Channels</li>
+        <li>Network Components</li>
+        <li>Network Attacks<br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Information Security Governance and Risk Management </b> &#8211; the identification of an organization&rsquo;s information assets and the development, documentation and implementation of policies, standards, procedures and guidelines
+      <ul>
+        <li>Security Governance and Policy </li>
+        <li>Information Classification/Ownership</li>
+        <li>Risk Management Concepts </li>
+        <li>Security Procedures, Guidelines and Awareness </li>
+        <li>Certification and Accreditation <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Software Development Security </b> &#8211; refers to the controls that are included within systems and applications software and the steps used in their development
+      <ul>
+        <li>Secured Systems Development Lifecycle (SDLC) </li>
+        <li>Application Environment and Security Controls </li>
+        <li>Effectiveness of Application Security<br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Cryptography</b> &#8211; the principles, means and methods of disguising information to ensure its integrity, confidentiality and authenticity
+      <ul>
+        <li>Encryption Concepts </li>
+        <li>Digital Signatures </li>
+        <li>Cryptanalytic Attacks </li>
+        <li>Public Key Infrastructure (PKI) <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Security Architecture and Design </b> &#8211; contains the concepts, principles, structures and standards used to design, implement, monitor and secure operating systems, equipment, networks, applications and those controls used to enforce various levels of confidentiality, integrity and availability
+      <ul>
+        <li>Fundamental Concepts of Security Models </li>
+        <li>Capabilities of Information Systems (for example, Memory Protection, Virtualization) </li>
+        <li>Countermeasure Principles </li>
+        <li>Vulnerabilities and Threats (for example, Cloud Computing, Aggregation, Data Flow Control) <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Operations Security </b> &#8211; used to identify the controls over hardware, media and the operators with access privileges to any of these resources.
+      <ul>
+        <li>Resource Protection </li>
+        <li>Incident Response </li>
+        <li>Attack Prevention and Response </li>
+        <li>Patch and Vulnerability Management <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Business Continuity and Disaster Recovery Planning </b> &#8211; addresses the preservation of the business in the face of major disruptions to normal business operations
+      <ul>
+        <li>Business Impact Analysis </li>
+        <li>Recovery Strategy </li>
+        <li>Disaster Recovery Process </li>
+        <li>Provide Training<br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Legal, Regulations, Investigations and Compliance </b> &#8211; addresses computer crime laws and regulations, the investigative measures and techniques that can be used to determine if a crime has been committed and methods to gather evidence
+      <ul>
+        <li>Legal issues </li>
+        <li>Investigations</li>
+        <li>Forensic Procedures </li>
+        <li>Compliance Requirements/Procedures<br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><b>Physical (Environmental) Security </b> &#8211; addresses the threats, vulnerabilities and countermeasures that can be utilized to physically protect an enterprise's resources and sensitive information
+      <ul>
+        <li>Site/Facility Design Consideration </li>
+        <li>Perimeter Security </li>
+        <li>Internal Security </li>
+        <li>Facilities Security </li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHATSF id="WHATSF"></A></b>WHAT ARE THE SECURITY FRAMEWORK AND SERVICES FOR AN ENTERPRISE?</h3>
+<p>A <b>security framework</b> that meets the above mentioned security architecture principles defines a security environment to be comprised of basically two parts. </p>
+<ul>
+  <li> One part consists of the platforms that comprise business solutions, such as applications, business processes, SOA Services, databases, portals, etc. These all provide security services to some extent. Some platforms are relatively closed, self-contained, and isolated in terms of a security model, while others are more open to leverage external security services and security data stores.</li>
+  <li> The second part of the environment consists of the shared infrastructure that is dedicated to providing security services, managing security data, and orchestrating activities related to security provisioning, synchronization, and auditing.</li>
+</ul>
+<p align="center"><img src="../../../010_COMMON_FILES/ES_ESF.GIF" alt="Where Enterprise Security fits in the Business Solution Platforms" width="501" height="427" title="Where Enterprise Security fits in the Business Solution Platforms"></p>
+<p align="left">The security framework is based on infrastructure components that provide a collection of <b>security services</b> across the enterprise. The framework provides integration with the solution platforms via a set of interfaces that are primarily based on open standards. Proprietary interfaces can also be used to support specific solution platforms when necessary. The framework includes a master version of all security-related information, and provides administrative capabilities to manage the enterprise security services and information.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/ES_ESS.GIF" alt="Security Framework" width="786" height="458" title="Security Framework"></p>
+<p align="left">The common services that are provided by any security platform:</p>
+<table width="100%" border="1" title="Common Security Services" summary="This table lists the common services that are provided by any security platform.  The service is listed in the first column with a description in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th width="252" scope="col">Service</th>
+    <th width="841" scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Federation</b></div></th>
+    <td>This service offers a way to propagate identity across security and cookie domains. It involves the mapping of identities and credentials from the current domain to what is required by the remote domain.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Single Sign On (SSO)</b></div></th>
+    <td>This service provides a form of proof that computing platforms will recognize and honor as evidence of authentication. Proof may be in the form of a token, cookie, or assertion, depending on the SSO implementation used. The SSO service maybe combined with the authentication service such that SSO proof is automatically provided upon successful authentication.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Self-Service</b></div></th>
+    <td>This service provides a means for end users to self-register and maintain their own security information for which they have access rights. Common maintenance functions include password resets, address changes, and contact number changes. This service may interact with administrative processes where approvals are needed and synchronization across information stores must be orchestrated.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Authentication</b></div></th>
+    <td>Authentication is the process of validating an asserted claim to an identity. Before a decision can be made to see if a user should be allowed to access Information it is a pre-requisite to need to know who that user is. Whilst a user can provide their identification, it is of no use until it has been suitably assured. This is done through the process of authentication.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Authorization</b></div></th>
+    <td>The authorization service represents a standard approach to all forms of access control. It leverages the identity, group, role, and entitlement policy information in order to make access decisions. It represents the policy decision, retrieval, information, and administration points. Authorization includes coarse- and fine-grained access control. Most platforms provide greater built-in support for coarse-grained access control since fine-grained control requires greater infrastructure capabilities.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>WSS Policy</b></div></th>
+    <td>Provides a means to access WSS Policies for Web Services and validate and enforce policy requirements on service requests.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Audit</b></div></th>
+    <td>The audit service offers a standard means to collect audit data from various sources such as computing platforms, infrastructure, and security framework components. It also offers a means to view and report on audit data collected.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Personally Identifiable Information (PII)</b></div></th>
+    <td>The PII service provides access to personal information governed by privacy rules. It can be used by business solutions in order to process transactions and execute business processes, or it can be used by security services in order to evaluate access control decisions.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Key Management</b></div></th>
+    <td>It provides the ability to register and resolve public keys that are used for encryption. It supports the maintenance of PKI at the organization or domain level.</td>
+  </tr>
+</table>
+<p align="left">In addition, the security framework provides the following supporting services:</p>
+<table width="100%" border="1" title="Supporting Security Services" summary="This table lists the supporting services that are provided by the security framework. The service is listed in the first column with a description in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th width="251" scope="col">Supporting Service</th>
+    <th width="842" scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Credential Mapping</b></div></th>
+    <td>This service supports other services that provide identity federation by supplying the type of credential needed for a particular resource. Primarily used for Federated services, Credential Mapping allows to transmit information across disparate domains to support information propagation.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Information Virtualization</b></div></th>
+    <td>As security information such as identities, credentials, attributes, etc. may be persisted in a number of physical stores, and each store may include some amount of unique data, this service provides a virtual view, or aggregation, of all data pertaining to a specific entity. The virtualization service can be used by other services that perform authentication and authorization in order to execute against a complete data set.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Fraud Detection</b></div></th>
+    <td>This service operates behind the scenes monitoring other services with the intent of detecting possible fraudulent activity. It is mostly associated with the authentication service and identifies if unauthorized access is attempted. It can monitor events such as failed logins and various inconsistent behavior as it occurs. It can send alerts and suspend accounts and sessions when suspicious activity is detected.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Encryption</b></div></th>
+    <td>As a supporting service, encryption capabilities are often built into the infrastructure that provides other forms of services. Encryption can also be offered as a primary service for organizations that want the ability to encrypt data from end-to-end using a single message-level encryption and decryption service.</td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

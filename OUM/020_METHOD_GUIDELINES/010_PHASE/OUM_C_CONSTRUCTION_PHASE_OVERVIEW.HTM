@@ -1,0 +1,845 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Construction Phase Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" -->
+            <h1>Phase Overview </h1>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                        <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                          <option value="#TOP" selected></option>
+                          <option value="#Objectives">Objectives</option>
+                          <option value="#Processes">Processes</option>
+                          <option value="#KeyWP">Key Work Products</option>
+                          <option value="#Tips">Tips and Techniques</option>
+                          <option value="#TasksWP">Tasks and Work Products</option>
+                          <option value="#Dependencies">Activity Flow Diagram</option>
+                          <option value="#Risk">Managing Risk</option>
+                          <option value="#CritSucFactors">Critical Success Factors</option>
+                        </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[C] CONSTRUCTION</h2>
+<!--BeginPhaseDesc--><p> The goal of the Construction phase is to take the solution from detailed requirements models, through configuration of standard packaged software functionality, development and testing of custom components, and integration to a system that is ready for a first release that goes into production, often a limited release and often called a beta release. In short, we complete the development of the application system, validate that all components fit together, and prepare the system for the Acceptance Test and deployment.</p><!--EndPhaseDesc-->
+<p>For projects that involve the upgrading of an existing Production Environment, the Construction phase serves to update all components of the system and thoroughly test the migrated business solution. </p>
+<p>In more detail, the Construction phase clarifies the remaining requirements and completes the development of the system based upon the baseline architecture. In one sense, and particularly for the custom developed components of the overall business solution, the Construction phase is a manufacturing process, where emphasis is placed on managing resources and controlling operations to optimize costs, schedules, and quality. At this point, the management mind-set changes from the development of intellectual property during Inception and Elaboration, to the development of deployable products during Construction and Transition. The application system is completed within a pre-defined number of iterations. Updates are made to each of the models (Use Case Model, Design Model, Architectural Implementation, etc.), as the requirements are progressively refined. &nbsp;For each iteration, every developer works with a given set of prioritized use cases and based on this develop and unit-test the components following the order of the priorities. When the development timebox has reached its end, the developer walks through the changes with the users. The users validate and refine the requirements, and provide MoSCoW priorities for each changed or new requirement. The modified or new requirements are fed back to the requirement models in the business layer. All changed or new requirements are evaluated to make certain there has not been a scope change, and the result provides the input for the next iteration of the partition. &nbsp;Once the team is comfortable with the approach, the formal and sequential nature of development followed by walk through, followed by evaluation can be replaced with a more informal and continuous approach. When all of the planned iterations have been completed for each partition, the complete application system is tested. The tested system is the end goal of the phase. </p>
+<p>For Commercial Off-the-Shelf (COTS) software components of the overall business solution, the Construction phase involves the establishment of a System Test Environment based on the results of business requirements mapping and configuration activities from the Elaboration phase, and the execution of one or more system tests, depending on the number of Construction phase iterations that are planned. Where multiple iterations are planned, each system test will test the operation and integration of all business system flows within the (COTS) application system, as well as the application extensions completed and integrated with the COTS application system during that iteration.</p>
+<p>An iterative process is used to refine the data and detail the use cases, as well as develop the physical database and components, until they meet the business requirements, within the constraints of the project timeboxes and priorities. The ambassador users provide refinements during each iteration, so that this can be used as input for the next iteration. </p>
+<p> The outcome of the Elaboration phase is the architectural baseline and a version of all models. In particular, the Use Case Model and Analysis Model, as they are the most complete, provide the input for the first iteration within the Construction phase. Every designer and developer works with a part of the Use Case Model and Design Model. Functionality is developed and unit-tested following the order of the priorities of the use cases. When the iteration has reached its end, both technical participants and users review the results. </p>
+<p> When all of the planned iterations have been completed, the complete system is tested. The tested system is the end work product of the phase. </p>
+<p>The Construction phase finishes with the <a href="../040_ACTIVITY/CACTIOM_INIT_OPER_CAP_MST_SUMMARY.HTM" target="_blank">Initial Operational Capability Milestone</a>. Review and be familiar with the objectives of this milestone before you begin this phase and make sure you have met these objectives before you move to the Transition phase.</p>
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> This phase overview is written from the perspective of a Full Method View, utilizing ALL of the processes, activities and tasks in this phase. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Prerequisites, Processes, Key Work Products, Tasks and Work Products and Task Dependencies sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A href="#TOP">Back to Top</A>&nbsp;</p>
+<hr WIDTH="100%">
+<h3><a NAME="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The following is a list of the objectives of this phase:</p>
+<ul>
+  <li><span class="style2"> <b>Prepare system for acceptance test and deployment.</b> Iteratively, produce a physical database, integrate developed or reused components, and configure product components, to produce an integrated system that provides the high-priority business benefits. Ensure a stable and mature beta release. Adequately address non-functional requirements, such as security, reliability, etc. Ascertain appropriate capacity and workload calculations in order to determine the Production Environment figures.</span></li>
+  <li><span class="style2"><b>Develop supporting documentation.</b> Prepare any required user and technical documentation and produce Online Help. </span></li>
+  <li><span class="style2"><b>Prepare users for Transition.</b> Properly involve users that can verify the implementation of the functional requirements. Begin to train end users in the functionality of the new system. </span></li>
+  <li><span class="style2"><b>Estimate cost and plan.</b> Recalculate the estimate in order to take into account information acquired during the first three phases. Prepare a well-defined plan for the Transition phase.</span></li>
+</ul>
+<p>The <a href="../../040_TEMPLATES_AND_GUIDANCE/CONSTRUCTION_IOC_CHECKLIST.DOCX" target="_blank">Construction Phase / Initial Operational Capability (IOC) Milestone Checklist</a> is available to assist with determination of completeness for this phase.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Processes" id="Processes"></a>PROCESSES</h3>
+<p>The following processes are active in this phase:</p>
+<ul>
+  <li>Business Requirements (RD) </li>
+  <li>Requirements Analysis (RA)</li>
+  <li>Mapping and Configuration (MC) </li>
+  <li>Analysis (AN) </li>
+  <li>Design (DS) </li>
+  <li>Implementation (IM) </li>
+  <li>Testing (TE)</li>
+  <li>Performance Management (PT)</li>
+  <li> Technical Architecture (TA)</li>
+  <li>Data Acquisition and Conversion (CV)</li>
+  <li>Documentation (DO) </li>
+  <li>Organizational Change Management (OCM) </li>
+  <li>Training (TR) </li>
+  <li>Transition (TS) </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="KeyWP" id="KeyWP"></a><a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#KWP" target="_blank">KEY WORK PRODUCTS</a></h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM#Construction" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Tips" id="Tips"></a>TIPS AND TECHNIQUES </h3>
+<p>This section discusses the primary techniques that may be helpful in conducting the Construction phase. It also includes advice and commentary on each process.</p>
+<h4>Business Requirements</h4>
+<p> The priorities given in the requirements MoSCoW List (RD.045) and the detailed priorities given in the use cases should be continually monitored and maintained by the project manager as the primary means of containing scope . See the task description of RD.045 for more details about prioritizing. In the Elaboration phase, we identified most of the use cases, but while going into more detail we are likely to identify new and refined requirements that also should be captured in the models. Alternately, keep the scope in mind to prevent a creeping scope. Although we have tried to identify the use cases that were architecturally significant in the Elaboration phase and to detail these to define a stable architectural baseline, we might discover new or changed factors that may influence the architecture. If so, these should be included in the Global Analysis of the Application Architecture, as well as a strategy on how to deal with these factors.
+<h4>Requirements Analysis</h4>
+<p> As components are designed and developed, we still may identify some new use cases and actors. This normally would only be a fraction of the total set of use cases. The Use Case Model should be refined to reflect the deepening understanding of the requirements and make the model more consistent. Both the technical staff and the ambassador users review the Use Case Model and the use case details. The technical reviewers will probably use inspections of the model to ensure the quality of the model from a development and architectural viewpoint. Organize a walkthrough of the use cases where the developer shows the actual developed use case and walks the user through the scenarios of that use case in order to let the ambassador users review the use cases. This hands-on access allows the users to validate the requirements in detail. During the hands-on validation, the end user is able to discover shortcomings and possible factors that have not yet been included in the requirements.
+<h4>Mapping and Configuration</h4>
+<p>In Construction, you take one last opportunity to make any last minute updates to the Application Setup Documents. 
+<h4>Analysis </h4>
+<p> In the Analysis process, the work done in the Elaboration phase is further refined in the Construction phase. </p>
+<h4>Design </h4>
+<p> During the Design process, the system is shaped and formed to meet all functional and supplemental requirements. This is based on the architecture created and stabilized during the Analysis process. Thus the artifacts produced during Analysis are an important input to this process. The Design Model can be used to visualize the implementation of the system, and collaboration diagrams can be used to visualize how use cases are implemented. In the Elaboration phase, we designed and implemented only a few use cases, those that were relevant to develop the architectural baseline. Therefore, elements will not be added (or only a few) that will impact the architectural baseline, such as design or service components, that&nbsp;already exist as skeletons. In this phase we will design the rest of the use cases.</p>
+<h4>Implementation </h4>
+<p> During the Implementation process, the results of the Design process are used to implement the system in terms of source code for components, scripts, executables etc. We also implement and perform development testing on software components. Throughout the lifecycle, hands-on access is provided for the end users to give them the opportunity to validate the requirements in detail (RA.180). During the hands-on validation, the end user is able to discover shortcomings and possible factors that have not yet been included in the requirements. Within iterations, each developer or team of developers must be provided the MoSCoW List of functionality to be developed during that timebox. The work must be accomplished according to the provided MoSCoW List. The developer has a certain amount of time (a timebox) to develop and unit test the next version before the next hands-on validation. Therefore, it is vital that the priorities are properly managed because generally there is not time enough to develop all functionality. End users tend to classify everything as a Must have, which results in an impossible job for the developers, in that functionality is not prioritized. This may result in not all Must have functionality being developed, and some less important parts being developed. This principle must be completely understood by the end users as well as the developers, and the developers must be able to trust the priorities as they have been provided. Provide, to each developer, a fixed set of components that should be implemented to a predefined level determined by the priorities for those components, so that the developer can work as independently as possible during the set timebox. However, monitor that the effort between developers is similar, so that one developer does not complete the Must Haves, while in the meantime another already is working on the Could have functionality. Also make sure that a developer does not invent functionality just because it would be really nice for the users. In this way, the project fills each component with more and more code, timebox after timebox, iteration after iteration, until the end of the Construction phase, where all components are completed to an acceptable level. Each developer should test each component prior to delivering it to the end user, preferable by creating unit tests. When created properly, unit tests are repeatable, and thus can be reused, not only after each time the code changes, but also to discover unexpected side effects of changes of other components, and during Testing. In the early iterations, it is not required that the component is bug-free, but it must be possible for the end user to validate and refine the requirements without too many irritating bugs .
+<h4>Testing</h4>
+<p> Test planning and test design begins early in this phase based on the Testing Requirements and Testing Strategy, the use cases and the architectural baseline. Checklists are prepared for each type of component. Test scripts and scripted test data are developed for automated regression testing. </p>
+<p> OUM emphasizes the need for early testing using real business data, which usually is converted from legacy systems. As well as supporting more effective and realistic testing, users find it easier to test a system that contains recognizable business data. Analyze the data domains (or equivalence classes) in order to make sure that they are all covered in batch loading or during manual data entry, as appropriate. Sufficient code data should be loaded into the code tables as early as possible. Other tables should be populated as soon as the Database Design has stabilized. </p>
+<p> Reused components require at least functional testing. Any hand-coded programs should be white-box tested by a developer before user validation. </p>
+<p> Make effective use of standard test tools (for example, unit testing framework) to increase your productivity and rapidly locate defects. Aim for a high level of functional coverage, and some supplemental testing may be necessary. Performance testing is a separate process.</p>
+<p> An adequate review of system architecture and system design prevents most defects at the system level. Therefore, involve ambassador users and IS staff members that have already been involved in the high-level design reviews in order to reduce the time and effort needed in test and rework later. Regarding system testing, make effective use of standard test tools. Testing should, at a minimum, cover all of the Must Have and Should Have requirements in the MoSCoW List. Testing of Could Have requirements should be given a lower priority but it must be understood that the implementation of any such requirements may not compromise data integrity or application stability. </p>
+<p> At the system level, supplemental testing is performed. &nbsp;Non-functional testing includes backup and recovery testing, which provides an additional benefit of DBA training. </p>
+<p>Systems integration testing is performed where external systems interface to the new system. This is almost entirely supplemental testing. The procedures and tools involved in systems integration testing depend on the nature of the interface, the operating environment and procedures of the external system and the kind of solution chosen (for example, using flat files and buffer tables, transparent gateways, procedural gateways or ODBC). In some cases, replication may be an element of the solution and appropriate testing needs to be performed. Special attention should be given to testing when interfacing to other databases (for example, for locking situations). </p>
+<h4>Performance Management</h4>
+<p> The objective of the Performance Management process is to proactively define, construct, and execute an effective approach to managing performance throughout the project implementation lifecycle in order to ensure that the performance of the system or system components meet the user's requirements and expectations when the system is implemented.&nbsp; Performance Management is not limited to conducting a performance test or an isolated tuning exercise, although both those activities may be part of the overall Performance Management strategy. In the Elaboration phase you have identified which parts of the system are performance critical, and have defined the scenarios that should be performance tested. In the Construction phase you will develop those components that are needed to be able to perform an adequate performance test. Realistic data volumes should be used in stress testing and performance testing. Use automated load- and stress-test tools, when available. You also complete the Performance Test Environment and Database and conduct a dress rehearsal to validate the performance test and environment. It is important that the environment is set up using realistic parameters and data, and with a realistic load. Performance Testing uses the concept of Test Scenarios to make this tieback to the real system. Test Scenarios are point-in-time snapshots of the processing occurring (or projected to occur) in the real system. Once the scenarios have been identified, they can be characterized and used to fix the relative mix of different transactions, inquiries, or reports that should execute during the Performance Test of that particular processing situation. You can scale the scenario mix to measure the performance of the system under different total loads (transaction models).
+  
+<h4>Technical Architecture
+</h4>
+<p>During the Construction phase, you create the System Management Guide, conduct backup and recovery testing and define the final platform and network architecture. Optionally, you define and conduct operational testing and conduct disaster recovery testing. Also, if your project encompasses a complex architecture change, you may also be creating the System Capacity Plan. The Capacity Plan differs greatly from more traditional plans in that user load is not predictable. The user load that the site is required to support must be defined within the contract and the site should be designed to support that capacity. The Capacity Plan rather reflects the agreement between the customer and Oracle as to the capacity the system is required to support and the strategy for extending that capacity as user demand increases. It is imperative that this agreement is carefully documented. These requirements are then fulfilled by the technical architecture consisting of components that are available when required.
+  
+<h4>Data Acquisition and Conversion</h4>
+<p> In the Elaboration phase, you agreed to convert data that will have an ongoing value to the business. Data fields in legacy systems often change meaning over time (without markers having indicated a change in use). This makes it difficult to automatically convert data without manual intervention, or &quot;data cleansing.&quot; It is difficult to estimate the extent of data cleansing needed until the Elaboration phase is complete, and sometimes not even until one iteration has been completed in the Construction phase, so you may need to update your plan for data conversion as more becomes known. In the Construction phase, review all the components that are required to convert and clean the data that should be converted. Then make an initial pass at converting and cleansing the data.
+<h4>Documentation</h4>
+<p>During Construction, the actually Documentation is published and the Online Help is produced.
+<h4>Organizational Change Management</h4>
+<p style="margin-bottom: 0"><span class="style1">Ongoing throughout the project, change and communication events targeted to specific audiences with the goal of mitigating identified risks and challenges are conducted. In addition, during Construction a Job Impact Analysis is conducted and the Managers Unit and Department Impact Workshop is held. </span></p>
+<h4>Training</h4>
+<p style="margin-bottom: 0">During Elaboration, you start preparing the organization for user training on the new system. This incorporates communicating, analyzing user needs, planning curriculums and conducting learning events. </p>
+<h4>Transition</h4>
+<p>During Construction, refine your initial Cutover Strategy and develop your Installation Plan. A good Installation Plan eases the system rollout. This task is technical in nature and typically involves the transfer of the operation of the new system from the project to the customer operations and maintenance staff. Early in the project, start building the Installation Plan and test it for each iteration. In this way, the Installation Plan evolves along with the system being built.
+<h4>Scrum</h4>
+<p>If you are using a Scrum approach, use the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project Using Scrum</a> technique. You can also go directly to the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM#CONST" target="_blank">Construction phase Scrum guidance</a> within this technique.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>This phase includes the following tasks:</p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks (with links) and work products for the OUM Construction phase.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each process.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Business Requirements </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.042.2</div></th>
+    <td><a href="../030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+    <td>Glossary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.045.2</div></th>
+    <td><a href="../030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW) </a></td>
+    <td>Moscow List</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.130.2</div></th>
+    <td><a href="../030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Baseline Architecture Description </a></td>
+    <td>Architecture Description </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Requirements Analysis </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.021.3</div></th>
+    <td><a href="../030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">Capture User Stories</a></td>
+    <td>User Story </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.023.3</div></th>
+    <td><a href="../030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td> Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.024.2</div></th>
+    <td><a href="../030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">Develop Use Case Details</a></td>
+    <td>Use Case Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.025.3</div></th>
+    <td><a href="../030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.026.2</div></th>
+    <td><a href="../030_TASK/RA_026_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Services Repository </a></td>
+    <td>Populated Services Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.027.3</div></th>
+    <td><a href="../030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.028.3</div></th>
+    <td><a href="../030_TASK/RA_028_POPULATE_BUS_RULES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Business Rules Repository </a></td>
+    <td>Populated Business Rules Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.055.2</div></th>
+    <td><a href="../030_TASK/RA_055_DOCUMENT_BUS_PROCEDURES_OVERVIEW.HTM" target="_blank">Document Business Procedures </a></td>
+    <td>Business Procedure Documentation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.170.2</div></th>
+    <td><a href="../030_TASK/RA_170_CONDUCT_DATA_QUALITY_ASSESSMENT_OVERVIEW.HTM" target="_blank">Conduct Data Quality Assessment </a></td>
+    <td>High-Level Data Quality Assessment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.180.2</div></th>
+    <td><a href="../030_TASK/RA_180_REVEW_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Review Use Case Model</a></td>
+    <td>Reviewed Use Case Model</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Mapping and Configuration </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.050.2</div></th>
+    <td><a href="../030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">Define Application Setups </a></td>
+    <td>Application Setup Documents </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Analysis</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.035.2</div></th>
+    <td><a href="../030_TASK/AN_035_UPDATE_EXISTING_ANALYSIS_SPEC_OVERVIEW.HTM" target="_blank">Update Existing Analysis Specification </a></td>
+    <td>Updated Analysis Specification </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.040.2</div></th>
+    <td><a href="../030_TASK/AN_040_DEVELOP_ANALYSIS_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Analysis Architecture Description </a></td>
+    <td>Architecture Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.050.2</div></th>
+    <td><a href="../030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank"> Analyze Data</a></td>
+    <td>Data Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.060.2</div></th>
+    <td><a href="../030_TASK/AN_060_ANALYZE_BEHAVIOR_OVERVIEW.HTM" target="_blank">Analyze Behavior </a></td>
+    <td>Behavior Analysis</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.070.2</div></th>
+    <td><a href="../030_TASK/AN_070_ANALYZE_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Analyze Business Rules </a></td>
+    <td>Business Rules Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.080.2</div></th>
+    <td><a href="../030_TASK/AN_080_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">Analyze Services </a></td>
+    <td>Service Portfolio - Proposed Services</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.085.2</div></th>
+    <td><a href="../030_TASK/AN_085_DEFINE_SERVICE_OVERVIEW.HTM" target="_blank">Design Service</a></td>
+    <td>Service Definition </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.090.2</div></th>
+    <td><a href="../030_TASK/AN_090_ANALYZE_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Analyze User Interface </a></td>
+    <td>User Interface Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.100.2</div></th>
+    <td><a href="../030_TASK/AN_100_PREPARE_ANALYSIS_SPEC_OVERVIEW.HTM" target="_blank">Prepare Analysis Specification</a></td>
+    <td>Analysis Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">AN.110.2</div></th>
+    <td><a href="../030_TASK/AN_110_REVIEW_ANALYSIS_MODEL_OVERVIEW.HTM" target="_blank">Review Analysis Model </a></td>
+    <td>Reviewed Analysis Model </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Design</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.035.2</div></th>
+    <td><a href="../030_TASK/DS_035_UPDATE_EXISTING_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Update Existing Design Specification </a></td>
+    <td>Updated Design Specification </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.040.2</div></th>
+    <td><a href="../030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Design Architecture Description </a></td>
+    <td> Architecture Description&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.080.2</div></th>
+    <td><a href="../030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></td>
+    <td>Software Component Design</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.090.2</div></th>
+    <td><a href="../030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">Design Data </a></td>
+    <td>Component Data Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.100.2</div></th>
+    <td><a href="../030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">Design Behavior</a></td>
+    <td>Component Behavior Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.110.2</div></th>
+    <td><a href="../030_TASK/DS_110_DESIGN_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Design Business Rules </a></td>
+    <td>Business Rules Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.120.2</div></th>
+    <td><a href="../030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">Design Services </a></td>
+    <td>Service Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.130.2</div></th>
+    <td><a href="../030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Design User Interface </a></td>
+    <td>User Interface Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.140.2</div></th>
+    <td><a href="../030_TASK/DS_140_PREPARE_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Prepare Design Specification </a></td>
+    <td>Design Specification </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.150.2</div></th>
+    <td><a href="../030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></td>
+    <td>Logical Database Design&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.160.2</div></th>
+    <td><a href="../030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">Review Design Model </a></td>
+    <td>Reviewed Design Model </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementation</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.007.2</div></th>
+    <td><a href="../030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Development Environment </a></td>
+    <td>Development Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a name="IS"></a>IM.040.2</div></th>
+    <td><a href="../030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database </a></td>
+    <td>Implemented Database&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.050</div></th>
+    <td><a href="../030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">Implement Components</a></td>
+    <td>Implemented Components</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.053.2</div></th>
+    <td><a href="../030_TASK/IM_053_REGISTER_SERVICES_OVERVIEW.HTM" target="_blank">Register Services </a></td>
+    <td>Populated Services Registry </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.055.2</div></th>
+    <td><a href="../030_TASK/IM_055_PERFORM_BUS_RULES_IMPLEMENTATION_OVERVIEW.HTM" target="_blank">Perform Business Rules Implementation (Rules Engine) </a></td>
+    <td>Implemented Business Rules (Rules Engine) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.060.2</div></th>
+    <td><a href="../030_TASK/IM_060_PERFORM_COMPONENT_REVIEW_OVERVIEW.HTM" target="_blank">Perform Component Review </a></td>
+    <td>Component Review Results</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.070</div></th>
+    <td><a href="../030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">Assemble Components </a></td>
+    <td>Assembled Components</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.080</div></th>
+    <td><a href="../030_TASK/IM_080_INTEGRATE_SERVICES_OVERVIEW.HTM" target="_blank">Integrate Services </a></td>
+    <td>Integrated Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.090</div></th>
+    <td><a href="../030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">Create Installation Routines </a></td>
+    <td>Installation Routines </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Testing</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.015.2</div></th>
+    <td><a href="../030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop Integration Test Plan</a></td>
+    <td>Integration Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.018.2</div></th>
+    <td><a href="../030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">Prepare Static Test Data</a></td>
+    <td>Static Test Data</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.019.2</div></th>
+    <td><a href="../030_TASK/TE_019_COLLECT_ASSESS_REFINE_KPI_MEASUREMENTS_OVERVIEW.HTM" target="_blank">Collect, Assess and Refine KPI Measurements </a></td>
+    <td>Key Business Strategies and Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.020.2</div></th>
+    <td><a href="../030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">Develop Unit Test Scripts</a></td>
+    <td>Unit Test Scripts</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.025.3</div></th>
+    <td><a href="../030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+    <td>System Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a name="FLOWTE"></a>TE.030.2</div></th>
+    <td><a href="../030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">Perform Unit Test</a></td>
+    <td>Unit-Tested Components </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.035.2</div></th>
+    <td><a href="../030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create Integration Test Scenarios</a></td>
+    <td>Integration Test Scenarios</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.038.2</div></th>
+    <td><a href="../030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Integration Test Environment</a></td>
+    <td>Integration Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.040.2</div></th>
+    <td><a href="../030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Integration Test</a></td>
+    <td>Integration-Tested Components</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.050.2</div></th>
+    <td><a href="../030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">Develop System Test Plan</a></td>
+    <td>System Test Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.060.2</div></th>
+    <td><a href="../030_TASK/TE_060_PREPARE_SYSTEM_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare System Test Environment</a></td>
+    <td>System Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.065</div></th>
+    <td><a href="../030_TASK/TE_065_PERFORM_INSTALLATION_TEST_OVERVIEW.HTM" target="_blank">Perform Installation Test </a></td>
+    <td> Tested Installation Routines </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.070.2</div></th>
+    <td><a href="../030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">Perform System Test</a></td>
+    <td>System-Tested Applications</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.072.2</div></th>
+    <td><a href="../030_TASK/TE_072_TEST_PRE_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Pre-Upgrade Steps </a></td>
+    <td>Packaged Software Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.073.2</div></th>
+    <td><a href="../030_TASK/TE_073_TEST_PACKAGED_SW_UPGRADE_OVERVIEW.HTM" target="_blank">Test Packaged Software Upgrade</a></td>
+    <td>Pre-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.074.2</div></th>
+    <td><a href="../030_TASK/TE_074_TEST_POST_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Test Post-Upgrade Steps </a></td>
+    <td>Post-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.075.2</div></th>
+    <td><a href="../030_TASK/TE_075_PERFORM_POST_UPGRADE_RECON_TESTING_OVERVIEW.HTM" target="_blank">Perform Post-Upgrade Reconciliation Testing </a></td>
+    <td>Reconciliation Test Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.076.2</div></th>
+    <td><a href="../030_TASK/TE_076_REVIEW_UPGRADE_TEST_RESULTS_OVERVIEW.HTM" target="_blank">Review Upgrade Test Results </a></td>
+    <td>Upgrade Test Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.085</div></th>
+    <td><a href="../030_TASK/TE_085_PREPARE_SYSTEMS_INT_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank"> Prepare Systems Integration Test Environment </a></td>
+    <td>Systems Integration Test Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.090</div></th>
+    <td><a href="../030_TASK/TE_090_DEVELOP_SYSTEMS_INT_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Develop Systems Integration Test Scenarios </a></td>
+    <td> Systems Integration Test Scenarios </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.100</div></th>
+    <td><a href="../030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Systems Integration Test</a></td>
+    <td>Integration-Tested System</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Performance Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.070</div></th>
+    <td><a href="../030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM" target="_blank">Build Performance Test Scripts and Programs </a></td>
+    <td>Performance Test Scripts and Programs</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.080</div></th>
+    <td><a href="../030_TASK/PT_080_CONSTRUCT_PERF_TEST_ENVIRONMENT_AND_DATABASE_OVERVIEW.HTM" target="_blank">Construct Performance Test Environment and Database </a></td>
+    <td>Performance Test Environment and Database</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.090</div></th>
+    <td><a href="../030_TASK/PT_090_CONDUCT_PERFORMANCE_TEST_DRESS_REHEARSAL_OVERVIEW.HTM" target="_blank">Conduct Performance Test Dress Rehearsal </a></td>
+    <td>Validated Performance Test and Environment </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Technical Architecture </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.100</div></th>
+    <td><a href="../030_TASK/TA_100_DEFINE_SYSTEM_MANAGEMENT_PROCEDURES_OVERVIEW.HTM" target="_blank">Define System Management Procedures </a></td>
+    <td>System Management Guide </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.110</div></th>
+    <td><a href="../030_TASK/TA_110_DEFINE_OPERATIONAL_TESTING_PLAN_OVERVIEW.HTM" target="_blank">Define Operational Testing Plan </a></td>
+    <td>Operational Testing Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.120</div></th>
+    <td><a href="../030_TASK/TA_120_CONDUCT_OPERATIONAL_TESTING_OVERVIEW.HTM" target="_blank">Conduct Operational Testing</a></td>
+    <td>Operational Test Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.130</div></th>
+    <td><a href="../030_TASK/TA_130_CONDUCT_BACKUP_AND_RECOVERY_TEST_OVERVIEW.HTM" target="_blank">Conduct Backup and Recovery Test</a></td>
+    <td>Backup and Recovery Test Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.140</div></th>
+    <td><a href="../030_TASK/TA_140_CONDUCT_DISASTER_RECOVERY_TEST_OVERVIEW.HTM" target="_blank">Conduct Disaster Recovery Test</a></td>
+    <td>Disaster Recovery Test Results</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.150</div></th>
+    <td><a href="../030_TASK/TA_150_DEFINE_FINAL_PLATFORM_AND_NETWORK_ARCH_OVERVIEW.HTM" target="_blank">Define Final Platform and Network Architecture</a></td>
+    <td>Final Platform and Network Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.160</div></th>
+    <td><a href="../030_TASK/TA_160_DEFINE_SYSTEM_CAPACITY_PLAN_OVERVIEW.HTM" target="_blank">Define System Capacity Plan </a></td>
+    <td>System Capacity Plan</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Data Acquisition and Conversion </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.027.2</div></th>
+    <td><a href="../030_TASK/CV_027_PERFORM_DATA_MAPPING_OVERVIEW.HTM" target="_blank">Perform Data Mapping </a></td>
+    <td>Data Mapping </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.030.2</div></th>
+    <td><a href="../030_TASK/CV_030_PREPARE_CONVERSION_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Conversion Environment (Initial Load) </a></td>
+    <td> Conversion Environment (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.035.2</div></th>
+    <td><a href="../030_TASK/CV_035_DEFINE_MANUAL_CONVERSION_PROCEDURES_OVERVIEW.HTM" target="_blank">Define Manual Conversion Procedures (Initial Load) </a></td>
+    <td> Manual Conversion Procedures (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.040.2</div></th>
+    <td><a href="../030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Conversion Components (Initial Load) </a> </td>
+    <td>Conversion Component Designs (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.050.2</div></th>
+    <td><a href="../030_TASK/CV_050_PREPARE_CONVERSION_TEST_PLANS_OVERVIEW.HTM" target="_blank">Prepare Conversion Test Plans (Initial Load) </a></td>
+    <td>Conversion Test Plans (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.055.2</div></th>
+    <td><a href="../030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">Implement Conversion Components (Initial Load) </a></td>
+    <td> Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.060.2</div></th>
+    <td><A
+				href="../030_TASK/CV_060_PERFORM_CONV_COMPONENT_UNIT_TEST_OVERVIEW.HTM"
+				target="_blank">Perform Conversion Component Unit Test (Initial Load) </A></td>
+    <td>Unit-Tested Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.062.2</div></th>
+    <td><A
+				href="../030_TASK/CV_062_PERFORM_CONV_COMPONENT_BUS_OBJECT_TEST_OVERVIEW.HTM"
+				target="_blank">Perform Conversion Component Business Object Test (Initial Load) </A></td>
+    <td>Business Object-Tested Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.063.2</div></th>
+    <td><A href="../030_TASK/CV_063_PERFORM_CONV_COMPONENT_VALIDATION_TEST_OVERVIEW.HTM" target="_blank">Perform Conversion Component Validation Test (Initial Load) </A></td>
+    <td>Validation-Tested Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.064.1</div></th>
+    <td><A
+				href="../030_TASK/CV_064_INSTALL_CONV_COMPONENTS_OVERVIEW.HTM"
+				target="_blank">Install Conversion Components (Initial Load) </A> </td>
+    <td>Installed Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.065.1</div></th>
+    <td><a href="../030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank"> Convert and Verify Data (Initial Load) </a> </td>
+    <td> Converted and Verified Data (Initial Load) &nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.068.1</div></th>
+    <td><a href="../030_TASK/CV_068_CLEAN_DATA_OVERVIEW.HTM" target="_blank">Clean Data</a></td>
+    <td>Clean Legacy Data&nbsp;</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Documentation</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.060</div></th>
+    <td><a href="../030_TASK/DO_060_PUBLISH_USER_REFERENCE_MANUAL_OVERVIEW.HTM" target="_blank"><span class="style3">Publish User Reference Manual </span></a></td>
+    <td><span class="style4">User Reference Manual </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.070</div></th>
+    <td><a href="../030_TASK/DO_070_PUBLISH_USER_GUIDE_OVERVIEW.HTM" target="_blank"><span class="style3">Publish User Guide </span></a></td>
+    <td><span class="style4">User Guide </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.080</div></th>
+    <td><a href="../030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank"><span class="style3">Publish Technical Reference Material </span></a></td>
+    <td>Technical Reference Material </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.100</div></th>
+    <td><a href="../030_TASK/DO_100_PRODUCE_ONLINE_HELP_OVERVIEW.HTM" target="_blank"><span class="style3">Produce Online Help </span></a></td>
+    <td>Online Help</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Organizational Change Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.3</div></th>
+    <td><a href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM">Conduct Change Management Roadmap and Communication Campaign </a></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.2</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.170</div></th>
+    <td><a href="../030_TASK/OCM_170_COLLECT_AND_ANALYZE_JOB_CHANGE_DATA_OVERVIEW.HTM" target="_blank">Collect and Analyze Job Change Data </a></td>
+    <td>Job Impact Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.180</div></th>
+    <td><a href="../030_TASK/OCM_180_DETERMINE_IMPACT_OF_JOB_CHANGES_OVERVIEW.HTM" target="_blank">Determine Impact of Job Changes </a></td>
+    <td>Job Impact Diagnosis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.190</div></th>
+    <td><a href="../030_TASK/OCM_190_PREPARE_HR_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Prepare HR Transition Plan </a></td>
+    <td>HR Transition Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.200</div></th>
+    <td><a href="../030_TASK/OCM_200_DESIGN_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Managers Unit and Department Impact Workshop</a></td>
+    <td>Managers Unit and/ Department Impact Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.210</div></th>
+    <td><a href="../030_TASK/OCM_210_CONDUCT_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Managers Unit and Department Impact Workshop</a></td>
+    <td>Enabled Managers</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Training</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.060</div></th>
+    <td><a href="../030_TASK/TR_060_CONDUCT_USER_LEARNING_NEEDS_ANALYSIS_OVERVIEW.HTM" target="_blank"><span class="style1">Conduct User Learning Needs Analysis</span></a></td>
+    <td>User Learning Needs Analysis </td>
+  </tr>
+    <th scope="row"><div align="left">TR.070</div></th>
+    <td><a href="../030_TASK/TR_070_DEVELOP_USER_LEARNING_PLAN_OVERVIEW.HTM" target="_blank"><span class="style1">Develop User Learning Plan</span></a></td>
+    <td>User Learning Plan </td>
+  </tr>
+    <th scope="row"><div align="left">TR.080</div></th>
+    <td><a href="../030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM" target="_blank"><span class="style1">Develop User Learningware</span></a></td>
+    <td>User Learningware </td>
+  </tr>
+    <th scope="row"><div align="left">TR.090</div></th>
+    <td><a href="../030_TASK/TR_090_PREPARE_USER_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank"><span class="style1">Prepare User Learning Environment</span></a></td>
+    <td>Configured User Learning Environment </td>
+  </tr>
+    <th scope="row"><div align="left">TR.100.1</div></th>
+    <td><a href="../030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank"><span class="style1">Conduct User Learning Events</span></a></td>
+    <td>Skilled Users </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Transition</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.020.2</div></th>
+    <td><a href="../030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">Define Cutover Strategy</a></td>
+    <td> Cutover Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.030</div></th>
+    <td><a href="../030_TASK/TS_030_DEVELOP_INSTALLATION_PLAN_OVERVIEW.HTM" target="_blank">Develop Installation Plan</a></td>
+    <td> Installation Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.040</div></th>
+    <td><a href="../030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">Design Production Support Infrastructure </a></td>
+    <td>Production Support Infrastructure Design </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top </a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Dependencies" id="Dependencies"></a>ACTIVITY FLOW DIAGRAM</h3>
+<p align="center"><img src="../../010_COMMON_FILES/Const_Act.Flow.jpg" alt="Construction Phase Activity Flow Diagram" width="1158" height="838" title="Construction Phase Activity Flow Diagram"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Risk" id="Risk"></a>MANAGING RISK</h3>
+<p>The risks described for the Inception and Elaboration phases also apply in this phase. In addition, you should be aware of the following areas of risk and suggested mitigation strategies in the Construction phase:
+<ul>
+  <li><b>Backtracking is Difficult:</b> Configuration management must be established to allow development to return to an earlier version at any time. This may be necessary when, through a misunderstanding between users and developers, development has started to go in the wrong direction. The risk of wasting effort in this way can be reduced by short, frequent cycles of development and validation.</li>
+  <li><b>T</b><b>esting is Not Integrated throughout the Lifecycle:</b> An integrated, continuous approach to testing is important to minimize effort as a result of development going in the wrong direction or critical errors. All team members need to understand this, which is mainly documented in the Business Testing process, but is also part of the Requirements Analysis process. One senior developer should be allocated the role of lead tester and provided with training, if needed. This will assist the development team in testing components and interfaces, and following up on testing activities.</li>
+  <li><b>Problems with the Tool Set:</b> Development tasks such as component development, testing and version control, are most easily accomplished by using suitable tools. The choice of suitable tools is important and while the direction of Oracle tools development is very positive, the Oracle tool set may not yet provide the complete suite of tools required for developing solutions in the customer environment.</li>
+  <li><b>Development Environment is Unfamiliar to the Developers: </b>Make sure that the tools are made available and that any necessary training or guidance is provided. Where new skills are being acquired or new tools are being introduced, specialist support should be available on demand.</li>
+  <li><b>Users Get Burned Out:</b> If the users involved in the project are still doing their normal business activity, there is a risk that they will get burned out. Convince the sponsor, as well as the end users, that this will only be destructive to the project, their normal activities and user well-being. Therefore, other employees, not involved in the project, should take over normal business activities.</li>
+  <li><b>Developers Get Burned Out:</b> These kind of projects require intensive work periods and high concentration. Project managers should discourage long working hours over an extended period of time. If one or more team members are working late every night, it is advisable to try to discover the reason. Perhaps the workload has not been distributed evenly, or perhaps some developers have set themselves an unnecessarily ambitious level for the solution. Try to avoid extended periods of working at high intensity.</li>
+  <li><b>Low Acceptance by the Rest of the User Organization -- The Project is Evolving on its Own:</b> During this phase, there is a chance that the project is moving out of sight for the users not involved in the project. Keep the rest of the organization constantly informed. If there is a large end-user base, create an information plan on how the end users best can be informed. This is advisable both for internal and external end users. Also, motivate the involved users to talk about the project and to consult their colleagues on certain decisions. </li>
+  <li><b>Do Not Lose Focus of the Objectives:</b> Implementing the use cases in the Construction phase is done with short timescales that may set a high pressure on both users and developers. Also, while developers and users communicate about how to implement a use case, they may get highly motivated to go on and on, and thereby drop too far into details that are not relevant. Prevent losing time on irrelevant details by constantly focusing on the objectives and priorities. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p>These factors have been shown to be critical to the success of this phase:</p>
+<ul>
+  <li><b>Development Resource Skills:</b> In addition to the skill considerations described in the Elaboration phase, there must be developers on the team with a high level of knowledge in developing using the OUM architecture and the development tools and frameworks chosen for the project.</li>
+  <li><b>Development Partition Planning:</b> The system probably has been partitioned before this phase begins. It is important to consider any remaining dependencies between the partitions and plan the iterations of the partitions to minimize the impact of dependencies. If there is a high coupling between the partitions, and the iteration is not carefully planned, then you might get a situation in which certain activities of one partition are delayed.</li>
+  <li><b>Iterations and MoSCoW:</b> The length and the number of required iterations for each partition depend upon a number of factors, such as complexity. Normally, each partition is developed through a number of iterations and the MoSCoW List is used to determine priorities by the team developing that partition. If you plan the iterations of the partitions incorrectly, <SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN 
+style="COLOR: black">you might find that one team has developed all of their Must have, Should have and even some Could have components within one partition, while another team experiences difficulty in completing all of its Must </SPAN></SPAN><span class="style1">h</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN 
+style="COLOR: black">aves. There must be a good balance between the Must have functionality and the other functionality within each team/partition.</SPAN></SPAN></li>
+  <li><span class="style3">Quality: While developing using timeboxes and prioritization, <SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">development activity can get quite hectic at times. This might result in the temptation to perform certain activities in a "quick and dirty" way. If the team members allow themselves to cut corners, you will likely end up with an application that is difficult to maintain, and you will have to add additional effort to make corrections. It is important that the team be made aware of the risk of developing in a quick and dirty way. It is recommended that the quality manager initiate frequent quality checks on the repository content as well as on the delivered software during the iterations.</SPAN></SPAN></span></li>
+  <li><b>Configuration Management (CM):</b><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black"> As with any system development, proactive configuration management is needed to prevent the "corner-cutting" that can cause chaos. It is important to establish and implement adequate and realistic procedures for document management, version control, software release and status accounting. As far as possible these functions should be automated and as little paperwork as possible should be required. The configuration management specialist should be empowered to make sure that these procedures are followed. This role can be combined with that of DBA, or in small projects with the role of </SPAN></SPAN><span class="style1">l</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">ead </SPAN></SPAN><span class="style1">s</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">ystem </SPAN></SPAN><span class="style1">d</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">eveloper. Time should be allocated for education of team members in </SPAN></SPAN><span class="style1">configuration management</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">. At the start of this phase, appropriate tools should be implemented and procedures should be written to support version control to keep track of the status of each module.</SPAN></SPAN></li>
+  <li><b>Change Control:</b><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black"> In OUM type of projects, change control is a dynamic activity, because the empowerment of </SPAN></SPAN><span class="style1">a</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; "><SPAN style="COLOR: black">mbassador </SPAN></SPAN><span class="style1">u</span><SPAN 
+style="BACKGROUND-POSITION: 0% 50%; BACKGROUND-ATTACHMENT: scroll; BACKGROUND-REPEAT: repeat; initial"><SPAN style="COLOR: black">sers allow shorter decision cycles, as long as the changes remain within scope. Change requests will be raised continuously during the validation periods. This ultimately grows into a very large amount of requests. It is important that decisions are made quickly and that the requests are prioritized properly. It is vital to use an easy-to-use, well-constructed and easily understood change control mechanism. At the start of this phase, appropriate tools should be implemented to support the change control procedures. It is also important that the project manager identifies and handles separately any change requests that could result in a scope change.</SPAN></SPAN></li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

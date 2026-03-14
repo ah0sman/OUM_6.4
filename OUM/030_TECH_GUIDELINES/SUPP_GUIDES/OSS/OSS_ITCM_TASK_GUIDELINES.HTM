@@ -1,0 +1,873 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OSS Task Guidelines for IT Change Management</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Oracle Support Services Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+<select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+  <option value="#TOP" selected></option>
+  <option value="#RKMG">Risk Management (RKM) Process Guidance</option>
+  <option value="#QMG">Quality Management (QM) Process Guidance</option>
+  <option value="#CMG">Configuration Management (CM) Process Guidance</option>
+  <option value="#IFMG">Infrastructure Management (IFM) Process Guidance</option>
+  <option value="#OCHMG">Organizational Change Management (OCHM) Process Guidance</option>
+  <option value="#TAG">Technical Architecture (TA) Process Guidance</option>
+  <option value="#PSG">Operations and Support (PS) Process Guidance</option>
+</select>
+<!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("RKM");
+  Effect.BlindDown("QM");
+  Effect.BlindDown("CM");
+  Effect.BlindDown("IFM");
+  Effect.BlindDown("OCHM");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("PS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("RKM");
+  Effect.BlindUp("QM");
+  Effect.BlindUp("CM");
+  Effect.BlindUp("IFM");
+  Effect.BlindUp("OCHM");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("PS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<h2>ORACLE SUPPORT SERVICES SUPPLEMENTAL TASK GUIDELINES FOR IT CHANGE MANAGEMENT</h2>
+<p>This component contains OUM supplemental task guidance for managing IT changes in an Oracle environment. The guidance complements and extends the baseline OUM guidance and should be used in conjunction with the guidelines in the OUM Task Overviews.</p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview. The guidance included in this component is focused on on Oracle's recommended approach and best practices for handling IT changes to an Oracle Eco System. Implementing the recommended technical solutions that consist of process, governance, product capabilities and knowledge ensures that standardized methods and procedures are used for efficient and prompt detection and handling of all changes. </p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col" height="26">Oracle Support Services - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th scope"col><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Risk Management </div></th>
+    </tr>
+  <tbody id="RKM">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#RKM040">RKM.040 Manage Risk </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#RKM050">RKM.050 Monitor and Control Risk </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">RKM.050 Monitor and Control Risk </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Quality Management </div></th>
+  </tr>
+  <tbody id="QM">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#QM020">QM.020 Develop and Document Quality Control and Reporting Process </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup"height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Configuration Management </div></th>
+  </tr>
+  <tbody id="CM">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#CM010">CM.010 Develop Configuration Management Strategy and Processes </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#CM020">CM.020 Obtain Configuration Management Tools </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">CM.020 Obtain Configuration Management Tools </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#CM050">CM.050 Create and Execute Software Release Management Plan </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#CM070">CM.070 Create and Execute Configuration Control Plan </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">CM.070 Create and Execute Configuration Control Plan </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Infrastructure Management </div></th>
+  </tr>
+  <tbody id="IFM">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#IFM040">IFM.040 Manage and Maintain Infrastructure </a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/IFM040_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">IFM.040 Manage and Maintain Infrastructure </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Organizational Change Management </div></th>
+  </tr>
+  <tbody id="OCHM">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#OCHM010">OCHM.010 Understand Customer's Organizational Change Management Strategy</a></td>
+      <td width="50%"><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand Customer's Organizational Change Management Strategy</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Technical Architecture </div></th>
+  </tr>
+  <tbody id="TA">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#TA020">TA.020 Define Technical Architecture Requirements and Strategy </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#TA100">TA.100 Define System Management Procedures </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_100_DEFINE_SYSTEM_MANAGEMENT_PROCEDURES_OVERVIEW.HTM" target="_blank">TA.100 Define System Management Procedures </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Operations and Support </div></th>
+  </tr>
+  <tbody id="PS">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#PS010">PS.010 Audit System </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_010_AUDIT_SYSTEM_OVERVIEW.HTM" target="_blank">PS.010 Audit System </a></td>
+    </tr>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=RKMG id="RKMG"></A></B>RISK MANAGEMENT (RKM) PROCESS GUIDANCE</h3>
+<p class=HeadingBar>Risk is a key input into Change Management, and also a key output. IT environments should be monitored for risks, and risks identified, should be analyzed and mitigated in a timely manner to ensure system health and security. To ensure risks due to changes to the IT are identified and mitigated, the following Risk Management tasks should address the recommended best practices contributing to IT Change Management, as outlined below. (See supplemental guidance for task <a href="#TA020">TA.020, Define Technical Architecture Requirements and Strategy</a> for a list of changes.)</p>
+<h4><B><A
+name=RKM040 id="RKM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk </a></h4>
+<p>Changes are typically analyzed for potential risks to the system. Changes are also proactively identified as described in the task, Monitor and Control Risk (RKM.050), and analyzed for risks. Each identified risk is evaluated and mitigated accordingly. To effectively manage changes, the Manage Risk task should address the following recommended best practices: </p>
+<ul>
+  <li><b>Analyze Changes</b> - Once a change to the IT environment is logged, both the Business and Technical impact are analyzed. This helps manage the risk of the changes introduced. The change may not just impact that system, but also inter-connected systems. For example: An eCommerce application may make a call-out to a payment processing application like &quot;VISA&quot;. Capturing associations and relationships between configuration items, services and systems allows for easy &quot;what is affected, what is impacted&quot; analysis. <a href="http://docs.oracle.com/cd/E24628_01/em.121/e27046/config_mgmt.htm#CFHJHBDI" target="_blank">Oracle Enterprise Manager EM12C</a> can be utilized to traverse the relationships from the bottom to the top of the tree to see if a problem will occur if changes are made to the element. It answers the question: What items are dependent on my element that would be affected should I do something to my element. For example, if I shut down a listener, what databases would be affected?</li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=RKM050 id="RKM050"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">RKM.050 Monitor and Control Risk </a></h4>
+<p>Risks need to be proactively monitored and controlled so that the IT system is healthy. The risks identified in the execution of this task are managed through execution of task RKM.040 (Manage Risk). Monitor and Control Risk should address the following best practices to effectively identify potential risks to the system and suggest appropriate changes to mitigate the risk:</p>
+<ul>
+  <li><b>Identify Changes to Monitor</b> &ndash; There are several sources or inputs for change. Some common sources are listed below but your business requirements may include additional sources of change to monitor.
+      <ul>
+        <li><b>Patches and Security Updates:</b> Patch Recommendations(changes) to remain stable, supportable and current, provided through Advisories in OEM/MOS.</li>
+        <li> <b>Unauthorized Changes and System Performance:</b> Automatic Real time Change Detection through healthchecks, risk analysis, monitoring tools.</li>
+        <li> <b>Industry and/or Regulatory Requirements:</b> Compliance to Industry/Government Standards.</li>
+        <li> <b>Changes due to Business Requirements:</b> IT changes as a result of business requirements like business setups, deployments, enabling new features, etc.</li>
+      </ul>
+  </li>
+  <li> <b>Create Policies to Monitor for Changes</b> &ndash; Policies or rules are effective in managing configuration drift (through installation of patches, adding files and directories, changing settings and ports, editing its dependencies, and so forth) by continually auditing against prescribed configurations. Notification rules can be applied and corrective actions can be assigned for the defined policies. <a href="http://docs.oracle.com/cd/E24628_01/em.121/e27046/config_mgmt.htm#CFHJHBDI" target="_blank">Oracle Enterprise Manager EM12C</a> can be used to create policies/rules to evaluate the compliance of targets and systems as they relate to business best practices for configuration, security, and storage.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=QMG id="QMG"></A></B>QUALITY MANAGEMENT (QM) PROCESS GUIDANCE</h3>
+<p class=HeadingBar>Like any other process, change management needs to be measured and continually improved upon. The success criteria are defined and then the improvement plan is created at a later point. Metrics identified in the improvement plan are measured to create the action plan for improvement. To ensure that the Change Management process is monitored and continually improved, the following Quality Management tasks should address the recommended best practices contributing to IT Change Management, as outlined below:</p>
+<h4><B><A
+name=QM020 id="QM020"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process </a></h4>
+<p>Identifying Success factors and metrics are key to drive improvement. In this task we will document a Quality Control and Reporting process to measure the efficiency and effectiveness of IT Change Management process. The Quality Control and Reporting Process should address the following best practices to effectively identify Key Performance Indicators and Success Factors to continually drive improvements in the IT Change Management Process:</p>
+<ul>
+  <li><b>Identify Success Criteria </b> - The types of measures that need to be considered include: <br>
+      <ul>
+        <li><b>Output Measures:</b> Metrics that measure the outcome of the process or answer the question, Has it made a difference? An example is a reduction in the disruptions caused by unsuccessful changes.</li>
+        <li><b>Workload Measures:</b> Metrics that measure total number of changes to the environment.</li>
+        <li><b>Process Measures:</b> Metrics that measure performance, including perceptions and satisfaction levels with the overall process, e.g., speed, ease of use, etc.</li>
+      </ul>
+      <blockquote>
+        <p>The maturity level of the process will drive the types of measurements appropriate to be collected. In a new process, more process measures and workload measures are appropriate, i.e., Do changes have back-out plans? Have they been tested? What is the breakdown of the type of changes? As the process matures, business-outcome / output measures are more appropriate, such as reduction in impact of changes.</p>
+      </blockquote>
+  </li>
+  <li><b>Create Continual Improvement Plan </b> - As for any process, create a Continual Improvement Plan by measuring performance. Here are some sample metrics:</li>
+</ul>
+<blockquote>
+  <p><b>Measure Process: </b></p>
+  <p>1. % Rejected RFCs <br>
+    2. Unauthorized Changes Detected <br>
+    3. % of Change Requests (Business-Driven Need) Implemented On Time <br>
+    4. Average Time to Make Changes <br>
+    5. The Change Backlog <br>
+    6. % Fewer Changes 'Backed Out' Because of Testing Failures <br>
+    7. Changes Required by Previous Change Failures <br>
+    8. % of Reports Produced on Schedule</p>
+  <p><b>Quick and Accurate Changes: </b></p>
+  <p>1. The Number of Urgent Changes <br>
+    2. Urgent Changes Causing Incidents <br>
+    3. Changes Implemented Without Being Tested <br>
+    4. Urgent Changes Requiring Back-Out <br>
+    5. % of Urgent or High Priority Changes Submitted Without Business Case to Justify Decision </p>
+  <p><b>Protect Service:</b></p>
+  <p>1. Amount of Both the Scheduled and Unscheduled Service Unavailability Caused by Changes <br>
+    2. Changes Backed Out<br>
+    3. Unsuccessful Changes <br>
+    4. Changes Causing Incidents<br>
+    5. Changes Impacting Core Service Time and SLA Service Hours<br>
+    6. Changes Activated Outside Core Service Time and SLA Service Hours<br>
+    7. Changes not Referred to a Change Advisory Board (CAB) or CAB Emergency Committee <br>
+    8. Customer Satisfaction Survey (CSS) Feedback on Change <br>
+    9. Failed Changes that do not have Recorded Back-Out Plan <br>
+    10. Time to Implement a Change Freeze </p>
+  <p><b>Efficiency and Effectiveness Results:</b></p>
+  <p>1. % Efficiency Based on Number of RFCs Processed<br>
+    2. The Accuracy of Change Estimates<br>
+    3. The Average Cost of Handling a Change<br>
+    4. Change Overtime due to Better Planning<br>
+    5. The 'Cost' of Failed Changes <br>
+    6. % of Changes Implemented On Time<br>
+    7. % of Changes Implemented to Budget<br>
+    8. Failed Changes<br>
+    9. Backed Out Changes </p>
+  <p><b>Tools for Measuring Metrics:</b></p>
+  <p> Configure your existing Change Management tools for data collection. In Oracle's solution, the reporting mechanisms in Oracle Enterprise Manager and Siebel Help Desk can be used to collect performance data and display it in a dashboard to drive continual improvement.</p>
+</blockquote>
+<ul>
+  <li><b>Review Reports to Drive Improvement</b> - The reports established in the implementation phase are recommended to be viewed on a regular basis to drive continuous improvement on the Change Management process.</li>
+</ul>
+<blockquote>
+  <p><b>How to view reports?</b></p>
+  <ul>
+    <li> <b>Change Identification and Deployment</b> - The generic Enterprise Manager Reports Web site URL is http://hostname:port/em/public/reports. The URL for this site is automatically set when Enterprise Manager is installed. A link to this site can be found on the Create/Edit Report Definition Access page and the Reports tab.</li>
+    <li> <b>Change Tracking</b> - The Change tracking tool typically has reports to manage performance of changes such as number of emergency changes, failed changes which can be reviewed to drive improvement.</li>
+  </ul>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=CMG id="CMG"></A></B>CONFIGURATION MANAGEMENT (CM) PROCESS GUIDANCE</h3>
+<p class=HeadingBar>Configuration Management is a prerequisite for all the other IT processes. Configuration management is intrinsically linked to change management to ensure that a clear and complete &quot;snapshot&quot; of the environment is always available. For effective change management, assets are discovered and maintained in a configuration database (widely known as CMDB). From this point on, changes to and status of the configuration items are recorded in the configuration management database. To ensure effective rollout of changes on configurations, the following Configuration Management tasks should address the recommended best practices contributing to IT Change Management, as outlined below:</p>
+<h4><B><A
+name=CM010 id="CM010"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes </a></h4>
+<p>Change Management is part of the lifecycle of a configuration item. Understanding the Change Management Process is a key factor that facilitates developing a Configuration Management Strategy and Process.</p>
+<ul>
+  <li><b>Understand/Review Change Management Process</b> &ndash; IT Change Management is the process of identifying, requesting, analyzing, approving, developing, implementing, and reviewing planned or unplanned changes to assets/configurations within the IT infrastructure. The Change Management Process begins with the identification of a Change Request and ends with the satisfactory implementation of the change and the communication of the result of that change to all interested parties. Change Management process consists of the following steps:
+      <ul>
+        <li><b>Identify/Detect a Change</b> - Determine when a change needs to be made or when unauthorized changes have been made proactively before it negatively impacts the business.</li>
+        <li><b>Formally Request a Change</b> - Document all change requests by creating a Request for Change (RFC). </li>
+        <li><b>Categorize and Prioritize the Change</b> - Prioritize the change after assessing the urgency and the impact of the change on the infrastructure, end user productivity and budget.</li>
+        <li><b>Analyze and Justify the Change</b> - Develop specific justification for the change by analyzing the impact on the infrastructure, business operations, and budget.Use this information to develop an extensive risk and impact analysis.</li>
+        <li><b>Approve and Schedule the Change</b> - Review the risk/impact analysis to approve the change by routing the Request for Change (RFC) to technical and business approvers as appropriate. In the event of a major or significant change, ensure that committees such as Change Advisory Board (CAB) are involved for approval or rejection of the change.</li>
+        <li><b>Plan and Deploy the Change</b> - Develop and deploy the change reviewing the specific implementation steps in a manner that will minimize impact on the infrastructure and end users.</li>
+        <li>Conduct Post-Implementation Review - Conduct a post-implementation review to ensure whether the change has achieved the desired goals. Post-implementation actions include deciding to accept, modify or back-out the change; contacting the end user to validate success; and finalizing the change documentation.</li>
+      </ul>
+  </li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=CM020 id="CM020"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">CM.020 Obtain Configuration Management Tools </a></h4>
+<p>To effectively manage Oracle IT Assets, you need to identify the Tools which will help you with the process. This section provides supplemental guidance on identifying the Tools and Services for effective Configuration and Change Management of the Oracle infrastructure.</p>
+<ul>
+  <li><b>Identify Tools and Services</b> - Change management tools and services that help you facilitate a successful implementation and stay ahead of constant change. With well defined processes and tools available to help plan, execute, and track changes you can take a proactive stance to manage changes in your Oracle environment. <br>
+      <ul>
+        <li><b>Products and Tools:</b> Tools can help reduce risk, minimize impact, avoid business disruption, and most importantly, increase your first-time success rate when preparing for and managing change in your infrastructure.<br>
+        Below is a list of Change Management Products/Tools provided by Oracle:</li>
+      </ul>
+      <blockquote>
+        <TABLE border=1>
+          <TBODY>
+            <TR>
+              <TD height="26" bgColor=#CCCCCC><div align="left">Process</div></TD>
+              <TD bgColor=#CCCCCC><b>Product / Tool </b></TD>
+            </TR>
+            <TR>
+              <TD align="left" valign="top"><p>Identify and Deploy Changes </p></TD>
+              <TD align="left" valign="top"><div align="left"><a href="http://www.oracle.com/technetwork/oem/lifecycle-mgmt-495331.html?ssSourceSiteId=ocomen" target="_blank">Oracle Enterprise Manager 12C </a></div></TD>
+            </TR>
+            <TR>
+              <TD align="left" valign="top">Integrated Support </TD>
+              <TD align="left" valign="top"><a href="http://www.oracle.com/us/support/library/proactive-support-tools-change-mgmt-069176.pdf" target="_blank">Oracle Proactive Support Tools </a></TD>
+            </TR>
+            <TR>
+              <TD align="left" valign="top"><p>Track and Manage Changes </p></TD>
+              <TD align="left" valign="top"><div align="left"><a href="http://www.oracle.com/us/products/applications/siebel/contact-center-service/038227.htm" target="_blank">Siebel Help Desk </a></div></TD>
+            </TR>
+            <TR>
+              <TD align="left" valign="top"><p>&nbsp;</p></TD>
+              <TD align="left" valign="top"><div align="left"><a href="http://www.oracle.com/us/products/applications/057184.pdf" target="_blank">Oracle TeleService </a></div></TD>
+            </TR>
+            <TR>
+              <TD align="left" valign="top">&nbsp;</TD>
+              <TD align="left" valign="top"><a href="http://www.oracle.com/us/media1/057246.pdf" target="_blank">PeopleSoft Enterprise HelpDesk </a></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+      </blockquote>
+      <ul>
+        <li><b>Services:</b> Oracle's complete portfolio of services covers the entire solution lifecycle and has been developed to assist customers in reducing total cost of ownership, lowering risk and improving business value.<br>
+        Services related to Change Management are:<br>
+        <br>
+        1. <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=847410.5" target="_blank">My Oracle Support Patches and Updates Services</a> <br>
+        2. <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=250.1" target="_blank">Lifecycle Advisors</a> <br>
+        3. <a href="https://acsportal.oracle.com/CSP/bin/CSP.html" target="_blank">ACS Services</a><br>
+        <br>
+        You can find additional services offered by Oracle Support in the <a href="http://www.oracle.com/us/products/services-catalog/osc.html?ITIL=Transition" target="_blank">Services Catalog</a>.</li>
+      </ul>
+  </li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=CM050 id="CM050"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan </a></h4>
+<p>Changes identified as part of the Change Management process described in the task, <a href="#CM070">Create and Execute Configuration Control Plan (CM.070)</a> are released using specific release plans. This section provides best practices to strategize these releases using maintenance plans and promoting the changes through different environments (such as, DEV, TEST, PROD) and applying the changes to PROD environment.</p>
+<ul>
+  <li><b>Strategize Release of Changes</b> - Changes can be either planned (proactive) or emergency (reactive). Plan roll out (release) of proactive changes ahead of time using pre-defined maintenance schedules and allocate regular maintenance windows for reactive (emergency) changes. The Change Manager in addition to business unit representatives and members of the Change Advisory Board (CAB) will establish maintenance windows in alignment with the business cycle in order to maintain system stability and business continuity. Changes should be frozen during peak business processing times, e.g. End of Month, End of Quarter, End of Year dependent on the business processing cycle.<br>
+      <br>
+      <b>Example - Steps to Create a Maintenance Plan</b> <br>
+      <ul>
+        <li>Define Change Freeze Periods
+            <ul>
+              <li> Fiscal Year(FY) June1 - May 31</li>
+              <li> First Quarter(1Q) - June 1 - Aug 31</li>
+              <li> Second Quarter(2Q) - September1 - November 30</li>
+              <li> Third Quarter(3Q) - December1-February 28</li>
+              <li> Fourth Quarter(4Q) - March1-May31</li>
+              <li> Hard freeze is the time period when quarterly closes are done (just before each quarter ends) when there are no changes permitted at all.</li>
+              <li> Soft Freeze is the time period when there are still some quarterly close activities taking place, but emergency changes are permitted. Major changes are not permitted during the Soft Freeze.<br>
+                  <br>
+                  <b>Quarterly Freeze Periods</b><br>
+                  <br>
+                  <table border="1" title="Example Freeze Periods" summary="This table provides example Freeze Periods.">
+                    <tr>
+                      <th scope="col">Freeze</th>
+                      <th scope="col">1QFY12</th>
+                      <th scope="col">2QFY12</th>
+                      <th scope="col">3QFY12</th>
+                      <th scope="col">4QFY12</th>
+                    </tr>
+                    <tr>
+                      <th scope="row"><div align="left">Hard Freeze </div></th>
+                      <td>Aug18-Sep4 </td>
+                      <td>Nov15-Dec1</td>
+                      <td>Feb14-Feb28</td>
+                      <td>May14-Jun1</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><div align="left">Soft Freeze </div></th>
+                      <td>Sep5-Sep19</td>
+                      <td>Dec2-Dec15</td>
+                      <td>Mar1-Mar15</td>
+                      <td>Jun2-Jun16</td>
+                    </tr>
+                  </table>
+                  <br>
+              </li>
+            </ul>
+        </li>
+        <li><b>Create a Maintenance Plan</b> - From the freeze periods, identify the available maintenance windows. Some examples of maintenance activities and their schedules follow: <br>
+            <ul>
+              <li>Operations Quarterly Maintenance would have simple configuration/performance changes, etc.</li>
+              <li> Security patches are applied on a quarterly basis.</li>
+              <li> Other types of changes could be scheduled as it fits the organization.<br>
+                  <br>
+                  <b>Quarterly Maintenance:</b><br>
+                  <br>
+                  <table border="1" title="Example Quarterly Maintenance" summary="This table provides example quarterly maintenance for freeze periods.">
+                    <tr>
+                      <th scope="col">Freeze</th>
+                      <th scope="col">1QFY12</th>
+                      <th scope="col">2QFY12</th>
+                      <th scope="col">3QFY12</th>
+                      <th scope="col">4QFY12</th>
+                    </tr>
+                    <tr>
+                      <th scope="row"><div align="left">Hard Freeze </div></th>
+                      <td>Jul 24 </td>
+                      <td>Oct 23 </td>
+                      <td>Jan22</td>
+                      <td>Apr 22 </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><div align="left">Soft Freeze </div></th>
+                      <td>Jul 31</td>
+                      <td>Oct 30 </td>
+                      <td>Jan 29 </td>
+                      <td>Apr 29 </td>
+                    </tr>
+                  </table>
+                  <br>
+              </li>
+            </ul>
+        </li>
+        <li><b>Implement Promotion of Changes</b> &ndash; One of the key steps in Release Management is progression of changes through various environments. Even though this depends on each organization, below are a couple of examples to promote changes:<br>
+            <br>
+            <img src="../../../010_COMMON_FILES/OSS_CM050.GIF" alt="Examples of Release Management Progression of Changes through Various Environments" width="734" height="438" title="Examples of Release Management Progression of Changes through Various Environments"> <br>
+            <ul>
+              <li>The first example shows a simple Change path which could be used for small-to-medium project changes(Example - Quarterly Release Bundle).</li>
+              <li> The second example, shows how the promotion of changes might look like for larger projects (like Upgrades).The Technical Test environment is a one-off test environment and has no designated change flow to other test environments. It is used for initial upgrade testing and performance testing. A copy of production is created just before go-live as a reference for issues which may arise. Upgrade changes will be introduced into normal production support path via refresh after project go-live.</li>
+            </ul>
+            <br>
+        </li>
+        <li><b>Log and Manage Changes</b> &ndash; Part of the Software Release Management Plan and any changes released will consist of the following steps: <br>
+            <ul>
+              <li><b>Initiate Change:</b> A request for change (RFC) is initiated by the &quot;Change Initiator&quot; and here are some examples of how changes can be initiated and logged:<br>
+                  <br>
+            1. Changed from an existing incident, where the solution can be to apply a patch, make a configuration change, etc. In this case the incident can initiate a Change Request using the ticketing system. <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_ITL14.html#wp1014837" target="_blank">Here</a> is an example of doing it using Siebel Help Desk.<br>
+            2. For bigger changes (like an Upgrade roll-out), this is typically done by creating a Project in the ticketing system . <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_Projects9.html#wp1012216" target="_blank">Here</a> is an example of doing this using Siebel Help Desk. You can also use <a href="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=733255.5" target="_blank">My Oracle Support Projects</a> to collaborate with Oracle Support on roll-out of major changes like an Upgrade.<br>
+            3. Changes can also be triggered by monitoring tools (like OEM) which can open a change ticket in the ticketing system (like Siebel) based on the criteria set using connectors as described in the Plan phase. Example - If there is a security alert raised as a result of non-compliance to the policies set in OEM, a change ticket can be initiated from OEM using the connector to populate the change record with the configuration information. <br>
+              </li>
+              <li><b>Classify Change:</b> The classification of a change aims at providing a control factor for the change, which will be used for factual decision making with respect to change scheduling. <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_ITL15.html#wp1014887" target="_blank">Here</a> is an example of how this can be done.<br>
+              </li>
+              <li><b>Conduct Impact Analysis and Assess Risk:</b> Once a change is logged, both the Business and Technical impact are analyzed. The change may not just impact that system, but also inter-connected systems. For example: An eCommerce application may make a call-out to a payment processing application like &quot;VISA&quot;. Capture associations and relationships between configuration items, services and systems allows for easy &quot;what is affected, what is impacted&quot; analysis. Here is an example of impact analysis on an EBS environment for rolling out patches:<br>
+                  <br>
+            1. Apply the patch on a test environment that is a very recent clone or copy of your Production environment.<br>
+            2. Use <a href="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=976188.1#aref_section313" target="_blank">Patch Wizard</a> to assess technical impact (what files have been changed, etc.).<br>
+            3. Use <a href="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=976188.1#aref_section38" target="_blank">Patch Wizard</a> to assess Impact on Customizations based on the &quot;Flagged files.&quot; <br>
+            4. The reading of the README file that comes bundled with the patch to learn what is new, what has changed, etc, especially for Release Update Packs.<br>
+            5. Oracle Communities has some forums for patch reviews where you can get information from other customers about patches they have applied and their results.<br>
+            6. In reactive or emergency patching situations where testing is not feasible, the patch may be applied on your Production system by using the AutoPatch (adpatch) test mode argument (apply=no).<br>
+              </li>
+            </ul>
+        </li>
+        <li><b>Approve and Schedule Change</b> &ndash; Approval of a change is driven by its category which would have been defined when planning the architecture. Based on the Approval criteria setup during the Implement phase (CAB,ECAB, etc.), changes are authorized and scheduled using the Change Management system (Siebel Help Desk in our case). <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_ITL18.html#wp1016101" target="_blank">Here</a> is an example of how this can be done.<br>
+        </li>
+        <li><b>Promote and Release Changes</b> &ndash; As part of Release Management, once the changes are logged, they are promoted through various environments and finally deployed in the Production system. Once they are deployed, changes are validated to ensure they have not introduced any regression and satisfy the requirement of implementing the change. <br>
+            <ul>
+              <li><b>Deploy Change</b> - Depending on the type of changes, simple changes are easy to deploy and can be done by instrumented change models, whereas major changes go through the entire change lifecycle of Development, Test and Production. Some examples of promotion of changes were covered in the &quot;Implement phase&quot;.<br>
+            Below are some examples of how changes can be deployed using Oracle Solution:<br>
+            <br>
+            1. Product Upgrades - Use the <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=250.1" target="_blank">Upgrade Advisors</a> to guide you through an upgrade lifecycle between specific versions for a product or suite. <br>
+            2. Patches - Use the <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=250.1" target="_blank">Patch Advisors</a> to guide you through deployment of a patch.<br>
+            3. Changes in Application code and schema changes using OEM:
+            <ul>
+              <li> Automatically create new versions for new sets of planned changes.</li>
+              <li>Validate planned changes to identify conflicts or previous changes.</li>
+              <li>Preview and edit validated changes before applying.</li>
+              <li>Generate SQL script of final set of validated changes.</li>
+              <li> Apply validated planned changes.<br>
+              </li>
+            </ul>
+              </li>
+              <li><b>Release and Validate Change</b> - Once the changes have been tested and gotten the approval to be released, based on the maintenance schedule developed during the strategy phase, changes should be packaged and released.<br>
+            Some of the steps to be taken into consideration are:<br>
+            <br>
+            1. GO-NOGO decision has been made<br>
+            2. All the approvals are in place - should be tracked using the ticketing system (Siebel Help Desk)<br>
+            3. Change is documented and communicated including the Projected Service Outage if there is any outage during the change release - through the ticketing system(Siebel Help Desk)<br>
+            4. Transfer information to Operations and Support - create technical documents and training information as required. Oracle's User Productivity Kit (UPK) can be used to create training content.<br>
+            5. Stabilize in the Production environment - Observe using System Management tool like OEM<br>
+            6. Validate both from technical and business standpoint whether the change was successful and any lessons learned to drive improvements - can be done using feedbacks, technical comparison (new and old environments), Business process monitoring, etc.</li>
+            </ul>
+        </li>
+      </ul>
+  </li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=CM070 id="CM070"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">CM.070 Create and Execute Configuration Control Plan </a></h4>
+<p>The Configuration Control Plan controls the changes to configurations to the IT infrastructure. It is important to both detect risks to the environment to proactively prompt the changes and also detect any unauthorized changes to the configuration. The detected changes are rolled out using release plans described in the task, <a href="#CM050">Create and Execute Software Release Management Plan (CM.050)</a>. This section provides best practices to both identify health/patch recommendations and also unauthorized risk to IT infrastructure: </p>
+<ul>
+  <li><b>Detect Changes</b> - Assets and configurations are required to be evaluated related to business best practices for configuration, security and storage. There needs to be controls in place to ensure that the configurations are maintained properly. There are various sources of changes. Below are some examples of identifying the need to change or detect unauthorized changes. Once the changes are identified, using the Change Management Solution (example - OEM), the Connectors in OEM can be used to log and manage tickets in the ticketing system (example - Siebel Help Desk). <br>
+      <ul>
+        <li><b>Changes as a result of Configuration Drift:</b> A drift in configuration can be identified using Oracle Enterprise Manager (OEM) 12C across the stack, across system lifecycles, Baseline &amp; Gold Std and 1 to 1, 1 to Many scenarios. Save the comparisons with versions so that it can be compared across various timelines. Automated notifications could also be setup. Example using OEM and Application Management Packs: <br>
+            <ul>
+              <li>Find if all the E-Biz Suite configurations in the data center are following a particular standard.</li>
+              <li>Find the drift between Development, Stage and Production lifecycles.</li>
+              <li>Detect if peers are indeed similarly configured.</li>
+              <li>Reconcile differences, if any.</li>
+              <li>Revert back to an older snapshot upon deviation.<br>
+              </li>
+            </ul>
+        </li>
+        <li><b>Changes as a Result of Health and Patch Recommendations:</b> IT infrastructure is required to be monitored for system health. The recommendations out of the monitored system can be implemented using the Change Management Solution. <br>
+            <br>
+            <b>Example:</b> The critical Patch Advisory in OEM using the My Oracle Support integration provides:<br>
+            <br>
+        1. Vulnerability Analysis on the Security Patches (CPUs)<br>
+        2. Comprehensive Analysis of Applicable Patches across Products, Versions, and Platforms<br>
+        3. Supports both Online and Offline Modes<br>
+        4. Automated Patching Process<br>
+        5. Advisory and Vulnerability Reports</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=IFMG id="IFMG"></A></B>INFRASTRUCTURE MANAGEMENT (IFM) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=IFM040 id="IFM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/IFM040_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">IFM.040 Manage and Maintain Infrastructure</a></h4>
+<p>To effectively deploy Change Management processes within an organization, there are infrastructure requirements to ensure changes are efficiently handled. Change Management tools identified in CM.020 (Obtain Configuration Management Tools) need to be installed and maintained as part of the IT infrastructure being managed. To ensure we have a the necessary infrastructure to support roll-out of changes, the following Infrastructure Management tasks should address the recommended best practices contributing to IT Change Management, as outlined below:</p>
+<ul>
+  <li><b>Create Environments to Promote Change</b> - Changes are promoted from the Development environment all the way to Production where it is available for the users. While we understand that the types of environments vary across organization, below is a sample of what environments are required to roll out changes.<br>
+      <br>
+      <table border="1" title="Example Environments to Promote Change" summary="This table provides an example of environments that might be required to roll out changes.">
+        <tr bgcolor="#CCCCCC">
+          <th scope="col">Environment</th>
+          <th scope="col">Description</th>
+          <th scope="col">Usage</th>
+        </tr>
+        <tr>
+          <th scope="row"><div align="left">Development</div></th>
+          <td>Initial Development Environment - IT Only </td>
+          <td>Used for Ongoing Development </td>
+        </tr>
+        <tr>
+          <th scope="row"><div align="left">Build Test </div></th>
+          <td>First Integrated Environment </td>
+          <td>Business Process Owners Involved</td>
+        </tr>
+        <tr>
+          <th scope="row"><div align="left">Unit Test </div></th>
+          <td>Full Test Environment </td>
+          <td>All Users along with Automated Tests </td>
+        </tr>
+        <tr>
+          <th scope="row"><div align="left">Stage</div></th>
+          <td>Final Test before Production </td>
+          <td>Ensure all Regression Tests (RTs) and Critical Flows work.</td>
+        </tr>
+        <tr>
+          <th scope="row"><div align="left">PROD</div></th>
+          <td>Production</td>
+          <td>Production</td>
+        </tr>
+      </table>
+      <br>
+  </li>
+  <li><b>Setup Support Framework</b> - My Oracle Support is Oracle&rsquo;s Support framework. The following are the recommended steps in your infrastructure to integrate Support with your System Management tools (such as EM):<br>
+      <br>
+    1. <a href="http://download.oracle.com/docs/cd/E18041_01/doc.103/e18037/ccrqs.htm#insertedID1" target="_blank">Identify if Collector is Installed</a>.<br>
+    2. Download and Install Oracle Configuration Manager(OCM) Collector:
+    <ul>
+      <li> If you had chosen to deploy OCM without the harvester, <a href="http://download.oracle.com/docs/cd/E18041_01/doc.103/e18037/ccrqs.htm#insertedID1" target="_blank">download and install collector</a> in each ORACLE HOME. If there are lot of environments, the manual installation of Oracle Configuration Manager in these environments can be tedious and time consuming. <a href="http://download.oracle.com/docs/cd/E18041_01/doc.103/e14501/mass_deploy.htm#BIHFHHFA" target="_blank">Mass Deployment</a> can facilitate the deployment of Oracle Configuration Manager in these environments, as well as update and configure various systems from a single location.</li>
+      <li>If you had chosen to deploy using OEM Harvester, it is sufficient you install one OCM collector for OMS instance in Connected mode. Then setup a <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=1126022.1#aref1" target="_blank">Harvester job</a> to gather and upload Configuration information to Oracle.<br>
+        3. Enable systems not having internet access using <a href="http://download.oracle.com/docs/cd/E18041_01/doc.103/e14501/stdalone_rptr.htm#BGBIJJBA" target="_blank">Oracle Support Hub utility</a>.</li>
+    </ul>
+    4. <a href="http://download.oracle.com/docs/cd/E18041_01/doc.103/e12882/connectivity.htm" target="_blank">Validate</a> OCM agents are running. <br>
+    5. <a href="https://support.oracle.com/CSP/main/article?cmd=show&type=NOT&doctype=FAQ&id=369111.5#aref7" target="_blank">Schedule Upload</a> of Configuration Data - OCM has a scheduler process that dictates when collections occur. This can be configured using the command <br>
+    $ORACLE_HOME/ccr/bin/emCCR set collection_interval.<br>
+    6. Validate OCM data uploaded to MOS is current by checking the timestamp of the configuration.<br>
+    7. <a href="https://support.oracle.com/oip/faces/secure/km/DocumentDisplay.jspx?id=733393.5#subscribe" target="_blank">Subscribe to Communities</a> for sharing information, posting questions and answers, and providing suggestions about Oracle products, services, and related technologies.<br>
+  </li>
+  <li><b>Setup Change Detection and Deployment Framework </b> - Oracle Enterprise Manager(OEM) is Oracle&rsquo;s solution for Change Detection and Deployment. The following information will enable you to setup the infrastructure required to manage your Oracle Environment:<br>
+      <br>
+    1. <a href="http://download.oracle.com/docs/cd/E24628_01/install.121/e22624/install_em_exist_db.htm#BGBHDBCH" target="_blank">Install OEM 12C</a>.<br>
+    2. <a href="http://download.oracle.com/docs/cd/E24628_01/install.121/e22624/install_agent.htm#CACJEFJI" target="_blank">Deploy OEM 12C Agent</a>.<br>
+    3. Setup various options within OEM by clicking the &quot;Setup&quot; button at the top of the console: <br>
+    <ul>
+      <li> Setup Roles and Administrators.</li>
+      <li>Setup notifications and format of emails.</li>
+      <li>Configure MOS within OEM (under Patching Setup).</li>
+      <li>Enable Management Packs(as licensed - Lifecycle management pack is key for change management).</li>
+      <li>Configure Connector for change management ticketing system (Management Connectors for Siebel, Remedy, etc.)</li>
+    </ul>
+    <p>4. <a href="http://download.oracle.com/docs/cd/E11857_01/em.111/e16599/infrastructure_setup.htm#BABBFGFG" target="_blank">Setup and Configure Software Library</a> and stage the software images which can be accessed by any target.</p>
+  </li>
+  <li>
+    <p><b>Setup Change Approval and Tracking Framework </b> - Changes need to be managed and in order to automate this process, there are infrastructure requirements to install and setup the tools which will provide these capabilities. Even though Oracle offers quite a number of solutions, we have taken Siebel Help Desk as an example:<br>
+        <br>
+      1. <a href="http://download.oracle.com/docs/cd/E14004_01/books/PDF/SiebInstUNIX.pdf" target="_blank">Install Siebel Help Desk Software</a>.<br>
+      2. Activate Help Desk Business Process and personalize it as required based on the strategy developed in the earlier phase using the <a href="http://download.oracle.com/docs/cd/E14004_01/books/PDF/BPFWorkflow.pdf" target="_blank">Siebel Workflow Guide</a>.<br>
+      3. Configure auto escalation time limits and procedures for unresolved tickets.<br>
+      4. <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_ITL19.html#wp1027572" target="_blank">Add Approval List in Siebel Help Desk</a>.<br>
+      5. <a href="http://download.oracle.com/docs/cd/E14004_01/books/HelpDesk/HelpDesk_Projects9.html#wp1012216" target="_blank">Setup Projects in Siebel Help Desk for tracking major changes like Upgrade</a>.</p>
+  </li>
+  <li>
+    <p><b>Implement Reporting Framework </b> - Reports are used to present a view of enterprise monitoring information for business intelligence purposes, but can also serve an administrative role by monitoring the performance of a process.<br>
+        <br>
+        <b>Create Reports for Change Identification and Deployment</b> - Below is a sample of how a reporting framework could be setup to identify and deploy changes using OEM:<br>
+        <br>
+      Information Publisher, Enterprise Manager's powerful reporting framework, makes information about your managed environment available to audiences across your enterprise. Information Publisher reports present an intuitive interface to critical decision-making information stored in the Management Repository while ensuring the security of this information by taking advantage of Enterprise Manager's security and access control.</p>
+    <ul>
+      <li><b><a href="http://download.oracle.com/docs/cd/E11857_01/em.111/e16790/information_publisher.htm#BGBHHIJC" target="_blank">Review Out of Box Reports</a></b> - Information Publisher comes with a comprehensive library of predefined report definitions, allowing you to generate fully formatted HTML reports presenting critical operations and business information without any additional configuration or setup.<br>
+      </li>
+      <li> <b><a href="http://download.oracle.com/docs/cd/E11857_01/em.111/e16790/information_publisher.htm#BGBFGDCI" target="_blank">Create Custom Reports</a></b> - Although the predefined report definitions that come with Information Publisher cover the most common reporting needs, you may want to create specialized reports. To create custom reports:<br>
+          <br>
+        1. Choose whether to modify an existing report definition or start from scratch. If an existing report definition closely matches your needs, it is easy to customize it by using Create Like function.<br>
+        2. Specify name, category, and sub-category. Grid Control provides default categories and sub-categories that are used for out-of-box reports. However, you can categorize custom reports in any way you like.<br>
+        3. Specify any time-period and/or target parameters. The report viewer will be prompted for these parameters while viewing the report.<br>
+        4. Add reporting elements. Reporting elements are pre-defined content building blocks, that allow you to add a variety of information to your report. Some examples of reporting elements are charts, tables, and images.<br>
+        5. Customize the report layout. Once you have assembled the reporting elements, you can customize the layout of the report. <br>
+      </li>
+      <li><b>Schedule Reports</b> - Enterprise manager allows you to view reports interactively and/or schedule generation of reports on a flexible schedule. For example, you might want to generate an &quot;Inventory Snapshot&quot; report of all of the servers in your environment every day at midnight.</li>
+    </ul>
+  </li>
+</ul>
+<blockquote>
+  <p><b>Create Reports for Change Tracking </b> - The lifecycle of change records and maintained in the ticketing system. Below are guidelines for setting this up for one of Oracle's Solution - Siebel Help Desk:</p>
+  <ul>
+    <li><a href="http://download.oracle.com/docs/cd/E14004_01/books/Reports/ReportsIntegrate.html#wp544886" target="_blank">Install and Configure Reporting Framework</a></li>
+    <li><a href="http://download.oracle.com/docs/cd/E14004_01/books/Reports/ReportsCreate.html#wp321375" target="_blank">Create Reports</a></li>
+    <li><a href="http://download.oracle.com/docs/cd/E14004_01/books/Reports/ReportsScheduleRpts.html#wp283720" target="_blank">Schedule Reports</a></li>
+  </ul>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=OCHMG id="OCHMG"></A></B>ORGANIZATIONAL CHANGE MANAGEMENT (OCHM) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=OCHM010 id="OCHM010"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand Customer's Organizational Change Management Strategy </a></h4>
+<p>IT Change Management is part of the Organization&rsquo;s wider Change Management process and should blend with the organizational strategy towards managing changes. People, Process and Technology are three key parts of IT Management. In this section you will get Best Practices related to organizational structure (People part) to support IT Change Management.</p>
+<ul>
+  <li><b>Define Governance, Roles and Responsibility</b> - Complexity of today's business and IT environments makes efficient and effective change management simultaneously more important and more difficult to achieve. For effective Change Management, it is very important to define proper Roles, Responsibilities, committees and approval hierarchy within an organization to ensure changes are coordinated and adequately governed.<br>
+  </li>
+</ul>
+<blockquote>
+  <p> <b>Setup Roles</b> - While this depends on each organization, here are some suggested roles to drive effective Change Management: </p>
+  <ul>
+    <li><b>Global Business Owner</b> - Person responsible for the specific Business flow (for example, Order to Cash)<br>
+    </li>
+    <li><b>Global IT Solution Owner </b>- Person responsible for creating the solution to support the business flow (tools, technologies, applications to support the business flow). Global Business Owner and Global IT Solution Owner work very closely throughout the Change Management Lifecycle.<br>
+    </li>
+    <li><b>Change Manager </b>- Person responsible for managing the activities of the change management process for the IT organization. This individual focuses on the process as a whole more than on any individual change. The Change Manager is ultimately responsible for the successful implementation of any change to the IT environment.<br>
+    </li>
+    <li><b>Change Initiator </b>- Person responsible for originating changes by submitting a well defined change request(RFC). Change initiators could be users, suppliers or IT staff - depending on the nature of the proposed change.</li>
+  </ul>
+  <p><b>Setup Committees </b> - Within an organization there can be certain groups, comprised of cross functional representatives, who meet on a regularly basis to deliver on their specific charters. Delegates are identified to represent each of their respective areas on various committees. Here is an example of typical committees that can be setup appropriate to your requirement:</p>
+  <ul>
+    <li><b>Change Advisory Board (CAB) </b>- The CAB is a cross-functional group set up to evaluate change requests for business need, priority, cost/benefit, and potential impacts to other systems or processes. Typically the CAB will make recommendations for implementation, further analysis, deferment, or cancellation. The CAB meets on a regular basis (depending on the size of the organization and dynamic nature of changes) to discuss changes which are pending for approval. <br>
+    </li>
+    <li> <b>CAB Emergency Committee (CAB/EC)</b> - This is a subset of the CAB that deals only with emergency changes. It is established to be able to meet on short notice to authorize or reject changes with emergency priority.<br>
+    </li>
+    <li> <b>Compliance Forum </b>- The Compliance Forum coordinates across the organization to drive Compliance. Meets as required (usually monthly). Attended by representatives from each Line of Business(LOB).<br>
+    </li>
+    <li> <b>Security Committee </b>- The group's primary focus is to ensure globally consistent practices among the functional LOB support teams while facilitating and implementing security processes across all environments. They collaborate with the Security team in reviewing, approving and proposing security and access guidelines and processes.</li>
+  </ul>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=TAG id="TAG"></A></B>TECHNICAL ARCHITECTURE (TA) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=TA020 id="TA020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy </a></h4>
+<p>For effective Change Management, technical requirements should be defined and planned so that the solution will cater the needs of the organization. As Change Management consists of selection of different tools and services based on the business requirements as described in CM.020 (Obtain Configuration Management Tools) , this section will provide Best Practices on defining technical requirements for implementing Change Management Solution in an organization.</p>
+<ul>
+  <li><b>Understand Best Practices</b> - While it is understood that each organization have different requirements, following are some of the Best Practices to consider when defining the Architecture for Change Management:<br>
+      <br>
+    1. Plan changes during scheduled maintenance windows and minimize ad hoc/emergency changes. <br>
+    2. Facilitate the introduction of all types of change via simple, clear and effective procedures and tools across the various environments.<br>
+    3. Assess all changes for feasibility (technology and cost) and business impact (risk).<br>
+    4. Perform due diligence appropriate to the Change category and type:
+    <ul>
+      <li> Reduce the breadth of approval on minor or standard changes wherever possible.</li>
+      <li> Increase the rigor and approval level for more significant changes.</li>
+    </ul>
+    5. Acquire Project management support and co-ordination.<br>
+    6. Have Zero tolerance for unauthorized change.<br>
+    7. Prioritize change by type: e.g. innovative versus preventive, versus detective, versus corrective.<br>
+    8. Segregate duties, e.g. manager vs. approver vs. tester.<br>
+    9. Establish a single focal point for managing change.<br>
+    10. Enforce Change windows, establish authorization procedure for exceptions<br>
+    11. Avoid change approvals without a tested back-out plan.</li>
+</ul>
+<ul>
+  <li><b>Define Structure for Change Management</b> - An important aspect of defining the architecture for Change Management Solution is to document the business requirements for change such as the change drivers, types of changes need to manage, how the changes will be promoted and having a clear and concise communication plan. While this depends a lot on the specific organization and business, below are some guidelines: <br>
+      <ul>
+        <li><b>Define Change Drivers</b> - In order to build a strategy for change, it is important to identify where changes come from or in other words what are the drivers for changes. Most of the changes are recurring except Implementation and Upgrade changes which are not very frequent.
+            <ul>
+              <li> <b>Business Driven</b> - Changes which initiate from the Business.
+                  <ul>
+                    <li> Implementation - When you want to implement a new Business process(Example - Implementing Order to Cash Business flow in your current installation). This would involve installation, configuration, testing, customization, roll out, etc.</li>
+                    <li> Process improvement - Customization or setup to satisfy business requirements.</li>
+                    <li> Optimization changes are made periodically when there are performance issues impacting business.</li>
+                  </ul>
+              </li>
+              <li> <b>Vendor or IT Initiated</b> - Changes which are IT or vendor driven to maintain supportability and currency:
+                  <ul>
+                    <li> Patch - regular maintenance activities to resolve issues, stay compliant with security, supportability, etc.</li>
+                    <li>Upgrade - When you are upgrading from one major release to another(Example - Upgrading from Database 10G to 11G).</li>
+                    <li> Configuration changes are made by IT periodically as part of maintenance.</li>
+                  </ul>
+              </li>
+            </ul>
+        </li>
+        <li><b>Define Types of Change Requests</b> - Different types of change requests can be defined based on the impact and in terms of how a change should be handled. Here are some examples:
+            <ul>
+              <li><b>Emergency</b> - Having an immediate, detrimental effect on business operations. Streamlined approval process, may or may not go through full testing based on risk analysis.</li>
+              <li> <b>Urgent</b> - High impact but able to be scheduled in a maintenance window.</li>
+              <li> <b>Normal</b> - Scheduled in a standard maintenance window.</li>
+              <li> <b>Standard</b> - Low impact, repetitive change that is essentially pre-approved. Standard Change template should be defined. Depending on defined policy may not need CAB approval.<br>
+              </li>
+            </ul>
+        </li>
+        <li><b>Define Promotion of Changes</b> - Once changes are created, they are required to be properly tested and promoted to a Production environment. Here are some recommendations of environments:
+            <ul>
+              <li><b>Development Environment</b> - This is the environment where the changes are developed.</li>
+              <li> <b>Test Environment</b> - Once the changes are developed, it is promoted to a Test environment where the changes are tested for its functionality. Test environment needs to match the Production environment as close as possible.</li>
+              <li> <b>User Acceptance (UAT)Environment</b> - Once the changes are individually tested, they are promoted to a UAT environment where the changes are regression and performance tested. UAT environment should be a very recent copy of Production.</li>
+              <li> <b>Stage Environment</b> - This is where the changes are finally tested before it gets released in the Production environment. Ensure all regression tests (RTs) and critical flows work in this environment.</li>
+              <li> <b>Production Environment</b> - Once the changes are thoroughly tested, it is promoted into the Production environment.<br>
+              </li>
+            </ul>
+        </li>
+      </ul>
+      <p><b>Create Communication Plan</b> - The Communication Plan ensures that all stakeholders are equally informed of how, when, and why communication will happen. Communication is often a very effective way to solve problems, deal with risks, and ensure that tasks are completed on time. Successful communication plans will identify stakeholders, the information to be communicated, and how this information will be communicated.</p>
+  </li>
+  <li><b>Identify Technical Requirements for Change Management Solution </b> - For effective Change Management, define technical requirements to facilitate identification, tracking, deploying and measuring changes. Taking an example, for managing changes in a database environment using Oracle solution, the following are the key requirements:<br>
+      <br>
+    1. My Oracle Support for Integrated Support<br>
+    2. Oracle Enterprise Manager Grid (EM12C) provides the management framework and connection to ticketing system<br>
+    3. OEM 12C Lifecycle Management pack <br>
+    4. A ticketing tool &ndash; for example - Siebel Help Desk for change management which connects into OEM for tracking and managing changes<br>
+    <br>
+    If this was an E Business application environment, the following are the additional recommendations:<br>
+    <br>
+    <a href="http://www.oracle.com/us/products/enterprise-manager/app-change-mgmt-ds-068450.pdf" target="_blank">Oracle Application Change Management Pack for Oracle E-Business Suite</a> (<a href="http://www.oracle.com/technetwork/oem/app-mgmt/ds-apps-mgmt-suite-ebs-166218.pdf?ssSourceSiteId=ocomen" target="_blank">Oracle Application Management Suite for Oracle E-Business Suite</a> being a prerequisite). </li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=TA100 id="TA100"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_100_DEFINE_SYSTEM_MANAGEMENT_PROCEDURES_OVERVIEW.HTM" target="_blank">TA.100 Develop System Management Procedures </a></h4>
+<p>Change Management is essentially a workflow where changes go through a lifecycle from logging all the way to the change being released, tested and closed. This section provides best practices to operationalize Change Management procedures using workflows, templates and documentation based on the business requirement:</p>
+<ul>
+  <li><b>Define Workflows and Templates </b> - It is important to identify how a change will actually be handled. You need to define the process and procedures for handling change and these should be incorporated into the tools which will handle part of the process. Below are some guidelines specific to IT Change Management:
+      <ul>
+        <li><b>Define Change Management Workflow</b> - Define a process flow for your change. Products providing tracking capabilities like Siebel Help Desk will typically have a workflow built in the system and will allow you to modify those to suit your requirements. This process flow will also be integrated with the Approval mechanism to route the change request accordingly. There can be several workflows based on the type of change request (standard, emergency, urgent).</li>
+        <li><b>Define Request for Change Templates</b> - Define a standard template to request for change. These are templates for the requestor to submit when a change needs to be rolled out. The organization can streamline the request by using pre-populated fields and drop-down lists usually provided by the ticketing system (such as Siebel Help Desk) for information such as the type of change, the service affected by the change, and the applicable technology.</li>
+        <li><b>Plan Communications (Projected Service Outage)</b>
+            <ul>
+              <li>Communicate changes in advance for the benefit of customers and other stakeholders. One of the key aspects of communicating changes is the Projected Service Outage (PSO) which is used to communicate changes in availability due to scheduled maintenance.</li>
+            </ul>
+        </li>
+        <li> <b>Create Change Models</b> - Create a repeatable way of dealing with a particular Category of Change which defines specific pre-defined steps that will be followed. Change Models may be very simple, with no requirement for approval (e.g. Password Reset) or may be very complex with many steps that require approval (e.g. major software Release). These models are usually input to the change management support tools in use(such as OEM and Siebel Help Desk) and the tools then automate the handling, management, reporting, and escalation of the process.</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PSG id="PSG"></A></B>OPERATIONS AND SUPPORT (PS) PROCESS GUIDANCE </h3>
+<h4><B><A
+name=PS010 id="PS010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_010_AUDIT_SYSTEM_OVERVIEW.HTM" target="_blank">PS.010 Audit System </a></h4>
+<p>Assets and configurations are required to be evaluated related to business best practices for configuration, security and storage. Compliance standards and audit requirements are defined based on the requirements of the organization. Auditing against compliance standards are operational tasks which should be carried out at a pre-defined intervals to ensure the environment meets the standards.</p>
+<ul>
+  <li><b>Comply with IT Policies </b> - Comply with Industry IT Policies by automating real-time IT configuration change management through comprehensive, continuous detection, validation and reporting of authorized and unauthorized configuration change. OEM 12C Lifecycle Management Pack includes a feature set that provides capabilities to comply with Industry IT Policies like SOX,PCI, etc.<br>
+      <br>
+    Compliance Management provides the ability to evaluate the compliance of targets and systems as they relate to business best practices for configuration, security, and storage. This will enable organizations to provide the governance to the specific Industry standard they want to comply against.<br>
+    <br>
+    Oracle Enterprise Manager 12C (OEM) provides capabilities to create Multiple levels of hierarchies to manage compliance of configuration:
+    <ul>
+      <li><b>Compliance Framework</b> - Conceptual &ldquo;folders&rdquo; that map configuration standards to real-world structure of compliance frameworks (PCI, COBIT, HIPAA, CIS, etc)</li>
+      <li><b>Compliance Standard</b> - Collection of rules that gets associated to multiple targets</li>
+      <li><b>Compliance Rule</b> - Checks/Tests that are performed against specific target types</li>
+    </ul>
+  </li>
+</ul>
+<blockquote>
+  <p>There is a rich set of out-of-box rules mapped to out-of-box standards and frameworks such as for Exadata configuration, CIS, PCI. To glue all the different compliance standards for particular target types together, we use the compliance framework. This follows the industry standard model to support real-world structures, frameworks like PCI. The frameworks can help the administrators to create rules and standards; the compliance and security officers and auditors can take advantage of the standards and frameworks to manage compliance reports.</p>
+  <p>For more information on Creating a Compliance Framework, refer to <a href="http://docs.oracle.com/cd/E24628_01/em.121/e27046/infrastructure_setup.htm#BABBFGFG" target="_blank">EM Documentation</a>. </p>
+</blockquote>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

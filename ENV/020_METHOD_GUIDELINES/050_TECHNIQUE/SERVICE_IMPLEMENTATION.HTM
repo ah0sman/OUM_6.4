@@ -1,0 +1,312 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Implementation Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE IMPLEMENTATION</h2>
+<p>The purpose of this technique is to provide guidance on how to implement SOA services.</p>
+<p>Service Implementation is responsible for delivering the implementation of a service. This implementation is exposed through the service interface, but is not only responsible for implementing the interface in accordance to the contract, but rather the entire service in accordance with the contract. This includes coverage of all functional and supplemental requirements, as well as the service enablement requirements for the service.</p>
+<p>The &ldquo;analysis&rdquo; required to be done prior to beginning Service Implementation comes in the form of the work completed as part of Service Design. Augmented with the service contract, the service design document and the physical interface provide the necessary information required to begin service implementation. </p>
+<p>Service implementation should really be treated as its own smaller scale software engineering project. The resulting Service Implementation must be passed through Service Testing prior to the completed service being delivered into production. Much like traditional delivery processes, the development of the test plans, and test cases may take place in parallel with the implementation effort, which will go through a set of design, implementation, and unit test cycles prior to entering formal service testing.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Service Implementation</b> - This technique provides guidelines on how to perform Service Implementation using an iterative approach. The resulting Service Implementation must be passed through Service Testing prior to the completed service being delivered into production.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Create/Update the service implementation design.</td>
+    <td>Service Implementation Design </td>
+    <td> The Service Implementation Design covers Component Design, Interface and Class Design, Scenarios, and Data Design. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td> Create unit tests for the service.</td>
+    <td>Service Unit Tests </td>
+    <td> The Service Unit Tests are test that should be performed to unit test the service.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td> Create/Update the service implementation.</td>
+    <td>Service Implementation</td>
+    <td> The Service Implementation is the implemented service in actual code.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td> Execute unit testing.</td>
+    <td>Unit Test Results <br></td>
+    <td> The Unit Test Results are the list of defects found during unit test of the service.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Identify cause of defect.</td>
+    <td>&nbsp;</td>
+    <td> If a defect is uncovered during unit testing, identify the cause of the defect to determine from which step to restart.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>One of the most overlooked aspects of service engineering within a SOA is Service Implementation. It cannot be considered just a simple-matter-of programming which is quite often the case when implementing projects that are not being designed to be reused by a potentially large population of consumers.</p>
+<p>Service Implementation is much more than simply writing some code that implements the interface provided through service design. In reality, service implementation has some parallels to delivering a small, traditional software engineering project that picks up after the Inception phase. In fact it is a good practice to utilize a streamlined version of a traditional software engineering methodology for the purpose of service implementation. For the most part, a simplified design, implementation, and unit test cycle will suffice, regardless of the method used; the key is to be consistent.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_IMP.PNG" alt="Service Implementation Diagram" width="516" height="541" title="Service Implementation Diagram"></p>
+<hr WIDTH="100%">
+<h4>Create/Update the Service Implementation Design</h4>
+<p>You may be surprised to see &ldquo;design&rdquo; listed as part of the implementation delivery cycle. In this case, design is referring to the implementation design. Service implementation design is a more traditional design process where the implementation is designed through modeling classes, interfaces, data, interactions (sequence diagrams), etc. In some cases, the implementation of a particular service may be quite complex, and having a standardized service implementation discipline in place will make this important task go smoother.</p>
+<h5>From Concept to Reality (Almost)</h5>
+<p>Service Implementation represents one of the final steps that take place prior to a service being realized in a production environment. It also serves as a transitional process from service design through testing and deployment. Service design may be impacted by the activities of service implementation. It is close to impossible to consider every detail during the service design phase, and to ensure efficiency, some details may be uncovered during service implementation that will influence design. Therefore an iterative element exists between service design and service implementation in order to facilitate the handling of any design details that may have fallen through the cracks. If major design details are being missed however, then some enhancements to the design process should be considered to prevent future recurrences.</p>
+<p align="left">Similarly with design, service implementation also has interaction with the service testing cycle prior to being released into service deployment, where it becomes operational. For obvious reasons, service testing will more than likely result in changes to the service implementation, if not only to fix defects. This may have a ripple effect all the way back to service design. In severe cases, service definition may need to be revisited as a result of defects encountered during service testing, and if so, process improvements are more than likely necessary to prevent future recurrences. </p>
+<h5 align="left">Influencing Factors of Service Implementation</h5>
+<p>The primary influencing factor of Service Implementation is the service contract. Secondary factors include the service design, and consideration for the consumers. This is because the primary goal of service implementation is to fulfill the terms of the contract.</p>
+<p>A great deal of discipline is required while engineering and implementing services. This is because of the strategic importance that these services provide, as well as the wide variety and number of consumers (and potential consumers) that will be utilizing the service. Some services will have an almost &ldquo;infrastructure&rdquo; like purpose within the SOA, and as such, all services should be implemented with this in mind.</p>
+<h5>Service Implementation Design</h5>
+<p>The Service Implementation design covers the same areas that a traditional project design would cover. Topics covered in the Implementation Design include:</p>
+<ul>
+  <li> Component Design: Architecturally significant components, relationships, and concepts both external and internal to the service.</li>
+  <li> Interface and Class Design: Interface and Class diagrams and documentation representing the software elements used to implement the service. </li>
+  <li>Scenarios: Sequence or Collaboration diagrams used to describe the architecturally significant interactions at a class and component level.</li>
+  <li> Data Design: Data structures created with respect to the implementation, such as relational tables, flat files, etc. </li>
+</ul>
+<p> Technical design decisions need to be made to ensure that the service complies with any architectural policies applied. Refer to the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more information. The following guidelines specifically apply to implementations:</p>
+<ul>
+  <li> Services needed to be implemented allowing for parallel deployment of several versions. Try to support deployment to the same system</li>
+  <li> Check the selected software package decided on service design. Often it is decided to package all versions of a service into one software package for deployment. This might have impact on the detailed design how to encapsulate changes applied to different service versions. If the service is packaged with other services, check the detailed design of those services and try to follow the same design principles.</li>
+  <li> Service implementations should be built for the highest availability and scalability as possible. Even if the service contract and all usage agreements do not specify the need, the implementation should be as independent as possible to allow operations to decide on any level of availability and scalability.</li>
+  <li> New service versions should be backward compatible to allow for consumers to be migrated with less efforts.</li>
+</ul>
+<h5 align="left">Service Dependencies</h5>
+<p align="left">There will be many instances where a service implementation could benefit by reusing the capabilities of another service. In this case the service implementation is a potential consumer to the other service. If this usage was not anticipated through the service identification &amp; discovery process, or even service definition, then the reuse justification would be required to reuse the service in its service enabled form.</p>
+<p>However, in some cases, the overhead required to invoke the service through service infrastructure (such as a web service), may require more overhead than the contract will allow. In these cases there are a couple options.</p>
+<p align="left">The first option is to invoke the functions of the service using an alternate technology that is better performing such as RMI. In this case you are still doing runtime reuse, and justification would be required to reuse the service in this manner. Significant runtime performance may be possible however. The drawback is that you are bypassing the service enablement components of the service you are dependant on. This means that any benefits gained by using infrastructure may be lost, such as statistic generation, audit, etc. In fact your service may be skewing historical results gathered. These conditions should be considered by the SOA Leadership team prior to justification of the requested usage of the service in a non-standard way. If this type of reuse will be allowed, the dependency between the two services still needs to be recorded in the enterprise repository.</p>
+<p align="left">The other option is to create a component library that will be used by both service implementations. These components consist of the various functional elements of the implementation that are relevant to both services. In this case design-time reuse is being used, which is less restrictive. This option has the advantage of being the most optimal from a performance perspective; the burden is then placed on the maintenance side, since the code has to be managed in a shareable source code repository, as well as any configuration requirements will have be mirrored for each deployment of the library. The code for the library still needs to be branched when any changes are required to the library. In this scenario the two services do not have a dependency between them as they may still evolve independently.</p>
+<h5 align="left">XML Implementation Considerations</h5>
+<p align="left">Parsing Technologies</p>
+<p>There are three types of XML parsing technologies available today. Each of them has a slightly different purpose and is better suited for different tasks and document types. The first technology is the Document Object Model (DOM) that reads the entire XML document into memory and represents the data in a tree-like structure. DOM parsers are best suited for the following scenarios:</p>
+<ul>
+  <li> small to medium size documents containing less than 1000 elements </li>
+  <li> for basic modification of the document structure at runtime </li>
+  <li> when the need is for immediate access to preloaded XML document information without performing file I/O (Data binding can be used in this case also)</li>
+  <li> when higher performance is required over Data Binding technology </li>
+</ul>
+<p>The second type of parsing technology is the Simple API for XML (SAX). The advantage to SAX is that the entire document does not need to be read into memory, and provides an efficient read only access to the XML data. Appropriate usage of SAX parsers include:</p>
+<ul>
+  <li> They are geared for large document sizes containing more than 1000 elements.</li>
+  <li> Documents should have a limited amount of nested elements.</li>
+  <li> They are best for read-only access to the document. If writes are required the entire document must be rewritten. </li>
+  <li> They are great when only a portion of the total document needs to be accessed. </li>
+  <li> They are faster than DOM and Data Binding options.</li>
+</ul>
+<p>Data Binding technology is the third type, for which there are many different implementations. XML Beans is the most common implementation of this type of parsing technology. Appropriate usages of Data Binding parsing include:</p>
+<ul>
+  <li> to provide an object-oriented like access model for both reading and writing XML data</li>
+  <li> to integrates well with many toolsets</li>
+  <li> to simplify data access programming</li>
+  <li> to provide a much more elegant way for handling XML (slowest option)</li>
+</ul>
+<p>The primary point to look at here is to not simply choose the option based on your familiarity with a particular technology. Each option has its appropriate usages, and in every implementation should be considered.</p>
+<h6 align="left">To Validate or Not to Validate</h6>
+<p>It is not all that uncommon for XML messages to pass through one or more intermediary steps prior to arriving at its intended destination. In many scenarios parsing is done in order to validate the XML at each step along the way, which may be unnecessary. Further, some infrastructure may be able to handle parsing XML once, and then passing the parsed structure along to other infrastructure components in object format (using RMI and XML Beans for instance). These have deployment implications, but may be utilized to greatly enhance the performance of your SOA.</p>
+<p>In the case where document based routing will be used, it is a good practice to separate out the routing elements into a separate, smaller, parse-able document whenever possible.</p>
+<h6 align="left">XML Security </h6>
+<p align="left">XML brings another set of challenges in the form of security. Here is a set of common security issues that should be planned for when implementing solutions utilizing XML:</p>
+<ul>
+  <li> Many schemas are publicly available, and used directly within an enterprise. If a publicly available schema is maliciously altered from its external hosting site, it may have drastic effects within your enterprise. If the location of a public schema is questionable, a good practice is to host a copy of the schema locally. Someone will need to periodically check to ensure that the latest version is being used, but this practice is definitely safer.</li>
+  <li> Most firewalls are not designed to question the integrity of XML documents. There are some content-aware firewalls coming onto the market today, but they certainly haven&rsquo;t become common-place yet. This allows for XML document data to be replaced with potentially dangerous values resulting in breaches in security, from both a business and operational standpoint. If XML data is coming from an external source, a set of rigorous validation routines should be enforced as the XML is received to ensure its legitimacy.</li>
+  <li> Hackers may use a technique that overloads attribute values which may cause the parser to malfunction or even crash. Check the lengths of elements within XML documents coming in from untrusted or external sources. </li>
+  <li> Ensure that you have graceful error handling capabilities established around your parsing technologies. This will help prevent problems caused by security attacks, as well as from programming errors creating unparsed-able XML.</li>
+</ul>
+<p align="left">Note: For more extensive information on XML and security issues with respect to SOA, you should check out Thomas Erl&rsquo;s &ldquo;Service-Oriented Architecture: A Field Guide to Integrating XML and Web Services.&rdquo;</p>
+<hr WIDTH="100%">
+<h4 align="left">Create Unit Tests for the Services</h4>
+<p>Unit testing, in many (not all) delivery shops, has become a long lost activity. In the case of service engineering, it should not be overlooked. The impact of defects within a service is typically larger due to the potential number of consumers that may be affected. Any extra steps that can be taken during service delivery to ensure quality are highly recommended. Further, many development tools today provide capabilities to facilitate unit testing.</p>
+<p>It is highly recommended to first implement the unit tests and then to start implementing the service itself. The developer unit tests should realize a white box test of the service. Instead of just testing the interface it is important to decide upon the test data to touch all positive and negative flows within the service implementation. Later on, executing the tests measuring the code coverage will allow for identifying possibly irrelevant functionality of the implementation. But often this indicates bad test implementation.</p>
+<p> A good practice is to have different developers to implement the service and to implement the unit tests of the service. Both will use the same contract and interface definition and will follow the detailed technical service design created in the step before. This will ensure highest level of quality right from the beginning.</p>
+<hr WIDTH="100%">
+<h4 align="left">Create/Update the Service Implementation</h4>
+<p>This step is a standard implementation step. More details about the specifics of this step for services can be found in the sections below.</p>
+<h5 align="left">The Importance of Reviews</h5>
+<p align="left">Conducting peer design and code reviews for the service implementation is also a highly recommended practice for service delivery. These reviews ensure conformance to standards, consistency, and that the code written is appropriate given the scope and category of the service. An extra set of eyes is always beneficial. Reviews should be informal with a limited number of reviewers. Comments should be suggestive, rather than critical. At least one member of the reviewing team should be at the Architecture level. </p>
+<h5 align="left">Service Implementation Standards</h5>
+<p>Creating and enforcing implementation standards is also another good practice. These standards should be established for all major technologies used in the construction of service implementations and can range from coding standards to usage guidelines and best practices. All resources that will be participating in the delivery of shared services should be familiar with the standards. Standards provide a number of benefits:</p>
+<ul>
+  <li> Enforce consistency, which increases quality and decreases maintenance burden.</li>
+  <li>Promote the best practices around the usage of a particular technology of which all developers may not be aware. </li>
+  <li> Assist in the training of new delivery resources. </li>
+</ul>
+<h5 align="left">Implementing for Runtime Flexibility</h5>
+<p>One of the goals behind SOA is to enable flexibility and reusability within the enterprise. This same goal needs to be examined from within the realm of service implementation. A lot of the infrastructure designed for service enablement is geared towards making service implementations more flexible. Further, these technologies often allow for services to be customized at runtime. Routing technologies provide a good example. There needs to be a governance model around how changes are made within the runtime environment, but it is a good practice to utilize these capabilities whenever possible.</p>
+<p>Example: Consider an order fulfillment service that routes orders as they are placed on an e-commerce portal. One of the branches within the service&rsquo;s decision tree requires that an approval process be invoked for any orders larger than $1000. This scenario has been operating in production for a little over a year without incident. However, a new product was introduced recently, which has a price tag of a little over $1000.00. The product has become quite popular which has become problematic because every order containing this product is resulting in the required approval, and a backlog is appearing in the process. Management has made the decision to increase the trigger for approval from $1000 to $2000. If infrastructure was used to construct the message flow for the service, the trigger can be modified directly in the service&rsquo;s meta-data, tested, and then activated in production. This saves a great deal of work and risk that would be involved with making code changes. Not to mention some down time.</p>
+<p>In the end, infrastructure used in this manner increases flexibility, and business agility. It also cuts down on the time and effort required to make the changes in code, the risk in deploying new changes to previously stable code, as well as the potential downtime required for the deployment.</p>
+<h5 align="left">Configuration Management</h5>
+<p>Configuration management is also an essential requirement for service engineering. A configuration management repository should be used to manage all assets both technical and non-technical with respect to a service.</p>
+<p align="left">The configuration management repository should not be confused with the Enterprise Repository. The enterprise repository will house some of the information that is also stored within the CM repository; however its purpose is to provide design time information. The CM repository is more development focused and should provide the following capabilities:</p>
+<ul>
+  <li> tracks changes to all service-related files, such as documents and configuration files </li>
+  <li> groups service files together </li>
+  <li> allows for branching </li>
+  <li> is backed up regularly </li>
+  <li> the ability to check out service files as a package</li>
+</ul>
+<p align="left">A good practice is to structure your CM repository such that each service is contained within its own branch-able package. This allows services to be managed independently. In addition, new branches are created when new service versions are required. Within the repository, each branch maps one-to-one to a service version. This structure allows service versions to be managed independently. </p>
+<hr WIDTH="100%">
+<h4 align="left">Execute Unit Testing</h4>
+<p>Unit testing is executed and any issues are recorded as defects. A good practice is to include developer unit testing into a nightly build mechanism. This will allow project management to track progress of service implementation. As soon as any functional test case is implemented, if possible these tests should be included into the unit testing process as well.</p>
+<p>Before a service should be handed over to any further testing like integration testing or performance and load testing, the service should have successfully passed all unit tests. This ensures the service already conforms to the functional requirement. If a service is already handed over to service testing without being properly tested on functionality, additional costs may arise. Therefore it is good practice to start a specific unit test running all functional and developer tests in one scenario. Measuring code coverage will help to validate the completeness of functional testing and therefore rate the quality of unit testing. A service should only reach the implemented state if it has successfully passed 100% unit tests with an overall code coverage of at least 90%.</p>
+<hr WIDTH="100%">
+<h4 align="left">Identify Cause of Defect </h4>
+<p>If a defect is uncovered during unit testing, analyze the defect and identify the cause of the defect. Depending on the cause, restart the steps, either from the service implementation in step 3 or in some cases if the design has to be updated, from step 1.</p>
+<p>Sometimes the cause of the defect may be related to a defect in the test case implementation itself. In that case, fix the unit test, i.e., go back to step 2. If the cause of a defect was linked to a defect in the test case implementation, it is highly recommended to have someone review this decision. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique to review how services are implemented and how the customer ensures quality of delivery from implementation.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components </a></div></th>
+    <td>Use this technique technique as guidance on how to implement service components.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have peer design and code reviews been conducted for the service implementation?</li>
+  <li>Have implementation standards been created and enforced for the service implementation?</li>
+  <li>Is the service implementation flexible and reusable within the enterprise?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

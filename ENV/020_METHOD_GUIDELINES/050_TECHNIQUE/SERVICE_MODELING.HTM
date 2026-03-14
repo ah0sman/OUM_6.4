@@ -1,0 +1,1059 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Modeling Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#REFS">References</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE MODELING</h2>
+<p>The purpose of this technique is to provide guidance for modeling services. </p>
+<hr width="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Service Meta Models and Viewpoint Definitions </b></p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td> Review sections for Service Meta Modeling.</td>
+    <td>Service Meta Model </td>
+    <td>The<b> Service Meta Model, Service Contract Meta Model, Service Interface Meta Model, Service Implementation Meta Model</b> sections should be reviewed in preparation for service modeling.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td> Review the section on Service Viewpoints and Models.</td>
+    <td>&nbsp;</td>
+    <td>This technique is primarily concerned with providing guidelines for creating Architectural Descriptions for Service-Oriented Architecture that are complete and significant. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Integration with the Unified Modeling Language (UML) and Service Engineering Processes </h4>
+<p>In order to model services and their associated artifacts in a consistent and unambiguous way, it is useful to ensure that the created models conform to a common set of principles. To achieve this uniformity, OUM extends the Unified Modeling Language (UML) with stereotypes supported by existing language definitions. This simple set of stereotypes can be applied when modeling services in any given business environment. </p>
+<p>Many other modeling languages and notations exist, and while some are suggested by OUM (for example, BPMN in the <a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique), other techniques can also be found in customer environments. But even then, it may be possible (if not, necessary) to adapt to the customer's approach to alternative modeling languages/notation even when this results in some loss of functionality (for example, ERD is good for modeling data relationships but is incapable of representing behavior). </p>
+<p>UML is typically associated with the Unified Software Development Process (UP), but in general, software engineering processes (SEPs) alone are insufficient to meet the needs of service engineering and other types of models also need to be included. The models presented in this document are aligned with the OUM Service Methodology. This document illustrates their high-level context within a full service engineering environment. </p>
+<h5>Why UML? </h5>
+<p>The Unified Modeling Language (UML) has been chosen as the primary modeling language for the following reasons: </p>
+<ul>
+  <li>It is the most widely known / accepted modeling notation.</li>
+  <li>It has a flexible mechanism to enable extensions and specializations for purposes such as this.</li>
+  <li>It has broad support from tools vendors.</li>
+  <li>It is standardized by both the Object Management Group (OMG&trade;) and the ISO.</li>
+</ul>
+<p>While not always the most effective language for all purposes, UML is flexible for conveying architectural and design concepts between stakeholders and for addressing different viewpoints. In the IT industry UML provides a standard for graphically representing common concepts, such as, classes, components, generalization, aggregation, and behavior. </p>
+<h5>Oracle's UML Provile for SOA Services</h5>
+<p>First and foremost, Oracle believes effective SOA services modeling demands new modeling structures to support and encourage good services engineering practices. When a framework, such as UML, fully supports EJB component modeling (for example), you may also assume such practices yield SOA services. Unfortunately, this is not always the case. Therefore, it is necessary to define constraints and describe required supporting aspects of SOA to be able to both support the architect describing the system and enforce (or at least encourage) some appropriate practices to yield a suitably conformant system. </p>
+<p> The second concern is trying to prevent &ldquo;reinventing the wheel&rdquo;. Has someone else done this work already? Are we at risk of failing to conform to an industry standard for services modeling? While there are a few proposals emerging from a couple of respectable standards bodies, these proposals are incomplete or at least not formalized at this time. In particular, most of the emerging modeling strategies either focus on the Web Services implementations of SOA or simply conflict with the Oracle definition of a service as defined in the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique.</p>
+<p>The following describes the high-level service profile package and the details of the stereotypes (potentially constraints and tags) it introduces. </p>
+<p>The diagram in the figure below outlines the complete set of extended UML classifiers introduced by the Oracle UML profile for SOA Services. This Services profile package identifies four new stereotypes and their underlying UML meta-class elements. </p>
+<p align="center"><a name="PROFILE"></a><img src="../../010_COMMON_FILES/SOA_MODELING_PROF_SOA.GIF" alt="The complete set of extended UML classifiers introduced by the Oracle UML profile for SOA Services including the four new stereotypes and their underlying UML meta-class elements: SOAService, ServiceContract, ServiceInterface and ServiceImplementation." width="794" height="712" title="The complete set of extended UML classifiers introduced by the Oracle UML profile for SOA Services including the four new stereotypes and their underlying UML meta-class elements: SOAService, ServiceContract, ServiceInterface and ServiceImplementation."><br>
+    <b>Oracle's SOA Service UML Profile </b></p>
+<p>The diagram uses UML2 standard notation (solid line with solid arrow which is distinct from generalization, dependency, and other relationships) to denote the extension of existing, standard UML meta-classes for the creation of a specialized instance of a classifier. In the case of the Oracle&rsquo;s SOA Service UML Profile four new stereotypes are introduced as extensions to underlying UML meta-classes, these are: </p>
+<ul>
+  <li><b>SOAService:</b> <em>extending</em> the Abstract <em>classifier,associating</em> the Service Contract, Service Interface, and Service Implementation, and having it&rsquo;s own <em>properties</em>: name, version, owner, status, category, scope. </li>
+  <li><b>ServiceContract:</b> <em>extending</em> the UML Use Case (or collection of <em>use cases</em>) and corresponding <em>use case</em> specification, describing a coherent unit of functional requirements of a SOA system. The ServiceContract stereotype should be used in the case of either Producer or Consumer Contracts. </li>
+  <li><b>ServiceInterface:</b> <em>extending</em> the UML Interface, specifying operations of the service described by the Service Contract </li>
+  <li><b>ServiceImplementation:</b> <em>extending</em> the UML Component, realizing the operations of the Service Interface while conforming to constraints and implementing the functional requirements of the Service Contract </li>
+</ul>
+<p>This UML extension package defines a service as an abstract container relating the three principle facets of a SOA service: the service contract, the service implementation, and the service interface. The abstract service container carries little information (or operation) of its own but instead ties together each of the contract, interface, and implementation with a single version identifier (i.e., an instance of this service will be a &ldquo;service version&rdquo;), lifecycle, type, and scope. </p>
+<p>In practice, any classifier can be used to describe the service and its three key facets, contract, interface, and implementation. However the underlying UML meta-classes chosen here serve to highlight the separation of their roles: </p>
+<ul>
+  <li>The <b>SOAService</b> itself is abstract because it has no real manifestation in an implementation, but serves as a convenient concept during analysis when it may be used in business analysis, early service identification, high-level collaboration / orchestration, lifecycle analysis, etc. </li>
+  <li>The <b>ServiceImplementation</b> is best served using component diagram elements since this notation typically arises in design, which is the phase in which we start to consider implementation details. </li>
+  <li>The <b>ServiceContract</b> is represented based on the UML <em>use case</em> since it is a specification of behavior of the service, its functional and supplemental requirements, and constraints. The ServiceContract describes a case of use of the (SOA) system. </li>
+  <li>The <b>ServiceInterface</b> is naturally based on the underlying UML interface meta-class. </li>
+</ul>
+<p>The service itself is further supported by enumerations for the <em>properties</em> status, category, and scope. The enumerations of the properties are dependent on the SOA Reference Architecture and Service Engineering framework being used. Those shown here are taken from the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique.</p>
+<p>The <b>ServiceLifecycleStatus</b> is special case since it is related to the software engineering lifecycle and, as such, more of a project management concern than a direct attribute of the contract. For this reason it is likely to appear in UML diagrams using tag property notation rather than classifier attributes. The choice of lifecycle states may vary depending on the customer&rsquo;s engineering and configuration management practices. </p>
+<p>Now that we have introduced these specialized classifiers and behavior representation we can use them in our models without specifying all their properties but still knowing the structure implied by the stereotypes. The four specialized elements can now be shown in a variety of forms or used in a number of UML diagram types. The corresponding OUM standard notational elements are shown using the Service Profile package stereotypes in the figure below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_STER_EL.GIF" alt="The corresponding OUM standard notational elements are shown using the Service Profile package stereotypes." width="702" height="59" title="The corresponding OUM standard notational elements are shown using the Service Profile package stereotypes."><br>
+    <b>Stereotyped Elements</b> </p>
+<p> UML also uses icons as an alternative, more visual representation to indicate stereotypes. </p>
+<p> The following figure shows some new icons that can be used to represent our service stereotypes that can be added to the already considerable set of icons available within UML2. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_STER_ICONS.JPG" alt="New icons that can be used to represent our service stereotypes that can be added to the already considerable set of icons available within UML2." width="658" height="92" title="New icons that can be used to represent our service stereotypes that can be added to the already considerable set of icons available within UML2."><br>
+    <b>Stereotype Icons</b></p>
+<p align="left">Various classifiers can now be adorned with the icons. The following figure shows the simplest possible case for the use of these icons within basic classifiers with all attributes and operations elided. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_ST_SIM_EL.JPG" alt="The simplest possible case for the use of these icons within basic classifiers with all attributes and operations elided." width="678" height="69" title="The simplest possible case for the use of these icons within basic classifiers with all attributes and operations elided."><br>
+    <b>Stereotyped Simple Elements</b> </p>
+<p align="left">Having formally defined our profile for services we can make a simple statement about how we use it. The following figure simply says that everything we have defined in the Services profile may now be used in our &ldquo;SOA Project.&rdquo; We are now ready to start modeling SOA Services. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SPPU.JPG" alt="This figure simply says that everything we have defined in the Services profile may now be used in our &ldquo;SOA Project.&rdquo; We are now ready to start modeling SOA Services. " width="165" height="184" title="This figure simply says that everything we have defined in the Services profile may now be used in our &ldquo;SOA Project.&rdquo; We are now ready to start modeling SOA Services. "><br>
+    <b>Services Profile Package Use</b> </p>
+<p align="left">A more detailed description of the four new stereotypes follows with more rigorous descriptions of the three facets of the service, the interface, contract, and implementation. </p>
+<p align="left"><b>NOTE:</b> Strictly speaking we have defined &ldquo;tag&rdquo; properties in the meta models rather than &ldquo;meta-attribute&rdquo; properties for our new meta-classes. The intent of the following models is to use the defined properties as attributes (perhaps with the exception of status of ServiceLifecycleStatus from Service which, as a lifecycle maintenance concern, may be conveyed through a tag value), although the additional formality of defining these as meta-attributes has been omitted for brevity. If this Services profile were to be imported into a tool completion of the formal description would be required. </p>
+<h6 align="left"><a name="SERVMM"></a>Service Meta Model</h6>
+<p>As can be read from the <a href="#PROFILE">profile diagram</a> above, the service interface binds the service, while the service contract describes the service. The service implementation, of course, implements the service. These three mandatory elements of a complete service are described in more detail in the following sections. </p>
+<p>As we have already said the service itself carries little information. However the &ldquo;name,&rdquo; &ldquo;version,&rdquo; &ldquo;owner&rdquo; and the enumerated attributes &ldquo;status,&rdquo; &ldquo;category,&rdquo; and &ldquo;scope&rdquo; are required to describe the service. Using only these attributes a service may appear in its abstract form in various diagrams leaving the details of contract, implementation, and interface elided. </p>
+<p>An instance of a service from a business analyst&rsquo;s Viewpoint may now be represented simply as a stereotyped class. The following simple example shows the analysis level relationship between two business services: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELILNG_SERV_AN_EX.JPG" alt="A simple example that shows the analysis level relationship between two business services." width="576" height="95" title="A simple example that shows the analysis level relationship between two business services."> <br>
+    <b>Service Analysis Example</b></p>
+<p align="left">These service examples conform to the constraints of the service meta model because they are stereotyped as a <b>&lt;&lt;</b><b>SOAService</b><b>&gt;&gt;.</b> This means it always has a unique set of service contract, interface, and implementation definitions and a small set of its own attributes, although these details are elided from this business analysis level model. </p>
+<p align="left">These new stereotypes are the core of the Oracle UML profile for SOA service modeling, although this depiction is highly simplified. Indeed, if the service interface was simply a base <em>class interface</em> or the service contract was merely a <em>use case</em> there would be no need to go to the trouble of creating specialized modeling constructs at all. The stereotypes describing service contract, interface, and implementation are described in more detail in the following paragraphs. A more complete description, with usage guidelines across various views, or SDLC phases, and accompanying examples can be found in the later sections of this document.</p>
+<p>The service meta model provides the basis for many service models, viewed from different viewpoints and thereby serving different stakeholder participation at different stages of the service lifecycle. Examples of these different views include a service candidate View which may be used in analysis and design and throughout the service lifecycle enabling traceability of justification, objectives, etc. from inception to operations and ultimately retirement. An instance of a service is represented as a service version and detailed modeling of a SOA platform implementation may involve modeling of a service proxy to convey design details to the service engineer. </p>
+<p>As we have seen, the abstract service container ties together the contract, interface, and implementation with a single version identifier. In this way an instance of the SOAService will be a &ldquo;service version&rdquo; and a new service version instance is instantiated whenever the Service (producer) Contract, Interface, or Implementation changes. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SERV_VERS.JPG" alt="This figure above shows the multiplicities in these relationships and the corresponding instantiation of a service version object." width="576" height="492" title="This figure above shows the multiplicities in these relationships and the corresponding instantiation of a service version object."><br>
+    <b>Service Version</b></p>
+<p>The figure above shows the multiplicities in these relationships and the corresponding instantiation of a service version object. </p>
+<h6 align="left"><b><a name="SCMM"></a></b>Service Contract Meta Model </h6>
+<p>The figure below shows the meta model details for the service contract stereotype. Here we can see the contract is made up of functional and non-functional descriptions which use policy fragments. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SERV_CONTT.JPG" alt="This figure shows the meta model details for the service contract stereotype. Here we can see the contract is made up of functional and non-functional descriptions which use policy fragments." width="672" height="484" title="This figure shows the meta model details for the service contract stereotype. Here we can see the contract is made up of functional and non-functional descriptions which use policy fragments."><br>
+    <b>Service Contract Stereotype Meta Model</b> </p>
+<p>The Service Contract stereotype meta model extends the description of the ServiceContract from the Service Profile making the following key statements: </p>
+<ul>
+  <li>The ServiceContract is a DescriptiveDocument. </li>
+  <li>The ServiceContract documents (aggregates) functional and non-functional requirements (descriptions and constraints) for the service. </li>
+  <li>The functional and non-function requirements, while typically descriptive and/or structured documents, may also be defined by policies. </li>
+  <li>ServicePolicy(s) may be reusable and arranged hierarchically for any given service contract. Examples of policy types are shown in the remaining classifiers. </li>
+  <li>ServicePolicy(s) must conform to EA/IT standards. </li>
+</ul>
+<p>The requirements (FunctionalDefinition and NonFunctionalConstraints) are <em>contained</em> exclusively by the ServiceContract since they may be reused by other service contracts. </p>
+<h6><a name="SIMM"></a>Service Interface Meta Model</h6>
+<p>The figure below shows the meta model details for the service interface stereotype. Here we can see the interface is made up of (aggregates) a service specification (another descriptive document) and descriptive metadata, highlighting the human and machine readable aspects of the interface definition. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SERV_INT.JPG" alt="This figure shows the meta model details for the service interface stereotype. Here we can see the interface is made up of (aggregates) a service specification (another descriptive document) and descriptive metadata, highlighting the human and machine readable aspects of the interface definition." width="540" height="489" title="This figure shows the meta model details for the service interface stereotype. Here we can see the interface is made up of (aggregates) a service specification (another descriptive document) and descriptive metadata, highlighting the human and machine readable aspects of the interface definition."><br>
+    <b>Service Interface Stereotype Meta Model Detail</b> </p>
+<p>The Service Interface stereotype meta model extends the description of the ServiceInterface from the Service Profile making the following key statements: </p>
+<ul>
+  <li>The ServiceInterface aggregates (reusable) various types of (implicitly machine readable) descriptive meta-data and (implicitly human readable) DescriptiveDocument specifications. </li>
+  <li>A runtime instance of the interface is uniquely defined by its endpoint implementation (see <a href="#SERVIMP">Service Implementation Viewpoint</a> section) while facets of the ServiceInterface are otherwise reusable. </li>
+  <li>The ServiceInterface depends upon the ServiceEndpoint implementation (see <a href="#SERVIMP">Service Implementation Viewpoint</a> section) and must conform to (depends upon) IT/EA standards. The ServiceEndpoint <em>is a</em> Resource Identifier (for example, URL). </li>
+</ul>
+<p>The usage and lifecycle of this service interface definition is described in the section, <a href="#SERVINT">Service Interface Viewpoint</a>. </p>
+<h6>Service Implementation Meta Model</h6>
+<p>The following figure shows the meta model details for the service implementation stereotype. Here we can see the implementation is made up of (aggregates) various manifestations of contract implementation. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SERV_IMP.JPG" alt="This figure shows the meta model details for the service implementation stereotype. Here we can see the implementation is made up of (aggregates) various manifestations of contract implementation." width="660" height="306" title="This figure shows the meta model details for the service implementation stereotype. Here we can see the implementation is made up of (aggregates) various manifestations of contract implementation."><br>
+    <b>Service Implementation Stereotype Meta Model Detail </b></p>
+<p>The Service Implementation stereotype meta model detail extends the description of the ServiceImplementation from the Service Profile making the following key statements: </p>
+<ul>
+  <li>The ServiceImplementation aggregates ContractImplementation elements. </li>
+  <li>The ServiceImplementation is bound to one or more end points (linking it to the interface specification). </li>
+  <li>The ServiceImplementation must conform to (depends upon) IT/EA standards. </li>
+</ul>
+<p>The UML Component was chosen as the base element to represent service implementation because it is defined (see the UML BasicComponents package) as an executable element in a system. It defines the concept of a &quot;component&quot; as a specialized class that has an <i>external</i> specification in the form of one or more provided and required interfaces, and an <i>internal</i> implementation consisting of one or more classifiers that realize its behavior. In addition, the BasicComponents package defines specialized connectors for &lsquo;wiring&rsquo; components together based on interface compatibility (see <a href="#UMLSS">UML 2.1.1 Superstructure Specification</a> in the References.).</p>
+<p>The usage and lifecycle of this service implementation definition is described in the section, <a href="#SERVIMP">Service Implementation Viewpoint</a>.</p>
+<hr width="100%">
+<h4>Service Viewpoints and Models</h4>
+<p>In this section, we define service-specific viewpoints and models that belong to the &ldquo;service architecture&rdquo;<em>,</em> complimenting other Architectural Descriptions, such as security architecture, deployment architecture, etc. These Models and Viewpoints can be used to extend any existing EA framework to support the process of SOA service engineering. </p>
+<p>Architecture is the organization of components that form a System. In this way SOA is a <em>type</em> of architecture that may be applied to many different Systems and have many Architectural Descriptions. </p>
+<p>This technique is primarily concerned with providing guidelines for creating Architectural Descriptions for Service-Oriented Architecture that are complete and significant. </p>
+<p>In general, models are made up of diagrams and documents which should be shared and managed within a suitable repository. Ideally the diagrams used to represent the models should conform to an industry standard, or should at least be standardized within a customer environment, in order to be understood by the respective stakeholders. </p>
+<p>This document uses UML for diagrammatic notation and overall modeling framework, and where possible deviations from the standard have been avoided. As we have shown in the <a href="#SERVMM">Service Meta Model</a> section, a service meta model was created outlining the definition of three new UML stereotypes for the three major facets of a SOA Service. These extensions conform to standardized techniques intended for this purpose, but where possible we should constrain the creation of new extensions to avoid conflict with other profiles or dysfunction in associated tools. With the exception of the three stereotype definitions already outlined. We endeavor, in the following sections, to describe all other models of the service architecture using core UML and other standard notations. </p>
+<p>This strategy should take into account the culture within the relevant organizations in so far as what the widely used modeling techniques and representations. The models which are used must be understandable and accessible to all of the relevant stakeholders in order to fulfill its purpose. </p>
+<p>In addition to the models used to support a regular software engineering project, this document defines sets of Models, organized into Viewpoints. The Viewpoints are aligned with the needs of various Stakeholders, throughout the lifecycle of a service, and should be used to instantiate Views where appropriate to a particular Architectural Description. </p>
+<p>Examples of these Service Modeling viewpoints follow: </p>
+<ul>
+  <li>Service Specification </li>
+  <li>Service Interface </li>
+  <li>Service Design </li>
+  <li>Service Implementation </li>
+  <li>Service Composition </li>
+  <li>Service Deployment </li>
+  <li>Service Packaging </li>
+  <li>Service Runtime </li>
+  <li>Service Consumer </li>
+</ul>
+<p>These example viewpoints do not include traditional models, and it is expected that traditional models are included as part of the formalized viewpoints during an engagement once it is known what software development approach the customer utilizes. </p>
+<p>It is not expected that these example viewpoints be utilized as is. It is expected during the course of an engagement that these viewpoints will be collapsed, expanded and additional viewpoints be defined. </p>
+<p>These service-specific viewpoints are not mandatory for every service Architectural Description (nor indeed are the full set of UML models required). </p>
+<h5>Service Specification Viewpoint</h5>
+<p>This section provides a description of the Service Specification viewpoint.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_SPEC_VP.JPG" alt="Service Specification Viewpoint" width="675" height="405" title="Service Specification Viewpoint"> </p>
+<table width="100%"  border="1" title="Service Specification Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Specification Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Engineer </li>
+        <li>Service Tester </li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>What are the functional requirements for the service? </li>
+        <li>What are the supplemental requirements for the service? </li>
+        <li>What policies are associated with this service? </li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Use Case </li>
+        <li>Use Case Specifications </li>
+        <li>Service Contract Templates </li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SC.JPG" alt="Service Contract Meta Model" width="672" height="484" title="Service Contract Meta Model"><br>
+    <b>Service Contract Meta Model</b></p>
+<p>The meta model for the service contract has already been described in the section, <a href="#SCMM">Service Contract Meta Model</a>. In this section, we describe the lifecycle of the contract, where the information comes from and how it is used. </p>
+<p>The World Wide Web Consortium (W3C) document mapping the Web Services Architecture (WSA) to the Organization for the Advancement of Structured Information Standards (OASIS) SOA-RM makes an interesting point about the use of the word &lsquo;contract&rsquo;: For further reading on the W3C Web Service Architecture and OASIS, see the <a href="#OASIS">References</a> section.</p>
+<p>&ldquo;&rsquo;Contract&rsquo; may not be the best word since a contract is defined in common terms as some sort of agreement to two parties. It is really a &lsquo;contract offer&rsquo; or &lsquo;contract offer terms&rsquo; prior to it being agreed to. If the consumer examines it but does not agree to it, it technically is not a contract. &lsquo;Policy&rsquo; may be a better word to use than contract.&rdquo; </p>
+<p>The <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique definition of a contract resolves this issue by defining the service contract as agreement between the service provider and the service infrastructure. Then a consumer contract (aka usage or consumption agreement) becomes an agreement between a consumer and the service infrastructure. This approach, of making the infrastructure a sort of contract intermediary avoids the conflicts arising from the different viewpoints of provider and consumer.</p>
+<p>An example of the way this works would be a Short Message Service (SMS), offered by a telecom provider as a wholesale service to applications providers wanting to include mobile messaging as an added value in their own applications. In this scenario, the telecom provider establishes a contract with the SOA infrastructure to deliver a global maximum rate of 100 text message per second and individual consumption agreements (perhaps a part of broader SLAs) with its customers of varying message rates totaling up to the global maximum (this of course is a highly simplistic scenario). The separate provider and consumer &ldquo;contracts&rdquo; may now be handled in different ways. The global maximum rate, contracted by the provider to the SOA infrastructure, may be strictly enforced to protect the underlying Systems from overload, while the transgressions by the consumers are merely audited and reported to the appropriate business unit. </p>
+<p>The service contract describes the requirements (functional and supplemental) and various types of policies governing the use and limitations of the service. The contract is used to drive the service implementation in addition to the interface specification. </p>
+<p>The Service Contract is created as an output of the Service Definition workflow step of the Service Delivery phase. In this stage the Business Analyst is gathering and refining requirements from the business community. Business requirements can take many forms but ultimately they are the &ldquo;descriptive documents&rdquo;. Many requirements are supplied from the Service Analysis tasks, in particular, the Enterprise and Business requirements (see <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique). EA/IT standards, and potentially other document (such as regulatory requirements, etc.), are also input to this workflow step. </p>
+<p>Requirements themselves are often described using simple &ldquo;shall&rdquo; statements to express functional and supplemental business and IT operational requirements. The typical format of a requirements statement is: </p>
+<blockquote>
+  <p>&lt;id&gt; the &lt;system&gt; shall &lt;function&gt; </p>
+  <p>For example the statement &ldquo;304: the PeopleSoft Application shall provide validation of ER line-items&rdquo; is a requirements definition. </p>
+  <p>Now when dealing with Service requirements we can modify this statement pattern to take the form: </p>
+  <p>&lt;id&gt; the &lt;service&gt; shall &lt;function&gt; </p>
+  <p>An example of a service requirement statement might now be &ldquo;123: the ERVerifyItems service shall verify a line-item from an ERCanonicalForm&rdquo;. </p>
+</blockquote>
+<p><em>Use case</em> requirements and policy definitions are later used by the designers and developers in both service interface realization and service implementation. </p>
+<p>The service contract is critical to service discovery, runtime as well as design time. It is therefore also critical to enable service <i>reuse</i>. A related concern is traceability of the various forms of requirements, contract specifications and associated models. The contract documents (covering both Service Contract and Service Consumer Contract) should have traceability to some combination of Business Process, Functional, or Data requirements. </p>
+<p>These issues demand careful planning of the engineering infrastructure needed to support the service lifecycle. </p>
+<p>Without that, the specifications upon which the services are based and built are likely to suffer from scope creep, inconsistencies, and backtracking. </p>
+<p>The service contract may have constraints derived from a Business Motivation Model (BMM) and/or other business analysis descriptions, such as use cases models. These constraints indicate what the service contract is intending to accomplish, and how to measure success. </p>
+<p>The service contract may also realize use cases that capture additional information about the high-level functional and supplemental requirements for the business process from the perspective of the key external stakeholders or actors. </p>
+<p>The following figure shows the portion of the contract meta model covering the requirements documents gathered during an early iteration of an analysis workflow step. As we progress from Service Definition and Design to Service Definition and Design (see <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow View</a>) the remaining portion of the Service Contract meta model will be addressed (see Service Contact Policy portion below). Here we can see the contract is made up of FunctionalDefiniton and NonFunctionalConstraints descriptions. </p>
+<p align="center"><br>
+    <img src="../../010_COMMON_FILES/SOA_MOD_SC_DDP.JPG" alt="This figure shows the portion of the contract meta model covering the requirements documents gathered during an early iteration of an analysis workflow step." width="576" height="192" title="This figure shows the portion of the contract meta model covering the requirements documents gathered during an early iteration of an analysis workflow step."><br>
+    <b>Service Contract Descriptive Documents Portion</b> </p>
+<p>High-level contract requirements of this form may be collected using the simple &ldquo;the system shall&rdquo; kind of statements or in a simple form such as the template shown below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SC_TEMP.JPG" alt="Service Contract Template" width="576" height="434" title="Service Contract Template"><br>
+    <b>Service Contract Template</b></p>
+<p>This type of contract information should be collected during Requirements Analysis and should be referred to throughout the service lifecycle to ensure compliance. Contract documents of this type should be published and maintained through some suitable form of repository, ideally a metadata repository. During design, some aspects of the service contracts will be assigned for implementation to the service infrastructure. Some potentially will be assigned to a policy engine, while other aspects of the contract will be reused from existing applications, while yet others may concern custom development. These manifestations of the service contract fragments can be seen in the Service Implementation Model. </p>
+<p>The following section shows a UML based approach to documenting service contracts using <em>use cases</em> (and use case specifications) in accordance with the Oracle UML Profile for Services. </p>
+<h6>Contract Use Case and Specification</h6>
+<p> In contrast to UPMS and other standards body attempts to model services, OUM models the Service Producer Contract (for service provision) and Service Consumer Contract (for consumption) using UML system use cases. Use case actors represent the roles that are adopted by the entities that interact with the System under Discussion (SoD), in this case with a system leveraging a service infrastructure. </p>
+<p>A <i>(system) actor </i>specifies a role that some external entity adopts when interacting directly with the SoD, which may be a human actor or a role played by another system or application that touches the boundary of the SoD (in UML 2 the System boundary is referred to as the <em>subject</em>). Especially in case of systems integration, the actors communicating with the SoD often are other systems as in most cases, human actors do not interact with a services in one single setting (directly or indirectly). The primary actor is then the calling system. </p>
+<p>Be aware that the primary actor is the one having an interest in the successful completion of the use case. So even if a human actor communicates with a service indirectly, it still should be considered to be the primary actor as long as the service belongs to the SoD. An example where a human actor communicates indirectly with a service but still is its primary actor, is when the SoD communicates with the human actor directly, but calls one or more of its own services in the background. Even though the human actor is not directly calling these services, he still is the primary actor for them. There are exceptions, for example, a human actor communicates directly with a service where a service is directly called from a screen. However, since a browser might be considered to represent an end user rather than a system, making some services accessible by end users (for example, using technologies, such as, REST, and SOAP via JavasScript or AJAX). When the service is not part of the SoD, the external system providing that service, becomes a secondary actor in the context of the SoD. </p>
+<p><em>Use case</em> diagrams provide a valid means to represent the relationships between the human and system actors (provider or consumer) within the context of a SOA infrastructure. The diagram below shows an arbitrary example of these relationships. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SPC_UCD.JPG" alt="Service Producer Contract Use Case Diagram showing the relationships between the human and system actors (provider or consumer) within the context of a SOA infrastructure." width="417" height="280" title="Service Producer Contract Use Case Diagram showing the relationships between the human and system actors (provider or consumer) within the context of a SOA infrastructure."><br>
+    <b>Service Producer Contract Use Case Diagram</b> </p>
+<p><em>Use case</em> diagrams provide limited information about system (and their services) <em>interactions</em>. In the figure above, we can see two external systems. System B is calling two use cases (services), Provide Service A and Provide Service B, while System A (as a secondary actor) is providing functionality to the use case, Provide Service A (probably, also as a service). Both use cases reside within the context of the system with the name, Service Providing System. A generalization of these use cases, called Provide a Service, includes some capability, called Provide SOA Infrastructure Capability, from the service infrastructure and may contain other enterprise-wide requirements. </p>
+<p>The Service Contract <em>use case</em> diagram may be used to describe a hierarchy or contract parts within the context of the service infrastructure or to represent the interactions between providers and consumer needs during a requirements gathering activity. However, the UML <em>use case</em> diagram should not be used to represent functional decomposition since it is not suitable for that purpose. </p>
+<p>A more detailed (and more useful) representation of the service contract can be made using <em>use case</em> specification document. A template for the specification document is shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SC_UC_SPEC.JPG" alt="Service Contract Use Case Specification document showing a more detailed (and more useful) representation of the service contract." width="348" height="544" title="Service Contract Use Case Specification document showing a more detailed (and more useful) representation of the service contract."><br>
+    <b>Service Contract Use Case Specification</b> </p>
+<p>The <em>use case</em> &ldquo;specification document&rdquo; is not actually part of the UML specification but it is a commonly used format for describing the meaning behind the <em>use case</em> diagram. This document format can be easily used to provide the &ldquo;Descriptive Document&rdquo; form of the functional and supplemental contract elements; it may also be helpful in describing some more detailed aspects in the lower portion of the contract meta model (see figure below). </p>
+<p>Note the stereotype &ldquo;ServiceContract&rdquo; servers for both Producer and Consumer (see the section, <a href="#SODVP">Service Operations Deployment Viewpoint</a>) Contracts. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SC_PP.JPG" alt="Service Contract Policy Portion" width="576" height="184" title="Service Contract Policy Portion"><br>
+    <b>Service Contract Policy Portion</b> </p>
+<p>Service policies are reusable, compose-able descriptions of behavior used to specify service contracts. A service policy may be enforced directly through a facet of a service interface (an Interface Facet), or indirectly through specified observable behavior. </p>
+<p>Service Policies should be documented in human consumable format and should comply with enterprise, industry, or legal mandates. Policy documents should be traceable to both (1) the Business Motivation Model and (2) their realization in interface and service implementation. </p>
+<p>Service policies may be realized in at least four distinct forms and this may be taken into account when describing policy requirements: </p>
+<ul>
+  <li>Exclusively human consumable documents describing constraints on an activity, or a course of action as a response to an event. These types of policies can range from international legal mandates (e.g. constraints on carbon emissions from a manufacturing plant), thru industry/government regulations for example, a cap on inter-LATA (Local access and transport area) telecommunications tariffs, or Health Insurance Portability and Accountability Act (HIPPA) restrictions on the transmission of Personally Identifiable Information (PII), to corporate policies of an enterprise (for example, expense reporting requirements or IT System DRS mandates). </li>
+  <li>Rules expressed in the form of machine process-able expressions. Such rules may appear in the form of business process language (for example, <a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#BPEL" target="_blank">BPEL</a>) &ldquo;documents&rdquo; or rules-engine expressions (for example, Oracle&rsquo;s Business Rules, SLA alert rules in the Oracle Service Bus, etc.). </li>
+  <li>Web Services specifications (see <a href="#W3C">References</a>) of policy including the base W3C Web Service Policy Framework and its various OASIS domain specific assertions:
+      <ul>
+        <li>WS-Security Policy</li>
+        <li>WS-Reliable Messaging (and WS-ReliableMessagingPolicy) </li>
+      </ul>
+  </li>
+  <ul>
+    <li>WS-Secure Conversation</li>
+    <li>WS-Security </li>
+  </ul>
+  <ul>
+    <li> WS-Transactions(plus WS-AtomicTransaction and WS-BusinessActivity) </li>
+    <li>WS-Trust</li>
+  </ul>
+  <li>Typically this level of detail is realized as part of the interface specification. </li>
+  <li>Business rules and operational constraints can often be found hard-coded in application software during implementation. This is the least flexible (although, typically, best performing) approach to realizing a policy. This approach is most commonly found in previous generations of IT applications. </li>
+</ul>
+<p>Policy may be arranged in connected hierarchies enabling related policies to be brought together to provide a courser grained policy, or machine process-able meta-data realizations of policy to be associated with human-readable documents. </p>
+<p>The following sections elaborate further on various types of policy shown in the diagram fragment in the figure above. This list is not intended to be an exhaustive set of policy types. </p>
+<h6>Compliance Policy</h6>
+<p>Compliance policies can take the form of industry or enterprise standards, or regulatory and other legal mandates. </p>
+<p>Another form of compliance document manifests in a specification from the Web Services Interoperability industry consortium (see <a href="#WSI">References</a>). In order to improve interoperability of Web Services, the WS-I publishes a set of &ldquo;profiles&rdquo;. WS-I profiles correspond to core Web Services specifications (for example, SOAP - Simple Object Access Protocol, WSDL- Web Services Description Language, etc.) and apply additional requirements to restrict their use to improve interoperability. The WS-I also publishes use cases and test tools to support deployment of profile compliant Web Service.</p>
+<h6>Quality of Service Policy </h6>
+<p>Statements of Quality of Service (QoS) can take many forms but they generally refer to supplemental requirements arising from specific, traceable business requirements. QoS can refer to availability (for example, &ldquo;the service must be available 24x7&rdquo;); performance requirements (for example, &ldquo;the comms System must provide dial-tone within 100ms&rdquo;); transaction integrity (for example, &ldquo;debit account only upon completion of successful cash withdrawal&rdquo;), etc. </p>
+<p>Some of these statements of QoS can be realized through metadata expressions in the form of Web Services specifications (see <a href="#OASIS">References</a>). Examples are: </p>
+<ul>
+  <li> Reliable Message Exchange: WS-ReliableMessaging</li>
+  <li>Transaction Protection: WS-Transactions, WS-Coordination, WS-Atomic Transaction and WS Business Activity Framework</li>
+  <li>Message Level Security: WS-Security</li>
+</ul>
+<h6>Message Exchange Pattern (MEP) Policy </h6>
+<p>Basic messaging models describe a one-way flow of information but since we need to facilitate a consumer-provider interaction most services operate using a request-response Message Exchange Pattern. Due to the stateless nature of asynchronous document exchange patterns (generally preferred over the synchronous, blocking, RPC style) some form of message correlation is typically needed to associate a response with its request. Correlation may be provided by the application (in which case custom identifiers are embedded within the body of a message) otherwise a Web Services standard may be used (such as WS-Addressing) to pass identifiers via a message header where they can be processed by the SOA infrastructure.</p>
+<p>Besides the <b>one-way</b> and <b>request-response</b> Message Exchange Patterns already mentioned other examples include:</p>
+<ul>
+  <li>point-to-point </li>
+  <li>pub-sub (publisher/subscriber) </li>
+  <li>broadcast </li>
+</ul>
+<p>Other considerations arise from the choice of MEP including:</p>
+<ul>
+  <li>transactional requirements </li>
+  <li>once only or idempotent </li>
+</ul>
+<p>Many of these considerations can be addressed in standardized ways by the SOA infrastructure, rather than through costly custom application solutions. Using WSDL 1.1 each &ldquo;operation&rdquo; (of a &ldquo;portType&rdquo;) can send and receive at most one message in each direction and therefore is only able to describe the following four message exchange patterns: </p>
+<ul>
+  <li>one-way &ndash; a message is received by a service which produces no response </li>
+  <li>request-response &ndash; a message is received by the service which returns a response message </li>
+  <li>output-only (aka notification) &ndash; the service sends a message but expects no response </li>
+  <li>solicit-response &ndash; the service sends a message and expects a response </li>
+</ul>
+<p>The first two MEPs (referred to as inbound operations) are most commonly used while the last two (outbound operations) are not fully supported by WSDL but require the additional support of WS-Addressing in order to bind the operations and thus determine where to send such messages. WSDL 2.0 introduces more message exchange patterns although full description of WSDL and message exchange patterns is beyond the scope of this document. </p>
+<p>Ideally message exchange patterns will be described by the service contract using human readable text while the formality of WSDL and WS-Addressing etc. will be developed during the realization of the service interface. </p>
+<h6>Lifecycle Policy</h6>
+<p>Lifecycle is included here to represent policies that may be written to govern the lifecycle of a service. In this context, lifecycle does not refer to the ServiceLifecycleState <em>property</em> described in the service meta model. </p>
+<h6>Security Policy</h6>
+<p>Specification of security requirements overlaps somewhat with QoS. However, security is such a significant concern (to most organizations) that it justifies extensive handing by itself. The full subject of security, as it relates to SOA, is beyond the scope of this document (refer to SOSA for further information on SOA security). </p>
+<p>Beyond the specification of security requirements, SOA implementation is typically concerned with the following aspects: </p>
+<ul>
+  <li>message level security </li>
+  <li>transport level security </li>
+  <li>authentication (credential verification), authorization </li>
+</ul>
+<p>For Web Service (SOAP) services, message-level security profiles can be represented using the WS-SecurityPolicy standard. Authentication, or access control, policies may be represented as entitlements policies, such as those used by ALES. Policies for other aspects of security, such as auditing rules, may require custom-made policy definitions. </p>
+<p>Web Service Security standards are specified by the OASIS Web Services Security Technical Committee (<a href="#WSSTC">WSSTC</a>) and include the following components: </p>
+<ul>
+  <li>WS-Security Core Specification </li>
+  <li>Username Token Profile </li>
+  <li>X.509 Token Profile </li>
+  <li>SAML Token Profile </li>
+  <li>Kerberos Token Profile </li>
+  <li>Rights Expression Language (REL) Token Profile </li>
+  <li>SOAP with Attachments (SWA) Profile</li>
+</ul>
+<p>Specification documents can be found in the <a href="#OASIS">OASIS document repository</a>.</p>
+<h6><b>Usage Terms Policy </b></h6>
+<p>Usage terms describe the constraints that might be applied to the usage of an offered service. A service might be offered through various service levels (for example, &ldquo;bronze&rdquo;, &ldquo;silver&rdquo;, &ldquo;gold&rdquo;) depending upon cost or other factors. </p>
+<h5><b><a name="SERVINT"></a></b>Service Interface Viewpoint</h5>
+<p>This section provides a description of the Service Interface viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_INT_VP.JPG" alt="Service Interface Viewpoint" width="675" height="405" title="Service Interface Viewpoint"> </p>
+<table width="100%"  border="1" title="Service Interface Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Interface Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Engineer </li>
+        <li>Service Tester </li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>What operations are provided by the service? </li>
+        <li>What meta-data is used as part of the service interface?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Interface Specification </li>
+        <li>Service Interface Analysis Model</li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SI_MM.JPG" alt="Service Interface Meta Model" width="540" height="489" title="Service Interface Meta Model"><br>
+    <b>Service Interface Meta Model</b></p>
+<p>The meta model for the service interface has already been described in the section, <a href="#SIMM">Service Interface Meta Model</a>.</p>
+<p>The service interface exposes the service operations to the service consumers while hiding all others aspects of its implementation such as platform technology, internal algorithms, physical location, etc. It is the means for interacting with a service. It includes the specific protocols, commands, and information exchange by which actions are initiated that result in real-world effects, as specified through the service functionality portion of the service description. The syntax of the interface should be represented in a standard reference-able format that prescribes the information to be provided to the service in order to access its capabilities and interpret the responses. This is the service&rsquo;s information model. The existence of interfaces and accessible descriptions of those interfaces are fundamental to the SOA concept.</p>
+<p>Referring to the <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow View</a>, the physical Service Interface is created as an output of these three tasks; <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">Design Architecture Description DS.040</a>, <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">SOA Implementation Strategy (DS.070)</a>, <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">Service Design (DS.120)</a>. The primary input is the Service Contract and associated requirements and analysis documents: Use Case Model (RA.023), Use Case Details (RA.024), Analysis Model (AN.050), Behavior Analysis (AN.060), and (when appropriate), Business Rules Analysis (AN.070). The output of this workflow step is a Service Interface specification taking the form of descriptive documents; ideally using UML interaction diagrams (see <a href="#INTSPEC">Interface Specification</a>). In later iterations more detail is produced, perhaps to the level of modeling descriptive meta-data, for example, using class diagrams to model WSDL definitions (see <a href="#DMD">Descriptive Meta-Data</a>). As with Service Contract and Implementation, EA/IT standards, and potentially other document (such as regulatory requirements etc.), are also input to this workflow step. </p>
+<p>The interface is bound by contract and must conform to standards. The conceptual interface is a specification describing how to interact with the underlying service. The realization of the service is part of the service implementation. </p>
+<p>According to the Oracle UML Profile for Services, the Service Interface is based on the UML interface meta-class and can therefore be represented simply using the UML box with two compartments containing the stereotyped name and the operation names. This is useful for referring to the Service Interface while inferring its underlying structure is specified by the Service Interface meta model. During Service Analysis and Service Design, the underlying structure is described using standard UML techniques. The service interface stereotype is elaborated in the meta model (duplicated in the figure below) that is made up of specification documents and metadata, both of which may be supported by UML diagrams. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SI.JPG" alt="Service Interface Stereotype Meta Model Detail" width="540" height="489" title="Service Interface Stereotype Meta Model Detail"><br>
+    <b>Service Interface Stereotype Meta Model Detail</b> </p>
+<p>The service interface is made up primarily of operations (service method) and specifications. It also has an endpoint, which is required for discovery. In UML, the interface <em>classifier</em> is distinguished from a regular class because it has only two compartments rather than three, i.e., it has no <em>attributes</em>. </p>
+<p>Interfaces specify the totality of a message that is communicated to and from a service. They are composed of representations, which are a symbolic or digital realization of some kind of conceptual model or specification, whether a transport protocol, application protocol, data format, or information conforming to a schema. </p>
+<p>Representations also include references to information outside the boundary of an interaction, such as primary keys, endpoint references, or URLs. All these are denoted as resource identifiers. </p>
+<h6><a name="INTSPEC"></a>Interface Specification</h6>
+<p>The interface specification comprises human readable documents which elaborate on the specifications for the requirements established in the Service Contract. </p>
+<p>Although UML provides a special <em>element</em> for <em>use case</em> realization it is rarely used because it is a trivial, one-for-one copy of the <em>use case</em> elliptical symbol with a dotted outline. Early iterations of analysis often make use of interaction<em> diagrams,</em> for example a simplified <em>sequence diagram,</em> such as the one shown below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_AN_MODEL.JPG" alt="Service Interface Analysis Model" width="576" height="348" title="Service Interface Analysis Model"><br>
+    <b>Service Interface Analysis Model</b></p>
+<p>Sequence diagrams represent the interaction and sequence of events or operations at a level of granularity which is far beyond what can be achieved through a use case. The level of granularity and detail can be varied as needed making them an extremely useful and powerful representation. </p>
+<p>While using a <em>sequence diagram</em> for initial <em>use case</em> realization during Analysis, we make a number of simplifications, eliding details such as class instantiation on the <em>lifeline</em>, in order to show the <em>state invariants</em> of an object (in this example an Expense Report). When an instance receives a message it may be caused to change its state; these changes can be represented in a <em>sequence diagram</em> with <em>state invariants</em> using round-edged boxes on the <em>lifeline</em> (in this case showing &ldquo;submitted&rdquo;, &ldquo;approved&rdquo;, &ldquo;paid&rdquo; state changes for the ER). In the example in the figure above, we convey a number of important pieces of information, building on the <em>use case</em> for Expense Report submission. The ERman is responsible for the user interface, but it is also the service interface responsible for the creation and approval operations of the ER. The lifecycle of the ER is the primary subject of this diagram showing its high-level state changes, and corresponding operations, taking it from its creation to payment. A constraint (business rule) is represented here also, showing the requirement to limit the elapsed time, from submission to payment confirmation, to 14 days. </p>
+<p>The horizontal lines with arrows in the <em>sequence diagram</em> are drawn primarily to represent messages invoking the interface operations; dotted horizontal lines represent reply messages. The vertical lines are <em>lifelines</em> representing the passage of time from top to bottom. In this form of the UML <em>sequence diagram</em>, changes in state are represented by round-cornered boxes. Constraints, such as specific requirements of the Service Contract, may be written inside curly braces. </p>
+<p><em>Sequence diagrams</em> of this type are dynamic and are expected to evolve through a project lifecycle gathering more detailed information through various iterations. The UML <em>Sequence diagram</em> also offers a number of other features including detailed modeling of message flows and lifeline activations that are useful for modeling more complex interactions. The model shown in this section will reappear in other sections of this document, in slightly different forms, representing different levels of detail throughout the service lifecycle as well as during Service Design. </p>
+<h6><a name="DMD"></a>Descriptive Meta-Data</h6>
+<p>The service interface meta model should be abstract because a service architecture is supposed to be independent of any particular technology implementation or architectural style. However, since the service interface will commonly be realized using Web Services, the following examples use Web Services definitions to illustrate the diagramming strategies appropriate to this Model. It is worth noting that in cases where other interface definition technologies are used (such as the CORBA IDL) similar diagramming strategies should still apply. However, web services, as the most common SOA technology, was chosen here to provide a tangible foundation to ground the following descriptions. </p>
+<p><em>Specifications of Functional Requirements </em></p>
+<p>The basic functional capabilities of a service interface are typically described at a meta-data level using Web Services Description Language (WSDL). Various other Web Services specifications, WS-Policy in particular, are used to describe the supplemental capabilities of the service interface. First, we will show modeling techniques for the functional meta-data of the service interface based on WSDL (Web Service Definition Language). </p>
+<p>Attempts to develop a standardized Interface Definition Language (IDL) have been made since RPC became popular in the early &lsquo;90s the Open Software Foundation (OSF) Distributed Computing Environment (DCE). Most IDL&rsquo;s required a homogenous environment and even the OMG&rsquo;s CORBA, the most successful platform independent IDL, suffered interoperability issues. Web Service Definition Language (WSDL) was created by the W3C to be a truly interoperable IDL, with roots in early SOAP description language efforts from both IBM and Microsoft, and drawing from a decade of experience in the field. (WS-I may be used, or even required, to constrain Web Service specifications to improve interoperability). </p>
+<p>The current WSDL version 1.1 was originally conceived towards the end of the year 2000 and is now used extensively to describe Web Services interactions. WSDL has been very effective at separating the concerns of service descriptions thereby supporting the underlying objectives of loose coupling, reuse, and platform independence providing isolation from implementation concerns. </p>
+<p>WSDL provides both an abstract and a concrete definition of the service interface functional capabilities. These two separate aspects may be developed independently (for example, in Analysis and Design) and may even be used to describe enterprise standards using abstract interface templates. The WSDL Model is commonly said to separate the descriptions of <b>what</b> the service does, <b>how</b> it does it, and <b>where</b> it can be reached. WSDL version 1.1 is represented below, showing this separation of &ldquo;how, what, and where&rdquo;. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WSDL_11_MOD.JPG" alt="WSDL 1.1 Model showing the separation of &ldquo;how, what, and where&rdquo;." width="576" height="386" title="WSDL 1.1 Model showing the separation of &ldquo;how, what, and where&rdquo;."><br>
+    <b>WSDL 1.1 Model </b></p>
+<p>WSDL offers a concise, syntactic, interoperable, meta-data description of the functional operations provided by a service, the protocol for accessing it, and where it can be found. Using WSDL the interface for a business service is specified as a collection of &quot;portTypes.&quot; </p>
+<p>Some of the details of the WSDL Model have been elided from the diagram in order to focus on the key capabilities for service interface description. One <em>element</em> not shown here is the Documentation container which may be applied to any of the five top-level elements for human consumable descriptions and provides a potential repository for our descriptive specifications. The top-level Definitions <em>element</em> of the WSDL document identifies a target namespace which is the intended namespace for the resulting message exchanges via the interface. The top-level <em>elements</em> contained within the WSDL Definitions breakdown as follows: </p>
+<ul>
+  <li>Type: zero or one schemas describing the data structures of messages to be passed through the interface as parameters or documents. XML Schema is commonly used but the WSDL specification allows for other schema types (for example, RelaxNG, MIME, IDL, Cobol copybooks). </li>
+  <li>Message: the data to be exchanged via the interface operations, if any, is described as messages each made up of a collection of parts. These are the input and output parameters of the interface. </li>
+  <li>PortType: this is the container for the operations of the interface. Shown here are the input and output parameters, defined by messages and their parts and types. </li>
+  <li>Binding: the concrete definition of the interface containing style (&ldquo;RPC&rdquo; or &ldquo;document&rdquo;) and transport mechanism, such as SOAP over HTTP, or SMTP, etc. Here we clearly see <b>how</b> the operations are to be performed and messages conveyed. </li>
+  <li>Service: this is simply a container for the service endpoint reference </li>
+</ul>
+<p>The basic interface operations and message structure can be seen in the diagram below (the &ldquo;what&rdquo; it does portion of the diagram). This is the portion of the WSDL Model we use to describe the syntax of some of the functional requirements of the service contract for the service interface specification. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WHAT_WSDL.JPG" alt="The &quot;What&quot; (or abstract) Portion of the WSDL Model" width="576" height="265" title="The "What" (or abstract) Portion of the WSDL Model"></p>
+<p align="center"><b>The &quot;What&quot; (or abstract) Portion of the WSDL Model</b></p>
+<p>Using a <em>class diagram</em>, following this basic form of the abstract portion of the WSDL model, we can model details of the descriptive meta-data of the Service Interface showing data elements, messages, and interface operations. </p>
+<p>Extending the interface description from its abstract definition to a concrete one, the binding and service port (endpoint) can be added to the overall picture of how and what the interface offers. This portion of the WSDL Model will be used in the Service Design section. </p>
+<p>For completeness a corresponding Model of WSDL version 2 is shown in the following figure. When creating this document, WSDL 2 has limited adoption due to the newness of the specification and proliferation of WSDL 1.1. However, it is useful to see that, in addition to some simplification, the separation of concerns and the emphasis on the interface prevails. Again much of the detail of the specification has been omitted from this diagram. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WSDL2.JPG" alt="WSDL 2 Model" width="576" height="386" title="WSDL 2 Model"><br>
+    <b>WSDL 2 Model </b></p>
+<p>In WSDL, version 2 the input and output parameters of the interface operations are simply described by schema Types. The Message element has been dropped since its original purpose was largely to provide support for the distinct document v. RPC styles of SOAP based Web Services (the latter style is no longer recommended although still achievable using extension mechanisms). </p>
+<p>While WSDL 1.1 only enabled four Message Exchange Patterns (one-way, request-response, solicit response, output only), WSDL 2 provides for new MEPs with ordering and addressing capabilities supported via the binding. </p>
+<p>The service in WSDL 2 is now restricted to describing a single interface, albeit with the option for multiple endpoint addresses. </p>
+<p>WSDL is one of a number of options for describing the realization of the interface syntax for functional <em>use cases</em> identified by the service contract. However, it does not describe the supplemental requirements nor the semantics of the operations. </p>
+<p><em>Specifications of Supplemental Requirements</em></p>
+<p>Web Service Policy (WS-Policy) was created separately from WSDL and is intended to provide a generic framework for describing supplemental requirements for any XML-based subject. The basic framework is shown in the diagram below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WEB_SVPF.JPG" alt="Basic Web Service Policy Framework Outline" width="576" height="230" title="Basic Web Service Policy Framework Outline"><br>
+    <b>Web Service Policy Framework Outline</b></p>
+<p>WS-Policy is a container for assertions which describe the capabilities and constraints of the subject. The policy types shown here are just a small cross-section of the growing set of policies available in the Web Services domain. Currently, these include:</p>
+<ul>
+  <li>WS-Security </li>
+  <li>WS-ReliableMessaging </li>
+  <li>WS-AtomicTransaction </li>
+</ul>
+<p>WS Policies are reusable groups and fragments of policy definitions that may be associated with any number of subjects via the WS-PolicyAttachment mechanism. Using the attachment mechanism, meta-data statements of supplemental policy can adorn WSDL elements, including the port type (interface), binding, and endpoint enabling the WSDL document to aggregate statements of both functional and supplemental types. </p>
+<p>Supplemental Policies may also be applied to UDDI definitions for use during design and discovery. Finer-grained policy negotiation may also be achieved through late binding at runtime using WS-MetadataExchange. </p>
+<p>We can now show the service interface deriving functional and supplemental (&quot;non-functional&quot;) aspects of the contract as shown here: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_SCREQ.JPG" alt="Service Interface Specifying Contract Requirements" width="576" height="549" title="Service Interface Specifying Contract Requirements"><br>
+    <b>Service Interface Specifying Contract Requirements</b></p>
+<p>In this diagram the interface and policy <em>elements</em> have the respective Web Services namespaces identified (using the UML &ldquo;::&rdquo; package notation) indicating the design choices for interface specification. Other interface technology specifications should follow a similar pattern. Here we have used the WSDL 2 Interface for simplicity rather than naming Type, Message, and PortType elements of WSDL 1.1 for our service interface representation. </p>
+<p><em>Specifications of Semantic Requirements </em></p>
+<p>So far we have described the syntax and functional capabilities of the service interface using WSDL, and the supplemental requirements using WS-Policy, but the semantics of the interface operations are only implicit in our meta model for the service interface. Emerging technologies, such OWL-S and RDF, provide options for semantic descriptions and may be applied to the service interface to complete its definition. </p>
+<h5><a name="SERVDES"></a>Service Design Viewpoint</h5>
+<p>This section provides a description of the Service Design viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_DES_VP.JPG" alt="Service Design Viewpoint" width="619" height="405" title="Service Design Viewpoint"> </p>
+<table width="100%"  border="1" title="Service Design Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Design Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Designer </li>
+        <li>Service Engineer</li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>How are the requirements for this service going to be met? </li>
+        <li>How will this service interact with other services and components?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Design Specification </li>
+        <li>Service Interaction </li>
+    </ul></td>
+  </tr>
+</table>
+<p>The design activities of any project focus on &ldquo;how&rdquo; requirements are going to be met given a specific platform. This fits nicely with the breakdown of the WSDL Model into &ldquo;what&rdquo; (requirements description), &ldquo;how&rdquo; (service design), and &ldquo;where&rdquo; (service implementation and/or runtime), but it also applies more generally to software engineering practices. </p>
+<p>Service Design is a more detailed step in the <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow View</a>, <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">Design Architecture Description DS.040</a>, <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">SOA Implementation Strategy (DS.070)</a>, <a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">Service Design (DS.120)</a> elaborating on the design of the service prior to implementation. The primary input of this workflow step is the Service Contract and Service Interface specifications. The output is a Service Design Specification with sufficient detail of messaging strategies to support Service Implementation. </p>
+<p>In a project&rsquo;s Design phase, UML <em>Interaction Diagrams</em> are typically used to elaborate the physical details of <em>use case</em> realization. The second of two forms of UML 2 <em>Interaction Diagrams</em> is shown here representing a later iteration of <em>use case</em> realization flowing from Analysis into Design (notice the intentional similarities to the diagrams in <a href="#INTSPEC">Interface Specification</a> section above). </p>
+<p>The following <em>Interaction Diagram</em> is an alternative representation for <em>use case</em> realization in design using a UML 2 <em>communication diagram</em> (for reasons unknown the UML standard still labels these diagrams with the prefix &ldquo;sd&rdquo;). </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_UML.JPG" alt="This Service Interactions (UML Communication Diagram) is an alternative representation for use case realization in design using a UML 2 communication diagram (for reasons unknown the UML standard still labels these diagrams with the prefix &ldquo;sd&rdquo;). " width="576" height="348" title="This Service Interactions (UML Communication Diagram) is an alternative representation for use case realization in design using a UML 2 communication diagram (for reasons unknown the UML standard still labels these diagrams with the prefix &ldquo;sd&rdquo;). "><br>
+    <b>Service Interactions (UML Communication Diagram)</b></p>
+<p>In constructing a communication diagram we drop the lifelines of the sequence diagram in favor of arrowed lines with sequence numbers representing operation calls via messages between Services or other components. The actor in this particular example refers to a human role (presumably interacting with a presentation service), but may be easily replaced with a consumer &ldquo;system&rdquo; when depicting machine-to-machine interactions. </p>
+<p>In the figure above, we can enumerated steps (and sub-steps using point notation) in an Expense Report Creation and Payment process. In this design stage, we have adorned the service <em>elements</em> using the Service Implementation icon since these are best represented by UML <em>components</em> during design. </p>
+<p>This form of <em>interaction diagram</em> says little about the lifecycle of service instances, omitting the UML <em>lifeline</em> altogether, but offers important information about event sequencing, and the involvement of service interface operations and potentially messages exchanged. </p>
+<p>As with the modeling of standard object-oriented software, each of the various modes of representation represent some aspect of the overall system behavior which does not appear in most of the other representations. </p>
+<p>Regarding the WSDL mentioned at the beginning of this section, the &ldquo;how&rdquo; aspect of design is highlighted in the WSDL Model shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WSDL_EL_SPD.JPG" alt="WSDL Elements in Service Producer Design with the &ldquo;how&rdquo; aspect of design highlighted." width="576" height="263" title="WSDL Elements in Service Producer Design with the &ldquo;how&rdquo; aspect of design highlighted."><br>
+    <b>WSDL Elements in Service Producer Design</b></p>
+<p>The service provider specification is used during Design to represent the service operations provided by the service and their protocol bindings. Continuing the WSDL based description of the Service Interface in the <a href="#DMD">Descriptive Meta-Data</a> section, the Service Interface can now be extended in the Service Producer Design Model to show the nearly complete, concrete definition of the interface. Here the diagram tells us the Service Interface has a concrete binding. Other Web Services descriptions may be appropriate to include at this stage. </p>
+<p>Once again the WSWL structure may be used to create a class diagram describing transport binding specifications for the Service. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_CONC_SI_DEF.JPG" alt="Concrete Service Interface Definition class diagram using the WSWL structure describing transport binding specifications for the Service." width="576" height="350" title="Concrete Service Interface Definition class diagram using the WSWL structure describing transport binding specifications for the Service."><br>
+    <b>Concrete Service Interface Definition</b></p>
+<p>Other variations on this theme without the direct references to Web Services technologies, may be derived from this pattern if necessary. </p>
+<p>The UML <em>component is a structured classifier</em>, which means it has in internal structure having <em>parts</em> with <em>roles</em> and <em>connectors</em>. This is another useful diagramming <em>element</em> used to emphasize the roles of the service bindings with UML 2 <em>ports</em> adorned with appropriate constraints (it is important to note the distinction between UML <em>ports</em> and WSDL ports). Since our UML <em>Profile</em> establishes the Service Implementation as a <em>component</em> we are starting to overlap with the Service Implementation viewpoint. However, this is justified as we are making a distinction between protocol bindings and endpoints in design. </p>
+<p>The figure below shows an example of the internal components of a Service Implementation, along with its external bindings, using <em>component</em> with <em>ports</em> notation. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_COMP_PP.JPG" alt="This figure shows an example of the internal components of a Service Implementation, along with its external bindings, using component with ports notation. " width="576" height="186" title="This figure shows an example of the internal components of a Service Implementation, along with its external bindings, using component with ports notation. "><br>
+    <b>Service Implementation Components with Producer Ports</b> </p>
+<p>Using the <em>structured classifier</em> we can show the internal workings of a class, in this case a Service Implementation. The bounding box separates the internals of the Service from the rest of the system. This can be useful for highlighting the autonomy of the Service. The small rectangles on the boundary line are the UML <em>ports</em> representing the interface bindings which can be adorned with <em>constraints</em> documenting <b>how</b> it is to be used. The lollipop notation represents the interface and a distinction is made between interface receptors (half circle on a stick) and providers (full circle on a stick). </p>
+<p>The internals of the <em>structured classifier</em> may contain any classes, although the <em>part:type</em> naming scheme of the <em>part</em> is intended to specify the role of an instance of the internal class. In any case, we can model the internal workings of the Service Implementation and we generally do just that in associated viewpoint. More importantly, at this stage we show the interfaces of the internal components delegated by the Service Implementation using the dotted, directional line dependency notation (and appropriate stereotype). This shows the wrapping of some application functionality by the Service Implementation. Finally the <em>structured classifier component</em> is <em>stereotyped</em> using the appropriate Service Implementation icon. </p>
+<p>The Service Interfaces in this diagram have been reduced to the lollipop notation and no visual distinction is made between the internal provided/required interfaces and the service specific ones exposed outside the boundary of the service implementation (other than the note attached to the producer interface to the right of the diagram). Implicit in this diagram is the non-SOA nature of the application components internal to the implementation. Their delegated interfaces may be exposed through Enterprise Service Bus proxies. It is here that the UML 2 port notation is used to bind the exposed service interface to such <em>constraints</em> as transport protocols and implementations of policies through the SOA infrastructure. </p>
+<p>With the myriad of options available for addressing concerns, such as security, discovery, etc., it is important to clearly state what facilities are to be used for what purposes. The diagram below shows an example of a high-level representation of a sub-set of Web Services capabilities that may be used in Service Producer Design to facilitate service description, discovery, quality assurance, etc. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SD_PKG.JPG" alt="This Service Design Packages diagram shows an example of a high-level representation of a sub-set of Web Services capabilities that may be used in Service Producer Design to facilitate service description, discovery, quality assurance, etc. " width="576" height="460" title="This Service Design Packages diagram shows an example of a high-level representation of a sub-set of Web Services capabilities that may be used in Service Producer Design to facilitate service description, discovery, quality assurance, etc. "><br>
+    <b>Service Design Packages</b></p>
+<h5><a name="SERVIMP"></a>Service Implemenation Viewpoint</h5>
+<p>This section provides a description of the Service Implementation viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_IMP_VP.JPG" alt="Service Implemenation Viewpoint" width="619" height="405" title="Service Implemenation Viewpoint"> </p>
+<table width="100%"  border="1" title="Service Implemenation Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Implementation Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Engineer </li>
+        <li>Service Designer </li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>Where will the service be realized (code, infrastructure, etc.?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Implementation Model </li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SI_MM.JPG" alt="Service Implementation Meta Model" width="540" height="489" title="Service Implementation Meta Model"><br>
+    <b>Service Implementation Meta Model</b></p>
+<p>Service implementation really starts to come to life during traditional design phase in which analysis use cases are realized along with detailed interface definition. It is at this stage that subsystem components are considered to have enough detail to draft simplified views of the service deployment to establish an understanding of what components will be needed to make the System function as a whole. </p>
+<p>The service implementation encompasses all software (or software configuration) manifestations of the service including custom code, commercial and legacy application components, as well as those aspects of a service implemented through the service infrastructure. An example set of these service realizations appears in the next figure further down. </p>
+<p>The Service Implementation viewpoint is distinguished from the Service Producer Design by the level and breadth of detail involved. It is here that we need to show which requirements of the Service Contract will be implemented in traditional code versus infrastructure. For example, should business rules be implemented in code, a dedicated rules engine, the service bus, or a BPM engine, etc. Service endpoints (WSDL ports, the &ldquo;where&rdquo; of the WSDL) may also be specified here. </p>
+<p>In terms of the engineering process we can clearly see in the <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow view</a> that Service Implementation is its own workflow step following Service Design within the context of the Service Delivery phase. Analysis and Design documents are taken as input from Service Contract and Service Design stages and the Service Implementation specification is the output. As with Service Contract and Interface, EA/IT standards, and potentially other document (such as regulatory requirements, etc.), are also input to this workflow step. </p>
+<p>Traditional modeling and software engineering process techniques are most likely to be interwoven with Service Engineering at this stage since some aspects of Service Implementation may involve plain-old software development. The methods for software engineering are well established and beyond the scope of this document. However, it is important to understand that software and Service engineering processes and documents must be carefully coordinated and kept synchronized to avoid conflict of interest. </p>
+<p>The service implementation implements the service interface and the remainder of the service contract (functional and supplemental requirements) not specific to the interface. </p>
+<p>The service implementation meta model is surprisingly simple. The reason for its simplicity is that all the details of the service interface are inherited so it is not necessary to reproduce them here. Similarly, the dependency on the service contract has already been shown in the profile package. </p>
+<p>This figure shows the service implementation meta model. Here we can see the realization of the service interface as indicated in the service profile. Similarly the physical manifestation of the contract is represented here regardless of whether it is to be implemented in service infrastructure, an external policy engine, or within an application. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MODELING_SI_MM.JPG" alt="Service Implementation Stereotype Meta Model Detail" width="540" height="489" title="Service Implementation Stereotype Meta Model Detail"><br>
+    <b>Service Implementation Stereotype Meta Model Detail </b></p>
+<p>A key aspect of the implementation is its binding, which is necessary to support service discovery. The Enterprise Architecture / Information Technology Standards are required to ensure consistency across service implementations. </p>
+<p>A simple example of a Service Implementation component is shown using three alternative representations below. The component representation is particularly useful in Design and may take various forms according to the information being conveyed. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_REP.JPG" alt="A simple example of a Service Implementation component using three alternative representations." width="576" height="114" title="A simple example of a Service Implementation component using three alternative representations."><br>
+    <b>Service Implementation Representations</b></p>
+<p>The simpler form of the service implementation component (shown right) uses the classic UML <em>component element</em> notation with the simple additional Service Implementation <em>stereotype</em> to clarify its additional meaning. The <em>class element</em> (middle of three representations) is used to show a service name along with required and provided interfaces and messages (in the <em>attributes</em> compartment). The more detailed, design-level, component representation (shown left) uses an alternative notation for required and provided interfaces receptors and elaborates the associated interface realization using UML <em>ports</em> to indicate protocol and/or message format implementations.</p>
+<p>Also, in this example, one <em>port</em> has private, and the other public visibility, distinguished by the position of the rectangle <b>inside</b> the bounding box versus <b>on</b> the boundary line. This subtle distinction could be useful for representing &ldquo;public versus private&rdquo; Service Interfaces. Either representation can be <em>stereotyped</em> using the double angle bracket notation or our Service Interface icon (the <em>class</em> representation in the example carries both forms which is redundant although not incorrect). </p>
+<p>Combining the notations we have so far, we can show the relationship between the service implementation and its provided and required interfaces. See the following figure: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SI_PRINT.JPG" alt="Service Implementation with Provided and Required Interfaces  showing the relationship between service implementation and its provided and required interfaces" width="576" height="96" title="Service Implementation with Provided and Required Interfaces  showing the relationship between service implementation and its provided and required interfaces"><br>
+    <b>Service Implementation with Provided and Required Interfaces</b> </p>
+<p>In the figure above, the relationship between a service implementation component and its provided and required interfaces is shown using <em>realizes</em> and <em>uses</em> dependencies respectively (these are the dotted lines, distinguished by their different arrowhead styles). Service Interface representations have already been covered in their own section, and they are shown here using the classic, two compartment box for name plus <em>stereotype</em> (icon in this example) and operations. </p>
+<p>In this next figure, we show the internal structure of the service implementation using parts within a structured classifier. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_DET_CP_SC.JPG" alt="Detailed Component with Structured Classifier Diagram showing the internal structure of the service implementation using parts within a structured classifier" width="576" height="155" title="Detailed Component with Structured Classifier Diagram showing the internal structure of the service implementation using parts within a structured classifier"><br>
+    <b>Detailed Component with Structured Classifier</b> </p>
+<p>The <em>structured classifier</em> was introduced and briefly explained in the Service Producer Design section. Here we see <em>ports</em> (small rectangles on the boundaries of the classifiers) representing the protocols of the various components. Only the exposed Service Implementation component <em>ports</em> are named in this example. However, elements of this type may be used to provide considerably more information about the internal design of the Service Implementation. The Service Implementation <em>component</em> itself is (unnecessarily) <em>stereotyped</em> with both angle bracket notation as well as icon. </p>
+<p>In this example, we have used standard component icons in conjunction with stereotypes from the UML EJB <em>Profile</em> to show some of the internal implementation details of the Service Implementation. </p>
+<p>Legacy access Service Implementation may also be represented using the component notation. See below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_LEG_CP_SC.JPG" alt="Legacy Access Component using Structured Classifier " width="576" height="282" title="Legacy Access Component using Structured Classifier "><br>
+    <b>Legacy Access Component using Structured Classifier</b> </p>
+<p>In the <em>element</em> shown in the figure above, we see the internal details of an encapsulated legacy function with its own interfaces delegated to SOA compliant interfaces (shown here as <em>ports</em> with direction indicators) at the boundary of the service implementation. </p>
+<p>To complete the WSDL Model introduced in the <a href="#DMD">Descriptive Meta-Data</a> section, the figure below shows the &ldquo;where&rdquo; portion of the service description which specifies the service endpoint, identified here in Service Implementation. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_WSDL_EL_SI.JPG" alt="WSDL Elements in Service Implementation diagram showing the &ldquo;where&rdquo; portion of the service description which specifies the service endpoint, identified here in Service Implementation" width="576" height="271" title="WSDL Elements in Service Implementation diagram showing the &ldquo;where&rdquo; portion of the service description which specifies the service endpoint, identified here in Service Implementation"><br>
+    <b>WSDL Elements in Service Implementation</b> </p>
+<h5>Service Composition Viewpoint</h5>
+<p>This section provides a description of the Service Composition viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_COMP.VP.JPG" alt="Service Composition Viewpoint" width="619" height="405" title="Service Composition Viewpoint"></p>
+<table width="100%"  border="1" title="Service Composition Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Composition Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="26%" scope="col">Typical Stakeholder(s):</th>
+    <th width="41%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="26%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Engineer</li>
+    </ul></td>
+    <td width="41%"><ul style="margin-bottom: 0;">
+        <li>How are the requirements for this composite service going to be met? </li>
+        <li>How will this composite service interact with other services and components? </li>
+        <li>Where will the composite service be realized (code, infrastructure, etc?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Composite Model </li>
+        <li>Service Sequence Model </li>
+    </ul></td>
+  </tr>
+</table>
+<p>Service Composition in the context of Service-Oriented Architecture is a general term meaning the combination of two or more Services to form a new Service (having its own interface, contract, implementation, lifecycle, etc.). A good example of composition is seen in Web Services Business Process Engineering, which is said to be &ldquo;recursive&rdquo;, meaning a process Service may be composed of multiple underlying Services while exposing a new composite Service (or Services) of its own. </p>
+<p>The full complexity of Business Process Engineering is not necessary for Service Composition. Many other examples of composition can be found, for example, within an ESB (Enterprise Service Bus). Composition in the ESB tends to be used for simpler workflow activities, although it is generally still expressed using declarative representations An emerging standard for applying Service Composition is SCA (Service Component Architecture), which in the case of Oracle would leverage BPEL. </p>
+<p>Service Composition is the ultimate form of Service engineering, ideally requiring no new application software creation, but instead new Service functionality is realized through declarative or graphical control. In terms of the overall Service Engineering process, (See <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow view</a>) the models of the Service Composite Design viewpoint focus on the Service Implementation workflow step of Service Delivery. Inputs to this step include the Service Contract and Service Producer Design. During Analysis, the output includes process or workflow definitions, possibly in the form of UML <em>activity</em> diagrams, and other <em>interaction</em> diagrams representing the implementation of those flows. </p>
+<p>In UML, Business Processes, or simple workflows, are represented using <em>activity diagrams</em> (the UML version of a &ldquo;flow chart&rdquo;), although in UML 1 the activity diagram was nothing more than a special case of <em>state machine</em>, and was not highly regarded or used as a tool for representing process. UML 2 however, has overhauled the <em>activity diagram</em> so that it is now a distinct diagram form based on Petri Net formalism, expanding and improving UML&rsquo;s process modeling capabilities. </p>
+<p>The figure below shows a simple example of a UML 2 activity diagram, adorned with our SOA Service icons highlighting the services providing the operations in our Expense Report business process. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_UML2_AD.JPG" alt="This figure shows a simple example of a UML 2 activity diagram, adorned with our SOA Service icons highlighting the services providing the operations in our Expense Report business process. " width="576" height="384" title="This figure shows a simple example of a UML 2 activity diagram, adorned with our SOA Service icons highlighting the services providing the operations in our Expense Report business process. "><br>
+    <b>UML 2 Activity Diagram Example</b></p>
+<p>Using the UML 2 <em>activity</em> diagram we can incorporate the swim-lane style representation of participant responsibilities and bound the whole process in a box with round corners. Within the box and swim-lanes we use classic UML flowchart style notation with begin and end markers, connecting solid, directional lines, and synchronization bars. The individual process steps can be adorned with the SOA Service <em>stereotype</em> icon identify specific process Services cooperating with other, non-SOA activities. </p>
+<p>Ideally represented as a collection of service components, the service composite diagram is used to represent the interaction between a set of services of different types collaborating to provide a new service. </p>
+<p>The orchestration of collections of services, their routing decision, dependencies, etc., are represented by the Composition Sequence model. This second form of <em>interaction diagram</em> (the first appeared in the <a href="#SERVDES">Service Design Viewpoint</a> section) is the original UML <em>sequence diagram</em>. Little has changed in UML 2 when it comes to the <em>sequence diagram</em> (some extended syntax is provided for describing flow control, sub-flows, message exchange, and <em>lifeline</em> details, often seen with the new <em>frame element</em> that encapsulates the diagram). </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SCOMP_SEQ.JPG" alt="Simple Composition Sequence Model showing the orchestration of collections of services, their routing decision, dependencies, etc." width="576" height="348" title="Simple Composition Sequence Model showing the orchestration of collections of services, their routing decision, dependencies, etc."><br>
+    <b>Simple Composition Sequence Model</b> </p>
+<p>Using a <em>sequence diagram</em>, we can illustrate activations of certain service instances, and show the operation calls and acknowledgments (dotted return lines). </p>
+<p>A <em>sequence diagram</em> is an ideal representation for Service Produce Design, offering potentially far more detail than in the simple example shown here. This form of <em>interaction diagram</em> will most likely be the result of a number of iterations in Analysis. </p>
+<p>Service Composition takes on more detail during Design when we can show interface dependencies and identify which runtime infrastructure components are expected to provide the various service implementations. </p>
+<p>The figure below shows example of a service composition design. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SCOMP_DES.JPG" alt="Service Composition Design Model" width="576" height="491" title="Service Composition Design Model"><br>
+    <b>Service Composition Design Model</b></p>
+<h5>Service Deployment</h5>
+<p>Deployment tends to mean different things to different people in any engineering environment. If we look at the UML <em>deployment diagram</em> definition we see diagramming elements intended to depict hardware (nodes, machines, etc.) in an operational configuration. The layout and composition of the various physical and software components is described explicitly. This form of deployment diagram is useful for creating models within systems and network architectural descriptions. However, there are a number of steps between service (or software) creation and operational deployment. These steps are concerned with packaging and runtime models. </p>
+<p>Packaging in the context of SOA Services is concerned with identifying all the parts necessary for service implementation, and organizing them is a way that is best suited for the process of deploying the Service(s) to the target systems. Since the classic deployment model varies according to the environment it is supporting (e.g. development, test, production), a generalized representation is needed to identify the types of infrastructure required by the Reference Architecture. This intermediate model is best represented using UML subsystem diagrams. </p>
+<p>In the context of the Service Engineering process, Service Deployment moves us into a new phase of Service Management (see <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow view</a>). Taking Service Contract and Design inputs from earlier phases, the Service Deployment workflow step produces a number of outputs directed towards different stakeholders. The following sections propose three viewpoints </p>
+<ul>
+  <li>Service Packaging </li>
+  <li>Service Runtime </li>
+  <li>Service Operations Deployment </li>
+</ul>
+<p>These three viewpoints are intended to address the separate concerns of stakeholders, such as, configuration management and distribution/deployment engineers, infrastructure designers, and system architects. Delineation of these responsibilities is not well standardized and often depends on the size of the enterprise and other non-technical factors. The style which an organization has adopted for development and deployment of non-service oriented software, will likely spill over into how it develops and deploys services. For this reason the use of the models presented here are most likely to be used in other viewpoints, customized to fit the organization structure of the customer&rsquo;s enterprise. </p>
+<p>The meta model for the three diagrams described here is shown below. Here we see the relationships between the packaging, subsystem, and operational deployment representations. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_DEP_MM.JPG" alt="Service Deployment Meta Model" width="576" height="391" title="Service Deployment Meta Model"><br>
+    <b>Service Deployment Meta Model</b> </p>
+<p>The figure above identifies a number of elements, in meta-class form, that already exist as stereotypes in UML: </p>
+<ul>
+  <li>System </li>
+  <li>Subsystem </li>
+  <li>Execution Environment </li>
+  <li>Device </li>
+  <li>Additional elements are implied by the package model: </li>
+  <li>service Package </li>
+  <li>Deployment Unit </li>
+  <li>Implementation Element </li>
+</ul>
+<p>The workflow steps for the creation of models from these diagrams are represented below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_DEP_MWF.JPG" alt="Service Deployment Modeling Workflow" width="576" height="372" title="Service Deployment Modeling Workflow"><br>
+    <b>Service Deployment Modeling Workflow</b></p>
+<p>Here we see the Reference Architecture as external input to the subsystem model, which highlights the types of infrastructure subsystems required to support our services, but without the detail of their optional deployment. </p>
+<p>Service Packages must map to elements of the runtime system, depicted in the subsystem model, to ensure the system is deployable. </p>
+<p>Ultimately the operational deployment models must meet the needs of development, test, and production environments while still conforming to the subsystem model in order to support the deployable services. </p>
+<p>The following sections describe three viewpoints corresponding to the three aspects of &ldquo;deployment&rdquo; outlined here. </p>
+<h6>Service Packaging Viewpoint</h6>
+<p>This section provides a description of the Service Packaging viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_PKG.VP.JPG" alt="Service Packaging Viewpoint" width="619" height="405" title="Service Packaging Viewpoint"></p>
+<table width="100%"  border="1" title="Service Packaging Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Packaging Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Deployer </li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>How will the service be packaged?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Packaging Model </li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SPKG_MM.JPG" alt="Service Packaging Meta Model" width="576" height="264" title="Service Packaging Meta Model"><br>
+    <b>Service Packaging Meta Model</b> </p>
+<p>A high-level packaging model is needed to show the mapping of deployable Service Implementation artifacts to their respective subsystem components, as determined by the Reference Architecture. An example of a high-level Service packaging model is shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_HL_SPKG.JPG" alt="High-Level Service Packaging Model" width="576" height="294" title="High-Level Service Packaging Model"><br>
+    <b>High-Level Service Packaging Model</b></p>
+<p>A model of this type serves two important purposes: </p>
+<ul>
+  <li>Packages of Service Implementation artifacts should be (as far as reasonably possible) self-contained to simplify the process of service deployment.</li>
+  <li>Traceability of packaged Service Implementation facets to subsystems in the runtime system (see next section). </li>
+</ul>
+<p>Each sub-package in the high-level model above requires substantially more detail than is shown here. More detailed models should be developed to show the types of artifacts that can be expected in each of the high-level sub-packages. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SPKG_DD.JPG" alt="Service Packaging Detail Diagram" width="576" height="173" title="Service Packaging Detail Diagram"> <br>
+    <b>Service Packaging Detail Diagram</b></p>
+<h6>Service Runtime Viewpoint </h6>
+<p>This section provides a description of the Service Runtime viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_RT_VP.JPG" alt="Service Runtime Viewpoint " width="619" height="405" title="Service Runtime Viewpoint "></p>
+<table width="100%"  border="1" title="Service Runtime Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Runtime Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Engineer </li>
+        <li>Service Deployer</li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>How does the service interact with the subsystems? </li>
+        <li>How do the subsystems interact?</li>
+        </ul></td>
+    <td width="33%"><ul>
+        <li>Service Runtime Subsystem Sequence Model </li>
+        <li>Runtime Subsystem Model</li>
+        </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SERV_RT_MM.JPG" alt="Service Runtime Meta Model" width="576" height="264" title="Service Runtime Meta Model"><br>
+    <b>Service Runtime Meta Model</b> </p>
+<p>Service Runtime is a description of service interactions during runtime operations following deployment. The Service Runtime Viewpoint provides an opportunity to elaborate on the design descriptions of such things as runtime discovery, subsystem interactions, etc.that may not otherwise be apparent in the (typically static) descriptions of deployment. </p>
+<p>Another variation of the <em>interaction diagram</em> reappears in the Service Runtime Viewpoint, showing the relationship between services and subsystems. The diagram below shows an example of a UML 2 <em>sequence diagram</em> including subsystems and their service interfaces. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SRT_SQD.JPG" alt="Service Runtime Sequence Diagram with Subsystems" width="576" height="340" title="Service Runtime Sequence Diagram with Subsystems"><br>
+    <b>Service Runtime Sequence Diagram with Subsystems</b></p>
+<p>The implementation of services within a chosen set of a SOA infrastructure is also represented by the Service Runtime viewpoint. A UML subsystem diagram is particularly useful for showing these subsystems from a Service Runtime Viewpoint. An example subsystem diagram is shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_RT_SSM.JPG" alt="Runtime Subsystem Model" width="576" height="422" title="Runtime Subsystem Model"><br>
+    <b>Runtime Subsystem Model </b></p>
+<p>In the Runtime Subsystem Model we can see the containment of the owned subsystems in contrast to the shared aggregation of subsystems beyond the control of the SOA System. Also represented here are various high-level interface specifications showing the types of interaction permitted or expected between subsystems. </p>
+<p>Although this representation is a form of implementation, it stops short of identifying nodes or clusters as execution units, leaving this information for the deployment Model. </p>
+<h6><a name="SODVP"></a>Service Operations Deployment Viewpoint</h6>
+<p>This section provides a description of the Service Operations Deployment viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SO_DEP.JPG" alt="Service Operations Deployment Viewpoint" width="619" height="405" title="Service Operations Deployment Viewpoint"></p>
+<table width="100%"  border="1" title="Service Operations Deployment Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Operations Deployment Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Service Architect </li>
+        <li>Service Deployer</li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>Where is each subsystem deployed?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Deployment Model </li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SOD_MM.JPG" alt="Service Operations Deployment Viewpoint Metal Model" width="576" height="264" title="Service Operations Deployment Viewpoint Metal Model"><br>
+    <b>Service Operations Deployment Viewpoint Metal Model</b> </p>
+<p>Integration with operational Systems (including logging, monitoring, etc.) in deployment is represented in this viewpoint. </p>
+<p>Earlier versions of UML (ver. 1.x) were criticized for limitations in the notation for modeling deployment. UML 2 offers some improvements in this area. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_DEP_MOD.JPG" alt="Deployment Model" width="576" height="365" title="Deployment Model"><br>
+    <b>Deployment Model</b></p>
+<p>In the deployment Model we are no longer concerned with the messaging interface formats although in many cases the underlying wire protocols are of particular interest to the network operations community. The deployment Model diagram shows types of &ldquo;execution environments&rdquo; that expected to be deployed within specific &ldquo;devices&rdquo; or device clusters. </p>
+<h5>Service Consumer Viewpoint</h5>
+<p>This section provides a description of the Service Consumer viewpoint. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SCONS_VP.JPG" alt="Service Consumer Viewpoint" width="619" height="405" title="Service Consumer Viewpoint"> </p>
+<table width="100%"  border="1" title="Service Consumer Viewpoint" summary="This table lists the Typical Stakeholders in the first column, Concerns in the second column and Models in the third column for the Service Consumer Viewpoint.">
+  <tr bgcolor="#CCCCCC">
+    <th width="33%" scope="col">Typical Stakeholder(s):</th>
+    <th width="34%" scope="col">Concerns:</th>
+    <th width="33%" scope="col">Models:</th>
+  </tr>
+  <tr valign="top">
+    <td width="33%"><ul style="margin-bottom: 0;">
+        <li>Business Analyst</li>
+        <li>Project Architect</li>
+    </ul></td>
+    <td width="34%"><ul style="margin-bottom: 0;">
+        <li>What are the non-functional requirements of the service? </li>
+        <li>Who is the consumer of this service?</li>
+    </ul></td>
+    <td width="33%"><ul>
+        <li>Service Consumer Use Case </li>
+        <li>Service Consumer Use Case Specifications</li>
+    </ul></td>
+  </tr>
+</table>
+<p>The Service Consumer Contract (aka consumption agreement/contract, and occasionally called &ldquo;usage agreement&rdquo;) describes the consumer&rsquo;s expectations. The mandatory aspects of consumer and provider contracts must match in order for provider and consumer to interoperate.</p>
+<p>The service consumer perspective is not addressed directly by the <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow view</a>, although it is inferred in the Service Identification workflow step of the Service Analysis phase. In Service Identification we are directed to look for service reuse opportunities, and it is typical of this procedure that we are required to consider the expression of a Service Contract from the viewpoint of the consumer. The output of this step is a Service Contract and is therefore very similar to the output of the Service Provider Contract step described at the beginning of this chapter. </p>
+<p>The Service Consumer Contract is another form of service contract viewed from the perspective of a consumer. In fact many of the characteristics of a Service Producer Contract can be used to express requirements and/or preferences or constraints of a consumer. </p>
+<p>As defined by the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique, the Service Producer Contract is an agreement between the service provider and the service infrastructure, while the Service Consumer Contract is an agreement between the consumer and service infrastructure. </p>
+<p>The <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique definition of contracts enables the decoupling of provider and consumer so the contractual requirements of one may exist without the need for the other; the relationship between these entities can be seen in the diagram below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_CP_CR.JPG" alt="Consumer/Producer Contract Relationship" width="536" height="214" title="Consumer/Producer Contract Relationship"><br>
+    <b>Consumer/Producer Contract Relationship</b> </p>
+<p>In the figure above, we can see a <em>use case</em> that consumes a service and Service Contract and Service Consumer Agreement. The relationship between provider and the service consuming system (some system) only exists when the <em>constraint</em>, that &ldquo;the Service Contract meets the mandatory requirements of the Service Consumer Contract&rdquo;, is met. </p>
+<p>While the Service Consumer Contract makes use of much of the same notation as the Service Producer Contract, it is important to recognize the differences arising from the viewpoint of the consumer. Although the example Consumer Contract shown below is very similar in its notation to the Provider contract described previously, it is most likely to focus on supplemental requirements rather than statements of functional needs. This is due to the likely scenario that a potential consumer has discovered a published service and identified a match to his functional requirements without the need for elaborate descriptions. Once this initial discovery has taken place the consumer focuses on the description of interface constraints in an attempt to match specific, policy based, and supplemental requirements of his organization. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOA_MOD_SC_C_USE.JPG" alt="Service Consumer Contract Use Case and Specification Document" width="711" height="544" title="Service Consumer Contract Use Case and Specification Document"><br>
+    <b>Service Consumer Contract Use Case and Specification Document</b></p>
+<p>The Service Consumer Contract shown here appears to be simply a mirror image of the Service Producer Contract diagram although the emphasis of the information it represents is changed according to the Viewpoint of the consumer. </p>
+<hr width="100%">
+<h4>UML</h4>
+<h5>UML Background </h5>
+<p>UML is &ldquo;a specification defining a graphical language for visualizing, specifying, constructing, and documenting the artifacts of distributed object systems.&rdquo; For further reading on UML, see the <a href="#UML">References</a>.</p>
+<p><a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#UML" target="_blank">UML</a> stands for Unified Methodology Language. In the eighties there were several different and independent methodologies. At one point, the founders of each of them got together and agreed to &ldquo;unify&rdquo; them into one standard approach with one common set of symbols. </p>
+<p>UML is a general-purpose modeling language that includes a graphical notation used to create a set of diagrams of a system, referred to as a UML model. UML is designed to specify, visualize, construct, and document software-intensive systems. UML is defined and maintained by the Object Management Group (OMG) using a Meta-Object Facility (MOF) meta model. Like other MOF-based specifications the UML meta model and UML models may be serialized in XMI for transfer of models between tools. </p>
+<p>UML is made up of modeling elements (shaped boxes), relationships (various connecting line formats), and a set of diagrams that are constrained by rules to provide models making up architectural descriptions. The diagram types are categorized into structure (nouns) and behavior (verbs). The figure below uses a UML class diagram to show a high level summary of the UML 2 diagram types and the separation between structure and behavior. </p>
+<p align="center"><img src="../../010_COMMON_FILES/UML2_DIAGRAM_TYPES.JPG" alt="This figure uses a UML class diagram to show a high level summary of the UML 2 diagram types and the separation between structure and behavior. " width="576" height="155" title="This figure uses a UML class diagram to show a high level summary of the UML 2 diagram types and the separation between structure and behavior. "><br>
+    <b>UML 2 Diagram Types</b> </p>
+<p>This diagram shows the full thirteen diagrams of UML 2 with those diagrams that are new to version 2 shown in blue. Most of the original UML 1 diagrams (in red) have been updated, in varying degrees, in version 2 and the original &ldquo;collaboration diagram&rdquo; of UML 1 has been replaced by the set of interaction diagrams that include the original sequence diagram. Diagram types are shown in gray.</p>
+<p>UML versions 1.4.1 and 1.5 enjoy widespread support from tools vendors and are universally know (in varying degrees) in information and communication technology environments. UML Version 2 was finalized in 2004 with the primary goal of filling some important gaps in the prior versions, in particular process and deployment modeling; Version 2 has thirteen diagrams while UML 1.x had nine. The biggest practical difference currently is that UML 2.0 suffers poor support from tools vendors. </p>
+<p>Refer to the <a href="#OMG">Object Management Group (OMG)</a> resources for language specifications.</p>
+<p>UML has been a catalyst for the evolution of model-driven technologies, which include Model Driven Development (MDD), Model Driven Engineering (MDE), and Model Driven Architecture (MDA). MDA requires heavy investment in tooling and process and has seen limited adoption in IT. It is not our intention to endorse or recommend MDA merely by our association with UML. </p>
+<p>UML is not restricted to modeling software; it is also used for business process modeling, systems engineering modeling and representing organizational structures. For example the Systems Modeling Language (SysML) is a Domain-Specific Modeling language for systems engineering that is defined as a UML 2.0 profile. </p>
+<p>UML is extensible, offering the following mechanisms for customization: </p>
+<ul>
+  <li>profiles (new in UML 2) </li>
+  <li>stereotypes </li>
+  <li>tags </li>
+  <li>constraints </li>
+</ul>
+<p>The semantics of <em>extension by profiles</em> have been improved with the major revision UML 2.0. </p>
+<p>By using these standard mechanisms for creating extensions or increasing specificity within a domain, supporting tools should not be adversely affected and in many cases should even be able to apply the new constraints of the language extension. </p>
+<p>UML is not a method by itself, but is typically used in conjunction with various software engineering methods. Developed by Grady Booch, James Rumbaugh, and Ivar Jacobson the UML was originally integrated with the Rational Unified Process (now owned by IBM). A non-proprietary version is widely used and adapted in the form of <em>the Unified Process </em>(UP). </p>
+<p>Other examples of software engineering methods using UML include: </p>
+<ul>
+  <li>Oracle Unified Method (OUM) </li>
+  <li>Agile Model Driven Development (AMDD) </li>
+  <li>Object-Modeling Technique (OMT) </li>
+  <li>Abstraction Method </li>
+  <li>Dynamic Systems Development Method (DSDM) </li>
+  <li>and others designed to provide more specific solutions, or achieve different objectives</li>
+</ul>
+<p>Similarly, this technique uses a modeling approach intended for use primarily with the OUM&rsquo;s <a href="../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank">SOA Core Workflow view</a> but may also be used with other software engineering methods. </p>
+<p>Many other modeling languages and notations exist and while some may be used directly by OUM (for example, BPMN in the <a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique) others may be found in customer environments. Examples of other modeling languages include: </p>
+<ul>
+  <li>Entity Relationship Diagrams (ERD) &ndash; used for relational data modeling </li>
+  <li>Business Process Modeling Notation (BPMN) &ndash; used for representing business processes </li>
+  <li>Business Process Execution Language (<a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#BPEL" target="_blank">BPEL</a>) &ndash; an executable business process language </li>
+  <li>Agile Modeling &ndash; used with Agile UP, XP, and SCRUM </li>
+  <li>Executable XML</li>
+  <li>Fundamental Modeling Concepts (FMC) - a modeling method focused on communication about software-intensive systems </li>
+  <li> Generic Modeling Environment (GME) - a modeling framework </li>
+</ul>
+<p>It may be possible (and perhaps necessary) in some circumstances to adapt this approach to alternative modeling languages/notation although in most cases some loss of functionality will result (for example, ERD is ideal for modeling data relationships but is incapable of representing behavior). </p>
+<h5>Standardization</h5>
+<p>The original version of UML was adopted by the OMG as a standard in 1997. UML version 1.4.2 (OMG document formal/05-04-01) was accepted as an ISO standard in 2005. </p>
+<p>UML 1.4.2 is available as ISO/IEC 19501 and ITU-T Recommendations Z.100 (SDL) and Z.109 (SDL UML profile).</p>
+<p>UML version 2 was originally released in 2004 and the current version (as of February 2007) is 2.1.1.</p>
+<h5>Modeling Tools </h5>
+<p>Many tools are useful for modeling: these ranging from rudimentary drawing packages to full blown capabilities such as UML consistency validation, code generation, Model Driven Architecture/Development (MDA / MDD). Some tools are strictly tied to specific Software Development Lifecycle (SDLC) methods such as the relationship between IBM&rsquo;s Rational Rose and the Rational Unified Process. Some tools are merely drawing packages allowing the unconstrained presentation of shapes and connectors such as PowerPoint. The tool used in this document, and recommended for most scenarios as a &ldquo;lowest common denominator&rdquo; is Visio. Visio provides some support for UML v1 while UML2 templates are also available.</p>
+<h5>UML Profile Extension Approach</h5>
+<p>Since the release of version 1 the UML framework has offered simple extension techniques that allow us to extend the language, for domain specific purposes, without changing the underlying meta model. The primary extension features are: </p>
+<ul>
+  <li>stereotypes for new modeling elements </li>
+  <li>tagged values for new modeling attributes </li>
+  <li>constraints for new modeling semantics </li>
+  <li>profiles (new in UML2)</li>
+</ul>
+<p>The Profiles package contains mechanisms that allow meta-classes from underlying UML meta models to be extended to adapt them for different purposes. This allows us to tailor the UML meta model for different platforms (such as, J2EE or.NET) or domains (such as business process modeling or SOA!). </p>
+<p>The new profile mechanism enables us to package our extension definitions using the original three capabilities. </p>
+<p>Each stereotype in a profile extends an underlying meta model element, such as Class or Link, and may introduce tags and constraints that were not part of the original meta model.</p>
+<p>The &ldquo;Profiles package&rdquo; in the Object Management Group (OMG) UML definition (see <a href="#OMG">References</a> ) contains mechanisms that allow meta-classes from existing meta models to be extended to adapt them for different purposes. This includes the ability to tailor the UML meta model for different platforms or domains (such SOA or Business Process Modeling). In this way UML offers several extension mechanisms to enable modelers to describe new and specific situations (such as SOA services) without changing the underlying modeling language. </p>
+<p>The primary goal of the designers of UML was to enable extensions to be introduced without breaking existing tooling that may not understand the semantics and purpose of the extension. In general it is expected that tools and add-ons will be created to process various UML extensions to perform more specific tasks (such as checking the validity of a service composition); however tools are not required to create or use extensions as long as all its users are aware of it and care is taken to apply its principles. </p>
+<p>Extensions are organized into profiles, where a profile is a set of extensions applicable to a given domain or purpose. The mechanisms used in a UML profile are stereotypes, tags (and tagged values), and constraints. </p>
+<p>Care must be taken in using these mechanisms since the resulting profile represents a dialect specific to a particular application domain or engineering environment and may conflict with other profiles or even standard use of UML. </p>
+<p>According to the OMG, a UML profile is a specification that does one or more of the following: </p>
+<ul>
+  <li>Identifies a subset of the UML meta model. </li>
+  <li>Specifies &ldquo;well-formed ness rules&rdquo; beyond those specified by the identified subset of the UML meta model. </li>
+</ul>
+<p>&ldquo;Well-formedness rule&rdquo; is a term used in the normative UML meta model specification to describe a set of constraints written in UML&rsquo;s Object Constraint Language (OCL) that contributes to the definition of a meta model element. </p>
+<ul>
+  <li>Specifies &ldquo;standard elements&rdquo; beyond those specified by the identified subset of the UML meta model. </li>
+</ul>
+<p> &ldquo;Standard element&rdquo; is a term used in the UML meta model specification to describe a standard instance of a UML stereotype, tagged value or constraint. </p>
+<ul>
+  <li>Specifies semantics, expressed in natural language, beyond those specified by the identified subset of the UML meta model. </li>
+  <li>Specifies common model elements, expressed in terms of the profile. </li>
+</ul>
+<p>OMG publishes formal profiles such as UML Profile for Enterprise Application Integration (EAI) and UML Profile for Enterprise Distributed Object Computing (EDOC). A complete list of OMG standardized profiles can be found Catalog of UML Profile Specifications.</p>
+<p>UML allows vendors and users to extend the language through profiles, which customize the language through the use of stereotypes, tagged values, and constraints. </p>
+<h5>Issues</h5>
+<p>UML v2 already has a stereotype &lt;&lt;service&gt;&gt; defined as &ldquo;a stateless, functional <em>component</em>&rdquo; in the package Components:BasicComponents (<a href="#UMLSS">see UML 2.1.1 Superstructure Specification</a>). Resolved: we have agreed to use the stereotype &lt;&lt;soaservice&gt;&gt; instead. </p>
+<p>A notable weakness of UML in describing XML based structures in the simplistic packaging strategy for representing XML namespaces. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="REFS"></a>REFERENCES</h3>
+<TABLE width="100%" border=1 title="Referencees" summary="This table lists references for this technique.">
+  <TR bgcolor="#CCCCCC">
+    <th scope="col" vAlign=top>No.</th>
+    <th scope="col" align=left vAlign=top>Reference</th>
+  </TR>
+    <TR>
+      <th scope="row" vAlign=top>1</th>
+      <TD vAlign=top align=left><a href="http://www.agilemodeling.com/essays/amdd.htm">Agile Model Driven Development (AMDD)</a></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>2</th>
+      <TD vAlign=top align=left>IEEE 1471 Recommended Practice for Architectural Description of Software-Intensive Systems<br>
+          <a href="http://standards.ieee.org/reading/ieee/std_public/description/se/1471-2000_desc.html"> http://standards.ieee.org/reading/ieee/std_public/description/se/1471-2000_desc.html</a></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>3</th>
+      <TD vAlign=top align=left>ITU-T Recommendations Z.100 (SDL)<br>
+          <a href="http://www.itu.int/itudoc/itu-t/aap/sg17aap/history/z.100/index.html"> http://www.itu.int/itudoc/itu-t/aap/sg17aap/history/z.100/index.html</a><br>
+        and Z.109 (SDL UML profile) <a href="http://www.itu.int/rec/T-REC-Z.109/en"> http://www.itu.int/rec/T-REC-Z.109/en</a></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>4<a name="OASIS"></a></th>
+      <TD vAlign=top align=left><p>OASIS (Organization for the Advancement of Structured Information Standards) is a not-for-profit consortium that drives the development, convergence and adoption of open standards for the global information society. The consortium produces more Web services standards than any other organization along with standards for security, e-business, and standardization efforts in the public sector and for application-specific markets. Founded in 1993, OASIS has more than 5,000 participants representing over 640 organizations and individual members in 100 countries.</p>
+          <p>OASIS: <a href="http://www.oasis-open.org/home/index.php" target="_blank">http://www.oasis-open.org/home/index.php</a></p>
+          <p>OASIS Reference Model for Service-Oriented Architecture V1.0: <a href="http://www.oasis-open.org/committees/download.php/19679/soa-rm-cs.pdf" target="_blank">http://www.oasis-open.org/committees/download.php/19679/soa-rm-cs.pdf</a></p>
+          <p> <a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wss#technical"><b> </b></a><a name="WSSTC"></a>OASIS Web Services Security Technical Committee (WSS TC<b>): </b><a href="http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wss#technical" target="_blank">http://www.oasis-open.org/committees/tc_home.php?wg_abbrev=wss#technical</a></p>
+          <p><b>OASIS Document Repository</b><br>
+          WS Security Policy: <a href="http://www.oasis-open.org/home/index.php" target="_blank">http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/<br>
+          </a>WS Reliable Messaging: <a href="http://docs.oasis-open.org/ws-rx/wsrm/200608/wsrm-1.1-spec-cd-04.html" target="_blank">http://docs.oasis-open.org/ws-rx/wsrm/200608/wsrm-1.1-spec-cd-04.html</a><br>
+          WS Secure Conversation: <a href="http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.html" target="_blank">http://docs.oasis-open.org/ws-sx/ws-secureconversation/200512/ws-secureconversation-1.3-os.html<br>
+          </a>WS Security: <a href="http://www.oasis-open.org/specs/#wssv1.0" target="_blank">http://www.oasis-open.org/specs/#wssv1.0<br>
+          </a>WS Transactions: <a href="http://docs.oasis-open.org/ws-tx/wstx-wscoor-1.1-spec-os/wstx-wscoor-1.1-spec-os.html" target="_blank">http://docs.oasis-open.org/ws-tx/wstx-wscoor-1.1-spec-os/wstx-wscoor-1.1-spec-os.html<br>
+      </a>WS Trust: <a href="http://docs.oasis-open.org/ws-tx/wstx-wscoor-1.1-spec-os/wstx-wscoor-1.1-spec-os.html" target="_blank">http://docs.oasis-open.org/ws-sx/ws-trust/200512/ws-trust-1.3-os.html</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>5<a name="OMG"></a></th>
+      <TD vAlign=top align=left><p>Object Management Group (OMG) - OMG&trade; is an international, open membership, not-for-profit computer industry consortium. OMG Task Forces develop enterprise integration standards for a wide range of technologies, and an even wider range of industries. OMG&rsquo;s modeling standards enable powerful visual design, execution and maintenance of software and other processes. OMG&rsquo;s middleware standards and profiles are based on the Common Object Request Broker Architecture (CORBA&reg;) and support a wide variety of industries. All of their specifications may be downloaded without charge from their web site.</p>
+          <p>The Object Management Group: <a href="http://www.omg.org/" target="_blank">http://www.omg.org/</a></p>
+          <p>Catalog of OMG Business rules and Process Management Specifications: <a href="http://www.omg.org/technology/documents/br_pm_spec_catalog.htm" target="_blank">http://www.omg.org/technology/documents/br_pm_spec_catalog.htm</a> </p>
+          <p>OMG Unified Modeling Language (UML), version 2.1.1: <a href="http://www.omg.org/technology/documents/formal/uml.htm"> http://www.omg.org/technology/documents/formal/uml.htm</a></p>
+          <p>Catalog of OMG Modeling and Metadata Specifications: <a href="http://www.omg.org/technology/documents/modeling_spec_catalog.htm"> http://www.omg.org/technology/documents/modeling_spec_catalog.htm</a></p>
+          <p>Catalog of UML Profile Specifications: <a href="http://www.omg.org/technology/documents/profile_catalog.htm"> http://www.omg.org/technology/documents/profile_catalog.htm</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>6<a name="UML"></a></th>
+      <TD vAlign=top align=left><p>UML References</p>
+          <p>Visio UML2 Extensions: <a href="http://www.softwarestencils.com/uml/index.html">http://www.softwarestencils.com/uml/index.html</a></p>
+          <p><a href="http://en.wikipedia.org/wiki/List_of_UML_tools">http://en.wikipedia.org/wiki/List_of_UML_tools </a></p>
+          <p><a name="UMLSS"></a>UML 2.1.1 Superstructure Specification: <a href="http://www.omg.org/technology/documents/formal/uml.htm">http://www.omg.org/technology/documents/formal/uml.htm</a></p>
+          <p>UML 1.4.2 is available as ISO/IEC 19501: <a href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32620"> http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32620</a></p>
+          <p>Catalog of UML Profile Specifications: <a href="http://www.omg.org/technology/documents/profile_catalog.htm">http://www.omg.org/technology/documents/profile_catalog.htm</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>7</th>
+      <TD vAlign=top align=left>Unified Modeling Language Reference Manual, Second Edition by Rumbaugh, Jacobson, Booch (Addison-Wesley) </TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>8<a name="WSI"></a></th>
+      <TD vAlign=top align=left><p>The Web Services Interoperability Organization (WS-I) is an open industry organization chartered to establish Best Practices for Web services interoperability, for selected groups of Web services standards, across platforms, operating systems and programming languages. </p>
+          <p>The Web Services Interoperability Organization (WS-I): <a href="http://www.ws-i.org/">http://www.ws-i.org/</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>9<a name="W3C"></a></th>
+      <TD vAlign=top align=left><p>The World Wide Web Consortium (<acronym title="World Wide Web Consortium">W3C</acronym>) develops interoperable technologies (specifications, guidelines, software, and tools) to lead the Web to its full potential. W3C is a forum for information, commerce, communication, and collective understanding.</p>
+          <p>The World Wide Web Consortium (<acronym title="World Wide Web Consortium">W3C</acronym>): <a href="http://www.w3.org/">http://www.w3.org/</a></p>
+          <p>Web Services Policy: <A href="http://www.w3.org/Submission/WS-Policy/">http://www.w3.org/Submission/WS-Policy/</A> </p>
+          <p>Web Services Architecture: <a href="http://www.w3.org/TR/ws-arch/">http://www.w3.org/TR/ws-arch/</a></p>
+          <p>Web Services Requirements: <a href="http://www.w3.org/TR/wsa-reqs/">http://www.w3.org/TR/wsa-reqs/</a></p>
+          <p>W3C Glossary: <a href="http://www.w3.org/TR/wsa-reqs/#ws-gloss">http://www.w3.org/TR/wsa-reqs/#ws-gloss</a></p>
+          <p><a name="URI"></a>Uniform Resource Identifiers (URI): <a href="http://www.w3.org/TR/wsa-reqs/#RFC2396">http://www.w3.org/TR/wsa-reqs/#RFC2396</a></p></TD>
+    </TR>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy (Envision)</a></div></th>
+    <td>Review this technique as input into this task for a SOA Modeling Planning engagement. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070 Define Service Modeling Strategy for the Enterprise (Envision) </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">DS.040 Develop Design Architecture Description</a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">DS.070 Define SOA Implementation Strategy</a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">DS.120 Design Services </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality usage for this technique: </p>
+<ul>
+  <li>Have the available industry standards for Service Modeling been reviewed?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,811 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Architecture Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE ARCHITECTURE</h2>
+<p>The purpose of this technique is to provide guidance for SOA practitioners to gain a basic understanding of services. It does not define a SOA Reference Architecture, but defines the baseline definition of services as used throughout OUM. In addition a technique is introduced to manage and maintain architectural policies to standardize service design and reduce integration efforts.
+<p>Service Architecture provides the guidelines and best practices that are specifically required to enable effective and consistent service engineering. It provides the foundation from which services are built, and is a fundamental component of an enterprise SOA Reference Architecture.
+<p>Service Architecture plays a guiding role, primarily throughout the Service Delivery area of service engineering. It guides the principles that should be applied to all services, as well as services of specific categories. The collateral that an enterprise develops around service architecture is the most flexible, and is an area where several enterprises will deviate based on their specific SOA needs and goals. Therefore, there is no single set of best practice guidelines around the area of service architecture that will apply to all enterprises.
+<p>Any enterprise should define a baseline for service engineering. Therefore the SOA Reference Architecture needs to be reviewed to check if the basic terminology is defined, and if it includes architectural policies to standardize service design and implementation. If that is not the case, a workshop should be conducted with the enterprise architects to agree on the basic terminology and collect needed architectural policies.
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Service Architecture</b> - The result of this technique is a collateral that defines the Service Architecture appropriate for the customer situation, including the Service Definition, a SOA Taxonomy and Service Architecture Polices. This collateral may reuse most of the sections in this techniques document, naturally adjusted according to the customer situation. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Define the term, service.</td>
+    <td>Definition of a Service </td>
+    <td>The Definition of a service is the actual textual definition of how a service is interpreted in the enterprise. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine SOA Taxonomy. </td>
+    <td>SOA Taxonomy </td>
+    <td>The SOA Taxonomy is a definition on how the services will be classified in the enterprise. If an enterprise repository is used, this taxonomy is typically used to organize the services in the repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine Service Architecture Policies.</td>
+    <td>Service-Architecture Policies </td>
+    <td>The Service-Architecture Polices determines the polices that the services should adhere to. Once policies are created and being used, maintaining them will have an impact on already existing services. In that case dependent assets will need to be analyzed to decide upon a migration strategy to the new policy version. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Define the Terms, Service and SOA Service </h4>
+<p>A <a name="service"></a>service can be described as a way of packaging reusable software building blocks to provide functionality to users and to other services. </p>
+<p>The following definition is the definition of a SOA service as used by OUM. Different enterprises may have another definition. Whatever definition is used by the enterprise needs to be documented and all participants in SOA need to be familiar with it in order to ensure consistent service engineering. </p>
+<p>A <a name="SOAservice"></a>SOA service is a means of packaging reusable software building blocks to provide functionality to users, applications, or other services; it is an independent, self-sufficient, functional unit of work that is discoverable, manageable, measurable, has the ability to be versioned, and offers functionality that is required by a set of consumers. A service may be shared, which means that the function offered by the service is intended for multiple consumers, some known, and others that have not yet been identified.</p>
+<p>A logical definition of a service as used in OUM consists of three components: A Contract, its Interface and the Implementation. A service is defined by its most current version, of each component. The illustration below depicts the components of the service, and their relationships as defined by OUM. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_COMP1.JPG" alt="Components of the Service and their Relationships as Defined by OUM" width="592" height="365" title="Components of the Service and their Relationships as Defined by OUM"></p>
+<p><b>Warning:</b> In the enterprise, some entities may be called services while not meeting this definition, for example, services without a contract or not reusable. In that case, the &quot;service&quot; is not a service in scope of SOA, i.e., not a SOA service. </p>
+<p>A SOA service is defined by its most current contract, interface and implementation (i.e., the latest version). Multiple versions of the same service may exist in an operational status and may be used by different consumers, but this is simply to facilitate the deprecation of the old service version. All future versions should stem from the most current contract, interface and implementation. This history with respect to the evolving contract, interface and implementation is still maintained within the service. When this service is discovered for reuse, its &ldquo;current&rdquo; version is discovered and not any previous version. </p>
+<p>A service in the scope of SOA will be governed as a separate entity. Therefore, services need to be published to a repository, providing information needed to discover the service by possible new consumers. In addition, a service should provide a means to be measured to enforce contracts.</p>
+<p>SOA services do not replace components. Instead, it is a good practice to design services using components. A service can be built by one or more components. On the other hand, not every component needs to be part of a service, but can be part of a packaged application instead. Of course, introducing SOA does not imply redesigning all applications with services, but functionality that could be shared with other consumers should be provided as a SOA service; a separate entity on its own allowing for easy reuse. Implementing or exposing a functionality as a SOA service creates additional overhead that should only be introduced if it brings value. </p>
+<h5>Contract</h5>
+<p>The service contract specifies the purpose, functionality, constraints and usage of a service. The usage of the functionality embodied by a service is governed by a contract. A contract is made up of functional and supplemental aspects. </p>
+<p>The functional aspect of a contract describes the behavior of available operations according to the role of the service consumer. It should be defined in business terms. The description is mainly used by possible new consumers to understand if they could use the service to solve their problem. If the service solves a technical rather than a business problem (for example, a connectivity problem) then the contract is defined in IT business terms, i.e., in technical terms. </p>
+<p>Contracts also specify supplemental dimensions of service usage, such as: security requirements, semantics, transaction requirements, invocation style, quality of service, etc. This content, though technical, must be provided in a human consumable format. </p>
+<p>The primary purpose behind the contract is to provide a human readable specification for the service, which will facilitate reuse. </p>
+<p>Think of a contract to be the side letter for the usage agreements with all consumers. While the contract defines the service offering part, the usage agreement will define the individual agreement with each consumer on the terms and conditions for the usage of the service, e.g. the individual load created by the consumer. </p>
+<p><b>Note:</b> You can find details about how to represent and model services in the <a href="SERVICE_MODELING.HTM" target="_blank">Service Modeling</a> technique. </p>
+<h5>Interface</h5>
+<p>A service interface provides the means for the users and consumers of a service to access its functionality according to the contract it offers. The interface must be considered to be a standard with respect to the enterprise&rsquo;s SOA. This does not mean that the interface must be an industry standard, but rather a standard identified within the Service Architecture, as an acceptable interface standard to be used within the SOA. Interface standards may vary depending on the categorization of the service, e.g., depending on the logical layer in the Reference Architecture. </p>
+<p>The interface provides the physical means for consumers to access the service. Service interfaces may be reused at design time, but only a single instance of an interface can be bound to a particular service. This simply means that two services will not share the same runtime interface bindings, but may reuse the same physical interface specification. </p>
+<h5>Implementation</h5>
+<p>The implementation is the technical realization of an interface and the remainder of the service contract. The implementation part of a service is the actual code, application interface or other technology assets containing functionality needed to provide the service to the enterprise. </p>
+<p>The implementation may be accomplished using any technology. Sometimes it is possible to reuse implementations already existing. But for maintenance purpose and to reduce the burden on integration it is important to standardize implementation technology to a set the enterprise intends to support going forward. </p>
+<p>The implementation of a service consists of two components. The first is the development platform, which often enhances the developed code by standard frameworks and other capabilities. The Service Infrastructure side typically provides the service enablement capabilities for the implementation, like handling SLA enforcement, security, data formatting, and others. Service infrastructure should be utilized when possible, as it reduces the burden on service providers, from an implementation standpoint. All of the capabilities, functional, and supplemental, traditional, or service enablement, must be specified in the service contract. </p>
+<hr WIDTH="100%">
+<h4>Determine SOA Taxonomy</h4>
+<p>Services can be categorized in multiple fashions. And service can be consumed and provided by applications as well. The following section discusses the basic categories needed for service engineering.</p>
+<h5>Business Category </h5>
+<p>Whichever common taxonomy was defined for the enterprise repository, all SOA-related assets should include the categorization against those common taxonomies. In a top-down service identification approach, it is important to provide a business-related taxonomy as introduced in the <a href="IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique. This creates a folder-like structure to organize SOA assets along the Enterprise Function Model.</p>
+<p>All SOA related assets need to be linked to the relevant folders in the business category, and thereby provide service portfolio management with an easy mechanism to discover existing assets and to organize new ones. </p>
+<h5>Service Scope </h5>
+<p>The intended breadth of the consumer audience for a service defines its scope. The scope category typically implies special supplemental requirements e.g. regarding security, quality of service and sometimes even the data language used in the interfaces. </p>
+<p>In general there are four primary scope categories that should be provided with the description of a service. But the list may depend on the enterprise and may need to be adjusted to local terminology. </p>
+<blockquote>
+  <p><b>Multi-Enterprise</b> - Multi-enterprise services are those that will be exposed outside of the hosting enterprise and may be called by other external users such as external companies, suppliers, and customers.</p>
+  <p><b>Enterprise-Wide</b> - Enterprise wide services are available to qualified consumers throughout the enterprise. These services are not exposed to consumers outside the enterprise.</p>
+  <p><b>Intra-Line of Business (LOB)</b> - Intra-LOB services are those that are not available outside of the Line of Business for which they were created. External LOBs calling this type of services by exception is acceptable, but need to be controlled by the LOB. If the number of consumers grows significantly outside of the LOB, re-scoping the service should be considered.</p>
+  <p><b>Intra-Application</b> - Intra-Application services are those services that are not intended to be called outside of the scope of a given application. Typically, these services are not hosted in a shared service environment but with the application itself.</p>
+</blockquote>
+<h5>Service Layer </h5>
+<p>Typically a SOA Reference Architecture builds on the preferred n-tiered application design approach by categorizing services by their functional purpose. Just as components in an application would follow a model-view-controller pattern, services in an enterprise may represent data, presentation, and business functions. A layered model helps to organize the functional requirements of a business in terms of reusable services. </p>
+<p>Each layer typically requires different service qualities. These qualities do not only affect the service contract, but the interface, implementation, and sometimes even the testing and deployment procedures. Often the layers are linked to physical shared hosting systems, adding operational requirements for deployment and monitoring. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_LAYERS.PNG" alt="Service Layers" width="961" height="626" title="Service Layers"></p>
+<p>The set of logical layers and their names may vary across the enterprises. The following list is an example structure of layers as recommended in Oracle Fusion Reference Architecture (OFRA):</p>
+<blockquote>
+  <p><b>Presentation</b> - Presentation services provide a user interface to their consumers. In most cases these services are exposed directly to human consumers. </p>
+  <p><b>Business Processes</b> - Business Process services represent a reusable sub-processes defined by the business. The process represents the flow and decision making processing of moving between distinct business activities. The activities themselves are commonly implemented outside the scope of the process service itself as independent services.</p>
+  <p><b>Business Activity</b> - A business activity service represents the functions of a business activity that cannot be broken down any further from a business context. These services represent reusable business services defined by IT regardless of implementation style or function.</p>
+  <p><b>Data</b> - A data service exposes data to its consumers for both access and manipulation in a format that is digestible by the business.</p>
+  <p><b>Connectivity</b> - A connectivity service exposes the functions of a legacy system as services in a SOA environment. It provides a means to bridge application technologies with SOA.</p>
+  <p><b>Utility</b> - A utility service provides generally reusable function outside of any particular business context. Typically, these services perform infrastructure-related functions, such as, security (credential mapping, access control, auditing), logging, notification, policy lookup, transaction watermarking, etc.</p>
+</blockquote>
+<hr WIDTH="100%">
+<h4><a name="DSAP"></a>Determine Service Architecture Policies</h4>
+<p>Both scope and layer have an equal amount of influence on the service contract, interface, implementation, test strategy, and management strategy. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE.PNG" alt="Three-dimensional matrix that, if completed, it would provide the influencing factors any combination of scope and layer will have on the components of the service as well as the test and management strategies." width="632" height="622" title="Three-dimensional matrix that, if completed, it would provide the influencing factors any combination of scope and layer will have on the components of the service as well as the test and management strategies."></p>
+<p>The illustration above represents a three-dimensional matrix that, if completed, it would provide the influencing factors any combination of scope and layer will have on the components of the service as well as the test and management strategies. This section breaks down the matrix into two-dimensional tables, mapping layers against scope, and provides the influence the combination has against contract, interface, implementation, test and deployment. </p>
+<p>Each table should be worked through with the enterprise architects to determine the specific influence each combination will have on services. Please take the tables provided in this document as a starting point. After having initially reworked the tables, each bullet should be that precise, that they can be added as an architectural policy to Enterprise Repository. Once policies are created and used, maintaining them will have an impact on already existing services. In that case dependent assets will need to be analyzed to decide upon a migration strategy to the new policy version. </p>
+<h5><a name="DAPC"></a>Contract</h5>
+<p>The illustration below depicts the influence points that affect the service contract. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE2.JPG" alt="Influence Points that affect the Service Contract" width="755" height="529" title="Influence Points that affect the Service Contract"></p>
+<p>Each point should examine the following areas and provide specific contract guidance: </p>
+<blockquote>
+  <p><b>Risks</b> - Identify the risks of exposing a service of the given layer at the given scope. What standards should be enforced in the contract to mitigate these risks? </p>
+  <p><b>Quality of Service (QoS)</b> - What are the standard set of non-functional requirements for services of this layer and scope?</p>
+  <p><b>Invocation Strategy</b> - Given the layer and scope, consider standardization around the invocation strategies that are acceptable. In particular what strategies are acceptable for consumers to bind to the interface? Loosely coupled, tightly coupled, etc. </p>
+  <p><b>Security Considerations</b> - What security standards/requirements should be applied to services in this layer and scope? </p>
+  <p><b>Service Enablement</b> - What service enablement standards/requirements should be applied to services in this layer and scope? Examples include transaction support, management, SLA monitoring and enforcement, etc. </p>
+  <p><b>Data Considerations</b> - Define any standards around how services in the given layer and scope are required to handle data. Examples include standards around data security and data classifications (public, private, secret, etc.). </p>
+  <p><b>Transaction Support</b> - Define any transaction management strategies for services of the given layer and scope. Examples: idempotent vs. non-idempotent, coordination requirements, etc. </p>
+</blockquote>
+<p>Contract standards should be developed around these focus areas within the enterprise for services matching the provided scope and layer. For each standard an architectural policy can be registered in the Enterprise Repository. By classifying a service against scope and layer, the proper policies can automatically be associated with them. </p>
+<p>The table below illustrates the influence areas that should be given more focus with respect to the service contract. The items listed in the table below represent a set of contract considerations that may be used as an example. </p>
+<TABLE width="100%" border=1 title="Contract Considerations" summary="This example table lists the Service Layers in the first column followed by columns for Scope that contain possible influence areas that should be given more focus with respect to the service contract.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th scope="col" width="20%" bgColor=#CCCCCC><div align="left">Layer</div></th>
+      <th scope="col" width="20%"><div align="left">Multi-Enterprise</div></th>
+      <th scope="col" width="20%"><div align="left">Enterprise-Wide</div></th>
+      <th scope="col" width="20%">Intra-LOB</th>
+      <th scope="col" width="20%"><div align="left">Intra-Application</div></th>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Presentation</div></th>
+      <TD align="left" valign="top"><p>Denial of Service Prev.
+              <p>30 second timeout      
+              <p>Encrypt data classified as private
+            <p>No access to data classified as secret </TD>
+      <TD align="left" valign="top"><p>30 second timeout      
+            <p>Encrypt data classified as private or secret </TD>
+      <TD align="left" valign="top">Encrypt data classified as private or secret</TD>
+      <TD align="left" valign="top">&nbsp;
+          <p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business Process</div></th>
+      <TD align="left" valign="top"><p>Authentication and authorization required
+              <p>All requests must be logged for audit purpose.
+              <p>Clearly defined and measurable SLAs around each business activity.
+              <p>Loosely coupled             
+      </TD>
+      <TD align="left" valign="top"><p>Authentication and authorization required      
+              <p>All requests must be logged for audit purpose.      
+              <p>Clearly defined and measurable SLAs around each business activity.
+            <p>Loosely coupled   </TD>
+      <TD align="left" valign="top"><p>Authentication and authorization required </p>
+          <p>All requests must be logged for audit purpose.</p>
+          <p>Clearly defined and measurable SLAs around each business activity. </p>
+          <p>Loosely coupled </p></TD>
+      <TD align="left" valign="top">&nbsp;
+          <p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business</div></th>
+      <TD align="left" valign="top"><p>Denial of Service Prev.</p>
+          <p>Idempotent</p>
+          <p>Input Validation </p>
+          <p>Encrypt data classified as private.</p>
+          <p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled </p>
+          <p>No access to data classified as secret </p></TD>
+      <TD align="left" valign="top"><p>Idempotent</p>
+          <p>Input Validation </p>
+          <p>Encrypt data classified as private.</p>
+          <p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled </p></TD>
+      <TD align="left" valign="top"><p>Input Validation </p>
+          <p>Encrypt data classified as private.</p>
+          <p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled </p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Data</div></th>
+      <TD align="left" valign="top"><p>Denial of Service Prev
+              <p>Read-only      
+              <p>All requests must be logged for audit purposes.
+              <p>Clearly defined and measurable SLAs.
+              <p>Loosely coupled
+              <p>Encrypt data classified as private
+              <p>No access to data classified as secret
+      </TD>
+      <TD align="left" valign="top"><p>Idempotent      
+              <p>All requests must be logged for audit purposes.
+              <p>Clearly defined and measurable SLAs.
+              <p>Loosely coupled      
+            <p>Encrypt data classified as private</TD>
+      <TD align="left" valign="top"><p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled</p>
+          <p>Encrypt data classified as private </p>
+          <p>No access to data classified as secret </p></TD>
+      <TD align="left" valign="top">&nbsp;
+          <p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Access</div></th>
+      <TD align="left" valign="top"><p>Denial of Service Prev </p>
+          <p>All requests must be logged for audit purposes.</p>
+          <p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled </p>
+          <p>Encrypt data classified as private</p>
+          <p>No access to data classified as secret </p></TD>
+      <TD align="left" valign="top"><p>Clearly defined and measurable SLAs. </p>
+          <p>Loosely coupled </p>
+          <p>Encrypt data classified as private</p></TD>
+      <TD align="left" valign="top"><p>Loosely coupled </p>
+          <p>Encrypt data classified as private</p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Utility</div></th>
+      <TD align="left" valign="top"><p>Not applicable </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Interface</h5>
+<p>The illustration below depicts the influence points that affect the service interface. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE3.JPG" alt="Influence Points that affect the Service Interface" width="751" height="524" title="Influence Points that affect the Service Interface"></p>
+<p>Each point should examine the following areas and provide specific interface guidance: </p>
+<blockquote>
+  <p><b>Interface Style</b> - What interface standards and styles should be applied to a service of the given layer and scope? Interface styles include: Web, Document Style, RPC Style, etc. </p>
+  <p><b>Quality of Service (QoS)</b> - What standards/guidelines need to be followed for interfaces in the given layer and scope to maximize QoS?</p>
+  <p><b>Protocol and Transport</b> - Which protocol and transport standards/guidelines should be applied to a service in the given layer and scope?</p>
+</blockquote>
+<p>Interface standards should be developed around these focus areas to ease integration. Take the following table as a starting point and adjust it to the needs of the enterprise. The items listed in the table below represent a set of interface considerations that may be used as an example. </p>
+<TABLE width="100%" border=1 title="Interface Considerations" summary="This example table lists the Service Layers in the first column followed by columns for Scope that contain possible influence areas that should be given more focus with respect to the interface.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th scope="col" width="20%"><div align="left">Layer</div></th>
+      <th scope="col"><div align="left">Multi-Enterprise</div></th>
+      <th scope="col"><div align="left">Enterprise-Wide</div></th>
+      <th scope="col">Intra-LOB</th>
+      <th scope="col"><div align="left">Intra-Application</div></th>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Presentation</div></th>
+      <TD width="20%" align="left" valign="top"><p>WSRP  </TD>
+      <TD width="20%" align="left" valign="top"><p>WSRP  </TD>
+      <TD width="20%" align="left" valign="top">Portlet</TD>
+      <TD width="20%" align="left" valign="top"><p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business Process</div></th>
+      <TD align="left" valign="top"><p>Document Style
+                <p>SOAP over HTTPS
+      </TD>
+      <TD align="left" valign="top"><p>Document Style      
+            <p>SOAP over HTTP  </TD>
+      <TD align="left" valign="top"><p>Document Style </p></TD>
+      <TD align="left" valign="top"><p>Document Style </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business</div></th>
+      <TD align="left" valign="top"><p>Document Style</p>
+          <p>POX over HTTPS</p></TD>
+      <TD align="left" valign="top"><p>Document Style</p>
+          <p>POX over HTTP </p></TD>
+      <TD align="left" valign="top"><p>RPC / Document Style</p>
+          <p>SOAP / POX over HTTP </p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Data</div></th>
+      <TD align="left" valign="top"><p>Document Style
+              <p>SOAP over HTTPS </TD>
+      <TD align="left" valign="top"><p>Document Style      
+              <p>Standard Protocols and Transports
+              <p>Enterprise Data Representation      
+            <p>Loosely coupled </TD>
+      <TD align="left" valign="top"><p>RPC / Document Style</p>
+          <p>Standard Protocols nd Transports</p>
+          <p>Loosely coupled </p></TD>
+      <TD align="left" valign="top"><p>RPC style
+              <p>Fine grained
+            <p>Tightly coupled </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Access</div></th>
+      <TD align="left" valign="top"><p>Document / RPC Style</p>
+          <p>SOAP over HTTPS</p></TD>
+      <TD align="left" valign="top"><p>Document Style </p>
+          <p>Standard Protocols and Transports
+        <p>Enterprise Data Representation
+        <p>Loosely coupled </TD>
+      <TD align="left" valign="top"><p>RPC / Document Style</p>
+          <p>Standard Protocols nd Transports</p>
+          <p>Loosely coupled </p></TD>
+      <TD align="left" valign="top"><p>RPC style
+                <p>Fine grained
+              <p>Tightly coupled </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Utility</div></th>
+      <TD align="left" valign="top"><p>Not applicable </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Implementation</h5>
+<p>The illustration below depicts the influence points that affect the service implementation. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE4.JPG" alt="Influence Points that affect the Service Implementation" width="738" height="497"></p>
+<p>Each point should examine the following areas and provide specific implementation guidance:</p>
+<blockquote>
+  <p><b>QoS</b> - Define any QoS related implementation guidelines for services of the given layer and scope. Examples may include, caching guidelines, enablement standards, security constraints, logging/audit standards, etc.</p>
+  <p><b>Validation Logic</b> - Define any validation guidelines for service implementation in the given layer and scope.</p>
+  <p><b>Service Access as a Consumer</b> - Define any rules and guidelines required for services in the given scope and layer with respect to the role of service consumer. This includes restrictions on access, etc. </p>
+  <p><b>Error Conditions</b> - Specify any specific guidelines for service implementations in the given layer and scope regarding error condition management. </p>
+  <p><b>Platform</b> - Define any technology standards required to be utilized for implementing services in the given scope and layer. </p>
+  <p><b>Coding Standards</b> - Define any specific coding standards and guidelines that must be adhered to for services in the given scope and layer. </p>
+</blockquote>
+<p>Implementation standards should be developed around these focus areas within the enterprise to harmonize service implementation. Services that are hosted on shared infrastructure need clear guidelines to enable side-by-side deployment with minimal impact on each other. Sometimes the guidelines need to ensure the usage of common libraries in the same version to prevent collisions on deployment. </p>
+<p>Take the following table as a starting point and adjust it to the needs of the enterprise. The items listed in the table below represent a set of implementation considerations that may be used as an example. </p>
+<TABLE width="100%" border=1 title="Implementation Considerations" summary="This example table lists the Service Layers in the first column followed by columns for Scope that contain possible influence areas that should be given more focus with respect to the implementation.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th width="20%" scope="col"><div align="left">Layer</div></th>
+      <th scope="col"><div align="left">Multi-Enterprise</div></th>
+      <th scope="col"><div align="left">Enterprise-Wide</div></th>
+      <th scope="col">Intra-LOB</th>
+      <th scope="col"><div align="left">Intra-Application</div></th>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Presentation</div></th>
+      <TD width="20%" align="left" valign="top"><p>Validation prior to submit      
+              <p>Access to other Multi-Enterprise Services only  </TD>
+      <TD width="20%" align="left" valign="top"><p>Validation prior to submit
+              <p>Access to other Multi-Enterprise Services only </TD>
+      <TD width="20%" align="left" valign="top">No access to Intra-Application services </TD>
+      <TD width="20%" align="left" valign="top"><p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business Process</div></th>
+      <TD align="left" valign="top"><p>Validate early
+                <p>Unexpected error condition handling        
+              <p>Access to only other Multi-Enterprise Services </TD>
+      <TD align="left" valign="top"><p>Validate early
+                <p>Unexpected error condition handling
+              <p>Access to only other Multi-Enterprise Services </TD>
+      <TD align="left" valign="top"><p>Validate early </p>
+          <p>Unexpected error condition handling
+        <p>No access to Intra-Application services </TD>
+      <TD align="left" valign="top"><p>Validate early
+              <p>Unexpected error condition handling </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business</div></th>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>Validate Early</p>
+          <p>Access to only other Multi-Enterprise Services </p></TD>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>Validate Early</p>
+          <p>Access to only other Enterprise-Wide and Multi-Enterprise services </p></TD>
+      <TD align="left" valign="top"><p>No access to Intra-Application services </p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Data</div></th>
+      <TD align="left" valign="top"><p>SLA Monitoring
+                <p>Caching</p>
+                <p>Access to only other Multi-Enterprise Services </p></TD>
+      <TD align="left" valign="top"><p> SLA Monitoring
+                <p> Caching </p>
+                Access to other Enterprise-Wide and Multi-Enterprise services </TD>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>No access to Intra-Application services </p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Access</div></th>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>Caching</p>
+          <p>Access to only other Multi-Enterprise Services </p></TD>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>Caching</p>
+          <p>Access to other Enterprise-Wide and Multi-Enterprise services </p></TD>
+      <TD align="left" valign="top"><p>SLA Monitoring </p>
+          <p>No access to Intra-Application services </p></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Utility</div></th>
+      <TD align="left" valign="top"><p>Not applicable </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Test</h5>
+<p>The illustration below depicts the influence points that affect the service test strategy. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE5.JPG" alt="Influence Points that affect the Service Test Strategy" width="736" height="495" title="Influence Points that affect the Service Test Strategy"></p>
+<p align="left">Each point should examine the following areas and provide specific test guidance: </p>
+<blockquote>
+  <p align="left"><b>Risks</b> - Define any specific test strategies to mitigate risks against services in the given scope and layer. </p>
+  <p align="left"><b>QoS</b> - Define a specific test strategy to ensure appropriate non-functional requirement conformance for services in the given scope and layer.</p>
+  <p align="left"><b>SLA</b> - Define guidelines on performance and load testing.</p>
+  <p align="left"><b>Message Formats</b> - Define specific test strategies for testing invalid message formats and the appropriate output against services in the given scope and layer. </p>
+  <p align="left"><b>Message Contents</b> - Define specific test strategies for testing invalid message contents and the appropriate output against services in the given scope and layer. </p>
+  <p align="left"><b>Exception Conditions</b> - Define any specific test strategies required for services in the given scope and layer around testing exception conditions. </p>
+  <p align="left"><b>Security</b> - Define any specific test strategies required for services in the given scope and layer regarding security enforcement. </p>
+</blockquote>
+<p>Test strategy standards should be developed around these focus areas within the enterprise for services matching the provided scope and layer. The items listed in the table below represent a vague set of test considerations that may be used as an example. </p>
+<TABLE width="100%" border=1 title="Service Test Strategy Considerations" summary="This example table lists the Service Layers in the first column followed by columns for Scope that contain possible influence areas that should be given more focus with respect to the service test strategy.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th width="20%" scope="col"><div align="left">Layer</div></th>
+      <th scope="col"><div align="left">Multi-Enterprise</div></th>
+      <th scope="col"><div align="left">Enterprise-Wide</div></th>
+      <th scope="col">Intra-LOB</th>
+      <th scope="col"><div align="left">Intra-Application</div></th>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Presentation</div></th>
+      <TD width="20%" align="left" valign="top"><p>Denial of Service  
+                <p>Exception cases        
+                <p>Security        
+                <p>Message Contents        
+              <p>Message Formats </TD>
+      <TD width="20%" align="left" valign="top"><p>Exception cases
+                <p>Security
+                <p>Message Contents
+              <p>Message Formats </TD>
+      <TD width="20%" align="left" valign="top"><p>Message Contents
+              <p>Message Formats </TD>
+      <TD width="20%" align="left" valign="top"><p></TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business Process</div></th>
+      <TD align="left" valign="top"><p>Denial of Service
+                <p>Exception paths
+                <p>Security
+                <p>Message Contents
+              <p>Message Formats </TD>
+      <TD align="left" valign="top"><p>Exception paths
+                <p>Security
+                <p>Message Contents
+              <p>Message Formats</TD>
+      <TD align="left" valign="top"><p>Exception paths </p>
+          <p>Message Contents
+        <p>Message Formats</TD>
+      <TD align="left" valign="top"><p>Message Contents
+              <p>Message Formats</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business</div></th>
+      <TD align="left" valign="top"><p>Denial of Service </p>
+          <p>Security
+                    
+        <p>Message Contents
+        <p>Message Formats </TD>
+      <TD align="left" valign="top"><p>Security </p>
+          <p>Message Contents
+        <p>Message Formats </TD>
+      <TD align="left" valign="top"><p>Message Contents </p>
+          <p>Message Formats </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Data</div></th>
+      <TD align="left" valign="top"><p>Denial of Service
+                <p>Security
+                <p>Message Contents
+              <p>Message Formats </TD>
+      <TD align="left" valign="top"><p> Security
+                <p>Message Contents
+              <p>Message Formats </TD>
+      <TD align="left" valign="top"><p>Message Contents </p>
+          <p>Message Formats </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Access</div></th>
+      <TD align="left" valign="top"><p>Denial of Service</p>
+          <p>QoS </p>
+          <p>Security
+        <p>Message Contents
+        <p>Message Formats </TD>
+      <TD align="left" valign="top"><p>QoS </p>
+          <p>Security
+        <p>Message Contents
+        <p>Message Formats</TD>
+      <TD align="left" valign="top"><p>QoS </p>
+          <p>Message Contents
+        <p>Message Formats</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Utility</div></th>
+      <TD align="left" valign="top"><p>Not applicable </TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Management</h5>
+<p>The illustration below depicts the influence points that affect the service management strategy. </p>
+<p align="center"><img src="../../010_COMMON_FILES/THE_CUBE6.JPG" alt="Influence Points that affect the Service Management Strategy" width="736" height="529" title="Influence Points that affect the Service Management Strategy"></p>
+<p align="left">Each point should examine the following areas and provide specific deployment guidance: </p>
+<blockquote>
+  <p align="left"><b>Infrastructure Isolation Level</b> - Define any hosting infrastructure guidelines to be followed when deploying services in the given scope and layer. </p>
+  <p align="left"><b>Deployment Unit</b> - Define any deployment unit guidelines to be followed when planning the deployment of the service in the given layer and scope. These guidelines should include co-deployment considerations with other services.</p>
+  <p align="left"><b>QA&amp;M </b>- Define any standard OA&amp;M procedures that are necessary for services in the given scope and layer including strategies for: </p>
+  <ul>
+    <li>Consumption Control </li>
+    <li>Collecting measurement data </li>
+    <li>Monitoring conformance for both runtime and design time activities</li>
+  </ul>
+  <p align="left"><b>Security</b> - Define any security guidelines for the hosting infrastructure for services in the given scope and layer. </p>
+  <p align="left"><b>SLA</b> - Consider hardware, data center redundancies, etc. </p>
+</blockquote>
+<p align="left">Management standards should be developed around these focus areas within the enterprise for services matching the provided scope and layer. The items listed in the table below represent a set of implementation considerations that may be used as an example. </p>
+<TABLE width="100%" border=1 title="Service Management Strategy Considerations" summary="This example table lists the Service Layers in the first column followed by columns for Scope that contain possible influence areas that should be given more focus with respect to the service management strategy.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th width="20%" scope="col"><div align="left">Layer</div></th>
+      <th scope="col"><div align="left">Multi-Enterprise</div></th>
+      <th scope="col"><div align="left">Enterprise-Wide</div></th>
+      <th scope="col">Intra-LOB</th>
+      <th scope="col"><div align="left">Intra-Application</div></th>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Presentation</div></th>
+      <TD width="20%" align="left" valign="top"><p>Deploy separate from mission critical infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+                <p>Schemas hosted Locally
+      </TD>
+      <TD width="20%" align="left" valign="top"><p>Deploy on enterprise-wide shared service infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally </TD>
+      <TD width="20%" align="left" valign="top"><p>Deploy on LOB shared service infrastructure
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally </TD>
+      <TD width="20%" align="left" valign="top"><p>Deploy with application
+            <p>Schemas hosted Locally  </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business Process</div></th>
+      <TD align="left" valign="top"><p>Deploy separate from mission critical infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on enterprise-wide shared service infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on LOB shared service infrastructure</p>
+          <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy with application
+              <p>Schemas hosted Locally  </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Business</div></th>
+      <TD align="left" valign="top"><p>Deploy separate from mission critical infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on enterprise-wide shared service infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on LOB shared service infrastructure</p>
+          <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy with application
+              <p>Schemas hosted Locally </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Data</div></th>
+      <TD align="left" valign="top"><p>Deploy separate from mission critical infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally</TD>
+      <TD align="left" valign="top"><p> Deploy on enterprise-wide shared service infrastructure
+                <p>Isolated Deployment Units
+                <p>Monitored and Managed by Infrastructure
+              <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on LOB shared service infrastructure</p>
+          <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy with application
+                <p>Schemas hosted Locally
+              <p> </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Access</div></th>
+      <TD align="left" valign="top"><p>Deploy separate from mission critical infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally</TD>
+      <TD align="left" valign="top"><p>Deploy on enterprise-wide shared service infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on LOB shared service infrastructure</p>
+          <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally</TD>
+      <TD align="left" valign="top"><p>Deploy with application
+                <p>Schemas hosted Locally
+              <p> </TD>
+    </TR>
+    <TR>
+      <th scope="row" valign="top" bgcolor="#CCCCCC"><div align="left">Utility</div></th>
+      <TD align="left" valign="top"><p>Deploy separate from mission critical infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally</TD>
+      <TD align="left" valign="top"><p>Deploy on enterprise-wide shared service infrastructure </p>
+          <p>Isolated Deployment Units
+        <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally </TD>
+      <TD align="left" valign="top"><p>Deploy on LOB shared service infrastructure</p>
+          <p>Monitored and Managed by Infrastructure
+        <p>Schemas hosted Locally</TD>
+      <TD align="left" valign="top"><p>Deploy with application
+                  <p>Schemas hosted Locally
+                <p> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 Conduct Team Orientation (Manage) </a></div></th>
+    <td>Review this technique as input into this task. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards (Envision) </a></div></th>
+    <td>Use this technique to assist in developing Enterprise Standards and guidelines for Service Architecture. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures (Envision) </a></div></th>
+    <td>Use this technique to provide clarity to the SOA Layering Architecture. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy (Envision)</a></div></th>
+    <td>Review this technique as input into this task. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement (Envision)</a></div></th>
+    <td>Review this technique as input into this task. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/GV_096_DETERMINE_SERVICES_META_DATA_DESC_OVERVIEW.HTM" target="_blank">GV.096 Determine Services Meta Data Description (Envision) </a></div></th>
+    <td>Use this technique to capture details about each service for the Services Meta Model. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components </a></div></th>
+    <td>Use this technique to provide the architecture around the service components. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RA_019_DEFINE_PROJECT_REF_ARCH_OVERVIEW.HTM" target="_blank">RA.019 Define Project Reference Architecture</a></div></th>
+    <td>Use this technique to define requirements for the SOA Reference Architecture. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">DS.040 Develop Design Architecture Description</a></div></th>
+    <td>Use this technique to assist in developing the Design Architecture description as related to SOA. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">DS.120 Design Services </a></div></th>
+    <td>Use this technique to design the services within the defined service architecture. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have the criteria for service definition been clearly articulated to the project team?</li>
+  <li>Does the service contract specify the purpose, functionality, constraints and usage of a service?</li>
+  <li>Does the service interface provide the means for the users and consumers of a service to access its functionality?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,634 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Motivational Modeling Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Background">Background to Motivational Modeling</option>
+                            <option value="#StrategyMap">Strategy Map</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Conclusion">Conclusion</option>
+                            <option value="#REFS">References</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                                      </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>MOTIVATIONAL MODELING</h2>
+<p>The purpose of this document is to provide a pragmatic, simplified Motivational Modeling technique for use in OUM. A Motivation Model is a formal description of the essence of why we choose to take a particular course of action or make specific choices. In the context of OUM, a Motivation Model provides guidance and validation for:</p>
+<ul>
+  <li>prioritizing objectives for an IT initiative</li>
+  <li>project prioritization</li>
+  <li>process and SOA service justification</li>
+  <li>infrastructure investments</li>
+  <li>etc.</li>
+</ul>
+<p>With the current increasing focus on fitness for business and business agility, it becomes even more important to capture and retain the business drivers for the engineering decisions behind the creation of software assets. In a traditional enterprise and development effort, software assets are acquired, created, and maintained according to locally understood departmental or even project needs. In such an environment the motivation for these assets are often expressed in narrow terms with little need for enterprise-wide, or industry standardized, semantics. </p>
+<p>The value that Motivational Modeling brings to Enterprise Architecture (EA) led IT initiatives lies in the ability to prioritize efforts, justify decisions, and trace activities of the IT organization to strategic goals of the business, hence improving business/IT alignment. This adds tremendous value to initiatives such as SOA and BPM as it offers a clear understanding of which projects to undertake, which processes are currently most strategic to the company, and which services are most aligned with business strategy. By establishing a standardized model and associated semantics for describing business motivation the justification for the creation of IT artifact (Application, BPM Process, SOA Service, etc.) is more clearly communicated. Such an evaluation of business drivers for a given artifact also has enduring value in its lifecycle, enabling traceability to original motivation when determining whether it should be improved, retired, etc. </p>
+<p>The core objectives of this technique are: </p>
+<ol>
+  <li>Identify <em>goals</em> (business and technical) for measurement and to frame a corresponding model in the context of standardized semantics for broadest acceptance and adoption. (For further reading on goals, see <em><a href="#GDSM">Goal Driven Software Measurement - A Guidebook</a></em>.) <br>
+  </li>
+  <li>Present a template representation of motivational goals, i.e., the model.<br>
+  </li>
+  <li>Map IT initiatives to the model in a way that support prioritization of efforts.</li>
+</ol>
+<p><b>Use of Standards</b></p>
+<p>Rather than &ldquo;reinvent the wheel&rdquo; this technique document refers to existing standards and established practices where possible. These practices may be current in force within our customer organization, or may simply be appropriate in their own right; however the approach of this Motivational Modeling technique is to use standards where applicable and to adapt or extend the customer processes to this. The primary standards and practices used here are the Object Management Group (OMG) Business Motivation Model (BMM), and the Strategy Map, an extension of the Balanced Scorecard. We will use the BMM as a definition of context of modeling terms and Strategy Maps as the mechanism and general process to collect and represent motivation. For further reading on the OMG and its many resources, Strategy Maps and the Balanced Scorecard, see the <a href="#REFS">References</a> section.</p>
+<p>The BMM is intended to provide a standardized structure for the business-oriented description and evaluation of the drivers motivating a business plan. Though it offers a robust structure, it does not include a method for capturing motivation, nor does it offer guidance with business context. Our initial use of the BMM within this document is to establish a clear definition of semantics in the modeling process. </p>
+<p>Having established the basic semantics of motivation based on BMM, we then apply a process based on the Balanced Scorecard called the Strategy Map. The Balanced Scorecard, developed by Robert S. Kaplan and David P. Norton, is designed to translate vision and strategy into objectives and measures across various financial and non-financial perspectives. The Strategy Map extends this concept by providing mapping between goals and objectives of different perspectives. This mapping helps to ensure that activities initiated as a result of Motivational Modeling can be traced back to financial objectives of the organization.</p>
+<p> This technique concludes with the mapping of technical initiatives to the motivational model. Hence, activities related to IT initiatives can directly trace back to business goals and financial objectives. This provides a foundation for project, application, process and SOA service justification.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Motivational Model</b> - The Motivational Model is a formal description of the essence of why you choose to take a particular course of action or make a specific choice. A Motivational Model begins with the vision and goals of the business and drive sufficiently deep into the supporting IT strategy. The result is a document which identifies:<br>
+</p>
+<ul>
+  <li>Existing motivations: Mission and Vision (or a reference thereof if already documented in the enterprise).</li>
+  <li>A list of goals organized in a strategy map, including Financial, Customer (that is the customer&rsquo;s goals towards its own customers), Internal Process and Growth <em>goals.</em></li>
+  <li>For each goal, an objective table which quantifies the <em>goal (objectives)</em> and time-box them <em>(strategy)</em></li>
+  <li>For each <em>objective</em>, a list of initiatives to fulfill it.</li>
+  <li>For each business<em> initiative</em>, a map of the IT initiatives that support it.</li>
+</ul>
+<p><b>Prioritized IT initiatives</b> &ndash; Optionally, the motivational modeling approach can produce a prioritization of IT initiatives, based on the business initiative to IT initiative map.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a name="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<p>See <a href="#taskstepdet">Task Step Details</a> for all task steps below:</p>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Capture Existing Motivation </td>
+    <td><a href="#motivation">Motivation</a>; Existing Motivations, including Vision </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Define Financial Goals</td>
+    <td><a href="#fingoal">Financial Goals</a> </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine Customer Goals</td>
+    <td><a href="#custgoal">Customer Goals </a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine Internal Process Goals</td>
+    <td><a href="#prgoal">Process Goals</a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine Growth Goals </td>
+    <td><a href="#grgoal">Growth Goals</a> </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Define Objectives and Strategy </td>
+    <td><a href="#objstrat">Objectives and Strategy per Goal</a> </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Determine Initiatives </td>
+    <td><a href="#init">Initiatives</a> per Objective </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Map Technology Initiatives</td>
+    <td><a href="#maptechinit">Business to IT Initiatives Map</a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Prioritize Technology Initiatives</td>
+    <td><a href="#prinit">Prioritized IT Initiatives</a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Background" id="Background"></a>BACKGROUND TO MOTIVATIONAL MODELING</h3>
+<h4><a name="OMGBMM"></a>The Object Management Group (OMG) Business Motivation Model (BMM) </h4>
+<p> The OMG BMM establishes the semantics for describing &ldquo;business&rdquo; motivation. From its name alone we can see immediately that it is a &ldquo;model&rdquo;, that is to say, a description of motivation and NOT a process for &ldquo;modeling&rdquo; motivation; which of course, is our ultimate purpose for OUM Motivational Modeling. This semantic model may equally be applied to the &ldquo;business&rdquo; of IT, but not it&rsquo;s technical execution (for example, the business purpose of a system, but not the engineering process of delivery etc.). For further reading on the OMG and the BMM, see the <a href="#REFS">References</a> section.</p>
+<p>Spanning such topics as mission, goal, objective, strategy and tactic (&ldquo;ends and means&rdquo;), the standard Business Motivation Models provide semantic definition for the capture, retention, and traceability for the reasoning behind business decisions.</p>
+<p> The &ldquo;model&rdquo; (or more accurately meta-model) is a formal means of expressing the semantics of motivation for business desires and actions; it is not intended that the BMM practitioners create diagrammatic representations of business motivation, but rather the diagrams presented here (and by the BMM) are merely a means of conveying the relationships of the language elements.</p>
+<p> In defining a language in support of modeling business motivation, the BMM is similar to the approach taken by the IEEE 1471 standard which specifies the semantics of Enterprise Architecture. In both cases terms are defined and their relationships modeled to enable both consistency in practitioner usage and the foundation for the specification of repository tooling. The IEEE 1471 and the OMG BMM documents both use UML, although the original BRG BMM does not.</p>
+<h4> Scope of the BMM standards</h4>
+<p> The BMM does not define Business Process, Rules, Policy, etc. but focuses exclusively on capturing the motivation for an action (such as execution of an engineering project, creation of an SOA service, etc.) and defining the language for the consistent expression of business motivation. Although often relevant in assessment and other aspects of motivation, organization structure is also beyond the scope of standard BMM.</p>
+<p>BMM describes the &ldquo;means and ends&rdquo; of business plans and captures assessments about various types of influencers that may have the potential to impact the means and ends.</p>
+<p> The BMM and associated standards are also intended to provide the basis for repository tooling and the exchange of associated models using mechanisms like XMI. </p>
+<p>BMM is not a methodology, process or an approach.</p>
+<p> For further reading about the BMM from the BRG, see the <a href="#BRG">Business Rules Group</a>. Various other documents were originated and/or referenced by the BMM (the Semantics of Business Vocabulary and Business Rules in particular). These standards are maintained by the OMG and can be found using <a href="#OMG">reference 8</a> in the References section below.Look for the following related standards documents:</p>
+<ul>
+  <li> Business Motivation Model (BMM)</li>
+  <li>Semantics of Business Vocabulary and Business Rules (SBVR)</li>
+  <li>Business Process Modeling Notation (BPMN)</li>
+  <li>Business Process Definition Meta Model (BPDM)</li>
+  <li>Business Process Maturity Model (BPMM)</li>
+</ul>
+<p>The OMG BMM not only endorses the BRG&rsquo;s BMM as a standard but also presents its diagrams using UML: each noun concept in the BMM Concepts Catalog is represented as a class in the UML model while SBVR fact types are mapped to UML association names.</p>
+<h4> Outline of the BMM</h4>
+<p> The OMG BMM is a meta-model for the standardization of descriptions of motivations for the elements of a business plan. An enterprise might create a BMM, following the meta-model approach, to establish the factors that motivate the creation of a business plan, and identify and define the elements of such a plan.</p>
+<p>The BMM is made-up of four major areas of concern (the BMM document itself summarizes these into just two) which are in turn broken into other elements each with very specific meanings. The four high-level elements of the meta-model, &ldquo;means&rdquo;, &ldquo;ends&rdquo;, &ldquo;influencers&rdquo;, and &ldquo;assessments&rdquo; are shown in the following simplified representation of the BMM.<br>
+</p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM.jpg" alt="Simplified Representation of the Business Motivational Model showing four major areas of concern: Means, Ends, Influencers and Assessments" width="536" height="487" title="Simplified Representation of the Business Motivational Model showing four major areas of concern: Means, Ends, Influencers and Assessments"></p>
+<p>Fundamentally, &ldquo;means and ends&rdquo; refer to the strategies, tactics, and business policies and rules that the business might employ to achieve a desired result (the &ldquo;ends&rdquo;); along the way these are supported by assessments of things, such as, risk/reward or Strengths, Weaknesses, Threats, and Opportunities (see <a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#SWOT" target="_blank">SWOT</a> analysis). </p>
+<p>If a business plan is used to specify what an enterprise wants to achieve, the elements of the business plan lay out the means necessary to achieve the ends (desired result, etc.). Motivation refers to the influencers that underlie the choices of means to serve the ends of each element of a business plan.</p>
+<p>The BMM is not intended to be used as a business plan by itself. A business plan requires the support of numerous other factors that are external to the BMM, such as, organization models, business rules, business process models (BPMN and BPDM), etc. Other referenced elements of business models that might support the Business Motivation Model include a Common Business Vocabulary, such as OMG's SBVR. Boundaries between the various aspects of a complete business plan are not hard and fast however; there is, in fact, potential for considerable overlap and every organization is free to choose make distinctions appropriate to its own needs.</p>
+<p>The following sections provide more detail on BMM and offer examples based on our fictional company, THFC.</p>
+<h4>Ends, Visions, and Desired Results </h4>
+<p> In the diagram below the expression &ldquo;business aspiration&rdquo; is not a formal BMM term; instead it is used here to generalize the core &ldquo;end&rdquo; concepts, vision, goal, and objective. </p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_CLASS.jpg" alt="Business Motivational Model showing Ends, Visions and Desired Results" width="624" height="476" title="Business Motivational Model showing Ends, Visions and Desired Results"></p>
+<p>Under the BMM definitions the vision is an overall image of what the business aspires to become, it typically encompasses the entire enterprise and provides a long-term view: &ldquo;the vision is the ultimate, possibly unattainable, state the enterprise would like to achieve.&rdquo; The desired results, i.e., goals and objectives, provide more specific detail of the parts of the overall vision. The BMM distinguishes goals and objectives by defining the goal as a general, longer term, qualitative expression of an aspect of the vision; in contrast an objective is specific, time-boxed, and measurable (quantitative). </p>
+<p>Earlier in this document, were some examples that are repeated below. </p>
+<p>An example of a <em>vision</em> statement for the fictitious &quot;Company A&quot; might be:</p>
+<blockquote>
+  <p>&quot;Company A&quot;aspires to be the best consulting company in the field of large scale enterprise integration.</p>
+</blockquote>
+<p>This is an example of a lofty target, it is not specific, offering no timeframes, nor metrics for success, but clearly distinguishes the business vision from other lower-level, potentially irrelevant, detail.<br>
+    <br>
+  As can be seen from the diagram above a <em>goal </em>amplifies a<em> vision</em> and is quantified by <em>objectives</em>. The organization unit and problem elements are not defined by the BMM but their relevance is acknowledged by the standard. Organization unit is identified as a placeholder for a connection to an, as yet undetermined, external standard definition.</p>
+<p>Amplifying the vision statement consider writing the goals as follows</p>
+<blockquote>
+  <p>to lead the industry in enterprise consulting</p>
+  <p> to be considered industry leads alongside Major Competitor Inc.</p>
+</blockquote>
+<p>These are just some of the things that must be achieve to meet achieve the <em>vision</em>.</p>
+<p> Making these goals attainable, time-boxed, and measurable you write <em>objectives</em> as follows</p>
+<blockquote>
+  <p>Within the next fiscal year &quot;Company A&quot; expects to be rated within the top three providers of consulting by Gartner.</p>
+</blockquote>
+<p>More fine detailed <em>objectives</em> that are closer to the expense reimbursement example, but still aligned with the stated goals, might look like this</p>
+<blockquote>
+  <p> Reduce expense reimbursement cycle time to 10 business days for 97% of ER submissions by middle of the current fiscal year.</p>
+  <p> Eliminate manual ER exception processing. </p>
+</blockquote>
+<p>The BMM suggests <em>objectives</em> statements might be guided by the popular project management idiom <a href="#SMART">SMART</a> (Specific Measurable Achievable Relevant Time framed).</p>
+<h4>Means, Mission, Strategies and Tactics</h4>
+<p> A vision will be realized by the mission and desired results are support by courses of action, both linking &ldquo;ends&rdquo; to &ldquo;means&rdquo;: goals are generally supported by strategies while objectives are achieved by tactics.</p>
+<p>Linking &ldquo;ends&rdquo; to &ldquo;means&rdquo; the BMM states that goals are generally supported by strategies while objectives are achieved by tactics. In our simplified model the link from &ldquo;ends&rdquo; to &ldquo;means&rdquo; occurs in the following diagram, in which a business aspiration is supported by a generalized &ldquo;plan&rdquo;. <br>
+</p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_CLASS2.jpg" alt="Example Business Motivational Model Diagram linking endis to Means" width="575" height="419" title="Example Business Motivational Model Diagram linking endis to Means"></p>
+<p>As with business aspiration, &ldquo;plan&rdquo; is not defined by the BMM: in fact, as was already stated, the definition of a &ldquo;business plan&rdquo; has much broader scope than motivation, which is only an aspect of the plan. Here you use a &ldquo;plan&rdquo; to link the &ldquo;ends&rdquo; (vision and its desired results, comprising goals and objectives) to the &ldquo;means&rdquo; (mission, courses of action comprising strategies and tactics).</p>
+<p> The BMM defines the general term &ldquo;means&rdquo; as &ldquo;any device, capability, regime, technique, restriction, agency, instrument, or method that may be called upon, or enforced to activate ends&rdquo;. You can see from that definition that &ldquo;means&rdquo; refers to active aspects of a plan (as opposed to an outcome, the &ldquo;ends&rdquo;), whether a mission, a course of action (strategy or tactic), or directive (business policy or rule).</p>
+<p> A mission, like its counterpart the vision, is high-level and takes a long-term perspective, and a mission makes a vision operative. The detailed parts of the mission are courses of action and directives. </p>
+<p> A course of action is said to &ldquo;channel efforts towards desired results&rdquo; and they are governed by directives. Our simplified representations in this document replace means and course of action expressions with a generalization &ldquo;plan&rdquo;; this plan can be seen to be &ldquo;governed by&rdquo; directives in the diagram below.</p>
+<p>Whether you use course of action or plan the important elements contained therein are strategies and tactics. A strategy is a component of a plan for the mission while a tactic is a course of action that part of a strategy and should implement a strategy. These relationships can be seen in the diagram above.</p>
+<p>In relating means to ends once again, the BMM states that strategies usually channel efforts towards goals while tactics channel efforts towards objectives.</p>
+<p> So far in the &quot;Company A&quot; example the statements of business vision and desired results have seemed far removed from the IT task of improving the expense reporting system, but it is here, in this portion of the motivation model, that you consider such things as IT systems as part of the means to achieve those results. So now consider a mission statement (still high-level and in purely business terms) that might make the vision operative:</p>
+<blockquote>
+  <p>Ensure our consultants are the best in the field of enterprise consulting.</p>
+</blockquote>
+<p> To support this mission you establish courses of action that will channel efforts towards the desired results stated in the previous section. A strategy that can channel efforts toward our stated goals might be</p>
+<blockquote>
+  <p>Provide our consultants with the best training and tools to maximize their effectiveness.</p>
+</blockquote>
+<p>In this obviously contrived example, you start to see a link between &quot;Company A&rsquo;s&quot; business aspirations and IT by describing a tactic as part of the detail of the foregoing strategy, for example:</p>
+<blockquote>
+  <p>Integrate the ER applications to eliminate manual process steps and consistently reduce reimbursement cycle time.</p>
+</blockquote>
+<p>Of course, this course of action supports the earlier stated, quantified objectives.</p>
+<h4>Directives, Rules and Policies </h4>
+<p> The BMM explains that directives are the concerns of governance and guidance and its components, business policy and business rule, are left to other standards for definition. The following diagram shows these relationships. </p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_CLASS3.jpg" alt="Example Business Motivational Model Showing Relationships to Directives, Rules and Policies" width="576" height="472" title="Example Business Motivational Model Showing Relationships to Directives, Rules and Policies"></p>
+<p align="left">Directives govern courses of action (or the plan in the case of our diagrams here). A directive is intended to assert structure on the process of doing business, or to control or influence the behavior of the business. Directives should be stated in a declarative form.</p>
+<p align="left">The BMM distinguishes between business policies and rules as follows: a business policy is less structured and more general than a business rule, which is highly structured, discrete / atomic, and expressed in a formal language. Policies provide broader governance that is not directly actionable. Rules provide specific, executable guidance to implement business policies. The diagram above states that a business policy provides the basis for a business rule (or rules); and a business rule supports a business policy (or policies).</p>
+<p align="left">In the diagram above, observe the relationships of rules and policies to business process. As with the BMM, leave the definition of business process to other standards documents.</p>
+<h4 align="left">Influencers and Assessments </h4>
+<p align="left"> A detailed modeling and definition of influencers and assessments was deliberately omitted since they are relatively straightforward concepts; instead highlighted here are a few key statements about them from the BMM.</p>
+<p align="left">An influencer is something that has the ability to produce an effect, potentially unintended, often without deliberate intent. External influencers include competitors, customers, partners, suppliers, environment, regulations, technology, etc.; examples of internal influencers include assumptions, habits, infrastructure, etc.</p>
+<p align="left">An assessment is a judgment about an influencer and determines which influencers are relevant to which means and ends (or plans and aspirations). A well known method for making assessments is SWOT analysis. Assessments may also be stated in terms of potential impact which includes similarly well established risk / reward analysis.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3 align="left"><a name="StrategyMap"></a>STRATEGY MAP</h3>
+<p align="left"> The Strategy Map is a means to organize business strategy into actionable perspectives that promote the vision and goals of the organization. It is a variation on the Balanced Scorecard, which is intended to provide a &ldquo;balance&rdquo; of financial and non-financial strategy.</p>
+<p align="left">Strategy Maps are developed by businesses to create an understanding of how financial goals are supported by non-financial aspects of the business. For example, profit and growth are related to customers (loyalty, sales, etc.), processes (how the business does business), and assets (employees, systems, IP, etc.). This is important to consider since financial measures are a trailing indicator of the business. The non-financial aspects drive financial results, therefore mapping and alignment between the two must be captured. </p>
+<p>The strategy developed by this planning effort can be used in a number of ways including:</p>
+<ul>
+  <li>communication of corporate strategy to shareholders, company executives, managers, etc.</li>
+  <li>prioritization of initiatives to business goals</li>
+  <li> development of objectives and action items in support of strategy</li>
+  <li> ability to directly relate employee directives and achievements to high level business goals</li>
+</ul>
+<p align="left"> Since the focus of OUM is on IT initiatives such as Applications, SOA and BPM, the primary purpose of motivational modeling will be to identify and prioritize these initiatives within the goals of the business.</p>
+<h4 align="left"> Strategy Map vs. BMM</h4>
+<p align="left">In contrast to BMM, which offers a rich structure but little business-related context and guidance, the Strategy Map primarily focuses on business concepts. This makes it a popular choice for strategy development and elaboration, and has led to its wide adoption. Since it is much weaker (less rigidly defined) than BMM in terms of modeling context, it is often customized by businesses that use it to align more with their operating model or vertical industry focus.</p>
+<p align="left">The Strategy Map can be used to achieve many things, including the definition of tactics to achieve business goals. This much is similar to BMM, though the terminology between the two concepts sometimes differs. In reality, the reason for differences is that BMM offers a strict vocabulary of terms while Strategy Maps lack such distinctions. For example, the terms strategy and goal have specific meaning in BMM but are often used interchangeably in a Strategy Map.</p>
+<p align="left"> For further reading about the Balanced Scorecard, see the <a href="#REFS">References</a> section below.</p>
+<h4 align="left"> Perspectives</h4>
+<p align="left"> The four standard perspectives are Financial, Customer, Internal Process, and Learning and Growth. They can be briefly defined as:</p>
+<p align="left"> <b>Financial Perspective</b> &ndash; represents the long-term goals of the organization in traditional financial terms. The financial perspective aims to improve shareholder value.</p>
+<p align="left"> <b>Customer Perspective</b> &ndash; recognizes that financial goals are achieved through the sale of products and/or services to customers. Strategy must consider what is needed to drive greater customer interest and investment. </p>
+<p align="left"><b>Internal Process Perspective</b> &ndash; looks at the processes the company uses to perform its business. Process improvements contribute to customer and financial gains through innovation, efficiencies, etc. </p>
+<p align="left"><b>Learning and Growth Perspective</b> &ndash; considers how the organization must learn, grow, and evolve to support the process, customer, and ultimately the financial goals. </p>
+<p align="left">The relationship between perspectives can be visualized using the diagram below.</p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_perspectives.jpg" alt="Illustration of the Relationship Between the Perspectives" width="535" height="636" title="Illustration of the Relationship Between the Perspectives"><br>
+</p>
+<h5 align="left">A Financial Perspective</h5>
+<p align="left"> The Financial Perspective is generally used as the top level perspective for all for-profit companies, since the ultimate goal is to grow revenue to increase shareholder value. Everything else (customers, processes, employees, capital assets, etc.) exist to support financial goals. Non-profit companies would generally switch the order and place customers at the top with financials at the second level.</p>
+<p align="left">Financial growth generally results from two types of accomplishments: top-line revenue growth through the increased sale of new goods and services, and cost savings through productivity gains and cost reductions. Companies in fast growing, continually evolving industries often focus more on revenue growth. This involves introducing new and innovative products, acquiring companies, and offering revolutionary services that continue to drive gains in revenue. Examples include Google, Sprint, and Comcast. Conversely, companies in established markets tend to focus more on cost savings to increase profits. Ideally, a balance of revenue growth and cost savings will factor into the financial strategy.</p>
+<h5 align="left"> Customer Perspective</h5>
+<p align="left"> In order to increase or sustain top-line revenue, a successful strategy must take into account the customer perspective. Customers are drawn to products and services for a number of reasons including innovation, value, performance, image, and brand loyalty. </p>
+<p align="left">Taking a closer look, we can define three generalized categories: </p>
+<ol>
+  <li><b>Product Leadership</b> - Customers interested in product leadership are looking for the &ldquo;latest and greatest&rdquo; products. This may take the form of innovation (think iPod and iPhone), performance (Porsche, Ferrari), image (Mercedes, Guicci), and quality (Nachamichi, DeWalt). Customers are willing to pay more for such products because of their perceived value.</li>
+  <li><b>Customer Intimacy</b> - In some markets customers are motivated by brand loyalty over performance and value. This can be driven by programs such as frequent flyer awards, hotel points, and redeemable proof of purchase points that influence buyers toward one brand or another where similar, relatively equal options are available. It can also be achieved through excellent customer service, regular customer interactions, and trusted advisor relationships.</li>
+  <li><b>Operational Excellence</b> - This category pertains to offering the best overall value in terms of cost of ownership, ease of purchase, reliability, etc. Excelling in this area is a matter of proving the value of your brand as being superior to all others. Companies such as Walmart and Amazon are good examples.</li>
+</ol>
+<p align="left"> Even though a company may fall squarely into one category, it should still consider strategy that pertains to the other categories. All three are coveted by customers, and often companies offer products and services that appeal in more than one category. For example, automobile manufacturers often advertise new features in ways that attempt to create brand loyalty, while offering price incentives. This has the affect of appealing to all types of buyers with the same advertisement. </p>
+<h5 align="left"> Internal Processes Perspective</h5>
+<p align="left"> The Internal Processes Perspective focuses on all the processes and activities required for a company to excel at providing value to the customers. Processes may be automated, manual, or a combination of both. As customers perceive value in different forms, the types of internal processes that are relevant to strategy vary. Given the myriad processes to choose from, a general classification of four types is suggested:</p>
+<ol>
+  <li><b>Innovation Processes</b> - These processes are used to bring new products and services to the market. They involve sales, marketing, and development processes that identify new product opportunities, manage R&amp;D, design and develop products, and develop new markets.</li>
+  <li><b>Customer Management Processes</b> - Processes that fall into this category pertain to identifying opportunities, acquiring new customers, retaining existing customers, and growing the footprint within a customer.</li>
+  <li><b>Operations Management Processes</b> - Processes that play a supporting role in the organization often fall into the Operational Management category. This includes developing and managing relationships with suppliers, manufacturing and distributing products, managing risks, and maintaining human resources. </li>
+  <li><b>Regulatory and Social Processes</b> - In the age of government regulations and environmental awareness, companies must consider the processes and activities necessary to meet compliance and acceptance. This includes processes associated with safety, health, and community investment concerns.</li>
+</ol>
+<h5 align="left"> Learning and Growth Perspective </h5>
+<p align="left"> This perspective tends to begin with a focus on the employees, fostering learning and growth to support business strategy. However, to be effective it must consider the infrastructure of the organization as well. In fact, more recent versions offer four categories of focus:</p>
+<ol>
+  <li> <b>Human Capital</b> - This addresses the human aspect of the business, e.g., identifying strategic positions, developing competencies, assessing readiness, formulating improvement plans, and retaining employees.</li>
+  <li><b>Information Capital</b> - IT falls into this category in the form of transaction processing, analytics, and transformational applications that create competitive differentiation.</li>
+  <li><b>Organizational Capital</b> - Qualities such as leadership, teamwork, and corporate culture development fall into this category.</li>
+  <li><b>Intellectual Property</b> - This includes patents, designs, methods, processes, inventions, etc. that create a competitive advantage. <br>
+    Since employee-related concerns are only a part of the equation, this perspective will often take a variety of names, such as Organization Capacity, Capital, or Corporate Assets.</li>
+</ol>
+<h4 align="left">Developing Linkages</h4>
+<p align="left"> The following diagram can be used as a template for building the Strategy Map. It illustrates the various categories of each perspective and includes space for the Vision and Mission Statements. In this example, the Learning &amp; Growth Perspective has been renamed Assets. The intent is to recognize that the company has assets at its disposal which should factor into the strategy to support the processes, customer, and financial goals. </p>
+<p align="center"><br>
+    <img src="../../010_COMMON_FILES/BMM_Perspective_linkage.jpg" alt="Strategy Map Template" width="780" height="510" title="Strategy Map Template"></p>
+<p align="left">Viewing the perspectives and categories in this way it is easy to draw correlations (linkages) between them. For instance, Innovation Processes (those designed to bring new, innovative products to market) will most likely support Product Leadership, while Customer Management Processes will most greatly affect Customer Intimacy. </p>
+<p align="left">The linkages can occur between multiple categories, and can even skip layers. For example, Intellectual Property will often relate to Product Leadership though it may not pertain to any of the Internal Process Perspective categories. </p>
+<p align="left">When building the map it is not necessary to define goals for each category. Categories are meant to offer guidance of the types of goals one might consider. Therefore, it is common to have multiple goals for categories that have particular interest to the organization and no goals for categories that are perceived to be of lesser priority.</p>
+<p align="left">Once goals have been defined, the linkages between them are added to illustrate the mapping between perspectives. At this point the organization can drill down into each goal to define its strategy to accomplish each goal. We will walk through the process and show an example completed map in the next section of this document. </p>
+<h4 align="left">Terms</h4>
+<p align="left">Ends &ndash; general BMM term for all contained below:</p>
+<blockquote>
+  <p align="left">Vision &ndash; long-term state the enterprise would like to achieve: </p>
+  <blockquote>
+    <p align="left"> Business Aspiration (desired result): </p>
+    <blockquote>
+      <p align="left"> Goal &ndash; long-term, focused, qualitative statements of details of the vision<br>
+        Objective &ndash; short-term, quantitative, time-boxed statements of the vision<br>
+      </p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p align="left">Means &ndash; general BMM term for all contained below:</p>
+<blockquote>
+  <p align="left">Mission &ndash; long-term activities in which the enterprise will engage to make the vision operative: </p>
+  <blockquote>
+    <p align="left">Plan (course of action): </p>
+    <blockquote>
+      <p align="left">Strategy &ndash; components of the mission focusing action toward the achievement of goals<br>
+        Tactic &ndash; details of strategies focusing action toward the achievement of objectives</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>As explained in the <a href="#Background">Background</a> section, the BMM clearly distinguishes the concepts of vision, goals, and objectives (ends) from mission, strategies, and tactics (means) in order to create a consistent, maintainable &ldquo;business plan&rdquo;. Strategy Maps in contrast offer a way to articulate motivation in a business context. They are less concerned with semantics of the model and better equipped to guide an organization through the process of describing its goals. For this reason Strategy Maps are more widely used by the business audience than Business Motivational Models. For this technique, BMM is used as a definition of context of modeling terms and Strategy Maps as the mechanism and general process to collect and represent motivation.</p>
+<p>Although Strategy Maps refer extensively to &ldquo;strategy,&rdquo; the broader language of BMM provides clearer definitions: specifically, business goals refer to a desired result, while strategy refers to a course of action to achieve that result. What is captured on the Strategy Map itself is a collection of related goals. Since the goals of &ldquo;lower layers&rdquo; often support and enable the attainment of goals of layers above it, the lower layers in essence act as strategy, though they are clearly goals by definition. The steps section defines where the actual strategy is developed for each of the goals. </p>
+<p>Once the map has been developed, its goals are then decomposed to statements of (time-boxed, quantifiable) objectives. This serves to ground the model in the reality of time, money, and effort. Objectives often require effort from more than one person and frequently cross departmental boundaries. For this reason it is necessary to elaborate on each objective to capture the high level initiatives, (tactics in BMM parlance), that are involved.</p>
+<p>The steps described thus far pertain to business motivation, though they almost always result in the definition of initiatives that belong to IT. Since the intent is to justify and prioritize specific IT initiatives, (such as applications, SOA or BPM), the approach includes additional steps to link these types of IT initiatives to the Motivational Model. Hence the Strategy Map demonstrates traceability of strategic IT initiatives all the way up to the Financial Perspective and Vision of the company. </p>
+<p>You may find Motivational Models of some form used to support the creation and maintenance of business plans by your customer. If such artifacts are available they should be used as an input to your Motivational Modeling, although they should not be thought of as a substitute. The steps described in the following sections show how these artifacts can be applied to OUM Motivational Modeling. </p>
+<hr WIDTH="100%">
+<h4>The Motivation Modeling Steps</h4>
+<p>Regardless of the type of model used, Motivational Modeling is a top-down effort. It begins with a description of why the company exists (Mission), what it stands for (Values), and what it wants to become (Vision). These descriptions should be part of the business model that is created when the company begins doing business. They may persist for the entire life of the business, or evolve over time as markets change.</p>
+<p align="left">The Mission and Vision are supported by Goals, Strategy, Objectives, and Initiatives, as depicted in a pyramid form below.</p>
+<p align="center"><br>
+    <img src="../../010_COMMON_FILES/BMM_STEPS.jpg" alt="Pyramid Depiction of the Mission and Vision supported by Goals, Strategy, Objectives and Initiatives" width="544" height="359" title="Pyramid Depiction of the Mission and Vision supported by Goals, Strategy, Objectives and Initiatives"></p>
+<h5>Motivational Pyramid</h5>
+<p> The steps for Motivational Modeling begin with the capture of Mission and Vision statements. It is assumed that they already exist or can be stated without a vendor-supplied process designed to help formulate them. Other inputs may include financial plans, organization charts, and previous strategy plans. As shown below, you may engage at various points depending on which steps have already been completed. </p>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_Process_steps.jpg" alt="Motivational Modeling Steps Diagram" width="876" height="499" title="Motivational Modeling Steps Diagram"></p>
+<h5><a name="taskstepdet" id="taskstepdet"></a>Motivational Modeling Task Step Details</h5>
+<p> The following sections provide more detailed guidance on the Motivation Modeling steps and shows how the development of a Strategy Map leads to a linkage between business goals and technology initiatives.</p>
+<p> <b><a name="motivation"></a>1. Capture Existing Motivation</b></p>
+<blockquote>
+  <p> It is likely that an organization has already done some form of Motivational Modeling. Strategy Maps are quite common in the industry, and other processes such as Six Sigma and TQM are also popular. Since the intent is to produce the mapping between IT initiatives and business strategy, it is not important how motivation was captured but what was captured.</p>
+  <p>If something other than a Strategy Map was used, identify the important concepts that were captured. Using BMM terms, and/or the motivational pyramid scheme previously described, you should be able to identify the Vision and Mission statements as well as the Goals. These points can be transferred over to a Strategy Map for use in further elaboration.</p>
+  <p>If a Strategy Map exists, you should be able to follow the linkage between perspectives and gain an understanding of what the organization is trying to accomplish and how IT fits into the picture. </p>
+  <p>Either way, the important outcome of this step is to understand the content and map it to the concepts provided. The existing material can be used in place of a Strategy Map of your own as long as the organization understands how the goals that pertain to IT map to the goals that pertain to financial targets and company vision.</p>
+</blockquote>
+<p> <b><a name="fingoal"></a>2. Define Financial Goals</b></p>
+<blockquote>
+  <p> To build your own Strategy Map you first start with the Financial Perspective. Since the ultimate reason for the company is to make money, (assuming that is the case), all other strategy should promote the attainment of financial goals.<br>
+    Financial goals tend to fall into one of two categories: increasing the top-line (revenue growth), and reducing costs associated with doing business. Companies usually have targets associated with revenue, margin, and profits, although they may be very near-term, e.g., quarterly. The objective of this step is to capture goals that satisfy the financial aspirations for the next 1-2 years. This provides enough runway to establish and complete objectives without becoming too futuristic and far-fetched.</p>
+  <p> For this perspective the number of goals captured should be between two and four. This is enough diversity to provide multiple &ldquo;angles of attack&rdquo; without fragmenting the focus. An easy way to ensure at least two goals is to choose one for each category (one revenue growth goal and one cost reduction goal).</p>
+  <p>If more than four are offered, then similar goals may be combined or others may be eliminated through a prioritization exercise. First, the ratio of growth-to-cost reduction goals should be established. For example, a growth company may choose three growth goals and one cost reduction goal, while a company in a mature market may choose the opposite. Once the ratio is determined then the goals can be prioritized through some form of voting by the contributors, and the top candidate goals are recognized.</p>
+  <p> The final selections for this perspective should be easy to understand and agreed to by the highest ranking executive(s) involved in this task. </p>
+</blockquote>
+<p><b><a name="custgoal"></a>3. Determine Customer Goals</b></p>
+<blockquote>
+  <p> Financial goals, particularly those related to revenue growth, usually have a strong dependency on customers. That is to say, customers must be motivated more-so than before and the company must do something to cause this to happen. Therefore, the strategy for this perspective should focus on what the company is doing to attract more customers and/or to generate more revenue from existing customers.</p>
+  <p>The intent here is to determine what can be offered to current and future customers in order to realize the financial goals. The answer should take into account the necessary growth rate in terms of number of customers as well as average revenue per customer. All forms of customer revenue should be considered, such as sales, service, support, training, etc. </p>
+  <p>Common categories for the Customer Perspective include: Product Leadership, Customer Intimacy, and Operational Excellence. These offer a way to examine the means in which growth may occur. If the company is expecting financial growth through the sale of new products and services, then the strategy to achieve it must consider why such products and services would be attractive. Will the appeal come from early adopters that require cutting edge technology? Will it come from a value proposition, i.e. a product does the same for less or does more for the same price? Or, will growth come from satisfied customers that spend increasingly more over time because of great care and relationship building? If the financial goals lean more in the direction of cost cutting, then customer goals will naturally revolve around value (price/feature comparisons) and brand loyalty. </p>
+  <p>Once this determination is made, customer-oriented goals can be defined that represent improvements in customer value to support the financial goals. A simple way to solicit input is to ask what must be done [for/to] customers in order to achieve each financial goal. Collect the top two for each financial goal and record the top four to six customer goals that are most highly recommended overall. Note these are not objectives, e.g. time-boxed, measurable activities, but strategically aligned goals in support of financial goals. The objectives will be defined later for goals in every perspective (layer) of the map.</p>
+</blockquote>
+<p> <b><a name="prgoal" id="prgoal"></a>4. Determine Internal Process Goals</b></p>
+<blockquote>
+  <p>There are many internal processes being executed at every company; some primarily automated and others not. Though each may have room for improvement, those that factor into corporate strategy should have the greatest attention. Looking at the financial and customer goals is a good way to determine which to prioritize.</p>
+  <p> Most processes tend to support the operational aspects of the company and are therefore more critical to support cost cutting measures. For instance, automating processes that involve overhead personnel often helps reduce operational costs. Improving processes for procurement and forecasting can help reduce lead times and inventory costs.</p>
+  <p> Processes that pertain to revenue growth and product leadership may involve new product development, acquisitions, R&amp;D, and the generation of Intellectual Property (IP).</p>
+  <p> By examining the financial and customer goals captured earlier, one can consider where process improvements may introduce the greatest benefits. Financial goals are generally matched to processes that have the greatest financial upside, i.e., cost and time savings. Customer goals are affected either by processes that directly involve the customer, or those that affect issues important to the customer, such as product quality, price, and innovation.</p>
+  <p> For each of the goals captured so far, process goals should be considered that would have the greatest impact. The four categories of process goals can be used to help solicit input. They are: Innovation, Customer Management, Operations Management, and Regulatory and Social Processes. Once input has been collected, it should be distilled down to a manageable number, (no more than six), of the most highly prioritized goals. The linkage between goals of different perspectives should also be noted.</p>
+</blockquote>
+<p> <b><a name="grgoal"></a>5. Determine Growth Goals</b></p>
+<blockquote>
+  <p>The final perspective of the Strategy Map pertains to the assets a company can bring to bear in order to fulfill its vision. Assets include employees (Human Capital), systems (Information Capital), Leadership (Organizational Capital), and IP. The intent of this step is to define goals that position the assets to best support the process, customer, and financial goals of the company.</p>
+  <p>In terms of employees, the company may wish to develop certain competencies that enable the success of key strategic positions. If, for instance, revolutionary new products were being delivered, then training service and support people in advance of the product release would be important. Likewise, if the company were to branch out into a new market it would need to identify the types of positions required to support that initiative, assess the current workforce, and plan staffing and training accordingly. </p>
+  <p>Perhaps most important to OUM, the IT goals of the organization must be considered. IT factors into many of the process improvements, customer, and financial goals. Since IT can be a competitive advantage as well as a means for cost savings, it often links to most of the goals in other perspectives. At this level of the Strategy Map you are looking for the top two or three IT goals. Other initiatives within IT are likely to be uncovered and accounted for as other types of goals are processed into objectives and initiatives. Examples could include plans to deploy new systems to drive revenue gains and plans to reduce costs through system rationalization and/or process automation.</p>
+  <p>Organizational Capital refers to attributes of the organization such as culture, leadership, teamwork, and personal motivation. Improvements in this area are important as the company is often only as good as its people. Having and retaining quality employees underpins many of the loftier goals since a high turnover rate slows progress, drains expertise, and creates a distraction from the business at hand. The current situation should be examined and at least one goal defined to continually improve workforce motivation and morale.</p>
+  <p>Finally, goals may be defined that pertain to IP. These are more important to companies on the cutting edge of technology or business that rely heavily on IP for a competitive advantage. Goals in this category may include the patenting of new technologies or the development of new consulting materials such as methods and frameworks.</p>
+</blockquote>
+<p><b><a name="objstrat"></a>6. Define Objectives and Strategy</b></p>
+<blockquote>
+  <p> Once goals have been defined for each perspective and linkages have been added, the map should look similar to the example provided below.</p>
+</blockquote>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_MAP.jpg" alt="Example Business Motivational Model Strategy Map" width="784" height="525" title="Example Business Motivational Model Map"></p>
+<blockquote>
+  <p align="center"><b>Example Strategy Map</b></p>
+  <p> The next step is to process each goal to determine precisely what needs to be done to achieve it, who is responsible for doing it, and when it should be completed. To begin this determination step, each goal is entered into a table that defines the objectives. An example objective table for goal G8 is shown below.</p>
+</blockquote>
+<p align="center"><br>
+    <img src="../../010_COMMON_FILES/BMM_Objective_tbl.jpg" alt="Example Objective Table for Goal G8" width="816" height="393" title="Example Objective Table for Goal G8"> <br>
+</p>
+<blockquote>
+  <p>The objective is meant to define the goal in an achievable, measurable, time-boxed way. Using a tabular method you state the objective as a more precise declaration of purpose and provide metrics that help you define completion. The overall objective is assigned an owner and a target completion date.</p>
+  <p>The objective should sufficiently represent the goal so that when the objective is met, there is consensus that the goal has been attained. Loftier goals may be more difficult to objectify as it may not be intuitive what success looks like or how it should be described. The value of the objective statement is that it clears up ambiguity, which enables a course of action to be established. In some cases it may be necessary to state more than one objective for a goal. In those cases a separate table should be used for each objective and the common goal should be referenced by each. </p>
+  <p>Note that metrics are not activities to accomplish but ways to measure completion. An objective may require more than one metric. To gather metric statements one should ask: &ldquo;how will we measure success, i.e. what does success look like?&rdquo; Attainment of all metrics equates to completion of the objective, and therefore realization of the goal.</p>
+  <p>Strategy, which is determined next, is where the objective is translated into accomplishments that are required to meet the objective. These are very high level accomplishments, which will be broken down later into more manageable activities. Each element of strategy is assigned a target completion date, which should support the overall objective target date. To gather strategy one should ask: &ldquo;what must we do in order to attain these metrics?&rdquo;<br>
+      <br>
+    Once completed, the table should include the strategy necessary to achieve the goal and the metrics needed to measure that achievement. This step is completed when all goals have been processed into objectives, metrics, and strategy. </p>
+</blockquote>
+<p><b><a name="init"></a>7. Define Initiatives</b></p>
+<blockquote>
+  <p> Initiatives in this context are equivalent to tactics in the BMM parlance. They refer to the high level activities required to drive toward completion of the strategy. They are very tactical and meant to be treated as assignments with an owner and due date. </p>
+  <p>Ideally, the sum of all initiatives should equate to the entirety of the strategy, and the sum of all strategies equates to the entirety of the objective. In this way it is possible to accurately track completion of a goal/objective through the status of its initiatives.</p>
+  <p>An example of an initiative table is provided below.</p>
+</blockquote>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_Initiative.jpg" alt="Example Initiative Table" width="836" height="430" title="Example Initiative Table"></p>
+<blockquote>
+  <p>Notice that the table refers to a single strategy defined for the G8 objective. It breaks down the strategy into high level projects or activities that are necessary to support it. The owner and target date are carried forward and each initiative is assigned its due date and contact.</p>
+  <p>It is here that IT initiatives surface as dependencies on various company goals. Even though the goal may relate to Finance or Customer Perspectives, an element of IT involvement may be included. It also starts to become clear which IT initiatives and processes have the most relevance to business goals. </p>
+  <p>Once completed, the table should include all initiatives that equate to the attainment of the strategy. In other words, &ldquo;when these things are done we will have fulfilled the strategy&rdquo;.</p>
+  <p>This step is completed when all strategy statements have been processed into initiatives.</p>
+</blockquote>
+<p><b><a name="maptechinit"></a>8. Map Technology Initiatives</b></p>
+<blockquote>
+  <p>Once all goals have been processed down to the level of initiatives, you can begin to view motivation from the perspective of technology. You do this by brainstorming a list of strategic technology initiatives that cross-cut various IT endeavors. Examples include ERP, CRM, SOA, BPM, EDA, MDM, etc. These form one axis of a table while all initiatives from the previous step that relate to IT form the other.</p>
+</blockquote>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_tech_init_map.jpg" alt="Example Matrix of Strategic Technology Initiatives that Cross-Cut Various IT Endeavors" width="743" height="361" title="Example Matrix of Strategic Technology Initiatives that Cross-Cut Various IT Endeavors"></p>
+<blockquote>
+  <p> The mapping exercise involves making a determination where each technology initiative applies to business initiatives. The mapping may be somewhat subjective, however it should be supported by text that describes the mapping assignment (not shown). For example, SOA could map to initiatives that have a reasonable chance of providing service candidates or leveraging existing services. Or, it could be mapped to everything that possibly might involve general concepts such as reuse and loose coupling. A certain amount of integrity must be used to avoid overstating the importance of technology initiatives &ndash; otherwise the entire mapping exercise becomes a thinly veiled sales tactic.</p>
+  <p>This step can be accomplished with a small team off people that represent the Enterprise Architecture community and specialists from each technology initiative.</p>
+</blockquote>
+<p> <b><a name="prinit" id="prinit"></a>9. Prioritize Technology Initiatives</b></p>
+<blockquote>
+  <p>At this point you should have a clear understanding of how each technology initiative applies to business goals. Now it is possible to prioritize aspects of each technology initiative in order to determine which have the greatest value.</p>
+  <p>The example below shows how SOA initiatives might be prioritized based on motivation:<br>
+  </p>
+</blockquote>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_SOA_Init.jpg" alt="Example SOA Initiatives Prioritized Based on Motivation" width="817" height="415" title="Example SOA Initiatives Prioritized Based on Motivation"></p>
+<blockquote>
+  <p>As shown, IT construction that pertains to business initiatives form the higher priority aspects of the Roadmap. A mapping is done to indicate precisely which aspects relate to business initiatives. A simple scoring mechanism (counting the X's) offers guidance on how to prioritize the roadmap. Due dates should correspond to target dates of the business initiatives, e.g., indicate the earliest date something is needed in order to meet due dates of all related initiatives. The owner is someone from IT responsible for fulfillment of that aspect of the roadmap.</p>
+  <p> Likewise, a similar mapping can be done for BPM. In the example below business initiatives are mapped to business processes, which are then scored, ranked, and assigned. A prioritized BPM Roadmap can be formulated based on business goals, as shown below:</p>
+</blockquote>
+<p align="center"><img src="../../010_COMMON_FILES/BMM_BPM_Init.jpg" alt="Example Prioritized Business Process Management Roadmap Formulated Based on Business Goals" width="817" height="415" title="Example Prioritized Business Process Management Roadmap Formulated Based on Business Goals"></p>
+<blockquote>
+  <p><br>
+    A similar technology mapping should be done for each technology initiative. This provides a clear understanding of how technology initiatives support business goals and offer a way to prioritize IT efforts based on a Motivational Model.</p>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="Conclusion"></a>CONCLUSION</h3>
+<p>The OUM Motivational Modeling Steps leverage common industry-standard terms and concepts to chart a course for IT that puts it in lock-step with business goals. It also extends these concepts in order to guide technology initiatives towards greater business relevance and value. This task should be performed at regular intervals of one to two years as business strategy evolves and markets change. </p>
+<p>The steps outlined in this document represent an overview of BMM and Strategy Maps. A great deal more information can be found online and in books to educate the practitioner of the finer points of each. If the steps are to be executed from start to finish, including the entire strategy mapping exercise, it is recommended that additional reading be done to gain a deeper understanding of the material than what has been presented here. It is anticipated that most companies should already have completed most of the steps up to the point of mapping technology initiatives. If so, then the remainder of the steps should be relatively straightforward to technical practitioners.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="REFS"></a>REFERENCES</h3>
+<TABLE width="100%" border=1 title="References" summary="This table lists references for this technique.">
+  <TR bgcolor="#CCCCCC">
+    <th scope="col" vAlign=top>No.</th>
+    <th scope="col" align=left vAlign=top>Reference</th>
+  </TR>
+  <TR>
+    <th scope="row" vAlign=top>1</th>
+    <TD vAlign=top align=left>Basili 88: Basili, Victor R. &amp; Rombach, H. Dieter. &quot;The TAME Project: Towards Improvement-Oriented Software Environments.&quot; IEEE Transactions on Software Engineering, Vol. 14, No. 6 (June 1988): 758-773</TD>
+  </TR>
+  <TR>
+    <th scope="row" vAlign=top>2</th>
+    <TD vAlign=top align=left>Basili 89, Rombach 89: Basili, Victor R. &amp; Rombach, H. Dieter. &quot;The TAME Project: Towards Improvement-Oriented Software Environments.&quot; IEEE Transactions on Software Engineering, Vol. 14, No. 6 (June 1988): 758-773.</TD>
+  </TR>
+  <TR>
+    <th scope="row" vAlign=top>3</th>
+    <TD vAlign=top align=left>Building Strategy Maps, Robert S. Kaplan and David P. Norton, 2006 Harvard Business School Press, ISBN-13: 978-1-4221-1613-5</TD>
+  </TR>
+    <TR>
+      <th scope="row" vAlign=top>4<a name="BRG"></a></th>
+      <TD vAlign=top align=left><p>The Business Rules Group (BRG) Originally a project within GUIDE International, the Business Rules Group is now an independent organization. Membership comprises experienced practitioners in the field of systems and business analysis methodology. BRG is made up of practitioners who work in both the public and the private sectors. BRG formulates statements and supporting standards about the nature and structure of business rules, the relationship of business rules with the way an enterprise is organized, and the relationship of business rules with systems' architectures.</p>
+          <p>The Business Rules Group (BRG): <a href="http://www.businessrulesgroup.org">http://www.businessrulesgroup.org</a></p>
+          <p>The original (BRG) Business Motivation Model (BMM): <a href="http://www.businessrulesgroup.org/bmm.shtml" target="_blank">http://www.businessrulesgroup.org/bmm.shtml</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>5<a name="GDSM"></a></th>
+      <TD vAlign=top align=left><em>Goal Driven Software Measurement - A Guidebook</em>, 1996, Software Engineering Institute, Carnegie Melon University<br>
+          <a href="http://www.businessrulesgroup.org">http://www.sei.cmu.edu/publications/documents/96.reports/96.hb.002.html</a>.</TD>
+    </TR>
+    <TR>
+    <th scope="row" vAlign=top>6</th>
+      <TD vAlign=top align=left>Kaplan, Robert S. and David P. Norton. 1996. <em>The Balanced Scorecard.</em> Boston, MA: Harvard Business School Press.</TD>
+    </TR>
+    <TR>
+    <th scope="row" vAlign=top>7</th>
+      <TD vAlign=top align=left><p>Kaplan and Norton Evolution of Balanced Scorecard to Strategy Maps: <a href="http://en.wikipedia.org/wiki/Strategy_map" target="_blank">http://en.wikipedia.org/wiki/Strategy_map</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>8<a name="OMG"></a></th>
+      <TD vAlign=top align=left><p>Object Management Group (OMG) - OMG&trade; is an international, open membership, not-for-profit computer industry consortium. OMG Task Forces develop enterprise integration standards for a wide range of technologies, and an even wider range of industries. OMG&rsquo;s modeling standards enable powerful visual design, execution and maintenance of software and other processes. OMG&rsquo;s middleware standards and profiles are based on the Common Object Request Broker Architecture (CORBA&reg;) and support a wide variety of industries. All of their specifications may be downloaded without charge from their web site.</p>
+          <p>The Object Management Group: <a href="http://www.omg.org/" target="_blank">http://www.omg.org/</a></p>
+          <p>Catalog of OMG Business rules and Process Management Specifications: <a href="http://www.omg.org/technology/documents/br_pm_spec_catalog.htm" target="_blank">ttp://www.omg.org/technology/documents/br_pm_spec_catalog.htm</a> </p>
+          <p> OMG Business Motivation Model: <a href="http://www.omg.org/cgi-bin/doc?dtc/2007-08-03" target="_blank">http://www.omg.org/cgi-bin/doc?dtc/2007-08-03 </a></p>
+          <p>OMG Semantics of Business Vocabulary and Business Rules: <a href="http://www.omg.org/spec/SBVR/1.0/" target="_blank">http://www.omg.org/spec/SBVR/1.0/ </a></p>
+          <p> OMG Business Process Modeling Notation: <a href="http://www.omg.org/cgi-bin/doc?dtc/2007-06-03" target="_blank">http://www.omg.org/cgi-bin/doc?dtc/2007-06-03</a> </p>
+          <p> OMG Business Process Definition Meta-Model: <a href="http://www.omg.org/cgi-bin/doc?dtc/2007-07-01" target="_blank">http://www.omg.org/cgi-bin/doc?dtc/2007-07-01</a> </p>
+          <p>OMG Business Process Maturity Model: <a href="http://www.omg.org/cgi-bin/doc?dtc/2007-07-02" target="_blank">http://www.omg.org/cgi-bin/doc?dtc/2007-07-02</a></p></TD>
+    </TR>
+    <TR>
+    <th scope="row" vAlign=top>9</th>
+      <TD vAlign=top align=left>Rombach 89: Rombach, H. Dieter &amp; Ulery, Bradford T. &quot;Improving Software Maintenance Through Measurement.&quot; Proceedings of the IEEE, Vol. 77, No. 4 (April 1989): 581-595.</TD>
+    </TR>
+    <TR>
+    <th scope="row" vAlign=top>10</th>
+      <TD vAlign=top align=left><p> Since 1984, the Carnegie Mellon&reg; Software Engineering Institute (SEI) has served the United States of America, as a federally funded research and development center. The SEI staff has advanced software engineering principles and practices and has served as a national resource in software engineering, computer security, and process improvement. As part of Carnegie Mellon University, which is well known for its highly rated programs in computer science and engineering, the SEI operates at the leading edge of technical innovation.</p>
+          <p>The Software Engineering Institute (SEI): <a href="http://www.sei.cmu.edu/">http://www.sei.cmu.edu/</a></p>
+          <p>Balanced Scorecard: <a href="http://www.sei.cmu.edu/publications/documents/03.reports/03tn024.html" target="_blank">http://www.sei.cmu.edu/publications/documents/03.reports/03tn024.html</a></p></TD>
+    </TR>
+    <TR>
+      <th scope="row" vAlign=top>11<a name="SMART"></a></th>
+      <TD vAlign=top align=left><p>SMART (Specific Measurable Achievable Relevant Time framed): <a href="http://en.wikipedia.org/wiki/SMART_%28project_management%29" target="_blank">http://en.wikipedia.org/wiki/SMART_%28project_management%29</a></p></TD>
+    </TR>
+    <TR>
+    <th scope="row" vAlign=top>12</th>
+      <TD vAlign=top align=left><p>Strategy Maps: <a href="http://www.valuebasedmanagement.net/methods_strategy_maps_strategic_communication.html" target="_blank">http://www.valuebasedmanagement.net/methods_strategy_maps_strategic_communication.html</a></p></TD>
+    </TR>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy (Envision)</a></div></th>
+    <td>Use this technique to understand Motivational Modeling.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement (Envision)</a></div></th>
+    <td>Use this technique to understand Motivational Modeling.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy (Envision)</a></div></th>
+    <td>Use this technique to understand Motivational Modeling.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li> Have the principal business goals been identified?</li>
+  <li> Are the goals decomposed into sub-goals, and is it possible to trace to sub-goals back to the business goals?</li>
+  <li>Are the sub-goals related to one or more questions?</li>
+  <li>Have entities and attributes that are required to achieve each sub-goal been identified?</li>
+  <li>Have activities been identified to get the required information for measurements of the goal achievement?</li>
+  <li>Have each goal been expressed as structured statements of objectives that identify the object, purpose, perspective,</li>
+  <li>environment, and constraints associated with each measurement activity?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

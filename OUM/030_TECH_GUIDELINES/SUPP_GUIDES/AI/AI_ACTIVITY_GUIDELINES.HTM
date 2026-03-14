@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AI Activity Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Application Implementation Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#INCEPTION">Inception Phase Activity Guidance</option>
+                            <option value="#ELABORATION">Elaboration Phase Activity Guidance</option>
+                            <option value="#CONSTRUCTION">Construction Phase Activity Guidance</option>
+                            <option value="#PRODUCTION">Production Phase Activity Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<table width="93" align="right">
+  <tr>
+    <td width="82"><p><a href="../../../OUM_HOME_AI.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>APPLICATION IMPLEMENTATION SUPPLEMENTAL ACTIVITY GUIDELINES </h2>
+<p>The Activity Guidelines are meant to assist the consultant in performing certain key tasks in an OUM-based Application Implementation projects. OUM defines an activity as &quot;A set of tasks related either by topic, dependencies, data, common skills or work products.&quot; </p>
+<p>Use the Application Implementation Supplemental Activity guidance provided on the left side of this table, in conjunction with the standard OUM Activity overview on the right side of the table, in order to understand how Application Implementation impacts specific OUM activities.</p>
+<table width=100% border="1" title="Supplemental Activity Guidelines Index" summary="This table provides an index to the OUM activities included in this supplemental guide.  The first column contains the activity ID, the second column contains links to the actual guidance found in this document.  The third column contains links to the OUM Task Activity Overviews. The table has subheadings for phases.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">Activity ID </th>
+    <th scope="col">Application Implementation<br>
+      Supplemental Activity Guidelines</th>
+    <th scope="col">OUM Activity Overview<br>
+      (Links in this column refer to the OUM Activity Guidelines files) </th>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left"><a href="#INCEPTION">Inception</a></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">A.ACT.GRBI</div></th>
+    <td><div align="left"> <a href="#AGBRI">Gather Business Requirements - Inception </a></div></td>
+    <td><div align="left"> <a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGBRI_GATHER_BUS_REQTS_INCEPTION.HTM" target="_blank">Gather Business Requirements - Inception </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">A.ACT.CCPI</div></th>
+    <td><div align="left"> <a href="#ACCPI">Create Conceptual Prototype - Inception </a></div></td>
+    <td><div align="left"> <a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTCCP_CREATE_CONCEPTUAL_PROTOTYPE.HTM" target="_blank">Create Conceptual Prototype - Inception </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a href="#ELABORATION">Elaboration</a></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.DUCM</div></th>
+    <td><div align="left"><a href="#BDUCM">Develop Use Case Model </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDUCM_DEVELOP_USE_CASE_MODEL.HTM" target="_blank">Develop Use Case Model </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.DUCD</div></th>
+    <td><div align="left"><a href="#BDUCD">Develop Use Case Details </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDUCD_DEVELOP_USE_CASE_DETAILS.HTM" target="_blank">Develop Use Case Details </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.AE</div></th>
+    <td><div align="left"><a href="#BAE">Analyze - Elaboration</a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTAE_ANALYZE_ELAB.HTM" target="_blank">Analyze - Elaboration</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.DE</div></th>
+    <td><div align="left"><a href="#BDE"> Design - Elaboration</a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDE_DESIGN_ELAB.HTM" target="_blank">Design - Elaboration</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.DCCTSE</div></th>
+    <td><div align="left"><a href="#BDCCTSE">Develop Custom Component  Test Scripts - Elaboration </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">Develop Custom Component Test Scripts - Elaboration </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.DVCSP</div></th>
+    <td><div align="left"><a href="#BDVCSP">Develop and Validate Custom Software Prototypes </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDVCSP_DEVELOP_AND_VALIDATE_CS_PROTOTYPES.HTM" target="_blank">Develop and Validate Custom Software Prototypes </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.PCCTE</div></th>
+    <td><div align="left"><a href="#BPCCTE">Perform Custom Component Testing - Elaboration </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">Perform Custom Component Testing - Elaboration </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B.ACT.PACDE</div></th>
+    <td><div align="left"><a href="#BPACDE">Prepare to Acquire and Convert Data - Elaboration</a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPACDE_PREPARE_TO_ACQUIRE_AND_CONVERT_DATA_ELAB.HTM" target="_blank">Prepare to Acquire and Convert Data - Elaboration</a></div></td>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a href="#CONSTRUCTION">Construction</a></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.FR</div></th>
+    <td><div align="left"><a href="#CFR">Finalize Requirements </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTFR_FINALIZE_REQUIREMENTS.HTM" target="_blank">Finalize Requirements </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.AC</div></th>
+    <td><div align="left"><a href="#CAC">Analyze - Construction</a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTAC_ANALYZE_CONST.HTM" target="_blank">Analyze - Construction </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.DC</div></th>
+    <td><div align="left"><a href="#CDC">Design - Construction</a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTDC_DESIGN_CONST.HTM" target="_blank">Design - Construction </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.PEC</div></th>
+    <td><div align="left"><a href="#CPEC">Prepare Environments - Construction </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPEC_PREPARE_ENV_CONST.HTM" target="_blank">Prepare Environments - Construction </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.DCCTSC</div></th>
+    <td><div align="left"><a href="#CDCCTSC">Develop Custom Component Test Scripts - Construction </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">Develop Custom Component Test Scripts - Construction </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.ICC</div></th>
+    <td><div align="left"><a href="#CICC">Implement Custom Components </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTICC_IMPLEMENT_CUSTOM_COMPONENTS.HTM" target="_blank">Implement Custom Components </a></div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C.ACT.PCCTC</div></th>
+    <td><div align="left"><a href="#CPCCTC">Perform Custom Component Testing - Construction </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">Perform Custom Component Testing - Construction </a></div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left"><a href="#TRANSITION">Transition</a></div></th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left"><a href="#PRODUCTION">Production</a></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">E.ACT.RPP</div></th>
+    <td><div align="left"><a href="#ERPP">Resolve Production Problems </a></div></td>
+    <td><div align="left"><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTRPP_RESOLVE_PROD_PROBLEMS.HTM" target="_blank">Resolve Production Problems </a></div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="INCEPTION"></a><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM" target="_blank">INCEPTION</a></h3>
+<h4><a name="AGBRI" id="AGBRI"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGBRI_GATHER_BUS_REQTS_INCEPTION.HTM" target="_blank">A.ACT.GBRI Gather Business Requirements - Inception</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, the &ldquo;Gather Business Requirements - Inception &quot; activity serves to detail the business and system objectives for the project and begins the process of gathering key business requirements and data needed to configure the application environment. </p>
+<h5>Approach</h5>
+<p> In a commercial off-the-shelf (COTS) application implementation, you may have access to pre-existing, multi-level business process models, which depict how the future application system supports the business functions being addressed by the project. If such process models are available, leverage them to help define elements of the Future Process Model (RD.011) and Business Use Case Model (RA.015) prepared during this activity. </p>
+<h4><a name="ACCPI" id="ACCPI"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTCCP_CREATE_CONCEPTUAL_PROTOTYPE.HTM" target="_blank">A.ACT.CCPI Create Conceptual Prototype - Inception </a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation employing a requirements-driven approach, this activity is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied through extensive and/or complex custom-built components identified during the pre-sales cycle and/or during the Inception Phase, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<p>This activity is not normally performed in a commercial-off-the-shelf (COTS) application implementation employing a solution-driven approach that seeks to minimize custom extensions by promoting leading practice use of standard functionality. This activity is therefore not included in the pre-defined Solution-Driven Application Implementation View Work Breakdown Structure. However, if your solution-driven application implementation includes architecturally-significant custom extensions, you should consider including this activity in your project.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a name="ELABORATION"></a><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM" target="_blank">ELABORATION</a></h3>
+<h4><a name="BDUCM" id="BDUCM"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDUCM_DEVELOP_USE_CASE_MODEL.HTM" target="_blank">B.ACT.DUCM Develop Use Model</a><br>
+  <a name="BDUCD" id="BDUCD"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDUCD_DEVELOP_USE_CASE_DETAILS.HTM" target="_blank">B.ACT.DUCD Develop Use Case Details</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation employing a requirements-driven approach, Use Case Models complement business process models in helping the implementation team gain a thorough understanding of business requirements. At a minimum, Use Case Models and Use Case Specifications should be developed for those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. Development of Use Case Models for all other business requirements is considered best practice, as they contribute to a better understanding of requirements and can be leveraged to prepare a number of other required work products downstream, such as test scenarios and business procedures documentation. </p>
+<p>In a commercial off-the-shelf (COTS) application implementation employing a solution-driven approach, Use Case Models should be developed only for those requirements that can only be satisfied by custom-built components that extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems.</p>
+<h4><a name="BAE" id="BAE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTAE_ANALYZE_ELAB.HTM" target="_blank">B.ACT.AE Analyze - Elaboration</a> </h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<h4><a name="BDE" id="BDE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDE_DESIGN_ELAB.HTM" target="_blank">B.ACT.DE Design - Elaboration</a> </h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<h4><a name="BDCCTSE" id="BDCCTSE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">B.ACT.DCCTSE Develop Custom Component Test Scripts - Elaboration</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is performed only for custom-built components that extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<p> In an application implementation project, unit testing is generally performed in the Construction phase. However, it may be performed in the Elaboration phase for complex, higher risk custom extensions that have been identified during the pre-sales cycle and/or during the Inception phase, and where the prototypes of those complex custom extensions that have been developed during the Elaboration phase, will continue to be enhanced during the Construction phase. </p>
+<h4><a name="BDVCSP" id="BDVCSP"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDVCSP_DEVELOP_AND_VALIDATE_CS_PROTOTYPES.HTM" target="_blank">B.ACT.DVCSP Develop and Validate Custom Software Prototypes</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation,  this activity allows for developing and validating the various prototypes of custom extensions to the applications, implementing the database extensions (where necessary) and performing a component review. Development and validation of the Functional Prototype(s) for custom extensions is generally limited to custom extensions that warrant development of a prototype at this stage of the project due to the technical complexity of the extension, or other risks associated with them. </p>
+<p>It also serves to address the creation of a User Interface Standards Prototype environment for validation of any revisions made to the out-of-the-box application system user interface in order to meet the implementing organization&rsquo;s requirements. This is generally applicable only to those COTS application systems, which enable tailoring/revision of the standard user interface via supported means, such as Oracle&rsquo;s Siebel Tools. </p>
+<p>In a commercial-off-the-shelf (COTS) application implementation employing a solution-driven approach that leverages pre-defined setup parameters and/or tools for rapidly establishing a working application environment, use this activity to develop and validate  Functional Prototype(s)   if there is  a need to build functional prototypes of architecturally-significant custom extensions at this stage of the project.</p>
+<h4><a name="BPCCTE" id="BPCCTE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">B.ACT.PCCTE Perform Custom Component Testing - Elaboration</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is performed only for custom-built components that extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<p> In an application implementation project, unit testing is generally performed in the Construction phase. However, it may be performed in the Elaboration phase for complex, higher risk custom extensions that have been identified during the pre-sales cycle and/or during the Inception phase, and where the prototypes of those complex custom extensions that have been developed during the Elaboration phase, will continue to be enhanced during the Construction phase. </p>
+<h4><a name="BPACDE" id="BPACDE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPACDE_PREPARE_TO_ACQUIRE_AND_CONVERT_DATA_ELAB.HTM" target="_blank">B.ACT.PACDE Prepare to Acquire and Convert Data - Elaboration</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity consists of producing the standards and completing the high-level (business object level) data mapping needed to confirm that the application software can support the customer organization's business processes and legacy data requirements. Conversion component design and development tasks are executed in a similarly named activity in the Construction phase.</p>
+<h5>Tasks</h5>
+<p>The tasks included in the &quot;Prepare to Acquire and Convert Data - Elaboration &quot; activity  for Application Implementations are:</p>
+<table  border="1" title="Tasks" summary="This table lists the tasks for this activity for Application Implementations. It is organized with ID and Task Name columns.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">ID</th>
+    <th scope="col">Task Name </th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.025</div></th>
+    <td>Define Data Acquisition and Conversion Standards </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.160</div></th>
+    <td>Conduct Business Data Source Gap Analysis </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="CONSTRUCTION"></a><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM" target="_blank">CONSTRUCTION</a></h3>
+<h4><a name="CFR" id="CFR"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTFR_FINALIZE_REQUIREMENTS.HTM" target="_blank">C.ACT.FR Finalize Requirements</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is generally performed only when multiple iterations are planned for the Construction phase. In such cases, this activity is included in the second, and subsequent, iterations. </p>
+<p>This activity is not normally performed in a commercial-off-the-shelf (COTS) application implementation employing a solution-driven approach. This task is therefore not included in the pre-defined Solution-Driven Application Implementation View Work Breakdown Structure. However, if your solution-driven application implementation includes two or more iterations within the Construction phase, you should include this task in your project. </p>
+<h4><a name="CAC" id="CAC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTAC_ANALYZE_CONST.HTM" target="_blank">C.ACT.AC Analyze - Construction </a> </h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<h4><a name="CDC" id="CDC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTDC_DESIGN_CONST.HTM" target="_blank">C.ACT.DC Design - Construction </a> </h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied by custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<h4><a name="CPEC" id="CPEC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPEC_PREPARE_ENV_CONST.HTM" target="_blank">C.ACT.PEC Prepare Environments - Construction </a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity addresses the installation of software environments for various testing, development and documentation purposes. </p>
+<h4><a name="CDCCTSC" id="CDCCTSC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">C.ACT.DCCTSC Develop Custom Component Test Scripts - Construction </a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is performed only for custom-built components that extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<p> In an application implementation project, unit and integration testing is generally performed in the Construction phase. However, they may be performed in the Elaboration phase for complex, higher risk custom extensions that have been identified during the pre-sales cycle and/or during the Inception phase, and where the prototypes of those complex custom extensions that have been developed during the Elaboration phase, will continue to be enhanced during the Construction phase.</p>
+<h4><a name="CICC" id="CICC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTICC_IMPLEMENT_CUSTOM_COMPONENTS.HTM" target="_blank">C.ACT.ICC Implement Custom Components</a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity allows for implementing (that is, building) the custom database extensions, custom components, custom services and installation routines needed to extend the capabilities of the application system.</p>
+<h4><a name="CPCCTC" id="CPCCTC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">C.ACT.PCCTC Perform Custom Component Testing - Construction </a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, this activity is performed only for custom-built components that extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems. </p>
+<p> In an application implementation project, unit and integration testing is generally performed in the Construction phase. However, they may be performed in the Elaboration phase for complex, higher risk custom extensions that have been identified during the pre-sales cycle and/or during the Inception phase, and where the prototypes of those complex custom extensions that have been developed during the Elaboration phase, will continue to be enhanced during the Construction phase.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a name="TRANSITION" id="TRANSITION"></a><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM" target="_blank">TRANSITION</a></h3>
+<p>There are no Application Implementation Supplemental Guidelines for Transition phase activities.&nbsp; These activities should be performed in accordance with the standard guidance.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="PRODUCTION" id="PRODUCTION"></a><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM" target="_blank">PRODUCTION</a></h3>
+<h4><a name="ERPP" id="ERPP"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTRPP_RESOLVE_PROD_PROBLEMS.HTM" target="_blank">E.ACT.RPP Resolve Production Problems </a></h4>
+<p> In a commercial off-the-shelf (COTS) application implementation, the &quot;Resolve Production Problems&quot; activity also involves the execution of the system management procedures, which are performed in perpetuity. </p>
+<h5>Approach</h5>
+<p> The ongoing system maintenance begins during this activity. Maintenance is typically not triggered by technical issues that the support or help desk address; this type of maintenance focuses on necessary and preventative actions. </p>
+<p> Ongoing system maintenance should address the following: </p>
+<ul>
+  <li> timing of maintenance procedures </li>
+  <li> reporting unusual occurrences </li>
+  <li> interpreting system indicators </li>
+  <li> logging completion of maintenance work </li>
+  <li> adjusting the software and hardware for anticipated business changes </li>
+</ul>
+<p> Verify that all normal, ongoing activities keep the system protected, purged, and operating as efficiently as possible. Make sure a log is available for recording all change events. Standard checklists can be incorporated for normal, standing tasks that must be performed (like backups and defragmentation of tablespace). In addition, use the log as a record when new users are added to the system. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

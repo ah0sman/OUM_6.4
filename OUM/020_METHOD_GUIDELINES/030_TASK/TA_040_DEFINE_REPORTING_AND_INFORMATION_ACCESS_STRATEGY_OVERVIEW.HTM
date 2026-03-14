@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TA.040 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>TA.040 - DEFINE REPORTING AND INFORMATION ACCESS STRATEGY</h2>
+<!--BeginDesc--><p>The purpose of this task is to analyze the reporting and information access requirements required for the project and specify at a high level how you will meet these in the new architecture.&nbsp; This is a systems view of how the reporting and information access requirements will be satisfied in the new architecture, and is designed to complement and support the approach taken in Business Requirements (RD).</p>
+<p>A reporting and information access strategy addresses the different types of reporting and information needs for the business.&nbsp; A strategy of this kind must provide for any one or more of the following types of reporting: </p>
+<ul>
+  <li><b>Operational Reporting</b> - This type of reporting solution meets business needs in cases where information is required for the regular operation of the business. These are usually required periodically, say daily or at month-end. The level of information in this type of reporting would be very detailed to address the day-to-day operational information requirements (such as inventory levels) of the business, as opposed to management decision-making. These include statutory reports, reconciliation reports etc.</li>
+  <li><b>Decision Support Reporting</b> - This type of reporting facilitates the management of a business through measurement and prediction of business performance.&nbsp; The data supplied is of a longer time frame than that which is done in operational reporting, almost always involving trends.&nbsp; Ongoing analysis is conducted with use of analytical tools and applications that typically involve key indicators that reflect an organization's success in maximizing revenue and minimizing expenses and risks.&nbsp; Balance scorecards, multi-dimensional OLAP, and data mining applications are but a few examples of this kind of reporting. </li>
+  <li><b>Ad Hoc Reporting</b> - Ad hoc reporting capabilities provide users with the ability to create their own reports, operational or decision support, by building and running queries against pre-built business metadata to support the decision-making process. This kind of reporting capability provides users flexibility to modify pre-defined reports by pivoting, drilling and changing the layout. Users could create their own version of reports and share them with other users in their business group.</li>
+</ul>
+<p>While this task is primarily focused on the future production environment, it needs to address the testing of reporting and information access in interim environments.</p>
+<p>If your project includes complex or significant custom reporting or information access requirements that cannot be satisfied by packaged application product features, you should perform this task. </p><!--EndDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, this task involves a review of the customer's existing Reporting and Information Access Strategy; followed by a review of the reporting and information access options available within the new release.</p><!--EndSUDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTDI_DEFINE_INFRASTRUCTURE.HTM" target="_blank">B.ACT.DI Define Infrastructure</a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Reporting and Information Access Strategy</b></p>
+<p>The work product documents the methods, approaches and guidelines for designing and implementing the projects reporting and information access requirements. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review prior documentation.</td>
+    <td>Introduction</td>
+    <td>The Introduction component should describe the purpose of the document and list the key Reporting and Information Access requirements that the strategy&nbsp; has been designed to fulfill. Gather key reporting and information access requirements collected in the Technical Architecture Requirements and Strategy (TA.020).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Analyze Information and document requirements.</td>
+    <td>Summary of Architecture</td>
+    <td>The Summary of Architecture component provides a summary of the various operational, ad-hoc and decision support systems.&nbsp; A high-level architectural diagram is also provided. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Define the strategy. </td>
+    <td>Reporting and Information Access Strategy&nbsp; </td>
+    <td>The Reporting and Information Access Strategy component defines the approach to Reporting and Information Access, what approaches will be taken and what tools will be used.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Detail a strategy based on Business Process.</td>
+    <td>Business Process Strategy </td>
+    <td>The Business Process Strategy component details processes, tools or approaches that are relevant to specific business processes in a an OLTP system.&nbsp; Describe the business process requirements, include how information will be deployed, what tools will be used, and what the long term strategy or vision is (if it differs from the tactical implementation approach).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Detail a strategy based on Subject Area.</td>
+    <td>Subject Area Strategy</td>
+    <td>The Subject Area Strategy component details processes, tools or approaches that are relevant to specific subject areas in a decision support system.&nbsp; Describe the business process requirements, include how information will be deployed, what tools will be used, and what the long term strategy or vision is (if it differs from the tactical implementation approach).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Detail an alternate view of the aforementioned strategies, by Business Unit.</td>
+    <td>Business Unit Strategy </td>
+    <td>The Business Unit Strategy component details processes, tools or approaches that are relevant to specific business users.&nbsp; Describe the business unit requirements, including how information will be deployed, what tools will be used, and what the long term strategy or vision is (if it differs from the tactical implementation approach).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Define document retention requirements.</td>
+    <td>Report Distribution and Retention Strategy </td>
+    <td>The Report Distribution and Retention Strategy defines the process for distribution and publishing of documents, and the retention requirements and strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Review the final strategy with the individuals who developed the initial requirements.<br></td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Revise the strategy as required, and seek approval</td>
+    <td>Acceptance Certificate&nbsp;<br></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Review the Prerequisite Work Products and Other Background Material </h4>
+<p>Document and define current reporting tools being used by the customer. Work with business units to examine the value of current reports that are being delivered. With asking the customer why they use certain documents or reports,&nbsp; identification of "ease of use" requirements, functionality, use of parameters, and graphs is made easier.&nbsp; Establish metrics to determine criticality of&nbsp; the reporting needs of the organization.&nbsp; </p>
+<h4>Determine the Different Types of Reports Required</h4>
+<p>The ability to easily obtain meaningful information from a system so that a business can make timely tactical and strategic decisions is a critical success factor for a newly implemented system. There are many different styles of reports and techniques for manipulating data for reporting purposes, but they all fall into one of two major categories:</p>
+<ul>
+  <li> operational reporting</li>
+  <li> decision support </li>
+  <li>ad hoc reporting</li>
+</ul>
+<p>The dividing line between the three types of reporting is not hard and fast, but there are general characteristics that divide the three. </p>
+<h5>Operational Reporting </h5>
+<p>Operational Reporting is the routine transaction based reporting that needs to occur in a business to support general business operations. This type of reporting generally involves relatively small volumes of data, presented in a detail format on a regular reporting schedule. </p>
+<h5>Decision Support Reporting </h5>
+<p>Decision Support is a type of reporting that is performed for decision making purposes in a business. The approach and periodicity of this type of reporting are less regular than the operational reporting. Decision support is often interpreted as being synonymous with reporting against a data warehouse, but it is possible to perform decision support type reporting within transaction systems. Data warehousing is the enabling technology for this type of operational reporting, not the reporting category. It is usually more strategic in nature and can include:</p>
+<ul>
+  <li>structured reporting across large volumes of historical data </li>
+  <li> analytical (OLAP) style reporting to analyze and dissect business data to understand trends and relationships </li>
+  <li> data mining to discover hidden trends in large volumes of historical data </li>
+</ul>
+<p>Decision Support includes the following types of reporting systems: </p>
+<ul>
+  <li>Classic Decision Support Systems (DSS) </li>
+  <li> Executive Information Systems (EIS) </li>
+  <li> Analytical Reporting Systems Including Online Analytical Processing (OLAP)</li>
+</ul>
+<h5>Ad Hoc Reporting</h5>
+<p>Ad hoc reporting may be executed to augment reporting in any one of the two aforementioned areas: operational or decision support. The key distinction here is the empowerment of end user with tools, ideally metadata assisted, and access to many of the same data stores that support the other types of reporting.&nbsp; The end user in this instance possesses a knowledge of the data, its architecture, and the tools with which access is made possible.&nbsp; The reporting applications crafted for operational and decision support reporting often provide for a change in the data retrieved and to a limited degree the format of a report (i.e., rotation and drill); however, the tables and columns in the underlying database are fixed.&nbsp; However, with using ad hoc tools the end user can alter the combination of table and column, and make wholesale changes in report format and functionality to augment already existing reports in the other two reporting systems. </p>
+<h4>Determine Task Complexity and Project Scope </h4>
+<p>The potential complexity of this task and the reporting strategy you need to put in place depends on the scope and constraints of the project on which you are working. </p>
+<h5>Single Installation, Fast Track Implementations </h5>
+<p>If you are working on a fast track implementation with a single installation of a packaged application and intend to perform all reporting out of the operational (transaction) environment, you may not need to perform the further requirements gathering and analysis in this task. Some custom reports may be required to meet some reporting requirements that are not provided with the base application, but the data remains a single, consolidated operational database. You should <i>always </i>consider the effect on performance of your reporting solution, but you may not need any special databases to support your reporting needs. </p>
+<p><b>Attention:</b> In the case of Oracle Applications, users typically execute all their batch reports using the Oracle Applications Concurrent Manager and their online inquiries through forms or some other reporting tool. </p>
+<h5>Complex Enterprise Reporting Needs </h5>
+<p>Larger businesses typically have more challenging and complex reporting needs, spanning operational, strategic, and analytical reporting. For example, global reporting or online query of operational data for: </p>
+<ul>
+  <li>sites, divisions, and business lines within a single application installation and database </li>
+  <li> sites, divisions, and business lines across multiple distributed applications and databases </li>
+  <li> different statutory and legal reporting requirements to satisfy local legislation and country laws </li>
+  <li>integrated reporting across heterogeneous applications and databases, relational and non-relational, legacy, and third party vendor packages</li>
+</ul>
+<p>Senior management may require long-term trend analysis of data for strategic decision support of: </p>
+<ul>
+  <li>forecasting </li>
+  <li>financial modeling and budgeting </li>
+  <li> supply and distribution planning </li>
+  <li>sales and marketing </li>
+  <li>data mining </li>
+</ul>
+<p><b>Data Warehouses:</b> A simple definition of a data warehouse is a subject oriented corporate store of information source from one or more systems, applications, or databases. A data warehouse can be an enabling technology for both general categories of reporting. Hence you could envision an operational data warehouse, containing consolidated operational data and having a technical design, that supports the routine operational reporting needs of the business. More often than not, a data warehouse contains a broad range and large volume of historical corporate data, and is the repository for decision support and analytical applications and systems. Data warehouse-based systems are a good example of an architecture subsystem that would be singled out as a standalone component of the overall information systems architecture.</p>
+<p>You need to categorize the reporting requirements of different groups and business units within the enterprise, before you attempt to propose solutions. </p>
+<h4>Define the Components of the Reporting System</h4>
+<p>Reporting systems have four components: </p>
+<ul>
+  <li>a database of data from which to report &#8212; usually a single physical database, but may be a logical database consisting of multiple physical databases</li>
+  <li> a way to load and transform data into the reporting database</li>
+  <li> a reporting engine that accepts input parameters or business rules to restrict and manipulate the data set that will appear in the report </li>
+  <li> a way to present the data in report format  </li>
+</ul>
+<p>In the simplest operational transaction systems that permit reporting, the data is generated directly in the transaction database, and a reporting tool performs the query and manipulation, as well as the presentation of the data in the report. However, you should consider the different components depending on the exact function and source of the reporting system. A separate reporting system is often classified as an architecture subsystem.</p>
+<h4>Consider Performance Implications </h4>
+<p>The effect of a reporting load on the performance of any transaction system is as important as the effect of the transaction, and it should not be (but often is) overlooked. In an online transaction processing (OLTP) system environments in which significant reporting is permitted in an controlled fashion, the load can periodically be extremely heavy. At critical times in the business cycle such as financial period end, the operational reporting load itself can consume many of the system resources of a database server and can decimate the transaction performance. Conversely, if the reporting needs to be completed in a certain time window, the performance of the system for the reporting is critical also. For more information about managing the performance quality of reporting systems, see Performance Management (PT).</p>
+<h4>Separate Reporting Systems as a System Capacity Management Technique </h4>
+<p>Traditionally, the approach used to alleviate some or much of the operational reporting load on an OLTP system was to offload the reporting functions onto a separate reporting database on a separate server using a point-in-time copy of the transaction system for the purposes of reporting only. Reporting databases can be a valuable technique for offloading processing from the transaction system. </p>
+<p>Technology advances have introduced several options that should be considered prior to creating a duplicate database to support reporting requirements.&nbsp; Most application logic in current packaged applications is resident in the application tier.&nbsp; In such applications, separate application servers can be dedicated to Concurrent Manager processing, offloading some of the processing workload from the database server(s).&nbsp; This is an useful technique, particularly in the case of processes which primarily compute intensive. </p>
+<p>The introduction of Grid technology such as Real Application Clusters (RAC) allows the dedication of one or more nodes to support reporting, without requiring the creation and maintenance of an entirely separate reporting database. </p>
+<p>If reporting database will be created, consider the timeliness of the data. In order to be useful, there must be reporting groups within the enterprise that can perform their reporting on aged data (for example, data that does not contain all transactions up to the immediate point-in-time). Increasing the refresh frequency for data in the reporting database can circumvent some of these problems, but it is usually not feasible or cost effective to keep the data in a reporting database synchronized with the OLTP system in real-time.</p>
+<h4>Design Operational Reporting and Information Access</h4>
+<p>The complexity of the operational reporting strategy depends on the conceptual architecture and business needs for reporting operational data across multiple application installations or different OLTP application products. In a simple, single installation of a packaged application you may choose to perform all of your operational reporting using standard product capabilities. With slightly more complexity, you could add a special ad hoc query environment within the same transaction database, perhaps using a dedicated application tier. </p>
+<h5>Cross-Application or Cross-Installation Reporting </h5>
+<p>Generally the organizations within your business should be able to satisfy their reporting obligations using the operational system in which they record their particular transactions, but some organizations may need access to data in multiple, physically separate operational systems. </p>
+<p>If you need to provide consolidated operational reporting across multiple installations of the same applications suite or across heterogeneous application products, you need to consider some special mechanism to enable such organizations to consolidate data from multiple operational environments. The data can be consolidated in one of the applications or installations through the use of integration. You then perform consolidated reporting out of the consolidating application or instance. </p>
+<p>Another approach is to design an operational data store, which is an independent standalone database, but which may reside in one of the database instances corresponding to the separate application installations. The data store can be as comprehensive or complex as you wish. </p>
+<h5>Operational Reporting Database </h5>
+<p>If you have special security concerns for reporting users, or wish to offload report processing load to another server, you can use an operational reporting database. This type of reporting database is different from a data warehouse, because it is a direct copy of the transaction database, without reorganization of the data. When it is copied onto a separate database server, it also offloads processing capacity, but it does introduce&nbsp; additional architectural complexity. </p>
+<h4>Design Ad-Hoc Query Strategy for Operational Reporting System</h4>
+<p>Providing users with a means to easily locate, retrieve, format, and display online the information they need can empower users and alleviate some development overhead needed to migrate existing reports from legacy systems to a newly implemented system. However, creating an ad hoc query environment in which users can be productive requires investment of information systems resources. Do not assume that because you make a report or inquiry development tool accessible to the users that this automatically constitutes an ad hoc query capability for users. The main problem is that a relational data model optimized for OLTP performance is not easily understood or decipherable by users. In order to facilitate the use of an ad hoc query tool you may have to create an environment that translates the OLTP data model into the form of business objects that a user understands. </p>
+<h5>Key-User Layer (Meta Layer) </h5>
+<p>This technique adds a layer on top of the relational OLTP data model to present the data in the operational transaction system in the form of easily understood and familiar business objects, such as sales orders or purchase orders. You can build this layer on top of the OLTP database directly and allow ad hoc queries in the transaction environment, or you can add the layer to a direct copy of the transaction database, that is mounted as a reporting database. </p>
+<h5>Operational Data Warehouse </h5>
+<p>Another type of system that you can use for ad hoc queries on operational data is an operational data warehouse. This type of data warehouse is different from the type that supports strategic reporting or analysis because it supports operational reporting needs, it may only contain the most recent operational data, and it may not have the summarized views of data that provide a long-term strategic business view. The data in the warehouse is incremented on a regular basis and may be completely refreshed after a certain time period. The warehouse will usually have a report- or query-friendly data model, so programs need to be developed both to extract operational data from OLTP systems and to load data into the data warehouse. An example of where this might be useful is in the consolidation of order entry and point-of-sale information, where you might totally refresh the data every quarter or annually. </p>
+<p><b>Attention:</b> A data warehouse where operational reporting is performed and data is refreshed from time-to-time is sometimes referred to as an <i>operational data store</i> to distinguish it from a &#8220;true&#8221; data warehouse, where data agglomeration is cumulative for historical analysis.</p>
+<h4> Design Decision Support Strategy </h4>
+<p>Decision support systems are specialized applications that enable users to summarize and organize transaction data into formats that are oriented towards reporting and analysis. The data model for a decision support database may be very different than the data model for the transaction databases that provide the source data. Often the database for a decision support system is a data warehouse that stores transaction data from multiple, different transaction systems over many financial periods. Raw operational data may have been summarized or aggregated to some degree within the warehouse. A data warehouse or decision support system is a common standalone architecture subsystem that might need custom development or custom integration work. </p>
+<p>One benefit of a custom data warehouse system that is often overlooked is the fact that the data model is owned by the business. By performing as much of the reporting from the data warehouse as possible, the business insulates itself from the effects of data model changes in new releases of packaged applications. </p>
+<h5>Online Analytical Processing (OLAP) </h5>
+<p>This technique is the manipulation and analysis of data in multiple dimensions to support business decisions. The manipulations performed include <i>slicing and dicing</i> data across different dimensions, pivoting, selective data summary, consolidation, and drill-down. </p>
+<p>OLAP systems are usually specialized in their internal architecture and are subsystems within their own right. OLAP system functions may be supported directly from a transaction database; they may or may not have built-in persistent data caches (effectively a local database). A very powerful solution is to combine a backbend data warehouse that contains structures appropriate for OLAP with an intuitive, user-friendly OLAP tool to perform the data manipulation. If an OLAP system is included, you need to define exactly how it should interact with other reporting databases or warehouses and design the architecture accordingly. Of particular importance are the requirements surrounding the aging and refresh of the data. These requirements are driven by how close to a real-time view of the business analysts need. </p>
+<h5>Data Marts </h5>
+<p>Data Marts are data warehouses that are smaller in scale than an enterprise data warehouse and are oriented more towards department-level decision support. They may be organizational or functional slices of the complete data set in the enterprise data warehouse. Often they are installed on cheaper workgroup or functional departmental server.</p>
+<h5>Data Warehouses </h5>
+<p> It is relatively straightforward to specify the systems with which a data warehouse will interact and how the data warehouse will be used in the overall reporting strategy, but integrating a package corporate data warehouse solution or custom developing a corporate data warehouse is a major undertaking. An analysis of the requirements and the very detailed technical and database design is beyond the scope of this process. An architecture subproject should be initiated to perform the design of this part of the architecture solution. If it is apparent that a data warehouse system is required, generate the Architecture Subsystem Proposal.</p>
+<h4> Design Report Storage and Report Distribution Strategy </h4>
+<p>Report storage and report distribution are related issues that affect how reports should be handled and are concepts that are often discussed in the context of workflow. If many users need to view a particular report, it is a waste of resources to have individual users creating their own copy of a report by executing the report program multiple times. By providing systems to support sensible business practices in this area, the information systems organization can reduce waste of paper and precious platform system resources. Include any special systems needed to support this in the architecture. </p>
+<p>Types of systems you might consider include: </p>
+<ul>
+  <li>storage of reports or report images in a database or in a computer output to laser disk (COLD) system </li>
+  <li> automated or manual routing of electronic reports to users after execution, by email or fax </li>
+  <li>intranet web-based report publishing, where reports are converted into HTML format, and can be browsed by users across the internal corporate network</li>
+</ul>
+<h4>Review Reporting Tools </h4>
+<p>Oracle has products that can help you build the end-user layer (EUL) business views and ad hoc query environment. . You can use these tools to build a view-based EUL on top of the transactional database schema which will help hide the underlying complexity of the database from ad-hoc report developers.&nbsp; You will also write reports or allow browsing tools to access the Oracle Applications database through these layers.&nbsp;<b>&nbsp;</b> Many third-party vendors also have reporting and query products that you can use for this task.&nbsp; Define with the customer what&nbsp; data access tools will be used to solve each of the customers reporting requirements.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>SOA Governance Implementation</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Governance Implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOAGI/SOAGI_TASK_GUIDELINES.HTM#TA040" target="_blank">task-specific supplemental guidance</a>. To access all SOA Governance Implementation supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOAGI/SOAGI_SUPP_GUIDE.HTM" target="_blank">OUM SOA Governance Implementation Supplemental Guide</a>. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr width="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="18%" scope="col"><div align="left">Role</div></th>
+    <th width="76%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Analyst</div></th>
+    <td>Analyze the business requirements. Identify and document the Reporting and Information Access Strategy. </td>
+    <td><div align="center">80</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Analyst</div></th>
+    <td>Assist in the process of requirement analysis and review them.</td>
+    <td><div align="center">20</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">IS Support Staff</div></th>
+    <td>Provide information on existing systems and current enterprise standards.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p>The following additional roles may participate in this task:</p>
+<ul>
+  <li>Project Manager (PM) - Assist in the process of requirement identification, review and approve strategy.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a id="Prerequisites" name="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="38%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="62%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">MoSCoW List (RD.045.2) </div></th>
+    <td>The MoSCoW List provides information about the reporting requirements of the system. It helps specify the reports needed by the various business organizations and sites. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Technical Architecture Requirements and Strategy (TA.020) </div></th>
+    <td>The Technical Architecture Requirements and Strategy provides information on the scope, requirements, and strategy for the architecture work</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Initial Architecture and Application Mapping (TA.070) </div></th>
+    <td>The Initial Architecture and Application Mapping document provides the initial framework for the applications architecture.&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a id="Templates" name="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="38%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="62%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/TA/TA-040_REPORTING_AND_INFORMATION_ACCESS_STRATEGY.DOCX" target="_blank">TA-040_REPORTING_AND_INFORMATION_ACCESS_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a id="WPDetails" name="WPDetails"></a>WORK PRODUCT DETAILS</h3>
+<p>Use the Reporting and Information Access Strategy in subsequent tasks to define the reporting systems that support the reporting needs of system users within your new architecture. </p>
+<h4>Audience, Distribution and Usage </h4>
+<p>The Reporting and Information Access Strategy is used in the following ways: </p>
+<ul>
+  <li>by the project leader to confirm the appropriateness of the reporting and information access solution and gain the approval of the business system owners </li>
+  <li>by the project team to act as the basis for the Reporting and Information Access design </li>
+</ul>
+<p>Distribute the Reporting and Information Access Strategy document as follows: </p>
+<ul>
+  <li>to the technical architects to confirm technical appropriateness and feasibility </li>
+  <li>to the business system owners to gain approval </li>
+  <li>to the customers business personnel to confirm business appropriateness </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li>Have all known reporting requirements been properly addressed?</li>
+  <li>Have critical reports or those with Service-Level Agreement requirements been identified?</li>
+  <li>Within each reporting and access requirement, has the significant information been identified? </li>
+  <li>Is the strategy technically feasible? </li>
+  <li>Does each design strategy provide the reports in a timely manner for the business?</li>
+  <li>Have Service-Level Agreements or other metrics been developed to ensure the business is receiving information needs to meet business objectives?</li>
+</ul>
+<h2>&nbsp;</h2>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

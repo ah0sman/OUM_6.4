@@ -1,0 +1,1074 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>TOGAF View</TITLE>
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('OumTextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+<NOSCRIPT>
+  <center>
+  <table cellpadding="0" cellspacing="0" border="0" width="550">
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a newer browser, such as Internet Explorer 6 or Firefox</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site.</td></tr>
+
+
+  </table>
+</center>
+</NOSCRIPT>
+</HEAD>
+<BODY onload="onLoad()">
+<A name="TOP"></A>
+<TABLE width="100%" border="1" role="presentation">
+  <TR border="0">
+    <TD width="12%" height="92" valign="top"><a href="../OUM/OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>    <a href="../OUM/CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0"></a></TD>
+    <TD width="88%" valign="top"><p>&nbsp;</p>
+      <table width="100%" role="presentation">
+        <tr>
+          <td width="15%" nowrap><div align="center">
+            <h1>OUM</h1>
+          </div></td>
+          <td colspan="3" scope="col"><h1 align="left">The Open Group Architecture Framework (TOGAF) View</h1></td>
+        </tr>
+        <tr>
+          <td width="15%" nowrap><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+          <td><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+          <td><div align="center"><b>Method Navigation</b><br>
+              <strong>
+                  <select
+							name="menu1" class="MethodNavigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </select>
+              </strong>          </div></td>
+          <td align="center"><b>Current Page Navigation</b><br>
+              <select
+							name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation"
+							onChange="location.hash = this.options[this.selectedIndex].value; showOneTaskFromList(this);">
+                <option value="TOP" selected></option>
+                <option value="DUGTextNav">View Description and Key Components</option>
+                <option value="PicNav">TOGAF Diagram Navigation</option>
+                <option value="OumTextNav">TOGAF - Guidelines</option>
+                <option value="OUMTWP">TOGAF - Tasks and Work Products</option>
+                <option value="RD">[Prelim] Preliminary</option>
+                <option value="RA">[A] Architecture Vision</option>
+                <option value="AN">[B] Business Architecture</option>
+                <option value="DS">[C] Information Systems Architectures </option>
+                <option value="IM">[D] Technology Architecture</option>
+                <option value="TE">[E] Opportunities and Solutions </option>
+                <option value="PT">[F] Migration Planning</option>
+                <option value="TA">[G] Implementation Governance</option>
+                <option value="CV">[H] Architecture Change Management</option>
+              </select></td>
+        </tr>
+    </table></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" title="View Description and Key Components" summary="This section contains a brief view description followed by a Key Component section with helpful links." role="presentation">
+  <TR>
+    <TD width="100%">
+	  <h2><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DugTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg')"
+	onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DugTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg'); new Effect.Highlight($('DugTextNavText'), {duration: 4});" /><a name="DUG_Text_Nav" id="DUG_Text_Nav"></a><A id="DugTextNavText"> VIEW DESCRIPTION AND KEY COMPONENTS </A></h2>
+	  <DIV id="DugTextNav">
+            <TABLE width="100%" border="1" class="oum">
+              <TBODY>
+                <TR>
+                  <td height="25" scope="table width" colspan="3"><h3 align="left">Description</h3>
+                  </td>
+                </TR>
+                <TR>
+                  <TD height="25" colspan="3"><p>The TOGAF view provides support for The Open Group Architecture Framework (TOGAF). TOGAF&reg; is an industry standard architecture framework that can be used freely by any organization wishing to develop an Information Systems Architecture for use within that organization.</p></TD>
+                </TR>
+                <TR>
+                  <td height="25" scope= "table width" colspan="3"><h3>Key Components</h3></td>
+                </TR>
+                <TR>
+                  <TD width="33%" vAlign="top"><h4>TOGAF:</h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="030_TECH_GUIDELINES/SUPP_GUIDES/TOGAF/TOGAF_OVERVIEW.HTM" target="_blank">Overview</a></p></TD>
+                  <TD width="34%" vAlign="top"><h4>Other Supplemental Guidance:</h4>
+                    <p> <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="http://pubs.opengroup.org/architecture/togaf9-doc/arch/" target="_blank">The Open Group Architecture Framework</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">SOA Application Integration Architecture Supplemental Guide</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">SOA Project Delivery Supplemental Guide</a><br>
+                    <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM" target="_blank">more Supplemental Guidance </a></p></TD>
+                  <TD width="33%" vAlign="top"><h4>Method Resources:</h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/OUM_ENVISION_WBS_ACT.HTML" target="_blank">Envision Activities and Task WBS View<br>
+                      </a><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <A
+				href="050_REFERENCE_FILES/OUM_ENVISION_WORKPLAN.MPP" target="_blank">Envision Project Workplan (MPP)</A><br>
+                      <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/050_REFERENCE_FILES/ENV_TOUCHPOINTS.HTM" target="_blank">Envision Touch Points </a><br>
+                      <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">Mapping: Envision</a><br>
+                      <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/050_REFERENCE_FILES/OUM_MAPPINGS.HTM" target="_blank">more Mapping Documents</a><b></b></p></TD>
+                </TR>
+              </TBODY>
+          </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" role="presentation" class="oum" title="Diagram Navigation" summary="This section contains a navigation diagram with links. ">
+<TR>
+  <TD><h2><a name="PicNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PicNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg')"
+	onload="Element.hide(this)" />
+        <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PicNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg'); new Effect.Highlight($('PicNavText'), {duration: 4});" />
+        <A id="PicNavText">
+        DIAGRAM NAVIGATION</A>
+        </h2>
+    <p>        This section contains a navigation diagram with links. Place your cursor over the area of interest in the diagram and click.</p>
+    <P id="PicNav" align="center"><A
+	name="Pic_Nav"></A> <img src="010_COMMON_FILES/TOGAF%20ADM.gif" alt="TOGAF Navigation Diagram" width="358" height="469" border="0" usemap="#Map" title="TOGAF Navigation Diagram"> </P>
+    <map name="Map">
+      <area shape="rect" coords="108,-1,247,96" href="javascript:goAnchor('RD'); javascript:goAnchor('RDA')" alt="Go to Framework and Principles Tasks and Work Products" onClick="showTask('RD_TASKS', false, 'RD_OPEN', 'RD_CLOSED');" Title="Go to Framework and Principles Tasks and Work Products">
+      <area shape="rect" coords="128,106,224,216" href="javascript:goAnchor('RA'); javascript:goAnchor('RAA')" alt="Go to Architecture Vision Tasks and Work Products" onClick="showTask('RA_TASKS', false, 'RA_OPEN', 'RA_CLOSED');" Title="Go to Architecture Vision Tasks and Work Products">
+      <area shape="rect" coords="224,143,341,240" href="javascript:goAnchor('AN'); javascript:goAnchor('ANB')" alt="Go to Business Architecture Tasks and Work Products" onClick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED');" Title="Go to Business Architecture Tasks and Work Products">
+      <area shape="rect" coords="246,245,358,338" href="javascript:goAnchor('DS'); javascript:goAnchor('DSB')" alt="Go to Information Systems Architectures Tasks and Work Products" onClick="showTask('DS_TASKS', false, 'DS_OPEN', 'DS_CLOSED');" Title="Go to Information Systems Architectures Tasks and Work Products">
+      <area shape="rect" coords="230,338,325,433" href="javascript:goAnchor('IM'); javascript:goAnchor('IMA')" alt="Go to Technology Architecture Tasks and Work Products" onClick="showTask('IM_TASKS', false, 'IM_OPEN', 'IM_CLOSED');" Title="Go to Technology Architecture Tasks and Work Products">
+      <area shape="rect" coords="132,374,221,470" href="javascript:goAnchor('TE'); javascript:goAnchor('TEA')" alt="Go to Opportunities and Solutions Tasks and Work Products" onClick="showTask('TE_TASKS', false, 'TE_OPEN', 'TE_CLOSED');" Title="Go to Opportunities and Solutions Tasks and Work Products">
+      <area shape="rect" coords="18,341,133,434" href="javascript:goAnchor('PT'); javascript:goAnchor('PTA')" alt="Go to Migration Planning Tasks and Work Products" onClick="showTask('PT_TASKS', false, 'PT_OPEN', 'PT_CLOSED');" Title="Go to Migration Planning Tasks and Work Products">
+      <area shape="rect" coords="1,244,101,337" href="javascript:goAnchor('TA'); javascript:goAnchor('TAA')" alt="Go to Implementation Governance Tasks and Work Products" onClick="showTask('TA_TASKS', false, 'TA_OPEN', 'TA_CLOSED');" Title="Go to Implementation Governance Tasks and Work Products">
+      <area shape="rect" coords="12,139,126,242" href="javascript:goAnchor('CV'); javascript:goAnchor('CVA')" alt="Go to Architecture Change Management Tasks and Work Products" onClick="showTask('CV_TASKS', false, 'CV_OPEN', 'CV_CLOSED');" Title="Go to Architecture Change Management Tasks and Work Products">
+    </map>
+</TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="TOGAF - Guidelines">
+  <TR>
+    <TD><h2><a name="OumTextNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="OumTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('OumTextNav', 'OumTextNavOnImg', 'OumTextNavOffImg')" onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="OumTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('OumTextNav', 'OumTextNavOnImg', 'OumTextNavOffImg'); new Effect.Highlight($('OumTextNavText'), {duration: 4});" /> TOGAF - GUIDELINES
+      </h2>
+      <DIV id="OumTextNav">
+        <p> <A
+	name="OUM_Text_Nav" id="OUM_Text_Nav"></A>This section contains links to Phase Overviews, Process Overviews and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Implement Focus Area - Tasks and Work Products tables further down this page.
+        </p>
+<TABLE width="100%" border="1" class="oum" title="TOGAF - Guidelines" summary="This table contains links to Phase Overviews, Process Overviews and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Tasks and Work Products tables further down this page.">
+                <TBODY>
+                  <TR>
+                    <th vAlign="top" scope="col">Phase Overviews</th>
+                    <th vAlign="top" scope="col">Process Overviews</th>
+                    <th vAlign="top" scope="col">Tasks and Work Products</th>
+                    <th vAlign="top" scope="col">References</th>
+                  </TR>
+                  <TR>
+                    <TD vAlign="top" width="20%"><P>                              <A
+				href="020_METHOD_GUIDELINES/010_PHASE/ENV_INIT_INITITATE_PHASE_OVERVIEW.HTM"
+				target="_blank">[INIT] Initiate </A><BR>
+                        <A
+				href="020_METHOD_GUIDELINES/010_PHASE/ENV_ME_MAIN_EVOLVE_PHASE_OVERVIEW.HTM"
+				target="_blank"> [ME] Maintain and Evolve </A><br>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[A] Inception</A><BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM"
+        target="_blank"> [B] Elaboration</A><BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[C] Construction</A><br>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM"
+        target="_blank">[D] Transition</A><BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[E] Production</A> <BR>
+                    </P></TD>
+                    <TD vAlign="top" width="25%"><P> 
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_ER_ENVISION_ROADMAP_PROCESS_OVERVIEW.HTM" target="_blank">[ER] Envision Roadmap</a> <BR>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_BA_ENTERPRISE_BUSINESS_ANALYSIS_PROCESS_OVERVIEW.HTM" target="_blank">[BA] Enterprise Business Analysis</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_EA_ENTERPRISE_ARCHITECTURE_PROCESS_OVERVIEW.HTM" target="_blank">[EA] Enterprise Architecture</a> <BR>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_IP_IT_PORTFOLIO_MANAGEMENT_PROCESS_OVERVIEW.HTM" target="_blank">[IP] IT Portfolio Management</a><BR>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_GV_GOVERNANCE_PROCESS_OVERVIEW.HTM" target="_blank">[GV] Governance</a> <br>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM"
+        target="_blank">[RD] Business Requirements<BR>
+                        </A><A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM"
+        target="_blank">[RA] Requirements Analysis</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM"
+        target="_blank"> [AN] Analysis</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM"
+        target="_blank">[DS] Design</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM"
+        target="_blank"> [IM] Implementation</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM"
+        target="_blank">[TE] Testing</A><BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM"
+        target="_blank">[TS] Transition</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM"
+        target="_blank">[PS] Operations and Support</A> </P>
+                    </TD>
+                    <TD vAlign="top" width="25%"><P>                           <A
+				onclick="showTask('RD_TASKS', false, 'RD_OPEN', 'RD_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#RD">[Prelim] Preliminary </A><BR>
+                           <A
+				onclick="showTask('RA_TASKS', false, 'RA_OPEN', 'RA_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#RA">[A] Architecture Vision </A><BR>
+                           <A
+				onclick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#AN">[B] Business Architecture</A><BR>
+                           <A
+				onclick="showTask('DS_TASKS', false, 'DS_OPEN', 'DS_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#DS">[C] Information Systems Architectures</A><BR>
+                           <A
+				onclick="showTask('IM_TASKS', false, 'IM_OPEN', 'IM_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#IM">[D] Technology Architecture </A><BR>
+                           <A
+				onclick="showTask('TE_TASKS', false, 'TE_OPEN', 'TE_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#TE">[E] Opportunities and Solutions </A><BR>
+                           <A
+				onclick="showTask('PT_TASKS', false, 'PT_OPEN', 'PT_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#PT">[F] Migration Planning </A><BR>
+                           <A
+				onclick="showTask('TA_TASKS', false, 'TA_OPEN', 'TA_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#TA">[G] Implementation Governance </A><BR>
+                           <A
+				onclick="showTask('CV_TASKS', false, 'CV_OPEN', 'CV_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#CV">[H] Architecture Change Management</A></P></TD>
+                    <TD vAlign="top" width="30%"><P><B>                    </B><B> </B><A href="020_METHOD_GUIDELINES/ENV_FA_OVERVIEW.HTM"
+				target="_blank">Envision Focus Area Overview</A>
+							</P>
+                      <P><a href="../OUM/050_REFERENCE_FILES/ENV_TOUCHPOINTS.HTM" target="_blank">Envision Touch Points</a><BR>
+                        <BR>
+                        	<A href="../010_SHARED_FILES/OUM_ROLES.HTM" target="_blank">Project Roles</A><BR>
+                            <A href="../010_SHARED_FILES/OUM_TERMS.HTM" target="_blank">Definition/Terms</A><br>
+                            <BR>
+                     		<b>For Project Managers and Planners:</b><br>
+                            <A href="050_REFERENCE_FILES/OUM_ENVISION_WBS.HTML"
+				target="_blank">Envision Work Breakdown Structure</A><br>
+                            <A
+				href="050_REFERENCE_FILES/OUM_ENVISION_WORKPLAN.MPP" target="_blank">Envision Project Workplan (MPP)</A></P></TD>
+                  </TR>
+                </TBODY>
+        </TABLE>
+    </DIV></TD></TR>
+</TABLE>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="OUMTWP"></a>TOGAF - TASKS AND WORK PRODUCTS</h2>
+<p>  <A href="#" title="Expand all Tasks and Work Products tables" onclick="expandAllTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all Tasks and Work Products tables" onclick="collapseAllTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A></p>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Framework and Principles Tasks and Work Products" summary="This window contains a table with links to the Framework and Principles Task Overviews and work products.">
+<TR>
+<TD><h3><A id="RD" name="RD"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="RD_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('RD_TASKS', 'RD_OPEN', 'RD_CLOSED')"
+     onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="RD_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('RD_TASKS', 'RD_OPEN', 'RD_CLOSED'); new Effect.Highlight($('RD'), {duration: 4});" /> [Prelim] Preliminary </A></h3>
+          <DIV id="RD_TASKS">
+  <TABLE width="100%" class="oum" title="Framework and Principles Tasks and Work Products" summary="This table provides links to all the Framework and Principles Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></TD>
+			<TD width="420">Business Strategy</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-010_BUSINESS_STRATEGY.DOCX" target="_blank" class="style1">Business Strategy</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015 Conduct Enterprise Maturity Assessment</a></TD>
+			<TD width="420">Maturity Analysis and Recommendations Report</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-015_MATURITY_ANALYSIS.PPTX" target="_blank">Maturity Analysis Presentation </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+			<TD width="420">Architecture Principles, Guidelines and Standards</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+  		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Architecture Vision Tasks and Work Products" summary="This window contains a table with links to the Architecture Vision Task Overviews and work products.">
+<TR>
+<TD><h3><A id="RA" name="RA"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="RA_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('RA_TASKS', 'RA_OPEN', 'RA_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="RA_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('RA_TASKS', 'RA_OPEN', 'RA_CLOSED'); new Effect.Highlight($('RA'), {duration: 4});" /> [A] Architecture Vision</A></h3>
+  <DIV id="RA_TASKS">
+<TABLE width="100%" class="oum" title="Architecture Vision Tasks and Work Products" summary="This table provides links to all the Architecture Vision Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PS</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">BT.030 Identify Project Stakeholders </a></TD>
+			<TD width="420">Identified Project Stakeholders</TD>
+			<TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT030_IDENTIFIED_PROJECT_STAKEHOLDERS.XLSX" target="_blank">Identified Project Stakeholders</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PS</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></TD>
+			<TD width="420">Validated Scope</TD>
+			<TD width="420">Refer to the <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx" target="_blank">Project Management Plan</a></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="90"><DIV align="center">INIT</DIV></TD>
+          <TD><a href="020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a></TD>
+          <TD>Enterprise Research Findings </TD>
+          <TD><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-040_ENTERPRISE_RESEARCH_FINDINGS.DOCX" target="_blank">Enterprise Research Findings</a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></TD>
+			<TD width="420">Business Strategy</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-010_BUSINESS_STRATEGY.DOCX" target="_blank" class="style1">Business Strategy</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></TD>
+			<TD width="420">Metrics Collection and Reporting Strategy </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+         	<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_020_DOCUMENT_ENTERPRISE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">BA.020 Document Enterprise Organization Structures</a></TD>
+            <TD width="420">Enterprise Organization Structures</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-020_ENTERPRISE_ORGANIZATION_STRUCTURES.DOCX" target="_blank"> Enterprise Organization Structures</a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">EA.002 Review External Reference Architectures </a></TD>
+            <TD width="420">External Reference Architectures Review</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy </a></TD>
+            <TD width="420">Envision Engagement Strategy </TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-020_ENVISION_ENGAGEMENT_STRATEGY.DOCX" target="_blank">Envision Engagement Strategy </a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+         	<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></TD>
+            <TD width="420">Envision Engagement Plan </TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-030_ENVISION_ENGAGEMENT_PLAN.DOCX" target="_blank">Envision Engagement Plan </a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan </a></TD>
+            <TD width="420">Agreed on Envision Engagement Plan </TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+            <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+         	<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_080_OBTAIN_EXISTING_REFERENCE_MATERIAL_OVERVIEW.HTM" target="_blank">ER.080 Obtain Existing Reference Material </a></TD>
+            <TD width="420">Existing Reference Material </TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a></TD>
+            <TD width="420">Current Enterprise Architecture</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-030_CURRENT_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Current Enterprise Architecture</a></TD>
+		  </TR>
+		<TR valign="top">
+          <TD width="90"><DIV align="center">INIT</DIV></TD>
+          <TD><a href="020_METHOD_GUIDELINES/030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">ER.120 Identify and Mitigate Future State Risks</a></TD>
+          <TD>Future State Risks</TD>
+          <TD><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-120_FUTURE_STATE_RISKS.DOCX" target="_blank">Future State Risks</a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_120_DEVELOP_INFORMATION_ARCH_OVERVIEW.HTM" target="_blank">EA.120 Develop Information Architecture </a></TD>
+            <TD width="420">Information Architecture</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-120_INFORMATION_ARCHITECTURE_DEFINITIONS.XLSX" target="_blank">Information Architecture Definitions </a></TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_130_DEVELOP_TECHNOLOGY_ARCH_OVERVIEW.HTM" target="_blank">EA.130 Develop Technology Architecture </a></TD>
+            <TD width="420">Technology Architecture</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_140_DEVELOP_APPLICATIONS_ARCH_OVERVIEW.HTM" target="_blank">EA.140 Develop Applications Architecture </a></TD>
+			<TD width="420">Applications Architecture</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Business Architecture Tasks and Work Products" summary="This window contains a table with links to the Business Architecture Task Overviews and work products.">
+<TR>
+<TD><h3><A id="AN" name="AN"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="AN_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('AN_TASKS', 'AN_OPEN', 'AN_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="AN_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('AN_TASKS', 'AN_OPEN', 'AN_CLOSED'); new Effect.Highlight($('AN'), {duration: 4});" /> [B] Business Architecture </A></h3>
+  <DIV id="AN_TASKS">
+<TABLE width="100%" class="oum" title="Business Architecture Tasks and Work Products" summary="This table provides links to all the Business Architecture Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">EA.002 Review External Reference Architectures </a></TD>
+          <TD width="420">Customer Industry Reference Architecture</TD>
+          <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+          <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+          <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+		  </TR>
+		<tr valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <td><a href="020_METHOD_GUIDELINES/030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.070 Define Modeling Strategy for the Enterprise</a></td>
+          <td>Enterprise Modeling Strategy </td>
+          <td>Refer to the Task Overview for guidance.</td>
+		  </tr>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model </a></TD>
+      <TD width="420">Enterprise Function or Process Model </TD>
+      <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-040_ENTERPRISE_PROCESS_MODEL.DOCX" target="_blank">Enterprise Process Model </a></TD>
+	  </TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities) </a></TD>
+          <TD width="420">Enterprise Domain Model</TD>
+          <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-050_ENTERPRISE_DOMAIN_MODEL.DOCX" target="_blank">Enterprise Domain Model</a></TD>
+		  </TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_058_DEVELOP_BUSINESS_ARCHITECTURE_OVERVIEW.HTM" target="_blank">BA.058 Develop Business Architecture</a></TD>
+          <TD width="420">Business Architecture</TD>
+          <TD width="420">Refer to the Task Overview for guidance.</TD>
+		  </TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">BA.060 Perform High-Level Use Case Discovery</a></TD>
+          <TD width="420">High-Level Use Cases</TD>
+          <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-060_HIGH_LEVEL_USE_CASES.DOCX" target="_blank">High-Level Use Cases</a></TD>
+		  </TR>
+		<TR valign="top">
+          <TD width="90"><div align="center">INIT</div></TD>
+          <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a></TD>
+          <TD width="420">Current Enterprise Architecture</TD>
+          <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-030_CURRENT_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Current Enterprise Architecture</a></TD>
+		  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_100_DEFINE_SUPP_ENTERPRISE_REQS_OVERVIEW.HTM" target="_blank">ER.100 Define Supplemental Enterprise Requirements </a></TD>
+      <TD width="420">Supplemental Enterprise Requirements </TD>
+      <TD width="420">Refer to the Task Overview for guidance.</TD>
+	  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a></TD>
+      <TD width="420">Architectural Gaps and Improvement Options</TD>
+      <TD width="420">Refer to the Task Overview for guidance.</TD>
+	  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">BA.090 Identify Process Improvement Options </a></TD>
+      <TD width="420">Process Improvement Options </TD>
+      <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-090_PROCESS_IMPROVEMENT_OPTIONS.DOCX" target="_blank">Process Improvement Options </a></TD>
+	  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings</a></TD>
+      <TD width="420">Reviewed Discovery Findings</TD>
+      <TD width="420">Refer to the Task Overview for guidance.</TD>
+	  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">INIT</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 Develop Future State Enterprise Architecture</a></TD>
+      <TD width="420">Future State Enterprise Architecture</TD>
+      <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-110_FUTURE_STATE_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Future State Enterprise Architecture</a></TD>
+	  </TR>
+	<TR valign="top">
+      <TD width="90"><div align="center">ME</div></TD>
+      <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_080_MAINTAIN_REP_OF_ARTIFACTS_OVERVIEW.HTM" target="_blank">IP.080 Maintain Repository of Artifacts </a></TD>
+      <TD width="420">Maintained Repository of Artifacts</TD>
+      <TD width="420">Refer to the Task Overview for guidance.</TD>
+	  </TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Information Systems Architectures Tasks and Work Products" summary="This window contains a table with links to the Information Systems Architectures Task Overviews and work products.">
+<TR>
+<TD><h3><A id="DS" name="DS"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DS_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('DS_TASKS', 'DS_OPEN', 'DS_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DS_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('DS_TASKS', 'DS_OPEN', 'DS_CLOSED'); new Effect.Highlight($('DS'), {duration: 4});" /> [C] Information Systems Architectures</A></h3>
+  <DIV id="DS_TASKS">
+<TABLE width="100%" class="oum" title="Information Systems Architectures Tasks and Work Products" summary="This table provides links to all the Information Systems Architectures Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">EA.002 Review External Reference Architectures</a> (Data Architecture) </TD>
+              <TD width="420">External Reference Architectures Review</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a> (Data Architecture) </TD>
+              <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a> (Data Architecture) </TD>
+              <TD width="420">Current Enterprise Architecture</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-030_CURRENT_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Current Enterprise Architecture</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_050_IDENTIFY_CURR_ARCH_CHALLENGES_OVERVIEW.HTM" target="_blank">EA.050 Identify Current Architectural Challenges</a> (Data Architecture) </TD>
+              <TD width="420">Current Architectural Challenges </TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a> (Data Architecture) </TD>
+              <TD width="420">Architectural Gaps and Improvement Options</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings</a> (Data Architecture) </TD>
+              <TD width="420">Reviewed Discovery Findings</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 Develop Future State Enterprise Architecture</a> (Data Architecture)</TD>
+              <TD width="420">Future State Enterprise Architecture</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-110_FUTURE_STATE_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Future State Enterprise Architecture</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_120_DEVELOP_INFORMATION_ARCH_OVERVIEW.HTM" target="_blank">EA.120 Develop Information Architecture</a> (Data Architecture) </TD>
+              <TD width="420">Information Architecture</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-120_INFORMATION_ARCHITECTURE_DEFINITIONS.XLSX" target="_blank">Information Architecture Definitions</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">EA.002 Review External Reference Architectures</a> (Application Architecture) </TD>
+              <TD width="420">External Reference Architectures Review</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a> (Application Architecture) </TD>
+              <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a> (Application Architecture) </TD>
+              <TD width="420">Current Enterprise Architecture</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-030_CURRENT_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Current Enterprise Architecture</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a> (Application Architecture) </TD>
+              <TD width="420">Architectural Gaps and Improvement Options</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings</a> (Application Architecture) </TD>
+              <TD width="420">Reviewed Discovery Findings</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 Develop Future State Enterprise Architecture</a> (Application Architecture)</TD>
+              <TD width="420">Future State Enterprise Architecture</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-110_FUTURE_STATE_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Future State Enterprise Architecture</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_140_DEVELOP_APPLICATIONS_ARCH_OVERVIEW.HTM" target="_blank">EA.140 Develop Applications Architecture</a> (Application Architecture) </TD>
+              <TD width="420">Applications Architecture</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+	    </TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Technology Architecture Tasks and Work Products" summary="This window contains a table with links to the Technology Architecture Task Overviews and work products.">
+<TR>
+<TD><h3><A id="IM" name="IM"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="IM_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('IM_TASKS', 'IM_OPEN', 'IM_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="IM_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('IM_TASKS', 'IM_OPEN', 'IM_CLOSED'); new Effect.Highlight($('IM'), {duration: 4});" /> [D] Technology Architecture</A></h3>
+  <DIV id="IM_TASKS">
+<TABLE width="100%" class="oum" title="Technology Architecture Tasks and Work Products" summary="This table provides links to all the Technology Architecture Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">EA.002 Review External Reference Architectures</a></TD>
+			<TD width="420">External Reference Architectures Review</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+			<TD width="420">Architecture Principles, Guidelines and Standards</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">EA.030 Identify Current Enterprise Architecture</a></TD>
+			<TD width="420">Current Enterprise Architecture</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-030_CURRENT_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Current Enterprise Architecture</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_100_DEFINE_SUPP_ENTERPRISE_REQS_OVERVIEW.HTM" target="_blank">ER.100 Define Supplemental Enterprise Requirements </a></TD>
+			<TD width="420">Supplemental Enterprise Requirements </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options </a></TD>
+			<TD width="420">Architectural Gaps and Improvement Options </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings</a></TD>
+			<TD width="420">Reviewed Discovery Findings</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 Develop Future State Enterprise Architecture </a></TD>
+			<TD width="420">Future State Enterprise Architecture </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-110_FUTURE_STATE_ENTERPRISE_ARCHITECTURE.DOCX" target="_blank">Future State Enterprise Architecture </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_130_DEVELOP_TECHNOLOGY_ARCH_OVERVIEW.HTM" target="_blank">EA.130 Develop Technology Architecture </a></TD>
+			<TD width="420">Technology Architecture</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Opportunities and Solutions Tasks and Work Products" summary="This window contains a a table with links to the Opportunities and Solutions Task Overviews and work products.">
+<TR>
+<TD><h3><A id="TE" name="TE"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="TE_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('TE_TASKS', 'TE_OPEN', 'TE_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="TE_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('TE_TASKS', 'TE_OPEN', 'TE_CLOSED'); new Effect.Highlight($('TE'), {duration: 4});" /> [E] Opportunities and Solutions</A></h3>
+  <DIV id="TE_TASKS">
+<TABLE width="100%" class="oum" title="Opportunities and Solutions Tasks and Work Products" summary="This table provides links to all the Opportunities and Solutions Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></TD>
+			<TD width="420">Metrics Collection and Reporting Strategy </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a></TD>
+			<TD width="420">Architectural Gaps and Improvement Options</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">BA.090 Identify Process Improvement Options</a></TD>
+			<TD width="420">Process Improvement Options</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-090_PROCESS_IMPROVEMENT_OPTIONS.DOCX" target="_blank">Process Improvement Options</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">ER.120 Identify and Mitigate Future State Risks </a></TD>
+			<TD width="420">Future State Risks </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-120_FUTURE_STATE_RISKS.DOCX" target="_blank">Future State Risks </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects</a></TD>
+			<TD width="420">Candidate Projects</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/IP/IP-040_CANDIDATE_PROJECTS.DOCX" target="_blank">Candidate Projects</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_150_DEFINE_TRANSITIONAL_ARCHITECTURES_OVERVIEW.HTM" target="_blank">EA.150 Define Transitional Architectures</a></TD>
+			<TD width="420">Transitional Architectures</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></TD>
+			<TD width="420">Future State Transition Plan </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-170_FUTURE_STATE_TRANSITION_PLAN.DOCX" target="_blank">Future State Transition Plan </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.050 Prioritize Projects</a></TD>
+			<TD width="420">Prioritized Projects</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_190_DEFINE_PRODUCT_IMP_PRIORITIZATION_OVERVIEW.HTM" target="_blank">EA.190 Define Product Implementation Prioritization </a></TD>
+			<TD width="420">Product Implementation Prioritization Report </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Migration Planning Tasks and Work Products" summary="This window contains a table with links to the Migration Planning Task Overviews and work products.">
+<TR>
+<TD><h3><A id="PT" name="PT"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PT_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('PT_TASKS', 'PT_OPEN', 'PT_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PT_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('PT_TASKS', 'PT_OPEN', 'PT_CLOSED'); new Effect.Highlight($('PT'), {duration: 4});" /> [F] Migration Planning</A></h3>
+  <DIV id="PT_TASKS">
+<TABLE width="100%" class="oum" title="Migration Planning Tasks and Work Products" summary="This table provides links to all the Migration Planning Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy </a></TD>
+			<TD width="420">Metrics Collection and Reporting Strategy </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_018_ESTABLISH_CURRENT_BASELINE_METRICS_OVERVIEW.HTM" target="_blank">BA.018 Establish Current Baseline Metrics </a></TD>
+			<TD width="420">Current Baseline Metrics </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_010_INVENTORY_PROJECTS_OVERVIEW.HTM" target="_blank">IP.010 Inventory Projects</a></TD>
+			<TD width="420">IT Project Portfolio</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/IP/IP-010_IT_PROJECT_PORTFOLIO.DOCX" target="_blank">IT Project Portfolio</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110 Perform Benefit Analysis</a></TD>
+			<TD width="420">Benefit Analysis</TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-110_BENEFIT_ANALYSIS.DOCX" target="_blank">Benefit Analysis</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">ER.120 Identify and Mitigate Future State Risks </a></TD>
+			<TD width="420">Future State Risks </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-120_FUTURE_STATE_RISKS.DOCX" target="_blank">Future State Risks </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_150_DEFINE_TRANSITIONAL_ARCHITECTURES_OVERVIEW.HTM" target="_blank">EA.150 Define Transitional Architectures</a></TD>
+			<TD width="420">Transitional Architectures</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></TD>
+			<TD width="420">Future State Transition Plan </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-170_FUTURE_STATE_TRANSITION_PLAN.DOCX" target="_blank">Future State Transition Plan </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.050 Prioritize Projects</a></TD>
+			<TD width="420">Prioritized Projects</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_060_DEVELOP_IT_PORTFOLIO_PLAN_OVERVIEW.HTM" target="_blank">IP.060 Develop IT Portfolio Plan </a></TD>
+			<TD width="420">IT Portfolio Plan </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PC</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></TD>
+			<TD width="420">Lessons Learned</TD>
+			<TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM040_LESSONS_LEARNED.DOCX" target="_blank">Lessons Learned</a></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Implementation Governance Tasks and Work Products" summary="This window contains a table with links to the Implementation Governance Task Overviews and work products.">
+<TR>
+<TD><h3><A id="TA" name="TA"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="TA_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('TA_TASKS', 'TA_OPEN', 'TA_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="TA_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('TA_TASKS', 'TA_OPEN', 'TA_CLOSED'); new Effect.Highlight($('TA'), {duration: 4});" /> [G] Implementation Governance</A></h3>
+  <DIV id="TA_TASKS">
+<TABLE width="100%" class="oum" title="Implementation Governance Tasks and Work Products" summary="This table provides links to all the Implementation Governance Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+			<th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="420" scope="col"><div align="center">Work Product</div></th>
+			<th width="420" scope="col"><DIV align="center">Template</DIV></th>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PS</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></TD>
+			<TD width="420">Validated Scope</TD>
+			<TD width="420">Update the <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx">Project Management Plan</a> </TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PS</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></TD>
+			<TD width="420">Resource Plan</TD>
+			<TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_PROJECT_TEAM_ORGANIZATION_CHART.DOCX" target="_blank">Project Team Organization Chart</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_RESOURCE_PLAN.XLSX" target="_blank">Resource Plan</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">PS</DIV></TD>
+			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a></TD>
+			<TD width="420">Staff Management Plan</TD>
+			<TD width="420">Update the Project Management Plan <br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM020_STAFF_TRAINING_PLAN.DOCX" target="_blank">Staff Training Plan</a><br>
+            <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM020_PROJECT_ROLES_AND_RESPONSIBILITIES.PPTX" target="_blank">Project Roles and Responsibilities Presentation</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_010_DEFINE_GOVERNANCE_STRATEGY_OVERVIEW.HTM" target="_blank">GV.010 Define Governance Strategy </a></TD>
+			<TD width="420">Governance Strategy </TD>
+			<TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/GV/GV-010_GOVERNANCE_STRATEGY.DOCX" target="_blank">Governance Strategy </a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_030_DISCOVER_OR_DEFINE_POLICIES_OVERVIEW.HTM" target="_blank">GV.030 Discover or Define Policies </a></TD>
+			<TD width="420">Governance Policies Catalog </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_040_DETERMINE_ORG_IMPACT_OF_GOVERNANCE_OVERVIEW.HTM" target="_blank">GV.040 Determine Organizational Impact of Governance </a></TD>
+			<TD width="420">Impact Study and List of Proposed Organizational Changes </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process</a></TD>
+			<TD width="420">Enterprise Software Development Process</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_050_DEFINE%20POLICY_IMPLEMENTATION_PROCESSES_OVERVIEW.HTM" target="_blank">GV.050 Define Policy Implementation Processes </a></TD>
+			<TD width="420"> Policy Implementation Processes </TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_100_IMPLEMENT_GOVERNANCE_OVERVIEW.HTM" target="_blank">GV.100 Implement Governance </a></TD>
+			<TD width="420">Governance Implementation</TD>
+			<TD width="420">Refer to the Task Overview for guidance.</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+ 			<TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></TD>
+			<TD width="420">Lessons Learned</TD>
+			<TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM040_LESSONS_LEARNED.DOCX" target="_blank">Lessons Learned</a></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Architecture Change Management Tasks and Work Products" summary="This window contains a table with links to the Architecture Change Management Task Overviews and work products.">
+<TR>
+<TD><h3><A id="CV" name="CV"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="CV_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('CV_TASKS', 'CV_OPEN', 'CV_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="CV_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('CV_TASKS', 'CV_OPEN', 'CV_CLOSED'); new Effect.Highlight($('CV'), {duration: 4});" /> [H] Architecture Change Management</A></h3>
+  <DIV id="CV_TASKS">
+        <TABLE width="100%" class="oum" title="Architecture Change Management Tasks and Work Products" summary="This table provides links to all the Architecture Change Management Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns.">
+          <TBODY>
+            <TR bgcolor="#BEBEBE">
+              <th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+              <th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+              <th width="420" scope="col"><div align="center">Work Product</div></th>
+              <th width="420" scope="col"><DIV align="center">Template</DIV></th>
+            </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">PEC</DIV></TD>
+            <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk </a></TD>
+            <TD width="420">Managed Risk</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards</a></TD>
+            <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_050_DEFINE%20POLICY_IMPLEMENTATION_PROCESSES_OVERVIEW.HTM" target="_blank">GV.050 Define Policy Implementation Processes </a></TD>
+            <TD width="420"> Policy Implementation Processes </TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_100_IMPLEMENT_GOVERNANCE_OVERVIEW.HTM" target="_blank">GV.100 Implement Governance </a></TD>
+            <TD width="420">Governance Implementation</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">ME</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/GV_110_MONITOR_AND_ANALYZE_GOV_PROCESSES_OVERVIEW.HTM" target="_blank">GV.110 Monitor and Analyze Governance Processes</a></TD>
+            <TD width="420">Governance Implementation Improvement Proposal</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">ME</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_210_MONITOR_CURRENT_SIT_&_PURSUE_REL_UPDATES_OVERVIEW.HTM" target="_blank">ER.210 Monitor Current Situation and Pursue Relevant Updates</a></TD>
+            <TD width="420">Monitored Current Situation </TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+			<TD width="90"><DIV align="center">ME</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/IP_080_MAINTAIN_REP_OF_ARTIFACTS_OVERVIEW.HTM" target="_blank">IP.080 Maintain Repository of Artifacts</a></TD>
+            <TD width="420">Maintained Repository of Artifacts</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left"><span class="copyright"> <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></span></P>
+</BODY>
+</HTML>

@@ -1,0 +1,1511 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Application Implementation Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Application Implementation Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#INCEPTION">Inception Tasks Supplemental Guidance</option>
+                            <option value="#ELABORATION">Elaboration Tasks Supplemental Guidance</option>
+                            <option value="#CONSTRUCTION">Construction Tasks Supplemental Guidance</option>
+                            <option value="#TRANSITION">Transition Tasks Supplemental Guidance</option>
+                            <option value="#PRODUCTION">Production Tasks Supplemental Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("RD");
+  Effect.BlindDown("DS");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TE");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("CV");
+  Effect.BlindDown("DO");
+  Effect.BlindDown("TS");
+  Effect.BlindDown("PS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("RD");
+  Effect.BlindUp("DS");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TE");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("CV");
+  Effect.BlindUp("DO");
+  Effect.BlindUp("TS");
+  Effect.BlindUp("PS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_AI.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>APPLICATION IMPLEMENTATION SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for Application Implementation projects. </p>
+<ul>
+  <li>The first column contains the OUM ID. </li>
+  <li>The second column of the following table provides a  link to the &quot;supplemental&quot; task guidance in this document.</li>
+  <li> The third column provides a link to the core OUM guidance. </li>
+  <li>The fourth column provides a link to any associated templates, if available. </li>
+</ul>
+<p>The  guidelines in this document should be used to supplement the guidelines that appear in the core OUM guidance. This index is not a complete list of the activities and tasks for an Application Implementation. It only contains those tasks that have supplemental guidance. Refer to the view for a complete list of  tasks.</p>
+<table width="100%" border title="Full Method Activities and Tasks" summary="This table provides an index to the guidance and templates for this Supplemental Guide. The first column contains the OUM ID. The second column contains links to the actual guidance found in this document.  The third column contains links to the base OUM Guidance.  The last column contains links to the associated templates, if any.  If there are no templates for the associated task, this cell will refer to the task overview for guidance. ">
+  <tr scope="col" valign="middle" bgcolor="#BEBEBE">
+    <th width="10%" nowrap scope="col">OUM ID</th>
+    <th width="30%" scope="col">Implement <br>
+      Supplemental Guidance </th>
+    <th width="30%" scope="col">OUM Guidance </th>
+    <th width="30%" scope="col">Template</th>
+  </tr>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="10%" align=left nowrap scope="rowgroup">A</th>
+    <td width="30%" align=left><b><a href="#INCEPTION">Inception</a></b></td>
+    <td width="30%" align=left><b><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM" target="_blank">Inception</a></b></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="A.ACT.GBRIText">
+    <th width="10%" align=left nowrap scope="rowgroup">A.ACT.GBRI</th>
+    <td width="30%" align=left><a href="#GBRI"><b>Gather Business Requirements - Inception </b></a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGBRI_GATHER_BUS_REQTS_INCEPTION.HTM" target="_blank"><b>Gather Business Requirements - Inception </b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="A.ACT.GBRI">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">A.RD.012</th>
+      <td width="30%" align=left><a href="#ARD012">Document Present and Future Organization Structures</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">Document Present and Future Organization Structures</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-012_PRESENT_AND_FUTURE_ORG_STRUCTURES.DOCX"
+				target="_blank">Present and Future Organization Structures</A></td>
+    </tr>
+  </tbody>
+  <tbody id="A.ACT.ECBB">
+  </tbody>
+  <tbody id="A.ACT.GR">
+  </tbody>
+  <tbody id="A.ACT.PSUIA">
+  </tbody>
+  <tbody id="A.ACT.CR">
+  </tbody>
+  <tbody id="A.ACT.CCPI">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="A.ACT.GSPText">
+    <th width="10%" align=left nowrap scope="rowgroup">A.ACT.GSP</th>
+    <td width="30%" align=left><a href="#GSP"><b>Gather Supporting Requirements</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGSP_GATHER_SUPPORTING_REQTS.HTM" target="_blank"><b>Gather Supporting Requirements</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="A.ACT.GSP">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">A.DO.010</th>
+      <td width="30%" align=left><a href="#ADO010">Define Documentation Requirements and Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">Define Documentation Requirements and Strategy</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/DO/DO-010_DOCUMENTATION_REQUIREMENTS_AND_STRATEGY.DOCX"
+				target="_blank">Documentation Requirements and Strategy </A></td>
+    </tr>
+  </tbody>
+  <tbody id="A.ACT.SKSD">
+  </tbody>
+  <tbody id="A.ACT.CMAHC">
+  </tbody>
+  <tbody id="A.ACT.CEAW">
+  </tbody>
+  <tbody id="A.ACT.TPT">
+  </tbody>
+  <tbody id="A.ACT.CAWI">
+  </tbody>
+  <tbody id="A.ACT.CORA">
+  </tbody>
+  <tbody id="A.ACT.DCMRCCI">
+  </tbody>
+  <tbody id="A.ACT.LCOB">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="10%" align=left nowrap scope="rowgroup">B</th>
+    <td width="30%" align=left><a href="#ELABORATION"><b>Elaboration</b></a></td>
+    <td width="30%" align=left><b><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM" target="_blank">Elaboration</a></b></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.DPSText">
+    <th width="10%" align=left nowrap scope="row">B.ACT.DPS</th>
+    <td width="30%" align=left><a href="#DPS"><b>Define Project Strategy</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDPS_DEFINE_PROJECT_STRATEGY.HTM" target="_blank"><b>Define Project Strategy</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.DPS">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.CV.020</th>
+      <td width="30%" align=left><a href="#BCV020">Define Data Acquisition, Conversion and Data Quality Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">Define Data Acquisition, Conversion and Data Quality Strategy</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-020_DATA_ACQ_CONVERSION_AND_DATA_QUAL_STRATEGY.DOCX"
+				target="_blank">Data Acquisition, Conversion and Data Quality Strategy</A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TS.020.1</th>
+      <td width="30%" align=left><a href="#BTS0201">Define Cutover Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">Define Cutover Strategy</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TS/TS-020_CUTOVER_STRATEGY.DOCX"
+				target="_blank">Cutover Strategy</A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.DIText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.DI</th>
+    <td width="30%" align=left><a href="#DI"><b>Define Infrastructure</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDI_DEFINE_INFRASTRUCTURE.HTM" target="_blank"><b>Define Infrastructure</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.DI">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TA.030</th>
+      <td width="30%" align=left><a href="#BTA030">Define Integration Requirements and Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_030_DEFINE_INTEGRATION_REQTS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">Define Integration Requirements and Strategy</a></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/TA/TA-030_INTEGRATION_ARCHITECTURE_STRATEGY.DOCX" target="_blank">Integration Architecture Strategy</a></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TA.090</th>
+      <td width="30%" align=left><a href="#BTA090">Develop Security and Control Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_090_DEVELOP_SEC_AND_CONTROL_STRATEGY_OVERVIEW.HTM" target="_blank">Develop Security and Control Strategy</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TA/TA-090_SECURITY_AND_CONTROL_STRATEGY.DOCX"
+				target="_blank">Security and Control Strategy </A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.PEEText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.PEE</th>
+    <td width="30%" align=left><a href="#PEE"><b>Prepare Environments - Elaboration</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPEE_PREPARE_ENV_ELAB.HTM" target="_blank"><b>Prepare Environments - Elaboration</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.PEE">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TE.038.1</th>
+      <td width="30%" align=left><a href="#BTE0381">Prepare Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-038_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">Integration Test Environment</a></td>
+    </tr>
+  </tbody>
+  <tbody id="B.ACT.GBRE">
+  </tbody>
+  <tbody id="B.ACT.DTP">
+  </tbody>
+  <tbody id="B.ACT.SSC">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.PVCText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.PVC</th>
+    <td width="30%" align=left><a href="#PVC"><b>Prototype and Validate Configuration</b></a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPVC_PROTOTYPE_AND_VALIDATE_CONFIGURATION.HTM" target="_blank"><b>Prototype and Validate Configuration</b></a></div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.PVC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TE.025.1</th>
+      <td width="30%" align=left><a href="#BTE0251">Create System Test Scenarios</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-025_SYSTEM_TEST_SCENARIOS.DOCX"
+				target="_blank">System Test Scenarios </A></td>
+    </tr>
+  </tbody>
+  <tbody id="B.ACT.PGA">
+  </tbody>
+  <tbody id="B.ACT.DUCM">
+  </tbody>
+  <tbody id="B.ACT.CCPE">
+  </tbody>
+  <tbody id="B.ACT.CS">
+  </tbody>
+  <tbody id="B.ACT.BSA">
+  </tbody>
+  <tbody id="B.ACT.DUCD">
+  </tbody>
+  <tbody id="B.ACT.AE">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.DEText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.DE</th>
+    <td width="30%" align=left><a href="#DE"><b>Design - Elaboration</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDE_DESIGN_ELAB.HTM" target="_blank"><b>Design - Elaboration</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.DE">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.DS.050</th>
+      <td width="30%" align=left><a href="#BDS050">Determine Design and Build Standards </a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_050_DETERMINE_DESIGN_AND_BUILD_STANDARDS.HTM" target="_blank">Determine Design and Build Standards </a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.DS.080.1</th>
+      <td width="30%" align=left><a href="#BDS0801">Design Software Components</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.DS.150.1</th>
+      <td width="30%" align=left><a href="#BDS1501">Develop Database Design</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/DS/DS-150_LOGICAL_DATABASE_DESIGN.DOCX" target="_blank">Logical Database Design</a></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.DCCTSEText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.DCCTSE</th>
+    <td width="30%" align=left><a href="#DCCTSE"><b>Develop Custom Component Test Scripts - Elaboration</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank"><b>Develop Custom Component Test Scripts - Elaboration</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.DCCTSE">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TE.035.1</th>
+      <td width="30%" align=left><a href="#BTE0351">Create Integration Test Scenarios</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create Integration Test Scenarios</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-035_INTEGRATION_TEST_SCENARIOS.DOCX"
+				target="_blank">Integration Test Scenarios </A></td>
+    </tr>
+  </tbody>
+  <tbody id="B.ACT.DSTSE">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.DVCSPText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.DVCSP</th>
+    <td width="30%" align=left><a href="#DVCSP"><b>Develop and Validate Custom Software Prototypes</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDVCSP_DEVELOP_AND_VALIDATE_CS_PROTOTYPES.HTM" target="_blank"><b>Develop and Validate Custom Software Prototypes</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.DVCSP">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.IM.040.1</th>
+      <td width="30%" align=left><a href="#BIM0401">Implement Database</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/IM/IM-040_PHYSICAL_DATABASE_DESIGN.DOCX"
+				target="_blank">Physical Database Design</A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="B.ACT.PCCTEText">
+    <th width="10%" align=left nowrap scope="rowgroup">B.ACT.PCCTE</th>
+    <td width="30%" align=left><a href="#PCCTE"><b>Perform Custom Component Testing - Elaboration</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank"><b>Perform Custom Component Testing - Elaboration</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="B.ACT.PCCTE">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">B.TE.040.1</th>
+      <td width="30%" align=left><a href="#BTE0401">Perform Integration Test</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Integration Test</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-040_INTEGRATION_TEST_RESULTS.DOCX"
+				target="_blank">Integration Test Results </A></td>
+    </tr>
+  </tbody>
+  <tbody id="B.ACT.PSTE">
+  </tbody>
+  <tbody id="B.ACT.VUPE">
+  </tbody>
+  <tbody id="B.ACT.PPM">
+  </tbody>
+  <tbody id="B.ACT.PACDE">
+  </tbody>
+  <tbody id="B.ACT.PBPII">
+  </tbody>
+  <tbody id="B.ACT.DCMRCCE">
+  </tbody>
+  <tbody id="B.ACT.LCAR">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="10%" align=left nowrap scope="rowgroup">C</th>
+    <td width="30%" align=left><a href="#CONSTRUCTION"><b>Construction</b></a></td>
+    <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM" target="_blank"><b>Construction</b></a></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.FR">
+  </tbody>
+  <tbody id="C.ACT.AC">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.DCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.DC</th>
+    <td width="30%" align=left><a href="#DC"><b>Design - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTDC_DESIGN_CONST.HTM" target="_blank"><b>Design - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.DC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.DS.080.2</th>
+      <td width="30%" align=left><a href="#CDS0802">Design Software Components</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.DS.150.2</th>
+      <td width="30%" align=left><a href="#CDS1502">Develop Database Design</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.PTP">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.SUECText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PEC</th>
+    <td width="30%" align=left><a href="#PEC"><b>Prepare Environments - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPEC_PREPARE_ENV_CONST.HTM" target="_blank"><b>Prepare Environments - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PEC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.038.2</th>
+      <td width="30%" align=left><a href="#CTE0382">Prepare Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-038_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">Integration Test Environment</a></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.DCCTSCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.DCCTSC</th>
+    <td width="30%" align=left><a href="#DCCTSC"><b>Develop Custom Component Test Scripts - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank"><b>Develop Custom Component Test Scripts - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.DCCTSC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.035.2</th>
+      <td width="30%" align=left><a href="#CTE0352">Create Integration Test Scenarios</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create Integration Test Scenarios</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-035_INTEGRATION_TEST_SCENARIOS.DOCX"
+				target="_blank">Integration Test Scenarios </A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.DSTSCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.DSTSC</th>
+    <td width="30%" align=left><a href="#DSTSC"><b>Develop System Test Scenarios - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDSTS_DEVELOP_SYSTEM_TEST_SCENARIOS.HTM" target="_blank"><b>Develop System Test Scenarios - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.DSTSC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.025.3</th>
+      <td width="30%" align=left><a href="#CTE0253">Create System Test Scenarios</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">Create System Test Scenarios</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-025_SYSTEM_TEST_SCENARIOS.DOCX"
+				target="_blank">System Test Scenarios </A></td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.DSITS">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.ICCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.ICC</th>
+    <td width="30%" align=left><a href="#ICC"><b>Implement Custom Components </b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTICC_IMPLEMENT_CUSTOM_COMPONENTS.HTM" target="_blank"><b>Implement Custom Components </b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.ICC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.IM.040.2</th>
+      <td width="30%" align=left><a href="#CIM0402">Implement Database</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">Implement Database</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PCCTCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PCCTC</th>
+    <td width="30%" align=left><a href="#PCCTC"><b>Perform Custom Component Testing - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank"><b>Perform Custom Component Testing - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PCCTC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.040.2</th>
+      <td width="30%" align=left><a href="#CTE0402">Perform Integration Test</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Integration Test</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-040_INTEGRATION_TEST_RESULTS.DOCX"
+				target="_blank">Integration Test Results </A></td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.PST">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PSTCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PSTC</th>
+    <td width="30%" align=left><a href="#PSTC"><b>Perform System Test - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPSTC_PERFORM_SYSTEM_TEST_CONSTRUCTION.HTM" target="_blank"><b>Perform System Test - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PSTC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.070.2</th>
+      <td width="30%" align=left><a href="#CTE0702">Perform System Test</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">Perform System Test</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-070_SYSTEM_TEST_RESULTS.DOCX"
+				target="_blank">System Test Results </A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PSITText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PSIT</th>
+    <td width="30%" align=left><a href="#PSIT"><b>Perform Systems Integration Test</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPSIT_PERFORM_SYSTEMS_INTEGRATION_TEST.HTM" target="_blank"><b>Perform Systems Integration Test</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PSIT">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.085</th>
+      <td width="30%" align=left><a href="#CTE085">Prepare Systems Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_085_PREPARE_SYSTEMS_INT_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Systems Integration Test Environment</a></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-085_SYSTEMS_INTEGRATION_TEST_ENVIRONMENT.DOCX" target="_blank">Systems Integration Test Environment</a></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TE.100</th>
+      <td width="30%" align=left><a href="#CTE100">Perform Systems Integration Test</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">Perform Systems Integration Test</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TE/TE-100_SYSTEMS_INTEGRATION_TEST_RESULTS.DOCX"
+				target="_blank">Systems Integration Test Results</A></td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.PPT">
+  </tbody>
+  <tbody id="C.ACT.PT">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PCOText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PCO</th>
+    <td width="30%" align=left><a href="#PCO"><b>Prepare for Cutover </b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPCO_PREPARE_FOR_CUT_OVER.HTM" target="_blank"><b>Prepare for Cutover </b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PCO">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.TS.020.2</th>
+      <td width="30%" align=left><a href="#CTS0202">Define Cutover Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">Define Cutover Strategy</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.TI">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PACDCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PACDC</th>
+    <td width="30%" align=left><a href="#PACDC"><b>Prepare to Acquire and Convert Data - Construction </b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPACDC_PREPARE_TO_ACQUIRE_AND_CONVERT_DATA_CONST.HTM" target="_blank"><b>Prepare to Acquire and Convert Data - Construction </b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PACDC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.CV.040.2</th>
+      <td width="30%" align=left><a href="#CCV0402">Design Conversion Components (Initial Load) </a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Conversion Components (Initial Load) </a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-040_CONVERSION_COMPONENT_DESIGNS.DOCX"
+				target="_blank"> Conversion Component Designs (Initial Load) </A></td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.ACDCText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.ACDC</th>
+    <td width="30%" align=left><a href="#ACDC"><b>Acquire and Convert Data - Construction</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTACDC_ACQUIRE_AND_CONVERT_DATA_CONST.HTM" target="_blank"><b>Acquire and Convert Data - Construction</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.ACDC">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.CV.055.2</th>
+      <td width="30%" align=left><a href="#CCV0552">Implement Conversion Components (Initial Load) </a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">Implement Conversion Components (Initial Load) </a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-055_CONVERSION_COMPONENTS.DOCX"
+				target="_blank"> Conversion Components (Initial Load) </A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.CV.065.1</th>
+      <td width="30%" align=left><a href="#CCV0651">Convert and Verify Data (Initial Load) </a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank">Convert and Verify Data (Initial Load) </a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-065_CONVERTED_AND_VERIFIED_DATA.DOCX"
+				target="_blank"> Converted and Verified Data (Initial Load) </A></td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.VUPC">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="C.ACT.PDText">
+    <th width="10%" align=left nowrap scope="rowgroup">C.ACT.PD</th>
+    <td width="30%" align=left><a href="#PD"><b>Produce Documentation</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPD_PRODUCE_DOCUMENTATION.HTM" target="_blank"><b>Produce Documentation</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="C.ACT.PD">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.DO.060</th>
+      <td width="30%" align=left><a href="#CDO060">Publish User Reference Manual</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_060_PUBLISH_USER_REFERENCE_MANUAL_OVERVIEW.HTM" target="_blank">Publish User Reference Manual</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/DO/DO-060_USER_REFERENCE_MANUAL.DOCX"
+				target="_blank">User Reference Manual </A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">C.DO.080</th>
+      <td width="30%" align=left><a href="#CDO080">Publish User Guide</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank">Publish Technical Reference Material</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/DO/DO-080_TECHNICAL_REFERENCE_MATERIAL.DOCX"
+				target="_blank">Technical Reference Material </A></td>
+    </tr>
+  </tbody>
+  <tbody id="C.ACT.DCMRCCC">
+  </tbody>
+  <tbody id="C.ACT.CJIA">
+  </tbody>
+  <tbody id="C.ACT.CMAWC">
+  </tbody>
+  <tbody id="C.ACT.DEUT">
+  </tbody>
+  <tbody id="C.ACT.BEUT">
+  </tbody>
+  <tbody id="C.ACT.TEUC">
+  </tbody>
+  <tbody id="C.ACT.IOCM">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="10%" align=left nowrap scope="rowgroup">D</th>
+    <td width="30%" align=left><b><a href="#TRANSITION">Transition</a></b></td>
+    <td width="30%" align=left><b><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM" target="_blank">Transition</a></b></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="D.ACT.SUAT">
+  </tbody>
+  <tbody id="D.ACT.CPTST">
+  </tbody>
+  <tbody id="D.ACT.PPE">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="D.ACT.CDTText">
+    <th width="10%" align=left nowrap scope="rowgroup">D.ACT.CDT</th>
+    <td width="30%" align=left><a href="#CDT"><b>Convert Data - Transition</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/DACTCDT_CONVERT_DATA_TRANS.HTM" target="_blank"><b>Convert Data - Transition</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="D.ACT.CDT">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">D.CV.065.2</th>
+      <td width="30%" align=left><a href="#DCV0652">Convert and Verify Data (Initial Load)</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank">Convert and Verify Data (Initial Load)</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-065_CONVERTED_AND_VERIFIED_DATA.DOCX"
+				target="_blank"> Converted and Verified Data (Initial Load) </A></td>
+    </tr>
+  </tbody>
+  <tbody id="D.ACT.DCMRCCT">
+  </tbody>
+  <tbody id="D.ACT.CITA">
+  </tbody>
+  <tbody id="D.ACT.TEUT">
+  </tbody>
+  <tbody id="D.ACT.FD">
+  </tbody>
+  <tbody id="D.ACT.GP">
+  </tbody>
+  <tbody id="D.ACT.SIP">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="10%" align=left nowrap scope="rowgroup">E</th>
+    <td width="30%" align=left><b><a href="#PRODUCTION">Production</a></b></td>
+    <td width="30%" align=left><b><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM" target="_blank">Production</a></b></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="E.ACT.MPSP">
+  </tbody>
+  <tbody id="E.ACT.EPS">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="E.ACT.RPPText">
+    <th width="10%" align=left nowrap scope="rowgroup">E.ACT.RPP</th>
+    <td width="30%" align=left><a href="#RPP"><b>Resolve Production Problems</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTRPP_RESOLVE_PROD_PROBLEMS.HTM" target="_blank"><b>Resolve Production Problems</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="E.ACT.RPP">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">E.PS.060</th>
+      <td width="30%" align=left><a href="#EPS060">Monitor and Respond to System Problems</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_060_MONITOR_AND_RESPOND_TO_SYSTEM_PROBLEMS_OVERVIEW.HTM" target="_blank">Monitor and Respond to System Problems</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+  </tbody>
+  <tbody id="E.ACT.DCMRCCP">
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="E.ACT.PFText">
+    <th width="10%" align=left nowrap scope="rowgroup">E.ACT.PF</th>
+    <td width="30%" align=left><a href="#PF"><b>Plan for Future</b> </a></td>
+    <td width="30%" align=left><div><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTPF_PLAN_FOR_FUTURE.HTM" target="_blank"><b>Plan for Future</b></a> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="E.ACT.PF">
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">E.PS.135</th>
+      <td width="30%" align=left><a href="#EPS135">Determine Future Functional Enhancements</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_135_DETERMINE_FUTURE_FUNCT_ENHANCEMENTS_OVERVIEW.HTM" target="_blank">Determine Future Functional Enhancements</a></td>
+      <td width="30%" align=left>Refer to the Task Overview for guidance.</td>
+    </tr>
+  </tbody>
+  <tbody id="E.ACT.DITTP">
+  </tbody>
+  <tbody id="E.ACT.SO">
+  </tbody>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=INCEPTION id="INCEPTION"></A></B><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM" target="_blank">INCEPTION</a></h3>
+<h4><a name="GBRI"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGBRI_GATHER_BUS_REQTS_INCEPTION.HTM" target="_blank">A.ACT.GBRI Gather Business Requirements - Inception</a> </h4>
+<h5><a name=ARD012 id="ARD012"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">A.RD.012 Document Present and Future Organization Structures </a></h5>
+<h6>Approach</h6>
+<p>In a commercial off-the-shelf (COTS) application implementation, the Present and Future Organization Structures should, at a minimum, portray the legal and operating entity structures, business organizations, financial operating environments, revenue and cost centers, and financial consolidation path. It may also catalog other operating entities. </p>
+<p><b> Gathering Organization Information </b></p>
+<p> Information about current and proposed organization structures may have been discussed during the application acquisitions cycle, and may have been one of the deciding factors in the selection of the application package. Be sure to gather this information, if available. </p>
+<p> Start the internal organization analysis by interviewing the highest ranking financial official possible, since that position will likely have the most knowledge of the financial and operating structure of the organization. </p>
+<p> An organization&rsquo;s operating structure drives the business and has a strong influence on the setup and use of the applications; however, the financial statements will reflect the operating structure to allow profitability, balance sheet and cash flow reporting, and analysis against that structure. Reporting and analysis begins by capturing and valuing operational transactions that occur at the specific event level. These events occur at a specific site that must be properly defined and ultimately set up at the correct organizational level and with the appropriate organizational attributes. </p>
+<p><b> Types of Organization Levels </b></p>
+<p> In your analysis, look for the following types of organization structures: </p>
+<ul>
+  <li> Legal Entities - an organization considered as one legal or fiscal entity, based on regulatory or reporting requirements </li>
+  <li> Consolidation Entities - these may be of two varieties: a single set of books with a division segment in the general ledger for the consolidation, or two (or more) sets of books consolidated into one parent set of books </li>
+  <li> Set of Books - a financial operating environment combining a particular chart of accounts, fiscal calendar, and functional currency </li>
+  <li> Operating Units - an operational business unit that uses a common order entry, receivables, payables, or purchasing function </li>
+  <li> Reporting Entities - entities that may have different management reporting requirements, depending on classification as revenue, cost, profit, or investment center </li>
+  <li> Organizations - a physical or logical site used in manufacturing or distribution that holds inventory or other assets </li>
+</ul>
+<p><b> Financial and Management Reporting Environment </b></p>
+<p> The reporting environment is divided into two categories: </p>
+<ul>
+  <li> Financial Reporting - addresses all the reporting requirements of the legal entity </li>
+  <li> Management Reporting - based on reporting for the following types of relationships with the parent entity: revenue centers, cost centers, profit centers, and investment centers; management reporting also encompasses operational reporting </li>
+</ul>
+<p><b> Project Impact of Current Financial and Operating Structure Analysis </b></p>
+Once you create a clear picture of the organization structure, you may want to reexamine the project plan for the application implementation, especially in the case of a financial implementation. It may make more sense to implement sequentially by organization, rather than simultaneously across the entire enterprise.
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="GSP"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/AACTGSP_GATHER_SUPPORTING_REQTS.HTM" target="_blank">A.ACT.GSP Gather Supporting Requirements</a></h4>
+<h5><B><A
+name=ADO010 id="ADO010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">A.DO.010 Define Documentation Requirements and Strategy </a></h5>
+<h6>Approach</h6>
+<p>Every project must determine if there is a need to publish project-specific documentation, or whether standard Oracle Commercial Off-the-Shelf (COTS) applications documentation meets their requirements. While most organizations are able to implement Oracle (COTS) applications with standard Oracle documentation, some organizations determine that they need additional, project-specific documentation based on the review of the organization&rsquo;s overall documentation requirements. </p>
+<p>During Oracle (COTS) application implementations, interview questions should help you determine if the organization is building any application extensions, whether interfaces to third-party or legacy systems are to be used, and if there are any other compelling reasons for which you may want to build project-specific documentation.&nbsp; </p>
+<p><b>User Reference Manual (DO.060)</b></p>
+<p>In a commercial off-the-shelf (COTS) application implementation, the User Reference Manual explains the functionality of the customizations and extensions to the system users.</p>
+<p><b>Technical Reference Material (DO.080)</b></p>
+<p>In a commercial off-the-shelf (COTS) application implementation, the Technical Reference Manual also describes extensions to any COTS (Commercial Off the Shelf ) products. It should supplement the <em>Oracle Application Technical Reference Manual</em>. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=ELABORATION id="ELABORATION"></A></B><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM" target="_blank">ELABORATION</a></h3>
+<h4><a name="DPS" id="DPS"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDPS_DEFINE_PROJECT_STRATEGY.HTM" target="_blank">B.ACT.DPS Define Project Strategy</a> </h4>
+<h5><b><a
+name=BCV020 id="BCV020"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">B.CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></h5>
+<h6>Task Steps</h6>
+<p>In an Application Implementation, you have additional task steps AI.1 and AI.2, following task step 12 below:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Provide an introduction for the document.</td>
+    <td>Introduction</td>
+    <td>The Introduction describes the work product and how it is used. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Document any pertinent background information. </td>
+    <td>Background</td>
+    <td>The Background describes how the system is used by your customer management and any other pertinent information you wish to include.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Document any pertinent overview information. </td>
+    <td>Data Acquisition and Conversion Overview </td>
+    <td>This component provides details on how the Data Acquisition and Conversion process is used to realize the data acquisition, data conversion and data quality requirements of the project.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Review the appropriate Technical Architecture (TA) work products.</td>
+    <td>Data Acquisition - Strategy - Logical Architecture </td>
+    <td><p>This component provides the basic information about the logical architecture of the data solution and its components. The main reason why this section is included is to describe the &ldquo;data stores&rdquo; that are referenced in the data flow definitions.
+                    <p>Note that the term &ldquo;data store&rdquo; is used for architectural components of the solution, that are used as a source and/or target of a data flow, i.e., a data store can be a Staging Area, Data Warehouse, Data Mart, OLAP Area, etc.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Document source system information for all the data sources identified in the approved Data Acquisition and Conversion Requirements (CV.010).</td>
+    <td>Data Acquisition - Strategy - Source Systems </td>
+    <td>This component provides source system information for all the data sources. There may be multiple interfaces from each source system, each interface with different format, frequency and/or content. For the purpose of this component, &ldquo;interface&rdquo; is defined as a set of files or tables that are extracted and transferred at the same time using the same extraction and data transfer method. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Document the target systems and interfaces to the target system.</td>
+    <td>Data Acquisition - Strategy - Target Systems </td>
+    <td>This component of the task documents the target systems. Note there might be multiple interfaces from each source system, each interface with different format, frequency and/or content. If there is no target system (i.e., the data is used for reporting only) then delete this section. For the purpose of this component, &ldquo;interface&rdquo; is defined as a set of files or tables that are extracted and transferred at the same time using the same extraction and data transfer method. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Analyze the required source and target system interfaces and required business functionality and prepare a list of data flows needed to support the requirements.</td>
+    <td>Data Acquisition - Strategy - Data Flows </td>
+    <td><p>This component includes a diagram that represents data flows. Examples of are provided in the template. Data flow is a process that takes data from a source interface (or data store) and it loads the target data store (or output interface), e.g., a data flow processes data from a particular source system and it loads it into the staging area. Another data flow then loads target data warehouse from the staging area.
+                                <p>Data flows described in this section correspond to the processes or jobs executed when running and refreshing the data warehouse.
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td><p>Review the business requirements regarding the initial and historical data in order to document each requirement. Get the sign off from the customer for the initial and historical load requirements.</td>
+    <td>Data Acquisition - Data Load Strategy - Initial and Historical Loads </td>
+    <td>The Initial and Historical Loads component provides a table listing the requirements for the initial or historical loads from source systems. It is important to note for each requirement how many months (days) of data have to be loaded, whether the historical data is available, what is the expected volume of data and whether it is possible to load the historical data with the processes developed for regular updates.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Provide guidelines for raising errors, notifying administrators and enabling error recovery.</td>
+    <td>Data Acquisition - Data Load Strategy - Error Handling Strategy </td>
+    <td>This component describes strategies for raising errors, notifying administrators and recovery steps after the error is resolved.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Review the Data Acquisition and Conversion Requirements, specifically the Data Conversion sections. </td>
+    <td>Data Conversion - Requirements </td>
+    <td>This component lists the legacy system entities being converted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Review the Data Acquisition and Conversion Requirements, specifically the Data Conversion sections. </td>
+    <td>Data Conversion - Constraints and Assumptions </td>
+    <td>This component lists any constraints and assumptions on which the tasks, resources, and conversion execution strategies are based. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Develop a simple, effective and quick approach to convert only the data needed to provide business benefits in the initial production period. </td>
+    <td>Data Conversion - Conversion Approach </td>
+    <td>The Conversion Approach describes the general approach that will be used to guide the conversion portion of the Data Acquisition and Conversion process. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">AI.1</div></th>
+    <td>Prepare Conversion Process Flows for each target application to which you are converting legacy data.</td>
+    <td>Data Conversion - Process Flows </td>
+    <td> This component documents the conversion process flow for each target application to which you are converting data. These process flows document related application business object prerequisites as well as the conversion sequence of master and transactional business objects. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">AI.2</div></th>
+    <td>Describe the high-level conversion testing strategy.</td>
+    <td>Data Conversion - Testing Strategy</td>
+    <td> This component describes the procedures to follow when testing the conversion programs and testing how the converted data functions in the target application. An example of a testing procedure is the comparison of record counts between the legacy and the target application. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">13</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Define the objectives of data quality in detail. </td>
+    <td>Data Quality - Objectives</td>
+    <td>This component defines the objectives of the data quality management in the solution. The following areas are described in this component:
+        <ul>
+          <li>Data Quality Overview</li>
+          <li>Data Quality Measures</li>
+          <li>Data Quality Objectives</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">14</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Provide the detail requirements for the Data Quality processes.</td>
+    <td>Data Quality - Processes </td>
+    <td>This component provides the description of the processes related to the data quality. The following processes will be designed in such a way in order for the solution to meet the data quality objectives.
+        <ul>
+          <li>Data Transfer </li>
+          <li>Data Cleansing </li>
+          <li>Audit and Control</li>
+          <li>Error and Exception Handling</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">15</div></th>
+    <td>Review the source systems and Data Quality components of the Data Acquisition and Conversion Requirements (CV.010). Provide the detail requirements for the Data Quality ownership.</td>
+    <td>Data Quality - Data Ownership</td>
+    <td>This component defines the ownership of data quality components and responsibility for solving end escalating data quality related issues. Include the following sections.
+        <ul>
+          <li>Data Ownership </li>
+          <li>Issue Resolution </li>
+          <li>Escalation Hierarchy</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">16</div></th>
+    <td>Document the transformation rules in a table. </td>
+    <td>Data Quality - Transformation Details </td>
+    <td>This component defines the data quality transformations.</td>
+  </tr>
+</table>
+<h6>Approach</h6>
+<p><b>Data Conversion </b></p>
+<p>When discussing the conversion approach, you should consider the number of conversion cycles that will be performed before the final conversion.&nbsp; At a minimum, you should complete the full conversion testing cycle and use converted legacy data during Perform System Test (TE.070.2). Your goal is to determine the length of time it will take to convert all of the legacy data to the target applications before the final cutover to production.&nbsp; To set expectations correctly, include the conversion programs in Performance Management (PT) testing.</p>
+<p><b> Automated Conversion Tools </b></p>
+<p> In addition to traditional coding tools, consider including automated conversion tools when producing the conversion approach component of this deliverable. Using these tools has several advantages: </p>
+<ul>
+  <li> The automated conversion tools reduce the need for traditional programming skills. </li>
+  <li> The automated conversion tools can be used to build reusable templates for multi-site implementations. </li>
+</ul>
+<p> When employing automated conversion tools, the content of the Conversion Program Designs (CV.040) and the functionality of the resulting Conversion Components (CV.055) can vary depending on the conversion tool you use. </p>
+<p><b>Data Cleansing </b></p>
+<p> Decide whether to perform data cleanup in the legacy system prior to conversion or to clean up the legacy data using the target application environment after loading the data into destination tables. An example of data that must be cleaned up is a customer that has been entered multiple times in slightly different ways. XYZ Corporation, XYZ Co. and Xyz Company may all represent the same customer entity, but due to the difference in the way these values were entered (varying use of upper/lower/mixed case, terminology and abbreviations) they are treated as separate entities by the system. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=BTS0201 id="BTS0201"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">B.TS.020.1 Define Cutover Strategy </a></h5>
+<h6>Approach</h6>
+<p><b>Transition </b></p>
+<p> The general sequence for transition is: </p>
+<ul>
+  <li> Prepare the Production Environment. </li>
+  <li> Configure (set up) the applications. </li>
+  <li> Execute the Conversion Programs. </li>
+  <li> Register modifications. </li>
+  <li> Verify conversion data and application setups. </li>
+  <li> Plan the transition according to these guidelines: </li>
+  <li> Set up the communications and computing hardware. </li>
+  <li> Install the software applications, tools, and custom modules. </li>
+  <li> Prepare the environments. </li>
+  <li> Configure the application environments. </li>
+  <li> Integrate the applications. </li>
+  <li> Convert the data. </li>
+  <li> Verify the data and application configuration. </li>
+  <li> Run the reconciliation. </li>
+</ul>
+<p><b> Support Infrastructure </b></p>
+<p> Allocate time in the transition plan and schedule for system administrators or key project team members to implement the support infrastructure. This includes development and rollout of a help desk learning event for information systems support personnel, as well as users. </p>
+<p> The establishment of a robust and capable internal and vendor external support infrastructure is critical to the success of your project. Oracle Support may be of assistance in helping you assess our current support capabilities and assist with planning, updating, and aligning these capabilities to Oracle's support infrastructure. </p>
+<p><b> Vendor Awareness of Cutover </b></p>
+<p> The transition period may make extra demands on the support services of the hardware, network, and software vendors. By giving the vendors advance warning of the production cutover, you can alert them to possible extra demands on support services and make them aware of the critical nature of the business situation.</p>
+<p><b> Process Teams </b></p>
+<p> Separate functional and setup responsibilities by process team. Project team members that have responsibility for the design of new business processes will also be responsible for the execution and validation of the application configuration and converted data in the production system. </p>
+<p> Process teams verify the setup for the applications and responsibilities, and the integration of custom modules, reports, and inquiry screens. If some data is to be manually converted, the process teams can either divide the data entry work or subcontract a temporary employee to enter the data. The latter case requires temporary staff learning events as well as an additional audit of the data by the process team members. </p>
+<p><b> System Administration </b></p>
+<p> The earlier that system administrators assume their new role in supporting the system, the better. You should prepare a checklist for all system administration responsibilities including form and program registration, custom menu definition, application user accounts, integration of non-Oracle applications, and descriptive and key flexfield setup. Create a system administration checklist for all the tasks and activities that involve execution of the production system. </p>
+<p><b> Contingency Planning </b></p>
+<p> Planning for contingencies in the migration process requires, as a first step, identification of the risks and failure points in the process. Having identified these areas, you can outline a high-level course of action for handling each eventuality. Because of the focus on risks and failure points, this task is tightly linked to Verify Production Readiness (TS.058). The detailed analysis that is used in Verify Production Readiness can also be used here, at a higher level, for identifying general risk areas. The identification of contingency measures may be unpopular because it has connotations of project failure and mishandling, but a more thorough contingency plan can potentially reduce the amount and degree of crisis management needed should the unthinkable happen. Do not confuse implementation contingency with system contingency failure. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="DI" id="DI"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDI_DEFINE_INFRASTRUCTURE.HTM" target="_blank">B.ACT.DI Define Infrastructure</a></h4>
+<h5 class=HeadingBar><B><A
+name=BTA030 id="BTA030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_030_DEFINE_INTEGRATION_REQTS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">B.TA.030 Define Integration Requirements and Strategy </a></h5>
+<h6>Approach</h6>
+<p> The primary purpose of this task is to map distributed data external integration points between Oracle commercial off-the-shelf (COTS) applications and other third party or legacy applications. Once you agree on an alternative for each integration point gap, this task will result in a complete listing of all new integration points for which you must design and build interfaces. At this stage there has been no specification of interfaces; this task is merely a recognition that an integration point exists and requires attention. </p>
+<p><b> External Integration Points </b></p>
+<p> The most common type of integration point requiring attention in an implementation project is one that transfers data between two heterogeneous applications. External integration points are also needed between two separate installations of the same application with separate databases. These integration points are external in nature since they result in the transfer of data from application databases external to the one of interest. They usually give rise to interfaces that support the integration. </p>
+<p><b> Replacement External Integration Points </b></p>
+<p> The simplest way to identify the new external integration points is to perform a thorough architecture baseline analysis, then identify the changes implied and required by the replacement of certain existing legacy applications. The business requirement for each old interface should be met in some way by the new system, either as a direct mapping, or as a change in implementation or functionality. </p>
+<p> Although the approach helps scope and validate the completeness of the mapping work, it also carries significant risks. It requires significant attention to details when you define the existing technical architecture, and it does not guarantee that new interface requirements will be noticed and documented. The technique carries the risk of re-implementing outmoded practices, rather than leveraging the capabilities of new applications, and may miss critical requirements that would only become apparent with an understanding of the role of the interface in one or more Use Cases (RA.023). By using a tangible mapping of old interfaces to new, you may find it easier to focus on specific implementation work products. </p>
+<p><b> Nonstandard External Integration Points </b></p>
+<p> If you are implementing a combination of custom developed applications together with Oracle COTS applications, also consider new integration points that you need to handle between your new, nonstandard applications and legacy applications that you are planning to retain in the new architecture. These other new integration points will be revealed by performing the replacement mapping not just for replacement by Oracle COTS applications, but for replacement by your entire new applications suite. Overlooking these integration points is another risk of the &ldquo;cut out the old and replace with the new&rdquo; method of interface development. </p>
+<p><b> Integration Points from Standard Applications Distributed Data </b></p>
+<p> If your implementation spans separate, standard applications databases, it is critical to identify the external interfaces that need to cross databases. This will always be the case for multi-site installations with multiple data centers. These types of interfaces can be more complex to implement, and you should not attempt to perform requirements gathering for them using this type of bottom-up analysis. However, even if you are managing the development separately, you can still record the integration points as part of this task so that you have a complete reference document for all integration points to the new applications. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=BTA090 id="BTA090"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_090_DEVELOP_SEC_AND_CONTROL_STRATEGY_OVERVIEW.HTM" target="_blank">B.TA.090 Develop Security and Control Strategy </a></h5>
+<h6>Approach</h6>
+<p><b> User Function or Role-Based Security </b></p>
+<p> This type of security is oriented towards the functions, transactions, forms, or reports to which a user can gain access. This approach to security secures data by preventing users from gaining access to any data in a particular table or from performing a particular business function. </p>
+<p><b> Business Organization-Based Security </b></p>
+<p> This type of security analysis is oriented towards securing the data for a particular business organization or user group. Unlike the function- or role-based security, this area typically deals with securing data for organizations as a whole and not just for individuals or roles within an organization. Often, business organizations may be creating rows in the same tables in a database, but do not wish other organizations to be able to view or transact their data in the same table. The division between this approach to security and the function/role-based approach is not hard and fast, and it may be possible to satisfy the business organization-based security requirements by judicious use of function/role-based security and the standard application features that support it. </p>
+<p><b> Designing Business Organization-Based Security </b></p>
+<p> The design of solutions for business organization-based security is sometimes more difficult than the function/role-based security, because it affects the storage and partitioning of data in the database. The application functional architecture and key setup parameters may have an effect on the security and partitioning of data also. The approach you should take to satisfy a particular organizational requirement is detailed below. Whether one solution is more complex than another will depend on the exact circumstances for the implementation project and the business itself: </p>
+<ul>
+  <li> Use standard application features that provide organization-based security. </li>
+  <li> Use standard application function/role-based security to provide<em> the effect of</em> business organization-based security. </li>
+  <li> Use procedures and policies to provide the security. </li>
+  <li> Use limited custom extensions to application modules. </li>
+  <li> Use general database-level custom extensions. </li>
+  <li> Use separate application installations. </li>
+</ul>
+<p> Many security requirements may be met using standard application features. Before exploring more complex options, be sure to identify the security requirements that can be met by standard application security features for both function/role-based security and organization-based security. The cost and extra risk of custom security mechanisms may force a rethink of whether a particular security requirement is really needed. </p>
+<p><b> Use of Policies and Procedures </b></p>
+<p> In many cases, business procedures and policies are an effective and much simpler approach to securing data than designing system-level controls, especially when the required controls are not readily available through functionality built into the applications suite you are implementing. System auditing also falls into this category of approach. Determine whether security across organizations must be enforced by system controls, before embarking on design activities. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="PEE" id="PEE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPEE_PREPARE_ENV_ELAB.HTM" target="_blank">B.ACT.PEE Prepare Environments - Elaboration </a></h4>
+<h5><A name=BTE0381 id="BTE0381"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">B.TE.038.1 Prepare Integration Test Environment </a> </h5>
+<h6>Work Product</h6>
+<p> In a commercial off-the-shelf (COTS) application implementation, setting up an environment includes the configuration, or parameter setting, of the environment as well. In addition, patching may also be required. It is important that all project environments be kept in sync both from a set up point of view as well as from a patching level point of view. </p>
+<h6>Approach</h6>
+<p><b> Environment Configuration </b></p>
+<p> Configure the Integration Test Environment based on the latest application setups from the Application Setup Documents (MC.050). Before you begin testing in each environment, you should: </p>
+<ol>
+  <li>Set up the applications. </li>
+  <li> Decide on the real business data to use. </li>
+  <li> Plan the volume of data (for example, converted data). </li>
+  <li> Verify that all application parameters have been set up to enable transactions. </li>
+  <li> Verify that sufficient business data has been entered to demonstrate application features. </li>
+  <li> Provide access to definition and setup screens to appropriate users. </li>
+  <li> Enable links to non-Oracle or custom systems (if applicable). </li>
+  <li> Make reporting, data query, and testing tools available in the testing environments to verify correct results against the expected results of the test scripts. </li>
+  <li> Record all changes and updates to the test environment to help you maintain the integrity of the objects that have been installed or updated. </li>
+</ol>
+<p><b>Cloning</b></p>
+<p>In the case of packaged application(s), the environment can also be prepared by means of cloning techniques. This avoids time consuming manual set up activities.</p>
+<p><b>Import/Export </b></p>
+<p> If you have entered your setups into a master setup environment, you may choose to export that data and import it into your test environments. If testing uncovers issues that affect setups, you must change the setups in your master environment so that they will be correct for production. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PVC" id="PVC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTPVC_PROTOTYPE_AND_VALIDATE_CONFIGURATION.HTM" target="_blank">B.ACT.PVC Prototype and Validate Configuration </a></h4>
+<h5><B><A
+name=BTE0251 id="BTE0251"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">B.TE.025.1 Create System Test Scenarios </a> </h5>
+<h6>Approach</h6>
+<p><b> Documenting the Test Scenarios</b></p>
+<p> Use the System Test Scenario to document the steps needed to test the operation and integration of business system flows within the (COTS) application system, including the integration of application extensions. </p>
+<p><b> System Testing </b></p>
+<p> System testing measures the quality of the entire application system, using system test sequences and scenarios. You must create scripts for all business processes based on the Future Process Model (RD.011) and Use Case Specification (RA.024). The system test can include the following types of testing: </p>
+<ul>
+  <li> integrated business processes </li>
+  <li> manual procedures </li>
+  <li> support procedures </li>
+  <li> security testing </li>
+  <li> initial system documentation inspection </li>
+  <li> manual data inspection </li>
+  <li> database journaling </li>
+  <li> converted data load testing </li>
+  <li> converted data inspection </li>
+  <li> interface testing (limited to processing data as input from another system, or creating data for use by another system) </li>
+  <li> data/transaction reconciliation to the legacy system </li>
+  <li> job stream testing (if there is a batch component) </li>
+  <li> backup and recovery testing </li>
+  <li> data archival testing </li>
+  <li> lock testing simulating user load (executing identical scenarios) </li>
+  <li> batch window test (on full converted data volumes) </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="DE" id="DE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDE_DESIGN_ELAB.HTM" target="_blank">B.ACT.DE Design - Elaboration </a></h4>
+<h5><B><A
+name=BDS050 id="BDS050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_050_DETERMINE_DESIGN_AND_BUILD_STANDARDS.HTM" target="_blank">B.DS.050 Determine Design and Build Standards </a></h5>
+<h6>Approach</h6>
+<p>Should you not find any satisfactory standards and guidelines, it is recommended that another separate project be initiated to produce acceptable standards and guidelines.</p>
+<p> The Design and Build Standards allow you to document customizations in a way that clearly communicates the features and functionality to both users and developers. They also help ensure that new modules have a consistent look and feel and integrate well with the standard Oracle COTS applications.</p>
+<p> Each standard you define should provide a specific design, development, documentation, or learning benefit. Good standards help you do the following: </p>
+<ul>
+  <li> Explain functionality to current and potential users. </li>
+  <li> Train users. </li>
+  <li> Support users when they have questions or problems. </li>
+  <li> Manage the development of customizations. </li>
+  <li> Produce high-quality program modules. </li>
+  <li> Work efficiently and cost-effectively. </li>
+  <li> Port application modules to different hardware and software platforms. </li>
+  <li> Upgrade customizations to new releases of the applications. </li>
+</ul>
+<p> Do not duplicate what Oracle has already defined in standard documentation. Cosmetic standards help ensure the same look and feel of the applications. To users, maintaining the same format and style is important. Use Oracle design and development standards to maintain the same appearance of new or modified applications. These standards not only provide cosmetic guidelines, but development standards for building custom modules as well.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=BDS0801 id="BDS0801"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">B.DS.080.1 Design Software Components </a></h5>
+<h6>Approach</h6>
+<p><b> Upgrades Design</b></p>
+<p> Unlike standalone custom applications, extensions to packaged applications must be designed so that they can be easily migrated to future releases of the base product. Fortunately, Oracle E-Business Suite includes several features that facilitate upgrades. </p>
+<p><b> Configurable Extensions </b></p>
+<p> Configurable extensions such as flexfields, and alerts are automatically retained when you upgrade to new application releases . Leverage these features when designing customizations. For example, instead of modifying a form by adding a new section, define a new form with the required information and build a link between the two forms. Use descriptive flexfields whenever you need additional data elements, instead of modifying standard tables. </p>
+<p><b> Custom ORACLE IDs </b></p>
+<p> An ORACLE ID identifies a registered database user that is in Application Object Library. Each standard Oracle Application has a corresponding ORACLE ID. Define all custom tables in an ORACLE ID you create for your custom application. </p>
+<p> Use a prefix (such as CSTM or an appropriate acronym for your organization) to distinguish custom ORACLE IDs and tables from standard ones. For example, if you create a custom Purchasing form that updates a custom table, you would create the table in the CSTMPO ORACLE ID and name the table CSTMPO_HEADER_DETAILS. </p>
+<p> Grants and synonyms allow your forms and other custom programs to access the custom table.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=BDS1501 id="BDS1501"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">B.DS.150.1 Develop Database Design</a></h5>
+<h6>Work Product</h6>
+<p> Use the Logical Database Design when you must capture and document both the logical data representation and the physical design of new database objects. This work product should address the following: </p>
+<ul>
+  <li> the relationships between new business objects and existing application entities </li>
+  <li> the design of new database tables and related views, grants and synonyms </li>
+  <li> indexing requirements </li>
+  <li> tablespace and sizing requirements </li>
+  <li> flexfield designs </li>
+</ul>
+<h6>Approach</h6>
+<p> The Logical Database Design defines changes to the objects in the database prior to designing the individual modules that make up all of the defined customizations. In reality, it is often a distributed activity where individual designers define the database extension requirements as they are writing the Software Components Design (DS.080) work product . However, it is still important to assign one database designer to maintain the overall data model. </p>
+<p> Because Oracle COTS applications ship with a predefined database model, this task is limited to new database objects needed to implement required functionality. If you do not require new database objects, the scope of this document is limited to flexfield design. </p>
+<p><b> Integration with Standard Tables </b></p>
+<p> When you add tables to implement new business objects and entities, it is important to show how those new tables relate to the existing database schema on an entity-relationship diagram. Use a unique box style to clearly distinguish new from existing entities. </p>
+<p> Since you should not modify existing tables, you may need to add new tables, even if your requirement is to add attributes (columns) to an existing entity. The new table will have a one-to-one relationship with the existing table and use the same unique identifier columns. The only time this should be a requirement is when descriptive flexfields cannot accommodate the required attributes. </p>
+<p><b> Descriptive Flexfields </b></p>
+<p> Descriptive flexfields are a type of database extension that does not require any new tables or columns. However, because several modules may use flexfields on the same table for different reasons, it is important to have a single point of contact to manage the flexfield definitions for application entities. </p>
+<p> Coordinate with business analysts who need to define flexfield setup parameters as part of Define Application Setups (MC.050). </p>
+<p> In a multi-site implementation, this activity is very important because each site may have different requirements for descriptive flexfields and you may need a single definition that satisfies all requirements. You may need a global data registry to fully satisfy your requirements. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="DCCTSE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">B.ACT.DCCTSE Develop Custom Component Test Scripts - Elaboration</a></h4>
+<h5><A name=BTE0351 id="BTE0351"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">B.TE.035.1 Create Integration Test Scenarios </a> </h5>
+<h6>Approach</h6>
+<p><b> Documenting the Test Scenarios</b></p>
+<p> Use the Integration Test Scenarios to check the linkage and integration between two or more application extension components that are part of the same business process. You create one Integration Test Scenario for each application extension, which may consist of several individual application extension components (such as a program, form, report, flexfield, database trigger, or other application extension components). </p>
+<p><b> Integration Test Scenario Test Data </b></p>
+<p> If the Integration Test Environment is a fresh installation, you need to construct the test data or use converted data from preliminary conversion programs. If the Integration Test Environment is a copy of another environment, you should design your test data based on information already defined in the database. </p>
+<p><b> Business Flow Testing </b></p>
+<p> Business flow testing involves developing the Integration Test Scenarios to test the business processes that include the customization. Business flow testing is the primary and most important form of integration testing. The Software Components Design work product (DS.080), Use Case Specifications (RA.024) and Future Process Model (RD.011) provide a solid basis for developing the test steps and data to test the business flow. </p>
+<p> Your tests should also include unusual or extreme business flows, even if they are highly unlikely. Experience has shown that users can and will perform the most unlikely procedures. </p>
+<p><b> Integrity Testing </b></p>
+<p> Any application extension that updates data must be able to handle record locks. Part of your integration test should evaluate how the application extensions respond to this condition. Appropriate design strategies include waiting for locks to be released or simply aborting when a program cannot obtain a lock. </p>
+<p><b> Batch Programs </b></p>
+<p> A common error in batch programs is selecting data from tables without a lock at the start of processing, and then updating the original tables with new data at the end. In this scenario, another program can update the table between the original data selection and the final update, resulting in data loss (the middle transaction is lost). This can cause severe referential integrity problems when the middle transaction updates other tables with synchronized data that is not lost. </p>
+<p> You can designate concurrent programs as incompatible with themselves and other concurrent programs that manipulate data from the same tables. This can prevent locking problems caused by two update programs running simultaneously. The Software Components Design work product (DS.080) should define this requirement and you should configure the test environment accordingly. Test to make sure that the concurrent manager enforces the rules appropriately. </p>
+<p><b> Testing Techniques </b></p>
+<p> Use these techniques to evaluate lock integrity: </p>
+<p><b> Forms </b></p>
+<p> When two users attempt to update the same record via a form, the first user to make a change should secure a lock while the other user is asked if they want to wait for the lock to be released. Sloppy programming can cause forms to engage a lock when a user simply queries a record, and can even result in a deadlock situation where neither user can release the lock. </p>
+<p> Use two sessions to query the same row into identical forms by different users. Attempt to have both users lock the row by modifying a data element. Verify that the form handles the lock properly and releases it when you save the change or clear the form (commit or rollback). </p>
+<p> Make sure that the form does not inadvertently lock the rows of query-only forms or blocks. Query the row on one form while using an update form for the base table (or SQL*Plus) to test the lock condition. </p>
+<p><b> Concurrent Programs </b></p>
+<p> Run two copies of the same concurrent program simultaneously. One instance should wait for the other to complete or abort with an appropriate error message. </p>
+<p> Run the concurrent program and use a form to lock a row that the program will update. The program should wait a reasonable amount of time or abort with an appropriate message. </p>
+<p> Run the concurrent program and use a form to lock a row that the program reads but does not update. The program should complete without any errors. </p>
+<p> Run the concurrent program and use a form or SQL script to update a row that the program also updates. If you receive a message that the form or SQL*Plus cannot obtain a lock, make sure the program releases its lock when it completes. If the transaction succeeds, verify that both sets of updates are preserved. </p>
+<p><b> Usability Testing </b></p>
+<p> Usability testing does not focus on the accuracy of an application extension, but on user-friendliness. Naturally, users are the best resource for this type of testing; they should be able to use the application extensions as part of a business flow after reviewing the Use Case Specification (RA.024) and receiving basic instructions. </p>
+<p> If you perform this type of testing, your role is to observe the user&rsquo;s actions and responses to the software. Take notes to document functionality or program behavior that confuses the user or elicits an incorrect response. </p>
+<p> Usability testing is a way of refining the design of an application extension and is common when following an iterative design and build approach to custom development. Consider usability testing whenever the user interface or procedures are complex or unusual. </p>
+<p><b> Security Testing </b></p>
+<p> Security testing involves two areas: user access to application extensions (menus), and application extension access to data (including data residing in both owned and shared tables). You must verify that each user has access to the correct responsibilities, menus, and data to perform his or her job. You must also verify that each application extension has access to both its owned tables as well as any shared tables. </p>
+<p><b> Volume Testing </b></p>
+<p> Volume testing involves simulating live operations with multiple users active on the same program, as well as on conflicting programs. Have multiple users access combinations of the same application extensions and test data while performing the same operations to evaluate any obvious conflicts or performance issues. Coordinate any volume testing with the Performance Testing team on your project. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="DVCSP"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/BACTDVCSP_DEVELOP_AND_VALIDATE_CS_PROTOTYPES.HTM" target="_blank">B.ACT.DVCSP Develop and Validate Custom Software Prototypes</a></h4>
+<h5><B><A
+name=BIM0401 id="BIM0401"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">B.IM.040.1 Implement Database </a></h5>
+<h6>Approach</h6>
+<p><b> Separate ORACLE IDs </b></p>
+<p> Create custom database objects in custom ORACLE IDs (an Oracle user name registered within Application Object Library) so that custom objects are not mixed with standard database objects. </p>
+<p><b> Grants and Synonyms </b></p>
+<p> Include scripts that create the database grants and synonyms required to allow other ORACLE IDs to access the custom tables. Since custom tables, views, indexes, and sequences exist in a custom ORACLE ID, you need grants and synonyms to allow custom forms and concurrent programs to access the tables. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="PCCTE" id="PCCTE"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">B.ACT.PCCTE Perform Custom Component Testing - Elaboration</a></h4>
+<h5><A name=BTE0401 id="BTE0401"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">B.TE.040.1 Perform Integration Test</a> </h5>
+<h6>Approach</h6>
+<p>Integration-tested modules are the result of performing integration testing on custom application extension components. The name <em>integration test </em>comes from testing the connections, or <em>integration,</em> between application extension components. Integration testing should uncover all potential problems with the custom application extension code. </p>
+<p><b> Document Test Results </b></p>
+<p> Record actual results, specific data entered, and other comments in the <em>actual results</em> column of the Integration Test Results (TE.040). You can also include screen shots and sample report output to support your results. </p>
+<p> Integration testing verifies that all components of a custom application extension work together properly and integrate seamlessly with standard application modules. For example, an application extension to support unique purchasing requirements may include a new database table, a new form, and a new report. Each or these custom components would have been tested individually during Perform Unit Test (TE.030). The integration test employs a business scenario to test the end-to-end flow of all of the custom application extension components together. </p>
+<p> The integration test also extends the test to include other standard Oracle COTS application modules that either precede or follow the steps in the flow that exercise the application extensions. Integration testing should incorporate functions that rely on data manipulated by the application extensions. </p>
+<p> Build up to the full integration test by testing programs that work together&mdash;first in pairs, then in sets of three, four, and so on. Test simple scenarios first and then build more complex cases with planned exceptions to test warning and error trapping. Finally, test the customization in the context of other related application functions. </p>
+<p> Although the already developed Integration Test Scenarios (TE.035) primarily dictate your integration testing process, you may think of other variations and scenarios that you should test. Test these new scenarios and document each one in a new integration Test Results (TE.040).</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=CONSTRUCTION id="CONSTRUCTION"></A></B><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM" target="_blank">CONSTRUCTION</a></h3>
+<h4><a name="DC" id="DC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTDC_DESIGN_CONST.HTM" target="_blank">C.ACT.DC Design - Construction </a></h4>
+<h5><B><A
+name=CDS0802 id="CDS0802"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">C.DS.080.2 Design Software Components </a></h5>
+<p>See guidance for <a href="#BDS0801">B.DS.080.1</a>. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=CDS1502 id="CDS1502"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">C.DS.150.2 Develop Database Design</a></h5>
+<p>See guidance for <a href="#BDS1501">B.DS.150.1</a>. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h4><a name="PEC" id="PEC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPEC_PREPARE_ENV_CONST.HTM" target="_blank">C.ACT.PEC Prepare Environments - Construction </a></h4>
+<h5><A name=CTE0382 id="CTE0382"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">C.TE.038.2 Prepare Integration Test Environment </a> </h5>
+<p>See guidance for <a href="#BTE0381">B.TE.038.1</a>. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="DCCTSC" id="DCCTSC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDCCTS_DEVELOP_CUSTOM_COMPONENT_TEST_SCRIPTS.HTM" target="_blank">C.ACT.DCCTSC Develop Custom Component Test Scripts - Construction </a></h4>
+<h5><A name=CTE0352 id="CTE0352"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">C.TE.035.2 Create Integration Test Scenarios </a> </h5>
+<p>See guidance for <a href="#BTE0351">B.TE.035.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="DSTSC" id="DSTSC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTDSTS_DEVELOP_SYSTEM_TEST_SCENARIOS.HTM" target="_blank">C.ACT.DSTSC Develop System Test Scenarios - Construction</a></h4>
+<h5><B><A
+name=CTE0253 id="CTE0253"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">C.TE.025.3 Create System Test Scenarios</a></h5>
+<p>See guidance for <a href="#BTE0251">B.TE.025.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ICC" id="ICC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTICC_IMPLEMENT_CUSTOM_COMPONENTS.HTM" target="_blank">C.ACT.ICC Implement Custom Components</a></h4>
+<h5><B><A
+name=CIM0402 id="CIM0402"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">C.IM.040.2 Implement Database</a></h5>
+<p>See guidance for <a href="#BIM0401">B.IM.040.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PCCTC" id="PCCTC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/ACTPCCT_PERFORM_CUSTOM_COMPONENT_TESTING.HTM" target="_blank">C.ACT.PCCTC Perform Custom Component Testing - Construction </a></h4>
+<h5><A name=CTE0402 id="CTE0402"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">C.TE.040.2 Perform Integration Test</a> </h5>
+<p>See guidance for <a href="#BTE0401">B.TE.040.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PSTC" id="PSTC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPSTC_PERFORM_SYSTEM_TEST_CONSTRUCTION.HTM" target="_blank">C.ACT.PSTC Perform System Test - Construction</a></h4>
+<h5><A name=CTE0702 id="CTE0702"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">C.TE.070.2 Perform System Test</a> </h5>
+<h6>Approach</h6>
+<p> During Perform System Test, users develop confidence in the programs and the overall usability of the target application system. It is important to test operating routines and procedures as well as computer programs, thereby simulating business operations, not just systems. </p>
+<p> The repetitive nature of this task allows the project team to test each business flow and incrementally improve the system until they reach the desired level of success. Test each process flow until you achieve success. Then integrate the script with each other across process boundaries. </p>
+<p> Successful business system testing should verify the following: </p>
+<ul>
+  <li> the system successfully supports business operations </li>
+  <li> all results are predictable and repeatable </li>
+  <li> variations of the test script produces expected results </li>
+  <li> data is verifiable through alternative means across the business system </li>
+  <li> relevant key performance indicators can be validated </li>
+  <li> support procedures intended for production are accurate </li>
+  <li> modifications to procedures, policy, and system are fully implemented </li>
+</ul>
+<p><b> Relationship to Configuration Prototype Validation</b></p>
+<p> Conduct Configuration Prototyping Workshop (MC.080)  and Perform System Test are similar tasks&mdash;they are both based on business processes and they both employ the use of test scripts and their components. They differ, however, in the test data used, the level of applications setup validation, and in the user skills and level of documentation required to thoroughly execute the tests. </p>
+<p> System testing involves validation of converted data, whereas functional prototype validation uses manually keyed sample data, because generally converted data is not available at that time. System testing also validates the integration of the entire suite of application configuration setups that were individually tested during functional prototype validation. The final iteration of system testing includes all custom application extensions that are not available (perhaps not even designed) during functional prototype validation. System testing, however, does not include testing interfaces to legacy and third-party systems. These interfaces, if they exist, are tested during Perform Systems Integration Test (TE.100). </p>
+<p> The skills required for the system testing team are also similar to those required for functional prototype validation, except that system testing requires more discipline with regard to recording details (actual results), while functional prototype validation involves validating that a given process can be supported. System testing also tends to be more comprehensive from the standpoint that tests repeat iteratively, and for all action items resulting from the tests, you must resolve, retest, and document any changes to application setup for implementation in the production environment. </p>
+<p><b> Organizing Testing Teams </b></p>
+<p> Organize system testing teams by assigning specific job roles to individual testers. This prevents testers from inappropriately carrying forward knowledge of past test steps that another role would not possess. Key users should assume roles that match their actual jobs. They should be familiar with both the Oracle COTS application modules and custom application extension functionality, as well as the testing process itself. </p>
+<p> Always organize testing sessions for efficiency by publishing a thorough agenda that includes: </p>
+<ul>
+  <li> session location and duration </li>
+  <li> role assignments </li>
+  <li> tests to be executed </li>
+  <li> activities and sequence </li>
+  <li> props and other physical setups that help simulate realism </li>
+  <li> expected outputs and criteria for successful closure of the testing session </li>
+</ul>
+<p><b> Role Playing </b></p>
+<p> Use role playing and props to simulate business processes. For example, when a purchasing agent prints a purchase order, have it delivered to the <em>vendor</em>, who responds by shipping products and <em>mailing</em> an invoice. Furthermore, try putting the purchase order into a window envelope. This might reveal that the printed address does not display completely through the window&mdash;a subtlety that could easily be overlooked with more casual testing. Even though actions such as these may only involve passing paper across a table, they are intended to mimic real life as much as possible in an attempt to flush out potential problems with the system. </p>
+<p> Keep verbal communication to a minimum, except when it is truly part of the process. For example, avoid the temptation to say to the shipping clerk, &ldquo;I have just loaded some orders into the system for a Z500-32X configuration. Try shipping them. &rdquo;The process and test plans should dictate when the shipping clerk checks for orders and picks products to ship. The spoken communication would not take place in real life. </p>
+<p><b> Parallel Process Flows </b></p>
+<p> Where processes overlap or are independent, it is possible to perform process testing in parallel with coordination. For example, processing purchase orders and building items in Work in Process (WIP) can be performed independently. The only coordination is at the points when the processes intersect, such as outside processing of WIP operations or receiving material on a purchase order directly to WIP. </p>
+<p> Follow Documented User Procedures </p>
+<p> The System Test Scenarios (TE.025) should be based on user procedures. The documented user procedures should also be available and used for reference (just as they would be available at each user&rsquo;s desk when the new system is in place). </p>
+<p><b> Use Converted Data </b></p>
+<p> Convert all or a part of the legacy system data for the system test. If you cannot convert all legacy data for the test, convert a representative sample. For example, if you are converting General Ledger balances, make sure that you include converted journals from each cost center, business unit, division, and so on. If you are converting vendors, make sure that the data includes vendors with multiple sites and multiple contacts, so that you can test full vendor-related functionality and conversion. Keep in mind that the system test serves as the final test of the conversion programs prior to transition. </p>
+<p><b> Multiple Copies of Test Scenarios </b></p>
+<p> Typically, you will execute the system test more than once. After completing a test execution (iteration), you should have a set of detailed and summary test results that have been recorded in the System Test Scenarios (TE.025). Between iterations you correct defects found during testing and prepare for the next iteration. When the next iteration is complete, you can compare results from each iteration to measure quality gains or losses, and use this information to manage quality and plan for additional test iterations, if necessary. </p>
+<p> The System Test Scenarios (TE.025) include blank columns to record actual results and resolution notes. Keep a master copy of the scenarios with these blank columns so you can make additional copies for repeated tests. Fill out the results by hand on the forms and file multiple copies of the same test together with an identifying iteration or cycle number. At the completion of the test, update the master soft copy with the final test result notes for each test step. </p>
+<p><b> Regression Testing </b></p>
+<p> The regression test retests changes made to a modified application extension because of an enhancement or a correction to a coding error. The regression test gets its name from the principle that when the development of a system progresses, validation of that progression requires proof that all prior validations have not regressed. </p>
+<p> In regression testing, you will retest application extensions in order to validate that prior application extension defects have been corrected. The regression test generally reexecutes the entire Unit Test Script (TE.020) and a selection of related Integration Test Scenarios (TE.035) to confirm that the overall quality of the software has improved. You perform regression testing in order to answer the questions: </p>
+<ul>
+  <li> How do I prove that the defect has been fixed? </li>
+  <li> How do I prove that it did not cause another defect somewhere else? </li>
+</ul>
+<p> In development environments where libraries of shared objects exist and object sharing is encouraged, be careful to run <em>where used</em> reports that expose all application extensions affected by a defect in a common object. Your regression test will need to select test scripts that retest all of the application extensions that invoke the common module. </p>
+<p> Determine whether your regression test will run concurrently with system, systems integration, and acceptance tests. Some projects use the regression test to stabilize application defects for the next iteration of the system test. This strategy allows the current system test to proceed to completion while the regression test stabilizes and fixes defects, thus preparing for the next iteration of the system test. Other projects use regression testing as the final test after fixing all faults. </p>
+<p><b> Automated Regression Testing </b></p>
+<p> Determine your level of regression testing automation. Regression test automation is now a very realistic option. Current tools feature the ability to record user actions and document GUI objects, thereby capturing this information into test scripts. You can then generalize the scripts to use variable data, enabling the script execution to be data-driven. If your project is considering automating its regression testing, clearly state your automation goals and be sure to plan extra time for script development and generalization. Test scripts now become a baselined item and you must take care to update the scripts each time the application is enhanced, due to approved change control, scope increase, and so on. </p>
+<p> Document the extent of automation you expect to achieve by leveraging regression testing tools. Be careful not to overlook the overhead of automation, as you will need additional development time and skill to perform automated regression testing. </p>
+<p><b> Recreating the Test Conditions </b></p>
+<p> When attempting to validate that a defect has been fixed, be careful to recreate the same data conditions and sequence of events that exposed the original defect. </p>
+<p><b> Converted Data </b></p>
+<p> When testing with converted data, verify that the data was not the cause of the problem. Application extensions are usually designed to handle data conditions created by the application system they are part of. If the application extensions were not built with an emphasis on error-handling, introducing converted data can cause application extensions to fail. </p>
+<p><b> Follow Support Procedures </b></p>
+<p> When you encounter problems, use the Production Support Infrastructure Design (TS.040) as a guide to test the organization&rsquo;s new internal support procedures. When these procedures do not resolve the problem, call Oracle Support (or other external support) and log the technical issue with them. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PSIT" id="PSIT"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPSIT_PERFORM_SYSTEMS_INTEGRATION_TEST.HTM" target="_blank">C.ACT.PSIT Perform Systems Integration Test</a></h4>
+<h5><A
+name=CTE085 id="CTE085"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_085_PREPARE_SYSTEMS_INT_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">C.TE.085 Prepare Systems Integration Test Environment </a></h5>
+<h6>Approach</h6>
+<p><b> Environment Configuration </b></p>
+<p> Configure the Systems Integration Test Environment based on the latest application setups from the Application Setup Documents (MC.050). Before you begin testing in each environment, you should: </p>
+<ol>
+  <li>Set up the applications. </li>
+  <li> Decide on the real business data to use. </li>
+  <li> Plan the volume of data (for example, converted data). </li>
+  <li> Verify that all application parameters have been set up to enable transactions. </li>
+  <li> Verify that sufficient business data has been entered to demonstrate application features. </li>
+  <li> Provide access to definition and setup screens to appropriate users. </li>
+  <li> Enable links to non-Oracle or custom systems (if applicable). </li>
+  <li> Make reporting, data query, and testing tools available in the testing environments to verify correct results against the expected results of the test scripts. </li>
+  <li> Record all changes and updates to the test environment to help you maintain the integrity of the objects that have been installed or updated. </li>
+</ol>
+<p><b> Import/Export </b></p>
+<p> If you have entered your setups into a master setup environment, you may choose to export that data and import it into your test environments. If testing uncovers issues that affect setups, you must change the setups in your master environment so that they will be correct for production. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><A name=CTE100 id="CTE100"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">C.TE.100 Perform Systems Integration Test</a> </h5>
+<h6>Approach</h6>
+<p> The purpose of the systems integration test is to test the operation of the business system across and between application systems. Use this task to develop user confidence in the overall usability of the system, including interfaces to external systems. It is important to test operating routines and procedures as well as computer programs, thereby simulating business operations, not just systems. </p>
+<p> Successful systems integration testing should verify the following: </p>
+<ul>
+  <li> The integration points (interfaces) can successfully support business operations across and between application systems. </li>
+  <li> All integration test results are predictable and repeatable. </li>
+  <li> Variations of the test scripts produce expected results. </li>
+  <li> Data are verifiable through alternative means across the business systems. </li>
+  <li> The support procedures intended for production are accurate. </li>
+  <li> Modifications to the procedures, policy, and system are fully implemented. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+
+<hr WIDTH="100%">
+<h4><a name="PCO" id="PCO"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPCO_PREPARE_FOR_CUT_OVER.HTM" target="_blank">C.ACT.PCO Prepare for Cutover</a></h4>
+<h5><B><A
+name=CTS0202 id="CTS0202"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">C.TS.020.2 Define Cutover Strategy </a></h5>
+<p>See guidance for <a href="#BTS0201">B.TS.020.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PACDC" id="PACDC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPACDC_PREPARE_TO_ACQUIRE_AND_CONVERT_DATA_CONST.HTM" target="_blank">C.ACT.PACDC Prepare to Acquire and Convert Data - Construction</a></h4>
+<h5><B><A
+name=CCV0402 id="CCV0402"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">C.CV.040.2 Design Conversion Components (Initial Load)</a></h5>
+<h6>Approach</h6>
+<p> In general, the approach and technique you use for designing your conversion programs is impacted by the method you choose for coding your conversion programs. During the conversion process, you may use traditional coding methods, using tools such as PL/SQL and SQL*Loader, or automated conversion tools. Regardless of the methods you choose for coding your conversion programs, you must determine where to document the conversion program design. </p>
+<p><b> Download/Extract Programs </b></p>
+<p> Typically, the organization&rsquo;s information systems support staff is responsible for providing extract files for conversion testing and conversion production loading. However, depending on the tool that you are using to upload the data to Oracle, you may have to be very specific about how you want the extract file to look. An example of the logic that you need to document is:<em> There must be multiple records per order in the extract file for order lines.</em></p>
+<p> Depending on the conversion requirements, the data extraction may be performed multiple times. If this is the case, you may want to consider using one of Oracle&rsquo;s gateway products to provide direct legacy system access. </p>
+<p><b> Interface Tables </b></p>
+<p> During conversion, do not directly populate Oracle COTS applications tables. The legacy data should first be moved to one or more of the standard or custom-developed interface tables. The number of interface tables required for the conversion of a business object depends on the complexity of the business object being converted. The level of complexity is not necessarily driven by data volume, but is more dependent on the number of processing, translation, filter, and foreign key rules. Many of the Oracle COTS applications have standard APIs that provide interface tables to load the legacy data before executing the interface programs. </p>
+<p> You can write traditional SQL code to create these tables, or if you are using an automated conversion tool, you can extend the Oracle production tables to include processing columns for processing rules. The temporary tables provide a place for you to apply all of the rules you have defined for a specific business object, before moving the data into the production tables. </p>
+<p><b> Uploading Data </b></p>
+<p> There are many tools available for uploading the data to the Oracle tables. The interface tables should already exist (in the case of a standard API) or should have been created before the upload module is run. Other loader options include the following: </p>
+<ul>
+  <li> Use the loader facilities offered as standard functionality in automated conversion tools. </li>
+  <li> Upload legacy data directly from a spreadsheet or PC database to the Oracle database tables using available ODBC drivers and SQL*Net, etc. </li>
+  <li> Translation Programs </li>
+</ul>
+<p> Once you create and load the interface tables, create and execute special logic to manipulate the data to attain the correct format, which the new application needs to operate. Execute this data manipulation before moving the data to the Oracle production tables. You can write traditional code using tools such as SQL*Plus or PL/SQL or use an automated conversion tool. </p>
+<p><b> Interface/Validation Programs </b></p>
+<p> Typically, the level of validation required must be consistent with the validation being performed by any form or package logic. Therefore, it is important to remember that these interface programs not only move the data to the production tables but also perform all required data validation. For example, if the order entry form validates that the customer on an order is already a customer that exists in the order entry system, then your interface module should do the same. If the level of validation is not the same as the form-level validation, when the converted order is queried in the new Oracle system, the user may get an error message. </p>
+<p> An automated conversion tool may also be the best option for writing your interface modules. The tool can be used to perform the necessary lookups required to enforce data validation in other Oracle tables. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="ACDC" id="ACDC"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTACDC_ACQUIRE_AND_CONVERT_DATA_CONST.HTM" target="_blank">C.ACT.ACDC  Acquire and Convert Data - Construction</a></h4>
+<h5><B><A
+name=CCV0552 id="CCV0552"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">C.CV.055.2 Implement Conversion Components (Initial Load)</a></h5>
+<h6>Approach</h6>
+<p> Code the conversion programs following the build standards for custom extensions and any supplemental standards defined specifically for conversion activities in the Data Acquisition and Conversion Standards (CV.025). In many projects, customer staff members may perform the final conversion, and therefore may be executing the modules created by a development team member. In this case, provide the customer staff members with a conversion execution document that details what each module does and the order in which the modules should be run to achieve a successful conversion. Use checklists to document conversion prerequisites and post-conversion activities. </p>
+<p> As mentioned in the Conversion Component Designs (CV.040), many Oracle Applications have standard interfaces that facilitate the conversion coding effort. In addition, consider using automated conversion tools instead of traditional coding methods. Below are some approaches and techniques for each of the five conversion programming areas. </p>
+<p><b> Download Programs </b></p>
+<p> The customer staff members are normally responsible for writing and maintaining the download modules. As with the Conversion Component Designs (CV.040), it is important that you provide them with a file schema that describes how many ASCII files to produce for a given business object, the order of the fields, the delimiter to be used, and so on. Depending on the tool you are using for the conversion and the legacy file structure, you may want to combine data in one of the ways listed below: </p>
+<ul>
+  <li> single extract file to populate multiple Oracle tables </li>
+  <li> multiple passes of a single extract file to populate multiple Oracle tables </li>
+  <li> multiple extract files to populate multiple Oracle tables </li>
+  <li> multiple passes of multiple extract files to populate multiple Oracle tables </li>
+  <li> single extract files to populate a single Oracle table </li>
+  <li> multiple passes of a single extract file to populate a single Oracle table </li>
+</ul>
+<p> This decision is largely dependent on the relationship and complexity of the Oracle tables being populated. </p>
+<p><b> Interface Table Creation Programs </b></p>
+<p> Use SQL*Plus to create the interface tables in Oracle. You can build an interface table for each Oracle production table you are going to load. The interface table can be a direct copy of the production table, or can have only the columns within the production table that you are going to load. </p>
+<p> You do not want the interface table to contain the constraints that the production tables have. This is because you are performing the data translation in the interface tables prior to validation and insertion. Therefore, if you copy the production table to use as your interface table, you probably want to remove the constraints, grants, and synonyms. For example, if the extract file contains a Y but the database is expecting a numeric value, then you may load the Y into the temporary table and translate the Y to a numeric value of 1 before passing the value to the production table. </p>
+<p> If the Oracle application has a standard API to facilitate the conversion of a given business object, then you do not have to create an interface table. In this case, the Oracle application provides an interface table that you load the legacy data elements and data defaults into. If however, there is a great deal of data translation that needs to take place before the legacy data is loaded into the Oracle applications interface tables, then you may want to create an additional translation table. Refer to the <em>Oracle Applications Open Interfaces Manual</em> for specific information on how to populate the interface table columns, as well as information on how to execute the concurrent process. </p>
+<p><b> Automated Conversion Tools </b></p>
+<p> If you are using an automated conversion tool, you may be able to use the tool to create the interface tables. Most of the logic for data validation, transformation, and so on may also be built into the tool templates. However, you may need to create interface tables for mapping between old and new data values. Refer to the documentation of the tool you are using for information on its capabilities and use. </p>
+<p><b> Upload Programs </b></p>
+<p> Use a loader tool such as SQL*Loader to load the legacy system data flat file into the temporary tables you have created. If you are using an automated conversion tool, it may provide this functionality. Automated conversion tools allow you to map the legacy data to the Oracle table and columns, perform the required translations and validations, and then load the data into Oracle. </p>
+<p><b> Automated Conversion Tools </b></p>
+<p> If you are using an automated conversion tool, you may be able to define all the validation, transformation, and translation rules in the tool. Refer to the documentation of the tool in use for information on its capabilities and use.</p>
+<p><b> Translation Programs </b></p>
+<p> Create the translation programs using an appropriate programming language, depending on the complexity of the translations and your skills. SQL and PL/SQL are the preferred tools for creating the translation programs. The level of complexity of the translation depends on the legacy system being converted. Is the legacy system normalized? Is new functionality being built into Oracle that was not used in the legacy system? These types of questions directly affect the level of complexity of the translation programs. </p>
+<p> Some or most of the data translation can be built on the legacy side, depending on available IS support resources. The Conversion Data Mapping (CV.027) and Conversion Component Designs (CV.040) should provide the developer with all of the necessary logic for the data translations. Some examples of translations follow: </p>
+<ul>
+  <li> date formatting </li>
+  <li> truncation of values </li>
+  <li> concatenation of values </li>
+  <li> if/then logic </li>
+</ul>
+<p> As mentioned previously, automated conversion tools are an option for building and executing this code. </p>
+<p><b> Interface/Validation Programs </b></p>
+<p> The complexity of the interface modules is primarily determined by the level of validation required for the data being converted. To guarantee that the data is useable in the new Oracle Application, your interface programs need to perform the same level of validation as the forms of the application. For example, if a form validates that a sales person assigned to a customer must already exist in the system, your interface/validation program needs to perform the same level of validation. Perform a lookup against the table that stores the sales person information to confirm the existence of such data. </p>
+<p> If the Oracle application provides a standard API, execute the interface program as a concurrent process to provide the required level of validation. </p>
+<p> The interface modules are typically written in PL/SQL or Pro*C. However, there are several automated tools that build and execute the code to validate and load the production tables. </p>
+<p> If you are using an automated conversion tool, you may be able to build most of the validation logic in the tool. Refer to the documentation of the tool you are using use for information on it&rsquo;s capabilities and use. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=CCV0651 id="CCV0651"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank">C.CV.065.1 Convert and Verify Data (Initial Load)</a></h5>
+<h6>Approach</h6>
+<p> Achieve Converted and Verified Data by successfully executing the conversion programs to perform the following functions: </p>
+<ul>
+  <li> Download the data from the legacy system and create a flat file that can be transferred and uploaded to Oracle tables. </li>
+  <li> Create Oracle interface tables that can store the legacy data before the data is validated and moved to the production tables of the Oracle application. </li>
+  <li> Load the legacy data to the temporary tables. </li>
+  <li> Perform any required data translation, transformation, or cleanup before moving the data to the production tables. </li>
+  <li> Interface (validate) and move the data to the Oracle production tables. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PD" id="PD"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/CACTPD_PRODUCE_DOCUMENTATION.HTM" target="_blank">C.ACT.PD Produce Documentation</a></h4>
+<h5><A name=CDO060 id="CDO060"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_060_PUBLISH_USER_REFERENCE_MANUAL_OVERVIEW.HTM" target="_blank">C.DO.060 Publish User Reference Manual </a></h5>
+<h6>Work Product </h6>
+<p> In a commercial off-the-shelf (COTS) application implementation, use the User Reference Manual to explain to users in functional terms how the application extensions will work.</p>
+<h6>Audience, Distribution and Usage</h6>
+<p>In a commercial off-the-shelf (COTS) application implementation, the User Reference Manual is used to show users how the application extensions enhance standard Oracle (COTS) applications functionality (use the preliminary versions).</p>
+<p> In addition, the User Reference Manual includes information about custom forms and reports and is an extension of the standard reference manuals provided with Oracle (COTS) applications. Describe each visible title, field, option, and transaction type for any custom software or application extension. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h5><B><A
+name=CDO080 id="CDO080"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank">C.DO.080 Publish Technical Reference Material </a></h5>
+<h6>Work Product </h6>
+<p>In a commercial off-the-shelf (COTS) application implementation, the Technical Reference Material provides technical information regarding application extensions and interfaces.</p>
+<h6>Approach</h6>
+<p> The Technical Reference Documentation does not replace the standard Oracle COTS application product technical reference manuals, so there is no need to duplicate information found in the standard Oracle COTS application product technical reference manuals . Although this manual is directed at technicians, remember that there can be a wide range of knowledge and experience within the technical group. </p>
+<h6>Audience, Distribution and Usage</h6>
+<p>For custom extensions and interfaces to the Oracle (COTS) application products, the content of the document should supplement the standard Oracle COTS application product technical reference manuals.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><A
+name=TRANSITION id="TRANSITION"></A><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM" target="_blank">TRANSITION</a></h3>
+<h4><a name="CDT" id="CDT"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/DACTCDT_CONVERT_DATA_TRANS.HTM" target="_blank">D.ACT.CDT Convert Data - Transition </a></h4>
+<h5><A
+name=DCV0652 id="DCV0652"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank">D.CV.065.2 Convert and Verify Data (Initial Load)</a></h5>
+<p>See guidance for <a href="#CCV0651">C.CV.065.1</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><A
+name=PRODUCTION id="PRODUCTION"></A><a href="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM" target="_blank">PRODUCTION</a></h3>
+<h4><a name="RPP" id="RPP"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTRPP_RESOLVE_PROD_PROBLEMS.HTM" target="_blank">E.ACT.RPP Resolve Production Problems </a></h4>
+<h5><A
+name=EPS060 id="EPS060"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_060_MONITOR_AND_RESPOND_TO_SYSTEM_PROBLEMS_OVERVIEW.HTM" target="_blank">E.PS.060 Monitor and Respond to System Problems </a></h5>
+<h6>Approach</h6>
+<p> In a commercial off-the-shelf (COTS) application implementation, the ongoing system maintenance begins during this task. Create a system or process to effectively maintain the production system and respond to users&rsquo; requests. </p>
+<p><b> Routine Maintenance </b></p>
+<p> Routine maintenance is performed by the information systems operations group. Routine maintenance includes: </p>
+<ul>
+  <li> running batch reports </li>
+  <li> running extracts </li>
+  <li> logging file purges </li>
+  <li> enlarging tablespace </li>
+  <li> monitoring table space defragmentation </li>
+  <li> running hot backups </li>
+  <li> running cold backups </li>
+  <li> performing security audits </li>
+  <li> runaway process management </li>
+  <li> performance tuning </li>
+  <li> archiving and purging data </li>
+</ul>
+<p><b> On Demand Maintenance </b></p>
+<p> On demand maintenance includes unplanned or requested activities such as the following: </p>
+<ul>
+  <li> setting up new users </li>
+  <li> changing new user access </li>
+  <li> correcting interface data </li>
+  <li> correcting data due to user error </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><a name="PF" id="PF"></a><a href="../../../020_METHOD_GUIDELINES/040_ACTIVITY/EACTPF_PLAN_FOR_FUTURE.HTM" target="_blank">E.ACT.PF Plan for Future</a></h4>
+<h5><A
+name=EPS135 id="EPS135"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_135_DETERMINE_FUTURE_FUNCT_ENHANCEMENTS_OVERVIEW.HTM" target="_blank">E.PS.135 Determine Future Functional Enhancements </a></h5>
+<h6>Approach</h6>
+<p><b> Future Enhancements Collection During the Implementation </b></p>
+<p> The content for the Future Functional Enhancements can be collected during the Business Requirements (RD), Design (DS) and Implement (IM) activities. Luxury or wish list features may take an extraordinary amount of project team time to produce. These are captured in a separate document to be considered for a subsequent implementation, and should be categorized so that management can determine the urgency of need, estimate the effort required, and justify the enhancements. </p>
+<p><b> Future Applications Releases Upgrade </b></p>
+<p> Looking forward, you should consider the new features planned for the applications. Consultants should be involved with this process. If you have insight with regard to what the next release of the applications provide, then you should recommend or highlight these as a justification to upgrade.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

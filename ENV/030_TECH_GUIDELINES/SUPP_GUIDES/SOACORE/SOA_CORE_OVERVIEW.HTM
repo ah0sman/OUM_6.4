@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Core Workflow Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Core Workflow Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#WHAT">What is the SOA Core Workflow?</option>
+                            <option value="#WHEN">When to use the SOA Core Workflow View?</option>
+                            <option value="#HOWPOS">Positioning, Qualification and Scope</option>
+                            <option value="#WHATPROC">SOA Core Workflow Overview</option>
+                            <option value="#WHATPROG">What Other Programs Relate to the SOA Core Workflow View?</option>
+                            <option value="#HOWOUM">How does the SOA Core Workflow Relate to OUM?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<div align=left>
+  <div align=left></div>
+</div>
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SOA_CORE_WORKFLOW.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) CORE WORKFLOW OVERVIEW </h2>
+<h3><b><A 
+name=WHAT id="WHAT"></A></b>WHAT IS THE SOA CORE WORKFLOW?</h3>
+<p>The Service-Oriented Architecture (SOA ) Core Workflow View is used to provide a conceptual view of the SOA approach that is provided by OUM. This view is intended to describe how OUM supports SOA from Envision through Implement. This view is not used to deliver an engagement, but rather to describe at a high-level, the work that is done to prepare an enterprise for SOA. The view highlights the service engineering tasks of OUM and explains how they relate to each other.</p>
+<p>The SOA Core Workflow should be used to help organizations understand at a high level the work that is outlined in OUM to execute projects within a Service-Oriented Architecture (SOA) environment, either as an initial project, or as subsequent projects. </p>
+<p>This view should help the business to understand how the method supports SOA from a holistic approach, as a contiguous process. Although it may take several planning projects, to establish governance, modeling or reference architectures, and several SOA implementation projects to fully implement SOA within an organization. </p>
+<p>This view will likely never be used in whole, to run a single project but rather to facilitate a high-level discussion of the possible considerations as an enterprise moves to fulfill a SOA initiative. The view is used to illustrate the path to SOA through OUM. </p>
+<p>This view includes tasks that have SOA Specific Guidance or considerations in them. It does not include ALL tasks that may be required for complete project delivery but only the service-specific tasks and guidance. In other words, this view highlights the SOA tasks of OUM and explains how they relate to each other. </p>
+<p>In practice you will use this view to understand the flow of SOA throughout a project, but in the context of a project delivery, you should use the Service-Oriented Architecture Project Delivery View, or one of the SOA Planning views, which already include the Service Engineering tasks.</p>
+<h4>Background</h4>
+<p>Service-Oriented Architecture (SOA) is an Information Technology (IT) strategy that, in many cases, spans the entire enterprise. IT projects are implemented to fit within an SOA and are therefore just a piece of the larger SOA initiative. If projects are developed independently, without consistent tie-in and guidance from the overall SOA leadership team, the effectiveness and value of each delivery is substantially reduced. Fundamental to successful SOA adoption is the establishment of an Enterprise SOA Framework which is used to tie project delivery, and operations into the overall SOA Governance structure and Reference Architecture, as well as apply the best usage of investment in Service Infrastructure.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHEN id="WHEN"></A></b>WHEN TO USE THE SOA CORE WORKFLOW VIEW?</h3>
+<p>This view can be referenced whenever an understanding of how OUM is used to support a SOA Initiative.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a name=HOWPOS id="HOWPOS"></a></b>POSITIONING, QUALIFICATION AND SCOPE </h3>
+<p>Service-Oriented Architecture (SOA) requires planning that spans the enterprise or area of focus within the business that is applying it. Projects may not be simply architected, constructed and delivered independently in an effective SOA. Consistency and planning must be established across deliveries to ensure that the delivery maximizes the benefit of the SOA, as well as contributes to the overall SOA effectiveness.</p>
+<p>Industrial strength SOA requires at least 4 areas of focus in order to mature successfully. These focus areas are:</p>
+<ul>
+  <li> Enterprise Service Infrastructure</li>
+  <li>Enterprise Service Engineering and Management</li>
+  <li>Corporate Development/Evolution</li>
+  <li>A planning process and roadmap to tie the other 3 elements together</li>
+</ul>
+<p>This SOA Core Workflow View is focused on the realization of Enterprise Service Engineering and Management.</p>
+<p>Enterprise Service Engineering and Management requires that the method for delivering projects that will utilize SOA must be executed with a consistent strategy from inception through delivery and into steady state. This consistent strategy can be either planned for and developed in advance of any project, or developed at the same time as delivering a pilot project. The focus of an engagement based in this view is the development of the Enterprise Service Engineering Framework <em>in conjunction with</em> the delivery of a project. This allows the framework to be developed more thoroughly. The strategy can then be refined with each additional delivery going forward.</p>
+<p>It is clear that Enterprise Service Engineering spans more than simply identifying and engineering services. Aside from influencing the software development lifecycle in many areas, this framework also impacts operations, and the overall enterprise architecture.</p>
+<p>The delivery process then becomes a natural extension of the adopted SOA, rather than separate entities with unique goals. Further, the delivery process for SOA based projects needs to be augmented with additional activities in order to ensure the following:</p>
+<ul>
+  <li> Requirements are harvested with an eye towards service-orientation.</li>
+  <li>Potential shared services are identified at the correct time in the delivery lifecycle.</li>
+  <li>Existing shared services applicable to the delivery are discovered and applied in the application architecture correctly.</li>
+  <li>Appropriate shared service testing strategies are adhered to.</li>
+  <li>The deployment strategy is identified for shared services resulting from the delivery.</li>
+  <li>New services are defined in accordance with the established rules of the governing SOA.</li>
+  <li>Services are designed in accordance with the design policies established by the governing SOA, including:<br>
+      <ul>
+        <li>Service Versioning strategy</li>
+        <li>Implementation Guidelines</li>
+        <li>Coding standards</li>
+        <li>Management Enablement capabilities<br>
+        </li>
+      </ul>
+  </li>
+  <li>The application and the new resulting shared services are transitioned to operational state smoothly.</li>
+  <li>The lifecycle of services is managed appropriately.</li>
+  <li>SOA asset usage is tracked, measured and enforced.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a name=WHATPROC id="WHATPROC"></a></b>SOA CORE WORKFLOW OVERVIEW </h3>
+<p align="center"><img src="../../../010_COMMON_FILES/SE.GIF" alt="SOA Core Workflow or SOA Engineering Process" width="745" height="385" title="SOA Core Workflow or SOA Engineering Process"></p>
+<p>The diagram above indicates the SOA Engineering process within OUM. </p>
+<h4>Service Architecture and Governance</h4>
+<p>Service Architecture and Governance is the foundation of a SOA Initiative and is performed during Envision. During Service Architecture and Governance you define what constitutes a service, the way it is recognized by the organization, as well as the taxonomy that the organization wants to use for its Service Architecture and Governance.</p>
+<p>You define the Portfolio Management Strategy that includes the identification or creation of an Enterprise Repository, the Service Lifecycle, and Versioning Strategy, and the identification of all assets that you will need. You also populate the repository with existing assets. Finally, you define the architectural standards and polices.</p>
+<h4>Requirements Identification and Discovery</h4>
+<p>Requirements Identification and Discovery is performed during Envision for enterprise services. Requirements Identification and Discovery is split into two areas:</p>
+<ul>
+  <li>Requirements Management</li>
+  <li>Service Identification &amp; Discovery</li>
+</ul>
+<p><b>Requirements Management</b> includes the analysis of the Business Strategy. Project requirements are gathered. Requirements Models may be created or updated as a result of this effort. When requirements have been identified during a project, a check is performed against the Enterprise Repository to verify if there are any identical or partly matching requirements. Identical requirements could potentially be reused. At the end, the requirements will be prioritized. </p>
+<p><b>Service Identification &amp; Discovery</b> includes identification of candidate services based on various models. The candidate services are reviewed and the relevant ones are further detailed and scored for justification.</p>
+<h4>Project Start Up</h4>
+<p>The Project Start Up area defines the steps that should be carried out at the beginning of all SOA projects which are based on the approach described in this view, this start up is accomplished with tasks from the OUM Manage focus area.</p>
+<p>Project Start Up is concerned with checking and understanding existing SOA strategy and specific project implications. This includes checking the SOA reference architecture and understanding the service portfolio management strategy. If a SOA Reference Architecture or a service portfolio management strategy are lacking in the enterprise, you should create them in the context of the project with the view to extend them to the enterprise whenever appropriate.</p>
+<h4>Service Analysis</h4>
+<p>Service Analysis is performed during Implement for project services. Service Analysis is split into three areas:</p>
+<ul>
+  <li>Requirements Management</li>
+  <li>Service Identification &amp; Discovery</li>
+  <li>Release Planning</li>
+</ul>
+<p><b>Requirements Management</b> includes the analysis of the Business Strategy. Project requirements are gathered. Requirements Models may be created or updated as a result of this effort. When requirements have been identified during a project, a check is performed against the Enterprise Repository to verify if there are any identical or partly matching requirements. Identical requirements could potentially be reused. At the end, the requirements will be prioritized. </p>
+<p><b>Service Identification &amp; Discovery</b> includes identification of candidate services based on various models. The candidate services are reviewed and the relevant ones are further detailed and scored for justification.</p>
+<p><b>Release Planning</b> is only performed when services are actually implemented. During Release Planning a release plan for services is created or updated. The release plan is a living document that contains the high-level release information for all in-flight projects and shared assets. This allows for managing dependencies across projects or streams that arise due to the SOA principle of increasing reuse and limiting duplication of functionality</p>
+<h4> SOA Delivery </h4>
+<p>SOA Delivery covers the core engineering processes and guidelines required to define, design, construct and test services. For details on how SOA projects are delivered you should refer to the <a href="../../../../OUM/OUM_HOME_SOA_PROJECT_DELIVERY.HTM" target="_blank">Service-Oriented Architecture (SOA) Project Delivery View</a> and it's associated Supplemental Guide. </p>
+<p>At a high level, SOA consists of four areas that are revisited iteratively throughout the delivery process:</p>
+<ul>
+  <li> Service Definition</li>
+  <li>Service Design</li>
+  <li>Service Implementation</li>
+  <li>Service Testing</li>
+</ul>
+<p> <b>Service Definition</b> covers the set of activities required to effectively define service contracts from a service candidate. The service contract for a service provides the detailed description of both functional and non-functional characteristics that must be fulfilled by the interface and the implementation in order for a service to be realized.<br>
+    <em><br>
+    </em><b>Service Design</b> is covers the Design of the interface for a service. Although this sounds like a relatively straightforward task, the goal of service design is to come up with an interface that will maximize reuse while conforming to the demands of the service contract. The service interface must be designed with the consumer&rsquo;s needs in mind, but also with an eye towards the non-functional and service enablement requirements dictated through the service&rsquo;s contract. Therefore, service design may include a series of trade-offs where a balanced interface between consumer and contract are sought after.<br>
+    <em><br>
+  </em><b>Service Implementation</b> includes delivering the implementation of a service. This implementation is exposed through the service interface, but is not only responsible for implementing the interface in accordance to the contract, but rather the entire service in accordance with the contract. This includes coverage of all functional and non-functional requirements, as well as the service enablement requirements for the service.</p>
+<p> <b>Service Testing</b> can run in parallel with design and implementation: it begins after service definition and continues throughout service delivery (and beyond). Once service definition has completed, the set of service contracts have been defined which provide the necessary test criteria required before service test planning can begin. Once service design has completed, the interface can be used to construct the service test cases, which should be constructed in parallel with service implementation. The actual testing cycles proceed once service implementation has advanced far enough to begin functional testing. Service testing, with respect to service delivery, concludes once all acceptance criteria have been satisfied.</p>
+<h4> Service Management</h4>
+<p> Service Management covers the topics of Service Deployment Strategy and Service Operation, Administration and Management (OA&amp;M). Workshops are utilized to assist the customer in identifying their service deployment strategy and Operations Administration and Maintenance policies and procedures. It consists of 3 areas:</p>
+<ul>
+  <li> Service Packaging</li>
+  <li>Service Deployment</li>
+  <li>Service Operations, Administration and Management (OA&amp;M)</li>
+</ul>
+<p> <b>Service Packaging</b> includes grouping the services for concurrent deployment and subsequent management.</p>
+<p><b>Service Deployment</b> is the transition to production of the services. </p>
+<p><b>Service OA&amp;M</b> is not only the monitoring and management of services but also enforcement or monitoring of SLAs contained in contracts and usage agreements.<br>
+    <br>
+    <a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROG id="WHATPROG"></a></b>WHAT OTHER PROGRAMS RELATE TO THE SOA CORE WORKFLOW VIEW? </h3>
+<p>The <a href="../../../../OUM/OUM_HOME_SOAINOUM.HTM" target="_blank">SOA IN OUM PAGE</a> is used to access all OUM SOA views to plan and model SOA in preparation for SOA implementation projects.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h4><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES THE SOA CORE WORKFLOW RELATE TO OUM? </h4>
+<p>The SOA Core Workflow has been mapped to the Envision, Implement and Manage Focus Areas of Oracle Unified Method to help show which tasks would typically be performed for all aspects of SOA planning and implementation. It provides an overview of where all the services tasks are in OUM, and can be used as to help understand all aspects of a SOA Initiative as supported by OUM.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

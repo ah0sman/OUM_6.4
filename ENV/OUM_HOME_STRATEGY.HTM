@@ -1,0 +1,1364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>Strategy View</TITLE>
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.copyright {	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+<NOSCRIPT>
+  <center>
+  <table cellpadding="0" cellspacing="0" border="0" width="550">
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a newer browser, such as Internet Explorer 6 or Firefox</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site.</td></tr>
+
+
+  </table>
+</center>
+</NOSCRIPT>
+</HEAD>
+<BODY onload="onLoad()">
+<A name="TOP"></A>
+<TABLE width="100%" border="1" role="presentation">
+  <TR border="0">
+    <TD width="12%" height="92" valign="top"><a href="../OUM/OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+    <a href="../OUM/CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0"></a></TD>
+    <TD width="88%" valign="top"><p>&nbsp;</p>
+    <table width="100%" role="presentation">
+        <tr>
+          <td width="15%" nowrap><div align="center">
+            <h1>OUM</h1>
+          </div></td>
+          <td colspan="3" scope="col"><h1 align="left">Strategy View</h1></td>
+        </tr>
+        <tr>
+          <td width="15%" nowrap><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+          <td><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+          <td><div align="center"><b>Method Navigation</b><br>
+              <strong>
+                  <select
+							name="menu1" class="MethodNavigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </select>
+              </strong>          </div></td>
+          <td align="center"><b>Current Page Navigation</b><br>
+              <select
+							name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation"
+							onChange="location.hash = this.options[this.selectedIndex].value; showOneTaskFromList(this);">
+                <option value="TOP" selected></option>
+                <option value="DUGTextNav">View Description and Key Components</option>
+                <option value="PicNav">Diagram Navigation</option>
+                <option value="PjmTextNav">Manage Focus Area - Guidelines</option>
+                <option value="EnvTextNav">Envision Focus Area - Guidelines</option>
+                <option value="PJMTWP">Manage Focus Area - Tasks and Work Products</option>
+                <option value="PSU">[PS] Project Start Up</option>
+                <option value="PEC">[PEC] Project Execution and Control</option>
+                <option value="PC">[PC] Project Closure</option>
+                <option value="ENVTWP">Envision Focus Area - Tasks and Work Products</option>
+                <option value="ER">[ER] Envision Roadmap</option>
+                <option value="BA">[BA] Enterprise Business Analysis</option>
+                <option value="EA">EA] Enterprise Architecture</option>
+              </select></td>
+        </tr>
+    </table></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" title="View Description and Key Components" summary="This section contains a brief view description followed by a Key Component section with helpful links." role="presentation">
+  <TR>
+    <TD width="100%">
+	  <h2><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DugTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg')"
+	onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DugTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg'); new Effect.Highlight($('DugTextNavText'), {duration: 4});" /><a name="DUG_Text_Nav" id="DUG_Text_Nav"></a><A id="DugTextNavText"> VIEW DESCRIPTION AND KEY COMPONENTS </A></h2>
+	  <DIV id="DugTextNav">
+            <TABLE width="100%" border="1" class="oum">
+              <TBODY>
+                <TR>
+                  <td height="25" scope="table width" colspan="3"><h3 align="left">Description</h3>
+                  </td>
+                </TR>
+                <TR>
+                  <TD height="25" colspan="3"><p>The Strategy view provides access to the tasks used to form a strategy or approach to technical IT domains in the enterprise as a whole. This view is based only on the tasks within the Envision focus area. It allows the enterprise to explore technical approaches that could be utilized to resolve specific business problems. The Strategy view may be used to develop an approach around Business Intelligence, Service-Oriented Architecture, Security and many other domains. This Strategy view is generic. Used as a foundation, these tasks accomplish initial discovery and requirements gathering.</p></TD>
+                </TR>
+                <TR>
+                  <td height="25" scope= "table width" colspan="3"><h3>Key Components</h3></td>
+                </TR>
+                <TR>
+                  <TD width="33%" vAlign="top"><h4>Strategy:</h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <A href="050_REFERENCE_FILES/OUM_STRATEGY_WBS.HTML"
+				target="_blank">Work Breakdown Structure (HTML)</A><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <A
+				href="050_REFERENCE_FILES/OUM_STRATEGY_WORKPLAN.MPP" target="_blank"> Project Workplan (MPP)</A></p></TD>
+                  <TD width="34%" vAlign="top"><h4>Supplemental Guidance:</h4>
+                    <p><a href="030_TECH_GUIDELINES/SUPP_GUIDES/SRAP/SRAP_SUPP_GUIDE.HTM" target="_blank"> </a><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM#SOALINKS" target="_blank">SOA Resources </a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">SOA Application Integration Architecture Supplemental Guide</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">SOA Project Delivery Supplemental Guide</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM" target="_blank">more Supplemental Guidance </a></p></TD>
+                  <TD width="33%" vAlign="top"><h4>Method Resources:</h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/OUM_ENVISION_WBS_ACT.HTML" target="_blank">Envision Activities and Task WBS View</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/050_REFERENCE_FILES/ENV_TOUCHPOINTS.HTM" target="_blank">Envision Touch Points </a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">Mapping: Envision</a><br>
+                        <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/050_REFERENCE_FILES/OUM_MAPPINGS.HTM" target="_blank">more Mapping Documents</a></p></TD>
+                </TR>
+              </TBODY>
+          </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" role="presentation" class="oum" title="Diagram Navigation" summary="This section contains a navigation diagram with links. ">
+<TR>
+  <TD><h2><a name="PicNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PicNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg')"
+	onload="Element.hide(this)" />
+        <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PicNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg'); new Effect.Highlight($('PicNavText'), {duration: 4});" />
+        <A id="PicNavText">
+        DIAGRAM NAVIGATION</A>
+        </h2>
+    <p>        This section contains a navigation diagram with links. Place your cursor over the area of interest in the diagram and click.</p>
+    <p></p>
+    <P id="PicNav" align="center"><A
+	name="Pic_Nav"></A> <img src="010_COMMON_FILES/STRATEGY_PHASE.GIF" alt="Strategy Navigation Diagram" width="599" height="340" border="0" usemap="#Map" title="Strategy Navigation Diagram">
+      <map name="Map">
+        <area shape="rect" coords="215,24,400,69" href="020_METHOD_GUIDELINES/010_PHASE/ENV_INIT_INITITATE_PHASE_OVERVIEW.HTM" target="_blank" alt="Go to Initiate Phase Overview" title="Go to Initiate Phase Overview">
+        <area shape="rect" coords="402,20,583,69" href="020_METHOD_GUIDELINES/010_PHASE/ENV_ME_MAIN_EVOLVE_PHASE_OVERVIEW.HTM" target="_blank" alt="Go to Maintain and Evolve Phase Overview" title="Go to Maintain and Evolve Phase Overview">
+        <area shape="rect" coords="0,75,214,116" href="../PJM/PJM_HOME.htm" target="_blank" alt="Go to Manage View" title="Go to Manage View">
+        <area shape="rect" coords="216,71,593,120" href="#PJMTWP" alt="Go to Manage Tasks and Work Products" title="Go to Manage Tasks and Work Products">
+        <area shape="rect" coords="1,119,212,155" href="020_METHOD_GUIDELINES/020_PROCESS/OUM_ER_ENVISION_ROADMAP_PROCESS_OVERVIEW.HTM" alt="Go to Envision Roadmap Process Overview" title="Go to Envision Roadmap Process Overview">
+        <area shape="rect" coords="1,156,213,193" href="020_METHOD_GUIDELINES/020_PROCESS/OUM_BA_ENTERPRISE_BUSINESS_ANALYSIS_PROCESS_OVERVIEW.HTM" target="_blank" alt="Go to Enterprise Business Analysis Process Overview" title="Go to Enterprise Business Analysis Process Overview">
+        <area shape="rect" coords="0,218,214,264" href="020_METHOD_GUIDELINES/020_PROCESS/OUM_EA_ENTERPRISE_ARCHITECTURE_PROCESS_OVERVIEW.HTM" target="_blank" alt="Go to Enterprise Architecture Process Overview" title="Go to Enterprise Architecture Process Overview">
+        <area shape="rect" coords="214,120,403,149" href="javascript:goAnchor('ER'); javascript:goAnchor('ERI')" alt="Go to Envision Roadmap Tasks and Work Products" onClick="showTask('ER_TASKS', false, 'ER_OPEN', 'ER_CLOSED');" title="Go to Envision Roadmap Tasks and Work Products">
+        <area shape="rect" coords="402,121,593,150" href="javascript:goAnchor('ER'); javascript:goAnchor('ERME')" alt="Go to Envision Roadmap Tasks and Work Products" onClick="showTask('ER_TASKS', false, 'ER_OPEN', 'ER_CLOSED');" title="Go to Envision Roadmap Tasks and Work Products">
+        <area shape="rect" coords="214,153,400,192" href="javascript:goAnchor('BA'); javascript:goAnchor('BAI')" alt="Go to Enterprise Business Analysis Tasks and Work Products" onClick="showTask('BA_TASKS', false, 'BA_OPEN', 'BA_CLOSED');" title="Go to Enterprise Business Analysis Tasks and Work Products">
+        <area shape="rect" coords="400,149,596,194" href="javascript:goAnchor('BA'); javascript:goAnchor('BAME')" alt="Go to Enterprise Business Analysis Tasks and Work Products" onClick="showTask('BA_TASKS', false, 'BA_OPEN', 'BA_CLOSED');" title="Go to Enterprise Business Analysis Tasks and Work Products">
+        <area shape="rect" coords="215,217,401,267" href="javascript:goAnchor('EA'); javascript:goAnchor('EAI')" alt="Go to Enterprise Architecture Tasks and Work Products" onClick="showTask('EA_TASKS', false, 'EA_OPEN', 'EA_CLOSED');" title="Go to Enterprise Architecture Tasks and Work Products">
+        <area shape="rect" coords="404,212,592,270" href="javascript:goAnchor('EA'); javascript:goAnchor('EAME')" alt="Go to Enterprise Architecture Tasks and Work Products" onClick="showTask('EA_TASKS', false, 'EA_OPEN', 'EA_CLOSED');" title="Go to Enterprise Architecture Tasks and Work Products">
+      </map>
+</P>
+</TABLE>
+<TABLE width="100%" border="1" role-"presentation" class="oum" title="Manage Focus Area - Guidelines">
+  <TR>
+    <TD><h2><a name="PjmTextNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PjmTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PjmTextNav', 'PjmTextNavOnImg', 'PjmTextNavOffImg')"
+onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PjmTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PjmTextNav', 'PjmTextNavOnImg', 'PjmTextNavOffImg'); new Effect.Highlight($('PjmTextNavText'), {duration: 4});" /> MANAGE FOCUS AREA - GUIDELINES
+      </h2>
+      <DIV id="PjmTextNav">
+        <p> <A
+	name="PJM_Text_Nav" id="PJM_Text_Nav"></A>This section contains links to Phase Overviews, Process Overviews, Activity Overviews, and References.
+        </p>
+        <TABLE width="100%" border="1" class="oum" title="Manage Focus Area - Guidelines" summary="This table provides links to the Manage Focus Area Phase Overview, Process Overview, Activity Overviews and References.">
+              <TBODY>
+                <TR>
+                  <th width="30%" vAlign="top" scope="col">Phase Overviews</th>
+                  <th width="40%" height="20" vAlign="top" scope="col"> Activity Overviews</th>
+                  <th width="30%" vAlign="top" scope="col">References</th>
+                </TR>
+                <TR>
+                  <TD width="30%" rowspan="2" vAlign="top"><p><a href="../PJM/020_METHOD_GUIDELINES/010_PHASE/PJM_A_PROJECT_STARTUP_PHASE_OVERVIEW.HTM" target="_blank">[PS] Project Start Up </a><BR>
+                        <a href="../PJM/020_METHOD_GUIDELINES/010_PHASE/PJM_B_PROJECT_EXEC_AND_CONTROL_PHASE_OVERVIEW.HTM" target="_blank">[PEC] Project Execution and Control </a><BR>
+                        <a href="../PJM/020_METHOD_GUIDELINES/010_PHASE/PJM_C_PROJECT_CLOSURE_PHASE_OVERVIEW.HTM" target="_blank">[PC] Project Closure</a></p></TD>
+                  <TD width="40%" height="2" vAlign="top"><b>Project Start Up </b></TD>
+                  <TD width="30%" rowspan="6" vAlign="top"><P><a href="../PJM/020_METHOD_GUIDELINES/PJM_FA_OVERVIEW.HTM" target="_blank">Manage Focus Area Overview</a> </P>                    
+                    <P><a href="../010_SHARED_FILES/OUM_ROLES.HTM" target="_blank">Project Roles</a><br>
+                      <a href="../010_SHARED_FILES/OUM_TERMS.HTM" target="_blank">Definitions/Terms</a></P>
+                    <P><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/MANAGE_MISC_TEMPLATES.HTM" target="_blank">Miscellaneous Templates </a></P>
+                    <P><a href="../PJM/030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/PLANNING_A_PROJECT_USING_OUM.HTM" target="_blank">Planning a Project using OUM</a><br>
+                        <a href="../PJM/030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/TAILORING_OUM_FOR_YOUR_PROJECT.HTM" target="_blank">Tailoring OUM for Your Project</a> <br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a><br>
+                        <a href="../PJM/050_REFERENCE_FILES/SCRUM_OUM_MAPPING.XLSX" target="_blank">Scrum to OUM Mapping</a> </P>
+                    <p><a href="../PJM/050_REFERENCE_FILES/PJM_KEY_CONCEPTS.HTM" target="_blank">Manage Key Concepts</a><br>
+                      <a href="../OUM/050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM" target="_blank">Project Management in OUM</a><br>
+                     <a href="../PJM/050_REFERENCE_FILES/OUM_TIPS_FOR_PM.HTM" target="_blank">Tips for Project Managers</a></p>
+                    <p><a href="../PJM/OUM_MANAGE_WBS_ACT.HTML" target="_blank">Manage Activities and Tasks View</a><br>
+                          <a href="../PJM/050_REFERENCE_FILES/OUM_MANAGE_WORKPLAN.MPP" target="_blank">Manage Project Workplan (MPP) </a></p>
+                    <p><a href="../PJM/050_REFERENCE_FILES/PGM_IN_OUM_OVERVIEW.HTM" target="_blank">Program Management in OUM</a></p>
+                    <p><a href="../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook</a></p>
+                  </TD>
+                </TR>
+                <TR>
+                  <TD width="40%" height="5" vAlign="top"><p><a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRBC_REVIEW_BID_AND_CONTRACT.HTM" target="_blank">Review Bid and Contract</a><br>                  
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRPAC_REVIEW_PROJECT_ASSETS_W_CUSTOMER.HTM" target="_blank">Review Project Assets with Customer </a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTVSSOS_VALIDATE_SCOPE_STAKEHOLDERS_AND_OCM_STRATEGY.HTM" target="_blank">Validate Scope, Stakeholders and OCM Strategy</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDW_DEVELOP_WORKPLAN.HTM" target="_blank">Develop Workplan</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDSPB_DEVELOP_STAFF_PLAN_AND_BUDGET.HTM" target="_blank">Develop Staff Plan and Budget</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEG_ESTABLISH_GOVERNANCE.HTM" target="_blank">Establish Governance</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEPI_ESTABLISH_PROJECT_INFRASTRUCTURE.HTM" target="_blank">Establish Project Infrastructure</a></p></TD>
+                </TR>
+                <TR>
+                  <th width="30%" vAlign="top" scope="col">Process Overviews</th>
+                  <td width="40%" height="19" vAlign="top"><b>Project Execution and Control</b></td>
+                </TR>
+                <TR>
+                  <TD width="30%" rowspan="3" vAlign="top"><p><a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_BT_BID_TRANSITION.HTM" target="_blank">[BT] Bid Transition</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_SM_SCOPE_MANAGEMENT.HTM" target="_blank">[SM] Scope Management</a> <br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_FM_FINANCIAL_MANAGEMENT.HTM" target="_blank">[FM] Financial Management</a>  <br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_WM_WORK_MANAGEMENT.HTM" target="_blank">[WM] Work Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_RKM_RISK_MANAGEMENT.HTM" target="_blank">[RKM] Risk Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_IPM_ISSUE_AND_PROBLEM_MANAGEMENT.HTM" target="_blank">[IPM] Issue and Problem Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_STM_STAFF_MANAGEMENT.HTM" target="_blank">[STM] Staff Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_CMM_COMMUNICATION_MANAGEMENT.HTM" target="_blank">[CMM] Communication Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_QM_QUALITY_MANAGEMENT.HTM" target="_blank">[QM] Quality Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_CM_CONFIGURATION_MANAGEMENT.HTM" target="_blank">[CM] Configuration Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_IFM_INFRASTRUCTURE_MANAGEMENT.HTM" target="_blank">[IFM] Infrastructure Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_PCM_PROCUREMENT_MANAGEMENT.HTM" target="_blank">[PCM] Procurement Management</a><br>
+                    <a href="../PJM/020_METHOD_GUIDELINES/020_PROCESS/PJM_OCHM_ORGANIZATIONAL_CHANGE.HTM" target="_blank">[OCHM] Organizational Change Management</a></p></TD>
+                  <TD width="40%" height="27" vAlign="top"><p><a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMSAA_MANAGE_SCOPE_ACCEPTANCE_AND_APPROVALS.HTM" target="_blank">Manage Scope, Acceptance and Approvals</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPF_MANAGE_PROJECT_FINANCES.HTM" target="_blank">Manage Project Finances</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPW_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">Manage Project Workplan</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMRIP_MANAGE_RISKS_ISSUES_AND_PROBLEMS.HTM" target="_blank">Manage Risks, Issues and Problems</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTOMT_ORIENT_AND_MANAGE_TEAM.HTM" target="_blank">Orient and Manage Team</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMCOP_MANAGE_COMMUNICATIONS_AND_OCM_PLANS.HTM" target="_blank">Manage Communications and OCM Plans</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPQ_MANAGE_PROJECT_QUALITY.HTM" target="_blank">Manage Project Quality</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTCECRM_CREATE_AND_EXECUTE_CONFIG_AND_RELEASE_MGMT.HTM" target="_blank">Create and Execute Configuration and Release Management</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMMI_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">Manage and Maintain Infrastructure</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTAPGCS_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Administer Procurement of Goods and Contracted Services</a></p></TD>
+                </TR>
+                <TR>
+                  <TD width="40%" height="19" vAlign="top"><p><b>Project Closure </b></p></TD>
+                </TR>
+                <TR>
+                  <TD width="40%" height="53" vAlign="top"><p><a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTGA_GAIN_ACCEPTANCE.HTM" target="_blank">Gain Acceptance</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTCPC_CLOSE_PROCESSES_AND_CONTRACT.HTM" target="_blank">Close Processes and Contract</a><br>
+                        <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTDLLAP_DOCUMENT_LESSONS_LEARNED_AND_ARCHIVE_PROJECT.HTM" target="_blank">Document Lessons Learned and Archive Project</a></p></TD>
+                </TR>
+              </TBODY>
+        </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Envision Focus Area - Guidelines">
+  <TR>
+    <TD><h2><a name="EnvTextNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="EnvTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('EnvTextNav', 'EnvTextNavOnImg', 'EnvTextNavOffImg')"
+onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="EnvTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('EnvTextNav', 'EnvTextNavOnImg', 'EnvTextNavOffImg'); new Effect.Highlight($('EnvTextNavText'), {duration: 4});" />   ENVISION FOCUS AREA - GUIDELINES
+      </h2>
+      <DIV id="EnvTextNav">
+        <p>  <a
+	name="Env_Text_Nav" id="Env_Text_Nav"></a>This section contains links to  Phase Overviews, Process Overviews  and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Envision Focus Area -  Tasks and Work Products tables further down this page.
+        </p>
+<TABLE width="100%" border="1" class="oum" title="Envision Focus Area - Guidelines" summary="This table contains links to Envision Focus Area Phase Overviews, Process Overviews and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Envision Focus Area - Tasks and Work Products tables further down this page.">
+                <TBODY>
+                  <TR>
+                    <th vAlign="top" scope="col">Phase Overviews</th>
+                    <th vAlign="top" scope="col">Process Overviews</th>
+                    <th vAlign="top" scope="col">Tasks and Work Products</th>
+                    <th vAlign="top" scope="col">References</th>
+                  </TR>
+                  <TR>
+                    <TD vAlign="top" width="20%"><P>                      <A
+				href="020_METHOD_GUIDELINES/010_PHASE/ENV_INIT_INITITATE_PHASE_OVERVIEW.HTM"
+				target="_blank">[INIT] Initiate </A><BR>
+                              <A
+				href="020_METHOD_GUIDELINES/010_PHASE/ENV_ME_MAIN_EVOLVE_PHASE_OVERVIEW.HTM"
+				target="_blank"> [ME] Maintain and Evolve </A><BR>
+                              </P></TD>
+                    <TD vAlign="top" width="25%"><P>                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_ER_ENVISION_ROADMAP_PROCESS_OVERVIEW.HTM" target="_blank">[ER] Envision Roadmap</a> <BR>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_BA_ENTERPRISE_BUSINESS_ANALYSIS_PROCESS_OVERVIEW.HTM" target="_blank">[BA] Enterprise Business Analysis</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/OUM_EA_ENTERPRISE_ARCHITECTURE_PROCESS_OVERVIEW.HTM" target="_blank">[EA] Enterprise Architecture</a></P></TD>
+                    <TD vAlign="top" width="25%"><P> 
+                            <A
+				onclick="showTask('ER_TASKS', false, 'ER_OPEN', 'ER_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#ER">[ER] Envision Roadmap</A><BR>
+                            <A
+				onclick="showTask('BA_TASKS', false, 'BA_OPEN', 'BA_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#BA">[BA] Enterprise Business Analysis</A><BR>
+                            <A
+				onclick="showTask('EA_TASKS', false, 'EA_OPEN', 'EA_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+				href="#EA">[EA] Enterprise Architecture</A></P></TD>
+                    <TD vAlign="top" width="30%"><P> <B>                        </B><A href="020_METHOD_GUIDELINES/ENV_FA_OVERVIEW.HTM"
+				target="_blank">Envision Focus Area Overview</A></P>
+                      <P>                    <A
+				href="../010_SHARED_FILES/OUM_ROLES.HTM" target="_blank">Project Roles<BR>
+                      </A><A href="../010_SHARED_FILES/OUM_TERMS.HTM" target="_blank">Definitions/Terms</A></P>
+                      <P><strong>For Project Managers and Planners:</strong><br>
+                        <A href="050_REFERENCE_FILES/OUM_ENVISION_WBS.HTML"
+				target="_blank">Envision Work Breakdown Structure<br>
+                        </A><A
+				href="050_REFERENCE_FILES/OUM_ENVISION_WORKPLAN.MPP" target="_blank">Envision Project Workplan (MPP)</A></P>
+                    </TD>
+                  </TR>
+                </TBODY>
+        </TABLE>
+      </DIV>
+    </TD></TR>
+</TABLE>
+<p><A href="#TOP">Back to Top</A></p>
+<HR WIDTH="100%">
+<h2><B> <a name="PJMTWP" id="PJMTWP"></a> </B>MANAGE FOCUS AREA - TASKS AND WORK PRODUCTS</h2>
+<P><A href="#" title="Expand all Manage Tasks and Work Products tables" onclick="expandAllPJMTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all Manage Tasks and Work Products tables" onclick="collapseAllPJMTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A></P>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Project Start Up Activities, Tasks and Work Products" summary="This window contains a table with links to the Project Start Up Activity Overviews, Task Overviews and work products.">
+  <TR>
+    <TD><h3><A name="PSU" target="_blank" id="PSU"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PSU_OPEN" title="Collapse window"
+     onload="Element.hide(this)"
+	 onclick="toggleElementBlind('PSU_TASKS', 'PSU_OPEN', 'PSU_CLOSED')" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PSU_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('PSU_TASKS', 'PSU_OPEN', 'PSU_CLOSED'); new Effect.Highlight($('PSU'), {duration: 4});" /> [PS] Project Start Up</A></h3>
+        <DIV id="PSU_TASKS">
+      <TABLE width="100%" class="oum" title="Manage Project Start Up Tasks and Work Products by Activity" summary="This table provides links to all the Activity Overviews for the Project Start Up phase, as well as to the Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each activity.">
+            <TBODY>
+              <TR bgcolor="#BEBEBE">
+                <th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+                <th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+                <th width="420" scope="col"><div align="center">Work Product</div></th>
+                <th width="420" scope="col"><DIV align="center">Template</DIV></th>
+              </TR>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM1" id="PSUPSSUM1"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM1_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM1', 'PSU_PSSUM1_OPEN', 'PSU_PSSUM1_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM1_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM1', 'PSU_PSSUM1_OPEN', 'PSU_PSSUM1_CLOSED')"
+			onload="Element.hide(this)" /> </B><a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRBC_REVIEW_BID_AND_CONTRACT.HTM" target="_blank">Review Bid and Contract</a></DIV></th>
+              </TR>
+            <TBODY id="PSU_PSSUM1">
+			  <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT010_REVIEW_AND_ANALYZE_BID_MATERIAL.HTM" target="_blank">BT.010 Review and Analyze Bid Material </a></TD>
+                <TD width="420">Reviewed and Analyzed Bid Material </TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT010_REVIEWED_AND_ANALYZED_BID_MATERIAL.DOCX" target="_blank">Reviewed and Analyzed Bid Material</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420" valign="top"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">BT.020 Review and Confirm Business Case </a></TD>
+                <TD width="420">Confirmed Business Case</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT020_CONFIRMED_BUSINESS_CASE.DOCX" target="_blank">Confirmed Business Case</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">BT.030 Identify Project Stakeholders </a></TD>
+                <TD width="420">Identified Project Stakeholders</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT030_IDENTIFIED_PROJECT_STAKEHOLDERS.XLSX" target="_blank">Identified Project Stakeholders</a></TD>
+              </TR>
+              <TR valign="top">
+				<TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT040_REVIEW_AND_ACCEPT_PROJECT_BUDGET.HTM" target="_blank">BT.040 Review and Accept Project Budget </a></TD>
+                <TD width="420">Accepted Project Budget</TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">RKM.020 Conduct Baseline Risk Assessment</a></TD>
+                <TD width="420">Baseline Risk Assessment</TD>
+                <TD WIDTH="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a> <br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM2" id="PSUPSSUM2"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM2_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM2', 'PSU_PSSUM2_OPEN', 'PSU_PSSUM2_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM2_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM2', 'PSU_PSSUM2_OPEN', 'PSU_PSSUM2_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRPAC_REVIEW_PROJECT_ASSETS_W_CUSTOMER.HTM" target="_blank">Review Project Assets with Customer </a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM2">
+              <TR valign="top">
+			    <TD width="90" valign="top"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT050_REVIEW_CONTRACT_WITH_CUSTOMER.HTM" target="_blank">BT.050 Review Contract with Customer </a></TD>
+                <TD width="420">Reviewed Contract</TD>
+                <TD width="420" valign="top"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90" valign="top"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT060_REVIEW_PROJECT_APPROACH_WITH_CUSTOMER.HTM" target="_blank">BT.060 Review Project Approach with Customer </a></TD>
+                <TD width="420">Reviewed Project Approach</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070.1 Create Project Management Plan</a></TD>
+                <TD width="420">Project Management Plan </TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx" target="_blank">Project Management Plan-Word</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.PPTX">Project Management Plan-PowerPoint</a> <br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/BT070_ABBREVIATED_PROJECT_MANAGEMENT_PLAN.pptx" target="_blank">Abbreviated Project Management Plan-PowerPoint</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.pptx" target="_blank">PMP Resources-PowerPoint</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.vsd" target="_blank">PMP Resources-Visio</a> </TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM3" id="PSUPSSUM2"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM3_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM3', 'PSU_PSSUM3_OPEN', 'PSU_PSSUM3_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM3_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM3', 'PSU_PSSUM3_OPEN', 'PSU_PSSUM3_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTVSSOS_VALIDATE_SCOPE_STAKEHOLDERS_AND_OCM_STRATEGY.HTM" target="_blank">Validate Scope, Stakeholders and OCM Strategy</a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM3">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope </a></TD>
+                <TD width="420">Validated Scope</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM010_CONDUCT_PROJECT_STAKEHOLDER_ANALYSIS.HTM" target="_blank">CMM.010 Conduct Project Stakeholder Analysis</a></TD>
+                <TD width="420">Project Stakeholder Analysis</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM010_PROJECT_STAKEHOLDER_ANALYSIS.XLSX" target="_blank">Project Stakeholder Analysis</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand Customer's Organizational Change Management Strategy</a></TD>
+                <TD width="420">Customer's Organizational Change Management Strategy</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM4" id="PSUPSSUM3"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM4_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM4', 'PSU_PSSUM4_OPEN', 'PSU_PSSUM4_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM4_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM4', 'PSU_PSSUM4_OPEN', 'PSU_PSSUM4_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDW_DEVELOP_WORKPLAN.HTM" target="_blank">Develop Workplan</a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM4">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan </a></TD>
+                <TD width="420">Baseline Project Workplan</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IMPLEMENTATION_PLAN.DOCX" target="_blank">Implementation Plan</a> <br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/ITERATION_PLAN_SUMMARY.DOCX" target="_blank">Iteration Plan Summary</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/OUM_PROJECT_WORKPLAN_FILES.ZIP" target="_blank">OUM Project Workplan</a></TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM5" id="PSUPSSUM4"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM5_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM5', 'PSU_PSSUM5_OPEN', 'PSU_PSSUM5_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM5_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM5', 'PSU_PSSUM5_OPEN', 'PSU_PSSUM5_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDSPB_DEVELOP_STAFF_PLAN_AND_BUDGET.HTM" target="_blank">Develop Staff Plan and Budget</a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM5">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">FM.010 Refine Project Budget </a></TD>
+                <TD width="420">Approved Project Budget</TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></TD>
+                <TD width="420">Resource Plan</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_PROJECT_TEAM_ORGANIZATION_CHART.DOCX" target="_blank">Project Team Organization Chart</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_RESOURCE_PLAN.XLSX" target="_blank">Resource Plan</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project </a></TD>
+                <TD width="420">Staffed Project <br></TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">STM.040 Prepare Orientation Guide</a></TD>
+                <TD width="420">Orientation Guide</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM040_ORIENTATION_GUIDE.DOCX" target="_blank">Project Orientation Guide</a></TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A name="PSUPSSUM6" id="PSUPSSUM5"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM6_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM6', 'PSU_PSSUM6_OPEN', 'PSU_PSSUM6_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM6_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM6', 'PSU_PSSUM6_OPEN', 'PSU_PSSUM6_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEG_ESTABLISH_GOVERNANCE.HTM" target="_blank">Establish Governance </a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM6">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">SM.020 Develop Scope Change Management Processes </a></TD>
+                <TD width="420">Scope Change Management Processes</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a></TD>
+                <TD width="420">Financial Management Plan</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies</a></TD>
+                <TD width="420">Work Management Plan</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">RKM.010 Develop Risk Management Plan</a></TD>
+                <TD width="420">Risk Management Plan</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.010 Develop Issue Management Strategy</a></TD>
+                <TD width="420">Issue Management Strategy</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.020 Develop Problem Management Strategy</a></TD>
+                <TD width="420">Problem Management Strategy</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a></TD>
+                <TD width="420">Staff Management Plan</TD>
+                <TD width="420">Update the Project Management Plan<br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM020_STAFF_TRAINING_PLAN.DOCX" target="_blank">Staff Training Plan</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM020_PROJECT_ROLES_AND_RESPONSIBILITIES.PPTX" target="_blank">Project Roles and Responsibilities Presentation</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">CMM.020 Develop Project Team Communication Plan</a></TD>
+                <TD width="420">Project Team Communication Plan</TD>
+                <TD width="420">Update the Project Management Plan<br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM020_CUSTOMER_PROFILE.DOCX" target="_blank">Customer Profile</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">QM.010 Develop Quality Management Plan</a></TD>
+                <TD width="420">Quality Management Plan</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a></TD>
+                <TD width="420">Quality Control and Reporting Process</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_CONTROL_AND_REPORTING_PROCESS.DOCX" target="_blank">Quality Control and Reporting Process</a> <br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_MANAGEMENT_CHECKLIST.DOCX" target="_blank">Quality Control Checklist</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT.DOCX" target="_blank">Quality Review Report (Generic)</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT_CUSTOM.DOCX" target="_blank">Quality Review Report (Custom Development)</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></TD>
+                <TD width="420">Configuration Management Plan and Processes</TD>
+                <TD width="420">Update the Project Management Plan<br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_INDEX.XLSX" target="_blank">Configuration Item Index</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_STATUS_RECORD.DOCX" target="_blank">Configuration Item Status Record</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">CM.030 Create Project Documentation Management Plan</a></TD>
+                <TD width="420">Documentation Management Plan</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENTATION_MANAGEMENT_PLAN.DOCX" target="_blank">Documentation Management Plan</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENT_INDEX_EXCEL.XLSX" target="_blank">Document Index-Excel</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a></TD>
+                <TD width="420">Infrastructure Management Plan</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">PCM.010 Develop Procurement Strategy and Process</a></TD>
+                <TD width="420">Procurement Strategy and Process</TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM020_IDENTIFY_CHANGE_MANAGEMENT_WARNING_SIGNS.HTM" target="_blank">OCHM.020 Identify Change Management Warning Signs</a></TD>
+                <TD width="420">Change Management Warning Signs</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/OCHM020_CHANGE_MANAGEMENT_WARNING_SIGNS.DOCX" target="_blank">Change Management Warning Signs</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070.2 Create Project Management Plan</a></TD>
+                <TD width="420">Project Management Plan </TD>
+                <TD width="420">Update the Project Management Plan</TD>
+              </TR>
+            </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a name="PSUPSSUM7" id="PSUPSSUM6"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PSU_PSSUM7_OPEN" title="Collapse activity"
+			onclick="toggleElement('PSU_PSSUM7', 'PSU_PSSUM7_OPEN', 'PSU_PSSUM7_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PSU_PSSUM7_CLOSED" title="Expand activity"
+			onclick="toggleElement('PSU_PSSUM7', 'PSU_PSSUM7_OPEN', 'PSU_PSSUM7_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEPI_ESTABLISH_PROJECT_INFRASTRUCTURE.HTM" target="_blank">Establish Project Infrastructure</a></DIV></th>
+            </TR>
+            <TBODY id="PSU_PSSUM7">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/FM030_SET_UP_TIME_AND_EXPENSE_TRACKING.HTM" target="_blank">FM.030 Set Up Time and Expense Tracking</a></TD>
+                <TD width="420">Time and Expense Tracking</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/FM030_EXPENSE_TRACKING_SPREADSHEET.XLSX" target="_blank">Expense Tracking Spreadsheet</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/FM030_PROJECT_TEAM_TIME_SHEET.XLSX" target="_blank">Project Team Time Sheet</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">RKM.030 Develop Risk Management System</a></TD>
+                <TD width="420">Risk Management System</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a> <br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">IPM.030 Develop Issue and Problem Management System </a></TD>
+                <TD width="420">Issue and Problem Management System</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_FORM.DOCX" target="_blank">Issue Form</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_LOG.XLSX" target="_blank">Issue Log</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_REPORT_FORM.DOCX" target="_blank">Problem Form</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_LOG.XLSX" target="_blank">Problem Log</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">CM.020 Obtain Configuration Management Tools</a></TD>
+                <TD width="420">Configuration Management Tools</TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank">IFM.020 Establish Team Work Environment</a></TD>
+                <TD width="420">Team Work Environment</TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank">IFM.030 Establish Technical Infrastructure</a></TD>
+                <TD width="420">Established Technical Infrastructure</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IFM030_PHYSICAL_RESOURCE_PLAN.DOCX" target="_blank">Physical Resource Plan </a></TD>
+              </TR>
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PS</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/PCM020_PROCURE_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">PCM.020 Procure Goods and Contracted Services</a></TD>
+                <TD width="420">Service Orders</TD>
+                <TD width="420">Refer to the Task Overview for guidance.</TD>
+              </TR>
+            </TBODY>
+      </TABLE>
+    <P><A href="#TOP">Back to Top</A> </P></TD></TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Project Execution and Control Activities, Tasks and Work Products" summary="This window contains a table with links to the Project Execution and Control Activity Overviews, Task Overviews and work products.">
+  <TR>
+    <TD><h3><A name="PEC" target="_blank" id="PEC"><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PEC_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('PEC_TASKS', 'PEC_OPEN', 'PEC_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PEC_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('PEC_TASKS', 'PEC_OPEN', 'PEC_CLOSED'); new Effect.Highlight($('PEC'), {duration: 4});" /> [PEC] Project Execution and Control </A></h3>
+	 <DIV id="PEC_TASKS">
+<TABLE width="100%" class="oum" title="Manage Project Execution and Control Tasks and Work Products by Activity" summary="This table provides links to all the Activity Overviews for the Project Execution and Control phase, as well as to the Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each activity.">
+          <TBODY>
+            <TR bgcolor="#BEBEBE">
+              <th scope="col"><DIV align="center">Phase</DIV></th>
+              <th scope="col"><DIV align="center">Task Overview</DIV></th>
+              <th scope="col"><div align="center">Work Product</div></th>
+              <th scope="col"><DIV align="center">Template</DIV></th>
+            </TR>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM1" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM1_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM1', 'PEC_PECSUM1_OPEN', 'PEC_PECSUM1_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM1_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM1', 'PEC_PECSUM1_OPEN', 'PEC_PECSUM1_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMSAA_MANAGE_SCOPE_ACCEPTANCE_AND_APPROVALS.HTM" target="_blank">Manage Scope, Acceptance and Approvals</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM1">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">SM.030 Manage Scope</a></TD>
+              <TD width="420">Managed Scope</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_FORM.DOCX" target="_blank">Change Request Form</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_LOG.XLSX" target="_blank">Change Request Log</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM040_MANAGE_ACCEPTANCE.HTM" target="_blank">SM.040 Manage Acceptance</a></TD>
+              <TD width="420">Managed Acceptance</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CRITERIA.DOCX" target="_blank">Acceptance Criteria</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM2" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM2_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM2', 'PEC_PECSUM2_OPEN', 'PEC_PECSUM2_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM2_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM2', 'PEC_PECSUM2_OPEN', 'PEC_PECSUM2_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPF_MANAGE_PROJECT_FINANCES.HTM" target="_blank">Manage Project Finances</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM2">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances</a></TD>
+              <TD width="420">Managed Project Finances</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM3" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM3_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM3', 'PEC_PECSUM3_OPEN', 'PEC_PECSUM3_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM3_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM3', 'PEC_PECSUM3_OPEN', 'PEC_PECSUM3_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPW_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">Manage Project Workplan</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM3">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a></TD>
+              <TD width="420">Project Workplan</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ASSIGNMENT_REQUEST.DOCX" target="_blank">Assignment Request</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_DELIVERABLE%20TRACKING.XLSX" target="_blank">Deliverable Tracking Spreadsheet</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_UNPLANNED_ACTIVITY_LOG.XLSX" target="_blank">Unplanned Activity Log</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ITERATION_END_REPORT.DOCX" target="_blank">Iteration End Report</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">WM.040 Track Schedule Performance</a></TD>
+              <TD width="420">Schedule Performance</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM070_SCHEDULE_WORKSHOPS.HTM" target="_blank">WM.070 Schedule Workshop(s) </a></TD>
+              <TD width="420">Workshop Schedule</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM-070_WORKSHOP_SCHEDULE.xlsx" target="_blank">Workshop Schedule</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM4" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM4_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM4', 'PEC_PECSUM4_OPEN', 'PEC_PECSUM4_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM4_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM4', 'PEC_PECSUM4_OPEN', 'PEC_PECSUM4_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMRIP_MANAGE_RISKS_ISSUES_AND_PROBLEMS.HTM" target="_blank">Manage Risks, Issues and Problems</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM4">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk</a></TD>
+              <TD width="420">Managed Risk</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">RKM.050 Monitor and Control Risk</a></TD>
+              <TD width="420">Assessed Risk </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>                
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">IPM.040 Manage Issues and Problems</a></TD>
+              <TD width="420">Managed Issues and Problems</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM5" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM5_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM5', 'PEC_PECSUM5_OPEN', 'PEC_PECSUM5_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM5_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM5', 'PEC_PECSUM5_OPEN', 'PEC_PECSUM5_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTOMT_ORIENT_AND_MANAGE_TEAM.HTM" target="_blank">Orient and Manage Team</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM5">
+              <TR valign="top">
+                <TD width="90"><DIV align="center">PEC</DIV></TD>
+                <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM030_CONDUCT_PROJECT_TEAM_QUALITY_MANAGEMENT_ORIENTATION.HTM" target="_blank">QM.030 Conduct Project Team Quality Management Orientation</a></TD>
+                <TD width="420">Project Team Quality Management Orientation</TD>
+                <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM030_PROJECT_TEAM_QUALITY_MGT_ORIENTATION.PPTX" target="_blank">Project Team Quality Management Orientation Presentation</a></TD>
+              </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 Conduct Team Orientation</a></TD>
+              <TD width="420">Oriented Team </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM050_PROJECT_KICKOFF_PRESENTATION.PPTX" target="_blank">Project Kickoff Presentation</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM060_MANAGE_PROJECT_TEAM.HTM" target="_blank">STM.060 Manage Project Team</a></TD>
+              <TD width="420">Managed Project Team</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM060_INDIVIDUAL_STATUS_REPORT.DOCX" target="_blank">Individual Status Report</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM6" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM6_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM6', 'PEC_PECSUM6_OPEN', 'PEC_PECSUM6_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM6_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM6', 'PEC_PECSUM6_OPEN', 'PEC_PECSUM6_CLOSED')"
+				onload="Element.hide(this)" />  <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMCOP_MANAGE_COMMUNICATIONS_AND_OCM_PLANS.HTM" target="_blank">Manage Communication and OCM Plans</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM6">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM030_MANAGE_PROJ_TEAM_COMMUNICATION.HTM" target="_blank">CMM.030 Manage Project Team Communication</a></TD>
+              <TD width="420">Project Team Communication</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes </a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT_W_INST.DOCX" target="_blank">Weekly Project Status Report with Instructions</a><br>
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT.DOCX" target="_blank">Weekly Project Status Report</a><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_STEERING_COMMITTEE_PRESENTATION.pptx" target="_blank"><br>
+                Steering Committee Presentation</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM030_EXECUTE_CHANGE_AND_COMMUNICATION_PLAN.HTM" target="_blank">OCHM.030 Execute Change and Communication Plan</a></TD>
+              <TD width="420">Executed Change and Communication Plan</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM7" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM7_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM7', 'PEC_PECSUM7_OPEN', 'PEC_PECSUM7_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM7_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM7', 'PEC_PECSUM7_OPEN', 'PEC_PECSUM7_CLOSED')"
+				onload="Element.hide(this)" />  <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPQ_MANAGE_PROJECT_QUALITY.HTM" target="_blank">Manage Project Quality</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM7">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM040_MANAGE_QUALITY_CONTROL.HTM" target="_blank">QM.040 Manage Quality Control</a></TD>
+              <TD width="420">Quality Control</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_COMMENTS_LIST.DOCX" target="_blank">Review Comments List</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_LEADER_FORM.DOCX" target="_blank">Review Leader Form</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></TD>
+              <TD width="420">Managed Quality Assurance</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_ACTION_FORM.DOCX" target="_blank">Audit Action Report</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_REPORT.DOCX" target="_blank">Audit Report</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM050_QUALITY_REPORT.DOCX" target="_blank">Quality Report</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM8" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM8_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM8', 'PEC_PECSUM8_OPEN', 'PEC_PECSUM8_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM8_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM8', 'PEC_PECSUM8_OPEN', 'PEC_PECSUM8_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTCECRM_CREATE_AND_EXECUTE_CONFIG_AND_RELEASE_MGMT.HTM" target="_blank">Create and Execute Configuration and Release Management</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM8">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">CM.040 Create and Execute Software Configuration Management Plan</a></TD>
+              <TD width="420">Software Configuration Management Plan</TD>
+              <TD width="420"><DIV align="left"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM040_SOFTWARE_CONFIGURATION_MANAGEMENT_PLAN.DOCX" target="_blank">Software Configuration Management Plan </a></DIV></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan</a></TD>
+              <TD width="420">Software Release Management Plan</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM050_SOFTWARE_RELEASE_MANAGEMENT_PLAN.DOCX" target="_blank">Software Release Management Plan</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM060_CREATE_AND_EXECUTE_ENV_AND_PATCH_MGMT_PLAN.HTM" target="_blank">CM.060 Create and Execute Environment and Patch Management Plan</a></TD>
+              <TD width="420">Environment and Patch Management Plan</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM060_ENVIRONMENT_AND_PATCH_MANAGEMENT_PLAN.DOCX" target="_blank">Environment and Patch Management Plan</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">CM.070 Create and Execute Configuration Control Plan</a></TD>
+              <TD width="420">Configuration Management Control Plan</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM070_CONFIGURATION_MANAGEMENT_CONTROL_PLAN.DOCX" target="_blank">Configuration Management Control Plan</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM9" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM9_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM9', 'PEC_PECSUM9_OPEN', 'PEC_PECSUM9_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM9_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM9', 'PEC_PECSUM9_OPEN', 'PEC_PECSUM9_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMMI_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">Manage and Maintain Infrastructure</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM9">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IFM040_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">IFM.040 Manage and Maintain Infrastructure</a></TD>
+              <TD width="420">Maintained Infrastructure</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IFM040_EQUIPMENT_FAULT_RECORD.DOCX" target="_blank">Equipment Fault Record</a></TD>
+            </TR>
+          </TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="PECPECSUM10" name="PECPECSUM1"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC_PECSUM10_OPEN" title="Collapse activity"
+				onclick="toggleElement('PEC_PECSUM10', 'PEC_PECSUM10_OPEN', 'PEC_PECSUM10_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC_PECSUM10_CLOSED" title="Expand activity"
+				onclick="toggleElement('PEC_PECSUM10', 'PEC_PECSUM10_OPEN', 'PEC_PECSUM10_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PECACTAPGCS_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Administer Procurement of Goods and Contracted Services</a></DIV></th>
+            </TR>
+          <TBODY id="PEC_PECSUM10">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PEC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/PCM030_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">PCM.030 Administer Procurement of Goods and Contracted Services</a></TD>
+              <TD width="420">Managed Procurement of Goods and Services </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/PCM030_INCOMING_ITEM_RECORD.DOCX" target="_blank">Incoming Item Record</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/PCM030_REJECTION_NOTE.DOCX" target="_blank">Rejection Note</a></TD>
+            </TR>
+          </TBODY>
+      </TABLE>
+    <P><A href="#TOP">Back to Top</A> </P></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Project Closure Activities, Tasks and Work Products" summary="This window contains a table with links to the Project Closure Activity Overviews, Task Overviews and work products.">
+  <TR>
+    <TD><h3><A name="PC" target="_blank" id="PC"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PC_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('PC_TASKS', 'PC_OPEN', 'PC_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PC_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('PC_TASKS', 'PC_OPEN', 'PC_CLOSED'); new Effect.Highlight($('PC'), {duration: 4});" /> [PC] Project Closure</A></h3>
+          <DIV id="PC_TASKS"> 
+      <TABLE width="100%" class="oum" title="Manange Project Closure Tasks and Work Products by Activity" summary="This table provides links to all the Activity Overviews for the Project Closure phase, as well as to the Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each activity.">
+          <TBODY>
+            <TR bgcolor="#BEBEBE">
+              <th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+              <th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+              <th width="420" scope="col"><div align="center">Work Product</div></th>
+              <th width="420" scope="col"><DIV align="center">Template</DIV></th>
+            </TR>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><A id="PCPCSUM1" name="PCPCSUM1"></A> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC_PCSUM1_OPEN" title="Collapse activity"
+				onclick="toggleElement('PC_PCSUM1', 'PC_PCSUM1_OPEN', 'PC_PCSUM1_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC_PCSUM1_CLOSED" title="Expand activity"
+				onclick="toggleElement('PC_PCSUM1', 'PC_PCSUM1_OPEN', 'PC_PCSUM1_CLOSED')"
+				onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTGA_GAIN_ACCEPTANCE.HTM" target="_blank">Gain Acceptance</a></DIV></th>
+            </TR>
+          <TBODY id="PC_PCSUM1">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">SM.050 Gain Acceptance</a></TD>
+              <TD width="420">Final Acceptance Certificate</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a><br>
+                    <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM050_PROJECT_ACCEPTANCE_REPORT.DOCX" target="_blank">Project Acceptance Report</a></TD>
+            </TR>
+          </TBODY>
+          <TR align="left" valign="top" bgcolor="#CCCCCC">
+            <th colspan="4" scope="rowgroup">
+			<div align="left"><A id="PCPCSUM2" name="PCPCSUM2"></A></STRONG> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC_PCSUM2_OPEN" title="Collapse activity"
+			onclick="toggleElement('PC_PCSUM2', 'PC_PCSUM2_OPEN', 'PC_PCSUM2_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC_PCSUM2_CLOSED" title="Expand activity"
+			onclick="toggleElement('PC_PCSUM2', 'PC_PCSUM2_OPEN', 'PC_PCSUM2_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTCPC_CLOSE_PROCESSES_AND_CONTRACT.HTM" target="_blank">Close Processes and Contract</a></DIV></th>
+          </TR>
+          <TBODY id="PC_PCSUM2">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM060_CLOSE_SCOPE_MANAGEMENT.HTM" target="_blank">SM.060 Close Scope Management</a></TD>
+              <TD width="420">Closed Scope Management </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM060_SCOPE_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Scope Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/SM070_IDENTIFY_FUTURE_SYSTEM_ENHANCEMENTS.HTM" target="_blank">SM.070 Identify Future System Enhancements</a></TD>
+              <TD width="420">Future System Enhancements </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/SM070_FUTURE_SYSTEM_ENHANCEMENTS.DOCX" target="_blank">Future System Enhancements</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/FM050_CLOSE_PROJECT_FINANCIALS.HTM" target="_blank">FM.050 Close Project Financials</a></TD>
+              <TD width="420">Closed Project Financials</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/FM050_FINANCIAL_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Financial Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM060_CLOSE_WORK_MANAGEMENT.HTM" target="_blank">WM.060 Close Work Management</a></TD>
+              <TD width="420">Closed Work Management</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM060_WORK_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Work Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/RKM060_CONDUCT_POST_PRODUCTION_RISK_ASSESSMENT.HTM" target="_blank">RKM.060 Conduct Post-Production Risk Assessment</a></TD>
+              <TD width="420">Post-Production Risk Assessment</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>                
+                <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/RKM060_LESSONS_LEARNED.DOCX" target="_blank">Risk Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IPM050_PRODUCE_FINAL_ISSUE_AND_PROBLEM_REPORT_AND_CLOSE_LOGS.HTM" target="_blank">IPM.050 Product Final Issue and Problem Report and Close Log(s)</a></TD>
+              <TD width="420">Closed Issue and Problem Log</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IPM050_ISSUE_AND_PROBLEM_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Issue and Problem Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM070_RELEASE_STAFF.HTM" target="_blank">STM.070 Release Staff</a></TD>
+              <TD width="420">Released Staff</TD>
+              <TD width="420">Released Staff</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM060_SUBMIT_FINAL_REPORTS.HTM" target="_blank">CMM.060 Submit Final Reports</a></TD>
+              <TD width="420">Final Reports </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_CLOSURE.DOCX" target="_blank">Project Closure</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_SUMMARY.DOCX" target="_blank">Project Summary</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/QM060_CONDUCT_POST_PRODUCTION_QUALITY_REVIEW.HTM" target="_blank">QM.060 Conduct Post-Production Quality Review</a></TD>
+              <TD width="420">Post-Production Quality Review</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM060_CUSTOMER_SATISFACTION_REPORT.DOCX" target="_blank">Customer Satisfaction Report</a><br>
+                  <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM060_PROJECT_HEALTHCHECK_CHECKLIST.DOCX" target="_blank">Project Healthcheck Checklist</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/QM060_METRICS_REPORT.DOCX" target="_blank">Metrics Report</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CM080_CLOSE_CONFIGURATION_MANAGEMENT.HTM" target="_blank">CM.080 Close Configuration Management</a></TD>
+              <TD width="420">Closed Configuration Management</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM080_LESSONS_LEARNED.DOCX" target="_blank">Configuration Management Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/IFM050_CLOSE_INFRASTRUCTURE.HTM" target="_blank">IFM.050 Close Infrastructure</a></TD>
+              <TD width="420">Closed Infrastructure</TD>
+              <TD width="420">Closed Infrastructure</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/PCM040_CLOSE_CONTRACT.HTM" target="_blank">PCM.040 Close Contract</a></TD>
+              <TD width="420">Closed Contract </TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/PCM040_SUPPLIER_ASSESSMENT_RECORD.DOCX" target="_blank">Supplier Assessment Record</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/OCHM040_ESTABLISH_FOLLOW_UP_PROCESS.HTM" target="_blank">OCHM.040 Establish Follow-Up Process</a></TD>
+              <TD width="420">Follow-Up Process</TD>
+              <TD width="420">Follow-Up Process</TD>
+            </TR>
+          </TBODY>
+          <TR align="left" valign="top" bgcolor="#CCCCCC">
+            <th colspan="4" scope="rowgroup">
+			<div align="left"><a name="PCPCSUM3" id="PCPCSUM3"></a> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC_PCSUM3_OPEN" title="Collapse activity"
+			onclick="toggleElement('PC_PCSUM3', 'PC_PCSUM3_OPEN', 'PC_PCSUM3_CLOSED')" /><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC_PCSUM3_CLOSED" title="Expand activity"
+			onclick="toggleElement('PC_PCSUM3', 'PC_PCSUM3_OPEN', 'PC_PCSUM3_CLOSED')"
+			onload="Element.hide(this)" /> <a href="../PJM/020_METHOD_GUIDELINES/040_ACTIVITY/PCACTDLLAP_DOCUMENT_LESSONS_LEARNED_AND_ARCHIVE_PROJECT.HTM" target="_blank">Document Lessons Learned and Archive Project</a></DIV></th>
+          </TR>
+          <TBODY id="PC_PCSUM3">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></TD>
+              <TD width="420">Lessons Learned</TD>
+              <TD width="420"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CM080_LESSONS_LEARNED.DOCX" target="_blank">Lessons Learned</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">PC</DIV></TD>
+              <TD width="420"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/CMM050_TURN_OVER_PROJECT_DOCUMENTATION.HTM" target="_blank">CMM.050 Turn Over Project Documentation</a></TD>
+              <TD width="420">Lessons Learned</TD>
+              <TD width="420">Project Archives</TD>
+            </TR>
+          </TBODY>
+      </TABLE>
+    <P><A href="#TOP">Back to Top</A> </P></TD>
+  </TR>
+</TABLE>
+<br>
+<HR WIDTH="100%">
+<h2> <a name="ENVTWP" id="ENVTWP"></a>ENVISION FOCUS AREA - TASKS AND WORK PRODUCTS</h2>
+<P>  <A href="#" title="Expand all Envision Tasks and Work Products tables" onclick="expandAllENVTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all Envision Tasks and Work Products tables" onclick="collapseAllENVTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A> </P>
+<table width="100%" border="1" bgcolor="#CCCCCC" class="oum" role="presentation" title="Envision Roadmap Process Tasks and Work Products" summary="This window contains a table with links to the Envision Roadmap process Task Overviews and work products.">
+  <tr>
+    <td><h3><a id="ER" name="ER"> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="ER_OPEN" title="Collapse window"
+     onClick="toggleElementBlind('ER_TASKS', 'ER_OPEN', 'ER_CLOSED')"
+     onload="Element.hide(this)"/> <img src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="ER_CLOSED" title="Expand window"
+     onClick="toggleElementBlind('ER_TASKS', 'ER_OPEN', 'ER_CLOSED'); new Effect.Highlight($('ER'), {duration: 4});" /> [ER] Envision Roadmap</a></h3>
+          <div id="ER_TASKS">
+    <table width="100%" class="oum" title="Envision Envision Roadmap Tasks and Work Products" summary="This table provides links to all the Envision Roadmap process Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each Envision phase.
+">
+          <tbody>
+            <tr bgcolor="#BEBEBE">
+              <th width="90" scope="col"><div align="center">Phase</div></th>
+              <th width="420" scope="col"><div align="center">Task Overview</div></th>
+              <th width="420" scope="col"><div align="center">Work Product</div></th>
+              <th width="420" scope="col"><div align="center">Template</div></th>
+            </tr>
+		</TBODY>
+	    <tbody>
+            <tr align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+			  <div align="left"><a id="ERI" name="ERI"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="ER_I_OPEN" title="Collapse phase"
+				onClick="toggleElement('ER_I', 'ER_I_OPEN', 'ER_I_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="ER_I_CLOSED" title="Expand phase"
+				onClick="toggleElement('ER_I', 'ER_I_OPEN', 'ER_I_CLOSED')"
+				onload="Element.hide(this)" /> Initiate Phase</div></th>
+            </tr>
+        <tbody id="ER_I">
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy</a></td>
+              <td width="420">Envision Engagement Strategy </td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-020_ENVISION_ENGAGEMENT_STRATEGY.DOCX" target="_blank">Envision Engagement Strategy</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement</a></td>
+              <td width="420">Envision Engagement Plan</td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-030_ENVISION_ENGAGEMENT_PLAN.DOCX" target="_blank">Envision Engagement Plan</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a></td>
+              <td width="420">Enterprise Research Findings </td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-040_ENTERPRISE_RESEARCH_FINDINGS.DOCX" target="_blank">Enterprise Research Findings</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan</a></td>
+              <td width="420">Agreed on Envision Engagement Plan </td>
+              <td width="420">Refer to the Task Overview for guidance.</td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_080_OBTAIN_EXISTING_REFERENCE_MATERIAL_OVERVIEW.HTM" target="_blank">ER.080 Obtain Existing Reference Material</a></td>
+              <td width="420">Existing Reference Material </td>
+              <td width="420">Refer to the Task Overview for guidance.</td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_100_DEFINE_SUPP_ENTERPRISE_REQS_OVERVIEW.HTM" target="_blank">ER.100 Define Supplemental Enterprise Requirements</a></td>
+              <td width="420">Supplemental Enterprise Requirements</td>
+              <td width="420">Refer to the Task Overview for guidance.</td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110.1 Perform Benefit Analysis</a></td>
+              <td width="420">Benefit Analysis</td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-110_BENEFIT_ANALYSIS.DOCX" target="_blank">Benefit Analysis</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130.1 Produce MoSCoW Improvement List</a></td>
+              <td width="420">MoSCoW Improvement List</td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-130_MOSCOW_IMPROVEMENT_LIST.DOCX" target="_blank">MoSCoW Improvement List</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160 Develop Desired Future State</a></td>
+              <td width="420">Desired Future State</td>
+              <td width="420">Refer to the Task Overview for guidance.</td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan</a></td>
+              <td width="420">Future State Transition Plan</td>
+              <td width="420"><a href="040_TEMPLATES_AND_GUIDANCE/ER/ER-170_FUTURE_STATE_TRANSITION_PLAN.DOCX" target="_blank">Future State Transition Plan</a></td>
+            </tr>
+            <tr valign="top">
+              <td width="90"><div align="center">INIT</div></td>
+              <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendation</a></td>
+              <td width="420">Solution Recommendations</td>
+              <td width="420">Refer to the Task Overview for guidance.</td>
+            </tr>
+        </tbody>
+          <tr align="left" valign="top" bgcolor="#CCCCCC">
+            <th colspan="4" scope="rowgroup">
+                <div align="left"><a id="ERME" name="ERME"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="ER_ME_OPEN" title="Collapse phase"
+				onClick="toggleElement('ER_ME', 'ER_ME_OPEN', 'ER_ME_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="ER_ME_CLOSED" title="Expand phase"
+				onClick="toggleElement('ER_ME', 'ER_ME_OPEN', 'ER_ME_CLOSED')"
+				onload="Element.hide(this)" /> Maintain and Evolve Phase</div></th>
+          </tr>
+          <tbody id="ER_ME">
+            <tr valign="top">
+		    <td width="90"><div align="center">ME</div></td>
+            <td width="420"><a href="020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130.2 Produce MoSCoW Improvement List</a></td>
+            <td width="420">MoSCoW Improvement List</td>
+            <td width="420">Refer to the Task Overview for guidance.</td>
+          </tr>
+          </tbody>
+      </table>        
+    <p><A href="#TOP">Back to Top</A> </p></td>
+  </tr>
+</table>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Enterprise Business Analysis Process Tasks and Work Products" summary="This window contains a table with links to the Enterprise Business Analysis process Task Overviews and work products.">
+  <TR>
+    <TD><h3><A id="BA" name="BA"><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="BA_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('BA_TASKS', 'BA_OPEN', 'BA_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="BA_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('BA_TASKS', 'BA_OPEN', 'BA_CLOSED'); new Effect.Highlight($('BA'), {duration: 4});" /> [BA] Enterprise Business Analysis</A></h3>
+          <DIV id="BA_TASKS">
+      <TABLE width="100%" class="oum" title="Envision Enterprise Business Analysis Tasks and Work Products" summary="This table provides links to all the Enterprise Business Analysis process Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each Envision phase.
+">
+          <TBODY>
+            <TR bgcolor="#BEBEBE">
+              <th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+              <th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+              <th width="420" scope="col"><div align="center">Work Product</div></th>
+              <th width="420" scope="col"><DIV align="center">Template</DIV></th>
+            </TR>
+          </TBODY>
+          <TBODY>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+                  <DIV align="left"><a id="BAI" name="BAI"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="BA_I_OPEN" title="Collapse phase"
+				onClick="toggleElement('BA_I', 'BA_I_OPEN', 'BA_I_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="BA_I_CLOSED" title="Expand phase"
+				onClick="toggleElement('BA_I', 'BA_I_OPEN', 'BA_I_CLOSED')"
+				onload="Element.hide(this)" /> Initiate Phase</DIV></th>
+            </TR>
+		  <tbody id="BA_I">
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">BA.010 Identify Business Strategy</a></TD>
+              <TD width="420">Business Strategy</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-010_BUSINESS_STRATEGY.DOCX" target="_blank">Business Strategy</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017.1 Determine Metrics Collection and Reporting Strategy</a></TD>
+              <TD width="420">Metrics Collection and Reporting Strategy</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model</a></TD>
+              <TD width="420">Enterprise Function or Process Model</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-040_ENTERPRISE_PROCESS_MODEL.DOCX" target="_blank">Enterprise Process Model</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><DIV align="center">INIT</DIV></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities)</a></TD>
+              <TD width="420">Enterprise Domain Model</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-050_ENTERPRISE_DOMAIN_MODEL.DOCX" target="_blank">Enterprise Domain Model</a></TD>
+            </TR>
+            <TR valign="top">
+              <TD width="90"><div align="center">INIT</div></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">BA.090 Identify Process Improvement Options</a></TD>
+              <TD width="420">Process Improvement Options</TD>
+              <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/BA/BA-090_PROCESS_IMPROVEMENT_OPTIONS.DOCX" target="_blank">Process Improvement Options</a></TD>
+            </TR>
+		  </tbody>
+            <TR align="left" valign="top" bgcolor="#CCCCCC">
+              <th colspan="4" scope="rowgroup">
+			    <DIV align="left"><a id="BAME" name="BAME"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="BA_ME_OPEN" title="Collapse phase"
+				onClick="toggleElement('BA_ME', 'BA_ME_OPEN', 'BA_ME_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="BA_ME_CLOSED" title="Expand phase"
+				onClick="toggleElement('BA_ME', 'BA_ME_OPEN', 'BA_ME_CLOSED')"
+				onload="Element.hide(this)" />Maintain and Evolve Phase</DIV></th>
+            </TR>
+			<tbody id="BA_ME">
+            <TR valign="top">
+              <TD width="90"><div align="center">ME</div></TD>
+              <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/BA_100_MAINTAIN_ENTERPRISE_BUSINESS_MODEL_OVERVIEW.HTM" target="_blank">BA.100 Maintain Enterprise Business Models</a></TD>
+              <TD width="420">Maintained Enterprise Business Models</TD>
+              <TD width="420">Refer to the Task Overview for guidance.</TD>
+            </TR>
+         </TBODY>
+      </TABLE>
+    <P><A href="#TOP">Back to Top</A> </P></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="0" class="oum" role="presentation" title="Enterprise Architecture Process Tasks and Work Products" summary="This window contains a table with links to the Enterprise Architecture process Task Overviews and work products.">
+  <TR>
+    <TD><h3><A id="EA" name="EA"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="EA_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('EA_TASKS', 'EA_OPEN', 'EA_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="EA_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('EA_TASKS', 'EA_OPEN', 'EA_CLOSED'); new Effect.Highlight($('EA'), {duration: 4});" /> [EA] Enterprise Architecture</A></h3>
+          <DIV id="EA_TASKS">
+      <TABLE width="100%" class="oum" title="Envision Enterprise Architecture Tasks and Work Products" summary="This table provides links to all the Enterprise Architecture process Task Overviews and templates, if available. It is organized with Phase, Task Overview, Work Product and Template columns with subheadings for each Envision phase.
+">
+          <TBODY>
+            <TR bgcolor="#BEBEBE">
+              <th width="90" scope="col"><DIV align="center">Phase</DIV></th>
+              <th width="420" scope="col"><DIV align="center">Task Overview</DIV></th>
+              <th width="420" scope="col"><div align="center">Work Product</div></th>
+              <th width="420" scope="col"><DIV align="center">Template</DIV></th>
+            </TR>
+          </TBODY>
+		<TBODY>
+          <TR align="left" valign="top" bgcolor="#CCCCCC">
+            <th colspan="4" scope="rowgroup">
+                <DIV align="left"><a id="EAI" name="EAI"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="EA_I_OPEN" title="Collapse phase"
+				onClick="toggleElement('EA_I', 'EA_I_OPEN', 'EA_I_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="EA_I_CLOSED" title="Expand phase"
+				onClick="toggleElement('EA_I', 'EA_I_OPEN', 'EA_I_CLOSED')"
+				onload="Element.hide(this)" /> Initiate Phase</DIV></th>
+          </TR>
+	    <tbody id="EA_I">
+          <TR valign="top">
+            <TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010.1 Review Architecture Principles, Guidelines and Standards</a></TD>
+            <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+            <TD width="420"><a href="040_TEMPLATES_AND_GUIDANCE/EA/EA-010_ARCHITECTURE_PRINCIPLES_GUIDELINES_STANDARDS.DOCX" target="_blank">Architecture Principles, Guidelines and Standards</a></TD>
+          </TR>
+          <TR valign="top">
+            <TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_050_IDENTIFY_CURR_ARCH_CHALLENGES_OVERVIEW.HTM" target="_blank">EA.050 Identify Current Architectural Challenges</a></TD>
+            <TD width="420">Current Architectural Challenges</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          <TR valign="top">
+            <TD width="90"><DIV align="center">INIT</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">EA.060 Identify Architectural Gaps and Improvement Options</a></TD>
+            <TD width="420">Architectural Gaps and Improvement Options</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+        </TBODY>
+          <TR align="left" valign="top" bgcolor="#CCCCCC">
+            <th colspan="4" scope="rowgroup">
+                <DIV align="left"><a id="EAME" name="EAME"></a> <img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse phase" width="12" height="8" id="EA_ME_OPEN" title="Collapse phase"
+				onClick="toggleElement('EA_ME', 'EA_ME_OPEN', 'EA_ME_CLOSED')" /><img src="../010_SHARED_FILES/triangle.gif" alt="Expand phase" width="8" height="12" id="EA_ME_CLOSED" title="Expand phase"
+				onClick="toggleElement('EA_ME', 'EA_ME_OPEN', 'EA_ME_CLOSED')"
+				onload="Element.hide(this)" /> Maintain and Evolve Phase</DIV></th>
+          </TR>
+		  <tbody id="EA_ME">
+          <TR valign="top">
+            <TD width="90"><DIV align="center">ME</DIV></TD>
+            <TD width="420"><a href="020_METHOD_GUIDELINES/030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010.2 Review Architecture Principles, Guidelines and Standards</a></TD>
+            <TD width="420">Architecture Principles, Guidelines and Standards</TD>
+            <TD width="420">Refer to the Task Overview for guidance.</TD>
+          </TR>
+          </tbody>
+      </table>        
+    <P><A href="#TOP">Back to Top</A> </P></TD>
+  </TR>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left"><span class="copyright"> <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></span></P>
+</BODY>
+</HTML>

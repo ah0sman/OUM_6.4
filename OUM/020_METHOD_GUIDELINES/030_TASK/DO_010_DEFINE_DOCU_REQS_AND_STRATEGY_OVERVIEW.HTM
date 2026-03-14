@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DO.010 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>DO.010 - DEFINE DOCUMENTATION REQUIREMENTS AND STRATEGY</h2>
+<!--BeginDesc-->
+<p>The purpose of  this task is to outline the overall requirements for creating user documentation and specify the work products to be produced. You also identify the strategy for publishing project-specific documentation.</p><!--EndDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, this task involves a review, and potentially an update, to the customer's existing Documentation Strategy in order to accommodate new features and technologies available within the new release.</p><!--EndSUDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>Include details of the documentation requirements (including a reference to any supporting materials) critical success factors, resources required, format and standards that will be followed and work products that will be produced.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Activity" id="Activity"></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/AACTGSP_GATHER_SUPPORTING_REQTS.HTM" target="_blank">A.ACT.GSP Gather Supporting Requirements</a></p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Documentation Requirements and Strategy</b></p>
+<p>The work product identifies the list of project-specific documentation that needs to be published and the strategy for publishing this documentation. It should address the following:
+</p>
+<ul>
+  <li>the list of requirements for producing documentation</li>
+  <li>the list of documents that need to be published</li>
+  <li>the strategy used to produce project-specific documentation</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Verify the documentation descriptions in the project level scope, objectives, and approach as contained within the Project Management Plan. Review the project documentation standards, if available. Organize the work product. </td>
+    <td>Introduction</td>
+    <td>Provide an introduction for the work product. Include the following sections:
+        <ul>
+          <li>Scope, Approach, and Methods &mdash; discusses the objectives and approach to documentation</li>
+          <li>Information Sources &mdash; lists the information sources for the Documentation Requirements and Strategy</li>
+          <li>How to Review &mdash; lists the criteria for reviewing the content of the Documentation Requirements and Strategy</li>
+          <li>Summary of Findings &mdash; summarizes the reasons for the proposed structure and content of the documentation and provides a qualitative summary of the proposed documentation and identifies any problems or concerns that were found</li>
+          <li>Next Steps &mdash; outlines the Documentation process</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Identify the scope of the documentation, milestone publishing dates, and constraints.</td>
+    <td>Scope</td>
+    <td>Describe the scope of Documentation in as much detail as possible. The scope statement should state exactly how many project-specific documents will be published and the level of content included in these documents. Scope statements can be made in terms of whether certain documentation is in or out of scope for the project.<br>
+		<br>
+          Examples of components that can define the documentation scope include:
+        <ul>
+          <li>Business Processes</li>
+          <li>Functions</li>
+          <li>Sites</li>
+          <li>Languages</li>
+          <li>Application Extensions</li>
+          <li>Interfaces to Third-Party or Legacy Systems</li>
+        </ul>
+        In addition to discussing the overall scope of Documentation, include any assumptions made, the risks inherent in the Documentation process, the expectations for new systems documentation, whether new technology will be used to publish the document, and the relationship of Documentation tasks to other process tasks already underway.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Discuss the project with the project manager and establish the specific scope for Documentation.</td>
+    <td>Scope</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Identify Documentation objectives and critical success factors.</td>
+    <td>Objectives</td>
+    <td>List the high-level objectives communicated by the business and project managers. In addition, it should contain a description of the critical success factors for Documentation.<br>
+		<br>
+        Include the following sections:
+        <ul>
+          <li>Objectives</li>
+          <li>Critical Success Factors</li>
+        </ul>
+        Since this is a strategic document, the stated objectives should not be too detailed; however, they should be specific and measurable. Critical success factors associated with meeting the objectives of the process within the context of the overall project are also identified within this component.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Review the work products that will be produced by this process. Review the list of work products with customer staff members.</td>
+    <td>Approach</td>
+    <td>Describe the method, policies and procedures, project dependencies, and other background for Documentation. Include a high-level discussion of the approach selected for the Documentation work, the tasks and work products involved, the reasons for selection of the approach, and the benefits of the particular method adopted.<br>
+		<br>
+        The project dependencies section of the component describes the dependencies between tasks in Documentation and tasks in other processes taking place within the overall implementation project.<br>
+		<br>
+       	In relation to the statements about the technical requirements for the documentation subproject, the work product should indicate which Documentation Environments are needed to support the documentation subproject. Typically, at least one separate environment is needed for documentation.<br>
+		<br>
+        If the process uses different polices, procedures, or standards from the main project in any of the key control and reporting areas, the work product should document the differences in detail and explain why they differ. The following are examples of areas where the process typically inherits standards and procedures from the main project:
+        <ul>
+          <li>Project Management Plan</li>
+          <li> issue management and resolution</li>
+          <li>change management</li>
+          <li>reporting format</li>
+          <li>reporting relationship to main project</li>
+          <li>acceptance</li>
+          <li>project policies and procedures</li>
+          <li>process team meetings</li>
+          <li>logistics and administrative support</li>
+        </ul>
+        The technical background should describe the technical circumstances affecting the approach to the project. Examples of the points that might be included are:
+        <ul>
+          <li> implementation sites</li>
+          <li>documentation direction</li>
+          <li>computing platforms and technical infrastructure</li>
+          <li>major system or application requirements</li>
+          <li>innovative or unusual technical requirements</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Identify constraints and assumptions that are associated with the process.</td>
+    <td>Approach</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Review risks to the process activities and objectives.</td>
+    <td>Approach</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Define policies and procedures unique to Documentation.</td>
+    <td>Approach</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Identify the mechanism for publishing documentation.</td>
+    <td>Documentation Strategy</td>
+    <td>Describes the documentation strategy and includes the means for determining the documents to be authored, published, and produced. It also covers which media will be used to publish documentation. The media could include printed documentation, portable electronic documents, or web pages that can be accessed via a web browser and URL address.<br>
+		<br>
+        Requirements may be highlighted and discussed because of their criticality in the documentation work, the inherent risk to the project, an innovative or unusual approach to be applied in the project, or for some other implementation-specific reason.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Establish the procedures for maintaining the Documentation Environment.</td>
+    <td>Documentation Strategy</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Identify potential risks in the strategy outlined.</td>
+    <td>Documentation Strategy</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Identify the documentation requirements at a summary and detailed level.</td>
+    <td>Documentation Requirements</td>
+    <td>Describe the human and physical resources required to develop and deliver documentation. Make sure you include user participation as part of your plan. It describes the specific resources needed for Documentation, which may include resources in the following areas:
+        <ul>
+          <li> software</li>
+          <li> hardware and networks</li>
+          <li> hardware and software delivery schedule</li>
+          <li> staff</li>
+        </ul>
+        This component includes the following sections:
+        <ul>
+          <li>Summarized Requirements</li>
+          <li>Detailed Requirements</li>
+          <li>Human Resource Requirements</li>
+          <li>Software Requirements</li>
+          <li>Server Platform and Network Requirements</li>
+          <li>Server Platform and Software Delivery Schedule</li>
+        </ul>
+        The Summarized Requirements should summarize the detailed requirements gathered for the business and information systems and their likely impact on the documentation and systems.<br>
+		<br>
+        The Detailed Requirements should detail the individual business and information systems requirements that affect the documentation. Some of the requirements that may be included are:
+        <ul>
+          <li>New custom software - Document all new custom software developed during </li>
+          <li>Modified software - Document all software modified during this project </li>
+          <li>Application Extensions &mdash; Document all custom extensions built for the new system as standard documentation does not address this new functionality.</li>
+          <li>Interface to Third-Party and Legacy Systems &mdash; Document all custom interfaces that move data between the custom software and Oracle Application and third-party and legacy systems.</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">13</div></th>
+    <td>Identify users for each document to interview them to determine their requirements.</td>
+    <td>Documentation Requirements<br>
+		<br>
+        Record of Interviews</td>
+    <td>Document who has been interviewed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">14</div></th>
+    <td>Prepare and conduct interviews. </td>
+    <td>Interview Preparation</td>
+    <td>Comprise of a list of questions to help you prepare for interviewing the applicable users of the documentation. Depending on the project, the checklist can be used for internal reference only, or it can be part of the user work product. You may want to send this questionnaire to the respondents before the interview to help them prepare for the requirements gathering process.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">15</div></th>
+    <td>Describe the resource requirements needed to support the Documentation process.</td>
+    <td>Documentation Requirements</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">16</div></th>
+    <td>Document the Documentation Environment requirements.</td>
+    <td>Documentation Requirements</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">17</div></th>
+    <td>Document the staffing requirements for publishing project-specific documentation.</td>
+    <td>Documentation Requirements</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">18</div></th>
+    <td>Identify human and physical resources required to develop and deliver documentation.</td>
+    <td>Documentation Requirements</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">19</div></th>
+    <td>Document specific tool requirements for the Documentation process.</td>
+    <td>Documentation Requirements</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">20</div></th>
+    <td>Describe the components of each document. Determine the format for transferring ownership to the user.</td>
+    <td>Documentation Synopses </td>
+    <td>Describe each document that is to be produced. This includes the document format and content, as well as the required format for transferring ownership of the documentation to the users. In addition, the following questions should be addressed:
+        <ul>
+          <li>Will both soft and hard copy be needed?</li>
+          <li>If hard copy is required, how many copies must be provided?</li>
+          <li>For soft copy, should a particular text processing package or format be used?</li>
+          <li>Are you required to publish the manuals and guides in hypertext markup<br>
+          language (HTML) format?</li>
+          <li>Will learning be required for the users to assume ownership of the work product?</li>
+          <li>What types of edits and reviews must be performed?</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">21</div></th>
+    <td>Identify the documentation audience.</td>
+    <td>Documentation Synopses</td>
+    <td>Identify the documentation audience and what they need to know. The degree of overlap and commonality in tasks determines how you group the job roles into documentation audiences.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">22</div></th>
+    <td>Review the draft work product with senior management and seek approval.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">23</div></th>
+    <td>Secure acceptance for the Documentation Requirements and Strategy.</td>
+    <td>Acceptance Certificate (PJM.SM.040)</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">24</div></th>
+    <td>Identify any material changes to project scope and associated task estimates with the project manager.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Every project must determine the requirements for project-specific documentation.&nbsp; The documentation requirements vary depending upon the nature of the project.&nbsp; Each custom application system generally requires written documentation of specific types. These documents help with training and on-going support of the application system. The types of documentation that can be produced are well-known, although some types of applications may call for a slightly different suite of documents.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#ADO010" target="_blank">task-specific Application Implementation supplemental guidance</a>.</p>
+<p>You should start with the the list of standard set of documentation work products, and check the Project Management Plan for a variations from this list.&nbsp; Gather additional requirements by interviewing users and asking them questions about their documentation needs. For example, during Oracle Applications implementations, these interview questions should help you determine if the organization is building any application extensions, whether interfaces to third-party or legacy systems are to be used, and whether there or any other compelling reasons for which you may want to build project-specific documentation.&nbsp; </p>
+Once you have defined the Documentation Requirements and Strategy, it should be reviewed and accepted by management before progressing with the remaining Documentation tasks.OUM follows an iterative approach to developing documentation.&nbsp; Prepare a prototype, and an initial draft version of each document in order to gather feedback on the document&rsquo;s content and make revisions as necessary. This allows for continuing improvement in the quality of the documents. Project-specific documentation is often used during testing, learning, and the ongoing support of the new system.
+<h4>Required Document List </h4>
+<p>Review any documentation requirements in the Project Management Plan. If the Project Management Plan specifies the documents to be produced, use this list and indicate in the Documentation Requirements and Strategy where the list is located in the Project Management Plan.</p>
+<p>If the Project Management Plan is not specific, work with the project leader and user management to determine the list of required documents. The following documents have Documentation tasks specifically designed for publishing manuals and guides:</p>
+<ul>
+  <li>User Reference Manual (DO.060)</li>
+  <li>User Guide (DO.070)</li>
+  <li>Technical Reference Material (DO.080)</li>
+  <li>Online Help (DO.100)</li>
+</ul>
+<h6>User Reference Manual (DO.060) </h6>
+<p>Each section of the User Reference Manual explains the details of a single system function and includes information for each field, option, data validation, error message, and so on. It is an important reference for experienced users of the system who need information on infrequently used functions.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#ADO010" target="_blank">task-specific Application Implementation supplemental guidance</a>.</p>
+<h6>User Guide (DO.070) </h6>
+<p>The User Guide is business oriented and contains the manual-and application-based procedures needed by the users to respond to business events. It is an instruction manual for the business area and is the basis for user learning. New applications users rely on the User Guide to learn how to perform their jobs on the system.</p>
+<h6>Technical Reference Material (DO.080) </h6>
+<p>The Technical Reference Material describes the application's technical architecture and design, and documents all custom modules, interfaces to other systems and products, and extensions to any COTS (Commercial Off the Shelf ) products.&nbsp; For example, during implementations of the Oracle Applications products, it should supplement the Oracle Application Technical Reference Manual.&nbsp; This documentation is used by anyone responsible for future application maintenance.</p>
+<p>*Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#ADO010" target="_blank">task-specific Application Implementation supplemental guidance</a>.</p>
+<h6>Online Help (DO.100) </h6>
+<p>The Online Help is loaded into the application and may be available in several contexts, such as: form-level full-screen help text, field-level full-screen help text, field-level hint text, and error help text. </p>
+<h4>Scale and Scope of Documentation</h4>
+<h6>Scale of the Documentation Process</h6>
+<p>The creation of a separate Documentation Requirements and Strategy for Documentation may be different depending on the type of project.</p>
+<p><b>Small- to Medium-Sized Implementations</b> - If documentation is part of a small implementation project, the scope definition, work management, and funding of the Documentation process may be incorporated into the management of the overall project, and this task is greatly simplified. In such cases, you should review the existing Project Management Plan, verify that it is an accurate statement of the Documentation process, and then move to the next task. In some cases you may wish to incorporate many or all of the work product components of the Documentation Requirements and Strategy (DO.010) into the Project Management Plan.<br>
+</p>
+<p><b>Large, Complex Projects</b> - In a large and more complex implementation project, the Documentation process may need to be semi-autonomous because of its number, size, and complexity, and a separate documentation subproject may be needed to provide effective control. In these types of implementation projects, the Project Management Plan defines the high level scope and policies, but does not provide enough detail about individual subprojects. This detail would be documented in this work product</p>
+<h6>Task Complexity Depends on Project Scope</h6>
+<p>The level of detail required for this task depends on the scope of the implementation project and the Documentation process within it. If the Documentation work is being performed for a small number of applications that need only to fit into existing documentation or information systems strategy, you need only to document the parts of the strategy that are relevant to the limited Documentation scope and proceed to the next task. At the other extreme, if this is an enterprise-level documentation for a large-scale replacement of business systems, or there is no clear documentation or information systems strategy in place already, you may need to go into some detail to document the documentation policies and expectations.</p>
+<h4>Business Vision</h4>
+<p>The vision for the new business systems is a key initial ingredient of the design of any documentation, especially where the Documentation process is covering the strategic aspects of the new systems as well as the tactical design. The vision must be documented and understood early in the process. Examples of business visions are listed below:</p>
+<ul>
+  <li>Users must be able to access their documentation online over the organization&rsquo;s intranet.</li>
+  <li>The corporation will standardize all corporate-wide documentation and allow each site to document their site-specific documentation as they wish.</li>
+  <li>The business will offer all documentation in electronic form. Some documentation may not be offered in hardcopy format.</li>
+</ul>
+<h4>Documentation Policies and Standards</h4>
+<p>At the heart of every documentation project are directives and policies that are fundamental to the documentation design. In large projects that are modifying many of the standard application modules, you may be defining these directives and policies for the first time. These are the guiding principles for the design and distribution of the new documentation, which might be using new technology for the first time. In projects where the implementation is more limited in scope, this may be a matter of conforming to policies and principles that the information systems department has already established for any new documentation.</p>
+<p>In situations where a formal information systems strategy project has preceded the implementation Documentation process, a set of principles, directives, and strategies may already be in place, which you can directly input as requirements to the implementation documentation. The selection of a particular publishing tool or technology may be partly in response to the demands of the particular information systems strategy.</p>
+<h4>Documentation Scope and Objectives </h4>
+<p>When setting scope for the Documentation process, it is important to understand that project-specific documentation can be expensive to author, publish, and maintain. Proper scope setting and management of expectations are essential. The project and business managers should specify their high-level goals for preparing documentation and how this project will use the documentation once it is published.</p>
+<p><b>Attention:</b> Documentation may be one aspect of an overall performance quality management program within a project. If this is the case, the scope should indicate how documentation fits into that program.</p>
+<h4>Staffing Resources </h4>
+<p>The staff resources needed for the Documentation process are directly dependent on the type and amount of project-specific documentation being published. Technical writers are the primary resources used for publishing documentation. If the documentation project is large enough, you should consider adding a document administrator to help manage documentation files.</p>
+<h4>Environments Required </h4>
+<p>The Documentation team should have access to a Documentation Environment (DO.040) that supports the organization&rsquo;s authoring and publishing needs. This environment could be as simple as a laptop computer with desktop publishing software, or as complex as integrated publishing tools, platform servers, data storage devices, communication networks, and documentation libraries with version control.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>Application Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing an application implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_TASK_GUIDELINES.HTM#ADO010" target="_blank">task-specific supplemental guidance</a>. To access all application implementation supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a>. </p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#DO010" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<h4>WebCenter (formerly E20) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Webcenter implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_TASK_GUIDELINES_INCEPTION.HTM#DO010" target="_blank">task-specific supplemental guidance</a>. To access all WebCenter supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_SUPP_GUIDE.HTM" target="_blank">OUM WebCenter Supplemental Guide</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="23%" scope="col"><div align="left">Role</div></th>
+    <th width="71%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Analyst</div></th>
+    <td>Describe documentation needs and current documentation usage. Agree on documentation standards.</td>
+    <td><div align="center">30</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Technical Writer </div></th>
+    <td>Write, edit, and review the work product. Obtain agreement with users on the work product.</td>
+    <td><div align="center">70</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Line Manager </div></th>
+    <td>Assist in describing documentation needs and current documentation usage. Agree on documentation standards.</td>
+    <td><div align="center">
+        <div align="center">*</div>
+    </div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer Project Manager </div></th>
+    <td>Provide input into developing the work product.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="23%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="77%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Management Plan (PMP)<br>
+        Baseline Project Workplan (PJM.WM.010)</div></th>
+    <td>These Manage work products provide a high-level discussion of the scope for publishing project-specific documentation, list the work products specific to this project, and indicate how the project should be organized and run.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Oriented Team (PJM.STM.050)</div></th>
+    <td>Prior to defining the Documentation Requirements and Strategy, the project team members attend a project team orientation meeting.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Skilled Project Team (TR.050) </div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/DO/DO-010_DOCUMENTATION_REQUIREMENTS_AND_STRATEGY.DOCX" target="_blank">DO-010_DOCUMENTATION_REQUIREMENTS_AND_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Tool</div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">This task has supplemental guidance for using Oracle User Production Kit Professional (UPK Pro) and Oracle Tutor. Use the following to access the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TUTOR_UPK/TUTOR_UPK_TASK_GUIDELINES.HTM#DO010" target="_blank">task-specific supplemental guidance</a>. To access all Oracle UPK Pro and Oracle Tutor supplemental information, use the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TUTOR_UPK/TUTOR_UPK_SUPP_GUIDE.HTM" target="_blank">OUM Oracle User Productivity Kit Professional (UPK Pro) and Oracle Tutor Supplemental Guide.</a></div></th>
+    <td>Oracle User Productivity Kit Professional (UPK Pro) and Oracle Tutor are complementary Oracle tools that are used to develop, deploy and maintain content that can be used throughout each phase of the enterprise application implementation lifecycle from blueprinting/design/testing to go-live and maintenance/support. UPK Pro and Tutor can be used with all of Oracle&rsquo;s business application brands as well as non-Oracle business applications. UPK Pro and Tutor allow project teams to streamline the creation of business process documentation, test scripts, interactive simulations, job aids, presentations, courseware, and in-application performance support, reflecting the specific business practices and applications environment. For creating the above content types, use Tutor for business process documentation and UPK for everything else. Oracle Corporation uses Tutor to document its business processes.</td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The Documentation Requirements and Strategy is used in the following ways: </p>
+<ul>
+  <li> to determine the custom documentation that is needed for the project - User requirements for each document are analyzed and an agreement regarding design, format, and content is reached. Every user that relies on documentation as an ongoing resource for their day-to-day operations should be represented during this critical task. </li>
+  <li> to establish and document the strategy for the documentation as part of the project</li>
+</ul>
+<p> The Documentation Requirements and Strategy should expand the Project Management Plan created for the overall project in greater detail for the Documentation process. It should make reference to the main project work product where appropriate, and indicate those objectives and approaches that are inherited from the main project. It should not, however, be just a duplication of the Project Management Plan.</p>
+<p>Distribute the Documentation Requirements and Strategy as follows: </p>
+<ul>
+  <li>to the project manager who should sign off on the Documentation Requirements and Strategy and resources needed</li>
+  <li>to IS manager who should sign off on the Documentation Requirements and Strategy</li>
+  <li>to Documentation team members</li>
+  <li>to other process leaders who have dependent tasks with the Documentation process</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li>Are the project scope and objectives clearly identified?</li>
+  <li>Are specific critical success factors and risks documented?</li>
+  <li>Does this document take into account the impact of dependent tasks from other processes?</li>
+  <li>Is the Documentation Requirements and Strategy clearly defined?</li>
+  <li>Does the strategy discuss existing information systems policies and strategies and indicate how they relate to this project?</li>
+  <li>Is the strategy understood by those on the distribution list for this work product?</li>
+  <li>Are all resource and tool requirements that could impact the Documentation process stated and understood?</li>
+  <li>Is the work product thorough in capturing different types of business and information systems requirements that are directly relevant to documentation?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

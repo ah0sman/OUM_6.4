@@ -1,0 +1,573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Inception Phase Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" -->
+            <h1>Phase Overview </h1>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                        <select name="CurrPagNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                          <option value="#TOP" selected></option>
+                          <option value="#Objectives">Objectives</option>
+                          <option value="#Processes">Processes</option>
+                          <option value="#KeyWP">Key Work Products</option>
+                          <option value="#Tips">Tips and Techniques</option>
+                          <option value="#TasksWP">Tasks and Work Products</option>
+                          <option value="#Dependencies">Activity Flow Diagram</option>
+                          <option value="#Risk">Managing Risk</option>
+                          <option value="#CritSucFactors">Critical Success Factors</option>
+                        </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[A] INCEPTION </h2>
+<!--BeginPhaseDesc--><p> The overriding goal of the Inception phase is to have concurrence among all stakeholders on the lifecycle objectives for the project. The Inception phase is critical for all projects because the scope of the effort, the high-level requirements and the significant risks must be understood before the project can proceed. </p>
+<p> The Inception phase is used to kick off a project, review the strategic direction of the business, and confirm, document, and prioritize the high-level business requirements for the project. It is also the time to begin assembling and integrating the project team, to scope the entire engagement, and develop the initial project plan. </p>
+<p> The business objectives, goals, and scope of the project are defined and the project&rsquo;s feasibility is established during requirement gathering activities that produce the high-level business models. As requirements are defined, they are also prioritized in relation to their business benefits. Where applicable and possible, the functionality is partitioned to enable parallel development by separate teams of ambassador users and highly skilled Information Technology (IT) professionals. Potential risks are identified and and mitigation strategies for each risk are developed. The Project Management Plan is used to define the overall work to be performed on the project. An Iteration Workplan is developed to define the details of the work to be performed in the first Iteration of the Elaboration phase. </p>
+<p> For projects focused on enhancements to an existing system, the Inception phase is more brief but is still focused on validating that the project is both worth doing and reasonable.</p><!--EndPhaseDesc-->
+<p>The Inception phase finishes with the <a href="../040_ACTIVITY/AACTLCOB_LIFECYCLE_OBJ_MST_SUMMARY.HTM" target="_blank">Lifecycle Objective Milestone</a>. Review and be familiar with the objectives of this milestone before you begin this phase and make sure you have met these objectives before you move to the Elaboration phase. </p>
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> This phase overview is written from the perspective of a Full Method View, utilizing ALL of the processes, activities and tasks in this phase. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Prerequisites, Processes, Key Work Products, Tasks and Work Products and Task Dependencies sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><a NAME="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The following is a list of the objectives of this phase:</p>
+<ul>
+  <li><b>Confirm business objectives.</b> Obtain a clear understanding of the business benefits that should be achieved by the project in order to take decisions that are beneficial to the business. Gain agreement on the business objectives by all relevant stakeholders. Define, document, prioritize, and gain agreement on the high-level business requirements of the project.</li>
+  <li><b>Confirm project scope.</b> Clearly define the project scope, and if possible, partition and prioritize the work that is in scope. Confirm the goals of the project by all stakeholders.</li>
+  <li><b>Define risks.</b> Identify the main risks, prioritize them and identify mitigation strategies.</li>
+  <li><b>Estimate cost and plan.</b> Prepare and communicate schedule and cost estimates for the remaining phases.</li>
+  <li><b>Staff and prepare project team.</b> Identify the project team. Identify appropriate and qualified ambassador users who will be involved during the entire project lifecycle. Educate all project stakeholders in the OUM approach and explain the organizational impact of choosing this approach, as well as their respective roles and responsibilities in the project. Begin to build an integrated project team of IT professionals and ambassador users.</li>
+</ul>
+<p>The <a href="../../040_TEMPLATES_AND_GUIDANCE/INCEPTION_LO_CHECKLIST.DOCX" target="_blank">Inception Phase / Lifecycle Objective (LO) Milestone Checklist</a> is available to assist with determination of completeness for this phase.</p>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Processes" id="Processes"></a>PROCESSES</h3>
+<p>The following processes are active in this phase:</p>
+<ul>
+  <li>Business Requirements (RD) </li>
+  <li>Requirements Analysis (RA)</li>
+  <li>Mapping and Configuration (MC)</li>
+  <li>Implementation (IM) </li>
+  <li>Testing (TE)</li>
+  <li>Performance Management (PT)</li>
+  <li> Technical Architecture (TA)</li>
+  <li>Data Acquisition and Conversion (CV)</li>
+  <li>Documentation (DO) </li>
+  <li>Organizational Change Management (OCM) </li>
+  <li>Training (TR) </li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="KeyWP" id="KeyWP"></a><a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#KWP" target="_blank">KEY WORK PRODUCTS</a></h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM#Inception"target="_blank">Key Work Products</a> for a complete list of key work products for OUM. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Tips" id="Tips"></a>TIPS AND TECHNIQUES </h3>
+<p>This section discusses the primary techniques that may be helpful in conducting the Inception phase. It also includes advice and commentary on each process.</p>
+<h4>Business Requirements</h4>
+<p> Within this process you define the high-level functional and supplemental requirements, and determine the scope and prioritize it. Use workshops for all these activities. The workshops that are used in this phase will be high-level facilitated workshops where a lot of brainstorming occurs. Therefore, techniques that allow this kind of activity can be successfully used (for example, brown bag sessions). The preparation of the workshops is vital to their success. The facilitator (workshop leader) should perform some investigation prior to the workshops to make them as effective as possible. More information about workshop techniques can be found in the Workshop Techniques Handbook.
+<p> It is also important to understand the organization's culture. For example, are they used to speaking out, or are there normally a lot of political factors that restrict the free exchange of ideas. Prepare the workshop appropriately (for example, an open approach will provide very little input in an atmosphere where speaking out is restrictive). It is important that the participants feel secure during the session. The high-level requirements should be prioritized following the MoSCoW principle, resulting in a MoSCoW List that that contains the prioritized requirements. The MoSCoW List contains the Must Have, Should Have, Could Have and Won't Have requirements. The Must Have functionality is the functionality that is vital to the business and hence Must be developed. The Should Have functionality is important, but not vital, the Could Have functionality is the functionality that is nice to have, but not really important, and the Won't Have functionality is functionality that should not be developed as part of this project. There is a sample Use Case Model, accessible from the RA.023 task overview that can be used to accelerate the requirements gathering process.
+<h4> Requirements Analysis </h4>
+<p> In the Requirements Analysis process, the requirements captured during Business Requirements are analyzed and the functional requirements are transformed and structured into a Business Use Case Model.&nbsp;Use Case Models are used to document the requirements of the system in detail, for the business as well as the project team. During the Inception phase, you should not describe every use case in detail. This is neither necessary nor reasonable, as many use cases will evolve through the phases. The users should be involved in developing the Business Use Case Model, as it they can provide the best input to give a more precise understanding of the requirements. It might be useful to use workshops to collect the missing pieces in the requirements that we need to form the Business Use Case Model. It all depends on the level of detail and accuracy of the requirements captured in the Business Requirements process.
+<h4>Mapping and Configuration</h4>
+<p>In the Mapping and Configuration process, you establish the values for the key structural elements in the applications (for example, Multi-Org, Trading Community Architecture (TCA), Chart Of Accounts (COA) structures) that are relevant to your particular implementation.
+
+<h4>Implementation</h4>
+<p> Most of the work in the Implementation process is performed in the Construction phase, however it is important to try to show the users our early understanding of the requirements. This can be done by creating one or more Conceptual Prototypes. In larger projects, probably more prototypes will be created (for example, one for each subsystem).&nbsp; A Conceptual Prototype is a mockup prototype that reflects the functional requirements known at the time, based on the decisions made during the workshops. There might very well be known requirements with lower priorities that have not been prototyped, because the end of the timebox was reached before the completion of these requirements. The Conceptual Prototype is used as a communication tool between the ambassador users and the project team to determine any additional requirements and to verify the implementation team's understanding of existing requirements. At this point, the prototype may consist of drawings using, for example, PowerPoint slides, illustrating the user interface, what kind of functionality the application will provide, and so on. Moreover, some programming work may occur in this phase, for example, to create &quot;proof of concept&quot; prototypes, to do programming experiments for key technical questions, to validate technical ideas or to explore the technical feasibility of special requirements.
+<h4>Testing </h4>
+<p> This process emphasizes a common planning approach to testing the business requirements embodied in the new application system. It advocates the reuse of testing scripts and test data in successively larger and larger portions of the application system. The intent of the Testing process is to provide a formal and effective approach to the challenge of testing. The Testing approach is integral to the entire development effort, for example by performing unit testing, and structuring it to build upon itself. If done well, it results in high quality software and early delivery of a dependable system, delivering real business benefits.
+<p> The Testing process first identifies the Testing Requirements (such as the form and scope of test reports) and then refines them through to the end of the project. It attempts to take full advantage of all opportunities that contribute to the identification of the Testing Requirements. For example, you identify business scenarios while developing the Use Case Models, and they contribute to system, and systems integration testing. Functional modeling produces testing requirements that are specific to a detailed use case or business process. User interface testing is performed with reference to the Validated User Interface. The Supplemental Requirements work product identifies supplemental requirements in such areas as security, from which you plan supplemental testing of partitions and the complete system. The Testing Requirements should also include requirements related to acceptance testing including statements concerning the implications for acceptance testing.
+<p> At the earliest possible date, the lead tester should initiate a procurement process for testing tools. This issue is best raised in response to the customer organization's statement of testing requirements.</p>
+<h4>Performance Management </h4>
+<p> The objective of the Performance Management process is to proactively define, construct, and execute an effective approach to managing performance throughout the project implementation lifecycle in order to ensure that the performance of the system or system components meet the user's requirements and expectations when the system is implemented.&nbsp; Performance Management is not limited to conducting a performance test or an isolated tuning exercise, although both those activities may be part of the overall Performance Management strategy.
+<p>Performance Management starts off with conducting a Performance Management Workshop.  The Performance Management workshop familiarizes the customer with the concepts of proactive performance management, the need to define performance requirements for business critical transactions, establishment of metrics and monitoring related to performance management, Service level Agreements (SLA) and the appropriate use of performance testing.&nbsp; The workshop also provides a mechanism to gather information on performance needs and expectations that should be used to develop the Performance Management Requirements and Strategy (PT.020).
+<h4>Technical Architecture</h4>
+<p> The Technical Architecture process starts off by conducting a Technical Architecture Workshop. The workshop is intended to familiarize the customer with the reference architectures already established, options and features available and to gather high level architecture, availability, integration, reporting, backup and recovery, security and disaster recovery requirements. The workshop also provides a mechanism to gather information on architecture in place and any strategic initiatives or enterprise standards that the project architecture must fit within.
+<h4>Data Acquisition and Conversion</h4>
+<p> This process relies on the work products from the Business Requirements process. If possible, members of the conversion team should actively participate in this process to establish a good understanding of future business requirements. In addition, this team needs to look into the existing systems that should be converted. Document the Data Conversion Requirements in this phase. Data conversion can be a costly and labor-intensive effort. Raise conversion exceptions as management issues. They should not be solved prior to understanding their benefit to the business.
+<h4>Documentation</h4>
+<p>Quality documentation is a key factor in supporting the transition to production, achieving user acceptance, and maintaining the ongoing business process.&nbsp; During Inception, this process gets started with the documenting of the Documentation Requirements and Strategy. This work product will drive this process throughout the project.
+<h4>Organizational Change Management </h4>
+<p style="margin-bottom: 0">Organizational Change Management focuses on the use and acceptance of new application system by all users and the optimization of organizational performance.&nbsp; <span class="style1">Inherent in every technology change is the opportunity to become a stronger, more cohesive organization; a more efficient performer; a more agile competitor.</span></p>
+<p>During Inception, communication is started quickly to keep stakeholders informed. Various workshops with targeted audiences are conducted to start preparing the organization for the adoption of the new system. <span class="style1">Organizational Change Management provides a structured approach that addresses the human and organizational acceptance and use of new applications. Organizational Change Management increases the organization&rsquo;s return on investment by reducing the risks of implementing applications, increasing the productivity of all user groups, and assisting the organization to reach peak performance with the new business system. The more quickly and effectively the business can adopt new technology, the more productive and competitive is the organization. A Sponsorship Program is put in place to cascade (or sponsor) the involvement throughout the organization and a Change Readiness Assessment is conducted. Ongoing throughout the project and starting in the Inception phase, change and communication events targeted to specific audiences with the goal of mitigating identified risks and challenges are conducted. </span></p>
+<h4>Training</h4>
+<p style="margin-bottom: 0"><span class="style1">During Inception, the objective of the Training process is to train the project team </span>to begin the tasks necessary to start the project.</p>
+<h4>Scrum </h4>
+<p>If you are using a Scrum approach, use the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project Using Scrum</a> technique. You can also go directly to the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM#INCELAB" target="_blank">Inception phase Scrum guidance</a> within this technique.</p>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><B><A 
+name=TasksWP id="TasksWP"></A></B>TASKS AND WORK PRODUCTS </h3>
+<p>This phase includes the following tasks:</p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks (with links) and work products for the OUM Inception phase.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each process.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Business Requirements </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.001</div></th>
+    <td><a href="../030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">Detail Business And System Objectives</a></td>
+    <td>Business and System Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.003</div></th>
+    <td><a href="../030_TASK/RD_003_IDENTIFY_VIEWPOINTS_OVERVIEW.HTM" target="_blank">Identify Viewpoints </a></td>
+    <td>Viewpoints List </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.005</div></th>
+    <td><a href="../030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">Create System Context Diagram </a></td>
+    <td>System Context Diagram </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.011.1</div></th>
+    <td><a href="../030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Develop Future Process Model </a></td>
+    <td>Future Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.012</div></th>
+    <td><a href="../030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">Document Present And Future Organization Structures</a></td>
+    <td>Present And Future Organization Structures</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.015</div></th>
+    <td><A
+				href="../030_TASK/RD_015_DETERMINE_KPI_COLL_AND_REP_STR_OVERVIEW.HTM"
+				target="_blank">Determine KPI Collection and Reporting Strategy</A></td>
+    <td>Key Business Strategies and Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.020</div></th>
+    <td><a href="../030_TASK/RD_020_OBTAIN_HL_BUS_DESCRIPTIONS_OVERVIEW.HTM" target="_blank">Obtain High-Level Business Descriptions</a></td>
+    <td>High-Level Business Descriptions</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.030</div></th>
+    <td><a href="../030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Develop Current Business Process Model </a></td>
+    <td>Current Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.034</div></th>
+    <td><a href="../030_TASK/RD_034_DOCUMENT_CURRENT_BUS_BASELINE_METRICS_OVERVIEW.HTM" target="_blank">Document Current Business Baseline Metrics </a></td>
+    <td>Current Business Baseline Metrics </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.042.1</div></th>
+    <td><a href="../030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+    <td>Glossary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.045.1</div></th>
+    <td><a href="../030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW) </a></td>
+    <td>Moscow List</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.055</div></th>
+    <td><a href="../030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">Detail Supplemental Requirements</a></td>
+    <td>Supplemental Requirements</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.065</div></th>
+    <td><a href="../030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">Develop Domain Model (Business Entities) </a></td>
+    <td>Domain Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.070</div></th>
+    <td><a href="../030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM" target="_blank">Determine Audit and Control Requirements </a></td>
+    <td>Audit and Control Requirements</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.130.1</div></th>
+    <td><a href="../030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Baseline Architecture Description </a></td>
+    <td>Architecture Description </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.134</div></th>
+    <td><a href="../030_TASK/RD_134_IDENTIFY_NEW_SW_REL_CHANGES_OVERVIEW.HTM" target="_blank">Identify New Software Release Changes </a></td>
+    <td>Software Release Changes Summary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.136</div></th>
+    <td><a href="../030_TASK/RD_136_PERFORM_CUST_EXT_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Custom Extension Impact Analysis </a></td>
+    <td>Custom Extension Impact Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.138</div></th>
+    <td><a href="../030_TASK/RD_138_PERFORM_DATA_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Data Impact Analysis </a></td>
+    <td>Data Impact Analysis</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.140.1</div></th>
+    <td><a href="../030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">Create Requirements Specification</a></td>
+    <td>Requirements Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.150.1</div></th>
+    <td><a href="../030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">Review Requirements Specification</a></td>
+    <td>Reviewed Requirements Specification</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Requirements Analysis </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.010</div></th>
+    <td><a href="../030_TASK/RA_010_SIMULATE_BUSINESS_PROCESS_OVERVIEW.HTM" target="_blank">Simulate Business Process </a></td>
+    <td> Business Process Simulation </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.015</div></th>
+    <td><a href="../030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Business Use Case Model</a></td>
+    <td> Business Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.019</div></th>
+    <td><a href="../030_TASK/RA_019_DEFINE_PROJECT_REF_ARCH_OVERVIEW.HTM" target="_blank">Define Project Reference Architecture </a></td>
+    <td>Project Reference Architecture </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.021.1</div></th>
+    <td><a href="../030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">Capture User Stories</a></td>
+    <td>User Story </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.023.1</div></th>
+    <td><a href="../030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">Develop Use Case Model</a></td>
+    <td> Use Case Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.025.1</div></th>
+    <td><a href="../030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.027.1</div></th>
+    <td><a href="../030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.028.1</div></th>
+    <td><a href="../030_TASK/RA_028_POPULATE_BUS_RULES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Business Rules Repository </a></td>
+    <td>Populated Business Rules Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RA.030.1</div></th>
+    <td><a href="../030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank"><span class="style3">Validate Conceptual Prototype</span></a></td>
+    <td>Validated Conceptual Prototype</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Mapping and Configuration </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.010.1</div></th>
+    <td><a href="../030_TASK/MC_010_DEFINE_BUS_DATA_STRUCTURES_OVERVIEW.HTM" target="_blank">Define Business Data Structures </a></td>
+    <td>Business Data Structures </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.020</div></th>
+    <td><a href="../030_TASK/MC_020_DEFINE_BUS_DATA_STRUCTURE_SETUPS_OVERVIEW.HTM" target="_blank">Define Business Data Structure Setups </a></td>
+    <td>Business Data Structure Setups </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.090.1</div></th>
+    <td><a href="../030_TASK/MC_090_CONDUCT_REPORTING_FIT_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct Reporting Fit Analysis </a></td>
+    <td>Reporting Fit Analysis </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementation</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IM.005.1</div></th>
+    <td><a href="../030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">Develop Conceptual Prototype</a></td>
+    <td>Conceptual Prototype</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Testing</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.005.1</div></th>
+    <td><a href="../030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">Determine Testing Requirements</a></td>
+    <td>Testing Requirements</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Performance Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.010</div></th>
+    <td><a href="../030_TASK/PT_010_CONDUCT_PERFORMANCE_MANAGEMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Performance Management Workshop </a></td>
+    <td>Performance Management Workshop Results </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Technical Architecture </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.004</div></th>
+    <td><a href="../030_TASK/TA_004_PERFORM_TA_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Technical Architecture Impact Analysis </a></td>
+    <td>Technical Architecture Impact Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.010</div></th>
+    <td><a href="../030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">Conduct Technical Architecture Workshop </a></td>
+    <td>Technical Architecture Workshop Results </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Data Acquisition and Conversion </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.010</div></th>
+    <td><a href="../030_TASK/CV_010_DEFINE_DATA_ACQ_AND_CONVERSION_REQS_OVERVIEW.HTM" target="_blank">Define Data Acquisition and Conversion Requirements</a></td>
+    <td>Data Acquisition and Conversion Requirements</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Documentation</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.010</div></th>
+    <td><a href="../030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">Define Documentation Requirements and Strategy </a></td>
+    <td> Documentation Requirements and Strategy </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Organizational Change Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.010</div></th>
+    <td><a href="../030_TASK/OCM_010_CREATE_AND_MANAGE_AD_HOC_COMM_OVERVIEW.HTM" target="_blank">Create and Manage Ad Hoc Communications </a></td>
+    <td>Ad Hoc Communications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.020</div></th>
+    <td><a href="../030_TASK/OCM_020_PREPARE_FOR_EXEC_ALIGN_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Executive Alignment Workshop </a></td>
+    <td>Executive Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.030</div></th>
+    <td><a href="../030_TASK/OCM_030_CONDUCT_EXECUTIVE_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Executive Alignment Workshop</a></td>
+    <td>Executive Business Objectives and  Governance Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.040</div></th>
+    <td><a href="../030_TASK/OCM_040_BUILD_AND_DEPLOY_SPONSORSHIP_PROGRAM_OVERVIEW.HTM" target="_blank">Build and Deploy Sponsorship Program </a></td>
+    <td>Sponsorship Program</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.050</div></th>
+    <td><a href="../030_TASK/OCM_050_PREPARE_FOR_TEAM_BLDG_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Team-Building Workshop </a></td>
+    <td>Team-Building Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.060</div></th>
+    <td><a href="../030_TASK/OCM_060_CONDUCT_TEAM_BLDG_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Team-Building Workshop </a></td>
+    <td>Cohesive Project Team</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.070</div></th>
+    <td><a href="../030_TASK/OCM_070_DESIGN_MGRS_PROJECT_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Managers Project Alignment Workshop</a></td>
+    <td>Managers Project Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.080</div></th>
+    <td><a href="../030_TASK/OCM_080_CONDUCT_MGRS_PROJECT_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Managers Project Alignment Workshop</a></td>
+    <td>Aligned Managers </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.090</div></th>
+    <td><a href="../030_TASK/OCM_090_DESIGN_CHANGE_AGENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Change Agent Workshop </a></td>
+    <td>Change Agent Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.100</div></th>
+    <td><a href="../030_TASK/OCM_100_CONDUCT_CHANGE_AGENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Change Agent Workshop </a></td>
+    <td>Enabled Change Agents</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.110</div></th>
+    <td><a href="../030_TASK/OCM_110_DEVELOP_CR_ASSESSMENT_STRATEGY_AND_TOOLS_OVERVIEW.HTM" target="_blank">Develop Change Readiness  Assessment Strategy and Tools </a></td>
+    <td>Change Readiness Assessment Strategy and Tools </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.120</div></th>
+    <td><a href="../030_TASK/OCM_120_CONDUCT%20CR_ASSESSMENT_AND_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">Conduct Change Readiness Assessment  and Analyze  Data </a></td>
+    <td>Change Readiness Assessment Analysis and Recommendations </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.130</div></th>
+    <td><a href="../030_TASK/OCM_130_BUILD_COMM_STRATEGY_AND_CHG_MGMT_ROADMAP_OVERVIEW.HTM" target="_blank">Build Communication Strategy and Change Management Roadmap </a></td>
+    <td>Communication Strategy and Change Management Roadmap</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.140</div></th>
+    <td><a href="../030_TASK/OCM_140_DEVELOP_COMMUNICATION_CAMPAIGN_OVERVIEW.HTM" target="_blank">Develop Communication Campaign </a></td>
+    <td> Communication Campaign </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.1</div></th>
+    <td><a href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM">Conduct Change Management Roadmap and Communication Campaign </a></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Training</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.010.1</div></th>
+    <td><a href="../030_TASK/TR_010_DEFINE_TRAINING_STRATEGY_OVERVIEW.HTM" target="_blank">Define Training Strategy </a></td>
+    <td>Education and Training Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.020</div></th>
+    <td><a href="../030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">Prepare Project Team Learning Plan</a></td>
+    <td> Project Team Learning Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.030</div></th>
+    <td><a href="../030_TASK/TR_030_PREPARE_PROJECT_TEAM_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank">Prepare Project Team Learning Environment </a></td>
+    <td><span class="style1">Project Team Learning Environment </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.040</div></th>
+    <td><a href="../030_TASK/TR_040_DEVELOP_PROJECT_TEAM_LEARNINGWARE_OVERVIEW.HTM" target="_blank">Develop Project Team Learningware </a></td>
+    <td>Define Training Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TR.050</div></th>
+    <td><a href="../030_TASK/TR_050_CONDUCT_PROJECT_TEAM_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">Conduct Project Team Learning Events</a></td>
+    <td>Skilled Project Team </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top </a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Dependencies" id="Dependencies"></a>ACTIVITY FLOW DIAGRAM</h3>
+<p align="center"><img src="../../010_COMMON_FILES/Incept_Act.Flow.jpg" alt="Inception Phase Activity Flow Diagram" width="751" height="487" title="Inception Phase Activity Flow Diagram"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Risk" id="Risk"></a>MANAGING RISK</h3>
+<p>The most likely areas of risk in the Inception phase are the following: </p>
+<ul>
+  <li> <b>Undocumented or Undeveloped Business Strategies:</b> In order to create a successful business, the strategic goals from which the project came, need to be documented. Be sure that there is a strategic plan, along with the other pre-requisites, is in place to govern development of the Oracle solution.</li>
+  <li> <b>No Representation of the Creative Design Discipline on the Project Team:</b> This could be because these requirements have not been considered or because the customer has a separate agreement with a creative design firm. In either case, a user-centric development effort will fail if the creative discipline is not a part of the integrated project team.</li>
+  <li> <b>Misunderstood or Missing Requirements:</b> These can be particularly difficult if they are in the area of integration with existing systems or solution partitions being developed in parallel. Facilitated workshops are the preferred means for accelerating business planning and development. Workshops enable the exchange of information between a group of key individuals and allow the group to reach decisions that are mutually acceptable</li>
+  <li><b>No Single Point of Authority/Inability to Make Decisions:</b> The inability of the customer project team to make decisions regarding the Oracle solution without consulting their executive management can severely hamper progress on the development effort. Ensure that, as part of the Inception phase, a project sponsor -- a single point of authority empowered to take decisions -- is identified. The project sponsor must then empower the ambassador users -- the customer project team -- to make decisions within their area of responsibility.</li>
+  <li><b>The Definition of Project Scope is Unclear or Imprecise:</b> If the project scope is not clear, there is a large risk for scope creep and the project may then have difficulties in delivering on time and within budget. To prevent this, it is important to define of a clear and unambiguous scope that can easily be used as a reference when new requirements emerge. The high-level requirements and the MoSCoW List are often used as a basis to form the scope. </li>
+  <li> <b>Insufficient Number and Quality of Skilled Staff Resources (including Object-Oriented Analysts and Developers):</b> If the project does not include the right amount of qualified resources (both customer and Oracle resources), there is a risk that the work products produced will not be delivered on time, with the correct level of detail/and or with sufficient quality. If there are lesser-experienced people on the project, this must be reflected in the schedule to allow for training on the job and coaching. It's best, if possible, that the staff be trained prior to the project. </li>
+</ul>
+<p> <a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p>These factors have been shown to be critical to the success of this phase:</p>
+<ul>
+  <li> &nbsp;clear understanding of the OUM approach</li>
+  <li> &nbsp;communication skills of the participants</li>
+  <li> &nbsp;active participation and commitment from the customer sponsor organization</li>
+  <li> &nbsp;clear agreement on project scope</li>
+  <li> &nbsp;availability of qualified ambassador users</li>
+  <li> &nbsp;availability of qualified developers</li>
+  <li> &nbsp;frequent and effective interactive with the creative design team</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

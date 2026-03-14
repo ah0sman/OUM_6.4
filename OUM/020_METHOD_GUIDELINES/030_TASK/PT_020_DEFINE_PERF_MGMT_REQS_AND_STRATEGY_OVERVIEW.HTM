@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PT.020 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>PT.020 - DEFINE PERFORMANCE MANAGEMENT REQUIREMENTS AND STRATEGY </h2>
+<!--BeginDesc-->
+<p>The purpose of this task is to define the Performance Management requirements and the strategy for overall Performance Management during the project. Effective Performance Management requires a holistic view over the life of the project.&nbsp; Management of performance is not limited to reactive tuning exercises or isolated to Performance Testing.&nbsp; Performance Management should begin as soon as requirements are identified, continue through development and testing and continue after production implementation has occurred.</p>
+<!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<p><a href="../040_ACTIVITY/BACTPPM_PLAN_PERFORMANCE_MGMT.HTM" target="_blank">B.ACT.PPM Plan Performance Management </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Performance Management Requirements and Strategy</b> </p>
+<p>The work product documents the Performance Management Requirements and Strategy that will be used on the project. It includes:</p>
+<ul>
+  <li>project organization, roles and responsibilities related to Performance Management</li>
+  <li>business critical transactions and their associated performance expectations</li>
+  <li>any Service Level Agreements (SLAs) established</li>
+  <li>any software tools that will be used to monitor environments, evaluate code, diagnose and resolve performance issues and track problems</li>
+  <li>processes to identify, track and resolve performance issues</li>
+  <li> type of Performance Testing that will be conducted</li>
+  <li> metrics that will be used to track the effectiveness of the Performance Management process</li>
+  <li>dependencies and interaction with other project activities, particularly development and conversion activities</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review the output of the Project Management Workshop (PT.010).&nbsp; <br></td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Review related project documentation which may discuss performance management issues or requirements. </td>
+    <td>Summarized List of Performance Requirements</td>
+    <td>There are a variety of project documents that may identify or address performance requirements either implicitly or explicitly including:
+        <ul>
+          <li>Project Management Plan (PMP) </li>
+          <li>Business Use Case Model (RA.015)</li>
+          <li>Use Case Specification (RA.024)</li>
+          <li> Supplemental Requirements (Non-Functional) (RD.055)</li>
+          <li>Architecture Requirements and Strategy (TA.020)</li>
+          <li>Integration Architecture Strategy (TA.030)</li>
+          <li>Reporting and Information Access Strategy (TA.040)</li>
+        </ul>
+        An informal summarized list should be created, to validate inclusion in the Performance Management Strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Define the context for Performance Management Requirements and Strategy.</td>
+    <td>Introduction</td>
+    <td>The Introduction details the purpose of the work product, provides background information on the project, and includes references to related documents.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Define the Performance Management Scope</td>
+    <td>Scope</td>
+    <td>The Scope describes the scope of Performance Management for the project in as much detail as possible. Scope statements should address both solution elements in and out of scope for the project. Examples of elements that can define the scope include:
+        <ul>
+          <li> Establishment of the Performance Management Virtual Team</li>
+          <li>Roles and Responsibilities of the Performance Management Team</li>
+          <li>Business Critical Transactions and response time requirements, throughput requirements or established SLAs</li>
+          <li>Known or Anticipated Performance Risks</li>
+          <li>Scope of Performance Testing </li>
+          <li>Performance Management relating to Business Processes and Applications out of scope for the Performance Test </li>
+          <li>Technical Architecture Implications</li>
+          <li>Interfaces, Data Acquisition and Conversion, Reporting and Databases</li>
+          <li>Performance Management Monitoring and Metrics</li>
+          <li>Performance Management Issue Tracking and Problem Resolution Process</li>
+          <li>Capacity Planning</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Define the Performance Management Objectives. </td>
+    <td>Objectives</td>
+    <td>The Objectives describes the rationale for Performance Management and the goals of the process.<br></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Identify Performance Management Approach and critical success factors.&nbsp;</td>
+    <td>Approach</td>
+    <td>The Approach describes the process, policies and procedures, project dependencies, and the technical requirements related to Performance Management. The approach should include a high level discussion of the tasks and work products. If there is specific terminology associated with the process or selected tools, a glossary of terms related to Performance Management (PT) should also be included. The subproject policies and procedures should be related to the corresponding policies and procedures adopted for the main project. If the subproject will use different polices, procedures or standards from the main project in any key control and reporting areas, the work product should document the differences in detail, explaining why they differ. Examples of areas where the subproject will typically inherit standards and procedures from the main project are listed below:
+        <ul>
+          <li> Project Management Plan </li>
+          <li> Issue Management and Resolution </li>
+          <li> Change Management </li>
+          <li>Reporting Format </li>
+          <li>Reporting Relationship to the Main Project </li>
+          <li>Acceptance </li>
+          <li> Project Policies and Procedures </li>
+          <li>Subproject Team Meetings </li>
+          <li>Logistics and Administrative Support </li>
+        </ul>
+        The project dependencies section of the component should describe the dependencies between Performance Management and other processes or subprojects taking place within the overall implementation project. The technical background should describe the technical circumstances affecting the approach to the project. Examples of the points that may be included are:
+        <ul>
+          <li> Implementation sites</li>
+          <li>Technical Architecture Direction</li>
+          <li>Computing Platforms and Technical Infrastructure</li>
+          <li> Major System or Application Requirements</li>
+          <li>Innovative or Unusual Technical Requirements</li>
+        </ul>
+        The Approach should also include a description of the key process milestones, the constraints that this process will be subject to and any assumptions made, the risks inherent in Performance Management, and the relationship of the process to other systems projects and initiatives already underway.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Identify the mechanisms used for executing Performance Management. . </td>
+    <td>Performance Management Strategy </td>
+    <td>The Performance Management Strategy describes the strategy for Performance Management, including the methods used to collect user performance requirements, ensure performance requirements are considered and documented during design, review of code for compliance with performance standards, monitoring and early identification of potential performance problems in development and test environments, and the process to track and resolve performance defects and any specific techniques that will be used to management performance of key transactions that are not included in the performance testing scope.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Document the test technical architecture implications. </td>
+    <td>Technical Architecture </td>
+    <td>Performance Management is closely related to the Technical Architecture process and performance requirements may have a direct implication on the Technical Architecture designed and implemented.&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Describe the resource requirements needed to support the Performance Management process and document how the virtual Performance Management team will be organized.</td>
+    <td>Resource Requirements </td>
+    <td>The Resource Requirements component describes the specific resources needed for Performance Management.&nbsp; A virtual team should be established which may require effort from resources primarily associated with:
+        <ul>
+          <li> Functional Team Leads and Ambassador Users</li>
+          <li>Development</li>
+          <li>Conversion, Integration and Reporting</li>
+          <li>Systems Operation and Network </li>
+          <li>Database Design and Administration</li>
+          <li>Help Desk</li>
+          <li>Business System Testing</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Document specific tool requirements for the testing process.</td>
+    <td>Tool Requirements </td>
+    <td>The Tool Requirements component describes the specific tool requirements identified for monitoring, tracking and reporting on the Performance Management process. Include the tools relevant to each of following areas:
+        <ul>
+          <li> Application Development Tools</li>
+          <li>Automated Performance Testing</li>
+          <li>Problem Tracking and/or Trouble Ticket Tools</li>
+          <li>Performance Monitoring and Other System Management Tools</li>
+          <li>Configuration Management</li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Identify risks in the strategy.</td>
+    <td>Risks</td>
+    <td>The Risks component describes the risks in the Performance Management Strategy. Examples of risks areas are:
+        <ul>
+          <li>lack of a centralized Performance Management team or Performance Management owner</li>
+          <li> lack of availability of expert resources</li>
+          <li> lack of an automated monitoring tools to collect and report performance measurements needed to meet the scope and objectives of the project</li>
+          <li>lack of performance coding standards or an effective quality assurance process for custom code</li>
+          <li>Inappropriate performance expectations </li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Review the work product with project and IS managers. Secure acceptance for the Performance Management and Requirements Strategy. </td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Effective Performance Management requires a holistic approach that begins in inception and continues not only through the project implementation but after the application goes live. Performance Management must be oriented around the user view of performance to succeed.&nbsp; Traditional approaches to Performance Management use a top-down approach that evaluates overall system health and then drills down into any issues apparent at a system level.&nbsp; DBAs and performance tuners evaluate the wide variety of system statistics and try to find evidence of problems that should be remedied.&nbsp; In some cases where there is a system wide constraint, this approach can succeed, but if the performance "problem" is related to a failure of a particular transaction to meet it's performance objective, considerable time can be spent without effectively addressing the actual problem the users are experiencing. When the problem is actually poor performance of one important business transaction, a top down approach can result in time and effort spent on unrelated transactions or system wide configuration, with the result that users receive no discernible improvement from their perspective. Effective Performance Management must begin with identifying the key business transactions and associated performance expectations and requirements early in the Inception and Elaboration phases and implementing the appropriate standards, controls, monitoring checkpoints, testing and metrics to ensure that transactions meet the performance expectations as the project progresses through Elaboration, Construction, Transition and Production. Field experience has repeatedly shown that attempting to manage performance from a system perspective without a clear view of the user expectations risks failure to produce the desired result.</p>
+<p>The Performance Management process should not end with the&nbsp; production implementation, but should continue after the system is implemented to monitor performance of the implemented system and to provide the appropriate corrective actions in the event performance begins to degrade.</p>
+<p>This task documents the Performance Management Requirements and Strategy.&nbsp; It establishes the organizational responsibilities for Performance Management within the project and documents the strategies, processes, procedures and policies for Performance Management. The information needed to prepare the strategy and document the requirements should be initially developed during the Performance Management Workshop (PT.010) and supplemented by existing business information systems strategy or documents, or discussions with senior project and IS organization management. Once you define and document the Performance Management Requirements and Strategy, it should be reviewed and accepted by management before progressing with the remainder of the tasks in this process.&nbsp; </p>
+<h4> Project Organization</h4>
+<p>One of the key issues related to Performance Management is the large number of organizational areas that can be involvement in "performance".&nbsp; A performance problem in a complex system may be related to one or more of the following:</p>
+<ul>
+  <li>Poor Technical Design</li>
+  <li>Poorly optimized code</li>
+  <li>System Level Constraints such as CPU, memory, IO subsystem performance</li>
+  <li>Database configuration</li>
+  <li>Network Issues</li>
+  <li>Application configuration</li>
+  <li>Bugs or Defects in vendor code</li>
+  <li>User Training Issues</li>
+  <li>Lack of appropriate capacity planning</li>
+  <li>Failure to implement appropriate patches or required maintenance procedures such as transactional table purges</li>
+</ul>
+<p>In most projects, ownership of these areas is spread across a number of teams and a organizational areas.&nbsp; This can create difficulty when addressing Performance Management issues, as there is no single party responsible for tracking and resolving any particular issue as it moves among the various parties that may be involved in detection and resolution.&nbsp; The Performance Management process requires the establishment of a Performance Management virtual team, with one owner assigned that&nbsp; has the overall responsibility to work with the various project and organizational teams to implement, track and control Performance Management.&nbsp; Depending on the customer structure and maturity, the role of Performance Management lead may initially come from within the project team, but it must eventually transition to a customer or customer representative in preparation for the transition of the application into production.</p>
+<h4>Performance Management Objective&nbsp;</h4>
+<p>The objective of Performance Management is to create the processes, procedures, controls and organizational structure to implement proactive performance management techniques and to minimize the amount of unplanned, reactive performance remediation work that is identified in the later stages of the project.&nbsp; It is important to note that Performance Management may not fully eliminate performance remediation efforts but it should provide the structure, process and procedures to quickly identify, track and resolve issues that are identified.</p>
+<h4>User Orientation</h4>
+<p> The Performance Management process should be oriented around the user view of performance.&nbsp; System level performance factors relating to technical architecture, database and application configuration and other factors cannot be ignored, but performance of the&nbsp; business critical transactions is key to establishing a well performing system from a user perspective. The transactions that are considered business critical are the ones that should receive priority throughout the implementation. Functional and technical designs should be evaluated for performance implications and risks, any code developed should be reviewed for potential optimization, response times in development and testing should be evaluated, and as many as possible should be included in formal performance testing.&nbsp; Although specific numbers vary, it is commonly believed that the majority of performance problems are directly related to application code as opposed to system level constraints.&nbsp; Identification of the business critical transactions early allows the appropriate focus on performance from requirements development forward, which is key to minimizing expensive, time consuming remediation work during the late stages of the project.</p>
+<h4>Throughput and Response Times</h4>
+<p>The requirements related to the business critical transactions should be specified in the form of throughput or response time. Throughput is the number of functional transactions that can be performed within a given time interval, for example, the number of orders that must be processed within a particular window of time, such as 100,000 orders a day.&nbsp; Response time is specifically related to the user experience with the online portion of the system and is typically measured as the total period of time from when the user initiates a transaction by clicking or pressing a button, until he gets a system response such a screen refresh or an update message on the screen.&nbsp; Throughput and response-time targets have been identified during the Performance Management Workshop or in the MoSCoW List, and if so, these non-functional requirements will begin to define your set of Performance Metrics. It is likely that additional metrics will be identified during the course of the implementation.</p>
+<p>The <b>List of Throughput</b> metrics should specify:</p>
+<ul>
+  <li>the exact type or types of functional transactions to be measured </li>
+  <li>the time periods during the day, week, month and business cycle when the measurements are to be made</li>
+  <li>the minimum acceptable transaction volume in a given time interval</li>
+  <li>the anticipated method of measurement </li>
+</ul>
+<p>The<b> List of Response-Time</b> metrics should specify:</p>
+<ul>
+  <li>the exact type of types of functional transactions to be measured</li>
+  <li>the start and end points of each measurement</li>
+  <li>the time periods during the day, week, month and business cycle when the measurements are to be made</li>
+  <li>the expected numbers of logged-in and simultaneously active users, respectively</li>
+  <li>the maximum acceptable response time for each type of transaction</li>
+  <li>the anticipated method of measurement</li>
+</ul>
+<p>Business users need systems that meet their business needs at all times.&nbsp; Frequently the demands for system performance are greatest during peak workload, and users have difficulty accepting systems that meet the throughput or response time requirements under light or normal load conditions, but fail to meet the objectives in a peak load scenario. Typically there are daily, weekly, monthly, seasonal and annual peak periods. These should be identified during Use Case requirements definitions and considered when creating the Performance Test Strategy as well as the Technical Architecture Strategy.</p>
+<h4>Technical Architecture Capacity</h4>
+<p>There is often a strong relationship between performance metrics and technical architecture capacity, including both space capacity and processing capacity. For example, the statement, "The forecast transaction volume will require 10 GB of disk space," relates to storage capacity based on transaction volumes, while the statement, "The forecast transaction volume will require twenty disks to maintain acceptable i/o response times," relates to processing capacity. Specify state any capacity assumptions when defining performance measurements.</p>
+<h4>Inappropriate Performance Expectations</h4>
+<p> If the application being implemented is a browser based multi-tier application that is replacing a single tier mainframe system, the user community may have performance expectations that are very difficult or impossible to achieve using the technology planned.&nbsp; While the Performance Management process cannot adjust the laws of physics, early identification of unrealistic performance expectations is actually an advantage, as it highlights the issue to the project sponsor, the project management and the change management team, giving them the opportunity to recalibrate the expectations and set achievable goals.&nbsp; Projects that fail to explore performance expectations early can be at risk of discovering a mismatch very late in the project, leaving little or no item to make necessary adjustments which puts acceptance and user satisfaction at risk.</p>
+<h4>Performance Management and Performance Testing</h4>
+<p>If the project scope includes formal Performance Testing, the performance test objectives, scope and strategy will be defined in the Performance Testing Strategy (PT.030). Performance Testing uses a top down approach, and it can used to validate a model of the entire solution or focus exclusively on a particular component of a solution. Performance testing can establish the expected performance of&nbsp; the solution or component under test.&nbsp; It can be used to validate that the production performance will acceptable for the business or determine if changes are required to meet the performance objectives.&nbsp; Performance Testing should represent the final validation, not the first evaluation of performance.&nbsp; If Performance Testing is the only Performance Management technique used, there is considerable risk that:</p>
+<ul>
+  <li>Significant code rework may be identified.</li>
+  <li>Issues identified cannot be resolved without impacting the project timelines.</li>
+  <li>Performance issues may still occur in production that were not identified during the testing process.</li>
+</ul>
+<p>Even when properly scoped and defined, Performance Testing is unlikely to simulate a complete view of the production workload, transaction that could introduce a performance risk.&nbsp; The Performance Management Requirements and Strategy should establish the appropriate processes to minimize production performance problems that arise from workload not included within formal Performance Testing scope.&nbsp; Processes to handle performance issues related to custom development (for purposes of packaged software <big><small>Configuration, Extension, Modifications, Localization) and Interface</small></big>s as well as processes to handle performance issues related to vendor supplied code need to be established. If the project has elected not to conduct formal Performance Testing, strategies for performance management become even more critical.</p>
+<h4> Metrics and Monitoring</h4>
+<p> The Performance Management process requires the establishment of monitoring events that identify potential performance issues and the establishment of metrics that facilitate reporting on the effectiveness of the process. Monitoring of the system from a top-down perspective is defined in the Define Systems Operation and Management Strategy task (TA.060) and it is not necessary to completely duplicate that effort here.&nbsp; Consideration does need be given to monitoring transactional performance or response time for the business critical transactions.&nbsp; Depending on the application being implemented, the approach may vary.&nbsp; Some applications are instrumented and provide relatively simple ways to monitor and report transaction performance.&nbsp; If the critical transaction set is composed of primarily batch processes executed through the Concurrent Manager facility provided with Oracle Applications, then submission times, wait times, execution times and total elapsed time by process is already captured in the FND schema tables, and reports can be constructed using data automatically available through standard application functionality.&nbsp; If the application processes are online transactions using the Oracle Application Framework, then the Page Access Tracker facility (Metalink note <b>278881.1</b>) can be be implemented and transaction response times can be collected and reported using standard features of the tool.&nbsp; Not all application response time metrics are as easily collected however, so the approach used depends on the specific application requirements.&nbsp; Some businesses who have invested in automated testing tools may chose to create "active monitoring" of transaction performance using the tools. In this strategy, scripts are build and run on a periodic basis to provide a stream of data that records simulated user response times.&nbsp; Although there may not be a single common approach to collecting the information, there is a clear advantage in identifying these requirements early so that if the application requires additional instrumentation to facilitate effective monitoring, if additional tools need to be purchased or if custom reports or scripts need to be created, the requirements can be identified and included during the implementation process and time consuming application rework can be avoided. The key to success in monitoring performance is to monitor statistics that can be related to the actual user experience, rather than relying strictly on system level statistics. Nothing is more frustrating to a user with a performance issue than a conversation about the Buffer Cache Hit Ratio or a chart showing CPU utilization within acceptable ranges, as they understandably cannot relate the information to the actual problem at hand.</p>
+<p> Additional metrics designed to monitor and measure the Performance Management process itself should be established.&nbsp; The particular metrics should be determined based on the specific project requirement, but the following lists some examples that may be appropriate:</p>
+<ul>
+  <li>number of code reviews conducted</li>
+  <li>number of performance related defects identified</li>
+  <li>number of SQL statements with performance defects</li>
+  <li>number of system change requests related to performance issues</li>
+  <li>number of performance issues reported </li>
+  <li>time to resolve performance issues</li>
+  <li>number of performance TARs opened</li>
+  <li>number of performance patches applied</li>
+  <li>statistics on batch program performance by category</li>
+  <li>etc.</li>
+</ul>
+<p>Metrics can be further categorized based on the project requirements and should be reported regularly to the project management.&nbsp; Trends in the metrics are a useful tool in identification of areas that are working well, as well as areas that may require process improvement.</p>
+<h4> Issue and Problem Management</h4>
+<p>The Performance Management process should attempt to leverage the existing project Issue and Problem Management process and tools.&nbsp; A consideration specific to Performance Management is that performance issues and problems should be easily identifiable using the standard tools. This may require the creation of grouping or category data in the tool that allow performance issues to be specifically identified across other groups such as functional silos or ticket assignment. Time from identification to resolution is a common Performance Management metric, so the Issue and Problem Management processes should capture and permit reporting of this data without extensive manual manipulation. In addition, the process to manage performance issues and problems will be required after the application is implemented, so if the project processes in place are for the implementation project only, an alternative, more permanent process may be required.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="30%" scope="col"><div align="left">Role</div></th>
+    <th width="64%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect</div></th>
+    <td>Provide information on technical architecture design and performance implications. Develop the Performance Management Requirements and Strategy.<br>
+		<br>
+        If a Performance Management team leader has been designated, 10% of this time would be allocated to this individual, leaving 80% allocated to the system architect. The team leader would then review and approve the Performance Management Requirements and Strategy.</td>
+    <td><div align="center">90</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Developer</div></th>
+    <td>Define specific performance requirements for the application.</td>
+    <td><div align="center">10</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ambassador User</div></th>
+    <td>Defines business performance objectives and requirements.</td>
+    <td><div align="center">* </div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a
+ name="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="30%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="70%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Management Plan (PMP) </div></th>
+    <td>The Project Management Plan provides a high level discussion of the scope of the testing, what performance concerns, risks or questions it should address, and how the project should be organized and run.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Performance Management Workshop Results (PT.010) </div></th>
+    <td>These results provide information on performance needs and expectations.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Use Case Model (RA.015)</div></th>
+    <td>The Business Use Case Model may highlight the set of critical business processes that should receive particular attention in Performance Management.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Supplemental Requirements (Non-Functional) (RD.055) </div></th>
+    <td>Any generic performance requirements are described as part of the Supplemental Requirements. The strategy for Performance Testing will be dependent on what kind of performance requirements there are, how strict they are, and what type of components will be performance critical. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.1) </div></th>
+    <td>Specific performance requirements for a use case are provided as part of the Use Case Specification. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Requirements and Strategy (TA.020) </div></th>
+    <td>The Performance Management Requirements and Strategy can impact the architecture options outlined in the&nbsp; Architecture Requirements and Strategy and vice versa.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a
+ name="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/PT/PT-020_PERFORMANCE_MANAGEMENT_REQUIREMENTS_AND_STRATEGY.DOCX" target="_blank">PT-020_PERFORMANCE_MANAGEMENT_REQUIREMENTS_AND_STRATEGY.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a
+ name="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The Performance Management Requirements and Strategy is used in the following ways: </p>
+<ul>
+  <li>to establish consensus on the project's approach to Performance Management</li>
+  <li>to document key business transactions and their performance requirements</li>
+  <li>to establish the Performance Management virtual team and increase understanding of the roles and responsibilities </li>
+  <li>to identify monitoring and metrics that will be used to measure both transaction performance and the Performance Management process.</li>
+  <li>to obtain sign-off approval for the requirements and resources needed </li>
+</ul>
+<p> Distribute the Performance Management Requirements and Strategy as follows: </p>
+<ul>
+  <li>to project manager and customer who should sign off the performance management requirements and resources needed</li>
+  <li> to IS managers who should sign off the Performance Management Strategy </li>
+  <li> to Performance Management virtual team members including system, database, and network administrators who are responsible for configuring and managing the project environments</li>
+  <li>to lead developer and system architect</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p> Use the following criteria to help check the quality of this work product: </p>
+<ul>
+  <li> Are the performance management scope and objectives clearly identified? </li>
+  <li> Are specific critical success factors and risks documented? </li>
+  <li> Have dependency and interaction with other processes been identified? </li>
+  <li> Are the key business transactions and their performance requirements clearly defined? </li>
+  <li>Has the strategy been reviewed and agreed to by the project team and related organizations? </li>
+  <li> Are all resource and tool requirements that could affect Performance Management stated and understood? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

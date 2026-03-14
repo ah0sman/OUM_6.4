@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA AIA Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Application Integration Architecture (AIA) Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#PB">Pre-Built SOA with Application Integration Architecture</option>
+                            <option value="#DEFINED">AIA Defined</option>
+                            <option value="#PHASE">Phase Mapping of AIA Work on PIPs in OUM</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+    <table width="93" align="right">
+      <tr>
+        <td width="82"><p><a href="../../../OUM_HOME_AIA.HTM" target="_blank"><br>
+            Back to View </a> </p></td>
+      </tr>
+    </table>
+<h2> SOA APPLICATION INTEGRATION ARCHITECTURE (AIA) OVERVIEW</h2>
+<h3> <a name="PB"></a>PRE-BUILT SOA WITH APPLICATION INTEGRATION ARCHITECTURE</h3>
+<p>Oracle removes some of the key inhibitors to SOA by providing both a pre-built SOA as well as industry-optimized service oriented applications, all built around a SOA governance model that encourages effective design and reuse. Application Integration Architecture, provides all the components of SOA in one integrated whole including:</p>
+<ul>
+  <li><b>Industry Reference Models</b><br>
+    The first task for effective SOA is to develop models based on key industry processes. Oracle Application Integration Architecture includes both the business process flows, as well as the underlying canonical models that identify the critical data to be exchanged during the process. Industry Reference Models provide the top-down analysis required to successfully build a catalog of SOA Services. <br>
+    <br>
+  </li>
+  <li><b>Process Integration Packs</b><br>
+    From the Industry Reference Models, specific business integration scenarios must be designed and implemented using industry standards. Oracle AIA run-time level business processes integrate and extend current applications, leveraging reusable Enterprise Business Objects and Services.<br>
+    <br>
+  </li>
+  <li><b>Enterprise Business Objects and Services</b> <br>
+    Enterprise Business Objects and Enterprise Business Services provide an application-independent representation of key business components. Enterprise Business Services are the specific actions that occur against the object; for instance, add customer, delete customer or modify customer.<br>
+    <br>
+  </li>
+  <li><b>Enterprise Business Flows (EBF)</b> <br>
+    An EBF is used to implement a business activity or a task that involves leveraging capabilities available in multiple applications. An EBF strings together a set of capabilities available in applications to implement a coarse-grained business activity or task and composes a new service that leverages existing capabilities. An EBF involves only system-to-system or service-to-service interactions and does not include any activity that requires human intervention.<br>
+    <br>
+  </li>
+  <li><b>Composite Business Process (CBP)</b> <br>
+    A CBP is a set of coordinated tasks and activities involving both human and system interactions. It is an implementation of the AIA Reference Process Model Business Process and is a Process Service. In AIA, CBPs are implemented, managed and monitored as a single SOA composite using SOA BPEL along with SOA Mediator, SOA Human Workflow and SOA Business Rules components. The BPEL components are used to drive the flow. <br>
+    <br>
+  </li>
+  <li> <b>Application Business Connector Services</b><br>
+    Oracle Application Integration Architecture also includes components that connect selected Oracle and partner applications to the Enterprise Business Services, providing the application-specific web services to integrate the business process with the applications. </li>
+</ul>
+<p>When using this AIA Guidance you will also want to refer to the <a href="../SOA/SOA_SUPP_GUIDE.HTM" target="_blank">SOA Project Delivery Supplemental Guide</a> for the larger context of Service-Oriented Architecture engagements.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="DEFINED"></a>AIA DEFINED </h3>
+<p>Oracle Application Integration Architecture helps you gain greater business agility using the applications you have today.</p>
+<p>Oracle Application Integration Architecture provides an open standards based framework for creating cross-application business processes that support the way you run your business today, while paving the way for your long term, strategic, business transformation plans. Its application independent framework enables you to utilize the applications of your choice to create composite business processes unique to your business, on a flexible service-oriented architecture. For customers looking to quickly deploy integrations between Oracle applications, Application Integration Architecture also offers packaged integrations, or Process Integration Packs, allowing for rapid implementation of mission critical business processes.</p>
+<h4>Open and Standards-Based</h4>
+<p> Application Integration Architecture is powered by Oracle Fusion Middleware the industry's most comprehensive family of integrated, standards based, and customer proven middleware products.</p>
+<h4><a name="PIP"></a>Process Integration Packs (PIP)</h4>
+<p>A process integration pack (PIP) is a pre-built set of integrated orchestration flows, application integration logic, and extensible enterprise business objects and services required to manage the state and execution of a defined set of activities or tasks between specific Oracle applications associated with a given process.</p>
+<p>A PIP provides everything you need to deploy a selected integrated business process area.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><A 
+name=PHASE id="PHASE"></A>PHASE MAPPING OF AIA WORK ON PIPS IN OUM</h3>
+<p>The table below provides general <em>summary</em> guidance on how work on PIPs is applied during the phases of an OUM-based Project.</p>
+<ul>
+  <li>The first column of the table gives a general idea of the activities that take place to develop or design a new PIP during an OUM SOA project using AIA.</li>
+  <li>The second column gives a general idea of the activities that take place to apply an existing PIP during an OUM SOA project using AIA.</li>
+  <li>The third column provides a mapping to the OUM tasks. </li>
+</ul>
+<p>This table is meant to provide an understanding of where the work will occur for PIP development and existing PIP Implementations. </p>
+<p>To see specific guidance for PIP Design/Development, as well as a complete list of the OUM tasks, see the AIA Supplemental Task Guidelines with specific attention to the sections marked <em>&quot;AIA PIP Development Guidance:&quot;</em> .</p>
+<table width="100%"  border="1" title="Phase Mapping of AIA Work on PIPs in OUM" summary="This table provides general summary guidance on how work on PIPs is applied during the phases of an OUM-based Project. The first column of the table gives a general idea of the activities that take place to develop or design a new PIP during an OUM SOA project using AIA. The second column gives a general idea of the activities that take place to apply an existing PIP during an OUM SOA project using AIA. The third column provides a mapping to the OUM tasks.  The table also has subheadings for Inception, Inception/Elaboration, Elaboration/Construction and Construction.">
+  <tr valign="top" bgcolor="#BEBEBE">
+    <th scope="col">AIA Work Effort in OUM - Design/Develop New PIP </th>
+    <th scope="col">AIA Work Effort in OUM - Existing PIP </th>
+    <th scope="col">OUM Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="row"><div align="left">Inception</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify Integration Scenarios </div></th>
+    <td>&nbsp;</td>
+    <td>RA.015 - Develop Business Use Case Model </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify Enterprise Business Objects and Messages </div></th>
+    <td>&nbsp;</td>
+    <td>RA.023 - Develop Use Case Model </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify Enterprise Business Service Operations </div></th>
+    <td>&nbsp;</td>
+    <td>RA.023 - Develop Use Case Model </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify Participating Applications and their Roles - Requesters/Service Providers</div></th>
+    <td>&nbsp;</td>
+    <td>RA.023 - Develop Use Case Model </td>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="row"><div align="left">Inception/Elaboration</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify the Requester Application Request Operations and Messages</div></th>
+    <td>Review the Requester Application Request Operations and Messages</td>
+    <td>RA.024 - Develop Use Case Details </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Identify the Provider Application Service Capabilities and Messages</div></th>
+    <td>Review the Provider Application Service Capabilities and Messages</td>
+    <td>RA.024 - Develop Use Case Details </td>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="row"><div align="left">Elaboration/Construction</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Define Enterprise Business Objects and Messages</div></th>
+    <td>Extend Enterprise Business Objects and Messages</td>
+    <td>AN.050 - Analyze Data<br>
+      DS.050 - Design Data</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Define Service Patterns for Business Service Operations</div></th>
+    <td>Extend Service Patterns for Business Service Operations</td>
+    <td>AN.080 - Analyze Services<br>
+      AN.085 - Define Service <br>
+      DS.120 - Design Services </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Design Enterprise Business Services</div></th>
+    <td>Extend Enterprise Business Services</td>
+    <td>AN.080 - Analyze Services<br>
+      AN.085 - Define Service <br>
+      DS.120 - Design Services </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Design Enterprise Business Flows</div></th>
+    <td>Extend Enterprise Business Flows</td>
+    <td>AN.080 - Analyze Services<br>
+      AN.085 - Define Service <br>
+      DS.120 - Design Services </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Design Application Business Connector Services</div></th>
+    <td>Extend Application Business Connector Services</td>
+    <td>AN.080 - Analyze Services<br>
+      AN.085 - Define Service <br>
+      DS.120 - Design Services </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Design Adapter Services (SOAP Entry Points to AIA Artifacts) </div></th>
+    <td>Revisit SOAP Entry Points to AIA Service Artifacts</td>
+    <td>AN.080 - Analyze Services<br>
+      AN.085 - Define Service <br>
+      DS.120 - Design Services </td>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="row"><div align="left">Construction</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Install Software </div></th>
+    <td>Install Software </td>
+    <td>IM.007 - Prepare Development Environment <br>
+      IM.090 - Create Installation Routines <br>
+      TS.050 - Prepare Production Environment</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Develop Enterprise Business Services </div></th>
+    <td>Extend Enterprise Business Services </td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Develop Enterprise Business Flows </div></th>
+    <td>Extend Enterprise Business Flows </td>
+    <td>IM.080 - Integrate Services </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Develop Application Business Connector Services </div></th>
+    <td>Extend Application Business Connector Services</td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Enable the Requester and Provider Applications </div></th>
+    <td>Enable the Requester and Provider Applications </td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Develop Adapter Services (SOAP Entry Points to AIA Artifacts)</div></th>
+    <td>Revisit SOAP Entry Points to AIA Service Artifacts </td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Configure AIA Service Artifacts to Work with CAVS </div></th>
+    <td>Revisit AIA Service Artifacts to work with CAVS </td>
+    <td>TE.020 - Develop Unit Test Scripts </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Configure AIA Service Artifacts for Error Handling and Logging </div></th>
+    <td>Revisit AIA Service Artifacts for Error Handling and Logging </td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Configure Service Properties in Relevant AIA Service Artifacts</div></th>
+    <td>Revisit Service Properties in Relevant AIA Service Artifacts</td>
+    <td>IM.050 - Implement Components</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Create Test Scripts for all Relevant AIA Service Artifacts</div></th>
+    <td>Revisit Test Scripts for all Relevant AIA Service Artifacts</td>
+    <td>TE.015 - Develop Integration Test Plan<br>
+      TE.020 - Develop Unit Test Scripts </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Register AIA Artifacts in Business Services Repository </div></th>
+    <td>Re-register AIA Artifacts in Business Services Repository </td>
+    <td>IP.014 - Inventory Services</td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

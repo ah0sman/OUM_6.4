@@ -1,0 +1,915 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WebCenter Task Guidelines - Elaboration</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">WebCenter Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+              <option value="#TOP" selected></option>
+              <option value="#DPSG">Define Project Strategy Guidance</option>
+              <option value="#DIG">Define Infrastructure Guidance</option>
+              <option value="#PEEG">Prepare Environments - Elaboration Guidance</option>
+              <option value="#GBREG">Gather Business Requirements - Elaboration Guidance</option>
+              <option value="#SSCG">Specify Software Configuration Guidance</option>
+              <option value="#PGAG">Perform Gap Analysis Guidance</option>
+              <option value="#DUCMG">Develop Use Case Model Guidance</option>
+              <option value="#CCPEG">Create Conceptual Prototype - Elaboration Guidance</option>
+              <option value="#CSG">Consolidate Specification Guidance</option>
+              <option value="#BSAG">Baseline Software Architecture Guidance</option>
+              <option value="#DUCDG">Develop Use Case Details</option>
+              <option value="#AEG">Analyze - Elaboration Guidance</option>
+              <option value="#DEG">Design - Elaboration Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("DPS");
+  Effect.BlindDown("DI");
+  Effect.BlindDown("PEE");
+  Effect.BlindDown("GBRE");
+  Effect.BlindDown("SSC");
+  Effect.BlindDown("PGA");
+  Effect.BlindDown("DUCM");
+  Effect.BlindDown("CCPE");
+  Effect.BlindDown("CS");
+  Effect.BlindDown("BSA");
+  Effect.BlindDown("DUCD");
+  Effect.BlindDown("AE");
+  Effect.BlindDown("DE");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("DPS");
+  Effect.BlindUp("DI");
+  Effect.BlindUp("PEE");
+  Effect.BlindUp("GBRE");
+  Effect.BlindUp("SSC");
+  Effect.BlindUp("PGA");
+  Effect.BlindUp("DUCM");
+  Effect.BlindUp("CCPE");
+  Effect.BlindUp("CS");
+  Effect.BlindUp("BSA");
+  Effect.BlindUp("DUCD");
+  Effect.BlindUp("AE");
+  Effect.BlindUp("DE");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_WC.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>WEBCENTER SUPPLEMENTAL TASK GUIDELINES - ELABORATION PHASE</h2>
+<p>This document contains OUM supplemental task guidance for WebCenter projects. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="102%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for activities.">
+  <tbody>
+    <tr bgcolor="#BEBEBE">
+      <th height="26" scope="col">WebCenter - OUM Supplemental Task Guidelines (this document) <BR>
+          <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+      <th scope="col"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </TR>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.DPS Define Project Strategy </div></th>
+  </tr>
+  <tbody id="DPS">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0052">TE.005.2 Determine Testing Requirements </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005.2 Determine Testing Requirements </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TE010">TE.010 Develop Testing Strategy </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#DO020">DO.020 Define Documentation Standards and Procedures </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_020_DEFINE_DOCU_STDS_AND_PROCEDURES_OVERVIEW.HTM" target="_blank">DO.020 Define Documentation Standards and Procedures </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.DI Define Infrastructure </div></th>
+  </tr>
+  <tbody id="DI">
+    <tr valign="top">
+      <td valign="top"><a href="#TA020">TA.020 Define Technical Architecture Requirements and Strategy</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy</a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.PEE Prepare Environments - Elaboration </div></th>
+  </TR>
+  <tbody id="PEE">
+    <TR valign="top">
+      <TD valign="top"><a href="#IM0901">IM.090.1 Create Installation Routines </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090.1 Create Installation Routines </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#IM0071">IM.007.1 Prepare Development Environment</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">IM.007.1 Prepare Development Environment</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE0181">TE.018.1 Prepare Static Test Data </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">TE.018.1 Prepare Static Test Data </a></TD>
+    </TR>
+  </tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.GBRE Gather Business Requirements - Elaboration </div></th>
+    </tr>
+  <tbody id="GBRE">
+    <tr valign="top">
+      <td width="45%" valign="top"><a href="#RD0112">RD.011.2 Develop Future Process Model </a></td>
+      <td width="43%"><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011.2 Develop Future Process Model </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD0653">RD.065 Develop Domain Model (Business Entities) </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model (Business Entities) </a></div></td>
+    </tr>
+    <TR valign="top">
+      <TD valign="top"><a href="#MC030">MC.030 Map Business Requirements </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_030_MAP_BUSINESS_REQUIREMENTS_OVERVIEW.HTM" target="_blank">MC.030 Map Business Requirements</a> </TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.SSC Specify Software Configuration </div></th>
+  </TR>
+  <tbody id="SSC">
+    <TR valign="top">
+      <TD valign="top"><a href="#MC0501">MC.050.1 Define Application Setups</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">MC.050.1 Define Application Setups</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.PGA Perform  Gap Analysis </div></th>
+  </TR>
+  <tbody id="PGA">
+    <TR valign="top">
+      <TD valign="top"><a href="#MC100">MC.100 Define and Estimate Application Extensions</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_100_DEFINE_AND_ESTIMATE_APPL_EXT_OVERVIEW.HTM" target="_blank">MC.100 Define and Estimate Application Extensions</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#MC110">MC.110 Define Gap Resolutions </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_110_DEFINE_GAP_RESOLUTIONS_OVERVIEW.HTM" target="_blank">MC.110 Define Gap Resolutions</a> </TD>
+    </TR>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.DUCM Develop Use Case Model</div></th>
+  </tr>
+  <tbody id="DUCM">
+    <tr valign="top">
+      <td valign="top"><a href="#RA0232">RA.023.2 Develop Use Case Model </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.CCPE Create Conceptual Prototype - Elaboration </div></th>
+  </tr>
+  <tbody id="CCPE">
+    <tr valign="top">
+      <td valign="top"><a href="#IM0052">IM.005.2 Develop Conceptual Prototype </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.005.2 Develop Conceptual Prototype </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RA0302">RA.030.2 Validate Conceptual Prototype</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.030.2 Validate Conceptual Prototype</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.CS Consolidate Specification </div></th>
+  </tr>
+  <tbody id="CS">
+    <tr valign="top">
+      <td valign="top"><a href="#RD0422">RD.042.2 Develop Glossary </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">RD.042.2 Develop Glossary </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD0452">RD.045.2 Prioritize Requirements (MoSCoW) </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045.2 Prioritize Requirements (MoSCoW) </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD1402">RD.140.2 Create Requirements Specification </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">RD.140.2 Create Requirements Specification </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD1502">RD.150.2 Review Requirements Specification </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">RD.150.2 Review Requirements Specification </a></div></td>
+    <tr valign="top">
+      <td valign="top"><a href="#RA0272">RA.027.2 Identify Candidate Business Rules </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">RA.027.2 Identify Candidate Business Rules </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RA1801">RA.180.1 Review Use Case Model </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_180_REVEW_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.180.1 Review Use Case Model </a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.BSA Baseline Software Architecture</div></th>
+  </TR>
+  <tbody id="BSA">
+    <TR valign="top">
+      <TD valign="top"><a href="#RA035">RA.035 Develop High-Level Software Architecture Description</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">RA.035 Develop High-Level Software Architecture Description</a></TD>
+    </TR>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">B.ACT.DUCD Develop Use Case Details</div></th>
+  </tr>
+  <tbody id="DUCD">
+    <tr valign="top">
+      <td valign="top"><a href="#RA0241">RA.024.1 Develop Use Case Details </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details </a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.AE Analyze - Elaboration </div></th>
+  </TR>
+  <tbody id="AE">
+    <tr valign="top">
+      <td valign="top"><a href="#AN0901">AN.090.1 Analyze User Interface </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_090_ANALYZE_USER_INTERFACE_OVERVIEW.HTM" target="_blank">AN.090.1 Analyze User Interface</a> </td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#AN1001">AN.100.1 Prepare Analysis Specification</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_100_PREPARE_ANALYSIS_SPEC_OVERVIEW.HTM" target="_blank">AN.100 Prepare Analysis Specification</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#AN1101">AN.110.1 Review Analysis Model </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_110_REVIEW_ANALYSIS_MODEL_OVERVIEW.HTM" target="_blank">AN.110 Review Analysis Model </a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">B.ACT.DE Design - Elaboration </div></th>
+  </TR>
+  <tbody id="DE">
+    <tr valign="top">
+      <td valign="top"><a href="#DS0801">DS.080.1 Design Software Components</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">DS.080.1 Design Software Components</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#DS1301">DS.130.1Design User Interface </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">DS.130.1Design User Interface</a> </td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#DS1401">DS.140.1 Prepare Design Specification </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_140_PREPARE_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">DS.140.1 Prepare Design Specification </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#DS1601">DS.160.1 Review Design Model</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">DS.160.1 Review Design Model</a></td>
+    </tr>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a
+ name="DPSG" id="DPSG"></a>B.ACT.DPS DEFINE PROJECT STRATEGY GUIDANCE</h3>
+<h4><a name="TE0052" id="TE0052"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005.2 Determine Testing Requirements</a></h4>
+<h5>OVERVIEW</h5>
+<p>Refine the Testing Requirements for the WebCenter project based on those requirements identified and further detailed in the Elaboration phase.</p>
+<p><b>APPROACH</b></p>
+<ul>
+  <li>Identify any new testing requirements from:
+      <ul>
+        <li> Functional Requirements (MoSCoW List &ndash; RD.045)</li>
+        <li> Non-Functional Requirements (documented in RD.045, RD.055 Supplemental Requirements tab)</li>
+      </ul>
+  </li>
+  <li> Review and comment on the Testing Requirements.</li>
+  <li> Review and approve the Testing Requirements.</li>
+</ul>
+<hr WIDTH="100%">
+<h4><a name="TE010" id="TE010"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy </a></h4>
+<h5>OVERVIEW</h5>
+<p>Develop the project direction in relation to testing. At a minimum, the Testing Strategy must address all of the requirements documented in the Testing Requirements (TE.005).</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Review Testing Requirements (TE.005).</li>
+  <li>Review existing test plans and standards.</li>
+  <li>Determine testing objectives.</li>
+  <li>Identify the scope of the testing.</li>
+  <li>Develop testing approach.</li>
+  <li>Determine required test data.</li>
+  <li>Determine constraints.</li>
+  <li>Determine testing tools.</li>
+  <li>Determine acceptance criteria. </li>
+  <li>Document problem management procedure.</li>
+  <li>Determine critical success factors.</li>
+  <li>Determine risks and contingency.</li>
+  <li>Determine testing metrics.</li>
+</ul>
+<hr WIDTH="100%">
+<h4><a name="DO020" id="DO020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_020_DEFINE_DOCU_STDS_AND_PROCEDURES_OVERVIEW.HTM" target="_blank">DO.020 Define Documentation Standards and Procedures </a></h4>
+<h5>OVERVIEW</h5>
+<p>Specify the standards for all Documentation work products and determine the look and feel of the project documentation. </p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Gather existing Documentation standards.
+      <ul>
+        <li>Paragraph and Sentence Structure, Usage, Lists, Translations, Numbers and Operations, Preferred Terms, etc.</li>
+      </ul>
+  </li>
+  <li> Determine Documentation development procedures.
+      <ul>
+        <li>Initial Material: Writing and Editing, Translation Procedures, Downloading, Change Control, Hardcopy and Reproduction, Review and Approval, etc.</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a
+ name="DIG" id="DIG"></a>B.ACT.DI&nbsp;DEFINE INFRASTRUCTURE GUIDANCE</h3>
+<h4><A
+name=TA020 id="TA020"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task identifies the application and technical Requirements and documents the strategy to be used for the design and development of the system being implemented. </p>
+<h5>APPROACH</h5>
+<p>Address the following types of environments: </p>
+<ul>
+  <li>
+    <ul>
+      <li>Project Support Environment</li>
+      <li>Development Environment</li>
+      <li>Test Environment</li>
+      <li>Production Environment</li>
+    </ul>
+  </li>
+  <li> Consider and document the following:
+      <ul>
+        <li>Availability Requirements</li>
+        <li>Performance Requirements</li>
+        <li>Service-Level Agreements</li>
+        <li>High-Level Security and Control Requirements</li>
+      </ul>
+  </li>
+</ul>
+<h5 align="center"><img src="../../../010_COMMON_FILES/WC_TA020_AP.JPG" alt="Illustration of WebCenter Architecture" width="282" height="195" align="absmiddle" title="Illustration of WebCenter Architecture"></h5>
+<h5>WORK PRODUCT</h5>
+<p>For WebCenter projects, it is recommended that the TA.020 work product be used as the master work product document for other TA work products by including or referencing the other TA work products.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_TA020_WP.JPG" alt="Illustration of the OUM Work Products that can be included in the Technical Architecture Requirements and Strategy" width="653" height="268" title="Illustration of the OUM Work Products that can be included in the Technical Architecture Requirements and Strategy"></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a
+ name="PEEG" id="PEEG"></a>B.ACT.PEE&nbsp;PREPARE ENVIRONMENT - ELABORATION GUIDANCE</h3>
+<h4><A
+name=IM0901 id="IM0901"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090.1 Create Installation Routines</a></h4>
+<h5>OVERVIEW</h5>
+<p>In a WebCenter implementation, the main goal of this task is to prepare a work product that can be used by the system administrator in order to install the system. The <a href="WC_TASK_GUIDELINES_CONSTRUCTION.HTM#IM0902" target="_blank">next iteration of this task in Construction</a> will focus more on the specific system configuration (MC.050) and custom modules (DS.080). </p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Identify the standard installation steps for the WebCenter product(s).</li>
+  <li>Identify pre-installation steps in the work product.
+      <ul>
+        <li>add links to standard documentation and then customize for the implementation.</li>
+      </ul>
+  </li>
+  <li> Identify installation steps in the work product.
+      <ul>
+        <li>Add links to standard documentation and then customize for the implementation.</li>
+      </ul>
+  </li>
+  <li>Identify a verification checklist in the work product.</li>
+  <li>Review the work product. </li>
+</ul>
+<p><img src="../../../010_COMMON_FILES/WC_IM090.JPG" alt="Example Installation Routines Running on a Screen" width="296" height="79" title="Example Installation Routines Running on a Screen"></p>
+<hr WIDTH="100%">
+<h4><A
+name=IM0071 id="IM0071"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">IM.007.1 Prepare Development Environment </a></h4>
+<h5>OVERVIEW</h5>
+<p>Create or verify the Development Environment that you will need during the development effort. It is highly recommended that this task is conducted following, or at the same time as, the initial iteration of the Installation Routines task (IM.090.1). Refer to the <a href="WC_TASK_GUIDELINES_CONSTRUCTION.HTM#IM0072" target="_blank">Construction phase iteration for this task</a> to see additional guidance. </p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Review the Architecture Requirements and Strategy (TA.020).</li>
+  <li>Identify and make available any required installation software.</li>
+  <li>Identify and make available any required supporting systems, i.e., database, applications. </li>
+  <li>Review and deliver steps in the Installation Routines work product (IM.090.1).</li>
+  <li>Install and configure, or verify the environment operating system.</li>
+  <li>Install and configure, or verify the App. Server / WebCenter product installation.</li>
+  <li>Conduct test of the system to ensure validity of installation/configuration.</li>
+</ul>
+<hr WIDTH="100%">
+<h4><A
+name=TE0181 id="TE0181"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">TE.018.1 Prepare Static Test Data </a></h4>
+<h5>OVERVIEW</h5>
+<p>Prepare the required test data you will need throughout the project. This data should support prototypes (if required), unit tests (in the Development Environment), and any other tests. Refer to the <a href="WC_TASK_GUIDELINES_CONSTRUCTION.HTM#TE0182" target="_blank">Construction phase iteration for this task</a> to see additional guidance. </p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Review the Testing Strategy and appropriate test plans to see what data will be required. </li>
+  <li>Determine required test data baselines.</li>
+  <li>For each required set of test data, identify how it should be produced. </li>
+  <li>Identify test data for each baseline. </li>
+  <li>Produce test data for baselines.</li>
+  <li>Quality check baseline test data. </li>
+</ul>
+<p><img src="../../../010_COMMON_FILES/WC_TE018.JPG" alt="Illustration of Reviewing Work Products" width="491" height="122" align="absmiddle" title="Illustration of Reviewing Work Products"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="GBREG" id="GBREG"></a>B.ACT.GBRE GATHER BUSINESS REQUIREMENTS - ELABORATION GUIDANCE</h3>
+<h4><a
+name=RD0112 id="RD0112"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011.2 Develop Future Process Model </a></h4>
+<p><img src="../../../010_COMMON_FILES/WC_RD011.JPG" alt="Example Process Model" width="403" height="299" align="right" title="Example Process Model"></p>
+<h5>OVERVIEW</h5>
+<p>Define the Future Process Model (Future Business Model) in the form of integrated process flows based on the business processes supported by the new WebCenter system. The model is created through iterations, starting with a higher level view in the Inception phase (if available), and progressing into a more detailed view in later iterations.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Using one or more workshops may be the most appropriate technique for executing this task depending on the size and complexity of the project.</li>
+  <li> Confirm and identify new high-level business triggering events to which the business and system must respond.</li>
+  <li> Identify business actors.</li>
+  <li> List each process and write a summary description for each.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>Document the triggering events that drive the business areas that are to be automated and describe the future business process that the <br>
+  business executes. The Future Process Model should include:</p>
+<ul>
+  <li> a catalog describing all the triggering events</li>
+  <li> diagrams of the business processes by which the business responds to those events</li>
+</ul>
+<hr WIDTH="100%">
+<h4><a
+name=RD0653 id="RD0653"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065.3+ Develop Domain Model (Business Entities)</a></h4>
+<h5>OVERVIEW</h5>
+<p>Following the Inception phase iteration(s), you should return to the Domain Model in Elaboration. In the next iteration of this task in Elaboration, add and associated any additional metadata fields or objects. You should also provide further information for each of the fields, such as, format and default values. Execute as many additional iterations of this task as necessary in order to compile the model prior to executing the task, Define Application Setups (MC.050). The following diagram shows a WebCenter Content example for defining the metadata.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RD065_EX4.JPG" alt="This diagram shows a WebCenter Content example for defining the metadata." width="593" height="368" title="This diagram shows a WebCenter Content example for defining the metadata."></p>
+<hr WIDTH="100%">
+<h4><A
+name=MC030 id="MC030"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_030_MAP_BUSINESS_REQUIREMENTS_OVERVIEW.HTM" target="_blank">MC.030 Map Business Requirements </a></h4>
+<h5>OVERVIEW</h5>
+<p>Assess the fit of the standard WebCenter product and system features to the detailed business requirements as reflected in the following work products: </p>
+<ul>
+  <li>Future Process Model (RD.011)</li>
+  <li>MoSCoW List (RD.045)</li>
+  <li>Supplemental Requirements (RD.055)</li>
+  <li>Use Case Model (RA.023)</li>
+  <li>Use Case Specification(s) (RA.024) </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a
+ name="SSCG" id="SSCG"></a>B.ACT.SSC&nbsp;SPECIFY SOFTWARE CONFIGURATION GUIDANCE </h3>
+<h4><A
+name=MC0501 id="MC0501"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">MC.050.1 Define Application Setups</a></h4>
+<h5>OVERVIEW</h5>
+<p>Define and document the detailed setup values needed to configure the WebCenter product(s). Continually refine the work product during the Design activity. Refer to the <a href="WC_TASK_GUIDELINES_CONSTRUCTION.HTM#MC0502" target="_blank">Construction phase iteration for this task</a> to see additional guidance. </p>
+<p> For WebCenter engagements, the resulting work product forms a shared central document for retaining and managing general configuration settings for the system. This prevents conflicting configuration across design documents.</p>
+<h5>APPROACH</h5>
+<p><b>Option 1</b> - Create one master Application Setup Document that contains all of the individual inserted configuration documents.</p>
+<ul>
+  <li> Easy to review, but not as easy to manage updates.</li>
+</ul>
+<p><b>Option 2</b> - Create one Application Setup Document for each type of configuration and link them together with a master index configuration document.</p>
+<ul>
+  <li> Easy to manage updates, but not as easy to review.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>The work product could include:</p>
+<ul>
+  <li>General System Configuration</li>
+  <li>Metadata Model (WebCenter Content)</li>
+  <li>Security Configuration (Security Models, Authority Provider Configuration, etc.)</li>
+  <li>Schema Model</li>
+  <li>Retention Schedules and Disposition (WebCenter Records) </li>
+</ul>
+<h6><b>Example</b> </h6>
+<p>As an example, you would first t take the Metadata Model produced in from the Domain Model (RD.065) task. Next, create a Metadata Configuration based on this model as part of the task, Define Application Setups (MC.050). Once complete, insert the configuration into, or reference the configuration from, the Application Setup Documents work product. Remember, you may need to update this configuration again in the future so it may be better to keep it as a separate document until the completed Application Setup Documents are ready for review.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_DS0301_EX.JPG" alt="Illustration of using Domain Model and Application Setup Documents to complete Metadata" width="903" height="511" title="Illustration of using Domain Model and Application Setup Documents to complete Metadata"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="PGAG" id="PGAG"></a>B.ACT.PGA PERFORM GAP ANALYSIS GUIDANCE</h3>
+<h4><A
+name=MC100 id="MC100"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_100_DEFINE_AND_ESTIMATE_APPL_EXT_OVERVIEW.HTM" target="_blank">MC.100 Define and Estimate Application Extensions </a></h4>
+<h5>OVERVIEW</h5>
+<p>Following the mapping of business requirements (MC.030), if custom development is required to extend the standard capabilities of a WebCenter product, you must consider the various alternatives to satisfy them and estimate the effort required to complete them.</p>
+<hr WIDTH="100%">
+<h4><A
+name=MC110 id="MC110"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_110_DEFINE_GAP_RESOLUTIONS_OVERVIEW.HTM" target="_blank">MC.110 Define Gap Resolutions</a></h4>
+<h5>OVERVIEW</h5>
+<p>Review the alternative solutions for satisfying gaps with the organization and then identify and document the preferred option, based on the organization&rsquo;s preference.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="DUCMG" id="DUCMG"></a>B.ACT.DUCM DEVELOP USE CASE MODEL GUIDANCE </h3>
+<h4><A
+name=RA0232 id="RA0232"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023.2 Develop Use Case Model</a></h4>
+<h5 align="center"><img src="../../../010_COMMON_FILES/WC_RA0232.JPG" alt="Example Use Case Model" width="672" height="286" title="Example Use Case Model"></h5>
+<h5>OVERVIEW</h5>
+<p>The Use Case Model should be refined to capture any new or updated use cases.</p>
+<p><a href="#TOP">Back to Top</a>
+</p>
+<hr WIDTH="100%">
+<h3><a
+ name="CCPEG" id="CCPEG"></a>B.ACT.CCPE CREATE CONCEPTUAL PROTOTYPE - ELABORATION GUIDANCE</h3>
+<h4><A
+name=IM0052 id="IM0052"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.005.2 Develop Conceptual Prototype</a><br>
+    <A
+name=RA0302 id="RA0302"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.030.2 Validate Conceptual Prototype</a></h4>
+<h5>OVERVIEW</h5>
+<p>the purpose of the Conceptual Prototype is to visually show the users your understanding of an agreed to set of requirements. This is a mock-up prototype and is usually created using low-fidelity tools, such as sketches on whiteboards or flip charts that represent the general idea behind the user interface but not the details.</p>
+<p>In a WebCenter implementation, this task is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases.</p>
+<p>Important Note: This task should not be used to produce the overall storyboard and wireframes for a WebCenter system. Such work products should be produced in the task, <a href="#AN0901">Analyze User Interface (AN.090)</a>.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li> Review the requirements (identified in the MoSCoW List), and agree on which requirements should be prototyped. Typically, execute these tasks at the same time as the task, Develop Use Case Details (RA.024).</li>
+  <li>Produce storyboards and wireframes to help understand the requirements.</li>
+  <li>Validate the Conceptual Prototype in a workshop.</li>
+</ul>
+<p><b>WORK PRODUCT </b></p>
+<ul>
+  <li> storyboards (typically on a whiteboard or flip chart)</li>
+  <li> wireframes (typically on a whiteboard or flip chart)</li>
+</ul>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_IM005.JPG" alt="Example Conceptual Prototypes" width="461" height="226" title="Example Conceptual Prototypes"></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a
+ name="CSG" id="CSG"></a>B.ACT.CS CONSOLIDATE SPECIFICATION GUIDANCE</h3>
+<h4><a
+name=RD0422 id="RD0422"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">RD.042.2 Develop Glossary</a></h4>
+<h5>OVERVIEW</h5>
+<p>Review and refine the Glossary in order to ensure that all terms are identified and correctly defined. </p>
+<hr WIDTH="100%">
+<h4><a
+name=RD0452 id="RD0452"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045.2 Prioritize Requirements (MoSCoW)</a></h4>
+<h5>OVERVIEW</h5>
+<p>Review and refine the MoSCoW List in order to ensure that all use cases are identified, correctly defined and prioritized. </p>
+<hr WIDTH="100%">
+<h4><a
+name=RD1402 id="RD1402"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">RD.140.2 Create Requirements Specification</a><br>
+    <a
+name=RD1502 id="RD1502"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">RD.150.2 Review Requirements Specification</a> </h4>
+<h5>OVERVIEW</h5>
+<p>The following diagram indicated the recommended work products in Elaboration, in addition to those identified in Inception, that should be added to the Requirements Specification, either through links are added directly to the document.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RD140_EX_ELAB.JPG" alt="Illustration of the OUM Work Products that can be included in the Requirements Specification" width="587" height="268" title="Illustration of the OUM Work Products that can be included in the Requirements Specification"></p>
+<hr WIDTH="100%">
+<h4><A
+name=RA0272 id="RA0272"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_027_IDENTIFY_CANDIDATE_BUS_RULES_OVERVIEW.HTM" target="_blank">RA.027.2 Identify Candidate Business Rules</a> </h4>
+<h5>OVERVIEW</h5>
+<p>This optional task highlights business rules as statements that describe business policies. For example, a piece of content submitted into a system by a contributor should always go into a workflow to attain management sign-off before being released. </p>
+<p>This task is recommended if you need to include WebCenter Records retention lifecycle type of rules, i.e., taking the organization's records policy and making a concise set of rules.</p>
+<hr WIDTH="100%">
+<h4><a
+name=RA1801 id="RA1801"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_180_REVEW_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.180.1 Review Use Case Model</a></h4>
+<h5>OVERVIEW</h5>
+<p>Review the Use Case Model (RA.023 and RA.024) in conjunction with the MoSCoW List (RD.045) in order to ensure that all use cases are identified and have the correct relationship to each other.</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="BSAG" id="BSAG"></a>B.ACT.BSA BASELINE SOFTWARE ARCHITECTURE GUIDANCE </h3>
+<h4><A
+name=RA035 id="RA035"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">RA.035 Develop High-Level Software Architecture Description </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is recommended in order to prioritize and group the use cases / processes. It establishes an initial set of groupings and priorities for the use cases that you have identified.</p>
+<p> Identify the use cases that describe important or critical functionality or that involve requirements that must be developed early in the project. These use cases will be described as &ldquo;architecturally-significant&rdquo; and will be identified in the High-Level Software Architecture portion of the Architecture Description.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Prepare a document highlighting the proposed grouping / prioritization.</li>
+  <li>Discuss and agree on the grouping / prioritization in a short meeting with the organization.</li>
+  <li>Ensure that critical requirements are grouped together, i.e., Iteration group #1, Iteration group #2, etc. This grouping will allow the project team to focus on the critical iteration groups during Elaboration.</li>
+</ul>
+<p><b>WORK PRODUCT </b></p>
+<p>Establish an initial set of packages (iteration groups) and priorities for the use cases that you have identified. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RA035.JPG" alt="Illustration of Assigning Use Cases to Iteration Groups" width="695" height="297" title="Illustration of Assigning Use Cases to Iteration Groups"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="DUCDG" id="DUCDG"></a>B.ACT.DUCD DEVELOP USE CASE DETAILS GUIDANCE </h3>
+<h4> <a name="RA0241" id="RA0241"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024.1 Develop Use Case Details</a> </h4>
+<h5>OVERVIEW</h5>
+<p>Use Case Specification documents should be produced for all functional requirements that are not present within the packaged software. This task should be completed regardless of the type of WebCenter project. </p>
+<h5>APPROACH</h5>
+<p>Allow plenty of time for the production of use case specification documents. Remember that a specification document must be produced for each use case that cannot be delivered out-of-the-box. The product specialist and business analyst work together to draft each document &ndash; this has proven to reduce the level of customization required for a use case. </p>
+<h5>WORK PRODUCT </h5>
+<p>The standard OUM work product template is sufficient for all WebCenter projects. </p>
+<p><b>Note:</b> Make full use of the Technology and Data Variations List section in order to eliminate the need for repeating such details in the scenario steps. This typically causes much confusion for not only the writer of the document but also for the reviewers. </p>
+<p><b>Note:</b> Make use of the Open Issues and Decisions sections within this document as you will typically find that this document is frequently reviewed prior to final approval. These sections allow you to track comments and decisions made in each revision.</p>
+<p><b>Remember:</b> The first step of the Main Success Scenario should be the same as the Trigger.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a
+ name="AEG" id="AEG"></a>B.ACT.AE&nbsp;ANALYZE - ELABORATION GUIDANCE </h3>
+<h4><A
+name=AN0901 id="AN0901"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_090_ANALYZE_USER_INTERFACE_OVERVIEW.HTM" target="_blank">AN.090.1 Analyze User Interface </a></h4>
+<h5>OVERVIEW</h5>
+<p>The purpose of this task is to develop a deeper understanding of the look and feel of the user interface as well as the flow that the users will experience when interacting with the system. In this task, you do not design how the user interface will work, but verify your understanding of the users&rsquo; needs and validate the feasibility of the functional requirements. This task is highly recommended when implementing WebCenter Portal or WebCenter Sites as it provides the business with a clear understanding of the web pages to be provided and their relationship to each other. It also provides the business with a view of the proposed page layouts and their relationship to use cases.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Review any existing storyboards and wireframes from the <a href="#IM0052">Conceptual Prototype (IM.005)</a>.</li>
+  <li>Produce storyboards and wireframes for the WebCenter implementation. This should be delivered in a PowerPoint presentation including a storyboard on the first page followed by the wireframes.</li>
+  <li>Validate the storyboard and wireframes in a presentation / workshop.</li>
+</ul>
+<p><b>Note:</b> You may need to go through multiple iterations of this task for WebCenter Portal and WebCenter Sites. Once the approach has been agreed, you should then move on to task, Design User Interface (DS.130).</p>
+<h5>WORK PRODUCT </h5>
+<h6>Example</h6>
+<p><a href="SAMPLE/AN090_STORYBOARD_WIREFRAME.PPT" target="_blank">AN.090 Storyboard and Wireframes</a></p>
+<hr WIDTH="100%">
+<h4><A
+name=AN1001 id="AN1001"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_100_PREPARE_ANALYSIS_SPEC_OVERVIEW.HTM" target="_blank">AN.100.1 Prepare Analysis Specification </a></h4>
+<h5>OVERVIEW</h5>
+<p>Assemble all the information that is required to describe a use case package into a complete Analysis Specification, ready for review. In general, there would be one of these specifications written for each use case package on a project. Prior to being passed on to the designers, the Analysis Specification is reviewed for defects and, as necessary, the defects are corrected.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Use the High-Level Software Architecture (RA.035) work product to identify the system use case packages (within an iteration group) and their associated priority. </li>
+  <li>Produce an Analysis Specification (AN.100) master document - one for each of the use case packages, based on the package priority. Include the following tasks within each specification document:
+      <ul>
+        <li>Data Analysis (AN.050)</li>
+        <li>Behavior Analysis (AN.060)</li>
+        <li> Business Rules Analysis (AN.070)</li>
+        <li>User interface Analysis (AN.090)</li>
+      </ul>
+  </li>
+  <li>Review each Analysis Specification document with the business analyst(s) and ambassador users.</li>
+</ul>
+<h5>WORK PRODUCT</h5>
+<p>The diagram below indicates the recommended work products that should be referenced from, or included within the Analysis Specification.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_AN100_WP.JPG" alt="Illustration of OUM Work Products that can be included in the Analysis Specification" width="587" height="273" title="Illustration of OUM Work Products that can be included in the Analysis Specification"></p>
+<p>For larger size projects it may be necessary to use a document structure similar to the following:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_AN100_WP2.JPG" alt="Document Structure of Large Size Projects" width="623" height="300" title="Document Structure of Large Size Projects"></p>
+<hr WIDTH="100%">
+<h4><A
+name=AN1101 id="AN1101"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_110_REVIEW_ANALYSIS_MODEL_OVERVIEW.HTM" target="_blank">AN.110.1 Review Analysis Model </a></h4>
+<h5>OVERVIEW</h5>
+<p>The Analysis Model refers to the complete collection of work products that are developed as part of analyzing the use cases during Analysis. Once work on these materials for a given iteration has been completed, and the materials are ready for review, a team consisting of analysts, users, designers, and architects reviews the Analysis Model, and suggest changes as needed.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Reviewers must briefly review the Analysis Model initially in a workshop to understand the structure of the model.
+      <ul>
+        <li>Identify key resources to approve the model.</li>
+      </ul>
+  </li>
+  <li>Reviewers must review the Analysis Model work products individually.</li>
+  <li>Defects can be found and changes may be required.
+      <ul>
+        <li>Some changes can affect scope and these may require formal change requests. Other changes do not affect scope, and these should be discussed with the analyst.</li>
+      </ul>
+  </li>
+  <li>Once the Model is approved by each of the selected approvers, they must send an email or provide other written confirmation that the Model is accepted.</li>
+  <li>Complete a short Approval template &ndash; See the work product.</li>
+</ul>
+<h5>WORK PRODUCT</h5>
+<p>Create and complete a short Approval template where approval can be inserted into a grid.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_AN110_APPROVAL.JPG" alt="Example Approval Template" width="498" height="341" title="Example Approval Template"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="DEG" id="DEG"></a>B.ACT.DE DESIGN - ELABORATION GUIDANCE</h3>
+<h4><A
+name=DS0801 id="DS0801"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">DS.080.1 Design Software Components </a></h4>
+<h5>OVERVIEW</h5>
+<p>Develop the detailed design for a software component. For WebCenter products, a software component is a custom module that contains a number of interoperating processes or classes that work together to perform the high-level functional responsibilities for a major part of the system.</p>
+<ul>
+  <li>This task is highly recommended.</li>
+  <li>It is delivered In the form of 1 or more documents representing the design of each system component.</li>
+  <li>Add a reference to the associated Analysis Specifications (AN.100).</li>
+  <li>Add a reference in the Design Specification (DS.140) to each DS.080 document.</li>
+  <li>Associated system configuration should be identified within the Application Setup Documents (MC.050) work product.</li>
+  <li>You can also create storyboards and wireframes within this task to help clarify the component design.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>Each document should include:</p>
+<ul>
+  <li>Technical Overview
+      <ul>
+        <li> Document Structure</li>
+        <li>Related Documents</li>
+      </ul>
+  </li>
+  <li>Requirements Met by this Design
+      <ul>
+        <li>UC001</li>
+        <li>UC002</li>
+        <li>UC003</li>
+      </ul>
+  </li>
+  <li>Associated Analysis
+      <ul>
+        <li>AN.100 - Contribution</li>
+        <li>AN.100 &ndash; Search</li>
+      </ul>
+  </li>
+  <li>Application Setups (Associate with MC.050)</li>
+  <li>Component Specific
+      <ul>
+        <li>Component Overview</li>
+        <li>Specific Configuration</li>
+        <li>Associated Templates (Storyboard &amp; Wireframes)</li>
+        <li>Associated Java Classes</li>
+        <li>Associated Services</li>
+        <li> Associated Database Information</li>
+        <li>Associated Language Strings</li>
+      </ul>
+  </li>
+</ul>
+<hr WIDTH="100%">
+<h4><A
+name=DS1301 id="DS1301"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">DS.130.1 Design User Interface </a></h4>
+<h5>OVERVIEW</h5>
+<p>The purpose of this task is to transform the storyboards and wireframes in the User Interface Analysis (AN.090) and specify how they will be implemented. You also specify the navigation sequences between each of the interfaces in the storyboard(s). This task is highly recommended when implementing WebCenter Portal or WebCenter Sites as it provides the final design for the portal or website to be developed.</p>
+<h5>APPROACH</h5>
+<p>It is recommended that either of the following approaches is used to satisfy this task:</p>
+<ul>
+  <li>The AN.090 User Interface Analysis work product is enhanced to show the actual design of the pages.</li>
+  <li>Produce a new DS.130 work product that shows the final design for the storyboard and wireframes.</li>
+</ul>
+<p> The following artifacts should be considered as part of this task:</p>
+<ul>
+  <li><b>Define portal/site navigation.</b> This is important as it will define your site navigation model. Also, include associated information like whether the new page opens in a new window</li>
+  <li><b>Design interface.</b> Add the detail to the pages defined in AN.090 User Interface Analysis. This includes details such as:
+      <ul>
+        <li> Pagelet Producers</li>
+        <li>Portlets</li>
+        <li>iFrames</li>
+        <li>Servlets</li>
+        <li> WebCenter Components</li>
+        <li>Personalization</li>
+      </ul>
+  </li>
+  <li><b>Apply initial text and images.</b> In order to ensure the portal/site looks correct, it is usually necessary to apply real text and images in the design. This will give the business a greater confidence in what is to be delivered.</li>
+  <li><b>Stylesheets / Scripts</b> &ndash; Design associated stylesheets and scripts required to satisfy the page designs.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>Typically, the User Interface Analysis (AN.090) is enhanced to show the detailed design.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_DS130.JPG" alt="Example User Interface" width="594" height="296" title="Example User Interface"></p>
+<hr WIDTH="100%">
+<h4><A
+name=DS1401 id="DS1401"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_140_PREPARE_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">DS.140.1 Prepare Design Specification </a></h4>
+<p>Assemble all the information that is required to describe the design of the system into a complete Design Specification, ready for review. Prior to being passed on to the developer, the Design Specification is reviewed for defects and, as necessary, the defects are corrected.</p>
+<p>This artifact collects all of the Design work products into a single document and equates roughly to the &ldquo;technical design document&rdquo; that was used in some older methodologies.</p>
+<h5>WORK PRODUCT </h5>
+<p>The Design Specification should include:</p>
+<ul>
+  <li>Technical Overview
+      <ul>
+        <li>Document Structure</li>
+        <li>Related Documents</li>
+      </ul>
+  </li>
+  <li>Information on Standards
+      <ul>
+        <li>Java Design (including naming conventions)</li>
+        <li>Component Design (including naming conventions)</li>
+        <li>HTML Design (including naming conventions)</li>
+      </ul>
+  </li>
+  <li>Packages Overview
+      <ul>
+        <li>Package 1 (Associate with DS.080)</li>
+        <li>Package 2 (Associate with DS.080)</li>
+        <li>Package 3 (Associate with DS.080)</li>
+        <li>Package 4 (Associate with DS.080)</li>
+      </ul>
+  </li>
+  <li>Application Setups (Associate with MC.050)</li>
+</ul>
+<p>The diagram below indicates the recommended work products that should be referenced from, or included within the Design Specification.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_DS140_WP.JPG" alt="Illustration of the OUM Work Products that can be included in the Design Specification" width="718" height="345" title="Illustration of the OUM Work Products that can be included in the Design Specification"></p>
+<p>For larger size projects it may be necessary to use a document structure similar to the following:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_DS140_WP2.JPG" alt="Document Structure of Large Size Projects" width="781" height="320" title="Document Structure of Large Size Projects"></p>
+<hr WIDTH="100%">
+<h4><A
+name=DS1601 id="DS1601"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">DS.160.1 Review Design Model </a></h4>
+<h5>OVERVIEW</h5>
+<p>The Design Model refers to the complete collection of artifacts that are developed to design the software to be developed. Once work on these materials for a given iteration has been completed, and the materials are ready for review, a team consisting of analysts, designers, and architects review the Design Model, and suggest changes as needed.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Reviewers must briefly review the Design Model initially in a workshop to understand the structure of the model.
+      <ul>
+        <li>Identify key resources to approve the model.</li>
+      </ul>
+  </li>
+  <li>Reviewers must review the Design Model work products individually.</li>
+  <li>Defects can be found and changes may be required.
+      <ul>
+        <li>Some changes can affect scope and these may require formal change requests. </li>
+        <li>Other changes do not affect scope, and these should be discussed with the analyst.</li>
+      </ul>
+  </li>
+  <li>Once the Model is approved by each of the selected approvers, they must send an email or provide other written confirmation that the Model is acceptable.</li>
+  <li>Complete a short Approval template &ndash; see the work product.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>Create and complete a short Approval template where approval can be inserted into a grid.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_DS160_APPROVAL.JPG" alt="Example Approval Template" width="426" height="341" title="Example Approval Template"></p>
+<p><a href="#TOP"></a></p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

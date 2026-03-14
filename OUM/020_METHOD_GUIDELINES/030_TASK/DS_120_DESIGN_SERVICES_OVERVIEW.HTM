@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DS.120 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>DS.120 - DESIGN SERVICES</h2>
+<!--BeginDesc--><p>The purpose of this task is to perform the design of the services based on the service analysis (AN.080) and the service definition (AN.085) you have performed, following the service architecture defined in the Project Reference Architecture (RA.019). In addition, each Service Interface is registered in the Enterprise Repository to allow projects to discover the changes, and for future reference.</p>
+<p>Service Design is responsible for crafting the interface for a service. Although this sounds like a relatively straight forward task, the goal of service design is to come up with an interface that will maximize reuse while conforming to the demands of the service contract. The Service Interface must be designed with the service consumer&rsquo;s needs in mind, but also with an eye towards the non-functional and service enablement requirements dictated through the service&rsquo;s contract. Service design may include a series of trade-offs where a balanced interface between service consumer and contract are achieved.</p><!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>The process begins with the service contract which is defined through service definition. The service contract provides most of the information necessary to develop an interface that is geared towards fulfilling the contract. The second influencing factor of service design is the service consumer. Analysis with respect to how service consumers (and potential service consumers) will utilize the service must also be considered in order to achieve a balance between maximizing service reusability and convenience for the service consumers, but also an interface that meets the demands of the contract. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>DS.120.1</h4>
+<p><a href="../040_ACTIVITY/BACTDE_DESIGN_ELAB.HTM" target="_blank">B.ACT.DE Design - Elaboration</a></p>
+<h4>DS.120.2</h4>
+<p><a href="../040_ACTIVITY/CACTDC_DESIGN_CONST.HTM" target="_blank">C.ACT.DC Design - Construction </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Service Design</b></p>
+<p>The work product contains a detailed technical design for all service components. This includes a technical design for message formats, business process rules, data sources, process security, exception handling, service dependency and human workflow. When a physical Enterprise Repository has been established, a new Service Interface or Service Interface version is created in the Enterprise Repository for each new or modified service. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" scope="rowgroup"><div align="left">For each service, perform the following steps: </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Identify known and potential service consumers. </td>
+    <td>Identified Service Consumers </td>
+    <td> Refer to the Service Design Technique for a detailed description on how to complete this and each subsequent task step. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Define the Interface Style. </td>
+    <td>Interface Style </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Define Interface Protocol and Transport. </td>
+    <td>Interface Protocol and Transport </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Model Service Operations. </td>
+    <td>Service Operations </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Define Message Exchange Patterns.</td>
+    <td>Message Exchange Patterns</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Explore Implementation Paths.</td>
+    <td>Implementation Paths</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Define Message Structures.</td>
+    <td>Message Structures</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Cross check against the Service Architecture.</td>
+    <td>None</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Cross check against the Service Contract. </td>
+    <td>None</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Review the Interface Design with SOA Leadership</td>
+    <td>Reviewed Interface </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Develop the Physical Service Interface. </td>
+    <td>Physical Interface </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Publish the Service Interface. </td>
+    <td>Published Interface (in the Enterprise Repository) </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Review the IT Asset Management technique to see what kind of elements should be captured for the Service Interface design.</p>
+<p> For each service that has been defined in AN.085, Define Service, a detailed technical design should be provided for the following design components included in the Module View determined during DS.040, Develop Design Architecture Description. These may be service components such as:</p>
+<ul>
+  <li> Message Formats - XML definitions for inbound and outbound objects. There could also be other formats besides XML, such as, EDI, flat file, and large binary data.</li>
+  <li> Business Process Rules - Component design to meet business process rules. Consider using a rules engine (comes with the application server of third party blaze advisor). Design a common framework to lookup and invoke the rules engine.</li>
+  <li> Data Sources - Detailed sequence diagrams for interacting with application APIs, EJB methods, Java class methods, etc.</li>
+  <li>Process Security - Define configuration details for service security (for example, App Service JAAS configuration, WS-Security usage). Consider using the Oracle WSM for policy driven security and management for BPEL process. </li>
+  <li> Exception Handling - Detailed error processing options and components necessary for error handling. Possible design options include error trapping, editing, and replay capabilities; detailed service fault definitions. Consider using the database to store the error messages along with the transactional data message. The design of the error handling service should be a standalone web service. </li>
+  <li> Service Dependency - Identify other services this service depends on for functionality.</li>
+  <li> Human Workflow - Design of the human workflow system and interaction with the business process. Include user interface design and page flows. </li>
+</ul>
+<p>When doing this, you should follow the service architecture defined in the Project Reference Architecture (RA.019). </p>
+<p>In order to provide or consume a &lsquo;Business Service&rsquo;, the involved systems/partners must agree on the interaction pattern with the corresponding business semantics along with the message binding contracts and policies such as enveloping, addressing, reliability and security profiles for every business service and action pair. </p>
+<p>The <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_INTEROP_GUIDELINES.HTM" target="_blank">SOA Project Delivery Service Interoperability Guidelines</a> provide guidelines, patterns and templates to capture all the necessary information related to service interoperability. </p>
+<p>Detailed fault handling and compensation handling should be designed into the model at this stage. Data transformations should be detailed in this task. Typically, data transformations occur when converting inbound data to a canonical business object that the business process is standardized on, as well as converting the canonical format to outbound data structures required by destination systems (that is, applications, B2B partners). A data transformation specifications should provide detailed node-to-node mappings. Typically, these specifications are defined in spreadsheet format with the following data:</p>
+<TABLE width="100%" border=1>
+  <TBODY>
+    <TR>
+      <TD width="28%" height=26 bgColor=#CCCCCC><div align="left">Column</div></TD>
+      <TD width="72%" bgColor=#CCCCCC><div align="left">Description</div></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Source Node Name </p></TD>
+      <TD align="left" valign="top"><p>Node name in the source object </p></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Source Node Path </p></TD>
+      <TD align="left" valign="top">Path to node within source object </TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Source Node Description </p></TD>
+      <TD align="left" valign="top">Description of node </TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top">Source Data Format Definition </TD>
+      <TD align="left" valign="top">Data type (that is, char, integer, float, date/time, binary encoded); max length</TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top">Mapping Type </TD>
+      <TD align="left" valign="top">Straight (no data conversion) - Derived (derived from multiple inbound nodes), Complex (complex mapping logic; database/table lookups).</TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top">Mapping Details </TD>
+      <TD align="left" valign="top">Detailed description of mapping logic </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>When applicable, design in the B2B solution during this task. The B2B solution should address the following:</p>
+<ul>
+  <li> Trading partner exchange protocols for each partner</li>
+  <li> Trading partner document protocols for each partner</li>
+  <li> Trading partner message types for each partner</li>
+  <li> Trading partner constants for selected protocol</li>
+  <li> Trading partner end points (https, email, ftp)</li>
+  <li> Solution design for SLA failures</li>
+  <li> Trading partner contact information</li>
+</ul>
+<p>Refer to the Service Design technique for further guidelines related to this task. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#DS120" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="26%" scope="col"><div align="left">Role</div></th>
+    <th width="68%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Designer</div></th>
+    <td>Design the services. If possible, you may want use a designer with extensive SOA experience. </td>
+    <td><div align="center">100</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th scope="col"><div align="left">Prerequisite</div></th>
+    <th scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Service Portfolio - Proposed Services (AN.080)<br>
+        Service Definition (AN.085) </div></th>
+    <td>Your are designing the services based on the analysis and definition documented in these work products.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Executed Policy Implementation Processes (GV.100) </div></th>
+    <td>(optional) when during the governance implementation an Enterprise Repository has been established, the Service Portfolio typically will be captured in Enterprise Repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Reference Architecture (RA.019)</div></th>
+    <td>Your are designing the services based on the service architecture defined in the Project Reference Architecture. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description</div></th>
+    <td>The Design portion of this work product produces the service contracts on which to base the service design. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="26%" scope="col"><div align="left">Technique</div></th>
+    <th width="74%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DESIGN.HTM" target="_blank">Service Design </a></div></th>
+    <td><div align="left">Use this technique to understand how to perform this task. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a></div></th>
+    <td><div align="left">Use this technique to understand the service interface and its relation to other parts of the service.</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a></div></th>
+    <td><div align="left">Use this technique to understand where this task fits in the overall SOA service lifecycle. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling </a></div></th>
+    <td><div align="left">Use this technique to understand how you can model services. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></div></th>
+    <td><div align="left">Use this technique to understand what kind of elements are relevant for service design. </div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<p>There are currently no templates available to assist with this task.</p>
+<table width="100%"  border="1" id="ExampleScen" title="Example Scenarios" summary="This table lists any example scenario information for this task with any relevant comments. It is organized with columns for Example Scenario and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Example Scenario</div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM">FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD (OUM) </a></div></th>
+    <td>Provides a scenario example that will be useful when performing this task</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="24%" scope="col"><div align="left">Tool</div></th>
+    <th width="76%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="http://www.oracle.com/technetwork/middleware/repository/overview/index.html" target="_blank">Oracle Enterprise Repository </a></div></th>
+    <td>The Oracle Enterprise Repository is a COTS Enterprise Repository tool solution that is used to establish and maintain an Enterprise Repository. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Service Design is used in the following ways: </p>
+<ul>
+  <li>as a source of format templates to implement services</li>
+  <li>to understand how each service should be developed, operated and invoked </li>
+</ul>
+<p> Distribute the Service Design as follows: </p>
+<ul>
+  <li>to developers</li>
+  <li>to the Enterprise's repository of artifacts to ensure availability of design format templates and standards to all interested parties</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

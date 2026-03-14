@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AN.050 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>AN.050 - ANALYZE DATA</h2>
+<!--BeginDesc--><p>The purpose of this task is to identify and analyze the data elements required to support the functional requirements that have been documented in the use cases contained in the use case package. You  describe how the data will be organized, structured, and represented for the project.</p>
+<p>This task may be done in parallel with Analyze Behavior (AN.060) and Analyze User Interface (AN.090) and is performed for every use case package documented in the Package Diagram in the Architecture Description (RD.130).</p>
+<p>To accomplish this task, you analyze the Use Case Specification (RA.024) for each use case in the package to understand the entities (classes), attributes, associations, aggregations, multiplicity, and generalizations that will be required. Each data element may also be described in the Glossary (RD.042).</p>
+<p> The standard and recommended approach and notation for completing this task is to use a UML class diagram with class names and attributes (only). This task may also be accomplished using a non-UML approach that uses other notational or textual techniques including <em>entity-relationship diagrams (ERDs)</em> or data tables. An example data table is included at the end of the Approach section in this guideline. A data table, or a portion of an ER diagram inserted into an Analysis Specification will suffice for minor data changes. </p>
+<p> If your project is using a UML approach, you should update the Domain Model (RD.065) with this additional information or create a UML class diagram if no Domain Model is available. This class diagram will also be updated in Analyze Behavior (AN.060) task to include the required operations and other behavior information. This will result in an Analysis Class Diagram for the Use Case Package.</p><!--EndDesc-->
+<!--BeginAIDesc--><p>In a commercial off-the-shelf (COTS) application implementation, this task is generally performed only when there is a need to gain further clarification of the business requirements represented in the use cases. This typically applies to those requirements that can only be satisfied through custom-built components, which extend the functionality of the COTS system and/or integrate the COTS system with other COTS or legacy systems.</p><!--EndAIDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>AN.050.1</h4>
+<p><a href="../040_ACTIVITY/BACTAE_ANALYZE_ELAB.HTM" target="_blank">B.ACT.AE Analyze - Elaboration </a></p>
+<h4>AN.050.2</h4>
+<p><a href="../040_ACTIVITY/CACTAC_ANALYZE_CONST.HTM" target="_blank">C.ACT.AC Analyze - Construction </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Data Analysis</b></p>
+<p>The resulting work product of the Data Analysis is an Analysis Class Diagram. This Analysis Class Diagram is also updated by the Behavior Analysis (AN.060). The Data Analysis adds the entities (classes), attributes, associations, aggregation, multiplicity and generalizations required to support the Use Case Package.</p>
+<p>To accomplish this you may update the Domain Model (RD.065) to capture the results of analyzing the data requirements of the Use Case Package. If no Domain Model is available, develop a UML class diagram to support each Use Case Package.</p>
+<p> If desired, the Data Analysis (AN.050), Behavior Analysis (AN.060), and Interface Analysis (AN.090) may be organized into an Analysis Specification (AN.100) for each Use Case Package identified in the Package Diagram contained in the Architecture Description (RD.130).</p>
+<p>You should also update the Glossary (RD.042) to define the majority of data elements.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Identify classes (or entities). </td>
+    <td>Class Diagram </td>
+    <td>Review each use case and search for the nouns that represent entities or classes. Verify they exist on the Domain Model or add them if they are missing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Identify attributes.</td>
+    <td>Class Diagram </td>
+    <td>Review each use case and search for the nouns that my represent attributes which belong to the classes on the Domain Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Identify associations and aggregation relationships.</td>
+    <td>Class Diagram </td>
+    <td>Review each use case and search for the verbs that could indicate associations on the Domain Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Identify multiplicity.</td>
+    <td>Class Diagram</td>
+    <td>Review each use case and search for business rules that indicate the multiplicity between entities (or classes) and add them to the Domain Model. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Identify association classes. </td>
+    <td>Class Diagram </td>
+    <td>Identify association classes that will better define the relationships between domain classes. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Simplify the model using generalization.</td>
+    <td>Class Diagram </td>
+    <td>Look for opportunities to extract redundant attributes from similar entities (or classes) and combine them into a &ldquo;superclass.&rdquo; </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Update the Glossary (RD.042) </td>
+    <td>Glossary</td>
+    <td>The Glossary is updated to reflect any new terms identified in the Domain Model. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The goal of this task is to identify and verify that all entities, attributes, and their relationships are fully identified and placed on a Domain Model or in a Data Table. Additionally, the Glossary (RD.042) is updated to reflect the definition of any new terms identified when analyzing this data. This process is iterative and can be accomplished throughout the Inception and Elaboration phases of a project. The above seven (7) steps are explained below using an example from a University Registration System.</p>
+<h4>Identify Classes (Entities) </h4>
+<p>While reviewing each use case underline the nouns that may correspond to a class on the Domain Model. Verify that these classes exist, or add them to the model. Make certain the names of each class are written in singular format using the terminology of the business.</p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_ID_CLASSES.JPG" alt="Example class names" width="525" height="202" title="Example class names"></p>
+<h4>Identify Attributes</h4>
+<p> Review each of the use cases and identify the nouns that represent attributes and place them on the Domain Model in the appropriate classes. These attributes should describe a data element (or field) of the class. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_ID_ATTS.JPG" alt="Example classes with attrbutes" width="525" height="255" title="Example classes with attrbutes"></p>
+<h4> Identify Association and Aggregation Relationships</h4>
+<p> Review each of the use cases and identify the verbs that represent associations and/or aggregations between the Domain Classes and draw them on the diagram. Indicate the name of the association on the line and show the direction of readability by using a directional arrow next to the verb. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_ID_ARR.JPG" alt="Example associations and aggregations between classes" width="534" height="246" title="Example associations and aggregations between classes"></p>
+<h4>Identify Multiplicity</h4>
+<p>Determine the correct multiplicity for each side of the association and draw it on the diagram.</p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_ID_MULT.JPG" alt="Example multiplicity for each side of the association" width="534" height="247" title="Example multiplicity for each side of the association"></p>
+<h4> Identify Association Classes</h4>
+<p> Determine which associations should contain an association class to help better define the relationships between the domain classes. Give this association class a name that relates to the business terminology.</p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_ID_ASSOC_CL.JPG" alt="Example association class names" width="527" height="295" title="Example association class names"></p>
+<h4>Simplify Model Using Generalization </h4>
+<p> Review the Domain Model and look for opportunities to extract redundant attributes from entity classes and move them into a superclass. Do not repeat the same attributes on the subclasses. </p>
+<p align="center"><img src="../../010_COMMON_FILES/AN050_SIMLPIFY_MODEL.JPG" alt="Example using generalization to simplify model" width="525" height="373" title="Example using generalization to simplify model"></p>
+<h4>Update the Glossary</h4>
+<p>Review the Glossary (RD.042) and add or update any term that needs clarification. The Glossary needs to reflect the definition of each term used on the Domain Model.</p>
+<p> <b>NOTE:</b> It is not necessary to use the Domain Model to capture the data and their relationships for a project. If you are unfamiliar with the UML Class Diagram (shown above) then data can be captured using a traditional data model (entity-relationship diagram &ndash; ERD) or can be listed in a data table (below).</p>
+<table border="1" title="Example Data Table" summary="This table lists the Entity (row group) and its associated attributes.">
+  <tr valign="top" bgcolor="#BEBEBE">
+    <th scope="col"><div align="left">Entity</div></th>
+    <th scope="col"><div align="left">Attribute</div></th>
+    <th scope="col"><div align="left">Minimum Value </div></th>
+    <th scope="col"><div align="left">Maximum Value </div></th>
+    <th scope="col"><div align="left">Default</div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="6" scope="rowgroup"><div align="left">Person</div>      </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">ID</div></th>
+    <td><div align="left">00000</div></td>
+    <td><div align="left">99999</div></td>
+    <td><div align="left">0000</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Name</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">This is the first, middle and last name of the person. </div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Address</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">This is the home address of the person. </div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Phone Number </div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">This is the primary contact number. </div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Email Address </div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">This is the primary email address. </div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="6" scope="row"><div align="left">Student</div>      </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">GPA</div></th>
+    <td>0.00</td>
+    <td>4.00</td>
+    <td>0.00</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Major</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="left">This is the University. </div></td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="6" scope="row"><div align="left">Professor</div>      </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Credentials</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Department</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top" bgcolor="#CCCCCC">
+    <th colspan="6" scope="row"><div align="left">Course</div>      </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">ID</div></th>
+    <td><div align="left">A000000</div></td>
+    <td><div align="left">Z999999</div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Name</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Description</div></th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left"># Credits </div></th>
+    <td><div align="left">1</div></td>
+    <td><div align="left">4</div></td>
+    <td><div align="left">3</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">&nbsp;</th>
+    <th scope="row"><div align="left">Cost</div></th>
+    <td><div align="left">$0.00</div></td>
+    <td><div align="left">$1000.00</div></td>
+    <td><div align="left">0.00</div></td>
+    <td><div align="left">This is the cost per credit for the course. </div></td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4>Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#AN050" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#AN0501" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#AN050" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles:</p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="36%" scope="col"><div align="left">Role</div></th>
+    <th width="58%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect </div></th>
+    <td>Develop the Data Analysis and participate in the definition and review of the analysis classes to gain an understanding of the application and its architecture.</td>
+    <td><div align="center">60</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Analyst</div></th>
+    <td>Assist the team of designers to create and finalize the Data Analysis, verifying if the business goals and requirements have been captured.</td>
+    <td><div align="center">40</div></td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<h4>AN.050.1</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="36%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="64%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description</div></th>
+    <td>The Conceptual View (AN.040) of the Architecture Description defines the use case packages to be analyzed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Domain Model (RD.065) or Analysis Class Diagram or Data Model </div></th>
+    <td>The Domain Model, Analysis Class Diagram or Data Model developed in earlier iterations of this task may be used as input to the current iteration.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Model (RA.023.1) </div></th>
+    <td>The Use Case Model provides a graphical view of the use cases and the actors that trigger/support them. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.1) </div></th>
+    <td>The Use Case Specification provides all the use cases along with each their corresponding details and that is what is analyzed in this task. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Future Process Model (RD.011.2)</div></th>
+    <td>The Future Process Model may help to identify use cases and their flows. </td>
+  </tr>
+</table>
+<h4>AN.050.2</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="36%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="64%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Architecture Description</div></th>
+    <td>Updates to the Architecture Description (including updates made by RA.035 and AN.040) may impact the use case package being analyzed and must be taken into account. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specification (RA.024.2) </div></th>
+    <td>The Use Case Specification provides all the use cases along with each their corresponding details and that is what is analyzed in this task. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Data Design (DS.090.1)</div></th>
+    <td>Development of the interaction diagram as part of the Data Design may impact the use case analysis, and vice versa. Therefore these tasks are often done in parallel.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Reviewed Use Case Model (RA.180.2) </div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="22%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="78%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/AN/ANALYSIS_MODEL.DOCX" target="_blank">ANALYSIS_MODEL.DOCX</a></div></th>
+    <td>MS WORD - Use this word template to start building the Analysis Model. You will complete it with the Behavior Analysis in AN.060.</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="43%" scope="col"><div align="left">Tool</div></th>
+    <th width="57%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/gswUseCaseModeling.pdf" target="_blank">Getting Started with Use Case Modeling </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/GettingStartedWithUMLClassModeling.pdf" target="_blank">Getting Started with UML Class Modeling </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/use_case_diagram_viewlet_swf.html" target="_blank">Use Case Diagram Viewlet </a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/use_case_details_viewlet_swf.html" target="_blank">Use Case Details Viewlet </a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/activity_diagram_viewlet_swf.html" target="_blank">Activity Diagram Viewlet</a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/class_diagram_viewlet_swf.html" target="_blank">Class Diagram Viewlet </a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="ExampleScen" title="Example Scenarios" summary="This table lists any example scenario information for this task with any relevant comments. It is organized with columns for Example Scenario and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="43%" scope="col"><div align="left"><a name="EXAMPLES" id="EXAMPLES"></a>Example Scenario</div></th>
+    <th width="57%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM">FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD (OUM) </a></div></th>
+    <td>This page provides a scenario example that will be useful when performing this task.</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Examples" title="Examples" summary="This table lists any example work products for this task with any relevant comments. It is organized with columns for Example and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="43%" scope="col"><div align="left">Example</div></th>
+    <th width="57%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../010_COMMON_FILES/MODELS/CLASS_MODEL.HTM" target="_blank">Class Model </a></div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage </h4>
+<p>The output from the Analyze Data task is used in the following ways: </p>
+<ul>
+  <li> to define and describe the data elements for each use case</li>
+  <li> as an input to the use case design</li>
+  <li>as an input into the logical data model </li>
+  <li> as a verification that a use case is properly understood </li>
+</ul>
+<p> Distribute the output from this task as follows: </p>
+<ul>
+  <li> to the development team </li>
+  <li> to the ambassador users by walking them through the Analysis Class Diagram, updated Domain Model, Data Model or data table</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Are the class names singular and are they written in business terminology?</li>
+  <li> Does each class have attributes that define the data that describes the class?</li>
+  <li> Does each association have a name that describes the relationship between the classes?</li>
+  <li> Is there an association class for many-to-many relationships?</li>
+  <li> Does the Domain Model reflect generalized classes (super classes) that eliminate attribute redundancy?</li>
+  <li> Is each element on the Domain Model described in the Glossary? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

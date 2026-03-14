@@ -1,0 +1,790 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA AIA Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Application Integration Architecture (AIA) Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#PJMBTG">Bid Transition (BT) Process Guidance</option>
+                            <option value="#ENVEA">Enterprise Architecture (EA) Process Guidance</option>
+                            <option value="#ENVIP">IT Portfolio Management (IP) Process Guidance</option>
+                            <option value="#RDG">Business Requirements (RD) Process Guidance</option>
+                            <option value="#RAG">Requirements Analysis (RA) Process Guidance</option>
+                            <option value="#ANG">Analysis (AN) Process Guidance</option>
+                            <option value="#DSG">Design (DS) Process Guidance</option>
+                            <option value="#IMG">Implementation (IM) Process Guidance</option>
+                            <option value="#TEG">Testing (TE) Process Guidance</option>
+                            <option value="#PTG">Performance Management (PT) Process Guidance</option>
+                            <option value="#TAG">Technical Architecture (TA) Process Guidance</option>
+                            <option value="#CVG">Data Acquisition &amp; Conversion (CV) Process Guidance</option>
+                            <option value="#DOG">Documentation (DO) Process Guidance</option>
+                            <option value="#TSG">Transition (TS) Process Guidance</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("BT");
+  Effect.BlindDown("EA");
+  Effect.BlindDown("IP");
+  Effect.BlindDown("RD");
+  Effect.BlindDown("RA");
+  Effect.BlindDown("AN");
+  Effect.BlindDown("DS");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TE");
+  Effect.BlindDown("PT");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("CV");
+  Effect.BlindDown("DO");
+  Effect.BlindDown("TS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("BT");
+  Effect.BlindUp("EA");
+  Effect.BlindUp("IP");
+  Effect.BlindUp("RD");
+  Effect.BlindUp("RA");
+  Effect.BlindUp("AN");
+  Effect.BlindUp("DS");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TE");
+  Effect.BlindUp("PT");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("CV");
+  Effect.BlindUp("DO");
+  Effect.BlindUp("TS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_AIA.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>SOA APPLICATION INTEGRATION ARCHITECTURE (AIA) SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for AIA implementations. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. <br>
+    Please note: The Supplemental text preceded by the title <em>AIA PIP Development Guidance:</em> is intended to be used only when NEW PIP's are being developed as part of the AIA implementation, as opposed to using existing PIP's.</li>
+</ul>
+<ul>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26">AIA - OUM Supplemental Task Guidelines (this document) <BR>
+          <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+      <th scope="col" width="43%">OUM Task Overview</th>
+    </tr>
+  <tbody id="PJM">
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Bid Transition </div></th>
+  </tr>
+  <tbody id="BT">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#BT020">BT.020 Review and Confirm Business Case </a></div></td>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">BT.020 Review and Confirm Business Case </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Enterprise Architecture</div></th>
+  </TR>
+  <tbody id="EA">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#EA075">EA.075 Develop Technology Reference Architectures </a></div></td>
+      <TD><DIV align=left> <a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 Develop Technology Reference Architectures</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#EA110">EA.110 Develop Future State Enterprise Architecture </a></div></td>
+      <TD><DIV align=left><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 Develop Future State Enterprise Architecture </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">IT Portfolio Management </div></th>
+  </TR>
+  <tbody id="IP">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#IP014">IP.014 Inventory Services</a></div></td>
+      <TD><DIV align=left><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/IP_014_INVENTORY_SERVICES_OVERVIEW.HTM" target="_blank">IP.014 Inventory Services</a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Business Requirements</div></th>
+  </TR>
+  <tbody id="RD">
+    <TR valign="top">
+      <td valign="top"><div align="left"><A
+				href="#RD001">RD.001 Detail Business and System Objectives </A></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM"
+				target="_blank">RD.001 Detail Business and System Objectives </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RD011">RD.011 Develop Future Process Model </a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM"
+				target="_blank">RD.011 Develop Future Process Model </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RD030">RD.030 Develop Current Business Process Model </a></div></td>
+      <TD><A
+        href="../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM"
+        target="_blank">RD.030 Develop Current Business Process Model </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RD070">RD.070 Determine Audit and Control Requirements </a></div></td>
+      <TD><A
+        href="../../../020_METHOD_GUIDELINES/030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM"
+        target="_blank">RD.070 Determine Audit and Control Requirements </A></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Requirements Analysis </div></th>
+  </TR>
+  <tbody id="RA">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RA015">RA.015 Develop Business Use Case Model </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.015 Develop Business Use Case Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RA023">RA.023 Develop Use Case Model </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#RA024">RA.024 Develop Use Case Details </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Analysis</div></th>
+  </TR>
+  <tbody id="AN">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#AN050">AN.050 Analyze Data </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">AN.050 Analyze Data </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#AN080">AN.080 Analyze Services </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_080_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">AN.080 Analyze Services </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#AN085">AN.085 Define Service </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_085_DEFINE_SERVICE_OVERVIEW.HTM" target="_blank">AN.085 Define Service </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Design</div></th>
+  </TR>
+  <tbody id="DS">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#DS090">DS.090 Design Data </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">DS.090 Design Data </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#DS120">DS.120 Design Services</a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">DS.120 Design Services</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Implementation</div></th>
+  </TR>
+  <tbody id="IM">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#IM050">IM.050 Implement Components </a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM"
+				target="_blank">IM.050 Implement Components </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#IM080">IM.080 Integrate Services </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_080_INTEGRATE_SERVICES_OVERVIEW.HTM" target="_blank">IM.080 Integrate Services </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#IM090">IM.090 Create Installation Routines </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090 Create Installation Routines </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Testing</div></th>
+  </TR>
+  <tbody id="TE">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE010">TE.010 Develop Testing Strategy</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM"
+				target="_blank">TE.010 Develop Testing Strategy</A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE015">TE.015 Develop Integration Test Plan</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM"
+				target="_blank">TE.015 Develop Integration Test Plan</A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE020">TE.020 Develop Unit Test Scripts</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM"
+				target="_blank">TE.020 Develop Unit Test Scripts</A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE030">TE.030 Create System Test Scenarios </a></div></td>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Test</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE040">TE.040 Create Integration Test Scenarios</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM"
+				target="_blank">TE.040 Perform Integration Test</A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE065">TE.065 Perform Installation Test</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_065_PERFORM_INSTALLATION_TEST_OVERVIEW.HTM"
+				target="_blank">TE.065 Perform Installation Test</A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE082">TE.082 Develop Acceptance Test Plan </a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_082_DEVELOP_ACCEPTANCE_TEST_PLAN_OVERVIEW.HTM"
+				target="_blank">TE.082 Develop Acceptance Test Plan </A></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TE120">TE.120 Support Acceptance Test</a></div></td>
+      <TD><DIV align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TE_120_SUPPORT_ACCEPTANCE_TEST_OVERVIEW.HTM"
+				target="_blank">TE.120 Support Acceptance Test</A></DIV></TD>
+    </TR>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Performance Management</div></th>
+  </tr>
+  <tbody id="PT">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#PT030">PT.030 Define Performance Testing Strategy</a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM"
+				target="_blank">PT.030 Define Performance Testing Strategy</A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#PT070">PT.070 Build Performance Test Scripts and Programs </a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM"
+				target="_blank">PT.070 Build Performance Test Scripts and Programs </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#PT100">PT.100 Execute Performance Test</a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/PT_100_EXECUTE_PERFORMANCE_TEST_OVERVIEW.HTM"
+				target="_blank">PT.100 Execute Performance Test</A></TD>
+    </TR>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Technical Architecture</div></th>
+  </tr>
+  <tbody id="TA">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TA010">TA.010 Conduct Technical Architecture Workshop </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">TA.010 Conduct Technical Architecture Workshop </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TA020">TA.020 Define Technical Architecture Requirements and Strategy</a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM"
+				target="_blank">TA.020 Define Technical Architecture Requirements and Strategy</A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TA070">TA.070 Define Initial Architecture and Application Mapping </a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TA_070_DEFINE_INIT_ARCH_APPLICATION_MAPPING_OVERVIEW.HTM"
+				target="_blank">TA.070 Define Initial Architecture and Application Mapping </A></TD>
+    </TR>
+  </TBODY>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Data Acquisition and Conversion </div></th>
+  </tr>
+  <tbody id="CV">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV027">CV.027 Perform Data Mapping </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_027_PERFORM_DATA_MAPPING_OVERVIEW.HTM" target="_blank">CV.027 Perform Data Mapping </a></TD>
+    </TR>
+  </TBODY>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Documentation</div></th>
+  </tr>
+  <tbody id="DO">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#DO010">DO.010 Define Documentation Requirements and Strategy </a></div></td>
+      <TD><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM"
+				target="_blank">DO.010 Define Documentation Requirements and Strategy </A></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#DO080">DO.080 Publish Technical Reference Material </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank">DO.080 Publish Technical Reference Material </a></TD>
+    </TR>
+  </TBODY>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Transition</div></th>
+  </tr>
+  <tbody id="TS">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TS020">TS.020 Define Cutover Strategy </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">TS,020 Define Cutover Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TS050">TS.050 Prepare Production Environment </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">TS,050 Prepare Production Environment </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TS060">TS,060 Go Production</a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">TS,060 Go Production </a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PJMBTG id="PJMBTG"></A></B>BID TRANSITION (BT) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=BT020 id="BT020"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">BT.020 - Review and Confirm Business Case </a></h4>
+<p>This task makes certain that the project manager has a clear understanding of the business case for the project.
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=ENVEA id="ENVEA"></A></B>ENTERPRISE ARCHITECTURE (EA) GUIDANCE</h3>
+<h4><B><A
+name=EA075 id="EA075"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">EA.075 - Develop Technology Reference Architectures </a> </h4>
+<p>The SOA Reference Architecture describes a strategy on how to implement all types of services relevant for the business. It contains the chosen SOA Reference Architecture, a Service Provisioning Model, and a Roadmap to Service Implementation. The SOA Reference Architecture should cover services (EBS, ABCS) in all layers and granularities.
+<h4><B><A
+name=EA110 id="EA110"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">EA.110 - Develop Future State Enterprise Architecture </a> </h4>
+  <p>This task shows the &quot;to-be&quot; enterprise architecture using AIA Foundation Pack, including changes to existing architecture and newly identified reference architectures for future state realization.  
+  <p><a href="#TOP">Back to Top</a>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=ENVIP id="ENVIP"></A></B>IT PORTFOLIO MANAGEMENT (IP) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=IP014 id="IP014"></A></B><a href="../../../../ENV/020_METHOD_GUIDELINES/030_TASK/IP_014_INVENTORY_SERVICES_OVERVIEW.HTM" target="_blank">IP.014 - Inventory Services</a></h4>
+  <p>Review/Extend operation definitions and interaction patterns in identified Enterprise Business Services to address all implementation requirements. The AIA Foundation Pack Installation populates all the EBSs and EBOs in the business service repository (BSR).
+  <p><a href="#TOP">Back to Top</a>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=RDG id="RDG"></A></B>BUSINESS REQUIREMENTS (RD) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=RD001 id="RD001"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 - Detail Business and System Objectives </a> </h4>
+  <p>This task scopes out the AIA foundation pack components considering the business objectives. It outlines the key business benefits of the system using the AIA Foundation Pack and also includes the priorities indicating which objectives are most important. The work product is used as reference throughout the project cycle.
+  <h4><B><A
+name=RD011 id="RD011"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 - Develop Future Process Model </a> </h4>
+  <p>The high-level Future Process Model documents the triggering events that drive the business areas that are to be automated and describes the response that the business makes to each of those events. This will help in designing the AIA components.
+  <p>The more detailed Future Process Model defines the future business model in the form of integrated process flows built on the business processes supported by the new applications. The Future Process Model includes process flow diagrams of the events and business processes that the applications and the associated functions of the business area will support.
+    
+<h4><B><A
+name=RD030 id="RD030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.030 - Develop Current Business Process Model </a> </h4>
+  <p>Examine the current business processes and practices to identify how the existing business system meets the current business requirements.
+  <p> Also, you should perform the analysis of current business processes and functions during this phase.
+  <h4><B><A
+name=RD070 id="RD070"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM" target="_blank">RD.070 - Determine Audit and Control Requirements</a> </h4>
+  <p>In this task, you identify the high level requirements and policies that affect business and system security, control, and procedures.
+  <ul>
+    <li> Identify Participating Application Security Considerations / Requirements </li>
+    <li> Security Coverage / Considerations from the Customer Installed Base </li>
+  </ul>
+  <h5>Guidelines </h5>
+  <p>Some possible questions from designers are:
+  <ol>
+    <li> User Registration / termination policy
+        <ol>
+          <li type="a"> Does your application have a need for integrating with specific Identity Provider infrastructure?</li>
+          <li type="a"> Does your application have specific need pertaining to authentication of user identity? </li>
+          <li type="a"> Does your application have any need for integrating with strong user authentication mechanisms such as smart cards, biometrics devices or dynamic passwords? </li>
+        </ol>
+    </li>
+    <li>Role-based access control policy &ndash; Key points</li>
+    <li> Service audit and traceability policy &ndash; Key points</li>
+    <li> Host and network administration policy &ndash; Key points</li>
+    <li> Any specific needs on secure server-to-server connection
+        <ol>
+          <li type="a">Do you need to secure the web services communication exchanged between the service providers?</li>
+          <li type="a"> Does your application have a need to integrate with 3rd party applications? Or in other words, are your applications sending and receiving messages over public network? </li>
+          <li type="a"> Do you have specific security requirements regarding the server-to-server connection? </li>
+        </ol>
+    </li>
+    <li> Application administration policy &ndash; Key points</li>
+    <li> Data encryption and signature verification policy
+        <ol>
+          <li type="a"> Does your application have a specific need for data privacy? </li>
+          <li type="a"> Does your application have sensitive data that you would not want that to be sent in clear text? </li>
+          <li type="a"> Do you have any sensitive data that needs to be obfuscated in the logging?</li>
+          <li type="a"> Does your application have specific SLA requirements for high availability, service continuity and recovery? </li>
+        </ol>
+    </li>
+  </ol>
+  <p><a href="#TOP">Back to Top</a>
+  <p>
+  <hr WIDTH="100%">
+  <h3 align="left"><a name="RAG" id="RAG"></a>REQUIREMENTS ANALYSIS (RA) PROCESS GUIDANCE</h3>
+  <h4><b><a
+name=RA015 id="RA015"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.015 Develop Business Use Case Model </a></h4>
+  <p>The business use case model encapsulates enterprise-level business process relationships. This has the design scope for enterprise. The focus is more on the operation of business rather than the computer systems, which helps in identifying the right candidates for PIPs, EBOs and EBSs.</p>
+  <p>This layout details the business processes that make up a process integration pack and every detail in the section, such as, requirements. Use cases must relate to this specific business process.</p>
+  <p><b>PIP Activity: Identify Integration Scenario(s)</b></p>
+  <h5>AIA PIP Development Guidance: </h5>
+  <p>Since this AIA activity applies to identifying integration scenario(s), it needs to include details on the functional flow, the initial requester, the service provider and the business events that would result in invocation of the integration.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA023 id="RA023"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model</a> </h4>
+  <p><b>PIP Activity:</b> Identify Operation(s) to be Performed on the Identified Object(s)</p>
+  <p><b>PIP Activity:</b> Identify Enterprise Business Objects and Messages </p>
+  <h5>AIA PIP Development Guidance:</h5>
+  <p><b>PIP Activity:</b> Identify Enterprise Business Service Operations</p>
+  <p><b>PIP Activity:</b> Identify Participating Applications and their Roles Requesters/Service Providers</p>
+  <p>For AIA, the identified Enterprise Business Object(s) (EBO) should incorporate all of the requirements needed by the integration. The identified Enterprise Business Message(s) (EBM) serve as the message payload definition for the identified service operations. Each of the identified EBOs will have an Enterprise Business Service (EBS) to expose CRUD operations as well as any other supporting operations. Each of the actions present in the associated EBM will be implemented as a service operation in EBS. Creation of the EBS and the implementation of all of the service operations will be one of the critical tasks in the implementation of the end-to-end integration scenario. In situations where the EBS exists, check whether all of the actions necessary for acting on the EBO pertaining to this integration scenario have been implemented as service operations; if not, create a custom EBS to implement the additional service operations and upgrade proof the implemented extensions.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=RA024 id="RA024"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details</a> </h4>
+  <p><b>PIP Activity:</b> Identify the Requester Application Request Operations and Messages </p>
+  <p><b>PIP Activity:</b> Identify the Provider Application Service Capabilities and Messages </p>
+  <h5>AIA PIP Development Guidance:</h5>
+  <p>For AIA, the identified Application Business Messages and Operations for the Requester and Provider Applications should incorporate all of the requirements needed by the integration. The identified Application Business Messages serve as the message payload definition between the application and the implemented AIA artifacts, while the identified Application Business Operations serve as the service contract definition between the application and the implemented AIA artifacts.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=ANG id="ANG"></A></B>ANALYSIS (AN) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=AN050 id="AN050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">AN.050 Analyze Data </a></h4>
+  <p>Review and analyze AIA components identified for business process.</p>
+  <p> Identify conformance of available PIP to solution requirements including assessment of potential modifications.</p>
+  Identify missing Enterprise Business Objects and Messages or any required custom extensions to existing ones.
+  <h4><B><A
+name=AN080 id="AN080"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_080_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">AN.080 Analyze Services </a><br>
+      <a name="AN085"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_085_DEFINE_SERVICE_OVERVIEW.HTM" target="_blank">AN.085 Define Service</a> </h4>
+  <p>Review and analyze operation definitions and interaction patterns in identified Enterprise Business Services to address all implementation requirements.</p>
+  <p> Review and analyze Enterprise Business Services.</p>
+  <p> Review and analyze Enterprise Business Flows.</p>
+  <p> Review and analyze Application Business Connector Services.</p>
+  <p> Review and analyze Adapter Services.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=DSG id="DSG"></A></B>DESIGN (DS) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=DS090 id="DS090"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">DS.090 Design Data</a></h4>
+  <p><b>PIP Activity:</b> Define Enterprise Business Objects and Messages</p>
+  <p> Wherever possible, design an EBO with reusable objects by using object types that are inherited by the different common objects in which they are referenced. An example would be an Address definition type. If your implementation requires customizing this address format by adding a third address line, the modification of the Address definition type automatically affects the addresses referenced in EBOs. This design philosophy significantly reduces the design, development, and maintenance of common objects. The Enterprise Business Message (EBM) represents the specific content of an EBO needed for performing a specific activity. For example, an invoice might be used in three contexts &ndash; process, cancel, and update. The context for processing the invoice might warrant the presence of almost all of the elements present in the EBO. However, canceling the invoice might only need to identify the invoice instance to be cancelled. Assembling a set of common components and EBO-specific business components creates the context-specific EBO definitions. These context-specific EBO definitions are then used in the appropriate context-specific enterprise business messages (EBMs). In this scenario, the process-specific invoice definition would be part of the ProcessInvoice EBM and the cancel-specific invoice definition would be a part of the CancelInvoice EBM. These EBMs can be used either as the request or response parameters.</p>
+  <h5> Reference Documents:</h5>
+  <ul>
+    <li> EBO Development Methodology - OCS Draft v1.doc</li>
+    <li> EBOCCTSUMLStandard.doc</li>
+    <li> EBOExtensionGuide.doc</li>
+    <li> EBOXMLNDRStandard.doc</li>
+    <li>Naming Guidelines.doc</li>
+    <li> Standard_Business_Process_Verbs_and_Objects.xls</li>
+    <li>AIA Foundation Pack Developer&rsquo;s Guide</li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DS120 id="DS120"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">DS.120 Design Services </a></h4>
+  <h5>AIA Existing PIP Guidance:</h5>
+  <p><b>PIP Activity:</b> Review/Extend operation definitions and interaction patterns in identified Enterprise Business Services to address all implementation requirements.</p>
+  <p><b>PIP Activity:</b> Extend Enterprise Business Services</p>
+  <p><b>PIP Activity:</b> Extend Enterprise Business Flows or Composite Business Process</p>
+  <p> <b>PIP Activity:</b> Extend Application Business Connector Services</p>
+  <h5>AIA PIP Development Guidance: </h5>
+  <blockquote>
+    <p><b>Define Service Patterns for Business Service Operations</b> - In the context of AIA, most operations across applications are required to be modeled using Asynchronous interaction patterns (Fire and Forget, Request/Delayed Response) with the lone exception being the Query operation. Synchronous interaction is not a generally recommended AIA interaction pattern and may warrant a justifiable business reason for its adoption.</p>
+    <p><b>Design Enterprise Business Services - </b>In the context of AIA, this involves a combination of design (Defining and Creating the Contract) and implementation (Implementing and Invoking the Enterprise Business Services) activities. For the Entity EBS, use the WSDLs from the Enterprise Service Library of the Foundation Pack. For the Process EBS, use the TemplateEBS.wsdl available in the Foundation Pack and create a Process EBS WSDL.</p>
+    <p><b>Design Enterprise Business Flows - </b>In the context of AIA, this involves a combination of design (Defining and Creating the Contract) and implementation (Implementing and Invoking the Enterprise Business Flow as a BPEL Service) activities. The EBF is used to implement a business activity or a task that involves leveraging capabilities available in multiple applications. An EBF strings together a set of capabilities available in applications to implement a coarse-grained business activity or task and composes a new service that leverages existing capabilities. An EBF involves only system-to-system or service-to-service interactions and does not include any activity that requires human intervention. In a canonical integration, the EBF is an implementation of an EBS operation and calls other EBSs. An EBF never calls an ABCS or application directly. In other integration styles, the caller invoking the EBF can be an application or any other service.</p>
+    <p><b> Design Composite Business Process - </b>In the context of AIA, this is a similar task to design of EBF. The difference is that a Composite Business Process (CBP) is a set of coordinated tasks and activities involving both human and system interactions. In AIA, CBPs are implemented, managed, and monitored as a single SOA composite using SOA BPEL along with SOA Mediator, SOA Human Workflow, and SOA Business Rules components. The BPEL components are used to drive the flow.</p>
+    <p><b>Design Application Business Connector Services - </b>In the context of AIA, this involves a combination of analysis (Analyze the participating application integration capabilities, Choose the implementation style and technologies, Choose message exchange pattern) and design/implementation (Design, Construct and Test Application Business Connector Services) activities. An ABCS is transport neutral, PIP agnostic and is not bound to a specific application version. ABCS design decisions should therefore not be based on the PIP for which it is being built. For example, EBM Population should not be based on a target system or a PIP. </p>
+  </blockquote>
+  <div align="center">
+    <blockquote>
+      <p align="left"><b>Design Adapter Services (SOAP entry points to AIA artifacts) - </b>In the context of AIA, this involves a combination of analysis (Analyze the participating application integration capabilities, Choose the implementation style and technologies, Choose message exchange pattern) and design/implementation (Design, Construct and Test Adapter Services) activities. To promote interoperability, implementation flexibility and transport neutrality, AIA mandates the ABCS to be designed and implemented with a SOAP interface. This requirement necessitates an abstraction layer between the endpoint application and the ABCS artifact.</p>
+    </blockquote>
+  </div>
+  <h5><b>Reference Documents:</b></h5>
+  <ul>
+    <li> Naming Guidelines.doc</li>
+    <li> AIA Foundation Pack Developer&rsquo;s Guide</li>
+  </ul>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=IMG id="IMG"></A></B>IMPLEMENTATION (IM) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=IM050 id="IM050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</a></h4>
+  <p><b>PIP Activity:</b> Review/Extend implementation of the Enterprise Business Service (provider service registration, routing rules, CAVS enablement, etc.)</p>
+  <p><b>PIP Activity:</b> Review/Extend implementation of the Requester Application Business Connector Service (header population, transformation, routing, error handling, invocation, etc.)</p>
+  <p><b>PIP Activity:</b> Review/Extend implementation of the Provider Application Business Connector Service (header population, transformation, routing, error handling, invocation, etc.)</p>
+  <h5>AIA Existing PIP Guidance:</h5>
+  <p> <b>PIP Activity:</b> Revisit Custom XPATH Functions where applicable</p>
+  <p> <b>PIP Activity:</b> Revisit AIA service artifacts to work with CAVS</p>
+  <p> <b>PIP Activity:</b> Revisit AIA service artifacts for error handling and logging</p>
+  <p><b>PIP Activity:</b> Revisit service properties in relevant AIA service artifacts</p>
+  <h5>AIA PIP Development Guidance:</h5>
+  <blockquote>
+    <p><b>Enable the Requester and Provider Applications - </b>To enable the requester and provider applications in the context of AIA, identify the service APIs that need to be invoked, obtain operation WSDL(s) and payload schemas and construct adapter services if required. The interaction mechanism with the applications can be one of the following: SOAP Web Service, Events/Queues and Adapters (JCA, Message Queue and Database). Obtain relevant details from the applications in situations where the interactions happen through an adapter, as these details will be used in adapter configuration resulting in WSDL creation. Care must be taken to ensure that the environment specific details are configured in relevant resource files on the server and not directly in the generated WSDLs.</p>
+  </blockquote>
+  <div align="center">
+    <blockquote>
+      <p align="left"> It is highly recommended that participating applications making an outbound interaction in an asynchronous mode use message queues to publish the requests. This approach is recommended for scalability and a better end-user experience. Participating applications making an outbound interaction in a synchronous mode alone should send the requests via SOAP / HTTP.</p>
+    </blockquote>
+  </div>
+  <h5><b>EBS Implementation Tasks:</b></h5>
+  <ol>
+    <li> Create ESB Projects with Routing Services using the AIA EBS WSDLs for the identified message exchange pattern.</li>
+    <li> Create Routing Rules to route the request.</li>
+    <li> Implement Error handling for logging and notification based on fault policies.</li>
+  </ol>
+  <h5><b>ABCS Implementation Tasks:</b></h5>
+  <ul>
+    <li>Establishing connectivity with the participating application</li>
+    <li> Content Validation (if required)</li>
+    <li> Message Enrichment (if required)</li>
+    <li> Message Transformation</li>
+    <li> Population of EBM Headers</li>
+    <li> Invocation of Enterprise Business Services and/or Application Services</li>
+    <li> Manage referencing of instance identifiers and static values </li>
+    <li> Error Handling and Logging</li>
+    <li> Extensibility </li>
+    <li> CAVS Enabling</li>
+    <li> Implement Security Context (if required)</li>
+    <li> Internationalization and localization of message content (if required)</li>
+  </ul>
+  <h5><b>EBF or CBP Implementation Tasks:</b></h5>
+  <ul>
+    <li> Create a WSDL following the naming standards</li>
+    <li> Implement as a BPEL process</li>
+    <li>Enable error handling and logging</li>
+    <li> Enable extensibility points</li>
+  </ul>
+  <h5><b>Reference Documents:</b></h5>
+  <ul>
+    <li> Naming Guidelines.doc</li>
+    <li> AIA Foundation Pack Developer&rsquo;s Guide</li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><b><a
+name=IM080 id="IM080"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_080_INTEGRATE_SERVICES_OVERVIEW.HTM" target="_blank">IM.080 Integrate Services </a></h4>
+  <p>If there is a need to implement a business activity or a task that involves leveraging capabilities available in multiple applications then Enterprise Business Flow should be chosen as a service-to-service interaction. If an orchestration of a series of human and automated steps is required then it should be implemented as a Composite Business Processes.</p>
+  <h5> <b>EBF or CBP Implementation Tasks:</b></h5>
+  <ul>
+    <li>Create a WSDL following the naming standards</li>
+    <li> Implement as a BPEL process</li>
+    <li> Enable error handling and logging</li>
+    <li> Enable extensibility points</li>
+  </ul>
+  <h5><b>Reference Documents:</b></h5>
+  <ul>
+    <li> Naming Guidelines.doc</li>
+    <li> AIA Foundation Pack Developer&rsquo;s Guide</li>
+  </ul>
+  <hr WIDTH="100%">
+  <h4><b><a
+name=IM090 id="IM090"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090 Create Installation Routines </a></h4>
+  <p>Develop automated deployment scripts and detailed instructions to install AIA components in the testing and production environments. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><a name="TEG" id="TEG"></a>TESTING (TE) PROCESS GUIDANCE </h3>
+  <h4><a name="TE010" id="TE010"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy</a></h4>
+  <p>The purpose of this task is to define how testing should be performed in the various stages at the project, which tools should be used (if any) and how, what metrics should be collected, how test data should be produced and what testing environments should be used in the tests. The strategy should also define the acceptance criteria of the solution.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TE015" id="TE015"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan</a></h4>
+  <p>The Integration Test Scenarios consists of the set of Integration Test Scenarios for each use case to be tested as well as the Integration Test Specifications and the corresponding Data Profiles for any additional integration tests that are to be performed.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TE020" id="TE020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts</a></h4>
+  <p>Develop the script to test individual components like EBSs, EBFs and ABCSs.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TE030" id="TE030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Test</a></h4>
+  <p>Perform unit tests for individual components such as, EBSs and ABCSs. </p>
+  <hr WIDTH="100%">
+  <h4><a name="TE040" id="TE040"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040 Perform Integration (End-to-End) Test</a></h4>
+  <p>Perform end-to-end integration tests to verify if all involved systems and AIA components work as required.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TE065" id="TE065"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_065_PERFORM_INSTALLATION_TEST_OVERVIEW.HTM" target="_blank">TE.065 Perform Installation Test</a></h4>
+  <p>Install all application components in the System Test Environment to test the installation routines and refine them for the eventual Production Environment. This task is done in parallel with setting up the testing environments</p>
+  <hr WIDTH="100%">
+  <h4><a name="TE082" id="TE082"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_082_DEVELOP_ACCEPTANCE_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.082 Develop Acceptance Test Plan </a></h4>
+  <p>Assist in the preparation of test scenarios for each use case to be tested by users during the Transition phase. They should verify that all involved systems and AIA components work as required. </p>
+  <hr WIDTH="100%">
+  <h4><a name="TE120" id="TE120"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_120_SUPPORT_ACCEPTANCE_TEST_OVERVIEW.HTM" target="_blank">TE.120 Support Acceptance Test</a></h4>
+  <p>Support users in performing acceptance tests that involve AIA components. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><a name="PTG" id="PTG"></a>PERFORMANCE MANAGEMENT (PT) PROCESS GUIDANCE </h3>
+  <h4><a name="PT030" id="PT030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">PT.030 Define Performance Testing Strategy</a></h4>
+  <p>This task defines and documents the Performance Testing Strategy that will be used on the project.</p>
+  <hr WIDTH="100%">
+  <h4><a name="PT070" id="PT070"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM" target="_blank">PT.070 Build Performance Test Scripts and Programs</a></h4>
+  <p>Develop scripts to test performance of individual components like EBSs, EBFs and ABCSs, as well as end-to-end integration flows performance. </p>
+  <hr WIDTH="100%">
+  <h4><a name="PT100" id="PT100"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_100_EXECUTE_PERFORMANCE_TEST_OVERVIEW.HTM" target="_blank">PT.100 Execute Performance Test</a></h4>
+  <p>Perform performance tests according to the defined strategy. This is an iterative process that may require changes in services design and implementation. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=TAG id="TAG"></A></B>TECHNICAL ARCHITECTURE (TA) PROCESS GUIDANCE </h3>
+  <h4><B><A
+name=TA010 id="TA010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">TA.010 Conduct Technical Architecture Workshop </a></h4>
+  <p>The workshop is intended to familiarize the customer with the reference architectures already established, the options and features available and to gather high-level architecture, availability, integration, reporting, backup and recovery, security and disaster recovery requirements. Identify the Requester Application request operations and messages.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TA020 id="TA020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020 Define Technical Architecture Requirements and Strategy </a></h4>
+  <p>This task should address the requirements of the final production environment as well as the interim development, test and project support environments. Requirements that could affect the architectural design including availability requirements, performance requirements, Service-Level Agreements, high-level security and control requirements should be documented and considered.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TA070 id="TA070"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_070_DEFINE_INIT_ARCH_APPLICATION_MAPPING_OVERVIEW.HTM" target="_blank">TA.070 Define Initial Architecture and Application Mapping </a></h4>
+  <p>The Initial Architecture and Application Mapping is the blueprint for for the logical and physical architecture of the new system. This identifies the specific software, servers, server configurations, io subsystem configuration and maps the application components to the hardware components of the architecture.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><a name="CVG" id="CVG"></a>DATA ACQUISITION AND CONVERSION (CV) PROCESS GUIDANCE </h3>
+  <h4><a name="CV027" id="CV027"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">CV.027 Perform Data Mapping </a></h4>
+  <p>In this task, you perform a data mapping. Define the mapping between source systems and EBMs and EBMs to target systems. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><a name="DOG" id="DOG"></a>DOCUMENTATION (DO) PROCESS GUIDANCE </h3>
+  <h4><a name="DO010" id="DO010"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">DO.010 Define Documentation Requirements and Strategy </a></h4>
+  <p>The Documentation Requirements and Strategy identifies the list of project-specific documentation that needs to be published and the strategy for publishing this documentation.</p>
+  <hr WIDTH="100%">
+  <h4><a name="DO080" id="DO080"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank">DO.080 Publish Technical Reference Material </a></h4>
+  <p>Assemble the Technical Reference Material for the project-specific software.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><a name="TSG" id="TSG"></a>TRANSITION (TS) PROCESS GUIDANCE</h3>
+  <h4><a name="TS020" id="TS020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">TS.020 Define Cutover Strategy </a></h4>
+  <p>State how the transition is to be made from the old system to the new system.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TS050" id="TS050"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">TS.050 Prepare Production Environment </a></h4>
+  <p>Prepare the Production Environment that is to be used to run the AIA PIPs in production.</p>
+  <hr WIDTH="100%">
+  <h4><a name="TS060" id="TS060"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">TS.060 Go Production</a></h4>
+  <p>Take the new AIA PIPs and put it into production use. The new systems and integration based on AIA PIPs is now part of the business and is being used to solve business needs. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

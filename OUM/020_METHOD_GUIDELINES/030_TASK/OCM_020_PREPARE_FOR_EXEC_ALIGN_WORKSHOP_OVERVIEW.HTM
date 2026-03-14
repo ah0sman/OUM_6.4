@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OCM.020 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>OCM.020 - PREPARE FOR EXECUTIVE ALIGNMENT WORKSHOP </h2>
+<!--BeginDesc--><p>The purpose of  this task is to prepare for the Executive Alignment Workshop. The Executive Alignment Workshop aligns executives behind the project objectives, vision and success criteria to provide consistent cross-organizational project success and a valued delivery.</p><!--EndDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p>Preparing for the Executive Alignment Workshop includes the following:</p>
+<ul>
+  <li>Obtaining commitment from the project sponsor to lead, prepare for and conduct the Executive Alignment Workshop.</li>
+  <li>Researching and reviewing background materials on the project direction and governance rules.</li>
+  <li>Conducting selected executive interviews.</li>
+  <li>Comparing the customer data with the leading practices project direction and governance.</li>
+  <li>Developing a timeline that will ensure that the discussion focuses on the need to fill the gaps and reach a decision on governance rules.</li>
+</ul>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Activity" id="Activity"></a>ACTIVITY </h3>
+<p><a href="../040_ACTIVITY/AACTCEAW_CONDUCT_EXEC_ALIGN_WORKSHOP.HTM" target="_blank">A.ACT.CEAW Conduct Executive Alignment Workshop</a></p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Executive Alignment Workshop Materials</b></p>
+<p>The Executive Alignment Workshop Materials consists of all the background materials, interview feedback, analysis findings and recommendations, workshop presentations, and the workshop facilitation grid cataloged and organized in order to conduct the Executive Alignment Workshop. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Obtain commitment from the project sponsor.</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Research and review background materials on project direction and governance rules. </td>
+    <td>Existing Background Materials </td>
+    <td>It is imperative that all project-related material be read. This includes but is not limited to a business case, consulting service proposal, the web site of the organization and any other relevant documents. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Meet with facilitating organization and customer project managers to capture the project challenges and customer culture.</td>
+    <td>Interview Questions</td>
+    <td>The Interview Questions address current and or foreseen challenges and those that address the customer culture including but not limited to questions regarding leadership, reaction to change, communications and training. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Prepare and tailor the Executive Interview Grid.</td>
+    <td>Executive Interview Grid </td>
+    <td>The Executive Alignment Workshop Materials contain an Executive Interview Grid that can be used to capture the responses to the interview questions from the executives. Responses are entered into this grid and the analysis is then conducted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Conduct selected executive interviews. Schedule one-on-one interviews lasting approximately 45 minutes in order to be mindful of the executives&rsquo; time.</td>
+    <td>Project Alignment and Commitment</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Compile and analyze findings. </td>
+    <td>Executive Interview Analysis and Findings<br>
+		<br>
+        Recommendations for Project Direction and Governance Rules</td>
+    <td>These components provide a qualitative assessment of the information collected from the executive interviews. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Schedule workshop.</td>
+    <td>Workshop Logistics</td>
+    <td>The Executive Alignment Workshop Materials contain a section to capture the Workshop Logistics and provide the pertinent logistical details for the workshop (for example, date, location, times, etc.).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Identify and invite participants.</td>
+    <td><p>Workshop Participants List</p>
+        <p>Invitation Memorandum </p></td>
+    <td><p>The Executive Alignment Workshop Materials contain a section to capture the list of participants, as well as a template for an Invitation Memorandum that can be used to invite the participants to the workshop.</p>
+    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Prepare any presentation materials. </td>
+    <td>Workshop Presentation Materials </td>
+    <td>The Workshop Presentation Materials consist of any materials that need to be prepared for use during the workshop.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Build a Facilitation Grid.</td>
+    <td>Facilitation Grid </td>
+    <td>The Executive Alignment Workshop Materials contain a Facilitation Grid that includes selected exercises and activities that will be implemented during the workshop to accomplish the workshop objectives.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Validate the Facilitation Grid with customer.</td>
+    <td>Validated Facilitation Grid </td>
+    <td>Validate the Facilitation Grid with the project sponsor and customer change management lead. Make changes, as required. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Prepare Session Planning Checklist(s)</td>
+    <td>Session Planning Checklist </td>
+    <td>The Session Planning Checklist provides a way to verify that all necessary details for the workshop have been addressed. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>A technology change requires executive-level visibility and commitment to increase the potential for project success and return on investment. It is more efficient to align the project team and direction when the executives lead the way. It is also easier to cascade the alignment at the management level when the executives have defined the project governance, success criteria, and goals. The Executive Alignment Workshop provides the fastest and most effective mechanism to ensure executives are aligned and stand behind the project vision, objectives and success criteria. Executives have to be aware that a Sponsorship Program will be built on risks identified during interviews.</p>
+<p>The project governance rules have to be defined before the start of the project or early on in the project. The executives also have to create a consensus around the roles and responsibilities for the Steering Committee. </p>
+<p>The Executive Alignment Workshop (OCM.030) is a complete day of meeting and will cover the topics determined in this task.</p>
+<p>Before you can assist the customer in conducting the Executive Alignment Workshop, baseline information is required. Executives have to dedicate time to take part in activities that help to mitigate the risks that have been identified. The change management specialist must know the project and the organizational culture. It is also helpful to know the leadership style of the project sponsor.</p>
+<h4>Obtain Commitment from the Project Sponsor</h4>
+<p>Introduce the Executive Alignment Workshop to the project sponsor as well as to the implementing organization and customer project managers, if they are identified. The customer project manager and the  change management specialist should lead the discussion with the project sponsor to obtain the commitment. This demonstrates the partnership and commitment from the project team. Walk the project sponsor through the steps of the Executive Alignment Workshop by explaining what the output will be. It is imperative for the customer project manager and project sponsor identify which leaders should participate in the interviews. It is often the case that some leaders may not be directly involved in the project or at the steering committee level but can influence the success of the project or have knowledge of specific risks for the project.</p>
+<p>By obtaining the commitment from the project sponsor and moving forward with the Executive Alignment Workshop, you ensure that we can create alignment and active sponsorship from the executives by obtaining the following output for the project governance:</p>
+<ul>
+  <li><b>Project Vision and Institutional Objectives</b> - Shows the alignment of the project vision with the institution&rsquo;s strategy and identifies the rationale for the project and expected institutional objectives, success criteria and benefits.</li>
+  <li><b>Project Direction</b> - Identifies the high-level project risks and challenges. Includes action items to manage the impact, mitigate the risks, support key project roles, and manage the project at the executive level.</li>
+  <li><b>Roles</b> - Documents roles within the project environment, including the Executive Sponsor, Steering Committee , and Advisory Committee.</li>
+  <li><b>Reporting Structure</b> - Illustrates the required level of influence and involvement that each group has related to making project decisions.</li>
+</ul>
+<p>It is necessary to gain approval from the project sponsor that all individual answers and information provided by participants will be kept anonymous. This is key for obtaining honest input from the leaders. The data will be compiled and the results will be presented in aggregate so no one executive can be identified as supplying specific information.</p>
+<p>To summarize: </p>
+<ul>
+  <li>Obtain commitment from the project sponsor to lead, prepare for and conduct the Executive Alignment Workshop.</li>
+  <li>Gain the perspective on organizational and human risks from the project sponsor.</li>
+  <li>Obtain commitment from the project sponsor to lead the alignment activity. </li>
+  <li>Assign an appropriate party to coordinate the logistics.</li>
+</ul>
+<p>The workshop must be carefully planned in order to avoid any political issues and to obtain the involvement of the executives for the workshop. For this reason, get approval from the project sponsor to keep the individual interview data confidential and only provide the analysis to ensure confidentiality and obtain additional information from VPs, where required. Before starting the interviews, inform the participant on the confidentiality of the interview and how the information will be communicated with integrated data. </p>
+<h4>Research and Review Background Materials</h4>
+<p>Research and review background materials on project direction and governance rules. It is imperative that all project related material be read which includes but not limited to: a business case, consulting service proposal, the web site of the organization and any other relevant documents.</p>
+<p>During interviews with vice presidents, validate their understanding and level of commitment and alignment to the following items if determined:</p>
+<ul>
+  <li> Project Vision</li>
+  <li> Project Objective</li>
+  <li> Guiding Principles</li>
+  <li> Project Rationale</li>
+</ul>
+<p>To summarize:</p>
+<ul>
+  <li> Validate the level of executive alignment obtained. </li>
+  <li>Identify the leadership style of the project sponsor. </li>
+  <li>Obtain the first read into specific information regarding organizational challenges.</li>
+</ul>
+<h4>Meet with Facilitating Organization and Customer Project Managers</h4>
+<p>Project managers are already aware of key organizational risks and political challenges in place for the project. Their insight is very important to capture and they can often sense what they see has current and foreseen challenges that can negatively affect the project. The customer project manager can provide insight on the organization culture, leadership and past commitment of executives during projects. In addition, it is very important to ensure that the facilitating organization (for example, Oracle) and customer project managers support the change management initiative. </p>
+<p>This input from project managers can affect the change management specialist&rsquo;s approach and it is always necessary to align to the customer culture. In addition, it is imperative that the efforts put forth can mitigate project risks before they create potential problems. If we are reactive to the risks and not strategically plan to mitigate them, we are at risk of pushing out the timeline and going over budget.</p>
+<p>Items listed below can serve as topics and questions of interest:</p>
+<ol>
+  <li> Project goal /vision/success criteria</li>
+  <li> Name of Project Sponsor</li>
+  <li> Project priority</li>
+  <li> Political issues that they may be aware of</li>
+  <li> Past implementation experience</li>
+  <li> Staffing commitment</li>
+  <li>Customer's culture (leadership style, communication and training culture)</li>
+  <li> People who are likely to oppose the project and how they can resist</li>
+  <li>Major implementation challenges anticipated </li>
+  <li> Potential impact on people work &ndash; most impacted groups</li>
+</ol>
+<h4>Prepare and Tailor the Executive Interview Grid</h4>
+<p>Based on the leading practices in governance and from the input of the project managers, generate your interview grid to capture the level of alignment, commitment and identify the organizational risks in place. Determine appropriate questions for interviews. (If availalbe, select questions from a directory or repository of interview questions.)</p>
+<h4>Conduct Selected Executive Interviews</h4>
+<p>Schedule the time and location of each executive interview in collaboration with the facilitating organization and customer project managers. It is typical that the project sponsor will take the lead in scheduling the logistics.</p>
+<p>The project sponsor will send an invitation message to his/her directs to introduce the process and request participation. This initiative will confirm the importance of this process.</p>
+<p>Collect information to the questions listed in the Executive Interview Grid in 30 to 45 minute interviews with executives and the project sponsor. Be sure that you introduce your self, specify what the purposes of the interviews are and that this information will be analyzed and reviewed as a collective. Encourage them to answer openly and honestly as no individual level data will be shared with the collective and the project sponsor. </p>
+<p>Consider the following: </p>
+<ul>
+  <li>Gather the information regarding project barriers, potential political issues and organizational risks.</li>
+  <li>Capture the level of alignment and gaps to manage.</li>
+  <li> Identify the level of priority this project has within the organization.</li>
+  <li> Identify the project risks and how executives can reduce roadblocks and maintain alignment.</li>
+  <li>Identify the level of alignment between executives.</li>
+  <li>Identify the level of commitment for the project.</li>
+  <li>Identify project risks and political issues. </li>
+</ul>
+<h4>Compile and Analyze Findings</h4>
+<p>Compare the customer data with the leading practices project direction and governance. Capture the data in the Executive Interview Analysis and Findings. The Executive Interview Analysis and Findings is built so that you can easily capture the qualitative data and be able to calculate how many respondents are sharing the same thoughts or disagree on a topic. </p>
+<p>The accuracy of data collected is imperative to capture. As the interviews progress there will be some consistencies and inconsistencies and is therefore important to use a grid that enables you to quickly capture and tally up the consistencies and inconsistencies. Have each question pre filled and assign each interviewee a number. If the interviewee says something that corresponds to another&rsquo;s response check the box that corresponds to that individual for the specific question.</p>
+<ul>
+  <li>Identify gaps from the interview data to discuss during the Executive Alignment Workshop.</li>
+  <li>Determine if there is misalignment around project priority, vision, commitment, etc.</li>
+  <li> Identify the key organizational challenges and risks in place to mitigate.</li>
+  <li> Identify the political situation to manage.</li>
+  <li> Identify the situations that will make or break the project.</li>
+  <li>Get the executives&rsquo; input on the project.</li>
+  <li> Involve the executives early on in the project.</li>
+  <li> Compare the commitment and alignment with leading practices.</li>
+</ul>
+<h4>Schedule the Executive Alignment Workshop </h4>
+<p> Along with the facilitating organization and customer project managers and the project sponsor, determine the Executive Alignment Workshop logistics, including:</p>
+<ul>
+  <li>date</li>
+  <li>location</li>
+  <li>times</li>
+  <li>team contact information </li>
+  <li>transportation, if applicable </li>
+  <li>hotel accommodations, if applicable</li>
+  <li>proposed agenda </li>
+  <li>any other helpful or pertinent information</li>
+</ul>
+<p>Encourage the project sponsor to request 100% attendance. Craft a section of the communication that dictates what will be addressed and what will be expected of each participant. Speak with project managers in order to determine how materials, printing, food, drinks and refreshments will be provided.</p>
+<h4>Identify and Invite Participants </h4>
+<p>Collect the names and contact information of those executives that will be required to attend the workshop from the facilitating organization and customer project managers and project sponsor. The invitation should be sent by the project sponsor to ensure that the workshop will be well attended. The impact of people missing will push out the timeline as each designated executive&rsquo;s input is required. Include an RSVP so that set up, materials, food, etc. is sufficient.</p>
+<h4>Prepare Any Presentation Materials </h4>
+<p>Ensure that all presentation materials along with tools and templates are printed and appropriately packaged prior to the Executive Alignment Workshop. Reserve all items that are necessary to run the workshop and ensure that they are in the room prior to the start of the workshop. Such items include pens, markers, whiteboards, easels, paper, projectors etc. Additional items may include name tags, badges and security passes.</p>
+<p>Running an effective and well regarded workshop requires a professional setting where all presentation materials are prepared and made available at the time of the presentation.</p>
+<p>Presentation materials include:</p>
+<ul>
+  <li>overhead presentations</li>
+  <li>handouts</li>
+  <li>workbooks, etc. </li>
+</ul>
+<h4>Build a Facilitation Grid </h4>
+<p>A successful Executive Alignment Workshop depends on a well-planned and well-structured timetable. The Facilitation Grid includes selected exercises and activities and topics for discussion that will be implemented during the workshop to accomplish the workshop objectives presented in a well-planned and well-structured timetable. It is a timetable for the entire time of the workshop showing what activities or exercises will be accomplished at what time. It should include time allocated for breaks and meals. Create exercises and activities (if available, select from a directory or repository of exercises and activities) that will be implemented during the workshop to accomplish the workshop objectives. </p>
+<p>Ensure that the actual working activities are introduced and well explained at the time of their kickoff. This eliminates any potential surprises and ensures that there is full participation.</p>
+<p>Build on situations that need to be discussed in order to reduce misalignment or gain more commitment. Also cover topics which require clarification (for example, project objectives or success criteria). Finally, it will respect the leadership in place and provide opportunities for participants to share their ideas. Ultimately, the grid must meet the objectives of the Executive Alignment Workshop to ensure that the executives will lead the way by creating and fostering strong alignment and commitment to the project. The Facilitation Grid dictates the following:</p>
+<ul>
+  <li> Executive Alignment Workshop Objectives</li>
+  <li> Assumptions</li>
+  <li> Background</li>
+</ul>
+<h4>Validate the Facilitation Grid </h4>
+<p>Validate the Executive Alignment Workshop Facilitation Grid with the project sponsor. Obtain the signoff on the completed workshop materials including the Facilitation Grid with the project sponsor. Socialize the materials with the facilitating organization project manager so he can promote cooperation, provide input and validate work products. This collaboration facilitates the agreed upon organizational change. Revise and re-socialize where and when required. Do not conduct the workshop without the validation and required signoff.</p>
+<p>The change management specialist (leadership) is the one who will keep the discussion on time and make the link between each leader who may be invited to speak. The topics are planned for facilitating the discussion and for the decision making process. It is challenging keeping leaders on schedule but the efficiency of the workshop is related to this capability to structure the work. Include an open issue section in the grid timetable if some follow ups are required. The Sponsorship Program (EOCM.040) is also introduced at the end of the workshop.</p>
+<h4>Prepare Session Planning Checklist </h4>
+<p>The Session Planning Checklist provides a checklist to verify that all necessary details for the workshop have been addressed. Prepare a checklist(s) that will be used prior to conducting the Executive Alignment Workshop to make sure last minute preparations have been accomplished.</p>
+<h4><a name="PMOCM"></a>The Project Manager and OCM</h4>
+<p> The roles for the project manager and the Organizational Change Management team are distinct. In order to be successful, the change management specialist works closely with the project manager.&nbsp; The change management specialist provides guidance on leading change management practices and direction for project change management activities. The project manager promotes cooperation, provides input and validates work products. Together, the change management specialist and project manager  determine and document responsibilities for the Executive Alignment Workshop as soon as possible in order to ensure that the workshop is adequately planned. This collaboration facilitates the agreed upon division of workshop activities, roles and responsibilities.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="18%" scope="col"><div align="left">Role</div></th>
+    <th width="76%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Change Management Specialist</div></th>
+    <td>Prepare the interview materials. Prepare the materials for the Executive Alignment Workshop.</td>
+    <td><div align="center">50</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Architect </div></th>
+    <td>Assist with determining possible architectural sessions and attendees. </td>
+    <td><div align="center">50</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Project Manager </div></th>
+    <td>See the Approach section, The Project Manager and OCM. Effort for the project manager is not included at the task level. </td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer Project Sponsor </div></th>
+    <td>Identify the alignment challenges early on. Get a first level understanding of project barriers. Assess and articulate the level of executive commitment for the project. Validate the Executive Alignment Workshop Facilitation Grid. </td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Customer Project Manager </div></th>
+    <td>Participate in the preparation of the Executive Alignment Workshop.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="38%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="62%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Background materials on project direction and governance rules</div></th>
+    <td> This material allows you to understand what change management work has been conducted to date. It also provides information on what has and what has not been successful in managing change. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Contractual and Business Agreement Documentation</div></th>
+    <td>This documentation may include collective and ancillary documents such as vendor agreements, contract/labor agreements, system requirements documentation, board level directives and communications, and requests for proposal. These documents assist in the identification of the business drivers for the project and provides details on the scope of the implementation, the modules purchased, the agreements, and so on.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Return on Investment (ROI) Analysis</div></th>
+    <td>A Return on Investment (ROI) analysis can document the business case and the return that the executive management team can realistically expect from its investment in technology. If an ROI has been performed, you need it as an input.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Management Plan (PJM)</div></th>
+    <td>The Project Management Plan defines the scope, objectives, and approach for the project and refers to the detailed standards and procedures employed during the execution of the project.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Organizational Change Management Strategy (PJM.OCHM.010)</div></th>
+    <td>The Organizational Change Management Strategy documents how the project solution is to be implemented into the organization.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Change Management Warning Signs (PJM.OCHM.020)</div></th>
+    <td>The Change Management Warning Signs identifies early change management warning signs. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Ad Hoc Communications (ENV.EOCM.010)<br>
+Executive Alignment Workshop Materials (ENV.EOCM.020)<br>
+Executive Business Objectives and Governance Rules (ENV.EOCM.030)<br> 
+Enterprise Stakeholder Inventory (ENV.BA.015)
+</div></th>
+    <td>Use these Envision work products, if available.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">High-Level Business Process Model (RD.011)<br>
+Software Requirement Specification (RD.140.1) </div></th>
+    <td>These work products include a description of how the new processes operate, and the principles that regulate the operation of the new processes.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business and System Objectives (RD.001) <br>
+        Reviewed Project Approach (PJM.BT.060)</div></th>
+    <td>These work products provide insights and the framework for the project and the related plans and expectations. They  also assist in identifying key stakeholder groups. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Present and Future Organization Structures (RD.012)</div></th>
+    <td>The Present and Future Organization Structures contains the Organization Structure. This work product or an Organizational Chart assists in stakeholder analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ad Hoc Communications (OCM.010)</div></th>
+    <td>The Communication Structure component of the Ad Hoc Communications provides input into this task. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="37%" scope="col"><div align="left">Technique</div></th>
+    <th width="63%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../050_TECHNIQUE/WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></div></th>
+    <td><div align="left">The Workshop Techniques Handbook provides detailed descriptions of various techniques for delivering workshops during customer projects.</div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="37%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="63%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/OCM/OCM-020_EXEC_ALIGNMENT_WORKSHOP_MATERIALS.DOCX" target="_blank">OCM-020_EXEC_ALIGNMENT_WORKSHOP_MATERIALS.DOCX</a></div></th>
+    <td>MS WORD - Use this template to prepare for the workshop.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/OCM/OCM-020_EXEC_ALIGNMENT_WORKSHOP.PPTX" target="_blank">OCM-020_EXEC_ALIGNMENT_WORKSHOP.PPTX</a></div></th>
+    <td>MS POWERPOINT - Use this template to create a presentation for your workshop. </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS </h3>
+<h4>Audience, Distribution and Usage</h4>
+<p> The Executive Alignment Workshop Materials are used: </p>
+<ul>
+  <li> to conduct the Executive Alignment Workshop</li>
+</ul>
+<p>Distribute the Executive Alignment Workshop Materials as follows:</p>
+<ul>
+  <li>to the workshop facilitators </li>
+  <li>to the workshop participants, as appropriate</li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

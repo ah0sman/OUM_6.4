@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Planning a Project using OUM</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Planning a Project using the Oracle Unified Method (OUM) - An Iterative and Incremental Approach</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+              <option value="#TOP" selected></option>
+              <option value="#EO">Executive Overview</option>
+              <option value="#INTRO">Introduction</option>
+              <option value="#LAYERED">Planning an OUM Project - A Layered Approach</option>
+              <option value="#DEFS">Definitions of Plans at Each Layer</option>
+              <option value="#IMPPLAN">==&gt;The Implementation Plan</option>
+              <option value="#ITERPLAN">==&gt;The Iteration Plan</option>
+              <option value="#PLANTDBU">Planning Using a Top-Down/Bottom-Up Approach</option>
+              <option value="#IMPPLANNING">Implementation Planning</option>
+              <option value="#COMPIMPPLAN">==&gt;Compile the Implementation Plan</option>
+              <option value="#FACTORS">====&gt;Factors that Drive the Number of Iterations per Phase</option>
+              <option value="#SECAGIMPPLAN">==&gt;Secure Agreement on the Implementation Plan</option>
+              <option value="#EVIMPPLAN">==&gt;Evolve the Implementation Plan</option>
+              <option value="#ITERPLANNING">Iteration Planning</option>
+              <option value="#ASSESSRISKS">==&gt;Assess the Current State of Project Risks</option>
+              <option value="#ESTSCITER">==&gt;Establish the Scope of the Current Iteration</option>
+              <option value="#OBJITER">====&gt;Objectives of the Current Iteration</option>
+              <option value="#TEAMCAP">====&gt;Team Capacity</option>
+              <option value="#DELITER">====&gt;Deliverables for the Iteration</option>
+              <option value="#MAPITER">==&gt;Map the Iteration's Deliverables to OUM Tasks</option>
+              <option value="#ASSRES">==&gt;Assign Resources and Produce Estimates</option>
+              <option value="#IDDEP">==&gt;Identify Dependencies</option>
+              <option value="#ESTSC">==&gt;Establish Success Criteria for the Iteration</option>
+              <option value="#DETAM">==&gt;Determine the Assessment Milestones for Each iteration</option>
+              <option value="#COMPITERPLAN">==&gt;Compile the Iteration Plan</option>
+              <option value="#ITEREV">==&gt;Iteratively Evolve the Plan(s)</option>
+              <option value="#PARTITION">Consider the Need to Partition the Workplan</option>
+              <option value="#CONCLUSION">Conclusion</option>
+              <option value="#REFERENCES">References</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>Planning a Project using the Oracle Unified Method (OUM) - An Iterative and Incremental Approach</h2>
+<h3><b><a 
+name=EO id="EO"></a></b>EXECUTIVE OVERVIEW </h3>
+<p>The Oracle Unified Method (OUM) uses the Manage focus area - Project Management Method (OUM Manage) to provide a framework in which projects can be planned, estimated, controlled, and tracked in a consistent manner. OUM is based on the Unified Process and is therefore both iterative and incremental. The intent of this approach is to provide you with a high-level guide for planning an OUM project.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="INTRO" id="INTRO"></a>INTRODUCTION </h3>
+<p>Iterative development using OUM provides many benefits: major risks are identified and addressed early in the project; requirement changes are identified and prioritized efficiently; project team utilization is optimized; and progress and quality are continuously monitored and corrected.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="LAYERED" id="LAYERED"></a>PLANNING AN OUM PROJECT - A LAYERED APPROACH</h3>
+<p>OUM is designed to be a scalable method that can be applied to any kind of Oracle project. Plans need to be scalable for different project sizes and complexity and contain the right level of detail for the current planning horizon. Plans that are too detailed are almost instantly inaccurate and obscure key objectives. On the other hand, plans that are too high level will not allow for measurement of project progress nor keep the project team focused on their day-to-day activities.</p>
+<p>Plans need to display the appropriate level of detail and planning horizon for specific audiences. For example, C-level executives, business area managers and external stakeholders are rarely interested in the fine details of the project. Their focus is on the release date, major milestones, business impacts, points at which major decisions must be made. On the other hand, the project team needs the details on the lower level plans to plan their daily work and measure progress. </p>
+<p>Therefore, a layered approach to planning OUM projects is recommended. As shown below, there are two plans active in the project at any given time on an OUM project &ndash; the implementation and the Iteration Plan. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/PLANNING_LAYERED.GIF" alt="OUM's Layered Planning Approach" width="788" height="295" title="OUM's Layered Planning Approach"></p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a name="DEFS" id="DEFS"></a>DEFINITIONS OF PLANS AT EACH LAYER </h3>
+<h4 align="left"><b><a name="IMPPLAN" id="IMPPLAN"></a></b>The Implementation Plan</h4>
+<p>The Implementation Plan is a brief, coarse-grained outline for the project. The objectives for the project are reflected in the Implementation Plan and tie back to the Business Case developed in the OUM Envision Focus Area. The main purpose of the Implementation Plan is to provide a roadmap for achieving the project&rsquo;s goals, along with a sketch of the number and purpose of each iteration needed per phase.</p>
+<h4><b><a name="ITERPLAN" id="ITERPLAN"></a></b>The Iteration Plan </h4>
+<p>The Iteration Plan represents the lowest and most detailed layer of planning. An individual Iteration Plan will be created for each iteration in the project. The current Iteration Plan focuses on how an incremental set of objectives and/or functionality will be delivered within the framework of the project. The main purpose of the Iteration Plan is to lay out how the team will achieve the stated objectives for the given iteration.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="PLANTDBU" id="PLANTDBU"></a>PLANNING USING A TOP-DOWN/BOTTOM-UP APPROACH </h3>
+<p>In OUM, plans are created using a top-down/bottom-up approach in which the plans at each layer (implementation and iteration) are created and maintained in a simultaneous fashion. Because the plans are inter-related, it is likely that a change to a plan at one layer will cause the need for an adjustment to a plan at another layer. The planning layers are show in the figure below.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/PLANNING_APPROACH.GIF" alt="OUM Planning Layers" width="685" height="373" title="OUM Planning Layers"></p>
+<p>The planning starts in the OUM Manage Project Start Up phase where the focus is on the Implementation Plan. Also in Project Start Up, the initial iteration of the OUM Implement Inception phase is drafted to the degree that the project is able to move into the Inception phase. </p>
+<p>During Inception, the Implementation Plan created in Project Start Up is further refined as more project requirements and risks are uncovered. As the project iterates through the later phases, the plans at each layer (implementation and iteration) will be adjusted based on the results of iteration assessments and as project objectives shift, as is often the case. </p>
+<p>On any OUM project, an Iteration Plan for the upcoming iteration is created before that iteration begins. Also, the Implementation Plan must be examined to ensure it is still valid as the Iteration Plans are created and maintained.</p>
+<p>Therefore, at any time on an OUM project the following plans should be active:</p>
+<ul>
+  <li>One Implementation Plan</li>
+  <li>Two Iteration Plans - one for the current iteration and a draft for the upcoming iteration </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="IMPPLANNING" id="IMPPLANNING"></a>IMPLEMENTATION PLANNING </h3>
+<p>In OUM, the Implementation Plan is an outline of the project, showing the total number of planned iterations across the five OUM phases (Inception, Elaboration, Construction, Transition and Production) as well as key milestone dates for each of these iterations. The Implementation Plan will sketch out the work across the five phases by outlining the number of iterations in each phase and major milestones, as shown in the example below. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/PLANNING_IMPPLAN.GIF" alt="Implementation Plan Illustration Showing Iterations" width="713" height="232" title="Implementation Plan Illustration Showing Iterations"></p>
+<p>Keep in mind, that because OUM utilizes a top-down/bottom-up approach to planning, the task of developing the Implementation Plan requires the Implementation Plan and current Iteration Plan to be worked on concurrently. </p>
+<h3><a name="COMPIMPPLAN"></a>Compile the Implementation Plan</h3>
+<p>The Implementation Plan presents a roadmap of the planned iterations and should summarize the following:</p>
+<ul>
+  <li>Objective(s) of each iteration and its contribution to the project goal(s) </li>
+  <li>Business Milestones </li>
+  <li>Project Commitments</li>
+  <li>Team Composition</li>
+  <li>Project Dependencies</li>
+  <li>Project Approach</li>
+</ul>
+<h4><a name="FACTORS"></a>Factors that Drive the Number of Iterations per Phase</h4>
+<p>As part of the Implementation Planning, the number of iterations per phase will need to be determined. In general, OUM recommends using the standard number of iterations as depicted in the OUM Implement Focus Area diagram. However, there are several factors that can increase or decrease the number of iterations represented in the plan(s). The factors that would increase the number of iterations per phase are shown in table below. </p>
+<table border="1" title="Factors that Drive the Number of Iterations per Phase" summary="This table shows the factors that drive the number of iterations for each OUM phase.  The column headings are Phase and Factors.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Phase</th>
+    <th scope="col">Factors</th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Inception</div></th>
+    <td><ul>
+        <li>Highly variable scope</li>
+        <li>Lack of artifacts from Envision or Envision not conducted</li>
+        <li>Poorly defined / documented business objectives</li>
+        <li>Disagreement between stakeholders</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Elaboration</div></th>
+    <td><ul>
+        <li>Unstable architecture</li>
+        <li>Unproven architecture</li>
+        <li>Unstable requirements </li>
+        <li>Unavailable development environment</li>
+        <li>Challenging non-functional requirements</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Construction</div></th>
+    <td><ul>
+        <li>Large amounts of functionality to develop and test</li>
+        <li>Poor architecture</li>
+        <li>Limited team resources </li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Transition</div></th>
+    <td><ul>
+        <li>Hardware replacement or rollout </li>
+        <li>Number of deployment and / or rollout sites</li>
+        <li>Large numbers of users to be trained or complex training required </li>
+    </ul></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Production</div></th>
+    <td><ul>
+        <li>Level and length of support required </li>
+        <li>Incremental rollout strategy </li>
+    </ul></td>
+  </tr>
+</table>
+<p>Refer to the <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/DET_NUMBER_ITERATIONS.HTM" target="_blank">Determining the Number of Iterations</a> technique.</p>
+<h4><a name="SECAGIMPPLAN"></a>Secure Agreement on the Implementation Plan</h4>
+<p>Before commencing work, present the plan to the stakeholders to gain agreement on the Implementation Plan. The project team in particular should agree on the Implementation Plan. </p>
+<h4><b><a name="EVIMPPLAN"></a></b>Evolve the Implementation Plan</h4>
+<p>Keep in mind that Implementation Planning, as with the other planning efforts, is done in an iterative manner. Information will be uncovered during the planning process that will necessitate amending the Implementation Plan as well as the current Iteration Plan. As the project progresses phase and iteration assessments will be conducted and feedback will be gained, which will lead to the need to adjust the plan(s).</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="ITERPLANNING" id="ITERPLANNING"></a>ITERATION PLANNING </h3>
+<p>Iteration planning is where the bulk of the planning for a project occurs. Each iteration should be planned such that a set of specific objectives are accomplished and a group of project risks are addressed. A project manager will typically analyze and manage the current Iteration Plan on a daily basis.</p>
+<h4><b><a name="ASSESSRISKS"></a></b>Assess the Current State of Project Risks</h4>
+<p>Risk management on any project is a dynamic process since project risks will be eliminated and additional risks will be exposed as the project progresses.</p>
+<p> For each iteration, the top risks should be identified based on the current state of the project (i.e., progress to-date, project phase, team experience, etc.). A rule of thumb is to narrow the top risks to a list of no more than 10. Based on the list of the top 10 risks, the Iteration Plan can be developed to actively address each risk.</p>
+<h4><b><a name="ESTSCITER"></a></b>Establish the Scope of the Current Iteration </h4>
+<p>The scope of the iteration will be determined according to the objectives for the current iteration, team capacity and the iteration&rsquo;s deliverables. These factors are discussed in the sections below.</p>
+<h4><b><a name="OBJITER"></a></b>Objectives of the Current Iteration</h4>
+<p>Based upon the results of the risk analysis and the progress of the project up to this point must be refined to provide a clear set of measurable and achievable objectives for the given iteration. The objectives for any iteration should be based on the current phase the project and should relate to meeting the milestone objectives for the particular phase.</p>
+<h4><b><a name="TEAMCAP"></a></b>Team Capacity</h4>
+<p>The team&rsquo;s capacity is a broad measure of the amount of effort the team will be able to take on in the iteration. The team capacity must be considered when planning the scope of work for the iteration. The capacity is determined by the team&rsquo;s size, availability and velocity, which refers to the speed at which a team can implement and test use cases and change requests. </p>
+<p>As the project progresses, it is often the case that requirements are handled with less effort which results in an increase in the team&rsquo;s velocity. Velocity can be used to develop the initial estimates of the duration and effort required to complete the current iteration. </p>
+<p>A team&rsquo;s velocity over time can be tracked using a Burndown Chart.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/PLANNING_BD.GIF" alt="Tracking a Team's Velocity Over Time using a Burndown Chart" width="480" height="271" title="Tracking a Team's Velocity Over Time using a Burndown Chart"></p>
+<p>The Burndown Chart above tracks progress by showing a decrease in the remaining hours. A project team can select any measure they deem relevant to measure progress such as the number of scenarios completed, days remaining, etc.</p>
+<p> The current team&rsquo;s capacity drives the initial estimates for the effort and duration for the given iteration. These initial estimates are needed to select which objectives will be included in the Iteration Plan and will be further refined as the Iteration Planning progresses.</p>
+<h4><b><a name="DELITER"></a></b>Deliverables for the Iteration </h4>
+<p>The deliverables should be associated with one or more of the iteration&rsquo;s objectives. The iteration&rsquo;s deliverables should not be confused with the OUM task work products. The work products are just a means to an end to producing the deliverable and are not necessarily related to the project&rsquo;s objectives.</p>
+<p>The most important deliverable of any iteration is the increment that will be developed. This is defined in OUM by the set of use cases and other non-functional requirements that will be achieved during the iteration. These requirements are selected from the project&rsquo;s current MoSCoW list. Selecting the right set of requirements requires collaboration among all team members and should be focused on the current M&rsquo;s and S&rsquo;s shown on the MoSCoW list. Simply stated, the MoSCoW List registers the known business requirements. Each requirement is classified by the first letter of: Must, Should, Could or Won&rsquo;t. </p>
+<p>As the project moves along and risks are retired, the focus of the iterations can shift to filling out the needed functionality for the product under development. Also, change requests and identified defects can be addressed as the more architecturally significant use cases have been realized. To achieve the right balance the required functionality, change requests and defects must be prioritized and estimated by analyzing the MoSCoW List. See task, RD.045 - Prioritize Requirements for more information on how MoSCoW is used in OUM. </p>
+<h4><b><a name="MAPITER" id="MAPITER"></a></b>Map the Iteration's Deliverables to OUM Tasks </h4>
+<p>The Iteration Plan needs lay out the detailed tasks required to achieve the scope that has been established for the current iteration. This is done by selecting the appropriate tasks from the OUM WBS for the current phase of the project. </p>
+<p>As with any OUM project, it is recommended that the project manager build the project workplan by starting with the appropriate pre-tailored view for the type of project under consideration (Solution-Driven Application Implementation, Requirements-Driven Application Implementation, etc.) and scaling the project for the given circumstances. The project workplan should focus on the tasks included in the OUM Implement Core Workflow, which identifies the core tasks within the Implement focus area.</p>
+<p>For more information on building the Iteration Plan, refer to the following:</p>
+<ul>
+  <li><a href="TAILORING_OUM_FOR_YOUR_PROJECT.HTM" target="_blank">Tailoring OUM for Your Project</a></li>
+  <li><a href="../../../020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM">Develop Baseline Project Workplan (WM.010)</a></li>
+</ul>
+<h4><b><a name="ASSRES" id="ASSRES"></a></b>Assign Resources and Produce Estimates</h4>
+<p>Resources need to be associated with each OUM task included in the Iteration Plan. The resources are assigned based on availability and matching the appropriate skill-set to the task. All OUM tasks contain a Roles and Responsibilities table that can be used when assigning resources to tasks. In addition, the Project Roles reference page provides additional information about the specifics of each role.</p>
+<p>Once the resource assignments have been made estimates can be developed for each task associated with the iteration. The detailed estimates are determined by refining the initial capacity-based estimates through the use of traditional estimating techniques that can be augmented through a commitment-driven approach. The commitment-driven estimating approach involves asking those team members assigned to provide an estimate of how much effort will be required to complete the tasks for each requirement in the iteration. </p>
+<p>The individual task estimates balanced with the team velocity form the basis for the estimates for the Iteration Plan. These estimates should be verified against broader estimates completed as part of the initial planning effort for the iteration. </p>
+<h4> <b><a name="IDDEP" id="IDDEP"></a></b>Identify Dependencies</h4>
+<p>OUM strives to minimize dependencies within the detailed Iteration Plans due to the limited duration of the plans. The key to reducing dependencies is to select relatively independent bits of functionality that can then be integrated to achieve the iteration&rsquo;s objectives. However, dependencies cannot be completely eliminated and must be taken into account. This is where the project manager must work with the project team and stakeholders to do further analysis of the MoSCoW List. The dependencies for the use cases addressed in the current iteration must be reflected on the MoSCoW List must also be reflected in the detailed plan for the iteration.</p>
+<h4><b><a name="ESTSC" id="ESTSC"></a></b>Establish Success Criteria for the Iteration</h4>
+<p>Each objective must be associated with an evaluation criterion that defines how the achievement will be measured and the levels of those measurements that will be considered a success. These evaluation criteria must be clear and not subjective. The evaluation criteria must be objective and measurable so that progress toward the project&rsquo;s goals can be demonstrated at the end of the iteration.</p>
+<h4><b><a name="DETAM" id="DETAM"></a></b>Determine the Assessment Milestones for Each Iteration</h4>
+<p>Iteration assessments are essential since iterative development is a collaborative endeavor between the project team, end users and project sponsors. The iteration assessments are important events since they uncover potential issues that could derail the iteration. They also allow the team the ability to take necessary corrective action to get the project righted. Iteration assessments include demonstrating evidence of results, open and honest review of the iteration, discussion on how to improve the next one and acceptance reviews to ensure objectives have been met and the evaluation criteria have been satisfied.</p>
+<h4><b><a name="COMPITERPLAN"></a></b>Compile the Iteration Plan</h4>
+<p>The Iteration Plan information should be compiled into a simple document. The first section of the plan should reflect the scope and objectives of the iteration. The primary goal of the scope is to make clear the iteration&rsquo;s objectives, priorities and evaluation criteria. This information can be used to track the iteration&rsquo;s progress and drive the iteration assessment. The rest of the plan captures the detailed plan for the execution of the iteration.</p>
+<h4><b><a name="ITEREV" id="ITEREV"></a></b>Iteratively Evolve the Plan(s)</h4>
+<p>OUM project planning requires the project manager to plan the iteration by specifying the goals and then allowing the team to determine how best to achieve the goals. More information will be brought to light during the execution of an iteration that will impact the current Iteration Plan as well as the plan for the next iteration. </p>
+<p>The Iteration Plan may need to be adjusted to account for a previously unknown requirement and/or risk. However, it is recommended that rather than re-planning the current iteration, it is important to keep the team focused on the goal of the current iteration and remove as many barriers as possible to allow the team to move forward.</p>
+<p>Also, keep in mind that each of the layers &ndash; implementation and Iteration Plans must be kept in synch. The degree to which an iteration achieves its objectives will impact future iterations as well as milestones on the Implementation Plan. As the phase and iteration assessments are conducted, feedback will be gained which will lead to the need to adjust the plan(s). </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="PARTITION" id="PARTITION"></a>CONSIDER THE NEED TO PARTITION THE WORKPLAN</h3>
+<p>In a large and/or complex OUM project, there may be a need to break up the expected functionality into partitions. This could include one for each major release of the product to be developed, implemented or upgraded. Projects that are more than a year in duration, those with high risk factors and/or projects where there is business value to be gained from delivery of a sub-set of the overall functionality are all candidates for the partitioned workplan approach. This approach allows risk to be spread over a number of partitions and permits business value to be delivered sooner.</p>
+<p> In the case where the multiple partitions will be used to accomplish the project&rsquo;s objectives, an overall plan should be established to map out the partitions. These partitions may be implemented serially, in parallel or staggered. Each partition should be planned so that the delivery of some subset of the project benefits are realized through the delivery of working software and/or implementation of Commercial Off-the-Shelf Software (COTS). This is done by examining the business drivers and schedule goals for the project, laying out the work and assigning the milestones in the roadmap to one or more partitions.</p>
+<p> Once the overall plan for the partitions is established, the planning details can be pushed to the lower level Implementation and Iteration Plans for each partition. As the project progresses through the first partition and subsequent partitions, more information is brought to light that will require the plans at each layer to be adjusted.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="CONCLUSION" id="CONCLUSION"></a>CONCLUSION</h3>
+<p>OUM recommends a layered approach to project planning rather than a single, highly detailed plan. Planning and managing at each layer (implementation and iteration) frees the project manager and project team from the need to create and &ldquo;feed&rdquo; detailed plans that have a tendency to quickly become out of date and unwieldy. The layered planning is scalable and empowers the team to focus on the key goals, measurements, milestones and controls that enables effective project management.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a name="REFERENCES" id="REFERENCES"></a>REFERENCES</h3>
+<p>This page was made possible through the collaboration with numerous OUM contributors as well as the conglomeration of information from several outstanding books and websites:</p>
+<table width="100%" role="presentation">
+  <tr>
+    <td height="33"><ul>
+        <li>Bittner, Kurt. 2007. <i>Managing Iterative Software Development Projects</i>. Boston, MA: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Boehm, B. and R. Turner. 2004. <i>Balancing Agility and Discipline: A Guide for the Perplexed.</i> Boston, MA: Addison-Wesley</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Cockburn, A. 2002. <i>Agile Software Development</i>. Boston, MA: Addison-Wesley.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Larman, Craig. 2004. <i>Agile and Iterative Development: A Manager&rsquo;s Guide.</i> Boston, MA: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li>Cohn, Mike, 1962 -. <i>Agile Estimating and Planning</i>, Upper Saddle River, NJ: Pearson Education, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><i>A Guide to the Project Management Body of Knowledge (PMBOK&reg; Guide)</i> &ndash; Fourth Edition, Newton Square PA: Project Management Institute, Inc.</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://www.agilemanifesto.org" target="_blank">http://www.agilemanifesto.org</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://alistair.cockburn.us" target="_blank">http://alistair.cockburn.us</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://www.controlchaos.com/" target="_blank">http://www.controlchaos.com/</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://martinfowler.com/articles/itsNotJustStandingUp.html" target="_blank">http://martinfowler.com/articles/itsNotJustStandingUp.html</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td height="33"><ul>
+        <li><a href="http://Agilesoftwaredevelopment.com/scrum" target="_blank">http://Agilesoftwaredevelopment.com/scrum</a></li>
+    </ul></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

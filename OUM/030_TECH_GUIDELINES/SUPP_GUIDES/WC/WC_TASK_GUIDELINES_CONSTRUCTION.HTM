@@ -1,0 +1,610 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WebCenter Task Guidelines - Construction Phase</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">WebCenter Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+              <option value="#TOP" selected></option>
+              <option value="#PECG">Prepare Environments - Construction Guidance</option>
+              <option value="#DCCTSCG">Develop Custom Component Test Scripts - Construction Guidance</option>
+              <option value="#DSTSCG">Develop System Test Scenarios - Construction Guidance</option>
+              <option value="#ICCG">Implement Custom Components Guidance</option>
+              <option value="#PCCTCG">Perform Custom Component Testing - Construction Guidance</option>
+              <option value="#PSTG">Prepare for System Test Guidance</option>
+              <option value="#PSTCG">Perform System Test - Construction Guidance</option>
+              <option value="#PSITG">Perform Systems Integration Test Guidance</option>
+              <option value="#PTG">Prepare for Transition Guidance</option>
+              <option value="#PCOG">Prepare for Cutover Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("PEC");
+  Effect.BlindDown("DCCTSC");
+  Effect.BlindDown("DSTSC");
+  Effect.BlindDown("ICC");
+  Effect.BlindDown("PCCTC");
+  Effect.BlindDown("PST");
+  Effect.BlindDown("PSTC");
+  Effect.BlindDown("PSIT");
+  Effect.BlindDown("PT");
+  Effect.BlindDown("PCO");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("PEC");
+  Effect.BlindUp("DCCTSC");
+  Effect.BlindUp("DSTSC");
+  Effect.BlindUp("ICC");
+  Effect.BlindUp("PCCTC");
+  Effect.BlindUp("PST");
+  Effect.BlindUp("PSTC");
+  Effect.BlindUp("PSIT");
+  Effect.BlindUp("PT");
+  Effect.BlindUp("PCO");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_WC.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>WEBCENTER SUPPLEMENTAL TASK GUIDELINES - CONSTRUCTION PHASE </h2>
+<p>This document contains OUM supplemental task guidance for WebCenter projects. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for activities.">
+  <tr bgcolor="#BEBEBE">
+    <th width="45%" height="26" scope="col">WebCenter - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th width="43%" scope="col"><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.PEC Prepare Environments - Construction </div></th>
+    </tr>
+  <tbody id="PEC">
+    <tr valign="top">
+      <td valign="top"><a href="#IM0072">IM.007.2 Prepare Development Environment</a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">IM.007.2 Prepare Development Environment</a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TE0182">TE.018.2 Prepare Static Test Data</a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">TE.018.2 Prepare Static Test Data</a></div></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.DCCTSC Develop Custom Component Test Scripts - Construction</div></th>
+  </tr>
+  <tbody id="DCCTSC">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0202">TE.020.2 Develop Unit Test Scripts</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020.2 Develop Unit Test Scripts</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TE0352">TE.035.2 Create Integration Test Scenarios</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.035.2 Create Integration Test Scenarios</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.DSTSC Develop System Test Scenarios - Construction </div></th>
+  </tr>
+  <tbody id="DSTSC">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0253">TE.025.3 Create System Test Scenarios</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.2 Create System Test Scenarios</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.ICC Implement Custom Components </div></th>
+  </tr>
+  <tbody id="ICC">
+    <tr valign="top">
+      <td valign="top"><a href="#IM050">IM.050 Implement Components</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#IM070">IM.070 Assemble Components</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.070 Assemble Components</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#IM0902">IM.090.2 Create Installation Routines</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090.2 Create Installation Routines</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.PCCTC Perform Custom Test - Construction</div></th>
+  </tr>
+  <tbody id="PCCTC">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0302">TE.030.2 Perform Unit Test</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030.2 Perform Unit Test</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TE0402">TE.040.2 Perform Integration Test</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040.2 Perform Integration Test</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.PST Prepare for System Test</div></th>
+  </tr>
+  <tbody id="PST">
+    <tr valign="top">
+      <td valign="top"><a href="#MC0502">MC.050.2 Define Application Setups</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">MC.050.2 Define Application Setups</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.PSTC Perform System Test - Construction </div></th>
+  </tr>
+  <tbody id="PSTC">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0702">TE.070.2 Perform System Test</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">TE.070.2 Perform System Test</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">C.ACT.PSIT Perform Systems Integration Test </div></th>
+  </tr>
+  <tbody id="PSIT">
+    <tr valign="top">
+      <td valign="top"><a href="#TE100">TE.100 Perform Systems Integration Test</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.100 Perform Systems Integration Test</a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">C.ACT.PT Prepare for Transition </div></th>
+  </TR>
+  <tbody id="PT">
+    <TR valign="top">
+      <TD valign="top"><a href="#TA150">TA.150 Define Final Platform and Network Architecture</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_150_DEFINE_FINAL_PLATFORM_AND_NETWORK_ARCH_OVERVIEW.HTM" target="_blank">TA.150 Define Final Platform and Network Architecture</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">C.ACT.PCO Prepare for Cutover </div></th>
+  </TR>
+  <tbody id="PCO">
+    <TR valign="top">
+      <TD valign="top"><a href="#TS0202">TS.020.2 Define Cutover Strategy</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">TS.020.2 Define Cutover Strategy</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TS030">TS.030 Develop Installation Plan</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_030_DEVELOP_INSTALLATION_PLAN_OVERVIEW.HTM" target="_blank">TS.030 Develop Installation Plan</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TS040">TS.040 Design Production Support Infrastructure</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.040 Design Production Support Infrastructure</a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a
+ name="PECG" id="PECG"></a>B.ACT.PEC&nbsp;PREPARE ENVIRONMENTS - CONSTRUCTION GUIDANCE</h3>
+<h4><A
+name=IM0072 id="IM0072"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_007_PREPARE_DEVELOPMENT_ENVIRONMENT_OVERVIEW.HTM" target="_blank">IM.007.2 Prepare Development Environment </a></h4>
+<h5>OVERVIEW</h5>
+<p>Verify / refine the Development Environment that you will need during the development. </p>
+<h5>APPROACH</h5>
+<ul>
+  <li> Determine which development tools are required for development, e.g., Jdeveloper.</li>
+  <li>Determine which unit testing tools and other automated development tools that will be used during development (if required).</li>
+  <li>Detail the Development Environment Directory Structure Setup.</li>
+  <li>Verify the configuration of the Database, Application Server, and WebCenter product installation. </li>
+  <li>Finalize the setup of the Development Environment with all required components, configurations, and tools. This should be available in the Application Setup Documents (DS.030) work product.</li>
+  <li>Provide developers with usernames and passwords for the environment.</li>
+  <li>Conduct a test of the system to ensure validity of installation/configuration.</li>
+  <li>Refine Application Setup Documents (DS.030) work product, if required.</li>
+  <li>Refine Installation Routines (IM.090) work product, if required.</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>The Development Environment is available and developers are able to login into the system.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_IM0071.JPG" alt="OUM Tasks that contribute to the Development Environemnt" width="600" height="319" title="OUM Tasks that contribute to the Development Environemnt"></p>
+<hr WIDTH="100%">
+<h4><A
+name=TE0182 id="TE0182"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_018_PREPARE_STATIC_TEST_DATA_OVERVIEW.HTM" target="_blank">TE.018.2 Static Prepare Test Data </a></h4>
+<h5>OVERVIEW</h5>
+<p>Review the required test data you will need throughout the remainder of the project. This data should support unit tests (in the Development Environment), and any other required tests.</p>
+<h5>APPROACH</h5>
+<p><img src="../../../010_COMMON_FILES/WC_TE018.JPG" alt="Illustration of Reviewing Work Products" width="491" height="122" align="absmiddle" title="Illustration of Reviewing Work Products">Review and refine any work products provided in the first iteration of this task.</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="DCCTSCG" id="DCCTSCG"></a>C.ACT.DCCTSC DEVELOP CUSTOM COMPONENT TEST SCRIPTS - CONSTRUCTION GUIDANCE </h3>
+<h4><A
+name=TE0202 id="TE0202"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020.2 Develop Unit Test Scripts </a></h4>
+<h5>OVERVIEW</h5>
+<p>Develop scripts to test individual components. The tests validate that the component&rsquo;s inputs, outputs, and processing logic function are as required. This task is mainly performed in parallel with the actual development of the components. Thinking through how the component should be tested increases the understanding of what the component should do or produce.</p>
+<h5>APPROACH</h5>
+<p>You can use the templates within the OUM Method Pack, or create an Excel spreadsheet similar to that described on the next slide.</p>
+<h5>WORK PRODUCT</h5>
+<p>The recommended template for WebCenter is to use an MS Excel spreadsheet with the following structure: </p>
+<ul>
+  <li>Tab 1: Title Page </li>
+  <li>Tab 2: Document Control
+      <ul>
+        <li> Change Record, Reviewers, Approvers </li>
+      </ul>
+  </li>
+  <li>Tab 3: TE.020 Unit Test Report </li>
+  <li> Columns should include:
+      <ul>
+        <li> Test ID</li>
+        <li> Associated Process(es)</li>
+        <li>Test Case Name</li>
+        <li> Summary of Steps</li>
+        <li>Expected Result </li>
+        <li>Result</li>
+        <li>Priority</li>
+        <li>Test Execution Date</li>
+        <li>Tester</li>
+        <li>Comments</li>
+      </ul>
+  </li>
+</ul>
+<hr WIDTH="100%">
+<h4 align="left"><A
+name=TE0352 id="TE0352"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_035_CREATE_INTEGRATION_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.035.2 Create Integration Test Scenarios</a></h4>
+<h5 align="left">OVERVIEW</h5>
+<p align="left">An integration test verifies that application extension components are properly linked and no coding errors are generated when related components are linked together. In this task, you develop scripts to test interaction, or linkage, between related application extension modules. This uncovers any integration problems with other application extension components that provide or use the data manipulated by the target modules.</p>
+<p align="left"><img src="../../../010_COMMON_FILES/WC_TE035_OV.JPG" alt="Illustration of Uses Cases into Integration Test Scenarios" width="604" height="238" title="Illustration of Uses Cases into Integration Test Scenarios"></p>
+<h5 align="left">APPROACH</h5>
+<p align="left">For each use case to be tested, define Integration Test Scenarios for each feature that should be tested. </p>
+<h5 align="left">WORK PRODUCT </h5>
+<p align="left">The Use Case Integration Test Scenario includes the following information:</p>
+<div align="left">
+  <ul>
+    <li> ID and Name</li>
+    <li>Reference to System Use Case Scenario</li>
+    <li>Revision History</li>
+    <li>Objectives for the Test</li>
+    <li>Setup Requirements for the Test</li>
+    <li>Pre-Conditions for the Test</li>
+    <li>Required Test-Data</li>
+    <li>Steps Included in the Scenarios</li>
+    <li>Expected Result</li>
+  </ul>
+</div>
+<div align="left">
+  <p><a href="#TOP">Back to Top</a></p>
+</div>
+<hr width="100%">
+<h3><a
+ name="DSTSCG" id="DSTSCG"></a>C.ACT.DSTSC DEVELOP SYSTEM TEST SCENARIOS - CONSTRUCTION GUIDANCE </h3>
+<h4 align="left"><A
+name=TE0253 id="TE0253"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.3 Create System Test Scenarios</a></h4>
+<h5 align="left">OVERVIEW</h5>
+<p align="left">Develop the System Test Scenarios that you use during the final full system test at the end of the Construction phase. If the System Test Scenario relates to a use case, use the use case scenarios in the Use Case Model as a starting point. The Context Process Model can also be used to prepare System Test Scenarios at higher-levels, but details are based on the use case scenarios.</p>
+<p align="left"><img src="../../../010_COMMON_FILES/WC_TE025.JPG" alt="Illustration of Path from Use Case Model to Use Casese to System Test Scenarios" width="593" height="224" title="Illustration of Path from Use Case Model to Use Casese to System Test Scenarios"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr align="left" WIDTH="100%">
+<h3><a
+ name="ICCG" id="ICCG"></a>C.ACT.ICC IMPLEMENT CUSTOM COMPONENTS GUIDANCE </h3>
+<h4><A
+name=IM050 id="IM050"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is where you create the components of the system. You also perform the first round of testing as part of this task. Review and refine any work products provided in the first iteration of this task.</p>
+<h5>APPROACH</h5>
+<ul>
+  <li>Use the High-Level Software Architecture Description (RA.035) work product to identify the prioritization. </li>
+  <li>Build each component to satisfy the design in each of the Software Component Design (DS.080) work products.</li>
+  <li>Apply supporting configuration identified in both the DS.080 and DS.030 work products.</li>
+  <li>Test component functionality to ensure that it satisfies the underlying design.</li>
+</ul>
+<h5>WORK PRODUCT</h5>
+<p>Create the components of the system using an agreed on prioritization.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_IM050_WP.JPG" alt="Illustration of System Components" width="532" height="282" title="Illustration of System Components"></p>
+<hr WIDTH="100%">
+<h4><A
+name=IM070 id="IM070"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.070 Assemble Components </a></h4>
+<h5>OVERVIEW</h5>
+<p>Integrate the components into a logical assembly of components. Such an assembly can consist of various types of components, including interface components and other types of components. This task ensures that an assembly fulfils its role and that the requirements (use cases and scenarios) identified for the assembly are correctly implemented.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_IM070.JPG" alt="Illustration of Assembled Components" width="324" height="248" title="Illustration of Assembled Components"></p>
+<hr WIDTH="100%">
+<h4><A
+name=IM0902 id="IM0902"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_090_CREATE_INSTALLATION_ROUTINES_OVERVIEW.HTM" target="_blank">IM.090.2 Create Installation Routines</a></h4>
+<h5>OVERVIEW</h5>
+<p>Review and refine the Installation Routines work product to ensure it&rsquo;s readiness for other environments, particularly Production.</p>
+<h5>APPROACH</h5>
+<p><img src="../../../010_COMMON_FILES/WC_IM090.JPG" alt="Example Installation Routines Running on a Screen" width="296" height="79" title="Example Installation Routines Running on a Screen"></p>
+<ul>
+  <li>Update the work product based on any revisions to system configuration (DS.030) and custom modules (DS.080).</li>
+  <li>Update the work product based on issues identified when installing the Development Environment.</li>
+  <li>Update the work product based on any architecture changes that may have arisen (TA.020). </li>
+  <li>Refine installation steps in the work product.
+      <ul>
+        <li>Customize the steps for the specific WebCenter implementation.</li>
+      </ul>
+  </li>
+  <li>Refine the verification checklist in the work product.
+      <ul>
+        <li>Review the work product following the system design to ensure accuracy.</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="PCCTCG" id="PCCTCG"></a>C.ACT.PCCTC PERFORM CUSTOM COMPONENT TESTING - CONSTRUCTION GUIDANCE </h3>
+<h4><A
+name=TE0302 id="TE0302"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030.2 Perform Unit Test</a> </h4>
+<h5>OVERVIEW</h5>
+<p>Test the system components on an individual basis to verify that the inputs, outputs, and processing logic of each component functions without errors. This task is performed in parallel with the actual development of the components.</p>
+<h5>WORK PRODUCT </h5>
+<ul>
+  <li> Enter or confirm the required setup data. </li>
+  <li> Review the Unit Test Script Report (TE.020) and complete the information. </li>
+  <li> Perform the unit test and document the unit test results. </li>
+  <li> Fix errors identified in the testing process. </li>
+  <li> Update the design documentation, if required. </li>
+  <li> Record the completed unit test script result for evidence of testing. </li>
+</ul>
+    <hr WIDTH="100%">
+    <h4><A name=TE0402 id="TE0402"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040.2 Perform Integration Test</a></h4>
+  <h5 align="left">OVERVIEW</h5>
+  <p align="left">Perform the appropriate integration tests during the Construction phase (and Elaboration phase, if required). Test the components using the scenarios described in the Integration Test Scenarios (TE.035). </p>
+  <p align="center"><img src="../../../010_COMMON_FILES/WC_TE040.JPG" alt="Illustration of the Integration Test Scenarios Testing the Components of the System" width="573" height="266" title="Illustration of the Integration Test Scenarios Testing the Components of the System"></p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <div align="center">
+    <h3 align="left"><a
+ name="PSTG" id="PSTG"></a>C.ACT.PST PREPARE FOR SYSTEM TEST  GUIDANCE </h3>
+    <h4 align="left"><a name="MC0502"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM">MC.050.2 Define Application Setups</a></h4>
+    <h5 align="left">Overview</h5>
+    <p align="left">Review and refine the detailed setup values needed to configure the WebCenter product(s). Continually refine the work product during the implementation.</p>
+    <p align="left"> For WebCenter engagements, the resulting work product forms a shared central document for retaining and managing general configuration settings for the system. This prevents conflicting configuration across design documents.</p>
+    <p align="center"><img src="../../../010_COMMON_FILES/WC_DS0302.JPG" alt="Illustration of Configuration Settings for Application Setup Documents" width="821" height="320" title="Illustration of Configuration Settings for Application Setup Documents"></p>
+    <p align="left"><a href="#TOP">Back to Top</a></p>
+    <h4 align="left"></h4>
+  </div>
+  <hr WIDTH="100%">
+    <h3 align="left"><a name="PSTCG" id="PSTCG"></a>C.ACT.PSTC PERFORM SYSTEM TEST - CONSTRUCTION GUIDANCE </h3>
+      <h4><A name=TE0702 id="TE0702"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">TE.070.2 Perform System Test</a></h4>
+    <h5 align="left">OVERVIEW</h5>
+    <p align="left">Perform the system test to test the operation and integration of all business system flows within the WebCenter system, including the integration of application extensions. </p>
+    <p align="center"><img src="../../../010_COMMON_FILES/WC_TE070.JPG" alt="Illustration of the System Test Scenarios being used to test the System" width="563" height="291" title="Illustration of the System Test Scenarios being used to test the System"></p>
+    <p align="left"><a href="#TOP">Back to Top</a></p>
+  </div>
+  <hr WIDTH="100%">
+  <div align="center">
+    <h3 align="left"><a
+ name="PSITG" id="PSITG"></a>C.ACT.PSIT CONDUCT SYSTEMS INTEGRATION TEST GUIDANCE </h3>
+    <h4 align="left"><A
+name=TE100 id="TE100"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.100 Perform Systems Integration Test</a></h4>
+    <h5 align="left">OVERVIEW</h5>
+    <p align="left">In a WebCenter project, this task validates the integration between the WebCenter system and other systems and verifies that the new system meets defined interface requirements and supports execution of business processes that cross system boundaries. </p>
+    <p align="center"><img src="../../../010_COMMON_FILES/WC_TE100.JPG" alt="Illustration of the Systems Integration Test Between Systems" width="360" height="238" title="Illustration of the Systems Integration Test Between Systems"></p>
+    <p align="left"><a href="#TOP">Back to Top</a></p>
+  </div>
+  <hr WIDTH="100%">
+  <div align="center">
+    <h3 align="left"><a
+ name="PTG" id="PTG"></a>C.ACT.PT PREPARE FOR TRANSITION GUIDANCE </h3>
+    <h4 align="left"><A
+name=TA150 id="TA150"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_150_DEFINE_FINAL_PLATFORM_AND_NETWORK_ARCH_OVERVIEW.HTM" target="_blank">TA.150 Define Final Platform and Network Architecture </a></h4>
+    <h5 align="left">OVERVIEW</h5>
+    <p align="left"><img src="../../../010_COMMON_FILES/WC_TA020_AP.JPG" alt="Illustration of WebCenter Architecture" width="282" height="195" align="right" title="Illustration of WebCenter Architecture"></p>
+    <p align="left">Define the physical platform and infrastructure that will be implemented to support your technical and application architecture. You map the physical application and database server architectures on to specific computing platforms.</p>
+    <p align="left"> This task updates the work done in the Initial Architecture and Application Mapping (TA.070), incorporating any changes, additions or enhancements that have occurred due to subsequent architecture design work. This task focuses on the future Production Environment and any supporting environments, such as training or production support. </p>
+    <p align="left">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p align="left"><a href="#TOP">Back to Top</a></p>
+  </div>
+  <hr WIDTH="100%">
+  <div align="center">
+    <h3 align="left"><a
+ name="PCOG" id="PCOG"></a>C.ACT.PCO PREPARE FOR CUTOVER GUIDANCE </h3>
+    <h4 align="left"><A
+name=TS0202 id="TS0202"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_020_DEFINE_CUTOVER_STRATEGY_OVERVIEW.HTM" target="_blank">TS.020.2 Define Cutover Strategy </a></h4>
+    <h5 align="left">OVERVIEW</h5>
+    <p align="left">State how the transition is to be made from the old system to the new system. Define your plans for taking the new system into Production. This task may need to be performed several times over the course of the project as you go from an initial Cutover Strategy to a final Cutover Strategy.</p>
+    <p align="left"> For projects that involve the upgrade of WebCenter products, this task is used to define the strategy that will be used during the cutover from the existing Production version to the new software release.</p>
+    <h5 align="left">APPROACH</h5>
+    <p align="left">The following points should be taken into consideration:</p>
+    <ul>
+      <li>
+        <div align="left"> if parallel running is to be performed</div>
+      </li>
+      <li>
+        <div align="left">how systems being replaced are to be switched for the new system</div>
+      </li>
+      <li>
+        <div align="left">how interfaces between the new and current systems are to be run for the first time</div>
+      </li>
+      <li>
+        <div align="left">how the live data conversion is to be performed</div>
+      </li>
+      <li>
+        <div align="left">how training is being performed for the changeover </div>
+      </li>
+    </ul>
+    <hr WIDTH="100%">
+    <div align="center">
+      <h4 align="left"><A
+name=TS030 id="TS030"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_030_DEVELOP_INSTALLATION_PLAN_OVERVIEW.HTM" target="_blank">TS.030 Develop Installation Plan </a></h4>
+      <h5 align="left">OVERVIEW</h5>
+      <p align="left">Develop a general Installation Plan, applicable for the Production Environment as well as any other test or maintenance environments.</p>
+      <p align="left"> In a WebCenter implementation, you should also develop a detailed Transition Plan for moving onto the Production system, as well as an Implementation Contingency Plan.</p>
+      <h5 align="left"><b>APPROACH</b></h5>
+      <p align="left">Using the standard OUM template, complete the steps identified in the Method Pack.</p>
+      <h5 align="left"><b>WORK PRODUCT</b></h5>
+      <div align="left">
+        <ul>
+          <li>Introduction </li>
+          <li>Work Products</li>
+          <li>Assumptions</li>
+          <li>Distributed Requirements</li>
+          <li>System Requirements</li>
+          <li>Software information</li>
+          <li>Name / Location of Components, etc.</li>
+          <li>Contingency Plan</li>
+          <li>Initial Schedule</li>
+        </ul>
+      </div>
+    </div>
+    <hr WIDTH="100%">
+    <div align="center">
+      <h4 align="left"><A
+name=TS040 id="TS040"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.040 Design Production Support Infrastructure</a></h4>
+      <h5 align="left">OVERVIEW</h5>
+      <p align="left">Identify the operational infrastructure for managing and maintaining the application environment, servers, and network infrastructure in Production.</p>
+      <p align="center"><img src="../../../010_COMMON_FILES/WC_TS040.JPG" alt="Illustration of Support Infrastructure of Client Help Desk and Support" width="497" height="128" title="Illustration of Support Infrastructure of Client Help Desk and Support"></p>
+      <h5 align="left">WORK PRODUCT</h5>
+      <p align="left">The Production Support Infrastructure Design addresses the operational infrastructure for managing and maintaining the application environment, servers, and network infrastructure. It should address the following:</p>
+      <div align="left">
+        <ul>
+          <li>Production Support Infrastructure Plan
+              <ul>
+                <li> Requirements</li>
+                <li> Personnel Learning Plan</li>
+                <li> Equipment and Materials</li>
+              </ul>
+          </li>
+          <li> Maintenance Procedures
+              <ul>
+                <li> Maintaining Metadata</li>
+                <li> Maintaining the Security Model</li>
+                <li>&hellip;</li>
+              </ul>
+          </li>
+          <li> External Support Procedures
+              <ul>
+                <li> Access Procedure for External Support, i.e., Oracle Support</li>
+              </ul>
+          </li>
+          <li> Internal Support Procedures, i.e., Customer Helpdesk</li>
+          <li> User Support Levels</li>
+          <li> Problem Identification Guide</li>
+          <li> Production Cutover Notification to External Support</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

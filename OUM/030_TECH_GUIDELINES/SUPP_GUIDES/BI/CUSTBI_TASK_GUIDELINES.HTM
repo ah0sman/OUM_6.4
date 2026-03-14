@@ -1,0 +1,877 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>BI - Custom BI Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Business Intelligence (BI)  Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#RAG">Requirements Analysis (RA) Process Guidance</option>
+                            <option value="#ANG">Analysis (AN) Process Guidance</option>
+                            <option value="#IMG">Implementation (IM) Process Guidance</option>
+                            <option value="#TEG">Testing (TE) Process Guidance</option>
+                            <option value="#PTG">Performance Management (PT) Process Guidance</option>
+                            <option value="#CVG">Data Acquisition and Conversion (CV) Process Guidance</option>
+                            <option value="#TRG">Training (TR) Process Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("RA");
+  Effect.BlindDown("AN");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TE");
+  Effect.BlindDown("PT");
+  Effect.BlindDown("CV");
+  Effect.BlindDown("TR");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("RA");
+  Effect.BlindUp("AN");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TE");
+  Effect.BlindUp("PT");
+  Effect.BlindUp("CV");
+  Effect.BlindUp("TR");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_BI.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>CUSTOM BUSINESS INTELLIGENCE (BI)  SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for BI  implementations, specifically custom BI implementations (not BI applications). </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <tbody>
+    <tr bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26">BI  - OUM Supplemental Task Guidelines (this document) <br>
+      <a href="#" onClick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</a> | <a href="#" onClick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</a></th>
+      <th scope="col" width="43%">OUM Task Overview</th>
+    </tr>
+  <tbody id="PJM">
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Requirements Analysis </div></th>
+  </tr>
+  <tbody id="RA">
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#RA015">RA.015 Develop Business Use Case Model </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.015 Develop Business Use Case Model </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#RA024">RA.024 Develop Use Case Details </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#RA030">RA.030 Validate Conceptual Prototype </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.030 Validate Conceptual Prototype </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#RA035">RA.035 Develop High-Level Software Architecture Description </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">RA.035 Develop High-Level Software Architecture Description </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Analysis</div></th>
+  </tr>
+  <tbody id="AN">
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#AN050">AN.050 Analyze Data </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">AN.050 Analyze Data </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#AN060">AN.060 Analyze Behavior </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_060_ANALYZE_BEHAVIOR_OVERVIEW.HTM" target="_blank">AN.060 Analyze Behavior </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#AN110">AN.110 Review Analysis Model </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_110_REVIEW_ANALYSIS_MODEL_OVERVIEW.HTM" target="_blank">AN.110 Review Analysis Model </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Implementation</div></th>
+  </tr>
+  <tbody id="IM">
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#IM005">IM.005 Develop Conceptual Prototype </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.005 Develop Conceptual Prototype </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#IM040">IM.040 Implement Database</a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">IM.040 Implement Database</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#IM050">IM.050 Implement Components</a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#IM070">IM.070 Assemble Components </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.070 Assemble Components </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Testing</div></th>
+  </tr>
+  <tbody id="TE">
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE005">TE.005 Determine Testing Requirements </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005 Determine Testing Requirements </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE010">TE.010 Develop Testing Strategy </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE015">TE.015 Develop Integration Test Plan</a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE020">TE.020 Develop Unit Test Scripts </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE050">TE.050 Develop System Test Plan </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.050 Develop System Test Plan </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE080">TE.080 Develop Systems Integration Test Plan </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_080_DEVELOP_SYSTEMS_INT_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE,080 Develop Systems Integration Test Plan </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#TE110">TE.110 Prepare Acceptance Test Environment</a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_110_PREPARE_ACCEPTANCE_TEST_ENV_OVERVIEW.HTM" target="_blank">TE.110 Prepare Acceptance Test Environment</a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Performance Management </div></th>
+  </tr>
+  <tbody id="PT">
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#PT030">PT.030 Define Performance Testing Strategy </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">PT.030 Define Performance Testing Strategy </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><div align="left"><a href="#PT120">PT.120 Conduct Production Performance Management </a></div></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_120_CONDUCT_PRODUCTION_PERFORMANCE_MANAGEMENT_OVERVIEW.HTM" target="_blank">PT.120 Conduct Production Performance Management </a></td>
+    </tr>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Data Acquisition and Conversion</div></th>
+  </TR>
+  <tbody id="CV">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV010">CV.010 Define Data Acquisition and Conversion Requirements </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_010_DEFINE_DATA_ACQ_AND_CONVERSION_REQS_OVERVIEW.HTM" target="_blank">CV.010 Define Data Acquisition and Conversion Requirements </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV020">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV027">CV.027 Perform Data Mapping </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_027_PERFORM_DATA_MAPPING_OVERVIEW.HTM" target="_blank">CV.027 Perform Data Mapping </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV040">CV.040 Design Conversion Components (Initial Load) </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.040 Design Conversion Components (Initial Load) </a></TD>
+    </TR>
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#CV055">CV.055 Implement Conversion Components (Initial Load) </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.055 Implement Conversion Components (Initial Load) </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Training</div></th>
+  </TR>
+  <tbody id="TR">
+    <TR valign="top">
+      <td valign="top"><div align="left"><a href="#TR020">TR.020 Prepare Project Team Learning Plan </a></div></td>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">TR.020 Prepare Project Team Learning Plan </a></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3 align="left"> <B><A
+name=RAG id="RAG"></A></B>REQUIREMENTS ANALYSIS (RA) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=RA015 id="RA015"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.015 Develop Business Use Case Model </a></h4>
+<p>In this task, the business use cases that represent the business requirements are defined. Scenarios that further define the use case and the actors that interact with the system are also defined. In custom BI development, most of the use cases will be associated with obtaining and analyzing data.&nbsp; The development of a Business Use Case Model through the validation of the Functional Prototype (IM.010) relates to creating use cases that match business requirements to ensure the business intelligence data model can support all high priority business use case.&nbsp; This relates to the requirements modeling process in Data Warehouse Methodology.</p>
+<h4><B><A
+name=RA024 id="RA024"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details</a> </h4>
+<p>In Business Intelligence, there are many use cases to obtain data in order to perform analysis or create a report. Current process use cases may require obtaining data from multiple sources. This would actually provide at least two high level use cases for the BI environment; one to obtain the data from the multiple sources and integrate them into a BI environment, and the second use case documenting the business function that uses the data. Hence, the many &quot;obtaining data&quot; use cases are used to create or extend the logical and physical data models. Business rules would be documented and incorporated into the Extract, Transform, and Load (ETL) processes documented in a tool such as Oracle Warehouse Builder (OWB). Some common use cases may wind up being stored procedures, derived fields, or materialized views in the final BI architecture. Of course, this is part of the analysis process that is common to all methodologies.&nbsp;Please note that the business processes will be used to ensure the data model can provide information to the business functions (obtained from the requirements) documented as use cases. </p>
+<h4><B><A
+name=RA030 id="RA030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_030_VALIDATE_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">RA.030 Validate Conceptual Prototype </a> </h4>
+<p>The validation usually occurs at a work session or the results of the work session may be validated via minutes from the work session with accompanying diagrams.&nbsp; It is not unusual for the Conceptual Prototype to be slightly altered as more detail requirements and system constraints are documented.</p>
+<h4><B><A
+name=RA035 id="RA035"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">RA.035 Develop High-Level Software Architecture Description </a> </h4>
+<p>In this task, you ensure the conceptual architecture can support the business requirements. As requirements in the form of use cases are better understood and prioritized, the architecture evolves from conceptual to a physical environment.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=ANG id="ANG"></A></B>ANALYSIS (AN) PROCESS GUIDANCE</h3>
+<h4><b><a
+name=AN050 id="AN050"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">AN.050 Analyze Data <br>
+</a><b><a
+name=AN060 id="AN060"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_060_ANALYZE_BEHAVIOR_OVERVIEW.HTM" target="_blank">AN.060 Analyze Behavior</a></h4>
+<p>In these tasks, you analyze use cases documented during requirements gathering and ultimate organize the results into the Analysis Specification.&nbsp; Use cases are associated with all the business and system processes (for example, adding a user to the environment, creating a purchase order, validating a payment was made to a particular vendor, etc.)&nbsp; These tasks are repeated for each use case, in the order of their priorities in the MoSCoW List (Must Have, Should Have, Could Have, Won't Have). Use cases can be classified into broad types such as interface classes, control classes, and data access classes. An example of a use cases in an interface class could be the inbound update use cases and the outbound extract use cases.</p>
+<p>The Analysis Specification is the collation and organization of the Data Analysis (AN.050) and the Behavior Analysis (AN.060) contains the analyzed use case that show how the user requirements documented as use cases can be satisfied by the application.&nbsp; This can be done through diagrams, sequence of events, and user walk throughs.&nbsp; For example, data access requirements (use cases) would use the data model to show how data would be obtained for reporting or analysis.&nbsp; The requirement (use case) would then become a test case with expected results confirmed during user acceptance testing.&nbsp; This would complete the cycle from requirements through tested result using the use case concept.</p>
+<h4><B><A
+name=AN110 id="AN110"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/AN_110_REVIEW_ANALYSIS_MODEL_OVERVIEW.HTM" target="_blank">AN.110 Review Analysis Model </a></h4>
+<h5>Approach</h5>
+<p>These reviews can assist with learning events such as understanding the modeling approach when creating dimensional models.&nbsp; A new approach to analyzing data may generate tasks within the end-user training plan.&nbsp; Minutes from these review sessions are critical to tracking changes especially if the changes result in formal change requests.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=IMG id="IMG"></A></B>IMPLEMENTATION (IM) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=IM005 id="IM005"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_005_DEVELOP_CONCEPTUAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.005 Develop Conceptual Prototype </a></h4>
+<p>The prototype diagrams are usually created during a work session and often documented in Visio.&nbsp; The diagram shows the interfaces to the data warehouse environment, how areas such as the Daily Business Intelligence might be used, and how the end user will access the environment. </p>
+<p>The Conceptual Prototype will be expanded and is the first step in an iterative process to gain concurrence to the functional and technical architecture needed to support the requirements. </p>
+<h4><B><A
+name=IM040 id="IM040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_040_IMPLEMENT_DATABASE_OVERVIEW.HTM" target="_blank">IM.040 Implement Database </a></h4>
+<p>The DDL to create the database is usually generated from a design tool such as Oracle<SUP>&reg;</SUP> Warehouse Builder (OWB).&nbsp; In some cases such as Oracle<SUP>&reg;</SUP> Siebel Analytics, the baseline physical model is extended to meet specific customer business requirements.</p>
+<p>Implementing the database only generates the database structures and does not populate the tables with data.&nbsp; For BI, update processes must be created or configured in the case of prebuilt processes.&nbsp; Security at the data level such as Virtual Private Database (VPD) is usually included in the design.</p>
+<h4><B><A
+name=IM050 id="IM050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components </a></h4>
+<p>In many cases, the components can be generated using tools, such as Oracle Warehouse Builder (OWB). OWB can also be used as a design tool.&nbsp; The Data Mapping (CV.027) is a primary input to the ETL process.</p>
+<h4><B><A
+name=IM070 id="IM070"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.070 Assemble Components</a></h4>
+<p>An example of assembling components is creating a common updated script that calls multiple ETL modules to load a set of data.&nbsp; An example of data access may be using a Discoverer report as content for a portlet within a common portal area.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><b><a
+name=TEG id="TEG"></a></b>TESTING (TE) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=TE005 id="TE005"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005 Determine Testing Requirements</a> </h4>
+<p>Review the Business and System Objectives (RD.001) and the Technical Architecture Workshop Results (TA.010) to understand the business and system objectives and the architecture of the solution.</p>
+<p>The Testing Requirements define the business requirements for testing the data warehouse solution. It defines test requirements according to their significance or criticality to the business.</p>
+<ul>
+  <li> Review the Technical Architecture Workshop Results (TA.010) to understand the technical risks in the solution. Some of them will become candidates for testing.</li>
+  <li> Review Quality Management Plan (QM.010), and/or the Quality Control and Reporting Process (QM.020), as well as the Manage Issue and Problem Management Process for background information on Problem Management procedures.</li>
+  <li> Work with ambassador users to identify the Testing Requirements and document them clearly. In the process, it may be required to understand the quality policy of the customer and try to conform to that. </li>
+</ul>
+<h5>Additional Prerequisites</h5>
+<p>The Technical Architecture Workshop Results (TA.010) contains requirements about the future technical architecture that should be reflected in the Testing Strategy. </p>
+<h4><B><A
+name=TE010 id="TE010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy</a></h4>
+<h5>Acceptance Criteria</h5>
+<p>One component of the Testing Strategy is specifying the Acceptance Criteria. In a custom BI engagement, the Acceptance Criteria defines the metrics required to obtain acceptance of the solution. It should include criteria to support successful implementation of the solution in production including:</p>
+<ul>
+  <li>documentation
+  <li>extracted data
+  <li>data access
+  <li>data acquisition (ETL)
+  <li>system management
+  <li>solution administration </li>
+</ul>
+<h5>Test Scope and Approach (Objectives)</h5>
+<h6>Unit Test</h6>
+<p>The objective of the Unit Test is to test the functionality of all the individual components that comprise the data warehouse solution, for example, ETL maps, error handling, report validations, calculations, security, data warehouse administration components, and adherence to standards. The Analysts typically perform this first level of testing in the data warehouse development environment during the Construction phase.&nbsp; As in all structured approaches to testing, the Testing Process emphasizes early testing (and verification in general) at each appropriate level. Adequate review of the design effectively prevents defects at the component level. Where the component is visible to an ambassador user the user should review and validate the component interactively. Where the output from the component is not visible, additional testing by the developer is needed before the component can be integrated.</p>
+<h6>System Test</h6>
+<p>The objective of the System Test is to verify the functionality, security and other system requirements of the entire data warehouse system. System testing may include regression testing to verify whether existing components of data warehouse solution delivered through earlier iterations work properly with the components of the new iteration.</p>
+<h6>Systems Integration Test</h6>
+<p>The objective of the Systems Integration Test is to verify the integration of the data warehouse system with the external applications. This will be carried out in the test environment. During this test, following interface components will be tested.</p>
+<h6>Final Data Validation and Data Access Test</h6>
+<p>This test is carried out in the Production Environment. This is a final walkthrough done by the development team before it is delivered to the users. All the business critical reports are tested in this step before going live.</p>
+<h5>Test Environments</h5>
+<p>There are several things to consider when defining the required test environments, such as:</p>
+<ul>
+  <li>Review customer requirements for testing and release management for any specific environment requirements.</li>
+  <li>Consider sources systems, for example, testing business scenarios in source to validate correct capture and processing in data warehouse may require the source system to be controlled. </li>
+</ul>
+<h5>Additional Prerequisites</h5>
+<p>The Architecture Requirements and Strategy (TA.020) contains requirements about the future technical architecture that may need to be reflected in the Testing Strategy. </p>
+<h4><B><A
+name=TE015 id="TE015"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan</a> </h4>
+<p>The purpose of this task is to produce a test plan for all points of integration of the data warehouse solution, excluding those to other (non-source) systems. The latter is covered in the systems integration test plan. </p>
+<h5>Test Roles and Responsibilities</h5>
+<p>Identify roles and assign responsibilities to development team members. List the roles and responsibilities involved in the use case testing of the data warehouse solution. Note that the roles listed in the OUM task may be too generic. You may have to change these roles based on the level of testing. Identify functional roles and assign to ambassador users. Identify ambassador users and group by functional area.</p>
+<h4><B><A
+name=TE020 id="TE020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts </a></h4>
+<p>Checklists should be available for each type of the following components:</p>
+<ul>
+  <li> Data Acquisition Components</li>
+  <li> Data Access Components</li>
+  <li> Administration </li>
+  <li>Other Components</li>
+</ul>
+<p>Depending on what component the developer is testing, he/she will have to use the corresponding checklist as guidelines for testing.</p>
+<h4><B><A
+name=TE050 id="TE050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.050 Develop System Test Plan</a></h4>
+<h5>Additional Test Types</h5>
+<p>Each system test type covers a class of technical, functional or non-functional requirements. Additional custom BI implementation test types include the following: </p>
+<ul>
+  <li>System process sequencing using historical data</li>
+  <li>Data reconciliation</li>
+  <li>Database auditing</li>
+  <li>Data archival</li>
+</ul>
+<h5>Features to be Tested</h5>
+<p>Categorize the test scenarios by the different aspects of the data warehouse (Data Acquisition, Data Access and Administration).&nbsp; </p>
+<p>With regards to the test data: </p>
+<ul>
+  <li>Ensure there is a process to validate that the data generated is correct.</li>
+  <li>Ensure that the data is a representative sample.</li>
+</ul>
+<h5>Test Roles and Responsibilities</h5>
+<p>Identify roles and assign responsibilities to development team members. List the roles and responsibilities involved in the system testing of the data warehouse solution. Note that the roles listed in the OUM task may be too generic. You may have to change these roles based on the level of testing. Identify functional roles and assign to ambassador users. Identify ambassador users and group by functional area.</p>
+<h4><B><A
+name=TE080 id="TE080"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_080_DEVELOP_SYSTEMS_INT_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.080 Develop Systems Integration Test Plan</a></h4>
+<h5>Task Steps (Step 3) </h5>
+<p>The Systems Integration Test Plan should cover all points of integration of the data warehouse solution that are related to other (non-source) systems. </p>
+<p>In the Systems Integration Test Scope component, identify the external systems that the data warehouse feeds or provides other means of access. Identify key points of contact for each of these systems for further requirements and for resolving issues.</p>
+<h5>Test Roles and Responsibilities</h5>
+<p>Identify roles and assign responsibilities to development team members. List the roles and responsibilities involved in the system testing of the data warehouse solution. Note that the roles listed in the OUM task may be too generic. You may have to change these roles based on the level of testing. Identify functional roles and assign to ambassador users. Identify ambassador users and group by functional area.</p>
+<h4><B><A
+name=TE110 id="TE110"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_110_PREPARE_ACCEPTANCE_TEST_ENV_OVERVIEW.HTM" target="_blank">TE.110 Prepare Acceptance Test Environment</a> </h4>
+<p> As part of this task, you walk through business critical data and data access components to confirm that the system is ready to go into production. For example, data is validated to ensure that the numbers and calculations are correct; data access is confirmed to be appropriate for each user role. In some situations, when it is the first time the system is set in production, the Acceptance Test Environment may be the same as the Production Environment.</p>
+<h5>Task Steps</h5>
+<p>In a custom BI implementation, you have additional task steps 7 and 8 below:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task for BI and Analytics.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review the Testing Strategy (TE.010) to see what kind of testing environments should be used, and Acceptance Test Plan (TE.082) for more detailed requirements for the Acceptance Test Environment. </td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine the exact configurations required for the Acceptance Test Environment. </td>
+    <td>Acceptance Test Environment Setup Report </td>
+    <td>The Acceptance Test Environment Setup Report documents the exact configurations that will be/are used for the Acceptance Test Environment. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine required test data for the user acceptance test.</td>
+    <td>Test Data Baseline<br>
+        <br>
+      Manual Data Load<br>
+      <br>
+      Scripted Data Load<br>
+      Converted Data Load</td>
+    <td>The Test Data Baseline describes which test data baseline (from Prepared Test data (TE.018) will be used for the user acceptance test.<br>
+        <br>
+      The Manual Data Load describes any additional data that should be manually entered in the Acceptance Test Environment on top of the test data baseline.<br>
+      <br>
+      The Scripted Data Load describes any additional data that should be loaded into the Acceptance Test Environment on top of the test data baseline using scripts.<br>
+      <br>
+      The Converted Data Load describes any additional data that should be loaded into the Acceptance Test Environment on top of the test data baseline using conversion programs or scripts.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine required help data for the Acceptance Test Environment.</td>
+    <td>Help Text Data Load </td>
+    <td>The Help Text Data Load component describes all help text scripts or files must be included in the Acceptance Test Environment.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine which components should be included in the user acceptance test.</td>
+    <td>Application Object Load for Acceptance Test </td>
+    <td>The Application Object Load for Acceptance Test component describes all the sources that should be contained in the Acceptance Test Environment. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Set up physical Acceptance Test Environment.</td>
+    <td>Update of all components listed above </td>
+    <td>The components listed above will be updated along with the physical creation of the Acceptance Test Environment. The work product as a whole should be seen as a setup report that reflects how the Acceptance Test Environment actually has been set up. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Perform Business Critical Data Validation Test.</td>
+    <td>Business Critical Validation Test</td>
+    <td>This component lists the validation test results of the data components of the solution that hold business critical measures. The data components include stored measures as well as calculated measures.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Perform Data Access Capabilities Test.</td>
+    <td>Data Access Capabilities Test</td>
+    <td>This section records the results of the access capability testing that is performed to verify whether all the critical data access components (reports) are accessible by the appropriate users/roles as designed according to their access profiles.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Quality check Acceptance Test Environment.</td>
+    <td>Update of all components listed above </td>
+    <td>When the Acceptance Test Environment is ready to be used, it must be quality checked to see whether it works as expected. It might result in some changes/corrections, and the final work product must be updated to reflect any changes. </td>
+  </tr>
+</table>
+<h5>Approach</h5>
+<p>Verify the following:</p>
+<ul>
+  <li>the correctness of the business critical data content shown by the reports by validating them</li>
+  <li>whether the access capabilities of all reports are in place in the manner in which they are designed. </li>
+</ul>
+<p>This is a critical task that is performed after the data is loaded in to the production data warehouse before the reports are made available to the users. </p>
+<h6> Business Critical Data Validation Test </h6>
+<p>When performing the Business Critical Data Validation you should identify the business critical data with the help of Information Analyst. This can be categorized by business or subject area. Also, identify the data access components (reports) that use these critical data elements. For each of these reports, do the following.</p>
+<ul>
+  <li>Review the test scenario deliverables (TE.035 &ndash; Integration Test Scenarios, TE.025 - System Test Scenarios and TE.090 - Systems Integration Test Scenarios) to identify the scenarios intended to test this critical measure. Run the report with the parameters taken from the script and note down the value shown by the report.</li>
+  <li>Validate the correctness of the data/calculation by verifying the report result against the expected value. The expected value is documented in the test scenarios.</li>
+  <li>In cases where identified test scenarios cannot be used for the validation test, create test cases of your own and document the steps in the column &lsquo;Parameters for Validation&rsquo; in the template.</li>
+  <li>In cases where test scenarios can be used, make a reference to the test case ID in the column &lsquo;&lsquo;Parameters for Validation&rsquo;. </li>
+  <li>Record the results and update the status as pass/fail</li>
+</ul>
+<p>When you have done this, you should consider the following:</p>
+<ul>
+  <li>Have all data elements been verified?</li>
+  <li>Is the list of elements complete?</li>
+  <li>Has customer overlooked any key elements which should be included?</li>
+</ul>
+<h6>Data Access Capabilities Test </h6>
+<p>When performing the Data Access Capabilities Test you should first understand the user profiles and role access definitions. Then list the critical data access components (reports) and list the user roles that have been provided access to this report. For each of these reports:</p>
+<ul>
+  <li>Test whether the report is accessible for this role. This can be performed by creating a dummy user and then assigning the user this particular role and then logging in as the dummy user and verifying if the report is accessible.</li>
+  <li>If the Fine grained Security solution is used in the project (for example, VPD) fill up the column &lsquo;Data Valued allowed by the role&rsquo; with the textual description or range of data. Delete this column, if this is not applicable to your project.</li>
+  <li>Record the results.</li>
+</ul>
+<p>When you have done this, you should consider the following:</p>
+<ul>
+  <li>Are elements accessible to reporting users? </li>
+  <li>Are tables and views accessible to the reports?</li>
+</ul>
+<h5>Additional Prerequisites</h5>
+<p>The Converted and Verified Data (CV.065) is the data that is loaded into the Acceptance Test Environment to identify and define test types, test items and features to be tested.</p>
+<h5>Audience, Distribution and Usage</h5>
+<p> This work product is intended to serve as a record for the data validation test and access capabilities test.</p>
+<h5>Additional Quality Criteria</h5>
+<ul>
+  <li>Have all business critical data elements been identified and validated for correctness?</li>
+  <li>Have the access capabilities of reports or other components been defined per the User Role access document?</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=PTG id="PTG"></A></B>PERFORMANCE MANAGEMENT (PT) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=PT030 id="PT030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">PT.030 Define Performance Testing Strategy</a></h4>
+<p>Depending on your engagement, sometimes the Performance Testing Strategy can be included as section in the overall Testing Strategy (TE.010) work product.</p>
+<h4><B><A
+name=PT120 id="PT120"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/PT_120_CONDUCT_PRODUCTION_PERFORMANCE_MANAGEMENT_OVERVIEW.HTM" target="_blank">PT.120 Conduct Production Performance Management </a></h4>
+<p>Typically, in a custom BI implementation, this is part of standard performance monitoring and is accounted for in administrative modules. Usually we recommend monitoring tools and do not get directly involved with ongoing monitoring unless there are specific requirements for monitoring performance.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=CVG id="CVG"></A></B>DATA ACQUISITION AND CONVERSION (CV) PROCESS GUIDANCE </h3>
+<h4><B><A
+name=CV010 id="CV010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_010_DEFINE_DATA_ACQ_AND_CONVERSION_REQS_OVERVIEW.HTM" target="_blank">CV.010 Define Data Acquisition and Conversion Requirements </a></h4>
+<h5>Approach</h5>
+<h6>Data Acquisition - Source System Constraints - System Interdependencies Component </h6>
+<p>When the analysis is complete, create a System Interdependencies diagram. It should identify all systems considered as data sources for the data warehouse with a clear indication of the main data flows and dependencies. </p>
+<p>The diagram is used to decide which of the systems should be used as a source for a particular entity. It is also used to check completeness of sources and to resolve conflicts.</p>
+<h4><B><A
+name=CV020 id="CV020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_020_DEFINE_DATA_ACQ_CONV_AND_DATA_QUAL_STRATEGY_OVERVIEW.HTM" target="_blank">CV.020 Define Data Acquisition, Conversion and Data Quality Strategy </a></h4>
+<h5>Task Steps</h5>
+<p>The following task step is specific to custom BI:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists an additional taskstep for this task that is specific to BI and Anlaytics.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th width="2%" scope="col"><div align="center">No.</div></th>
+    <th width="40%" scope="col">Task Step </th>
+    <th width="20%" scope="col">Component</th>
+    <th width="38%" scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">BI</div></th>
+    <td><p>Provide guidelines for refreshing different types of objects. Include only those objects that are appropriate for the solution.
+        <p>Optionally, prepare templates for developers for the common tasks (for example, template for refreshing SCD type 1 dimension, another template for refreshing SCD type 2 dimension, another template for loading monthly partitioned fact table).</td>
+    <td>Data Acquisition - Data Load Strategy - Data Refresh Strategy </td>
+    <td><p>The Data Refresh Strategy component describes strategies for updating the data, including: </p>
+        <ul>
+          <li>Referential Data Refresh Approach </li>
+          <li>Dimensional Table Refresh Approach </li>
+          <li>Fact Table Refresh Approach </li>
+          <li>Summary Tables Refresh Approach</li>
+          <li>OLAP Dimensions Refresh Approach </li>
+          <li>OLAP Cubes Refresh Approach </li>
+        </ul>
+        <p>Delete the sections that are not appropriate.</p></td>
+  </tr>
+</table>
+<p>Task step 8 has additional information specific to custom BI:.</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists an additional information for task step 8 specific to BI and Anlaytics for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th width="2%" scope="col"><div align="center">No.</div></th>
+    <th width="40%" scope="col">Task Step </th>
+    <th width="20%" scope="col">Component</th>
+    <th width="38%" scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td><p>Review the business requirements regarding the initial and historical data in order to document each requirement. Get the sign off from the customer for the initial and historical load requirements.
+            <p>Custom BI - Make sure that both the historical loads and initial loads are included (i.e. list everything that has to be loaded before the data warehouse can be refreshed on regular basis with the current data). </td>
+    <td>Data Acquisition - Data Load Strategy - Initial and Historical Loads </td>
+    <td><p>The Initial and Historical Loads component provides a table listing the requirements for the initial or historical loads from source systems. It is important to note for each requirement how many months (days) of data have to be loaded, whether the historical data is available, what is the expected volume of data and whether it is possible to load the historical data with the processes developed for regular updates.</p></td>
+  </tr>
+</table>
+<h5>Approach</h5>
+<h6>Data Acquisition - Data Load Strategy  - Data Refresh Strategy</h6>
+<p> Provide guidelines for refreshing different types of objects, including: </p>
+<ul>
+  <li>Referential Data Refresh Approach &ndash; how and when to update referential data (e.g. list of values) that are not provided as part of source system interfaces, etc.</li>
+  <li>Dimensional Table Refresh Approach &ndash; how to update dimensions, detect changes in dimensions, take care of slowly changing dimensions, etc.</li>
+  <li>Fact Table Refresh Approach &ndash; how to update fact tables, maintain partitions and indexes, publish newly loaded partitions to users, etc.</li>
+  <li>Summary Tables Refresh Approach &ndash; how and when to refresh summary tables, how to maintain partitions of summary tables, etc.</li>
+  <li>OLAP Dimensions Refresh Approach &ndash; how and when to update OLAP dimensions and hierarchies from the data warehouse data, etc.</li>
+  <li>OLAP Cubes Refresh Approach &ndash; how and when to update OLAP cubes from the data warehouse facts, how to rollup cubes, etc.</li>
+</ul>
+<h6>Data Acquisition - Data Load Strategy  - Referential Data Refresh Approach</h6>
+<p>The best practice it to maintain the referential data (for example, list of values) from source systems as any other data. However, this is not always possible since the referential data might be hardcoded in source systems, the interface for referential data might not exists or there is simply no source system for a particular referential data. Therefore, document how the referential data is handled in the solution, how they are updated and who is responsible for the update. Consider creating a special area to store the referential data and use the area as if it was any other source system.</p>
+<h6>Data Acquisition - Data Load Strategy  - Dimensional Table Refresh Approach</h6>
+<p>Provide the guidelines on refreshing dimensions. Include methods for detecting changes in dimensions, methods for implementing slowly changing dimensions and methods to update audit attributes.</p>
+<p>A typical method for detecting changes is to compare the source data with the data in the data warehouse using set operations (minus, union) in order to prepare data set containing only the changes. This method can be used with both full and incremental extracts.</p>
+<h6>Data Acquisition - Data Load Strategy Component - Fact Table Refresh Approach Section</h6>
+<p>Provide the guidelines on refreshing fact tables. Include methods for maintaining table partitions and indexes, how to publish the newly loaded data to users and methods to update audit attributes.</p>
+<p>Consider using the Partition Exchange Loading (PEL) method when updating fact tables. PEL is the preferred method for updating partitioned fact tables. Decide whether to use out of the box PEL support in OWB (with all its restrictions) or a custom approach.</p>
+<p>If the system allows backward changes to fact tables describe methods how to handle and propagate the changes (for example, if it is necessary to load late arriving transactions, how to insert the transactions to a fact table, how to differentiate late arriving records from the other records, how to propagate late arriving records to summaries).</p>
+<h6>Data Acquisition - Data Load Strategy Component - Summary Tables Refresh Approach Section</h6>
+<p>Provide the guidelines on refreshing summary tables. Include methods on how to design the summary tables, maintain partitions and refresh the summaries.</p>
+<h6>Data Acquisition - Data Load Strategy Component - OLAP Dimensions Refresh Approach Section</h6>
+<p>If OLAP area is part of the solution, provide guidelines how to update OLAP dimensions and hierarchies from the data warehouse.</p>
+<h6>Data Acquisition - Data Load Strategy Component - OLAP Cubes Refresh Approach Section </h6>
+<p>If OLAP area is part of the solution, provide guidelines how to update OLAP cubes from the data warehouse. Include methods on updating the cubes and performing rollups.</p>
+<p>The following boilerplate text should be reviewed and copied, if appropriate, into the corresponding section, Exception Handling, of the work product template for this task. Note that not all boilerplate text is applicable, and additional materials might be needed for the final customer work product.</p>
+<h6>Data Acquisition - Data Load Strategy Component - Error Hanndling Strategy - Error Notification Approach Section </h6>
+<p>If using OWB, consider using notifications raised from Oracle Workflow. These notifications can be configured in almost any way to suite data warehouse needs. Administrators can reply to Oracle Workflow notifications to stop or resume the process, users can provide confirmations through the notifications etc.</p>
+<h6>Data Quality - Objectives Component - Data Quality Overview Section </h6>
+<p>The following boilerplate text might be used to describe the data quality issues in the data warehouse. This text can be added to the Data Quality Overview section of the work product.</p>
+<p>The best way how to answer &ldquo;why is the data quality important&rdquo; is to reverse the question - what happens when the data do not have required quality. There are many cases of incurred costs, lost credibility or missed business opportunities because of incorrect data. For example</p>
+<ul>
+  <li>Sending direct mails to incorrect addresses</li>
+  <li>Contacting dead customers</li>
+  <li>Contacting the same customer twice with the same offer</li>
+  <li>Offering products to customers that should not qualify</li>
+  <li>Refusing products to customers that should qualify</li>
+  <li>Restatement of financial statements</li>
+  <li>Wrong data sent to regulators</li>
+</ul>
+<p>A data warehouse is especially vulnerable to poor data quality. Unlike legacy systems, the primary objective of the data warehouse is to provide data to knowledge workers and to analytical applications. If the data quality does not allow knowledge workers to use it for analysis or decision making they will stop using the system and it will fail.</p>
+<p>A data warehouse is also usually the first system that consolidates data from many sources into a common data model. As a result it is much easier to discover the data quality issues in the data warehouse than it is in legacy systems.</p>
+<p>So even if the data warehouse does not cause most of the data errors, it is in the vital interest of the data warehouse project to influence the source systems and information producers to improve the data quality.</p>
+<p>There are many reasons why data can be incorrect. The following are some typical reasons for a data warehouse environment, ordered by the information flow sequence.</p>
+<ul>
+  <li>Information is incorrectly provided to data entry clerks.</li>
+  <li>Information is incorrectly entered into a source system.</li>
+  <li>Optional data are not entered.</li>
+  <li>Source system requires information that is not available.</li>
+  <li>Information is duplicated in the source system.</li>
+  <li>The same information in different source systems is inconsistent.</li>
+  <li>The source system incorrectly calculates derived data.</li>
+  <li>The data are incorrectly extracted from the source system.</li>
+  <li>The data are extracted from source systems at bad time.</li>
+  <li>The files are incorrectly transferred to the data warehouse.</li>
+  <li>The data are incorrectly processed in the data warehouse.</li>
+  <li>Users select incorrect data from the data warehouse.</li>
+  <li>Users do not understand data in the data warehouse.</li>
+  <li>Behavior of source systems changes over time but the rules and processes are not updated to reflect this change.</li>
+</ul>
+<p>The previous paragraph clearly shows that the data quality is not a function of one system or one role. Instead, all the applications, architects, information producers and knowledge workers have to take responsibility for continually improving the data quality.</p>
+<p>Therefore it is necessary for an organization to establish an environment that leads to sustainable improving of information quality. The data quality initiatives might bring some short term benefits but unless it is a continuing process the data quality will deteriorate over time.</p>
+<h6>Data Quality - Processes Component - Data Transfer Section </h6>
+<p>The following methods might be considered for ensuring the data transfer integrity for the specific data warehouse solution that should be included in the work product template for this task. </p>
+<p>One method how to control the data transfer process is via &ldquo;control files&rdquo;. </p>
+<p>Control files complement the data files. They contain information about data files within a file set, version of the file structure, effective date, number of records in the data files and (if no character conversion takes place) they could also contain number of characters and file checksum.</p>
+<p>When data files are received and before any processing is done, the files are checked against the control files. If the data file does not correspond with the control file than the administrator is notified, the whole data file is considered corrupt and either the transfer or the data extraction must be repeated.</p>
+<p>Another method is to structure the data files in a way that enables consistency checks of the files. The following rules can be used:</p>
+<ul>
+  <li>Each row is prefixed with a row type</li>
+  <li>One row type correspond to the file header, containing</li>
+  <ul>
+    <li>File name</li>
+    <li>Effective date</li>
+    <li>File structure version</li>
+  </ul>
+  <li>One row type correspond to the file footer, containing</li>
+  <ul>
+    <li>Number of data rows within the file</li>
+    <li>Optionally other summary measures (e.g. sum of balances)</li>
+  </ul>
+</ul>
+<p>When data files are received and before any processing is done, the file structure is checked. The file must have the header row and the footer row, the effective date and file structure version should correspond to the expected values, the number of data rows and summary measures have to be correct. If the file does not meet the checks the whole file or file set is rejected.</p>
+<p>All these methods can be used together to provide a maximum level of control over the data transfer process.</p>
+<h6>Data Quality - Processes Component - Audit and Control Section </h6>
+<p>The following text and example may be useful as a starting point for defining the audit and control methods for the specific data warehouse solution that should be included in the deliverable template for this task. </p>
+<p>The following text describes where to put automatic the data quality checks:</p>
+<p>Checkpoints in the ETL Process are automatic checks executed during the extraction, transformation and load process (ETL) that validate number of processed records. If the number of records does not correspond the administrator is notified and optionally the whole process is stopped until the problem is resolved. The typical checkpoints are</p>
+<ul>
+  <li>After Extraction &ndash; check number of extracted records.</li>
+  <li>After Transfer &ndash; check number of records before and after the transfer.</li>
+  <li>After Load &ndash; check number of records loaded.</li>
+  <li>After Allocation &ndash; check sum of allocated figures against the total.</li>
+  <li>After Aggregation &ndash; check the sum of detail data against the aggregation.</li>
+</ul>
+<p>Number of records can be checked against the source (in case of 1:1 mappings), or, alternatively, it is possible for each data file to define a typical volume of data and the check is done against this volume. For example, we can define that the incremental extract should have between 0 and 50000 records or that the full extract should have more than 4 million records. If these conditions are not met than the administrator is notified.</p>
+<p>Usually if the data does not meet these quality checks than the whole data set is considered corrupt and the ETL process is stopped until a detailed analysis is done and the process is either resumed or canceled.</p>
+<p>The following methods can be used to report the data quality and to inform about the data (non) quality in the data warehouse:</p>
+<table width="100%"  border="1" title="Data Quality Methods" summary="This table lists the methods that can be used to report the data quality and to inform about the data (non) quality in the data warehouse.  The column headings are Method and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th width="11%" scope="col">Method</th>
+    <th width="89%" scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Exception Reports </div></th>
+    <td>Exception reports list the detail records that contain missing values or do not conform to the business rules. The exception reports are usually passed to process or data owners for correction.<br>
+        <br>
+      Exception reports are usually produced ex-post, i.e. after the data is loaded into the data warehouse. It is therefore necessary for the system to re-process the corrected values after they are repaired in the source system.<br>
+      <br>
+      If a number of records to be corrected is not large, than the exception records should be produced and distributed automatically. However, if the number of records to be corrected is significant, it is better to run a focused activity targeted at the quality improvement and only after the number drops to acceptable level to produce automatic exception reports.<br>
+      <br>
+      For example, exception records can list active accounts with obsolete product, accounts with invalid interest rates or customers who should be merged with another customer (potential duplicates).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Summary Reports </div></th>
+    <td>Summary reports show percentage of records that meet quality criteria. Summary reports are dimensioned by source systems, products or organizational unit, in order to better understand the distribution of errors.<br>
+        <br>
+      Summary reports provide the basis for regular monitoring of data quality. Similar to exception reports, summary reports can be defined only if the quality measures can be calculated using the data in the data warehouse.<br>
+      <br>
+      Summary reports are produced automatically. It is useful to store results of summary reports in the database to support evaluation of data quality over time.<br>
+      <br>
+      For example, summary reports can show percentage of correct addresses per address type and source system, percentage of duplicate customers per customer type or percentage of non classified current accounts in debit.<br>
+      <br>
+      Summary reports can also be used to measure a completeness of data &ndash; a typical report will show percentage of records that do not have valid values per table column and source system. This report is also quite useful for knowledge workers.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Reconciliation Reports </div></th>
+    <td>Reconciliation reports compare data from the data warehouse with the same data from another surrogate data source. The reconciliation reports are used to measure difference between these two systems.<br>
+        <br>
+      A typical example is to measure summary balances on customer accounts against the balances on GL accounts. Also it is possible to compare reports from source systems against the reports produced from the data warehouse.</td>
+  </tr>
+</table>
+<h4><B><A
+name=CV027 id="CV027"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_027_PERFORM_DATA_MAPPING_OVERVIEW.HTM" target="_blank">CV.027 Perform Data Mapping </a></h4>
+<p>This task evolves during the development of a project.&nbsp; It begins with the identification of the source systems and evolves into the actual data source of the attributes needed in the target system.&nbsp; In many cases some type of transformation is needed to conform to the target system's architecture.&nbsp; A byproduct of this task is the gap analysis matrix.&nbsp; Some data elements needed in the target system may not be available.&nbsp; These element may be entered manually through the application or in some cases a new function is required to maintain the &quot;missing&quot; source data elements.&nbsp; The final source to target mappings with the transformations may be documented in a tool such as Oracle Warehouse Builder (OWB).</p>
+<h4><b><a
+name=CV040 id="CV040"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.040 Design Conversion Components (Initial Load) </a></h4>
+<h5>Approach</h5>
+<p>For BI Data Acquisition, the primary objective of this task is to describe the specific ETL processes that enable the interfaces between source and target systems. It identifies all components of each ETL process including data complexities or constraints for conversions and interfaces. In addition test scenarios or cases are developed to support unit testing of each data acquisition component.</p>
+<p>When the project team performs this task, most of the targets would have been designed and their mappings to source system objects identified (See CV.027, Data Mapping). High-level requirements and constraints of the interfaces would also be available from the the Data Acquisition, Conversion and Data Quality Strategy (CV.020). All components of the solution would be identified in the Final Platform and Network Architecture (TA.150). </p>
+<p>This task involves understanding these requirements and translating them to specifications for individual mappings that extract, transform and load data between systems, and how they would fit in the overall architecture. </p>
+<p>As far as possible, the deliverable template has been designed to make it independent of the ETL implementation tool, be it using custom PL/SQL scripts or using Oracle Warehouse Builder.</p>
+<h6>&lt;Mapping&gt; Specification Component - Exception Handling Section </h6>
+<p><b>Error Handling Types</b></p>
+<ul>
+  <li>The handling types are put into context in the actual mapping descriptions.</li>
+  <li>&lt;Adjust the suggested list to the actual project context&gt;</li>
+  <li>Code Description </li>
+  <li>EH1 Load partial data into DWH, log received sources in log table</li>
+  <li>EH2 Don't load data into DWH, log data in error table with &quot;wait&quot; status</li>
+  <li>EH3 Load data into DWH and log problem into log table</li>
+  <li>EH4 Load data into DWH and add the missing dimension to the dimension table with description &lsquo;UNKNOWN&rsquo;. Log missing dimension into log table.</li>
+  <li>EH5 Handle the received data with a clear status to the users</li>
+  <li>&lt;&hellip;&gt;</li>
+</ul>
+<p><b>Error Correction Types</b></p>
+<ul>
+  <li>The error correction types are put into context in the actual mapping descriptions.</li>
+  <li>&lt;Adjust the suggested list to the actual project context&gt;</li>
+  <li>Code Description </li>
+  <li>EC1 Load missing transaction(s) during next normal program run</li>
+  <li>EC2 Load missing transaction(s) by explicit program run</li>
+  <li>EC3 Update the missing dimension table with the correct dimension information from source during next normal run</li>
+  <li>EC4 Allow manual update of data in the DWH directly (by user through predefined application; by IT people)</li>
+  <li>EC5 Correct data automatically according to pre-defined business rules</li>
+  <li>EC6 Update DWH data with new version during next normal program run.</li>
+</ul>
+<h4><b><a
+name=CV055 id="CV055"></a></b><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_055_IMPLEMENT_CONVERSION_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.055 Implement Conversion Components (Initial Load) </a></h4>
+<h5>Task Step </h5>
+<p>The following task step is specific to custom BI:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists an additional taskstep for this task that is specific to BI and Anlaytics.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th width="2%" scope="col"><div align="center">No.</div></th>
+    <th width="40%" scope="col">Task Step </th>
+    <th width="20%" scope="col">Component</th>
+    <th width="38%" scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td><p>Provide the ETL developers with a checklist against which they can record the progress of ETL component development.</td>
+    <td> Build and Unit Test ETL Components </td>
+    <td><p>You use the information captured in the Conversion Component Designs (CV.040) to build the ETL components. This component provides a checklist for the ETL developers and testers.</p></td>
+  </tr>
+</table>
+<h5>Approach</h5>
+<h6>ETL Components</h6>
+<p>By this time in the project the information on data source systems, data transformation rules and target system data model design is available. The project team has outlined the steps for the extraction, transformation, and loading of data for the developers, and the toolset(s) to be used for the process development. </p>
+<p> Information on all the data extraction interface components, data transportation mechanisms, change data capture methods and constraints with respect to these have already been captured in the Conversion Component Designs (CV.040).</p>
+<h6>ETL Build Checklist </h6>
+<p>Provide the ETL developers with a checklist against which they can record the progress of ETL component development. Use the Conversion Component Designs (CV.040) to create a checklist table (basically, a list of ETL components that must be built) with the following columns:</p>
+<ul>
+  <li>No. - Use CV.040 to obtain this information. </li>
+  <li>Data Flow - Use CV.040 to obtain this information. </li>
+  <li>Mapping Name - Use CV.040 to obtain this information. </li>
+  <li>ETL Technology</li>
+  <li>Built By - ETL developer/programmer name </li>
+  <li>Checked By - Supervisor name</li>
+  <li>Date - Date code ready for unit testing </li>
+</ul>
+<p>Keep in mind the following: </p>
+<ul>
+  <li>The precise detail for constructing the ETL Component is specified in the Conversion Component Designs (CV.040) together with the suggested ETL technology.</li>
+  <li>Code should be deemed ready for unit testing when the developer is satisfied that they have covered all of the specified requirements.</li>
+  <li>These paper based tracking mechanisms should be used in addition to any tool repository based means.</li>
+</ul>
+<h6>ETL Unit Test Checklist</h6>
+<p>Provide the ETL testers with a checklist against which they can record the progress of ETL component unit testing. (See also TE.030, Perform Unit Test). Create a second tabular checklist table similar to the ETL Build Checklist (basically, a list of ETL components that must be built) with the following columns:</p>
+<ul>
+  <li>No. - Complete the same as the ETL Build Checklist. </li>
+  <li>Data Flow - Complete the same as the ETL Build Checklist. </li>
+  <li>Mapping Name - Complete the same as the ETL Build Checklist. </li>
+  <li>Test Case Name - Case Name </li>
+  <li>Tested By - Tester name </li>
+  <li>Unit Test Result - Pass / Fail</li>
+  <li>Date - Date unit tested</li>
+  <li>Comment</li>
+</ul>
+<p>Keep in mind the following:</p>
+<ul>
+  <li>A component may have more than one test case associated with it.</li>
+  <li>The purpose of designing and running a test is to find errors. Only by finding and correcting defects can the team build user confidence in the system.</li>
+  <li>Someone other than its creator should test a component. Independent testing is more effective than testing performed by the author or developer.</li>
+  <li>Tests must be repeatable. Therefore, it is necessary to document what has been tested. There might also be a requirement to retain a record of each test for audit purposes.</li>
+  <li>The resulting work product serves as evidence of testing.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><B><A
+name=TRG id="TRG"></A></B>TRAINING (TR) PROCESS GUIDANCE </h3>
+<h4><B><A
+name=TR020 id="TR020"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">TR.020 Prepare Project Team Learning Plan </a></h4>
+<h5>Approach</h5>
+<p>Many times, training of customer staff can be incorporated into normal activities.&nbsp; For example, customers new to business intelligence may be familiar with normalized data models but may not be familiar with dimensional modeling.&nbsp; Design reviews can incorporate learning activities.&nbsp; Also, customer developers may assist by developing modules using tools such as Oracle Warehouse Builder.&nbsp; Ensure the customer developers get training on new tools and account for their newly acquired skills in the project plan.&nbsp; Ideally, the customer developers should reduce the time needed for development but be sure to factor in the need for Oracle consultants to help customer developers.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

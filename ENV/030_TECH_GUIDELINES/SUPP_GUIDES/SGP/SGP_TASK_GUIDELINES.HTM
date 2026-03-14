@@ -1,0 +1,1167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Governance Planning Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Governance Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#MG">Mobilization Guidance</option>
+                            <option value="#CRG">Current Reality Guidance</option>
+                            <option value="#FVG">Future Vision Guidance</option>
+                            <option value="#RG">Roadmap Guidance</option>
+                            <option value="#PDG">Post Delivery Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("M");
+  Effect.BlindDown("CR");
+  Effect.BlindDown("FV");
+  Effect.BlindDown("R");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("M");
+  Effect.BlindUp("CR");
+  Effect.BlindUp("FV");
+  Effect.BlindUp("R");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<table width="93" align="right">
+  <tr>
+    <td width="85" height="34"><p><a href="../../../OUM_HOME_GP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) GOVERNANCE PLANNING SUPPLEMENTAL TASK GUIDELINES</h2>
+<p> This document contains OUM supplemental task guidance for the execution of a service based on the SOA Governance Planning View. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document. </li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for the areas.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">SOA Governance Planning- OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </TR>
+    <TR>
+      <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#MG">Mobilization</a></div></th>
+    </TR>
+  <tbody id="M">
+    <TR valign="top">
+      <TD valign="top"><a href="#ER040">ER.040 Research Enterprise</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER010">ER.010 Create Business Case for Envision Engagement</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_010_CREATE_BUSINESS_CASE_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.010 Create Business Case for Envision Engagement</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER015">ER.015 Conduct Enterprise Maturity Assessment </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015 Conduct Enterprise Maturity Assessment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#SM010">PJM.SM.010 Define and Confirm Scope </a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">PJM.SM.010 Define and Confirm Scope </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER020">ER.020 Determine Envision Engagement Strategy </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER030">ER.030 Set and Agree on Plan for Envision Engagement </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER045">ER.045 Establish Executive Sponsorship</a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_045_ESTABLISH_EXEC_SPONSORSHIP_OVERVIEW.HTM" target="_blank">ER.045 Establish Executive Sponsorship</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER050">ER.050 Validate and Agree on Envision Engagement Plan </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#CRG">Current Reality </a></div></th>
+  </TR>
+  <tbody id="CR">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0501">PJM.STM.050.1 Conduct Team Orientation</a></TD>
+      <TD><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#GV015">GV.015 Review Current Governance Model </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_015_REVIEW_CURRENT_GOVERNANCE_MODEL_OVERVIEW.HTM">GV.015 Review Current Governance Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1801">ER.180.1 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#FVG">Future Vision </a></div></th>
+  </TR>
+  <tbody id="FV">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0502">PJM.STM.050.2 Conduct Team Orientation</a></TD>
+      <TD><DIV align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER025">ER.025 Educate Enterprise on Area of Focus</a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_025_EDUCATE_ENT_ON_AREA_OF_FOCUS_OVERVIEW.HTM" target="_blank">ER.025 Educate Enterprise on Area of Focus</a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#GV010">GV.010 Identify Governance Strategy </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_010_DEFINE_GOVERNANCE_STRATEGY_OVERVIEW.HTM">GV.010 Identify Governance Strategy </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER160">ER.160 Develop Desired Future State </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160 Develop Desired Future State </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1802">ER.180.2 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and present Solution Recommendations </a></DIV></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#RG">Roadmap</a></div></th>
+  </TR>
+  <tbody id="R">
+    <TR valign="top">
+      <TD valign="top"><a href="#STM0503">PJM.STM.050.3 Conduct Team Orientation</a></TD>
+      <TD><DIV align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">PJM.STM.050 Conduct Team Orientation </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1701">ER.170.1 Develop Future State Transition Plan </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER150">ER.150 Review Discovery Findings </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#BA090">BA.090 Identify Process Improvement Options </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">BA.090 Identify Process Improvement Options </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER110">ER.110 Perform Benefit Analysis </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110 Perform Benefit Analysis </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER120">ER.120 Identify and Mitigate Future State Risks </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">ER.120 Identify and Mitigate Future State Risks </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1702">ER.170.2 Develop Future State Transition Plan </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER130">ER.130 Product MoSCoW Improvement List </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Product MoSCoW Improvement List </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1703">ER.170.3 Develop Future State Transition Plan </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170 Develop Future State Transition Plan </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER1803">ER.180.3 Prepare for and Present Solution Recommendations </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180 Prepare for and Present Solution Recommendations </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER190">ER.190 Review Business Feedback and Identify Opportunities </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_190_REVIEW_BUS_FEEDBACK_&_IDENTIFY_OPPOR_OVERVIEW.HTM" target="_blank">ER.190 Review Business Feedback and Identify Opportunities </a></DIV></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#ER200">ER.200 Prepare for Transition to Sales or Services </a></TD>
+      <TD><DIV align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_200_PREPARE_FOR_TRANS_TO_SALES_OR_SERV_OVERVIEW.HTM" target="_blank">ER.200 Prepare for Transition to Sales or Services </a></DIV></TD>
+    </TR>
+    <TR>
+      <th height="26" colspan="2" bgColor="#CCCCCC"><div align="left"><a href="#PDG">Post Delivery </a></div></th>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#CMM040">PJM.CMM.040 Document Lessons Learned </a></TD>
+      <TD><DIV align=left><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">PJM.CMM.040 Document Lessons Learned </a></DIV></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=MG id="MG"></A></B><a href="SGP_OVERVIEW.HTM#SGPOD" target="_blank">MOBILIZATION GUIDANCE</a></h3>
+<p>Once the organization has agreed that a SOA Governance Planning engagement meets their needs, Mobilization can begin. Mobilization must be done thoroughly as it is all too easy to over-promise and under-deliver if the boundaries for the engagement and the content of the deliverables are not spelled out properly, or if the resources needed to execute the engagement are unavailable. Taking the time and making the effort to set and close scope properly will result in a smooth engagement and a satisfied organization.</p>
+<p>The following is a suggested workflow for Mobilization:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_M_WF.PNG" alt="Suggested Mobilization Workflow" width="714" height="544" title="Suggested Mobilization Workflow"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="ER040" id="ER040"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">ER.040 Research Enterprise</a></h4>
+<p>The important part of this task in the context of this view is to establish the business and IT context and expectations. Typically, by using a combination of business and IT interviews you obtain an understanding of the key business and IT drivers affecting the company. Example business drivers are: </p>
+<ul>
+  <li>increased cross sell and up sell</li>
+  <li>increased self service adoption</li>
+  <li>improved process flexibility</li>
+  <li>reduced call center cost</li>
+</ul>
+<p>Business drivers should be obtained from the most senior business executives willing to participate. In some cases, that might be representatives from the LOB, and in other cases it might be IT liaisons to the LOBs. If multiple organizations are taking part in the service, then multiple interviews may be needed to get input across each LOB.</p>
+<p> Following the business interviews, IT executives are interviewed to obtain a list of current IT objectives. Example IT objectives are: </p>
+<ul>
+  <li>rationalize business processes into reusable services</li>
+  <li>increase visibility into silo-e SOA should also be discussed with IT executives in order to understand their perceived benefits and challenges. </li>
+</ul>
+<p>SOA Assessment results can be factored into the discussion. During the interview, it would be helpful to provide the list of business drivers as a reference. Ideally, business drivers will map to a set of IT objectives that help provide continuity to the vision strategy. </p>
+<p> The outputs of the interviews should be summarized and formalized into the draft version of business and IT context that is sent out to all business and IT executive participants for review and comments.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="ER010" id="ER010"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_010_CREATE_BUSINESS_CASE_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.010 Create Business Case for Envision Engagement </a></h4>
+<p>An engagement based on this view delivers the following benefits for the organization:</p>
+<ul>
+  <li>a shared understanding among SOA stakeholders from the business and IT sides of the organization as to the need, requirements, vision and execution plan for SOA governance</li>
+  <li> the definition of workable SOA governance organizational structures for the enterprise, and the roles and responsibilities of the participants in those organizational structures</li>
+  <li> the identification of needed policies, practices, processes and guidelines for SOA governance</li>
+  <li> the definition of a means to communicate governance artifacts and decisions that affect SOA adoption across the organization</li>
+  <li> the definition of a Roadmap to achieve the defined governance organization structures, policies, practices, processes and guidelines incrementally to reduce risk and prioritize to deliver the greatest benefit at the earliest time</li>
+  <li> an appreciation by organizations that a governance model needs to be continuously reviewed and re-aligned if they want to be successful in executing SOA</li>
+</ul>
+<p>It delivers the following benefits for the practitioners:</p>
+<ul>
+  <li>the ability to interact with the organization&rsquo;s senior leadership and build relationships at the highest levels within the IT organization</li>
+  <li>visibility into the highest priorities for the organization, delivering opportunities for better supporting the organization&rsquo;s efforts in the future</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="ER015" id="ER015"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM" target="_blank">ER.015 Conduct Enterprise Maturity Assessment</a></h4>
+<p>During this type of engagement, the maturity assessment is about conducting an assessment to determine the SOA maturity. Consider having the organization complete a SOA Self Assessment.</p>
+<p> Benchmarking the current state builds mind share across the enterprise, and makes it easier to build a focused, step-by-step roadmap towards increased SOA maturity. The first step towards a benchmark is to conduct a SOA Self Assessment. </p>
+<p>Highlighting and discussing differences that arise in this way will allow for the organization to:</p>
+<ul>
+  <li>Know what is required to level-set their teams understanding of SOA and its potential impact.</li>
+  <li> Investigate why certain team members have concerns and what is needed to alleviate them.</li>
+  <li> Identifies any disparity between management and their direct reports.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><b><a
+name=SM010 id="SM010"></a></b><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></h4>
+<p>DETERMINE ENGAGEMENT SCOPE
+<p>The scope of the engagement must be clarified in respect to the organization &rsquo;s key topics that will form the basic table of contents to be covered. Agreement must be reached on the following:
+<ul>
+  <li>which key topics are to be covered? (see table below for a description of some typical key topics)</li>
+  <li> level of detail of each key topic</li>
+  <li> available expertise in each key topic (for all participants &ndash; where there is no or little expertise, research will be required or the topic should be placed out of scope)</li>
+  <li> detail of information that is available on the key topics in documents, PowerPoint&rsquo;s, etc. or is it a completely new key topic to the organization that needs definition (and therefore requires substantially more time)</li>
+  <li> coverage/depth of each topic that the engagement based on this view is to provide to successfully in order to deliver the organization&rsquo;s objectives - A general rule of thumb is to assume that during the planning engagement you will identify or define the processes/procedures/structures that are required, but not actually to build them in detail as this level of execution can take a very significant amount of time.</li>
+</ul>
+<p> Key topics with the same questions include, but are not limited to the following examples:</p>
+<TABLE width="100%" border=1 title="Key Topics" summary="This table lists some suggested Key Topics in the first column, Current Reality sample interview questions in the second column and Future Vision sample activities in the third column.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="139" height="26" bgColor=#CCCCCC><div align="left">Key Topic </div></th>
+      <th scope="col"width="513" bgColor=#CCCCCC><b>Current Reality<br>
+        (Sample Questions) </b></th>
+      <th scope="col"width="539" bgColor=#CCCCCC><b>Future Vision <br>
+        (Sample Activities) </b></th>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">SOA Principles</th>
+      <TD align="left" valign="top"><ul>
+          <li>Does the company have a clear SOA Vision?</li>
+          <li>Does the company have clear and meaningful SOA principles?</li>
+          <li>How was the vision and principles developed?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Link Business/IT Initiatives to SOA Vision</li>
+          <li>Link SOA Vision to SOA Principles</li>
+          <li>Prioritize SOA Benefits</li>
+          <li>High-Level SOA Principles</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">SOA Reference Architecture Governance </th>
+      <TD align="left" valign="top"><ul>
+          <li>Does the company have an understanding of what a reference architecture is and its uses?</li>
+          <li>How does the company govern an existing reference architecture?</li>
+          <li>How does the reference architecture evolve?</li>
+          <li>Does the company make sure projects align with the reference architecture?</li>
+          <li>How are exceptions handled?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Link SOA Principles to SOA Reference Architecture</li>
+          <li>Define SOA Reference Architecture Management Process</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Collaboration</th>
+      <TD align="left" valign="top"><ul>
+          <li>Does the company have an environment that is conducive to sharing assets?</li>
+          <li>Does the company see data as an enterprise asset?</li>
+          <li>Does the company have an appropriate incentive model to foster collaboration?</li>
+      </ul></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">SOA Communication </th>
+      <TD align="left" valign="top"><ul>
+          <li>Does the company have a SOA communication plan?</li>
+          <li>Has the SOA Vision, Principles, Roadmap, Reference Architecture, etc. been effectively communicated and evangelized within the organization?</li>
+          <li>What medium and frequency does the communication utilize?</li>
+      </ul></TD>
+      <TD align="left" valign="top">&nbsp;</TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">IT/SOA Organization Structure</th>
+      <TD align="left" valign="top"><ul>
+          <li>Is the existing IT organization structure conducive to achieve the company&rsquo;s anticipated SOA benefit?</li>
+          <li>Is the existing IT organization structure conducive to achieve the company&rsquo;s business/IT initiatives?</li>
+          <li>What is the relationship and collaboration between the PMO, Governance Offices, EA, COE&rsquo;s, ICC, LOB IT&rsquo;s, Outsourcers, etc.?</li>
+          <li>How are key decisions made and who has the responsibility to carry out key activities and who has the authority over such activities?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>High-Level Definition of Appropriate SOA Structures</li>
+          <li>High-Level Definition of Roles and Responsibilities</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">IT/SOA Governance </th>
+      <TD align="left" valign="top"><ul>
+          <li>What approach/process does an organization use to approve projects and justifies the cost?</li>
+          <li>How are IT projects aligned with business initiatives?</li>
+          <li>How are changes to the existing environment managed?</li>
+          <li>How are new services monitored for reuse?</li>
+          <li>How is the compliance of new services, architects and applications enforced and measured?</li>
+          <li>How is the compliance of agreed standards and best practices enforced?</li>
+          <li>What past compliance efforts have been attempted?</li>
+          <li>Does the current SDLC assist or hinder SOA?</li>
+          <li>Any other processes which fall under the remit of PMO&rsquo;s, COE&rsquo;s, EA that might have an effect on the successful deployment of SOA?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>High-Level Definition of SDLC Alignment Process</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Service Development Lifecycle Governance</th>
+      <TD align="left" valign="top"><ul>
+          <li>Does the company have an approach to identify services?</li>
+          <li>What processes are utilized during development?</li>
+          <li>Is there a specific Service Development Lifecycle, i.e., PLE?</li>
+          <li>What tools are used to develop services?</li>
+          <li>How does a developer find an appropriate service?</li>
+          <li>What testing approach of services is utilized?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>High-Level Definition of Service Approval</li>
+          <li>High-Level Definition of SDLC Alignment</li>
+          <li>Product Recommendation</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Service Operation Lifecycle Governance</th>
+      <TD align="left" valign="top"><ul>
+          <li>What approach to the management and monitoring of services is used?</li>
+          <li>What approach is taken for root-cause analysis?</li>
+          <li>Does the company have a versioning strategy?</li>
+      </ul></TD>
+      <TD align="left" valign="top"><ul>
+          <li>Product Recommendation</li>
+      </ul></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>Out of direct scope of these types of SOA Governance Planning engagements (but which may form part of a follow-on engagement), and which you should bear in mind when considering successful Governance for SOA, are: </p>
+<TABLE width="100%" border=1 title="How to Address Key Topics" summary="This table lists some Key Topics in the first column, a description in the second column and how to address the topic in the third column.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="99" height="26" bgColor=#CCCCCC><div align="left">Key Topic </div></th>
+      <th scope="col" width="412" bgColor=#CCCCCC><b>Topic Description </b></th>
+      <th scope="col" width="566" bgColor=#CCCCCC><b>How to Address </b></th>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Skill Set Alignment </th>
+      <TD align="left" valign="top"><ul>
+          <li>What are the organization&rsquo;s current capabilities and expertise around SOA?</li>
+          <li>What skill-sets do they need and how does the organization address this issue.</li>
+      </ul></TD>
+      <TD align="left" valign="top"><p>The Roadmap should recommend an incremental approach to increasing an organizations skill and expertise. This can be done in a generic manner without going through a formal interview and assessment for the IT staff.</p></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">IT Metrics and Measurement </th>
+      <TD align="left" valign="top"><ul>
+          <li>What IT metrics should be captured for an enterprise-wide SOA initiative?</li>
+          <li>How should these metrics be captured and how should they be measured against best practices</li>
+      </ul></TD>
+      <TD align="left" valign="top"><p>During Current Reality, capture a high-level understanding of how the organization currently specifies IT metrics and how these are measured against industry best practices. The Roadmap can recommend a separate initiative that specifies an initial set of SOA metrics which are then built on over time.</p></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="left" valign="top">Funding Model </th>
+      <TD align="left" valign="top"><ul>
+          <li>What approach should an organization use to fund their SOA initiative?</li>
+      </ul></TD>
+      <TD align="left" valign="top">During Current Reality, capture a high-level understanding of how the organization currently funds shared infrastructure projects. The Roadmap can recommend a separate initiative which determines if the current means of funding are sufficient</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Ascertain Level of Detail Available for Key Topics</h5>
+<p>Having established the key topics that the engagement will cover, it is important to understand how much detail is available for each of them.
+<ul>
+  <li>It may be that there is no detail available because the key topic is new to the organization, or because the process or procedure is too informal. In which case, discussion or interview is the only option to judge the organization&rsquo;s process maturity in this area.</li>
+  <li> At the other extreme, the organization may have volumes of information, and you may need to conduct a workshop to get an overview or summary of the situation. </li>
+</ul>
+<p>The guidance here is to get enough information to be able to understand the situation and make value-judgments about it. By no means does this require a 100% understanding or &ldquo;total depth&rdquo; approach.
+<p><b>Pragmatism:</b> The Importance of an Iterative and Timeboxed Approach</p>
+<p>SOA Governance Planning is not the kind of activity that is as easily or definitively finished in the same way as a configuration exercise can be described as finished. There is always more detail that could be fleshed out, or another layer of process that could be defined. In this mode, SOA Governance Planning could easily become very academic, waterfall-like, even an &ldquo;analysis-paralysis&rdquo; paradigm. Therefore, scoping exercise must take into account two key pillars of OUM that will assist that the engagement is successful.
+<p><b>Timeboxing:</b> Irrespective of whether the engagement is time and materials or fixed price; it should be timeboxed. Ensure that the customer is aware that each area is timeboxed, and that sufficient detail will be arrived at during each area to draw reasonable conclusions on a list of prioritized key topics. If, for some reason, activities take longer than agreed, then lower priority topics will have to be de-scoped from the timebox, or the timebox extended.
+<p><b>An Iterative Approach:</b> It is critical to the success of the SOA Governance Planning engagement that an iterative approach is taken, both to the work itself, and to the production of work products. For the work products: so that throughout the areas of the engagement, work products are under way; both so that preparation time at the end of the area is minimized, and to ensure that hypothesis-led thinking, ideas and themes are shared within the team from the start to maximize the time for review, brainstorming, and creativity. It is especially important to iterate the end of area presentations.
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h4><a name="ER020" id="ER020"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy</a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank"><br>
+</a><a name="ER030"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 Set and Agree on Plan for Envision Engagement </a></h4>
+<p>Understanding the organization&rsquo;s expectations of SOA in terms of business and IT benefits will enable you to figure out what level of SOA governance will be required to achieve those goals.</p>
+<p>Keep in mind, that the timeline of the engagement (Current Reality &ndash; Future Vision &ndash; Roadmap) may not always be contiguous. This arises because at the end of an area, it may not be possible to assemble the stakeholders for the Stakeholder Presentation in a timely manner. Project planning in advance can mitigate to an extent against this contingency, and some limited activities from the next area can begin during a hiatus between areas. Nonetheless, this can have an adverse effect on estimating, burning down team days from the next area&rsquo;s timebox very quickly.</p>
+<p>It is recommended at this point to determine the required number of workshops, including the dates and times and the list of participants with appropriate caveats about deviation from the schedule. Unfortunately, too many times organizations deviate and individuals postpone or cancel attendance.</p>
+<h5>Determine Staffing, Schedule and Level of Effort</h5>
+<p>Once the engagement has been scoped, the engagement lead should determine a level of effort (LOE) for each delivery area and stream, which will combine into an estimate for the engagement as a whole. A number of factors can affect the estimate in addition to the common factors, such as the availability of enterprise materials, in particular business models, org charts, sample models, service engineering process documentation, etc. If this material is not available, effort must be included to collect or even create this kind of material, as it is an important input to this kind of engagement.</p>
+<p> You should also consider which customer stakeholders should be involved in the process and in which roles. The exact roles required from the organization will vary for each organization. Detailed consideration should be given to organizational navigation to ensure that all relevant stakeholders are included. Often the organization is not aware of who should or should not be involved.</p>
+<p> Try to obtain detailed organization charts for the organization. This is an effective place to start when determining who to involve in the engagement. A candidate list should be prepared, and reviewed internally, before proposing to the organization.</p>
+<p> In addition, it is recommended to identify at least these two organization roles:</p>
+<ul>
+  <li>Day-to-Day Project Manager/Assistant - someone who can &ldquo;make things happen&rdquo; for your team. This person must be empowered by the enterprise project sponsor.</li>
+  <li>SOA Governance Expert - often hard to find in an organization. It is important to seek out those who have influence/political power and/or strong opinions on the subject and get them on board early. Getting alignment is key and is done through the kickoff meetings in each area of the engagement.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="ER045" id="ER045"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_045_ESTABLISH_EXEC_SPONSORSHIP_OVERVIEW.HTM" target="_blank">ER.045 Establish Executive Sponsorship </a></h4>
+<p>Business executives should also be asked about their plans for SOA &ndash; what they feel it means to them, both in terms of benefits and challenges. The results of their SOA Assessments would provide a good starting point for this discussion. Do not be surprised if the business executives do not have an opinion. At the end of the day, business executives just want to get their projects developed quickly and with quality and they do not care if IT uses SOA or ABC.</p>
+<p> SOA should also be discussed with IT executives in order to understand their perceived benefits and challenges. SOA Assessment results can be factored into the discussion.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h4><a name="ER050" id="ER050"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">ER.050 Validate and Agree on Envision Engagement Plan </a></h4>
+<p>When the draft statement of work for the engagement is ready, it should be validated. Incorporate modifications from reviews and Stakeholder Presentation feedback. Iterate with the stakeholders to reach the final plan.</p>
+<p> In certain instances, especially if the engagement has been scoped to accommodate a large number of divisions, locations and additional key topics, it is advisable to present the statement of work so that all stakeholders are comfortable with what is being proposed, the approach and the expectations of the enterprise.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=CRG id="CRG"></A></B><a href="SGP_OVERVIEW.HTM#SGPOD" target="_blank">CURRENT REALITY GUIDANCE</a> </h4>
+<p>A pragmatic and effective Roadmap cannot be built until there is a common understanding on the current situation. Many organizations will comment that &ldquo;we know what&rsquo;s wrong&rdquo; or similar. Simply put, unless there is a wide consensus as to what is right and wrong (a true benchmark), it is difficult to put in place the steps to take them where they want to go. Without Current Reality, the proposed Roadmap will probably be built from assumptions, hearsay and conjecture. Even worse, the roadmap could be so generic that it will be of little use to the organization.
+<p>Therefore, once there is a shared agreement as to where the organization is today, the next step is to conduct a current reality assessment. The current reality assessment provides important information on baseline conditions and helps determine what changes will have the greatest positive impact on the organization. The current reality assessment also provides early indication of potential areas of resistance or implementation barriers.</p>
+  <p>The following is a suggested workflow for Current Reality:</p>
+  <p align="center"><a name="CRW"></a><img src="../../../010_COMMON_FILES/SOA_GOV_CR_WF.PNG" alt="Current Reality Suggested Workflow" width="715" height="571" title="Current Reality Suggested Workflow"></p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <hr width="100%">  
+  <h4><B><A
+name=STM0501 id="STM0501"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.1 - Conduct Team Orientation</a></h4>
+  <p>Mobilization, including scoping, was executed because it is all too easy to over-promise and under-deliver if the boundaries for the engagement and the content of the deliverables are not spelled out properly, or if the resources needed to execute the engagement are unavailable. Therefore, at the beginning of the engagement and at the beginning of each area you should hold a kickoff meeting. Therefore, a team orientation should be conducted at the beginning of Current Reality.
+  <p>As stated previously, a pragmatic and effective Roadmap can only be built once there is a common understanding of the current situation. This must be understood before you start the Current Reality kickoff meeting, but should also be emphasized as part of the presentation.
+  <p>The Current Reality kickoff meeting has 2 focuses:
+  <ul>
+    <li>kickoff the overall engagement</li>
+    <li>kickoff the Current Reality area </li>
+  </ul>
+  <p>The Current Reality kickoff meeting should be attended by the enterprise sponsor and other important enterprise stakeholders. Work with the enterprise sponsor and make sure that they co-present in order to emphasize its importance. With the stakeholders in the room, cover the structure and approach of the engagement. Provide more detail around the Current Reality area, as more detail of the other areas will be delivered as they are started. You should also educate the organization on the <a href="#CRW">Current Reality workflow</a>.</p>
+  <p>Examples of topics for the kickoff workshop are:</p>
+  <ul>
+    <li> introductions of both consultants and enterprise stakeholders</li>
+    <li> discuss and confirm scope, goals and objectives of the engagement</li>
+    <li> discuss and confirm approach of engagement with more detail around the Current Reality area</li>
+    <li>re-emphasis of the engagement and Current reality estimates</li>
+    <li> expectations of participation - confirm interview list, confirm interview schedule</li>
+    <li>confirm scope and business/IT context</li>
+  </ul>
+  <p>As there may be a couple of weeks between Mobilization and the start of the engagement, it is advisable for the engagement team to review the following documents prior to the kickoff meeting:</p>
+  <ul>
+    <li>previously collected documents from the enterprise</li>
+    <li>other types of documentation, i.e., Proposal, Statement of Work, etc.</li>
+  </ul>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=GV015 id="GV015"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_015_REVIEW_CURRENT_GOVERNANCE_MODEL_OVERVIEW.HTM" target="_blank">GV.015 Review Current Governance Model</a> </h4>
+  <p>During this task, you perform a current reality assessment on SOA Governance. This is executed early in the engagement, as part of the Current Reality area.</p>
+  <p> Follow the steps described in the task. Additional guidance is described for some of the steps:</p>
+  <TABLE width="100%" border=1 title="Task Steps" summary="This table lists supplemental information for the steps for completing the task.  The headings are No., the Task Step, Component (if the step results in a Component), and Component Description.">
+    <TBODY>
+      <TR align="left" valign="middle">
+        <th scope="col" height="26" bgColor=#CCCCCC><DIV align=center> No.</DIV></th>
+        <th scope="col" bgColor=#CCCCCC><b>Task Step</b></th>
+        <th scope="col" bgColor=#CCCCCC><div align="left">Supplemental Guidance</div></th>
+      </TR>
+      <TR>
+        <th scope="row" valign="top">3</th>
+        <TD align="left" valign="top">Understand how data relates to areas of the review areas.</TD>
+        <TD align="left" valign="top">Use the SOA Domain Model as the areas in this task step. When you segment the data against the Domain Model, and the key topics you have identified during scoping (<a href="#SM010">SM.010, Define and Confirm Scope</a>) common themes and patterns start to emerge that highlight the greatest challenges the organization will encounter for achieving the benefits of SOA.</TD>
+      </TR>
+      <TR>
+        <th scope="row" valign="top">4</th>
+        <TD valign="top">Establish common themes that underlie/interconnect the data.</TD>
+        <TD valign="top">SOA Governance is still a new discipline and that it is still early to have any comprehensive publicized industry best practices, therefore try to gather as much best practices as possible. If there is data or persons available from earlier similar engagements, use them if possible. Also, if there is a senior person available with experience in the area, ask if he or she can validate the results, but keep in mind that you do not have to wait until you have nearly completed your Current Reality Assessment before asking for advice.<br>
+            <br>
+        If you have the result from past similar engagements, they may help to give you indications on where companies are struggling with adopting SOA. But DO NOT let another company&rsquo;s Current Reality assessment blinker your thinking for the current assessment.</TD>
+      </TR>
+      <TR>
+        <th scope="row" align="center" valign="top">5</th>
+        <TD align="left" valign="top">Develop draft Current Governance Model.</TD>
+        <TD align="left" valign="top"> Assess your findings against the SOA Maturity Matrix and if available, against past similar engagement findings. Refer to the SOA Maturity Matrix as a guideline. As with all assessments, it is very rare that you find a perfect quantitative response to qualitative analysis. Therefore, you need to use your experience and best judgment on how the company fares against the SOA Maturity Matrix.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>Generally, It is preferable to use a presentation as it is quicker to produce and easier to change as you go. It allows you to focus on the work at hand: designing SOA governance instead of spending time just writing text few people will ever read.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1801 id="ER1801"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.1 Prepare for and Present Solution Recommendation</a></h4>
+  <h5>Current Reality Assessment</h5>
+  <p> <b>Attendance:</b> At the kickoff meeting, you should try and find out who will be attending the delivery of the Current Reality Assessment. The Current Reality Assessment should be delivered to the executive stakeholders. It may be appropriate to invite others involved in the execution of Current Reality. However, the larger the audience, the more difficult it is to reach conclusions in the presentation, which is crucial.</p>
+  <p> <b>Duration:</b> The duration of the delivery of the Current Reality Assessment should consume somewhere between 60 &ndash; 120 minutes in order to maintain a high level of interest in the audience.</p>
+  <p> <b>Objective:</b> It is important to gain agreement that the assessment is in-line with expectations and is correct to the best of their knowledge. If there are any discrepancies then these need to be discussed, noted and fleshed out straight after the meeting. At the conclusion of the presentation of the Current Reality Assessment, allow adequate time for a question and answer period in order for the organization to satisfy themselves that they understand the assessment.</p>
+  <p> <b>Findings:</b> The executive audience will be more interested in rationale and outcomes than in the detail of the manner in which they were obtained. The supporting detail for the presentation should be in an appendix of the presentation. This appendix can be used as supporting data for any specific finding that the executives may wish to delve into and can be used by the organization. In addition, this supporting data can be used as a string foundation on which to build the future vision phase. If there are any discrepancies or holes in our findings then do not try and hide the fact, work with the organization to expand and complete the story.</p>
+  <p> <b>Delivery:</b> The presentation should be delivered by the engagement project manager, given that this is an executive audience. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr width="100%">
+  <h3><B><A
+name=FVG id="FVG"></A></B><a href="SGP_OVERVIEW.HTM#SGPOD" target="_blank">FUTURE VISION GUIDANCE</a></h3>
+  <p>The Future Vision is not about defining the structures and processes required for the organization to execute their next project. The Future Vision area is about defining the optimal structures and supporting processes to which the organization can transition over a 2-3 year period while at the same time not over emphasizing the current barriers to success. It is important to understand that there is no &ldquo;one size fits all&rdquo; Governance Model; therefore, a collaborative approach is the most pragmatic approach to jointly design the appropriate SOA Governance Model.</p>
+  <p> A Future Vision for SOA Governance consists of but is not limited to:</p>
+  <ul>
+    <li>identifying and partially elaborating the processes and practices that are needed to be employed, and ownership/stewardship thereof</li>
+    <li>defining the roles required in governance and responsibilities of those roles</li>
+    <li>identifying and detailing organization structure(s) that contain the roles and execute the processes</li>
+  </ul>
+  <p>The process of creating the Future Vision consists of facilitating the organization through the process of understanding the needs for governance and translating those needs to workable plans. This will be done through delivery of:</p>
+  <ul>
+    <li> one or more Level-Setting Workshops</li>
+    <li>one Future Vision Definition Workshop</li>
+    <li>synthesis and elaboration of information gathered and documentation of the outcomes</li>
+    <li>completed High-Level Future Vision Governance Model</li>
+  </ul>
+  <p>An agreed on Future Vision Governance Model gives the Roadmap area a solid foundation on which to build a pragmatic, effective and incremental Roadmap.</p>
+  <p>The following is a suggested workflow for Future Vision:</p>
+  <p align="center"><a name="FVW"></a><img src="../../../010_COMMON_FILES/SOA_GOV_FV_WF.PNG" alt="Suggested Future Vision Workflow" width="715" height="570" title="Suggested Future Vision Workflow"></p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=STM0502 id="STM0502"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.2 - Conduct Team Orientation</a></h4>
+  <p>Mobilization, including scoping, was executed because it is all too easy to over-promise and under-deliver if the boundaries for the engagement and the content of the deliverables are not spelled out properly, or if the resources needed to execute the engagement are unavailable. Therefore, at the beginning of the engagement and at the beginning of each area, you should hold a kickoff meeting.
+  <p>During Future Vision, there are two workshops that are relevant:
+  <ul>
+    <li> the Future Vision kickoff meeting </li>
+    <li> the Level-Set workshop</li>
+  </ul>
+  <h5>Future Vision Kickoff Meeting</h5>
+  <p>The project sponsor and other important stakeholders should attend the Future Vision kickoff meeting. With the stakeholders in the room re-iterate the structure and approach of Future Vision and especially stress the importance of the workshops and their attendance by senior personnel.</p>
+  <p>The best approach would be to finalize the number of workshops, dates and times and the list of participants during Mobilization (as part <a href="#ER030">ER.030, Set and Agree on Plan for Envision Engagement</a>). Unfortunately, too many times organizations deviate and individuals postpone or cancel attendance. Therefore, at the very latest at the kickoff meeting for the Future Vision area reiterate on the number of workshops, the locations, date and times and the confirmed attendance.</p>
+  <p>It is important to make clear that the Future Vision area is not about defining the structures and processes required for the organization to execute their next project. The Future Vision area is about defining the optimal structures and supporting processes that can be transitioned to over a 2-3 year period while at the same time not over emphasizing the current barriers to success.</p>
+  <p>It is also important to understand that you cannot solely define this Future Vision as this tends to lead to a generic Future Vision for all organizations. It is important to inform the organization that there is no &ldquo;one size fits all&rdquo; governance model and that a collaborative approach is the most pragmatic approach to designing the appropriate SOA Governance Model for them.</p>
+  <p>A Future Vision for SOA Governance consists of but is not limited to:</p>
+  <ul>
+    <li>identifying and partially elaborating the processes and practices that are needed to be employed, and ownership/stewardship thereof</li>
+    <li>defining the roles required in governance and responsibilities of those roles</li>
+    <li>identifying and detailing organization structure(s) that contain the roles and execute the processes</li>
+  </ul>
+  <p>The process of creating the Future Vision consists of facilitating the organization through the process of understanding the needs for governance and translating those needs to workable plans. This will be done through delivery of:</p>
+  <ul>
+    <li>one or more level-set workshops</li>
+    <li>one Future Vision Definition workshop</li>
+    <li>synthesis and elaboration of information gathered and documentation of the outcomes</li>
+    <li>completed high-level Future Vision Governance Model</li>
+  </ul>
+  <p>You should also educate the organization on the <a href="#FVW">Future Vision workflow</a>.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr width="100%">
+  <h4><a name="ER025" id="ER025"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_025_EDUCATE_ENT_ON_AREA_OF_FOCUS_OVERVIEW.HTM" target="_blank">ER.025 Educate Enterprise on Area of Focus </a></h4>
+  <h5>Level-Set Workshop</h5>
+  <p>Level setting workshops are necessary to help the organization develop a shared understanding of the role of governance in effective SOA adoption. </p>
+  <p>There are a great many types of governance that may exist at some level in organizations &ndash; IT governance, corporate governance and other regulation and compliance structures. However, SOA governance involves processes and disciplines that many organizations either do not have, have decided not to have or have in some form but not at an institutional level or in a systematized fashion. Terminology about SOA and SOA governance is often different from a given organization&rsquo;s terminology, and may be entirely new outside of a few thought leaders in an IT organization. Organization structures may not map very well to SOA processes and may, in fact, hinder SOA adoption. For all of these reasons, it is important to bring the stakeholders in SOA adoption in an organization together to agree on the terminology, needs, goals and expectations for SOA governance to provide a foundation for those stakeholders to then discuss their desired future vision.</p>
+  <p><b>Attendance</b> - People who make decisions about governance, and people who have responsibility for carrying out decisions about governance should attend. It is vital that all of these people have a common understanding of the definition, goals and objectives of SOA governance. Depending on the size of the organization and the scope of the SOA Governance Planning engagement, this may be quite a large group of people and may require multiple workshops. The actual attendees will vary depending on the structure of the organization, but typical decision making participants could be:</p>
+  <TABLE width="58%" border=1 title="Input Required and Role" summary="This table lists the Input required in the first column and the source roles for that information in the second column.">
+    <TBODY>
+      <TR>
+        <th scope="col" width="42%" height="26" bgColor=#CCCCCC><div align="left">Input Required </div></th>
+        <th scope="col" width="58%" bgColor=#CCCCCC><b>Typical Title/Role </b></th>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Overall IT Vision/Direction Setting </th>
+        <TD align="left" valign="top"><ul>
+            <li>CIO</li>
+            <li>CTO</li>
+        </ul></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Day-to-Day Decision Making </th>
+        <TD align="left" valign="top"><ul>
+            <li>Line of Business (LOB) IT VP/Director/Manager </li>
+            <li>Department IT VP/Director/Manager</li>
+        </ul></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Architecture</th>
+        <TD align="left" valign="top"><ul>
+            <li>Enterprise Architects </li>
+            <li>Chief Architects </li>
+        </ul></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Operations and Assurance </th>
+        <TD align="left" valign="top"><ul>
+            <li>Testing Managers </li>
+            <li>Operation Managers</li>
+        </ul></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Project Delivery, Management and Oversight </th>
+        <TD align="left" valign="top"><ul>
+            <li>Project Management Office (PMO) </li>
+            <li>LOB/Department IT VP/Director Manager</li>
+        </ul></TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>During Mobilization, the actual list of attendees should have been settled so that the calendars of the participants have been cleared. It is important to assess the relative importance of the participation of any given attendee &ndash; some are more necessary than others. If no one attends from the CIO&rsquo;s office, for example, then the likelihood of misunderstanding or miscommunication is much higher, and buy-in is harder to obtain, which in turn makes the willingness or ability for the organization to change lower.</p>
+  <p><b>Contents</b> - The workshop content should consist of the following topics: </p>
+  <ul>
+    <li>SOA Overview</li>
+    <li> Recap of Findings of the Current Reality area and Common Themes</li>
+    <li> Benefits and Challenges of SOA</li>
+    <li> Definition of SOA Governance</li>
+    <li> Description of SOA Adoption and the Role of Governance In It</li>
+    <li> Discussion of Common SOA Governance Processes</li>
+    <li> Discussion of Common SOA Governance Organization Structures and Roles within those Organizations</li>
+    <li> Description of the Future Vision Definition Workshops and Expected Outcomes</li>
+  </ul>
+  <p>The role of the project manager (as a facilitator) in this workshop is to communicate information, and to facilitate discussion about the applicability of these topics to the organization. There is a temptation in these discussions to bring the topics around to the current challenges with which the organization is faced, but this temptation must be avoided. For one thing, these challenges should have been uncovered and discussed during Current Reality. For another, the purpose of these discussions is to help the enterprise participants reach agreement on the needs for SOA governance, a lingua franca for discussing it, and the objectives of Future Vision.</p>
+  <p> From the experience in Current Reality, the facilitator should be able to tailor the workshop content to focus on areas on which an organization has less experience or more curiosity, and less on areas that are strong competencies. It is tempting to try to solve all of the issues facing a given organization. This runs the risk of expanding the scope, which results in either failing to meet the agreed scope or by having to deliver on the expanded scope. On the other hand, it is imperative for the facilitator to ensure that all of the agreed scope is addressed in the workshop.</p>
+  <p> This workshop should take place over the course of 3-4 hours. A shorter workshop increases the likelihood of getting the needed attendees time and attention, but decreases the depth at which the topics can be covered. A longer workshop runs the risk of jeopardizing the engagement because of the inability to get all of the participants together. Creating the right workshop is one of the more important things required to ensure the success of the Future Vision area. It may be advantageous, as a trade off between these forces, to conduct multiple, shorter workshops than a single, long one. Because of the possibility that these shorter workshops would need to take place over multiple days, it may be desirable to overlap the end of Current Reality with these workshops. This often works because many of the participants are different in direction setting and decision making than those that will be tasked with furnishing the details of current operations.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=GV010 id="GV010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/GV_010_DEFINE_GOVERNANCE_STRATEGY_OVERVIEW.HTM" target="_blank">GV.010 Identify Governance Strategy </a> </h4>
+  <p>During this task, you develop the Target SOA Governance Model.</p>
+  <h5>Future Definition Workshop</h5>
+  <p> You use the Vision Definition workshop to lay the foundation for the future direction of governance for SOA for the organization. Therefore, the participants for the workshop must be the key decision makers with respect to SOA governance. Also, the participants must have attended the level set workshop (see guidance for <a href="#STM0502">STM.050.2, Conduct Team Orientation</a>) before executing this task.</p>
+  <p> <b>Contents</b> - The Future Vision Definition workshop for SOA Governance should consist of facilitated discussion and exercises around the following topics:</p>
+  <ul>
+    <li>High-level Review of Current Reality Assessment (<a href="#GV015">GV.015, Review Current Governance Model</a>)</li>
+    <li> Definition of SOA Governance</li>
+    <li> Definition of Guiding Principles (Business, IT and SOA) and Linkage</li>
+    <li> Review of Architecture and SOA Adoption Challenges</li>
+    <li> Definition of SOA Organization Structures</li>
+    <li> Definition of SOA Governance Processes and Roles and Responsibilities</li>
+  </ul>
+  <p>Each of these topics should already be familiar to the participants by virtue of having participated in a Level Setting workshop. Objectives of defining SOA governance are to ensure that the organization understands the difference between SOA governance and other types of governance, and to define the scope of SOA governance for the organization.</p>
+  <p> Having agreed on the role and purpose of SOA governance for the organization, the next objective of the Vision Setting workshop is to drive recognition of the challenges of SOA.</p>
+  <p><b>SOA Challenges</b> - After establishing the principles that will guide the overall delivery of SOA through governance, developing a joint appreciation for the challenges that must be addressed in SOA adoption and, accordingly, the breadth of scope of governance, is the next objective of the workshop. One effective means of accomplishing this is to review, at a high level, the implications of adopting SOA by reviewing a depiction of SOA reference architecture. The &ldquo;high level&rdquo; is a key point, because many of the attendees will not be technical people. However, describing the layers of the architecture, the responsibilities and relationships of those layers to one another and the disciplines required to support it will help to elicit discussion of the several points that will need to be addressed for effective SOA governance. </p>
+  <p>Some example questions that should arise would be:</p>
+  <ul>
+    <li>How might the concepts of shared infrastructure and software initiatives be addressed in the future?</li>
+    <li> Where will the responsibility for those initiatives lie?</li>
+    <li> How will the actions of the responsible organization(s) be decided?</li>
+    <li> How will the results of the efforts of shared initiatives be made available through the remainder of the enterprise?</li>
+    <li> How should architecture governance work?</li>
+    <li> What kind of authority will the organization responsible for architecture need to have?</li>
+    <li> How will architecture compliance be measured and enforced?</li>
+    <li> Specific to SOA, how will services be enabled in the organization?</li>
+    <li> Who should develop them? Test them? Manage them in production? According to what processes?</li>
+    <li> Who will have responsibility for the process of their development (SDLC)?</li>
+    <li> Who will decide which services are needed, and when?</li>
+  </ul>
+  <p> These kinds of questions should be raised in the context of discussion of the reference architecture. If the organization has done some work on SOA reference architecture, or has an industry reference architecture that they particularly like, the discussion should focus around that. If not, then you should furnish a reference architecture that the facilitator feels comfortable addressing (such as, the SOA reference architecture from the SOA Domain Model).</p>
+  <p>Conducting an exercise to provide a breadth of perspective for SOA adoption challenges can be helpful to the goals of this section of the vision definition workshop. The participants can be split into groups representing different perspectives; at a minimum, one group representing a central shared services organization and other representing a line of business can be set up. Each of these participants would describe the challenges with adoption of SOA from the perspective of their part of the organization. The separate groups would then be brought back together to discuss their respective lists with the broader group. The results of the exercise and discussion from this part of the workshop will be used throughout the remainder of the workshop to ensure that the decisions made about governance structure and processes address the identified challenges.</p>
+  <h5>Guiding Principles</h5>
+  <p>In the context of SOA, you need guiding principles to be established, to guide, inform and support the way in which an organization sets about fulfilling its mission through the use of SOA Principles. This provides traceability to support the use of the principles in explaining and justifying why specific SOA governance decisions are made. The SOA principles should support the IT Governance Principles.</p>
+  <p> The participants will already have developed an understanding of the types and purposes of principles during the Level Setting workshop. In addition to the SOA Objectives and IT Principles mentioned in the main documentation of this task, you should have a look at the SOA Benefits and SOA Principles:</p>
+  <blockquote>
+    <p><b>SOA Benefits</b> - The expectation of the enterprise on what benefits SOA will bring to their organization</p>
+    <p><b>SOA Principles</b> - These are expressions of the goals for SOA adoption. They are often related to IT principles, but may merely express overarching goals that span IT principles (integration will be achieved using services) or affect the way in which they will be realized (services will be implemented using recognized industry standards).</p>
+  </blockquote>
+  <p>This exercise and discussion allows the participants to see and agree on the principles that will guide all SOA governance efforts. You can see some principle examples in the figure below:</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_GV010.PNG" alt="Example Principles" width="872" height="516" title="Example Principles"></p>
+  <p align="left"> Having agreed on the principles, guided discussion or another exercise may be used to establish linkages from business objectives to IT objectives to SOA principles. Linkages are a very important step in this process because they provide line-of-sight from SOA-related efforts to the principles that they satisfy, rolling up to meeting IT principles, business objectives or, in many cases, both. SOA principles never exist in their own right; they always have direct linkage. With established linkage, it becomes possible to trace efforts directly to business benefit, which is crucial to the ability to sustain SOA adoption through the early adoption investment.</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_GV010-2.PNG" alt="Line-of-Sight from Individual Objectives to Team-Lead Objectives to SOA Guiding Principles to SOA Vision" width="444" height="340" title="Line-of-Sight from Individual Objectives to Team-Lead Objectives to SOA Guiding Principles to SOA Vision"></p>
+  <h5>Organization Structures</h5>
+  <p>There are as many possible governance structures for SOA governance as there are organizations to adopt SOA. That said, there are typical kinds of relationships among organization components and the responsibilities of those components to SOA adoption that can be represented in various ways. The workshop should map the enterprise to those typical SOA organization components in a way that provides the necessary coverage with the least disruption to the organization. This is crucial, because as in any organizational change, this is one of the largest typical barriers to organizations that seek to adopt SOA.</p>
+  <p> In order for SOA governance to be successful, governance has to be lightweight and people have to be empowered to make decisions.</p>
+  <p> The typical areas of responsibility for SOA governance are depicted in one way on the following example picture:</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_GV010-3.PNG" alt="SOA Governance Organization Structure Model" width="935" height="510" title="SOA Governance Organization Structure Model"></p>
+  <p>These areas of responsibility, briefly, consist of the following:</p>
+  <TABLE border=1 title="SOA Areas of Responsibility" summary="This table lists the SOA areas of responsibility in the first column followed by a description in the second column.">
+    <TBODY>
+      <TR bgcolor="#CCCCCC">
+        <th valign="top" scope="col">Area</th>
+        <th valign="top" scope="col">Description</th>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">SOA Steering Board </th>
+        <TD align="left" valign="top"><p>Leadership structures such as IT/ SOA Steering Boards should preferably be staffed with senior management stakeholders who provide the executive sponsorship for the SOA initiative and set the business priorities. It is recommended to have both business and IT representatives to set and define the vision and strategy as well as establish the appropriate funding models. The SOA Steering Board should also be the final authority for any exception management decisions that need to be made. In many enterprises the roles performed by this structure can be addressed by existing IT steering boards or as extensions of IT steering boards.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row"align="left" valign="top">SOA Architecture Authority</th>
+        <TD align="left" valign="top"><p>The SOA Architecture Authority not only enables the strategy execution as defined by the SOA steering board, but also is the custodian over the official SOA Reference Architecture. This structure tends to be staffed by internal experts, but in the early stages can be supplemented by external experienced practitioners. Roles focus around the different aspects of SOA architecture and methodology, from defining approved standards, processes, and products to adjudicating architectural priorities and issues. In many enterprises the roles performed by this structure can be addressed by the enterprise architecture team or an extension of the enterprise architecture team.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row"align="left" valign="top">SOA Enablement Team (aka SOA Center of Excellence) </th>
+        <TD align="left" valign="top"><p>A SOA Center of Excellence (COE) allows enterprises to focus more resources and funding on innovation and project delivery while reducing the complexity involved in executing SOA. The SOA COE supports project teams in a variety of ways, from making available experts as a SOA skills and resource base, to enabling overall corporate competency development. While this team should be seen as a project enabler, they do have the charter to assure SOA governance compliance. This team tends to be staffed by experience SOA architects who understand the SOA Reference Architecture, associated standards, best practices, and defined SOA governance policies. In many enterprises the roles performed by this structure can be addressed by extensions to existing structures such as an Integration Competency Center.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Service Advisory Council </th>
+        <TD align="left" valign="top"><p>It is common for enterprises to define structures that are the custodians of the Service portfolios. Sample duties include maintaining the integrity of the taxonomy and metadata, assisting with Service candidate approval and with the development of a Services blueprint, and monitoring the Service usage/reuse. Example roles include Service registrar, Service portfolio owners, and business domain subject matter experts.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Service Engineering </th>
+        <TD align="left" valign="top">It is common for enterprises to separate the development of applications from the development of Services as each approach can utilize a different development methodology and eases the option of outsourcing. Each approach requires a different mindset, processes, and organizational structures.</TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>As mentioned in the main task description, this part of the workshop should probably take the shape of a facilitated discussion where the participants will describe the parts of their organization that could or should take responsibility for these kinds of functions (mapping). Information from the Current Reality will be used to seed this discussion.</p>
+  <p> In mapping current organization structures to future governance structures, division of responsibilities among business units often comes up, also for SOA governance. The discussion of the division of responsibilities will raise questions of whether decision-making should be centralized, federated or hierarchical or some combination of those structure types. Different structure types may be appropriate for different kinds of decision-making. For instance, it probably makes the best sense for most organizations for SOA Steering to be centralized, but SOA Alignment could easily be hierarchical, especially in large, geographically distributed enterprises. </p>
+  <h5>Process</h5>
+  <p>There are several processes that are necessary for effective SOA governance. These include but are not limited to:</p>
+  <TABLE border=1 title="SOA Processes" summary="This table lists the SOA process in the first column followed by a description in the second column.">
+    <TR bgcolor="#CCCCCC">
+      <th scope="col" valign="top">Process</th>
+      <th scope="col" valign="top" bgcolor="#CCCCCC"><p>Description</p></th>
+    </TR>
+    <TBODY>
+      <TR>
+        <th scope="row" align="left" valign="top">SOA Reference Architecture Management </th>
+        <TD align="left" valign="top"><p>The SOA Reference Architecture Management process defines a structured approach to review and approves changes to both the existing SOA Reference architecture and the current SOA Roadmap. Any updates are then communicated to the relevant stakeholders.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">SOA Project Approval </th>
+        <TD align="left" valign="top"><p>The SOA Project Approval process assists enterprises in evaluating a projects appropriateness and alignment with the agreed SOA Roadmap. This process tends to supplement an enterprise's existing project investment process.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">SOA Alignment (SDLC) </th>
+        <TD align="left" valign="top"><p>The SOA Alignment (SDLC) process complements an enterprise's existing SDLC process by adding formal design and architecture evaluation reviews at key control points. The process evaluates the alignment against established architectural criteria and business objectives.</p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">SOA Service Infrastructure Management </th>
+        <TD align="left" valign="top"><p>The SOA Service Infrastructure Management process defines a structured approach to ensure that the SOA Platform including published services are maintained and that changes are communicated to stakeholders as new services are incorporated into the architecture.</p></TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>For each of the identified processes, use a RACI chart (see the main task guidance for more details about this) to understand the participation required of any of the governance organizations and the nature of that participation.</p>
+  <p> For example, given the sample RACI chart for SDLC Alignment in the table below for the &ldquo;Identify New Services&rdquo; task, the SOA Alignment Team might have the responsibility. The Shared Services Development organization would consult on that kind of activity. The SOA Steering Board would probably need to approve of the identified services. Finally, the Architecture Review Board would need to be notified of the results, since the development of the services that are eventually delivered would need to be monitored for architectural compliance. This would yield a RACI chart for that task that resembles the following:</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_GV010-4.PNG" alt="Example RACI Chart" width="869" height="411" title="Example RACI Chart"></p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER160 id="ER160"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">ER.160 Develop Desired Future State</a> </h4>
+  <p>In this task, you add detail and elaborate on the governance model defined during the workshop (GV.010).</p>
+  <h5>Elaborate Governance Process</h5>
+  <p>You start with detailing the collaboration interface and boundaries which assists in getting agreement on the expectations each role has of the others when handing off work, receiving work, providing service, or collaborating. One way to identify interdependencies is to use the responsibility charts (RACI) and map these onto a process map, which highlights key points of interface. Once the key points of interface have been identified, investigate if the needed information from other roles should be identified. When this is performed over a number of different role perspectives, it is possible to develop draft input and output hard/soft document requirements.</p>
+  <p> The example below shows an organization's software development lifecycle (SDLC) and the touch points that SOA Governance has on this process:</p>
+  <p align="center"><img src="../../../010_COMMON_FILES/SOA_GOV_ER160.PNG" alt="Example Software Development Lifecycle with SOA Governance Touch Points" width="798" height="475" title="Example Software Development Lifecycle with SOA Governance Touch Points"></p>
+  <p align="left">Once the responsibility charts have been mapped to a process map, it is advantageous to then detail each process activity covering such aspects as:</p>
+  <ul>
+    <li>Name &ndash; name of the process </li>
+    <li> Purpose &ndash; objective of this process activity</li>
+    <li> Description &ndash; high-level description of the actual tasks that need to be performed</li>
+    <li> Trigger &ndash; triggers for this process activity, i.e., Document completed, change in system status, etc.</li>
+    <li> Owner &ndash; person who has the primary responsibility and authority to execute this task</li>
+    <li> Participants &ndash; other stakeholders that will be informed and consulted</li>
+    <li> Approver &ndash; person who has the primary accountability for the task</li>
+    <li> Escalation Point &ndash; next level of escalation</li>
+    <li> Inputs &ndash; information is required to perform the task</li>
+    <li> Outputs &ndash; information that will be produced from this task</li>
+    <li> Duration &ndash; estimation of timescales on which to execute the task</li>
+    <li> Templates &ndash; any relevant and available templates to assist with the task</li>
+  </ul>
+  <p>The following table shows an example of a process description:</p>
+  <TABLE width="68%" border=1 title="Example Process Activity Details" summary="This table lists all the aspects in the first column followed by the value in the seond column.">
+    <TBODY>
+      <TR bgcolor="#CCCCCC">
+        <th scope="col" align="left" valign="top">Aspect</th>
+        <th scope="col" align="left" valign="top">Value</th>
+      </TR>
+      <TR>
+        <th scope="row" width="22%" align="left" valign="top">Name</th>
+        <TD width="78%" align="left" valign="top"><p>Create Service Usage Plan </p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Purpose</th>
+        <TD align="left" valign="top"><p>Eliminate the risk of service redundancy and assess opportunities of creating a new service. </p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Description</th>
+        <TD align="left" valign="top"><p>Identify: New service, opportunities to wholly reuse existing services, and/or modify existing services for reuse. </p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Trigger</th>
+        <TD align="left" valign="top"><p>SLRD complete - embedded in project workplan </p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Owner</th>
+        <TD align="left" valign="top"><p>Service Architecture Team / Project Architect </p></TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Participants</th>
+        <TD align="left" valign="top">Functional Analysts, Service Department Team (for service modifications) </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Approver</th>
+        <TD align="left" valign="top">Central SOA Group </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Escalation Point </th>
+        <TD align="left" valign="top">Central SOA Group / SOA Steering Committee </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Inputs</th>
+        <TD align="left" valign="top">Arch Guidance Doc, SLRD (Functional Spec), SOA Reference Architecture, Service Identification Guidelines </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Outputs</th>
+        <TD align="left" valign="top">Service Usage Plan </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Duration</th>
+        <TD align="left" valign="top">1-2 weeks </TD>
+      </TR>
+      <TR>
+        <th scope="row" align="left" valign="top">Templates</th>
+        <TD align="left" valign="top">Service Usage Plan </TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+  <p>To test these interfaces, develop common scenarios and simulate process effectiveness. If a company has been executing on an SOA vision for a while, it should be possible to take the organization&rsquo;s existing material as an input.</p>
+  <h5>Elaborate Governance Structures</h5>
+  <p>It is important that once the workshops have been executed that the output is driven to a workable level of detail. It is important that the organization&rsquo;s senior management realizes this before the workshop creative process of the definition phase wears off. As much as the intensity and excitement of a visioning workshop focuses and accelerates change, there is a danger that as soon as people return to their jobs, the momentum will be lost. In essence, follow-up plans get pushed to the side while everyone catches up on the work they missed and deals with immediate business needs.</p>
+  <p> In essence, the output from the visioning workshops is part of the vision definition. Although this is a good start in communicating what each role does, it does not clarify it in a detailed manner. </p>
+  <p> Without delving into the detail, there will still be some misconceptions of the best SOA Governance Model. Common issues that might occur without more detail are:</p>
+  <ul>
+    <li>shared responsibility, causing overlaps</li>
+    <li> shared responsibility can cause tension between both roles</li>
+    <li> no agreed exception process to handle objections</li>
+    <li> too narrowly defined, which results in gaps in the process</li>
+    <li> SOA process activities still too high level to deploy</li>
+    <li> execution of test process scenarios not possible</li>
+    <li> no basis to know what skills and expertise each role requires</li>
+  </ul>
+  <p>Therefore, the SOA organizational roles need to be defined at a more detailed level, covering areas such as relationships, interdependencies and handoffs. This can be achieved by the following high-level steps:</p>
+  <ul>
+    <li> Role definition</li>
+    <li> Collaboration Interface</li>
+  </ul>
+  <p><b>Role Definition</b> &ndash; Defines the expected outcome and responsibilities for each various SOA organizational roles, which state what results and tasks are to be attained within a timeframe. A role definition should not be seen as a job description but only highlights unique aspects of the role. As a starting point, harvest the outcome from the responsibility charts to develop a draft role definition. A completed role definition aids in identifying where there may be tension between current and future roles.</p>
+  <p> <b>Collaboration Interface</b> &ndash; Defines where roles interact with each other to provide input, carry out tasks for each other or collaborate on a task.</p>
+  <h5>Elaborate Additional Key Topics</h5>
+  <p> If additional key topics have been included in the scope (see <a href="#SM010">SM.010, Define and Confirm Scope</a>) such as a SOA communication plan. Do not forget to define the future vision for these as well.</p>
+  <h5>Develop Draft Future Vision Definition</h5>
+  <p> You then develop a draft Future Vision Definition that will be used in the Future Vision Presentation (ER.180). The presentation for Future Vision should consist of all of the outcomes of the Vision Definition workshop. This will include:</p>
+  <ul>
+    <li>a review of the goals of the Future Vision phase</li>
+    <li>a summary of the participation in and activities of the workshops</li>
+    <li>a summary of the elaboration activities</li>
+    <li>the future governance structures and the mapping of existing structures onto them</li>
+    <li>the future governance processes and responsibilities of organizations to those processes</li>
+    <li>a description of the Roadmap area, its activities and expected outcomes</li>
+  </ul>
+  <p>You would typically start the presentation off with a recap of the goals of the Future Vision area that sets the stage for describing the outcomes. This also helps to avoid disagreements and keep the discussion on topic.</p>
+  <p> Summarizing the workshops and elaboration is an important step in gaining consensus for the outcomes of Future Vision. Even though the group that attends the presentation will largely be the same as the participants in the Future Vision workshops, it is not necessarily the case that all will have received the information the same way or have reached the same conclusions. Additionally, the elaboration of the workshop output will have occurred without the active participation of some of the attendees, most notably some of the senior leadership in the organization. Summarizing the Future Vision activities ensures that all of the attendees of the presentation will be at the same level of understanding of the outcomes in order to receive the Future Vision results.</p>
+  <p> The output of this would be draft Future Vision Governance Model. </p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=ER1802 id="ER1802"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.2 Prepare for and Present Solution Recommendation</a></h4>
+  <h5>Future Vision Presentation Preparation</h5>
+  <p> The Future Vision Presentation has been created during the final step of the Future Vision task, ER.160, Develop Desired Future State. Some experienced SOA people should review this draft model; especially if this is the first time you have executed such an engagement. Afterwards, your project sponsor or customer project manager should validate the model. This is to make sure that our message/story is validated before we present to the organization senior management. Get some feedback from the project sponsor to see if the findings may be too sensitive to share beyond the executive team. Finally, incorporate the feedback you have received into the final Future Vision Governance Model. </p>
+  <h5> Present and Deliver</h5>
+  <p> <b>Attendance:</b> During the Future Vision kickoff meeting, you should have tried to establish who would be attending the delivery of the Future Vision Definition. The Future Vision Definition should be delivered to the executive stakeholders. It may be appropriate to invite others involved in the execution of Future Vision area. However, the larger the audience, the more difficult it is to reach conclusions in the presentation, which is crucial.</p>
+  <p> <b>Duration:</b> The duration of the delivery of the Future Vision Definition should consume somewhere between 60 &ndash; 120 minutes in order to maintain a high level of interest in the audience.</p>
+  <p> <b>Objective:</b> It is important to gain agreement that the Future Vision Definition is in-line with expectations and is correct to the best of their knowledge. If there are any discrepancies then these need to be discussed, noted and fleshed out straight after the meeting. At the conclusion of the presentation of the Future Vision Definition, allow adequate time for a question and answer period for the organization to satisfy themselves that they understand the Future Vision Definition.</p>
+  <p> <b>Findings:</b> The executive audience will be more interested in rationale and outcomes than in the detail of the manner in which they were obtained. The supporting detail for the presentation should be in an appendix of the presentation. This appendix can be used as supporting data for any specific finding that the executives may wish to delve into and can be used by the organization. In addition, this supporting data can be used as a strong foundation on which to build the Roadmap in the next area. If there are any discrepancies or holes in our findings then do not try and hide the fact, work with the organization to expand and complete the story.</p>
+  <p> <b>Delivery:</b> A senior practice member and the engagement project manager should deliver the presentation, given that this is an executive audience.</p>
+  <p> After you have delivered the Future Vision Definition, you should have confirmation and probably some specific data that needs to be documented in the Future Vision Definition.</p>
+  <p> <a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=RG id="RG"></A></B><a href="SGP_OVERVIEW.HTM#SGPOD" target="_blank">ROADMAP GUIDANCE</a></h3>
+  <p align="left">The Roadmap area addresses how to transition from the Current Reality to the defined Future Vision in a pragmatic and effective manner. The Roadmap should take into consideration any of the organization's planning horizons and should also cover:</p>
+  <ul>
+    <li>a set of activities for organization and governance change</li>
+    <li>activities organized by themes &ndash; related sets of activities to accomplish a given change goal</li>
+    <li>themes, and activities within them, are laid out on a timeline</li>
+    <li>activities have high detail for near-term (&lt;6 months), and decreasing detail for longer time horizons</li>
+  </ul>
+  <p>The following is a suggested workflow for Roadmap:</p>
+  <p align="center"><a name="RWF"></a><img src="../../../010_COMMON_FILES/SOA_GOV_R_WF.PNG" alt="Suggested Roadmap Workflow" width="715" height="490" title="Suggested Roadmap Workflow"></p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h4><b><a
+name=STM0503 id="STM0503"></a></b><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050.3 - Conduct Team Orientation</a></h4>
+  <p>Mobilization, including scoping, was executed because it is all too easy to over-promise and under-deliver if the boundaries for the engagement and the content of the deliverables are not spelled out properly, or if the resources needed to execute the engagement are unavailable. Therefore, at the beginning of the engagement and at the beginning of each area you should hold a kickoff meeting.
+<p>The Roadmap area addresses how the organization will transition from their Current Reality to their defined Future Vision in a pragmatic and effective manner. During the kickoff presentation for this last area of the engagement, you should make clear the organization's planning horizons and what should be delivered as part of this area, such as:    
+<ul>
+      <li>a set of activities for organization and governance change</li>
+      <li>activities organized by themes &ndash; related sets of activities to accomplish a given change goal</li>
+      <li>themes, and activities within them, are laid out on a timeline</li>
+      <li>activities have high detail for near-term (&lt;6 months), and decreasing detail for longer time horizons</li>
+</ul>
+    <p>You should also educate the organization on the <a href="#RWF">Roadmap workflow</a>.</p>
+    <p>The Roadmap kickoff meeting should also address the work products, the expectations of enterprise participation and the timeline associated with the completion of the Roadmap and eventual completion of the whole engagement. This presentation should be followed by a question and answer (Q&amp;A) session to ensure that the participants understand the workflow. If necessary, the workflow is modified based on actions or questions to suit the needs of the customer but keep in mind the scope of the engagement. </p>
+    <p>During the kickoff presentation, you should also consider highlighting possible follow-up activities following the conclusion of the engagement. These activities will be based on issues, needs or opportunities identified during the execution of the engagement. </p>
+    <p>It is appropriate to review the outcome of Future Vision with the Roadmap kickoff participants. There are likely to be enterprise participants in the creation of the Roadmap that were not present to hear the delivery of the Future Vision presentation, and they may not have had an opportunity to review any of the Future Vision work products. Given that the Future Vision sets the priorities that will be used to establish the Roadmap, it is important to ensure that all of the participants have this context.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER1701 id="ER1701"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170.1 - Develop Future State Transition Plan </a></h4>
+    <p>You develop the Future State Transition Plan as part of the Roadmap area, i.e., you develop a roadmap to get from the identified current state, to the Future Governance Model. It is executed in three separate iterations with other tasks being executed between each iteration. This first iteration is to define the phasing and themes.
+    <h5>Factor Information Gathered into Themes</h5>
+    <p>Having educated and agreed with the organization on the parameters of the Roadmap area (during <a href="#STM0503">STM.050, Conduct Team Orientation</a>), the definition of the Roadmap begins with factoring the information gathered during Current Reality and Future Vision into themes. Themes are a way to categorize and organize a set of activities into discrete organizational and governance goals that will yield part of the Future Vision. Themes describe an impetus for change. They are directly linked to the business, IT and SOA principles set forth in the Future Vision. Some examples of themes are:
+    <ul>
+      <li>Bring out a first set of shared services.</li>
+      <li> Establish an effective compliance process to govern service usage.</li>
+      <li> Establish the process and management thereof necessary to support shared service infrastructure.</li>
+      <li> Initiate organization responsibility, process and accountability for active management of a service roadmap.</li>
+    </ul>
+    <p>Themes are defined jointly between both parties in the engagement. The information gathered from Current Reality, with respect to current organization governance maturity and the information gathered from Future Vision that establishes the enterprise&rsquo;s organizational priorities will make reasonably obvious the major categories of the changes required. These categories represent themes.
+    <p> Themes should be expressed in terms of the goals and portions of the Future Vision that they will realize once they are completed. In essence, themes are miniature mission statements. They become a way to socialize with all parts of the organization, especially those affected by the changes introduced through the theme, the need for and outcome of the work to accomplish the theme.
+    <p> Once the themes have been identified, relative priorities need to be assigned to them (see <a href="#ER130">ER.130, Produce MoSCoW Improvement List</a>).
+    <h5>Make an Initial Definition of Roadmap Phases</h5>
+    <p> Once the themes have been identified and prioritized, an initial definition of phases for the Roadmap are made. Phases represent a fixed span of time during which activities will be conducted in one or more of the themes. The phases address the themes in priority order. The duration of phases can and should correspond to the planning horizons established during the Mobilization area of the engagement. For instance, if the short-term planning horizon is six months, then one or two phases (typically no more than that) are defined that address execution of activities along the high priority themes. This process of defining phases and mapping them to themes continues for the intermediate- and long-term planning horizons. The first definition of themes and phases constitutes the deliverable for this Roadmap workflow objective, and forms the basis for the remainder of the effort in the Roadmap area of the engagement.
+    <p> An important point to consider in the definition of themes and phases is that there are very likely to be dependencies on changes that the organization will have to make that are both within and outside the realm of governance. For instance, service usage compliance cannot be put in place until services are available to be consumed. The availability of services depends on the definition of environments to contain those services, and probably implies that activities to define organizations for shared services engineering and shared infrastructure and its management have to be made first. If services are to be hosted on shared infrastructure, the implementation of a compliance process might then be dependent on the build-out of the necessary infrastructure. Identification of such dependencies is important to delivering a Roadmap that can be delivered according to plan.
+    <p> Before executing the next iteration of this task, you review the discovery findings (ER.150) and carry out the gap analysis (BA.090).
+    <p><a href="#TOP">Back to Top</a>    
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER150 id="ER150"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">ER.150 Review Discovery Findings </a></h4>
+    <p>During Roadmap, review the findings and use this when you perform the gap analysis, determine priorities, and map to phases. For more details about this, please review the guidelines for <a href="#BA090">BA.090, Identify Process Improvement Options</a>.</p>
+    <p><a href="#TOP">Back to Top</a> </p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=BA090 id="BA090"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">BA.090 Identify Process Improvement Options </a></h4>
+    <p>This task is carried out during Roadmap. It is performed somewhat different than what is described in the main task. The improvement options here are not necessarily all related to existing processes, but may be to create complete new processes &ndash; in particular governance processes &ndash; or may also be related to organization changes or other governance topics, as agreed on during scoping.</p>
+    <h5>Gap Analysis, Priorities and Mapping to Phases</h5>
+    <p> During the first iteration of the <a href="#ER1701">Future State Transition Plan (ER.170.1)</a>, you have already agreed on the themes and phases for the plan, so what remains is to formulate the plan to execute the phases. This formulation starts with an analysis of gaps between the Current Reality and Future Vision as it pertains to the work to accomplish the goals of a given theme. This work is done in concert with organization staff, especially those that will own the output of the themes. The gaps will lead to the definition of a set of activities.</p>
+    <p> The activities for the near-term planning horizon must be defined to a level at which an order of magnitude of effort can be associated with them. This includes a number of different components:</p>
+    <ul>
+      <li> some detail on the work involved in the activity</li>
+      <li> estimated deliverables of the activity</li>
+      <li> participants in the activity</li>
+      <li> identification of other activities on which the activity depends, or which are dependent on it</li>
+      <li> identification of other non-organization and governance work on which the activity depends</li>
+    </ul>
+    <p> An example of gap analysis would be the theme of putting in place a services roadmap. A responsibility chart for the services roadmap management process would likely have been done during Future Vision. If not, it should be done prior to beginning the gap analysis. This will establish the core of the Future Vision for services roadmap management. With the process in hand, a comparison with the support for the process that the organization has can be done, which will likely raise a number of gaps. These gaps might include:</p>
+    <ul>
+      <li> identification, not just of the responsible organizations, but of the individuals that will represent those organizations in the process</li>
+      <li> scheduling of meeting frequency, format and agendas</li>
+      <li> decision making process for setting priorities for new service requirements</li>
+      <li> tracking mechanism for service availability against schedule</li>
+      <li> process and medium for communicating the roadmap throughout the organization</li>
+    </ul>
+    <p>For example, the activities would be representations of the steps involved to fill these gaps.</p>
+    <p> Keep in mind that this is not a conventional project planning exercise. Except in rare instances where the negotiated scope of the engagement requires it, no project plan will be produced to represent the Roadmap in terms of a Gantt chart or similar project management deliverable. However, in order to appropriately allocate activities to phases with confidence, some idea of the level of effort involved must be agreed on with the organization.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER110 id="ER110"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">ER.110 Perform Benefit Analysis</a></h4>
+    <p>As part of the work on the roadmap, perform a benefit analysis of the proposed governance improvement. This allows you to:</p>
+    <ul>
+      <li> Verify that the recommendations are fit-for-purpose and that the cost and disruptions caused by the governance changes do not outweigh their risks.</li>
+      <li> Prioritize the recommended changes based on their relative benefits.</li>
+      <li> Justify changes to the management and help them justify the changes to the wider organization.</li>
+    </ul>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER120 id="ER120"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">ER.120 Identify and Mitigate Future State Risks </a></h4>
+    <p>As part of the work on the Roadmap, perform a risk analysis for the proposed changes. If done correctly, showing there are risks but that they can be mitigated will both ground the stakeholder into the reality (governance is difficult) and reassure them (we can manage the difficulties).</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER1702 id="ER1702"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170.2 - Develop Future State Transition Plan </a></h4>
+    <p>You develop the Future State Transition Plan as part of the Roadmap area, i.e., you develop a roadmap to get from the identified current state, to the Future Governance Model. It is executed in three separate iterations with other tasks being executed between each iteration. This second iteration is to map the gap analysis to the phases.
+    <p>Once the activities for completion of each theme and the level of effort for the activities in the near-term have been agreed on (BA.090), the activities may be allocated to phases. It is possible, even likely, that a given activity will further the accomplishment of more than one theme. For instance, the definition of quality gates in the organization&rsquo;s software development lifecycle to enforce the use of services, or to harvest services, will be necessary for establishing service usage compliance and for shared services development. It is also likely that themes will span multiple phases. Some themes, such as establishing SOA effectiveness measurement and accountability to business drivers, take a substantial amount of time to fully complete. Accordingly, splitting the work to accomplish the theme into multiple phases allows delivery of some support for the theme to show progress. This is especially important when activities support more than one theme.
+    <p> Phases and tasks will be elaborated in detail for the near-term planning horizon agreed on during Mobilization. For the intermediate term horizon, phases will be outlined, but tasks will be less defined. For the long-term planning horizon, themes will be outlined, but not broken into phases or tasks.
+    <p><a href="#TOP">Back to Top</a>    
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER130 id="ER130"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Product MoSCoW Improvement List </a></h4>
+    <p>This task is executed during the Roadmap area. Once the themes have been identified during ER.170, relative priorities need to be assigned to them. There are a number of data points that may be used to establish the MoSCoW priorities:</p>
+    <ul>
+      <li><b>Maturity Improvement</b> - The maturity of the organization with respect to various areas of governance, such as service development readiness or change management maturity, combined with the expressed desires from future vision, will highlight the greatest opportunities to improve governance maturity and/or to help put in place the organization structures that will provide a foundation for future governance efforts.</li>
+      <li> <b>Greatest Near-Term Gain</b> - Sustaining a change effort in any organization often depends on early, demonstrable successes. Themes that offer near-term opportunities to show the value of change may be prioritized higher to provide needed success proof points.</li>
+      <li> <b>Mitigation of Greatest Success Risk</b> - An analysis of the difference between Current Reality and Future Vision often highlights areas of high risk to SOA adoption, such as strong, highly autonomous dominance in lines of business or a lack of standard development processes and accountability to those processes. It can be valuable to prioritize themes highly whose outcomes will drive risk out of subsequent SOA adoption efforts.</li>
+    </ul>
+    <p>Once the themes have been identified and prioritized, an initial definition of phases will be performed in the following task, ER.170.3, Develop Future State Transition Plan.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER1703 id="ER1703"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">ER.170.3 - Develop Future State Transition Plan </a></h4>
+    <p>You develop the Future State Transition Plan as part of the Roadmap area, i.e., you develop a roadmap to get from the identified current state, to the Future Governance Model. It is executed in three separate iterations with other tasks being executed between each iteration. This third iteration is to develop the Roadmap.
+    <h5>Summarize Roadmap Phases</h5>
+    <p>The Roadmap that is developed is actual documentation of the mapping of activities within themes into phases. At a minimum, this documentation should take the form of a presentation as described in <a href="#ER1803">ER.180, Prepare for and Present Solution Recommendations</a>.
+    <h5>Develop Draft Roadmap</h5>
+    <p>It is also appropriate to also detail the Roadmap in another form, such as a document, and use the Roadmap Presentation (ER.180) to summarize the information in this document. Depending on the agreed scope and deliverables, it may also be desirable or necessary to convey the Roadmap in the form of an Excel workbook or Microsoft project plan (at a low level of detail).
+    <p> The documentation of the phases in the near-term planning horizon should include the activities with the captured and documented detail from the gap analysis, as well as the mapping of those activities to themes. For the intermediate-term planning horizon, candidate phases and activities will be supplied, as will the themes those activities support, but the activities will not be detailed. For the long-term planning horizon, the themes will be allocated, but without detail on phases or activities.
+    <p> The Roadmap is developed jointly with the enterprise participants, but the engagement lead must ensure that it stays on track. Joint development provides a level of buy-in to the Roadmap.
+    <p><a href="#TOP">Back to Top</a>    
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER1803 id="ER1803"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM" target="_blank">ER.180.3 Prepare for and Present Solution Recommendation</a></h4>
+    <h5>Roadmap Presentation</h5>
+    <p> The presentation at the end of the Roadmap area is the end presentation of the whole engagement. The end presentation should summarize the findings in the Roadmap document, and at a minimum contain the following information:</p>
+    <ul>
+      <li> definition of the identified themes and the mapping of those themes to Future Vision principles</li>
+      <li> value delivered through the completion of each theme</li>
+      <li> the priorities assigned to the themes, and the rationale behind the priorities assigned</li>
+      <li> the activities identified for the themes</li>
+      <li> the phases identified and the rationale behind the phases</li>
+    </ul>
+    <h5> Distribute Roadmap for Review by Experts</h5>
+    <p> Again, it is important that an experienced SOA person review the Roadmap presentation before it is finalized. This is important to ensure consistency of delivery throughout the field. More importantly, however, this review helps the delivery team for the current engagement to benefit from the broader experience for delivery of the engagement in the rest of the world. The review also helps to ensure acceptance of the work product by the organization, and helps to avoid challenges that could hamper that acceptance. This review should preferably happen near the end of the Roadmap area, but prior to reviewing it with the enterprise project sponsor.</p>
+    <h5> Validate Roadmap with Enterprise Sponsor</h5>
+    <p> A review must be conducted with the enterprise executive sponsor prior to the delivery of the presentation to enterprise executives. This review lays the foundation for enterprise acceptance by helping to position the outcomes identified in the Roadmap properly with the broader executive audience. It helps avoid political sensitivities. It also creates a level of validation with the enterprise prior to delivery of the presentation to the broader audience.</p>
+    <h5> Incorporate Feedback and Finalize Roadmap</h5>
+    <p> Synthesize the received feedback, and incorporate it back to the Roadmap presentation. </p>
+    <h5> Deliver the Roadmap Presentation</h5>
+    <p> The Roadmap presentation will be delivered to the executive stakeholders. These are typically the same group as those that participated in Future Vision definition. It may be appropriate to invite others involved in the execution of the Roadmap. However, the larger the audience, the more difficult it is to reach conclusions in the presentation, which is crucial. The delivery of the presentation should consume no more than two hours in order to maintain a high level of interest in the audience. The supporting detail for the presentation will be in other documentation or in the slide notes at a minimum, and the executive audience will be more interested in rationale and outcomes than in the detail of the manner in which they were obtained.</p>
+    <p> A senior practice member and the engagement project manager should deliver the presentation, given that this is an executive audience. At the conclusion of the presentation of the roadmap and next steps, allow adequate time for a question and answer period in order for the organization to satisfy themselves that they understand the Roadmap and next steps. Agreement with these is the lynchpin for acceptance of the engagement. The discussion of next steps will give an indication of whether a follow-on proposal is right or needs to be fine-tuned.</p>
+    <p> Other Roadmap documentation and deliverables that were created when the themes, phases and activities were defined will be delivered to the organization at the conclusion of the presentation.</p>
+    <p> The discussion following this end presentation of the engagement may identify some questions or challenges that need to be addressed for the engagement to be accepted. It should be positioned, during the presentation, that the enterprise executive sponsor takes responsibility for the resolution of any such unresolved items. This alleviates any need to get the enterprise executive audience back together to deliver another version of the presentation, and expedites the completion of deliverables by creating a single interface point. When the take-away items are completed to the satisfaction of the executive sponsor, the engagement project leader should obtain written approval of the acceptance of the engagement. This acceptance is done as part of Post Delivery, task SM.050 - Gain Acceptance.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER190 id="ER190"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_190_REVIEW_BUS_FEEDBACK_&_IDENTIFY_OPPOR_OVERVIEW.HTM" target="_blank">ER.190 Review Business Feedback and Identify Opportunities </a></h4>
+    <p>While the Roadmap is being formalized, the engagement team should take the opportunity to think about the needs the organization has in terms of overall SOA adoption and increasing SOA maturity (outside of the realm of organization and governance). For example, many organizations will want to adopt a process for architecture governance, but do not have a reference architecture that allows the organization to understand the broad framework for the technical adoption of SOA that can be actively communicated and evolved as the organization progresses in SOA adoption. For those needs, the team should consider developing a proposal to help the organization further. The example would be a clear opportunity to offer an engagement based on the <a href="../../../OUM_HOME_RAP.HTM" target="_blank">Reference Architecture Planning view</a>. The process of thinking about the organization&rsquo;s continuing needs also helps to frame a set of next steps that should be placed at the end of the Roadmap presentation. Also, when the Roadmap presentation is delivered, the discussion of next steps gives an indication of whether a follow-on proposal is right or needs to be fine-tuned.</p>
+    <p> If a proposal is developed, this should always be delivered separately, following acceptance of the current engagement. Accordingly, it need not be complete prior to the end of this Roadmap objective, but it needs to have been thought through at a minimum. It should not be socialized with the team executing the Roadmap. Although, depending on the relationship with the organization, it may make sense to socialize the basics of the proposal with appropriate enterprise executives. The presentation is a key to facilitating acceptance of any follow-on proposal. The definition of dependencies for Roadmap activities and positioning of next steps helps the organization to understand the broader scope of SOA adoption, and makes them more receptive to the proposal.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h4><B><A
+name=ER200 id="ER200"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/ER_200_PREPARE_FOR_TRANS_TO_SALES_OR_SERV_OVERVIEW.HTM" target="_blank">ER.200 Prepare for Transition to Sales or Services </a></h4>
+    <p>Once the engagement has been accepted, a follow-on proposal (see <a href="#ER190">ER.190</a> above) may be delivered to the enterprise executive sponsor or other enterprise executive for whom the proposal is more appropriate. Waiting until acceptance to deliver the proposal avoids a perceived conflict of interest between the recommendations of the current work and discussions on potential future work. However, depending on relationship, the account team may decide to socialize the proposal prior to acceptance to provide for continuity of the team for the follow-on work.</p>
+    <p><a href="#TOP">Back to Top</a></p>
+    <hr WIDTH="100%">
+    <h3><B><A
+name=PDG id="PDG"></A></B><a href="SGP_OVERVIEW.HTM#SGPOD" target="_blank">POST DELIVERY GUIDANCE</a></h3>
+    <p>Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned.</p>
+    <h4><B><A
+name=CMM040 id="CMM040"></A></B><a href="../../../../PJM/020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></h4>
+    <p>After the project has been delivered and accepted any feedback should be summarized and submitted to Oracle's Global Methods team at <a href="mailto:ominfo_us@oracle.com">ominfo_us@oracle.com</a>. Feedback should include the following:
+    <ul>
+      <li> overall experience, both positive and negative regarding the use of the Planning view</li>
+      <li>major challenges and roadblocks encountered during service delivery and how these issues were addressed</li>
+      <li>suggested improvements to the delivery process</li>
+      <li>suggested improvements to the templates</li>
+    </ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>BPM in OUM</TITLE>
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+<NOSCRIPT>
+  <center>
+  <table cellpadding="0" cellspacing="0" border="0" width="550">
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a newer browser, such as Internet Explorer 6 or Firefox</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site.</td></tr>
+
+
+  </table>
+</center>
+</NOSCRIPT>
+</HEAD>
+<BODY onload="onLoad()">
+<A name="TOP"></A>
+<TABLE width="100%" border="1" role="presentation">
+  <TR border="0">
+    <td width="11%" height="92" valign="top"><a href="OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p></td>
+    <TD width="88%" valign="top"><p>&nbsp;</p>
+    <table width="100%" role="presentation">
+        <tr>
+          <td width="15%" nowrap><div align="center">
+            <h1>OUM</h1>
+          </div></td>
+          <td colspan="3" scope="col"><h1 align="left">Business Process Management (BPM) in OUM</h1></td>
+        </tr>
+        <tr>
+          <td width="15%" nowrap><div align="center"><a href="050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+          <td><div align="center"><a href="050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+          <td><div align="center"><b>Method Navigation</b><br>
+              <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                <option value="#TOP" selected></option>
+                <option value="OUM_HOME.HTM">Home</option>
+                <option value="020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                <option value="050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                <option value="030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                <option value="../PJM/PJM_HOME.htm">MANAGE View</option>
+                <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                <option value="OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                <option value="020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                <option value="020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+              </SELECT>
+          </div></td>
+          <td align="center"><b>Current Page Navigation</b><br>
+              <select
+							name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation"
+							onChange="location.hash = this.options[this.selectedIndex].value; showOneTaskFromList(this);">
+                <option value="TOP" selected></option>
+                <option value="DUG_Text_Nav">Description and Key Components</option>
+                <option value="PicNav">Diagram Navigation</option>
+                <option value="PjmTextNav">BPM in OUM Overview</option>
+                <option value="PJMTWP">PROGRAM</option>
+                <option value="BT">BPM Roadmap</option>
+                <option value="ENVTWP">PROJECT</option>
+                <option value="ER">BPM Project Engineering</option>
+              </select></td>
+        </tr>
+    </table></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="0" class="oum" title="Description and Key Components" summary="This section contains a brief page description followed by a Key Component section with helpful links." role="presentation">
+  <TR>
+    <TD width="100%">
+	    <h2><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DugTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg')"
+onload="Element.hide(this)" />
+          <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DugTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg'); new Effect.Highlight($('DugTextNavText'), {duration: 4});" /><a
+	name="DUG_Text_Nav" id="DUG_Text_Nav"></a>
+	        <A id="DugTextNavText"> DESCRIPTION AND KEY COMPONENTS </A>
+  
+      </h2>
+	    <DIV id="DugTextNav">
+            <TABLE width="100%" border="1" class="oum">
+              <TBODY>
+                <TR bgColor="#ffffff">
+                  <TD width="75%" vAlign="top"><h3>Description</h3>
+                    <P>This page describes and provides links to all the Business Process Management (BPM) views in OUM. </P>
+                  </TD>
+                  <TD width="25%" vAlign="top"><h3>Key Components</h3>
+                    <P><a href="030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM#BPMLINKS" target="_blank">BPM Links</a><br>
+</P>
+                  </TD>
+                </TR>
+              </TBODY>
+          </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#ffff99" class="oum" title="Diagram Navigation" summary="This section contains a navigation diagram with links to sections on this page.">
+<TR>
+  <TD><h2><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PicNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg')"
+	onload="Element.hide(this)" />
+        <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PicNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg'); new Effect.Highlight($('PicNavText'), {duration: 4});" />
+        <A id="PicNavText">
+        DIAGRAM NAVIGATION</A>
+        </h2>
+    <p>        This section contains a navigation diagram with links. Place your cursor over the area of interest in the diagram and click. </p>
+  <P id="PicNav" align="center"><A name="Pic_Nav"></A> <img src="010_COMMON_FILES/BPMINOUM.PNG" alt="BPM in OUM Navigation Diagram" width="770" height="637" border="0" usemap="#Map" title="BPM in OUM Navigation Diagram">
+<map name="Map">
+  <area shape="rect" coords="288,2,504,35" href="#PJMTWP" alt="Go to BPM Program section" Title="Go to BPM Program section">
+  <area shape="rect" coords="7,43,443,325" href="javascript:goAnchor('BT'); javascript:goAnchor('BTA')" alt="Go to BPM Roadmap section" onclick="showTask('BT_TASKS', false, 'BT_OPEN', 'BT_CLOSED');" Title="Go to BPM Roadmap section">
+  <area shape="rect" coords="451,47,762,321" href="javascript:goAnchor('ER'); javascript:goAnchor('ERI')" alt="Go to BPM Project Engineering section" onclick="showTask('ER_TASKS', false, 'ER_OPEN', 'ER_CLOSED');" Title="Go to BPM Project Engineering section">
+  <area shape="rect" coords="291,353,506,388" href="#ENVTWP" alt="Go to BPM Project section" Title="Go to BPM Project section">
+  <area shape="rect" coords="171,391,600,639" href="javascript:goAnchor('ER'); javascript:goAnchor('ERI')" alt="Go to BPM Project Engineering section" onclick="showTask('ER_TASKS', false, 'ER_OPEN', 'ER_CLOSED');" Title="Go to BPM Project Engineering section">
+</map>
+  </TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" bgcolor="#ffff99" class="oum" title="BPM in OUM Overview" summary="This section contains a description of Business Process Management in OUM." role="presentation">
+  <TR>
+    <TD><h2><a
+	name="PJM_Text_Nav" id="PJM_Text_Nav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PjmTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PjmTextNav', 'PjmTextNavOnImg', 'PjmTextNavOffImg')"
+onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PjmTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PjmTextNav', 'PjmTextNavOnImg', 'PjmTextNavOffImg'); new Effect.Highlight($('PjmTextNavText'), {duration: 4});" /> BPM in OUM Overview
+      </h2>
+      <DIV id="PjmTextNav">            <TABLE class="oum" width="100%" border="1">
+              <TBODY>
+                <TR bgColor="#ffffff">
+                  <TD vAlign="top" width="22%"><P> Business Process Management (BPM) in OUM consists of the following: </P>
+                    <p>For engagements with a program scope (enterprise-level), OUM supports the following:</p>
+                    <ul>
+                      <li> Roadmap Creation, which provides the guidance to successfully adopt a business process oriented approach to building IT solutions to support the business</li>
+                    </ul>
+                    <p>For engagements with a project scope, OUM supports the following: </p>
+                    <ul>
+                      <li>BPM Project Engineering, which provides a framework to effectively deliver composite business application projects in a BPM environment.</li>
+                    </ul></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+
+<TABLE width="100%" border="0" bgcolor="#ffff99" class="oum">
+  <TR>  </TR>
+</TABLE>
+<h2>    <B><a name="PJMTWP" id="PJMTWP"></a></B>PROGRAM</h2>
+<p>    <A href="#" title="Expand all BPM Program views" onclick="expandAllPJMTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all BPM Program views" onclick="collapseAllPJMTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A>
+</p>
+<TABLE width="100%" border="0" bgcolor="#ffff99" class="oum" title="BPM Roadmap" summary="This section contains a layout table with a description of the BPM Roadmap view in the first column and links to Key Components in the second column." role="presentation">
+  <TR>
+    <TD><h3><A id="BT" name="BT"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="BT_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('BT_TASKS', 'BT_OPEN', 'BT_CLOSED')"
+     onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="BT_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('BT_TASKS', 'BT_OPEN', 'BT_CLOSED'); new Effect.Highlight($('BT'), {duration: 4});" /></b></A><A href="../ENV/OUM_HOME_BPM_ROADMAP.HTM" target="_blank">BPM Roadmap</A></h3>
+    <DIV id="BT_TASKS">
+      <TABLE width="100%" bgcolor="#ffffff" class="oum" role="presentation">
+          <TBODY>
+            <TR valign="top">
+              <TD>
+                <h4 align="left" >Description</h4>
+                <P align="left">The Business Process Management (BPM) Roadmap view is based on the BPM Roadmap described in the IT Strategies from Oracle (ITSO) guidelines and reference architectures library, Creating a BPM Roadmap. A BPM Roadmap provides the guidance to successfully adopt a business process oriented approach to building IT solutions to support the business.</P>
+              </TD>
+              <TD width="25%"><h4>Key Components</h4>
+                <p><a href="../ENV/030_TECH_GUIDELINES/SUPP_GUIDES/BRM/BRM_OVERVIEW.HTM" target="_blank">BPM Roadmap Overview </a></p>
+                <p> <a href="../ENV/030_TECH_GUIDELINES/SUPP_GUIDES/BRM/BRM_SUPP_GUIDE.HTM" target="_blank">BPM Roadmap Supplemental Guide</a></p>
+                <p><b>For Project Managers and Planners:</b><br>
+                  <a href="../ENV/030_TECH_GUIDELINES/SUPP_GUIDES/BRM/OUM_ENV_BPM_ROADMAP_WORKPLAN.MPP" target="_blank">BPM Roadmap Project Workplan (MPP)</a></p></TD>
+            </TR>
+          </TBODY>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+<h2><B> <a name="ENVTWP" id="ENVTWP"></a></B>PROJECT</h2>
+<P>  <A href="#" title="Expand all BPM Project views" onclick="expandAllENVTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all BPM Project views" onclick="collapseAllENVTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A> </P>
+<table width="100%" border="0" bgcolor="#ffff99" class="oum" title="BPM Project Engineering" summary="This section contains a layout table with a description of the BPM Project Engineering view in the first column and links to Key Components in the second column.">
+  <tr>
+    <td><h3><a id="ER" name="ER"><img src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="ER_OPEN" title="Collapse window"
+     onClick="toggleElementBlind('ER_TASKS', 'ER_OPEN', 'ER_CLOSED')"
+     onload="Element.hide(this)"/> <img src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="ER_CLOSED" title="Expand window"
+     onClick="toggleElementBlind('ER_TASKS', 'ER_OPEN', 'ER_CLOSED'); new Effect.Highlight($('ER'), {duration: 4});" /></a><a href="OUM_HOME_BPM_PROJECT_ENG.HTM" target="blank">BPM Project Engineering</a></h3>
+    <div id="ER_TASKS">
+      <table width="100%" bgcolor="#ffffff" class="oum">
+          <tbody>
+            <tr valign="top">
+              <td>
+                <h4 class="style1">Description</h4>
+                <P align="left">The Business Process Management (BPM) Project Engineering view is based on the IT Strategies from Oracle (ITSO) Business Process Engineering Practitioner Guide. The Oracle Business Process Engineering framework introduces a discipline to effectively deliver composite business application projects in a BPM environment.</P></td>
+              <td width="25%"><h4 align="left">Key Components</h4>
+                <p align="left"><a
+				href="030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/OUM_BPMPE_OVERVIEW.HTM" target="_blank">BPM Project Engineering Overview</a></p>
+                <p><a href="030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a></p>                
+                <p><b>For Project Managers and Planners:</b><br>
+                  <a href="030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/OUM_BPM_PROJ_ENG_WORKPLAN.MPP" target="_blank">BPM Project Engineering Project Workplan (MPP)</a></p>
+              </td>
+            </tr>
+          </tbody>
+      </table>        
+    </td>
+  </tr>
+</table>
+<P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"></P>
+<P align="left"><span class="copyright"> <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></span></P>
+</BODY>
+</HTML>

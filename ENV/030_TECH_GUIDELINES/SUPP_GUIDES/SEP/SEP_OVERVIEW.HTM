@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Engineering Planning Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM/OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../OUM/CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">SOA Engineering Planning Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#WHAT">What is SOA Engineering Planning?</option>
+                            <option value="#WHEN">When Do You Use the SOA Engineering Planning View</option>
+                            <option value="#HOWPOS">Positioning, Qualification and Scope</option>
+                            <option value="#WHATPROC">SOA Engineering Planning Overview</option>
+                            <option value="#WHATPROG">What Other Views Relate to the SOA Engineering Planning View?</option>
+                            <option value="#HOWOUM">How Does SOA Engineering Planning Relate to OUM?</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<table width="93" align="right">
+  <tr>
+    <td width="85"><p><a href="../../../OUM_HOME_SEP.HTM" target="_blank"><br>
+        Back to View </a> </p></td>
+  </tr>
+</table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) ENGINEERING PLANNING OVERVIEW </h2>
+<h3><b><A 
+name=WHAT id="WHAT"></A></b>WHAT IS SOA ENGINEERING PLANNING?</h3>
+<p>The SOA Engineering Planning view and Supplemental Guide are used to help organizations adjust or complement their project delivery methodology to support SOA execution. Many enterprises struggle with SOA adoption. One area of particular concern is the delivery of projects within their SOA. Many enterprises attempt to apply traditional software engineering methodologies (such as Unified Process, agile, waterfall, etc) that have not been adopted to handle the wider, cross-project reuse that must be addressed for projects participating in a SOA strategy. The SOA Engineering Planning view supports a service where the organization is taken through a series of facilitated workshops aimed at developing their own enterprise methodology for SOA projects.</p>
+<p>The SOA Engineering Planning view also looks at instrumentation for monitoring and management. Instrumentation is a fundamental of achieving success with a SOA strategy and spans a much broader area than simply instrumenting the runtime components of the SOA participants. Instrumentation for SOA includes collecting information in support of improving engineering efficiency and effectiveness, measuring and improving against SOA maturity level, understanding business value by linking this analysis to the underlying workings of SOA, in addition to assisting with making SOA operationally manageable. Therefore, this view looks into what kind of instrumentation is required to collect appropriate data through the new engineering processes.</p>
+<p>As with all SOA planning views, this view is used to plan one particular aspect of the SOA strategy and can be combined with other SOA planning views based on the organization&rsquo;s needs. </p>
+<p>It is important to note that OUM already has an approach for delivering SOA projects. The SOA Engineering Planning view should be used when the enterprise wants to develop their own enterprise-specific approach and adapt their own internal methodology to include such an approach. For more information on the OUM SOA approach, refer to the <a href="../../../../OUM/OUM_HOME_SOA_PROJECT_DELIVERY.HTM" target="_blank">SOA Project Delivery view</a>.</p>
+<h4>Background</h4>
+<p>Service-Oriented Architecture (SOA) is an Information Technology (IT) strategy that, in many cases, spans the entire enterprise. IT projects are implemented to fit within a service-oriented architecture and are therefore just a piece of the larger SOA initiative. Further, the extensive scope that a SOA may have across an enterprise requires that a repeatable process and sound engineering disciplines be applied through delivery cycles. This is especially true if external or offshore resources are to be utilized. Many enterprises struggle with inconsistency across deliveries for projects that need to coexist. This problem is also an inhibitor to reuse and agility and can be addressed by the adoption of a sound enterprise class SOA methodology. If projects are developed independently, without consistent tie-in and guidance from the overall SOA leadership team, the effectiveness and value of each delivery is substantially reduced. Fundamental to successful SOA adoption is the establishment of an enterprise methodology for SOA that is used to tie project delivery and operations into the overall SOA governance structure and reference architecture, as well as apply the best usage of investment in service infrastructure.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><A 
+name=WHEN id="WHEN"></A></b>WHEN DO YOU USE THE SOA ENGINEERING PLANNING VIEW?</h3>
+<p>This view can best be used when the enterprise does not have an appropriate methodology for SOA. Typical indicators of the lack of an enterprise methodology for SOA are:</p>
+<ul>
+  <li>cost and/or time explosion in projects delivering services</li>
+  <li> service sprawl</li>
+  <li> services with limited to no reuse</li>
+  <li> inability of managing dependencies across service usage</li>
+</ul>
+<p>It may also be used in combination with the SOA Modeling Planning view that is used when a modeling strategy is lacking. It is also recommended to be proposed as part of any strategic SOA engagement. It is an important part of the SOA governance effort and all organizations should at least consider it.</p>
+<p>An engagement based on this view can be focused on the development of an enterprise methodology for SOA for the organization or may be combined with a pilot project delivery. If it is combined with project delivery, it is recommended to finalize the major areas of the engagement before starting the delivery of this phase within the project. This type of engagement is focused on creating a baseline for the organization. It is important that the organization takes over ownership to further evolve the methodology by reflecting feedback from projects.</p>
+<p>Also, if the organization already has an appropriate methodology for SOA, but has not included any instrumentation for monitoring and management to measure the effectiveness of the methodology, then you may choose to use parts of the view, specifically, the instrumentation and metrics, for each of the areas included in the view. As stated earlier, OUM already has an approach for delivering SOA projects. The SOA Engineering Planning view should be used when the enterprise wants to develop their own enterprise-specific approach and adapt their own internal methodology to include such an approach. For more information on the OUM SOA approach, refer to the <a href="../../../../OUM/OUM_HOME_SOA_PROJECT_DELIVERY.HTM" target="_blank">SOA Project Delivery view</a>.</p>
+<p> <a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWPOS id="HOWPOS"></a></b>POSITIONING, QUALIFICATION AND SCOPE </h3>
+<p>Service-Oriented Architecture (SOA) requires planning that spans the enterprise or area of focus within the business that is applying it. Projects may not be simply architected, constructed and delivered independently in an effective SOA. Consistency and planning must be established across deliveries to ensure that the delivery maximizes the benefit of the SOA, as well as contributes to the overall SOA effectiveness.</p>
+<p>Enterprise SOA requires that the method for delivering projects that will utilize SOA must be executed with a consistent strategy from inception through delivery and into steady state. This consistent strategy can be either planned for and developed in advance of any project, or developed at the same time as delivering a pilot project. The focus of an engagement based in this view is the development of a enterprise-specific SOA approach separate from the delivery of a project. This allows the approach to be developed more thoroughly. The strategy can then be refined with each additional delivery going forward.</p>
+<p>It is clear that enterprise SOA engineering spans more than simply identifying and engineering services. Aside from influencing the software development lifecycle in many areas, this framework also impacts operations, and the overall enterprise architecture.</p>
+<p>The delivery process then becomes a natural extension of the adopted SOA, rather than separate entities with unique goals. Further, the delivery process for SOA-based projects needs to be augmented with additional activities in order to ensure the following:</p>
+<ul>
+  <li> Requirements are harvested with an eye towards service-orientation.</li>
+  <li>Potential shared services are identified at the correct time in the delivery lifecycle.</li>
+  <li>Existing shared services applicable to the delivery are discovered and applied in the application architecture correctly.</li>
+  <li>Appropriate shared service testing strategies are adhered to.</li>
+  <li>The deployment strategy is identified for shared services resulting from the delivery.</li>
+  <li>New services are defined in accordance with the established rules of the governing SOA.</li>
+  <li>Services are designed in accordance with the design policies established by the governing SOA, including:
+      <ul>
+        <li>service versioning strategy</li>
+      </ul>
+  </li>
+  <ul>
+    <li>implementation guidelines</li>
+    <li>coding standards</li>
+    <li>management enablement capabilities</li>
+  </ul>
+  <li>The application and the new resulting shared services are transitioned to operational state smoothly.</li>
+  <li>The lifecycle of services is managed appropriately.</li>
+  <li>SOA asset usage is tracked, measured and enforced.</li>
+</ul>
+<p>Instrumentation, with respect to business and particularly IT has been around for a long time. However, it has not generally been utilized as a core component of any particular IT strategy. Quite often, it is introduced as an afterthought, or as a missed requirement. Many view the addition of instrumentation to be a bottleneck or unnecessary overhead. This reasoning typically stems from those who have been forced to add instrumentation as a reactive measure after a project has been completed.</p>
+<p>When addressed up front and architected for accordingly such as we suggest in this view, instrumentation may be engineered to have as little footprint as possible, and in some cases is minimal. This is rarely the case when it is added in band-aid fashion after project completion.</p>
+<p>When applied correctly, the cost of instrumentation related to the SOA engineering cycle pales in comparison to the benefits. From a business and IT perspective instrumentation provides the following (to name a few):</p>
+<ul>
+  <li> Assistance with understanding IT performance and generated business value.</li>
+  <li>Justification data for considered strategy changes.</li>
+  <li>Information indicating areas for improvement resulting in greater engineering and operational efficiency.</li>
+  <li>Assistance with critical internal and external conformance pressures.</li>
+  <li>Measurement data leading to improved business process effectiveness.</li>
+  <li>Data supporting IT strategy maturity.</li>
+</ul>
+<p>When applied correctly, instrumentation provides the same benefits at a business level that we, as consumers of instrumentation use it for: </p>
+<ul>
+  <li> <b>Conformance:</b> The ability to operate within predefined values.</li>
+  <li><b>Performance:</b> The ability to measure performance and gather the information necessary to improve.</li>
+  <li><b>Competitive Advantage:</b> The right information collected for the business allowing management to make better business, IT and operational decisions. </li>
+</ul>
+<p>This SOA Engineering Planning view places instrumentation as a core component of the SOA strategy. It emphasizes instrumentation as a discipline required to more effectively implement an SOA strategy; and includes, but is not limited to just the projects and applications built within. By utilizing instrumentation as part of the SOA strategy, IT&rsquo;s ability to support the business will become more natural. Further, the business&rsquo;s understanding of the benefits provided by IT will become more apparent as IT becomes more proficient in responding to business demands. This is only possible if IT utilizes instrumentation to measure and collect performance data and then acts upon it to improve and mature as an organization.</p>
+<p>SOA, like any IT strategy, must be aligned to support the business needs. Most businesses have already established core business measurement metrics which are used to measure against defined business objectives. Due to increased IT spending over the last decade a common business objective is to reduce IT spending while still supporting the business strategy &ndash; IT is being asked to do more with less. IT, like other business units, must utilize metrics to measure its performance in support of the business.</p>
+<p>Instrumentation for monitoring and management that is a part of this view represents an integral input into SOA strategy and planning with respect to defining the metrics which will be used to measure SOA execution and utilized to make improvements. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROC id="WHATPROC"></a></b>SOA ENGINEERING PLANNING OVERVIEW </h3>
+<p align="center"><a name="SEPOD"></a><img src="../../../010_COMMON_FILES/SEP_OVERVIEW.PNG" alt="SOA Engineering Planning High-Level Workflow" width="1029" height="848" border="0" title="SOA Engineering Planning High-Level Workflow"></p>
+<p>There are seven areas in the SOA Engineering Planning view, each with its own set of tasks.</p>
+<p><b>MOBILIZATION</b> &ndash; Mobilization begins with the qualification of the effort to scope the engagement to best meet the needs of the organization. An engagement may be based solely on this view, but may also be increased to cover multiple views to produce a more full-featured planning and delivery engagement. In particular it may be combined with the SOA Modeling Planning view. It may also be scoped back to focus on only a subset of the six areas covered in this view, streams, tasks, and work products, while omitting others. Additional guidance on Mobilization can be found in the <a href="SEP_TASK_GUIDELINES.HTM#MG" target="_blank">SOA Engineering Planning Task Guidelines</a>. </p>
+<p> <b>SERVICE ARCHITECTURE</b> &ndash; Service Architecture starts with the engagement kickoff and educating the organization in the concepts of a SOA engineering. It also helps familiarize them with the terminology that will be used throughout the engagement. Additional guidance on Service Architecture can be found in the <a href="SEP_TASK_GUIDELINES.HTM#SARG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p> <b>SERVICE ANALYSIS</b> &ndash; During Service Analysis you develop the Service Analysis portion of the SOA engineering approach. The procedures and policies covered by Service Analysis coincide closely with the types of activities typical of traditional software engineering analysis practices but additionally take into account the needs of the SOA. When you have developed the Service Analysis portion of the SOA engineering approach, use it as an input to determine engineering metrics and instrumentation data related to Service Analysis that the organization feels is most important to them. Additional guidance on Service Analysis can be found in the <a href="SEP_TASK_GUIDELINES.HTM#SANG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p> <b>SERVICE DELIVERY</b> &ndash; Service Delivery covers the core engineering processes and guidelines required to define, design, construct and test services. When you have developed the Service Delivery portion of the SOA engineering approach, use it as an input to determine engineering metrics and instrumentation data related to Service Delivery that the organization feels is most important to them. Additional guidance on Service Delivery can be found in the <a href="SEP_TASK_GUIDELINES.HTM#SDG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p><b>SERVICE MANAGEMENT</b> &ndash; Service Management covers the activities to transition and operate services. When you have developed the Service Management portion of the SOA engineering approach, use it as an input to determine engineering metrics and instrumentation data related to Service Management that the organization feels is most important to them. Additional guidance on Service Management can be found in the <a href="SEP_TASK_GUIDELINES.HTM#SMG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p> <b>WRAP-UP</b> &ndash; During Wrap-Up, all work products are finalized for the engagement and prepared for project sign-off. The completed approach is presented back to the organization to wrap-up the engagement. Additional guidance on Wrap-Up can be found in the <a href="SEP_TASK_GUIDELINES.HTM#WUG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p><b>POST DELIVERY</b> - Following the successful completion of an engagement, a few post-delivery activities should take place, i.e., acceptance sign-off and documenting lessons learned. Additional guidance on Post Delivery can be found in the <a href="SEP_TASK_GUIDELINES.HTM#PDG" target="_blank">SOA Engineering Planning Task Guidelines</a>.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><b><a 
+name=WHATPROG id="WHATPROG"></a></b>WHAT OTHER VIEWS RELATE TO THE SOA ENGINEERING PLANNING VIEW? </h3>
+<p>Refer to the <a href="../../../../OUM/OUM_HOME_SOAINOUM.HTM" target="_blank">SOA in OUM</a> page for access as well as descriptions for all the SOA views in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES SOA ENGINEERING PLANNING RELATE TO OUM? </h3>
+<p>The SOA Engineering Planning process has been mapped to the Envision focus area of Oracle Unified Method to help show which tasks would typically be performed during each of the six areas from Mobilization to Wrap-Up.</p>
+<p>See the <a href="../../../050_REFERENCE_FILES/OUM_ENVISION_MAPPING.XLSX" target="_blank">mapping document</a> and <a href="../../../OUM_HOME_SEP.HTM" target="_blank">SOA Engineering Planning</a> view for applicable OUM tasks.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

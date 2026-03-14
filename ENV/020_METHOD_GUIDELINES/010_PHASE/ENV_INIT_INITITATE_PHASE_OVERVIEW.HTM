@@ -1,0 +1,688 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Initiate Phase Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Phase Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#Processes">Processes</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#Tips">Tips and Techniques</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Dependencies">Activity Flow Diagram</option>
+                            <option value="#Risk">Managing Risk</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[INIT] INITIATE</h2>
+<!--BeginPhaseDesc--><p>During Initiate, you perform a set of foundational tasks. Those tasks have a broad range of objectives and applicability. At one end, delivering a service based on the Envision Roadmap process can establish the vision for one or more projects intended to realize a focused set of business objectives (for example, Roadmap to SOA). On the other end, Initiate phase processes can be used to establish a broad set of enterprise level IT processes that are continued in the Maintain and Evolve phase.</p>
+<p>Finally, initiate-based services or sets of tasks may also be performed periodically. These may be required to develop further detail on specific objectives or to respond to critical business needs or pain points that bubble up out of Maintain and Evolve phase tasks.</p><!--EndPhaseDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This phase overview is written from the perspective of a Full Method View, utilizing ALL of the processes, activities and tasks in this phase. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Prerequisites, Processes, Key Work Products, Tasks and Work Products and Task Dependencies sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../../OUM/050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A href="#TOP">Back to Top</A></p>
+<hr WIDTH="100%">
+<h3><a NAME="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The following is a list of the objectives of this phase:</p>
+<ul>
+  <li> Provide the vision for one or more projects in order to achieve a focused set of business objectives</li>
+  <li>Establish or bolster a broad set of enterprise level IT processes that are to be continued</li>
+  <li>Define an enterprise &quot;Strategy&quot; on such topics as Governance, Business Intelligence, or Business Process improvement, prior to an OUM project that supports implementation of specific technology in these areas</li>
+  <li>Respond to critical business needs or pain points</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Processes" id="Processes"></a>PROCESSES</h3>
+<p>The following processes are active in this phase:</p>
+<ul>
+  <li>Envision Roadmap (ER) </li>
+  <li>Enterprise Business Analysis (BA)</li>
+  <li>Organizational Change Management (EOCM) </li>
+  <li>Enterprise Architecture (EA) </li>
+  <li>IT Portfolio Management (IP)</li>
+  <li>Governance (GV)</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="KeyWP" id="KeyWP"></a>KEY WORK PRODUCTS</h3>
+<p>This section is not yet available. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Tips" id="Tips"></a>TIPS AND TECHNIQUES </h3>
+<p>This section is not yet available. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A 
+name=TasksWP id="TasksWP"></A></B>TASKS AND WORK PRODUCTS </h3>
+<p>Envision includes the following tasks:</p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks (with links) and work products for the Envision Initiate phase.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each process.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Envision Roadmap </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.010</div></th>
+    <td><a href="../030_TASK/ER_010_CREATE_BUSINESS_CASE_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">Create Business Case for Envision Enagement</a></td>
+    <td>Customer Envision Engagement Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.015</div></th>
+    <td><a href="../030_TASK/ER_015_CONDUCT_ENT_MAT_ASSESSMENT_OVERVIEW.HTM">Conduct Enterprise Maturity Assessment</a></td>
+    <td>Maturity Analysis and Recommendations Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.020</div></th>
+    <td><a href="../030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">Determine Envision Engagement Strategy </a></td>
+    <td>Envision Engagement Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.025</div></th>
+    <td><a href="../030_TASK/ER_025_EDUCATE_ENT_ON_AREA_OF_FOCUS_OVERVIEW.HTM" target="_blank">Educate Enterprise on Area of Focus</a></td>
+    <td>Educated Enterprise</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.030</div></th>
+    <td><a href="../030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">Set and Agree on Plan for Envision Engagement </a></td>
+    <td>Envision Engagement Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.040</div></th>
+    <td><a href="../030_TASK/ER_040_RESEARCH_ENTERPRISE_OVERVIEW.HTM" target="_blank">Research Enterprise</a></td>
+    <td>Enterprise Research Findings </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.045</div></th>
+    <td><a href="../030_TASK/ER_045_ESTABLISH_EXEC_SPONSORSHIP_OVERVIEW.HTM" target="_blank">Establish Executive Sponsorship </a></td>
+    <td>Committed Executive Sponsorship </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.050</div></th>
+    <td><a href="../030_TASK/ER_050_VALIDATE_&_AGREE_ENVISION_ENG_PLAN_OVERVIEW.HTM" target="_blank">Validate and Agree on Envision Engagement Plan </a></td>
+    <td>Agreed on Envision Engagement Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.070</div></th>
+    <td><a href="../030_TASK/ER_070_DEFINE_MOD_STRATEGY_FOR_THE_ENTERPRISE_OVERVIEW.HTM" target="_blank">Define Modeling Strategy for the Enterprise </a></td>
+    <td>Enterprise Modeling Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.080</div></th>
+    <td><a href="../030_TASK/ER_080_OBTAIN_EXISTING_REFERENCE_MATERIAL_OVERVIEW.HTM" target="_blank">Obtain Existing Reference Material </a></td>
+    <td>Existing Reference Material </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.090</div></th>
+    <td><a href="../030_TASK/ER_090_CONDUCT_SOL_READINESS_ASSESSMENT_OVERVIEW.HTM" target="_blank">Conduct Solution Readiness Assessment </a></td>
+    <td>Solution Readiness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.100</div></th>
+    <td><a href="../030_TASK/ER_100_DEFINE_SUPP_ENTERPRISE_REQS_OVERVIEW.HTM" target="_blank">Define Supplemental Enterprise Requirements </a></td>
+    <td>Supplemental Enterprise Requirements </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.110.1</div></th>
+    <td><a href="../030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Benefit Analysis </a></td>
+    <td>Benefit Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.110.2</div></th>
+    <td><a href="../030_TASK/ER_110_PERFORM_BENEFIT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Benefit Analysis </a></td>
+    <td>Benefit Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.120.1</div></th>
+    <td><a href="../030_TASK/ER_120_IDENTIFY_&_MITIGATE_FUTURE_RISKS_OVERVIEW.HTM" target="_blank">Identify and Mitigate Future State Risks </a></td>
+    <td>Future State Risks </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.130.1</div></th>
+    <td><a href="../030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">Produce MoSCoW Improvement List </a></td>
+    <td>MoSCoW Improvement List </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.140</div></th>
+    <td><a href="../030_TASK/ER_140_SHARE_PRODUCT_STRATEGIES_W_ENT_OVERVIEW.HTM" target="_blank">Share Product Strategies with Enterprise</a></td>
+    <td>Informed Enterprise</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.150</div></th>
+    <td><a href="../030_TASK/ER_150_REVIEW_DISC_FINDINGS_OVERVIEW.HTM" target="_blank">Review Discovery Findings</a></td>
+    <td>Reviewed Discovery Findings</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.160</div></th>
+    <td><a href="../030_TASK/ER_160_DEVELOP_DESIRED_FUTURE_STATE_OVERVIEW.HTM" target="_blank">Develop Desired Future State </a></td>
+    <td>Desired Future State </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.165</div></th>
+    <td><a href="../030_TASK/ER_165_IDENTIFY_CAPABILITY_CHALLENGES_OVERVIEW.HTM" target="_blank">Identify Capability Challenges </a></td>
+    <td>Current Capability Challenges </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.167</div></th>
+    <td><a href="../030_TASK/ER_167_DETERMINE_REMEDIATION_APPROACHES_OVERVIEW.HTM" target="_blank">Determine Remediation Approaches</a></td>
+    <td>Remediation Approaches </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.170</div></th>
+    <td><a href="../030_TASK/ER_170_DEVELOP_FUTURE_STATE_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Develop Future State Transition Plan </a></td>
+    <td>Future State Transition Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.180</div></th>
+    <td><a href="../030_TASK/ER_180_PREPARE_FOR_&_PRESENT_SOL_REC_OVERVIEW.HTM">Prepare for and Present Solution Recommendation </a></td>
+    <td>Solution Recommendations</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.190</div></th>
+    <td><a href="../030_TASK/ER_190_REVIEW_BUS_FEEDBACK_&_IDENTIFY_OPPOR_OVERVIEW.HTM" target="_blank">Review Business Feedback and Identify Opportunities </a></td>
+    <td>Opportunities Task List </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">ER.200</div></th>
+    <td><a href="../030_TASK/ER_200_PREPARE_FOR_TRANS_TO_SALES_OR_SERV_OVERVIEW.HTM" target="_blank">Prepare for Transition to Sales or Services </a></td>
+    <td>Opportunities Action Plan </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Enterprise Business Analysis </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.010</div></th>
+    <td><a href="../030_TASK/BA_010_IDENTIFY_BUSINESS_STRATEGY_OVERVIEW.HTM" target="_blank">Identify Business Strategy</a></td>
+    <td>Business Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.012</div></th>
+    <td><a href="../030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">Define Business Scope </a></td>
+    <td>Business Scope </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.015</div></th>
+    <td><a href="../030_TASK/BA_015_CONDUCT_ENTERPRISE_STAKEHOLDER_ASSESSMENT_OVERVIEW.HTM" target="_blank">Conduct Enterprise Stakeholder Assessment </a></td>
+    <td>Enterprise Stakeholder Inventory </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.017.1</div></th>
+    <td><a href="../030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">Determine Metrics Collection and Reporting Strategy </a></td>
+    <td>Metrics Collection and Reporting Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.018.1</div></th>
+    <td><a href="../030_TASK/BA_018_ESTABLISH_CURRENT_BASELINE_METRICS_OVERVIEW.HTM" target="_blank">Establish Current Baseline Metrics </a></td>
+    <td>Current Baseline Metrics</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.020</div></th>
+    <td><a href="../030_TASK/BA_020_DOCUMENT_ENTERPRISE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">Document Enterprise Organization Structures</a></td>
+    <td>Enterprise Organization Structures</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.025</div></th>
+    <td><a href="../030_TASK/BA_025_DETERMINE_OPERATING_MODEL_OVERVIEW.HTM" target="_blank">Determine Operating Model </a></td>
+    <td> Validated Operating Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.030.1</div></th>
+    <td><a href="../030_TASK/BA_030_DEVELOP_ENTERPRISE_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Enterprise Glossary </a></td>
+    <td>Enterprise Glossary </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.040</div></th>
+    <td><a href="../030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Create Enterprise Function or Process Model </a></td>
+    <td>Function or Enterprise Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.045</div></th>
+    <td><a href="../030_TASK/BA_045_DEVELOP_ENTERPRISE_BUS_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">Develop Enterprise Business Context Diagram </a></td>
+    <td>Enterprise Business Context Diagram</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.050</div></th>
+    <td><a href="../030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">Develop Enterprise Domain Model (Business Entities) </a></td>
+    <td>Enterprise Domain Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.055</div></th>
+    <td><a href="../030_TASK/BA_055_DEVELOP_ENTERPRISE_KNOWLEDGE_FLOW_OVERVIEW.HTM" target="_blank">Develop Enterprise Knowledge Flow</a></td>
+    <td>Enterprise Knowledge Flow </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.058</div></th>
+    <td><a href="../030_TASK/BA_058_DEVELOP_BUSINESS_ARCHITECTURE_OVERVIEW.HTM" target="_blank">Develop Business Architecture </a></td>
+    <td>Business Architecture </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.060.1</div></th>
+    <td><a href="../030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">Perform High-Level Use Case Discovery </a></td>
+    <td>High-Level Use Cases</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.060.2</div></th>
+    <td><a href="../030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">Perform High-Level Use Case Discovery </a></td>
+    <td>High-Level Use Cases</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.065</div></th>
+    <td><a href="../030_TASK/BA_065_REVIEW_BUSINESS_IT_SLA_OVERVIEW.HTM" target="_blank">Review Busines IT SLA </a></td>
+    <td>Business-IT SLA Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.067</div></th>
+    <td><a href="../030_TASK/BA_067_REVIEW_BUSINESS_VOLUMETRICS_OVERVIEW.HTM" target="_blank">Review Business Volumetrics </a></td>
+    <td>Business Volumetrics Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.070</div></th>
+    <td><a href="../030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank"> Identify Candidate Services </a></td>
+    <td>Service Portfolio - Candidate Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.080</div></th>
+    <td><a href="../030_TASK/BA_080_IDENTIFY_CANDIDATE_ENTERPRISE_BUS_RULES_OVERVIEW.HTM" target="_blank">Identify Candidate Enterprise Business Rules </a></td>
+    <td>Candidate Business Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">BA.090</div></th>
+    <td><a href="../030_TASK/BA_090_IDENTIFY_PROCESS_IMP_OPTIONS_OVERVIEW.HTM" target="_blank">Identify Process Improvement Options </a></td>
+    <td>Process Improvement Options </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Organizational Change Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.010</div></th>
+    <td><a href="../030_TASK/EOCM_010_CREATE_AND_MANAGE_AD_HOC_COMM_OVERVIEW.HTM" target="_blank">Create and Manage Ad Hoc Communications </a></td>
+    <td>Ad Hoc Communications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.020</div></th>
+    <td><a href="../030_TASK/EOCM_020_PREPARE_FOR_EXEC_ALIGN_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Executive Alignment Workshop </a></td>
+    <td>Executive Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.030</div></th>
+    <td><a href="../030_TASK/EOCM_030_CONDUCT_EXECUTIVE_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Executive Alignment Workshop</a></td>
+    <td>Executive Business Objectives and Governance Rules </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.040</div></th>
+    <td><a href="../030_TASK/EOCM_040_BUILD_AND_DEPLOY_SPONSORSHIP_PROGRAM_OVERVIEW.HTM" target="_blank">Build and Deploy Sponsorship Program </a></td>
+    <td>Sponsorship Program</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.050</div></th>
+    <td><a href="../030_TASK/EOCM_050_ASSESS_ENTERPRISE_CHANGE_READINESS_OVERVIEW.HTM" target="_blank">Assess Enterprise Change Readiness </a></td>
+    <td>Preliminary Enterprise Change Management Assessment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.060</div></th>
+    <td><a href="../030_TASK/EOCM_060_PREPARE_PROJECT_TEAM_FOR_ENTERPRISE_CULTURE_OVERVIEW.HTM" target="_blank">Prepare Project Team for Enterprise Culture </a></td>
+    <td>Prepared Project Team </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.070</div></th>
+    <td><a href="../030_TASK/EOCM_070_IDENTIFY_CHANGE_AGENT_STRUCTURE_OVERVIEW.HTM" target="_blank">Identify Change Agent Structure</a></td>
+    <td>Change Agent Structure</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Enterprise Architecture </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.001</div></th>
+    <td><a href="../030_TASK/EA_001_JUSTIFY_&_ENGAGE_ENT_ARCHITECTS_OVERVIEW.HTM" target="_blank">Justify and Engage Enterprise Architects </a></td>
+    <td>Assigned Enterprise Architect </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.002</div></th>
+    <td><a href="../030_TASK/EA_002_REVIEW_EXTERNAL_REFERENCE_ARCHS_OVERVIEW.HTM" target="_blank">Review External Reference Architectures</a></td>
+    <td>External Reference Architectures Review</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.010.1</div></th>
+    <td><a href="../030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">Review Architecture Principles, Guidelines and Standards </a></td>
+    <td>Architecture Principles, Guidelines and Standards</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.030</div></th>
+    <td><a href="../030_TASK/EA_030_IDENTIFY_CURR_ENTERPRISE_ARCH_OVERVIEW.HTM" target="_blank">Identify Current Enterprise Architecture</a></td>
+    <td>Current Enterprise Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.040</div></th>
+    <td><a href="../030_TASK/EA_040_ANALYZE_CAPABILITIES_OVERVIEW.HTM" target="_blank">Analyze Capabilities </a></td>
+    <td>Capabilities Analysis Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.050</div></th>
+    <td><a href="../030_TASK/EA_050_IDENTIFY_CURR_ARCH_CHALLENGES_OVERVIEW.HTM" target="_blank">Identify Current Architectural Challenges </a></td>
+    <td>Current Architectural Challenges </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.057</div></th>
+    <td><a href="../030_TASK/EA_057_REVIEW_BUSINESS_CAPACITY_PLAN_OVERVIEW.HTM" target="_blank">Review Business Capacity Plan </a></td>
+    <td>Business Capacity Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.060</div></th>
+    <td><a href="../030_TASK/EA_060_IDENTIFY_ARCH_GAPS_&_IMPROVE_OPTIONS_OVERVIEW.HTM" target="_blank">Identify Architectural Gaps and Improvement Options </a></td>
+    <td>Architectural Gaps and Improvement Options </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.065</div></th>
+    <td><a href="../030_TASK/EA_065_IDENTIFY_ENTERPRISE_IT_STRATEGY_OVERVIEW.HTM" target="_blank">Identify Enterprise IT Strategy </a></td>
+    <td>Enterprise IT Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.075</div></th>
+    <td><a href="../030_TASK/EA_075_DEVELOP_TECHNOLOGY_REFERENCE_ARCH_OVERVIEW.HTM" target="_blank">Develop Technology Reference Architectures </a></td>
+    <td>Technology Reference Architectures </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.095</div></th>
+    <td><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">Review Enterprise Software Development Process </a></td>
+    <td>Enterprise Software Development Process</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.110</div></th>
+    <td><a href="../030_TASK/EA_110_DEVELOP_FUTURE_ST_ENT_ARCH_OVERVIEW.HTM" target="_blank">Develop Future State Enterprise Architecture </a></td>
+    <td>Future State Enterprise Architecture </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.120</div></th>
+    <td><a href="../030_TASK/EA_120_DEVELOP_INFORMATION_ARCH_OVERVIEW.HTM" target="_blank">Develop Information Architecture</a></td>
+    <td>Information Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.130</div></th>
+    <td><a href="../030_TASK/EA_130_DEVELOP_TECHNOLOGY_ARCH_OVERVIEW.HTM" target="_blank">Develop Technology Architecture </a></td>
+    <td>Technology Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.140</div></th>
+    <td><a href="../030_TASK/EA_140_DEVELOP_APPLICATIONS_ARCH_OVERVIEW.HTM" target="_blank">Develop Applications Architecture </a></td>
+    <td>Applications Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.150</div></th>
+    <td><a href="../030_TASK/EA_150_DEFINE_TRANSITIONAL_ARCHITECTURES_OVERVIEW.HTM" target="_blank">Define Transitional Architectures </a></td>
+    <td>Transitional Architectures</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.160</div></th>
+    <td><a href="../030_TASK/EA_160_DEFINE_BUS_RULES_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">Define Business Rules Implementation Strategy </a></td>
+    <td>Business Rules Implementation Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.170</div></th>
+    <td><a href="../030_TASK/EA_170_IDENTIFY_INTEGRATION_REQUIREMENTS_OVERVIEW.HTM" target="_blank">Identify Integration Requirements </a></td>
+    <td>Integration Requirements </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.190</div></th>
+    <td><a href="../030_TASK/EA_190_DEFINE_PRODUCT_IMP_PRIORITIZATION_OVERVIEW.HTM" target="_blank">Define Product Implementation Prioritization </a></td>
+    <td>Product Implementation Prioritization Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EA.200</div></th>
+    <td><a href="../030_TASK/EA_200_DETERMINE_DEV_FRAMEWORK_AND_POLICY_GDLNS_OVERVIEW.HTM" target="_blank">Determine Development Framework and Policy Guidelines </a></td>
+    <td>Development Framework</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">IT Portfolio Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.010</div></th>
+    <td><a href="../030_TASK/IP_010_INVENTORY_PROJECTS_OVERVIEW.HTM" target="_blank">Inventory Projects </a></td>
+    <td>IT Project Portfolio</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.012</div></th>
+    <td><a href="../030_TASK/IP_012_INVENTORY_APPLICATIONS_OVERVIEW.HTM" target="_blank">Inventory Applications</a></td>
+    <td>IT Application Portfolio </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.014</div></th>
+    <td><a href="../030_TASK/IP_014_INVENTORY_SERVICES_OVERVIEW.HTM" target="_blank">Inventory Services </a></td>
+    <td>Service Portfolio </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.015</div></th>
+    <td><a href="../030_TASK/IP_015_CONDUCT_PORTFOLIO_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct Portfolio Analysis </a></td>
+    <td>Portfolio Analysis Report </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.020</div></th>
+    <td><a href="../030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">Analyze Services</a></td>
+    <td>Service Portfolio - Proposed Services </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.025</div></th>
+    <td><a href="../030_TASK/IP_025_POPULATE_SERVICES_REPOSITORY_OVERVIEW.HTM" target="_blank">Populate Services Repository </a></td>
+    <td>Populated Services Repository </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.030</div></th>
+    <td><a href="../030_TASK/IP_030_ANALYZE_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Analyze Business Rules</a></td>
+    <td>Business Rules Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.040</div></th>
+    <td><a href="../030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">Identify Candidate Projects </a></td>
+    <td>Candidate Projects </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.050.1</div></th>
+    <td><a href="../030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">Prioritize Projects</a></td>
+    <td>Prioritize Projects</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">IP.060</div></th>
+    <td><a href="../030_TASK/IP_060_DEVELOP_IT_PORTFOLIO_PLAN_OVERVIEW.HTM" target="_blank">Develop IT Portfolio Plan </a></td>
+    <td>IT Portfolio Plan </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Governance</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.010</div></th>
+    <td><a href="../030_TASK/GV_010_DEFINE_GOVERNANCE_STRATEGY_OVERVIEW.HTM" target="_blank">Define Governance Strategy </a></td>
+    <td>Governance Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.015</div></th>
+    <td><a href="../030_TASK/GV_015_REVIEW_CURRENT_GOVERNANCE_MODEL_OVERVIEW.HTM" target="_blank">Review Current Governance Model </a></td>
+    <td>Current Governance Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.020.1</div></th>
+    <td><a href="../030_TASK/GV_020_DETERMINE_REG_AND_BUS_MANDATES_OVERVIEW.HTM" target="_blank">Determine Regulatory and Business Mandates</a></td>
+    <td>Mandate Matrix </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.030.1</div></th>
+    <td><a href="../030_TASK/GV_030_DISCOVER_OR_DEFINE_POLICIES_OVERVIEW.HTM" target="_blank">Discover or Define Policies </a></td>
+    <td>Governance Policies Catalog </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.040</div></th>
+    <td><a href="../030_TASK/GV_040_DETERMINE_ORG_IMPACT_OF_GOVERNANCE_OVERVIEW.HTM" target="_blank">Determine Organizational Impact of Governance </a></td>
+    <td>Impact Study and List of Proposed Organizational Changes </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.050.1</div></th>
+    <td><a href="../030_TASK/GV_050_DEFINE%20POLICY_IMPLEMENTATION_PROCESSES_OVERVIEW.HTM" target="_blank">Define Policy Implementation Processes </a></td>
+    <td> Policy Implementation Processes </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.060.1</div></th>
+    <td><a href="../030_TASK/GV_060_DEFINE_POLICY_IMP_TOOLING_OVERVIEW.HTM" target="_blank">Define Policy Implementation Tooling</a></td>
+    <td>Governance Policy Tooling </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.070.1</div></th>
+    <td><a href="../030_TASK/GV_070_DEFINE_POLICY_METRICS_OVERVIEW.HTM" target="_blank">Define Policy Metrics </a></td>
+    <td>Measurements Portfolio </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.080.1</div></th>
+    <td><a href="../030_TASK/GV_080_DEFINE_POLICY_MONITORING_PROCESSES_OVERVIEW.HTM" target="_blank">Define Policy Monitoring Processes </a></td>
+    <td>Policy Monitoring Processes </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.090.1</div></th>
+    <td><a href="../030_TASK/GV_090_DETERMINE_FUNDING_MODEL_OVERVIEW.HTM" target="_blank">Determine Funding Model </a></td>
+    <td>Funding Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.092</div></th>
+    <td><a href="../030_TASK/GV_092_DETERMINE_PROJECTS_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Projects Meta Data Description</a></td>
+    <td>Projects Meta Data Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.094</div></th>
+    <td><a href="../030_TASK/GV_094_DETERMINE_APPLICATIONS_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Applications Meta Data Description</a></td>
+    <td>Applications Meta Data Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.096</div></th>
+    <td><a href="../030_TASK/GV_096_DETERMINE_SERVICES_META_DATA_DESC_OVERVIEW.HTM" target="_blank">Determine Services Meta Data Description</a></td>
+    <td>Services Meta Data Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.098</div></th>
+    <td><a href="../030_TASK/GV_098_DETERMINE_OTHER_META_DATA_DESCS_OVERVIEW.HTM" target="_blank">Determine Other Meta Data Descriptions</a></td>
+    <td>Other Meta Data Descriptions</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">GV.100.1</div></th>
+    <td><a href="../030_TASK/GV_100_IMPLEMENT_GOVERNANCE_OVERVIEW.HTM" target="_blank">Implement Governance </a></td>
+    <td>Governance Implementation</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top </a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Dependencies" id="Dependencies"></a><b>ACTIVITY FLOW DIAGRAM </b></h3>
+<p align="center"><img src="../../010_COMMON_FILES/Initiate_Act.Flow.jpg" alt="Initiate Phase Activity Flow Diagram" width="520" height="568" title="Initiate Phase Activity Flow Diagram"></p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Risk" id="Risk"></a>MANAGING RISK</h3>
+<p>This section is not yet available. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

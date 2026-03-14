@@ -1,0 +1,570 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OCM Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[OCM] ORGANIZATIONAL CHANGE MANAGEMENT </h2>
+<!--BeginProcessDesc--><p>In OUM, the <span class="style1">Organizational Change Management process spans both the Envision and Implement focus areas. In Envision, these tasks are designated with an EOCM ID. In Implement, an OCM ID is used.</span>In Envision, this process <span class="style1"> focuses on enterprise-level issues that can provide a head start for conducting Organizational Change Management for future implementation projects. The Implement Organizational Change Management process focuses on the entire implementation lifecycle. </span></p>
+<p>The Organizational Change Management process starts at the strategic level with executives and then identifies the particular human and organizational challenges of the technology implementation in order to design a systematic, time-sensitive, and cost-effective approach to lowering risk that is tailored to each organization&rsquo;s specific needs. In addition to increasing user adoption rates, carefully planning for and managing change in this way allows organization&rsquo;s to maintain productivity throughout potentially difficult technological transitions. Furthermore, it enables the organization to more easily meet deadlines, realize business objectives, and maximize return on investment. </p>
+<p>In OUM, Organizational Change Management begins at the enterprise level during an Envision project, where many projects across the IT Portfolio are being examined and planned. There are enterprise stakeholders that need to be identified prior to implementation project start up. By beginning at the enterprise level, and then continuing on through each Implementation project, Organizational Change Management supports the organizational move to utilize the new technology, and solutions that are put in place to support the business of the enterprise. </p>
+<p>The Organizational Change Management process increases the probability that the technology implementation will be successful, first  by getting executive commitment and anticipating the human and organizational challenges and then by creating a strategy that is aligned with the organization&rsquo;s culture to help managers and users accept the new or updated technology. The Organizational Change Management process helps better manage the &quot;soft side&quot; of the implementation by: </p>
+<ul>
+  <li>identifying and mitigating risks</li>
+  <li>generating change momentum</li>
+  <li> fostering effective communication</li>
+  <li>preparing managers and end users for the new processes, roles and responsibilities</li>
+  <li>supporting end-user acceptance</li>
+</ul>
+<p>The Organizational Change Management process helps to decrease transition time, meet deadlines, meet business objectives and stay within project timeframes.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/OCM_Process.jpg" alt="Organizational Change Management Process Flow Diagram" width="710" height="1395" border="1" title="Organizational Change Management Process Flow Diagram"></p>
+<P> <A 
+href="#TOP">Back to Top</A>&nbsp; </P>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p class="style1">The nature of the OUM approach, often requiring a significant change in the implementing organization&rsquo;s business processes and coupled with the rapid implementation timelines, increases the importance of the Organizational Change Management process.
+<p class="style1">Change management is action oriented to anticipate risks and to manage them, rather than resolve them in a crisis situation or after resistance has become entrenched.
+<p class="style1"> It is a well-known fact that when users and managers are involved in the change planning, the less likely there will be resistance during the transition. In addition, change can be managed, and the earlier this happens, the greater the opportunity for success. Organizational Change Management activities should begin early in a project and help maintain customer accountability for the change, ensuring that the customer remains involved that can  help reduce any barriers to the new application system. To this end, a considerable number of change management activities are designed to involve both executives (executive and/or steering committee) and managers in supporting the change effort. Oracle's Organizational Change Management leading practices also address communication and adoption strategies to help build momentum and reduce potential resistance.
+<p class="style1">Organization Change Management focuses on addressing the human and organizational factors and aligning them to minimize the implementation risk and optimize system performance from a human perspective. Organizational Change Management increases stakeholder commitment to the new technology and resulting changes and builds support for the implementation by informing, involving, and including stakeholders throughout the process. Organization Change Management includes the following benefits for the organization:</p>
+<ul>
+  <li>Identifies organizational issues that will either lengthen the implementation or harm it and overcomes those barriers</li>
+  <li>Improves organizational knowledge and skills for the new environment, as well as organizational effectiveness during implementation</li>
+  <li>Realizes projected benefits by focusing on post-implementation issues like user acceptance, productivity, and human performance support</li>
+</ul>
+<h4 class="style1">Change Management Roadmap and Communication Campaign</h4>
+<p class="style1">Organizational Change Management is action oriented to anticipate risks and to manage them, rather than resolve them in a crisis situation, or after resistance has become entrenched. </p>
+<p class="style1">A large part of Organizational Change Management is organizing change and communication activities for specific target populations from the executive level to the end-user level to mitigate specific issues and challenges (risks). All these activities and the associated details are organized in the Change Management Roadmap and the Communication Campaign. The Change Management Roadmap and the Communication Campaign includes activities and a two-way communication initiative organized by audience, expectations, issues, speaker, and preferred communication channels to ensure that the right information is communicated to the right people using the right vehicle at the right time. The activities in the Change Management Roadmap and the  Communication Campaign are conducted at established milestones during the project and are aligned with the overall project deployment schedule.</p>
+<h4 class="style1">Impacts on Various Audiences</h4>
+<p class="style1">Organizational Change Management impacts the following five major audiences:</p>
+<ul style="margin-top: 0; margin-bottom: 0;">
+  <li><span class="style1" style="margin-top: 0; margin-bottom: 0;">Executives</span></li>
+  <li><span class="style1" style="margin-top: 0; margin-bottom: 0;">Implementation Project Teams</span></li>
+  <li><span class="style1" style="margin-top: 0; margin-bottom: 0;">Functional Managers</span></li>
+  <li><span class="style1" style="margin-top: 0; margin-bottom: 0;">End Users</span></li>
+  <li><span class="style1" style="margin-top: 0; margin-bottom: 0;">Information Technology Groups</span></li>
+</ul>
+<p style="margin-top: 0;"><span class="style1"><br>
+  Each of these audiences has a stake in the expected performance of the new system and can impact the success of the implementation. However, the audiences are not mutually exclusive. For example, functional managers or members of the information technology groups may be users and also members of the implementation project team. </span></p>
+<h5 class="style1">Executives - Advocate Successful Change</h5>
+<p class="style1"> The tasks targeted for executives consist of a facilitated Executive Alignment Workshop and a Sponsorship Program. The workshop assists executives to effectively develop strategies for the successful execution of the enterprise-wide implementation and the management of implementation risks. A Sponsorship Program is put in place to identify the best executives to address specific organizational challenges and coach them in mechanisms, activities and communications in order to remain aligned throughout the project. Its goal is to mitigate risks and get management aligned behind the change. By participating in these tasks, executives have the ability to: </p>
+<ul>
+  <li>understand the role they are to play in the implementation, as well as the time commitment and energy required for that role</li>
+  <li>understand the benefits the implementation provides to their business, as well as the costs and timeframes</li>
+  <li>comprehend the barriers to success, based on experience with a number of similar implementations</li>
+  <li>make timely and informed project startup decisions</li>
+  <li>initiate a sponsorship network to sustain the momentum of the project</li>
+</ul>
+<h5 class="style1">Implementation Project Team - Give the Team a Jump Start</h5>
+<p class="style1"> The tasks targeted for the project team include Team-Building Workshop with a series of activities, processes, tools, and learning events to quickly orient the implementation team to the project. Project team members acquire the skills they need to function as a team, and to represent the project to the rest of the organization. By participating in the Team-Building Workshop, the project team has the ability to:</p>
+<ul>
+  <li>become a high-performance team from the onset, reducing startup time and costs</li>
+  <li>establish appropriate Project Team Rules</li>
+  <li>function as a more cohesive working group throughout the life of the implementation</li>
+</ul>
+<h5 style="margin-bottom: 0">Functional Managers - Create a Stepladder for Performance</h5>
+<p class="style1" style="margin-top: 0;"><br>
+  Functional managers learn how the technology impacts their work groups&rsquo; processes and procedures. They are provided with tools to assume their role as change leaders, and with learning events to acquire necessary application skills. They define newly required roles, competencies, and performance support and contribute to the improvement of the workflows to take advantage of the new technology and to manage to new performance expectations. By participating in the Organizational Change Management activities, the managers have the ability to:</p>
+<ul>
+  <li>develop a reasonable expectation of the benefits the implementation provides to their business units</li>
+  <li>increase performance through more effective change leadership</li>
+  <li>design optimal job roles to meet business objectives</li>
+  <li>develop new organizational structures to help maximize productivity</li>
+  <li>define recognition and rewards to encourage user performance in their new roles and responsibilities</li>
+</ul>
+<h5 class="style1">End Users - Achieve Business Performance</h5>
+<p class="style1">Through a series of change and communication events, users acquire the skill and the motivation to perform their new role using the full potential of the technology. This includes the procedural, functional, and technical proficiencies users need to achieve their new performance expectations. By participating in the Organizational Change Management activities, users have the ability to:</p>
+<ul>
+  <li> become involved in the definition of application and business requirements</li>
+  <li> participate in just-in-time learning and receive performance reinforcement</li>
+  <li> increase their acceptance and effective use of the system</li>
+  <li> create a post-implementation environment to facilitate productivity</li>
+</ul>
+<h5>Information Technology Groups - Sustain Technical Gains</h5>
+<p class="style1">The tasks targeted to the information technology community provide the right skills base to enable ongoing technical support to users after the implementation and leverage business and technical system capabilities. It includes certification paths and retention strategies for the information technology population. By participating in the Organizational Change Management activities, the information technology groups have the ability to:</p>
+<ul>
+  <li>smoothly transition from implementation to on-going technical performance</li>
+  <li>develop proficiency for ongoing system improvement, furthering technical performance gains</li>
+</ul>
+<p class="style1"><A 
+href="#TOP">Back to Top</A>&nbsp;</p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work product s for this process are as follows:</p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Organizational Change Management process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Envision</div></th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Initiate Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.010</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_010_CREATE_AND_MANAGE_AD_HOC_COMM_OVERVIEW.HTM" target="_blank">Create and Manage Ad Hoc Communications </a></td>
+    <td>Ad Hoc Communications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.020</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_020_PREPARE_FOR_EXEC_ALIGN_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Executive Alignment Workshop </a></td>
+    <td>Executive Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.030</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_030_CONDUCT_EXECUTIVE_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Executive Alignment Workshop</a></td>
+    <td>Executive Business Objectives and Governance Rules</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.040</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_040_BUILD_AND_DEPLOY_SPONSORSHIP_PROGRAM_OVERVIEW.HTM" target="_blank">Build and Deploy Sponsorship Program </a></td>
+    <td>Sponsorship Program</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.050</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_050_ASSESS_ENTERPRISE_CHANGE_READINESS_OVERVIEW.HTM" target="_blank">Assess Enterprise Change Readiness</a></td>
+    <td>Preliminary Enterprise Change Readiness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.060</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_060_PREPARE_PROJECT_TEAM_FOR_ENTERPRISE_CULTURE_OVERVIEW.HTM" target="_blank">Prepare  Project Team for Enterprise Culture </a></td>
+    <td>Prepared Project Team </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">EOCM.070</div></th>
+    <td><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/EOCM_070_IDENTIFY_CHANGE_AGENT_STRUCTURE_OVERVIEW.HTM" target="_blank">Identify Change Agent Structure</a></td>
+    <td>Change Agent Structure </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Implement</div></th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.010</div></th>
+    <td><A href="../030_TASK/OCM_010_CREATE_AND_MANAGE_AD_HOC_COMM_OVERVIEW.HTM" target="_blank">Create and Manage Ad Hoc Communications</A></td>
+    <td>Ad Hoc Communications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.020</div></th>
+    <td><A href="../030_TASK/OCM_020_PREPARE_FOR_EXEC_ALIGN_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Executive Alignment Workshop</A></td>
+    <td>Executive Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.030</div></th>
+    <td><A href="../030_TASK/OCM_030_CONDUCT_EXECUTIVE_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Executive Alignment Workshop</A></td>
+    <td>Executive Business Objectives and Governance Rules</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.040</div></th>
+    <td><A href="../030_TASK/OCM_040_BUILD_AND_DEPLOY_SPONSORSHIP_PROGRAM_OVERVIEW.HTM" target="_blank">Build and Deploy Sponsorship Program</A></td>
+    <td>Sponsorship Program</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.050</div></th>
+    <td><A href="../030_TASK/OCM_050_PREPARE_FOR_TEAM_BLDG_WORKSHOP_OVERVIEW.HTM" target="_blank">Prepare for Team-Building Workshop</A></td>
+    <td>Team-Building Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.060</div></th>
+    <td><A href="../030_TASK/OCM_060_CONDUCT_TEAM_BLDG_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Team-Building Workshop</A></td>
+    <td>Cohesive Project Team</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.070</div></th>
+    <td><A href="../030_TASK/OCM_070_DESIGN_MGRS_PROJECT_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Managers Project Alignment Workshop</A></td>
+    <td>Managers Project Alignment Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.080</div></th>
+    <td><A href="../030_TASK/OCM_080_CONDUCT_MGRS_PROJECT_ALIGNMENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Managers Project Alignment Workshop</A></td>
+    <td>Aligned Managers </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.090</div></th>
+    <td><A href="../030_TASK/OCM_090_DESIGN_CHANGE_AGENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Change Agent Workshop</A></td>
+    <td>Change Agent Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.100</div></th>
+    <td><A href="../030_TASK/OCM_100_CONDUCT_CHANGE_AGENT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Change Agent Workshop</A></td>
+    <td>Enabled Change Agents </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.110</div></th>
+    <td><A href="../030_TASK/OCM_110_DEVELOP_CR_ASSESSMENT_STRATEGY_AND_TOOLS_OVERVIEW.HTM" target="_blank">Develop Change Readiness Assessment Strategy and Tools</A></td>
+    <td>Change Readiness Assessment Strategy and Tools</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.120</div></th>
+    <td><A href="../030_TASK/OCM_120_CONDUCT%20CR_ASSESSMENT_AND_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">Conduct Change Readiness Assessment and Analyze Data</A></td>
+    <td>Change Readiness Assessment Analysis and Recommendations </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.130</div></th>
+    <td><A href="../030_TASK/OCM_130_BUILD_COMM_STRATEGY_AND_CHG_MGMT_ROADMAP_OVERVIEW.HTM" target="_blank">Build Communication Strategy and Change Management Roadmap</A></td>
+    <td>Communication Strategy and Change Management Roadmap</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.140</div></th>
+    <td><A href="../030_TASK/OCM_140_DEVELOP_COMMUNICATION_CAMPAIGN_OVERVIEW.HTM" target="_blank">Develop Communication Campaign</A></td>
+    <td>Communication Campaign </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.1</div></th>
+    <td><A href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM" target="_blank">Conduct Change Management Roadmap and Communication Campaign</A></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.2</div></th>
+    <td><A href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM" target="_blank">Conduct Change Management Roadmap and Communication Campaign</A></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.1</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.160</div></th>
+    <td><a href="../030_TASK/OCM_160_PREPARE_BUS_PROCESS_IMPACT_INVENTORY_OVERVIEW.HTM" target="_blank">Prepare Business Process Impact Inventory </a></td>
+    <td>Business Process Impact Inventory</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.3</div></th>
+    <td><A href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM" target="_blank">Conduct Change Management Roadmap and Communication Campaign</A></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.2</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.170</div></th>
+    <td><a href="../030_TASK/OCM_170_COLLECT_AND_ANALYZE_JOB_CHANGE_DATA_OVERVIEW.HTM" target="_blank">Collect and Analyze Job Change Data </a></td>
+    <td>Job Impact Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.180</div></th>
+    <td><a href="../030_TASK/OCM_180_DETERMINE_IMPACT_OF_JOB_CHANGES_OVERVIEW.HTM" target="_blank">Determine Impact of Job Changes </a></td>
+    <td>Job Impact Diagnosis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.190</div></th>
+    <td><a href="../030_TASK/OCM_190_PREPARE_HR_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Prepare HR Transition Plan </a></td>
+    <td>HR Transition Plan </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.200</div></th>
+    <td><a href="../030_TASK/OCM_200_DESIGN_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">Design Managers Unit and Department Impact Workshop</a></td>
+    <td>Managers Unit and Department Impact Workshop Materials </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.210</div></th>
+    <td><a href="../030_TASK/OCM_210_CONDUCT_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Managers Unit and Department Impact Workshop</a></td>
+    <td>Enabled Managers</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.4</div></th>
+    <td><A href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM" target="_blank">Conduct Change Management Roadmap and Communication Campaign</A></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.3</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.220</div></th>
+    <td><a href="../030_TASK/OCM_220_PREPARE_ASSESSMENT_OF_IMPACT_ON_IT_GROUPS_OVERVIEW.HTM" target="_blank">Prepare Assessment of Impact on IT Groups </a></td>
+    <td>IT Alignment Diagnosis Grid </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.230</div></th>
+    <td><a href="../030_TASK/OCM_230_PREPARE_IT_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Prepare IT Transition Plan</a></td>
+    <td>IT Transition Plan</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Production Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.5</div></th>
+    <td><A href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM" target="_blank">Conduct Change Management Roadmap and Communication Campaign</A></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.4</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.250</div></th>
+    <td><a href="../030_TASK/OCM_250_MEASURE_ORG_CHANGE_EFFECTIVENESS_OVERVIEW.HTM" target="_blank">Measure Organizational Change Effectiveness</a></td>
+    <td>Organizational Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.260</div></th>
+    <td><a href="../030_TASK/OCM_260_IMPLEMENT_IT_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Implement IT Transition Plan </a></td>
+    <td>Aligned IT Organization </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p><span class="style1">The objectives of the Organizational Change Management process are: </span></p>
+<ul>
+  <li>Establish executive sponsorship and management advocacy.</li>
+  <li>Align business objectives and technology capabilities throughout the organization.</li>
+  <li>Increase stakeholder commitment to the new technology and resulting changes; build support for the implementation by informing, involving and including stakeholders throughout the process.</li>
+  <li>Accelerate the implementation project team's ability to work together through team building and organization-specific application learning.</li>
+  <li>Determine human performance support implications so that the organizational structures and job roles align to meet new performance expectations resulting from the technology change.</li>
+  <li>Create a user-friendly environment for learning about the new technology by developing learning and performance strategies and plans that promote the optimum performance of users on the new system.</li>
+  <li>Optimize the information technology groups&rsquo; infrastructure to help ensure the ongoing support of the applications (including ongoing learning and certification plans so that information technology employees can continuously optimize system functionality to meet business needs).</li>
+  <li>Establish a measurement system that provides an evaluation of organizational performance to determine whether expectations were met during implementation and after production cutover. </li>
+</ul>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Organizational Change Management process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="4%" scope="col">Role ID </th>
+    <th width="16%" scope="col">Name</th>
+    <th width="80%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Assist with Job Impact Analysis activity. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CMS</th>
+    <td>Change Management Specialist </td>
+    <td>The change management specialist provides the customer with experience with leading practices in the human and organizational facets of change management. Change management specialists support the Organizational Change Management (OCM) process by identifying and mitigating risks, generating change momentum, fostering effective communication, and supporting end-user acceptance. The change management specialist works directly with executives to gain their commitment and put in place a project governance model. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">PM</th>
+    <td>Project Manager </td>
+    <td>Participate in definition and maintenance of an optimal project environment. Support events to help the project team function as a high performance team. Collaborate with the change management specialist to make sure that change management and project management activities and expectations are aligned. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TS</th>
+    <td>Training Specialist </td>
+    <td>Assist with Job Impact Analysis activity. Assist with Training Needs Analysis. </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CAT</th>
+    <td>Customer Assessment Team </td>
+    <td>Gather and analyze assessment data. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CIO</th>
+    <td>Customer Chief Information Officer</td>
+    <td>Provide input for IT Alignment activities. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CCML</th>
+    <td>Customer Change Management Lead </td>
+    <td>Assist with the Change Agent Workshop. Assist with gathering and analyzing assessment data. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CCS</th>
+    <td>Customer Communication Specialist </td>
+    <td>Work with the Change Management Communication Specialist on all communication tasks. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CE</th>
+    <td>Customer Executive</td>
+    <td>Participate in Executive Alignment Workshop. Participate in change and communication events.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CFS</th>
+    <td>Customer Functional Specialist</td>
+    <td>Provide functional expertise. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CHRS</th>
+    <td>Customer HR Specialist </td>
+    <td>Work with the Change Management Organizational Development Specialist and Change Management Human Performance Specialist on Job Impact Analysis and IT Alignment activities.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CITD</th>
+    <td>Customer IT Director </td>
+    <td>Assist with IT Alignment activities. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager </td>
+    <td>Participate in definition and maintenance of an optimal project environment. Support events to help the project team function as a high performance team. Collaborate with the change management specialist to make sure that change management and project management activities and expectations are aligned. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPS</th>
+    <td>Customer Project Sponsor </td>
+    <td>Communicate publicly and privately on change initiatives. Provide resources for change management activities. Remove barriers identified by the change management team. Serve as a role model. Make decisions or see to it that they get made to assist in the change management work products. Build coalitions. Manage risks. </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are: </p>
+<ul>
+  <li>definition of clear and realistic business expectations and organizational performance measures for the project</li>
+  <li>availability of the organization&rsquo;s stakeholders to participate fully in readiness tasks</li>
+  <li>provisions made for workload while project team members participate in readiness tasks</li>
+  <li>inclusion of key stakeholder constituencies in the change process and clear description of project impact and benefits </li>
+  <li>visible support and participation of key leaders and sponsors throughout the impacted business units</li>
+  <li>mechanism to listen and respond to top concerns about the new systems</li>
+  <li>early establishment of ongoing communication and feedback/evaluation mechanisms that fit the organizational environment</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Oracle UPK Pro and Oracle Tutor Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM_HOME.HTM"><img src="../../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../CLOUD_HOME.htm"><img src="../../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Oracle User Productivity Kit Professional (UPK Pro) and Oracle Tutor Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#RD">Requirements Definition (RD) Process Guidance</option>
+                            <option value="#RA">Requirements Analysis (RA) Process Guidance</option>
+                            <option value="#DO">Documentation (DO) Process Guidance</option>
+                            <option value="#OCM">Organizational Change Management (OCM) Process Guidance</option>
+                            <option value="#TR">Training (TR) Process Guidance</option>
+                            <option value="#PS">Operations and SUpport (PS) Process Guidance</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("RD");
+  Effect.BlindDown("RA");
+  Effect.BlindDown("DO");
+  Effect.BlindDown("OCM");
+  Effect.BlindDown("TR");
+  Effect.BlindDown("PS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("RD");
+  Effect.BlindUp("RA");
+  Effect.BlindUp("DO");
+  Effect.BlindUp("OCM");
+  Effect.BlindUp("TR");
+  Effect.BlindUp("PS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<h2>ORACLE USER PRODUCTIVITY KIT PROFESSIONAL (UPK PRO) AND ORACLE TUTOR SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for UPK Pro and Tutor. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">UPK Pro and Tutor - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </tr>
+  <tbody id="PJM">
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Business Requirements </div></th>
+  </tr>
+  <tbody id="RD">
+    <TR valign="top">
+      <TD valign="top"><a href="#RD001">RD.001 Detail Business and System Objectives </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 Detail Business and System Objectives </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD0111">RD.011.1 Develop Future Process Model </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD030">RD.030 Develop Current Business Process Model </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.030 Develop Current Business Process Model </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD070">RD.070 Determine Audit and Control Requirements </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM" target="_blank">RD.070 Determine Audit and Control Requirements </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#RD0112">RD.011.2 Develop Future Process Model </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Requirements Analysis </div></th>
+  </TR>
+  <tbody id="RA">
+    <TR valign="top">
+      <TD valign="top"><a href="#RA055">RA.055 Document Business Procedures</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RA_055_DOCUMENT_BUS_PROCEDURES_OVERVIEW.HTM" target="_blank">RA.055 Document Business Procedures</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Documentation</div></th>
+  </TR>
+  <tbody id="DO">
+    <TR valign="top">
+      <TD valign="top"><a href="#DO010">D0.010 Define Documentation Requirements and Strategy </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">D0.010 Define Documentation Requirements and Strategy </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#DO020">DO.020 Define Documentation Standards and Procedures </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_020_DEFINE_DOCU_STDS_AND_PROCEDURES_OVERVIEW.HTM" target="_blank">DO.020 Define Documentation Standards and Procedures </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#DO040">DO.040 Prepare Documentation Environment</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_040_PREPARE_DOCU_ENVIRONMENT_OVERVIEW.HTM" target="_blank">DO.040 Prepare Documentation Environment</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#DO070">DO.070 Publish User Guide </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_070_PUBLISH_USER_GUIDE_OVERVIEW.HTM" target="_blank">DO.070 Publish User Guide </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#DO100">DO.100 Produce Online Help </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_100_PRODUCE_ONLINE_HELP_OVERVIEW.HTM" target="_blank">DO.100 Produce Online Help </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Organizational Change Management</div></th>
+  </TR>
+  <tbody id="OCM">
+    <TR valign="top">
+      <TD valign="top"><a href="#OCM140">OCM.140 Develop Communication Campaign </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_140_DEVELOP_COMMUNICATION_CAMPAIGN_OVERVIEW.HTM" target="_blank">OCM.140 Develop Communication Campaign </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#OCM180">OCM.180 Determine Impact of Job Changes </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_180_DETERMINE_IMPACT_OF_JOB_CHANGES_OVERVIEW.HTM" target="_blank">OCM.180 Determine Impact of Job Changes </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#OCM210">OCM.210 Conduct Managers' Unit/Department Impact Workshop </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_210_CONDUCT_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">OCM.210 Conduct Managers' Unit/Department Impact Workshop </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Training</div></th>
+  </TR>
+  <tbody id="TR">
+    <TR valign="top">
+      <TD valign="top"><a href="#TR020">TR.020 Prepare Project Team Learning Plan </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">TR.020 Prepare Project Team Learning Plan </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TR050">TR.050 Conduct Project Team Learning Events </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_050_CONDUCT_PROJECT_TEAM_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">TR.050 Conduct Project Team Learning Events </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TR080">TR.080 Develop User Learningware </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM" target="_blank">TR.080 Develop User Learningware </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TR090">TR.090 Prepare User Learning Environment </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_090_PREPARE_USER_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank">TR.090 Prepare User Learning Environment </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TR100">TR.100 Conduct User Learning Events </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">TR.100 Conduct User Learning Events </a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Operations and Support </div></th>
+  </TR>
+  <tbody id="PS">
+    <TR valign="top">
+      <TD valign="top"><a href="#PS010">PS.010 Audit System</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PS_010_AUDIT_SYSTEM_OVERVIEW.HTM" target="_blank">PS.010 Audit System</a></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=RD id="RD"></A></B>BUSINESS REQUIREMENTS (RD) GUIDANCE</h3>
+<h4><a name="RD001"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 - Detail Business and System Objectives</a> </h4>
+<p>Developing an accurate future state model is a critical activity in an applications implementation. Although the future state model may meet the organizations needs precisely, the only way the end user community can be immediately productive and meet the overall business objectives is through accurate user documentation and effective training. The to-be model must be effectively communicated to the end user community.
+<p>In order to achieve project objectives and value realization associated with an implementation, it is critical for key executives to understand, support, and communicate the importance of documentation and training. Change management strategy should be defined at the executive level, including vision, risk mitigation, approach, resource utilization, and process management:
+<ul>
+    <li> The scope of the business processes being documented. </li>
+    <li> The scope of the customer organization being covered including locations and network. </li>
+    <li> Potential risks related to the degree of document ownership and customer involvement. </li>
+    <li> Documentation project management. </li>
+    <li> Documentation resources, including implementers, consultants, project team members, and end users. </li>
+    <li> Scope of documentation work products. </li>
+    <li> Availability and source of prebuilt content. </li>
+    <li> Coordination of documentation development with other efforts, including applications implementations or compliance activity. Will procedures and transaction recordings be developed during functional prototyping activities or later? If later, what documents will be used to communicate the defined future state model to the documentation effort? </li>
+    <li> Document management approach, including central server vs single user considerations. Will the UPK environment be collaborative and server based or single user?</li>
+    <li>Documentation and content deployment tools available for use, and how they will work together. </li>
+</ul>
+  <hr WIDTH="100%">
+  <h4><a name="RD0111" id="RD0111"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011.1 - Develop Future Process Model</a> </h4>
+  <p> Oracle Tutor has the capability to create multi-level business flow diagrams, which map to OUM Process Model Documents. The benefit of using Tutor Author to create these documents is Tutor's capability to automatically generate a flowchart from a task-based list of processes. While the process list can contain detailed information about the process in the form of notes, the flowchart is simply the process diagram.
+  <p> The Tutor hierarchy starts with the process, then drills down to the sub process, then drills down to the procedure. The linking is defined during the document creation process, and once the html version of the content is generated from Tutor Author or Publisher, all the links become active.
+  <p> Below is a representation of the work product - a process list in Tutor Author. Note the following:
+  <ul>
+    <li> Decisions are provided via 'If&hellip;Otherwise&hellip;' statements in Author, which create diamond branches in the flowchart. </li>
+    <li> Drill down to Detailed Processes is made possible by the links in the gray bar lines. </li>
+  </ul>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RD011_1.GIF" alt="Tutor Process in Text Format" width="576" height="459" title="Tutor Process in Text Format">
+  <p align="center"> Tutor Process in Text Format</p>
+  <p> Below is the flowchart of the above process list depicting the complete Procure to Pay process. The Tutor Author's one-click flowchart generation means revising the flowcharts becomes very easy. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RD011_2.GIF" alt="Tutor Process in Diagram Format" width="576" height="454" title="Tutor Process in Diagram Format">
+  <p align="center"> Tutor Process in Diagram Format</p>
+  <p> The Tutor template for the process Model Document is the Process.doc, and is made available when Tutor Author is initiated from the desktop. </p>
+  <p> For detailed information about building a detailed process model with Tutor see the Tutor Instruction INS1076Y, Writing a Process or Sub Process Map. It is in the following directory when Tutor is installed on the desktop: </p>
+  <p> C:\Tutor\US\Orig\Ins</p>
+  <hr WIDTH="100%">
+  <h4><a name="RD030" id="RD030"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.030 - Develop Current Business Process Model </a></h4>
+  <p> The process for creating current state and future state models is the same. See RD.011.1 above and RD.011.2 below for more information.    
+  <hr WIDTH="100%">
+  <h4><a name="RD070" id="RD070"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM" target="_blank">RD.070 - Determine Audit and Control Requirements</a> </h4>
+  <p>Implementing organizations need to communicate effectively to employees what is expected of them as they perform their jobs. Documented end-user procedures are the best way to communicate job performance expectations and are a significant part of a company's readiness to meet new standards for corporate governance. Integration of business procedures and how well they are supported by cohesive applications merits serious consideration. While documented procedures alone cannot enforce corporate governance, they are a necessary component of compliance. Increasing the visibility of, and improving the control of your business practices through documentation will better prepare your organization for the remainder of the Sarbanes-Oxley attestation audit process. Documented business procedures are the first step in corporate governance.
+  <p> Oracle Tutor's integrated set of procedures and software tools offer companies a solution to quickly document, deploy, and maintain critical business procedures and training materials to help employees achieve compliance. The primary challenge for companies faced with documenting procedures is to realize that they can do their corporate governance documentation in-house, with existing resources, using Oracle Tutor.  
+  <hr WIDTH="100%">
+  <h4><a name="RD0112" id="RD0112"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011.2 - Develop Future Process Model</a> </h4>
+  <p> Oracle Tutor has the capability to create multi-level business flow diagrams, which map to OUM Process Model Documents. The benefit of using Tutor Author to create these documents is Tutor's capability to automatically generate a flowchart from a task-based list of processes. While the process list can contain detailed information about the process in the form of notes, the flowchart is simply the process diagram.  
+  <p> The Tutor hierarchy starts with the process, then drills down to the sub process, then drills down to the procedure. The linking is defined during the document creation process, and once the html version of the content is generated from Tutor Author or Publisher, all the links become active.  
+  <p> Below is a representation of the work product - a detailed sub process model in list form in Tutor Author. Note the following:  
+  <ul>
+    <li> Prior Activity depicts processes which precede the current process.</li>
+    <li> Decisions are provided via 'If&hellip;Otherwise&hellip;' statements in Author that create diamond branches in the flowchart. </li>
+    <li> Drill down to Processes is made possible by the links in the colored bar lines. </li>
+    <li> Annotations are possible for the processes. </li>
+  </ul>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RD080_1.GIF" alt="Tutor Sub Process in Text Format" width="576" height="439" title="Tutor Sub Process in Text Format">
+  <p align="center">Tutor Sub Process in Text Format
+  <p>Below is the flowchart of the above sub process list. Tutor Author's one-click flowchart generation means revising the flowcharts becomes very easy. When this flowchart is presented in its html format, all hexagonal and rectangular objects contain links created automatically by Tutor.
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RD080_2.GIF" alt="Tutor Sub Process in Diagram Format" width="576" height="493" title="Tutor Sub Process in Diagram Format">
+  <p align="center">Tutor Sub Process in Diagram Format</p>
+  <p>The Tutor template for the process Model Document is the Sub Process.doc, and is made available when Tutor Author is initiated from the desktop. </p>
+  <p> For detailed information about building a detailed process model with Tutor, see the Tutor Instruction INS1076Y, Writing a Process and Sub Process Map. It is in the following directory when Tutor is installed on the desktop: </p>
+  <p> C:\Tutor\US\Orig\Ins</p>
+  <p><a href="#TOP">Back to Top</a>
+  <p>
+  <hr WIDTH="100%">
+  <h3 align="left"><a name="RA"></a>REQUIREMENTS ANALYSIS (RA) PROCESS GUIDANCE</h3>
+  <h4><b><a
+name=RA055 id="RA055"></a></b><a href="../../../../020_METHOD_GUIDELINES/030_TASK/RA_055_DOCUMENT_BUS_PROCEDURES_OVERVIEW.HTM" target="_blank">RA.055 Document Business Procedures</a></h4>
+  <p> Oracle Tutor's integrated set of procedures and software tools offer implementing organizations a solution to quickly document, deploy, and maintain critical business procedures and reference materials to help employees achieve compliance. Oracle Tutor is comprised of the following components: </p>
+  <ul>
+    <li> Tutor Model documents are complete documents that provide a starting point. Document &ldquo;owners&rdquo; edit the models instead of creating documents from scratch. </li>
+    <li> Tutor Software tools are used to keep documents up-to-date and to distribute them on a need-to-know basis.
+        <ul>
+          <li> Author, with Microsoft Word, is the tool used to create and edit individual documents quickly and easily.</li>
+          <li>Publisher is the tool used to (1) ensure document integrity through the generation of a wide range of cross-reference reports, and (2) package process documents in desk manuals (online or printed) by job title.</li>
+        </ul>
+    </li>
+  </ul>
+  <table width="100%"  border="1" title="Task Steps" summary="Ths table lists the steps for this task when using Tutor. The headings are No., Task Step and Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">No.</th>
+      <th scope="col">Task Step </th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">1</th>
+      <td>Conduct Procedure Editing Workshop.</td>
+      <td>This workshop may be an extension of a previous team Learning Event, but It is very useful to develop the first set of procedures in a group environment with an instructor who can provide answers to frequently asked questions, and critique the initial set of revised procedures. This leads to more uniform content produced by the entire team. This workshop can last from 1-2 days up to 2-4 weeks, depending on the project environment.<br>
+          <br>
+      In some cases, the procedure editing may also be a component of one of the functional prototyping activities or workshops. The document owner works with the applications specialist to develop the proper combination of policy, business, and application content.<br>
+      <br>
+      If Model Documents are being used, it may be appropriate to initiate editing by conducting a redline editing session. In this case, paper copies of the procedures are distributed and team members modify them with a red pen. Documentation specialists then make the changes in the softcopy documents and redistribute.<br>
+      <br>
+      As part of this process, the group may want to create a list of valid job titles in the organization. Refer to <em> Job Titles by Department [REF0009Y].</em></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">2</th>
+      <td>Edit Procedures.</td>
+      <td>Once the workshop has run its course, the documentation team develops the remaining procedures. Best practice is to conduct this editing during the functional prototyping activities or workshops. This makes capturing the future state model more effective. Other options are to use use cases or test scripts as a source of content, but this can lead to inaccurate procedures if there is no effective review loop with the project team. It is wise to have the team members post their content daily to Oracle Files, or another repository, for protection.<br>
+          <br>
+      See the following Tutor Documents for additional guidance:<br>
+      <ul>
+        <li> INS1066Y, Reviewing Model Documents </li>
+        <li> INS1076Y, Writing a Process or Sub Process Map </li>
+        <li> INS1050Y, Writing a Procedure </li>
+        <li> INS1068Y, Review Edited or Audited Procedures </li>
+        <li> INS1070Y, Update a Procedure </li>
+        <li> INS1061Y, Capturing Application Help Targets </li>
+        <li> INS1065Y, Capturing Screen Images </li>
+        <li> INS1051Y, Writing an Instruction </li>
+        <li> INS1057Y, Writing a Reference Document </li>
+        <li> INS1080Y, Link a Procedure to a UPK Help Topic </li>
+    </ul></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">3</th>
+      <td>QA Procedures.</td>
+      <td>QA is managed in two ways:
+          <ul>
+            <li> Compare modified procedures with the standards list and templates to ensure compliance. </li>
+            <li> The Document Controller runs all documents through Tutor Publisher and prints out key reports. The reports will identify anomalies such as inaccurately named roles, which can be fed back to the procedure development team for correction. See the Reports section in the Tutor Publisher User Manual for a description of the reports. Key report usage and issues include:
+                <ul>
+                  <li>ACR2SCRN: Actor to Screen Report can be used to validate the accuracy of job role titles and access to key transactions. </li>
+                  <li> DISCDOC: Discrepant Document Report is used to ensure that all cross referencing of other procedures is accurate. </li>
+                  <li>POL2PROC: Policy to Procedure Report identifies all policies (indicated by bold text in the policy section) referenced for guiding behavior in the procedures.</li>
+                </ul>
+            </li>
+          </ul>
+          The QA cycle is performed until the content meets standards. For the verification of complete two-way referencing of procedures to Help documents, the QA must be coordinated with the Help Document QA process.</td>
+    </tr>
+  </table>
+  <p> A Tutor Procedure contains three sections. </p>
+  <ul>
+    <li> Introduction section contains scope, policy, distribution, responsibility, ownership, activity preface, and prior activity sections.</li>
+    <li> Task List section contains role based tasks with decisions, notes, and system references.</li>
+    <li> Flowchart section contains the flowchart diagram of the task list.</li>
+  </ul>
+  <p> Note in the complete example of a work product below there is no system reference: </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RA055_1.gif" alt="Procedure Introduction Section" width="576" height="416" title="Procedure Introduction Section"></p>
+  <p align="center">Procedure Introduction Section</p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RA055_2.GIF" alt="Procedure Task List Section" width="576" height="389" title="Procedure Task List Section"></p>
+  <p align="center">Procedure Task List Section</p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_RA055_3.GIF" alt="Procedure Flowchart Section" width="576" height="498" title="Procedure Flowchart Section"></p>
+  <p align="center">Procedure Flowchart Section</p>
+  <p align="left"><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=DO id="DO"></A></B>DOCUMENTATION (DO) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=DO010 id="DO010"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">DO.010 Define Documentation Requirements and Strategy</a> </h4>
+  <p>It is important to formally define the relationship of the documentation effort to the development of the future state model. During validation of the Functional Prototype (RA.085) in a project, the &lsquo;official&rsquo; approach to using the Application in a specific environment is developed. This must be communicated effectively to the resources developing the procedures. The best approach is to have the documentation effort performed in concert with the validation of the Functional Prototype. </p>
+  <p>In a commercial off-the-shelf (COTS) application implementation, you could manage the documentation development after validation of the Functional Prototype. This is a less effective approach but in that case, it is crucial to identify in advance the means to communicate the future state model to the document developers, using detail system use cases, test scripts or an equivalent. Further, it is important to let the documentation team know in advance how this approach will be managed, to avoid attempts to execute a second Validate Functional Prototype activity.</p>
+  <p> Another key issue is whether the effort will include the Help Documents and Courseware as well as procedures and transaction recordings. The list of work products is: </p>
+  <ul>
+    <li><b>Tutor</b> - Procedures and Business Process Flows. People to People work instructions.</li>
+    <li> <b>UPK</b> - Help Document Modifications. For Oracle and non Oracle application projects, project teams can create custom online help with Oracle UPK or modify prebuilt UPK content. Publisher UPK output provides three learning methods where users can watch simulations, practice in a simulated environment, and test their knowledge to ensure system competency and increased productivity. Links to procedures and business process flows can be added to UPK content, making all levels of process information readily available to end users.</li>
+    <li> <b>UPK</b> - Transaction recordings. People to System navigation instructions. If transaction recordings are developed with the User Productivity Kit, additional MS Word based documents are available automatically, as is the potential for using the output from UPK Developer exported into Mercury Quality Center, to create system process test scripts of the pre go live applications. It is wise to review the format and content of these documents, as they can be used for other work products without additional effort: Test Documents may be used as TE.040s, and System Process Documents from the prebuilt UPK content may be used during fit/gap analysis as well as end-user training materials.</li>
+    <li><b>UPK</b> - Courseware. Procedures provide instructions to users but stop at the screen level steps. Courseware is educational material that can be developed with UPK to instruct users how to use screens for their business. Courseware created with UPK can be used for a classroom environment, self paced training, and deployed as part of the Online Help for ongoing performance support, as a supplement to procedures.</li>
+    <li> <b>Knowledge Center</b> - Portal based content deployment which may include Tutor documents, UPK recordings, other project documents, and student assessments based on the content deployed. </li>
+  </ul>
+  <p> Oracle Tutor maintains baseline procedures known as Tutor Model Documents that are available to use as a starting point for procedure editing. Other baseline content is available that maps to Oracle Accelerators, or which is produced by outside parties. It is advisable to communicate which set or combination of documents has been chosen to all involved in the documentation effort, so that all parties will understand in advance which content will be the baseline. UPK content is also available for sale to customers. The scope of content is expanding, and the project team should research what is available at the time of the project.</p>
+  <p> Note that the scope of business procedures to be documented will be greater than the scope of Tutor Model Documents. Not all business processes requiring documentation reside in the business flows. If using Tutor Model Documents, use the Tutor Document Register (docreg.xls) found in the Tutor folder as a baseline for this. </p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DO020 id="DO020"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_020_DEFINE_DOCU_STDS_AND_PROCEDURES_OVERVIEW.HTM" target="_blank">DO.020 Define Documentation Standards and Procedures</a> </h4>
+  <p>While the Tutor Model Documents define a standard which is used as-is by many organizations, the content can be modified to suit the implementing organization. This applies to the prebuilt UPK transaction recordings and courseware documentation formats as well. Various issues are to be considered: Management must define how policies will be documented in the procedures. Document owners must define the degree of detail required to appropriately inform users. Auditors guide how the documents must be composed to meet compliance requirements (to eliminate duplicate efforts on the part of an audit team). Instructors must define courseware requirements working with users. Requirements must be gathered, defined, and agreed upon, then formatted into the document types.</p>
+  <p>One component of content standards in procedures is company policies. It can be useful to contact the HR or Finance departments within the implementing organization to review existing policies, and map them to business processes. In this way, policies such as purchasing dollar limits can be identified and prepared for inclusion in the proper procedures. The Tutor Report &lsquo;Policy to Procedure&rsquo; (POL2PRO) is a useful tool for this activity.</p>
+  <p> It is recommended that if transaction recordings are being developed, the UPK Course Development Standards Guide be studied to assist the implementing organization in defining their templates for transaction recordings in their organization. An approach to linking Tutor Procedures to UPK Topics should be defined.</p>
+  <p> Key standards items to address include:</p>
+  <ul>
+    <li> Organization Role name standards </li>
+    <li> Approach to integrating policies to procedures </li>
+    <li> Approach to specifying department or division specific policies or instructions </li>
+    <li> Document Owner responsibilities </li>
+    <li> Procedure to Transaction Recording and Procedure to Applications Help linking </li>
+    <li> Document storage, backup, and backup schedule </li>
+  </ul>
+  <p> Note that standards may be continued to be refined through the early development activity, but should be settled prior to significant documentation effort.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DO040 id="DO040"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_040_PREPARE_DOCU_ENVIRONMENT_OVERVIEW.HTM" target="_blank">DO.040 Prepare Documentation Environment</a> </h4>
+  <p> Install the Tutor software as appropriate on individual PCs and the development server. Author will be deployed on the PCs of the document developers. Publisher needs only to be loaded on a single environment. See the Tutor Implementation Guide found in the User Manuals directory of the Tutor Install.</p>
+  <p> Install the UPK Developer software as appropriate. Decisions made previously about central server or individual PC deployment will guide this activity. See the Installation and Administration Guide found in the UPK Developer 31/Documentation/EN/Reference directory.</p>
+  <p> Test document collection and backup mechanisms.</p>
+  <p> Note that formal document management is provided by such software made available by the implementing organization.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DO070 id="DO070"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_070_PUBLISH_USER_GUIDE_OVERVIEW.HTM" target="_blank">DO.070 Publish User Guide</a> </h4>
+  <p>The Tutor output that corresponds to the User Guide is the Desk Manual. The desk manual is automatically created by Tutor Publisher, and is the collected set of procedures and other process documents created by Tutor: navigation instructions, instructions, form abstracts, coding conventions, and reference documents. Publisher determines which process documents to include in a desk manual by analyzing each document&rsquo;s distribution list. The Stockroom Clerk&rsquo;s desk manual, for example, includes only those process documents that list Stockroom Clerk under Distribution. Creating desk manuals requires that all procedures be collected in a central working folder structure for access by Publisher.</p>
+  <p> There is also the option of creating a desk manual index. This document lists all of the job roles. A user can click on a specific job role to link directly to the desk manual for that role. A user who opens the online desk manual may jump from the table of contents to any of the documents that it references.</p>
+  <p> Desk manuals are created in a two step process - first an index of roles to documents is created by Publisher, then the desk manuals themselves are created. They are html documents that can be deployed on a web server for access by the document owners, the project team, and ultimately, the end users. Since creating the desk manuals takes little time, this can be done on a regular basis to monitor the progress of procedure development.</p>
+  <p> Examples of the User Guide work product are below. The first is the Desk Manual Index which contains all roles. By selecting a role, the user can navigate to an individual Desk Manual, which is the second example. From the Desk Manual, the user can access the individual procedures that apply to that role.</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_DO070_1.GIF" alt="Tutor Desk Manual Index" width="576" height="432" title="Tutor Desk Manual Index"></p>
+  <p align="center">Tutor Desk Manual Index</p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TUTOR_DO070_2.GIF" alt="Tutor Desk Manual" width="576" height="295" title="Tutor Desk Manual"></p>
+  <p align="center">Tutor Desk Manual</p>
+  <p> The following steps guide the assembly and publication of the Desk Manuals. </p>
+  <table width="100%"  border="1" title="Task Steps" summary="Ths table lists the steps for the assembly and publication of the Desk Manuals. The headings are No., Task Step and Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">No.</th>
+      <th scope="col">Task Step </th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">1</th>
+      <td>Publish Procedures.</td>
+      <td><p>See the following Tutor Documents for additional guidance: </p>
+          <ul>
+            <li>INS1062Y, Building the Tutor Index </li>
+            <li>INS1064Y, Publishing Approved Tutor Documents </li>
+            <li> INS1080Y, Linking a Procedure to a Transaction Recording </li>
+            <li> INS1061Y, Capturing Application Help Targets</li>
+          </ul>
+          <p>See also the Tutor Publisher User Manual for specific How-To instructions.</p></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">2</th>
+      <td>Publish Desk Manuals.</td>
+      <td>See the Tutor Publisher User Manual for complete Instructions.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">3</th>
+      <td>Publish UPK Transaction Recordings.</td>
+      <td>See the Tutor Publisher User Manual for complete Instructions.</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=DO100 id="DO100"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/DO_100_PRODUCE_ONLINE_HELP_OVERVIEW.HTM" target="_blank">DO.100 Produce Online Help </a></h4>
+  <p>Oracle Applications contain Help documentation deployed as context sensitive html. When an end user is in a specific transaction and presses the help button, a help document opens which applies to that transaction. Oracle UPK can be used to create custom help that is also context sensitive for most web applications. In the UPK content, links can be added to procedures, making the business process documentation available to end users on a context sensitive basis as well. If the project includes the customization of Online Help as a work product, using UPK can be very useful. The custom created quickly from a single UPK authoring session can be used to generate multiple outputs that can be used for end-user training and testing, just to name a few.</p>
+  <table width="100%"  border="1" title="Task Steps" summary="Ths table lists the steps for this task when using Tutor. The headings are No., Task Step and Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">No.</th>
+      <th scope="col">Task Step </th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">1</th>
+      <td>Conduct Applications Help Editing Workshop.</td>
+      <td> This workshop may be an extension of the procedure editing workshop.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">2</th>
+      <td>Conduct UPK Developer Workshop.</td>
+      <td>During scope definition, an initial list of the transaction recording topics should have been developed and owners assigned. The list of topics may have been further refined during the procedure editing process, with priority going to the complex or critical transactions that support key procedures. In this workshop, additional review of topics and owners should be done with the UPK developer team. It may be appropriate to use the Document Register as a procedure/topic cross reference and tracking mechanism.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">3</th>
+      <td>Develop UPK transaction recordings.</td>
+      <td> Transaction recordings are best developed once the functional prototype environment contains organization data, and the organization business processes have been defined to the point where the transaction recordings are depicting the valid future state model. This is typically the second iteration of functional prototyping or later. End users in training will more easily understand transaction recordings that contain data with which they are familiar.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">4</div></th>
+      <td><div align="left">Map transaction recordings to procedures.</div></td>
+      <td>During standards definition, the linking approach will have been defined. Typically a procedure will have a transaction contained in a task, and there will be a link to the appropriate transaction recording. Adding links to procedures and transaction recordings should occur after the deployment environments have been defined for both training and the Applications instance, so that the links are accurate.<br>
+          <br>
+      Review the Instruction INS1080Y, Linking a Procedure to a Transaction Recording, for information on appropriate setup of production environments to ensure accurate linking. Best practice is to deploy the transaction recordings into the production environment and use absolute links between from the procedures to the transaction recordings. In this way, procedures can be deployed into both a training environment and into the Applications instance without breaking the links. If links are required from transaction recordings to procedures, a similar scenario must be developed.<br>
+      <br>
+      For additional guidance, see the Tutor document, Link a Procedure to a UPK Help Topic [INS1080Y].</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">5</div></th>
+      <td><div align="left">QA transaction recordings.</div></td>
+      <td><div align="left"></div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">6</div></th>
+      <td><div align="left">QA Help Edits.</div></td>
+      <td><div align="left">The QA cycle is performed until the content meets standards. For the verification of complete two-way referencing of procedures to Help documents, the QA must be coordinated with the Help Document QA process.</div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">7</div></th>
+      <td><div align="left">Publish transaction recordings and Word documents.</div></td>
+      <td><div align="left">Transaction recordings are published as html-enabled recordings and deployed as html. The Word versions can be published simultaneously and used for a variety of purposes, including packaged in with the courseware. See the UPK document, Content Deployment.</div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">8</div></th>
+      <td><div align="left">Upload UPK Help to Applications Environment.</div></td>
+      <td><div align="left"></div></td>
+    </tr>
+  </table>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=OCM id="OCM"></A></B>ORGANIZATIONAL CHANGE MANAGEMENT (OCM) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=OCM140 id="OCM140"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_140_DEVELOP_COMMUNICATION_CAMPAIGN_OVERVIEW.HTM" target="_blank">OCM.140 Develop Communication Plan </a></h4>
+  <p>The documentation project may take additional resources from the implementing organization user community. In addition, the training of end users needs to be communicated and scheduled. The Change Management Roadmap/Communication Campaign manages the communication of the organizational change management approach, requirements, and schedule to the manager and user communities. </p>
+  <h4><B><A
+name=OCM180 id="OCM180"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_180_DETERMINE_IMPACT_OF_JOB_CHANGES_OVERVIEW.HTM" target="_blank">OCM.180 Determine Impact of Job Changes</a></h4>
+  <p>The work product for this task is the Job Impact Diagnosis. Tutor and UPK deliverables should be used to help define, by role within the organization, what is changing in terms of day-to-day work activity. Tutor procedures describe both the manual and systems supported tasks of the future state model. UPK transaction recordings identify the exact approach to processing transactions. Together with an assessment of what work activities will no longer be performed, a detailed guide to the impact of an implementation or a process improvement exercise can be communicated to managers.</p>
+  <h4><B><A
+name=OCM210 id="OCM210"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/OCM_210_CONDUCT_MGRS_UNIT_DEPT_IMPACT_WORKSHOP_OVERVIEW.HTM" target="_blank">OCM.210 Conduct Managers' Unit/Department Impact Workshop</a></h4>
+  <p> The documentation project may take additional resources from the implementing organization user community. In addition, the training of end users needs to be communicated and scheduled. Present the documentation project strategy, resource requirements, schedule, and change management approach to business managers so they may prepare their organizations.</p>
+  <p> Point out that the most effective approach is to have the document owners come from within their organizations, in order to improve accuracy and uptake.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=TR id="TR"></A></B>TRAINING (TR) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=TR020 id="TR020"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_020_PREPARE_PROJECT_TEAM_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">TR.020 Prepare Project Team Learning Plan</a> </h4>
+  <p> The documentation project team needs to be trained in using Tutor and UPK. Schedule Tutor and UPK Classes and Workshops. Confirm delivery of event kits.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TR050 id="TR050"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_050_CONDUCT_PROJECT_TEAM_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">TR.050 Conduct Project Team Learning Events</a> </h4>
+  <p>Project teams, consisting of both internal and external resources, need to learn key sets of knowledge: Oracle Applications (when appropriate), Oracle UPK Pro and Oracle Tutor. If there is Applications education scheduled for the project team, it should be scheduled before functional prototyping activities begin, so that the internal team is familiar with the software as the future state model is developed. If UPK pre built content is available to the project, this content is an excellent source for applications training, especially as it does not require an instance be set up yet simulates the application environment.</p>
+  <p> Project teams need to be educated with Tutor software as well. Project team members can conduct self-guided learning by reading the <em>Tutor Implementation Guide</em>, and familiarizing themselves with additional Tutor supplied reference material.</p>
+  <p> Based on the project team learning plan, Tutor classes or workshops from Oracle University or Oracle Consulting are presented to the project team to ensure that all team members have the Tutor skills necessary to develop content in the Construction phase.</p>
+  <p> This activity may segue directly into the Procedure Editing Workshop described in the Construction phase. In fact, it is preferable to conduct a joint class and procedure editing workshop where the documentation project team learns to use the software and initial edits or revisions are conducted under the eye of the instructor. In this fashion, everyone learns the correct approach together, and a more homogeneous set of procedures is developed. In this case, the Procedure Editing Workshop task in the Construction phase would be combined with this task.</p>
+  <p> UPK transaction recording development typically occurs during or after functional prototyping activities, once the training Applications instance contains test data of the implementing organization. Training for UPK can take place at any time after simulation standards are set and before functional prototyping activities. </p>
+  <p>If Knowledge Center is being used, the development of the guided learning portals can only occur once other content such as procedures and transaction recordings have been developed. Training for Knowledge Center can occur late in the project.</p>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TR080 id="TR080"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM" target="_blank">TR.080 Develop User Learningware</a> </h4>
+  <p> The work product, User Learningware corresponds to UPK assembled Courseware documents and UPK transaction recordings. There can be many components to user learningware:</p>
+  <ul>
+    <li> Baseline UPK Transaction Recordings - Oracle Application teams have developed baseline prebuilt content (transaction recordings) using UPK for many of the Oracle Applications concepts and products. This content must be licensed and can be downloaded from the Oracle Software Delivery Cloud. The prebuilt content contains source UPK player files, along with published Word documents. The source player content can be modified to meet the needs of the implementing organization. The prebuilt content should be used as is to train the project team, and modified once the future state model has been developed to eliminate superfluous material for the end user community. Once edited (or created from scratch), the player content is published and assembled into Instructor and Student Guides through Oracle UPK to be used in instructor led or self paced training.</li>
+    <li>Tutor Procedures - These can be linked to the courseware or deployed as html. Development of procedures is covered above. </li>
+  </ul>
+  <table width="100%"  border="1" title="Task Steps" summary="Ths table lists the steps for this task when using Tutor. The headings are No., Task Step and Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">No.</th>
+      <th scope="col">Task Step </th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">1</th>
+      <td>Conduct Courseware Workshop.</td>
+      <td>Steps 2 - 6 may have been completed in the Help Documentation Workshop if UPK was used. If UPK was used for Help Documentation, the time and effort to develop learningware will be greatly reduced. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">2</th>
+      <td> Conduct UPK Developer Workshop to develop courseware.</td>
+      <td> During scope definition, an initial list of the transaction recording topics should have been developed and owners assigned. The list of topics may have been further refined during the procedure editing process, with priority going to the complex or critical transactions that support key procedures. In this workshop, additional review of topics and owners should be done with the UPK developer team. It may be appropriate to use the Document Register as a procedure/topic cross reference and tracking mechanism. </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">3</th>
+      <td> Develop UPK transaction recordings.</td>
+      <td> Transaction recordings are best developed once the functional prototype environment contains organization data, and the organization business processes have been defined to the point where the transaction recordings are depicting the valid future state model. This is typically the second iteration of functional prototyping or later. End users in training will more easily understand transaction recordings that contain data with which they are familiar.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">4</div></th>
+      <td><div align="left">Map transaction recordings to procedures.</div></td>
+      <td>During standards definition, the linking approach will have been defined. Typically a procedure will have a transaction contained in a task, and there will be a link to the appropriate transaction recording. Adding links to procedures and transaction recordings should occur after the deployment environments have been defined for both training and the Applications instance, so that the links are accurate.<br>
+          <br>
+      Review the Instruction INS1080Y, Linking a Procedure to a Transaction Recording, for information on appropriate setup of production environments to ensure accurate linking. Best practice is to deploy the transaction recordings into the production environment and use absolute links between from the procedures to the transaction recordings. In this way, procedures can be deployed into both a training environment and into the Applications instance without breaking the links. If links are required from transaction recordings to procedures, a similar scenario must be developed.<br>
+      <br>
+      For additional guidance, see the Tutor document, Link a Procedure to a UPK Help Topic [INS1080Y].</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">5</div></th>
+      <td><div align="left">QA transaction recordings.</div></td>
+      <td><div align="left"></div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">6</div></th>
+      <td><div align="left"> Publish Transaction Recordings and Word Documents.</div></td>
+      <td><div align="left"> Transaction Recordings are published as html-enabled recordings and deployed as html. The Word versions can be published simultaneously and used for a variety of purposes, including packaged in with the courseware. See the UPK document, Content Deployment.</div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">7</div></th>
+      <td><div align="left">Publish Courseware.</div></td>
+      <td><div align="left">
+          <p>See the UPK Content Development:</p>
+          <ul>
+            <li>Publish Content &gt; Document Formats &gt; Training Guide </li>
+            <li>Publish Content &gt; Document Formats &gt; Instructor Manual</li>
+          </ul>
+      </div></td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TR090 id="TR090"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_090_PREPARE_USER_LEARNING_ENVIRONMENT_OVERVIEW.HTM" target="_blank">TR.090 Prepare User Learning Environment</a> </h4>
+  <p> It may be appropriate to prepare different environments for the user community as people learn in different modes: </p>
+  <ul>
+    <li> A server based Desk Manual Repository without access to an Oracle Applications instance can be useful for regular deployment of Work in Process content for review by key members of the user community. </li>
+    <li> An Oracle Applications Training instance with the procedures and modified Help documents loaded will enable users to use the procedures and courseware to generate training transactions without impacting a production instance. </li>
+    <li> A classroom environment with access to either or both of the above to facilitate Instructor led training. </li>
+    <li>Deployment of content via Learning Management systems will help track employee readiness, especially if assessments are part of the overall curriculum. </li>
+  </ul>
+  <p>If Knowledge Center is used as a content deployment tool, the following steps must be taken to roll out the content:</p>
+  <table width="100%"  border="1" title="Task Steps" summary="Ths table lists the steps for this task when using Tutor. The headings are No., Task Step and Description.">
+    <tr bgcolor="#CCCCCC">
+      <th scope="col">No.</th>
+      <th scope="col">Task Step </th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">1</th>
+      <td> Conduct Knowledge Center Workshop.</td>
+      <td>Limit this to the In-House Knowledge Center course designer(s). </td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">2</th>
+      <td> Develop Workgroups.</td>
+      <td>Typically, only the master workgroup is required, others may be useful if there is a completely independent business unit within an organization.</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">3</th>
+      <td>Load content. </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">4</div></th>
+      <td><div align="left"> Define knowledge paths.</div></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">5</div></th>
+      <td><div align="left">Define Usergroups. </div></td>
+      <td><div align="left">Group users by role or track. </div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">6</div></th>
+      <td><div align="left">Assign and create assessments. </div></td>
+      <td><div align="left">Define success criteria with project team and organizational management. </div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row"><div align="center">7</div></th>
+      <td><div align="left"> QA Transaction Recordings.</div></td>
+      <td><div align="left"></div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">8</th>
+      <td>Create custom reports.</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">9</th>
+      <td>Finalize content deployment environment. </td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <br>
+  <hr WIDTH="100%">
+  <h4><B><A
+name=TR100 id="TR100"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank">TR.100 Conduct User Learning Events</a> </h4>
+  <p>Content developed with Oracle Tutor and UPK, and deployed via UPK Pro Knowledge Center, is suited for both self service, on demand learning, and instructor led learning, Further, the ability to link Tutor Process Models and Procedures, and UPK transaction recordings into the Oracle Applications, make these work products available for production support after go-live.</p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3><B><A
+name=PS id="PS"></A></B>OPERATIONS AND SUPPORT (PS) PROCESS GUIDANCE</h3>
+  <h4><B><A
+name=PS010 id="PS010"></A></B><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PS_010_AUDIT_SYSTEM_OVERVIEW.HTM" target="_blank">PS.010 Audit System</a> </h4>
+  <p> Post Go-Live system auditing is not a one time event. The implementing organization should be instructed to audit the system, procedures, and training material to ensure accurate reflection of changing business conditions. Proactive auditing helps make certain that the Applications are being used correctly and efficiently and supports productivity.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

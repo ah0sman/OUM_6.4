@@ -1,0 +1,608 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>RD.011 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#DDesc">Detailed Description</option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>RD.011 - DEVELOP FUTURE PROCESS MODEL</h2>
+<!--BeginDesc-->
+<p> The purpose of this task is to define or update the future business process model.</p><!--EndDesc-->
+<!--BeginSUDesc--><p>For projects that involve the upgrade of Oracle products, it is important to consider the potential business process improvement features offered by the new release. However, the primary purpose of this task (within an Upgrade Project) is to review and confirm the post-upgrade business process flows, and not to complete a full To-Be process definition.</p><!--EndSUDesc-->
+<hr WIDTH="100%">
+<h3><a name="DDESC" id="DDESC"></a>DETAILED DESCRIPTION</h3>
+<p> Define the future business model in the form of integrated process flows based on the business processes supported by the new applications.&nbsp; The Future Process Model is created through iterations, starting with a higher level view in the Inception phase, and progressing into a more detailed view in later iterations. </p>
+<p>If pre-defined process models/business flows exist for the functionality being implemented, they should be used as a starting point for preparation of this task's work product. Wherever possible, adapt existing standard models to the future business processes rather than redesign the business processes. </p>
+<p>If you have created a Current Process Model (RD.030), or have it available, this is often a good starting point. It is often easier for the users to visualize how the current situation can be improved, rather than figure out the best approach for the process from scratch. If you have both (pre-defined and current process models/business flows), this enables you to point out differences and weaknesses in the current models as a preparation for the modeling exercise.</p>
+<p>In the System Context Diagram (RD.005), you have identified the external actors that interact with the business in some fashion. Each of these actors causes one or more events to which the business should respond. When developing the Future Process Model, you should identify all these events. In addition, you should identify temporal events and internal events. Then diagram and describe the business flows with which the business area responds to these events. Some of these business flows might be entirely internal to the business area.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>RD.011.1</h4>
+<p><a href="../040_ACTIVITY/AACTGBRI_GATHER_BUS_REQTS_INCEPTION.HTM" target="_blank">A.ACT.GBRI Gather Business Requirements - Inception </a></p>
+<h4>RD.011.2</h4>
+<p><a href="../040_ACTIVITY/BACTGBRE_GATHER_BUS_REQTS_ELABORATION.HTM" target="_blank">B.ACT.GBRE Gather Business Requirements - Elaboration </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>Future Process Model</b></p>
+<p>The Future Process Model documents the triggering events that drive the business areas that are to be automated and describes the future business process that the business executes in response to each of those events as a set of one or more activities. The model includes the following: </p>
+<ul>
+  <li>a catalog describing all the triggering events</li>
+  <li>diagrams of the business processes by which the business responds to those events</li>
+</ul>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1<br>
+        (Optional)</div></th>
+    <td><p>Using one or more workshops may be the most appropriate technique to execute this task, depending on the size and complexity of the project, and/or the number of customer personnel involved. Please see the Conduct Requirements Workshops section in the Approach for more details. In addition to normal workshop preparation (goals, agenda, invitations, logistics, etc.), you should have as an input to the workshop.
+              <ul>
+                <li>Review any documented future business requirements.</li>
+                <li>If available, review any current process models, and try to identify weak areas related to documented future requirements.</li>
+                <li>If available, review any pre-defined process models/business flows exist for the functionality being implemented, and identify gaps between these and the current process models. The Enterprise Repository may be helpful for this if one is in use in the enterprise.</li>
+            </ul></td>
+    <td>Workshop Preparation Notes<br>
+
+		<br>
+        Workshop Agenda<br>
+		<br>
+        Workshop Logistics</td>
+    <td>The <b>Workshop Preparation Notes</b> is all the information you send to the participants ahead of the workshop. The notes state the goal of the workshop, so that everyone is well aware of the purpose of the workshop, and what is expected to be achieved.<br>
+		<br>
+      	It is also all the information you have gathered for input to the workshop. This would often be some kind of presentation material. This would typically be the result of the detailed preparation described in the task step.<br>
+		<br>
+		The <b>Workshop Agenda</b> describes in detail what should be done in the workshop, and timeboxes all the activities. Preferably, this should be sent to the attendants ahead of the workshop.<br>
+		<br>
+	The <b>Workshop Logistics</b> describe all the required logistics for the workshop.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Confirm and identify new high-level business triggering events to which the business and system must respond.<br>
+	<br>
+    Triggering events may already have been identified in a number of other work products, such as the Business Context Diagram (ENV.BA.045), System Context Diagram (RD.005) and the Use Case Models (RA.015/RA.023).
+	<br>
+	For each iteration, you should review and refine the Event Catalog from the previous iteration.</td>
+    <td>Event Catalog </td>
+    <td>The <strong>Event Catalog</strong> should provide a table to list the events that trigger responses by the business area. For each event, provide a name, define the event type (internal, external, temporal), the conditions under which it occurs and the frequency of the event. These may be external events (a customer order), internal events (the completion of production), or temporal events (end of month). The table should also identify the business processes that respond to those events. If there is a Current Process Model (RD.030), then the Event Catalog from that model can be used as the starting point. The introduction of new packaged applications may also introduce new events. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Identify business actors.<br>
+	<br>
+	Business Actors may already have been identified in a number of other work products, such as Business Use Case Model (RA.015), and the Use Case Model (RA.023).<br>
+	<br>
+	For each iteration, you should review the already identified actors, and whenever required add new actors to the list.</td>
+    <td>Business Actors</td>
+    <td>The <strong>Business Actors</strong> are those that respond directly to a business triggering event, or that have to perform an activity as part of the business process that is triggered by the event. Examples are customers, departments, employees, and vendors. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>List each process and write a summary description of each, specify the event to which it responds and its main inputs and outputs.<br>
+		<br>
+		If you have a Business Use Case Model (RA.015) or a Use Case Model (RA.023) available, you may identify processes and descriptions from these work products.<br>
+		<br>
+		For each process, describe the flow of activities for the business process that is performed in response to each event. Identify the steps, and their sequence. First focus on the main path. Later, identify the conditions that determine alternative paths. If you have Use Case Specifications (RA.024) available, you can identify steps using these work products.<br>
+		<br>
+		Construct process flow diagrams for processes with more than two activities or with conditional activities showing the sequence of process steps and the flows between them. Show conditional activities, where appropriate.<br>
+		<br>
+		For each iteration, use the previous process model and add more detail and make changes wherever required. In the Inception phase, you typically model level 1 and 2, but in the Elaboration phase you should model down to level 3. In the Elaboration phase, you should model all alternative flows, in addition to the main flow, the agent responsible for each step. At level 3 (in the Elaboration phase), each step should represent a sea level use case, an activity that can be completed in one sitting.</td>
+    <td>Process Listing and Process Descriptions<br>
+		<br>
+		Process Flow Diagrams<br>
+		<br>
+		<br>
+		Process Step Catalogs<br>
+		<br>
+		<br>
+		Alternate Process Scenario </td>
+    <td>The <b>Process Listing and Process Descriptions</b> provide a textual description of the process that is executed in response to each event, along with an identification of the main inputs and outputs of the process.&nbsp; Also describe the business issues that are associated with the business process, and that may be solved through the future processes.<br>
+		<br>
+		The<b> Process Flow Diagrams</b> visually describe the flow for each of the business process within the business area. If pre-defined process models/business flows exist for the functionality being implemented, consider using them as a starting point. Also, if you have any current process flows, these could be used as a starting point.<br>
+		<br>
+		The <b>Process Step Catalogs</b> lists the process steps or activities that make up the primary, or most commonly executed, scenario for the process. Each step should have a brief, and descriptive title. You also record the agent responsible for the execution of each activity. At level 3, you should classify each activity by desired degree of automation: manual, computer assisted, or fully automated.<br>
+		<br>
+		The <b>Alternate Process Step Scenario </b> lists the process steps or activities that make up an alternate scenario for the process. List and describe the steps associated with scenarios, other than the primary scenario, which result in the same output as the primary scenario.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Provide an analysis of the business process change.</td>
+    <td>Process Analysis Summary </td>
+    <td>The Process Analysis Summary provides a review of the process changes by:
+        <ul>
+          <li>Performance and Efficiency</li>
+          <li>Change and Impact</li>
+          <li>Security and Risk </li>
+      </ul></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Review the Future Process Model with users and management.</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Secure approval of project and business line management.</td>
+    <td>None</td>
+    <td>None</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The Future Process Model identifies the complete set of events to which the business function should respond in order to meet the objectives, describes the future processes that the business should perform to respond to each of the events and identifies each of the activities executed in those processes.</p>
+<p>Before you start creating business process diagrams, you need to decide upon the technique that you will use for each level of diagrams. See the Functional or Process Modeling technique for guidance.</p>
+<p>The process models should be presented back to the business' management and users and to new members of the project team. The models must be easy to read and understand for the intended audience. This feedback could be done in such a manner that it tells a story describing the functionality of the business areas that have been the subject of the analysis and leads the reader through a high-level overview and then into the detail for each business use case.</p>
+<h4>Definition of Process Modeling of Future Business Processes</h4>
+<p>Process modeling of the future business processes results in a common and comprehensive picture of the project&rsquo;s scope of relevant processes and, if desired, expected metrics and costs.</p>
+<h4> Processes are Driven by Business Objectives </h4>
+<p>Process modeling needs to capture those processes that are the essence of the mission statement for the business. Often the design and execution of the business processes are the mechanism by which a competitive advantage or parity is achieved. In fact, it is possible that the mission statement embodies the reason for developing or selecting this application system in the first place.</p>
+<h4>Advantage of Process Modeling</h4>
+<p>The advantage of process modeling is that business processes are real and understandable to users in a way that, for example, a class model is not. Users are the ones who actually perform business processes. Such processes represent the work of the organization and show how information is used. The outputs they produce are tangible and essential to the organization&rsquo;s mission. In fact, one of the primary means for measuring the success of a process model is that it is intelligible to the users who perform the process. By linking business requirements to modeled processes, the quality of defined requirements will be better than informal wish lists or non-integrated requirements listed by functional area.</p>
+<h4> <a name="REQWK" id="REQWK"></a>Conduct Requirements Workshops </h4>
+<p>Creating the Future Process Model can be accomplished in several different ways. Depending on the size of the solution being developed, you can use interviews, meetings and workshops, as well as a combination of these methods or a series of meetings and workshops. This task may be one of many tasks being addressed in a meeting or workshop that is being held to gather business requirements.</p>
+<p>OUM recommends performing this task by conducting one or more requirements workshops, in which you naturally start by using business process modeling and identifying parts of the Domain Model. Often, it is easier for the users to first model the Current Process Model (RD.030) as this is well known and familiar, and from there identify the weaknesses and places to improve. If you have pre-defined process models, then these may also be a good starting point for discussion. </p>
+<p>It is recommended that you use facilitated workshops, as you will have the key stakeholders together and thereby be able to make decisions during the workshop and build a broader ownership for those decisions. However, for various reasons, you may decide to use other approaches. </p>
+<h4>Process Analysis with Business Process Teams</h4>
+<p>Process analysis is a logical technique used to drive the task of defining the Future Process Model. The recommended approach is to hold a series of working sessions in which the teams of analysts and business staff work together to develop a business process model for the processes that represent the scope of the implementation. During this time, these teams perform the following functions: </p>
+<ul>
+  <li>Participate in a series of workshops to construct the future processes.</li>
+  <li> Identify business triggering events, and the process steps for each process that responds to each event.</li>
+  <li> Identify responsible actors for each process step, and represent using swimlanes. </li>
+  <li>Capture the process flow using flowcharting software. </li>
+  <li>Hold feedback and review sessions with appropriate business area management. </li>
+  <li>Iteratively, refine the model throughout process design activities.</li>
+</ul>
+<h4> Identify Business Triggering Events </h4>
+<p>External events should have been identified in the System Context Diagram (RD.005). If there is a Current Process Model available, then business and system events can be obtained from that model. Also, if you have pre-defined process models/business flows for the functionality being implemented, you may identify candidate events from these.</p>
+<p> Preferably, in a high-level requirements workshop, during the Inception phase, ask the participants to identify business events, and use the prepared list of candidate events as an input. Ask them to define all those events to which their business unit or functional area must respond. They should uniquely identify and name each event, and describe each event in business (not system) terms.</p>
+<p> Identify each triggering event as one of the following: </p>
+<ul>
+  <li> external event (initiated outside the business area) </li>
+  <li> temporal event (initiated at a point in time, often related to the business calendar) </li>
+  <li> internal event (initiated inside the business area) </li>
+</ul>
+<p> The users may not understand the concept of an event, so be prepared to explain this including some examples. The triggering events will become the initial node in an activity diagram explaining a certain business process.</p>
+<p>Ask questions regarding the fulfillment of customer (internal or external) requests to build a complete list of events. </p>
+<p>Ask about the business calendar. Walk through each business event, as these may cause one or more events that initiates a business process. Very often these events will be temporal events.</p>
+<p>Capture high-level descriptive information about the event, such as its frequency and immediacy (how soon must a response occur). Finally, work with the business staff to produce a summary description of the business use case that responds to the triggering event and to identify its main inputs and outputs. Some examples of events from a customer information system for an electric utility are as follows: </p>
+<ul>
+  <li> EA005 - customer requests termination of service </li>
+  <li> ER092.2 - customer requests removal of third party billing notification </li>
+  <li> EC017 - customer requests collections information</li>
+  <li>OE-10 - Customer requests change of billing address</li>
+  <li>OE-23 - Customer orders inventory item</li>
+  <li>OE-17 - Customer orders warranty contracts</li>
+  <li>OE-30 - Customer requests credit approval</li>
+</ul>
+<p>Assign ownership of each event to a functional area. You can base ownership on who performs the majority of process steps in the process or on the functional area that initiates the business process responding to the event. Recognize that events create responses by processes that may be self-contained within one functional area or which may cross-functional boundaries.</p>
+<p> It may be difficult to identify events or to distinguish an event from an event mechanism. For example, receiving internal information is not necessarily an event, but is simply the natural flow of information between process steps in a process. If you are unsure whether something is an event, determine if it would still be an event if the roles of sender and receiver were performed by the same person.</p>
+<h4>Identify Business Actors </h4>
+<p> For each triggering event, you should identify the responsible actors. There might be more actors involved to resolve the event from beginning to end. You should identify all these actors. </p>
+<h4> Specify Business Processes </h4>
+<p> The goal of this step is to specify, at a high level, the business response to each event. Identify each of the high-level steps in the business use case, their sequence and conditional flow. Keep in mind, that there might be more responses to a single event, but with different actors. In that case, there will be a business use case for each actor. </p>
+<p> For each event, ask the business personnel to describe the activities performed by the business, in a logical sequence, that occur to completely satisfy or respond to the event. First, concentrate on modeling the main flow that represents most of the possible situations. At a later point in time, you can model the alternate flows.</p>
+<p>If there are more possible responses to the event, ask them to describe the decision process necessary to determine each response. If a decision is the very first part of the event response, this is often an indication that there are more actors involved. Then break it down to different business processes. Dependent on the situation, you may model this in separate process diagrams, one for each responsible actor. Alternatively, you can show the difference in a single diagram where the different responsible actors are shown in different swimlanes. Using the same diagram makes it possible to visualize the decision flow to show in what situation the response is for each actor. Also, if the processes for both actors flow into a common process at a later point (for example, handing it over to third actor, shown in a third swimlane), it is beneficial to show the processes in a single diagram. On the other hand, if the processes are mainly distinct and large, keeping it in the same diagram will make the processes less readable. </p>
+<p>By working on a suitable medium such as a whiteboard you and the staff who perform the process should create a business process diagram to represent the response. Some find a white board too restrictive, and prefer to use large sheets of brown paper and yellow sticky labels. This approach allows for more team participation, and makes it very easy to change the steps/activities and flow during the discussions. You should also use sticky labels for the flows (or some other means where you can change it easily), as these also will change during the discussion. Do not draw on the brown paper itself.</p>
+<p> You may also decide to model directly on-line using some modeling tool, showing it to the users via a large screen. The benefit is that you do not have to record it electronically after the session. However, for larger processes it is often too restrictive as you may only see a small part of the process at the same time, or the letters/drawings will be too small. Also making changes to the process during the discussions may be too slow. Keep in mind that whatever tool/mechanism you use, it should not slow the discussion process, or make it more difficult to understand or to get an overview of the whole. If you want to model on-line directly, this could also be done in the background by one of the team members, documenting the process on the wall. In any case, you should at least have a printer easily accessible so that you can print the whole quickly whenever required.</p>
+<p>Many of these activities might need to be decomposed later, but will be as part of the Use Case analysis. You should also get the members of the business staff to specify who is responsible for each activity within the process and to identify the inputs and outputs for each step. You should use these to provide input to the identification of business objects (domains) and attributes. You might also be able to determine the degree of automation that is required for each activity and specify whether it is to be performed manually, with computer assistance or entirely automatically by the system. </p>
+<p> <span style="font-size: 10pt; font-family: Arial;">In a commercial off-the-shelf (COTS) application implementation</span>, you may have access to pre-existing, multi-level business process models, which depict how the application system supports the business functions being addressed by the project. If such process models are available, leverage them to help identify the triggering events to which the business area responds. Such business process models should be revised as necessary to reflect the implementing organization&rsquo;s requirements, and may provide a suitable alternative for the Process Flow Diagrams component of the Future Process Model. </p>
+<h4>Business Process Levels</h4>
+<p>It is important to understand the concept of levels, and the differentiation between high-level and low-level processes, when modeling business processes, for more information refer to the Functional or Business Process Modeling Technique.</p>
+<h4> Degree of Automation</h4>
+<p>It is not always obvious in the beginning which steps should be automated, semi-automated or completely manual. For the level 2 models it is important to include the manual steps, otherwise you will have an incomplete model.</p>
+<p>During the Elaboration phase, you should be able to determine the degree of automation that is required for each activity, and specify whether it is to be performed manually, or with system-assistance. The manual-only step will not be detailed any further. The future processes will be a combination of system-assisted process steps and manual steps. The diagram may further divide the system-assisted steps into user-executed process steps and those done entirely automatically by the applications. An example of a user-driven step is the creation of a work order; an example of a system step is the execution of a concurrent job. </p>
+<p>At level 3, you would not normally add manual-only steps as part of the process. These are rather modeled as out-going messages to a person or other system, or an incoming message from the outside world to the system. Only occasionally, when it is interesting to understand what happens to the out-going message, or how an incoming message is originated, you may decide to model this. However, this is outside the implementation scope, and will only be there for a better understanding of the whole picture. Occasionally, it may be interesting to model this to detect inefficient message flow. </p>
+<p>In a commercial off-the-shelf (COTS) application implementation, as you construct processes, application consultants and analysts identify process steps that can be supported by the target applications. The application process steps for a given process usually reside within the same applications (intra-application process steps), but process steps can also reside within other application.</p>
+<p> Customer staff members add manual steps to the system-assisted process steps as necessary. </p>
+<h4>Relationship to Current Process Model (RD.030)</h4>
+<p>It is important to recognize that there may be significant differences between the depth, robustness, and content of current process modeling across different projects, depending on each situation. One organization may choose not to create current process models, another may choose to do only a very high-level version, while a third may implement the rigorous process modeling method described, both for its current and its future process model. For some it is just easier to model the current situation ahead of the future processes.</p>
+<p> The most important point to recognize is that future processes must cover the minimum business requirements that current processes cover, to supply the information required to achieve the business objectives and, possibly, to yield business improvements in cost, time, and quality. Construct the future processes to respond to the events that become approved business drivers. They will consist of process steps, which may be manual or automated. In the Future Process Model, evaluate each process step conducted by the current business system to confirm that it has been addressed, either by a manual or an application step, or that it is no longer required. </p>
+<h4>Differences Between the Current and Future Models</h4>
+<p>Some project teams may want to see the differences between the current and future models quantified. If this is the case, it will be helpful to capture these changes by annotating the Future Process Model (RD.011) accordingly. </p>
+<h4>Process Change</h4>
+<p>When major process change is applicable, create the Future Process Model in two stages. Initially, create the Future Process Model at a high level. This corresponds to a generic process model, applicable to the whole organization. After that model is accepted, additional detail is added to the model. This corresponds to variations to the generic process model needed to cater to the needs of individual business units. </p>
+<h4>Process Model versus Use Case Model</h4>
+<p>The process model and the use case model are tightly related, and where you start will often depend on your level of expertise in the various modeling techniques. Many choose to start off with process modeling at a high level, while others choose first to identify the use case model. </p>
+<p>If you start off with process modeling, you would start to identify business events, and then to model the responses to each business event as a business flow. When you have identified the business process steps, many of these will be business use cases. When you derive the Business Use Case Model from the Future Process Model, the most effective way of doing so is by starting to detail business process models to the level where the steps in there are comparable to user-goal level business use cases, and from there create user goal level business use cases to complete the requirements models. A user goal level business use case is a use case that can be completed within one sitting, i.e., the use case must either be completed (success or failure), or the operation must be aborted completely. It can be compared to what we called an elementary function in functional decomposition analysis.</p>
+<p> From there, each business use case can be further analyzed to identify the business actors. When the primary and secondary actors have been identified, it is good practice to walk through each actor to verify whether there are any missing use cases, and through that, you may even identify missing business processes. Therefore, creating the business use cases can be a perfect way of validating the business process models bottom-up and provide the starting point to create the Use Case Model that captures the requirements of the SuD.</p>
+<p> If you on the other hand start off with business use case modeling, you would typically start to identify business actors, and for each actor, identify candidate use cases that reflect a certain goal that the actor has with the business. The Use Case Model and Use Case Specification would then provide input into the Future Process Model, and flows can be drawn to visualize the business flow <em>between</em> the use cases. Also process models can be drawn to show the process flow for the activities <em>within</em> the use case. </p>
+<p>Either way, the Future Process Model and Use Case Model provide input to each other, over several iterations. For example, in the latter case, the Use Case Model and Use Case Specification are used to create a first version of the Future Process Model, or update an existing process model if one exists. Next, the initial Future Process Model provides input for refinement of the Use Case Model and associated Use Case Specification. The refined Use Case Model, and Use Case Specification, may then lead to further refinement of the Future Process Model. This iterative development process is repeated until the future business processes are adequately understood and documented. </p>
+<h4>Full Event and Process Coverage</h4>
+<p>Evaluate the entire catalog of events to confirm that associated processes fully capture the entire system&rsquo;s response, that all processes are comprehensively portrayed, and that there are no disconnects when one process stops and another continues. One way to address the last point is through an integration team that has this evaluation as one of its responsibilities.</p>
+<h4>Rapid Implementation Techniques</h4>
+<p> Implementations projects can derive the future process model faster by following these guideline: </p>
+<ul>
+  <li>Use an application references model such as Oracle Business Models as a target.</li>
+  <li>Confirm that process is suitable. </li>
+  <li>Create future process designs on an exemption basis. </li>
+  <li>Focus on high-impact areas. </li>
+  <li>Minimize the time spent on optimizing business processes.</li>
+</ul>
+<h4>Changes in Process Recognition</h4>
+<p>Since the solution has yet to be defined, it is too early to get complete commitment from the users. Therefore, you should obtain an agreement from users on overall direction. Users should agree with the overall concept and framework of expected solutions. The flows should also represent some obvious benefits to users, such as a reduction in material or information handling. Such a reduction implies reduced cycle times and less potential for communication errors. In the Future Process Model, highlight the flows that provide more direct approaches than those in the current process. </p>
+<h4>Business Process Documentation</h4>
+<p>As you are starting to produce the various catalogs of events, process steps and so on, start capturing the information in your Business Procedure Documentation (RA.055). </p>
+<h4>Enterprise Repository</h4>
+<p> If requirements are managed at the enterprise level for reuse across projects (for example, in the context of a SOA strategy), you should make sure that the Future Process Model is in line with the Enterprise Repository. This includes checking the repository for parts of the model that may already exist as reusable components and updating the repository with any new component so that other projects may reuse it. </p>
+<p>If a repository is used to manage the models:</p>
+<blockquote>
+  <p> <strong>Check the Enterprise Repository for existing reusable components of the model. </strong>    Take all the newly identified components and check that they are not already available. If they are in the repository, check if they fit the requirements of the current project or, if required, initiate a change process. </p>
+  <p><strong>Update the repository with the new models. </strong>    As the modeling work for your project is completed you should update the repository with new process models so that they can be reused and tracked by other projects that may have the same need. </p>
+</blockquote>
+<p> The requirements identified should be linked to the enterprise functional, process and/or domain models. Please refer to the Enterprise Requirements Management Technique for more details. </p>
+<h4>Staffing</h4>
+<p>Depending on the number and complexity of the business processes, it may be necessary to divide the task workload among multiple teams. However, make every effort to minimize the number of teams and business analysts involved in order to reduce communication overhead and improve efficiency. Ideally, these teams should have one or more business analysts to work with the appropriate business representatives. Assign each team to a set of closely related processes, from which to develop a model. When deploying multiple teams, require that they coordinate their models. Under no circumstances should teams work in isolation, or they may produce inconsistent models, subsequently requiring considerable effort to integrate. </p>
+<p>When managing the construction of future business models, move as rapidly as possible through this task. Because there will be many resources engaged in this task, watch for and avoid the decision paralysis that can lead to scope and time creep. To meet the scheduled completion dates, the project manager and team members must see that decisions are made, issues resolved, and consistent progress achieved. Do not hesitate to elevate delays, increase the urgency, and demand date accountability from the process modeling teams.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#RD0111" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<h4>Siebel Customer Relationship Management (CRM)</h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Siebel CRM implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_TASK_GUIDELINES.HTM#RD011" target="_blank">task-specific supplemental guidance</a>. To access all Siebel CRM supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/CRM/CRM_SUPP_GUIDE.HTM" target="_blank">OUM Siebel CRM Supplemental Guide</a>.</p>
+<h4>SOA Application Integration Architecture (AIA) Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Application Integration Architecture (AIA) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_TASK_GUIDELINES.HTM#RD011" target="_blank">task-specific supplemental guidance</a>. To access all SOA AIA supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AIA/AIA_SUPP_GUIDE.HTM" target="_blank">OUM SOA AIA Supplemental Guide</a>. </p>
+<h4>SOA Project Delivery Implementations </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a SOA Project Delivery implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_TASK_GUIDELINES.HTM#RD011" target="_blank">task-specific supplemental guidance</a>. To access all SOA Project Delivery supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/SOA/SOA_SUPP_GUIDE.HTM" target="_blank">OUM SOA Project Delivery Supplemental Guide</a>. </p>
+<h4>WebCenter (formerly E20) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a Webcenter implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_TASK_GUIDELINES_ELABORATION.HTM#RD0112" target="_blank">task-specific supplemental guidance</a>. To access all WebCenter supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/WC/WC_SUPP_GUIDE.HTM" target="_blank">OUM WebCenter Supplemental Guide</a>.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="29%" scope="col"><div align="left">Role</div></th>
+    <th width="65%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Analyst</div></th>
+    <td>Facilitate the workshop, interviews or meetings. Prepare for the workshop, and lead the modeling activity and document the result.<br>
+		<br>
+		If a Business Requirements (or other) team leader has been designated, 30% of this time would be allocated to this individual, leaving 60% allocated to the business analyst. The team leader would then facilitate the workshop, interviews or meetings.</td>
+    <td><div align="center">90</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Application/Product Specialist</div></th>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. </td>
+    <td><div align="center">10</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Line Manager</div></th>
+    <td>Provide information about the business.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Sponsor </div></th>
+    <td>Provide information about the business.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Ambassador User</div></th>
+    <td>Provide information about the business.</td>
+    <td><div align="center">*</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task:</p>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="29%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="71%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Governance Implementation (ENV.GV.100) </div></th>
+    <td>If an Enterprise Repository is in use, the Governance Implementation (that is, the related policies and processes) describes how to govern process models. Check for existing process models and ensure that the the process model are added/updated in the repository.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Enterprise Stakeholder Inventory (ENV.BA.015)<br>
+        Enterprise Process Models (ENV.BA.040) <br>
+        Service Portfolio - Candidate Services (ENV.BA.070) <br>
+        Process Improvement Options (ENV.BA.090)</div></th>
+    <td><span class="style3">Use these Envision work products or similar enterprise-level documents, if available. You may need this information before you can begin this task. Therefore, if they are not available, you should obtain this information prior to beginning this task. </span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business and System Objectives (RD.001) </div></th>
+    <td>The objectives are used to determine what should be the content of the new application. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">System Context Diagram (RD.005)</div></th>
+    <td>The System Context Model provides the boarders for the Business Process Model. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Current Process Model (RD.030)</div></th>
+    <td>The team can use material from the Current Process Model to gain an understanding of the processes and systems that support the current business. It may identify processes that offer opportunities for process improvement in cycle time, cost, and quality. It may also show major processes that are candidates for process redesign. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Current Business Baseline Metrics (RD.034) </div></th>
+    <td>For projects where there is a focus on business performance improvement, this is used to identify the critical performance areas that need to be focused on while developing the future process model. Without this baseline, any business performance improvement (or degradation) becomes very subjective.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Use Case Model (RA.015)</div></th>
+    <td>The Business Use Case Model is used to illustrate how the high-level vision of business process will be put into practice.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Model (RA.023) </div></th>
+    <td>The Use Case Model provides the high-level business requirements for the business processes.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Use Case Specifications (RA.024) </div></th>
+    <td>The Use Case Specifications provides the detailed business requirements for the business processes.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Skilled Project Team (TR.050) </div></th>
+    <td>The project team members must understand application concepts and capabilities in order to develop process models based on leading practices. This prerequisite helps them understand what process steps are supplied by application-specific functions.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Business Process Reengineering (BPR) Studies </div></th>
+    <td>Business Process Reengineering Studies are only appropriate if process change is relevant, and earlier business process change tasks were not carried out &mdash; most significantly, Detail System and Business Objectives (RD.001) and Obtain High-Level Business Descriptions (RD.020). Process reengineering studies may recommend the complete overhaul of current processes to be supported by the new applications. The output of a BPR study may, in fact, provide most of the content of the Future Process Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Future Business Strategy </div></th>
+    <td>This prerequisite includes other internal business documents that describe the future business processes. For example, the original request for quote and management business strategy documents on the manufacturing, distribution, financial, and administrative processes may be useful during this task.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="29%" scope="col"><div align="left">Technique</div></th>
+    <th width="71%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a></div></th>
+    <td><div align="left">This technique provides assistance in utilizing business process models as a requirements gathering technique and describes the different levels of business process models.</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management </a></div></th>
+    <td><div align="left">Use this technique to understand how to manage requirements at the enterprise level.</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../050_TECHNIQUE/WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></div></th>
+    <td><div align="left">The Workshop Techniques Handbook provides detailed descriptions of various techniques for delivering workshops during customer projects.</div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/WORKSHOP_CHECKLISTS.DOCX" target="_blank">WORKSHOP_CHECKLISTS.DOCX</a></div></th>
+    <td><div align="left">MS WORD - This file contains several sample workshop checklists that can be tailored for delivering workshops during customer projects. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/SAMPLE_WORKSHOP_PLAN.DOCX" target="_blank">SAMPLE_WORKSHOP_PLAN.DOCX</a></div></th>
+    <td><div align="left">MS WORD - This file contains a sample workshop plan/agenda.</div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Template File Name </div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.DOCX" target="_blank">RD-011_FUTURE_PROCESS_MODEL.DOCX</a></div></th>
+    <td>MS WORD - Use this template if you choose to create the Future Process Model in MS Word.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.PPTX" target="_blank">RD-011_FUTURE_PROCESS_MODEL.PPTX</a></div></th>
+    <td>MS POWERPOINT - Use this template if you choose to create the Future Process Model in MS PowerPoint.</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Examples" title="Examples" summary="This table lists any example work products for this task with any relevant comments. It is organized with columns for Example and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Example</div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a name="EXAMPLES" id="EXAMPLES"></a><a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM">FROM BUSINESS PROCESS TO USE CASE WITH ORACLE UNIFIED METHOD (OUM) </a></div></th>
+    <td>Provides a scenario example that will be useful when performing this task</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../010_COMMON_FILES/MODELS/RD011_FUTURE_PROCESS_MODEL_LEVEL_0.HTM" target="_blank">Future Process Model-Level 0</a> <br>
+            <a href="../../010_COMMON_FILES/MODELS/RD011_FUTURE_PROCESS_MODEL_LEVEL_1.HTM" target="_blank">Future Process Model-Level 1</a><br>
+            <a href="../../010_COMMON_FILES/MODELS/RD011_FUTURE_PROCESS_MODEL_LEVEL_2.HTM" target="_blank">Future Process Model-Level 2</a><br>
+            <a href="../../010_COMMON_FILES/MODELS/RD011_FUTURE_PROCESS_MODEL_LEVEL_3.HTM" target="_blank">Future Process Model-Level 3</a> </div></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="100%"  border="1" id="Tools" title="Tools" summary="This table lists any tool information for this task with any relevant comments. It is organized with columns for Tool and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="50%" scope="col"><div align="left">Tool</div></th>
+    <th width="50%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/VIEWLETS/activity_diagram_viewlet_swf.html" target="_blank">Activity Diagram Viewlet</a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">This task has supplemental guidance for using Oracle User Production Kit Professional (UPK Pro) and Oracle Tutor. Use the following to access the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TUTOR_UPK/TUTOR_UPK_TASK_GUIDELINES.HTM#RD0111" target="_blank">task-specific supplemental guidance</a>. To access all Oracle UPK Pro and Oracle Tutor supplemental information, use the <a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/TOOL_GUIDES/TUTOR_UPK/TUTOR_UPK_SUPP_GUIDE.HTM" target="_blank">OUM Oracle User Productivity Kit Professional (UPK Pro) and Oracle Tutor Supplemental Guide.</a></div></th>
+    <td>O<span class="style1">racle</span> User Productivity Kit Professional (UPK Pro) and Oracle Tutor are complementary Oracle tools that are used to develop, deploy and maintain content that can be used throughout each phase of the enterprise application implementation lifecycle from blueprinting/design/testing to go-live and maintenance/support. UPK Pro and Tutor can be used with all of Oracle&rsquo;s business application brands as well as non-Oracle business applications. UPK Pro and Tutor allow project teams to streamline the creation of business process documentation, test scripts, interactive simulations, job aids, presentations, courseware, and in-application performance support, reflecting the specific business practices and applications environment. For creating the above content types, use Tutor for business process documentation and UPK for everything else. Oracle Corporation uses Tutor to document its business processes.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../030_TECH_GUIDELINES/TOOLS_GUIDANCE/WHITE_PAPERS/gettingstartedwithactivitymodeling.pdf" target="_blank">Getting Started with Activity Modeling</a></div></th>
+    <td>JDeveloper</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="http://www.oracle.com/technetwork/middleware/repository/overview/index.html" target="_blank">Oracle Enterprise Repository </a></div></th>
+    <td>The Oracle Enterprise Repository is a COTS Enterprise Repository tool solution that is used to establish and maintain an Enterprise Repository. </td>
+  </tr>
+</table>
+<br>
+<a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS</h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The Future Process Model is used in the following ways: </p>
+<ul>
+  <li> to document the core future business processes </li>
+  <li> as an input to use case modeling </li>
+  <li> as an input to domain modeling </li>
+  <li> as an input to definition of test scenarios </li>
+  <li>as in input to service identification </li>
+  <li> as a basis for partitioning of the project </li>
+</ul>
+<p> Distribute the Future Process Model as follows: </p>
+<ul>
+  <li> to all team members </li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p> Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Does the Future Process Model notation and documentation conform to the projects Standards and Guidelines? </li>
+  <li>Have the responses to all external business events been described? </li>
+  <li>In the Elaboration phase, does the Future Process Model address business events (external, internal and temporal) to which the organization responds? </li>
+  <li>Does it reflect what processes make up the response?</li>
+  <li>Does it reflect the activities that make up each process?</li>
+  <li>Does it list how business decisions will be supported by the new system?</li>
+  <li>Does it provide how processes will be streamlined?</li>
+  <li>Does it provide how desired process changes can be accommodated?</li>
+  <li>Does it show how resources will interact in the new system?</li>
+  <li>Does it describe what necessary control elements (approval steps) should be established?</li>
+  <li>Does it explain how process and performance will be communicated to management for improvement?</li>
+  <li>Are the process descriptions clear, concise and consistent?</li>
+  <li>Are there any core business processes that do not support any business objective? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

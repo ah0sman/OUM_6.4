@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Packaging and Deployment Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE PACKAGING AND DEPLOYMENT</h2>
+<p>The purpose of this technique is to provide guidance on how to package and deploy SOA services.</p>
+<p>SOA demands a new strategy when it comes to deploying components of the SOA in order to support reuse of shared assets. Traditionally, applications have been deployed and managed autonomously in their own technical silos. The traditional approach is depicted below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD.JPG" alt="Traditional Approach to SOA Packaging and Deployment" width="161" height="193" title="Traditional Approach to SOA Packaging and Deployment"></p>
+<p>Often services are built as part of an application delivery effort by &ldquo;exposing&rdquo; implementation parts of an application as a service. As a consequence the service code is bundled up and packaged with the application and deployed to the same processes on the same servers. This strategy poses a couple major problems: </p>
+<ul>
+  <li> The service cannot evolve independently of the application. </li>
+  <li> If other applications are to consume the service, they become dependant on the service&rsquo;s hosting application and not just the service itself. </li>
+  <li> The strategy results in a rigidness that is counter-productive to the goals of the SOA. </li>
+</ul>
+<p>With SOA, applications are still deployed in a similar manner, where they have their own lifecycle. However, they are no longer autonomous. SOA applications rely on shared services that are not packaged with the application(s) they were created to serve. Services therefore, have separate lifecycles. Independent service lifecycles is a fundamental component of successful SOA and it must be provided for by the Service Deployment strategy. </p>
+<p>The only time a service may be packaged with its consuming application is when it fails the service justification process, and is left as the responsibility of the project delivery team. In this case the service is considered to be an &ldquo;Application&rdquo; scoped service. If the service becomes justified during a later project, it must be moved, or decoupled from the hosting application to be realized as a shared service and take on a scope higher than &ldquo;Application&rdquo;. </p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p> This technique provides guidelines on how to determine the most appropriate deployment strategies for the Enterprise SOA situation, how to determine a Service Migration Strategy that may be used to migrate existing code into reusable code, and finally how to perform Deployment Planning to ensure the Services can deliver according to the service contract. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Determine Deployment Strategies. </td>
+    <td>Deployment Strategies </td>
+    <td> The Deployment Strategies contains the various strategies that may be used for deployment of different types of services. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine Service Migration Strategy.</td>
+    <td>Service Migration Strategy </td>
+    <td> The Service Migration Strategy describes the possible migration paths that may be used when services are identified where the needed code is already available within an existing application, and therefore should be made reusable. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Perform Deployment Planning. </td>
+    <td>Service Deployment Plan. </td>
+    <td> The Service Deployment Plan contains details around the service&rsquo;s operational footprint, and is needed to ensure that consumers do not violate their usage agreement and by that steeling system resources applied to other consumers. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Determine Deployment Strategies</h4>
+<p>A successful SOA introduce a variety of deployment strategies that should be applied to different types of services. The deployment strategies for service engineering should provide the set of acceptable service deployment strategies and outline the criteria for when each strategy should be applied. </p>
+<h5>Influencing Factors of Service Deployment</h5>
+<p>There are several factors that emanate from the service engineering process that come into play when determining the optimal deployment strategy for a particular service. Influencing factors that affect service deployment include: </p>
+<ul>
+  <li> service scope </li>
+  <li> QoS requirements </li>
+  <li> security </li>
+  <li> service enablement requirements </li>
+</ul>
+<p>Each of the factors defined above provides a single angle of influence with respect to deployment strategy. These influencing factors should be considered as a whole in order to determine the optimal deployment configuration for a particular service. Further, deployments are typically a game of trade-offs. Certain benefits gained by any particular deployment strategy results in something lost. For instance, a highly-distributed deployment is very flexible and highly available, but comes at the price of lower performance, and higher maintenance. Therefore, you should always weight the pro&rsquo;s and con&rsquo;s for each strategy. A successful SOA introduce a variety of deployment strategies that should be applied to different types of service based on the above criteria. These strategies are described in more detail in the following. The deployment strategy for service engineering should provide the set of acceptable service deployment strategies, and outline the criteria for when each strategy should be applied. </p>
+<p>In larger SOA deployments it may be justifiable to have multiple service hosting environments tailored through deployment to meet the various combinations of influencing factors. </p>
+<blockquote>
+  <p><b>Service Scope </b></p>
+  <p> A service&rsquo;s scope (defined against the expected consumers for a service) plays a significant role in determining service deployment. In general wider scoped (for example, enterprise or multi-enterprise services) consumer bases favor a more distributed deployment structure. Services with a wider scope should be managed autonomously. Changes to wider scoped services and other SOA participants at the same level, need to have a minimal effect on one another because of the large number of dependencies, or their strategic importance. </p>
+  <p><b>QoS Requirements </b></p>
+  <p> For the most part QOS influences are pretty obvious. Reliability, availability, scalability, and performance all have direct correlations to deployment strategy. A balance is also required with QOS requirements, as an improvement in one value, usually comes at the degradation of another. For instance, availability usually comes at the cost of some performance because of the overhead involved. Reliability can also be negatively impacted by availability and scalability. </p>
+  <p><b>Security</b></p>
+  <p> Security requirements have a direct impact on deployment strategy. In a properly secured environment, security is configured through hardware and software infrastructure, and is not left in the hands of the developers. Increasing security requirements also come at a cost of performance and possibly even reliability (propagation/synchronization issues, etc). </p>
+  <p><b>Service Enablement Requirements</b></p>
+  <p> Service Enablement is much more than simply provided a mechanism to expose a service to its consumers through a standard based mechanism (e.g.: web services stack). Service Enablement can also be used to enhance SOA flexibility and support a small portion of the overall service&rsquo;s implementation logic. Service Enablement is achieved through service infrastructure, which may be configured to expose services, and ease the difficulty of implementing services. Different enablement requirements may require different infrastructure, which directly impacts deployment strategy. It is a good practice for an enterprise to standardize on a particular set of service infrastructure components that meet their common service enablement needs. </p>
+</blockquote>
+<h5>Deployment Options</h5>
+<p>There are a common set of service deployment options that all have various benefits and drawbacks. Each deployment option is applicable for certain services but not for others. The options covered in the following do not cover detailed hardware and software options. </p>
+<h6>Minimal Deployment Option</h6>
+<p>The minimal deployment option provides the lowest cost, minimum deployment option for deploying SOA participants but is not recommended for production level SOA deployments. This option is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_MIN.JPG" alt="Minimal Deployment Option" width="164" height="208" hspace="20" title="Minimal Deployment Option"></p>
+<p align="left"><b>Features:</b></p>
+<ul>
+  <li> Applications, service infrastructure, and service code share the same hardware. </li>
+  <li> Service Infrastructure and Service code are deployed in the same processes </li>
+  <li> Hardware may be horizontally and vertically scaled. </li>
+</ul>
+<p><b>Advantages:</b></p>
+<ul>
+  <li> Applications and services have separate lifecycle. </li>
+  <li> Network hops are not necessary between application and services resulting in a performance improvement </li>
+  <li> Service infrastructure and service code are co-deployed resulting in higher performance </li>
+  <li> Environment is autonomous resulting in simplified maintenance and management. </li>
+  <li> Lowest cost of ownership. </li>
+</ul>
+<p><b>Recommended Usage:</b></p>
+<ul>
+  <li> Low budget, small scale SOA (not enterprise class) </li>
+  <li> Better suited for pilot or test environments. </li>
+  <li> Not recommended for production SOA </li>
+</ul>
+<p><b>Disadvantages:</b></p>
+<ul>
+  <li> Service infrastructure and code are co-deployed resulting in less flexibility. </li>
+  <li> Service changes more than likely required infrastructure downtime. </li>
+  <li> Applications, service infrastructure, and code concurrently share the same hardware resources. </li>
+  <li> No hardware security options between applications, infrastructure and services. </li>
+  <li> Migration to basic, distributed, or optimal deployment options difficult. </li>
+  <li> Applications, service infrastructure, and service code cannot be scaled independently. </li>
+</ul>
+<h6 align="left">Basic Deployment Option</h6>
+<p>The basic deployment option provides a low cost, but simple deployment option for deploying SOA participants. Similar to the minimal deployment option, this deployment option is not recommended for production level SOA. This option is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_BASIC.JPG" alt="Basic Deployment Option" width="164" height="221" title="Basic Deployment Option"></p>
+<p><b>Features:</b></p>
+<ul>
+  <li> Applications, Service Infrastructure, and Service Code share the same hardware. </li>
+  <li> Applications, Service Infrastructure and Service code are deployed in separate processes </li>
+  <li> Hardware may be horizontally and vertically scaled. </li>
+</ul>
+<p><b>Advantages:</b></p>
+<ul>
+  <li> Applications and services have separate lifecycle. </li>
+  <li> Changes to services can be made without affecting service infrastructure and unrelated consumers. </li>
+  <li> Network hops are not necessary between application and services resulting in a performance improvement </li>
+  <li> Environment is autonomous resulting in simplified maintenance and management. </li>
+  <li> Easy deployment upgrade path to the distributed or optimal deployment option (see below). </li>
+  <li> Low cost of ownership. </li>
+</ul>
+<p><b>Recommended Usage:</b></p>
+<ul>
+  <li> Low budget, small scale SOA (not enterprise class) </li>
+  <li> Better suited for pilot or test environments </li>
+  <li> Not recommended for production SOA </li>
+</ul>
+<p><b>Disadvantages:</b></p>
+<ul>
+  <li> Applications, service infrastructure, and code share concurrently the same hardware resources. </li>
+  <li> No hardware security options between applications, infrastructure and services. </li>
+  <li> Applications, service infrastructure, and service code cannot be scaled independently.</li>
+</ul>
+<h6>Distributed Deployment Option</h6>
+<p>The distributed option provides a medium cost, but simple deployment option for deploying SOA participants. This option represents the recommended minimum deployment for production level SOA. This option is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_DIST.JPG" alt="Distributed Deployment Option" width="254" height="267" title="Distributed Deployment Option"></p>
+<p><b>Features:</b></p>
+<ul>
+  <li> Applications are deployed on separate hardware. </li>
+  <li> Service infrastructure and service code share the same hardware. </li>
+  <li> Applications, Service Infrastructure and Service code are deployed in separate processes </li>
+  <li> Hardware may be horizontally and vertically scaled. </li>
+  <li> Security hardware infrastructure may be introduced to protect access to the service infrastructure and services.</li>
+</ul>
+<p><b>Advantages:</b></p>
+<ul>
+  <li> Applications and services have separate lifecycle. </li>
+  <li> Applications are deployed on separate hardware from service infrastructure and services. </li>
+  <li> Changes to services can be made without affecting service infrastructure and unrelated consumers. </li>
+  <li> Easy deployment upgrade path to optimal deployment option (see below). </li>
+  <li> Applications are scaled separately from Infrastructure/service code.</li>
+</ul>
+<p><b>Recommended Usage:</b></p>
+<ul>
+  <li> Small scale SOA </li>
+  <li> Small to Medium Line of business SOA deployment. </li>
+  <li> Not recommended for large, enterprise wide SOA deployments.</li>
+</ul>
+<p><b>Disadvantages:</b></p>
+<ul>
+  <li> At least one network hop is necessary from application level consumers to services. </li>
+  <li> Service infrastructure and code share concurrently the same hardware resources. </li>
+  <li> No hardware security options between infrastructure and services. </li>
+  <li> Infrastructure cannot be scaled independently of service code. </li>
+  <li> Distributed environment comes with the drawback of more administration and maintenance burden.</li>
+</ul>
+<h6>Optimal Deployment Option</h6>
+<p>The optimal deployment option provides a higher cost, but highly flexible deployment option for deploying enterprise class SOA participants. This option represents the recommended deployment for production level enterprise class SOA. This option is depicted below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_OPT.JPG" alt="Optimal Deployment Option" width="252" height="366" title="Optimal Deployment Option"></p>
+<p><b>Features:</b></p>
+<ul>
+  <li> Applications, Service Infrastructure, and Service Code are deployed on separate hardware. </li>
+  <li> Applications, Service Infrastructure and Service Code are deployed in separate processes </li>
+  <li> Hardware may be horizontally and vertically scaled. </li>
+  <li> Security hardware infrastructure may be introduced to protect access to the service infrastructure. </li>
+  <li> Security hardware may be introduced to protected access to service code. </li>
+</ul>
+<p><b>Advantages:</b></p>
+<ul>
+  <li> Applications and services have separate lifecycle. </li>
+  <li> Applications, service infrastructure, and service code are deployed independently to separate hardware, maximizing resource utilization and flexibility. </li>
+  <li> Changes to services can be made without affecting service infrastructure and unrelated consumers. </li>
+  <li> Provides the most secure environment. </li>
+  <li> Applications, Infrastructure, and Services can be independently scaled.</li>
+</ul>
+<p><b>Recommended Usage:</b></p>
+<ul>
+  <li> Enterprise level SOA </li>
+  <li> Large Line of business SOA deployment. </li>
+  <li> Not recommended for smaller scale SOA deployments. </li>
+</ul>
+<p><b>Disadvantages:</b></p>
+<ul>
+  <li> Multiple network hops are necessary from application level consumers to services. </li>
+  <li> Fully distributed environment comes with the drawback of more administration and maintenance burden. </li>
+  <li> High cost of ownership</li>
+</ul>
+<hr width="100%">
+<h4>Determine Service Migration Strategy</h4>
+<p>When services are identified with the needed code already available within an existing application, typically projects tempt to leave the code in place within the application just providing an interface to access this &ldquo;service&rdquo;. New consumers interact with this type of service over an application interface while the service itself remains bundled and co-deployed with the application. There are a number of fundamental problems that arise from this however. Some of these problems include: </p>
+<ul>
+  <li> The application maintenance or evolution will require service downtime, affecting other consumers. </li>
+  <li> Changes to the service from outside requirements will require application downtime. </li>
+  <li> The service is delivered in the scope of the application and therefore any change to the service will need to be synchronized with application release cycle </li>
+  <li> The application and services cannot be independently maintained. </li>
+  <li>The application and service(s) cannot be independently scaled. </li>
+</ul>
+<p>At the root of these problems is the fact that the application and services do not have independent lifecycles. At a very minimum, services and applications must have independent lifecycles. The figure below illustrates the correct method, and involves service migration: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_SERV_MIG.JPG" alt="Illustration of Service and Methods having Independent Lifecyles and the Service Migration Between Them" width="741" height="468" title="Illustration of Service and Methods having Independent Lifecyles and the Service Migration Between Them"></p>
+<p>At a minimum, if a service is to be promoted from an application to get shared outside of the scope of the application, it must be migrated to the shared service environment. Migration is typically not simply moving the software components from the application and redeploying them in the appropriate shared service environment. More often that not, additional engineering is required to meet the demands made of the service by its wider consumer base. </p>
+<p>It may not always be practical to host the entire shared service implementation independently i.e. not packaged with an application. This is especially true with service enabling legacy applications. However, if services stay in application scope, the application itself becomes a deliverable within the SOA, and therefore can no longer be maintained on its own. Instead, application management must be covered by SOA portfolio management to ensure that any planned changes to the application are validated in SOA scope prior to commencing. As a consequence, the application might need to postpone changes due to dependency management within the SOA portfolio. This minimal level of governance must be established to prevent instability within the larger SOA environment. </p>
+<p>Any service that exists within an application should be considered to stay in the &ldquo;Declined&rdquo; status. If a service were justified, then it would not be allowed to be delivered and deployed with the application that it serves. This distinction is important because it also applies to services that have been bundled with applications prior to initiating a SOA portfolio management. </p>
+<p>If a service is identified from an existing application and justified for reuse, it needs to go through the normal service engineering processes including release planning and service delivery. This ensures that a formal contract is established for the service, and the migrated service is designed, implemented, tested, and deployed appropriately for the wider base of consumers that it will be asked to serve. </p>
+<hr width="100%">
+<h4>Perform Deployment Planning</h4>
+<p>Before a service can be deployed, its operational characteristics must be identified. This information is harvested through the Service Testing procedures (refer to the <a href="SERVICE_TESTING.HTM" target="_blank">Service Testing</a> technique for more details). Operational characteristics provide the details around the service&rsquo;s operational footprint and included the following: </p>
+<ul>
+  <li> memory footprint required by the various operations of the service on a per invocation basis</li>
+  <li> amount of processing required (CPU%) on a per invocation basis</li>
+  <li> amount of disk usage required on a per invocation basis</li>
+  <li> average response time per invocation</li>
+  <li> overhead resulting from deploying the service (CPU, Memory, Disk) </li>
+  <li> I/O usage - measure both disk and network activity</li>
+</ul>
+<p>The operational characteristics are retrieved by conducting a series of isolation tests. In addition to this information the following information should be collected from each of the expected consumers of the service and managed as part of a usage agreement between consumer and service: </p>
+<ul>
+  <li> maximum consumption rate (invocation/time) </li>
+  <li> normal consumption operating period (e.g.: Mon &ndash; Fri: 8:00AM &ndash; 4:00PM) </li>
+  <li>expected consumption rate for normal consumption (invocations/time) </li>
+  <li> peak consumption operating period (e.g.: Mon &ndash; Fri: 8:00AM &ndash; 9:00 AM, 3:00PM &ndash; 4:00PM) </li>
+  <li>expected consumption rate for peak consumption (invocations/time) </li>
+</ul>
+<p>The combined information may be used to ensure the following: </p>
+<ul>
+  <li> The expected hardware and software configuration can support the expected load from the consumers. </li>
+  <li> Consumption is monitored to ensure conformance with expected consumption rates. </li>
+  <li> The infrastructure is throttled to prevent hardware thrashing, which is a condition where the hosting machine&rsquo;s response time increases exponentially against a linear increase in volume (see the figure below). </li>
+</ul>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_PD_DEP_PLAN.JPG" alt="Illustration of the Hosting Machine&rsquo;s Response Time Increases Exponentially Against a Linear Increase in Volume" width="480" height="450" title="Illustration of the Hosting Machine&rsquo;s Response Time Increases Exponentially Against a Linear Increase in Volume"></p>
+<p>To ensure the service can be operated fulfilling all usage agreements of the consumers, the service consumptions agreed upon, and the resource usage of the service must be balanced on operations. With shared services being hosted on a shared system environment, care must be taken to ensure consumers do not violate their usage agreement, and by that steeling system resources applied to other consumers as well. </p>
+<p>To ensure compliance of all consumers with the deployment planning a policy must be applied to the individual service that defines the usage terms to the consumer. In this way, also the the resource estimation will be more reliable. The usage policy will define the rules and conditions to be implemented on the infrastructure, e.g. a service bus, to allow or deny the usage of the service. </p>
+<h5>The Deployment Unit</h5>
+<p>When there is time to deploy a service to the service infrastructure, a decision must be made about what belongs in a single deployment unit. Putting all the shared services in a single deployment unit is inappropriate since a change to one service will require a redeployment of all services in the same deployment unit. Similarly, deploying shared services as part of a larger application will lead to lifecycle issues since the services must have a lifecycle independent from the application lifecycle. </p>
+<p>The smallest deployment unit would be a single service with all its required pieces. It may also make sense to create a deployment unit that contains several closely related services, for example, services that all use the same underlying database schema or access a common backend system. Whether a single service or a collection of services, the deployment unit must remain autonomous and isolated from applications and other services. This allows the service or collection of services to be administered and versioned independently. This independence is a key enabler of agility. </p>
+<p>A deployment unit has its own lifecycle. In the best case scenario, each service will have its own deployment unit. This is not always practical however, and in some cases it may be acceptable for a group of related services to be deployed in the same deployment unit. Some of the guidelines for this exception include: </p>
+<ul>
+  <li> Services that are dependant on one another may be deployed in the same deployment unit if an outage to one service will cause an outage to the other service, and vice versa. </li>
+  <li> Services that are not dependent on one another, but share the same resources or common components. </li>
+  <li> Services that depend upon one another, and a certain level of performance is required of the services that would not be achievable if the services were deployed independently.</li>
+</ul>
+<h5>Components of a Service Packaged Asset</h5>
+<p>Service packages combine one or more services into one deployment unit. A package can be deployed to several systems, e.g., different staging environments like test and production. All services lifecycles combined into the same delivery package should be synchronized for deployment steps. Review the <a href="SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a> technique for a set of recommended data elements that should be captured with service packages. </p>
+<h5>Components of a Usage Policy</h5>
+<p>The Usage Policy is a special policy type defined by a system to protect resource consumption on a per consumer level. The policy will be used to control the maximum expected consumption of the service by the consumer. </p>
+<p><b>Name:</b> Name of the policy </p>
+<p><b>Type:</b> Policies can be of several types and should support a type called Usage Policy to be selected. </p>
+<p><b>Owner:</b> Policies of the type Usage Policy should be owned by the system defining the policy to protect resources. </p>
+<p><b>Target:</b> Usage policies are targeted to the services to document the level of control that needs to be implemented in the infrastructure on service enablement. </p>
+<p><b>Policy:</b> Document the policy to be applied. For Usage policies there are two options: An active usage policy enforces a policy check prior to executing the service operation, i.e. the operation will only be executed if the usage policy is not violated. A passive usage policy ensures notification on usage violations but will not prevent the service from executing the requests. </p>
+<h5>Service Enablement</h5>
+<p>Service Enablement is considered a component of the service&rsquo;s implementation. The difference between enablement and the rest of the service&rsquo;s implementation is that service enablement is accomplished through infrastructure; versus deployment based artifacts originating from code (think development tools here). Further, the purpose of service enablement is to provide service level QoS for a service that do not typically stem from business requirements. This means that service enablement plays a major role in service deployment. With that point in mind, service enablement provides the following: </p>
+<ul>
+  <li> configuration based logic </li>
+  <li>routing </li>
+  <li>transformations </li>
+  <li>versioning support </li>
+  <li> composition </li>
+  <li>the ability to compose a new service through the composition of two or more services</li>
+  <li> change control </li>
+  <li>audit support </li>
+  <li>configuration aggregation </li>
+  <li>configuration rollback support </li>
+  <li>real-change application (Changes are applied without requiring a redeployment or server restart.)</li>
+  <li> throttling </li>
+  <li>thread management </li>
+  <li>priority based resource management </li>
+  <li>consumption monitoring </li>
+  <li> security </li>
+  <li>centralized policy management </li>
+  <li>distributed enforcement </li>
+  <li>security standards (WS-Security, WS-Policy, SAML, SSL, etc). </li>
+  <li> interface exposure </li>
+</ul>
+<p>SOA based standards should be identified around service enablement, and documented with the Service Architecture guidelines. With respect to Service Deployment, each of the defined enablement qualities will more than likely have an impact on service deployment. Therefore, the procedures for service enablement need to be worked out based on the adopted service enablement guidelines identified by the Service Architecture. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique to consider a service to be a smaller sized application that can be packaged and deployed as independent unit, which is very important for decoupling the service lifecycle from the lifecycle of applications.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/IM_070_ASSEMBLE_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.070 Assemble Components </a></div></th>
+    <td>Use this technique for guidance during the creation of deployment packages, and the documentation of the deployment configuration. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_038_PREPARE_INTEGRATION_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">TE.038 Prepare Integration Test Environment </a></div></th>
+    <td> Use this technique for guidance while applying the deployment configuration for the test environment. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_060_PREPARE_SYSTEM_TEST_ENVIRONMENT_OVERVIEW.HTM" target="_blank">TE.060 Prepare System Test Environment</a></div></th>
+    <td>Use this technique for guidance while applying the deployment configuration for the production environment. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">TS.050 Prepare Production Environment </a></div></th>
+    <td>Use this technique to determine the approach for unit testing. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">TS.060 Go Production</a></div></th>
+    <td>Use this technique for guidance on service deployment, and enabling on the service bus.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/PS_060_MONITOR_AND_RESPOND_TO_SYSTEM_PROBLEMS_OVERVIEW.HTM" target="_blank">PS.060 Monitor and Respond to System Problems </a></div></th>
+    <td> Use this technique for guidance on monitoring service usage and SLA, and monitoring reports. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Is there a variety of deployment strategies defined that should be applied to different types of services? </li>
+  <li>Is it clearly outlined when each strategy should be applied?</li>
+  <li>
+    <p>Are all services that are promoted from an application to get shared outside of the scope of the application, at least migrated to a shared service environment? </p>
+  </li>
+  <li>
+    <p>Are all services managed through a SOA portfolio management? Does this include service enabling of legacy applications, is the application management also covered by SOA portfolio management to ensure that any planned changes to the application are validated in SOA scope? </p>
+  </li>
+  <li>
+    <p>Has every service that is identified from an existing application and justified for reuse, gone through the normal service engineering processes? Does this include release planning and service delivery to ensure that a formal contract is established for the service, and the migrated service is designed, implemented, tested, and deployed appropriately for the wider base of consumers that it will be asked to serve?</p>
+  </li>
+  <li>Has the operational characteristics for a service been identified before it is deployed?</li>
+  <li>
+    <p>Has a policy, that defines the usage terms to the consumer, been applied to each individual service?</p>
+  </li>
+  <li>Is the deployment unit autonomous and isolated from applications and other services, independent of whether it contains a single service or a collection of services? </li>
+  <li>Are SOA based standards identified around service enablement, and documented?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Project Delivery Service Interoperability Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Project Delivery Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#SCOPE">Service Scope</option>
+                            <option value="#INTER">Interoperability</option>
+                            <option value="#FAULT">Fault Raising and Handling</option>
+                            <option value="#TEMPLATES">WS-I Complaint WSDL Templates</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+        <table width="93" align="right">
+          <tr>
+            <td width="85" height="34"><p><a href="../../../OUM_HOME_SOA_PROJECT_DELIVERY.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) PROJECT DELIVERY SERVICE INTEROPERABILITY GUIDELINES </h2>
+<p class="style1">In order to provide or consume a &quot;Business Service&quot;, the involved systems/partners must agree on the interaction pattern with the corresponding business semantics. Agreement must also exist for the message binding contracts and policy profiles for each service. This document provides guidelines, patterns and templates to capture all the necessary information related to service interoperability. </p>
+<h3><a name="SCOPE"></a>SERVICE SCOPE </h3>
+<p>This section introduces common high-level scenarios that illustrate Web Service solutions based on the scope of the service from the enterprise boundary perspective. This scope based Web Service scenario classification would be helpful to derive requirements as well as the possible patterns that can be utilized as a solution corresponding to a particular scenario.</p>
+<h4>Public Service</h4>
+<p>In this scenario, Web Services are exposed to the entire world and depending on the application, the security requirements will vary greatly ranging from no explicit security to high protection and prevention methods. </p>
+<h4> Intra-Enterprise Service</h4>
+<p>In this scenario, Web Services are exposed within an enterprise for other applications to consume. </p>
+<h4>Inter-Enterprise Service</h4>
+<p>In this scenario, Web Services are exposed to partners to conduct business-to-business transactions. </p>
+<h4> Federated Service</h4>
+<p>In this scenario, a set of Web Services is exposed by partners to collaborate and conduct a business transaction in a federated manner.</p>
+<p> <a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="INTER"></a>INTEROPERABILITY</h3>
+<p>Services are said to be interoperable only when the involved systems and partners understand both Business and Technology semantics. </p>
+<h4>Business Layer Policies</h4>
+<p>At the business layer, the domain object and the action are the 2 most important policies. Domain objects are nouns such as &lsquo;Customer&rsquo;, &lsquo;Purchase Order&rsquo; etc. Actions are verbs such as &lsquo;Create&rsquo;, &lsquo;Approve&rsquo; etc.</p>
+<h5> Business Message</h5>
+<p>The business messages are &lsquo;domain objects&rsquo; (nouns) and are modeled using the following methods of achieving interoperability:</p>
+<ul>
+  <li><b>Distributed Point-to-Point</b> - In this approach, each service (corresponding to a system) has its own proprietary semantic meaning and semantic translation is performed in a point-to-point manner local to a service. In other words, every service will be interoperating with every other service using its own internal transformation in a point-to-point manner.</li>
+  <li> <b>Centralized Point-to-Point</b> - In this approach, each service (corresponding to a system) has its own proprietary semantic meaning and semantic translation is performed in a point-to-point manner but centrally. In other words, every service will be interoperating with every other service using the central located transformation logic in a point-to-point manner.</li>
+  <li> <b>Distributed Hub and Spoke (Canonical Data Model)</b> - In this approach, each service (corresponding to a system) has its own proprietary semantic meaning but is mapped to a logical data model, which can be initiated as a physical federated model or a canonical data model. In other words, the Hub is virtual and is modeled as a canonical message and spokes will do the semantic transformation internally.</li>
+  <li> <b>Centralized Hub and Spoke (Master Data Management)</b> - In this approach, each service (corresponding to a system) has its own proprietary semantic meaning but is mapped to a single data model managed by a specialized application such as Master Data Management (MDM systems. In other words, the Hub is physical and is responsible for maintaining single version of truth.</li>
+</ul>
+<h6>Business Message Versioning</h6>
+<p>The versioning of business messages can be done using the following methods:</p>
+<ul>
+  <li>Type based: The versioning scheme is part of the domain object name. If the message is modeled using XSD, the target namespace for the domain object type could signify the version.</li>
+  <li>Instance based: The versioning information is sent as part of the message. If the message is modeled using XSD, then the corresponding XML message will carry the version information as part of an element or attribute.</li>
+</ul>
+<p>A hybrid versioning by utilizing both type based (for major version number) and instance based (for minor version number) may be used as well.</p>
+<p>Versioning could use the date format such as YYYY/MM/DD. </p>
+<h5> Business Transaction</h5>
+<p>The business transactions are &lsquo;actions&rsquo; (verbs) that are modeled using the timing of interactions between the involved partners/systems/services. </p>
+<h6>Message Exchange Patterns</h6>
+<p>The best practice is to have one message exchange pattern, such as the following, per service and business processes should be used for orchestrating more than one service to model complex message exchange patterns. </p>
+<p>Following are some of the common message exchange patterns for a coarse grained service.</p>
+<ul>
+  <li>Synchronous-Query-Response-Fault - This pattern should be used for scenarios where a response be returned for a query and the state of the system must not be changed.</li>
+  <li> Synchronous-Request-Response-Fault - This pattern should be used for scenarios where a response be returned for a request and the state of the system may be changed.</li>
+  <li> Synchronous-Request-Ack-Fault - This pattern should be used for scenarios where an acknowledgement be returned for a request to indicate that the provider received the request.</li>
+  <li> Asynchronous-One-Way - This pattern should be used for notification or quote like scenarios where the delivery reliability is not mandatory.</li>
+  <li> Asynchronous-Request-Response - This pattern should be used if the processing time of returning a response for the corresponding request is unpredictable. </li>
+  <li> Asynchronous-Request-Ack - This pattern should be used if the processing time of returning an acknowledgement for the corresponding request is unpredictable. </li>
+  <li> Asynchronous-Request-Ack-With-Timeout - This pattern should be used if the processing time of returning an acknowledgement for the corresponding request is unpredictable and if the consumer insists on getting the acknowledgement within a specified period of time. </li>
+  <li> Asynchronous-Request-Ack-With-Timeout-Notification - This pattern should be used if the processing time of returning an acknowledgement for the corresponding request is unpredictable and if the consumer would like to be notified when the acknowledgement is not received within a specified period of time. </li>
+  <li> Asynchronous-Request-With-Optional-Ack-With-Timeout - This pattern should be used if the processing time of returning an acknowledgement for the corresponding request is unpredictable and if the consumer insists on getting the acknowledgement optionally within a specified period of time. </li>
+  <li> Asynchronous-Request-Response-With-Optional-Ack-With-Timeout - This pattern should be used if the processing time of returning a response for the corresponding request is unpredictable and if the consumer insists on getting the response optionally within a specified period of time. </li>
+</ul>
+<h6>ACID Transaction</h6>
+<p>Some business services required to perform atomic transactions with ACID properties and are usually synchronous in nature. </p>
+<p>The service will lock the appropriate resources while conducting the ACID transactions. </p>
+<p>Above mentioned synchronous message exchange patterns should be used by the service if it requires conducting ACID transactions.</p>
+<h6>Long Running Transaction</h6>
+<p>Some services might require running for hours, days, months or years before concluding a business transaction. </p>
+<p>The service will release the locks and hence isolation property of ACID is relaxed.</p>
+<p>Above mentioned synchronous message exchange patterns should be used by the service if it requires conducting long running transactions.</p>
+<h4>Technology Layer Policies</h4>
+<p>At the technology layer, standards based policies related to transport, security etc. are important for higher interoperability.</p>
+<p>Following are some of the common technology related components that are related to service interoperability.</p>
+<h5>Transport</h5>
+<p>The most common transport mechanisms used by service endpoints are HTTP or messaging middleware such as JMS, MQSeries etc.</p>
+<p>In order to be interoperable, messaging/transport protocol version and headers need to be defined and agreed upon, such as &lsquo;SOAPAction&rsquo; HTTP 1.0 header in case of SOAP based service invocation.</p>
+<p>HTTP transport is not reliable, whereas messaging middleware such as JMS provides reliable delivery of messages. But HTTP is more prevalent and firewall friendly. </p>
+<p>The best practice is to use HTTP for interacting with external partners and messaging middleware for internal partners/systems.</p>
+<h5> Batching</h5>
+<p>Some business processes such as monthly billing require batching capability instead of real-time interaction. In some other cases, business systems are inherently batch-oriented such as mainframe applications. In some cases, batching is used by small IT organizations to avoid higher IT and communication costs.</p>
+<p>Services may have to support batch-oriented interaction in addition to real-time interaction. In order to support batching, the messaging model must support the following elements either implicitly or explicitly:</p>
+<ul>
+  <li>Batch-id</li>
+  <li> Sequence-number and </li>
+  <li> Batch-termination-flag</li>
+</ul>
+<h5>Reliability</h5>
+<p>The Technology Layer requires that the messaging systems of business partners that are involved in consuming and providing business services must support reliability in terms of Guaranteed Delivery, Guaranteed Processing and Visibility. </p>
+<h6>Guaranteed Message Delivery</h6>
+<p>Guaranteed Message Delivery is a mechanism to ensure that the message reaches the incoming message port of a service based on the QOS parameters such as only once or at-least once. </p>
+<p>If HTTP is used as a transport, then higher-level protocols such as WS-ReliableMessaging must be used, if guaranteed message delivery is a requirement.</p>
+<h6>Guaranteed Message Processing</h6>
+<p>Guaranteed Message Processing is a mechanism to ensure that the message not only reaches the incoming message port but that it is correctly processed by the destination business service. It provides the inherent ability to ensure that a business service dialogue is completed to the confirmed satisfaction of all parties involved in that business transaction.</p>
+<h6>Guaranteed Business Processing </h6>
+<p>Guaranteed Business Processing can be achieved by sending a &lsquo;Business Response or Business Acknowledgement&rsquo; message/MEP for every &lsquo;Business Request&rsquo; message/MEP. Integration infrastructure does not need to implement business-level guaranteed processing functionality within itself, but will be implemented specific to business scenarios at the enterprise application level. </p>
+<h6>Visibility</h6>
+<p>Visibility gives a global view about the consistency and the current state of the various systems that were involved in business service execution. </p>
+<p>Business users need visibility at the business document level and technical production support users need visibility at both business document level as well as at the messaging level including detailed logs and audits for debugging and managing. Any other visibility functionality other than related to guaranteed-delivery and guaranteed-processing need not be part of service infrastructure or integration application. </p>
+<p>For example, capturing the number of successfully processed orders from a specific partner or system is a valid visibility requirement from a service point of view. Also, resending the messages that are not delivered due to, say, unavailability of the target system is part of the visibility/monitoring and management tool. </p>
+<p>The following are some of the meta-data elements that would be captured and managed by the visibility tool:</p>
+<ul>
+  <li>Message ID &ndash; a globally unique ID</li>
+  <li> Related Message ID &ndash; correlation ID </li>
+  <li> From Partner Profile ID &ndash; points to the action specific partner profile</li>
+  <li> To Partner Profile ID - points to the action specific partner profile</li>
+  <li> Application Environment &ndash; environment context such as Production, Test etc.</li>
+  <li> Timestamp &ndash; created and received date time</li>
+  <li> Message Exchange Pattern &ndash; MEP used by the service</li>
+  <li>Business Document Context (Business Object IDs) &ndash; a composite key identifying the business document uniquely</li>
+  <li> Message Blob &ndash; sent or received message</li>
+</ul>
+<p>The above attributes address only the technology level visibility and would be useful only to the system administrators. If business process level visibility in terms of KPI is required, then BAM component must be used.</p>
+<h5> Security</h5>
+<p>Hackers and cyber terrorists are launching security attacks with increasing frequency and sophistication. The traditional approach to security - a firewall combined with an anti-virus - is incapable of protecting from today&rsquo;s advanced threats. </p>
+<p>However, a formidable defense can be erected by implementing security using a layered approach as mentioned below. By selectively installing security measures on five levels (as listed below) within the IT environment, digital assets can be adequately protected and the risk of exposure to a catastrophic network breach can be greatly reduced. </p>
+<p>The layered-security approach centers on maintaining appropriate security measures and procedures at five different levels within an IT environment:</p>
+<ol>
+  <li>Perimeter</li>
+  <li> Network</li>
+  <li> Host</li>
+  <li> Application</li>
+  <li> Data</li>
+</ol>
+<p>In the context of SOA based integration, the technology layer requires and recommends that the messaging systems of business partners that are involved in consuming and providing business critical services are fully secured by preventing unauthorized users or systems from deliberately or accidentally accessing the business services.</p>
+<p>In the context of SOA based integration, security could be applied at two different layers as follows:</p>
+<ul>
+  <li> Point-to-Point Transport Level Security</li>
+  <li> End-to-End Business Message Level Security</li>
+</ul>
+<p>In most intra-enterprise business scenarios, transport level security is sufficient. In some inter-enterprise business scenarios, especially when an intermediary node is involved, business message level security is desired.</p>
+<p>Following are the security features that could be implemented or deployed for securing business services, depending on specific business scenarios and requirements:</p>
+<ul>
+  <li> Authentication</li>
+  <li> Authorization</li>
+  <li> Confidentiality</li>
+  <li> Integrity</li>
+  <li> Non-Repudiation</li>
+</ul>
+<p>From the &lsquo;standards&rsquo; and &lsquo;best practices&rsquo; perspective, for inter-enterprise services, SSL is preferred for transport level security and WS-Security is preferred for message level security. SSL offers the security features of authentication, confidentiality and integrity at the transport level, whereas WS-Security offers all of the above-mentioned security features at the message level.</p>
+<h6>Authentication Patterns</h6>
+<p>Authentication is the process of identifying an individual or system using the credentials of that individual or system.</p>
+<p>Following are the 2 high level patterns of authentication:</p>
+<ol>
+  <li>Direct Authentication</li>
+  <li> Brokered Authentication</li>
+</ol>
+<p>Both the Direct Authentication pattern and the Brokered Authentication pattern focus on the relationships that exist between a client and service participating in a Web service interaction. </p>
+<p>When both the client and service participate in a trust relationship, that allows them to exchange and validate credentials including passwords, direct authentication can be performed. Direct authentication requires the presentation of credentials, which are typically a user name and password. The service uses these credentials to authenticate the request directly.\</p>
+<p>In a situation where the client and service do not share a direct trust relationship, broker authentication can be performed. Credentials are used to authenticate with the broker, which issues a security token. The security token is then used to authenticate with services. </p>
+<p>Depending on the type of token, security protocol standard etc, following are the 3 kinds of brokered authentication mechanisms that are widely used:</p>
+<ol>
+  <li>X.509 PKI</li>
+  <li> Kerberos</li>
+  <li> Security Token Service (ex, SAML)</li>
+</ol>
+<h6>Authorization Patterns</h6>
+<p>Following are the 2 different methods of performing authorization:</p>
+<ul>
+  <li> Role-based</li>
+  <li> Resource-based</li>
+</ul>
+<p> Role-based authorization is used to associate clients and groups with the permissions that they need to perform particular functions or access resources. When a user or group is added to a role, the user or group automatically inherits the various security permissions. Role-based authorization can be declarative or imperative.</p>
+<p>Resource-based authorization is performed declaratively on a resource, depending on the type of the resource and the mechanism used to perform authorization. Resource based authorization can be based on:</p>
+<ul>
+  <li>Access Control Lists (ACLs) or </li>
+  <li> URLs</li>
+</ul>
+<p>Individual resources are secured using ACLs that specify the type of operation a particular security principal or group to which a security principal belongs can perform on the object.</p>
+<p>URLs are declared with permissions for the URL to define who is authorized to access the URL in question.</p>
+<h6>Message Protection Patterns</h6>
+<p>Web services send and receive plaintext messages over standard Internet protocols such as HTTP. Such plaintext messages can be intercepted by an attacker and potentially viewed or even modified for malicious purposes. By using message protection, you can protect sensitive data against threats such as eavesdropping and data tampering.</p>
+<p>Message protection can be divided into three main categories:</p>
+<ul>
+  <li>Data Integrity</li>
+  <li> Data Origin Authentication</li>
+  <li>Data Confidentiality</li>
+</ul>
+<p>Data integrity is the verification that a message has not changed in transit.</p>
+<p>Data Origin Authentication takes data integrity a step further and supports the ability to identify and validate the origin of a message.</p>
+<p>Data Confidentiality is the encrypting of message data so that unauthorized entities cannot view the contents of the message. Data confidentiality can be applied in two steps:</p>
+<ol>
+  <li>Encrypting the data. In this step, the sender converts plaintext to cipher text, rendering it unintelligible to parties other than the intended recipient.</li>
+  <li> Decrypting the data. In this step, cipher text is rendered intelligible to the intended recipient by converting it back to plaintext.</li>
+</ol>
+<p>Two types of cryptography can be used to provide data confidentiality: symmetric or asymmetric.</p>
+<p>With symmetric cryptography, both the sender and recipient share a key that is used to perform both encryption and decryption. Symmetric cryptography is commonly used to perform encryption. It also provides data integrity when symmetric keys are used in conjunction with other algorithms to create Message Authentication Codes (MACs). Some of the more common symmetric cryptography algorithms include Rijndael (AES) and Triple DES (3DES). These algorithms are designed to perform efficiently on common hardware architectures.</p>
+<p>Symmetric cryptography is comparatively simple in nature, because the secret key that is used for both encryption and decryption is shared between the sender and the recipient. However, before communication can occur, the sender and the recipient must exchange a shared secret key. In some cases (such as SSL), asymmetric cryptography can be used to ensure that the initial key exchange occurs over a secure channel.</p>
+<p>With asymmetric cryptography (also known as public key cryptography), the sender encrypts data with one key, and the recipient uses a different key to decrypt ciphertext. The encryption key and its matching decryption key are often referred to as a public/private key pair. The public key of the recipient is used to encrypt data. It can be openly distributed to those who want to encrypt a message to the recipient. The private key of the recipient is used to decrypt messages, and only the recipient must be able to access it. The most commonly used asymmetric algorithm is the RSA algorithm.</p>
+<p>In the context of SOA for integration, it is important to agree on the cryptography algorithms to be used between service providers and consumers.</p>
+<p>Data Origin Authentication enables the recipient to verify that messages have not been tampered with in transit (data integrity) and that they originate from the expected sender (authenticity).</p>
+<p>In cases where the client denies having performed the action (non-repudiation), you can use digital signatures to provide evidence that a client has performed a particular action that is related to data. Digital signatures can be used for non-repudiation purposes, but they may not be sufficient to provide legal proof of non-repudiation. By itself, a digital signature is just a mechanism to capture a client&rsquo;s association to data. In cases where data has been digitally signed, the degree to which an individual or organization can be held accountable is established in an agreement between the party that requires digital signatures and the owner of the digital signature.</p>
+<p>Two types of signatures can be used to sign a message: symmetric and asymmetric.</p>
+<p>A symmetric signature is created by using a shared secret to sign and verify the message. A symmetric signature is commonly known as a Message Authentication Code (MAC). A MAC is created by computing a checksum with the message content and the shared secret. A MAC can be verified only by a party that has both the shared secret and the original message content that was used to create the MAC.</p>
+<p>The most common type of MAC is a Hashed Message Authentication Code (HMAC). The HMAC protocol uses a shared secret and a hashing algorithm (such as MD5, SHA-1, or SHA-256) to create the signature, which is added to the message. The message recipient uses the shared secret and the message content to verify the signature by recreating the HMAC and comparing it to the HMAC that was sent in the message.</p>
+<p>An asymmetric signature is processed with two different keys; one key is used to create the signature and the other key is used to verify the signature. The two keys are related to one another and are commonly referred to as a public/private key pair. The public key is generally available and can be distributed with the message; the private key is kept secret by the owner and is never sent in a message. A signature that is created and verified with an asymmetric public/private key pair is referred to as a digital signature. </p>
+<p>The algorithm that is most commonly used to create a digital signature is the Digital Signature Algorithm (DSA). DSA uses the public/private key pairs created for use with the RSA algorithm to create and verify signatures.</p>
+<p> For both signing and encryption purposes, asymmetric keys are often managed through a Public Key Infrastructure (PKI). Information that describes the client is bound to its public key through endorsement from a trusted party to form a certificate. Certificates allow a message recipient to verify the private key in a client&rsquo;s signature using the public key in the client&rsquo;s certificate.</p>
+<h6>Resource Access Patterns</h6>
+<p>Web services represent a programmable interface that applications often use to access resources, such as the local file system, databases, or other Web services. Distributed applications can consist of multiple interacting Web services, so you have to consider the needs and constraints of the entire application instead of focusing on a single point of interaction. Authentication, authorization, and auditing, along with other environmental and operational requirements (such as scalability requirements at each resource access interface), should combine to influence the security solution.</p>
+<p>The following methods can be used to access resources:</p>
+<ul>
+  <li>Impersonation</li>
+  <li> Delegation</li>
+  <li> Protocol Transition</li>
+  <li> Trusted Subsystem</li>
+</ul>
+<p>Impersonation is the act of assuming a different identity on a temporary basis so that a different security context or set of credentials can be used to access a resource. When accessing local resources, such as a file in the local file system, you need only the security context. However, when accessing resources that require authentication, such as a Web service or database, credentials are required.</p>
+<p>Delegation is not the same as impersonation; however, it requires impersonation to work. This is a process where the service account is allowed to access a remote resource on behalf of another account, which is typically the client accessing a service. Impersonation is required so that the service account can access the credentials of the account being delegated and send those credentials to the remote resource. For delegation to work, the account being delegated must also be configured to allow delegation.</p>
+<p>Protocol transition is a process where the service account transitions an identity that was authenticated using a non-native protocol into a native security context. This can also be used to implement a trusted subsystem by using the service account&rsquo;s identity instead of the client&rsquo;s identity to access resources. </p>
+<p>Trusted Subsystem is a process where a trusted business identity is used to access a resource on behalf of the client. The identity could belong to the service account or it could be the identity of an application account created specifically for access to remote resources. There are many different reasons for using a trusted subsystem, but the most common reason is to take advantage of resource sharing techniques, such as connection pooling associated with database connections.</p>
+<h6>Service Boundary Protection Patterns</h6>
+<p>&lsquo;Message Protection Patterns&rsquo;, described how to provide protection against data tampering and unauthorized access to message content. However, in many cases you will need to provide additional protection at the service&rsquo;s boundary to:</p>
+<ul>
+  <li>Protect Web services against malformed or malicious content.</li>
+  <li> Ensure that when a Web service operation fails you do not accidentally reveal confidential information in the Fault message that is returned.</li>
+  <li>Prevent an attacker from intercepting a message and replaying it to force a Web service operation to execute multiple times.</li>
+</ul>
+<p>Service Boundary Protection includes the following:</p>
+<ul>
+  <li>Message Replay Detection</li>
+  <li> Message Validator</li>
+  <li> Exception Shielding</li>
+</ul>
+<p><b>Message Replay Detection:</b> When the Web service processes the messages, data is updated or business processes are initiated. If a message that is intended for one of these Web services is intercepted and replayed, there is a risk that the same operation might be performed multiple times. Solution is to cache an identifier for incoming messages, and use message replay detection to identify and reject messages that match an entry in the replay detection cache. Message replay detection requires that individual messages can be uniquely identified.</p>
+<p><b>Message Validator:</b> A Web service interacts with other applications over a network. Incoming data may be malformed and may have been transmitted for malicious purposes. There is also a risk of injection attacks, where data from incoming messages is tampered with to include additional syntax. Assume that all input data is malicious until proven otherwise, and use message validation to protect against input attacks, such as SQL injection, buffer overflows, and other types of attacks. The message validation logic enforces a well-defined policy that specifies which parts of a request message are required for the Web service to successfully process it. It validates the XML message payloads against an XML schema (XSD) to ensure that they are well-formed and consistent with what the Web service expects to process. The validation logic also measures the messages against certain criteria by examining the message size, the message content, and the character sets that are used. Any message that does not meet the criteria is rejected.</p>
+<p><b>Exception Shielding:</b> Use the Exception Shielding pattern to sanitize unsafe exceptions by replacing them with exceptions that are safe by design. Return only those exceptions to the client that have been sanitized or exceptions that are safe by design. Exceptions that are safe by design do not contain sensitive information in the exception message, and they do not contain a detailed stack trace, either of which might reveal sensitive information about the Web service&rsquo;s inner workings.</p>
+<p>Oracle AS10g and BPEL PM provides most of the common security infrastructure and OWSM provides a policy driven security features for advanced deployments. The above patterns must be considered for a given service before deciding on using the Oracle SOA Suite components.</p>
+<h5>Standards</h5>
+<p>Industry standards related to the above design patterns must be considered for higher service interoperability. </p>
+<p>Specific standards supported by AS10g, BPEL PM and the Oracle Web services stack are listed below: (MOTM and WS-ReliableMessaging standards will be supported in AS11g)</p>
+<p> HTTP 1.0 - http://www.w3.org/Protocols/HTTP/1.0/draft-ietf-http-spec.html<br>
+  HTTP 1.1 - http://www.w3.org/Protocols/rfc2616/rfc2616.html<br>
+  XML 1.0 - http://www.w3.org/TR/REC-xml<br>
+  XML Namespaces 1.0 - http://www.w3.org/TR/1999/REC-xml-names-19990114/<br>
+  XML Schema 1.0 - http://www.w3.org/TR/xmlschema-0/ <br>
+  WSDL 1.1 - http://www.w3.org/TR/wsdl<br>
+  SOAP 1.1 - http://www.w3.org/TR/soap/<br>
+  SOAP 1.2 - http://www.w3.org/2000/xp/Group/<br>
+  SOAP with Attachments &ndash; http://www.w3.org/TR/SOAP-attachments<br>
+  MTOM &ndash; http://www.w3.org/TR/soap12-mtom/<br>
+  WS-I Basic Profile - http://www.ws-i.org/Profiles/BasicProfile-1.0-2004-04-16.html<br>
+  WS-Addressing 1.0 - http://www.w3.org/Submission/ws-addressing/<br>
+  WS-ReliableMessaging - http://schemas.xmlsoap.org/ws/2005/02/rm/<br>
+  WS-Security 1.0 - http://www.ibm.com/developerworks/library/specification/ws-secure/<br>
+  BPEL 1.1 - http://www.ibm.com/developerworks/library/specification/ws-bpel/<br>
+  BPEL 2.0 - http://www.oasis-open.org/committees/download.php/10347/wsbpel-specification-draft-120204.htm (only partial support)<br>
+  UDDI v3 - http://uddi.org/pubs/uddi_v3.htm<br>
+  XPATH 1.0 - http://www.w3.org/TR/xpath<br>
+  XSLT 1.0 - http://www.w3.org/TR/xslt<br>
+  XQuery 1.0 - http://www.w3.org/TR/xquery/</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="FAULT"></a>FAULT RAISING AND HANDLING</h3>
+<p>In service-oriented messaging infrastructure, faults or exceptions can occur either at transport level or message processing level (such as SOAP) or business service level. </p>
+<p>It is important to handle every fault scenario to build robust and predictable services while simultaneously providing visibility into the state of the system. </p>
+<p>Broadly, exceptions or faults can be classified horizontally into the following categories:</p>
+<ul>
+  <li><b>Unrecoverable Exceptions:</b> Unrecoverable exceptions are unexpected fatal error conditions within a system that cannot be handled gracefully by the involved systems or services automatically and require manual handling.</li>
+  <li><b>Recoverable Exceptions:</b> Recoverable exceptions denote that some condition in the system has not been met for a given context but may be recoverable gracefully through alternative means by the involved systems or services automatically.</li>
+</ul>
+<p>Again, broadly, exceptions can further be classified vertically into the following categories:</p>
+<ul>
+  <li><b>System Exceptions:</b> System exceptions are hardware or software related issues that are related to IT organization of an enterprise. Some of the system exceptions are recoverable and most of them are unrecoverable automatically and requires manual handling.</li>
+  <li> <b>Business Exceptions:</b> Business exceptions are part of the business service interface and implementation contract having business semantics. These exceptions are expected by the involved parties (i.e., service producers and service consumers) and hence are recoverable through an alternative business process flow or human workflow.</li>
+</ul>
+<p>Following are the system exception scenarios that can occur in a service-oriented system and the corresponding processing patterns:</p>
+<ul>
+  <li><b>System Resource Exceptions:</b> System resource exceptions indicate a fatal situation related to system resources. System Crash, Resource Unavailability, Out-of-Memory exception, etc. could fall under this category. These types of exceptions can either be handled manually or automatically. By acquiring an alternative resource, systems can automatically recover from these exceptions. For example, in case of resource unavailability, fail over to an alternative resource or retry mechanisms might allow the system to recover. But typically, resource exceptions are handled manually by restarting or reallocating resources.<br>
+      <br>
+    In case of unrecoverable exceptions, such as System Crash or Out-of-Memory exceptions, &lsquo;networking and system management&rsquo; tools must be used to detect the situation and raise an alert to the involved parties. System Resource Exceptions must be raised and alert both business users as well as IT support personnel so that all the involved parties are aware of the system as well as business state. But System Resource Exceptions should be handled only by the IT support personnel. <br>
+    <br>
+    Synchronous MEP based Services will throw system resource exceptions back to the consumer at the time of consuming the service as a fault message.<br>
+  </li>
+  <li> <b>Internal System Exceptions:</b> Internal system exceptions occur usually due to programming logic errors on the service provider side such as null pointer exceptions. Usually these exceptions occur when the provider is not cooperating to handle that particular interaction from the consumer&rsquo;s perspective. Ideally these exception conditions should never occur. But practically it is impossible to avoid these exceptions.<br>
+      <br>
+    The service consumers cannot handle exceptions on the provider side and hence optionally exceptions may be raised to the consumer for visibility purposes, but the exception must be handled by the provider only. Exceptions must be logged and the provider must raise an appropriate alert for visibility purposes. Since it is an internal problem, the same message can be processed again after fixing the problem either automatically or manually. Internal System Exceptions must be raised and alert both business users as well as IT support personnel so that all the involved parties are aware of the system as well as business state. Internal System Exceptions should either be handled by the IT support personnel or business users or both depending upon the situation. <br>
+    <br>
+    Synchronous MEP based Services will throw internal system exceptions back to the consumer as a fault message.<br>
+  </li>
+  <li><b>External System Exceptions:</b> External system exceptions occur usually due to programming logic errors on the consumer side. Usually these exceptions occur when the consumer violates the interaction agreement from the provider&rsquo;s perspective. Ideally these exception conditions should never occur. But practically it is impossible to avoid these kinds of exceptions. <br>
+      <br>
+    Exceptions due to consumer error should be thrown to the consumer by the provider so that it may be handled by the consumer by taking alternative actions and if not possible, exceptions must be logged and an appropriate alert must be raised for visibility purposes by the consumer. External System Exceptions must be raised and alert both business users as well as IT support personnel so that all the involved parties are aware of the system as well as business state. External System Exceptions should either be handled by the IT support personnel or business users or both depending upon the business requirements.<br>
+    <br>
+    Synchronous MEP based Services will throw external system exceptions back to the consumer as a fault message.</li>
+</ul>
+<p>The details of raising and handling faults at every service-oriented messaging layer must be defined and an example is provided below:</p>
+<p><b>Transport Layer</b></p>
+<p>The fault bindings for the transports used from the consumer&rsquo;s perspective is defined below:</p>
+<ul>
+  <li>HTTP </li>
+  <li>System Resource Exception
+      <ul>
+        <li>404 Not Found</li>
+        <li>503 Service Unavailable</li>
+      </ul>
+  </li>
+  <li>Internal and External System Exception
+      <ul>
+        <li>500 Internal Server Error</li>
+      </ul>
+  </li>
+</ul>
+<p><b>SOAP Layer</b></p>
+<p>Exceptions are propagated to the service consumer using the SOAP1.1 Fault message. A SOAP1.1 fault message is an envelope that has a &lt;soap:Fault&gt; element as single child element of the &lt;soap:Body&gt; element and the &lt;soap:Fault&gt; element must not have element children other than &lt;faultcode&gt;, &lt;faultstring&gt;, &lt;faultactor&gt; and &lt;detail&gt;. </p>
+<p>In case of HTTP transport binding, &lsquo;500 Internal Server Error&rsquo; status code must be used to carry the soap fault message.</p>
+<p><b>Business Service Layer</b></p>
+<p>Business faults must be propagated to the business service consumer as a literal document in a SOAP1.1 envelope.</p>
+<p>Synchronous MEP based services will raise all the faults to the service consumer as SOAP Faults. The &lt;detail&gt; element of the SOAP Fault will carry the detailed Fault message.</p>
+<p>From the BPEL perspective, throw and catch activities and fault handlers must be used appropriately. Also BPEL based human workflow process can be used to handle exceptions manually.</p>
+<p>Fault handling in long running transaction scenarios might involve compensation handlers to bring the system back to a consistent state.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a name="TEMPLATES"></a>WS-I COMPLIAN WSDL TEMPLATES </h3>
+<p>The Web Services Interoperability Organization is an open industry effort chartered to promote Web services interoperability across platforms, applications, and programming languages. The organization brings together a diverse community of Web services leaders to respond to customer needs by providing guidance, recommended practices, and supporting resources for developing interoperable Web services.</p>
+<p> Section 5 of the WS-I Basic Profile 1.0 specification relates to conformant use of WSDL to describe a Web service. Of all the sections in the profile specification, it is probably of most interest and importance to Web services developers. It begins by addressing issues related to WSDL document structure and composition.</p>
+<p> The first issue addressed is that of correct usage of the wsdl:import feature. The wsdl:import feature is intended to be used in the same manner as the xsd:import feature, to import definitions from a foreign namespace. e.g. a namespace that is not the same as the value of the targetNamespace attribute of the importing WSDL document. Additionally, the WS-I Basic Profile constrains use of the &lt;wsdl:import&gt; feature to the import of WSDL definition components from another WSDL document. This means that you cannot use the &lt;wsdl:import&gt; feature to import schema definitions from an XSD file.</p>
+<p> The profile also constrains the order in which the top-level WSDL elements are to be used. Specifically, it requires that the wsdl:import element, if present, precede all other top-level WSDL elements. It is then followed by the &lt;wsdl:types&gt; element, and then &lt;wsdl:message&gt;, &lt;wsdl:portType&gt;, &lt;wsdl:binding&gt; and &lt;wsdl:service&gt; elements which may appear as many times as needed, and in any order.</p>
+<p> This constraint, like many others in the specification, is based on decisions made by the W3C Working Group defining the next version of the Web services specifications for SOAP and WSDL. The reason that the Basic Profile WG has adopted certain decisions made by the W3C WGs is that they wanted to resolve identified interoperability issues in a manner consistent with the direction of the W3C WG drafting the 1.2 versions of the SOAP and WSDL specifications. This approach is intended to facilitate a smoother transition to the next version of the specifications once they reach W3C Recommendation status and are incorporated into subsequent WS-I Profiles.</p>
+<h4> SOAP Encoding Style</h4>
+<p> A WSDL binding describes how the service is bound to a messaging protocol, particularly the SOAP messaging protocol. WSDL 1.1 distinguishes between two soap message binding styles: document and RPC. Here's how each style affects the contents of &lt;SOAP:Body&gt;. </p>
+<ul>
+  <li> <b>Document:</b> &lt;SOAP:Body&gt; contains one or more child elements called parts. There are no SOAP formatting rules for what the &lt;SOAP:Body&gt; contains; it contains whatever the sender and the receiver agree upon.</li>
+  <li> <b>RPC:</b> RPC implies that &lt;SOAP:Body&gt; contains an element with the name of the method or remote procedure being invoked. This element in turn contains an element for each parameter of that procedure. </li>
+</ul>
+<p> For applications that use serialization/deserialization to abstract away the data wire format, there's one more choice to be made: the serialization format. There are two popular serialization formats today:</p>
+<ul>
+  <li><b>SOAP Encoding:</b> SOAP encoding is a set of serialization rules defined in section 5 of SOAP 1.1 and is sometimes referred to as &quot;section 5 encoding.&quot; The rules specify how objects, structures, arrays, and object graphs should be serialized. Generally speaking, an application using SOAP encoding is focused on remote procedure calls and will likely use RPC message style.</li>
+  <li> <b>Literal:</b> Data is serialized according to a schema. In practice, this schema is usually expressed using W3C XML Schema. Although there are no prescribed rules for serializing objects, structures, and graphs, etc., the service's schema (usually XSD) describes the application-level Infoset of each of the service's messages. </li>
+</ul>
+<p> Thus it gives us 4 different choices of soap binding styles. In addition to these 4 styles, a 5th binding style, which is commonly called the &ldquo;document/literal wrapped&rdquo;, is also available to choose. WS-I Basic Profile 1.0 disallows encoded content due to the complexity and incomplete support for the spec by various toolkits; only Document/Literal and RPC/Literal are allowed.</p>
+<p>Document/Literal is highly interoperable over other styles (hence recommended by WS-I):</p>
+<ul>
+  <li> Messaging oriented as opposed to RPC</li>
+  <li> Enables loosely-coupled service implementation instead of tightly coupled</li>
+  <li> Content within the &lt;SOAP:Body&gt; can be easily validated against a XML Schema (XSD)</li>
+  <li> .NET Platform uses Document/Literal style as its default</li>
+</ul>
+<p>Whereas the RPC/Encoded style has the following weaknesses:</p>
+<ul>
+  <li> Encourages tightly coupled service implementation</li>
+  <li> The type encoding info (such as xsi:type) is an overhead, degrading throughput performance</li>
+  <li> Message validation using XSD cannot be easily validated</li>
+</ul>
+<p> In essence, there are two compelling reasons to use document-style messaging. One is to gain the independence it provides. Its strength lies in decoupling interfaces between services, such as in application-to-application and system-to-system interfaces, to the point that they can change completely independently of one another. The other is that document-style messaging puts the full power of XML for structuring and encoding information at our disposal.</p>
+<p>The following links provide the BPEL friendly WSDL templates (with Partner Link Types) corresponding to the message exchange patterns defined elsewhere in this document. These documents use specific naming conventions and can be reused by modifying the version, verb and noun strings appropriately.</p>
+<ul>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE1.HTM" target="_blank"> Sample 1 - SYNCHRONOUS-QUERY-RESPONSE-FAULT OR SYNCHRONOUS-REQUEST-RESPONSE-FAULT &ndash; MESSAGE EXCHANGE PATTERNS</a></li>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE2.HTM" target="_blank">Sample 2 - SYNCHRONOUSE-REQUEST-ACK-FAULT &ndash; MESSAGE EXCHANGE PATTERN</a></li>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE3.HTM" target="_blank">Sample 3 - ASYNCHRONOUS-ONE-WAY &ndash; MESSAGE EXCHANGE PATTERN</a></li>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE4.HTM" target="_blank">Sample 4 - ASYNCHRONOUS-REQUEST-RESPONSE &ndash; MESSAGE EXCHANGE PATTERN</a></li>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE5.HTM" target="_blank">Sample 5 - ASYNCHRONOUS-REQUEST-ACK OR ASYNCHRONOUS-REQUEST-ACK-WITH-TIMEOUT OR ASYNCHRONOUS-REQUEST-ACK-WITH-TIMEOUT-NOTIFICATION OR ASYNCHRONOUS-REQUEST-WITH-OPTIONAL-ACK-WITH-TIMEOUT &ndash; MESSAGE EXCHANGE PATTERN</a></li>
+  <li><a href="SOA_INTEROP_GUIDELINES_SAMPLE6.HTM" target="_blank">Sample 6 - ASYNCHRONOUS-REQUEST-RESPONSE-WITH-OPTIONAL-ACK-WITH-TIMEOUT &ndash; MESSAGE EXCHANGE PATTERNS</a></li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

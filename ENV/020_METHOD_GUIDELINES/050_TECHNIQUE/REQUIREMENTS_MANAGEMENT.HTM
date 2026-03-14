@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Requirements Management Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>ENTERPRISE REQUIREMENTS MANAGEMENT</h2>
+<p>The purpose of this technique is to provide guidance for managing requirements at the enterprise level. </p>
+<p>There could be multiple reasons for managing requirements at the enterprise level, but the main reason is probably to be able to share and reuse requirements across the enterprise and eventually to reuse the code or services that implement those requirements. </p>
+<p>Enterprise requirements management represents an extension to, rather than a replacement for, traditional requirements gathering techniques. The requirements gathering procedures established by an enterprise are reused and extended by the approach outlined in this document. However, more interaction is required between business and IT in order for the approach to be successful. The business will no longer be able to simply draft requirements and throw them over the wall, as an iterative procedure is required.</p>
+<p>A few of the key differentiations of enterprise requirements management are:</p>
+<ul>
+  <li>Requirements are harvested with an eye towards enterprise reuse, which iteratively refines project requirements into enterprise requirements.</li>
+  <li> Requirements are used to construct an enterprise scoped Function Model that allows an enterprise to define an appropriate taxonomy that assists with requirement tracking and in the case of SOA with service identification.</li>
+  <li> Requirements are classified against the Function Model rather within a single project&rsquo;s scope.</li>
+</ul>
+<p>As with any type of requirements gathering technique, a certain amount of facilitation and coordination skills are required. Requirements gathering requires an attention to detail, as well as the foresight required to ask the questions necessary to fill in the gaps and gain an understanding of supplemental, as well as functional requirements for a system. </p>
+<p>Enterprise requirements management requires these same skills to be applied at the <em>enterprise</em> level, with the addition of extra analytical skills required in creating Function Models, classifying requirements and models, as well as analyzing the project requirements against existing enterprise requirements. These skills are definitely necessary to successfully navigate through the enterprise requirements gathering exercises. </p>
+<h4>Requirements as Enterprise Assets </h4>
+<p>Enterprise requirements management is a little different from traditional requirements management. In traditional approaches requirements could be managed in project scope, i.e., each project is defining and managing its own requirements to create a solution in the scope of the project. But with enterprise requirements management, the goal is to share code or services and across the enterprise and as a consequence the projects must share the corresponding requirements as well. In addition, this leads to the need to manage all requirements on an enterprise level to make these requirements visible across all projects, hence to support the process to identify similar or matching requirements, and thereby, identifying either completely new candidates for reuse, or to discovery existing reusable code or services.</p>
+<p>Scoping requirements at the enterprise level, rather than at the application or project level enables project architecture and planning exercises to remain connected to the overall enterprise architecture. Managing requirements centrally, at the enterprise level, also demands increased discipline in order to prevent the data collected from becoming disorganized where it will lose its effectiveness. This means that an effective and consistent classification system is required to ensure that Function Models and their respective requirements are always classified correctly. </p>
+<p>Classification around Function Models is an effective way to accomplish this. In this approach top-level Function Models create the original branch of an enterprise requirements repository. A model is not necessarily required to create a branch in the repository. For instance a repository may begin with two branches, such as employee-facing and customer-facing. The employee branch would then consist of the models regarding employee servicing (on boarding, payroll, etc), where the customer-facing branch would cover topics such as sales channels, customer service, etc. This creates a tree structure comparable to folders on a hard disk. The path within the tree structure gets the name of the business category. </p>
+<p>It is a good practice to create such a high-level taxonomy structure up front, rather than building it out as applications are constructed. There is little doubt that the taxonomy will grow over time, but at least the general framework and structure has been established up front, which sets the framework for the first application. </p>
+<p>Another reason for tracking enterprise requirements is that they can be linked to the components that implement them on various levels, such as, applications or services. In the case of services, this is especially useful as requirements form the basis of the service contract definition in a rough form. </p>
+<p>In addition to the requirements defined by the business, other requirements may need to be covered to conform to needs of different stakeholder in the enterprise as well. Specifically, if the reference architecture proposes shared runtime platforms, implementations may need to follow special requirements to ensure coexistence of different reusable code or services, or several versions of the same reusable code or services in the same deployment environment. It is important to gather additional requirements from other stakeholders as early as possible to provide enough information for good solution design.</p>
+<h5><a name="NEED"></a>Need for a Centralized Repository of Enterprise Requirements and Models</h5>
+<p><a name="ERREQ"></a>In order to manage requirements at the enterprise level, an enterprise repository should be established to manage and organize the taxonomy, Function Models, and requirements. The following represents a basic set of requirements for an enterprise requirements repository: </p>
+<ul>
+  <li> the ability to create an arbitrary tree structure of data</li>
+  <li> simple navigation </li>
+  <li> documents can exist as both branch nodes, as well as leaf nodes</li>
+  <li> a customizable metadata capability can be attached to each node allowing for a robust set of information to be collected </li>
+  <li> ability to search against meta-data</li>
+  <li> the ability to link or cross-reference between nodes to allow for dependency tracking</li>
+</ul>
+<p>The <a href="IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique describes the suggested meta models for requirements and models. </p>
+<p>The Function Models are used to group requirements within the enterprise requirements repository. These models may also represent the branches within the repository. Typically, the models created will not be as complete to depict the whole enterprise but should be complete enough to preferably depict all capabilities implemented by IT or at least within the given scope. The more complete the set of models the more reuse can be created and the easier is it to do impact analysis on changes. </p>
+<p>The reason for using Function Models to classify requirements is for purposes of navigation and scale. Navigating through the Function Model should be quite natural so you can easily find an end point by navigating through a tree-like structure (think binary search, vs. linear search). Once you get to the branch containing the relevant Function Model, the requirements for the model are attached to either the entire model itself, or specific activities within the model. This method also makes it easier to identify duplicate requirements, and is scalable to allow for large numbers of requirements. </p>
+<p>The Function Models themselves consist of the set of connected business steps that may relate directly to a particular business process. The model is broken down into a set of pathways (or relationships) between logical business activities and process activities. Business activities represent the business steps that can no longer be decomposed into separate Function Models. Process activities represent business steps that are used to navigate to a lower level Function Model, and provide the basis for Function Model composition. Function Model composition is also used to prevent Function Models from becoming overly complicated. Decomposition is a key identifier for potential Function Model reuse, as multiple Function Models throughout the enterprise may use patterns of Function Models. </p>
+<p>The Function Models themselves consist of the set of connected business steps that may relate directly to a particular business process. The model is broken down into a set of pathways (or relationships) between logical business activities and process activities. Business activities represent the business steps that can no longer be decomposed into separate Function Models. Process activities represent business steps that are used to navigate to a lower level Function Model, and provide the basis for Function Model composition. Function Model composition is also used to prevent Function Models from becoming overly complicated. Decomposition is a key identifier for potential Function Model reuse, as multiple Function Models throughout the enterprise may use patterns of Function Models. </p>
+<p>When a requirement or model is created it begins in the proposed state. The requirements and models proposed should be validated before assigning an owner. This is typically coordinated with the validation of the proposed implementation approach to the requirements and models. If a requirement or model cannot be delivered within a single iteration, a new version of the requirement or model needs to be created for each iteration planned. This will ensure all requirements and models are aligned with the planned implementation scope and therefore can be used later for test design as well. As a consequence one asset in proposed state can be split into several versions of the asset still in the proposed state. Declined requirements and models will need to be changed until they pass the validation or may be abandoned from the project. Only if the requirement or model will be realized by IT they need to be changed to be implemented as soon as the implementation is available in production. If the model becomes no longer relevant to the business or as soon as a new version is validated it enters the Deprecated state. If no implementation of the model exists in production anymore, the asset can be retired. If a requirement becomes obsolete, the state can be changed to retired directly. </p>
+<p>Refer to the description of the lifecycles of a model and a requirement in the <a href="IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique. </p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Enterprise-Managed Requirements</b> - This technique results in managed requirements at enterprise level, with the purpose to make these requirements visible across projects. This includes an effective and consistent classification system to classify requirements. </p>
+<p>Classification around Function Models is the suggested approach to accomplish this. In this approach, top-level Function Models form the basis for the original branch of an enterprise requirements repository. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Analyze Business Strategy.</td>
+    <td>Analyzed Business Strategy </td>
+    <td> The Analyzed Business Strategy component may lead to identification of high-level requirements. The strategy should be analyzed related to a defined business scope. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td> Gather Project Requirements.</td>
+    <td>Project Requirements </td>
+    <td> The Project Requirements component is the collection of project requirements that are gathered using the normal OUM requirements gathering tasks. These will later be refined and classified on enterprise level. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td> Refine requirements into enterprise requirements.</td>
+    <td>Enterprise Requirements </td>
+    <td> The Enterprise Requirements component is comprised of the requirements coming from projects that are generalized in requirements that are valid outside the context of a project in the wider enterprise. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Construct Function Model.</td>
+    <td>Function Model</td>
+    <td> The Function Model component captures the functional requirements fitting the business strategy of the project. The Function Model is represented visually. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Classify requirements against model. </td>
+    <td>Classified Requirements </td>
+    <td> The requirements are worded in terms of the business, and the requirements are classified against the Enterprise Function Model. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Assign ownership. </td>
+    <td>Requirements Ownership </td>
+    <td> The Requirement Ownership component shows whom is the owner of the requirement. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Prioritize requirements.</td>
+    <td>Prioritized Requirements </td>
+    <td> The Prioritized Requirements component is a MoSCoW List with requirements relevant for the project. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The following illustrates the high-level aspects of Enterprise Requirements Management:</p>
+<p align="center"><img src="../../010_COMMON_FILES/HL_ERM.PNG" alt="High-Level Aspects of Enterprise Requirements Management" width="831" height="578" title="High-Level Aspects of Enterprise Requirements Management"></p>
+<ul>
+  <li> Traditional requirements management method is used to draft the project based requirements for an application.</li>
+  <li> The project requirements are iteratively refined into enterprise requirements, which are utilized to build and extend the Enterprise Function Model.</li>
+  <li> The enterprise requirements are classified against the Enterprise Function Model.</li>
+  <li> An enterprise repository is utilized to enable and publish the overall enterprise requirements management approach.</li>
+</ul>
+<p>The result is a taxonomy of requirements based on the enterprise's Function Model, rather than requirements grouped by specific areas of application functionality. This allows duplicate or overlapping requirements to be identified, in addition to providing a basis for looking at requirements with potential reuse in mind. Therefore, this approach provides a natural avenue for enabling a Service Identification and Discovery approach in a SOA environment.</p>
+<p>The detailed steps to perform Enterprise Requirements Management are listed above in the technique steps table. The figure below shows these steps in a process flow: </p>
+<p align="center"><img src="../../010_COMMON_FILES/REQ_MGMT_FLOW.PNG" alt="Enterprise Requirements Management Process Flow" width="860" height="599" title="Enterprise Requirements Management Process Flow"></p>
+<hr WIDTH="100%">
+<h4>Analyze Business Strategy</h4>
+<p>Requirements can be derived from the Business Strategy. The Business Strategy may also be used to check the readiness and the feasibility for this type of requirements gathering process. If you analyze the strategy for actual requirements gathering, you need to analyze it within a defined business scope. A requirement defined as such should be seen as a project requirement, and is nothing different than how requirements are normally gathered as part of the OUM Requirements Definition process. You should however keep in mind that the Business Strategy forms an input to requirements gathering. </p>
+<hr WIDTH="100%">
+<h4>Gather Project Requirements</h4>
+<p>This step represents the requirements gathering process of OUM. This results in an initial working set of requirements, in the form of various requirements models (business process model, use case model, etc), supplemental requirements and high-level business descriptions. These requirements will later be refined and classified on enterprise level. </p>
+<hr WIDTH="100%">
+<h4>Refine Requirements into Enterprise Requirements </h4>
+<p>A key technique to assist with identifying reusable candidates is functional decomposition. In order to support an enterprise based functional decomposition, requirements must be presented in a format suitable for the scope of the enterprise rather than just for the project's individual needs.</p>
+<p>Raw project requirements (usually in the form of use cases in OUM) that have been gathered need to be assessed to ensure that the appropriate level of detail has been captured and verified. In order for the requirements to be valuable in defining a Function Model, they must be formatted in a project neutral format. Requirements that have project specific terminology should be cleansed then reviewed with the project team and business representatives to ensure the requirements are still valid. This iterative process should continue until agreement has been reached on the details of the requirements.</p>
+<p>Scoping requirements at the enterprise level, rather than at the application or project level enables project architecture and planning exercises to remain connected to the overall enterprise. In the context of SOA, this connection also provides a natural enabler for service discovery, identification, and SOA release planning.</p>
+<p>Apart from the standard information gathered for a requirement (e.g., description, priority), additional attributes are required to classify and enrich requirements to be a viable asset at the enterprise level. These are described in the section, <a href="#NEED">Need for a Centralized Repository of Enterprise Requirements and Models</a>, in this document.</p>
+<p>A requirement is initially proposed and a decision is made by the appropriate governance authority to accept or decline the requirement. If the requirement has been accepted then it has been validated in terms of understanding the rationale behind the requirement and it has been described precisely enough to be realized. At some point, the requirement will be assigned to a delivery project to in order for managing requirements in enterprise repository to be realized. At this time, the requirement owner is identified as a specific application or it may be identified as being &quot;Shared&quot;. The requirement is then fulfilled by being implemented and when and if it is no longer valid, the requirement can be retired.</p>
+<hr WIDTH="100%">
+<h4>Construct Function Model</h4>
+<p>The project requirements that have been iteratively refined into enterprise requirements should be classified against the Enterprise Function Model. The Function Model should be represented visually, and also capture the flow of events for each major activity. The purpose here is not to capture mouse clicks, for example, but rather real business steps. </p>
+<p>The Function Model is a special type of model to depict the IT view of the related functional activities and their relationship to one another. Please refer to the <a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling</a> technique for how Function Models should be created. Function Models can be decomposed into smaller parts, where a single activity in a higher-level model links to a lower-level Function Model. </p>
+<p>Rather than build a fully developed Function Model for an enterprise, as this can take an extended period, it is usually preferable to build out the relevant parts of the Function Model as and when it is required. The following highlights a hierarchal representation of a partial Function Model based on the APQC Process Classification Framework<sup>SM</sup> (PCF)<sup><a href="../../../OUM/050_REFERENCE_FILES/OUM_REFERENCES.htm#PCF" target="_blank">28</a></sup>.</p>
+<p align="center"><img src="../../010_COMMON_FILES/APQC_HIER_PFM.PNG" alt="Hierarchal Representation of a Partial Function Model based on the APQC Process Classification Framework" width="754" height="192" title="Hierarchal Representation of a Partial Function Model based on the APQC Process Classification Framework"></p>
+<p align="left">Any part of the Function Model that has not been developed yet can be extended by using a number of decomposition techniques. There are many entry points into using a decomposition technique to build a Function Model. The most commonly used decomposition approaches are described below:</p>
+<ul>
+  <li>Functional Requirement Decomposition</li>
+  <li>Application Requirement Decomposition</li>
+  <li>Business Process Requirement Decomposition</li>
+  <li>Data Requirement Decomposition</li>
+</ul>
+<p align="left">Please note that data requirement decomposition usually follows other decomposition approaches and focuses on the data requirements uncovered by the other approaches.</p>
+<p align="left">As more and more projects go through these approaches, the Function Model becomes more complete and less expansion is experienced.</p>
+<h5 align="left">Functional Requirements Decomposition</h5>
+<p align="left">A functional requirement decomposition approach takes raw requirements such as text document or use cases, and refines them to elaborate and extend the existing Function Model. It is common for this approach to be called the &quot;top-down&quot; approach.</p>
+<p align="center"><img src="../../010_COMMON_FILES/FRD.PNG" alt="Example Raw Requirements" width="677" height="526" title="Example Raw Requirements"></p>
+<p align="left">Below are the high-level steps that assist with this approach. Over time, experienced practitioners collapse these steps into one streamlined activity:</p>
+<ul>
+  <li>Requirements are reviewed, noting the key verbs and associated nouns. See previous figure above.</li>
+  <li> Specifics are removed as a Function Model is concerned with the &ldquo;What&rdquo; and not concerned with the &ldquo;Who&rdquo;, &ldquo;How&rdquo;, or &ldquo;When.&rdquo;</li>
+  <li> Appropriate business terminology replaces any project specific or unnecessary minor words.</li>
+  <li> The identified function name should be based around a present tense &ldquo;verb + singular noun&rdquo; (best effort). The following table shows examples of refined names.</li>
+</ul>
+<TABLE width="70%" border=1 title="Refined Names" summary="This table shows high-level steps in the first column followed by their refined names in the second column.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th scope="col" width="75%" height=26><div align="left">High-Level Steps
+              <p></p>
+      </div></th>
+      <th scope="col" width="25%"><div align="left">Refined Name </div></th>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>An expense request must be completed by a consultant at the end of each engagement.</TD>
+      <TD align="left" valign="top"><p>Complete Expense Request </TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top">All expense requests are reviewed by the office coordinator before approval by the consultant's manager. </TD>
+      <TD align="left" valign="top">Review Expense Request <br>
+        Approve Expense Request </TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top">The finance department has the responsibility to verify the expense request against the expense policies.</TD>
+      <TD align="left" valign="top">Verify Expense Request </TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p>Funds are sent weekly to consultants by the finance department. </TD>
+      <TD align="left" valign="top"><p>Transfer Funds  </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Application Decomposition</h5>
+<p>An application decomposition approach takes existing applications and identifies sources of functionality to surface at the enterprise level, for example for exposing it as a SOA service. It is common for this approach to be called the &quot;bottom-up&quot; approach and is commonly used to modernize an enterprise's integration architecture. While this approach does have some value, it can lead to a number of challenges: </p>
+<ul>
+  <li>Not all functionality that should be service enabled is identified.</li>
+  <li>It is easier to define the wrong service granularity.</li>
+  <li>By focusing on integration, higher valued IT and business benefits will most probably be neglected.</li>
+</ul>
+<p>To overcome these challenges, it is best not to utilize the application decomposition approach on its own but to combine it with the functional requirement decomposition approach. This allows a practitioner to analyze applications and identify the appropriate functional boundaries. This can then be utilized to elaborate and extend the existing Function Model. It is common for this approach to be called the &quot;hybrid&quot; or &quot;meet in the middle&quot; approach. </p>
+<h5>Business Process Decomposition</h5>
+<p>The business process decomposition approach takes requirements defined in various sources, such as text documents, business process models, and business context models and refines them to elaborate and extend the existing Function Model.</p>
+<p>During the elaboration process of documenting a business process, individual process activities at all business function levels should be considered when expanding the existing Function Model (see the following). A common error is to include technology-specific activities within a business process model. It is important that these are not considered as part of the Function Model.</p>
+<p align="center"><img src="../../010_COMMON_FILES/BPD.PNG" alt="Example Function Model" width="729" height="469" title="Example Function Model"></p>
+<h6>Expand Function Model</h6>
+<p>The identified functions are then utilized to expand the existing Function Model. It may be necessary to add additional levels to group related activities.</p>
+<p> The following shows an expanded Function Model where the identified functions (highlighted by the ticks) have been added to the partial Function Model that is based on the APQC Process Classification Framework<sup>SM</sup> (PCF)<sup><a href="../../../OUM/050_REFERENCE_FILES/OUM_REFERENCES.htm#PCF" target="_blank">28</a></sup>.</p>
+<p align="center"><img src="../../010_COMMON_FILES/EXPAND_FM.PNG" alt="Expanded Function Model where the Identified Functions (highlighted by the ticks) have been added to the Partial Function Model that is based on the APQC Process Classification Framework" width="707" height="483" title="Expanded Function Model where the Identified Functions (highlighted by the ticks) have been added to the Partial Function Model that is based on the APQC Process Classification Framework"></p>
+<h6>Data Requirements Management </h6>
+<p>The objective of Data Requirements Management is to understand the key business entities within the scope of the project or projects, determine where they fit with respect to semantic communities, authorities, and data sources, and organize this information into a form that can be communicated and classified. </p>
+<p>Analyze the enterprise repository and identify the enterprise data models relevant to the Function Models. Examine each Function Model and its activities and gain an understanding of the data requirements. Map already defined data entities from the enterprise data model where possible. For all other entities check, if they are just in the scope of the Function Model or if they should enhance the enterprise data model. In that case, propose a new entity asset for each new data entity identified. Please have a look at the <a href="IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a> technique regarding a suggested meta model for data entities.</p>
+<p>Once data requirements have been defined and categorized, models can be created and updated to illustrate how the data requirements fit into the overall organization, and where data entities come from. The intent is to build upon previous data modeling efforts to gain a better understanding of enterprise data requirements with each project that is delivered.</p>
+<p align="center"><img src="../../010_COMMON_FILES/RM_EXAMPLE.PNG" alt="Example Categorized Data Requirement" width="677" height="526" title="Example Categorized Data Requirement"></p>
+<p>Below are the high-level steps that assist with this approach. Over time, experienced practitioners collapse these steps into one streamlined activity.</p>
+<ul>
+  <li> Review requirements, noting nouns, which infer business entities. See green highlights in the figure above.</li>
+  <li> Understand synonyms and relationships between business entities.</li>
+  <li> Convert pronouns (for example, they, he, it) into inferred business entities. See red highlights in previous figure above.</li>
+  <li> Identify possible actions on entities by noting verbs and create CRUD matrix. See following figure below.</li>
+  <li> Construct domain data hierarchy detailing source, authorities and semantic communities (refer to <a href="EDM_DATA_OWN_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Ownership Approach</a> technique).</li>
+</ul>
+<p align="center"><img src="../../010_COMMON_FILES/RM_CRUD.PNG" alt="Example CRUD Matrix" width="904" height="542" title="Example CRUD Matrix"></p>
+<p><b>Note:</b> A more detailed data analysis can be done at this point if required. Please refer to the <a href="EDM_DATA_REL_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Relationship Approach</a> technique.</p>
+<p> Data entities identified at this point in time can be used to build a Canonical Message Model. A Canonical Message Model applies a Canonical Message Model to message formats by constructing messages structures, elements and attributes using canonical data. The Canonical Message Model can then be used to transport the data across the Function Models and, therefore, may later be used to standardize interfaces.</p>
+<hr WIDTH="100%">
+<h4>Classify Requirements Against Function Model</h4>
+<p>This step involves refining the project requirements into an enterprise view. The classification of Function Models and requirements is achieved iteratively between the business and IT divisions. The business provides input regarding the overall business process while the delivery team and the enterprise architecture leadership team develop the models and classifications, which are then cross-checked with the business. The requirement is attached to the appropriate node within the Function Model based on granularity and scope as follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/CL_REQS1.PNG" alt="Function Model Based on Granularity and Scope with Requirement Attached to the Appropriate Node" width="708" height="484" title="Function Model Based on Granularity and Scope with Requirement Attached to the Appropriate Node"></p>
+<p>As the requirements are classified against the nodes within a Function Model, it is important that the origination of the requirement be documented.</p>
+<p align="center"><img src="../../010_COMMON_FILES/CL_REQS2.PNG" alt="Example Function Model with the origination of the requirment documented" width="705" height="500" title="Example Function Model with the origination of the requirment documented"></p>
+<p>The previous figure shows a scenario where the requirements from three projects are classified and attached to a Function Model. Refer to the following table for an overview of the steps in this example.</p>
+<TABLE width="100%" border=1 title="Steps" summary="This table shows the steps for the previous example of a scenario where the requirements from three projects are classified and attached to a Function Model.">
+  <TBODY>
+    <TR bgcolor="#CCCCCC">
+      <th scope="col">Step</th>
+      <th scope="col">Description</th>
+    </TR>
+    <TR>
+      <th scope="row" align="center" valign="top">1</th>
+      <TD align="left" valign="top"><ul>
+          <li>Project ABC attaches a requirements against 8.6.1.2.1 Review Expense Request. </li>
+          <li>There are no other requirements at this function node so this requirement will be classified as a New Requirement.</li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="center" valign="top">2</th>
+      <TD align="left" valign="top"><ul>
+          <li>Project XYZ attaches 2 requirements that are attached to 8.6.1.3.2 Transfer Funds and 8.6.1.2.1 Review Expense Request. </li>
+          <li>There are no other requirements at the 8.6.1.3.2 Transfer Funds function node so this requirement will be classified as a New Requirement.</li>
+          <li>The requirement encountered at 8.6.1.2.1 Review Expense Request is a sub set of the requirements classified by Project SYZ. Therefore, a new version of the existing requirement is proposed that is versioned and extended. </li>
+      </ul></TD>
+    </TR>
+    <TR>
+      <th scope="row" align="center" valign="top">3</th>
+      <TD align="left" valign="top"><ul>
+          <li>Project DEF attaches a requirement against 8.6.1.3.2 Transfer Funds.</li>
+          <li>An identical existing requirement at 8.6.1.3.2 Transfer Funds is encountered. This requirement is then earmarked as a Duplicate Requirement, which gives a practitioner an indication that there is a potential reuse when identifying services.</li>
+      </ul></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<h5>Check for Duplicate Requirements</h5>
+<p>Before requirements can be added to the enterprise repository, check if any existing requirement partially or fully covers the proposed requirement. Select all requirements with the same business category and the same relationship to the model, and compare the content of the requirement with the new requirement identified. </p>
+<h5>Earmark Potential Reuse</h5>
+<p>If an existing requirement fully covers the proposed requirement, then simply earmark the existing requirement as being relevant to the project. You do this by creating a relationship to the project in the Enterprise Repository. If an implementation of the requirement already exists, this should be earmarked for potential reuse. </p>
+<h5>Version Requirements Extend Capability</h5>
+<p>If an existing requirement partially covers a proposed requirement, then check the commonality and differences to decide if a new version of the existing requirement should be proposed, or if the new portion of the requirement should be separated out into a new requirement on its own. For this decision, take into consideration if the existing requirement is already marked as shared. Create the corresponding new requirements assets or new versions in the Enterprise Repository and earmark all discovered requirements as being relevant to the project, i.e. create a relationship to the project asset. </p>
+<h5>Register New Requirement</h5>
+<p> If there are no matches for the proposed requirement, then register the new requirement within the Enterprise Repository in proposed state and earmark it for the project, i.e., create a relationship to the project asset. </p>
+<hr WIDTH="100%">
+<h4>Assign Ownership </h4>
+<p>For every requirement and version created in the repository, an owner should be assigned. New versions should inherit the owner of the original version. For new requirements the owner to be assigned depends on the governance model. For example, in a SOA environment, if a quality gate is defined to review requirements with the result of service identification and discovery, the owner may be an interim owner until the requirement is validated and the responsibility for the realization of the requirement can be assigned. Therefore this step represents the initial ownership assignment, which may not be final. The ownership of a requirement is not completely known until the identification procedures are completed. Therefore the requirements stay in status &quot;proposed.&quot; </p>
+<hr WIDTH="100%">
+<h4>Prioritize Requirements</h4>
+<p>In order to create a MoSCoW List relevant for the project, select all requirements of the repository earmarked for the project, i.e. having a relationship to the project. Assign a priority scoring in project scope and validate it against the states and a possible enterprise priority score available.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model (Envision) </a></div></th>
+    <td>Use this technique as an aid in functional modeling to create new or update existing enterprise models with new or adjusted requirements. Also use the technique to classify requirements and models at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities) (Envision) </a></div></th>
+    <td>Use this technique in the creation of new or updating of existing enterprise models with new or adjusted requirements. Also use the technique to classify requirements and models at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_060_PERFORM_HL_USE_CASE_DISCOVERY_OVERVIEW.HTM" target="_blank">BA.060 Perform High-Level Use Case Discovery (Envision) </a></div></th>
+    <td>Use this technique in the creation of new or updating of existing enterprise models with new or adjusted requirements. Also use the technique to classify requirements and models at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_100_MAINTAIN_ENTERPRISE_BUSINESS_MODEL_OVERVIEW.HTM" target="_blank">BA.100 Maintain Enterprise Business Models (Envision) </a></div></th>
+    <td>Use this technique in the creation of new or updating of existing enterprise models with new or adjusted requirements. Also use the technique to classify requirements and models at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_100_DEFINE_SUPP_ENTERPRISE_REQS_OVERVIEW.HTM" target="_blank">ER.100 Define Supplemental Enterprise Requirements (Envision) </a></div></th>
+    <td>Use this technique to understand how and why enterprise requirements should be gathered, classified and stored at a central location.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List (Envision) </a></div></th>
+    <td>Use this technique to identify requirements for the MoSCoW List. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique as an input to best practices on how to perform enterprise requirements management. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model</a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_020_OBTAIN_HL_BUS_DESCRIPTIONS_OVERVIEW.HTM" target="_blank">RD.020 Obtain High-Level Business Descriptions </a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW)</a></div></th>
+    <td>Use this technique to identify requirements for the MoSCoW List of individual implementation projects. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">RD.055 Detail Supplemental Requirements </a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model </a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RA_015_DEVELOP_BUS_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.015 Develop Business Use Case Model </a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023 Develop Use Case Model </a></div></th>
+    <td>Use this technique for gathering requirements for the projects, in particular for the process of refining the requirements to be classified at the enterprise level. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Is there an easily accessible Function Model at enterprise level available for projects to verify requirements against?</li>
+  <li>Do projects verify their requirements against the Enterprise Repository to identify possible duplicates?</li>
+  <li>Are project requirements refined and included in the Function Model in the Enterprise Repository?</li>
+  <li>Can the enterprise requirements be linked to the applications and services that implement them?</li>
+  <li>Have the requirements been made visible across projects?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

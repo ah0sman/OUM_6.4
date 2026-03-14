@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>EDM-Data Ownership Approach Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>ENTERPRISE DOMAIN MODEL - DATA OWNERSHIP APPROACH</h2>
+<p>The purpose of this technique is to define the Data Ownership approach to Data Modeling. </p>
+<p> First you define the means by which enterprise-level data modeling will be done, and the top-level model that can be applied at the enterprise level for the purpose of organizing data modeling activities. A skeleton data model will be created as the foundation to tie together all the project-based data modeling efforts. The skeleton model can be populated via strategic data discovery and modeling, or it can be populated incrementally as each new project takes place. </p>
+<p> This technique involves defining and building the base data model skeleton. There are several different approaches to defining the structure. Ultimately the structure will have data entities at the lowest level, the sources of data, such as applications, SOA services, file systems, etc., at the next highest level, building up to the top level which will represent the enterprise. This type of structure provides the ability to visualize how data is organized and dispersed within the enterprise. </p>
+<p> Some common examples for a model structure are shown below. The structure on the left follows a business hierarchy, while the structure in the middle follows a project delivery hierarchy. Note that the number of layers and the categories for each layer are variable. Though these two models are intuitive and easy to recognize, aside from the two lowest layers the structure does not have any special meaning for data modeling. The third model, shown on the right, does align with common data principles, and is the model recommended in this technique. </p>
+<p align="center"><img src="../../010_COMMON_FILES/EDM_DOA.JPG" alt="Common Examples for a Domain Model Structure" width="576" height="147" title="Common Examples for a Domain Model Structure"></p>
+<p align="left">The process for creating this model is shown below. It starts at the Data Source layer and works outward. The reason is that data sources are easy to identify, much more so than authorities and communities. </p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Enterprise Domain Model (Data Model)</b> - Use of this technique results in a data model as described in the third pyramid above. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Identify Key Data Sources. </td>
+    <td>Key Data Sources </td>
+    <td> Key data sources are systems, applications, and SOA services that provide access to data.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Identify Key Data Entities. </td>
+    <td>Key Data Entities </td>
+    <td> Key Data Entities are those entities that can stand alone. That is, they can exist independently of other entities. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Identify Data Authorities.</td>
+    <td>Data Authorities </td>
+    <td> Data Authorities are the person(s) responsible for the stewardship of data. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Define the Semantic Communities. </td>
+    <td>Semantic Communities </td>
+    <td> Semantic Communities are identifiable groups of information consumers that have a shared understanding of a set of related concepts, as captured in a data glossary and conceptual models. Consumers may be people or information systems. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Capture the Enterprise Data Model. </td>
+    <td>Enterprise Data Model </td>
+    <td> The Enterprise Data Model contains key entities, data sources, authorities, semantic communities, and the relationships between them.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">6</th>
+    <td>Update Repository.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Identify Key Data Sources</h4>
+<p> Data sources are systems, applications, and SOA services that provide access to data. Sources generally provide access to persisted data, such as entities stored in a database, files in a file system, content in a Content Management (CM) system, etc. Sources may also offer access to transient data, such as system events, streaming data feeds, and messages from a subscription, that is store-and-forward queue. </p>
+<p> The process for locating data sources may vary depending on the size of the enterprise (or business scope). A direct approach is to ask enterprise architects for a list of data sources. Another option is to use a top-down business decomposition approach. Starting at the enterprise level, decompose the business hierarchy down into smaller and smaller business units, which eventually own and operate systems that represent applications, databases, and SOA services that are sources of data. </p>
+<p> An example business hierarchy model is shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/EDM_BUS_HIER.JPG" alt="Example Business Hierarchy Model" width="710" height="442" title="Example Business Hierarchy Model"></p>
+<hr WIDTH="100%">
+<h4>Identify Key Data Entities </h4>
+<p> Once the systems have been identified, each system can be examined to catalog the key data entities contained within it. Key entities are defined as those that can stand alone. That is, they can exist independently of other entities. For instance, employee, customer, and expense report are examples of key entities, while dependent entities such as address, contact, and expense item are not. The reason for gathering key entities is to understand where they are maintained across the enterprise. Often, key entities are duplicated in multiple systems and databases. This presents challenges for the company as we will discuss later, both in terms of data rationalization and ubiquitous reuse via shared SOA services. </p>
+<hr WIDTH="100%">
+<h4>Identify Data Authorities </h4>
+<p> Authorities are defined as person(s) responsible for the stewardship of data. Authorities ensure data integrity and enforce business rules pertaining to data entities such as semantics, relationships, and constraints. Authorities maintain the data glossary and set rules regarding the usage of data. </p>
+<p> Each source of data must have an authority. The authority may be comprised of multiple persons with different roles. For example, it may have a business aspect, which may imply a business analyst, and a technical component, which may imply database administrator. For the purpose of this modeling exercise the authority can be depicted either figuratively (as a committee of persons), or explicitly (as a multi-level hierarchy of persons). Unless the hierarchy adds value, the figurative approach is recommended. An example of where a hierarchy of authorities makes sense is when a business analyst works in conjunction with multiple data architects and this relationship is key to understanding how authority is structured. </p>
+<p> The role of an authority model is to make ownership responsibility explicit, and thus more visible, and appropriately accessible. This is particularly important in an SOA environment where data will be accessed by many different actors. The authority will need to grant such access and specify rules regarding its usage. </p>
+<p> It is theoretically possible, but highly unlikely that more than one authority will be associated with a single data source. If this situation occurs, then it would be useful to logically divide the source into multiple parts and separate the entities so they are listed under the authority that maintains them. If multiple authorities are associated with a single entity, then it may be necessary to create multiple links or reevaluate how the authorities are being defined. </p>
+<hr WIDTH="100%">
+<h4>Define the Semantic Communities </h4>
+<p> A semantic community is an identifiable group of information consumers that have a shared understanding of a set of related concepts, as captured in a data glossary and conceptual models. Consumers may be people or information systems. </p>
+<p> In an evolving enterprise, it is common to have several communities, for political, economic, or historical reasons. These communities typically have divergent definitions for similar or overlapping concepts. They must be related to one another via semantic mappings. It is not necessary to determine the mappings at this point, but rather to uncover the existence of communities. </p>
+<p> Semantic communities are not easily identifiable, simply because people are often unaware of semantic differences that create boundaries between groups. The most likely sign of such a boundary is the existence of data with similar names but different meanings. Such data can be used to define groups of people that share a common understanding, and declare boundaries between groups that differ. By identifying key entities first, it is possible to look for similar data with divergent meanings and build semantic community relationships into the model. </p>
+<p> Since authorities maintain business rules, glossaries, and integrity for collections of data, it will usually be the case that semantic communities will consist of one or more authorities. It is unlikely that data managed by a single authority will have divergent meanings, simply because the role of the authority is to align data with business concepts and avoid the confusion that divergent semantics brings. Thus, while it is possible for a single authority to map to more than one community &ndash; it should be the exception case. </p>
+<p> More than one authority can coexist within a community if there is a way to harmonize the individual efforts. This can be done by working with the same group of business analysts that actively guard against inconsistencies, or by agreeing on a common logical data model, for example a canonical data model. </p>
+<hr WIDTH="100%">
+<h4>Capture Enterprise Data Model </h4>
+<p> The enterprise data model is used to capture key entities, data sources, authorities, semantic communities, and the relationships between them. The model can be represented in many ways including the hierarchy view shown below with horizontal layering. This is a very simple example that will not scale much without running off the sides of the paper. It can be turned on its side to create a folder view, similar to what is used to illustrate the nesting of files and folders on a computer. </p>
+<p align="center"><img src="../../010_COMMON_FILES/EDM_DM1.JPG" alt="Example Hierarchy View with Horizontal Layering" width="660" height="311" title="Example Hierarchy View with Horizontal Layering"></p>
+<p> If UML is desired, then the model can be represented as a series of nested packages that eventually contain entities, as shown below. </p>
+<p align="center"><img src="../../010_COMMON_FILES/EDM_DM2.JPG" alt="Example Model Represented as a Series of Nested Packages" width="697" height="450" title="Example Model Represented as a Series of Nested Packages"></p>
+<hr WIDTH="100%">
+<h4 align="left">Update Repository </h4>
+<p>Update the enterprise repository by adding or updating the model. If requirements have been identified during this task, they should also be recorded in the enterprise repository and each of them linked to an element at one of the levels in the model, i.e., either an entity or a data source, etc. </p>
+<p> <b>PLEASE NOTE:</b> This step is especially required if requirements are managed at the enterprise level. Managing requirements at the enterprise level is a must where reuse across projects is required such as when the enterprise is has a SOA strategy. </p>
+<p> More details about enterprise management of requirements through functional and process models can be found in the <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy (Envision)</a></div></th>
+    <td>Review this technique as input into this task for a SOA Modeling Planning engagement. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank"> ER.030 Set and Agree on Plan for Envision Engagement (Envision)</a></div></th>
+    <td>Review this technique as input into this task for a SOA Modeling Planning engagement. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_050_DEVELOP_ENTERPRISE_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">BA.050 Develop Enterprise Domain Model (Business Entities) (Envision) </a></div></th>
+    <td>Use this technique to identify the Business Entities for the Enterprise or impacted by the Envision engagement project. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have all the appropriate Enterprise Data Sources (systems, applications, and SOA services that provide access to data) been identified and validated with project stakeholders?</li>
+  <li>Have all the appropriate systems been examined to catalog the key data entities? </li>
+  <li>Does each each source of data have an authority identified?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Testing Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE TESTING</h2>
+<p>The purpose of this technique is to provide guidance for SOA practitioners on techniques that can be used for service-based testing. It is expected that the reader is already confident with the contents of the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique and the <a href="SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a> technique.</p>
+<p>The document can be used as starting point to define a test strategy for SOA. Any engineer implementing services following OUM should be familiar with the content of this document.</p>
+<p>Service Testing, when done effectively, provides the glue necessary to generate a quality service through the Service Delivery processes. It ensures that discipline is used to deliver services and provides the necessary validation required to ensure the contract has been realized through service delivery, prior to the service entering operational state through service deployment.</p>
+<p>However, Service Testing does not conclude with the delivery of the service into production. Regression testing will be required throughout the operational life of a service. Further, the complete line of test assets for a service will be revisited on any future versions resulting from approved changes to the service.</p>
+<p>There are two primary purposes behind service testing. The first is the obvious, which is to ensure that the completed service realizes the terms of the contract prior to deployment. The second purpose is to gather the necessary information to determine how the service will operate within its physical environment. This information is then used to determine the optimal deployment strategy for the service.</p>
+<p>Service Testing also serves as the gates that must be passed before a service is allowed to proceed with production deployment, and in this regard is a governance structure. The purpose of service testing with respect to being a governance model is not only to ensure quality and consistency across service deliveries, but also to protect the operational environment into which the services will be deployed.</p>
+<p>Iterations with Service Implementation may take place after each test cycle, and may even be required after production deployment when defects are found while a service is in its operational state (which would require an increment to the service version).</p>
+<p>In the case of a new service entering service deployment, service testing provides the necessary information needed to make sound deployment decisions such as packaging and optimal configuration.</p>
+<p>Any enterprise should have a Service Testing Strategy that should be incorporated in several points during service delivery. It starts from service definition and preparing the test criteria and plans, then design of the test cases along service design and implementation of the test cases in along service implementation. Test execution is a discipline on its own, and specific guidance on the test strategy and some testing guidelines are provided. This document provides an example test strategy for Service Testing.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>SOA Testing Strategy</b> - This technique can be used as an input to define a testing strategy for SOA, and test scenarios for Service Testing.</p>
+<p> The technique describes what should be used as input to test plan production, the concept of continuous testing, and thereby what kind of tests are required during the Service Lifecycle, and finally what kind of testing environments are recommended for the various tests. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Determine Service Testing Approach. </td>
+    <td>Service Testing Approach </td>
+    <td> The Service Testing Approach describes what should be achieved by Service Testing, what should be the input for the production of service test scenarios and when they should be produced, what kind of information should be gathered during Service Testing, and how it should be gathered. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine Testing Strategy for Services. </td>
+    <td>Testing Strategy </td>
+    <td> The Testing Strategy determines what type of tests should be performed during the Service Lifecycle. This component also considers what testing environments are needed for the different tests. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Determine Service Testing Approach</h4>
+<p>Describe what should be achieved by Service Testing, and what assets should be the input for the production of service test scenarios. Also, determine what kind of information should be gathered during Service Testing, and how this information should be gathered and recorded. </p>
+<h5>Service Testing</h5>
+<p>Since good service design follows the practice of design by contract, it is also appropriate to apply test driven development practices within Enterprise Service Engineering. Practicing test driven development means the test developer builds the test suite independent of constructing the code that implements the service. If the same developer responsible for service implementation is also responsible for testing, then the test cases should be constructed prior to developing the code. This forces the test developer to build a test suite against the service contract instead of ending up with the typical &ldquo;works as implemented&rdquo; test. </p>
+<h5>Test by Contract</h5>
+<p>Once service definition has been completed the service contract will be available. At this stage, service testing may commence for that service as the test criteria is available in the form of the service contract. This information allows for the creation of the test plan that should provide coverage for all of the following areas within the service contract: </p>
+<ul>
+  <li>functional requirements</li>
+  <li>QoS (supplemental requirements)</li>
+  <li>service enablement</li>
+</ul>
+<p>Constructing the test plan independent of the service design and service implementation is a key enabler of the &ldquo;Test by Contract&rdquo; strategy. This strategy requires that the test team understands the contract within its business context, and formulate a test strategy around validating the requirements of the contract. This contrasts with many testing methods where the test team constructs their testing strategy by having conversations with the delivery team, which results in testing against the delivery team&rsquo;s interpretation of the contract, which has never been a goal of testing; however in many cases it seems to be the reality.</p>
+<p>Determining the Acceptance Criteria is pretty simple. It is the service contract. In some cases it may not be completely possible to realize the full contract as it is stated, at least within a reasonable timeframe. In these scenarios, changes to the contract must be justified and approved by the SOA Leadership team in conjunction with the business in order to achieve acceptance. If agreement cannot be reached, then additional work must be done to realize the contract as stated, or the service must be abandoned.</p>
+<p>In the event that the service is abandoned, then the dependant projects will become responsible for implementing the functions they required from the service as part of their own delivery effort. In these cases, the implementation assets should be transferred to the ownership of the project delivery teams. If this scenario becomes common, then the Service Identification process should be reworked with more stringent justification criteria to prevent unrealistic services from entering service release planning and delivery.</p>
+<h5>Service Interface Testing</h5>
+<p>Once Service Design completes, the physical interface will be available to begin the construction of the physical test cases. Since the test plan was constructed independent of the service design work, the test case preparation may also be used to validate the interface&rsquo;s completeness in fulfilling the functional requirements of the contract. Defects should be opened against the service interface if gaps are found while preparing the test cases. Members from the service design team will then be assigned to address the defects. </p>
+<p>As services are part of more or less complex communication dependencies, interface testing across all dependencies is needed to build the confidence that there is no need to &ldquo;retest the world&rdquo; every time a change is made.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_DEP.JPG" alt="Illustration of Service Interface Testing Across Dependencies" width="523" height="404" title="Illustration of Service Interface Testing Across Dependencies"></p>
+<p>In the figure above, Service H has Service E as direct consumer and Service E is used by Service A and Service C. If Service H is now changed, this might have impact not only on Service E but indirectly on Service A and Service C as well. The challenge is to create the trust that if Service H is tested in the scope of Service E, this will be sufficient for the whole scenario.</p>
+<p>Integration testing is often used to test across all dependencies and therefore creating test scenarios of high complexity. By defining a good service based test strategy with testing by contract against the interface, integration testing can concentrate on project scope integration again.</p>
+<h5>Capacity Estimations</h5>
+<p>The secondary goal behind service testing is to gather information, with respect to the impact the service will have when operating within its physical environment. This information is valuable for doing infrastructure planning, as well as troubleshooting and managing the collection of services operating in production.</p>
+<p>This information is gathered by running a series of tests against the service while in an isolated environment. An isolated environment provides an environment where the operations of the service are tested independently of all other products or technologies running on the same environment. These tests should be run with linearly increasing load that begins with a light load, and completes prior to maximizing the machine. The following statistics will be available when these tests are run correctly:</p>
+<ul>
+  <li>memory footprint required by the various operations of the service on a per invocation basis</li>
+  <li>amount of processing required (CPU%) on a per invocation basis</li>
+  <li>amount of disk usage required on a per invocation basis</li>
+  <li>average response time per invocation</li>
+  <li>overhead resulting from deploying the service (CPU, Memory, Disk)</li>
+</ul>
+<p>The general model for setting up this series of test follows:</p>
+<ol>
+  <li>Model the expected usage patterns of the service into test scripts.</li>
+  <li>Install all necessary technologies required to host the service on the test hardware, without deploying the service.</li>
+  <li>Start the environment (record disk usage, CPU, load average, disk space, etc)</li>
+  <li>Deploy the service, and record the same statistics. The difference is the rough overhead for the service.</li>
+  <li>Begin running test models beginning with a light load and increase the number of concurrent users incrementally (e.g.: every 5 minutes add 10 more users).</li>
+  <li>Periodically record CPU %, load average, memory usage, disk space, etc).</li>
+  <li>When the increase in response time begins to increase in a non-linear fashion record the amount of concurrent users and stop the test. Do not take statistic measurements once this change has been noticed.</li>
+  <li>Calculate averages by using the sampled data, and the correlated test statistics, which may be used to create reasonably accurate resource requirement measurements for the service. Publish this information with the service contract. These tests should be automated so that they may be rerun when any significant change takes place to the service or the service&rsquo;s environment.</li>
+</ol>
+<hr WIDTH="100%">
+<h4>Determine Testing Strategy for Services</h4>
+<p>Determine the type of tests that you will execute to ensure that the services are properly tested throughout the Service Lifecycle. You should also consider what testing environments are needed for the different tests. </p>
+<h5>Continuous Testing Strategy</h5>
+<p>Continuous testing integrates testing as automatic task during the service lifecycle and therefore helps to ensure a good quality on each stage in the process. </p>
+<p>To enable continuous testing, the deployment of the services must be made on a shared infrastructure, which must be mirrored for integration testing, and be available throughout the service delivery process. The test environment should follow the hardware and software architecture of the production environment to allow the usage of a scaling factor in capacity calculations.</p>
+<h5>Set Up a Test Environment</h5>
+<p>The environment could be owned by project teams or be provided as shared infrastructure.</p>
+<p>If the project team is responsible to set this environment up, continuous testing can be implemented and managed by the project itself at the costs of setting up and running the environment. At every update of the infrastructure in the production environment, all projects having a corresponding test environment must update it accordingly, or at least perform tests for calculating the new scaling factor. Therefore providing this environment as a shared infrastructure is preferable.</p>
+<p>In order to provide a shared integration test environment, every system owner must provide and manage a test version of their system. Projects can deploy and test their services to the shared test system as needed. But execution of capacity, load and performance tests must be synchronized across the projects. Therefore a central testing team should take over the test management for all services and implement a test environment allowing for automatic test execution. The team can then prioritize, combine and schedule the test sequences for test execution. Managing the testing centrally reduces infrastructure and back-end system integration costs.</p>
+<p>For continuous testing, it is important to implement an automated test environment. In traditional software development, test automation is often limited to the developer unit tests while manual testing is done for all other forms of testing. This strategy is also very common when an offshore delivery model is employed. Service oriented development has smaller, more frequent software deployments. Having to perform a full manual testing cycle each time a service is modified, improved, or extended leads to extensive software testing efforts and associated lengthy timelines.</p>
+<p>Consumers of the service must be assured that the service is robust. Preferable therefore, all test cases should be automated and test data should be managed in a test case database. In addition an automated initialization process for the testing environment should be set up. Such a process should initialize all dependent systems (e.g. databases, back-end systems, etc.) on each new test sequence. Then all tests in a test plan can build upon each other and as a combination will provide real world execution flows. Publishing test results will create the confidence needed to build reuse on services.</p>
+<h5>Service-Based Testing Strategy</h5>
+<p>Service testing, when done effectively, ensures that the service fulfils all contracts linked to the service before being transitioned to production. </p>
+<p>Every time a new version of a service is delivered, testing must be repeated on the new version. For that purpose regression testing will be required. In addition, other services or components hosted on the same system may change over time. As those changes can have an impact on services, for instance on consumption of shared resources like memory and CPU, continuous system integration testing is a good practice in SOA. </p>
+<p>There are two primary purposes behind service testing. The first one is obvious: to ensure that the completed service realizes the terms of the contract and all the requirements. The second purpose is to understand how the service will operate within its physical environment. This information is then used to determine the optimal capacity of the underlying systems required to fulfill all usage agreements.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_BASED_TEST.JPG" alt="Service-Based Testing" width="368" height="338" title="Service-Based Testing"></p>
+<p>The test cases used in each test cycle vary depending on the scope of the test. Test cases should be created for every service for each of the following categories and are further explained below:</p>
+<ul>
+  <li>A unit test must be provided by the developer to test the implementation.</li>
+  <li>A function test should be provided by a QA team based on the contract and interface.</li>
+  <li>An acceptance test should be selected or provided by the consumer based on the usage agreement and contract.</li>
+</ul>
+<h6>SOA Test Cases</h6>
+<p>The different test cases that are needed during the test cycle can be split into three categories that are described in more details as follows: </p>
+<blockquote>
+  <p><b>Unit Test</b></p>
+  <p>Unit tests are quite common in the IT industry and are used to validate the functionality of a unit of work, in this case a service. They are used to test the interface as well as the implementation. A unit test is designed in a way that allows testing of the unit without the full integration environment, e.g., without the need to access other services. This enables the development team to check the quality of the service implementation without having to setup a complete integration environment. As these tests can be executed automatically and can run in the local development environments they should be integrated into the automated build process. </p>
+  <p>If the same developer is responsible for the implementation of the unit test and the implementation of the service itself, the unit test scripts should be developed first. From a quality perspective however, it is best if that the developer of the service is not the one developing the unit test scripts.</p>
+  <p>If several services are packaged together and combined in one common build process, all unit tests of all services in the package should be executed on each build. This will help to check that changes do not impact other services. This is particularly important if services share the same libraries.</p>
+  <p>To check the overall quality of the unit tests themselves, the code coverage of the test should be measured.</p>
+  <p><b>Function Test</b></p>
+  <p>Function tests are designed from a business perspective and are used to ensure that the software delivers to the expectation and requirements of the business. This includes testing the &ldquo;happy path&rdquo; as well as exceptions and error situations. Function tests use the SOA shared infrastructure (for example service bus and service registry) and simulate consumers of the service.</p>
+  <p>A QA or test team is responsible to design the function tests. The function tests together must cover the full scope of the service and therefore needs to be based on the contract and the interface of the service. For each new version of the service, the function tests must be adapted. Therefore, a function test may be assigned to exactly one or several versions of the service.</p>
+  <p>Function tests are used in integration, load and performance tests to simulate different scenarios. A function test can be selected to automate an acceptance test in the name of a consumer.</p>
+  <p><b>Acceptance Test</b></p>
+  <p>User acceptance tests (UAT) are typically used for end user acceptance and are often performed manually. A consumer acceptance test (CAT) is comparable to a UAT but for services, the user is replaced by a service consumer. A CAT checks the service in the context of a specific consumer. Consumer acceptance tests are acceptance tests that are automated and executable within the integration test environment.</p>
+  <p>The owner of a consumer can implement its own acceptance test and then provide it to the QA team for integration into the test system. The QA team then reviews the test and checks it fits the contract, usage agreement and interface. If no special acceptance tests are provided, the consumer can select one or several of the existing function tests to be used instead. Otherwise, the default set of function tests defined by the QA team will act as CAT for the consumer.</p>
+  <p>Consumer acceptance tests are used in load and performance tests to simulate the expected load from the consumer. In addition, the tests are used to check the automatic migration to a new service version. It is strongly recommended that owners of consumers should carefully select the test cases.</p>
+</blockquote>
+<h6>SOA Test Scenarios</h6>
+<p>The main tests in support of SOA service testing are as follows:</p>
+<blockquote>
+  <p><b>Developer Service Test</b></p>
+  <p>The implementer of the service performs all unit tests he has created within his local development environment. The developer should not be able to update the service implementation in the change management system as long as he has not successfully run the developer test. The developer test helps development to validate the design and implementation of the service.</p>
+  <p><b>Service Regression Test</b></p>
+  <p>The implementer of the service performs regression tests as part of the automated build process in the Integration Test Environment. Running all functional tests of the former version of the service will validate compatibility in functionality and running all consumer acceptance tests for that service version will validate compatibility with consumers.</p>
+  <p><b>Service Isolation Test</b> </p>
+  <p> The implementer of the service performs continuous integration testing as part of the automated build process in the Integration Test Environment. Running unit tests and functional tests in isolation against the interface of the service will help developers measure their progress. Repeating isolation tests on the Performance Test Environment will support the project team in capacity planning. The results will provide the operations team with a baseline for SLA monitoring. They will also allow the calculation or refinement of the projected resource consumption on the shared service infrastructure (e.g., service bus).</p>
+  <p><b>Service Integration Test</b> </p>
+  <p>A tester performs integration testing in the Integration Test Environment. To enable continuous integration testing, the Integration Test Environment should be made available for this purpose on a regular basis, for example every weekend. Every system should be tested by combining all unit tests and function tests into one large test scenario. The results must be validated to ensure interoperability and loose coupling.</p>
+  <p><b>Service Load and Performance Test</b> </p>
+  <p> A tester performs load and performance tests for each system in the Performance Test Environment on request. The test sequence combines test cases to execute performance, stress, reliability and volume testing. With this test scenario, the load is simulated for normal situations as well as for peak times. All acceptance tests, selected as consumer acceptance tests, will be combined based on the usage agreements registered for the services. This is needed to ensure the system is able to fulfill all contracts and usage agreements of all services and to validate overall quality including scalability. </p>
+  <p><b>Service Consumer Migration Test</b> </p>
+  <p> A tester performs migration tests for all existing services that are introducing a backward compatible version as part of a release. The test should be performed in the Integration Test Environment to validate that automatic migration of consumers is working as expected and fulfills the individual contracts. For each service, all acceptance tests, selected as consumer acceptance tests, of all consumers to be migrated will be combined in one test scenario to run against the new service version. A service can claim to be backward compatible only if it has successfully passed the full migration test. </p>
+  <p><b>Failover Test </b></p>
+  <p>A tester performs failover tests in the pre-production or User Acceptance Test Environment. This test involves testing failure of the service infrastructure and ensuring the service can recover gracefully. For stateful or transactional services, this means checking data is not duplicated, lost or corrupted and that the service can recover in case of failure of the underlying infrastructure. For stateless, non-transactional services this means verifying the underlying systems in the call tree that may be stateful, does not get corrupted or in an inconsistent state. For very truly idempotent services, such as read-only services with not side effects, this test may not be required. Because these tests are sometimes difficult to automate and therefore costly to perform, they may be run in a bulk for a number of services at regular intervals (for example once a month) rather then systemically.</p>
+  <p><b>Other Tests</b> </p>
+  <p> This list is not exhaustive. Other tests may be required for certain type of services. The service requirements should form the basis of any service test plan and any unusual requirements should be identified. In some cases a specific type of testing might be required. For example services exposed to a large number of third parties or the internet should undergo a rigorous security test, including denial of service testing. </p>
+</blockquote>
+<p>For each service, a test strategy combining the various test cases in a number of test scenarios should be defined. Test cases and test scenarios should be registered with the enterprise repository. Refer to the <a href="IT_ASSET_MANAGEMENT.HTM#TSMDD" target="_blank">IT Asset Management</a> technique for suggested meta models for test scenario and test case. The test strategy can be defined by creating a set of test scenarios for a service documenting this through relationships. Each test scenario will use relationships to the various test cases allowing for test cases being reused in several test scenarios.</p>
+<p>It is important not only to manage test artifacts at design time but also to publish test results to allow consumers and potential consumers to be assured of the quality of the service. Therefore, test scenarios as managed by the enterprise repository should link to test results from the last test execution.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique to review the concept of service-based testing. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005 Determine Testing Requirements </a></div></th>
+    <td> Use this technique to determine the testing requirements for Service Testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_010_DEVELOP_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">TE.010 Develop Testing Strategy </a></div></th>
+    <td> Use this technique to determine the testing strategy for Service Testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_015_DEVELOP_INTEGRATION_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.015 Develop Integration Test Plan </a></div></th>
+    <td> Use this technique to determine the approach for integration testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020 Develop Unit Test Scripts</a></div></th>
+    <td>Use this technique to determine the approach for unit testing. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Test </a></div></th>
+    <td>Use this technique to determine the approach for unit testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_040_PERFORM_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.040 Perform Integration Test </a></div></th>
+    <td>Use this technique to determine the approach for integration testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_050_DEVELOP_SYSTEM_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.050 Develop System Test Plan </a></div></th>
+    <td> Use this technique to determine the approach for system testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/TE_082_DEVELOP_ACCEPTANCE_TEST_PLAN_OVERVIEW.HTM" target="_blank">TE.082 Develop Acceptance Test Plan </a></div></th>
+    <td> Use this technique to determine the approach for user acceptance testing.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/PT_030_DEFINE_PERF_TESTING_STRATEGY_OVERVIEW.HTM" target="_blank">PT.030 Define Performance Testing Strategy </a></div></th>
+    <td> Use this technique to determine the testing strategy for service load and performance testing.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Does the test developer builds the test suite independent of the construction of the code that implements the service? </li>
+  <li>If the same developer is responsible for service implementation and for testing of the service, are the test cases constructed prior to developing the code?</li>
+  <li>Is the test plan developed independent of the service design?</li>
+  <li>Are the Acceptance Criteria of the service based on the service contract?</li>
+  <li>Are any changes to the contract justified and approved by the SOA Leadership team in conjunction with the business in order to achieve acceptance? </li>
+  <li> Are defects opened against the service interface if gaps are found while preparing the test cases, in addition to while testing the services? </li>
+  <li>Are members from the service design team assigned to address these defects, before implementation?</li>
+  <li>Has it been clearly documented what kind of information should be gathered during service testing? </li>
+  <li>Has it been planned to gather information during service testing, relevant for infrastructure planning, as well as troubleshooting and managing the collection of services operating in production?</li>
+  <li>Has service testing been included as an automatic task during the service lifecycle to ensure a good quality on each stage in the process?</li>
+  <li>Has an automated test environment been implemented for service testing? </li>
+  <li>Are all test cases automated and is test data managed in a test case database?</li>
+  <li>
+    <p>Are the following test cases as a minimum been created for every service, a unit test, a function test, and a consumer acceptance test?</p>
+  </li>
+  <li>
+    <p>Are the descriptions of the test cases registered in the Enterprise Repository, to allow for reuse in several scenarios? </p>
+  </li>
+  <li>Are test results published to allow consumers and potential consumers to be assured of the quality of the service? </li>
+  <li>Is the test strategy in the Enterprise Repository linked to test results from the last test sequence? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

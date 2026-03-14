@@ -1,0 +1,1047 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM_NOPAGENAV.DWT" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Envision WBS</title>
+<!-- InstanceEndEditable -->
+<link href="../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../../OUM/OUM_HOME.HTM"><img src="../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../../OUM/CLOUD_HOME.htm"><img src="../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="88%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Envision Work Breakdown Structure</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<TABLE width="100%" BORDER title="Envision Work Breakdown Structure" summary="This table shows the work breakdown structure for Envision. The column headings are Seq, ID, Task Name, Work Product and Predecessors.">
+  <TR BGCOLOR="#CCCCCC">
+    <th scope="col" NOWRAP>Seq</th>
+    <TH scope="col" ALIGN=left NOWRAP>ID</TH>
+    <TH scope="col" ALIGN=left NOWRAP>Task Name</TH>
+    <TH scope="col" ALIGN=left NOWRAP>Work Product</TH>
+    <TH scope="col" ALIGN=left NOWRAP><b>Predecessors</b></TH>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>1</th>
+    <TD ALIGN=left><b>OUM</b></TD>
+    <TD ALIGN=left><DIV><B>Oracle Unifed Method </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>2</th>
+    <TD ALIGN=left><b>ENVISION</b></TD>
+    <TD ALIGN=left><DIV><B>OUM - Envision Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>3</th>
+    <TD ALIGN=left><b>INIT</b></TD>
+    <TD ALIGN=left><DIV><B>Initiate</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>4</th>
+    <TD ALIGN=left><b>INIT.ACT.PEF</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare Envision Foundation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>5</th>
+    <TD ALIGN=left>INIT.ER.010</TD>
+    <TD ALIGN=left><DIV>Create Business Case for Envision Engagement</DIV></TD>
+    <TD ALIGN=left>Customer Envision Engagement Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>6</th>
+    <TD ALIGN=left>INIT.EA.001</TD>
+    <TD ALIGN=left><DIV>Justify and Engage Enterprise Architects</DIV></TD>
+    <TD ALIGN=left>Assigned Enterprise Architect</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>7</th>
+    <TD ALIGN=left>INIT.ER.040</TD>
+    <TD ALIGN=left><DIV>Research Enterprise </DIV></TD>
+    <TD ALIGN=left>Enterprise Research Findings </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>8</th>
+    <TD ALIGN=left>INIT.ER.045</TD>
+    <TD ALIGN=left><DIV>Establish Executive Sponsorship</DIV></TD>
+    <TD ALIGN=left>Committed Executive Sponsorship</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>9</th>
+    <TD ALIGN=left>INIT.BA.010</TD>
+    <TD ALIGN=left><DIV>Identify Business Strategy</DIV></TD>
+    <TD ALIGN=left>Business Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>10</th>
+    <TD ALIGN=left>INIT.BA.012</TD>
+    <TD ALIGN=left><DIV>Define Business Scope</DIV></TD>
+    <TD ALIGN=left>Business Scope</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>11</th>
+    <TD ALIGN=left>INIT.BA.015</TD>
+    <TD ALIGN=left><DIV>Conduct Enterprise Stakeholder Assessment</DIV></TD>
+    <TD ALIGN=left>Enterprise Stakeholder Inventory</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>12</th>
+    <TD ALIGN=left>INIT.GV.010</TD>
+    <TD ALIGN=left><DIV>Define Governance Strategy</DIV></TD>
+    <TD ALIGN=left>Governance Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>13</th>
+    <TD ALIGN=left>INIT.BA.017.1</TD>
+    <TD ALIGN=left><DIV>Determine Metrics Collection and Reporting Strategy</DIV></TD>
+    <TD ALIGN=left>Metrics Collection and Reporting Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>14</th>
+    <TD ALIGN=left>INIT.BA.018.1</TD>
+    <TD ALIGN=left><DIV>Establish Current Baseline Metrics</DIV></TD>
+    <TD ALIGN=left>Current Baseline Metrics</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>15</th>
+    <TD ALIGN=left>INIT.BA.020</TD>
+    <TD ALIGN=left><DIV>Document Enterprise Organization Structures</DIV></TD>
+    <TD ALIGN=left>Enterprise Organization Structures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>16</th>
+    <TD ALIGN=left>INIT.BA.025</TD>
+    <TD ALIGN=left><DIV>Determine Operating Model</DIV></TD>
+    <TD ALIGN=left>Validated Operating Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>17</th>
+    <TD ALIGN=left>INIT.EA.002</TD>
+    <TD ALIGN=left><DIV>Review External Reference Architectures</DIV></TD>
+    <TD ALIGN=left>External Reference Architectures Review</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>18</th>
+    <TD ALIGN=left>INIT.ER.015</TD>
+    <TD ALIGN=left><DIV>Conduct Enterprise Maturity Assessment</DIV></TD>
+    <TD ALIGN=left>Maturity Analysis and Recommendations Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>19</th>
+    <TD ALIGN=left>INIT.ER.020</TD>
+    <TD ALIGN=left><DIV>Determine Envision Engagement Strategy</DIV></TD>
+    <TD ALIGN=left>Envision Engagement Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>20</th>
+    <TD ALIGN=left><b>INIT.ACT.PD</b></TD>
+    <TD ALIGN=left><DIV><B>Prepare for Discovery</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>4</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>21</th>
+    <TD ALIGN=left>INIT.EOCM.010</TD>
+    <TD ALIGN=left><DIV>Create and Manage Ad Hoc Communications</DIV></TD>
+    <TD ALIGN=left>Ad Hoc Communications</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>22</th>
+    <TD ALIGN=left>INIT.ER.025</TD>
+    <TD ALIGN=left><DIV>Educate Enterprise on Area of Focus</DIV></TD>
+    <TD ALIGN=left>Educated Enterprise</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>23</th>
+    <TD ALIGN=left>INIT.ER.030</TD>
+    <TD ALIGN=left><DIV>Set and Agree on Plan for Envision Engagement</DIV></TD>
+    <TD ALIGN=left>Envision Engagement Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>24</th>
+    <TD ALIGN=left>INIT.ER.050</TD>
+    <TD ALIGN=left><DIV>Validate and Agree on Envision Engagement Plan</DIV></TD>
+    <TD ALIGN=left>Agreed on Envision Engagement Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>25</th>
+    <TD ALIGN=left><b>INIT.ACT.CEAWE</b></TD>
+    <TD ALIGN=left><DIV><B>Conduct Executive Alignment Workshop - Envision</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>4</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>26</th>
+    <TD ALIGN=left>INIT.EOCM.020</TD>
+    <TD ALIGN=left><DIV>Prepare for Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Alignment Workshop Materials</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>27</th>
+    <TD ALIGN=left>INIT.EOCM.030</TD>
+    <TD ALIGN=left><DIV>Conduct Executive Alignment Workshop</DIV></TD>
+    <TD ALIGN=left>Executive Business Objectives and  Governance Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>28</th>
+    <TD ALIGN=left>INIT.EOCM.040</TD>
+    <TD ALIGN=left><DIV>Build and Deploy Sponsorship Program</DIV></TD>
+    <TD ALIGN=left>Sponsorship Program</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>29</th>
+    <TD ALIGN=left><b>INIT.ACT.DMCEC</b></TD>
+    <TD ALIGN=left><DIV><B>Define and Maintain Common Enterprise Concepts</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>4</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>30</th>
+    <TD ALIGN=left>INIT.BA.030.1</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Glossary</DIV></TD>
+    <TD ALIGN=left>Enterprise Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>31</th>
+    <TD ALIGN=left>INIT.EA.010.1</TD>
+    <TD ALIGN=left><DIV>Review Architecture Principles, Guidelines and Standards</DIV></TD>
+    <TD ALIGN=left>Architecture Principles, Guidelines and Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>32</th>
+    <TD ALIGN=left>INIT.ER.070</TD>
+    <TD ALIGN=left><DIV>Define Modeling Strategy for the Enterprise</DIV></TD>
+    <TD ALIGN=left>Enterprise Modeling Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>33</th>
+    <TD ALIGN=left><b>INIT.ACT.EDGI</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Gather Information (As Is)</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>4,20,25</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>34</th>
+    <TD ALIGN=left>INIT.EOCM.050</TD>
+    <TD ALIGN=left><DIV>Assess Enterprise Change Readiness </DIV></TD>
+    <TD ALIGN=left>Preliminary Enterprise Change Readiness Assessment </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>35</th>
+    <TD ALIGN=left>INIT.EOCM.060</TD>
+    <TD ALIGN=left><DIV>Prepare Project Team for Enterprise Culture</DIV></TD>
+    <TD ALIGN=left>Prepared Project Team</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>36</th>
+    <TD ALIGN=left>INIT.EOCM.070</TD>
+    <TD ALIGN=left><DIV>Identify Change Agent Structure</DIV></TD>
+    <TD ALIGN=left>Change Agent Structure</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>37</th>
+    <TD ALIGN=left>INIT.ER.080</TD>
+    <TD ALIGN=left><DIV>Obtain Existing Reference Material</DIV></TD>
+    <TD ALIGN=left>Existing Reference Material</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>38</th>
+    <TD ALIGN=left>INIT.ER.090</TD>
+    <TD ALIGN=left><DIV>Conduct Solution Readiness Assessment</DIV></TD>
+    <TD ALIGN=left>Solution Readiness Assessment</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>39</th>
+    <TD ALIGN=left>INIT.GV.015</TD>
+    <TD ALIGN=left><DIV>Review Current Governance Model</DIV></TD>
+    <TD ALIGN=left>Current Governance Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>40</th>
+    <TD ALIGN=left>INIT.GV.020.1</TD>
+    <TD ALIGN=left><DIV>Determine Regulatory and Business Mandates</DIV></TD>
+    <TD ALIGN=left>Mandate Matrix</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>41</th>
+    <TD ALIGN=left>INIT.BA.040</TD>
+    <TD ALIGN=left><DIV>Create Enterprise Function or Process Model</DIV></TD>
+    <TD ALIGN=left>Enterprise Function or Process Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>42</th>
+    <TD ALIGN=left>INIT.BA.050</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Domain Model (Business Entities)</DIV></TD>
+    <TD ALIGN=left>Enterprise Domain Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>43</th>
+    <TD ALIGN=left>INIT.BA.055</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Knowledge Flow</DIV></TD>
+    <TD ALIGN=left>Enterprise Knowledge Flow</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>44</th>
+    <TD ALIGN=left>INIT.BA.058</TD>
+    <TD ALIGN=left><DIV>Develop Business Architecture</DIV></TD>
+    <TD ALIGN=left>Business Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>45</th>
+    <TD ALIGN=left>INIT.BA.060.1</TD>
+    <TD ALIGN=left><DIV>Perform High-Level Use Case Discovery</DIV></TD>
+    <TD ALIGN=left>High-Level Use Cases</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>46</th>
+    <TD ALIGN=left>INIT.EA.030</TD>
+    <TD ALIGN=left><DIV>Identify Current Enterprise Architecture</DIV></TD>
+    <TD ALIGN=left>Current Enterprise Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>47</th>
+    <TD ALIGN=left>INIT.EA.040</TD>
+    <TD ALIGN=left><DIV>Analyze Capabilities</DIV></TD>
+    <TD ALIGN=left>Capability Analysis Results </TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>48</th>
+    <TD ALIGN=left>INIT.GV.030.1</TD>
+    <TD ALIGN=left><DIV>Discover or Define Policies</DIV></TD>
+    <TD ALIGN=left>Governance Policies Catalog</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>49</th>
+    <TD ALIGN=left>INIT.EA.050</TD>
+    <TD ALIGN=left><DIV>Identify Current Architectural Challenges</DIV></TD>
+    <TD ALIGN=left>Current Architectural Challenges</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>50</th>
+    <TD ALIGN=left>INIT.GV.092</TD>
+    <TD ALIGN=left><DIV>Determine Projects Meta Model</DIV></TD>
+    <TD ALIGN=left>Projects Meta Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>51</th>
+    <TD ALIGN=left>INIT.IP.010</TD>
+    <TD ALIGN=left><DIV>Inventory Projects</DIV></TD>
+    <TD ALIGN=left>IT Project Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>52</th>
+    <TD ALIGN=left>INIT.GV.094</TD>
+    <TD ALIGN=left><DIV>Determine Applications Meta Model</DIV></TD>
+    <TD ALIGN=left>Applications Meta Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>53</th>
+    <TD ALIGN=left>INIT.IP.012</TD>
+    <TD ALIGN=left><DIV>Inventory Applications</DIV></TD>
+    <TD ALIGN=left>IT Application Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>54</th>
+    <TD ALIGN=left>INIT.IP.015</TD>
+    <TD ALIGN=left><DIV>Conduct Portfolio Analysis</DIV></TD>
+    <TD ALIGN=left>Portfolio Analysis Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>55</th>
+    <TD ALIGN=left>INIT.BA.065</TD>
+    <TD ALIGN=left><DIV>Review Business-IT SLA</DIV></TD>
+    <TD ALIGN=left>Business-IT SLA Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>56</th>
+    <TD ALIGN=left>INIT.BA.067</TD>
+    <TD ALIGN=left><DIV>Review Business Volumetrics</DIV></TD>
+    <TD ALIGN=left>Business Volumetrics Report</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>57</th>
+    <TD ALIGN=left>INIT.GV.096</TD>
+    <TD ALIGN=left><DIV>Determine Services Meta Model</DIV></TD>
+    <TD ALIGN=left>Services Meta Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>58</th>
+    <TD ALIGN=left>INIT.GV.098</TD>
+    <TD ALIGN=left><DIV>Determine Other Metal Model Descriptions</DIV></TD>
+    <TD ALIGN=left>Other Meta Model Descriptions</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>59</th>
+    <TD ALIGN=left>INIT.IP.014</TD>
+    <TD ALIGN=left><DIV>Inventory Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>60</th>
+    <TD ALIGN=left>INIT.ER.100</TD>
+    <TD ALIGN=left><DIV>Define Supplemental Enterprise Requirements</DIV></TD>
+    <TD ALIGN=left>Supplemental Enterprise Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>61</th>
+    <TD ALIGN=left>INIT.EA.057</TD>
+    <TD ALIGN=left><DIV>Review Business Capacity Plan</DIV></TD>
+    <TD ALIGN=left>Business Capacity Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>62</th>
+    <TD ALIGN=left><b>INIT.ACT.EDBPD</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Brainstorm, Prioritize and Discover Entry Points</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>33</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>63</th>
+    <TD ALIGN=left>INIT.BA.045</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Business Context Diagram</DIV></TD>
+    <TD ALIGN=left>Enterprise Business Context Diagram</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>64</th>
+    <TD ALIGN=left>INIT.GV.040</TD>
+    <TD ALIGN=left><DIV>Determine Organizational Impact of Governance</DIV></TD>
+    <TD ALIGN=left>Impact Study and List of Proposed Organizational Changes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>65</th>
+    <TD ALIGN=left>INIT.EA.060</TD>
+    <TD ALIGN=left><DIV>Identify Architectural Gaps and Improvement Options</DIV></TD>
+    <TD ALIGN=left>Architectural Gaps and Improvement Options</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>66</th>
+    <TD ALIGN=left>INIT.EA.065</TD>
+    <TD ALIGN=left><DIV>Identify Enterprise IT Strategy</DIV></TD>
+    <TD ALIGN=left>Enterprise IT Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>67</th>
+    <TD ALIGN=left>INIT.ER.110.1</TD>
+    <TD ALIGN=left><DIV>Perform Benefit Analysis</DIV></TD>
+    <TD ALIGN=left>Benefit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>68</th>
+    <TD ALIGN=left>INIT.BA.060.2</TD>
+    <TD ALIGN=left><DIV>Perform High-Level Use Case Discovery</DIV></TD>
+    <TD ALIGN=left>High-Level Use Cases</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>69</th>
+    <TD ALIGN=left>INIT.EA.075</TD>
+    <TD ALIGN=left><DIV>Develop Technology Reference Architectures</DIV></TD>
+    <TD ALIGN=left>Technology Reference Architectures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>70</th>
+    <TD ALIGN=left>INIT.BA.070</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Candidate Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>71</th>
+    <TD ALIGN=left>INIT.IP.020</TD>
+    <TD ALIGN=left><DIV>Analyze Services</DIV></TD>
+    <TD ALIGN=left>Service Portfolio - Proposed Project Services</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>72</th>
+    <TD ALIGN=left>INIT.IP.025</TD>
+    <TD ALIGN=left><DIV>Populate Services Repository</DIV></TD>
+    <TD ALIGN=left>Populated Services Repository</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>73</th>
+    <TD ALIGN=left>INIT.BA.080</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Enterprise Business Rules</DIV></TD>
+    <TD ALIGN=left>Candidate Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>74</th>
+    <TD ALIGN=left>INIT.IP.030</TD>
+    <TD ALIGN=left><DIV>Analyze Business Rules</DIV></TD>
+    <TD ALIGN=left>Business Rules Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>75</th>
+    <TD ALIGN=left>INIT.BA.090</TD>
+    <TD ALIGN=left><DIV>Identify Process Improvement Options</DIV></TD>
+    <TD ALIGN=left>Process Improvement Options</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>76</th>
+    <TD ALIGN=left>INIT.ER.120.1</TD>
+    <TD ALIGN=left><DIV>Identify and Mitigate Future State Risks</DIV></TD>
+    <TD ALIGN=left>Future State Risks</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>77</th>
+    <TD ALIGN=left>INIT.ER.130.1</TD>
+    <TD ALIGN=left><DIV>Produce MoSCoW Improvement List</DIV></TD>
+    <TD ALIGN=left>MoSCoW Improvement List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>78</th>
+    <TD ALIGN=left>INIT.EA.095</TD>
+    <TD ALIGN=left><DIV>Review Enterprise Software Development Process</DIV></TD>
+    <TD ALIGN=left>Enterprise Software Development Process</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>79</th>
+    <TD ALIGN=left>INIT.IP.040</TD>
+    <TD ALIGN=left><DIV>Identify Candidate Projects</DIV></TD>
+    <TD ALIGN=left>Candidate Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>80</th>
+    <TD ALIGN=left><b>INIT.ACT.EDF</b></TD>
+    <TD ALIGN=left><DIV><B>Execute Discovery - Finish</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>62</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>81</th>
+    <TD ALIGN=left>INIT.ER.140</TD>
+    <TD ALIGN=left><DIV>Share Product Strategies with Enterprise</DIV></TD>
+    <TD ALIGN=left>Informed Enterprise</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>82</th>
+    <TD ALIGN=left>INIT.ER.150</TD>
+    <TD ALIGN=left><DIV>Review Discovery Findings</DIV></TD>
+    <TD ALIGN=left>Reviewed Discovery Findings</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>83</th>
+    <TD ALIGN=left><b>INIT.ACT.DSPC</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Solution and Present to Customer </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>62,80</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>84</th>
+    <TD ALIGN=left>INIT.GV.050.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Processes</DIV></TD>
+    <TD ALIGN=left>Policy Implementation Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>85</th>
+    <TD ALIGN=left>INIT.GV.060.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Tooling</DIV></TD>
+    <TD ALIGN=left>Governance Policy Tooling</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>86</th>
+    <TD ALIGN=left>INIT.GV.070.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Metrics</DIV></TD>
+    <TD ALIGN=left>Measurements Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>87</th>
+    <TD ALIGN=left>INIT.GV.080.1</TD>
+    <TD ALIGN=left><DIV>Define Policy Monitoring Processes</DIV></TD>
+    <TD ALIGN=left>Policy Monitoring Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>88</th>
+    <TD ALIGN=left>INIT.GV.090.1</TD>
+    <TD ALIGN=left><DIV>Determine Funding Model</DIV></TD>
+    <TD ALIGN=left>Funding Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>89</th>
+    <TD ALIGN=left>INIT.GV.100.1</TD>
+    <TD ALIGN=left><DIV>Implement Governance</DIV></TD>
+    <TD ALIGN=left>Governance Implementation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>90</th>
+    <TD ALIGN=left>INIT.ER.160</TD>
+    <TD ALIGN=left><DIV>Develop Desired Future State</DIV></TD>
+    <TD ALIGN=left>Desired Future State</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>91</th>
+    <TD ALIGN=left>INIT.ER.165</TD>
+    <TD ALIGN=left><DIV>Identify Capability Challenges</DIV></TD>
+    <TD ALIGN=left>Capability Challenges</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>92</th>
+    <TD ALIGN=left>INIT.ER.167</TD>
+    <TD ALIGN=left><DIV>Determine Remediation Approaches</DIV></TD>
+    <TD ALIGN=left>Remediation Approaches</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>93</th>
+    <TD ALIGN=left>INIT.EA.110</TD>
+    <TD ALIGN=left><DIV>Develop Future State Enterprise Architecture</DIV></TD>
+    <TD ALIGN=left>Future State Enterprise Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>94</th>
+    <TD ALIGN=left>INIT.EA.120</TD>
+    <TD ALIGN=left><DIV>Develop Information Architecture</DIV></TD>
+    <TD ALIGN=left>Information Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>95</th>
+    <TD ALIGN=left>INIT.EA.130</TD>
+    <TD ALIGN=left><DIV>Develop Technology Architecture</DIV></TD>
+    <TD ALIGN=left>Technology Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>96</th>
+    <TD ALIGN=left>INIT.EA.140</TD>
+    <TD ALIGN=left><DIV>Develop Applications Architecture</DIV></TD>
+    <TD ALIGN=left>Applications Architecture</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>97</th>
+    <TD ALIGN=left>INIT.EA.150</TD>
+    <TD ALIGN=left><DIV>Define Transitional Architectures</DIV></TD>
+    <TD ALIGN=left>Transitional Architectures</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>98</th>
+    <TD ALIGN=left>INIT.EA.160</TD>
+    <TD ALIGN=left><DIV>Define Business Rules Implementation Strategy</DIV></TD>
+    <TD ALIGN=left>Business Rules Implementation Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>99</th>
+    <TD ALIGN=left>INIT.ER.170</TD>
+    <TD ALIGN=left><DIV>Develop Future State Transition Plan</DIV></TD>
+    <TD ALIGN=left>Future State Transition Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>100</th>
+    <TD ALIGN=left>INIT.EA.170</TD>
+    <TD ALIGN=left><DIV>Identify Integration Requirements</DIV></TD>
+    <TD ALIGN=left>Integration Requirements</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>101</th>
+    <TD ALIGN=left>INIT.IP.050.1</TD>
+    <TD ALIGN=left><DIV>Prioritize Projects</DIV></TD>
+    <TD ALIGN=left>Prioritized Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>102</th>
+    <TD ALIGN=left>INIT.ER.110.2</TD>
+    <TD ALIGN=left><DIV>Perform Benefit Analysis</DIV></TD>
+    <TD ALIGN=left>Benefit Analysis</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>103</th>
+    <TD ALIGN=left>INIT.IP.060</TD>
+    <TD ALIGN=left><DIV>Develop IT Portfolio Plan</DIV></TD>
+    <TD ALIGN=left>IT Portfolio Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>104</th>
+    <TD ALIGN=left>INIT.EA.190</TD>
+    <TD ALIGN=left><DIV>Define Product Implementation Prioritization</DIV></TD>
+    <TD ALIGN=left>Product Implementation Prioritization</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>105</th>
+    <TD ALIGN=left>INIT.ER.180</TD>
+    <TD ALIGN=left><DIV>Prepare for and Present Solution Recommendations</DIV></TD>
+    <TD ALIGN=left>Solution Recommendations</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>106</th>
+    <TD ALIGN=left>INIT.EA.200</TD>
+    <TD ALIGN=left><DIV>Define Development Framework and Policy Guidelines</DIV></TD>
+    <TD ALIGN=left>Development Framework</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>107</th>
+    <TD ALIGN=left><b>INIT.ACT.PTI</b></TD>
+    <TD ALIGN=left><DIV><B>Plan Transition to Implementation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD><div align="left"><b>83</b></div></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>108</th>
+    <TD ALIGN=left>INIT.ER.190</TD>
+    <TD ALIGN=left><DIV>Review Business Feedback and Identify Opportunities</DIV></TD>
+    <TD ALIGN=left>Opportunities Task List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>109</th>
+    <TD ALIGN=left>INIT.ER.200</TD>
+    <TD ALIGN=left><DIV>Prepare for Transition to Sales or Services</DIV></TD>
+    <TD ALIGN=left>Opportunities Action Plan</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>110</th>
+    <TD ALIGN=left><b>ME</b></TD>
+    <TD ALIGN=left><DIV><B>Maintain and Evolve</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>111</th>
+    <TD ALIGN=left><b>ME.ACT.ME</b></TD>
+    <TD ALIGN=left><DIV><B>Maintain and Evolve</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>112</th>
+    <TD ALIGN=left>ME.BA.017.2</TD>
+    <TD ALIGN=left><DIV>Determine Metrics Collection and Reporting Strategy</DIV></TD>
+    <TD ALIGN=left>Metrics Collection and Reporting Strategy</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>113</th>
+    <TD ALIGN=left>ME.BA.018.2</TD>
+    <TD ALIGN=left><DIV>Establish Current Baseline Metrics</DIV></TD>
+    <TD ALIGN=left>Current Baseline Metrics</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>114</th>
+    <TD ALIGN=left>ME.BA.100</TD>
+    <TD ALIGN=left><DIV>Maintain Enterprise Business Models</DIV></TD>
+    <TD ALIGN=left>Maintained Enterprise Business Models</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>115</th>
+    <TD ALIGN=left>ME.BA.110</TD>
+    <TD ALIGN=left><DIV>Maintain Business Rules</DIV></TD>
+    <TD ALIGN=left>Maintained Business Rules</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>116</th>
+    <TD ALIGN=left>ME.BA.030.2</TD>
+    <TD ALIGN=left><DIV>Develop Enterprise Glossary</DIV></TD>
+    <TD ALIGN=left>Enterprise Glossary</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>117</th>
+    <TD ALIGN=left>ME.EA.010.2</TD>
+    <TD ALIGN=left><DIV>Review Architecture Principles, Guidelines and Standards</DIV></TD>
+    <TD ALIGN=left>Architecture Principles, Guidelines and Standards</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>118</th>
+    <TD ALIGN=left>ME.GV.020.2</TD>
+    <TD ALIGN=left><DIV>Determine Regulatory and Business Mandates</DIV></TD>
+    <TD ALIGN=left>Mandate Matrix</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>119</th>
+    <TD ALIGN=left>ME.GV.030.2</TD>
+    <TD ALIGN=left><DIV>Discover or Define Policies</DIV></TD>
+    <TD ALIGN=left>Governance Policies Catalog</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>120</th>
+    <TD ALIGN=left>ME.GV.050.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Processes</DIV></TD>
+    <TD ALIGN=left>Policy Implementation Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>121</th>
+    <TD ALIGN=left>ME.GV.060.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Implementation Tooling</DIV></TD>
+    <TD ALIGN=left>Governance Policy Tooling</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>122</th>
+    <TD ALIGN=left>ME.GV.070.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Metrics</DIV></TD>
+    <TD ALIGN=left>Measurements Portfolio</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>123</th>
+    <TD ALIGN=left>ME.GV.080.2</TD>
+    <TD ALIGN=left><DIV>Define Policy Monitoring Processes</DIV></TD>
+    <TD ALIGN=left>Policy Monitoring Processes</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>124</th>
+    <TD ALIGN=left>ME.GV.090.2</TD>
+    <TD ALIGN=left><DIV>Determine Funding Model</DIV></TD>
+    <TD ALIGN=left>Funding Model</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>125</th>
+    <TD ALIGN=left>ME.GV.100.2</TD>
+    <TD ALIGN=left><DIV>Implement Governance</DIV></TD>
+    <TD ALIGN=left>Governance Implementation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>126</th>
+    <TD ALIGN=left>ME.GV.110</TD>
+    <TD ALIGN=left><DIV>Monitor and Analyze Governance Processes</DIV></TD>
+    <TD ALIGN=left>Governance Implementation Improvement Proposal</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>127</th>
+    <TD ALIGN=left>ME.ER.120.2</TD>
+    <TD ALIGN=left><DIV>Identify and Mitigate Future State Risks</DIV></TD>
+    <TD ALIGN=left>Future State Risks</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>128</th>
+    <TD ALIGN=left>ME.ER.130.2</TD>
+    <TD ALIGN=left><DIV>Produce MoSCoW Improvement List</DIV></TD>
+    <TD ALIGN=left>MoSCoW Improvement List</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>129</th>
+    <TD ALIGN=left>ME.EA.210</TD>
+    <TD ALIGN=left><DIV>Maintain Enterprise Architectural Models</DIV></TD>
+    <TD ALIGN=left>Maintained Enterprise Architectural Models</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>130</th>
+    <TD ALIGN=left>ME.IP.050.2</TD>
+    <TD ALIGN=left><DIV>Prioritize Projects</DIV></TD>
+    <TD ALIGN=left>Prioritized Projects</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>131</th>
+    <TD ALIGN=left>ME.IP.070</TD>
+    <TD ALIGN=left><DIV>Execute and Maintain IT Portfolio and Programs</DIV></TD>
+    <TD ALIGN=left>Maintained IT Portfolio and Programs</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>132</th>
+    <TD ALIGN=left>ME.IP.080</TD>
+    <TD ALIGN=left><DIV>Maintain Repository of Artifacts</DIV></TD>
+    <TD ALIGN=left>Maintained Repository of Artifacts</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th scope="row" ALIGN=center>133</th>
+    <TD ALIGN=left>ME.ER.210</TD>
+    <TD ALIGN=left><DIV>Monitor Current Situation and Pursue Relevant Updates</DIV></TD>
+    <TD ALIGN=left>Monitored Current Situation</TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+</TABLE>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><b><IMG src="../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </b></P>
+<P align="left"><b>    <a href="../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

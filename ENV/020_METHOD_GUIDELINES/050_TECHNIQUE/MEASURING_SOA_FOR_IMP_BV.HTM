@@ -1,0 +1,704 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Measuring SOA for Improved Business Value Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>MEASURING SOA FOR IMPROVED BUSINESS VALUE</h2>
+<p>The purpose of this technique is to provide assistance in understanding the role instrumentation can play in information gathering for the purpose of making improved business decisions, as well as in measuring the amount of business value generated through the IT strategy. The technique presents some of the core planning exercises necessary to enable an organization to measure business value generated through SOA projects. By measuring IT business value through IT, organizations will be armed with the information necessary to make better Business and IT decisions necessary to improve business value. Further, the technique demonstrates how instrumentation can be utilized to not only instrument IT based processes and strategies, but also provide support for business metrics based on business objectives.</p>
+<p>If an organization wants to improve the amount of business value generated through IT, they must first establish a strategy for measuring the business value generated through the solutions managed and delivered through IT. Measuring generated IT business value is important because it provides the basis for improvement. Many projects are justified against various business goals. But how many actually provide and fulfill those goals? If the organization does not establish a system to validate that the project has been successful with respect to concrete evidence, then one can never be totally sure.</p>
+<p>SOA brings the promise of a more robust, extensible, and agile IT organization, but there has been an increasing amount of scrutiny given to the effectiveness of the SOA strategy in general. This scrutiny has been brought upon, for the most part, by the common failures of organizations attempting to adopt SOA. Typically, these failures are not the fault of the strategy itself, but the way in which organizations go about adopting it. For instance, a fundamental promise of SOA is its resiliency to support change. However, many organizations do not develop the necessary standards and patterns necessary to support change, such as a consistent versioning strategy for services. Simply stated, just because an organization indicates that they are utilizing SOA, does not mean they get all the benefits for free; they have to build their SOA correctly. Simply building web services is not applying SOA.</p>
+<p>The benefits however, are there for those that go about it the right way. For instance, consider a lending firm that deals in mortgages, car loans, personal loans, etc. The firm has been broken into divisions supporting each of the different types of lending operations they deal in. In applying their SOA, they have developed a number of core services that support the lending business regardless of division. In particular, the Credit Check service is used across all divisions of the business. The organization took the time, prior to developing shared services, to develop a strategy for handling unforeseen changes necessary to IT services, and therefore implemented a basic versioning strategy for their services. At some point in time, the government introduced new regulations with respect to credit scoring which would require some minor adjustments to the way credit scoring is conducted from a technical standpoint. Because the organization developed a versioning strategy, they were able to make the change to a new version of the Credit Check service and migrate the existing consumers to the new service without requiring any change or work on their part. </p>
+<p>Clearly, there was a great deal of business value generated by this approach. For instance:</p>
+<ul>
+  <li><b>Time to Market:</b> Because the organization was able to make the change to a single shared service, rather than apply it repeatedly across several different solutions, they were able to implement the change quickly, and have it applied across the business rapidly.</li>
+  <li><b>Competitive Advantage:</b> Because of the organizations ability to deliver the change rapidly across the entire enterprise, it was able to comply with the new regulation faster than its competitors, giving it a distinct competitive advantage.</li>
+  <li><b>Cost Avoidance:</b> The organization only had to the make the changes to one reusable service, rather than each project or application utilizing the common credit check functions. This greatly reduced the required amount of delivery resources required to make the change.</li>
+  <li><b>Risk Avoidance:</b> Because the change was completed against a single shared service, the risk of applying the change inconsistently across applications is avoided.</li>
+</ul>
+<p>Now let&rsquo;s examine the result if the organization was applying SOA, however they did not take the time to design for change, and therefore did not implement a consistent versioning strategy. In this case, when the new regulation came down the following would have been the experience by the business: </p>
+<ul>
+  <li><b>Time to Market:</b> Due to the lack of a versioning strategy, work must be completed by each consumer of the service in order to adopt the new service. This required additional testing cycles and development by each consumer independently.</li>
+  <li><b>Competitive Advantage:</b> Very little competitive advantage was observed, because the business was unable to respond to the new regulation quickly.</li>
+  <li><b>Cost Avoidance:</b> Each organization was forced down a delivery cycle in order to support the change to the new service. Because of the different delivery cycles, multiple versions of the service were required to remain in production while each application migrated independently.</li>
+  <li><b>Risk Avoidance:</b> Because of the increased number of dependencies on multiple versions of the same service, and the separate delivery lifecycles, additional risk was observed by the business. The risk stemmed from the difference in timelines in applying the changes across the divisions and managing the project and service lifecycles throughout the change period.</li>
+</ul>
+<p>In this scenario, the result of requiring a change to a service was dramatically different across two different SOA strategies. The first scenario got it right, at least from a design for change perspective, and the second was left wondering why they even went down the path of SOA in the first place. In fact, I think the argument is pretty clear, even though the second organization believed they were doing so, the truth is, they were not.</p>
+<p>The example does lead to an important point however. If both organizations were measuring the business value generated by their IT initiatives effectively, the second would have most definitely understood that there was a problem with their SOA strategy, and the first would have significant evidence supporting their SOA cause.<br>
+  In order to measure IT business value effectively, organizations must first estimate the business value expected from an initiative prior to undertaking the project. Once, delivered, they need to measure and validate the results against expectations. In the case of the second scenario, the project delivery clearly would not have measured up against the expected results. This would have clearly pointed to problems in the strategy, which when corrected, would lead to increased business value for future endeavors.</p>
+<p>Further, the ability to determine the root cause of the problem with respect to the IT strategy will provide reassurance to the business that the problem can be corrected and better results can be expected in the future. If no strategy involving estimating, measuring and validating IT business value is in place, the perception of the IT business will be left to gut perception, rather than backed by hard evidence (either positive or negative).</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p> <b>Business Value Measurement</b> &ndash; The Business Value Measurement is twofold:</p>
+<ul>
+  <li> It contains enterprise standards and procedures on business value categories that may be relevant for business value measurements, how data for business value measurement may be collected and calculated.</li>
+  <li>For each project or SOA service, it also contains business value estimates, baseline measurements, the actual business value for projects/services, and finally an analysis that compares the estimated project business value compared to the actual business value. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Establish the criteria and foundation for measuring business value.</td>
+    <td>Measuring Criteria and Foundation </td>
+    <td>The Measuring Criteria and Foundation contains the categories against which the customer plans to classify business value estimates. It also includes what should be the common business value unit, such as for example the local currency of the enterprise&rsquo;s headquarters. Finally, the component includes for each category, a list of all the business values the enterprise wishes to measure against. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Establish a standard for estimating business value for projects.</td>
+    <td>Projects Business Value Estimation Standard </td>
+    <td>The Projects Business Value Estimation Standard includes a standard on how to estimate business value for a project. This standard should be applied for all projects that are considered for execution, and should be an estimate on the positive impacts the solution should produce for the business, and weighing that against the expected total cost to realize the solution. This business value estimate should be used as an input in the projects justification process.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Establish standards for a baseline business value measurement. </td>
+    <td>Business Value Baseline Standards </td>
+    <td>The Business Value Baseline Standards include standards on how business value measurement baselines can be determined in various types of scenarios. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Establish standards for performing a business value analysis for the project delivery process.</td>
+    <td>Project Delivery Business Value Analysis Standards</td>
+    <td>The Project Delivery Business Value Standards describes standardized processes for determining business value for services as part of the project delivery process. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine conceptual business value instrumentation data. </td>
+    <td>Conceptual Business Value Instrumentation Data </td>
+    <td>The Conceptual Business Value Instrumentation Data contains all the entities, attributes and relationships that are relevant for Business Value Instrumentation. It shows where the Business Value should be stored, and at what point during the process it should be stored.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Determine SOA business value metrics. </td>
+    <td>SOA Business Value Metrics </td>
+    <td>The SOA Business Value Metrics component contains all the metrics that you will require to calculate the business value of projects and services.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>For each project, estimate a business value.</td>
+    <td>Project Business Value Estimate </td>
+    <td>A Project Business Value Estimate is created for each individual project. This is an estimate on the projects total business value calculated using the earlier established standards for business value estimation.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>At the start of each project, establish a business value baseline. </td>
+    <td>Project Business Value Baseline </td>
+    <td>A Project Business Value Baseline is created for each individual project. This is an actual measured business value baseline for the project that has determined based on the earlier established standards for business value baseline measurements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>For each project, implement the business value measurements. </td>
+    <td>Business Value Measurements Implementation </td>
+    <td>A Project Business Value Measurements Implementation is created for each individual project in order to enable reporting on the achieved project or services business value. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Measure the actual results.</td>
+    <td>Business Value Measurement Results </td>
+    <td>For each project, a Business Value Measurements Results provides the actual business value that is achieved by the project or services in the common business value unit that is used in the organization. This can be used to compare achieved business value between different implemented projects and services throughout the organization. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">11</th>
+    <td>Validate and analyze the results. </td>
+    <td>Validated Business Value Measurements </td>
+    <td>For each project, a Validated Business Value Measurements analyzes the actual business value compared to the estimated business value to see what may have caused the differences between estimated and actual value.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Measuring SOA IT Business value goes beyond the project delivery lifecycle. It is a cumulative effort that measures the overall business value generated by initiatives which are on separate delivery cycles. The model becomes slightly more complicated when you add in the concept of services, as they represent separate initiatives, with separate lifecycles, but still contribute to the overall business value equation.</p>
+<p>One of the key aspects with respect to measuring IT Business value as it results from an IT organization utilizing SOA is determining how much business value can be attributed to the approach itself, and even at a more granular level to the point of understanding the business value resulting from each service. In general the process of measuring business value begins prior to engineering a project, and continues after a project is delivered. </p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_BVAL.PNG" alt="Business Value Analysis Lifecycle" width="743" height="397" title="Business Value Analysis Lifecycle"></p>
+<p align="center"><b>Business Value Analysis Lifecycle </b></p>
+<p align="left">Most organizations go through a process of justifying and ranking projects for delivery. Part of that exercise is doing some analysis with respect to estimating the amount of business value that will result from the project which is measured against the cost of delivering the project in addition to the ongoing maintenance costs. The estimation process represents the starting point of measuring business value, as this data needs to be validated against the estimate after the project has been delivered. Significant gaps between estimates and the measured result represent breakdown in the overall strategy and processes.</p>
+<p>The example presented in the introduction, where the lending firm was forced to implement a change to the credit scoring functionality across the business in order to comply with new government regulations, is worth revisiting. In the case of the failed scenario, the project was probably estimated to come in with a much higher business value than what actually resulted. This was because of the false assumption that their SOA was designed to tackle change (and it was not). When results are greatly outside of expectation, changes are most likely necessary in order to prevent a repeat performance.</p>
+<p>Projects are justified and prioritized based on analysis completed against the project estimates. The mechanism that organizations utilize to justify projects will vary based on the type of business they are in and differing business conditions. It may seem that the estimate data is not always the primary driver. For instance, government regulations that force compliance often leave little choice with respect to project priority. However, these projects do exude a great deal of business value in the area of cost avoidance, because in order to avoid the cost of being shut down, or temporarily shut down would definitely measure high with respect to business value.</p>
+<p>Upon justification a project begins its normal delivery lifecycle. In parallel, the baseline measurements of estimated business value should be established. The baseline is necessary to measure the as is conditions with respect to business value prior to executing the project, and if possible, should be measured in a way that is consistent with the measurements that will be taken after delivery. In some instances this is not always possible.</p>
+<p>Since the formal identification and discovery of services has not yet taken place, their contribution with respect to business value needs to be updated during the project and service delivery lifecycles. The effect of the service oriented approach should already be included in the estimate, but at a much higher level. During project delivery, the establishment of individual contributions to business value by services should be more formally documented.</p>
+<p>Once the project and service delivery lifecycles have completed for a project and the project has been deployed into the operational environment, the remainder of the business value analysis cycle can complete. This begins with measuring the actual results observed post deployment. This step begins to collect data with respect to changing business value conditions based on the criteria set forth in estimating the project&rsquo;s value. Some conditions can be measured immediately, and others may take a significant amount of time before meaningful data can be interpreted.</p>
+<p>As business value is measured, it should be validated against the estimates using the baseline measurement data. Any significant gaps representing less than expected observed business value in the data are areas of concern. Further analysis would then be undertaken to attempt to understand why the gap exists and what needs to be done to correct it. </p>
+<hr WIDTH="100%">
+<h4><b><a name="ECFMBV"></a>Establish the Criteria and Foundation for Measuring Business Value</b></h4>
+<p>There are many different areas which enterprises will measure business value against. The specific set will be unique for pretty much every enterprise as they operate in different business conditions, geographies, and under different business objectives (both short and long term). However, most organizations will classify business value under the following categories: </p>
+<ul>
+  <li><b>Head Count Management:</b> This business value category covers solutions that allow an organization to deploy a new solution without increasing head count, or allow an organization to reduce the amount of headcount maintained by the organization after the deployment. Alternatively, it may also allow an organization to reposition headcount away from their current activity to other more important focuses for the business.</li>
+  <li> <b>Expense Avoidance:</b> This category represents any cost avoidance, or reduction that will result from deploying the solution. Examples include, decommissioning a system, utilizing let hardware, avoiding fines from non-compliance, etc.</li>
+  <li><b>Revenue Increase:</b> This category includes all deployments which should result in increased revenue. Solutions that increase time to market, and those that allow for a competitive advantage are examples of business values that fall into this category.</li>
+  <li><b>Working Capital:</b> This category applies to solutions where the enterprise is able to collect payment from customers faster, or reduce the days in inventory, such as raw goods needed to support the manufacturing process, etc.</li>
+</ul>
+<p>The ideal approach would be to classify business value estimates against these categories, and then convert to a common business value unit. In particular, the most generic business value unit would be the local currency of the enterprise&rsquo;s headquarters. This can be a painful and complicated process, that not every organization may be willing to undertake, but it does provide meaningful benefits once an organization because proficient in the exercise. </p>
+<p>Avoiding the conversion to currency does not prevent an organization from measuring business value. However, the organization should be consistent with the units they use for each specific type of business value calculation under each category. For instance, in the Head Count Management category, all business value calculations should be in the same units. If not in the local currency, then in something such as savings in hours, or days, and should probably include the type of employee where the savings are taking place. This is simply because the average salary of different grades of employees will vary across the enterprise (e.g.: Saving a receptionist 4hrs a day may not be as valuable as saving an engineer 4hrs a day). </p>
+<p><b>Note:</b> The inspiration for this section came from David Sward&rsquo;s book titled: Measuring the Business Value of Information Technology: From Intel Press. This book provides a good foundation for estimating and measuring business value from IT solutions. However, it does not consider the nuances of utilizing a SOA approach. Extending the method for SOA is the primary subject of this section in addition to the next six sections.</p>
+<h5><b>Head Count Management</b></h5>
+<p>The following business values fall under the Head Count Management category: </p>
+<ul>
+  <li><b>Head Count Growth:</b> This business value is realized when solutions enable an organization to reduce head count, or reprioritize head count to other activities.</li>
+  <li>Employee Turnover: This business value is realized when a solution enables the organization to increase employee retention.</li>
+  <li><b>Employee Productivity:</b> This business value is realized when a solution enable employees to become more productive. </li>
+</ul>
+<p>If monetary value is not going to be the unit of measure for this category, then typically a unit of time (such as days) can be used for each. The type of category of employee should also be specified, as not all fit within the same salary bands. </p>
+<h5><b>Expense Avoidance</b></h5>
+<p>The following business values fall under the Expense Avoidance category: </p>
+<ul>
+  <li><b>System End-of-Life:</b> This business value is realized when a solution allows an existing system to be decommissioned, and all maintenance and other expenses associated with the solution are released. Further, this may allows the hardware and software deployed on the system to be repurposed. </li>
+  <li><b>Materials Discounts:</b> This business value is realized when a solution enables the enterprise to acquire goods from one or more vendors at a reduced price.</li>
+  <li><b>Risk Avoidance:</b> This business value is realized when a solution enables the reduction of risk, such as costly errors caused by error-prone human tasks. Others examples include the business&rsquo;s ability to comply with government imposed regulations and laws, that if breeched, may seriously impact the business&rsquo;s ability to operate.</li>
+  <li><b>Scrap Reduction:</b> This business value is realized when a solution will result in the reduction of waste or other materials normally emitted through business operations.</li>
+  <li><b>Capital Hardware/Software Avoidance:</b> This business value is realized when the purchase of additional hardware and software is avoided (e.g.: a solution that makes IT systems more efficient).</li>
+  <li><b>Uptime:</b> This business value is realized if a solution enables a factory, or any other revenue generating engine to remain up for more hours of the day, year, etc.</li>
+  <li><b>Unit and Other Cost Avoidance:</b> This business value is realized when a solution enables products to be produced at a smaller cost per unit.</li>
+  <li><b>Service Reuse:</b> This value is realized when the development of solution functionality is avoided through the use of reuse shared service assets. When measured it should be split into two separate sub categories, one for delivery cost savings and the other for maintenance cost savings.</li>
+</ul>
+<p>Typically, the only logical choice for measuring these values is in the local currency. </p>
+<h5><b>Revenue Increase</b></h5>
+<p>The following business values fall under the Revenue Increase category: </p>
+<ul>
+  <li><b>Time to Market:</b> Any solution that enables a business to deliver products and services to the market place faster than their competitors or ahead of internal plans provides significant business benefit. These solutions fall under this business value.</li>
+  <li><b>Optimizing Existing Markets:</b> This business value is realized when a solution will enable the business to increase revenues observed from an existing market.</li>
+  <li><b>Open New Markets:</b> This business value is realized when a solution enables the business to increase revenue by selling to a new market (e.g.: deploying a solution that will enable a business to sell in a different geography).</li>
+  <li><b>Cross Selling:</b> This business value is realized when a solution enables the business to increase sales by leading customers to additional products (such as companion products etc).</li>
+  <li><b>Vendor of Choice:</b> This business value is realized when a solution enables a company to be better positioned as the vendor of choice for its customers. For instance, improved customer service through self service, etc.</li>
+</ul>
+<p>Typically, the only logical choice for measuring these values is in the local currency.</p>
+<h5>Working Capital</h5>
+<p>The following business values fall under the Working Capital category: </p>
+<ul>
+  <li><b>Days of Inventory:</b> This business value is realized when a solution enables the company to reduce the number of days it must maintain inventory, such as products, or even raw goods used to produce products.</li>
+  <li><b>Days of Receivables:</b> This business value is realized when a solution enables the company to reduce the number of days it typically takes to receive outstanding payments from customers.</li>
+</ul>
+<p>If monetary value is not going to be the unit of measure for this category, then typically a unit of time (such as days) can be used for each. </p>
+<hr WIDTH="100%">
+<h4><b><a name="ESEBVP"></a>Establish a Standard for Estimating Business Value for Projects</b></h4>
+<p>Project business value estimation will vary from organization to organization, but in general, the process typically involves estimating the positive impacts the solution should produce for the business and weighing that against the total cost to realize the solution. This information is typically the basis that organizations work against for justifying and prioritizing projects, and in some organizations the process is highly competitive among different business units, especially when they are competing for budget assignments.</p>
+<p>Regardless of the detailed approach taken, a best practice is to set standards with respect to the measured business value and establish consistency in the way projects are estimated with respect to cost and benefits. That way, the enterprise is better able to look at the set of proposed projects in a more level playing field, rather than being simply swayed by the negotiation skills that one or more organizations may have over others.</p>
+<p>Traditionally, organizations have been responsible for putting forward project proposals and the estimates of business value in addition to the estimated project costs. This approach is not totally effective with the utilization of an SOA IT Strategy. The reason being that individual organizations do not necessarily have the visibility into the shared service catalog that may span the enterprise, and therefore have no way to effectively understand what cost savings they may be able to realize through the reuse of shared services.</p>
+<p>The following process represents the high-level steps that may be utilized to deliver an estimate with some level of accuracy (from the perspective of utilizing SOA), in addition to ensuring that the proposal is delivered with consistent information so it may be considered equally against competing projects.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_PVBEP.PNG" alt="Project Business Value Estimation Process" width="159" height="527" title="Project Business Value Estimation Process"></p>
+<p align="center"><b>Project Business Value Estimation Process</b></p>
+<p><b>Mobilize Project:</b> This activity simply represents the set of tasks necessary to get a project off the ground, such as gathering high-level requirements, and bringing together the necessary resources required to support the estimation and justification process. </p>
+<p><b>Estimate Business Value &ndash; Head Count:</b> This task involves estimating any head count related business value that should be realized via the realization of the project (if any). Each type of benefit classified under the Head Count category should be itemized, and evaluated using a consistent set of units, such as the local currency (if possible), or in the case of head count, person hours, days, weeks, etc. The units used, should be predefined by the enterprise, that way each organization will produce the estimate in a consistent set of units. If a unit other than currency is used for head count business value, then the unit should be classified by the class or band of employee affected. The following benefits fall under the Head Count category: </p>
+<ul>
+  <li>Head Count Growth</li>
+  <li>Employee Turnover</li>
+  <li>Employee Productivity</li>
+</ul>
+<p><b>Estimate Business Value &ndash; Expense Avoidance:</b> This task involves estimating any expense avoidance benefits that should be realized via the realization of the project (if any). Each type of benefit classified under the Expense Avoidance category should be itemized, and evaluated using the local currency of the enterprise&rsquo;s headquarters. The following benefits fall under the Expense Avoidance category: </p>
+<ul>
+  <li>System End-of-Life </li>
+  <li>Materials Discounts</li>
+  <li>Risk Avoidance</li>
+  <li>Scrap Reduction</li>
+  <li>Capital Hardware/Software Avoidance</li>
+  <li>Uptime</li>
+  <li>Unit and Other Cost Avoidance</li>
+</ul>
+<p><b>Estimate Business Value &ndash; Revenue Increase:</b> This task involves estimating any revenue increasing benefits that should be realized via the realization of the project (if any). Each type of benefit classified under the Revenue Increase category should be itemized, and evaluated using the local currency of the enterprise&rsquo;s headquarters. The following benefits fall under the Revenue Increase category: </p>
+<ul>
+  <li>Time to Market</li>
+  <li>Optimizing Existing Markets</li>
+  <li>Open New Markets</li>
+  <li>Cross Selling</li>
+  <li>Vendor of Choice</li>
+</ul>
+<p><b>Estimate Business Value &ndash; Working Capital:</b> This task involves estimating any working capital related benefits that should be realized via the realization of the project (if any). Each type of benefit classified under the Working Capital category should be itemized, and evaluated using the local currency of the enterprise&rsquo;s headquarters. If the local currency cannot be utilized to measure the business value of each type of business value, then a consistent unit, such as days, should be utilized. The following benefits fall under the Working Capital category: </p>
+<ul>
+  <li>Days of Inventory</li>
+  <li>Days of Receivables</li>
+</ul>
+<p><b>Estimate Delivery Cost:</b> Estimating delivery costs should first begin with the normal estimation processes. However, once completed, an SOA or Enterprise Architect should be engaged to gain an understanding of the project requirements and provided guidance with respect to any shared services that may be reused by the project. In the event that shared services have been identified, the project estimate should be revised with the expected savings from reuse. It is a good practice to call this out separately in the estimate.</p>
+<p><b>Estimate Maintenance Cost:</b> Maintenance costs are incurred on an ongoing basis once the solution has been delivered into its operational environment. In the event of reuse observed through the project, maintenance costs may be impacted positively as less hardware and software may be required to maintain the solution (meaning potentially less support cost). If this is the case, the SOA/Enterprise architect should assist with this estimate.</p>
+<p><b>Note:</b> Reuse savings are not actually assigned to individual services until after reuse instances have been validated during Service Analysis. They are estimated here because they may play a potentially large role in project justification. In the event that a service that was estimated for reuse savings is not a viable candidate, the estimate should be revalidated prior to the project continuing with delivery efforts.</p>
+<p>An example project estimate is included below:</p>
+<div align="center"><a name="EPE"></a> <img src="../../010_COMMON_FILES/MSIB_TABLE1.png" alt="Example: Project Business Value Estimate" width="703" height="497" title="Example: Project Business Value Estimate"> </div>
+<p align="center"><b>Example: Project Business Value Estimate</b></p>
+<h5 align="left">Use of Business Value in Project Justification Process</h5>
+<p align="left">The project justification process takes all projects that are currently being proposed into consideration. Most organizations simply do not have the bandwidth to proceed with every project, nor the budget to do so. Further, in some cases, a project may not demonstrate enough business value against the cost of realization, to be considered for approval. There are some high-level components that should be considered in every project justification process. The high-level process is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_PJP.PNG" alt="Project Justification Process" width="428" height="377" title="Project Justification Process"></p>
+<p align="center"><b>Project Justification Process</b></p>
+<p align="left"><b>Rank Proposed Projects by Business Value:</b> This task assumes that projects have put forward a consistent business value estimate (detailed in the previous section) which allows each project to be justified and ranked on an even playing field. Each project is postponed, rejected or accepted. Those projects that are accepted will proceed through the remainder of the process.</p>
+<p><b>Prepare Business Value Measurement Plan:</b> It is important to establish the measurement plan early on because it may actually influence the requirements for the project. The measurement plan provides a high-level plan with respect to how current state measurements are going to be collected, in addition to the way measurement data will be collected post delivery. The main goal of the plan is to validate that the estimate is relatively accurate with respect to actual measurable results. In many instances, the measurement plan will need to be executed over an extended period of time before all elements of the estimated business value can be validated.</p>
+<p align="left"><b>Insert Instrumentation Requirements:</b> This step is based on the results of the measurement planning tasks. In this step, analysis is completed to determine if any of the measurement plan can be instrumented through the use of technology and bundled with the project. For instance, simply recording revenue observed through the solution may assist with determining the amount of increased revenue observed. Any instrumentation which can be automated as part of the delivery should be allocated in the form of requirements for the project. </p>
+<p>It is a good practice for projects to consider their eventual retirement as part of the measurement plan, and include instrumentation for other possible business value measurements which may not yet be considered for the project. This will also allow unexpected business value changes to be observed as a result of the project.</p>
+<p><b>Validate &amp; Adjust Estimates:</b> This step revalidates the cost estimates for the proposed solution if any additional requirements have been added for the purpose of business value instrumentation.</p>
+<hr WIDTH="100%">
+<h4 align="left"><a name="EBBVS"></a>Establish Standards for Establishing Baseline Business Value Measurement</h4>
+<p align="left"> Measuring baseline business value is the process of establishing the business value observed by the organization prior to deploying the solution. The baseline measured must be directly related to the estimate for the new solution. For instance, if the estimate states that 400 hrs/year of loan consulting will be reduced by the solution, then the current level of yearly loan consulting should be established in order to later validate the estimate.</p>
+<p align="left"> In many cases, establishing the baseline can be a difficult process, especially when employee productivity needs to be measured. There are a number of books and papers available on the subject of measuring employee productivity and others that can be consulted for the purpose of establishing and executing measurement plans.</p>
+<p align="left"> In general there are three primary approaches that organizations use to establish baseline measurement data, and in many cases a combination of all three may be employed: </p>
+<ul>
+  <li><b>Side-by-Side Deployment:</b> In some cases the new solution will be deployed in to the operational environment, and the old solution will remain in production also. For some period of time, both solutions will be utilized over a transition period. This quite often provides a perfect opportunity to establish baseline measurement, and validation measurement data at the same time. It also allows the measurements to be executed consistently across both solutions.</li>
+  <li><b>Historical Data:</b> In some cases, the data to be collected has already been collected for business analysis, and previous studies. In these situations the data can be harvested for the baseline measurement. This approach is particularly useful, when lengthy trend data would be useful when looking for either a noticeable upward, downward, or trend reversal in the validated results. This type of data is also quite often available if a project being replaced went through the established business value measurement process, and has utilized business value instrumentation as part of its measurement plan.</li>
+  <li><b>Manual Collection:</b> In many cases the data just does not exist in any form, and the baseline must be established by executing manual studies.</li>
+</ul>
+<p> One final point to make about the baseline collection is that the collection of baseline delivery and maintenance costs without assuming reuse needs to be established. This will allow the organization to understand the delivery cost savings observed by utilizing the SOA strategy from a reuse perspective, which is part of the Expense Avoidance category.</p>
+<hr WIDTH="100%">
+<h4>Establish Standards for Performing Business Value Analysis for the Project Delivery process</h4>
+<p> Business value analysis continues into the actual project delivery activities when an SOA is in place. This is necessary because the estimated business value for individual services needs to be allocated at the time of identification and discovery and the actual delivery costs need to be recorded upon delivery completion.</p>
+<h5> <a name="SA"></a>Service Analysis</h5>
+<p> Since services are identified for realization, or discovered for reuse, during Service Identification and Discovery, business value analysis must be conducted individually against each instance of service reuse, or realization. This allows the organization to establish the amount of business value to be provided by each individual service separately. This is important, because many organizations simply believe that the only real business value stemming from their SOA is cost savings from reuse. Reuse, does create the foundation, but the function provided by shared services, provides some, or all of the same business value back to the consuming application over and over again upon each instance of reuse.</p>
+<p> For example, an internet travel planner executed a project a couple years back where they provided a route planning service, where customers booking a rental car through their online portal, could plot a road trip and print the appropriate maps and routes. The project was justified against revenue increasing vendor of choice benefits, and has proven to be successful. During the project delivery, IT delivered the map route calculation engine as a shared service. They determined that the route calculation engine service was worth approximately 90% of the vendor of choice benefits realized. To date, the organization has measured an increase of revenue of approximately $15,000 per year resulting from the solution, which results in approximately $13,500 allocated to the route calculation engine service.</p>
+<p> Due to the success of the trip planning service, the organization has recently undergone a similar service for developing hiking and biking trail route maps for customers booking through their services, which provide additional vendor of choice revenue benefits. During analysis, the organization realized that the same map plotting engine could be extended to work for the hiking and biking route planning capabilities. This service again provided about 90% of the vendor of choice benefits, and was evolved without impacting the other project consuming the service. In this scenario, the reuse of the map route calculation service provided reuse savings of approximately $85,000 from project delivery expenses, and approximately $8,000 per year in maintenance. Further, the functionality provided by the service was responsible for delivering 90% of the vendor of choice benefits realized by the project, which resulted in an additional $6,500 in measure revenue increase per year.</p>
+<p> Therefore, the service provides the following business value back to the business:</p>
+<TABLE border=1 title="Business Value Back to Business" summary="This table shows the business value back to the business for the service. The columns are Area of Savings, One-Time Business Value and Yearly Business Value.">
+  <TBODY>
+    <TR>
+      <th scope="col" width="200" bgColor=#CCCCCC><div align="left">Area of Savings</div></th>
+      <th scope="col" width="200" bgColor=#CCCCCC><div align="left">One-Time Business Value</div></th>
+      <th scope="col" width="200" bgColor=#CCCCCC><div align="left">Yearly Business Value</div></th>
+    </TR>
+    <TR>
+      <th scope="row" width="200" align="left" valign="top">Reuse Delivery Savings</th>
+      <TD width="200" align="left" valign="top"><p align="right">$85,000</TD>
+      <TD width="200" align="left" valign="top"><p></TD>
+    </TR>
+    <TR>
+      <th scope="row" width="200" align="left" valign="top">Reuse Maintenance Savings</th>
+      <TD width="200" align="left" valign="top">&nbsp;</TD>
+      <TD width="200" align="left" valign="top"><div align="right">$8,000</div></TD>
+    </TR>
+    <TR>
+      <th scope="row" width="200" align="left" valign="top">Vendor of Choice Revenue </th>
+      <TD width="200" align="left" valign="top">&nbsp;</TD>
+      <TD width="200" align="left" valign="top"><p align="right">$20,000</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>Therefore the service is responsible for approximately $28,000 of business value per year, in addition to the reuse savings of $85,000 organizations typically understand as being the only direct SOA benefit. The estimation should extend out, as many yearly based returns diminish over time.</p>
+<p> The high-level impact to the Service Analysis process with respect business value instrumentation is provided below.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_HLSAP.PNG" alt="High-Level Service Analysis Process" width="437" height="338" title="High-Level Service Analysis Process"></p>
+<p align="center"><b>High-Level Service Analysis Process</b></p>
+<p>As mentioned earlier, one of the key elements that organizations overlook is the allocation of actual business value to individual services. The process varies slightly depending on whether a service is being discovered, or identified as either new or to be extended. The funding model also plays a role on how business value and delivery costs are allocated for new or extended services.</p>
+<p> The Reuse Business Value Analysis Process is covered first (below), followed by the Service Factory Business Value Analysis Process.</p>
+<p> <b>Validate Business Value Allocations:</b> After Service Identification and Discovery is completed a validation step is taken to ensure that exactly 100% of each business value estimated has been allocated between project, reused services, and service candidates scheduled for realization. Since during service identification and discovery each reuse and realization candidate is examined individually, a cross check mechanism is important. This cross check ensures that all of the business value has been properly assigned, in addition to avoiding the case where more than 100% of the business value for any particular item has been allocated.</p>
+<h6> Reuse Business Value Analysis</h6>
+<p> The process flow is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_RBVA.PNG" alt="Reuse Business Value Analysis" width="440" height="370" title="Reuse Business Value Analysis"> </p>
+<p align="center"><b> Reuse Business Value Analysis</b></p>
+<p align="left"><b>Validate Service for Reuse:</b> This is simply a carryover of the steps required as part of the Service Discovery process, where the service is either validated for reuse, or rejected (see the <a href="SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery</a> technique for details). If a reuse candidate is rejected, obviously no action is taken. When a reuse candidate is accepted however, the business value analysis needs to be undertaken.</p>
+<p align="left"> <b>Estimate Cost of Reuse:</b> This task involves estimating the cost that will be incurred by the project for reusing the service. This includes additional delivery work, in the event that the service does not meet all requirements initially estimated and any work that may be required to integrate the service. Additionally, any maintenance costs that the project will incur while reusing the service should be estimated. In some sense, an established funding model must already be in place with respect to reuse and development cost models for the organization&rsquo;s SOA.</p>
+<p align="left"> <b>Estimate Reuse Savings:</b> In this task the amount of delivery savings is estimated. To do this, analysis is done against the actual requirements fulfilled by the service and the measurement is taken against the time required to delivery these requirements by the project team. Additionally, any maintenance savings should be established. If the service will off-load a significant amount of bandwidth that can still be consumed by the service&rsquo;s hosting hardware, then there may be significant savings with respect to hardware and software maintenance required by the project. This may be offset by the reuse costs however, depending on the cost model adopted by the organization.</p>
+<p align="left"> <b>Allocate Business Value Based on Requirements:</b> This step involves analyzing the business value estimate provided for the project against the actual requirements that will be realized through the service. A percentage of each applicable business value item should be allocated to the service. When the service analysis phase completes, 100% of the business value should be distributed between project, services to be reused, and service candidates justified for realization. Percentages are used because they work well against a potentially changing estimate, as well as can be sustained over measuring actual values upon deployment. This allows the organization to measure business value on a project by project basis, and have the correct allocations provided to services based on the project business value data.</p>
+<h6 align="left">Service Factory Business Value Analysis Process</h6>
+<p align="left">This process handles the allocation of business value for service candidates when they are justified for realization. The process can vary based on the types of funding model an organization employs, which are represented by two separate paths through the process. Customization of this process is expected for most organizations to hand the subtle differences they may have with respect to project and service funding. The process flow is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_SFBVAP.PNG" alt="Service Factory Business Value Analysis Process" width="659" height="522" title="Service Factory Business Value Analysis Process"></p>
+<p align="center"><b>Service Factory Business Value Analysis Process</b></p>
+<p align="left"><b>Justify Candidate for Realization:</b> This is simply a carryover of the steps required as part of the Service Identification process, where the service is either justified for realization, or rejected (see the <a href="SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery</a> technique). If a service candidate is rejected, obviously no action is taken. When a candidate is accepted however, the business value analysis needs to be undertaken for the candidate.</p>
+<p align="left"> <b>Service Evolution Business Value (Sub Process):</b> When an existing service is going to be extended with new requirements to support a new consumer or set of consumers, the process for allocating business value changes slightly. There are additional steps that need to be taken to analyze business value for this scenario. The details of this sub-process are provided in the next section.</p>
+<p align="left"> <b>Estimate Cost to Build:</b> This step involves the estimation of the delivery costs to realize the allocated requirements as a shared service, or extend the existing service with the new requirements. Typically, at least in the case of a new service candidate, there is more work involved in creating a shared service than would be required if the requirements were to be hard wired into the project delivery (e.g.: adhering with the versioning strategy and other standards enforced across shared services).</p>
+<p align="left"><b>Estimate Cost to Maintain:</b> This step involves the estimation of maintenance costs for the service candidate once deployed in to the operational environment. In some cases, if the service will be deployed in an existing environment with no additional software or hardware bandwidth required, the maintenance cost is minimal. However, there is almost always some additional human resource required to maintain any new software asset once delivered into production, and an estimate should be provided.</p>
+<p align="left"> <b>Determine Cost Structure:</b> There are two basic cost models established with allocating delivery costs for new or evolving shared services. One is that the delivery of shared services is funded by a separate SOA service factory budget (SOA Funded), and the other is that the first project to need the service or extend the service will be responsible for funding the delivery (Project Funded). In the event of a SOA Funded model, the business value allocation is very similar to the reuse analysis process, where the reuse cost is established, in addition to estimating reuse savings. In the Project Funded scenario, the project delivery and maintenance estimates are adjusted to absorb any additional costs necessary to deliver the requirements in a shared manner.</p>
+<p align="left"> <b>Estimate Cost of Reuse:</b> This task is executed in the SOA Funded model only. This task involves estimating the cost that will be incurred by the project for reusing the service, since delivery costs are funded outside the project&rsquo;s scope. This included only the additional delivery work, in the event that the service does not meet all requirements initially estimated and any work that may be required to integrate the service (not the work to deliver the service itself). Additionally, any maintenance costs that the project will incur while reusing the service should be estimated. </p>
+<p align="left"> <b>Estimate Reuse Savings:</b> This task is executed in the SOA Funded model only. In this task the amount of delivery savings is estimated. To do this, analysis is done against the actual requirements fulfilled by the service and the measurement is taken against the time required to deliver these requirements by the project team. Additionally, any maintenance savings should also be established. If the service will off-load a significant amount of bandwidth that can still be consumed by the service&rsquo;s hosting hardware, then there may be significant savings with respect to hardware and software maintenance required by the project. This may be offset by the reuse costs however, depending on the cost model adopted by the organization.</p>
+<p align="left"> It is important to note, that if the Service Candidate is a new candidate (not an evolving service), then the reuse savings for the originating project is always $0. This is because the requirements are still required to be built from the ground up, and the funding is coming fresh from either the project of the SOA. In the case where a service is being evolved, there may be some reuse savings, as some of the requirements may already be realized in the existing version of the service. These requirements represent reuse savings and should be counted.</p>
+<p align="left"> <b>Adjust Project Cost Estimates:</b> This task is performed for the Project Funded model only. Here any additional cost estimates for maintenance and delivery required to realize the allocated requirements as shared services needs to be adjusted against the project&rsquo;s estimate. If the combined updates to the project estimate incurred by realizing shared services are significant, the project may need to be revalidated against business value before proceeding onto project and service delivery.</p>
+<p align="left"> <b>Allocate Business Value Based on Requirements:</b> This step involves analyzing the business value estimate provided for the project against the actual requirements that will be realized through the service. A percentage of each applicable business value item should be allocated to the service. When the service analysis phase completes, 100% of the business value should be distributed between project, services to be reused, and service candidates justified for realization. Percentages are used because they work well against a potentially changing estimate, as well as can be sustained over measuring actual values upon deployment. This allows the organization to measure business value on a project by project basis, and have the correct allocations provided to services based on the project business value data.</p>
+<p align="left"><b><i>Service Evolution Business Value Sub-Process</i></b></p>
+<p align="left">Services have a legacy of consumers, and the longer they exist, the more likely they are to have an increased number of consumers. When a service is to be evolved it may have a ripple effect, positively or negatively, across the projects that are currently consuming the service.</p>
+<p align="left"> In the credit check example provided earlier regarding a new government regulation involving credit scoring this affect is clearly noticeable. In the scenario where a versioning strategy was not employed, the cost of the solution was significant, and therefore had a lower business value output in relation to its cost because of this reason. In the successful scenario, however, one of the true values of a correctly adopted SOA came to light. The single service for delivering credit scoring provided a highly valuable means to comply with the new government regulations consistently across the entire organization by evolving the service in a single engineering event.</p>
+<p align="left"> The sample analysis for credit scoring conformance project is provided below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE2.PNG" alt="Example: Credit Score Compliance" width="703" height="463" title="Example: Credit Score Compliance"></p>
+<p align="center"><b>Example: Credit Score Compliance</b></p>
+<p align="left">Clearly, this project is easy to justify, and in the scenario where the credit scoring service can be easily evolved, the actual value provided through the SOA&rsquo;s ability to change is substantial, not only from reuse savings in delivery, but through the realization of business value that relates directly to the business&rsquo;s bottom line.</p>
+<p align="left">The Service Evolution Business Value Sub-Process is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_SEBVAP.PNG" alt="Service Evolution Business Value Analysis Process" width="580" height="452" title="Service Evolution Business Value Analysis Process"></p>
+<p align="center"><b>Service Evolution Business Value Analysis Process </b></p>
+<p align="left">This process iterates over each project that is already consuming the previous service version within the operational environment.</p>
+<p align="left"> <b>Estimate Impact to Consuming Project:</b> This task involves estimating the delivery and maintenance impacts the service evolution will have on the project when it is forced to migrate to the new service version.</p>
+<p align="left"> <b>Estimate BV for Consuming Project:</b> This task estimates any additional business value that will be observed when the consuming project migrates to the new service version.</p>
+<p align="left"> <b>Determine Cost Structure:</b> There are a couple cost structure options available in allocating costs and business value resulting from the service evolution. A Base Project Funded model indicates that the originating project will be responsible for funding the evolution of consuming projects, and will also be awarded with any net business value realized through the migration.</p>
+<p align="left"> The Consuming Project Funded model assumes that each consuming project will be responsible for absorbing the cost of migration, and will also be allocated any net business value returns.</p>
+<p align="left"> <b>Update Base Project Cost Estimate:</b> This task is only executed when the Base Project Funded model is used. Any additional delivery and maintenance costs are allocated against the base project&rsquo;s cost estimate.</p>
+<p align="left"> <b>Update Base Project BV Estimates:</b> This task is only executed when the Base Project Funded model is used. Any additional business value estimated to be realized by the project when migration to the new service version is complete is calculated and applied to the base project&rsquo;s business value estimate.</p>
+<p align="left"> <b>Update Consuming Project Cost Estimate:</b> This task is only executed when the Consuming Project Funded model is used. Any additional delivery and maintenance costs are allocated against the consuming project&rsquo;s migration cost estimate.</p>
+<p align="left"> <b>Update Consuming Project BV Estimates:</b> This task is only executed when the Consuming Project Funded model is used. Any additional business value estimated to be realized by the project when migration to the new service version is complete is calculated and applied to the consuming project&rsquo;s migration business value estimate.</p>
+<h5 align="left">Service Delivery</h5>
+<p align="left">The Service Delivery activities are affected with business value tasks in two areas. The first area is on the service delivery side, where service candidates are first divided by service boundaries into one or more defined services. The service boundary analysis is part of the service definition processes, and when one or more service boundaries are identified, then the service candidate will be realized as two or more shared services. In this event, the business value and delivery costs allocated to the service candidate (see <a href="#SA">Service Analysis</a> above) needs to be divided across the individual services that will be realized from the service candidate.</p>
+<p align="left"> Finally, as project and service delivery completes, the actual service delivery and project delivery costs can be measured. </p>
+<p align="left"> The high-level Service Delivery processes with the effects of Business Value analysis is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_PSDHLP.PNG" alt="Project and Service Delivery High-Level Process" width="643" height="490" title="Project and Service Delivery High-Level Process"></p>
+<p align="center"><b>Project and Service Delivery High-Level Process</b></p>
+<p align="left"><b>Business Value Allocation Process:</b> This process is covered in the next sub-section and details the effect of service boundaries on business value instrumentation.</p>
+<p align="left"> <b>Allocate Actual Service Build Costs:</b> This task involves recording the actual delivery costs for each new service created or evolved resulting from the initiation of the project. The actual recording place for the information will vary based on the funding model used by the organization. In the event of the SOA Funded model, the actual delivery costs are recorded against the service&rsquo;s individual project owned by the SOA service factory. When the Project Funded model is utilized, the actual data is recorded against the project&rsquo;s measurement data set.</p>
+<p align="left"> <b>Allocate Actual Project Build Costs:</b> This task involves recording the actual project delivery costs for the project. </p>
+<h6 align="left"> Service Evolution Business Value Sub-Process</h6>
+<p align="left"> The Service Evolution Business Value Sub-Process is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_BVAP.PNG" alt="Business Value Allocation Process" width="304" height="370" title="Business Value Allocation Process"></p>
+<p align="center"><b>Business Value Allocation Process </b></p>
+<p align="left"><b>Allocate Cost to Build:</b> This task involves allocating the portion of delivery costs estimated to deliver the originating service candidate to the specific service now that it has been defined.</p>
+<p align="left"> <b>Allocate Cost to Maintain:</b> This task involves allocating the portion of maintenance costs estimated for the originating service candidate to the specific service now that it has been defined.</p>
+<p align="left"> <b>Determine Cost Structure:</b> This task involves updating the delivery and maintenance expenses to the correct estimate based on the funding model applied.</p>
+<p align="left"> <b>Allocate BV Based on Requirements:</b> This task involves allocating the percentages of the business values that have been allocated to the service candidate, to the individual services themselves. For each business value item, the total amount of business value (nothing more, nothing less) allocated to the candidate must be distributed completely across the services originating from it.</p>
+<p align="left"> For example, if a service candidate is allocated 90% of the Vendor of Choice business value item, and has two service boundaries defined. The following is a valid distribution of the Vendor of Choice business value:</p>
+<ul>
+  <li>Service 1: 8%</li>
+  <li>Service 2: 12%</li>
+  <li>Service 3: 61%</li>
+  <li>Service 4: 9%</li>
+</ul>
+<p align="left"> As it allocates the total 90% allocated to the service candidate.</p>
+<p align="left"> The following is invalid:</p>
+<ul>
+  <li>Service 1: 8%</li>
+  <li>Service 2: 12%</li>
+  <li>Service 3: 61%</li>
+  <li>Service 4: 19%</li>
+</ul>
+<p align="left"> This totals 100% which is 10% more than allocated to the service candidate.</p>
+<hr WIDTH="100%">
+<h4><b><a name="DCBVID"></a>Determine Conceptual Business Value Instrumentation Data</b></h4>
+<p> Until now there has been a focus of on collecting and analyzing the business value data, but there has been no mention from a conceptual perspective as to where the data is logically stored or organized.The conceptual data model supporting Business Value instrumentation is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_CDBVI.PNG" alt="Conceptual Data: Business Value Instrumentation" width="611" height="333" title="Conceptual Data: Business Value Instrumentation"></p>
+<p align="center"><b>Conceptual Data: Business Value Instrumentation</b></p>
+<p>The relationships of the entities identified above have not changed. The only addition is the business value data element (BV Data). The BV Data values are interconnected with respect to how they are used and populated. The work flow is as follows:</p>
+<ul>
+  <li>A project is defined, and estimated. The estimate is stored with the BV Data located in the Project Data instrumentation record.</li>
+  <li>As service candidates are justified for realization, the estimate data is provided with the Service Candidate&rsquo;s BV Data value. The business value estimates represent percentages of the actual business value estimates provided in the project&rsquo;s BV data. Cost estimates are either stored with the service candidate or allocated to the project depending on whether a SOA Funded or Project Funded funding model is used.</li>
+  <li>As service boundaries are defined for the service candidate and actual services defined, the percentages (and cost estimates, depending on funding model) are reallocated to the one or more services defined from the candidate. The percentages are passed through to the originating projects Service Reuse List, BV Data element since the originating project will reuse the service. There is an exception however, in the event that a service boundary is defined, and the situation is such that a high level service will consume a lower level service. If the lower level service will not be consumed by the project (only the higher level service) then the higher level service is treated as the consumer for the service. This means that percentages are allocated as a percentage of the higher level service and allocated to the Service Reuse List&rsquo;s BV Data.</li>
+  <li>After service delivery completes for a service candidate and the services defined through it, the BV Data element on the candidate is removed as it is no longer relevant. Further the BV Data element on the service only holds the cost related data (estimate and actual) as the percentages will be allocated to the project&rsquo;s Reuse Service List, BV Data element. This is necessary because the service will most likely be reused more than once over its lifetime, and storing the percentages of business value for the service with each project that consumes it, fits logically. Therefore, the total business value for a service is calculated by iterating over the consuming projects and summing the data by category.</li>
+  <li>When services are discovered and validated for reuse during the service discovery process, the project&rsquo;s Reuse Service List is updated with the percentages of business value allocated to the each service reused by the project. Each reuse instance stores separate BV Data which includes the percentages of business value allocated to the service in addition to the cost for reuse values incurred by the project in order to reuse the service (e.g.: integration costs, charge backs, etc).</li>
+  <li>Finally, as projects and services are delivered actual delivery costs can be recorded along with beginning the process to measure actual business value. The actual results are stored along side the estimates in the BV Data record so comparison between actual and estimate can be undertaken.</li>
+</ul>
+<p> To help these concepts sink in, the route planning example presented earlier is presented below.</p>
+<h5>Example: ABS Travel Co.</h5>
+<p> ABC Travel Co is an internet travel planner that has adopted an SOA IT strategy. A few years ago, the company executed a project where they provided a route planning service where customers booking a rental car through their online portal, could plot a road trip and print the appropriate maps and routes. The project estimate follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE3.PNG" alt="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Initial" width="703" height="446" title="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Initial"></p>
+<p align="center"><b>ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Initial</b></p>
+<p> ABC Travel justified the project under the basis that it would only cost approximately $50,000 to deliver, and incur a very small maintenance footprint. Further, based on expected vendor of choice benefits the investment would be recovered within 3 years.</p>
+<p> During analysis, ABC Travel identifies a potential for a shared service. The requirements for route planning pose potential for possible future reuse, and are considered strategic to this type of functionality. The RoutePlanningService is justified as a candidate, during service analysis. Another important thing to note is that ABC&rsquo;s SOA funding model is SOA Funded. The estimate after Service Analysis is as follows:</p>
+<div align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE4.PNG" alt="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Revised" width="703" height="463" title="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Revised"> </div>
+<p align="center"><b>ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Revised </b></p>
+<p>Because of the identified service candidate for route planning, additional costs will be experienced by the business to facilitate the construction of the shared functionality in conformance with ABC Travel&rsquo;s SOA standards (e.g.: Versioning, consumption management, etc). The added cost is expected to come in at around $5,000.</p>
+<p> Further, since ABC Travel uses a SOA Funded model for service delivery, the service delivery costs will come from the SOA budget. There will be no reuse savings from this project because all of the services involved will be delivered from the ground up as a result of this project. Reuse savings are only applicable when a service can be partly or wholly reused in the project.</p>
+<p> Therefore for an additional $5,000, ABC Travel Co is making a strategic decision in justifying the delivery of the RoutePlanningService candidate. This is not a large risk, since the break even point for the project will only move out approximately 3 &ndash; 4 months.</p>
+<p>The Business Value Data estimate for the RoutePlanningService Candidate follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE5.PNG" alt="RoutePlanningService Candidate- BV Data (Estimate)" width="703" height="463" title="RoutePlanningService Candidate- BV Data (Estimate)"></p>
+<p align="center"><b>RoutePlanningService Candidate- BV Data (Estimate)</b></p>
+<h6>RoutePlanningService Candidate - BV Data (Estimate)</h6>
+<p> The RoutePlanningService candidate has been determined to provide 90% of the Vendor of Choice business value estimated for the project. This nets out to be $45,000 over three years. Also, as mentioned earlier, in order to realize the RoutePlanningService&rsquo;s requirements in the shared environment and conform to ABC Travel&rsquo;s SOA Standards such as versioning strategy, and others, an additional $5,000 is estimated. This brings the total estimate for service delivery to $40,000 which will be incurred by an SOA funded project. This value is now pulled from the original project estimate to prevent double counting.</p>
+<p> After service definition completes on the RoutePlanningService candidate, it has been determined that a single service boundary has been defined. The candidate will be split into two services. The RoutePlanningService will be responsible for computing the actual route, but a second service called the WayPointDataService will be responsible for collecting way point data for points along the trip from a centralized map source database hosted externally to the enterprise. Therefore the business value estimate is transferred directly to the service objects. The RoutePlanningService is provided first below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE6.PNG" alt="RoutePlanningService - BV Data (Estimate)" width="767" height="625" title="RoutePlanningService - BV Data (Estimate)"></p>
+<p align="center"><b>RoutePlanningService - BV Data (Estimate)</b></p>
+<p>The RoutePlanningService is a composite service because it consumes the WayPointDataService. Further the WayPointDataService is not consumed directly by the Travel Planning project so its business value is calculated as a percentage of the business value observed through the RoutePlanningService. In this case, the WayPointDataService is estimated to provide 22% of the Vendor of Choice business value observed on the RoutePlanningService.</p>
+<p> The RoutePlanningService is also responsible for 100% of the reuse benefits observed by the Trip Planner Project, which needs to be allocated to the service and its consuming services. In this scenario it has been determined that the WayPointDataService will provide 25% of the functionality, and therefore should be allocated 25% of the Reuse benefits. This nets out to $0 for both services since there is no reuse benefit realized by the project because the services are being delivered new for the project.</p>
+<p> Since development will be broken into two services. The RoutePlanningService will consume 75% of the delivery and maintenance costs estimated for the candidate, and the WayPointDataService will be allocated the remaining 25%. Again, this nets to $0, because of the fresh delivery.</p>
+<p> The WayPointDataService Estimate BV Data value is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE7.PNG" alt="Example: WayPointDataService - BV Data (Estimate)" width="703" height="446" title="Example: WayPointDataService - BV Data (Estimate)"></p>
+<p align="center"><b>WayPointDataService - BV Data (Estimate) </b></p>
+<p>From the previous analysis the WayPointDataService receives 25% of the original delivery budget for the service candidate, therefore receiving $10,000 in estimated delivery costs. The same 25% is applied for the maintenance cost.</p>
+<p> Finally, the WayPointDataService inherits the calculated data for its business value from the RoutePlanningService. This is the same thing that happens to the RoutePlanningService, however the RoutePlanningService pulls its base business value data from the consuming project. As additional projects consume the RoutePlanningService, the inherited business value will change.</p>
+<p>The final project estimate is included below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE8.PNG" alt="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Final" width="767" height="622" title="Example: ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Final"></p>
+<p align="center"><b>ABC Travel Co. - Trip Planner Project - BV Data (Estimate) - Final</b></p>
+<p>Now is a good time to compare the results between the SOA and Non-SOA approaches, which are included in the illustration below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE9.PNG" alt="Example: ABC Travel IT Summary After Route Planning Project" width="454" height="173" title="Example: ABC Travel IT Summary After Route Planning Project"></p>
+<p align="center"><b>ABC Travel IT Summary After Route Planning Project </b></p>
+<p>Let&rsquo;s assume that the project completed as expected on time and on budget, and the expected business value was observed from vendor of choice. Clearly, ABC Travel made an investment in realizing the RoutePlanningService which added an additional $5,000 cost to the project. If the company had simply taken a non SOA approach they would have saved the additional delivery costs necessary to realize functionality as a shared service.</p>
+<p> Another year has past, and ABC Travel has decided to undertake another project. In this project they want to provide a hiking/biking trail planning service for customers booking through their portal. The project estimate, which does not take SOA into account, is included below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE10.PNG" alt="Example: ABC Travel - Trail Planning Project - Non-SOA Estimate" width="703" height="446" title="Example: ABC Travel - Trail Planning Project - Non-SOA Estimate"></p>
+<p align="center"><b>ABC Travel - Trail Planning Project - Non-SOA Estimate </b></p>
+<p>Similar to the other project, investment and some risk would be required before ABC Travel could bring this new capability to the market place. However, when involving an SOA Architect from the SOA program during the project estimation, it is determined that the project can utilize the RoutePlanningService previously created for the Trip Planning project. This will also bring some significant Time-to-Market benefits because there is rumor that a competing vendor is working on a similar solution. The SOA based solution estimate is provided below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE11.PNG" alt="Example: ABC Travel - Trail Planning Project - SOA Estimate" width="703" height="463" title="Example: ABC Travel - Trail Planning Project - SOA Estimate"></p>
+<p align="center"><b>ABC Travel - Trail Planning Project - SOA Estimate </b></p>
+<p>The decision to adopt and SOA strategy is beginning to look like a really wise investment now. Not only will ABC Travel be able to use its previous investment to harvest additional vendor of choice revenue, but it will also be able to beet its competition to the market place. The completed estimates, including the services is included below, starting with the RoutePlanningService:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE12.PNG" alt="Example: RoutePlanningService - BV Data - Revised " width="992" height="713" title="Example: RoutePlanningService - BV Data - Revised "></p>
+<p align="center"><b>RoutePlanningService - BV Data - Revised </b></p>
+<p align="left">Clearly this service is set to pay off after just a single additional reuse instance. The WayPointDataService is presented below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE13.PNG" alt="Example: WayPointDataService - BV Data - Revised" width="864" height="463" title="Example: WayPointDataService - BV Data - Revised"></p>
+<p align="center"><b>WayPointDataService - BV Data - Revised</b></p>
+<p>The final BV Data estimate for the Trail Planning project follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE14.PNG" alt="Example: ABC Travel - Travel Planning Project - BV Data - Final " width="767" height="745" title="Example: ABC Travel - Travel Planning Project - BV Data - Final "></p>
+<p align="center"><b>ABC Travel - Travel Planning Project - BV Data - Final </b> </p>
+<p>This project demonstrated a potential for $25,700 in Net Rolled-Up Business Value, the bulk of the business value from this project was realized by utilizing an SOA program.</p>
+<p> Finally, assuming the estimates came out to be accurate; the business value generated by ABC Travel&rsquo;s IT program is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE15.PNG" alt="Example: SOA vs. Non-SOA Comparison for ABC Travel Co." width="705" height="228" title="Example: SOA vs. Non-SOA Comparison for ABC Travel Co."></p>
+<p align="center"><b>SOA vs. Non-SOA Comparison for ABC Travel Co. - Example </b></p>
+<p>Clearly, there is some demonstrated business value that is directly related to the SOA program itself that is more than just savings based on delivery costs provided through reuse. ABC Travel Co would not have been able to realize the Time-to-Market benefits with the traditional approach. Further, they may have had a difficult time justifying the Trail Planning enhancement had they not been able to take advantage of delivery time reuse savings. </p>
+<hr WIDTH="100%">
+<h4><a name="DSOABVM"></a>Determine SOA Business Value Metrics</h4>
+<p>With the additional complication of allocating business value to individual services, the amount of work required to validate may be considered to be a little overwhelming. This is why it is recommended to allocate percentages to actual services rather than concrete numbers. That way, only measurements for the base projects need to be captured, and the services themselves can simply calculate their business value based on the assigned percentages. Further, in many cases, engineering can be put in place to automate these processes; provided consistency is adhered to throughout the business value analysis processes, and the data is collected and stored in a place such as an enterprise repository where computations on business value can be completed.</p>
+<p> The infrastructure available to develop SOA enabled applications has come a long way, and in many cases can be used to collect business metrics in a manner that is as least intrusive as possible. Business activity monitoring can be used to determine which path through a business process is taken the most (or on average, etc). Content based capabilities in service infrastructure such as the service bus can also extract information for business value measurements.</p>
+<p> The important key is that the appropriate plan for measuring business value resulting from the project be determined up front, and applied, where possible, as requirements to the solution for automation. Further, services that will be participating in the measurement activities need to collect their business value metric data in a consumer conscious way. That way the correct project is ensured the credit for business value realized through the use of a shared asset. This may require the engineering standards for the service to include the grouping of collected business value data by consumer ID, or any other mechanism that allows the data to be separated during analysis.</p>
+<h5>SOA Business Value Metrics</h5>
+<p>There are an extensive number of metrics that could be derived from the Business Value collected above. This section covers some of the most useful with respect to understanding business value generated by the SOA program.</p>
+<p> In the previous documents that include metrics, the computation has been represented in a mathematical format. That format will tend to get a little bit complicated when dealing with the Business Value data, so this document will simply describe the computation, rather than illustrate it.</p>
+<h6> Savings from Reuse</h6>
+<p><b>Purpose:</b> This metric seems to represent the most common perception of SOA value, how much savings is the organization realizing through the reuse of shared services.</p>
+<p> <b>Computation:</b> This metric totals Service Reuse business value within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ASR.PNG" alt="Analysis: Savings from Reuse" width="509" height="284" title="Analysis: Savings from Reuse"></p>
+<p align="center"><b>Analysis: Savings from Reuse</b></p>
+<p><b>Interpretation:</b> This metric does not provide the complete business value output from SOA, but it does give a snapshot on one of the most highly regarded aspects of the SOA. The foundation for realizing any type of business value comes through reuse. In the example presented throughout the previous section, positive business value, over the non-SOA approach, was not realized until the RoutePlanningService was reused at least once. But, this single reuse instance allowed for additional business value to be realized to the business through increased Time-to-Market, additional Vendor of Choice Benefits, in addition to the cost savings through reuse. The other benefits would not have accumulated if the service were not reused, therefore reuse, represents the triggering point for business value in an SOA and is therefore worthy of its own metric. </p>
+<p><b>Business Value Generated By Services</b></p>
+<p> <b>Purpose:</b> This metric provides the overall business value provided by the enterprise&rsquo;s service catalog. This isolated view is a useful tool for demonstrating SOA value in the enterprise. This metric may also be used to identify inefficiencies with respect to the SOA program if the trend reverses or increase in the wrong direction.</p>
+<p> <b>Computation:</b> This metric totals Service business value within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVGS.PNG" alt="Analysis: Business Value Generated by Services" width="532" height="352" title="Analysis: Business Value Generated by Services"></p>
+<p align="center"><b>Analysis: Business Value Generated by Services </b></p>
+<p><b>Interpretation:</b> This metric provides the complete business value output from SOA. An increasing trend is obviously desirable. Any noticeable slowing in the trend, reversal, or increasing negative trend warrants an investigation. </p>
+<h6>Business Value Generated By IT</h6>
+<p> <b>Purpose:</b> This metric provides the overall business value provided by the enterprise&rsquo;s IT Program. This view is a useful tool for demonstrating IT&rsquo;s value in the enterprise. This metric may also be used to identify inefficiencies with respect to the program if the trend reverses or increase in the wrong direction.</p>
+<p> <b>Computation:</b> This metric totals business value within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVGIT.PNG" alt="Analysis: Business Value Generated by IT" width="532" height="352" title="Analysis: Business Value Generated by IT"></p>
+<p align="center"><b>Analysis: Business Value Generated by IT </b></p>
+<p><b>Interpretation:</b> This metric provides the complete business value output from SOA. An increasing trend is obviously desirable. Any noticeable slowing in the trend, reversal, or increasing negative trend warrants an investigation. </p>
+<h6>Business Value Generated By Services vs. IT</h6>
+<p> <b>Purpose:</b> This metric provides the overall business value provided by the enterprise&rsquo;s service catalog in relation to the total Business Value output through IT. This comparison based view is a useful tool for demonstrating SOA value in the enterprise in addition to understanding the percentage of SOA&rsquo;s contribution. This metric may also be used to identify inefficiencies with respect to the SOA program if the trend reverses or increase in the wrong direction.</p>
+<p> <b>Computation:</b> This metric totals service business value within the sample period, it also separately totals total business value within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVGSIT.PNG" alt="Analysis: Business Value Generated by Services vs. IT" width="404" height="289" title="Analysis: Business Value Generated by Services vs. IT"></p>
+<p align="center"><b>Analysis: Business Value Generated by Services vs. IT </b></p>
+<p><b>Interpretation:</b> This metric provides the complete business value output from SOA and plots it with the complete business value output through IT. An increasing trend is the obviously desirable. Any noticeable slowing in the trend, reversal, or increasing negative trend warrants an investigation. </p>
+<h6>Business Value Generated By Services (By Category)</h6>
+<p> <b>Purpose:</b> This metric provides the overall business value provided by the enterprise&rsquo;s service catalog and separates the data by the Business Value categories. This isolated view is a useful tool for demonstrating SOA value in the enterprise. This metric may also be used to identify inefficiencies with respect to the SOA program if the trend reverses or increase in the wrong direction.</p>
+<p> <b>Computation:</b> This metric totals Service business value within the sample period. A separate total is collected for each business value category. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVGSC.PNG" alt="Analysis: Business Value Generated by Services (by Category)" width="693" height="502" title="Analysis: Business Value Generated by Services (by Category)"></p>
+<p align="center"><b>Analysis: Business Value Generated by Services (by Category)</b></p>
+<p><b>Interpretation:</b> This metric provides the complete business value output from SOA, but has been narrowed down by category. If an obvious bias towards one particular type of business value category is observed then further investigation may be warranted. For instance, if 98% of the business value generated by services comes from the Cost Avoidance category, it may be worth digging further to determine if those savings are completely from reuse. If so, there is probably an issue with the business value estimation process. </p>
+<h6>Business Value Generated By IT (By Category)</h6>
+<p> <b>Purpose:</b> This metric provides the overall business value provided by the enterprise&rsquo;s IT Program and separates the data by business value categories. This view is a useful tool for demonstrating IT&rsquo;s value in the enterprise with respect to specific areas of business value. This metric may also be used to identify inefficiencies with respect to the program if the trend reverses or increase in the wrong direction.</p>
+<p> <b>Computation:</b> This metric totals business value within the sample period. A separate total is collected for each business value category. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVGITC.PNG" alt="Analysis: Business Value Generated by IT (by Category)" width="693" height="502" title="Analysis: Business Value Generated by IT (by Category)"></p>
+<p align="center"><b>Analysis: Business Value Generated by IT (by Category)</b></p>
+<p><b>Interpretation:</b> This metric provides the complete business value output from SOA. An increasing trend is the obviously desirable. Any noticeable slowing in the trend, reversal, or increasing negative trend warrants an investigation. Further, any obvious bias towards any particular category warrants a closer look.</p>
+<h6>Business Value Estimate Accuracy</h6>
+<p> <b>Purpose:</b> This metric plots the accuracy with respect to business value estimated by IT. The metric simply graphs the estimate vs. the actual measured data together so that any large differences can be examined more closely.</p>
+<p> <b>Computation:</b> This metric totals actual business value within the sample period, it also separately totals estimated business value within the sample period. Each sample is of uniform length so trend based analysis can be completed against the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_ABVEA.PNG" alt="Analysis: Business Value Estimate Accuracy" width="404" height="301" title="Analysis: Business Value Estimate Accuracy"></p>
+<p align="center"><b>Analysis: Business Value Estimate Accuracy </b></p>
+<p><b>Interpretation:</b> This metric is used to validate the accuracy of the Business Value instrumentation processes, in addition to identifying potential flaws in the IT strategy. If large gaps are observed between estimates and actual results, then either the estimation process is inadequate, or execution is poor and there is a problem with the IT strategy. </p>
+<h6>Percentage of Business Value from Services</h6>
+<p> <b>Purpose:</b> This metric charts the current percentage of business value realized through the service catalog.</p>
+<p> <b>Computation:</b> This metric simply computes the total output business value from IT and the total business value output from the enterprise service catalog. The difference represents the amount realized by projects.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_APBVS.PNG" alt="Analysis: Percentage of Business Value from Services" width="464" height="330" title="Analysis: Percentage of Business Value from Services"></p>
+<p align="center"><b>Analysis: Percentage of Business Value from Services</b></p>
+<p><b>Interpretation:</b> This metric provides a current snapshot of total business value realized by the business and the portion that shared services are responsible for. </p>
+<h6>Percentage of Business Value from Services (By Category)</h6>
+<p> <b>Purpose:</b> This metric charts the current percentage of business value realized through the service catalog, separated by category.</p>
+<p> <b>Computation:</b> This metric simply computes the total output business value from IT and the total business value output from the enterprise service catalog. The difference represents the amount realized by projects. The enterprise service catalog&rsquo;s portion of the business value is broken out by business value category.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_APBVSC.PNG" alt="Analysis: Percentage of Business Value from Services (by Category) " width="593" height="331" title="Analysis: Percentage of Business Value from Services (by Category) "></p>
+<p align="center"><b>Analysis: Percentage of Business Value from Services (by Category) </b></p>
+<p><b>Interpretation:</b> This metric provides a current snapshot of total business value realized by the business and the portion that shared services are responsible for by category. It will help identify any long term bias towards a particular category. </p>
+<h6>Top Five Services by Net Business Value</h6>
+<p> <b>Purpose:</b> This metric identifies the best services with respect to total generated IT Business Value.</p>
+<p> <b>Computation:</b> This metric simply examines the total net business value of each service in the enterprise service catalog and identifies the five services that have generated the most business value.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_T5NBV.PNG" alt="Analysis: Top 5 Services by Net Business Value " width="532" height="352" title="Analysis: Top 5 Services by Net Business Value "></p>
+<p align="center"><b>Analysis: Top 5 Services by Net Business Value </b></p>
+<p><b>Interpretation:</b> This metric identifies the top five services in the enterprise. Sometimes it is worth having a look at the reason why these services are successful, as they represent examples to build from. </p>
+<h6>Top Five Projects by Rolled-Up Business Value</h6>
+<p> <b>Purpose:</b> This metric identifies the best projects with respect to total generated IT Business Value. The rolled-up data indicates that the business value (and costs) from the services it consumes is pulled forward as part of the project&rsquo;s business value data.</p>
+<p> <b>Computation:</b> This metric simply examines the total rolled-up business value of each project in the enterprise and identifies the five projects that have generated the most rolled-up business value.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_T5PRUBV.PNG" alt="Analysis: Top 5 Projects by Rolled Up Business Value " width="532" height="352" title="Analysis: Top 5 Projects by Rolled Up Business Value "></p>
+<p align="center"><b>Analysis: Top 5 Projects by Rolled Up Business Value </b></p>
+<p><b>Interpretation:</b> This metric identifies the top five projects in the enterprise. Sometimes it is worth having a look at the reason why these projects are successful, as they represent examples to build from. </p>
+<h6>Worst Five Services by Net Business Value</h6>
+<p> <b>Purpose:</b> This metric identifies the worst services with respect to total generated IT Business Value.</p>
+<p> <b>Computation:</b> This metric simply examines the total net business value of each service in the enterprise service catalog and identifies the five services that have generated the least business value.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_W5NBV.PNG" alt="Analysis: Worst 5 Services by Net Business Value " width="532" height="352" title="Analysis: Worst 5 Services by Net Business Value "></p>
+<p align="center"><b>Analysis: Worst 5 Services by Net Business Value </b></p>
+<p><b>Interpretation:</b> This metric identifies the worst five services in the enterprise. Sometimes it is worth having a look at the reason why these services were not as successful as others, as they may identify problems in the IT strategy. </p>
+<h6>Worst Five Projects by Rolled-Up Business Value</h6>
+<p> <b>Purpose:</b> This metric identifies the worst projects with respect to total generated IT Business Value. The rolled-up data indicates that the business value (and costs) from the services it consumes is pulled forward as part of the project&rsquo;s business value data.</p>
+<p> <b>Computation:</b> This metric simply examines the total rolled-up business value of each project in the enterprise and identifies the five projects that have generated the most rolled-up business value.</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_W5PRUBV.PNG" alt="Analysis: Worst 5 Projects by Rolled Up Business Value" width="532" height="352" title="Analysis: Worst 5 Projects by Rolled Up Business Value"></p>
+<p align="center"><b>Analysis: Worst 5 Projects by Rolled Up Business Value </b></p>
+<p><b>Interpretation:</b> This metric identifies the worst five projects in the enterprise. Sometimes it is worth having a look at the reason why these projects were not as successful as others, as they may identify problems in the IT strategy.</p>
+<hr WIDTH="100%">
+<h4>For Each Project: Estimate Business Value</h4>
+<p>At the beginning of each project, you should estimate the business value that it is expected to deliver. This estimate is an important input to the project justification and prioritization process. </p>
+<p>During &ldquo;<a href="#ECFMBV">Establish the Criteria and Foundation for Measuring Business Value</a>,&quot; all the business value criteria that should be considered for business value estimation have been documented. During &ldquo;<a href="#ESEBVP">Establish a Standard for Estimating Business Value for Projects</a>,&quot; the processes and standards on how to estimate the business value for your project have been documented. Both these are important inputs to ensure a consistency in the way projects are estimated with respect to cost and benefits. That way, the enterprise is better able to look at the set of proposed projects in a more level playing field, rather than being simply swayed by the negotiation skills that one or more organizations may have over others.</p>
+<p>Therefore, you should ensure that you follow the standard process as documented, and estimate the business value related to the given business value categories. </p>
+<p>View the &ldquo;<a href="#EPE">Example: Project Business Value Estimate</a>&rdquo; on how such a project business value estimate may look.</p>
+<hr WIDTH="100%">
+<h4>At Start of Each Project: Establish Business Value Baseline</h4>
+<p>When a project has been justified and you have determined what business value categories are relevant for the project, you need to establish a business value baseline to be able to measure the actual business value the project has provided at the end of the project, or on a longer term. This is necessary to verify whether the expected business value actually has been reached.</p>
+<p>Earlier, you have established some <a href="#EBBVS">Business Value Baseline Standards</a> on how business value measurement baselines can be determined in various types of scenarios. Review this as an aid to find the best approach on how to determine the baseline for your project. </p>
+<p>How to determine the business value baseline is dependent on what kind of business value categories are relevant for your project. How the baseline can be determined is also dependent on what kind of business value categories you are dealing with. Some data you will need to collect manually, while other data can be obtained automatically. It is recommended that wherever possible that the method used to determine the business value baseline is as similar as possible that will be used for actual measurements after the project or services have been implemented. This is to ensure that the data that is compared is as similar as possible. </p>
+<hr WIDTH="100%">
+<h4>For Each Project: Implement Business Value Measurements</h4>
+<p>When you have determined how the business value should be measured for your project and services, you need to determine how the required data should be collected, and used for measurement. </p>
+<p>You have earlier determined the required <a href="#DCBVID">Conceptual Business Value Instrumentation Data</a>, and the <a href="#DSOABVM">SOA Business Value Metrics</a>.</p>
+<p>Here, you determine how to actually collect the instrumentation data, and how the measurements should be implemented as part of the project. It is recommended to automate as much as possible to ease to business value measurements reporting process. </p>
+<p>If the project is expected to have a business value impact related to already existing areas, without directly changing those areas, you should consider implementing the data collection and related metrics even before the project starts. If you do this, you can also use this as part of the baseline measurement in order to provide the best possible baseline with which to compare.</p>
+<hr WIDTH="100%">
+<h4>Measure the Actual Result</h4>
+<p>Some organizations only estimate business value for the purpose of prioritizing projects, and do not bother to measure or validate the actual results after the project is actually deployed. Typically this is because measuring actual results on a project by project basis can be difficult. Further, at a minimum, the estimates do provide a good basis for the business value achieved not only through project delivery, but also through the use of an effective SOA. However, without validation there is no way to really understand the true business value achieved through the IT strategy, nor is there a way to determine if the business value analysis process is working effectively.</p>
+<p>Where possible, the collection of measurement data should be automated as part of the project and service delivery. In some cases, such as with employee productivity, it will be virtually impossible to measure the results through automation. In these cases, the mechanisms used to validate results should be similar, if not identical, to the procedures used to measure the baseline. This practice ensures as much accuracy in the data used for analysis.</p>
+<p>There will also be data that should be validated in a cyclical fashion, such as every six months, or yearly. This data is used to understand the change in business value generated over time by each solution, in addition to validating the short term estimates (Year 1, Year 2, Year 3, etc) provided during the estimation process. The ongoing measurement of business value also provides useful information when looking at updating or retiring existing solutions.</p>
+<p>An example of the actual data collected for the unsuccessful credit scoring compliance example presented earlier is provided below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE16.PNG" alt="Example: Actual Business Value Measurement " width="632" height="463" title="Example: Actual Business Value Measurement "></p>
+<p align="center"><b>Example: Actual Business Value Measurement </b></p>
+<hr WIDTH="100%">
+<h4>Validate and Analyze the Results</h4>
+<p> When looking at the actual measured results versus the estimates, it is important to look for major gaps in the estimates, versus the actual results. These gaps, either positively or negatively, may indicate that there is a problem with the overall business value analysis processes, as they indicate that either the estimation process or actual measurement process may be flawed. Further, gaps identified in the measured versus estimated data may also signify SOA maturity based problems.</p>
+<p> For instance, we will take a look at the credit scoring example which lacked the implementation of a service versioning strategy. The difference between actual measured results and estimate are included in the figure below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MSIB_TABLE17.PNG" alt="Example: Business Value Actual vs. Estimate Comparison" width="653" height="463" title="Example: Business Value Actual vs. Estimate Comparison"></p>
+<p align="center"><b>Example: Business Value Actual vs. Estimate Comparison</b></p>
+<p>As illustrated above, it is clear that the actual results are nowhere near the estimate. In fact a difference of overall net business value of $2,965,000 is observed. As previously identified the problem&rsquo;s root cause was based in the organization&rsquo;s overall SOA adoption strategy. In this case, a very important SOA fundamental was overlooked, and the organization was not able to respond to the change effectively, even though the original intent of the SOA was to accommodate this type of situation. In this scenario, IT will more than likely receive a pie in the face, and will have most certainly deserved it. However, their most likely excuse will be that SOA is not at all what it is cracked up to be.</p>
+<hr WIDTH="100%">
+<h5><a name="REFS"></a>References</h5>
+<TABLE width="100%" border=1>
+  <TR>
+    <TD vAlign=top align=left><div align="center">1</div></TD>
+    <TD vAlign=top align=left><p>Sward, David, 2006. <i>Measuring the Business Value of Information Technology</i>: Intel Press. </p></TD>
+    <TD vAlign=top align=left> This book provides a good foundation for estimating and measuring business value from IT solutions. However, it does not consider the nuances of utilizing a SOA approach. Extending the method for SOA is the primary subject of this section in addition to the next six sections.</TD>
+  </TR>
+  <TBODY>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="45%" scope="col">Task</th>
+    <th width="55%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy (Envision) </a></div></th>
+    <td>This technique assists in understanding the role instrumentation can play in information gathering for the purpose of making improved business decisions, as well as to in measuring the amount of business value generated through the IT strategy. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_018_ESTABLISH_CURRENT_BASELINE_METRICS_OVERVIEW.HTM" target="_blank">BA.018 Establish Current Baseline Metrics (Envision) </a></div></th>
+    <td>This technique assists in understanding the role instrumentation can play in information gathering for the purpose of making improved business decisions, as well as to in measuring the amount of business value generated through the IT strategy. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Has a common business unit been defined in which business value should be estimated?</li>
+  <li>Have a number of categories including a number of business values that should be estimated and measured against been defined?</li>
+  <li>Has a common standard in which business value should be estimated for projects and services been defined?</li>
+  <li>Is a standard defined on how to establish a business value baseline for projects?</li>
+  <li>Is a standard defined on how to perform business value analysis as part of the project delivery process?</li>
+  <li>Has conceptual business value instrumentation data been defined?</li>
+  <li>Does each project have an estimated business value following the business value estimation standards?</li>
+  <li>Does each project have an established business value baseline following the standards?</li>
+  <li>Has the actual business value been calculated for each project?</li>
+  <li>Has an analysis for each project been performed between estimated and actual business value?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

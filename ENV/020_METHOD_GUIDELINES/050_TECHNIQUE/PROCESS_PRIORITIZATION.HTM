@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Process Prioritization Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>PROCESS PRIORITIZATION</h2>
+<p>The purpose of this technique is to produce a business process analysis roadmap of prioritized and &ldquo;justified&rdquo; candidate business processes to analyze.</p>
+<p>As with any type organization, process analysis planning is an exercise in enterprise scalability. This means that as more and more in-flight strategic projects are progressing in parallel, an increasing demand is placed on the need for effective Process Analysis Planning. In order to be effective, Process Analysis Planning must be efficient and scalable.</p>
+<p>Because of the level of reuse and project interdependencies, this technique is especially recommended for enterprise having a SOA strategy, but may also be used for other types of initiatives, like the implementation of COTS applications that offer configurable, embedded processes.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Process Analysis Roadmap</b> - The Process Analysis Roadmap is a living document that contains the high-level release information for all process analysis projects. As processes are analyzed and decomposed they are removed from the plan. When new projects and processes are introduced they are added to the plan, therefore the analysis plan is constantly changing.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td> Define Scoring System.</td>
+    <td>Scoring System </td>
+    <td>The Scoring System should be a priority scoring system that meets the needs and priorities of the customer. It should be both fair and balanced.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Prioritize Business Processes.</td>
+    <td>Prioritized Business Processes</td>
+    <td>The Prioritized Business Processes list contains all the business processes to be analyzed, including a priority, and the score based on the scoring system. It also includes the rational for making prioritization decisions, especially if it contradicts the scoring.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Create High-level Process Analysis Plan.</td>
+    <td>Process Analysis Plan </td>
+    <td>The Process Analysis Plan is a list of which processes should be analyzed first and which resources will be performing the analysis.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p> Efficiency and scale are achieved through a combination of having the correct information available to make informed decisions, as well as having this information organized in a way that it is readily available when decision making analysis requires it. An enterprise repository plays a key role in bringing the information together efficiently through an organized and linked taxonomy.</p>
+<p> In order to achieve pragmatism and efficiency, organization and governance practices must be applied to release planning. A team or individual (depending on the size of the enterprise) should be allocated and made responsible for Process Analysis Planning. </p>
+<p>This team must be given the authority to influence enterprise projects and asset delivery schedules. </p>
+<p><b>NOTE:</b> It is common for enterprises to employ Business Process and Service Portfolio planning to aid in this effort.</p>
+<p> The Process Analysis Roadmap is a living document that contains the high-level release information for all process analysis projects. As processes are analyzed and decomposed they are removed from the plan. When new projects and processes are introduced they are added to the plan, therefore the analysis plan is constantly changing. </p>
+<hr WIDTH="100%">
+<h4>Define Scoring System</h4>
+<p>There are many criteria that a process can be assessed against to assist in determining its priority and justification for further analysis. </p>
+<p>The values and categories proposed for performing process priority and justification scoring should be worked through with the customer. Obviously the scope should be part of the equation, but other possible values may include strategic importance, cost and benefits, etc. Initially, the customer participates in a workshop and assists in developing a balanced priority scoring system that meets the needs and priorities of the customer that is both fair and balanced. The system should be refined over time as the enterprise matures. In order to do this, the scoring system should be reviewed periodically (e.g., once a year), to ensure it is still capturing the needs and priorities of the enterprise.</p>
+<p>Below are some examples of process scoring. It is preferable to have more than one, but the actual scoring metrics you chose will to a large extend depend on the customer strategy.</p>
+<p><b>Process Category Score:</b> This value has the following options (high values indicate <i><b>positively</b></i> towards justification):</p>
+<ul>
+  <li><b>30: Core Process</b> - This signifies that the process represents the main business activities of the enterprise. They represent the core competencies that can differentiate the organization in its market. Examples of core processes are:
+      <ul>
+        <li> Order Management</li>
+        <li>Account Management</li>
+        <li>Claim Processing</li>
+      </ul>
+  </li>
+</ul>
+<ul>
+  <li><b>20: Strategic Process</b> - This signifies that the process represents the enterprise&rsquo;s strategic activities by ensuring that the enterprise&rsquo;s meets its specified objectives.<br>
+  </li>
+</ul>
+<ul>
+  <li><b>10: Supporting</b> - This signifies that the process represents the non-core activities that support the core and strategic activities. Supporting processes guide, control, plan, enable or provide resources for the core processes of an organization. Just because a process is a supporting process does not mean it should be worked on last. Core process problems are sometimes caused by ineffective support processes. Examples of supporting processes are:<br>
+      <ul>
+        <li>HR &ndash; On-boarding</li>
+        <li>Maintenance</li>
+        <li>Procurement</li>
+        <li>Scheduling</li>
+        <li>Selling</li>
+      </ul>
+  </li>
+</ul>
+<p> <b>Value Alignment Score:</b> The value alignment score weighs the alignment of the business process to the enterprise&rsquo;s business goals. The values should be so that a higher score value indicates <b><i>positively</i></b> towards justification. The better the business process aligns to the enterprise's business goals, the higher the score. </p>
+<p><b>Executive Interest Score:</b> The executive interest score weighs executive interest and support. A higher score value indicates <em>positively</em> towards justification. Proposed values include:</p>
+<ul>
+  <li> <b>4</b>: Senior Executives have a strong interest in the results and output from this process and are willing to sponsor and support this initiative.</li>
+  <li><b>3</b>: An appropriate executive has a strong interest in the results and output from this process and are willing to sponsor and support this initiative.</li>
+  <li><b>2</b>: Senior Executives have a strong interest in the results and output from this process but no clear indication of support or sponsorship is known.</li>
+  <li><b>1</b>: An appropriate executive has a strong interest in the results and output from this process but no clear indication of support or sponsorship is known.</li>
+  <li><b>0</b>: No clear interest in the results and output from this process from any executive.</li>
+</ul>
+<p> <b>Knowledge Score:</b> The knowledge score weighs the availability of knowledge regarding this process. A higher score value indicates <i><b>negatively</b></i> towards justification. Proposed values include:</p>
+<ul>
+  <li> <b>100</b>: No access</li>
+  <li><b>50</b>: Minimal access to knowledge</li>
+  <li><b>10</b>: Manageable access to knowledge</li>
+  <li><b>0</b>: Significant access to knowledge</li>
+</ul>
+<p><b>Appropriate Scope Score:</b> The appropriate scope score weighs the appropriateness of the process. This can also be seen as a risk indicator score. The process should be small and simple enough in scope to be appropriate for this modeling effort. Initially, to gain executive confidence processes that are not too complex or too risky should seriously be considered. A higher score value indicates <em>negatively</em> towards justification. Proposed values include:</p>
+<ul>
+  <li> <b>100</b>: Highly complex and large in scope</li>
+  <li><b>20</b>: Appropriate in scope but complex</li>
+  <li><b>10</b>: Large in scope</li>
+  <li><b>5</b>: Acceptable level of scope and complexity</li>
+  <li><b>0</b>: Appropriate in scope and complexity</li>
+</ul>
+<p><b>Resources Involved Score:</b> The resources involved score weighs to what extent are resources such as employees involved in the process. A higher score value indicates <b><i>positively</i></b> towards justification. Proposed values include: </p>
+<ul>
+  <li><b>3</b>: Minimal</li>
+  <li><b>2</b>: Minor</li>
+  <li><b>1</b>: Significant</li>
+  <li><b>0</b>: Large</li>
+</ul>
+<p><b>BPM Project Impact Score:</b> The BPM project impact score weighs to what extent a project has been identified, justified and scheduled for development. A higher score value indicates <i><b>positively</b></i> towards justification.</p>
+<ul>
+  <li><b>3</b>: BPM Project justified and scheduled for development</li>
+  <li><b>2</b>: BPM Project justified</li>
+  <li><b>1</b>: BPM Project identified</li>
+  <li><b>0</b>: No BPM Project identified</li>
+</ul>
+<p><b>Operational Complexity Score:</b> The operational complexity score weighs the extent of reorganization and/or changed organizational policies required for this process. The authority to make these changes must be taken into consideration. A higher score value indicates <i><b>negatively</b></i> towards justification</p>
+<ul>
+  <li><b>10</b>: Extensively</li>
+  <li><b>7</b>: Significant</li>
+  <li><b>3</b>: Minor</li>
+  <li><b>0</b>: Minimal</li>
+</ul>
+<hr WIDTH="100%">
+<h4>Prioritize Business Processes</h4>
+<p>Using the scoring system defined in the previous step, or the system specifically determined for the customer, and assess the justification and priority score and decide whether there are any other factors that should be considered that should sway the justification and prioritization of the business process, for example, compliance. This score is calculated by subtracting the Total of the scores of <i><b>negative</b></i> factors from the Total of the scores of <i><b>positive</b></i> factors. The scoring should be an indicator and not the ultimate justification.</p>
+<p>With all the relevant information at hand prioritize the business processes to be analyzed. Document the rational for making prioritization decisions, especially if it contradicts the scoring. </p>
+<hr WIDTH="100%">
+<h4>Create High-Level Process Analysis Plan</h4>
+<p>The high-level process analysis plan is not a detailed BPM project plan but a list of which processes should be analyzed first and which resources will be performing the analysis. If there are multiple analysis teams then the process analysis plan must highlight parallel tasks. The plan should allocate the same resources to business process that are in the same domain as this will aid in finding commonality within business process and services in later phases.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/ER_130_PRODUCE_MOSCOW_IMP_LIST_OVERVIEW.HTM" target="_blank">ER.130 Produce MoSCoW Improvement List (Envision) </a></div></th>
+    <td> If Enterprise Functional Modeling or Enterprise Process Modeling (BA.040) has been carried out, it is possible to prioritize business processes or functions using a scoring system defined in this technique.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Does the scoring system meet the needs of the customer?</li>
+  <li>Is the scoring system balanced and fair, and can it be maintained over time?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

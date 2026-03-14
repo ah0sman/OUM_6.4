@@ -1,0 +1,1006 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SE Process Monitoring Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE ENGINEERING PROCESS MONITORING</h2>
+<p>The purpose of this technique is to assist in adopting instrumentation for the purpose of monitoring and management of the engineering processes. </p>
+<p>Engineering is a core discipline within most Information Technology (IT) organizations, and in many instances, instrumentation is already being utilized to collect data on some aspects of the engineering processes. Traditionally, techniques for applying instrumentation against the engineering processes have centered on overall project delivery lifecycle activities, including delivery timeframes, level of effort, and defect tracking. </p>
+<p>Engineering, within an IT strategy utilizing a service-oriented architecture (SOA), requires an additional level of discipline with respect to the engineering processes. This is necessary because engineering within a SOA should be considered as finer grained. That is, applications and projects are constructed with service-orientation in mind, which means that reuse and strategic service opportunities are identified during the analysis phase. With this approach, portions of a project or application may be realized by using existing shared services, or carved out for the purpose of creating additional services. Services are then engineered specifically for reuse among a larger audience of consumers, and potentially providing a higher level of strategic importance with respect to business objectives. </p>
+<p>When executed correctly, this strategy should lead to a more responsive and efficient software factory. However, because of the decreased granularity and increased demand for discipline, more oversight, monitoring and management is necessary in order to achieve optimal results.</p>
+<p>Instrumentation, therefore, should be considered as a fundamental component of the engineering processes of a service-oriented architecture to accomplish a few key goals:</p>
+<ol>
+  <li>Ensure that the engineering processes are performing as predicted.</li>
+  <li> Evolve the engineering processes in targeted areas for improved performance and efficiency based on information gleaned through instrumentation.</li>
+  <li> Use instrumented data to understand the level of maturity attained with respect to overall SOA goals and objectives.</li>
+</ol>
+<h4>Instrumenting the Engineering Processes for the Purpose of Monitoring and Management</h4>
+<p>From a planning perspective, there are two primary activities that must take place with respect to adopting instrumentation for the purpose of monitoring and management of the engineering processes.</p>
+<p>The first activity is the identification of the data that will be collected during the execution of the engineering processes. This data is considered to be instrumented, as it is specifically collected for the purpose of defining metrics that will assist in improved monitoring and management over the engineering processes. During this activity, it is important to precisely define what data will be collected from each process, in addition to defining the relationship among related instrumentation entities.</p>
+<p>The second activity acts on the raw, instrumented, engineering data and defines metrics through aggregation and data analysis. Each metric has a specific purpose and set of guidelines for interpretation. The metrics are used to both monitor the engineering processes to ensure consistency and overall procedural effectiveness, as well as provide guidance from a management perspective as to where improvements in the processes may be needed.</p>
+<p>OUM with the SOA Engineering Planning View provides a fine-grained set of engineering processes for delivering projects and applications within a service-oriented architecture. This document provides a foundation for defining the conceptual data set to be collected through instrumenting any engineering framework based on these processes. The conceptual data is then applied in the definition of several key metrics which may be utilized to monitor and manage the adopted engineering framework.</p>
+<p>If you are not yet familiar with the service engineering processes as described in OUM, you should review the material in the <a href="../../../OUM/OUM_HOME_SOAINOUM.HTM" target="_blank">SOA in OUM</a> views prior to proceeding with this document.</p>
+<h4>Conceptual Instrumentation Data Relationships</h4>
+<p> When the service engineering process in OUM is examined from a high-level, the following logical artifacts identify themselves:</p>
+<ul>
+  <li><b>Project: </b>The service engineering process is based on delivering projects within an SOA, so this artifact is quite obvious.</li>
+  <li> <b>Requirement:</b> Requirements represent the fine grained details with respect to the functional and non-functional aspects of projects (and services).</li>
+  <li> <b>Service Candidate:</b> Service Analysis is focused heavily on Identifying and Discovering services through the use of Service Candidates.</li>
+  <li> <b>Release Schedule Impact:</b> These are identified during the SOA Release Planning activities and are the result of schedule impacts caused by constraints in engineering and/or physical resources.</li>
+  <li> <b>Service Boundary:</b> Service boundaries identify areas within the requirements of a service candidate where separate services should be defined.</li>
+  <li> <b>Service:</b> The engineering of services is the primary focus of Service Delivery.</li>
+  <li> <b>Defect:</b> Defects are identified during service and project testing activities. Defects may also surface during production operations.</li>
+  <li> <b>Trouble Ticket:</b> A trouble ticket is created when a problem is encountered during production.</li>
+</ul>
+<p>These conceptual data entities and their relationships are depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_EICR.PNG" alt="Engineering Instrumentation - Conceptual Relationships" width="800" height="491" title="Engineering Instrumentation - Conceptual Relationships"></p>
+<p align="center"><b>Engineering Instrumentation - Conceptual Relationships</b></p>
+<p>The relationships are defined as follows: </p>
+<ul>
+  <li>A project is the basis for initiating the engineering processes with respect to service engineering.</li>
+  <li> Projects have requirements and requirements originate from a project.</li>
+  <li> Service Candidates are formed by groups of similar or related requirements.</li>
+  <li> Service Discovery events take place when justified service candidates are encountered during Service Identification and Discovery.</li>
+  <li> Boundary analysis is performed on justified service candidates at the beginning of the service delivery process to determine the existence of any service boundaries.</li>
+  <li> Service boundaries define the set of services that will be crafted from the requirements attached to the service candidate.</li>
+  <li> The service then links to the set of appropriate requirements (some or all based on service boundaries) stemming from the service candidate.</li>
+  <li> Release schedule Impacts are defined which may impact project and or service deliveries.</li>
+  <li> Defects are defined during testing activities or attached to trouble tickets originating from operational issues.</li>
+</ul>
+<p><b>Note: </b>It is important to reiterate, that at this point, we are not concerned about the source of the data, but rather with the identification of high-level conceptual entities that will form the basis for defining the set of instrumented data to be collected through the execution of the service engineering processes.</p>
+<p>Now that the conceptual data entities and their relationships have been identified, the next step is to take a closer look at the detailed service engineering processes and determine the data to be collected and for which entity it belongs.</p>
+<p>As each process is examined during the first three steps described in the technique steps below, the details of each of the above identified entities will be flushed out. All attributes of the completed conceptual data entities will be displayed, but only the attributes listed in black (in the coming diagrams) are actually affected or collected within the current process being examined.</p>
+<h4>Metrics</h4>
+<p> Problems in human-centric processes are sometimes difficult to track down and isolate. Instrumentation, when applied correctly, provides a means for constructing metrics that may be used to assist with isolating problems or inefficiencies within the engineering processes. It should not be expected to solve the problem however, and nor should it be expected to point directly at the problem (at least in most cases). Further, metrics continue to evolve. Metrics may be refined, or decommissioned in addition to adding new metrics. As the business changes, and IT maturity grows, so should the set of metrics change in order to assist the business and IT in monitoring and managing its processes, systems and activities. Metrics need to be defined with a purpose, and, in the case of engineering, targeted at either identifying problems within specific areas of the engineering process, or identifying areas of inefficiencies within the processes that could possibly be optimized. The last three steps described in the Technique Steps below cover a generic set of metrics targeted at measuring and identifying problems and inefficiencies within the service engineering processes.</p>
+<p></p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Service Engineering Monitoring Data and Metrics</b> - The Service Engineering Monitoring Data and Metrics contains a definition of all the required data to instrument the various processes within service engineering, such as Service Analysis, Service Delivery and Service Management. It also includes actual metrics that may be used to measure the effectiveness of these processes. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Determine required data for instrumenting the Service Analysis process. </td>
+    <td>Service Analysis Instrumentation Data </td>
+    <td> The Service Analysis Instrumentation Data component contains for the three main sets of engineering practices (SOA Requirements Management, Service Identification and Discovery, and SOA Release planning) a description of the processes and at what point and what kind of instrumentation data should be collected.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine required data for instrumenting the Service Delivery process. </td>
+    <td>Service Delivery Instrumentation Data </td>
+    <td>The Service Delivery Instrumentation Data component contains for the core delivery engineering processes (Service Definition, Service Design, Service Implementation and Service Testing) a description of the processes, and at what point and what kind of instrumentation data should be collected.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine required data for instrumenting the Service Management process. </td>
+    <td>Service Management Instrumentation Data </td>
+    <td>The Service Management Instrumentation Data component contains a description of the project delivery and operations processes, and at what point and what kind of instrumentation data should be collected.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Define metric notation standards. </td>
+    <td>Metric Notation Standards </td>
+    <td>The Metric Notation Standards component describes the standard for how all the metrics should be defined in the next sections. If a Metric Notation Standard has been defined in another context, then preferably the same standard should be used, or updated. If this is the case, this component refers to the given standard.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Define metrics for Service Analysis.</td>
+    <td>Service Analysis Metrics </td>
+    <td>The Service Analysis Metrics component contains a definition of all metrics that should be used as part of this process, and how these metrics should be interpreted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Define metrics for Service Delivery.</td>
+    <td>Service Delivery Metrics </td>
+    <td>The Service Delivery Metrics component contains a definition of all metrics that should be used as part of this process, and how these metrics should be interpreted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Define metrics for Service Management.</td>
+    <td>Service Management Metrics </td>
+    <td>The Service Management Metrics component contains a definition of all metrics that should be used as part of this process, and how these metrics should be interpreted.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Iterative Process </h4>
+<p>The process of defining instrumentation metrics for engineering should be an iterative process as follows:</p>
+<ul>
+  <li>Brainstorm initial set of engineering metrics.</li>
+  <li>Define the conceptual instrumentation data model necessary to support these metrics.</li>
+  <li>Define a metric representation notation.</li>
+  <li>Examine the engineering framework in detail and further define conceptual instrumentation data based on decision points and significant entities (e.g., Service Candidate, etc) encountered in the processes.</li>
+  <li>Define complete set of metrics based on completed conceptual data model.</li>
+</ul>
+<p>The steps in the technique section above do not reflect this process, as this technique overview attempts to provide an input to the iterative process, what kind of engineering metrics would be required, and what kind of instrumentation data would be required to support those metrics. When brainstorming an initial set, you would typically do this for one area at a time, for example, start off with metrics and instrumentation data for Service Analysis.</p>
+<hr WIDTH="100%">
+<h4>Conceptual Instrumentation Data </h4>
+<p>The conceptual instrumentation data that you will see constructed throughout this technique is not simply limited to building metrics for the purpose of improving the engineering processes. They may also be utilized for other types of metric collection or even correlated back from metrics related to other areas. For instance, a core component of measuring SOA Maturity is engineering performance. The same data used to narrow down issues and inefficiencies within the engineering processes may also be applied against more coarse grained metrics for gauging the level of engineering maturity achieved within the organization. Further, metrics gathered for operations purposes may be correlated back through data collected in the engineering processes. This is why it is very important to think broadly when planning out the data set with respect to instrumentation data and their relationships. For optimum flexibility, the data collected should map nicely with the output and objectives of the processes and/or environment being measured.</p>
+<p> In the following section, many (but not all) of the data elements collected from the engineering processes can be applied in constructing specific metrics related to narrowing down issues within the engineering processes or assisting in understanding areas of inefficiency. Some of the data will be utilized in other areas for the purpose of understanding SOA Maturity levels in addition to applications in operations based metrics. See the <a href="ACCELERATING_SOA_MATURITY.HTM" target="_blank">Accelerating SOA Maturity</a> technique overview for more information. </p>
+<p>The complete conceptual instrumentation entities and their relationship are illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_CCIER.PNG" alt="Complete Conceptual Instrumentation Entities and their Relationship" width="806" height="601" title="Complete Conceptual Instrumentation Entities and their Relationship"></p>
+<p align="center"><b>Complete Conceptual Instrumentation Entities and their Relationship</b></p>
+<hr WIDTH="100%">
+<h4>Determine Required Data for Instrumenting the Service Analysis Process </h4>
+<p>Service Analysis consists of three main sets of engineering practices: </p>
+<ul>
+  <li> SOA Requirements Management</li>
+  <li> Service Identification and Discovery</li>
+  <li> SOA Release Planning </li>
+</ul>
+<p>These topics are covered in detail in the <a href="../../OUM_HOME_SEP.HTM" target="_blank">SOA Engineering Planning</a> view and its associated technique overviews for each area. This section covers the instrumentation of the Service Analysis processes that are described within that view.</p>
+<h5>SOA Requirements Management</h5>
+<p>SOA Requirements Management consists of gathering requirements at the project level, followed by refining the requirements and classifying them at the enterprise level. The information gathered within the process provides a key enabler for the rest of the analysis processes. The value of the information gathered through SOA Requirements Management grows over time. The SOA Requirements Management process is illustrated in the figure below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SOARMI.PNG" alt="SOA Requirements Management - Instrumentation" width="803" height="536" title="SOA Requirements Management - Instrumentation"></p>
+<p align="center"><b>SOA Requirements Management - Instrumentation</b></p>
+<p align="left">The Service Analysis processes begin with a project. When a project is put forward and the requirements management process begins for the project there are a number of instrumentation data elements that should be collected with respect to the project. These include: </p>
+<ul>
+  <li><b>Project ID:</b> This is a unique identifier that uniquely identifies the project&rsquo;s instrumentation record.</li>
+  <li> <b>Timestamp:</b> This represents the date and time that the project was initiated. It is important to capture time sensitive data as it allows for metrics to be constructed by sampling across isolated time boundaries.</li>
+  <li> <b>LOB:</b> This element holds the name or identifier for the Line of Business from which the project was initiated or belongs.</li>
+  <li> <b>Project Owner:</b> This element lists the owner for the project.</li>
+  <li> <b>Budgeted Cost:</b> This element contains the budgeted cost for the project which allows for future analysis on overall project delivery performance.</li>
+</ul>
+<p>During the requirements management process requirements are analyzed and examined at the enterprise level. When a new requirement is encountered a new requirement record is created consisting of the following instrumented data elements: </p>
+<ul>
+  <li><b>Requirement ID:</b> Uniquely identifies this requirements instrumentation record.</li>
+  <li><b>Timestamp:</b> This represents the date and time the requirement was created and should match that of the originating project&rsquo;s timestamp.</li>
+  <li><b>Originating Project ID:</b> This links the requirement back to the project for which it was originally created. Since requirements are treated as enterprise assets within this process a single requirement may be encountered several times by multiple projects. This field allows tracking information to determine many different aspects of how requirements are being introduced within the enterprise.</li>
+  <li><b>Is Relevant Outside Project Scope:</b> This value is set to true if it is determined during the requirement processing that this requirement is likely to be relevant to other projects. Otherwise, the value is set to false.</li>
+</ul>
+<p>As each requirement is processed checks for duplicate or overlapping requirements are examined. In the event that an existing requirement is encountered its Encountered Count element is incremented to track this event.</p>
+<h5>Service Identification and Discovery</h5>
+<p align="left">Service Identification and Discovery provides an analytical method for identifying service candidates together with discovering existing services and service candidates. This process is driven from the information gathered through SOA Requirements Management. The result of the process is a set of service candidates that have been justified and will be scheduled for delivery through SOA Release Planning, as well as services and service candidates that have been prescribed for reuse by the project.</p>
+<p>The high-level Service Identification and Discovery Process is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SIDP.PNG" alt="High-Level Service Identification and Discovery Process" width="721" height="407" title="High-Level Service Identification and Discovery Process"></p>
+<p align="center"><b>Service Identification and Discovery - High-Level Process</b></p>
+<p align="left"><br>
+  In this process, service candidates are proposed from two angles. The first is by iterating through each of the functional activities and examining the state of the requirements to identify reuse candidates, and proposed service candidates. The second is by studying the business entities and proposing data service candidates, or reuse candidates. These reuse candidates are examined further through a boundary analysis, which will give an updated list of service candidates, or reuse candidates.</p>
+<p>The shared service candidates are then run through the justification process. Proposed candidates that are justified will be marked for realization and those that are not will be set to inactive. Service reuse candidates are passed through the reuse validation process. In this process, the candidate will be either prescribed for reuse if the project is authorized to use the shared asset or reuse will be denied.</p>
+<p>Instrumentation data is collected from each of these processes beginning with the Functional Activity Analysis process, which is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_FAAI.PNG" alt="Functional Activity Analysis - Instrumentation" width="758" height="615" title="Functional Activity Analysis - Instrumentation"></p>
+<p align="center"><b>Functional Activity Analysis - Instrumentation</b></p>
+<p align="left">This process has three primary branches which are centered on the creation, extension, or discovery of service candidates. In the event that a new service candidate is created a new Service Candidate instrumentation record is created with the following established elements: </p>
+<ul>
+  <li><b>Service Candidate ID:</b> This is a unique identifier that identifies the service candidate&rsquo;s instrumentation record. This value should include version information so that candidate versions can easily be correlated. Alternate version schemes are also possible.</li>
+  <li><b>Timestamp:</b> This represents the date and time that the service candidate was created. </li>
+  <li><b>Requirements List:</b> This element links the service candidate&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related service candidates and their requirements.</li>
+  <li><b>Originating LOB:</b> This is the Line-of-Business that has put forward the service candidate for justification; this does not mean that the scope of the services resulting from the service candidate will be scoped to the particular LOB.</li>
+</ul>
+<p>In the event that a service candidate is encountered where an extension is to be proposed, a new service candidate instrumentation record is created along with the following additional elements that are tracked with respect to the instrumented service candidate data: </p>
+<ul>
+  <li><b>Is Identified Service Extension:</b> This value is set to true as an existing service candidate is being proposed for extension.</li>
+  <li> <b>Version Change Required:</b> This value is set to major, minor, or point based on the severity of the change required to the service based on the proposed change or addition in requirements. </li>
+  <li> <b>Requirements List:</b> The new or changed requirements are linked through this element. This element links the service candidate&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related service candidates and their requirements.</li>
+</ul>
+<p>The next process to be examined with respect to instrumentation is a sister process to the Functional Activity Analysis process. The Business Entity Service Candidate Analysis process examines data requirements and identifies service candidates based on data requirements identified through the project. The process is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_BEAP.PNG" alt="Business Entity Analysis - Instrumentation" width="685" height="606" title="Business Entity Analysis - Instrumentation"></p>
+<p align="center"><b>Business Entity Analysis - Instrumentation</b></p>
+<p align="left">Similar to the Functional Activity Analysis process just examined, this process has three primary branches which are centered on the creation, extension, or discovery of service candidates (based on data requirements). In the event that a new service candidate is created, a new service candidate instrumentation record is created with the following established elements:</p>
+<ul>
+  <li><b>Service Candidate ID:</b> This is a unique identifier that uniquely identifies the service candidate&rsquo;s instrumentation record. This value should include version information so that candidate versions can easily be correlated. Alternate version schemes are also possible.</li>
+  <li><b>Timestamp:</b> This represents the date and time that the service candidate was created. </li>
+  <li><b>Requirements List:</b> This element links the service candidate&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related service candidates and their requirements. </li>
+  <li><b>Originating LOB:</b> This is the Line-of-Business that has put forward the service candidate for justification; this does not mean that the scope of the services resulting from the service candidate will be scoped to the particular LOB.</li>
+</ul>
+<p>In the event that a service candidate is encountered where an extension is to be proposed, a new service candidate instrumentation record is created along with the following additional elements that are tracked with respect to the instrumented service candidate data: </p>
+<ul>
+  <li><b>Is Identified Service Extension:</b> This value is set to true as an existing service candidate is being proposed for extension.</li>
+  <li><b>Version Change Required:</b> This value is set to major, minor, or point based on the severity of the change required to the service based on the proposed change or addition in requirements.</li>
+  <li><b>Requirements List:</b> The new or changed requirements are linked through this element. This element links the service candidate&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related service candidates and their requirements.</li>
+</ul>
+<p>These two processes result in the collection of instrumentation data regarding the creation of new service candidates as well as candidate extension proposals. During these processes, discovered service candidates may also be encountered. This event should also be instrumented. The High-level Service Identification and Discovery process, which is illustrated below, is used to depict the capture of this data with respect to service candidate discovery.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SIDHLI.PNG" alt="Service Identification and Discovery - High-Level Instrumentation" width="721" height="451" title="Service Identification and Discovery - High-Level Instrumentation"></p>
+<p align="center"><b>Service Identification and Discovery - High-Level Instrumentation </b></p>
+<p>The discovery of a justified service candidate results in the creation of a Service Discovery instrumentation record: </p>
+<ul>
+  <li><b>Service Discovery ID:</b> This is a unique identifier that uniquely identifies the discovery event.</li>
+  <li><b>Service Candidate ID:</b> This is used to correlate the discovery event back to the service candidate.</li>
+  <li><b>Timestamp:</b> This represents the date and time that the service candidate discovery event took place. </li>
+</ul>
+<p>After new service candidates are identified, or existing candidates are discovered, justification processes are utilized to determine if the new service candidates, or candidate extensions should be realized, or if discovered candidates may be reused by the project.</p>
+<p>The instrumentation requirements for the Service Candidate Justification process are illustrated below. This process covers the justification of new or proposed service candidates and service candidate extensions for realization as shared services.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SCJI.PNG" alt="Service Candidate Justification - Instrumentation" width="810" height="555" title="Service Candidate Justification - Instrumentation"></p>
+<p align="center"><b>Service Candidate Justification - Instrumentation </b></p>
+<p>The Service Candidate Justification process represents a scoring procedure which is used to analyze the benefits of realizing a service candidate as a shared service against the additional costs or impacts required to realize this candidate as a shared asset. The decision results should be captured as instrumented data. In doing so, the following additional elements are captured as part of the Service Candidate instrumentation record: </p>
+<ul>
+  <li><b>Is Justified:</b> This value is set to true if the result of the process determines that the service candidate, or candidate extension is to be realized as one or more shared services. Otherwise, the value is set to false.</li>
+  <li><b>Primary Reason ID:</b> This value represents the primary reason for either justifying the service candidate for realization or alternatively, for failed justification. A set of codes should be defined based on each potential result. This allows reasoning data to be correlated.</li>
+</ul>
+<p>The following list represents a set of reason codes related to justification: </p>
+<ul>
+  <li><b>Enablement Ease:</b> This value is provided for the Primary Reason ID when enablement ease is the primary reason for which the service candidate was justified fro realization.</li>
+  <li><b>Compliance:</b> This value is provided for the Primary Reason ID when compliance benefits that will be realized through the creation of this service candidate as one or more shared services represent the primary reasoning for realization. Compliance is used in the business sense.</li>
+  <li> <b>Agility Enabler:</b> This value is provided for the Primary Reason ID when a particular service candidate is justified for realization based on the amount of anticipated agility based benefits that it will provide back to the business when realized.</li>
+  <li><b>Reuse Probability:</b> This value is provided for the Primary Reason ID when a particular service candidate is justified for realization based on the anticipated amount of reuse that may result from realization.</li>
+</ul>
+<p>When a service candidate fails justification, the following list of reason codes related to failed service candidate justification applies: </p>
+<ul>
+  <li><b>QoS Feasibility:</b> This value is provided for the Primary Reason ID when service candidate justification failed based on the difficulty of meeting QoS requirements complicated by realizing the service candidate as a shared asset.</li>
+  <li><b>Project Impact:</b> This value is provided for the Primary Reason ID when the realization of a particular service candidate will have too much of a negative impact on one or more in-flight or operational projects and/or services.</li>
+  <li><b>Technology:</b> This value is provided for the Primary Reason ID when a particular service candidate fails justification due to a lack of available technology necessary to realize the requirements of the service candidate in a shared environment.</li>
+  <li><b>Skill Set:</b> This value is provided for the Primary Reason ID when a particular service candidate fails justification due to a lack of required delivery skills necessary to realize the requirements of the service candidate in a shared environment.</li>
+</ul>
+<p>The Primary Reason ID value sets provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<p>One final step required for justified service candidates is to set the Is Shared value of each attached requirement&rsquo;s instrumentation record to true.</p>
+<p> When service candidates are discovered and linked to existing shared services (or services in the process of being realized), a validation process is used to determine if a project may indeed reuse the service. The instrumentation requirements for the Reuse Validation process are illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_RVI.PNG" alt="Reuse Validation - Instrumentation" width="657" height="580" title="Reuse Validation - Instrumentation"></p>
+<p align="center"><b>Reuse Validation - Instrumentation</b></p>
+<p align="left">The Service Candidate Reuse Validation process represents a cross-check procedure that is used to analyze the appropriate fit for a service with respect to the project&rsquo;s intended uses. The decision results should be captured as instrumented data. In doing so, the following additional elements are captured as part of the Service Discovery instrumentation record: </p>
+<ul>
+  <li><b>Is Validated:</b> This value is set to true if the result of the process determines that the service candidate can and should be reused by the project. Otherwise, the value is set to false.</li>
+  <li><b>Primary Reason ID:</b> This value represents the primary reason for denying a service for reuse (successful validation reasons are not interesting as a service must be validated against all criteria in order to be validated). A set of codes should be defined based on each potential result. This allows reasoning data to be correlated.</li>
+</ul>
+<p>The following list represents a set of reason codes related to reuse validation failures: </p>
+<ul>
+  <li><b>Insufficient Capacity:</b> This value is provided for the Primary Reason ID when the intended amount of reuse expected from the consumer will exceed available system resource capacity.</li>
+  <li><b>Service Design:</b> This value is provided for the Primary Reason ID when it is determined that the way in which the service has been designed has made the service in appropriate for the intended consumer&rsquo;s usage requirements.</li>
+  <li><b>Security Policy:</b> This value is provided for the Primary Reason ID when access to the service is restricted, and the proposed consumer is not authorized to use the service based on predefined security policies.</li>
+  <li><b>Requirements Mismatch:</b> This value is provided for the Primary Reason ID when further requirements analysis determines that the requirements of the consumer will not be completely met by the service.</li>
+</ul>
+<p>Again, the Primary Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<h5>SOA Release Planning </h5>
+<p>SOA Release planning is an iterative process that schedules SOA projects and service candidates for delivery. The dependencies between projects and service candidate delivery cycles are also managed through SOA Release Planning through to deployment. SOA Release Planning takes care of resource constraints through priority based contingency planning.</p>
+<p>The scheduled release dates for projects and service candidates are prime targets for instrumentation as they provide overall performance indicators with respect to engineering efficiency. Further, when resource constraints are encountered decisions need to be made. The decisions made, which lead to project or service delivery impacts, should be instrumented. </p>
+<p>Instrumentation data captured from the high-level SOA Release Planning process is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SOARPHLI.PNG" alt="SOA Release Planning - High-Level Instrumentation" width="784" height="472" title="SOA Release Planning - High-Level Instrumentation"></p>
+<p align="center"><b>SOA Release Planning - High-Level Instrumentation</b></p>
+<p align="left">The SOA Release Planning process coordinates the scheduling of both projects and service candidates that have been justified for realization. As the high-level project schedule is constructed, the final list of requirements assigned to the project will be available. In addition to setting the requirements list, the project priority should be captured as part of the instrumented data. Finally as the process completes, the project&rsquo;s scheduled release date is determined and should also be captured with respect to instrumentation data. The following elements are affected in this process: </p>
+<ul>
+  <li><b>Project Priority Score:</b> This is a value representing the projects priority with respect to the enterprise that may be used to determine importance ratings when a project impact is necessary to make room for a higher priority project under resource constraint conditions. </li>
+  <li><b>Requirements List:</b> This element links the project&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related projects and their requirements.</li>
+  <li><b>Scheduled Release Date:</b> This element captures the estimated or scheduled release date assigned to the project. </li>
+</ul>
+<p>Further, for each service candidate passed through the process, the Scheduled Release Date value should also be instrumented.</p>
+<p>When resource constraints are encountered, a contingency process is initiated to determine the course of action for handling the constraint. When impacts are assessed against projects or services, the impacts should be recorded from an instrumentation standpoint. Instrumentation of the Contingency Planning process is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_CPI.PNG" alt="Contingency Planning - Instrumentation" width="701" height="485" title="Contingency Planning - Instrumentation"></p>
+<p align="center"><b>Contingency Planning - Instrumentation </b></p>
+<p>There are two scenarios that may impact project or service candidate schedules. The first is when a decision is made to reduce the scope of a service candidate in order to free up resources for another service or project. In this event, the service candidate is versioned and a new service candidate instrumentation record is created. The ID, Timestamp, Justification and Reason ID are copied forward from the previous candidate&rsquo;s instrumentation record. The following values are then set: </p>
+<ul>
+  <li><b>Scheduled Release Date:</b> This value holds the new release date for the service candidate.</li>
+  <li><b>Requirements List:</b> The new or changed requirements are linked through this element. This element links the service candidate&rsquo;s instrumentation record to the associated requirements instrumentation data. This allows metrics to be constructed which aggregate data between related service candidates and their requirements.</li>
+</ul>
+<p> The second scenario is when the decision is made to impact one or more project and/or service schedules in order to make room for the higher priority initiative. In this scenario, an instrumentation record is created representing the Release Schedule Impact as follows: </p>
+<ul>
+  <li><b>Impact ID:</b> This value uniquely identifies the Release Schedule Impact&rsquo;s instrumentation record.</li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the Release Schedule Impact decision was made.</li>
+  <li><b>Impact Reason Code:</b> This value is set to one value from a set of valid values representing general reasoning for project schedule impacts.</li>
+  <li><b>Affected Projects:</b> This value is used to correlate the impact to the set of projects impacted. For each project a Cost of Impact value is set representing the cost expected to the project&rsquo;s schedule.</li>
+  <li><b>Affected Services:</b> This value is used to correlate the impact to the set of services impacted. For each service a Cost of Impact value is set representing the cost expected to the service&rsquo;s schedule. </li>
+</ul>
+<p>The following list represents a set of reason codes related to release schedule impacts: </p>
+<ul>
+  <li><b>Service Factory Capacity:</b> This value is provided for the Impact Reason ID when there is not enough delivery capability available within the service factory to complete the service candidate delivery within the expected schedule.</li>
+  <li><b>Infrastructure Capacity:</b> This value is provided for the Impact Reason ID when it is anticipated that there will not be enough physical resources available in the expected service infrastructure or hosting environment expected to host the service candidate when deployed to production.</li>
+</ul>
+<p>Again, the Impact Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<p></p>
+<hr WIDTH="100%">
+<h4>Determine Required Data for Instrumenting the Service Delivery Process</h4>
+<p>Service Delivery consists of the core delivery engineering activities taking a service candidate and molding it into one or more services. Service candidates that enter Service Delivery have been justified for realization and scheduled for release. Service Delivery begins with Service Definition where the service boundaries and contracts are created for services resulting from the service candidate. Service Definition primarily determines service boundaries as well as the construction of the service contract. Service contracts include the linked requirements coming from the service candidate, but also may be influenced by enterprise and LOB scoped contracts that are appended to every service based on its intended scope.</p>
+<p>Service Design then acts upon the service contracts to develop the services&rsquo; interfaces. The process of defining a service interface is much more involved than simply coming up with the input and output for the service. Service Design analyzes the contract from the consumer&rsquo;s perspective, and is influenced by factors such as scope (enterprise, LOB, application, etc), message exchange patterns (MEPs) as well as non-functional requirements such as expected volume, and response time requirements (specified in the contract). </p>
+<p>Service Implementation ensures that all aspects of the service contracts are implemented and upheld through the delivery of business logic as well as the deployment to service infrastructure. The implementation must faithfully realize the service contract and interface which are defined through Service Definition and Design. Both functional and non-functional aspects (such as latency, throughput, availability, etc) of the contract must be fully realized. If some aspects of the contract cannot be realized for any reason, then the contract must be updated to reflect the true reality of the service.</p>
+<p>Service Testing plays a role throughout the entire Service Delivery cycle. After Service Definition, the test criteria can be established. Once Service Design has completed, the test cases can be written against the interfaces. Finally, during Service Implementation the test cases are executed to ensure expected quality, and adherence to contract is achieved prior to releasing the service into production.</p>
+<p>An overview depiction of Service Delivery is provided below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SDO.PNG" alt="Service Delivery Overview" width="693" height="564" title="Service Delivery Overview"></p>
+<p align="center"><b> Service Delivery Overview </b></p>
+<p>In some regards, the Service Delivery process parallels that of a full lifecycle project delivery lifecycle and many of the same principals and practices are applicable not only from a methodology perspective, but also from an instrumentation perspective. Therefore, many of the same core instrumentation values that have been traditionally collected for project deliveries apply to service delivery. There are also some unique areas with respect to service delivery that should also be instrumented; all of which are covered within this section.</p>
+<h5>Service Definition</h5>
+<p>Service Definition covers the set of activities required to effectively define service contracts from a service candidate. The service contract for a service provides the detailed description of both functional and non-functional characteristics that must be fulfilled by the interface and the implementation in order for a service to be realized.</p>
+<p>The justified service candidate provides the input to Service Definition. This process identifies service boundaries, constructs the contracts from the separated requirements, attaches any enterprise specified contracts, and performs a feasibility check to ensure that for each service defined, the technology and resources available will be able to meet the requirements of the contract.</p>
+<p>The outcome of Service Definition is one or more service contracts. The Service Definition process with respect to instrumentation is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SDI.PNG" alt="Service Definition - Instrumentation" width="812" height="606" title="Service Definition - Instrumentation"></p>
+<p align="center"><b>Service Definition - Instrumentation </b></p>
+<p align="left">There are two main elements that are important with respect to instrumenting the Service Definition process. The first is the identification of service boundaries, and the second is the definition of a service via its service contract. </p>
+<p>A Service Boundary instrumentation record is created for each service candidate. </p>
+<p><b>Note:</b> A single service boundary represents a division of requirements within a service candidate, and therefore results in the construction of two separate services. Likewise, when two service boundaries are identified then three services are constructed (number of services = number of service boundaries + 1).</p>
+<p>The Service Boundary instrumentation record contains the following data: </p>
+<ul>
+  <li><b>Service Candidate ID:</b> This value uniquely identifies the Service Boundary&rsquo;s instrumentation record in addition to correlating it back to the originating service candidate. Since boundary analysis is only done once per service candidate version. The two instrumentation records can share the same ID from a conceptual standpoint.</li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the boundary analysis took place against the service candidate.</li>
+  <li><b>Service Boundary Count:</b> This value is set to -1 when the instrumentation record is created, but will have a minimum value of 0 when the process exits as each boundary identified will result in the value being incremented.</li>
+</ul>
+<p>For each service boundary encountered the following is recorded against the Service Boundary instrumentation record: </p>
+<ul>
+  <li><b>Service Boundary Count:</b> This value is incremented by 1 as each service is defined.</li>
+  <li> <b>Reason ID List:</b> The set of predefined reasons correlating to why a service boundary was identified.</li>
+</ul>
+<p>As each service is defined the following is recorded against the Service Boundary instrumentation record: </p>
+<ul>
+  <li><b>Service ID List:</b> The list of services attached to the service candidate is updated as each service is defined.</li>
+</ul>
+<p>If no service boundaries are identified for a service candidate, then the Service Boundary instrumentation record will have a service boundary count of 0 and just a single service attached to the list of services defined through this candidate.</p>
+<p>When a service boundary is identified, the following list of reason codes are defined to capture the reason for defining the boundary: </p>
+<ul>
+  <li><b>QoS:</b> This value is provided for the Reason ID when a service boundary is defined based on variations in QoS requirements.</li>
+  <li><b>MEPs:</b> This value is provided for the Reason ID when a service boundary is defined based on a variation in Message Exchange Patterns stemming from the service candidate&rsquo;s requirements.</li>
+  <li><b>Security:</b> This value is provided for the Reason ID when a service boundary is defined based on variations in security requirements.</li>
+  <li><b>Scope:</b> This value is provided for the Reason ID when a service boundary is defined because requirements cross scoping boundaries.</li>
+  <li><b>Category:</b> This value is provided for the Reason ID when a service boundary is defined because the requirements span across one or more service categories.</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<p>Once boundary analysis completes, each service&rsquo;s contract is defined. This is also the time in which the service&rsquo;s instrumentation record is created. The following elements are captured from an instrumentation standpoint for each service: </p>
+<ul>
+  <li><b>Service ID:</b> This is a unique identifier that uniquely identifies the service&rsquo;s instrumentation record. This value should include version information so that service versions can easily be correlated. Alternate version schemes are also possible.</li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the service&rsquo;s contract was defined.</li>
+  <li><b>Service Owner:</b> This value is assigned the owner of the service.</li>
+  <li><b>Service Scope:</b> This value is assigned the value given as the service&rsquo;s scope (e.g., Multi-Enterprise/Enterprise/LOB/Application)</li>
+  <li><b>Service Category:</b> This value is assigned the value give as the service&rsquo;s category (e.g., Presentation/Business Process/Business/Data/Access/Utility).</li>
+  <li><b>Scheduled Release Date:</b> This value is set to the scheduled release date for the service. If no service boundaries were identified during service definition then this value is copied from the service candidate. In the event of service boundaries being identified then the value may be appropriately updated on a per-service basis.</li>
+  <li><b>Requirements List:</b> The requirements specifically addressed by this service are attached to the Service instrumentation record. If no service boundaries were identified then the complete set of requirements attached to the service candidate will be attached to the service. Otherwise, a subset is more than likely.</li>
+  <li><b>Service Definition Cost:</b> This value represents the cost to complete the service definition process for the service.</li>
+</ul>
+<h5 align="left">Service Design, Implementation and Test</h5>
+<p align="left">The remainder of the Service Delivery process is fairly straight forward from an instrumentation standpoint. The illustration below depicts the service delivery process from a high-level with respect to instrumented data:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SDELI.PNG" alt="Service Delivery - Instrumentation" width="712" height="569" title="Service Delivery - Instrumentation"></p>
+<p align="center"><b>Service Delivery - Instrumentation </b></p>
+<p align="left">The following Service instrumentation values are set during Service Design: </p>
+<ul>
+  <li><b>Service Design Cost:</b> This value represents the cost to complete the service design process for the service.</li>
+</ul>
+<p>The following Service instrumentation values are set during Service Implementation: </p>
+<ul>
+  <li><b>Service Implementation Cost:</b> This value represents the cost to complete the service implementation process for the service.</li>
+  <li><b>Reuse Count:</b> This value is incremented when a service implementation reuses another service. The Reuse Count for the service being consumed by the implementation is incremented.</li>
+  <li><b>Service Reuse List:</b> This value is updated when the service&rsquo;s implementation reuses another service. The Service ID of the consumed service is added to the Service Reuse List.</li>
+</ul>
+<p>The following Service instrumentation values are set after the completion of the Service Delivery process: </p>
+<ul>
+  <li><b>Major Revision Count:</b> This value is incremented if the iteration through the service delivery process required a major revision to an existing service.</li>
+  <li><b>Minor Revision Count:</b> This value is incremented if the iteration through the service delivery process required a minor revision to an existing service.</li>
+  <li><b>Point Revision Count:</b> This value is incremented if the iteration through the service delivery process required a point revision to an existing service.</li>
+  <li><b>Service Test Cost:</b> This value represents the cost to complete the service testing processes for the service. This value is typically measured in units of time.</li>
+  <li><b>Requirements List:</b> If for any reason the requirements changed for the service during the Service Delivery processes, such as defect identifying additional requirements need to cover an unforeseen scenario, then the final list should be updated in the instrumentation data.</li>
+  <li><b>Actual Release Date:</b> This value is set to the actual date of release for the service.</li>
+  <li><b>Conforms to Service Architecture:</b> This value is set to true if the service was delivered in a way that conforms to the guidelines and standards established around services within the reference architecture. If any exceptions were made, then the value is set to false.</li>
+  <li><b>Reason ID:</b> This value is set if the service does not conform to the service architecture, and represents the primary reason for non-conformance.</li>
+</ul>
+<p>The following list of reason codes are defined based on the reasoning for a service to deviate from the reference architecture: </p>
+<ul>
+  <li><b>Schedule:</b> This value is provided for the Reason ID when service delivery deviates from the reference architecture in order to meet a schedule constraint.</li>
+  <li><b>Packaging/Deployment:</b> This value is provided for the Reason ID when service delivery deviates from the reference architecture because of packaging and or deployment issues.</li>
+  <li><b>Security:</b> This value is provided for the Reason ID when service delivery deviates from the reference architecture in order to meet specific security requirements.</li>
+  <li><b>QoS:</b> This value is provided for the Reason ID when service delivery deviates from the reference architecture in order to satisfy specific QoS requirements.</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<p>As testing takes place throughout the Service Delivery processes, defects are identified. The following values are captured with respect to defect instrumentation data: </p>
+<ul>
+  <li><b>Defect ID:</b> This is a unique identifier that uniquely identifies the defect&rsquo;s instrumentation record. </li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the defect was opened.</li>
+  <li><b>Service ID:</b> This value is set to the ID of the Service&rsquo;s instrumentation record for the service that the defect was opened against.</li>
+  <li><b>Environment Encountered:</b> This value is set to ID of the environment for which it was encountered. Valid values include: Development, Test, System Test, UAT, and Production (Obviously these values should be customized to match the adopting SOA&rsquo;s environments).</li>
+  <li><b>Version Change Required:</b> This value is set to none defects identified during the test cycles do not force a version change on a service.</li>
+  <li><b>Reason ID:</b> This value represents the primary root cause of the defect. Valid values originate from a predefined list of reason codes.</li>
+  <li><b>Severity:</b> This value represents the severity of the defect. Typically, the lower the value, the more severe the defect, where the lowest value is 1.</li>
+  <li><b>Defect Status:</b> This value represents the defect status ranging from open, assigned, fixed, to closed (obviously these values may be customized based on the enterprises needs).</li>
+</ul>
+<p>The following list of reason codes are defined based on the reasoning for a service defects primary cause: </p>
+<ul>
+  <li><b>Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against functional requirements.</li>
+  <li><b>Non-Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against non-functional requirements.</li>
+  <li><b>Regression:</b> This value is provided for the Reason ID when the defect was caused due to a regression against a previously tested version of the service (or project).</li>
+  <li><b>Change Control:</b> This value is provided for the Reason ID when the defect was caused due to unspecified requirements that are now deemed necessary. (For example, hardware failure, resulting in additional requirements need to be defined that had not previously been considered in scope but are now deemed necessary through Change Control.)</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<hr WIDTH="100%">
+<h4>Determine Required Data for Instrumenting the Service Management Process </h4>
+<p>Project delivery represents the delivery of the set of requirements that originated through a project but are not to be realized by the reuse or delivery of shared services. At a minimum some high-level instrumentation data is necessary from this process. Instrumentation with respect to project delivery illustrated in the depiction below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_PDI.PNG" alt="Project Delivery - Instrumentation" width="643" height="601" title="Project Delivery - Instrumentation"></p>
+<p align="center"><b>Project Delivery - Instrumentation</b></p>
+<p align="left">The project&rsquo;s instrumentation record is created during the SOA Requirements Management process, and the project&rsquo;s Scheduled Release Date is instrumented during the SOA Release Planning process, which are both processes within the Service Analysis phase of the Service Engineering process. During the dedicated delivery phase of the project the following project related instrumentation data should be captured: </p>
+<ul>
+  <li><b>Service Reuse List:</b> Just as in Service Implementation, when a service is reused in the process of delivering a project the Service Reuse List just be updated with a cross reference to the consumed service&rsquo;s instrumentation record. The Reuse Count from the Service&rsquo;s instrumentation record should also be incremented.</li>
+  <li><b>Reuse Savings:</b> For each consumed service added to the Service Reuse List the savings incurred as a result of reusing this service should also be recorded.</li>
+  <li><b>Reuse Cost:</b> This value records any additional cost required to reuse the service.</li>
+  <li><b>Actual Release Date:</b> When the project is complete and operational the release date should be instrumented.</li>
+  <li><b>Actual Cost:</b> When the project is completed and operational the actual delivery cost should be instrumented.</li>
+</ul>
+<p>During test activities for the project, defects may be opened against the project or shared services consumed by the project. The following data should be instrumented for each defect uncovered during project testing cycles: </p>
+<ul>
+  <li><b>Defect ID:</b> This is a unique identifier that uniquely identifies the defect&rsquo;s instrumentation record. </li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the defect was opened.</li>
+  <li><b>Service/Project ID:</b> This value is set to the ID of the Service&rsquo;s or Project&rsquo;s instrumentation record for the service that the defect was opened against.</li>
+  <li><b>Environment Encountered:</b> This value is set to ID of the environment for which it was encountered. Valid values include: Development, Test, System Test, UAT, and Production (Obviously these values should be customized to match the adopting SOA&rsquo;s environments).</li>
+  <li><b>Version Change Required:</b> This value is set to none for defects that are opened against the project or services within Service Delivery. Otherwise, if opened against a service in product the value is set to the expected version change required to fix the issue.</li>
+  <li><b>Reason ID:</b> This value represents the primary root cause of the defect. Valid values originate from a predefined list of reason codes.</li>
+  <li><b>Severity:</b> This value represents the severity of the defect. Typically, the lower the value, the more severe the defect, where the lowest value is 1.</li>
+  <li><b>Defect Status:</b> This value represents the defect status ranging from open, assigned, fixed, to closed (obviously these values may be customized based on the enterprises needs).</li>
+</ul>
+<p><b> </b>The following list of reason codes are defined based on the reasoning for a service defects primary cause: </p>
+<ul>
+  <li><b>Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against functional requirements.</li>
+  <li><b>Non-Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against non-functional requirements.</li>
+  <li><b>Regression:</b> This value is provided for the Reason ID when the defect was caused due to a regression against a previously tested version of the service (or project).</li>
+  <li><b>Change Control:</b> This value is provided for the Reason ID when the defect was caused due to unspecified requirements that are now deemed necessary. (For example, hardware failure, resulting in additional requirements need to be defined that had not previously been considered in scope but are now deemed necessary through Change Control.)</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<h5>Instrumenting the Operational Services for Engineering Purposes</h5>
+<p> Just because a project or service enters steady-state within an operational environment does not mean that instrumentation data related to the engineering process is no longer collected for these projects and services. In reality, defects encountered against operational services and projects give valuable data with respect to the level of quality assured through delivery and in particular testing cycles. This level of instrumentation is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_EBOI.PNG" alt="Engineering Based - Operations Instrumentation" width="674" height="564" title="Engineering Based - Operations Instrumentation"></p>
+<p align="center"><b>Engineering Based - Operations Instrumentation </b></p>
+<p align="left">When a problem is encountered in the operational environment, a trouble ticket (or something semantically equivalent) is created. This event should be instrumented and the following instrumentation data captured: </p>
+<ul>
+  <li><b>Ticket ID:</b> This is a unique identifier that uniquely identifies the ticket&rsquo;s instrumentation record. </li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the ticket was opened.</li>
+  <li><b>Defect ID:</b> This value is set to the ID of the Defect&rsquo;s instrumentation record if a defect was also opened as a result of investigating this trouble ticket.</li>
+  <li><b>Problem Cost:</b> This value represents the cost incurred as a result of this incident occurring. This should include the cost required to investigate and resolve the issue in addition to any business cost incurred.</li>
+  <li><b>Encountered Timestamp:</b> This value is set to the date and time when the incident began, which may be different from when the incident was reported which is recorded in this record&rsquo;s Timestamp value.</li>
+  <li><b>Resolved Timestamp:</b> This value represents the date and time for which the incident was resolved.</li>
+  <li><b>Reason ID:</b> This value represents the primary root cause of the defect. Valid values originate from a predefined list of reason codes.</li>
+</ul>
+<p>The following list of reason codes are defined based on the reasoning for a trouble ticket&rsquo;s primary cause: </p>
+<ul>
+  <li><b>Defect:</b> This value is provided for the Reason ID when the defect against a project or service was the root cause of the incident</li>
+  <li><b>Deployment:</b> This value is provided for the Reason ID when the incident resulted from a deployment issue.</li>
+  <li><b>Hardware Failure:</b> This value is provided for the Reason ID when the incident resulted due to the failure of hosting or infrastructure hardware.</li>
+  <li><b>Environment:</b> This value is provided for the Reason ID when the incident was the result of some issue affecting a large portion or the entire hosting environment such as a power outage, or disaster.</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<p>If a trouble ticket results in the opening of a defect against a project or service, a new defect instrumentation record should be created as follows: </p>
+<ul>
+  <li><b>Defect ID:</b> This is a unique identifier that uniquely identifies the defect&rsquo;s instrumentation record. </li>
+  <li><b>Timestamp:</b> This value is set to the date and time for which the defect was opened.</li>
+  <li><b>Service/Project ID:</b> This value is set to the ID of the Service&rsquo;s or Project&rsquo;s instrumentation record for the service that the defect was opened against.</li>
+  <li><b>Environment Encountered:</b> This value is set to ID of the environment for which it was encountered. In this case the value should be set to Production. Valid values include: Development, Test, System Test, UAT, and Production (Obviously these values should be customized to match the adopting SOA&rsquo;s environments).</li>
+  <li><b>Version Change Required:</b> This value is set to the expected version change required to fix the issue when the defect is opened against a service. Otherwise, the value is set to none.</li>
+  <li><b>Reason ID:</b> This value represents the primary root cause of the defect. Valid values originate from a predefined list of reason codes.</li>
+  <li><b>Severity:</b> This value represents the severity of the defect. Typically, the lower the value, the more severe the defect, where the lowest value is 1.</li>
+  <li><b>Defect Status:</b> This value represents the defect status ranging from open, assigned, fixed, to closed (obviously these values may be customized based on the enterprises needs).</li>
+</ul>
+<p>The following list of reason codes are defined based on the reasoning for a service defects primary cause: </p>
+<ul>
+  <li><b>Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against functional requirements.</li>
+  <li><b>Non-Functional:</b> This value is provided for the Reason ID when the defect was caused due to a deviation against non-functional requirements.</li>
+  <li><b>Regression:</b> This value is provided for the Reason ID when the defect was caused due to a regression against a previously tested version of the service (or project).</li>
+  <li><b>Change Control:</b> This value is provided for the Reason ID when the defect was caused due to unspecified requirements that are now deemed necessary. (For example, hardware failure, resulting in additional requirements need to be defined that had not previously been considered in scope but are now deemed necessary through Change Control.)</li>
+</ul>
+<p>The Reason ID value set provided above represent a default set, and should be customized or extended to meet the particular demands of the adopting SOA.</p>
+<hr WIDTH="100%">
+<h4><a name="DMNS"></a>Define Metric Notation Standards </h4>
+<p>There are several different ways to note metric computations. A few basic requirements are necessary when selecting a notation:</p>
+<ol>
+  <li>It must be understood at a relatively high-level.</li>
+  <li> Ambiguity should be avoided.</li>
+  <li>It should precisely illustrate the computation briefly and clearly.</li>
+</ol>
+<p>For the purpose of this document a relatively simple notation has been selected which meets these criteria. In this notation there are two main clauses: </p>
+<ul>
+  <li><b>Expression:</b> This clause specifies the way data is computed and aggregated for the metric. The result is the data set necessary to display or analyze the result.</li>
+  <li><b>Data:</b> This clause defines the data and its conceptual source that is utilized within the metric. It illustrates the relationship between the data utilized within the Computation clause with respect to its source within the Conceptual Instrumentation data collected from the Service Engineering processes, which were detailed in the previous section.</li>
+</ul>
+<p>For the purpose of describing the notation a sample computation has been illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_SMC.PNG" alt="Sample Metric Computation" width="626" height="529" title="Sample Metric Computation"></p>
+<p align="center"><b>Sample Metric Computation</b></p>
+<p align="left"> The top portion of the above illustration represents the title for the metric. The center provides the metric&rsquo;s expression, and the lower portion represents the data required in the computation.</p>
+<h5>The Expression Clause</h5>
+<blockquote>
+  <p><b>Statement: for each &lt;target&gt;</b> - The <i>for each</i> clause is used to iterate over the <i>&lt;target&gt;</i> entity or entities. <i>for each</i> clauses may be nested.</p>
+  <p><b>Statement: where (conditions)</b> - The <i>where</i> clause is used to provide conditions for the <i>for each</i> clause in which it is nested. The (<i>conditions</i>) statement is optional, and if omitted it means that all entities referenced within appropriate level of the expression will be included in the calculation.</p>
+  <p><b>Input: t1 &amp; t2</b> - The starting time and ending time for the computation is represented as t1 (starting time) and t2 (ending time).</p>
+  <p><b>Input: sample</b> - If sample is provided as the &lt;<i>target</i>&gt; of a <i>for each</i> clause, then it is providing the time period to break up the results over. For instance if t1 = Jan 1, 2000 and t2=Dec 31, 2007 and the sample is specified as 1 year; then the <i>for each</i> will take 8 iterations (one for each year). This allows for flexibility, as the sample may be set to something finer grained, or even set to the entire time period.</p>
+  <p><b>Referencing Variables:</b> -Variables are identified within the Data clause (see below). If a variable references an entity, an element within the entity can be referenced by using the &ldquo;.&rdquo; separator. For instance from the example above, referencing the <i>Service Reuse List</i> of the <i>Project</i> entity would be achieved as follows: <b>p.Service Reuse List.</b></p>
+  <p><b>Booleans:</b> - In the expression, it is sometimes necessary to count against a Boolean expression. Therefore, mathematically, when Boolean are used in expressions, 0 is the mathematical representation for <i>false</i> and 1 is the mathematical representation for <i>true</i>.</p>
+</blockquote>
+<h5>The Data Clause</h5>
+<p> The Data clause contains definitions for the list of variables used in the <i>Expression</i> clause, and maps them to the source within the conceptual instrumentation data from which they originated. A variable can be specified against an entire conceptual instrumentation entity, or elements within entities.</p>
+<hr WIDTH="100%">
+<h4>Define Metrics for Service Analysis</h4>
+<p>Refer to the previous section, <a href="#DMNS">Define Metric Notation Standards</a> for an explanation of the notations used in the metrics.</p>
+<p>The following metrics have been defined based on data instrumented from the Service Analysis processes of the SOA engineering processes within OUM. The processes covered in Service Analysis include: </p>
+<ul>
+  <li>SOA Requirements Management</li>
+  <li>Service Identification and Discovery</li>
+  <li> SOA Release Planning</li>
+</ul>
+<h5>Requirements Overlap</h5>
+<p>The Requirements Overlap metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MRO.PNG" alt="Requirements Overlap Metric" width="582" height="546" title="Requirements Overlap Metric"></p>
+<p align="center"><b>Requirements Overlap Metric </b></p>
+<p><b>Purpose:</b> This metric is used to get a gauge on the amount of duplicate requirements encountered during SOA Requirements Management.</p>
+<p><b>Computation:</b> This metric computes a percentage for each sample size of the number of requirement overlap conditions encountered versus the number of requirements encountered. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ARO.PNG" alt="Analysis: Requirements Overlap" width="523" height="344" title="Analysis: Requirements Overlap"></p>
+<p align="center"><b>Analysis: Requirements Overlap </b></p>
+<p><b>Interpretation:</b> The graph provided above gives a sample output from the metric. In this scenario t1 = Jan 1, Year1, t2 = Dec 31, Year8 and sample = 1 year. The trend indicates an increasing percentage of overlaps encountered for some time, before leveling off. This would be the expected trend. Where the percentage levels off would vary from organization to organization. In Year5 there was decrease in overlaps detected. This may be a result of a change in business strategy.</p>
+<p>If a relatively low percentage is maintained, it may be worth taking a closer look at the requirements analysis process. Or, it may be useful to look at additional metrics where requirements overlap percentage is conducted against a larger sample size, or even narrowed by LOB (see the next metric). An alternative area to look at would be to correlate the requirements overlap percentages to service discovery percentages and/or the creation of new services. If service sprawl looks to be a problem within the organization, and percentages in requirements overlap is low, then there may very well be a problem with the SOA Requirements Analysis processes.</p>
+<h5>Requirements Overlap by LOB</h5>
+<p> The Requirements Overlap by LOB metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MROLOB.PNG" alt="Requirements Overlap by LOB Metric" width="582" height="524" title="Requirements Overlap by LOB Metric"></p>
+<p align="center"><b> Requirements Overlap by LOB Metric </b></p>
+<p><b>Purpose:</b> This metric is used to get a gauge on the amount of duplicate requirements encountered during SOA Requirements Management narrowed by LOB.</p>
+<p><b>Computation:</b> This metric computes a percentage for each sample size of the number of requirement overlap conditions encountered versus the number of requirements encountered. The results are separated by LOB.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_AROLOBT.PNG" alt="Analysis: Requirements Overlap by LOB - Trend" width="693" height="468" title="Analysis: Requirements Overlap by LOB - Trend"></p>
+<p align="center"><b>Analysis: Requirements Overlap by LOB - Trend </b></p>
+<p><b>Interpretation:</b> The graph provided above gives a sample output from the metric. In this scenario t1 = Jan 1, Year2, t2 = Dec 31, Year8 and sample = 1 year. The trend indicates an increasing percentage of overlaps encountered for some time, before leveling off. This would be the expected trend. Where the percentage levels off would vary from organization to organization. In Year6 there was decrease in overlaps detected. This may be a result of a change in business strategy. From the previous metric (Requirements Overlap &ndash; Trend) it was unclear as to what may have happened in Year6. The example provided here, indicates that in Year7 no overlap was encountered by projects in finance. Further the trend shows that in Year7 and Year8, there was also very little overlap encountered in Finance projects. This means that a major change in project direction within Finance potentially took place in Year6, Finance has been executing significantly less projects, or there has been a regression in the SOA Requirements Management process when executed against Finance projects which would warrant additional investigation.</p>
+<p>Again, if a relatively low percentage is maintained it may be worth taking a closer look at the requirements analysis process. Or, it may be useful to look at additional metrics where requirements overlap percentage is conducted against a larger sample size, or even narrowed by LOB (see the next metric). An alternative area to look at would be to correlate the requirements overlap percentages to service discovery percentages and/or the creation of new services. If service sprawl looks to be a problem within the organization, and percentages in requirements overlap is low, then there may very well be a problem with the SOA Requirements Analysis processes.</p>
+<p>By segregating the data by LOB, those analyzing this metric are able to understand the performance of the SOA Requirements Management process at the LOB level. This allows for trends to be inspected at both the overall and LOB level, which may be used to uncovering problems with execution of the processes at the specific LOB level.</p>
+<h5><a name="SCJF"></a>Service Candidate Justification Failures</h5>
+<p>The Service Candidate Justification Failures metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCJF.PNG" alt="Service Candidate Justification Failures Metric " width="587" height="574" title="Service Candidate Justification Failures Metric "></p>
+<p align="center"><b>Service Candidate Justification Failures Metric </b></p>
+<p><b>Purpose:</b> This metric is used to get a gauge on the overall reasoning as to why service candidates are failing justification. Service justification failures are rolled up under the following primary reasons:</p>
+<ul>
+  <li><b>QoS Feasibility:</b> This value is provided for reasoning when service candidate justification failed based on the difficulty of meeting QoS requirements complicated by realizing the service candidate as a shared asset.</li>
+  <li><b>Project Impact:</b> This value is provided for reasoning when the realization of a particular service candidate will have too much of a negative impact on one or more in-flight or operational projects and/or services.</li>
+  <li><b>Technology:</b> This value is provided for reasoning when a particular service candidate fails justification due to a lack of available technology necessary to realize the requirements of the service candidate in a shared environment.</li>
+  <li><b>Skill Set:</b> This value is provided for reasoning when a particular service candidate fails justification due to a lack of required delivery skills necessary to realize the requirements of the service candidate in a shared environment.</li>
+</ul>
+<p>These reasons may be customized to best fit the organization adopting SOA.</p>
+<p><b>Computation:</b> This metric computes reason totals for service candidates introduced within the sample period but fail the justification process, preventing them from being realized as shared services.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCJF.PNG" alt="Analysis: Service Candidate Justification Failures" width="523" height="344"></p>
+<p align="center"><b>Analysis: Service Candidate Justification Failures</b></p>
+<p><b>Interpretation:</b> The example depicted above t1 = Jan 1 of the year under review (Year8 from our previous diagrams), and t2 = Dec 31 of the year under review. In this example, there appears to be a fairly large bias towards technology based failures. This means that it is probably worth taking a closer look at what specific technological boundaries exist that are prevent candidate justification, and potentially investing in overcoming the issue.</p>
+<p>Basically a large value in any of the reason areas represents a need to take a closer look. Each may require a different strategy to overcome the problem, but a large amount of service candidate failures may be a serious problem within the engineering processes, as these candidates are then handled within project and the potential shared benefits from realizing these candidates is lost for the time being.</p>
+<p>The following is a summary of analysis by reason: </p>
+<ul>
+  <li><b>QoS Feasibility:</b> If an increasing number of services are being rejected for realization because of the need for a higher-level of QoS, a couple areas may be looked into. Can these requirements be addressed by creating a specialized environment for meeting high QoS demands? This strategy may be worth looking into especially if the QoS reasoning is common across many justification failures. There may also be a need to invest in upgraded infrastructure capability which may have evolved. Infrastructure supporting new standards offering support for higher level of QoS is emerging quite rapidly and additional evaluations may be wroth while.</li>
+  <li><b>Project Impact:</b> A high level of rejections allocated to project impacts deserves a closer look. What is the level of project impacts? Is it always the same project? Projects? Service? Or Services?</li>
+  <li><b>Technology:</b> If technology is the hindering factor for service candidate realization, then it may be worthwhile to invest. Analysis should be done to determine if a suitable fit to these new requirements is available.</li>
+  <li><b>Skill Set:</b> If skill set is the hindering factor for service candidate realization, then it is a good indication that service delivery personnel training may be necessary, or the hiring of some higher-skill resources may be a worth-while investment.</li>
+</ul>
+<p>In addition to analyzing this metric, another approach, or follow-on metric would be to measure reasoning a the LOB level to see if a particular LOB is deviating from trend with respect to the rest of the business regarding service candidate justification failures. This metric is provided in the next section: </p>
+<h5>Service Candidate Justification by LOB</h5>
+<p>The Service Candidate Justification Failures by LOB metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCJFLOB.PNG" alt="Service Candidate Justification Failures by LOB Metric " width="587" height="542" title="Service Candidate Justification Failures by LOB Metric "></p>
+<p align="center"><b>Service Candidate Justification Failures by LOB Metric </b></p>
+<p><b>Purpose:</b> This metric is used to get a gauge on the overall reasoning as to why service candidates are failing justification narrowed by line of business.</p>
+<p><b>Computation:</b> This metric computes reason totals for service candidates introduced within the sample period but fail the justification process, preventing them from being realized as shared services. The totals are broken down by line of business.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASJFLOB.PNG" alt="Analysis: Service Justification Failures by LOB" width="612" height="506" title="Analysis: Service Justification Failures by LOB"></p>
+<p align="center"><b>Analysis: Service Justification Failures by LOB </b></p>
+<p><b>Interpretation:</b> The interpretation for this metric is very similar to the last metric. The main difference is that the distinction by line of business can be clearly drawn. As we drill into the justification failures by LOB, it is evident that within the e-Commerce LOB there is definitely a bias towards technology being the main inhibitor to service candidate justification. The remaining lines of business are fairly uniform across the reasoning with the exception of Skill Set which does not appear to be an issue.</p>
+<p>Basically a large value in any of the reason areas represents a need to take a closer look. Each may require a different strategy to overcome the problem, but a large amount of service candidate failures may be a serious problem within the engineering processes, as these candidates are then handled within project and the potential shared benefits from realizing these candidates is lost for the time being.</p>
+<h5>Service Candidate Justifications</h5>
+<p>The Service Candidate Justifications metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCJ.PNG" alt="Service Candidate Justifications Metric" width="582" height="574" title="Service Candidate Justifications Metric"></p>
+<p align="center"><b>Service Candidate Justifications Metric </b></p>
+<p><b>Purpose:</b> This metric is used to get a gauge on the overall reasoning as to why service candidates are being justified for realization. Service candidate justifications are rolled up under the following primary reasons:</p>
+<ul>
+  <li><b>Enablement Ease:</b> This value is provided for reasoning when enablement ease is the primary reason for which the service candidate was justified fro realization.</li>
+  <li> <b>Compliance:</b> This value is provided for reasoning when compliance benefits that will be realized through the creation of this service candidate as one or more shared services represent the primary reasoning for realization.</li>
+  <li><b>Agility Enabler:</b> This value is provided for reasoning when a particular service candidate is justified for realization based on the amount of anticipated agility based benefits that it will provide back to the business when realized.</li>
+  <li><b>Reuse Probability:</b> This value is provided for reasoning when a particular service candidate is justified for realization based on the anticipated amount of reuse that may result from realization. </li>
+</ul>
+<p>These reasons may be customized to best fit the organization adopting SOA.</p>
+<p><b>Computation:</b> This metric computes reason totals for service candidates introduced within the sample period which pass the justification process, indicating that they will be realized as shared services.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCJ.PNG" alt="Analysis: Service Candidate Justifications" width="537" height="352" title="Analysis: Service Candidate Justifications"></p>
+<p align="center"><b>Analysis: Service Candidate Justifications</b></p>
+<p><b>Interpretation:</b> If service sprawl seems to be an issue within the organization, this may be one of the first metrics to take a look at, as it gives an indicator as to what reasons are generally being used for service candidate justification. If one particular reason seems to have a large bias then a closer look at the process and potential adjustment to the scoring system may be in order.</p>
+<p>For instance, if Reuse Probability is a large percentage of the reason totals, as in the example provided above, then it warrants taking a look at service reuse levels. If the majority of the services are being justified because of a large reuse potential, then savings through reuse, and total reuse levels should be on an upward trend. If not, then there is an obvious problem with justification.</p>
+<p>The following is a summary of analysis by reason: </p>
+<ul>
+  <li><b>Enablement Ease:</b> Too many services justified for realization simply because it is easy to do so, is not necessarily a good thing. In this scenario, you are utilizing shared resources for potentially very little gain. If the services are not also exerting some level of reuse probability or agility then this variable should be tightened.</li>
+  <li><b>Compliance:</b> A large number of service candidates justified for the reason of compliance is not necessarily a bad thing for businesses that operate within very tight conditions. If this is not the case for the business then a closer look should be taken at services justified for this reason.</li>
+  <li><b>Agility Enabler:</b> A large number of services justified for this reason are probably a little bit suspicious. Typically there are a relatively small number of strategic services that truly provide the ability to make a business more agile.</li>
+  <li><b>Reuse Probability:</b> A large number of candidates justified for this reason are not necessarily a bad thing. However, the value should correlate to an increasing trend of services being reused. If that trend is not being experienced, then additional scrutiny with respect to services being justified for this reason needs to be given.</li>
+</ul>
+<p>Another approach, or follow-on metric would be to measuring reasoning a the LOB level to see if a particular LOB is deviating from trend with respect to the rest of the business regarding service candidate justifications. This metric is illustrated below: </p>
+<h5>Service Candidate Justifications by LOB</h5>
+<p> The Service Candidate Justifications by LOB metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCJLOB.PNG" alt="Service Candidate Justifications by LOB Metric" width="582" height="542" title="Service Candidate Justifications by LOB Metric"></p>
+<p align="center"><b>Service Candidate Justifications by LOB Metric </b></p>
+<p align="left"><b>Purpose:</b> This metric is used to get a gauge on the overall reasoning as to why service candidates are being justified for realization. The results are separated by LOB.</p>
+<p><b>Computation:</b> This metric computes reason totals for service candidates introduced within the sample period which pass the justification process, indicating that they will be realized as shared services. The results are separated by LOB.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCJLOB.PNG" alt="Analysis: Service Candidate Justifications by LOB" width="606" height="501" title="Analysis: Service Candidate Justifications by LOB"></p>
+<p align="center"><b>Analysis: Service Candidate Justifications by LOB </b></p>
+<p><b>Interpretation:</b> The same interpretation analysis can be done against this metric as done against the previous metric (Service Candidate Justifications). The difference is that the results of running this metric may lead to indications of problems coming from specific lines of business. In the example above, it is clear that Reuse Probability is the primary driver for justifying service candidates originating from the e-Commerce LOB. If service sprawl is becoming an issue, then it may be worth while to observe the execution of the Service Identification and Discovery processes executed by e-Commerce projects.</p>
+<p><b>Note:</b> Problems with over-justification are not just realized in the form of service sprawl. They also cause the service factory to become less efficient as time and resources are spent engineering services that should have never been justified as services in the first place.</p>
+<h5>Service Reuse Validation Failures</h5>
+<p> The Service Reuse Validation metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSRVF.PNG" alt="Service Reuse Validation Failures Metric " width="582" height="520" title="Service Reuse Validation Failures Metric "></p>
+<p align="center"><b> Service Reuse Validation Failures Metric </b></p>
+<p><b>Purpose:</b> This metric is used to analyze service reuse validation failures. When a service is discovered a validation process is executed to validate that the intended consumer will be able to reuse the service. Validation failures are rolled up and categorized against the following reasons: </p>
+<ul>
+  <li><b>Insufficient Capacity:</b> This value is provided as reasoning when the intended amount of reuse expected from the consumer will exceed available system resource capacity.</li>
+  <li><b>Service Design:</b> This value is provided as reasoning when it is determined that the way in which the service has been designed has made the service in appropriate for the intended consumer&rsquo;s usage requirements.</li>
+  <li><b>Security Policy:</b> This value is provided as reasoning when access to the service is restricted, and the proposed consumer is not authorized to use the service based on predefined security policies.</li>
+  <li><b>Requirements Mismatch:</b> This value is provided for reasoning when further requirements analysis determines that the requirements of the consumer will not be completely met by the service. </li>
+</ul>
+<p>These reasons may be customized to best fit the organization adopting SOA.</p>
+<p><b>Computation:</b> This metric computes reason totals for service candidates discovered within the sample period which fail the validation process, indicating that they cannot be reused by the discovering project.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASRVF.PNG" alt="Analysis: Service Reuse Validation Failures" width="532" height="352" title="Analysis: Service Reuse Validation Failures"></p>
+<p align="center"><b>Analysis: Service Reuse Validation Failures </b></p>
+<p><b>Interpretation:</b> Any large value observed against any particular reason needs to be scrutinized. The following is a summary by reason: </p>
+<ul>
+  <li><b>Insufficient Capacity:</b> If service consumption requests are generally being rejected because of unrealistic capacity requirements then there is no issue. However, if the capacity requests are reasonable, and there simply is not enough capacity within the shared infrastructure, then it is probably worth investing in additional capacity as the cost of shared capacity is always less than the cost of replicated capacity (which is capacity created at the project hosting environment over and over again vs. in a shared environment).</li>
+  <li><b>Service Design:</b> This value indicates that the service was not designed in a way that was appropriate for this consumer. If a large number of services are not being reused for this reason, then the service design practices need to be examined. If services are not being developed in a manner that is flexible enough to handle new unforeseen consumers then the SOA as a whole is not going to be as effective as it could be.</li>
+  <li><b>Security Policy:</b> This value is provided as reasoning when access to the service is restricted, and the proposed consumer is not authorized to use the service based on predefined security policies. There is not much that can be done here, unless security restrictions can be potentially loosened for certain consumers.</li>
+  <li><b>Requirements Mismatch:</b> This value is provided for reasoning when further requirements analysis determines that the requirements of the consumer will not be completely met by the service. These are typically handled by candidate extensions (another metric); if candidate extensions are not being validated then it may be worth taking a closer look as to why.</li>
+</ul>
+<h5>Service Candidate Extension Justification Failures</h5>
+<p>The Service Candidate Extension Justification Failures metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCEJF.PNG" alt="Service Candidate Extension Justification Failures Metric " width="582" height="574" title="Service Candidate Extension Justification Failures Metric "></p>
+<p align="center"><b>Service Candidate Extension Justification Failures Metric </b></p>
+<p>Purpose: This metric is used to get a gauge on the overall reasoning as to why service candidate extensions are failing justification. Service justification failures are rolled up under the following primary reasons:</p>
+<ul>
+  <li><b>QoS Feasibility:</b> This value is provided for reasoning when service candidate justification failed based on the difficulty of meeting QoS requirements complicated by realizing the service candidate as a shared asset.</li>
+  <li><b>Project Impact:</b> This value is provided for reasoning when the realization of a particular service candidate will have too much of a negative impact on one or more in-flight or operational projects and/or services.</li>
+  <li><b>Technology:</b> This value is provided for reasoning when a particular service candidate fails justification due to a lack of available technology necessary to realize the requirements of the service candidate in a shared environment.</li>
+  <li><b>Skill Set:</b> This value is provided for reasoning when a particular service candidate fails justification due to a lack of required delivery skills necessary to realize the requirements of the service candidate in a shared environment.</li>
+</ul>
+<p>These reasons may be customized to best fit the organization adopting SOA.</p>
+<p><b>Computation:</b> This metric provides reason totals for service candidate extensions introduced within the sample period but fail the justification process, preventing them from being realized as shared services.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCEJF.PNG" alt="Analysis: Service Candidate Extension Justification Failures" width="532" height="367" title="Analysis: Service Candidate Extension Justification Failures"></p>
+<p align="center"><b>Analysis: Service Candidate Extension Justification Failures </b></p>
+<p><b>Interpretation:</b> The main indicator to look for here is a high-number of service candidate extensions failing because of Project Impact this typically indicates that there is a problem with respect to service evolution within the SOA. This could potentially be result of the following: </p>
+<ul>
+  <li>Inflexible service designs that require high-impact or backwards incompatible changes which are costly and hard to justify.</li>
+  <li>Issues with trust in service testing where too much burden is being placed on applications that utilize services, which must go through extensive testing cycles when services change.</li>
+</ul>
+<h5><b>Justified Service Version Change Summary</b></h5>
+<p>The Justified Service Version Change Summary metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MJSVCS.PNG" alt="Justified Service Version Change Summary Metric" width="653" height="553" title="Justified Service Version Change Summary Metric"></p>
+<p align="center"><b>Justified Service Version Change Summary Metric </b></p>
+<p><b>Purpose:</b> This metric provides a measure against how healthy service evolution is within the SOA. In general the service version changes possible include: </p>
+<ul>
+  <li><b>Major:</b> The change has a large impact on the service and possibly on its consumers. These changes typically involve the largest amount of risk. The change is not backwards compatible, and consumers will be expected to change and migrate to the new service version in time.</li>
+  <li> <b>Minor: </b>The change is backwards compatible but may involve some level of risk to consumers. Consumers may be impacted from a testing standpoint.</li>
+  <li> <b>Point:</b> The change is very small with the least amount of risk. Minimal testing, if any should be required by the service&rsquo;s consumers.</li>
+</ul>
+<p><b>Computation:</b> This metric gathers data on justified service extensions and totals these events by the severity of the change required to the service. </p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_AJSVCS.PNG" alt="Analysis: Justified Service Version Change Summary " width="533" height="439" title="Analysis: Justified Service Version Change Summary "></p>
+<p align="center"><b>Analysis: Justified Service Version Change Summary </b></p>
+<p>Interpretation: In general a healthy SOA will have services evolving with the least amount of impact to its consumers as possible. Large numbers beside Point and Minor version changes should not be considered alarming. Large numbers with respect to Major revisions should be scrutinized seriously, as these types of changes are typically high-risk and an overall impeder of SOA efficiency as large amounts of testing may be required. The goal of the service factory is to design services in a way that is as flexible and accommodating as possible to change, a large number of major change revisions requires indicates failure in this respect.</p>
+<h5>Not Justified Service Version Change Summary</h5>
+<p> The Not Justified Service Version Change Summary metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MNJSVCS.PNG" alt="Not Justified Service Version Change Summary Metric" width="653" height="553" title="Not Justified Service Version Change Summary Metric"></p>
+<p align="center"><b>Not Justified Service Version Change Summary Metric </b></p>
+<p><b>Purpose:</b> This metric provides a measure against how healthy service evolution is within the SOA. It provides the reciprocal view to the previous metric to look at the number of inhibitors encountered with respect to service evolution. In general the service version changes possible include: </p>
+<ul>
+  <li><b>Major:</b> The change has a large impact on the service and possibly on its consumers. These changes typically involve the largest amount of risk. The change is not backwards compatible, and consumers will be expected to change and migrate to the new service version in time.</li>
+  <li><b>Minor:</b> The change is backwards compatible but may involve some level of risk to consumers. Consumers may be impacted from a testing standpoint.</li>
+  <li><b>Point:</b> The change is very small with the least amount of risk. Minimal testing, if any should be required by the service&rsquo;s consumers.</li>
+</ul>
+<p><b>Computation:</b> This metric gathers data on service extensions failing justification, and totals these events by the severity of the change required to the service (potentially providing the reasoning for justification failure). </p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ANJSVCS.PNG" alt="Analysis: Not Justified Service Version Change Summary" width="533" height="438" title="Analysis: Not Justified Service Version Change Summary"></p>
+<p align="center"><b>Analysis: Not Justified Service Version Change Summary </b></p>
+<p><b>Interpretation:</b> In general the majority of service extension justification failures should originate from perceived major changes to a service. If point or even minor changes are still being rejected by the justification process then a closer look is definitely warranted, as they changes should be expected within an efficiently operating SOA. For further investigation refer to the metric: Service Candidate Extension Justification Failures which should provide insight into why service candidate extensions are not being justified.</p>
+<h5>Service Creation vs. Reuse Trend </h5>
+<p> The Service Creation vs. Reuse Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCRT.PNG" alt="Service Creation vs. Reuse Trend Metric" width="626" height="529" title="Service Creation vs. Reuse Trend Metric"></p>
+<p align="center"><b>Service Creation vs. Reuse Trend Metric</b></p>
+<p><b>Purpose:</b> This metric provides a measurement of how fast the service catalog is growing with respect to services being reused.</p>
+<p><b>Computation:</b> This metric collects the totals for the number of services initiated within the sample, and the number of services reused by projects or services initiated within the sample.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCRT.PNG" alt="Analysis: Service Creation vs. Reuse Trend" width="563" height="404" title="Analysis: Service Creation vs. Reuse Trend"></p>
+<p align="center"><b>Analysis: Service Creation vs. Reuse Trend</b></p>
+<p><b>Interpretation:</b> As an SOA emerges from infancy a tendency towards service creation over service reuse should be expected. This is part of the initial investment required in SOA where you must first create before reuse. Overtime, service creation should begin to shrink in relationship to the amount of services consumed. An optimized SOA will tend to have a very large ratio of reuse to creation, which means there is very little impedance to service discovery and reuse validation, nor is there issues holding back service evolution, or capacity; all of which could cause service reuse to decline or grow less rapidly.</p>
+<h5>Service Creation vs. Reuse Totals </h5>
+<p>The Service Creation vs. Reuse Totals metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSCRUT.PNG" alt="Service Creation vs. Reuse Totals Metric" width="626" height="529" title="Service Creation vs. Reuse Totals Metric"></p>
+<p align="center"><b>Service Creation vs. Reuse Totals Metric </b></p>
+<p><b>Purpose:</b> This metric provides a ratio of service population with respect to service reuse levels. At a minimum every service created should be reused at least once, therefore a larger ratio of services over reuse is definitely considered as very negative.</p>
+<p><b>Computation:</b> This metric computes a total of the number of services and a total for the amount of reuse events in the SOA.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASCRUT.PNG" alt="Analysis: Service Creation vs. Reuse Totals" width="311" height="235" title="Analysis: Service Creation vs. Reuse Totals"></p>
+<p align="center"><b>Analysis: Service Creation vs. Reuse Totals</b></p>
+<p><b>Interpretation:</b> The reuse count should always be greater than the Service count, even in very &ldquo;young&rdquo; SOAs. It makes very little sense to create a service without at least one consumer. Unfortunately, this happens in many instances, and when the first consumer does come along, the first revision to the service is quite often necessary.</p>
+<p>There is always some level of additional investment required to deliver a service into a shared environment (right-clicking and creating a web-service is not a service!). In doing so, reuse levels greater than one per service, on average, is necessary to get a minimal savings from the engineering overhead. A large ratio of reuse to service totals is desirable, as this indicates that the right services are being created, and they are flexible and consumable by a large number of consumers, while not being impeded by lengthy evolution requirements, or costly infrastructure upgrades.</p>
+<p>Further, if services are typically being justified for realization because of a high-reuse potential, then that trend should be evident here (see metric: Service Candidate Justifications).</p>
+<h5><a name="RPI"></a>Release Plan Impacts</h5>
+<p>The Release Plan Impacts metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MRPI.PNG" alt="Release Plan Impacts Metric" width="674" height="552" title="Release Plan Impacts Metric"></p>
+<p align="center"><b>Release Plan Impacts Metric </b></p>
+<p><b>Purpose:</b> This metric provides a gauge of the cost or resource constraints conditions encountered during release planning activities over a sampled trend and the totals are broken out by the reasoning causing the impact. The potential reasons for an impact include: </p>
+<ul>
+  <li><b>Service Factory Capacity:</b> This reason indicates that the impact was caused due to insufficient engineering capacity (human capital).</li>
+  <li><b>Infrastructure Capacity:</b> The reason indicates that the impact was caused due to insufficient hardware resource capacity deemed necessary to host some or all of a project or service (based on estimated load).</li>
+</ul>
+<p><b>Computation:</b> This metric computes a total of the number of services and a total for the amount of reuse events in the SOA.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ARPI.PNG" alt="Analysis: Release Plan Impacts" width="693" height="502" title="Analysis: Release Plan Impacts"></p>
+<p align="center"><b>Analysis: Release Plan Impacts </b></p>
+<p><b>Interpretation:</b> When a decision is made to impact a project or service because insufficient resources are available, or resources need to be reassigned for the purpose of fulfilling higher priorities the impact is instrumented. Project and service release impacts should be monitored closely, as they give an indicator as to how responsive IT can be with respect to meeting the demands of the business.</p>
+<p>If high-levels of impacts are encountered then the cost of increasing capacity in the targeted areas should be considered.</p>
+<hr WIDTH="100%">
+<h4>Define Metrics for Service Delivery</h4>
+<p>Refer to the section, <a href="#DMNS">Define Metric Notation Standards</a> for an explanation of the notations used in the metrics.</p>
+<p>The following metrics have been defined based on data instrumented from the Service Delivery processes of the SOA engineering processes within OUM. The processes covered in Service Delivery include: </p>
+<ul>
+  <li>Service Definition</li>
+  <li>Service Design</li>
+  <li>Service Implementation</li>
+  <li>Service Testing</li>
+</ul>
+<h5>Service Boundary Identification</h5>
+<p>The Service Boundary Identification metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSBI.PNG" alt="Service Boundary Identification Metric " width="663" height="542" title="Service Boundary Identification Metric "></p>
+<p align="center"><b>Service Boundary Identification Metric </b></p>
+<p><b>Purpose:</b> This metric is used to measure the effectiveness of the Service Candidate granularity resulting from Service Analysis. Typically when Service Candidates are put forward for definition, in an ideal scenario they should already be fine enough grained where minimal service boundaries will be identified. The information gleaned by measuring identified boundaries in relation to service candidates may be used to optimize the SOA Requirements Management and Service Identification and Discovery processes.</p>
+<p><b>Computation:</b> This metric is computed by totaling the number of service candidates encountered in each sample. For each service candidate visited within the sample, the number of service boundaries identified is also counted. This allows for the ratio of service candidates to boundaries to be measured over each sample period.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASBI.PNG" alt="Analysis: Service Boundary Identification " width="693" height="502" title="Analysis: Service Boundary Identification "></p>
+<p align="center"><b>Analysis: Service Boundary Identification </b></p>
+<p><b>Interpretation:</b> On average there should be more service candidates than service boundaries. The optimal condition is zero service boundaries. If a relatively high number of service boundaries are being encountered then service candidates are being presented in a format that is too course grained. Getting the granularity of service candidates correct is important. The service justification process works on service candidate data, so if service candidates are being approved which result in many service boundaries then a review of the service justification process may be necessary.</p>
+<p>If high numbers are being encountered in this metric, then it may be beneficial to look at reuse levels. If reuse levels are low, in contrast to high service boundary levels, then there is definitely a need to tighten the processes around service candidate identification.</p>
+<p>If reuse levels are high in relation to high service boundary levels, then even though course grained candidates are being presented, the services output through delivery still appear to be contributing to the SOA. Therefore this trend should be closely monitored, but no action may be required.</p>
+<p>Further, if it is determined that service candidates are too course grained, then the next metric will be useful in determining the primary reasoning trend associated with identified service boundaries. This information may be useful in isolating the area or areas that may need to be addressed with respect to service candidate granularity.</p>
+<h5>Service Boundary Reason </h5>
+<p>The Service Boundary Reason metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSBR.PNG" alt="Service Boundary Reason Metric" width="606" height="516" title="Service Boundary Reason Metric"></p>
+<p align="center"><b>Service Boundary Reason Metric </b></p>
+<p><b>Purpose:</b> This metric provides a summary of totals based on reasons for service boundary creation. The metric data is sampled over a specific period of time which allows the timeframe to be narrowed accordingly. Typically this metric is used for follow-on analysis based on data observed in other metrics (such as the previous metric: Service Boundary Identification). The reasons for identifying service boundaries are as follows:</p>
+<ul>
+  <li><b>QoS:</b> This value is provided when a service boundary is defined based on variations in QoS requirements.</li>
+  <li><b>MEPs:</b> This value is provided when a service boundary is defined based on a variation in Message Exchange Patterns stemming from the service candidate&rsquo;s requirements.</li>
+  <li><b>Security:</b> This value is provided for when a service boundary is defined based on variations in security requirements.</li>
+  <li><b>Scope:</b> This value is provided when a service boundary is defined because requirements cross scoping boundaries.</li>
+  <li><b>Category:</b> This value is provided when a service boundary is defined because the requirements span across one or more service categories.</li>
+</ul>
+<p><b>Computation:</b> This metric is computed by creating a total for each general service boundary reason. Service boundaries are filtered based on the timeframe provided as input to the metric.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASBR.PNG" alt="Analysis: Service Boundary Reason" width="523" height="344" title="Analysis: Service Boundary Reason"></p>
+<p align="center"><b>Analysis: Service Boundary Reason </b></p>
+<p><b>Interpretation:</b> A high-number of service boundaries being attributed to any particular reason warrants a closer look. The following provides a summary by reason: </p>
+<ul>
+  <li><b>QoS:</b> A high value of service boundaries being identified for reason of QoS differences indicates that Requirements Analysis may not be grouping requirements in an optimal way. Typically a high number related to this reasoning is not of large concern; however it may be worth looking at Justification failures. If a large number of service candidates are also failing to be justified based on QoS requirements then there is a high likelihood that viable service candidates are failing justification because they are being bundled with a service candidates with higher QoS expectations that are not applicable across all the requirements.</li>
+  <li><b>MEPs:</b> Differences in Message Exchange Patterns indicates that requirements may be too course grained. A high number here indicates that some tightening in the SOA Requirements Management process may be necessary to produce finer grained candidates. This may be necessary as candidates may be justified that should not be (or vice-versa) simply because they are grouped with a service candidate that is too course grained.</li>
+  <li><b>Security:</b> A high number of service boundaries being created based on varying security requirements is typically not a large issue; however it may be worth looking at Justification failures. If a large number of service candidates are also failing to be justified based on Technology or Skill Set impacts then there is a high likelihood that viable service candidates are failing justification because they are being bundled with a service candidates with higher technology or skill set requirements stemming from additional security expectations that are not applicable across all the requirements.</li>
+  <li><b>Scope:</b> If a high number of service boundaries are being identified due to a variation of scope in requirements then the SOA Requirements Management process definitely requires adjustment as requirements are not being aligned against the functional model correctly.</li>
+  <li><b>Category:</b> Differences in Category indicates that requirements may be too course grained. A high number here indicates that some tightening in the SOA Requirements Management process may be necessary to produce finer grained candidates. This may be necessary as candidates may be justified that should not be (or vice-versa) simply because they are grouped with a service candidate that is too course grained.</li>
+</ul>
+<p>The main exception here is when composite services are being defined during service definition. This does mean that a fairly course grained candidate was presented; however, the additional services created are there to increase flexibility and still service the consumer through the high-level composite service.</p>
+<h5> Service Architecture Conformance </h5>
+<p>The Service Architecture Conformance metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSAC.PNG" alt="Service Architecture Conformance Metric" width="626" height="529" title="Service Architecture Conformance Metric"></p>
+<p align="center"><b>Service Architecture Conformance Metric </b></p>
+<p><b>Purpose:</b> This metric measures the amount of exceptions with respect to the Service Architecture (part of the Reference Architecture) allowed during service delivery. Exceptions should be accepted on a case by case basis, and represent valid reasons to deviate from the reference architecture in order to meet certain conditions or overcome obstacles encountered during service delivery.</p>
+<p><b>Computation:</b> This metric simply counts the total number of conforming services at the same time as totaling the number of services that do not conform to the service architecture.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASAC.PNG" alt="Analysis: Service Architecture Conformance" width="313" height="207" title="Analysis: Service Architecture Conformance"></p>
+<p align="center"><b>Analysis: Service Architecture Conformance </b></p>
+<p><b>Interpretation:</b> Obviously the lower the number of non-conforming services the better. However there are two sides to this coin. The first is that a high percentage of non-conforming services may indicate problems in the service architecture that need to be addressed. Secondly, a high percentage of non-conforming services may indicate that tightening of the delivery processes may be required; otherwise overall SOA effectiveness may be compromised. After all, the reason standards are defined in the reference architecture is to enhance SOA effectiveness and assist in assuring that the goals of the SOA are achieved.</p>
+<p>If a high percentage of non-conforming services are identified then the following metric may be useful to help analyze the situation further.</p>
+<h5>Service Architecture Non-Conformance Summary</h5>
+<p>The Service Architecture Non-Conformance Summary metric is depicted below:</p>
+<p>&nbsp;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSANC.PNG" alt="Service Architecture Non-Conformance Metric" width="700" height="524" title="Service Architecture Non-Conformance Metric"></p>
+<p align="center"><b>Service Architecture Non-Conformance Metric </b></p>
+<p align="left">Purpose: This metric measures the general reasoning provided for allowing a service&rsquo;s delivery to deviate from the service architecture. The following reasons are possible:</p>
+<ul>
+  <li><b>Schedule:</b> This value is provided when service delivery deviates from the reference architecture in order to meet a schedule constraint.</li>
+  <li><b>Packaging/Deployment:</b> This value is provided when service delivery deviates from the reference architecture because of packaging and or deployment issues.</li>
+  <li><b>Security:</b> This value is provided when service delivery deviates from the reference architecture in order to meet specific security requirements.</li>
+  <li><b>QoS:</b> This value is provided when service delivery deviates from the reference architecture in order to specific QoS requirements.</li>
+</ul>
+<p><b>Computation:</b> This metric simply totals non-conforming services by reason id. The services counted are limited to the provided time parameters to allow for isolation in the data.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASANC.PNG" alt="Analysis: Service Architecture Non-Conformance" width="590" height="352" title="Analysis: Service Architecture Non-Conformance"></p>
+<p align="center"><b>Analysis: Service Architecture Non-Conformance</b></p>
+<p><b>Interpretation:</b> The following provides a summary by reason:</p>
+<ul>
+  <li><b>Schedule:</b> If a high value is allocated to schedule constraints, then a closer look at the capacity of the service factory, in addition to overall engineering efficiency should be looked at. Conformance deviations related to schedule can be potentially dangerous with respect to overall SOA effectiveness, and in general is a poor reason for deviation from the reference architecture. This value should be very low, and deviations of this kind should be avoided if at all possible.</li>
+  <li><b>Packaging/Deployment:</b> A high number of deviations for reason of packaging and deployment indicate that it may be worth taking a closer look at the service hosting environments. These types of deviations may impact the overall agility achieved through the SOA, as inappropriately packaging services may create unnecessary dependencies which creates a large impact for service evolution.</li>
+  <li><b>Security:</b> A high number beside this reason indicates that it may be worth taking a look at enhancing the security technology with respect to the service hosting environment. A high value here may also warrant a look at the Service Candidate Justification Failures metric. If a high number of justification failures is attributed to Technology these justification failures may be due to a lack of security infrastructure, furthering the justification for investment in this area.</li>
+  <li><b>QoS:</b> A high number beside this reason indicates that it may be worth taking a look at enhancing the QoS capabilities with respect to the service hosting environment. A high value here may also warrant a look at the Service Candidate Justification Failures metric. If a high number of justification failures is attributed to Technology these justification failures may be due to a lack of infrastructure capability related to QoS, furthering the justification for investment in this area.</li>
+</ul>
+<h5>Service Architecture Conformance Trend</h5>
+<p>The Service Architecture Conformance Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSACT.PNG" alt="Service Architecture Conformance Trend Metric" width="626" height="529" title="Service Architecture Conformance Trend Metric"></p>
+<p align="center"><b>Service Architecture Conformance Trend Metric </b></p>
+<p><b>Purpose:</b> This metric computes the trend with respect to service architecture conformance with respect to services created via the Service Delivery process. If an unacceptable level of non-conformance was detected through the previous two metrics, and adjustments were made, then this metric may be utilized to measure progress in decreasing non-conformance.</p>
+<p><b>Computation:</b> This metric simply computes the number of conforming and non-conforming services over a sampled time set.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASACT.PNG" alt="Analysis: Service Architecture Conformance Trend " width="702" height="510" title="Analysis: Service Architecture Conformance Trend "></p>
+<p align="center"><b>Analysis: Service Architecture Conformance Trend </b></p>
+<p><b>Interpretation:</b> A trend of decreasing non-conformance percentage is always desirable. If this trend is not observed then additional analysis, and further refinement to the overall Service Engineering Framework processes may be necessary in order to achieve acceptable results.</p>
+<hr WIDTH="100%">
+<h4>Define Metrics for Service Management </h4>
+<p>Refer to the section, <a href="#DMNS">Define Metric Notation Standards</a> for an explanation of the notations used in the metrics.</p>
+<p>The following metrics have been defined based on data instrumented from the Service Management processes of the SOA engineering processes within OUM. The processes covered in Service Management include: </p>
+<ul>
+  <li>Service Deployment</li>
+  <li>Service OA&amp;M</li>
+</ul>
+<h5><b>Production Defects - Trend</b></h5>
+<p>The Production Defects - Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MPSDT.PNG" alt="Production Defects - Trend Metric" width="608" height="511" title="Production Defects - Trend Metric"></p>
+<p align="center"><b>Production Defects - Trend Metric </b></p>
+<p><b>Purpose:</b> This metric provides a measurement of the level of defects and there severity encountered after a service has been deployed to production. This provides for analysis to be done against the level of quality being achieved through the service factory.</p>
+<p><b>Computation:</b> This metric simply totals the production defects encountered against services in production by severity. The results are grouped by sample as well.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_APSDT.PNG" alt="Analysis: Production Defects - Trend" width="466" height="393" title="Analysis: Production Defects - Trend"></p>
+<p align="center"><b>Analysis: Production Defects - Trend </b></p>
+<p align="left"><b>Interpretation:</b> Obviously keeping production defects to a minimum is optimal. Any large number of defects encountered against production services hinders the efforts of the SOA and leads to a lower level of trust between the SOA and its consumers. The severity of defects encountered is also an indicator worth observing. If a large number of high-severity defects are being encountered against production services then a closer look at the testing strategy and processes are definitely in order. The following metric provides additional information regarding the general root cause of the defects which may lead to a better understanding of where improvements are necessary.</p>
+<h5 align="left">Production Defects - Summary</h5>
+<p>The Production Defects &ndash; Summary metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MPDS.PNG" alt="Production Defects - Summary Metric" width="611" height="511" title="Production Defects - Summary Metric"></p>
+<p align="center"><b>Production Defects - Summary Metric </b></p>
+<p align="left"><b>Purpose:</b> This metric provides a measurement of the level of defects and there root cause reason, encountered after a service has been deployed to production. This provides for analysis to be done against the level of quality being achieved through the service factory and the type of defects being encountered in production. The following general root cause reasons are measured for defects:</p>
+<ul>
+  <li><b>Functional:</b> This value is provided for when the defect was caused due to a deviation against functional requirements.</li>
+  <li><b>Non-Functional:</b> This value is provided when the defect was caused due to a deviation against non-functional requirements.</li>
+  <li><b>Regression:</b> This value is provided when the defect was caused due to a regression against a previously tested version of the service (or project).</li>
+  <li><b>Change Control:</b> This value is provided when the defect was caused due to unspecified requirements that are now deemed necessary. (For example, hardware failure, resulting in additional requirements need to be defined that had not previously been considered in scope but are now deemed necessary through Change Control.)</li>
+</ul>
+<p><b>Computation:</b> This metric simply totals the production defects encountered against services in production by reason (generalized by root cause). The results are grouped by sample as well.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_APDS.PNG" alt="Analysis: Production Defects - Summary" width="612" height="434" title="Analysis: Production Defects - Summary"></p>
+<p align="center"><b>Analysis: Production Defects - Summary </b></p>
+<p><b>Interpretation:</b> The following provides a summary by reason:</p>
+<ul>
+  <li><b>Functional:</b> If a large percentage of the defects encountered in production against a service are considered functional, then additional scrutiny or emphasis on the functional testing strategy and processes may be warranted.</li>
+  <li><b>Non-Functional:</b> If a large percentage of defects encountered in production against a service are considered non-functional, then additional integration and system testing may be necessary to prevent an increasing trend in these types of defects.</li>
+  <li><b>Regression:</b> When a large number of defects are recognized as being regressions encountered through service evolution, then the level of trust in the SOA is definitely at risk. Additional emphasis on the regression testing processes will be needed to ensure a decent level of trust between consumers and the service factory. If a service factory cannot be trusted to evolve services with minimal impact, then the organization may have to revert back to lengthy test cycles regardless of change type which will severely impact the SOA&rsquo;s ability to respond to business demands quickly.</li>
+  <li><b>Change Control:</b> A large value recorded against these types of defects indicates that additional emphasis is required during requirements analysis. These types of defects are most commonly associated with gaps in non-functional requirements which were not considered until a condition arose in production. Every effort should be taken to minimize these types of defects as they may have a large impact with respect to the service&rsquo;s design and/or architecture when addressed.</li>
+</ul>
+<h5>Defects by Environment - Summary</h5>
+<p>The Defects by Environment &ndash; Summary metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MDES.PNG" alt="Defects by Environment - Summary Metric" width="611" height="511" title="Defects by Environment - Summary Metric"></p>
+<p align="center"><b>Defects by Environment - Summary Metric </b></p>
+<p align="left"><b>Purpose:</b> This metric provides a measurement of where defects against services are being encountered. This provides an overall effectiveness gauge for test.</p>
+<p><b>Computation:</b> This metric simply totals the defects encountered against services by the environment they were encountered in. The results are grouped by sample as well.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ADES.PNG" alt="Analysis: Defects by Environment - Summary" width="693" height="460" title="Analysis: Defects by Environment - Summary"></p>
+<p align="center"><b>Analysis: Defects by Environment - Summary </b></p>
+<p><b>Interpretation:</b> The ideal situation is to identify defects in the testing cycle as early as possible; which is preferably before the service reaches production. A high number of production defects and even UAT defects indicate that additional testing discipline may be required.</p>
+<h5>Service Delivery Schedule Conformance - Trend </h5>
+<p>The Service Delivery Schedule Conformance - Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MSDSCT.PNG" alt="Service Delivery Schedule Conformance - Trend Metric" width="746" height="566" title="Service Delivery Schedule Conformance - Trend Metric"></p>
+<p align="center"><b>Service Delivery Schedule Conformance - Trend Metric</b></p>
+<p>Purpose: This metric provides an overall performance indicator with respect to service factory efficiency. It uses delivery schedule conformance as the leading indicator.</p>
+<p>Computation: This metric is computed by iterating over all services delivered in the time frame provided within each sample. For each service encountered, the appropriate count is incremented based on whether the service was delivered on-time (within one week of scheduled delivery), ahead of schedule (earlier than one week), or behind schedule (later than one week). Obviously, the tolerance of one week may be tailored for each SOA.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_ASDSCT.PNG" alt="Analysis: Service Delivery Schedule Conformance - Trend" width="702" height="510" title="Analysis: Service Delivery Schedule Conformance - Trend"></p>
+<p align="center"><b>Analysis: Service Delivery Schedule Conformance - Trend</b></p>
+<p><b>Interpretation:</b> Obviously, a large number of services delivered behind schedule have a number of negative impacts with respect to SOA: </p>
+<ul>
+  <li>IT will be less responsive leading to reduced business agility.</li>
+  <li>Project delivery will be impacted negatively.</li>
+  <li>Project and service budgets will be impacted negatively.</li>
+</ul>
+<p>If a trend of decreasing performance is noticed then a number of different areas should be examined. The first area to look at would be release planning impacts (see metric: Release Plan Impacts) which may lead to determining the need to expand service delivery capacities.</p>
+<h5>Project Delivery Schedule Conformance - Trend</h5>
+<p>The Project Delivery Schedule Conformance - Trend metric is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_MPDSCT.PNG" alt="Project Delivery Schedule Conformance - Metric" width="746" height="563" title="Project Delivery Schedule Conformance - Metric"></p>
+<p align="center"><b>Project Delivery Schedule Conformance - Metric </b></p>
+<p><b>Purpose:</b> This metric provides an overall performance indicator with respect to project delivery efficiency. It uses delivery schedule conformance as the leading indicator.</p>
+<p><b>Computation:</b> This metric is computed by iterating over all projects delivered in the time frame provided within each sample. For each project encountered the appropriate count is incremented based on whether the project was delivered on-time (within one week of scheduled delivery), ahead of schedule (earlier than one week), or behind schedule (later than one week). Obviously the tolerance of one week may be tailored for each SOA.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SEPM_APDSCT.PNG" alt="Analysis: Project Delivery Schedule Conformance - Trend" width="702" height="510" title="Analysis: Project Delivery Schedule Conformance - Trend"></p>
+<p align="center"><b>Analysis: Project Delivery Schedule Conformance - Trend</b></p>
+<p><b>Interpretation:</b> Obviously, a large number of projects delivered behind schedule have a number of negative impacts with respect to SOA: </p>
+<ul>
+  <li>IT will be less responsive leading to reduced business agility.</li>
+  <li>Budgets will be impacted negatively.</li>
+</ul>
+<p>If a trend of decreasing performance is noticed then a number of different areas should be examined. The first place to look is the service delivery efficiency (see metric: Service Delivery Schedule Conformance - Trend). Service factory inefficiency may be causing project impacts. The second area to look at would be release planning impacts (see metric: <a href="#RPI">Release Plan Impacts</a>) that may lead to determining the need to expand project and/or service delivery capacities.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="44%" height="23" scope="col">Task</th>
+    <th width="56%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy (Envision) </a></div></th>
+    <td>Use this technique to assist in adopting instrumentation for the purpose of monitoring and management of the service engineering processes. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have you described where in the processes of Service Analysis data should be collected?</li>
+  <li> Have you described where in the processes of Service Delivery data should be collected?</li>
+  <li> Have you described where in the processes of Service Management data should be collected?</li>
+  <li> For each type of the data that should be collected, have you described at what point the data element should be created, or updated, and exactly what attributes should be populated at what point, and what kind of values are relevant? </li>
+  <li> Have metrics been defined for Service Analysis, Service Delivery and Service Management?</li>
+  <li> Has you described how each metric should be interpreted?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

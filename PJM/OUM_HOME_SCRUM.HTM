@@ -1,0 +1,698 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>Scrum View</TITLE>
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('OumTextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+<NOSCRIPT>
+  <center>
+  <table cellpadding="0" cellspacing="0" border="0" width="550">
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a newer browser, such as Internet Explorer 6 or Firefox</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site.</td></tr>
+
+
+  </table>
+</center>
+</NOSCRIPT>
+</HEAD>
+<BODY onload="onLoad()">
+<A name="TOP"></A>
+<TABLE width="100%" border="1" role="presentation">
+  <TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../OUM/OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../OUM/CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+    </TD>
+    <TD width="88%" valign="top"><p>&nbsp;</p>
+    <table width="100%" role="presentation">
+        <tr>
+          <td width="15%" nowrap><div align="center">
+            <h1>OUM</h1>
+          </div></td>
+          <td colspan="3" scope="col"><h1 align="left">Scrum View</h1></td>
+        </tr>
+        <tr>
+          <td width="15%" nowrap><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+          <td><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+          <td><div align="center"><b>Method Navigation</b><br>
+              <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="PJM_HOME.htm">MANAGE View</option>
+                    <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+              </SELECT>
+          </div></td>
+          <td align="center"><b>Current Page Navigation</b><br>
+              <select
+							name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation"
+							onChange="location.hash = this.options[this.selectedIndex].value; showOneTaskFromList(this);">
+                <option value="TOP" selected></option>
+                <option value="DUGTextNav">View Description and Key Components</option>
+                <option value="PicNav">Diagram Navigation</option>
+                <option value="OumTextNav">Scrum - Guidelines</option>
+                <option value="OUMTWP">Scrum - Tasks and Work Products</option>
+                <option value="RD">Project Kickoff</option>
+                <option value="RA">Sprint Planning</option>
+                <option value="AN">Sprint</option>
+                <option value="DS">Sprint Review</option>
+                <option value="IM">Sprint Retrospective</option>
+              </select></td>
+        </tr>
+    </table></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" title="View Description and Key Components" summary="This section contains a brief view description followed by a Key Component section with helpful links." role="presentation">
+  <TR>
+    <TD width="100%">
+	  <h2><IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DugTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg')"
+	onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DugTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('DugTextNav', 'DugTextNavOnImg', 'DugTextNavOffImg'); new Effect.Highlight($('DugTextNavText'), {duration: 4});" /><a name="DUG_Text_Nav" id="DUG_Text_Nav"></a><A id="DugTextNavText"> VIEW DESCRIPTION AND KEY COMPONENTS </A></h2>
+	  <DIV id="DugTextNav">
+            <TABLE width="100%" border="1" class="oum">
+              <TBODY>
+                <TR>
+                  <td height="25" scope="table width" colspan="2"><h3 align="left">Description</h3>
+                  </td>
+                </TR>
+                <TR>
+                  <TD height="25" colspan="2"><p>The Scrum view provides a conceptual look at managing a Scrum-based project using  the Oracle Unified Method (OUM) as the method and source of work products. It brings together in one place all the OUM  tasks associated with managing a Scrum project as well as all   OUM Scrum supplemental content.</p>
+                  </TD>
+                </TR>
+                <TR>
+                  <td scope= "table width" colspan="2"><h3>Key Components</h3></td>
+                </TR>
+                <TR>
+                  <TD width="48%" vAlign="top"><h4>Scrum:</h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> </a><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a><br>
+                       <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> </a><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/METRICS_FOR_AGILE_PROJECTS.HTM" target="_blank">Metrics for Agile Projects </a><br>
+					   <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/SCRUM_WORKPLAN.MPP" target="_blank">Scrum Project Workplan (MPP)</a><br>
+                    <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="050_REFERENCE_FILES/SCRUM_OUM_MAPPING.XLSX" target="_blank">Scrum to OUM Mapping </a></p>                    
+                  </TD>
+                  <TD width="52%" vAlign="top"><h4>Other Supplemental Guidance:<b></b></h4>
+                    <p><img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM#SCRUM" target="_blank">Scrum Resources</a><br>
+                    <img src="../010_SHARED_FILES/arrow_button.jpg" alt="" width="9" height="9"> <a href="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM" target="_blank">more Supplemental Guidance</a></p>
+                  </TD>
+                </TR>
+              </TBODY>
+          </TABLE>
+    </div></TD>
+  </TR>
+</TABLE>
+<TABLE width="100%" border="1" role="presentation" class="oum" title="Diagram Navigation" summary="This section contains a navigation diagram with links. ">
+<TR>
+  <TD><h2><a name="PicNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="PicNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg')"
+	onload="Element.hide(this)" />
+        <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="PicNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('PicNav', 'PicNavOnImg', 'PicNavOffImg'); new Effect.Highlight($('PicNavText'), {duration: 4});" />
+        <A id="PicNavText">
+        DIAGRAM NAVIGATION</A>
+        </h2>
+    <p>        This section contains a navigation diagram with links. Place your cursor over the area of interest in the diagram and click. </p>
+    <P id="PicNav" align="center">   <A
+	name="Pic_Nav"></A> <img src="010_COMMON_FILES/SCRUM_VIEW.GIF" alt="Scrum Navigation Diagram" width="931" height="380" border="0" usemap="#Map" title="Scrum Navigation Diagram"> </P>
+  </TD></TR>
+</TABLE>
+<TABLE width="100%" border="1" class="oum" role="presentation" title="Scrum - Guidelines">
+  <TR>
+    <TD><h2><a name="OumTextNav"></a><IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="OumTextNavOnImg" title="Collapse window"
+	onclick="toggleElementBlind('OumTextNav', 'OumTextNavOnImg', 'OumTextNavOffImg')" onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="OumTextNavOffImg" title="Expand window"
+	onclick="toggleElementBlind('OumTextNav', 'OumTextNavOnImg', 'OumTextNavOffImg'); new Effect.Highlight($('OumTextNavText'), {duration: 4});" /> Scrum - GUIDELINES</h2>
+      <DIV id="OumTextNav">
+        <p> <A
+	name="OUM_Text_Nav" id="OUM_Text_Nav"></A>This section contains links to Phase Overviews, Process Overviews and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Implement Focus Area - Tasks and Work Products tables further down this page.
+        </p>
+<TABLE width="100%" border="1" class="oum" title="Scrum - Guidelines" summary="This table contains links to the applicable Phase Overviews, Process Overviews and References. It is organized with columns for Phase Overviews, Process Overviews, Tasks and Work Products and References. The links in the Process Overviews column take you to the Process Overview pages. The links in the Tasks and Work Products column take you to the Tasks and Work Products tables further down this page.">
+                <TBODY>
+                  <TR>
+                    <th width="25%" vAlign="top" scope="col">Manage and UP Phase Overviews</th>
+                    <th vAlign="top" scope="col">Process Overviews</th>
+                    <th vAlign="top" scope="col">Tasks and Work Products</th>
+                    <th width="25%" vAlign="top" scope="col">References</th>
+                  </TR>
+                  <TR>
+                    <TD vAlign="top" width="25%"><P>  
+                              <a href="020_METHOD_GUIDELINES/010_PHASE/PJM_A_PROJECT_STARTUP_PHASE_OVERVIEW.HTM" target="_blank">[PS] Project Start Up </a><BR>
+                              <a href="020_METHOD_GUIDELINES/010_PHASE/PJM_B_PROJECT_EXEC_AND_CONTROL_PHASE_OVERVIEW.HTM" target="_blank">[PEC] Project Execution and Control </a><BR>
+                              <a href="020_METHOD_GUIDELINES/010_PHASE/PJM_C_PROJECT_CLOSURE_PHASE_OVERVIEW.HTM" target="_blank">[PC] Project Closure</a>&nbsp;<br>
+                      <br>
+                              <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[A] Inception</A><BR>
+                              <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM"
+        target="_blank"> [B] Elaboration</A><BR>
+                              <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[C] Construction</A><br>
+                              <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM"
+        target="_blank">[D] Transition</A><BR>
+                              <A
+        href="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM"
+        target="_blank">[E] Production</A><BR>
+                      </P>
+                    </TD>
+                    <TD vAlign="top" width="25%"><P>                      <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_SM_SCOPE_MANAGEMENT.HTM" target="_blank">[SM] Scope Management</a> <br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_FM_FINANCIAL_MANAGEMENT.HTM" target="_blank">[FM] Financial Management</a> <br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_WM_WORK_MANAGEMENT.HTM" target="_blank">[WM] Work Management</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_RKM_RISK_MANAGEMENT.HTM" target="_blank">[RKM] Risk Management</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_IPM_ISSUE_AND_PROBLEM_MANAGEMENT.HTM" target="_blank">[IPM] Issue and Problem Management</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_STM_STAFF_MANAGEMENT.HTM" target="_blank">[STM] Staff Management</a><br>
+                        <a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_IFM_INFRASTRUCTURE_MANAGEMENT.HTM" target="_blank">[IFM] Infrastructure Management</a><BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM"
+        target="_blank">[RD] Business Requirements</A><A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM"
+        target="_blank"><BR>
+                      </A><A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM"
+        target="_blank">[RA] Requirements Analysis</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM"
+        target="_blank"> [AN] Analysis</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM"
+        target="_blank">[DS] Design</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM"
+        target="_blank"> [IM] Implementation</A> <BR>
+                        <A
+        href="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM"
+        target="_blank">[TE] Testing</A></P>
+                    </TD>
+                    <TD vAlign="top" width="25%"><P> 
+                           <A
+        onclick="showTask('RD_TASKS', false, 'RD_OPEN', 'RD_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+        href="#RD">Project Kickoff</A><font size="2" face="Arial, Helvetica, sans-serif"><BR>
+                           <A
+        onclick="showTask('RA_TASKS', false, 'RA_OPEN', 'RA_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+        href="#RA">Sprint Planning </A><BR>
+                           <A
+        onclick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+        href="#AN">Sprint</A><BR>
+                           <A
+        onclick="showTask('DS_TASKS', false, 'DS_OPEN', 'DS_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+        href="#DS">Sprint Review </A><BR>
+                           <A
+        onclick="showTask('IM_TASKS', false, 'IM_OPEN', 'IM_CLOSED'); new Effect.Highlight(this, {duration: 4});"
+        href="#IM">Sprint Retrospective</A></P></TD>
+                    <TD vAlign="top" width="25%"><P>                        	<A href="../010_SHARED_FILES/OUM_ROLES.HTM" target="_blank">Project Roles</A><BR>
+                            <A href="../010_SHARED_FILES/OUM_TERMS.HTM" target="_blank">Definition/Terms</A></P>
+               	    </TD>
+                  </TR>
+                </TBODY>
+        </TABLE>
+    </DIV></TD></TR>
+</TABLE>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="OUMTWP"></a>Scrum - TASKS AND WORK PRODUCTS</h2>
+<p>  <A href="#" title="Expand all Tasks and Work Products tables" onclick="expandAllTasks(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all Tasks and Work Products tables" onclick="collapseAllTasks(); new Effect.Highlight(this, {duration: 4})">collapse all</A></p>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Project Kickoff Tasks and Work Products" summary="This window contains a table with links to the applicable Project Kickoff Task Overviews and work products.">
+<TR>
+<TD><h3><A id="RD" name="RD"> <B> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="RD_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('RD_TASKS', 'RD_OPEN', 'RD_CLOSED')"
+     onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="RD_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('RD_TASKS', 'RD_OPEN', 'RD_CLOSED'); new Effect.Highlight($('RD'), {duration: 4});" /> </b>Project Kickoff</A></h3>
+          <DIV id="RD_TASKS">
+  <TABLE width="100%" class="oum" title="Project Kickoff Tasks and Work Products" summary="This table provides links to the applicable Project Kickoff Task Overviews and templates, if available. It is organized with Task Overview, Work Product, Template and Technique columns.
+">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="25%" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="25%" scope="col"><div align="center">Work Product</div></th>
+			<th width="25%" scope="col"><DIV align="center">Template</DIV></th>
+		    <th width="25%" scope="col">Technique</th>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a></TD>
+			<TD width="25%">Financial Management Plan</TD>
+			<TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx" target="_blank">Project Management Plan-Word</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.PPTX">Project Management Plan-PowerPoint</a> <br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/BT070_ABBREVIATED_PROJECT_MANAGEMENT_PLAN.pptx" target="_blank">Abbreviated Project Management Plan-PowerPoint</a></TD>
+		    <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">RKM.030 Develop Risk Management System</a></TD>
+			<TD width="25%">Risk Management System</TD>
+			<TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></TD>
+			<TD width="25%">Baseline Project Workplan</TD>
+			<TD width="25%"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/IMPLEMENTATION_PLAN.DOCX" target="_blank">Implementation Plan</a> (Sprint Plan) <br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/ITERATION_PLAN_SUMMARY.DOCX" target="_blank">Iteration Plan Summary</a><br>
+            <a href="050_REFERENCE_FILES/SCRUM_WORKPLAN.MPP" target="_blank">Scrum Project Workplan (MPP)</a></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank">IFM.020 Establish Team Work Environment</a></TD>
+			<TD width="25%">Team Work Environment</TD>
+			<TD width="25%">Refer to the Task Overview for guidance.</TD>
+		    <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></TD>
+			<TD width="25%">Resource Plan</TD>
+			<TD width="25%"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_PROJECT_TEAM_ORGANIZATION_CHART.DOCX" target="_blank">Project Team Organization Chart</a><br>
+            <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/STM010_RESOURCE_PLAN.XLSX" target="_blank">Resource Plan</a></TD>
+		    <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project</a></TD>
+			<TD width="25%">Staffed Project <br></TD>
+			<TD width="25%">Refer to the Task Overview for guidance.</TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 Conduct Team Orientation</a> (Conduct Project Kickoff Meeting) </TD>
+          <TD width="25%">Oriented Team </TD>
+          <TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/STM050_PROJECT_KICKOFF_PRESENTATION.PPTX" target="_blank">Project Kickoff Presentation</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 Detail Business and System Objectives</A> (Project Objectives) </TD>
+          <TD width="25%">Business and System Objectives</TD>
+          <TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-001_BUSINESS_AND_SYSTEM_OBJECTIVES.DOCX" target="_blank">Business and System Objectives</A></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW)</A> (Develop Product Backlog) </TD>
+			<TD width="25%">MoSCoW List</TD>
+			<TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">MoSCoW List-Excel</a> (Product Backlog Worksheet)</TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">RA.021 Capture User Stories</A></TD>
+			<TD width="25%">User Story </TD>
+			<TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-021_USER_STORY.DOCX" target="_blank">User Story</A></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Sprint Planning Tasks and Work Products" summary="This window contains a table with links to the applicable Sprint Planning Task Overviews and work products.">
+<TR>
+<TD><h3><A id="RA" name="RA"> <B> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="RA_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('RA_TASKS', 'RA_OPEN', 'RA_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="RA_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('RA_TASKS', 'RA_OPEN', 'RA_CLOSED'); new Effect.Highlight($('RA'), {duration: 4});" /> </b>Sprint Planning </A></h3>
+  <DIV id="RA_TASKS">
+<TABLE width="100%" class="oum" title="Sprint Planning Tasks and Work Products" summary="This table provides links to all applicable Sprint Planning Task Overviews and templates, if available. It is organized with Task Overview, Work Product, Template and Technique columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="25%" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="25%" scope="col"><div align="center">Work Product</div></th>
+			<th width="25%" scope="col"><DIV align="center">Template</DIV></th>
+		    <th width="25%" scope="col">&nbsp;</th>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a> (Sprint Workplan) </TD>
+			<TD width="25%">Project Workplan</TD>
+			<TD width="25%"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ASSIGNMENT_REQUEST.DOCX" target="_blank">Assignment Request</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_DELIVERABLE%20TRACKING.XLSX" target="_blank">Deliverable Tracking Spreadsheet</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_UNPLANNED_ACTIVITY_LOG.XLSX" target="_blank">Unplanned Activity Log</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ITERATION_END_REPORT.DOCX" target="_blank">Iteration End Report</a></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 Detail Business and System Objectives</A> (Sprint Objectives) </TD>
+          <TD width="25%">Business and System Objectives</TD>
+          <TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-001_BUSINESS_AND_SYSTEM_OBJECTIVES.DOCX" target="_blank">Business and System Objectives</A></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW)</A> (Groom Product Backlog - Sprint Backlog) </TD>
+          <TD width="25%">MoSCoW List</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">MoSCoW List-Excel</a> (Sprint Backlog Worksheet)</TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RA_021_CAPTURE_USER_STORIES_OVERVIEW.HTM" target="_blank">RA.021 Capture User Stories</A></TD>
+          <TD width="25%">User Story</TD>
+          <TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-021_USER_STORY.DOCX" target="_blank">User Story</A></TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RA_035_DEVELOP_HL_SW_ARCH_DESCRIPTION_OVERVIEW.HTM" target="_blank">RA.035 Develop High-Level Software Architecture Description</A> (Prioritize User Stories / Use Cases) </TD>
+          <TD width="25%">Architecture Description</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">RA.024 Develop Use Case Details</A> (Detail User Stories) </TD>
+			<TD width="25%">Use Case Specification</TD>
+			<TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.DOCX" target="_blank">Use Case Specification-Word</A><br>
+              <A href="../OUM/040_TEMPLATES_AND_GUIDANCE/RA/RA-024_USE_CASE_SPECIFICATION.PPTX" target="_blank">Use Case Specification-PowerPoint</A></TD>
+		    <TD width="25%">&nbsp;</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Sprint Tasks and Work Products" summary="This window contains a table with links to the Sprint Task Overviews and work products.">
+<TR>
+<TD><h3><A id="AN" name="AN"> <B> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="AN_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('AN_TASKS', 'AN_OPEN', 'AN_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="AN_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('AN_TASKS', 'AN_OPEN', 'AN_CLOSED'); new Effect.Highlight($('AN'), {duration: 4});" /> </b>Sprint </A></h3>
+  <DIV id="AN_TASKS">
+<TABLE width="100%" class="oum" title="Sprint Tasks and Work Products" summary="This table provides links to all the Sprint Task Overviews and templates, if available. It is organized with Task Overview, Work Product, Template and Technique columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="25%" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="25%" scope="col"><div align="center">Work Product</div></th>
+			<th width="25%" scope="col"><DIV align="center">Template</DIV></th>
+		    <th width="25%" scope="col">Technique</th>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model</A></TD>
+          <TD width="25%">Future Process Model</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.DOCX" target="_blank">Future Process Model-Word</a><br>
+              <a href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-011_FUTURE_PROCESS_MODEL.PPTX" target="_blank">Future Process Model-PowerPoint</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/MC_030_MAP_BUSINESS_REQUIREMENTS_OVERVIEW.HTM" target="_blank">MC.030 Map Business Requirements</a></TD>
+          <TD width="25%">Mapped Business Requirements</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/MC/MC-030_BUSINESS_REQUIREMENTS_MAPPING_FORM.DOCX" target="_blank">Business Requirements Mapping Form</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">MC.050 Define Application Setups</a></TD>
+          <TD width="25%">Application Setup Documents</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/MC/MC-050_APPLICATION_SETUP_DOCUMENT.DOCX" target="_blank">Application Setup Documents</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/MC_080_CONDUCT_CONFIG_PROTOTYPE_WORKSHOP_OVERVIEW.HTM" target="_blank">MC.080 Conduct Configuration Prototyping Workshop</a></TD>
+          <TD width="25%">Validated Configuration </TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/MC/MC-080_CPW_STRATEGY_AND_PLAN.DOCX" target="_blank">Configuration Prototyping Workshop Strategy and Plan </a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/MC_110_DEFINE_GAP_RESOLUTIONS_OVERVIEW.HTM" target="_blank">MC.110 Define Gap Resolutions</a></TD>
+          <TD width="25%">Gap Resolutions</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/AN_050_ANALYZE_DATA_OVERVIEW.HTM" target="_blank">AN.050 Analyze Data</a></TD>
+          <TD width="25%">Data Analysis</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/AN/ANALYSIS_MODEL.DOCX" target="_blank">Analysis Model</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/AN_060_ANALYZE_BEHAVIOR_OVERVIEW.HTM" target="_blank">AN.060 Analyze Behavior</a></TD>
+          <TD width="25%">Behavior Analysis</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/AN_090_ANALYZE_USER_INTERFACE_OVERVIEW.HTM" target="_blank">AN.090 Analyze User Interface</a></TD>
+          <TD width="25%">User Interface Analysis</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">DS.080 Design Software Components</a></TD>
+          <TD width="25%">Software Component Design</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">DS.090 Design Data</a></TD>
+          <TD width="25%">Component Data Design</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">DS.100 Design Behavior</a></TD>
+          <TD width="25%">Component Behavior Design</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">DS.130 Design User Interface</a></TD>
+          <TD width="25%">User Interface Design</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="../OUM/020_METHOD_GUIDELINES/030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">DS.150 Develop Database Design</a></TD>
+          <TD width="25%">Logical Database Design</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/DS/DS-150_LOGICAL_DATABASE_DESIGN.DOCX" target="_blank">Logical Database Design</a></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/IM_010_DEVELOP_FUNCTIONAL_PROTOTYPE_OVERVIEW.HTM" target="_blank">IM.010 Develop Functional Prototype</A></TD>
+          <TD width="25%">Functional Prototype</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/TE_030_PERFORM_UNIT_TEST.HTM" target="_blank">TE.030 Perform Unit Test</A></TD>
+          <TD width="25%">Unit-Tested Components</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/IM_050_IMPLEMENT_COMPONENTS_OVERVIEW.HTM" target="_blank">IM.050 Implement Components</A></TD>
+          <TD width="25%">Implemented Components</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/IM_080_INTEGRATE_SERVICES_OVERVIEW.HTM" target="_blank">IM.080 Integrate Services</A></TD>
+          <TD width="25%">Integrated Services</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/TE_070_PERFORM_SYSTEM_TEST_OVERVIEW.HTM" target="_blank">TE.070 Perform System Test </A></TD>
+          <TD width="25%">System-Tested Applications</TD>
+          <TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/TE/TE-070_SYSTEM_TEST_RESULTS.DOCX" target="_blank">System Test Results</A></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/TE_100_PERFORM_SYSTEMS_INTEGRATION_TEST_OVERVIEW.HTM" target="_blank">TE.100 Perform Systems Integration Test</A></TD>
+          <TD width="25%">Integration-Tested System</TD>
+          <TD width="25%"><A href="../OUM/040_TEMPLATES_AND_GUIDANCE/TE/TE-100_SYSTEMS_INTEGRATION_TEST_RESULTS.DOCX" target="_blank">Systems Integration Test Results</A></TD>
+		  <TD width="25%">&nbsp;</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Sprint Review Tasks and Work Products" summary="This window contains a table with links to the Sprint Review Task Overviews and work products.">
+<TR>
+<TD><h3><A id="DS" name="DS"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="DS_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('DS_TASKS', 'DS_OPEN', 'DS_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="DS_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('DS_TASKS', 'DS_OPEN', 'DS_CLOSED'); new Effect.Highlight($('DS'), {duration: 4});" /> Sprint Review</A></h3>
+  <DIV id="DS_TASKS">
+<TABLE width="100%" class="oum" title="Sprint Review Tasks and Work Products" summary="This table provides links to all the Sprint Review Task Overviews and templates, if available. It is organized with Task Overview, Work Product, Template and Technique columns.">
+	<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="25%" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="25%" scope="col"><div align="center">Work Product</div></th>
+			<th width="25%" scope="col"><DIV align="center">Template</DIV></th>
+		    <th width="25%" scope="col">Technique</th>
+		</TR>
+        <TBODY id="DS_INCEPTION">
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances</a></TD>
+			<TD width="25%">Managed Project Finances</TD>
+			<TD width="25%">Refer to the Task Overview for guidance.</TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/METRICS_FOR_AGILE_PROJECTS.HTM" target="_blank">Metrics for Agile Projects</a>
+              <ul>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/BURNDOWN%20CHART.XLSX" target="_blank">Burndown Chart Spreadsheet</a></li>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/RELEASEBURNDOWN.PPTX" target="_blank">Release Burndown Chart</a></li>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SPRINTBURNDOWN.PPTX">Sprint Burndown Chart</a></li>
+            </ul></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a></TD>
+			<TD width="25%">Project Workplan</TD>
+			<TD width="25%"><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ASSIGNMENT_REQUEST.DOCX" target="_blank">Assignment Request</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_DELIVERABLE%20TRACKING.XLSX" target="_blank">Deliverable Tracking Spreadsheet</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_UNPLANNED_ACTIVITY_LOG.XLSX" target="_blank">Unplanned Activity Log</a><br>
+              <a href="../PJM/040_TEMPLATES_AND_GUIDANCE/WM030_ITERATION_END_REPORT.DOCX" target="_blank">Iteration End Report</a></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a><br>
+	              <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/METRICS_FOR_AGILE_PROJECTS.HTM" target="_blank">Metrics for Agile Projects</a>
+	          <ul>
+	            <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/BURNDOWN%20CHART.XLSX" target="_blank">Burndown Chart Spreadsheet</a></li>
+	            <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/RELEASEBURNDOWN.PPTX" target="_blank">Release Burndown Chart</a></li>
+	            <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SPRINTBURNDOWN.PPTX">Sprint Burndown Chart</a></li>
+            </ul></TD>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="../PJM/020_METHOD_GUIDELINES/030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">WM.040 Track Schedule Performance</a></TD>
+			<TD width="25%">Schedule Performance</TD>
+			<TD width="25%">Refer to the Task Overview for guidance.</TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/METRICS_FOR_AGILE_PROJECTS.HTM" target="_blank">Metrics for Agile Projects</a>
+              <ul>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/BURNDOWN%20CHART.XLSX" target="_blank">Burndown Chart Spreadsheet</a></li>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/RELEASEBURNDOWN.PPTX" target="_blank">Release Burndown Chart</a></li>
+                <li> <a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SPRINTBURNDOWN.PPTX">Sprint Burndown Chart</a></li>
+            </ul></TD>
+		</TR>
+		<TR valign="top">
+          <TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">SM.030 Manage Scope </a></TD>
+          <TD width="25%">Managed Scope </TD>
+          <TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_FORM.DOCX" target="_blank">Change Request Form</a><br>
+            <a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_LOG.XLSX" target="_blank">Change Request Log</a></TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>		<TR valign="top">
+		<TR valign="top">
+          <TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/SM040_MANAGE_ACCEPTANCE.HTM" target="_blank">SM.040 Manage Acceptance</a></TD>
+          <TD width="25%">Managed Acceptance</TD>
+          <TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CRITERIA.DOCX" target="_blank">Acceptance Criteria</a><br>
+            <a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a> <br>
+            <a href="040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a></TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>		<TR valign="top">
+          <TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk </a></TD>
+          <TD width="25%">Managed Risk</TD>
+          <TD width="25%">Refer to the Task Overview for guidance.</TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+
+		<TR valign="top">
+          <TD width="25%"><A href="../OUM/020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW)</A></TD>
+          <TD width="25%">MoSCoW List</TD>
+          <TD width="25%"><a href="../OUM/040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">MoSCoW List-Excel</a> (Product Backlog Worksheet)</TD>
+		  <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+	    </TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<TABLE width="100%" border="0" role="presentation" bgcolor="#CCCCCC" class="oum" title="Sprint Retrospective Tasks and Work Products" summary="This window contains a table with links to the Sprint Retrospective Task Overviews and work products.">
+<TR>
+<TD><h3><A id="IM" name="IM"> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse window" width="12" height="8" id="IM_OPEN" title="Collapse window"
+     onclick="toggleElementBlind('IM_TASKS', 'IM_OPEN', 'IM_CLOSED')"
+     onload="Element.hide(this)" /> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand window" width="8" height="12" id="IM_CLOSED" title="Expand window"
+     onclick="toggleElementBlind('IM_TASKS', 'IM_OPEN', 'IM_CLOSED'); new Effect.Highlight($('IM'), {duration: 4});" /> Sprint Retrospective</A></h3>
+  <DIV id="IM_TASKS">
+<TABLE width="100%" class="oum" title="Sprint Retrospective Tasks and Work Products" summary="This table provides links to all the Sprint Retrospective Task Overviews and templates, if available. It is organized with Task Overview, Work Product, Template and Technique columns.">
+<TBODY>
+		<TR bgcolor="#BEBEBE">
+			<th width="25%" scope="col"><DIV align="center">Task Overview</DIV></th>
+			<th width="25%" scope="col"><div align="center">Work Product</div></th>
+			<th width="25%" scope="col"><DIV align="center">Template</DIV></th>
+		    <th width="25%" scope="col">Technique</th>
+		</TR>
+		<TR valign="top">
+			<TD width="25%"><a href="020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">IPM.040 Manage Issues and Problems </a></TD>
+			<TD width="25%"><span class="MsoNormal">Managed Issues and Problems</span></TD>
+			<TD width="25%"><a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_FORM.DOCX" target="_blank">Issue Form</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_LOG.XLSX" target="_blank">Issue Log</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_REPORT_FORM.DOCX" target="_blank">Problem Form</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_LOG.XLSX">Problem Log</a><br>
+              <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a></TD>
+		    <TD width="25%"><a href="020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+</TD>
+</TR>
+</TABLE>
+<P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"></P>
+<P align="left"><span class="copyright"> <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></span>
+  <!--MSProjectTemplate_AssignmentTableTitle-->
+  <!--MSProjectTemplate_AssignmentTable-->
+</P>
+<map name="Map">
+  <area shape="rect" coords="6,259,452,378" href="javascript:goAnchor('RD'); javascript:goAnchor('RD')" alt="Go to Project Kickoff Tasks and Work Products" onClick="showTask('RD_TASKS', false, 'RD_OPEN', 'RD_CLOSED');" Title="Go to Project Kickoff Tasks and Work Products">
+  <area shape="rect" coords="256,40,504,251" href="javascript:goAnchor('RA'); javascript:goAnchor('RA')" alt="Go to Sprint Planning Tasks and Work Products" onClick="showTask('RA_TASKS', false, 'RA_OPEN', 'RA_CLOSED');" Title="Go to Sprint Planning Tasks and Work Products">
+  <area shape="rect" coords="622,281,908,366" href="javascript:goAnchor('IM'); javascript:goAnchor('IM')" alt="Go to Sprint Retrospective Tasks and Work Products" onClick="showTask('IM_TASKS', false, 'IM_OPEN', 'IM_CLOSED');" Title="Go to Sprint Retrospective Tasks and Work Products">
+  <area shape="rect" coords="730,139,937,197" href="javascript:goAnchor('DS'); javascript:goAnchor('DS')" alt="Go to Sprint Review Tasks and Work Products" onClick="showTask('DS_TASKS', false, 'DS_OPEN', 'DS_CLOSED');" Title="Go to Sprint Review Tasks and Work Products">
+  <area shape="rect" coords="505,2,786,135" href="javascript:goAnchor('AN'); javascript:goAnchor('AN')" alt="Go to Sprint Tasks and Work Products" onClick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED');" Title="Go to Sprint Tasks Tasks and Work Products">
+  <area shape="rect" coords="505,133,729,198" href="javascript:goAnchor('AN'); javascript:goAnchor('AN')" alt="Go to Sprint Tasks and Work Products" onClick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED');" Title="Go to Sprint Tasks Tasks and Work Products">
+  <area shape="rect" coords="505,198,826,260" href="javascript:goAnchor('AN'); javascript:goAnchor('AN')" alt="Go to Sprint Tasks and Work Products" onClick="showTask('AN_TASKS', false, 'AN_OPEN', 'AN_CLOSED');" Title="Go to Sprint Tasks Tasks and Work Products">
+</map>
+</BODY>
+</HTML>

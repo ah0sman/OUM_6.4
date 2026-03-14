@@ -1,0 +1,604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>PJM 261 to 41 Mapping</title>
+<!-- InstanceEndEditable -->
+<link href="../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM/OUM_HOME.HTM"><img src="../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../OUM/CLOUD_HOME.htm"><img src="../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">PJM 2.6.1 to OUM Manage Mapping Document</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="../PJM_HOME.htm" selected></option>
+                            <option value="#Integration">PJM Integration with Delivery Method</option>
+                            <option value="#CR">Control and Reporting</option>
+                            <option value="#WM">Work Management</option>
+                            <option value="#RM">Resource Management</option>
+                            <option value="#QM">Quality Management</option>
+                            <option value="#CM">Configuration Management</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>PJM 2.6.1 to OUM Manage</h2>
+<P><span class="MsoNormal">This document provides a mapping of PJM 2.6.1 to the OUM Manage tasks. This document can be used for the following situations:</span></P>
+<ol>
+  <li>You are using OUM Manage on a delivery method that has been<em> loosely integrated</em> with OUM Manage. With loosely integrated delivery methods, the method material may still refer to a PJM 2.6.1 task in the text. This mapping document provides a quick way to find the most acceptable OUM Manage task or tasks to substitute for the PJM 2.6.1 task.</li>
+  <li>You are using a method that has not been integrated with OUM Manage at all, and still references PJM 2.6.1 tasks.</li>
+  <li>You are familiar with PJM 2.6.1 and want a quick reference to how the method material maps to the OUM Manage version.</li>
+</ol>
+<P>This document contains the following sections: </P>
+<ol>
+  <li>A section representing how OUM Manage and PJM 2.6.1 is integrated with the delivery methods. This section is intended to highlight the changes in OUM Manage to delivery method integration so you are better able to map the PJM 2.6.1 tasks to OUM Manage. </li>
+  <li>Process tables for each of the PJM 2.6.1 process. Included in the five process tables, is the mapping of the PJM 2.6.1 tasks to the most appropriate task or tasks in OUM Manage.</li>
+</ol>
+<p><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </p>
+<hr width="100%">
+<h3><B><a name="Integration"></a></B>INTEGRATION WITH DELIVERY METHODS</h3>
+<p class="MsoNormal">The integration of the Manage focus area with the Implement Focus Area is illustrated below:</p>
+<p align="center" class="MsoNormal"><img src="../010_COMMON_FILES/PJM4_W_DELIVERY.gif" alt="Integration of Manage with Implement" width="553" height="469" title="Integration of Manage with Implement"></p>
+<p><span class="MsoNormal">In general, the Manage Project Start Up phase is conducted prior to the first phase of the Implement focus area. The Manage Execution and Control phase runs concurrently with the Implement focus area phases, and the Project Closure phase begins once the project execution is concluded.</span></p>
+<p>The following is an illustration of how PJM 2.6.1 was integrated with the execution method:</p>
+<p><img src="../../010_SHARED_FILES/PJM261_DELIVERY_INTEGRATION.jpg" alt="Integration of PJM 2.6.1 with Execution Methods" width="530" height="413" title="Integration of PJM 2.6.1 with Execution Methods"></p>
+<P>In contrast to how OUM Manage is integrated with the Implement focus area, PJM 2.6.1 included the Project Planning tasks directly in the first phase of the delivery method. </P>
+<P>In addition,PJM 2.6.1 documented the <em>phase lifecycles</em> explicitly through the phase start up, phase control, and phase completion tasks. The phase lifecyclcles were included in all of the delivery phases. OUM Manage does not explicitly document the phase lifecycles but instead includes all the execution and control tasks in the Project Execution and Control phase. Although some of these tasks are recommended to be executed during key milestones, such as phase start up or increment completion, they are not specifically documented in the method material. </P>
+<P>In PJM 2.6.1, the Project Completion tasks were performed as the last activity of the final delivery phase rather than in a separate phase as in OUM Manage. </P>
+<P><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </P>
+<hr width="100%">
+<h3><B><a name="CR"></a></B>[CR] CONTROL AND REPORTING </h3>
+<table width="100%"  border="1" title="Control and Reporting Mapping" summary="This table provides a mapping of the PJM 2.6.1 Control and Reporting process tasks to OUM Manage tasks. The columns headings are Phase, PJM 2.6.1 Task and OUM Manage Task with subheadings for PJM phases.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col"><div align="center">Phase</div></th>
+    <th scope="col">PJM 2.6.1 Task</th>
+    <th scope="col"> OUM Manage Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Project Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>CR.010.1 Establish Scope, Objectives, and Approach </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan </a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope<br>
+        </a><a href="../020_METHOD_GUIDELINES/030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">RKM.020 Conduct Baseline Risk Assessment</a><br>
+    <a href="../020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>CR.020.1 Define Control and Reporting Strategies </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank"><br>
+    CMM.020 Develop Project Team Communication Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>CR.030.1 Establish Management Plans </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">SM.020 Develop Scope Change Management Processes</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies </a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">RKM.010 Develop Risk Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.010 Develop Issue Management Strategy</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.020 Develop Problem Management Strategy</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">CMM.020 Develop Project Team Communication Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">QM.010 Develop Quality Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a><br>
+      <span
+ style="color: rgb(51, 0, 51);"><a href="../020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></span><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">PCM.010 Develop Procurement Strategy and Process</a><br>
+    <a href="../020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand  Customer's Organizational Change Management Strategy</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>CR.010.2 Establish Scope, Objectives, and Approach </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope<br>
+        </a><a href="../020_METHOD_GUIDELINES/030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">RKM.020 Conduct Baseline Risk Assessment</a><br>
+    <a href="../020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>CR.020.2 Define Control and Reporting Strategies</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank"><br>
+    CMM.020 Develop Project Team Communication Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>CR.030.2 Establish Management Plans</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">SM.020 Develop Scope Change Management Processes</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies </a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">RKM.010 Develop Risk Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.010 Develop Issue Management Strategy</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.020 Develop Problem Management Strategy</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">CMM.020 Develop Project Team Communication Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">QM.010 Develop Quality Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a><br>
+      <span
+ style="color: rgb(51, 0, 51);"><a href="../020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></span><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">PCM.010 Develop Procurement Strategy and Process</a><br>
+    <a href="../020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand Customer's Organizational Change Management Strategy</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Control </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CR.040 Issue and Risk Management</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">RKM.050 Monitor and Control Risk</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">IPM.030 Develop Issue and Problem Management System </a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">IPM.040 Manage Issues and Problems</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CR.050 Problem Management</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">IPM.030 Develop Issue and Problem Management System </a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">IPM.040 Manage Issues and Problems</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CR.060 Change Control</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">SM.030 Manage Scope</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CR.070 Status Monitoring and Reporting</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CMM030_MANAGE_PROJ_TEAM_COMMUNICATION.HTM" target="_blank">CMM.030 Manage Project Team Communication</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">WM.040 Track Schedule Performance</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">D</div></td>
+    <td>CR.080.1 Secure Client Acceptance</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">SM.050 Gain Acceptance</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Project Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>CR.080.2 Secure Client Acceptance</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">SM.050 Gain Acceptance</a></td>
+  </tr>
+</table>
+<P><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </P>
+<hr width="100%">
+<h3><B><a name="WM"></a></B>[WM] WORK MANAGEMENT</h3>
+<table width="100%"  border="1" title="Work Management Mapping" summary="This table provides a mapping of the PJM 2.6.1 Work Management process tasks to OUM Manage tasks. The columns headings are Phase, PJM 2.6.1 Task and OUM Manage Task with subheadings for PJM phases.">
+  <tr bgcolor="#BEBEBE">
+    <th width="5%" scope="col"><div align="center">Phase</div></th>
+    <th width="37%" scope="col">PJM 2.6.1 Task</th>
+    <th width="58%" scope="col"> OUM Manage Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Project Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>WM.010.1 Define Work Management Strategies </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>WM.020.1 Establish Workplan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>WM.030.1 Establish Finance Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">FM.010 Refine Project Budget</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a>&nbsp; </td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>WM.010.2 Define Work Management Strategies </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies</a>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>WM.020.2 Establish Workplan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>WM.030.2 Establish Finance Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">FM.010 Refine Project Budget</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Control </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>WM.040 Workplan Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>WM.050 Financial Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances</a></td>
+  </tr>
+</table>
+<P><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </P>
+<hr width="100%">
+<h3><B><a name="RM"></a></B>[RM] RESOURCE MANAGEMENT </h3>
+<table width="100%"  border="1" title="Resource Management Mapping" summary="This table provides a mapping of the PJM 2.6.1 Resource Management process tasks to OUM Manage tasks. The columns headings are Phase, PJM 2.6.1 Task and OUM Manage Task with subheadings for PJM phases.">
+  <tr bgcolor="#BEBEBE">
+    <th width="7%" scope="col"><div align="center">Phase</div></th>
+    <th width="35%" scope="col">PJM 2.6.1 Task</th>
+    <th width="58%" scope="col"> OUM Manage Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Project Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.010.1 Define Resource Management Procedures </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.020.1 Establish Staffing and Organization Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.025.1 Create Project Orientation Guide </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">STM.040 Prepare Orientation Guide</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.030.1 Implement Organization </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.040.1 Establish Physical Resource Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank"><br>
+      IFM.020 Establish Team Work Environment</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>RM.050.1 Establish Infrastructure </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank"><br>
+      IFM.030 Establish Technical Infrastructure</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.010.2 Define Resource Management Procedures</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.020.2 Establish Staffing and Organization Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.025.2 Create Project Orientation Guide </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">STM.040 Prepare Orientation Guide</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.030.2 Implement Organization </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.040.2 Establish Physical Resource Plan </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank"><br>
+      IFM.020 Establish Team Work Environment </a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">PCM.010 Develop Procurement Strategy and Process</a><br>
+      <a href="../020_METHOD_GUIDELINES/030_TASK/PCM020_PROCURE_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">PCM.020 Procure Goods and Contracted Services</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>RM.050.2 Establish Infrastructure</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a><a href="../020_METHOD_GUIDELINES/030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank"><br>
+      IFM.030 Establish Technical Infrastructure</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Control </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>RM.060 Staff Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM060_MANAGE_PROJECT_TEAM.HTM" target="_blank">STM.060 Manage Project Team</a> </td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>RM.070 Physical Resource Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM050_CLOSE_INFRASTRUCTURE.HTM" target="_blank">IFM.050 Close Infrastructure</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/PCM040_CLOSE_CONTRACT.HTM" target="_blank">PCM.040 Close Contract</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">D</div></td>
+    <td>RM.080.1 Release Staff</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM070_RELEASE_STAFF.HTM" target="_blank">STM.070 Release Staff </a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">D</div></td>
+    <td>RM.090.1 Release Physical Resources </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">SM.050 Gain Acceptance</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Project Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>RM.080.2 Release Staff</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/STM070_RELEASE_STAFF.HTM" target="_blank">STM.070 Release Staff </a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>RM.090.2 Release Physical Resources </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/IFM050_CLOSE_INFRASTRUCTURE.HTM" target="_blank">IFM.050 Close Infrastructure</a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/PCM040_CLOSE_CONTRACT.HTM" target="_blank">PCM.040 Close Contract </a></td>
+  </tr>
+</table>
+<P><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </P>
+<hr width="100%">
+<h3><B><a name="QM"></a></B>[QM] QUALITY MANAGEMENT </h3>
+<table width="100%"  border="1" title="Quality Management Mapping" summary="This table provides a mapping of the PJM 2.6.1 Quality Management process tasks to OUM Manage tasks. The columns headings are Phase, PJM 2.6.1 Task and OUM Manage Task with subheadings for PJM phases.">
+  <tr bgcolor="#BEBEBE">
+    <th width="6%" scope="col"><div align="center">Phase</div></th>
+    <th width="37%" scope="col">PJM 2.6.1 Task</th>
+    <th width="57%" scope="col"> OUM Manage Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Project Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>QM.010.1 Define Quality Management Procedures </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>QM.010.2 Define Quality Management Procedures </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Control </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>QM.020 Quality Review </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM040_MANAGE_QUALITY_CONTROL.HTM" target="_blank">QM.040 Manage Quality Control</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>QM.030 Quality Audit </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>QM.040 Quality Measurement </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM040_MANAGE_QUALITY_CONTROL.HTM" target="_blank">QM.040 Manage Quality Control</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>QM.045 Support Healthcheck </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">D</div></td>
+    <td>QM.050.1 Perform Quality Assessment </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM060_CONDUCT_POST_PRODUCTION_QUALITY_REVIEW.HTM" target="_blank">QM.060 Conduct Post-Production Quality Review</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Project Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>QM.050.2 Perform Quality Assessment </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM060_CONDUCT_POST_PRODUCTION_QUALITY_REVIEW.HTM" target="_blank">QM.060 Conduct Post-Production Quality Review</a></td>
+  </tr>
+</table>
+<P><A href="#TOP">B</A><A 
+href="#TOP">ack to Top</A> </P>
+<hr width="100%">
+<h3><B><a name="CM"></a></B>[CM] CONFIGURATION MANAGEMENT </h3>
+<table width="100%"  border="1" title="Configuration Management Mapping" summary="This table provides a mapping of the PJM 2.6.1 Configuration Management process tasks to OUM Manage tasks. The columns headings are Phase, PJM 2.6.1 Task and OUM Manage Task with subheadings for PJM phases.">
+  <tr bgcolor="#BEBEBE">
+    <th width="6%" scope="col"><div align="center">Phase</div></th>
+    <th width="37%" scope="col">PJM 2.6.1 Task</th>
+    <th width="57%" scope="col"> OUM Manage Task </th>
+  </tr>
+  <tr valign="top">
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Project Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">A</div></td>
+    <td>CM.010.1 Define Configuration Management Procedures</td>
+    <td><span
+ style="color: rgb(51, 0, 51);"><a href="../020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></span></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Planning </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">B</div></td>
+    <td>CM.010.2 Define Configuration Management Procedures</td>
+    <td><span
+ style="color: rgb(51, 0, 51);"><a href="../020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></span></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Control </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CM.020 Document Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">CM.030 Create Project Documentation Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CM.030 Configuration Control </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">CM.040 Create and Execute Software Configuration Management Plan </a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CM.035 Knowledge Management </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">CM.030 Create Project Documentation Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CM.040 Release Management</td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan </a><br>
+        <a href="../020_METHOD_GUIDELINES/030_TASK/CM060_CREATE_AND_EXECUTE_ENV_AND_PATCH_MGMT_PLAN.HTM" target="_blank">CM.060 Create and Execute Environment and Patch Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">C</div></td>
+    <td>CM.050 Configuration Status Accounting </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">CM.070 Create and Execute Configuration Control Plan</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Phase Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">D</div></td>
+    <td>CM.060.1 Audit Key Deliverables </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></td>
+  </tr>
+  <tr>
+    <th scope="rowgroup" colspan="3" bgcolor="#CCCCCC"><div align="left">Project Completion </div></th>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>CM.060.2 Audit Key Deliverables </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center">E</div></td>
+    <td>CM.070 Conclude Configuration Management </td>
+    <td><a href="../020_METHOD_GUIDELINES/030_TASK/CM080_CLOSE_CONFIGURATION_MANAGEMENT.HTM" target="_blank">CM.080 Close Configuration Management</a></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

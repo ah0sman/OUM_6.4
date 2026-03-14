@@ -1,0 +1,460 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Service ID and Discovery Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SOA SERVICE IDENTIFICATION AND DISCOVERY</h2>
+<p>The purpose of this technique is to provide guidance on how to identify and discover service-oriented architecture (SOA) services.</p>
+<p>Service Identification is concerned with new service candidates, whereas, Service Discovery aims at finding reuse of existing services. Service Identification and Service Discovery are done in concert and are initially one activity. However, the justification process for new services is different than that for service reuse. Service Identification and Discovery is a fundamental enabler of SOA. Therefore, a repeatable and pragmatic approach is required for the successful adoption of SOA. The following describes such an approach. </p>
+<h4>Service Identification</h4>
+<p>Service Identification begins with the analysis of requirements and ends with a set of identified service candidates. In order to achieve effective SOA, applications simply cannot be developed independently of one another. SOA applications utilize shared services, which are not owned by any single application, have their own lifecycle (separate from any application), and are managed independently. In order to be effective in managing requirements within a SOA, projects have to be aware of the requirements of existing applications, in-flight projects, as well as proposed projects. To achieve this, requirements related to SOA services must be managed at the enterprise level. Review the <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique for more details about this. This technique assumes that requirements are already identified and earmarked at the enterprise level.</p>
+<p>Service candidates represent the set of business functions that are recognized as candidates for reuse. A service candidate does not necessarily map one-to-one to a service as it actually will be delivered. For example, during analysis, a more coarse-grained service may be identified that covers the requirements of two or more of the initial candidate services. However, during Service Identification, this kind of analysis is out-of-scope and is instead, part of Service Definition. Review the <a href="SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a> technique for more details about this. </p>
+<p> On the other hand, Service Identification is about more than simply identifying service candidates as it also includes <b>justification</b> of viable shared service candidates. </p>
+<h4>Service Discovery</h4>
+<p> During Service Discovery, you discover existing services and planned services outside the scope of the project at hand that can be reused to fulfill some of the requirements of the project or application. This kind of analysis is done against the service portfolio and other existing requirements, business process models and other enterprise assets. Service Discovery is a natural follow-up of Service Identification, where existing services are discovered by working your way through the proposing service candidates.</p>
+<p>The key enabler to Service Discovery is the availability of information, and knowing where to get that. Human instinct is a fundamental aspect of any analysis exercise to make decisions especially when not all of the required information is available. However, the more relevant information we can make available, the more repeatable, consistent, and effective this process will be.</p>
+<p>An Analytical Approach to Service Identification and Discovery</p>
+<p> The approach of Service Identification and Discovery is split into two major parts. First, the requirements are reorganized into two lists: </p>
+<ul>
+  <li> One list represents the set of functionality that is already covered by shared assets registered in the Enterprise Repository, specifically in the Service Portfolio (IP.014). </li>
+  <li> The second list defines the set of functionality not yet covered by shared assets, and therefore earmarked to be further analyzed for identification of new service candidates and discovery of additional reuse.</li>
+</ul>
+<p>Next, a list is created for the project documenting:</p>
+<ul>
+  <li> the new services proposed by the project</li>
+  <li> existing or new services that will be used by the project</li>
+  <li>changes that need to be applied to existing services </li>
+</ul>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Identified Service Candidates</b> - This technique takes takes you through a process for Service Identification and Discovery. Depending on the type of project and work products available, the input is the collections of relevant process, used case and domain models. Examine these work products using an analysis approach from a functional as well as a business entity perspective. </p>
+The result of the process is a list of identified service candidates that have been justified as viable shared service candidates included in a Service Portfolio.
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Perform analysis from a functional perspective. </td>
+    <td>Functional Service Candidates </td>
+    <td> The Functional Service Candidates is a list of services identified from a functional perspective that are not yet covered by existing services or services planned outside the project. These are seen as potential new service candidates. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Perform analysis from a business entity perspective. </td>
+    <td> Business Entity Candidates </td>
+    <td> The Business Entity Candidates is a list of business entities used in function/process models or use cases but not yet covered by existing services or services planned outside the project. These are seen as potential new service candidates. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td> Review candidates and create candidate list.</td>
+    <td>Candidate List <br></td>
+    <td> The Candidate List is the result of a review of the service candidates identified in steps 1 and 2. All candidates are analyzed at the enterprise level. It includes if the candidate is project-specific and therefore can be abandoned as a SOA service, or if the candidate should be further analyzed. All possible new candidates are added to a candidate list for further analysis. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td> Define service boundaries by classification.</td>
+    <td>Candidate List with Service Boundaries </td>
+    <td> The Service Boundaries shows the classification of each candidate from step 3 by business category, scope and service layer.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td> Perform reuse validation.</td>
+    <td>Validated Candidates </td>
+    <td> The Validated Candidates shows the result of a Reuse Validation process to determine if the project is authorized to reuse an existing service. Authorization decisions are not solely based on security policy but also on other aspects, such as, scalability, etc. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td> Perform candidate justification.</td>
+    <td>Justified Candidates </td>
+    <td> The Justified Candidates is a list of candidates including scores to rate the benefits against risks. All new candidates in the list and all services that need to be changed for reuse, (meaning a new version needs to be proposed) will need to be justified.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td> Propose new service candidates and define change requests for reuse.</td>
+    <td>Change Requests </td>
+    <td> The Change Requests contains requests to change existing services when reused is justified. For all existing services that need to be changed, a change request is created. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td> Assign ownership and register services.</td>
+    <td>Registered Services</td>
+    <td> The Registered Services contains all new candidates and new service versions that have been justified and added to the Service Portfolio. This includes the classification information, the scores and the relationships to models, requirements and enterprise data entities. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The steps to perform Service Identification and Discovery are listed above in the technique steps table. A number of these steps can be seen as procedures on their own, and will be explained for the appropriate steps. The figure below shows where the steps can be broken into smaller logical sub-processes.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_DISC.PNG" alt="Service Identification and Discovery Diagram" width="721" height="420" title="Service Identification and Discovery Diagram"></p>
+<p>There are two approaches to identify new service candidates and discover additional reuse candidates. </p>
+<ul>
+  <li>Functional Service Analysis</li>
+  <li>Business Entity Analysis </li>
+</ul>
+<hr WIDTH="100%">
+<h4>Perform Functional Service Analysis</h4>
+<p>During Functional Service Analysis, you analyze <em>the functional services </em> of the earmarked Function or Process Model nodes and their requirements or the requirements of the earmarked use cases. This is geared towards identifying candidates in the business activity and presentation layer as well as reusable services in these layers.</p>
+<p>Once reusable and new service candidates have been identified they are funneled through the reuse validation or the service candidate justification procedures (respectively).</p>
+<h5>The Functional Service Analysis Process</h5>
+<p>During this process, the functional activities and their attached requirements are examined to discovery reuse candidates. All activities not yet covered by services will get potential new service candidates.</p>
+<p>The Functional Service Analysis process is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_FAA.PNG" alt="Functional Service Analysis Process" width="695" height="505" title="Functional Service Analysis Process"> </p>
+<h6>For Each Earmarked Function Node or Use Case </h6>
+<p> When starting the process for Service Identification and Discovery as described in this technique, you use the Function or Process Models (from Envision), Future Process Models (from Implement) and Use Cases (Envision or Implement) created during Requirements Management as input (refer to <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique). The function nodes of the Function or Process Models or use cases that are linked to the project provide the input to Service Identification and Discovery. You should examine each function node using a data approach and functional service approach to discover reuse candidates and identify functionality not yet covered through services. In this way, you uncover possible service candidates.</p>
+<h6>Examine Function Nodes</h6>
+<p>The business functions with attached projected requirements are examined and analyzed. By examining the requirements of each functional service, reuse candidates, Business Process Service Candidates and Business Activity Service Candidates are identified.</p>
+<p>When examining a business function node, there are three potential scenarios:</p>
+<ul>
+  <li>complete service overlap </li>
+  <li>partial service overlap</li>
+  <li>no service overlap</li>
+</ul>
+<h6>Propose Service Reuse</h6>
+<p>If all requirements within the function node being examined are linked to the current project and are also linked to one or more shared services, then this is known as a &quot;Complete Service Overlap.&quot;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_CSO.PNG" alt="In this fugure, the node, 8.6.1.3.2 Transfer Funds, is being examined. In this node, all of the requirements are both linked to the current project as well as the TransferFunds Service."8.6.1.3.2 Transfer Funds" is being examined. In this node, all of the requirements are both linked to current project as well TransferFunds Service. scenario, Service should be validated for reuse by project." width="646" height="447" title="In this fugure, the node, 8.6.1.3.2 Transfer Funds, is being examined. In this node, all of the requirements are both linked to the current project as well as the TransferFunds Service."></p>
+<p>In the figure above, the node &quot;8.6.1.3.2 Transfer Funds&quot; is being examined. In this node, all of the requirements are both linked to the current project as well as the TransferFunds Service. In this scenario, the TransferFunds Service should be validated for reuse by the current project.</p>
+<p>If the service has not yet been implemented and is not in scope of the project at hand, the project will have to provide the requirements to the (in-flight or planned) project that will actually deliver the service. In that case, project management of both projects will need to cooperate on the service.</p>
+<h6>Analyze Service Against Project Requirements</h6>
+<p>Some, but not all, of the requirements in the examined function node (which are linked to the project), are also linked to a shared service. This is known as a &quot;Partial Service Overlap.&quot;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_PSO.PNG" alt="In this figure, the node, 8.6.1.3.2 Transfer Funds, is being examined. In this node, some of the requirements are linked to the project, and some are linked to both the project and the TransferFunds Service."8.6.1.3.2 Transfer Funds" is being examined. In this node, some of the requirements are linked to project, and both project TransferFunds Service." width="647" height="436" title="In this figure, the node, 8.6.1.3.2 Transfer Funds, is being examined. In this node, some of the requirements are linked to the project, and some are linked to both the project and the TransferFunds Service."> </p>
+<p>In the figure above, the node &quot;8.6.1.3.2 Transfer Funds&quot; is being examined. In this node, some of the requirements are linked to the project, and some are linked to both the project and the TransferFunds Service. In this scenario, there are a number of options:</p>
+<ul>
+  <li>Simply reuse the existing service and realize the remaining requirements within the project. See the Propose Service Reuse step.</li>
+  <li> Propose a new service candidate from the remaining requirements. See the Propose New Service Candidate step.</li>
+  <li> Propose an extension to the existing TransferFunds Service to include the new requirements. See the Propose Service Extension step.</li>
+</ul>
+<h6>Propose New Service Candidate</h6>
+<p>The requirements located within the function node are not linked to any existing or planned service. They may be linked to other projects, but none of the requirements can be projected to a shared service. This is known as &quot;No Service Overlap.&quot;</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_NSO.PNG" alt="In this figure, the function node, 8.6.1.3 Approve Reimbursements and Advances, is being examined." width="647" height="471" title="In this figure, the function node, 8.6.1.3 Approve Reimbursements and Advances, is being examined."></p>
+<p> In the figure above, the function node &quot;8.6.1.3 Approve Reimbursements and Advances&quot; is being examined. Because none of the requirements in lower nodes have been put forward and approved as Service Candidates, the entire set of requirements is being put forward as a potential coarse-grained Service Candidate. </p>
+<p> This technique, which can lead to coarse-grained services, is critical to understand and apply. Otherwise, a practitioner may be inclined to propose a service for each individual node in the Function or Process Model. This can lead to too many fine-grained services that may have an impact on performance and maintainability once the services are realized. </p>
+<p>In addition, this technique enables the practitioner to refactor a coarse-grained service into finer grained services later in the process. For example, later on the &quot;8.6.1.3.2 Transfer Funds&quot; function node may be justified as an autonomous service, while at the same time, the appropriate business functionality is extracted from the current &quot;Approve Reimbursements and Advances&quot; service. The current service then uses a Service Composition technique to replace the extracted functionality. </p>
+<h6>Propose Service Extension</h6>
+<p>If there is a Partial Service Overlap one of the options is to extend or modify the existing service to cater for the project&rsquo;s requirements. You should thrive to make the service backward-compatible, including ensuring that the non-functional requirements of the existing service will still be met after the service has been extended.</p>
+<h6>Examine Use Cases</h6>
+<p> <a href="../../../OUM/050_REFERENCE_FILES/OUM_BUSINESSPROCESS_INTO_USE_CASE.HTM" target="_blank">From Business Process to Use Case with Oracle Unified Method</a> discusses the relationship between use cases and business process models. Simply put, the article explains that in an (executable) process model, each activity involving human interaction, together with all automated activities that follow, represent one use case. Having said so, it should be not much of a surprise that Functional Analysis based on use cases does not differ that much from that for process models.</p>
+<p> Regarding use cases, there can be two situations: a use case does or does not have human actor involvement. Only when there is no human actor involvement, the realization of the complete use case may be identified as a service candidate. If that is not appropriate, or when a human actor is involved, then a more detailed analysis may be required by looking at the steps of the use case. When the two-column-format for use cases is being used (where what the actor does is on the left-hand side, and what the system does on the right-hand side), then services may be identified from the right-hand-side (what the system does). Consecutive steps on the right-hand side may be covered by one and the same service.</p>
+<p> In the following example use case model, two use cases have been identified. The Order Product use case represents the case where a customer can enter an order for exactly one product. Accepted orders are stored for further processing by the Handle Order STP use case, which includes starting a batch process (on behalf of the customer, which makes that the primary actor) that is triggered by a timer (which makes that the triggering actor).</p>
+<p><img src="../../010_COMMON_FILES/SERV_ID_EUC1.PNG" alt="Example Use Case Model" width="194" height="158" title="Example Use Case Model"></p>
+<p>In this example, there is no human actor involvement in the Handle Order STP use case, which therefore potentially can be realized by a service candidate. The Order Product is obviously not such a candidate because of the human actor. However, as you can see in the following scenario, a service candidate might be identified from steps 4 to 6.</p>
+<p><img src="../../010_COMMON_FILES/SERV_ID_EUC2.PNG" alt="Example Use Case Scenario Highlighting Service Candidate Steps" width="666" height="225" title="Example Use Case Scenario Highlighting Service Candidate Steps"></p>
+<p>Regarding the Functional Service Analysis, from here on there is no difference from how this is done for process models as described from the section Propose Service Reuse before.</p>
+<hr WIDTH="100%">
+<h4>Perform Business Entity Analysis </h4>
+<p>The business entities that are linked with the business Function or Process Model or the use cases are examined and analyzed. By examining the business entities, Candidate Data Services and Candidate Connectivity Services are identified.</p>
+<p>In order to identify service candidates from a business entity perspective, consider the circumstances where service enablement adds value. At this point in time, you do not yet evaluate, score, and measure service candidates in order to accept or reject them as services. Instead, you perform an initial step to recognize and identify where potential services might exist. Therefore it makes sense to start with some broad categories where value may be obtained and later allow the justification and scoring process to determine which candidates provide enough value and which do not.</p>
+<p> An initial list of categories is offered below and described in more detail in the reminder if this section:</p>
+<ul>
+  <li> single view of X</li>
+  <li> standardized view of X</li>
+  <li> gold source data</li>
+  <li> master reference data</li>
+  <li> foreign source data</li>
+  <li> basic connectivity</li>
+</ul>
+<p> For each business entity, consider the following:</p>
+<ul>
+  <li>Where does the business entity originate?</li>
+  <li> How should the business entity be represented?</li>
+  <li> Does the business entity require any mapping and transformation?</li>
+  <li> Does the business entity match any of the categories listed above?</li>
+</ul>
+<h5> The Business Entity Analysis Process</h5>
+<p>Based on the categories defined, the high-level service candidate Identification and Service Discovery process is provided below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_HLP.PNG" alt="High-Level Service Candidate Identification and Service Discovery Process" width="790" height="446" title="High-Level Service Candidate Identification and Service Discovery Process"></p>
+<h6>Collect New Entities</h6>
+<p> When the models were created and analyzed, a set of new data entities have been created (refer to the <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique). Each of these entities needs to be further analyzed regarding the need for providing data services for it. Therefore, select all new data entities from the enterprise repository and all related data models.</p>
+<p><b><i>For Each Entity in the Data Model </i></b></p>
+<p>For each key entity that is used in one way or another in a Function or Process Model or use case in scope of the project, examine if a service candidate applies based on the categories of value. The models relevant to the entities will help to identify which entities to consider, where they originate from, how they should be represented as a resource, and whether or not mapping and transformation is involved.</p>
+<h6> Examine Single View of X Opportunities</h6>
+<p> When examining business entities, one must consider if an entity has multiple sources, or if the entity may be included in one &quot;composite&quot; with other business entities that originate from different sources. Single View of X means aggregating different, but related data sources to compose a single representation that is more complete than any other single source currently provides.</p>
+<p> Usually this type of service satisfies a need to visualize complex logical data aggregations and offers the mechanisms needed to collect and compose them, in a reusable manner. When examining business entities the CRUD matrix is a valuable model to use (see the <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirement Management</a> technique for an example of a CRUD matrix).</p>
+<p> When identifying service candidates with the Single View of X characteristic it is important to consider:</p>
+<ul>
+  <li> resource identification and cross-referencing needs</li>
+  <li> spanning of sources, data authorities, and semantic communities</li>
+  <li> partial reads and update rules to protect data integrity</li>
+  <li> access control and confidentiality</li>
+</ul>
+<h6> Examine Standard View of X Opportunities </h6>
+<p> If the logical representation of a business entity differs from the physical representation in a way that involves mapping, transformation, or some other mutation; or if a business entity is persisted in multiple locations using different physical representations, then the need for a standardized view may be evident. The CRUD matrix and representation models are useful for this examination.</p>
+<p> A Candidate Data Service establishes a standardized view of data, which provides value by offering the representation schema and underlying data collection mechanisms in a reusable form. The Candidate Data Service, such as a customer, bill, order, etc., represents an entity from a business point of view (domain model entity), which abstracts from how it is persisted physically.</p>
+<p>When identifying service candidates with the Standard View of X characteristic it is important to consider:</p>
+<ul>
+  <li> resource identification and cross-referencing needs</li>
+  <li>spanning of sources, data authorities, and semantic communities</li>
+  <li> existing canonical models</li>
+  <li> industry standard data representations</li>
+</ul>
+<h6> Examine Gold Source Data Opportunities </h6>
+<p> Gold Source Data is maintained by a data authority, which is considered the single source of truth for that particular type of data. All other sources of similar data are considered to be inferior in terms of accuracy and freshness. Gold Source Data is synonymous with Master Data in that both are considered the official source. The difference is that Master Data is often centrally managed through a Master Data Management (MDM) system whereas any application (or service) could be considered to be the gold source of a particular set of data.</p>
+<p> Business entities should be examined and considered whether they are or should be the Gold Source, or Master Source. Other projects may need access to such data, which makes this a service candidate. The CRUD matrix will help to determine which business entities this project will provide. Offering access to Gold Source Data as a service provides value by allowing other applications and services to access the single source of truth in a consistent manner.</p>
+<p> When identifying Service Candidates with the Gold Source Data characteristic it is important to consider:</p>
+<ul>
+  <li> reuse opportunities - across projects</li>
+  <li>confidentiality, integrity, and access control</li>
+</ul>
+<h6> Examine Master Reference Data Opportunities </h6>
+<p> Master Reference Data is rarely changed data that is shared over a number of systems. Examples include lists of countries, currencies, states, time zones, etc. This kind of data is often duplicated for each application, which is sometimes necessary to establish referential integrity within a database. It may be useful to obtain Master Reference Data via a service if referential integrity is not an issue.</p>
+<p> Consider the source of Master Reference Data. Can it be obtained via a service interface? Can it be offered as a service through this project? For example, tax rates could be maintained in a single place and offered via a service to all applications that need it.</p>
+<p> When identifying service candidates with the Master Reference Data characteristic it is important to consider:</p>
+<ul>
+  <li> How will Master Reference Data be accessed?</li>
+  <li> How will Master Reference Data be updated?</li>
+</ul>
+<h6> Examine Foreign Source Data Opportunities </h6>
+<p> The business entity needs that are not satisfied by data sources within the project should be examined. Data maintained by systems outside the scope of the project are considered to have a foreign source.</p>
+<p> Such data can be accessed in a variety of ways, which includes the possibility of pre-existing data services and identifying service candidates. This project may leverage existing services or help to justify the development of new services or service modifications in order to promote service-oriented data access.</p>
+<p> When identifying service candidates with the Foreign Source Data characteristic it is important to consider:</p>
+<ul>
+  <li> sources and authorities (Who is responsible for the Foreign Source Data?)</li>
+  <li>representations (What current representations exist and what is needed?)</li>
+  <li> integrity (What can be updated and how?)</li>
+  <li> freshness (Is it the gold source or a stale copy?)</li>
+  <li> transaction rules</li>
+  <li> response time</li>
+  <li> load requirements</li>
+  <li> access rights</li>
+</ul>
+<h6> Examine Basic Connectivity Opportunities </h6>
+<p> The Basic Connectivity focuses on providing access to data from legacy systems via proprietary interfaces. Such interfaces often do not satisfy data needs effectively. For example, they may provide either a portion of the data for a particular business entity, or too much data, spanning multiple entities.</p>
+<p> If a portion of the data is supplied, then the Single View of X condition exists. Logic must be created to aggregate data from this source with other data. The proprietary interface would most likely be consumed within the implementation of a data aggregation service rather than being exposed directly as a service through a service enablement facade.</p>
+<p> If the interface spans multiple entities, then it might be useful for multiple consumers, indicating a service candidate because of its potential for reuse. This makes it a viable Connectivity Service candidate. If the interface returns exactly what is needed to represent an entity, then it would fall into the Foreign Source Data category.</p>
+<hr WIDTH="100%">
+<h4>Review Candidates and Create Candidate List</h4>
+<p>Review all functional services, use cases and business entities not yet covered by a shared service and therefore being marked as possible service candidates and analyze them from an enterprise-level perspective. Decide if the candidate is project-specific (and therefore can be abandoned as a SOA service) or if the candidate is appropriate to be analyzed further. Add all candidates to a candidate list. Mark those candidates that should be further analyzed and provide a reason for those that should be abandoned.</p>
+<hr WIDTH="100%">
+<h4>Define Service Boundaries by Classification</h4>
+<p>Given the candidate list created in the previous step, select all service candidates marked for further analysis. Follow the guidelines documented in the <a href="SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a> technique to split the service candidates along functional and architectural boundaries. This will include classification of the candidate with respect to a Business Category, the scope of usage and the architectural layer. On each boundary identified, the service will need to be split accordingly. </p>
+<p>For each new candidate identified from the boundaries, review the requirements from an enterprise-level perspective. Abandon those candidates specific to the project and find another implementation strategy for them that may still be a process (step) or use case (step) specific service, just not a SOA service. </p>
+<hr WIDTH="100%">
+<h4>Perform Reuse Validation </h4>
+<p>All candidates in the list marked for reuse are taken through the Reuse Validation process to determine if reuse is allowed. Authorization decisions are not solely based on security policy but also on supplemental requirements such as scalability, etc.</p>
+<h5>The Reuse Validation Process</h5>
+<p>Reuse Validation is used to determine if a proposed service reuse should be allowed to the project or not. This covers the instance where a service candidate has already been realized, or has been set to be realized, and a new project would like to reuse the asset. Carry out the following steps:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_RVP.PNG" alt="Reuse Validation Process" width="553" height="543" title="Reuse Validation Process"></p>
+<h6>Validate Requirements Match </h6>
+<p>During this step, you do a more thorough analysis to ensure that the existing asset being considered for reuse really satisfies the requirements of the project. If not all requirements are covered, consider revisiting the candidate identification and discovery steps to consider a candidate extension. </p>
+<h6>Validate Against Security Policies</h6>
+<p>During this step, you determine if reuse of the proposed asset is authorized. The owner of the asset should be consulted for authorization and it should be determined that there are no security restrictions preventing reuse. If ruse by the project is not authorized, then the reuse candidate is abandoned. The candidate could then be presented as a new service candidate. </p>
+<h6>Analyze Expected Capacity</h6>
+<p>This step is used to determine the required capacity or demand and verify if that is available within the current asset&rsquo;s hosting environment according to the usage agreement. If the capacity requirements are not currently available, it needs to be determined whether the asset's hosting environment can be expanded, otherwise, the reuse candidate has to be rejected. If there is capacity, then the candidate is approved for reuse. Otherwise, a new service candidate should be proposed that does provide the required capacity.</p>
+<h6>Plan for Capacity Expansion</h6>
+<p>If the necessary capacity is not currently available in the asset&rsquo;s hosting environment, but it has been determined that the environment should be extended, the appropriate extension plans need to be arranged to scale the environment accordingly. This activity needs to be linked with the projects delivery schedule. </p>
+<h6>Identify Alternative Solution</h6>
+<p>If a reuse cannot be validated, an alternative solution needs to be identified. In this case, consider a new service candidate reusing all assets of the matching service to be hosted on a separate environment. The enablement setup can then be adapted to the needs of the project.</p>
+<hr WIDTH="100%">
+<h4>Perform Candidate Justification</h4>
+<p>All new candidates in the list and all services that need to be changed for reuse (meaning that a new version needs to be proposed) will need to be justified. Rather than justifying by gut feeling, the process will use the scoring to rate benefits against risks. Candidates coming through these steps can also include proposed updates to existing shared assets. </p>
+<h5>Scoring System for Service Candidates</h5>
+<p>The values and categories proposed for scoring service candidates are intended to be a starting point for rating benefits and risks using a number schema. The scorings as proposed here have to be refined to develop a balanced scoring system that meets the needs and priorities of the enterprise. The scorings should be refined over time as the enterprise matures with SOA adoption. In order to do this, the scores should be reviewed periodically (e.g., once a year), to ensure it still captures the needs and priorities of the enterprise.</p>
+<p>The scores applied during candidate justification should be recorded with the services in the Service Portfolio (IP.014). Please review the score properties of the service asset as documented in the <a href="IT_ASSET_MANAGEMENT.HTM#SVMDD" target="_blank">IT Asset Management</a> technique for a suggested score list. All the scores are either identified as Realization Risk Scores, or as Realization Benefit Scores. If you add any scores for the customer, it is recommended that you classify them as one of these types. </p>
+<p>When you have scored a service, you can subtract the Total of the Realization <em>Risk Scores</em> from the Total of the Realization <em>Benefit Scores </em>to calculate a decision score. A negative value indicates a bias towards denying realization, while a positive value indicates a bias towards realization. A value close to zero would indicate further analysis may be necessary before making a decision. If the decision on justification does not follow the calculated decision score, this can be an indicator that the scoring system needs to be revised. In addition the decision score can help to identify the Enterprise Priority Score for the service.</p>
+<h5>The Candidate Justification Process</h5>
+<p>The Candidate Justification Process supports analysis of benefits and risks to determine if a proposed service candidate should be realized as a shared service or not. A candidate that is not justified is pushed back to the project for realization. </p>
+<p>For the candidate scores as suggested in the <a href="IT_ASSET_MANAGEMENT.HTM#SVMDD" target="_blank">IT Asset Management</a> technique, carry out the following steps</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_CJP.PNG" alt="Candidate Justification Process" width="726" height="553" title="Candidate Justification Process"> </p>
+<ol>
+  <li><b>Assign Scope and Score</b> - Determine the usage scope for the service candidate and assign the appropriate score. The scope is one of: Multi-Enterprise, Enterprise, LOB, or Application. </li>
+  <li><b>Assign Reuse Score</b> - Determine the estimated level of reuse that will result from the service candidate being realized and assign the appropriate score. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Agility Score</b> - Determine the estimated level of agility that will result from the service candidate being realized and assign the appropriate score. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Compliance Score</b> - Determine the estimated level of compliance that will result from the service candidate being realized and assign the appropriate score. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Enablement Score</b> - Determine the enablement score. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Skill Set Impact Score</b> - Determine the impact of realizing the service candidate as a shared asset against the skill-set available for realization. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Technology Capability Score</b> - Determine the impact of realizing the service candidate as a shared asset against the available technology required for realization. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign Project Impact Score</b> - Determine the impact of realizing the service candidate as a shared asset against the set of affected projects. Provide a description of why the particular score was selected.</li>
+  <li><b>Assign QoS Feasibility Score</b> - Determine the impact to QoS factors that will be incurred by realizing the service candidate as a shared asset. Provide a description of why the particular score was selected.</li>
+  <li><b>Analyze Score Data</b> - Analyze the scoring data and determine if the candidate should be realized. Review the scoring and calculate a base score by taking the sum of all benefit scores and subtracting all risk scores. A positive value indicates a good candidate, while a negative score indicates you should considered abandoning the candidate. The scoring information is not intended to create the decision, but to be used as valuable input for making the decision. If it happens that decisions are very often taken against the scoring result, the scores should be reviewed to get more applicable to the needs of the enterprise. It is a good practice to include a summary or assessment of risk and overall cost with respect to realization of the candidate as a shared service. For more information on the scoring system, refer to the <a href="IT_ASSET_MANAGEMENT.HTM#SP" target="_blank">Service Properties in the IT Asset Management</a> technique.</li>
+</ol>
+<hr WIDTH="100%">
+<h4>Assign Ownership and Register Service</h4>
+<p>All new candidates and new service versions that were further analyzed in the Justification process will be added to the Service Portfolio (IP.014) as part of the Enterprise Repository, including the classification information, the scores and the relationships to models, requirements and data entities. Those candidates justified will need to get the status &quot;proposed.&quot; All rejected candidates will be set to &quot;declined.&quot; Registering declined candidates will allow revising the justification in case the same candidate is identified more than once. </p>
+<p>For all validated services and all new service candidates, a usage agreement needs to be created in the Service Portfolio. Try to gather the expected load created against each service used by analyzing the models and requirements and reviewing the business estimations. Add the information to the usage agreement and attach any additional information available, further detailing the load estimations.</p>
+<p>Ensure an owner is assigned to each service asset created. New service versions should inherit the owner of the source version.</p>
+<h5>Managing Services in the Enterprise Repository</h5>
+<p>Recording service candidates, regardless of whether they are realized as shared services or not is an important enabler for Service Identification and Discovery. Realized service candidates already provide the linkage from requirements to the realized services and back, which is useful in doing reuse validation analysis. Unrealized service candidates that continue to be proposed as potential service candidates by additional projects provide an indication that it may be time to realize the candidate as a service.</p>
+<h5>Components of a Service</h5>
+<p>Service candidates consist of the information necessary to determine the proposed set of function provided through the service candidate, as well as information that can be used to determine whether the candidate should be realized as a shared service or process, or placed back as the responsibility of the originating project. The information stored with the service candidate can obviously be customized for a particular enterprise. Please review the Service Properties in the <a href="IT_ASSET_MANAGEMENT.HTM#SP" target="_blank">IT Asset Management</a> technique for a list of suggested properties. </p>
+<h6>Propose New Service Candidates and Define Change Requests for Reuse</h6>
+<p>For all services that need to be extended for reuse, create a change request for the new version proposed. The change request needs to clearly describe the difference in requirements between the versions. In addition the changes in the models related to the change request should be included.</p>
+<p>It is good practice to have another authority reviewing the service list including the new services and versions proposed, all usage agreements created, all change requests created and the results from the reuse validation and the justification processes. A Service Portfolio management team or enterprise architects not involved in the project are good candidates. </p>
+<p>For all agreed to decisions, the assets in the Enterprise Repository can be changed to justified and validated. Otherwise, the Service Identification and Discovery process and perhaps even the SOA Requirements Management process may have to be repeated. Also, the type of each requirement attached to the justified service candidates should now be set to &ldquo;Business Shared.&quot;</p>
+<h5>Managing Service Usage in the Enterprise Repository</h5>
+<p>SOA service consumption needs to be controlled, otherwise there is no way to manage resource utilization and establish any form of control over SOA. Controlling SOA service consumption means that consumers cannot simply discover and begin to utilize a service without going through a controlled approval process. With the approval, the consumer and service provider create a usage agreement. The usage agreement agrees concerns the contract provided by the service and needs to be agreed upon by both service consumer and provider. The consumer agrees to use the service in compliance with the contract and the expected load as documented in the usage agreement. The service provider agrees to provide the service as defined by the contract, ensures the capacity of the operations environment will cover the load of the consumer. A usage agreement may be changed over time due to dynamic markets, but when that happens each time the agreement needs to be approved upon again by both sides.</p>
+<p>Therefore, the usage agreement will need to document the expected load and service levels the contract partners plan to agree upon. Determining the load is an incremental procedure, starting with an initial estimation from business requirements. During requirements analysis, the business estimations on business success and usage of the solution will provide the needed metrics to estimate the expected load. The following figure depicts example charts showing the expected business increase in order management:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SERV_ID_EL.PNG" alt="Example Charts Showing the Expected Business Increase in Order Management" width="761" height="452" title="Example Charts Showing the Expected Business Increase in Order Management"> </p>
+<p>Applying the business estimations to the Function or Process Model or Use Case Model helps calculate the expected usage of a single service. This then translates into the details of the usage agreements for all services discovered for reuse, as well as the usage of new service candidates. The <a href="IT_ASSET_MANAGEMENT.HTM#SUAMDD">IT Asset Management</a> technique provides a detailed list of properties to be captured with the usage agreement. Try to fill all properties using assumptions if needed. The values will need to be revised later with the results taken from load testing. The usage requirements created for new service candidates will later impact the selection of a system ensuring the system can provide enough free capacity to the service candidates. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_070_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">BA.070 Identify Candidate Services (Envision) </a></div></th>
+    <td>Use this technique to identify candidate services with the help of models and requirements documents </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/IP_014_INVENTORY_SERVICES_OVERVIEW.HTM" target="_blank">IP.014 Inventory Services (Envision) </a></div></th>
+    <td>Use this technique to understand the justification process for a service through the analysis of benefits and risks. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/IP_020_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">IP.020 Analyze Services (Envision) </a></div></th>
+    <td>Use this technique to understand the justification process for a service through the analysis of benefits and risks. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_010_REVIEW_EA_PRINCIPLES_GUIDELINES_&_STDS_OVERVIEW.HTM" target="_blank">EA.010 Review Architecture Principles, Guidelines and Standards (Envision) </a></div></th>
+    <td>Use this technique to determine standard and guidelines for service discovery, identification and justification. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique to determine best practices around service identification and discovery.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/RA_025_IDENTIFY_CANDIDATE_SERVICES_OVERVIEW.HTM" target="_blank">RA.025 Identify Candidate Services (Implement) </a></div></th>
+    <td>Use this technique to identify candidate services with the help of models and requirements documents.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/AN_080_ANALYZE_SERVICES_OVERVIEW.HTM" target="_blank">AN.080 Analyze Services</a></div></th>
+    <td>Use this technique to understand the justification process for a service through the analysis of benefits and risks. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Does the list of service candidates include a justification of the candidates as being viable shared service candidates?</li>
+  <li>Does the Change Requests component contain change requests regarding existing services in case these should be reused? </li>
+  <li>Has a Change Request been created for the new version proposed?</li>
+  <li>Have all new candidates and new service versions been added to the Service Portfolio (as part of the Enterprise Repository)?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

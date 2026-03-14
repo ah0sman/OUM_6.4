@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Service Design Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SERVICE DESIGN</h2>
+<p>The purpose of this technique is to provide guidance on best practices for service design.</p>
+<p>Service Design, in addition to other types of design activities, is responsible for crafting the interface for a service. Although this sounds like a relatively straight forward task, one goal of service design is to come up with an interface that will maximize reuse while conforming to the demands of the service contract. The service interface must be designed with the consumer&rsquo;s needs in mind, but also with an eye towards the non-functional and service enablement requirements dictated through the service&rsquo;s contract. Therefore, service design may include a series of trade-offs where a balanced interface between consumer and contract are sought after.</p>
+<p>This technique mainly focuses on designing the service interface. The overall design of a service depends mainly on the reference architecture and the detailed design considerations on the different service types, i.e., layers in the service architecture. </p>
+<h4>Service Interface Design </h4>
+<p>The service interface design begins with the service contract that is defined through service definition. The service contract provides most of the information necessary to develop an interface that is geared towards fulfilling the contract. The second influencing factor for service interface design is the consumer. Analysis with respect to how consumers (and potential consumers) will utilize the service must also be considered in order to achieve a balance between maximizing service reusability and convenience for the consumers, but also an interface that meets the demands of the contract.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_APP.PNG" alt="Service Interface Design from Usage Agreement to Contract to Interface to Implementation" width="881" height="505" title="Service Interface Design from Usage Agreement to Contract to Interface to Implementation"></p>
+<p align="left">Once service design completes for a service, a few things can commence. The first is that the test cases can be created against the service interface. This allows the test case development to commence in parallel with the service implementation. Also, projects that are depending on the usage of the service can now incorporate the interface into the delivery efforts allowing development efforts requiring the service to proceed. Delivery teams may develop stub implementations for the interface that return crafted results for unit testing purposes.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_APP2.PNG" alt="Service Design Diagram" width="440" height="616" title="Service Design Diagram"></p>
+<p align="left">There is a common misconception that the service interface consists entirely of the physical artifacts which are deployed to physical systems and exposed through service infrastructure. This is partly true, in that the end result of service design produces the physical service interface, but how did the physical interface come to be? What decisions, considerations and trade-offs were made? What part of the contract is fulfilled by what portion of the interface? The answers to all of these questions (and more) must be documented as part of the service interface design.</p>
+<p>The interface design shares equal importance with the physical interface and it basically shows the work involved by going through the service design task. The interface will be described in a separate asset in the enterprise repository. Refer to the <a href="IT_ASSET_MANAGEMENT.HTM#SAIMDD" target="_blank">IT Asset Management</a> technique for a suggested format on documenting the interface design. The service design does not need to be a large document, but it does need to articulate the reasoning behind crafting the interface in the manner that it has been crafted. This information becomes especially useful if revisions to the service are later requested.</p>
+<p>Another important point to note is that the service interface is not completely resistant to change (without versioning) until the service has completed implementation (and testing). It is quite often impossible to completely define a service interface until all of the implementation details have been worked out (the same is potentially true for the contract also). Therefore, the interface (and possibly contract) may go through a number of iterations as the delivery effort moves forward. Typically these changes are minor and have little impact on dependant applications and test case development. The balance though, is to not get bogged down in design, and simply understand and plan for changes required as the implementation is flushed out.</p>
+<p>The service interface is not just a set of operations exposed through a standard protocol and transport. It represents a technical glimpse into how the service contract will be realized within the SOA. There are a number of influencing factors that affect the service design task and the overall crafting of the service interface. Influencing factors that affect service design include:</p>
+<ul>
+  <li>scope for which the service will be accessed</li>
+  <li>service category</li>
+  <li>functional and non-functional requirements</li>
+  <li>SOA service architecture</li>
+  <li>service infrastructure</li>
+</ul>
+<p>Each of these influencing factors is covered in more detail later on in this overview.</p>
+<h4>The Service Interface</h4>
+<p>The Service Interface represents the face of the service. It is the side that all consumers see and interact with. It also provides some of the means for which the contract of a service is fulfilled and plays a role across all functional and several non-functional requirements. The interface must be designed to fulfill the functional aspects of the service contract, but should also be designed to enable the non-functional requirements, as well as maximize its potential for reuse.</p>
+<p>The service interface is not necessarily a web service. Web services are a common approach, and do provide a standards based interface, however there are alternatives. The key requirements of an interface that needs to be considered during service design are as follows:</p>
+<ul>
+  <li>Utilize appropriate interface standards according to its service&rsquo;s determined scope: This means that different interface types may be acceptable at different scopes. For instance, it does not make any sense to provide an RMI interface for multi-enterprise services. However, if your service will be created at the application scope, and the application will be written in Java, then RMI is a viable option. The set of available interface standards should be identified in the Service Architecture.</li>
+  <li>The interface should be designed to enable Quality of Service (QoS): Many view SOA as being an inhibitor to QoS, but in many cases the inhibitor to QoS stems from a poorly designed interface. A traditional point-to-point RPC based interface utilizing fine grained operations will definitely be a QoS inhibitor when used at the enterprise level, but a document-style, loosely-coupled interface may perform quite well. </li>
+  <li>The interface should be designed agnostic to the consumer: It is true that the known consumers of the service must be taken into consideration, but so must the possibilities of unrealized consumers. Consideration needs to be given as to how the service may be used to satisfy other consumers that have not yet been identified yet. With that in mind, designing a service with specific elements tailored to a specific consumer should be avoided; otherwise future reusability may be compromised.</li>
+  <li>The interface should be defined in accordance with its category: The interface for a service defines the way that consumers will interact with it. The category or type of service needs to play a role in the feel that is created through the service interface. For instance, a consumer will typically interoperate with a business service performing a specific business activity differently than with a data service returning an aggregated customer record. The business service will be more function oriented, vs. the data service will be focused more on providing information. By taking a service&rsquo;s category into consideration, a consistent and easily recognizable pattern becomes attached to services of differing type, which assists in increasing reusability.</li>
+</ul>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Published Service Interface</b></p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Identify known and potential consumers. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Define the Interface Style.</td>
+    <td>Interface Style</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Define Interface Protocol and Transport.</td>
+    <td>Interface Protocol and Transport </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Model service operations. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Define Message Exchange Patterns. </td>
+    <td>Message Exchange Patterns</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Explore Implementation Paths. </td>
+    <td>Implementation Paths</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Define Message Structure.</td>
+    <td>Message Structure</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Cross check against the Service Architecture.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Cross check against the Service Contract. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Review the Interface Design with SOA Leadership </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Develop the Physical Service Interface. </td>
+    <td>Physical Service Interface </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Publish the Service Interface. </td>
+    <td>Physical Service Interface </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Service design begins with the service contract, and proceeds with the consumer and reuse in mind. When completed, the service design and interface represent the outputs from the service design task.</p>
+<p>Service design differs significantly from traditional application design, as the focus is not on how the service will be constructed, but rather, how the consumers will access and interact with the service. The implementation behind a service may change several times without impacting the service design, which is highly unlikely in the case of an application. When a service design is changed however, the impacts are typically significantly larger than in the application case.</p>
+<p>Further, one must consider how certain functional and non-functional requirements will be met. For example, a service might rely on a service bus to enforce security, etc. while another does not. There must be some way to capture this dependency as it has an effect on how a service needs to be offered. If a service bus is required, what needs to be said about the interface between the service bus and the implementation?</p>
+<p>The reasons for performing design, whether it is for a service or an application, are the same. Design represents a discipline within a larger process that is utilized to ensure both quality, and efficiency. Design also provides the technical reasoning behind the resulting interface, which provides a valuable tool when changes are required to be made to the interface. Interface design is of particular importance to an SOA, and one of the driving goals behind service design is to ensure that the interface created helps enable the SOA, rather than simply satisfy the needs of the known consumers. Quite often the success of any product is determined by its interface. SOA is no different.</p>
+<p>Service interfaces should not be designed for a specific consumer. The interface resulting from service design needs to be clear, concise and consistent. In order to be consistent, enterprise standards need to exist to ensure consistency. These standards should be defined in the SOA Reference Architecture. The crafting of service interfaces must be considered on the same level as crafting infrastructure interfaces, rather than simply creating a programmatic interface. It is quite possible that several of the services designed in an SOA will provide an infrastructure-like role (e.g. most utility services are used to fill infrastructure gaps).</p>
+<p>The steps for performing service design are as follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_APP3.PNG" alt="Steps for Performing Service Design" width="702" height="460" title="Steps for Performing Service Design"></p>
+<p>The steps initially focuses on looking at the service interface from all influencing angles and making any considerations necessary to meet the demands of the contract, SOA Service Architecture, consumers and potential consumers. The analysis is documented as part of the service design and cross-checked with the service contract and reviewed with the SOA Leadership team. Once complete, the physical service interface artifacts are developed and the interface is published for use.</p>
+<hr WIDTH="100%">
+<h4>Identify Known and Potential Consumers</h4>
+<p>The first step of service design is to identify the set of consumers and potential consumers that will make use of the service. Do not spend a great deal of time speculating on potential consumers, and limit your time to realistic scenarios. For each identified consumer describe the expected way the consumer will interact with the service, as well as the scope of the consumer. </p>
+<p><b>Note:</b> An interface should conform to the broadest scope reasonably imaginable to enable it to be promoted without a re-write.</p>
+<hr WIDTH="100%">
+<h4>Define the Interface Style</h4>
+<p>After the set of consumers have been identified, determine the interface style (or feel) that is most appropriate to service these consumers. Base the decision not only on consumer needs, but also on contract characteristics such as scope, category, and QoS demands. Interface style tends to have the largest impact on performance based QoS factors.</p>
+<hr WIDTH="100%">
+<h4>Define Interface Protocol and Transport</h4>
+<p>Determine the best protocol and transport that will be used to express the interface. The basis for this decision typically comes from examining the scope, QoS, and Service Enablement aspects of the service contract. </p>
+<hr WIDTH="100%">
+<h4>Model Service Operations</h4>
+<p>Design the set of operations (or functions) that will be exposed directly through the interface. In a document styled interface fewer operations of courser grained function are prevalent, versus a function styled interface where more operations of finer grain are prevalent. For each operation provide the following:</p>
+<ul>
+  <li>description</li>
+  <li>requirements</li>
+  <li>transactional support</li>
+  <li>message structure</li>
+</ul>
+<hr WIDTH="100%">
+<h4>Define Message Exchange Patterns</h4>
+<p>Define the message exchange patterns that consumers will be utilizing to interact with the service. Typically, only a single pattern is applicable to a service interface. </p>
+<hr WIDTH="100%">
+<h4>Explore Implementation Paths</h4>
+<p>Take a little time here to examine how the interface will be implemented. There will be a chance to iterate and refine the service interface while implementation is ongoing, however, it makes things move a little smoother if some of the implementation details are flushed out at this point and reflected in the interface when appropriate. In particular it is vital at this point that a check is made to understand if this will be a unique implementation or if another service &ldquo;implements&rdquo; the same service candidate. If the interface is not unique for the service candidate, then check if the interfaces can share the same implementation, maximizing reuse.</p>
+<hr WIDTH="100%">
+<h4>Design Message Structure</h4>
+<p>The message structure is typically shaped by the interface style selected previously. The message structure defines the data formats for input and output for the service. As with the other aspects of the service interface, the message structure should be designed in a way that will facilitate ease of use as well as fulfill the requirements of the contract. </p>
+<p><b>Example:</b> A document style interface has been selected for an enterprise class data service. Through this service the consumers receive the complete data entity as a single document. When changes are made to the entity, the entire document is sent back through the service in order to have the data updated in the persistent storage systems. Since the data entity may consist of a significant amount of data, the document has been broken down into manageable smaller pieces containing data that is typically updated together. The document is also modeled to allow a partial document to be created. This allows the consumer to strip out the portions of the document that will not be updated and send that back through the update operation. This allows not only less data to be sent over the network, but also limits that amount of work that needs to be completed through the service implementation required to update the data as unchanged data is not examined. </p>
+<hr WIDTH="100%">
+<h4>Cross Check against the Service Architecture</h4>
+<p>One of the guiding principals that influences the entire set of service-related tasks is the Service Architecture. This component provides architecturally significant guidance with respect to all services within the SOA, as well as specific guidance around services within a specific scope or category. Refer to the <a href="SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> technique for more information. </p>
+<p>There are several topics covered within the Service Architecture that more than likely will affect Service Design. The services versioning strategy is a good example. It is quite common for various versioning strategies to expose some of the information passed (e.g., consumer ID, service version, etc) as part of the interface. Other areas of the Service Architecture that may influence the service interface include: Compensating Transaction support; Service Invocation Strategy; and Service Security Strategy. Examine the interface for the service and ensure that it conforms to the appropriate guidelines identified within the Service Architecture.</p>
+<p>Check the enterprise repository for any architectural policies that apply for the service and impact the interface design. Depending on the scope of the service, there may be policies on the compliance of the message structure to any canonical data model or special security considerations. </p>
+<hr WIDTH="100%">
+<h4>Cross Check against the Service Contract</h4>
+<p>Now that the first pass at the service design has been completed, it is a good practice to review the interface against the service contract to ensure that it will be able to meet the demands stated in the contract. </p>
+<hr WIDTH="100%">
+<h4>Review the Interface Design</h4>
+<p>Once the service interface has been designed and cross-checked against the contract it is ready to be reviewed for quality assurance. Typically, this is done by an enterprise architect or an architect of another team reviewing all the design decisions. To review the interface design, examine the service interface to ensure contract conformance, as well as conformance to any policies assigned in the enterprise repository. Any deviations from the SOA Service Architecture guidelines or policies need to be justified and approved by the SOA leadership team. </p>
+<hr WIDTH="100%">
+<h4>Develop the Physical Service Interface</h4>
+<p>The physical service interface artifacts can now be developed. In the case of web services this typically consists of the WSDL and relevant XML Schemas. Consider creating a WSDL to document the service interface for any kind of interface style. This ensures that message structures and operations are documented in a standard way allowing for tools being used to generate test stubs or mock objects. </p>
+<hr WIDTH="100%">
+<h4>Publish the Service Interface</h4>
+<p>The physical interface and its design can now be published to the enterprise service repository. The interface is now available to project delivery teams and test teams.</p>
+<hr WIDTH="100%">
+<h4>The Impact of Scope on Service Design</h4>
+<p>The scope for which the service will reside in the SOA plays a key role in choosing the style of interface that will be developed for the service. Consider the illustration below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_APP4.PNG" alt="Illustration of Impact of Scope on Service Design" width="877" height="503" title="Illustration of Impact of Scope on Service Design"></p>
+<p>Scope plays a major role in determining the interface style and data formats that will be crafted into the service interface. As scope increases, so typically, does the number of potential consumers. Larger scoped services can typically benefit from a document styled interface as these interfaces tend to cut down on the number of requests required to the service by a single consumer. The trade-off here, or course, is that more data is transported between the service and the consumer. Document style interfaces also provide a lot of flexibility through service infrastructure that supports content based routing, as well as data transformations and aggregations. </p>
+<p>The requirements regarding stability of the interface design rise with the scope of the service. Therefore, the selection of the data entities and style used in the message design will be impacted by the scope as well. Read more about the usage of the <a href="#CDM">Canonical Data Model (CDM)</a> later in this technique overview. </p>
+<hr WIDTH="100%">
+<h4>XML Design Considerations</h4>
+<p>XML has become a common data interchange mechanism used within SOAs. With this in mind, XML quite often represents the data model with respect to the SOA, and is therefore a critical component. The definition of data structures and interfaces in XML should not be taken lightly and an overall strategy for incorporating and dealing with XML within the enterprise is definitely necessary. Any changes required to XML data structures can have a massive impact on highly reused components of an SOA. Therefore, the XML must be designed to accommodate change while minimizing the impact on consumers that do not need to be aware of the change. One of the benefits of SOA is to increase an enterprise&rsquo;s IT and Business agility. If you design rigid interface however, this purpose is defeated.</p>
+<p>Similar to services themselves, a proper versioning strategy should also be incorporated within data structure design. This will allow documents of various versions to be routed to the correct service provider through service infrastructure. Also, the incorporation of optional fields within XML allows for additions to document structures without requiring consuming applications to change.</p>
+<p>Every time an XML document is modeled you need to take the following factors into account:</p>
+<ul>
+  <li>performance</li>
+  <li>security</li>
+  <li>extensibility</li>
+  <li>reusability</li>
+  <li>data access</li>
+</ul>
+<p>These factors do not only affect the way XML represents data, but also any supplementary technologies (such as parsers) will behave when working with the XML data. Below is a flavor of some of the things that you may not have considered which are determined through XML design:</p>
+<ul>
+  <li>bandwidth requirements for transmitting data as XML</li>
+  <li>processing requirements for parsing and/or validating the XML data</li>
+  <li>design and processing requirements for transformations of the data modeled (such as through XSLT or XQuery)</li>
+  <li>the ability to secure the document or portions of the document</li>
+  <li>the extensibility of the document or data structure</li>
+  <li>the ability to share portions of the document or data structure</li>
+  <li>the quality, with respect to the consumers, regarding the data representation</li>
+</ul>
+<p>The following are best practices that you should consider when designing XML data structures.</p>
+<h5>Extensibility and Reusability</h5>
+<p>In order to maximize Extensibility and Reusability within XML design consider the following:</p>
+<ul>
+  <li>Use child elements instead of attributes when defining the document&rsquo;s structure. If you are certain that an element will never be broken down further, then you can use attribute, or if performance must be maximized.</li>
+  <li>Use generic names for element types.</li>
+  <li>Partition larger documents into separate, smaller XML schemas. This strategy promotes reuse. For instance, if a customer document consists of a order history, and address components, define the order history, and address components in separate XML schemas and link them into the Customer schema. This will allow the order history schema and address schemas to be reused elsewhere.</li>
+  <li>Try to avoid hard-coding of namespace references. Bind these at runtime wherever feasible.</li>
+  <li>Try to avoid element recursion. Allowing elements to be embedded within themselves may cause you to lose control of how many levels a document may become. It also becomes difficult to get a handle on the estimated document size, and performance impact it may have on XML processing technology.</li>
+  <li>Make use of the XSD schema element any to maximize extensibility options.</li>
+  <li>Make use of optional elements to allow for extensibility, as well as sending portions of a document to minimize resource impacts.</li>
+</ul>
+<h5>Trim Documents for Consumers</h5>
+<p>If a document is designed correctly, it can be trimmed to meet a specific consumers needs. This technique, basically has a consumer (or event service infrastructure) trimming off the portions of an XML document that is not needed. This can be done in a consumer-specific proxy service using a translation (XSLT), or if optional elements are present, by removing them. This ensures that the consumer only has to deal with the information which it is interested in, as well as prevents overhead if the data is sent on after the consumer has completed work on it. This technique also allows the service provider to produce the full document making it as highly reusable as possible. </p>
+<p>Depending on the service bus tool, consumer-specific proxies can be configured in the service bus hiding the more complex and generic interface of the service provider. In this scenario, the interface of the service provider is the private interface only available at the service bus layer. However, the service bus can provide a set of public interfaces to the different consumers allowing for consumer-optimized interfaces.</p>
+<h5>Naming Element Types</h5>
+<p>The names you give the various elements types and attributes within your XML schema have an effect on performance, since large names increase the documents size and processing overhead. Small names on the other hand, may be difficult to understand. Try to create a balance between legibility and performance, but most of all, be consistent. If documents are going to be more internal facing or finer grained, then it is safe to use more cryptic naming for the sake of performance. Courser grained documents for higher-level eyes may want to be leaned towards the legibility side. This represents a good balance, since typically there are more calls and performance requirements on the lower level, finer grained services, than those that sit higher up in the architecture.</p>
+<p>One good practice that could be incorporated into the schemas of documents that use a cryptic naming convention is to incorporate a Legend element. This is an optional element that would never be passed with the actual data, but provides a description for each name for the purpose of the one reading the schema.</p>
+<p>Another practice is to utilize the parent element as part of the naming convention. For instance consider the case of a Customer record with the order history attached. Instead of using something like OrderItemID, and OrderItemDescription, etc, define an element called OrderItem, and have ID, and Description attributes of OrderItem. This is a very basic example, but it is effective in getting the point across.</p>
+<p>Yet another alternative, is to use a compression API when transmitting your document, this will not save on processing impacts (parsing, etc), but will save on transmission bandwidth. Just make sure that the overhead of compressing and decompressing of the document does not add more overhead than saved by transmitting the complete document over the network.</p>
+<p><b>Note:</b> For move extensive information on XML design with respect to SOA, you should check out Thomas Erl&rsquo;s &ldquo;Service-Oriented Architecture: A Field Guide to Integrating XML and Web Services&rdquo;.</p>
+<hr WIDTH="100%">
+<h4>Use of Canonical Message Model (CMM) </h4>
+<p>A Canonical Message Model (CMM) applies a Canonical Data Model (CDM) to message formats by constructing message structures, elements and attributes using canonical data. </p>
+<h5><a name="CDM"></a>Canonical Data Models (CDM) </h5>
+<p>A Canonical Data Model (CDM) defines a common data format to simplify communication. If systems use individual data formats, a CDM can be used as a translation intermediary. Over time, new services and systems should adopt the CDM as their natural language to apply a common data taxonomy across the enterprise. A CDM can be managed with the Enterprise Domain Model.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_CDM.PNG" alt="Illustration of a Canonical Data Model Managed with the Enterprise Domain Model" width="779" height="371" title="Illustration of a Canonical Data Model Managed with the Enterprise Domain Model"></p>
+<p align="left">When following the approach of ownership for enterprise data modeling (refer to the <a href="EDM_DATA_OWN_APPROACH.HTM" target="_blank">Enterprise Domain Model - Data Ownership Approach</a> technique), each semantic community may create their own logical data model and based on that model can manage its own CDM domain. Common entities used across the communities should be moved to an enterprise CDM. Use the data flow to ensure the needed attributes for communication across communities are included in enterprise CDM. Try to keep it small and simple.</p>
+<p align="left"> All data entities that are part of one of the CDMs should be managed in the enterprise repository. Refer to the <a href="IT_ASSET_MANAGEMENT.HTM#EMDD" target="_blank">IT Asset Management</a> technique for a suggested meta model for data entities. Depending on the classification against the enterprise data model, the entity becomes a member of the corresponding CDM.</p>
+<h5 align="left">Canonical Message Models (CMM) </h5>
+<p align="left">A Canonical Message Model (CMM) implements a CDM based on XML providing schema designs (XSD) for all entities assigned to a CDM. These implementations of a data entity can be used for message structure definition in the service interfaces (WSDL). After having identified the data entities needed in the interface of a service check the enterprise repository top down for entity assets available as part of one of the CDM domains. Start with the enterprise CDM and then follow top down the data decomposition path of the enterprise data model. If an entity asset already exists reuse the entity by using the linked XSD file without change. You can add additional attributes needed by creating your own entity using the CDM entity as one attribute. Create a relationship between the interface asset and the entity asset to document usage of the entity as part of the interface.</p>
+<p align="left"> A CMM can help to standardize interfaces within the same CDM domain and therefore will ease service reuse. For integration with consumers of other communities standard transformations (XSLT) can be used on infrastructure level, e.g., the service bus, to automatically translate between CDM domains. </p>
+<h5 align="left">Version Management of CDM</h5>
+<p align="left">The reuse of data entities across interfaces will imply special considerations on version management:</p>
+<ul>
+  <li> You cannot delete an existing element as long as there is at least one internal or external user.</li>
+  <li> You cannot rename an existing element. </li>
+  <li> You cannot move an existing element. </li>
+  <li> You cannot make an existing optional element required as long as there is at least one user not using that element. </li>
+  <li>You cannot make something that is repeating and make it not repeat as long as there is at least one user still using repeating.</li>
+  <li> Always review proposed changes to the model with respect to efficiency versus relevance to avoid rising complexity over time</li>
+</ul>
+<p align="left"> To allow evolution of CMM ensure all interfaces always use the latest possible version of an entity. New interface will always need to use the latest version available. Try to provide XSLT transformations between versions to document a migration path to integrate consumers and services linked to different versions of the CDM. Depending on the service bus the XSLT can be used to automate consumer migration.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SD_VMCDM.PNG" alt="Evolution of Canonical Message Models" width="793" height="405" title="Evolution of Canonical Message Models"></p>
+<h5 align="left">Design Guidelines</h5>
+<p align="left">Ensure that the style and conventions used to design the entities are common across the enterprise. Specifically avoid the use of version numbers in the formats to allow for mixed communication with different versions. Ensure that the entities are defined generic allowing for enhancements. The usage of typecodes can help on this. But ensure that a common approach on typecode definitions is used. Select either an attribute or an element to document the typecode.</p>
+<p align="left"> In order to avoid high integration costs for service reuse, trust in the stability of the interface and the reliability of data provided by the services is key. Use governance policies to ensure common usage of CMM and manage evolution centrally in accordance with any data standards of the different CDM domains. Reduce CDM to the minimum needed ensuring relevance of information with minimal amount of data.</p>
+<p align="left"> Try to avoid transformations where possible. Therefore ensure changes to CMM will not impact interface design by using optional as much as possible. But encourage the use of transformations to ease reuse cross various semantic domains.</p>
+<h5 align="left">Adoption of Industry Reference Data Models</h5>
+<p align="left">In the different industries there may be industry accepted reference data models available. Standard committees like eTOM and Acord try to define generic CDMs to be used across the industry. Oracle provides a cross industry reference data model as part of AIA. Often these standards become importance for B2B communication in that industry sector. Therefore adoption of an industry reference data model should be applied on enterprise level. Typically these standards provide XSD schema files already to be used in service interfaces.</p>
+<p align="left"> For an organization to adopt an industry reference data model, the data requirements of the organization will need to be checked against the CDM. Often only parts of the industry CDM are applicable and then the CDM should be trimmed to use only the relevant parts. Identify the missed business domains and check for other already available enhancement options. Some of these industry data models are enhanced by special interest groups.</p>
+<p align="left"> Industry standard data models apply to the process models defined as part of that standard. If the whole model including the processes should be applied to the organization, the interfaces used for communication will already comply with the CDM. But often the processes need to be changed or enhanced or only the data model shall be applied. This may result in different data requirements. In that case consider enhancing the industry CDM by CDM domains applying the needed changes. This will ensure that the industry model is kept unchanged at enterprise level, making it easier to synchronize the model with new versions of the industry standard. In addition this will ensure services with multi-enterprise scope stay compliant with the industry standard. On the other side you can enhance, change or transform entities depending on integration issues with any existing application or special data considerations.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<p><a NAME="Usage" id="Usage"></a><b>TECHNIQUE USAGE </b></p>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/EA_095_REVIEW_ENT_SW_DEV_PROCESS_OVERVIEW.HTM" target="_blank">EA.095 Review Enterprise Software Development Process (Envision) </a></div></th>
+    <td>Use this technique to identify details of the customer's service development process as related to SOA Services. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../OUM/020_METHOD_GUIDELINES/030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">DS.120 Design Services </a></div></th>
+    <td>Use this technique to assist in understanding Detail Services design. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Have the appropriate interface standards been utilized? </li>
+  <li>Has the interface been designed to enable Quality of Service (QoS)?</li>
+  <li>Is the Service interface design agnostic to the consumer?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

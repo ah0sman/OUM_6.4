@@ -1,0 +1,631 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Capacity Planning Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>SOA CAPACITY PLANNING</h2>
+<p>The purpose of this technique is to provide guidelines for capacity planning when using a service-oriented architecture. The shared nature of SOA makes capacity planning particularly difficult. You can no longer simply plan for the capacity of projects and applications independently, but must consider the services that they will consume and the amount of consumption required by each consumer. Further, you must ensure that in allocating additional consumption you do not inadvertently cause the service or other services sharing the same resources to begin violating expected SLA levels.</p>
+<p> SOA capacity planning is much more than simply analyzing hardware utilizations on average and at peak and doing a quick computation with respect to how much can be allocated before the physical resource maximums are reached. It requires that limits be measured for existing services to determine where SLAs begin to break down. It also requires an understanding of how much additional resources will be required to support usage estimates for a new service consumer which can be analyzed against what is left over to prevent SLA violations.</p>
+<p>Further, if consumption monitoring is not in place for the operational environment then there is no way to get an estimate of accuracy with respect to current consumption levels. Also, if consumption is not being managed, then there is no way to predict available capacity as it may be completely and unexpectedly maxed out at any time.</p>
+<p><b>Requirements: Capacity Planning </b></p>
+<p>The following represent the potential high-level requirements for capacity planning within a SOA: </p>
+<ul>
+  <li>Hardware resource consumption levels must be averaged over predetermined time periods.</li>
+  <li>Peak hardware resource consumption levels must be recorded.</li>
+  <li>Traceability from service operations through components utilized to implement the operation back to the hosting hardware must be established.</li>
+  <li>Traceability from service operation back through its defining service interface and onto the overall service must be established.</li>
+  <li>Historical operation usage must be totaled over predetermined time periods. </li>
+  <li>The time periods established to record service operation usage must correlate to the same time periods used to measure hardware resource consumption levels.</li>
+  <li>Maximum resource footprints need to be determined on a per-service operation basis. The maximum is established at a point where additional resource utilization will result in failed service contract level SLAs (such as response time violations, or operational errors). This does not necessarily correlate directly to the physical maximum for the hardware under normal performance tuning guidelines.</li>
+  <li>Average response times under expected load and peak (or max) loads should be established on a per operation basis through the use of a controlled environment prior to deploying a service (or new service version) into a production environment.</li>
+  <li>Average resource footprints under expected load and peak (or max) loads must be established on a per operation basis through the use of a controlled environment prior to deploying a service (or new service version) into a production environment.</li>
+  <li>Service versions must be revalidated for capacity prior to deploying a new service version.</li>
+</ul>
+<p><b>Strategy: Capacity Planning </b></p>
+<p>If an organization waits until a service is operational before thinking about provisioning, then they have waited too long. Once a service is deployed, it is no longer in a completely controllable environment. </p>
+<p>The capacity planning process for a service begins when it is defined, and ends when it is retired. This allows for the appropriate provisions to be taken during planning and design to forecast the expected service usage. Further, implementation details may be necessary to ensure that consumption is, at a minimum, monitored. This allows the usage data to be correlated to utilization levels in order to establish overhead and estimate accuracy. Also, during service delivery, the opportunity should be taken to test the service in isolation to establish the relationship between throughput and operational footprints in addition to establishing utilization thresholds with respect to expected SLAs established in the service&rsquo;s contract. Finally, the engineering process should take into account any specialized types of usage agreements that may be established with this particular service which may need to be engineered into the service.</p>
+<h4><b>The Capacity Planning Process</b></h4>
+<p> Capacity planning activities take place throughout the service lifecycle. The illustration below depicts the capacity planning aspects in context of the service lifecycle.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CPP.PNG" alt="Capacity Planning Aspects in Context of the Service Lifecycle" width="480" height="547" title="Capacity Planning Aspects in Context of the Service Lifecycle"></p>
+<p>After a service is defined, capacity forecasting should take place to forecast the expected usage for the service over a forward looking time period. This information combined with the information collected during isolation testing provide the basis for deployment planning for the service in addition to the baseline data used to measure the impact of allocating more capacity to the service when handling future provisioning requests.</p>
+<p>Once deployed, a service enters its steady-state environment until one of the following three conditions takes place:</p>
+<ol>
+  <li>The service needs to be updated. In this case the service will revisit the appropriate service delivery activities.</li>
+  <li>A consumer requests to consumer the service. In this case, the request needs to be validated and approved based on capacity planning data available.</li>
+  <li>The service is retired. In this case the service will be decommissioned and the capacity lifecycle ends for the service.</li>
+</ol>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>SOA Capacity Plan</b> - The SOA Capacity Plan contains a capacity plan for the services to be deployed in a SOA. That includes a capacity forecast for each service to be deployed, what kind of utilization levels will be required, as well as the required bandwidth for each service consumer request. It also includes all the required instrumentation data you will need to determine this, and to validate its accuracy. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Establish capacity forecast.</td>
+    <td>Capacity Forecast </td>
+    <td> The Capacity Forecast contains a Service capacity forecast which includes the result of an analysis of the expected current and future consumption of the services from a potential consumer standpoint.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Perform service deployment planning. </td>
+    <td>Service Deployment Planning </td>
+    <td>The Service Deployment Planning describes the current utilization levels, which includes service consumption rates, as well as the forecasted consumption for the service to be deployed. The component also includes forecasts for the existing services that are deployed on the target environments.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Manage consumption. </td>
+    <td>Data Authorities </td>
+    <td>The Capacity Validation includes for each consumer request to consume a shared service to determine whether the request may be granted with the current bandwidth, or whether additional bandwidth will be required before the request is granted.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Validate accuracy. </td>
+    <td>Accuracy Validation </td>
+    <td>The Accuracy Validation includes the result from monitoring service consumption against the production environment to understand whether the test effort is returning valid results. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine service versioning impact. </td>
+    <td>Service Versioning Capacity Impact </td>
+    <td>The Service Versioning Capacity Impact includes the results from a revalidation of the service from a capacity perspective.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Determine instrumentation entities support of capacity planning. </td>
+    <td>Capacity Planning Instrumentation Entities </td>
+    <td>The Capacity Planning Instrumentation Entities includes a definition of the instrumentation entities that are required for capacity planning including their relationships.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Determine service engineering instrumentation data. </td>
+    <td>Service Engineering Instrumentation Data </td>
+    <td>The Service Engineering Instrumentation Data includes a definition of the required service engineering instrumentation data that will play a role to support capacity planning throughout the service lifecycle.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">8</th>
+    <td>Determine technology and runtime instrumentation data.</td>
+    <td>Technology and Runtime Instrumentation Data </td>
+    <td>The Technology and Runtime Instrumentation Data includes a definition of the required technology and runtime instrumentation data that will be required to be able to perform cross-checks to validate accuracy and compute operational overhead.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Establish Capacity Forecast</h4>
+<p>Once a service candidate has been approved for realization, and is scheduled for release it enters into Service Delivery. The first stage of Service Delivery is Service Definition, where service boundaries are defined and followed by the realization of the service&rsquo;s contract (producer contract). At this stage it is also appropriate to perform capacity forecasting for the service.</p>
+<p>Service capacity forecasting is very similar to the exercise of doing capacity planning for an application; only in this case you are analyzing the expected current and future consumption of the service from a potential consumer standpoint. This is important because the forecasted capacity for the service will be an important determining factor in service deployment, as an environment that can handle the currently expected capacity, and grow to support the forecasted capacity must be selected for the implementation components of the service.</p>
+<p>It is important to instrument the service capacity forecasts as they will play a role in consumption management (service provisioning) as well as environment planning for future services.</p>
+<hr WIDTH="100%">
+<h4>Perform Service Deployment Planning </h4>
+<p>Deployment planning begins with understanding current utilization levels, which includes service consumption rates, in addition to examining the forecasted consumption for the service to be deployed. Further, the forecasts for the existing services deployed on the target environments must also be considered in the exercise.</p>
+<p>Another aspect that needs to be considered is the maximum resource levels that can be sustained in the environment without breaking previously established SLAs. This boundary may not simply be the physical maximum of the resources on the hardware. For instance, a service may have a contracted SLA indicating that a particular operation will return in under one second. Further, this operation has been deployed on a four CPU server which can sustain a load average of up to 8.0 before experiencing a condition known as CPU thrashing, where response times increase exponentially with respect to increasing load. Therefore, 8.0 is the physical maximum for CPU load average on the server. However, during testing it was discovered that the SLA for the service could not be sustained when a load average greater than 6.8 was observed. This means, that the maximum load that this server can sustain is 6.8 while maintaining its established SLAs for the service operation. Therefore, when inspecting the viability of a particular host for a service the physical capacity available for new consumption is bound by the SLA barriers established by the service contracts governing the relevant components of the implementation hosted on the hardware.</p>
+<p>In order to perform deployment planning with any level of accuracy, information instrumented from the operational environment and data instrumented through service testing must be utilized. The data collected through testing provides the basis for understanding how much resource impact the new service will have on its hosting environments upon deployment under different load conditions. The data collected from production will provide the basis for determining accuracy in capacity estimates in addition to providing an overall gauge with respect to overhead. Further, the production data provides information needed to create a set of blended test scenarios that more closely maps the operating conditions that the potential service may be deployed in.</p>
+<p>The production data needed requires that consumption be monitored for each service operation. This allows the deployment planners (and later those doing commissioning) to have the necessary data needed to simulate usage patterns, measure load-estimate accuracy, and estimate the amount of resources available for additional consumption of existing services or those available for hosting new services.</p>
+<p>The rest of the data needed to support the capacity planning processes, such as deployment planning and service provisioning comes from service testing. The service testing strategy needs to include a suite of tests required to support the capacity planning processes.</p>
+<p>The test environment is ideal for capacity planning because the environment is completely controlled (and if it is not a controlled environment, then a best practice would be to make it one!). The fact that the environment is controlled enables the tests to provide resource consumption levels isolated from the service. Therefore, estimates with respect to resource SLA barriers and average resource increment for additional load can be established from the test environment. Further, the amount of resource bandwidth required for a new service deployment can be gleaned through these tests.</p>
+<p>When a suitable hosting environment is established for a service a certain amount of bandwidth should be allocated for the service. This does not necessarily need to be enough bandwidth to fulfill the entire capacity forecast, but it should be enough to scale the service for sometime before the expansion is required. The bandwidth needs to be instrumented so that when future consumption requests are encountered for the service the available bandwidth allocated to the service can be examined. If the bandwidth will be exceeded then a decision on expansion feasibility will be necessary, or perhaps limiting the amount of consumption for the new consumer will be necessary. An example is illustrated below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_RBE.PNG" alt="Resource Bandwidth Example" width="560" height="380" title="Resource Bandwidth Example"></p>
+<p>If the hosting server has four CPUs then the physical maximum is a load average of 8.0. However, the example illustrates the maximum of 7.0 as this is what is required in order to sustain SLAs for all services utilizing the hardware. From the example above Service Y is allowed to utilize a load average of 1.5 of the overall 7.0. Therefore it should be tuned to not exceed that level of CPU load. This type of tuning is typically only necessary in environments where non-uniform resource consumption patterns exist across co-deployed servers. For instance, if one service typically performs long running, CPU intensive operations; and another service is performing short running, IO intensive operations; then the resource consumption pattern is considered to be non-uniform. If all services generally have the same kind of resource consumption pattern, then it is considered to be uniform, and independent bandwidth allocation is not necessary. A good example of uniform resource consumption would be the use of an enterprise service bus doing service routing activities. In this case, most of the operations requiring resources will take a similar amount of resources to complete.</p>
+<p>Another alternative is to utilize a priority based system for non-uniform resource consumption patterns, where lower priority services give way to higher priority ones. Typically higher priority services are determined by the severity of their SLAs; where higher SLA levels will result in a higher priority setting. This type of tuning system makes SLA guarantees much more difficult to sustain, but does result in more optimal usage of system resources.</p>
+<p>Regardless of the tuning system or strategy, currently it is not possible to get a perfect match. Therefore, regardless of the strategy chosen, instrumentation should be utilized to monitor the expected SLAs and possibly even send alerts when SLAs are close to being exceeded for a sustained period of time.</p>
+<blockquote>
+  <p><b>Note:</b> The load average CPU measurement is a neutral CPU resource consumption indicator and provides a powerful tool in SOA performance engineering. Measuring CPU percentage is a non-neutral indicator as it begins to indicate its maximum value when the machine is only 50% loaded. Further CPU percentage does not consider throughput and therefore you cannot use it to gauge the difference in overall CPU consumption between two different types of operations.</p>
+  <p>Load average is a useful indicator because it can be used to compare CPU consumption regardless of the nature of the work being done by the CPU on behalf of the service. If a server has N CPUs then its CPU resource is considered to be completely consumed when a load average of 2.0 x N is reached. This means, that on average, there is an operation on the CPU and one and only one additional operation waiting for each CPU. Anything higher will cause the CPU resource to backup, and response times will begin to increase exponentially with increasing load. If a CPU percentage indicator is used the CPUs will show 100% utilized with a load average of N. This is misleading as the server is only really half loaded at that time. Further, CPU percentage is indicative of the amount of throughput being placed on the CPU.</p>
+  <p>For instance consider two separate services that perform fundamentally different types of operations. One service is a forecast service that gathers a great deal of information and then spends a great deal of time parsing and transforming results before completion. Another service simply hits a database and returns the result back to the caller. If each service is given 2.0 for a load average bandwidth, then they are both allowed to send equal load through the CPU. For the second service with the short running operations, this means that it will be able to sustain a much higher throughput level than the other service since its transactions are shorter and require very little CPU. The other service will be constrained to a much smaller throughput as each operation spends much longer on the CPU. If a throttling strategy is going to be used to control resource consumption then the first service (with the lengthy and CPU intensive operations) would be allocated very few worker threads. The second service would be provided significantly more worker threads. Finally, if the consumption forecast for the first service demands a large throughput, then this service may need to be deployed on its own hardware with a large number of CPUs, horizontally scaled across many servers, or possibly re-engineered to perform its operations more efficiently.</p>
+  <p>The important concept is that when throttling is used (and measured using load averages), it prevents a single service from utilizing more of the CPU resource than allocated to it, which allows for the prevention of a single service adversely affecting how much resource is available for other services.</p>
+</blockquote>
+<p>As mentioned earlier, testing plays a large role in establishing the information necessary to perform deployment planning and consumption management effectively. The following sets of tests should be executed against each service during the test cycles and after any significant changes for the purpose of supporting the capacity planning processes.</p>
+<ol>
+  <li><b>SLA Barrier Isolation Test:</b> This test determines the maximum resource footprint (using neutral indicators) that can be sustained before the service&rsquo;s contracted SLAs will be broken. This process is used to establish the SLA Barriers for the service.</li>
+  <li><b>Resource Increment Test:</b> This test determines the effect of increasing throughput with respect to resource utilization. This information is beneficial to the consumption management where the effect of adding more load to a host environment can be estimated.</li>
+</ol>
+<p>These tests are described in detail below:</p>
+<h5>SLA Barrier Isolation Test</h5>
+<p>This test measures the overall performance that a service will provide at various levels of resource consumption. It needs to be executed for every operation that can be uniquely provisioned for the service. A best practice would be to execute the test for every operation.</p>
+<p>The illustration below provides the expected output from executing a SLA Barrier Isolation test against an operation.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_ICLSS.PNG" alt="Illustration of the Expected Output from Executing a SLA Barrier Isolation Test against an Operation" width="404" height="378" title="Illustration of the Expected Output from Executing a SLA Barrier Isolation Test against an Operation"></p>
+<p align="center"><b>Infrastructure Capacity Limits vs Service SLAs</b></p>
+<p>When the test is performed it commences with a throughput of zero. Load is then uniformly added in increments. Response times and resource utilizations are observed and recorded at each increment in load. When SLA Barriers are exceeded the increment is noted. Upon the breaking of the SLA barriers, the maximum resource utilization is recorded as the resource utilization recorded during the previous load increment. The test continues until a non-linear increase in response time is recorded when incrementing load. This indicates that the physical maximum has been reached for one or more resources (the breaking point has been exceeded). Obviously the most desirable result is that the SLA Barrier for an operation is not reached until it is very near the physical resource barrier (or breaking point).</p>
+<p>For each operation a linear equation is recorded as follows for each resource measured:</p>
+<blockquote>
+  <p>RT = m x RU + b</p>
+</blockquote>
+<p>Where RT is response time and RU is Resource Utilization. b is the resource utilization at rest (zero load), and m is the ratio of increasing response time with respect to resource utilization and is determined by interpolating the test results. Hopefully you are up to speed on your algebra!</p>
+<p>Since the results are collected in a test environment, the resource specifications for that environment must be recorded at the time of the tests. This is necessary to compute the appropriate scale factor (SF) needed to scale the result based on the different resources levels available on the operational hosting environment. For instance, if the test environment has two CPUs and the operational hosting environment has four CPUs, then the CPU resource scale factor is 2.0. Therefore the equation becomes the following:</p>
+<blockquote>
+  <p> RT = SF x (m x RU + b)</p>
+</blockquote>
+<p>If solving for Resource Utilization based on Response Times, the following equation applies:</p>
+<blockquote>
+  <p> RU = (RT/SF &ndash; b)/m</p>
+</blockquote>
+<p>Where SF is the scale factor needed for translation between available resources levels across the environments.</p>
+<p><b>Note:</b> Not all CPUs are created equal! If CPUs of different speeds or manufacturers are used across test and operational environments, then tests should be conducted to determine the varying scale factor impacts that will be incurred by translating from one hardware specification to another.</p>
+<h5><b>Resource Increment Test</b></h5>
+<p>This test measures the overall relationship between throughput and resource utilization. It needs to be executed for every operation that can be uniquely provisioned for the service. A best practice would be to execute the test for every operation.</p>
+<p>The illustration below provides the expected output from executing a Resource Increment test against an operation.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CRCT.PNG" alt="Illustration of the Expected Output from Executing a Resource Increment Test against an Operation" width="432" height="312" title="Illustration of the Expected Output from Executing a Resource Increment Test against an Operation"></p>
+<p align="center"><b>Correlating Resource Consumption to Throughput</b></p>
+When the test is performed it commences with a throughput of zero. Load is then uniformly added in increments. Throughput and resource utilizations are observed and recorded at each increment in load. The test continues until a decrease in throughput is recorded when incrementing load. This indicates that the physical maximum has been reached for one or more resources (the breaking point has been exceeded). A well engineered service will do testing to optimize throughput results, which would result in the most cost effective deployment model. The maximum value for throughput must also be recorded.
+<p>For each operation a linear equation is recorded as follows for each resource measured:</p>
+<blockquote>
+  <p>TP = n x RU + c</p>
+</blockquote>
+<p>Where TP is Throughput and RU is Resource Utilization. c is the resource utilization at rest (zero load), and n is the ratio of increasing throughput with respect to resource utilization and is determined by interpolating the test results. </p>
+<p>Since the results are collected in a test environment, the resource specifications for that environment must be recorded at the time of the tests. This is necessary to compute the appropriate scale factor (SF) needed to scale the result based on the different resources levels available on the operational hosting environment. For instance, if the test environment has two CPUs and the operational hosting environment has four CPUs, then the CPU resource scale factor is 2.0. Therefore the equation becomes the following:</p>
+<blockquote>
+  <p> TP = SF x (n x RU + c)</p>
+</blockquote>
+<p>When solving for Resource Utilization from Throughput levels the following equation is used:</p>
+<blockquote>
+  <p> RU = (TP/SF &ndash; c)/n</p>
+</blockquote>
+<p>Where SF is the scale factor needed to translation between available resources levels across the environments.</p>
+<h5>Using the Equations to Assist Deployment Planning</h5>
+<p>The results of these tests would be used as follows:</p>
+<ol>
+  <li>Compute the scale factor (SF) from the test environment to the operational environment for each resource.</li>
+  <li>Collect the resource utilization average values for the expected operational times for the new service. The maximum value represents the value to be used for the base Resource Utilization (RU1).</li>
+  <li> Compute the expected base response times (RT1) at RU1 by computing: </li>
+</ol>
+<blockquote>
+  <p>RT1 = SF x (m x RU1 + b)</p>
+  <p>RT1 is the best Response Time level that can be achieved in the environment being examined. If RT1 exceeds expected SLA levels then the host is not a viable candidate for hosting the operation. The operation will need to be made more efficient or hosted elsewhere.</p>
+</blockquote>
+<ol start="4">
+  <li>Solve for the base Throughput (TP1) at RU1 with the following:
+      <p> TP1 = SF x (n x RU1 + c)</p>
+  </li>
+  <li>Determine maximum value of RU (RU2) by taking the minimum value computed from the existing maximum resource utilization values and the one established by executing the SLA Barrier Test. Don&rsquo;t forget to apply the scale factor. If a new, lower Resource Utilization maximum is being considered, examine the impact it will have on consumption forecast room remaining of the already deployed services. If acceptable continue.</li>
+  <li>Determine the maximum TP (TP2) using the following:</li>
+</ol>
+<blockquote>
+  <p> TP2 = SF x (n x RU2 + c)</p>
+</blockquote>
+<ol start="7">
+  <li>If the difference between TP2 and TP1 does not cover a sufficient portion of the forecast then a different deployment option will need to be examined, or the service operation will need to be re-engineered for greater throughput.</li>
+</ol>
+<p>Once a sufficient host has been selected the appropriate bandwidth allocation needs to be assigned and tuned in order to ensure that the service will not exceed its predetermined usage levels and negatively impact the ability of other services to maintain their contracted SLAs.</p>
+<hr WIDTH="100%">
+<h4>Manage Consumption </h4>
+<p>When a consumer requests to consume a shared service, or requests for additional consumption than previously allowed, the service provisioning process commences. If a consumption request is approved from at least a governance perspective (there are no business reasons preventing consumption by the identified consumer) then a capacity validation is required to ensure that there is available bandwidth available for the service to handle the consumption and still maintain its contracted service level agreements. Further, verification that the additional consumption will not cause the service to exceed the service&rsquo;s assigned bandwidth (if applicable) needs to be completed. The following steps can be followed utilizing the test data gathered for the target service to verify capacity:</p>
+<ol>
+  <li>Compute the scale factor (SF) from the test environment to the operational environment for each resource.</li>
+  <li>Collect the resource utilization average values for the expected operational times for the specific to the proposed usage agreement governing the service and its consumption. The maximum value represents the value to be used for the base Resource Utilization (RU1).</li>
+  <li>Solve for the base Throughput (TP1) at RU1 with the following:</li>
+</ol>
+<blockquote>
+  <p> TP1 = SF x (n x RU1 + c)</p>
+</blockquote>
+<ol start="4">
+  <li>TP1 is the estimated current throughput level of the service. Now calculate net new Throughput (TP2) by adding the expected new consumption to be allowed and solve for expected Resource Utilization (RU2). </li>
+</ol>
+<blockquote>
+  <p> RU2 = (TP2/SF &ndash; c)/n</p>
+</blockquote>
+<ol start="5">
+  <li>If RU2 exceeds the SLA Barrier for the host, then the consumption is not viable, otherwise reduced capacity needs to be considered for the consumer (if so, return to step 5 with the new capacity increment). If RU2 does not exceed the SLA Barrier, then continue.</li>
+  <li>Compute net new resource (NNRU) utilization by subtracting RU1 from RU2:</li>
+</ol>
+<blockquote>
+  <p> NNRU = RU2 &ndash; RU1</p>
+</blockquote>
+<ol start="7">
+  <li>Lookup the bandwidth limit (BL) for the service and the currently utilized bandwidth limit (UBL) for the resource on the specific hardware. Solve for remaining bandwidth as follows:</li>
+</ol>
+<blockquote>
+  <p> Remaining Bandwidth = BL &ndash; UBL &ndash; NNRU</p>
+</blockquote>
+<ol start="9">
+  <li>If Remaining Bandwidth is less than zero, then there is not enough bandwidth allocated to the service to support the additional capacity needed. Either additional bandwidth will have to be approved for allocation, or reduced capacity approved for the consumer. If reduced capacity is considered return to step 5 with the new capacity increment.</li>
+  <li> If the consumption is agreed, increment the currently utilized bandwidth limit for the resources (UBL) by the estimated net new resource utilization (NNRU).</li>
+</ol>
+<p>Repeat these steps for all operations to be consumed across all affected resources on all affected hardware.</p>
+<hr WIDTH="100%">
+<h4>Validate Accuracy </h4>
+<p>Validating accuracy against the production environment is a good way to understand if the test effort is returning valid results, in addition to giving an estimate of the amount of error in calculations due to hardware differences, additional overhead, etc. The information gleaned from this exercise should be considered in the capacity planning exercise, especially as operational hardware begins to coming close to hitting SLA Barriers, or running out of resources.</p>
+<p>The first requirement for validating accuracy is that consumption must be monitored. If there is no information on operation usage statistics then validation cannot be achieved with any real accuracy.</p>
+<p>Typically, accuracy can be validated against a single resource type; unless there is a mix of SLA Barriers encountered across several types of resources. The most common resource limiting consumption will be CPU bandwidth though, and if this is the case the CPU Load Average is the best statistic to use when calculating accuracy. Follow the steps below to calculate accuracy.</p>
+<ol>
+  <li>Select a relatively small time-period (e.g., 1hr).</li>
+  <li>For the selected time period lookup the average resource utilization that you are measuring accuracy for (e.g.: CPU Load Average). The value represents the actual average resource utilization (RUA).</li>
+  <li>For each operation hosted on the selected hardware lookup the consumption measured for the operation over the time period.
+      <ol type="a">
+        <li> Calculate the throughput (TP) for this operation (invocations/time).</li>
+        <li> Calculate the Resource Utilization (RU) required for the throughput</li>
+      </ol>
+      <blockquote>
+        <p> RU = (TP/SF &ndash; c)/n</p>
+      </blockquote>
+  </li>
+  <li>Total the Resource Utilization results from step 3 (RUT).</li>
+  <li>Compute the difference of RUT and RUA as follows:</li>
+</ol>
+<blockquote>
+  <p> Error = RUA &ndash; RUT</p>
+</blockquote>
+<p>The amount of Error should be relatively small and greater than zero. If negative Error is encountered then testing procedures should be evaluated for accuracy. It is always better to error on the pessimistic side.</p>
+<hr WIDTH="100%">
+<h4>Determine Service Versioning Impact </h4>
+<p>When a service is changed, for any reason, it must be revalidated from a capacity perspective as the changes may have impacted the performance experienced through the service (either positively or negatively). This may impact capacity constraints currently established, in addition to SLA Barriers, resource utilization expectations, etc. In this case the change of impact needs to be measured for the new service version and the appropriate instrumentation data with respect to capacity need to be updated.</p>
+<hr WIDTH="100%">
+<h4>Determine Instrumentation Entities in Support of Capacity Planning </h4>
+<p>From the requirements and strategy covered previously the following conceptual instrumentation entities materialize:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_IESPC.PNG" alt="Example Conceptual Instrumentation Entities" width="712" height="516" title="Example Conceptual Instrumentation Entities"></p>
+<p>The relationships can be summarized as follows: </p>
+<ul>
+  <li>A service is formalized during service definition.</li>
+  <li>Components are used to implement services (and projects) and host Service Operations.</li>
+  <li>Service Operations are defined by the Service Interface.</li>
+  <li>Operations are tested for SLA Barriers and Throughput to Resource Utilization ratios on a per operation basis. This information is used to support the various capacity planning processes.</li>
+  <li>Service Bandwidth may be allocated (and enforced through tuning) to limit the amount of resource that a service may consume on the each piece of hardware infrastructure that it may be deployed across.</li>
+  <li>Consumption Forecasts are established for each service during Service Delivery.</li>
+  <li>Deployment Units host Components.</li>
+  <li>Server Applications host Deployment Units and or Components.</li>
+  <li>Hardware Infrastructure hosts Server Applications.</li>
+  <li>Resource utilization statistics are collected from Hardware Infrastructure involved in hosting service components.</li>
+  <li>Service Operation Usage collects usage statistics with respect to service consumption on a consumer by consumer basis.</li>
+  <li>Service Operation Historical Usage collects usage statistics with respect to consumption without recording specific consumer information.</li>
+</ul>
+<hr WIDTH="100%">
+<h4>Determine Service Engineering Instrumentation Data </h4>
+<p>As demonstrated in the established capacity planning strategy, instrumentation plays a major role in supporting capacity planning throughout most of the service lifecycle. Within the Service Engineering processes the following information should be collected: </p>
+<ul>
+  <li>The service consumption forecast data should be collected during Service Design after the interface has been established.</li>
+  <li>Service operations should be tested in isolation within the Service Testing procedures to compute SLA Barriers, and Throughput to Resource Utilization ratios. These results should later be used in deployment planning and consumption management procedures.</li>
+  <li>Service test environment resource specifications should be collected from the isolation test hardware in order to allow for scale factors (SF) to be computed. The scale factor is required to correlate results collected in the test environment to the targeted operational environment that will or may host service operations.</li>
+  <li>Service bandwidths, if utilized, must be collected to determine the maximum resource utilization allowed for a service on any given hardware infrastructure.</li>
+  <li>Traceability data from Service through its interface and operations all the way down to the hosting hardware is collected during service design, implementation and deployment.</li>
+</ul>
+<p>The following sections break down the Service Engineering processes with respect to instrumenting the above mentioned data.</p>
+<h5> Conceptual Service Definition and Design Instrumentation Data</h5>
+<p>In support of capacity planning and the elements mentioned in the previous section, the following conceptual instrumentation data is realized through the project and service delivery procedures:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CDCPPSD.PNG" alt="Example Conceptual Instrumentation Data Realized Through the Project and Service Delivery Procedures" width="649" height="302" title="Example Conceptual Instrumentation Data Realized Through the Project and Service Delivery Procedures"></p>
+<p align="center"><b>Conceptual Data: Capacity Planning Project &amp; Service Delivery</b></p>
+<p>The Project instrumentation entity is established at the onset of project analysis. There are other elements of this entity that are instrumented for the purpose of measuring engineering effectiveness and SOA maturity levels. For the purpose of operations we are simply using the project to connect it to its operational artifacts and therefore all we need is to be able to uniquely identify the project: </p>
+<ul>
+  <li><b>Project ID:</b> This is a unique identifier that uniquely identifies the project&rsquo;s instrumentation record. </li>
+</ul>
+<p>The Service instrumentation entity is established during the Service Definition procedures within Service Delivery. Like the Project entity, there are other elements of this entity that are instrumented for the purpose of measuring engineering effectiveness and SOA maturity levels. For the purpose of supporting the operational processes, we are simply using the service to connect it to its logical operational artifacts and therefore all we need is to be able to uniquely identify the service: </p>
+<ul>
+  <li><b>Service ID:</b> This is a unique identifier that uniquely identifies the service&rsquo;s instrumentation record. </li>
+</ul>
+<p>Components are utilized to implement projects and services. The following instrumentation data needs to be recorded for components: </p>
+<ul>
+  <li><b>Component ID:</b> This is a unique identifier that uniquely identifies the component&rsquo;s instrumentation record.</li>
+  <li> <b>Project ID/Service ID List:</b> This value establishes the linkage between the projects and services that utilize this component within their implementations.</li>
+</ul>
+<p>The Deployment Unit is a container for components which will be deployed to hardware in a logical unit. The following instrumentation data is recorded for deployment units: </p>
+<ul>
+  <li><b>Deployment Unit ID:</b> This is a unique identifier that uniquely identifies the deployment unit&rsquo;s instrumentation record. </li>
+  <li> <b>Component ID List:</b> This value establishes the linkage between the deployment unit and the components that will deployed together through the deployment unit.</li>
+</ul>
+<p>The Server Application is a container for components, deployment units or possibly event a combination of both. The following instrumentation data is recorded for server applications: </p>
+<ul>
+  <li><b>Application ID:</b> This is a unique identifier that uniquely identifies the server application&rsquo;s instrumentation record. </li>
+  <li> <b>Deployment Unit ID List:</b> This value establishes the linkage between the server application and the deployment units that will hosted together through the server application.</li>
+  <li> <b>Component ID List:</b> This value establishes the linkage between the server application and the components that will hosted together through the server application.</li>
+</ul>
+<p>The Service Interface represents the means of accessing a service by consumers. The following instrumentation data is recorded for the Service Interface: </p>
+<ul>
+  <li><b>Interface ID:</b> This is a unique identifier that uniquely identifies the service interface&rsquo;s instrumentation record. </li>
+  <li> <b>Service ID:</b> This value links the service interface to the service it is bound to.</li>
+  <li> <b>Consumption Forecast Data:</b> This value holds the expected consumption of the service that will take place through this interface. It covers the operations hosted through this interface. Consumption forecasts consist of expected throughput requirements covering a forward looking period of time.</li>
+</ul>
+<p>The Service Operation represents the smallest unit of work that can be performed by the service for its consumers. The following instrumentation data is recorded for the Service Operation for the purpose of supporting capacity planning processes: </p>
+<ul>
+  <li><b>Operation ID:</b> This is a unique identifier that uniquely identifies the service operation&rsquo;s instrumentation record. </li>
+  <li> <b>Interface ID:</b> This value links the service operation to the service interface that it serves through.</li>
+  <li> <b>Component ID List:</b> This provides the list of components that are utilized by the operation when executing any or all of its functionality.</li>
+</ul>
+<h5>Defining Capacity Planning Instrumentation Data in Service Definition and Design</h5>
+<p>The illustration below depicts the various instrumentation entities that are defined during the execution of Service Definition and Design activities.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_OISD.PNG" alt="Illustration Depicting the Various Instrumentation Entities Defined during the Execution of Service Definition and Design Activities" width="749" height="544" title="Illustration Depicting the Various Instrumentation Entities Defined during the Execution of Service Definition and Design Activities"></p>
+<p align="center"><b>Operational Instrumentation: Service Delivery</b></p>
+<p>During Service Definition, after service boundaries have been defined, the contract for a Service is realized. At this point a Service instrumentation record can be created and uniquely identified. See the <a href="SERVICE_ENGINEERING_PROCESS_MONITORING.HTM" target="_blank">Service Engineering Process Monitoring</a> technique for information on instrumentation data collected for the purpose of measuring and monitoring SOA engineering effectiveness. The same instrumentation record is used for Operational instrumentation with respect to traceability in support of capacity planning.</p>
+<p>Within Service Design the set of architecturally significant components of a service are analyzed and organized. Therefore the relationship between components, deployment units and server applications, are determined and appropriate instrumentation records need to be established to instrument these relationships in support of capacity planning processes which will need to eventually need to understand the linkage of service operations all the way down to the operationally hardware that they are deployed against.</p>
+<p>In additional to the establishment of architectural relationships, the service interface is also crafted during Service Design. The service interface and its operations are defined at a high level and their linkage back to the service should be established for instrumentation purposes. Further, the expected level of consumption for the service through the interface should be forecasted and stored as part of the collected instrumentation data. The forecast data is used in support of the deployment planning process.</p>
+<p>The relationships among components, deployment units and server applications are determined during Service Delivery. Similar artifacts should be determined during project delivery activities as those produced in Service Delivery. The illustration below provides an example:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_EXSPAD.PNG" alt="Example Service and Project Architecture Definition" width="808" height="575" title="Example Service and Project Architecture Definition"></p>
+<p align="center"><b>Example: Service and Project Architecture Definition</b></p>
+<p>The diagram above illustrates the complete packaging for a composite application. Part of the work is completed through project delivery activities and the rest during service delivery activities. The separation is established during analysis activities where the separation of shared and independent functionality is defined. (See the <a href="REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique, the <a href="SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery</a> technique and the <a href="SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a> technique for further reading.)</p>
+<p>The illustration below depicts the set of instrumentation entities that would result from the example provided above.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_EXPSPID.PNG" alt="Example Project and Service Packaging Instrumentation Data" width="651" height="490" title="Example Project and Service Packaging Instrumentation Data"></p>
+<p align="center"><b>Example: Project and Service Packaging Instrumentation Data</b></p>
+<p>With this technique a clear separation of Project and Service can be established through the packaging architecture. The next step is to drill down to another level and examine the relationships at a deployment architecture level, which will allow for complete traceability back from hardware to the service or project level.</p>
+<h5> Conceptual Service Testing Instrumentation Data</h5>
+<p>The Service Testing Conceptual Instrumentation data structure is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CDCPST.PNG" alt="Service Testing Conceptual Instrumentation Data Structure" width="214" height="316" title="Service Testing Conceptual Instrumentation Data Structure"></p>
+<p align="center"><b>Conceptual Data: Capacity Planning Service Testing</b></p>
+<p>The Service and Service Interface records are simply stated for traceability purposes and are defined as they have been previously in this document.</p>
+<p>Similarly, the Service Operation is established earlier, but the following additional data is collected with respect to the service operation during service testing in support of capacity planning: </p>
+<ul>
+  <li>SLA Barrier Test Results: This is the set of test results by running an isolation test used to determine SLA Barriers encountered through resource physical resource constraints. </li>
+  <li>Resource Footprint Test Results: This value represents the set of test results captured by running an isolation test used to determine the ratio of throughput to resource utilization. This test also determines the maximum achievable throughput with respect to physical resource constraints.</li>
+  <li>Test Environment Resource Specs: This value contains the set of resource specifications from the test hardware used to perform the capacity planning support tests. This information is needed to compute the scale factors for translating between hardware specification that differ between test and actual hardware deployed in the operational environment.</li>
+</ul>
+<p>An example set of test results for the SLA Barrier Test is depicted below: </p>
+<table border="1" align="center" title="Example Set of Test Results for the SLA Barrier Test" summary="This table provides an example set of test results for the SLA Barrier test.">
+  <tr bgcolor="#CCCCCC">
+    <th bgcolor="#CCCCCC" scope="col">Service / HW </th>
+    <th scope="col">Load Ave. </th>
+    <th scope="col">Network IO </th>
+    <th scope="col">Disk IO </th>
+    <th scope="col">Memory</th>
+    <th scope="col">Disk</th>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op1</th>
+    <td>RT = 1.0RU+ 0.0 <br>
+      SLA Barrier: 6.1</td>
+    <td>RT = 0.3RU + 0.0</td>
+    <td>RT = 0.1RU + 0.0 </td>
+    <td>RT = 0.01RU + 12</td>
+    <td>RT = 0.0RU + 8 </td>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op2</th>
+    <td>RT = 0.8RU+ 0.0 <br>
+      SLA Barrier: 8.0 </td>
+    <td>RT = 0.91RU + 0.0 </td>
+    <td>RT = 0.1RU + 0.0 </td>
+    <td>RT = 0.01RU + 12</td>
+    <td>RT = 0.0RU + 8 </td>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op3</th>
+    <td>RT = 0.2RU+ 0.0 <br>
+      SLA Barrier: 4.8 </td>
+    <td>RT = 0.15RU + 0.0 </td>
+    <td>RT = 0.1RU + 0.0 </td>
+    <td>RT = 0.01RU + 12</td>
+    <td>RT = 0.0RU + 8 </td>
+  </tr>
+</table>
+<p align="center"><b>Example: SLA Barrier Test Instrumentation </b></p>
+<p>An example set of test results for the Resource Footprint test is depicted in the table below:</p>
+<table border="1" align="center" title="Example Set of Test Results for the Resource Footprint Test" summary="This table provides an example set of test results for the Resource Footprint test.">
+  <tr bgcolor="#CCCCCC">
+    <th bgcolor="#CCCCCC" scope="col">Service / HW </th>
+    <th scope="col">Load Ave. </th>
+    <th scope="col">Network IO </th>
+    <th scope="col">Disk IO </th>
+    <th scope="col">Memory</th>
+    <th scope="col">Disk</th>
+    <th scope="col">Max TP</th>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op1</th>
+    <td>TP = 75.3RU + 0.0 </td>
+    <td>TP = 14.0RU + 0.0 </td>
+    <td>TP = 12.0RU + 0.0 </td>
+    <td>RU Constant </td>
+    <td>RU Constant </td>
+    <td><div align="center">100</div></td>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op2</th>
+    <td>TP = 8.3RU + 0.0 </td>
+    <td>TP = 14.0RU + 0.0 </td>
+    <td>TP = 12.0RU + 0.0 </td>
+    <td>RU Constant </td>
+    <td>RU Constant </td>
+    <td><div align="center">14</div></td>
+  </tr>
+  <tr valign="top">
+    <th bgcolor="#CCCCCC" scope="row">Op3</th>
+    <td>TP = 98.3RU + 0.0 </td>
+    <td>TP = 14.0RU + 0.0 </td>
+    <td>TP = 12.0RU + 0.0 </td>
+    <td>RU Constant </td>
+    <td>RU Constant </td>
+    <td><div align="center">125</div></td>
+  </tr>
+</table>
+<p align="center"><b>Example: Resource Increment Test Instrumentation </b></p>
+<h5>Conceptual Service Deployment Instrumentation Data</h5>
+<p>The Service Deployment Conceptual Instrumentation data structure is depicted below:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CDCPSDI.PNG" alt="Example Service Deployment Conceptual Instrumentation Data Structure" width="662" height="391" title="Example Service Deployment Conceptual Instrumentation Data Structure"></p>
+<p align="center"><b>Conceptual Data: Capacity Planning Service Deployment Instrumentation</b></p>
+<p>For the most part, these entities are definite identically to those defined for the purpose of monitoring and managing performance, and are defined to support the traceability requirements identified for capacity planning. </p>
+<p>There are some new values conceptual values instrumented for the purpose of capacity planning however.</p>
+<p>The following additional value is collected for the Hardware Infrastructure: </p>
+<ul>
+  <li><b>Max Resource Footprint Values:</b> This value holds the set of data used to determine the maximum resource utilization that should not be exceeded for each resource. These values are not necessarily the physical maximum for the machine, but rather represent the highest value that can be sustained without causing a performance based SLA to be breached. </li>
+</ul>
+<p>A service bandwidth constraint may be established against a service. This concept is used to indicate that the service is restricted to a specified amount of hardware resource bandwidth on a particular component of hardware infrastructure located within the operational environment. The following instrumentation data is collected to support this concept: </p>
+<ul>
+  <li><b>Service ID:</b> This value identifies the service that is being constrained. Together with the Infrastructure ID this value uniquely identifies the Service Bandwidth instrumentation record.</li>
+  <li> <b>Infrastructure ID:</b> This value identifies the infrastructure for which the given service is being constrained. Together with the Service ID this value uniquely identifies the Service Bandwidth instrumentation record.</li>
+  <li> <b>Max Resource Limits:</b> This value holds the set of resource consumption values that the service is not allowed to exceed in terms of consumption on the specified hardware. For instance if a Load Average maximum is set at 2.0, then the service will be tuned to not consume more than 2.0 with respect to Load Average statistics.</li>
+</ul>
+<h5>Defining Operational Instrumentation Data in Service Deployment</h5>
+<p>For completeness purposes the following is instrumented during Service and Project Deployment activities in support of Capacity Planning:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_OIPSD.PNG" alt="Example instrumented during Service and Project Deployment activities in support of Capacity Planning" width="795" height="491" title="Example instrumented during Service and Project Deployment activities in support of Capacity Planning"></p>
+<p align="center"><b>Operational Instrumentation: Project &amp; Service Deployment</b></p>
+<p>The set of Hardware Infrastructure components and the set of Server Applications hosted is defined during service infrastructure realization (and not defined on a service by service basis). During these processes the appropriate relationships between hardware components and service hosting server application infrastructure should be established with respect to instrumentation.</p>
+<p>From a project delivery standpoint, any additional hosting requirements (hardware and software) in support of the specific application or project would be established on a project by project basis.</p>
+<p>When services are deployed (either new or versioned), the maximum resource footprint values are updated based on isolation test result data. Further, any applicable service bandwidth constraints are established or updated based on the tuning strategy being utilized for the various pieces of hardware.</p>
+<p>As services are delivered through service delivery and deployed through service management, the instrumentation records are linked based on the deployment architecture established. The illustration provided below demonstrates this linkage:</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_EXPSDA.PNG" alt="Example of Linking Instrumentation Records Based on the Deployment Architecture Established" width="795" height="596" title="Example of Linking Instrumentation Records Based on the Deployment Architecture Established"></p>
+<p align="center"><b>Example: Project and Service Deployment Architecture</b></p>
+<p>Again, the infrastructure in support of the SOA is defined during enterprise infrastructure planning and delivery in support of the enterprise SOA reference architecture. Shared services that are delivered in support of projects and applications are deployed to the shared infrastructure.</p>
+<p>When projects and applications are planned and approved, infrastructure is defined to support the project and realized prior to the final delivery of the project. The project specific components and applications are deployed to this hardware once the project has been delivered.</p>
+<p>The example deployment architecture provided above would result in the following instrumentation data entity structure being defined against the service Employee Portal application as depicted below: </p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_EXPDI.PNG" alt="Example Project Deployment Instrumentation" width="586" height="375" title="Example Project Deployment Instrumentation"></p>
+<p align="center"><b>Example: Project Deployment Instrumentation</b></p>
+<p>The example depicted above illustrates the linkage from deployment unit through to hosting hardware, and maps the conceptual instrumentation records to the physical deployment architecture.</p>
+<hr WIDTH="100%">
+<h4>Determine Technology and Runtime Instrumentation Data</h4>
+<p>The final element of capacity planning comes from monitoring consumption in the operational environment. This allows cross-checks to be done to validate accuracy and compute operational overhead.</p>
+<h5> Conceptual Runtime Instrumentation Capacity Data</h5>
+<p>The following conceptual instrumentation data is captured in support of the capacity planning processes.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_CDCPRI.PNG" alt="Example of Capturing Conceptual Instrumentation Data in Support of the Capacity Planning Processes" width="798" height="447" title="Example of capturing Conceptual Instrumentation Data in Support of the Capacity Planning Processes"></p>
+<p align="center"><b>Conceptual Data: Capacity Planning Runtime Influences</b></p>
+<p>The conceptual data for the runtime environment is very similar to the data instrumented from the runtime environment for the purpose of monitoring and managing performance and conformance. There are two conceptual entities to note however.</p>
+<p>The Service Operation Historical Usage instrumentation record is used in managing and monitoring performance, and for the purpose of capacity planning, the Invocation Count value is used to calculate actual throughput observed against a given operation.</p>
+<p>Finally, the Infrastructure Performance Data record is used to collect average resource utilization statistics for the physical resources on the hardware infrastructure in the operational environment. The following data is instrumented for this record: </p>
+<ul>
+  <li><b>Infrastructure ID:</b> This value identifies the Hardware Infrastructure being monitored. It also forms part of the record identifier formed by the Infrastructure ID, Period Length, and Period Start Time.</li>
+  <li><b>Period Length:</b> This value represents the length of time used to measure and monitor resource utilization. This is typically set to a value of one day, one month, or one year. Separate statistics could be recorded for each if desired. The value also forms part of the record identifier formed by the Infrastructure ID, Period Length, and Period Start Time.</li>
+  <li><b>Period Start Time:</b> This value is recorded during runtime operations and is set at the beginning of each new period cycle. For instance if the Period Length value is set to one month, then this value is reset after each month of operation established since deployment. The value also forms part of the record identifier formed by the Infrastructure ID, Period Length, and Period Start Time.</li>
+  <li><b>Average Resource Footprint:</b> This value holds the average resource utilization observed for each type of physical resource that can be measured on the hardware. The average is computed over the time period identified by the Period Start Time and Period Length values.</li>
+  <li><b>Max Resource Footprint:</b> This value holds the maximum resource utilization observed for each type of physical resource that can be measured on the hardware. The value is determined by the maximum value observed over the time period identified by the Period Start Time and Period Length values.</li>
+</ul>
+<h5>Instrumenting the Runtime Environment</h5>
+<p>The following illustrates the performance data captured in support of the capacity planning processes.</p>
+<p align="center"><img src="../../010_COMMON_FILES/SOACP_IRE.PNG" alt="Example of Capturing Performance Data in Support of the Capacity Planning Processes" width="778" height="606" title="Example of Capturing Performance Data in Support of the Capacity Planning Processes"></p>
+<p align="center"><b>Instrumenting the Runtime Environment</b></p>
+<p>Infrastructure performance metrics are typically collected by using third-party or operating system vendor providing monitoring tools. The service operational historical usage is collected by instrumenting the call invocations on service operations.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_017_DETERMINE_METRICS_COLL_AND_REP_STRATEGY_OVERVIEW.HTM" target="_blank">BA.017 Determine Metrics Collection and Reporting Strategy (Envision) </a></div></th>
+    <td>If Capacity Planning is one of your measurement areas, then use this technique for capacity planning when using a service-oriented architecture.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li> Has the expected current and future consumption for each service been forecasted from every potential consumer? </li>
+  <li> Has the current utilization levels been described for each service? </li>
+  <li> Is there a forecast included for existing services that are deployed on the target environments? </li>
+  <li> Has every consumer request been capacity validated? </li>
+  <li>Have instrumentation entities been described that will be required for capacity accuracy validation? </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

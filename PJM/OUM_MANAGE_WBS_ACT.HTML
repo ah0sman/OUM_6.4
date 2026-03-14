@@ -1,0 +1,876 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en">
+<HEAD>
+<TITLE>Manage Activities and Tasks View</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  collapseAllWBS();
+}
+//-->
+</SCRIPT>
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.copyright {color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+<NOSCRIPT>
+  <center>
+  <table cellpadding="0" cellspacing="0" border="0" width="550">
+
+    <tr><td>&nbsp;</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Are you using a browser that doesn't support JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If your browser does not support JavaScript, you can upgrade to a newer browser, such as Internet Explorer 6 or Firefox</td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt"><b>Have you disabled JavaScript?</b></td></tr>
+
+    <tr><td width="100%" valign="top" class="PPDesTxt">If you have disabled JavaScript, you must re-enable JavaScript to use this site.</td></tr>
+
+
+  </table>
+  </td>
+</tr><tr><td>
+</center>
+</NOSCRIPT>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" onload="onLoad()">
+<div align="left"><a name="TOP"></a> </div>
+<div align=left>
+  <TABLE width="100%" border="1" role="presentation">
+    <TR border="0">
+      <TD width="12%" height="92" valign="top"><p><a href="../OUM/OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+      </a><a href="../OUM/CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+      <TD width="88%" valign="top"><p>&nbsp;</p>
+        <table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><h1 align="left">Manage Activities and Tasks View</h1></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                    <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                      <option value="#TOP" selected></option>
+                      <option value="../OUM/OUM_HOME.HTM">Home</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                      <option value="../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                      <option value="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                      <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                      <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                      <option value="PJM_HOME.htm">MANAGE View</option>
+                      <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                      <option value="../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                      <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                      <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                      <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                    </SELECT>
+            </div></td>
+          </tr>
+      </table></TD>
+    </TR>
+  </TABLE>
+</div>
+
+<p><A href="#" title="Expand all activities" onclick="expandAllWBS(); new Effect.Highlight(this, {duration: 4});">expand all</A> | <A href="#" title="Collapse all activities" onclick="collapseAllWBS(); new Effect.Highlight(this, {duration: 4})">collapse all</A>
+</p>
+<table width="100%" border title="Full Method Activities and Tasks" summary="This table lists all the activities and tasks for OUM.  The column headings are ID, Name, Work Product and Template.  It has subheadings for phases and activities.">
+  <tr scope="col" valign="top" bgcolor="#BEBEBE">
+    <th scope="col" width="140" align=left nowrap>ID</th>
+    <th scope="col" width="540" align=left nowrap>Name</th>
+    <th scope="col" width="340" align=left nowrap>Work Product </th>
+    <th scope="col" width="340" align=left nowrap>Template</th>
+  </tr>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="140" align=left nowrap scope="rowgroup">PS</th>
+    <td width="540" align=left><b><a href="020_METHOD_GUIDELINES/010_PHASE/PJM_A_PROJECT_STARTUP_PHASE_OVERVIEW.HTM" target="_blank">Project Start Up</a><br>
+    </b></td>
+    <td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.RBCText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.RBC</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.RBCOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.RBC', 'PS.ACT.RBCOnImg', 'PS.ACT.RBCOffImg'); new Effect.Highlight($('PS.ACT.RBCText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.RBCOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.RBC', 'PS.ACT.RBCOnImg', 'PS.ACT.RBCOffImg'); new Effect.Highlight($('PS.ACT.RBCText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRBC_REVIEW_BID_AND_CONTRACT.HTM" target="_blank">Review Bid and Contract</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="PS.ACT.RBC">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.010</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT010_REVIEW_AND_ANALYZE_BID_MATERIAL.HTM" target="_blank">Review and Analyze Bid Material</a> </td>
+    <td width="340" align=left>Reviewed and Analyzed Bid Material </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/BT010_REVIEWED_AND_ANALYZED_BID_MATERIAL.DOCX" target="_blank">Reviewed and Analyzed Bid Material </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">Review and Confirm Business Case</a> </td>
+    <td width="340" align=left><span class="MsoNormal">Confirmed Business Case </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/BT020_CONFIRMED_BUSINESS_CASE.DOCX" target="_blank">Confirmed Business Case </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">Identify Project Stakeholders</a> </td>
+    <td width="340" align=left><span class="MsoNormal">Identified Project Stakeholders </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/BT030_IDENTIFIED_PROJECT_STAKEHOLDERS.XLSX" target="_blank">Identified Project Stakeholders</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT040_REVIEW_AND_ACCEPT_PROJECT_BUDGET.HTM" target="_blank">Review and Accept Project Budget </a></td>
+    <td width="340" align=left><span class="MsoNormal">Accepted Project Budget </span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.RKM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">Conduct Baseline Risk Assessment </a></td>
+    <td width="340" align=left>Baseline Risk Assessment</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></td>
+  </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.RPACText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.RPAC</th>
+    <td width="540" align=left bgcolor="#CCCCCC"><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.RPACOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.RPAC', 'PS.ACT.RPACOnImg', 'PS.ACT.RPACOffImg'); new Effect.Highlight($('PS.ACT.RPACText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.RPACOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.RPAC', 'PS.ACT.RPACOnImg', 'PS.ACT.RPACOffImg'); new Effect.Highlight($('PS.ACT.RPACText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTRPAC_REVIEW_PROJECT_ASSETS_W_CUSTOMER.HTM" target="_blank">Review Project Assets with Customer </a></b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="PS.ACT.RPAC">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT050_REVIEW_CONTRACT_WITH_CUSTOMER.HTM" target="_blank">Review Contract with Customer </a></td>
+    <td width="340" align=left><span class="MsoNormal">Reviewed Contract </span></td>
+    <td width="340" align=left><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT060_REVIEW_PROJECT_APPROACH_WITH_CUSTOMER.HTM" target="_blank">Review Project Approach with Customer </a></td>
+    <td width="340" align=left><span class="MsoNormal">Reviewed Project Approach</span></td>
+    <td width="340" align=left><a href="../PJM/040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.BT.070.1</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Management Plan </a></td>
+    <td width="340" align=left><span class="MsoNormal">Project Management Plan </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx" target="_blank">Project Management Plan-Word</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.PPTX">Project Management Plan-PowerPoint</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/BT070_ABBREVIATED_PROJECT_MANAGEMENT_PLAN.pptx" target="_blank">Abbreviated Project Management Plan-PowerPoint</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.pptx" target="_blank">PMP Resources-PowerPoint</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.vsd" target="_blank">PMP Resources-Visio</a> </td>
+  </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.VSSOSText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.VSSOS</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.VSSOSOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.VSSOS', 'PS.ACT.VSSOSOnImg', 'PS.ACT.VSSOSOffImg'); new Effect.Highlight($('PS.ACT.VSSOSText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.VSSOSOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.VSSOS', 'PS.ACT.VSSOSOnImg', 'PS.ACT.VSSOSOffImg'); new Effect.Highlight($('PS.ACT.VSSOSText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTVSSOS_VALIDATE_SCOPE_STAKEHOLDERS_AND_OCM_STRATEGY.HTM" target="_blank">Validate Scope, Stakeholders and OCM Strategy</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+<tbody id="PS.ACT.VSSOS">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.SM.010</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">Define and Confirm Scope </a></td>
+    <td width="340" align=left>Validated Scope</td>
+    <td width="340" align=left>Update the Project Management Plan </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.CMM.010</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM010_CONDUCT_PROJECT_STAKEHOLDER_ANALYSIS.HTM" target="_blank">Conduct Project Stakeholder Analysis </a></td>
+    <td width="340" align=left><span class="MsoNormal">Project Stakeholder Analysis</span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CMM010_PROJECT_STAKEHOLDER_ANALYSIS.XLSX" target="_blank">Project Stakeholder Analysis</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.OCHM.010</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">Understand Customer's Organizational Change Management Strategy</a> </td>
+    <td width="340" align=left> Customer's Organizational Change Management Strategy</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+</tbody>  
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.DWText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.DW</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.DWOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.DW', 'PS.ACT.DWOnImg', 'PS.ACT.DWOffImg'); new Effect.Highlight($('PS.ACT.DWText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.DWOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.DW', 'PS.ACT.DWOnImg', 'PS.ACT.DWOffImg'); new Effect.Highlight($('PS.ACT.DWText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDW_DEVELOP_WORKPLAN.HTM" target="_blank">Develop Workplan</a></b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="PS.ACT.DW">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.WM.010</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">Develop Baseline Project Workplan </a></td>
+    <td width="340" align=left>Baseline Project Workplan</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/IMPLEMENTATION_PLAN.DOCX" target="_blank">Implementation Plan</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/ITERATION_PLAN_SUMMARY.DOCX" target="_blank">Iteration Plan Summary</a><br>
+      <a
+				href="040_TEMPLATES_AND_GUIDANCE/OUM_PROJECT_WORKPLAN_FILES.ZIP" target="_blank">OUM Project Workplan</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/OUM_PRIMAVERA_PROJECT_WORKPLAN.PLAN" target="_blank">OUM Primavera Project Workplan</a> </td>
+  </tr>
+  </tbody>
+<tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.DSPBText">
+  <th width="140" align=left nowrap scope="rowgroup">PS.ACT.DSPB</th>
+  <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.DSPBOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.DSPB', 'PS.ACT.DSPBOnImg', 'PS.ACT.DSPBOffImg'); new Effect.Highlight($('PS.ACT.DSPBText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.DSPBOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.DSPB', 'PS.ACT.DSPBOnImg', 'PS.ACT.DSPBOffImg'); new Effect.Highlight($('PS.ACT.DSPBText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTDSPB_DEVELOP_STAFF_PLAN_AND_BUDGET.HTM" target="_blank">Develop Staff Plan and Budget</a></b> </div></td><td width="340" align=left>&nbsp;</td>
+  <td width="340" align=left>&nbsp;</td>
+</tr>
+<tbody id="PS.ACT.DSPB">
+<tr align=right valign="top" bgcolor="#FFFFFF">
+  <th width="140" align=left nowrap scope="row">PS.FM.010</th>
+  <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">Refine Project Budget </a></td>
+  <td width="340" align=left><span class="MsoNormal">Approved Project Budget </span></td>
+  <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+</tr>
+<tr align=right valign="top" bgcolor="#FFFFFF">
+  <th width="140" align=left nowrap scope="row">PS.STM.010</th>
+  <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">Plan Resources Requirements</a> </td>
+  <td width="340" align=left>Resource Plan </td>
+  <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/STM010_PROJECT_TEAM_ORGANIZATION_CHART.DOCX" target="_blank">Project Team Organization Chart</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/STM010_RESOURCE_PLAN.XLSX" target="_blank">Resource Plan</a> </td>
+</tr>
+<tr align=right valign="top" bgcolor="#FFFFFF">
+  <th width="140" align=left nowrap scope="row">PS.STM.030</th>
+  <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">Staff Project </a></td>
+  <td width="340" align=left>Staffed Project <br></td>
+  <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+</tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.STM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">Prepare Orientation Guide </a></td>
+    <td width="340" align=left>Orientation Guide<br></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/STM040_ORIENTATION_GUIDE.DOCX" target="_blank">Project Orientation Guide</a> </td>
+  </tr>
+</tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.CPMPText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.EG</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.CPMPOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.CPMP', 'PS.ACT.CPMPOnImg', 'PS.ACT.CPMPOffImg'); new Effect.Highlight($('PS.ACT.CPMPText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.CPMPOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.CPMP', 'PS.ACT.CPMPOnImg', 'PS.ACT.CPMPOffImg'); new Effect.Highlight($('PS.ACT.CPMPText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEG_ESTABLISH_GOVERNANCE.HTM" target="_blank">Establish Governance </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="PS.ACT.CPMP">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.SM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">Develop Scope Change Management Processes </a></td>
+    <td width="340" align=left>Scope Change Management Processes</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top"><th width="140" align=left nowrap scope="row">PS.FM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">Develop Financial Management Plan </a></td>
+    <td width="340" align=left><span class="MsoNormal">Financial Management Plan </span></td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.WM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">Develop Work Management Execution and Control Processes and Policies </a></td>
+      <td width="340" align=left> Work Management Plan</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.RKM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">Develop Risk Management Plan </a></td>
+      <td width="340" align=left>Risk Management Plan</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.IPM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">Develop Issue Management Strategy </a></td>
+      <td width="340" align=left><span class="MsoNormal">Issue Management Strategy </span></td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.IPM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">Develop Problem Management Strategy </a></td>
+      <td width="340" align=left><span class="MsoNormal">Problem Management Strategy </span></td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.STM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">Develop Staff Management Plan </a></td>
+      <td width="340" align=left>Staff Management Plan</td>
+    <td width="340" align=left>Update the Project Management Plan <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/STM020_STAFF_TRAINING_PLAN.DOCX" target="_blank">Staff Training Plan</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/STM020_PROJECT_ROLES_AND_RESPONSIBILITIES.PPTX" target="_blank">Project Roles and Responsibilities Presentation</a> </td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.CMM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">Develop Project Team Communication Plan </a></td>
+      <td width="340" align=left><span class="MsoNormal">Project Team Communication Plan</span></td>
+    <td width="340" align=left>Update the Project Management Plan <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CMM020_CUSTOMER_PROFILE.DOCX" target="_blank">Customer Profile</a></td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.QM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">Develop Quality Management Plan </a></td>
+      <td width="340" align=left>Quality Management Plan</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.QM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">Develop and Document Quality Control and Reporting Process </a></td>
+      <td width="340" align=left>Quality Control and Reporting Process</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_CONTROL_AND_REPORTING_PROCESS.DOCX" target="_blank">Quality Control and Reporting Process</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_MANAGEMENT_CHECKLIST.DOCX" target="_blank">Quality Control Checklist</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT.DOCX" target="_blank">Quality Review Report (Generic)</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT_CUSTOM.DOCX" target="_blank">Quality Review Report (Custom Development)</a></td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.CM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">Develop Configuration Management Strategy and Processes </a></td>
+      <td width="340" align=left><span class="MsoNormal">Configuration Management Plan and Processes </span></td>
+    <td width="340" align=left>Update the Project Management Plan<br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_INDEX.XLSX" target="_blank">Configuration Item Index</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_STATUS_RECORD.DOCX" target="_blank">Configuration Item Status Record</a> </td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.CM.030</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Documentation Management Plan </a></td>
+      <td width="340" align=left><span class="MsoNormal">Documentation Management Plan </span></td>
+      <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENTATION_MANAGEMENT_PLAN.DOCX" target="_blank">Documentation Management Plan</a> <br>          
+        <a href="040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENT_INDEX_EXCEL.XLSX" target="_blank">Document Index-Excel</a></td>
+    </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.IFM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">Develop Infrastructure Management Plan </a></td>
+      <td width="340" align=left>Infrastructure Management Plan</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.PCM.010</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">Develop Procurement Strategy and Process </a></td>
+      <td width="340" align=left>Procurement Strategy and Process</td>
+    <td width="340" align=left>Update the Project Management Plan</td>
+  </tr>
+    <tr valign="top"><th width="140" align=left nowrap scope="row">PS.OCHM.020</th>
+      <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/OCHM020_IDENTIFY_CHANGE_MANAGEMENT_WARNING_SIGNS.HTM" target="_blank">Identify Change Management Warning Signs </a></td>
+      <td width="340" align=left>Change Management Warning Signs</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/OCHM020_CHANGE_MANAGEMENT_WARNING_SIGNS.DOCX" target="_blank">Change Management Warning Signs</a>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">PS.BT.070.2</th>
+      <td align=left><a href="020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">Create Project Management Plan </a></td>
+      <td align=left><span class="MsoNormal">Project Management Plan </span></td>
+      <td align=left>Update the Project Management Plan</td>
+    </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PS.ACT.EPIText">
+    <th width="140" align=left nowrap scope="rowgroup">PS.ACT.EPI</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PS.ACT.EPIOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PS.ACT.EPI', 'PS.ACT.EPIOnImg', 'PS.ACT.EPIOffImg'); new Effect.Highlight($('PS.ACT.EPIText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PS.ACT.EPIOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PS.ACT.EPI', 'PS.ACT.EPIOnImg', 'PS.ACT.EPIOffImg'); new Effect.Highlight($('PS.ACT.EPIText'), {startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PSACTEPI_ESTABLISH_PROJECT_INFRASTRUCTURE.HTM" target="_blank">Establish Project Infrastructure</a></b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tbody id="PS.ACT.EPI">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.FM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/FM030_SET_UP_TIME_AND_EXPENSE_TRACKING.HTM" target="_blank">Set Up Time and Expense Tracking</a></td>
+    <td width="340" align=left><span class="MsoNormal">Time and Expense Tracking </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/FM030_EXPENSE_TRACKING_SPREADSHEET.XLSX" target="_blank">Expense Tracking Spreadsheet</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/FM030_PROJECT_TEAM_TIME_SHEET.XLSX" target="_blank">Project Team Time Sheet</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.RKM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">Develop Risk Management System </a></td>
+    <td width="340" align=left>Risk Management System</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.IPM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">Develop Issue and Problem Management System </a></td>
+    <td width="340" align=left><span class="MsoNormal">Issue and Problem Management System </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_FORM.DOCX" target="_blank">Issue Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_LOG.XLSX" target="_blank">Issue Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_REPORT_FORM.DOCX" target="_blank">Problem Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_LOG.XLSX" target="_blank">Problem Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.CM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">Obtain Configuration Management Tools </a></td>
+    <td width="340" align=left><span class="MsoNormal">Configuration Management Tools </span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.IFM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank">Establish Team Work Environment </a></td>
+    <td width="340" align=left><span class="MsoNormal">Team Work Environment</span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.IFM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank">Establish Technical Infrastructure </a></td>
+    <td width="340" align=left><span class="MsoNormal">Established Technical Infrastructure</span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/IFM030_PHYSICAL_RESOURCE_PLAN.DOCX" target="_blank">Physical Resource Plan </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PS.PCM.020</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/PCM020_PROCURE_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Procure Goods and Contracted Services </a></td>
+    <td width="340" align=left>Service Orders </td>
+    <td width="340" align=left>Service Orders </td>
+  </tr>
+  </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="140" align=left nowrap scope="rowgroup">PEC</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/010_PHASE/PJM_B_PROJECT_EXEC_AND_CONTROL_PHASE_OVERVIEW.HTM" target="_blank"><b>Project Execution and Control</b></a></td>
+    <td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MSAAText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MSAA</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MSAAOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MSAA', 'PEC.ACT.MSAAOnImg', 'PEC.ACT.MSAAOffImg'); new Effect.Highlight($('PEC.ACT.MSAAText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MSAAOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MSAA', 'PEC.ACT.MSAAOnImg', 'PEC.ACT.MSAAOffImg'); new Effect.Highlight($('PEC.ACT.MSAAText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMSAA_MANAGE_SCOPE_ACCEPTANCE_AND_APPROVALS.HTM" target="_blank">Manage Scope, Acceptance and Approvals</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MSAA">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.SM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">Manage Scope </a></td>
+    <td width="340" align=left>Managed Scope </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_FORM.DOCX" target="_blank">Change Request Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_LOG.XLSX" target="_blank">Change Request Log</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.SM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM040_MANAGE_ACCEPTANCE.HTM" target="_blank">Manage Acceptance </a></td>
+    <td width="340" align=left>Managed Acceptance</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CRITERIA.DOCX" target="_blank">Acceptance Criteria</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a></td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MPFText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MPF</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MPFOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MPF', 'PEC.ACT.MPFOnImg', 'PEC.ACT.MPFOffImg'); new Effect.Highlight($('PEC.ACT.MPFText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MPFOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MPF', 'PEC.ACT.MPFOnImg', 'PEC.ACT.MPFOffImg'); new Effect.Highlight($('PEC.ACT.MPFText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPF_MANAGE_PROJECT_FINANCES.HTM" target="_blank">Manage Project Finances </a></b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MPF">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.FM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">Manage Project Finances </a></td>
+    <td width="340" align=left><span class="MsoNormal">Managed Project Finances </span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MPWText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MPW</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MPWOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MPW', 'PEC.ACT.MPWOnImg', 'PEC.ACT.MPWOffImg'); new Effect.Highlight($('PEC.ACT.MPWText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MPWOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MPW', 'PEC.ACT.MPWOnImg', 'PEC.ACT.MPWOffImg'); new Effect.Highlight($('PEC.ACT.MPWText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPW_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">Manage Project Workplan </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MPW">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.WM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">Manage Project Workplan </a></td>
+    <td width="340" align=left>Project Workplan</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/WM030_ASSIGNMENT_REQUEST.DOCX" target="_blank">Assignment Request</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/WM030_DELIVERABLE%20TRACKING.XLSX" target="_blank">Deliverable Tracking Spreadsheet</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/WM030_UNPLANNED_ACTIVITY_LOG.XLSX" target="_blank">Unplanned Activity Log</a> <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/WM030_ITERATION_END_REPORT.DOCX" target="_blank">Iteration End Report</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.WM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">Track Schedule Performance </a></td>
+    <td width="340" align=left>Schedule Performance</td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.WM.070</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM070_SCHEDULE_WORKSHOPS.HTM" target="_blank">Schedule Workshop(s) </a></td>
+    <td width="340" align=left>Workshop Schedule </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/WM-070_WORKSHOP_SCHEDULE.xlsx" target="_blank">Workshop Schedule</a></td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MRIPText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MRIP</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MRIPOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MRIP', 'PEC.ACT.MRIPOnImg', 'PEC.ACT.MRIPOffImg'); new Effect.Highlight($('PEC.ACT.MRIPText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MRIPOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MRIP', 'PEC.ACT.MRIPOnImg', 'PEC.ACT.MRIPOffImg'); new Effect.Highlight($('PEC.ACT.MRIPText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMRIP_MANAGE_RISKS_ISSUES_AND_PROBLEMS.HTM" target="_blank">Manage Risks, Issues and Problems </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MRIP">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.RKM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">Manage RIsk </a></td>
+    <td width="340" align=left>Managed Risk</td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.RKM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">Monitor and Control Risk </a></td>
+    <td width="340" align=left>Assessed Risk </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.IPM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">Manage Issues and Problems </a></td>
+    <td width="340" align=left><span class="MsoNormal">Managed Issues and Problems</span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.OMTText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.OMT</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.OMTOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.OMT', 'PEC.ACT.OMTOnImg', 'PEC.ACT.OMTOffImg'); new Effect.Highlight($('PEC.ACT.OMTText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.OMTOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.OMT', 'PEC.ACT.OMTOnImg', 'PEC.ACT.OMTOffImg'); new Effect.Highlight($('PEC.ACT.OMTText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTOMT_ORIENT_AND_MANAGE_TEAM.HTM" target="_blank">Orient and Manage Team </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.OMT">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.QM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM030_CONDUCT_PROJECT_TEAM_QUALITY_MANAGEMENT_ORIENTATION.HTM" target="_blank">Conduct Project Team Quality Management Orientation</a></td>
+    <td width="340" align=left>Project Team Quality Management Orientation</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/QM030_PROJECT_TEAM_QUALITY_MGT_ORIENTATION.PPTX" target="_blank">Project Team Quality Management Orientation Presentation </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.STM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">Conduct Team Orientation </a></td>
+    <td width="340" align=left>Oriented Team </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/STM050_PROJECT_KICKOFF_PRESENTATION.PPTX" target="_blank">Project Kickoff Presentation </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.STM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM060_MANAGE_PROJECT_TEAM.HTM" target="_blank">Manage Project Team </a></td>
+    <td width="340" align=left>Managed Project Team<br></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/STM060_INDIVIDUAL_STATUS_REPORT.DOCX" target="_blank">Individual Status Report</a></td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MCOPText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MCOP</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MCOPOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MCOP', 'PEC.ACT.MCOPOnImg', 'PEC.ACT.MCOPOffImg'); new Effect.Highlight($('PEC.ACT.MCOPText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MCOPOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MCOP', 'PEC.ACT.MCOPOnImg', 'PEC.ACT.MCOPOffImg'); new Effect.Highlight($('PEC.ACT.MCOPText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMCOP_MANAGE_COMMUNICATIONS_AND_OCM_PLANS.HTM" target="_blank">Manage Communications and OCM Plans </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MCOP">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.CMM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM030_MANAGE_PROJ_TEAM_COMMUNICATION.HTM" target="_blank">Manage Project Team Communication </a></td>
+    <td width="340" align=left><span class="MsoNormal">Project Team Communication </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX">Meeting Minutes </a><br>
+        <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT_W_INST.DOCX" target="_blank">Weekly Project Status Report with Instructions</a><br>
+        <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT.DOCX" target="_blank">Weekly Project Status Report</a><br>
+        <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_STEERING_COMMITTEE_PRESENTATION.pptx" target="_blank">Steering Committee Presentation</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.OCHM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/OCHM030_EXECUTE_CHANGE_AND_COMMUNICATION_PLAN.HTM" target="_blank">Execute Change and Communication Plan </a></td>
+    <td width="340" align=left>Executed Change and Communication Plan</td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MPQText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MPQ</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MPQOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MPQ', 'PEC.ACT.MPQOnImg', 'PEC.ACT.MPQOffImg'); new Effect.Highlight($('PEC.ACT.MPQText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MPQOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MPQ', 'PEC.ACT.MPQOnImg', 'PEC.ACT.MPQOffImg'); new Effect.Highlight($('PEC.ACT.MPQText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMPQ_MANAGE_PROJECT_QUALITY.HTM" target="_blank">Manage Project Quality </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MPQ">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.QM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM040_MANAGE_QUALITY_CONTROL.HTM" target="_blank">Manage Quality Control </a></td>
+    <td width="340" align=left>Quality Control</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_COMMENTS_LIST.DOCX" target="_blank">Review Comments List</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_LEADER_FORM.DOCX" target="_blank">Review Leader Form</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.QM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">Perform Quality Assurance </a></td>
+    <td width="340" align=left>Managed Quality Assurance</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_ACTION_FORM.DOCX" target="_blank">Audit Action Report</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_REPORT.DOCX" target="_blank">Audit Report</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM050_QUALITY_REPORT.DOCX" target="_blank">Quality Report</a> </td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.CECRMText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.CECRM</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.CECRMOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.CECRM', 'PEC.ACT.CECRMOnImg', 'PEC.ACT.CECRMOffImg'); new Effect.Highlight($('PEC.ACT.CECRMText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.CECRMOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.CECRM', 'PEC.ACT.CECRMOnImg', 'PEC.ACT.CECRMOffImg'); new Effect.Highlight($('PEC.ACT.CECRMText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTCECRM_CREATE_AND_EXECUTE_CONFIG_AND_RELEASE_MGMT.HTM" target="_blank">Create and Execute Configuration and Release Management</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.CECRM">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.CM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">Create and Execute Software Configuration Management Plan </a></td>
+    <td width="340" align=left><span class="MsoNormal">Software Configuration Management Plan </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM040_SOFTWARE_CONFIGURATION_MANAGEMENT_PLAN.DOCX" target="_blank">Software Configuration Management Plan </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.CM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">Create and Execute Software Release Management Plan </a></td>
+    <td width="340" align=left><span class="MsoNormal">Software Release Management Plan </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM050_SOFTWARE_RELEASE_MANAGEMENT_PLAN.DOCX" target="_blank">Software Release Management Plan</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.CM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM060_CREATE_AND_EXECUTE_ENV_AND_PATCH_MGMT_PLAN.HTM" target="_blank">Create and Execute Environment and Patch Management Plan </a></td>
+    <td width="340" align=left><span class="MsoNormal">Environment and Patch Management Plan </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM060_ENVIRONMENT_AND_PATCH_MANAGEMENT_PLAN.DOCX" target="_blank">Environment and Patch Management Plan </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.CM.070</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">Create and Execute Configuration Control Plan </a></td>
+    <td width="340" align=left>Configuration Management Control Plan</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM070_CONFIGURATION_MANAGEMENT_CONTROL_PLAN.DOCX" target="_blank">Configuration Management Control Plan </a></td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.MMIText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.MMI</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.MMIOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.MMI', 'PEC.ACT.MMIOnImg', 'PEC.ACT.MMIOffImg'); new Effect.Highlight($('PEC.ACT.MMIText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.MMIOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.MMI', 'PEC.ACT.MMIOnImg', 'PEC.ACT.MMIOffImg'); new Effect.Highlight($('PEC.ACT.MMIText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTMMI_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">Manage and Maintain Infrastructure </a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.MMI">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.IFM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IFM040_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">Manage and Maintain Infrastructure </a></td>
+    <td width="340" align=left><span class="MsoNormal">Maintained Infrastructure </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/IFM040_EQUIPMENT_FAULT_RECORD.DOCX" target="_blank">Equipment Fault Record </a></td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PEC.ACT.APGCSText">
+    <th width="140" align=left nowrap scope="rowgroup">PEC.ACT.APGCS</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PEC.ACT.APGCSOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PEC.ACT.APGCS', 'PEC.ACT.APGCSOnImg', 'PEC.ACT.APGCSOffImg'); new Effect.Highlight($('PEC.ACT.APGCSText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PEC.ACT.APGCSOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PEC.ACT.APGCS', 'PEC.ACT.APGCSOnImg', 'PEC.ACT.APGCSOffImg'); new Effect.Highlight($('PEC.ACT.APGCSText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PECACTAPGCS_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Administer Procurement of Goods and Contracted Services</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+    <tbody id="PEC.ACT.APGCS">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PEC.PCM.030</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/PCM030_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">Administer Procurement of Goods and Contracted Services </a></td>
+    <td width="340" align=left>Managed Procurement of Goods and Services </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/PCM030_INCOMING_ITEM_RECORD.DOCX" target="_blank">Incoming Item Record</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/PCM030_REJECTION_NOTE.DOCX" target="_blank">Rejection Note</a> </td>
+  </tr>
+ </tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="140" align=left nowrap scope="rowgroup">PC</th>
+    <td width="540" align=left><b><a href="020_METHOD_GUIDELINES/010_PHASE/PJM_C_PROJECT_CLOSURE_PHASE_OVERVIEW.HTM" target="_blank">Project Closure</a></b></td>
+    <td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PC.ACT.GAText">
+    <th width="140" align=left nowrap scope="row">PC.ACT.GA</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC.ACT.GAOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PC.ACT.GA', 'PC.ACT.GAOnImg', 'PC.ACT.GAOffImg'); new Effect.Highlight($('PC.ACT.GAText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC.ACT.GAOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PC.ACT.GA', 'PC.ACT.GAOnImg', 'PC.ACT.GAOffImg'); new Effect.Highlight($('PC.ACT.GAText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PCACTGA_GAIN_ACCEPTANCE.HTM" target="_blank">Gain Acceptance</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+<tbody id="PC.ACT.GA">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.SM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">Gain Acceptance</a></td>
+    <td width="340" align=left>Final Acceptance Certificate </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a>      <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM050_PROJECT_ACCEPTANCE_REPORT.DOCX" target="_blank">Project Acceptance Report</a> </td>
+  </tr>
+</tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PC.ACT.CPCText">
+    <th width="140" align=left nowrap scope="rowgroup">PC.ACT.CPC</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC.ACT.CPCOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PC.ACT.CPC', 'PC.ACT.CPCOnImg', 'PC.ACT.CPCOffImg'); new Effect.Highlight($('PC.ACT.CPCText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC.ACT.CPCOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PC.ACT.CPC', 'PC.ACT.CPCOnImg', 'PC.ACT.CPCOffImg'); new Effect.Highlight($('PC.ACT.CPCText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PCACTCPC_CLOSE_PROCESSES_AND_CONTRACT.HTM" target="_blank">Close Processes and Contract</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+<tbody id="PC.ACT.CPC">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.SM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM060_CLOSE_SCOPE_MANAGEMENT.HTM" target="_blank">Close Scope Management </a></td>
+    <td width="340" align=left>Closed Scope Management </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/SM060_SCOPE_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Scope Management Lessons Learned</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.SM.070</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/SM070_IDENTIFY_FUTURE_SYSTEM_ENHANCEMENTS.HTM" target="_blank">Identify Future System Enhancements </a></td>
+    <td width="340" align=left>Future System Enhancements </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/SM070_FUTURE_SYSTEM_ENHANCEMENTS.DOCX" target="_blank">Future System Enhancements</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.FM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/FM050_CLOSE_PROJECT_FINANCIALS.HTM" target="_blank">Close Project Financials </a></td>
+    <td width="340" align=left><span class="MsoNormal">Closed Project Financials </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/FM050_FINANCIAL_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Financial Management Lessons Learned </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.WM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/WM060_CLOSE_WORK_MANAGEMENT.HTM" target="_blank">Close Work Management </a></td>
+    <td width="340" align=left>Closed Work Management</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/WM060_WORK_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Work Management Lessons Learned</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.RKM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/RKM060_CONDUCT_POST_PRODUCTION_RISK_ASSESSMENT.HTM" target="_blank">Conduct Post-Production Risk Assessment </a></td>
+    <td width="340" align=left>Post-Production Risk Assessment</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM060_LESSONS_LEARNED.DOCX" target="_blank">Risk Management Lessons Learned</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.IPM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IPM050_PRODUCE_FINAL_ISSUE_AND_PROBLEM_REPORT_AND_CLOSE_LOGS.HTM" target="_blank">Produce Final Issue and Problem Report and Close Log(s)</a></td>
+    <td width="340" align=left><span class="MsoNormal">Closed Issue and Problem Log </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/IPM050_ISSUE_AND_PROBLEM_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Issue and Problem Management Lessons Learned</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.STM.070</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/STM070_RELEASE_STAFF.HTM" target="_blank">Release Staff </a></td>
+    <td width="340" align=left>Released Staff </td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.CMM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM060_SUBMIT_FINAL_REPORTS.HTM" target="_blank">Submit Final Reports </a></td>
+    <td width="340" align=left>Final Reports </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_CLOSURE.DOCX" target="_blank">Project Closure</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_SUMMARY.DOCX" target="_blank">Project  Summary</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.QM.060</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/QM060_CONDUCT_POST_PRODUCTION_QUALITY_REVIEW.HTM" target="_blank">Conduct Post-Production Quality Review </a></td>
+    <td width="340" align=left>Post-Production Quality Review</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/QM060_CUSTOMER_SATISFACTION_REPORT.DOCX" target="_blank">Customer Satisfaction Report</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM060_PROJECT_HEALTHCHECK_CHECKLIST.DOCX" target="_blank">Project Healthcheck Checklist</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM060_METRICS_REPORT.DOCX" target="_blank">Metrics Report</a> </td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.CM.080</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CM080_CLOSE_CONFIGURATION_MANAGEMENT.HTM" target="_blank">Close Configuration Management </a></td>
+    <td width="340" align=left><span class="MsoNormal">Closed Configuration Management </span></td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CM080_LESSONS_LEARNED.DOCX" target="_blank">Configuration Management Lessons Learned </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.IFM.050</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/IFM050_CLOSE_INFRASTRUCTURE.HTM" target="_blank">Close Infrastructure </a></td>
+    <td width="340" align=left><span class="MsoNormal">Closed Infrastructure</span></td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.PCM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/PCM040_CLOSE_CONTRACT.HTM" target="_blank">Close Contract </a></td>
+    <td width="340" align=left>Closed Contract </td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/PCM040_SUPPLIER_ASSESSMENT_RECORD.DOCX" target="_blank">Supplier Assessment Record</a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.OCHM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/OCHM040_ESTABLISH_FOLLOW_UP_PROCESS.HTM" target="_blank">Establish Follow-Up Process </a></td>
+    <td width="340" align=left>Follow-Up Process</td>
+    <td width="340" align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+</tbody>
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PC.ACT.DLLAPText">
+    <th width="140" align=left nowrap scope="rowgroup">PC.ACT.DLLAP</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PC.ACT.DLLAPOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PC.ACT.DLLAP', 'PC.ACT.DLLAPOnImg', 'PC.ACT.DLLAPOffImg'); new Effect.Highlight($('PC.ACT.DLLAPText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PC.ACT.DLLAPOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PC.ACT.DLLAP', 'PC.ACT.DLLAPOnImg', 'PC.ACT.DLLAPOffImg'); new Effect.Highlight($('PC.ACT.DLLAPText'),{startcolor:'#ffffff'});"/> <b><a href="020_METHOD_GUIDELINES/040_ACTIVITY/PCACTDLLAP_DOCUMENT_LESSONS_LEARNED_AND_ARCHIVE_PROJECT.HTM" target="_blank">Document Lessons Learned and Archive Project</a> </b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+<tbody id="PC.ACT.DLLAP">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PC.CMM.040</th>
+    <td width="540" align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">Document Lessons Learned </a></td>
+    <td width="340" align=left>Lessons Learned</td>
+    <td width="340" align=left><a href="040_TEMPLATES_AND_GUIDANCE/CMM040_LESSONS_LEARNED.DOCX" target="_blank">Lessons Learned </a></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">PC.CMM.050</th>
+    <td align=left><a href="020_METHOD_GUIDELINES/030_TASK/CMM050_TURN_OVER_PROJECT_DOCUMENTATION.HTM" target="_blank">Turn Over Project Documentation </a></td>
+    <td align=left>Project Archives </td>
+    <td align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+</tbody>
+  <tr align=right valign="top" bgcolor="#BEBEBE">
+    <th width="140" align=left nowrap scope="rowgroup">PGM</th>
+    <td width="540" align=left><b>Program Management</b></td>
+    <td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+
+  <tr align=right valign="top" bgcolor="#CCCCCC" id="PGM.ACT.PGMText">
+    <th width="140" align=left nowrap scope="row">PGM.ACT.PGM</th>
+    <td width="540" align=left><div> <IMG src="../010_SHARED_FILES/opentriangle.gif" alt="Collapse activity" width="12" height="8" id="PGM.ACT.PGMOnImg" title="Collapse activity"
+	  		onclick="toggleElementBlind('PGM.ACT.PGM', 'PGM.ACT.PGMOnImg', 'PGM.ACT.GMOffImg'); new Effect.Highlight($('PGM.ACT.PGMText'),{startcolor:'#ffffff'});"
+	  		onload="Element.hide(this)"/> <IMG src="../010_SHARED_FILES/triangle.gif" alt="Expand activity" width="8" height="12" id="PGM.ACT.PGMOffImg" title="Expand activity"
+	  	    onclick="toggleElementBlind('PGM.ACT.PGM', 'PGM.ACT.PGMOnImg', 'PGM.ACT.PGMOffImg'); new Effect.Highlight($('PGM.ACT.PGMText'),{startcolor:'#ffffff'});"/> <b>Perform PGM Program Management</b> </div></td><td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+<tbody id="PGM.ACT.PGM">
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th width="140" align=left nowrap scope="row">PGM.PMC.PGMSUM1</th>
+    <td width="540" align=left>Perform Program Management Activities</td>
+    <td width="340" align=left>&nbsp;</td>
+    <td width="340" align=left>&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<HR WIDTH="100%">
+<P align="left"><IMG
+	src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103"
+	height="16" title="Oracle Logo"><!--MSProjectTemplate_AssignmentTableTitle-->
+  	<!--MSProjectTemplate_AssignmentTable-->
+</P>
+<P align="left"><span class="copyright"> <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affilitates. All rights reserved.</a></b></span>
+  <!--MSProjectTemplate_AssignmentTableTitle-->
+  <!--MSProjectTemplate_AssignmentTable-->
+</P>
+</BODY>
+</HTML>

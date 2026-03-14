@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>RD Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[RD] BUSINESS REQUIREMENTS</h2>
+<!--BeginProcessDesc--><p>In the Business Requirements process, you define the business needs that will be fulfilled by the application system. The business requirements for the proposed system or new enhancements are identified, refined and prioritized by a tightly integrated team of empowered ambassador users and experienced analysts. The process often begins from an existing high-level requirements document and a scope document, such as the Project Management Plan, Validated Scope (PJM SM.010). However, it is possible to begin from an agreed on scope and objectives before requirements have been defined. The Business Requirements process delivers a set of requirements models and a prioritized list of requirements as a basis for system development. Both the models and requirements list are dynamic and may change as the understanding of the team develops with the system. </p>
+<p>The main work products or outputs of this process are the business objectives and goals, the list of functional requirements and the supplemental requirements.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/RD_Process.jpg" alt="Business Requirements Process Flow Diagram" width="739" height="1024" border="1" title="Business Requirements Process Flow Diagram"></p>
+<P><A 
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>Depending on your project (e.g., large, complex, etc.), the project manager may designate a Business Requirements team leader and/or team leaders for various other reasons that the project manager deems necessary. If the project manager designates team leaders, they are responsible for leading their team and reviewing the work products produced by their team. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders. </p>
+<p>The Business Requirements process begins with defining the Business and System Objectives (RD.001). These objectives form the actual business benefits the customer wants to achieve by the new system. This is an important input to use during the rest of the project, from the beginning to the end. It will help in defining the right priorities, and to make decisions in line with the objectives.
+<p>Another early task is the creation of a System Context Diagram (RD.005) for the proposed system. The model identifies the business areas covered, all external data flows into and out of the proposed system and the related external systems.
+<p> The team then proceeds to high-level modeling, beginning with the identification and definition of the primary business processes. The requirements are transformed into the requirement models, the Future Process Model (RD.011.1), High-Level Business Descriptions (RD.020) and the Domain Model (RD.065). Often all these tasks are often performed as part of the same (or following) Business Requirements Workshops. Workshop techniques are used to determine the business process model, more detail is provided in the business descriptions, and may trigger changes to the process model. At the end of the Business Requirements Workshop, these work products should be consistent with each other. </p>
+<p>During this process we also, together with the ambassador users, develop and prioritize a list of requirements, and produce the MoSCoW List (RD.045). The prioritization of this list confirms the current requirements. This is sometimes done partly of fully as part of the Business Requirements Workshop(s), but often you need to gather everything at the end of the workshop, and perform a separate workshop to produce the final MoSCoW List. </p>
+<p>The Domain Model as a business domain model is often created in parallel with the Business Use Case Model (from the Requirements Analysis process) to model all the relevant business objects that relate to the Business Use Case Model. </p>
+<p> In parallel, the supplemental requirements are defined. Some of these might have come up in the Business Requirements Workshops, but using a separate workshop is recommended to identify supplemental requirements that go into the Supplemental Requirements (RD.055). As for the functional requirements, these are prioritized using the MoSCoW principle. </p>
+<p> In addition, a baseline Architecture Description (RD.130) is developed. The goal of this task is to highlight the factors that influence the application architecture and to enumerate strategies for dealing with these factors in the architectural design. Development of the Architecture Description starts with the identification of organizational, technological and product factors that may affect the architectural design. These may have come up as part of both the functional and supplemental requirements, some are constraints that are given for the project. Finally, from the prioritized list of requirements (MoSCoW List), the initial requirements models, and the Supplemental Requirements, the requirements are consolidated into a Requirements Specification (RD.140) that undergoes a peer-review (RD.150). This may be done in a number of iterations. Such an iteration may either consist of a subset of the Requirements Specification, or cover the complete set of requirements. This will depend on the size of the application to develop, the complexity, and the vagueness of the requirements. Typically, the smaller application, the lesser complex and the clearer requirements, the more requirements you include in a single iteration, as you do not expect too much to be changed as a result of the review. After a peer-review, any new and changed requirements are incorporated into the Reviewed Requirements Specification that may undergo a new review. </p>
+<p> After the final peer-review, the project manager reviews and if necessary, (re)defines the project plan and partition(s), and again any new and changed requirements are incorporated into the appropriate requirements models, and (re)prioritized.</p>
+<p><span class="style7">*This process has <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#RD" target="_blank">Application Implementation supplemental process guidance</a>.</span></p>
+<p> <A 
+href="#TOP">Back to Top</A>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4>Application Implementations </h4>
+<p>This process has supplemental guidance that should be considered if you are doing an application implementation. Use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a> to access all application implementation supplemental information. You can also go directly to the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#RD" target="_blank">Business Requirements process supplemental guidance</a>.</p>
+<p> <A 
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><B><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </B></h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Business Requirements process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.001</div></th>
+    <td><a href="../030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">Detail Business And System Objectives</a></td>
+    <td>Business and System Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.003</div></th>
+    <td><a href="../030_TASK/RD_003_IDENTIFY_VIEWPOINTS_OVERVIEW.HTM" target="_blank">Identify Viewpoints </a></td>
+    <td>Viewpoints List </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.005</div></th>
+    <td><a href="../030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">Create System Context Diagram </a></td>
+    <td>System Context Diagram </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.011.1</div></th>
+    <td><a href="../030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Develop Future Process Model </a></td>
+    <td>Future Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.012</div></th>
+    <td><a href="../030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">Document Present And Future Organization Structures</a></td>
+    <td>Present And Future Organization Structures</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.015</div></th>
+    <td><a href="../030_TASK/RD_015_DETERMINE_KPI_COLL_AND_REP_STR_OVERVIEW.HTM" target="_blank">Determine KPI Collection and Reporting Strategy</a></td>
+    <td>Key Business Strategies and Objectives</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.020</div></th>
+    <td><a href="../030_TASK/RD_020_OBTAIN_HL_BUS_DESCRIPTIONS_OVERVIEW.HTM" target="_blank">Obtain High-Level Business Descriptions</a></td>
+    <td>High-Level Business Descriptions</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.030</div></th>
+    <td><a href="../030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Develop Current Business Process Model </a></td>
+    <td>Current Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.034</div></th>
+    <td><a href="../030_TASK/RD_034_DOCUMENT_CURRENT_BUS_BASELINE_METRICS_OVERVIEW.HTM" target="_blank">Document Current Business Baseline Metrics </a></td>
+    <td>Current Business Baseline Metrics </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.042.1</div></th>
+    <td><a href="../030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+    <td>Glossary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.045.1</div></th>
+    <td><a href="../030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW) </a></td>
+    <td>Moscow List</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.055</div></th>
+    <td><a href="../030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">Detail Supplemental Requirements</a></td>
+    <td>Supplemental Requirements</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.065</div></th>
+    <td><a href="../030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">Develop Domain Model (Business Entities) </a></td>
+    <td>Domain Model</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.070</div></th>
+    <td><a href="../030_TASK/RD_070_DETERMINE_AUDIT_AND_CONTROL_REQS_OVERVIEW.HTM" target="_blank">Determine Audit and Control Requirements </a></td>
+    <td>Audit and Control Requirements</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.130.1</div></th>
+    <td><a href="../030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Baseline Architecture Description</a> </td>
+    <td>Architecture Description </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.134</div></th>
+    <td><a href="../030_TASK/RD_134_IDENTIFY_NEW_SW_REL_CHANGES_OVERVIEW.HTM" target="_blank">Identify New Software Release Changes </a></td>
+    <td>Software Release Changes Summary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.136</div></th>
+    <td><a href="../030_TASK/RD_136_PERFORM_CUST_EXT_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Custom Extension Impact Analysis </a></td>
+    <td>Custom Extension Impact Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.138</div></th>
+    <td><a href="../030_TASK/RD_138_PERFORM_DATA_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Data Impact Analysis </a></td>
+    <td>Data Impact Analysis</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.140.1</div></th>
+    <td><a href="../030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">Create Requirements Specification</a></td>
+    <td>Requirements Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.150.1</div></th>
+    <td><a href="../030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">Review Requirements Specification</a></td>
+    <td>Reviewed Requirements Specification</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.011.2</div></th>
+    <td><a href="../030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Develop Future Process Model </a></td>
+    <td>Future Process Model </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.042.2</div></th>
+    <td><a href="../030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+    <td>Glossary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.045.2</div></th>
+    <td><a href="../030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW) </a></td>
+    <td>Moscow List</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.140.2</div></th>
+    <td><a href="../030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">Create Requirements Specification</a></td>
+    <td>Requirements Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.150.2</div></th>
+    <td><a href="../030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">Review Requirements Specification</a></td>
+    <td>Reviewed Requirements Specification</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.042.3</div></th>
+    <td><a href="../030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+    <td>Glossary</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.045.3</div></th>
+    <td><a href="../030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW) </a></td>
+    <td>Moscow List</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.130.2</div></th>
+    <td><a href="../030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Baseline Architecture Description</a></td>
+    <td>Architecture Description </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">RD.160</div></th>
+    <td><a href="../030_TASK/RD_160_CONVERT_PROJECT_VIEWS_TO_REUSABLE_VIEWPOINTS_OVERVIEW.HTM" target="_blank">Convert Project Views to Reusable Viewpoints </a></td>
+    <td>New Reusable Viewpoints </td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Business Requirements process are:</p>
+<ul>
+  <li>Define clear, concise, consistent and measurable business and system objectives that should be achieved by the proposed system.</li>
+  <li> Define clear, concise, consistent, testable and unambiguous business requirements in order to show our understanding of the customer's requirements and thereby provide a basis for a common understanding of the proposed system.</li>
+  <li>Prioritize the business and supplemental requirements, based on the MoSCoW principle (Must have, Should have, Could have and Won't have).</li>
+  <li>Construct process and domain models as a basis for system design and subsequent testing.</li>
+  <li>Create a model that visually depicts information flows in the business in order to specify data use within and across your organization.</li>
+</ul>
+<p><A 
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Business Requirements process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="14%" scope="col">Name</th>
+    <th width="83%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application/Product Specialist </td>
+    <td>In a commercial off-the-shelf (COTS) application implementation, this person provides functional knowledge about the COTS application. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Facilitate workshops, interviews or meetings. Prepare for the workshop and lead the modeling activities. Record/document models and work products. Develop the Glossary. Focus on a clear definition of project scope. Verify that the business and system objectives are achievable and testable. Communicate the need for commitment from the organization. Facilitate the development of the Current Process Model.&nbsp;Consolidate requirements into a single Supplemental Requirements document. Develop the Domain Model. Determine and document the Audit and Control Requirements. Help formulate and prioritize the organization and product architectural risk factors. Consolidate requirements into a single Requirements Specification document. Review Requirements Specification.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DES</th>
+    <td>Designer</td>
+    <td>Resolve any conflicts that arise between teams concerning the definition of shared domains for the Domain Model (RD.065). Review Requirements Specification.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Review Requirements Specification.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Help consolidate requirements into a single Supplemental Requirements document and single Requirements Specification document. Facilitate workshops, interviews or meetings. Formulate technological risk factors. Facilitate and review the Requirements Specification.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Provide information about the business, business processes, organization units and external interfaces. Participate in modeling. Provide information about business terms.&nbsp;Help consolidate requirements into a single Supplemental Requirements document and single Requirements Specification document. Provide information about domain objects related to the business. Participate in the determining the Audit and Control Requirements. Formulate and prioritize the organization and product architectural risk factors. Review Requirements Specification.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BLM</th>
+    <td>Business Line Manager </td>
+    <td>Provide information about the business Select the business processes that should be baselined. Assist in determining the Audit and Control Requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager </td>
+    <td>Focus on staffing and other organizational issues that must be addressed in order to achieve the objectives.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td>Collaborate with the business analyst and the application product specialist to confirm the KPI benefits and their measurement. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">OS</th>
+    <td>IS Operations Staff </td>
+    <td>Provide information about existing systems and their operation.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td>Provide information about system terms.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPS</th>
+    <td>Project Sponsor </td>
+    <td>Responsible for all budget issues. Provide information about the business. Provide business context information about the process(es) being modeled.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">USR</th>
+    <td>User</td>
+    <td>Provide information about a particular business process.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">VS</th>
+    <td>Visionary</td>
+    <td>Communicate the vision.</td>
+  </tr>
+</table>
+<p><A 
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are:</p>
+<ul>
+  <li><b>Availability and Motivation of Qualified and Empowered Ambassador Users:</b> The project is dependent on ambassador user participation. If the ambassador users are not sufficiently available, then it will take too long for the ambassador users understanding and the developers understanding to converge, and thereby to form a common understanding of the requirements. Is that the case, the reviewed Conceptual Prototype and Requirements Specification will be less useful as a basis for further development. The ambassador users need to be strongly motivated to participate. They must also be able to compromise in order to reach agreement. The project sponsor needs to understand that the right users must be released to the project, not just the users who can most easily be released from other duties. If we do not have the right users, the developed system will neither be right. </li>
+  <li><b>Availability, Skills and Continuity of Qualified Analysts, Designers, Architects and Developers:</b> The development organizations resources are as critical as the ambassador user resources. OUM focuses on keeping the same resources throughout the lifecycle of the project. Therefore, these resources need a combined set of skills so that they can take on different roles, as they become appropriate for each phase and process. OUM will be new to many developers, who may feel uncomfortable without the structures and procedures of a traditional (waterfall) development approach. Developers need to deliver quickly, meeting fixed deadlines, often from minimal requirements. Because a OUM project is focused on quick delivery, there is normally no time for training on the job. If there are inexperienced OUM participants on the project, there should be at least one experienced practitioner (who is not on the critical path) coaching. </li>
+  <li><b>Project Scope:</b> An agreement must be reached with the sponsor about the project scope and the project scope must be prioritized. It is necessary to start prioritizing at this level in order to introduce the possibility that not everything will be included. </li>
+  <li><b>Commitment from User Organization:</b> The user organization must be committed to a successful project. If this commitment is not present, then users (and user management) will not prioritize project activities, will not be sufficiently available, and when they are available, will not focus on making the right decisions. </li>
+  <li><b>Communication Skills of the Participants:</b> Good communications is vital in order to help everyone understand what their tasks are and what they need to do, as well as to get the requirements of the new system clear. Every participant needs good communication skills. The Project Manager should be able to clearly explain the project plan, the impact on the organization, the benefits of the approach, and the necessity of getting sufficient time from the right users. The project sponsor should be able to describe the business problems to the developer organization and to make clearly explain the business benefits of the solution. </li>
+  <li><b>Facilitator and Scribe Skills:</b> During the Inception and Elaboration phases, most requirements are produced during workshops. Therefore, the skills of the facilitator and scribe are important to get the information in the right format, in the right timeframe and with the right content. </li>
+  <li><b>Good knowledge and understanding OUM by the Project Manager:</b> Normally the project manager drives the Inception phase and at the end plans the rest of the project. Therefore the project manager must know and be able to communicate the OUM approach, together with the demands that a project using OUM makes on the customer organization, as well as the implications of using techniques like MoSCoW.</li>
+  <li><b>Understanding OUM by other project participants:</b> It is important that all persons involved understand the OUM and its benefits. For example, if the ambassador users do not understand why we need to prioritize functionality, they may tend to view everything as equally important. They need to understand the impact of giving non-important functionality a high priority. The project manager and any team lead should know the OUM approach thoroughly in order to motivate and guide the team, as well as understand the inherent risks in order to mitigate risks and issues as they develop. The developers (architects, analysts and designers) need to understand the differences between OUM and traditional waterfall development, and to make the necessary adjustments in order to deliver on time with an acceptable level of quality. </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

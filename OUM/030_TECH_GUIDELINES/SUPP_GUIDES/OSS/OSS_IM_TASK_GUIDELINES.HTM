@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>OSS Task Guidelines for Incident Management</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Oracle Support Services Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+<select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+  <option value="#TOP" selected></option>
+  <option value="#TAG">Technical Architecture (TA) Process Guidance</option>
+  <option value="#TSG">Transition (TS) Process Guidance</option>
+  <option value="#PSG">Operations and Support (PS) Process Guidance</option>
+</select>
+<!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("TA");
+  Effect.BlindDown("TS");
+  Effect.BlindDown("PS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("TA");
+  Effect.BlindUp("TS");
+  Effect.BlindUp("PS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<h2>ORACLE SUPPORT SERVICES SUPPLEMENTAL TASK GUIDELINES FOR INCIDENT MANAGEMENT</h2>
+<p>This component contains OUM supplemental task guidance for managing incidents in an Oracle environment. The guidance complements and extends the baseline OUM guidance and should be used in conjunction with the guidelines in the OUM Task Overviews.</p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview. The guidance included in this component is focused on on Oracle's recommended approach and best practices for handling Incident Management in an Oracle eco system. </p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col" height="26">Oracle Support Services - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th scope"col><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Technical Architecture </div></th>
+  </tr>
+  <tbody id="TA">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#TA060">TA.060 Define System  Operations and Management Strategy</a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_060_DEFINE_SYSTEM_OPER_AND_MGMT_STRATEGY_OVERVIEW.HTM" target="_blank">TA.060 Define System Operations and Management Strategy </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Transition</div></th>
+  </tr>
+  <tbody id="TS">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#TS040">TS.040 Design Production Support Infrastructure </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.040 Design Production Support Infrastructure </a></td>
+    </tr>
+  <tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Operations and Support </div></th>
+  </tr>
+  </tbody>
+  <tbody id="PS">
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#PS050">PS.050 Analyze Problems </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_050_ANALYZE_PROBLEMS_OVERVIEW.HTM" target="_blank">PS.050 Analyze Problems </a></td>
+    </tr>
+    <tr valign="top">
+      <td width="50%" valign="top"><a href="#PS060">PS.060 Monitor and Respond to System Problems </a></td>
+      <td width="50%"><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_060_MONITOR_AND_RESPOND_TO_SYSTEM_PROBLEMS_OVERVIEW.HTM" target="_blank">PS.060 Monitor and Respond to System Problems </a></td>
+    </tr>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=TAG id="TAG"></A></B>TECHNICAL ARCHITECTURE (TA) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=TA060 id="TA060"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_060_DEFINE_SYSTEM_OPER_AND_MGMT_STRATEGY_OVERVIEW.HTM" target="_blank">TA.060 Define System Operations and Management Strategy </a></h4>
+<p>When preparing the System Operations and Management Strategy for managing your new systems, consider the following when addressing problem identification and resolution, service levels, and metrics and reporting. </p>
+<ul>
+  <li>The Service Level details should include the nature of technical support, help desk procedures, service level requirements and reporting. </li>
+  <li>The collection of metrics and reporting will be key components for quality improvement.</li>
+</ul>
+<p>The primary goal of the Problem Management process is to create a more stable IT service environment by minimizing the adverse impact of errors within the IT infrastructure and to prevent recurring incidents related to these errors. It&rsquo;s important to establish an Incident Management and Problem Management process that eliminates recurring incidents by categorizing the underlying root cause of the problem and then initiating actions to improve or correct the situation. In order to find, analyze and eliminate problems from your environment, you  need established processes for detecting problems, determining the root cause of the problem and implementing a solution to the problem. This requires a disciplined set of steps throughout the lifecycle of an incident or problem.</p>
+<p>  Problem identification and resolution is part of the Incident Management process. The goal of Incident Management is to ensure that normal levels for your IT services are restored as quickly as possible. Then through analysis, establish a quality process that prevents a recurrence of most issues. The strategy needs to be defined in conjunction with service level definitions for your IT service. You will need to establish clear definitions of what constitutes an incident or problem, it&rsquo;s impact to your services, how quickly it must be remedied, how work is assigned, tracked and progressed into your Change Management, Problem Management and Quality Management processes. Your strategy should set acceptable performance metrics that are viewed within both the incident lifecycle and within your process improvement reviews that are part of your Quality Management process.</p>
+<p>  Your issue management strategy  impacts resource planning and your ability to meet services levels. You need to take into account the following components:</p>
+<ul>
+  <li>Define roles and responsibilities for Incident and Problem Management.</li>
+  <li> Identify key stakeholders and service owners that must be informed and consulted during problem lifecycle.</li>
+  <li> Consider two or three categories to group your business services by criticality. Some business services may be &ldquo;Mission Critical&rdquo; where an outage may have serious financial impact.</li>
+  <li> Establish a definition for an incident. It is suggested that you look at well known IT management practices, such as ITIL.</li>
+  <li> Determine how you will describe the severity level for an incident. It is suggested that you adopt well know IT management practices, such as ITIL.</li>
+  <li> Decide on response, resolution and escalation times for the combination of service criticality and incident severity.</li>
+  <li> Create a definition of priorities to group incidents based upon service criticality and incident severity.</li>
+  <li> Target your ratios of incidents that can be self-solved by internal users via automation, solved by first level support (typically the help desk), or solved by a functional or technical expert. Then state how you plan to reach those ratios.</li>
+</ul>
+<p>In order to communicate effectively to the management team, to a service owner, or to an end user, you need a means of tracking and reporting issues, their progress and their status. Your management system may be a federation of tools or a central repository that is fed from multiple sources. Consider that end users  need to report issues ranging from provisioning problems to functional problems with your services. They may use web forms, email, chat, or a call to a help line. In addition, your technical support team may be using enterprise management tools to monitor critical processes that look for events that meet the criteria of an incident.</p>
+<p>  A federated system  needs a core level of commonality to do reporting against the macro environment, such as a system status web page that people can review prior to opening a service request in one or more of your tracking systems. In addition, you  need the ability to extract problem and incident details that can be imported into your Problem Management system for analysis.</p>
+<p>  A centralized system needs services or methods to receive issues and problems from multiple sources within a defined, acceptable time frame. Enterprise management systems such as Oracle Enterprise Manager often have integration points to create and update incidents within a centralized help desk product such as Siebel Help Desk.</p>
+<p>  Your issue and Problem Management system must be capable of:</p>
+<ul>
+  <li> tracking incidents and problems through the lifecycle &ndash; detect, describe, investigate and diagnose, resolve and recover, and close</li>
+  <li>capturing enough detail for your Problem Management and quality systems &ndash; problem type, severity, impact, duration, root cause, services affected, and more</li>
+  <li>managing work assignments and escalations</li>
+  <li>clustering or grouping related incidents into a common parent problem</li>
+  <li>providing accessible metrics for quality and Problem Management systems</li>
+</ul>
+<p>Whether explicitly captured through a web form, or provided by an underlying service, your system should capture the following data types:</p>
+<ul>
+  <li> Unique Incident Identifier</li>
+  <li> Source of Incident Detection</li>
+  <li> Reported By &ndash; includes identifying if this was reported by an enterprise management system</li>
+  <li> Date Submitted</li>
+  <li> Date Last Updated</li>
+  <li> Issue Description consisting of short title and long description</li>
+  <li>Severity</li>
+  <li> Affected Service, Process or System</li>
+  <li>Problem Type</li>
+  <li> Current Status</li>
+  <li> Assignment &ndash; current owner of the resolution</li>
+  <li> Escalation Status</li>
+  <li> Comments (by date/time and author)</li>
+  <li> Relationship to Other Incidents or a Parent Problem</li>
+  <li> Root Cause Statement</li>
+  <li> Solution Link or Description</li>
+  <li>Solution Category</li>
+  <li> Resolution Date</li>
+  <li> Resolution Owner</li>
+  <li> Close Date</li>
+</ul>
+<p>    The strategy for collection and reporting is a the basis for quality control to track adherence to service levels, whether you are meeting your business objectives, what needs to be improved, and how you are progressing with improvements. Incident and Problem Management feeds metrics into the Quality Management process. The metrics look at operational or process efficiency and effectiveness. They should show how well you are meeting your service level response and resolution time for incidents and they should also report on how your processes are maintaining or improving the service levels.</p>
+<p>Incident Management goals include:</p>
+<ul>
+  <li> Restore service operation as quickly as possible - as measured by time to resolution (TTR).</li>
+  <li> Eliminate incidents through problem prevention - as measured by two metrics:
+    <ul>
+      <li> Volume of Incidents in a time period
+      </li>
+    </ul>
+  </li>
+  <ul>
+    <li> Number of Recurring Incidents or known errors in a time period </li>
+  </ul>
+  <li> Minimize impact of problems - as measured by quality and availability.
+    <ul>
+      <li> Mean Time Between Incidents (MTBI) - the rate of incidents measured between the close of the prior incident and the start of the new incident </li>
+      <li>Unplanned down time, or unplanned service interruption should be part of your Service Level Agreements</li>
+    </ul>
+  </li>
+</ul>
+<p>Incident Management operational efficiency metrics will not only look at your time to resolution, but should also look at key metrics throughout the lifecycle in order to enable your continuous process improvement plans or to be used in formal quality programs. </p>
+<ul>
+  <li> Detection
+    <ul>
+      <li> Quality of Detected Incidents - number of false alarms vs. impactful incidents should drive changes to your event rules </li>
+      <li> Timeliness of Impactful Incidents - Impactful incidents that are user detected may be candidates for event monitoring </li>
+    </ul>
+  </li>
+  <li> Record
+    <ul>
+      <li> Time to Assignment </li>
+      <li> Time to First Technical Response </li>
+      <li> Number of Escalations </li>
+      <li> Initial Resolution during Triage - how many user reported incidents, not related to provisioning, are user error </li>
+    </ul>
+  </li>
+  <li> Investigate and Diagnose
+    <ul>
+      <li> Time to Reach Root Cause - Are you capturing the time to diagnose vs. the time to implement the resolution? </li>
+      <li> Time in Wait States - time waiting on vendor, time waiting for other internal resources </li>
+    </ul>
+  </li>
+  <li> Resolution
+    <ul>
+      <li> Actual vs. Estimated Time to Implement </li>
+      <li> Time in Wait State - time from root cause to change implementation </li>
+    </ul>
+  </li>
+  <li> Close
+    <ul>
+      <li> Volume of Self-Solved vs. Vendor Solved </li>
+      <li> Time to Resolution </li>
+      <li> Classification of Closure Decisions (Resolved, Deferred, Closed without Resolution)</li>
+    </ul>
+  </li>
+</ul>
+<p>Additional reporting should include specific initiatives to improve both the stability of your services and the Incident Management process itself. </p>
+<ul>
+  <li> Improvement Description</li>
+  <li> Improvement Plan &ndash; steps, start and end dates</li>
+  <li> Affected Metrics that show success of the improvement process</li>
+  <li> Improvement Plan Status</li>
+  <li> Improvement Plan Results</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=TSG id="TSG"></A></B>TRANSITION (TS) PROCESS GUIDANCE</h3>
+<h4><B><A
+name=TS040 id="TS040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TS_040_DESIGN_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">TS.040 Design Production Support Infrastructure </a></h4>
+<p>The work product for designing the Production Support Infrastructure includes developing the requirements and the processes for your Issue Tracking System and your Configuration Management System. As part of developing the requirements, it&rsquo;s important to understand the relationship between Incident Management, Problem Management and Configuration Management within your support infrastructure. Use the following guidance in conjunction with guidance related to managing production system performance, (that is,  PS.050 - Analyze Problems and PS.060 - Monitor and Respond to System Problems).</p>
+<p>  Incident Management is the process responsible for managing the lifecycle of all incidents. Incident Management&rsquo;s goal is to restore normal service operation as quickly as possible to minimize the impact to the business. The support infrastructure should include systems and processes that can automate the detection, recording, and diagnostic phases of the incident lifecycle. The system also needs to work in conjunction with Problem Management and Change Management systems and processes.</p>
+<p>  The Product Support process works best when IT Management systems interface along these processes. Consider the following core interaction of Incident Management process with other IT Management systems.</p>
+<p>  Configuration Management Database (CMDB) stores the configuration items and change history records for your services and systems.</p>
+<ul>
+  <li> CMDB needs to receive incident records and problem records linked to configuration items.</li>
+  <li> CMDB contains information about configuration items (CI) that may be needed in the Incident Management process. The configuration item information is recorded in the incident record and used during the investigation and diagnosis phase. Comparing the CI record against actual production can yield a potential cause due to unmanaged changes or drift in configuration settings.</li>
+</ul>
+<p> Problem Management stores incident record meta-data, analytical results, and actions intended to reduce recurring problems.</p>
+<ul>
+  <li> Problem Management Database (PMDB) needs information from the incident containing root cause and solutions in order to identify repeat incidents.</li>
+  <li> The help desk needs known problem information and solutions from PMDB that lists work-arounds, and solutions allowing quicker internal resolution of the incident.</li>
+</ul>
+<p> Change and Release Management stores records and results of change requests, including risk/benefit analysis.</p>
+<ul>
+  <li> Change Management receives change requests as part of the Incident Management flow when a solution is proposed.</li>
+  <li> Change Management systems provide a record of recent changes that may be the cause of a new incident. Access to the systems is needed in the diagnose phase.</li>
+</ul>
+<p> Enterprise Management (EM) System contains records of monitored events and incidents.</p>
+<ul>
+  <li> EM provides detection notification of an event which is classified as an incident.</li>
+  <li> EM provides updates on monitored incidents.</li>
+</ul>
+<p>Support processes and diagrams show expected flows for incidents, including actions by specific roles and systems used within the processes. Desk manuals for the processes contain definitions required by help desk and support personnel that describe terms such as service criticality, incident, severity, priority, and status. These reference sources should be made available electronically, and should be accessible within the work flow. </p>
+<p>The support infrastructure needs interfaces for individuals to report incidents and track the progress of the incident. Your design needs to address how you will receive notification of incidents and updates to the incidents. Will you provide web, mobile, chat, and phone access to create, view and update your incident records? </p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=PSG id="PSG"></A></B>OPERATIONS AND SUPPORT (PS) PROCESS GUIDANCE </h3>
+<h4><B><A
+name=PS050 id="PS050"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_050_ANALYZE_PROBLEMS_OVERVIEW.HTM" target="_blank">PS.050 Analyze Problems</a></h4>
+<p>Problem management receives input from your Help Desk or Incident Management systems in the form of incident records. The incident records provide details used for problem analysis. Important data used in the analysis include clustering or grouping of incident information along multiple dimensions. Your goal is to improve IT Service Quality through the elimination of problems and by increasing the first time fix rate of incidents that are reported.</p>
+<p>  Problem records are created if there is a business benefit to find the root cause, which means the resources and costs must support the business impact. Problems are the cause of one or more incidents. Where the Incident Management process is responsible for the quick resolution of the incident, the Problem Management process is responsible for tracking and analyzing the problems that cause the incidents.</p>
+<p>  Incident data needed for analysis includes:</p>
+<ul>
+  <li>Unique Incident Identifier </li>
+  <li>Date Submitted </li>
+  <li>Issue Description - consisting of short title and long description </li>
+  <li>Severity </li>
+  <li>Priority </li>
+  <li>Affected Service, Process or System </li>
+  <li>Problem Type </li>
+  <li>Relationship to Other Incidents or a Parent Problem </li>
+  <li>Root Cause Statement </li>
+  <li>Solution Link or Description </li>
+  <li>Solution Category </li>
+  <li>Resolution Date </li>
+  <li>Resolution Owner </li>
+</ul>
+<hr WIDTH="100%">
+<h4><B><A
+name=PS060 id="PS060"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/PS_060_MONITOR_AND_RESPOND_TO_SYSTEM_PROBLEMS_OVERVIEW.HTM" target="_blank">PS.060 Monitor and Respond to System Problems </a></h4>
+<p> ITIL describes an incident as an unplanned interruption to an IT service or a reduction in the quality of an IT service. A failure of a configuration item that has not yet affected service is also an incident. For example, if an item within a redundant set of items has failed, such as a mirrored disk, a load balancer, network card, etc., it is still  considered an incident due to the potential of reducing service levels.</p>
+<p>Incident Management is the process of managing the lifecycle of the incident. The purpose of well executed Incident Management is to restore service operation as quickly as possible with minimum disruption to the business. The goal is to achieve the highest levels of availability and service operation. Incident Management is often paired with Problem Management to prevent recurring incidents as well as manage the volume of incidents. </p>
+<p>The lifecycle phases of Incident Management are: </p>
+<ul>
+  <li><b>Detect</b> - Looks at conditions and considerations for setting up automated detection based upon events, as well as best practices for handling conditions discovered by people. </li>
+  <li><b>Record</b> - Establishes best practices to record, match, categorize and track incidents in order to meet designed service levels as well as contributing to process and quality improvement efforts. </li>
+  <li><b>Investigate and Diagnose</b> - Provides guidance on improving your ability to solve incidents related to Oracle products, whether you are self-solving, using social media, or obtaining assistance from Oracle. </li>
+  <li><b>Resolve</b> - Describes how you manage implementing solutions within common Change Management practices. </li>
+  <li><b>Close</b> - Completes the tracking and Incident Management process with important steps that map into continuous Process Improvement and Problem Management processes. </li>
+</ul>
+<h5><b> Detect</b></h5>
+<p> Detection is the first step when the incident is identified and notified to the Operations team. Incidents can be detected through automation in the form of event monitoring, or they can come from users or people reporting or logging the incident through your help desk. </p>
+<p>Automated detection can be performed by your product&rsquo;s diagnostic framework, by an enterprise management system, or through custom scripts and jobs created by the technical operations team. Most customers will have an enterprise management product, such as Oracle Enterprise Manager, to administer, manage the lifecycle, and monitor the systems in their data center. These same tools have out of the box event monitoring capability as well as providing for user defined event monitoring. </p>
+<p>Establishing the rules for converting events into incidents will be specific to your organization. Most organizations will follow a similar approach. The goal is to establish conversion rules that help you focus resources on the most important work in order to maintain a stable, highly available IT Service. </p>
+<p>Start with grouping your events into types and severity levels. Example severity levels for a monitored event may be:</p>
+<ul>
+  <li>Fatal - Target is down or service is not running.</li>
+  <li>Critical - Part of a service is not functional and requires immediate action.</li>
+  <li>Warning - Attention is required, but service or area is still functional.</li>
+</ul>
+<p>Identify targets that you are monitoring with your IT services. If you are using Oracle Enterprise Manager (OEM), group your targets, not only by type, but by IT service. It is important to know whether a monitored event is affecting a mission critical application rather than an often used, internal application. Adding management packs to OEM will assist in establishing vital relationships between targets. </p>
+<p>Establish event types that you will map to targets and severities. A sample set of event types include:</p>
+<ul>
+  <li>Availability - service/system down or unreachable </li>
+  <li>Performance - service/system not performing to defined level </li>
+  <li>Job Status Change - Processes or jobs that may not complete successfully </li>
+  <li>Compliance Violation - configuration change no longer matches compliance standard </li>
+  <li>Metric alert - monitored metric is outside of defined threshold </li>
+</ul>
+<p>Defining Incident Categories  helps you map event types, severity, target types and target lifecycle that you  use to define whether a detected event is an incident. You  also use the mapping to determine what actions need to be taken and the urgency of the action. Incident categories will reflect some of your event types. For example:</p>
+<ul>
+  <li>Availability </li>
+  <li>Capacity </li>
+  <li>Error </li>
+  <li>Job </li>
+  <li>Performance </li>
+  <li>Security </li>
+</ul>
+<h5><b> Record </b></h5>
+<p> Recording incidents and the outcome of the resolution process is used to track a wide set of metrics and improvement steps. A primary consumer of the information recorded during the incident resolution process is Problem Management. The goal of Problem Management is to proactively prevent incidents from happening and to minimize the impact of incidents that cannot be prevented. Problem Management relies heavily on the data found in help desks and Incident Management systems. The known errors database is often considered part of Problem Management, thus recording the outcome is key to building a strong knowledge base.</p>
+<p> Recording the incident involves gathering data in a form that is useful for future problem prevention. When an incident is logged, it should be initially categorized by service and problem type, and by severity or priority. It needs enough descriptive information to match it against other incidents that may be reported for the same type or matched to known errors or issues. You want your resources focused on the central problem rather than chasing individual incidents. Initial triage is also done at this step for manually detected incidents to determine whether user error is involved or whether the event warrants investigation and resolution.</p>
+<p> The main tasks in the Record phase should be: </p>
+<ul>
+  <li>Capture incident details automatically, via web form, or through interaction with help desk using phone or chat.</li>
+  <li>Confirm severity, problem priority, and problem type.</li>
+  <li>Validate issue by capturing symptoms and steps to recreate.</li>
+  <li>Establish contact name and method for contact throughout the lifecycle.</li>
+  <li>Conduct initial triage:</li>
+  <ul>
+    <li>Do skills and resources exist to resolve the problem via the help desk (level 1 support)? </li>
+    <li>Are their sufficient details to diagnose issue and determine root cause? </li>
+    <li>Is this a known problem for which a solution or work-around exists? </li>
+  </ul>
+  <li>Assign ownership based upon initial triage results&gt;</li>
+</ul>
+<p> During the Record phase, self-solve options should be provided to the end user.</p>
+<p> Some companies may have more than one system for recording and tracking incidents. For example, Oracle Enterprise Manager provides the ability to manage incidents that would normally be assigned to database administrators and system administrators whose primary functions is in the IT Operations of a data center. Companies may also have rules that determine whether an operational incident needs to be recorded against a central Help Desk system. User detected incidents will likely be logged into a help desk and assigned to a level 1 support person. If a member of IT Operations needs to be involved, the incident may be assigned from 1st level to IT Operations. This would indicate that someone in IT Operations would work out of both a help desk and an Enterprise Management system.</p>
+<h5><b> Investigate and Diagnose </b></h5>
+<p> Solving incidents should start with a simple plan and some basic understanding of the products in order for you to optimize your time. As an example, since database related error messages can be delivered through any product that uses an Oracle database, it's best to include the product or process information along with the error. Troubleshooting the error is normally best done by filtering the search results based upon the product, version and process (or context) under which that error message was shown. Another example is in the Application space, where Oracle has three product families that provide payroll services and therefore receive tax and regulatory updates on a regular basis. If you are searching on an error or issue related to payroll, you should filter your searches by product, version and process to keep your result list manageable.</p>
+<p> The main tasks for the Investigate and Diagnose phase should: </p>
+<ul>
+  <li>Verify problem description and steps to recreate.</li>
+  <li>Collect facts, including data and files related to the problem.</li>
+  <li>Conduct initial investigation:</li>
+  <ul>
+    <li>For system detected incidents, did system provide a diagnosis and potential solution? </li>
+    <li>Does the problem and severity require immediate assistance from the vendor or developer? </li>
+    <li>Does the owner have the skills to diagnose and determine root cause? </li>
+    <li>If owner is unable to resolve using internal, community, or vendor support, should owner request vendor or developer assistance? </li>
+  </ul>
+  <li>Determine the root cause based upon the diagnostic steps.</li>
+  <li> Establish proof that issue and root cause are linked.</li>
+  <li> Identify one or more solutions to the root cause.</li>
+</ul>
+<p> Consider performing the following steps to optimize the path to discovering the root cause for your issue:</p>
+<ul>
+  <li>Validate the Incident Description - make sure you have a clear understanding of the incident, especially when reported by end users.</li>
+  <li>Restate the incident description in technical terms to assist you in searching for known errors or bugs.</li>
+  <li>Incident Cause determination is your initial idea of what the root cause might be. It's your hypothesis to test.</li>
+  <li>Incident Cause confirmation is where you validate your hypothesis based upon data and diagnostic tests.</li>
+  <li>Solution selection is the step where you are presented with one or more solutions to the root cause.</li>
+</ul>
+<p> Investigating incidents for Oracle products have specific, best practices steps depending upon the product, however a common approach and set of tools should be leveraged. Listed below are the core tools you can use. </p>
+<ul>
+  <li>Search Product Documentation &ndash; useful for error messages related to configuration, setup, and common process mistakes </li>
+  <li>Product Diagnostics &ndash; Most Oracle products have built in diagnostics for some classes of problems. Product documentation will show you how to enable the diagnostics </li>
+  <li>Data Collection &ndash; Collecting facts about the incident is critical. Each product has tools to collect data for you. Oracle Database 11g, Fusion Middleware, and Fusion Applications use the Oracle Diagnostic Framework and can write facts into a file system structure known as the Automatic Diagnostic Repository (ADR) </li>
+  <li>Oracle Enterprise Manager &ndash; The Incident Workbench in OEM provides a guided resolution for many incidents and problem types </li>
+  <li>My Oracle Support &ndash; The online support portal with access to Oracle&rsquo;s knowledge base, documentation, bug database, and patching database </li>
+  <li>Oracle Technology Network and Oracle Forums &ndash; publicly accessible tips and suggestions for Oracle products including access to a vibrant community of users </li>
+</ul>
+<p> Be prepared to seek vendor or developer help when the severity and priority level of the incident is high and self-solve success is about to cross an acceptable threshold.</p>
+<p> Cause determination and justification is a step that ties back into your Problem Management process. During the Investigate and Diagnose phase, you will have formed at least one hypothesis for the root cause of the problem. You would have collected data and found supporting knowledge that helped you prove the hypothesis. Documenting this information allows you to enrich your known errors database that can be used for matching if the issue occurs again or if you choose not to apply a permanent solution to the root cause. You may in fact choose a work around as a solution, which means your incident may reoccur. Having this documented as a known error will save your company time in the future.</p>
+<p> To determine the root cause of the problem, you  need to establish your hypothesis and test it. This is an iterative step. You may have to reform your hypothesis if the results don't point to a justifiable root cause. Know your environment to help break the problem into probable areas to test first.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

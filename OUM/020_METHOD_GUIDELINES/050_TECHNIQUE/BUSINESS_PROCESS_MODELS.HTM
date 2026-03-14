@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Functional or Process Modeling Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>FUNCTIONAL OR PROCESS MODELING</h2>
+<p>The purpose of this technique is to assist in breaking down the enterprise functionally and modeling the functions or business processes. This technique also describes the different levels of business process models. </p>
+<p> <b>Important Note:</b> The choice of business process or purely functional modeling (such as using UML and use case descriptions) is only relevant at a relatively low level of detail. At a high level, both functional and process modeling use the same techniques for breaking down the enterprise functions. This is the technique that is described in this document.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>Function or Process Model</b> - The Function or Process Model is the highest level model of the business functions or processes within an enterprise. At this level, the same technique can be used, independent of whether you will plan to use functional modeling or process modeling for the lower levels. </p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Determine functional or business process levels.</td>
+    <td>Functional/Business Process Levels</td>
+    <td>There are multiple possible representations of the different levels a process or Function Model can have. The functional/business process levels describe the number of levels that you will use in the enterprise, and what each level represents.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Determine modeling techniques.</td>
+    <td>Modeling Techniques</td>
+    <td>The Modeling Techniques describe what kind of techniques should be used to model the different functional/business process levels. Most often, different techniques will be used to model the higher and the lower levels. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Determine enterprise modeling notations.</td>
+    <td>Enterprise Modeling Notations</td>
+    <td>The Enterprise Modeling Notations describe the modeling notations that should be used for the different Modeling Techniques used in the enterprise.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine the upper level Function or Process Models.</td>
+    <td>Upper Level Functional or Process Models</td>
+    <td>The Upper Level Function or Process Models are the actual models for the enterprise, in level 0 and 1 (according to pyramid B). </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Link enterprise requirements to functions/processes.</td>
+    <td>N/A</td>
+    <td>If requirements are maintained at enterprise level, you should use the Enterprise Function Model or Process Model and tie the requirements to the appropriate location in the model.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4> Determine Functional or Business Process Levels</h4>
+<p> The functional analysis required for functional modeling should first concentrate on defining the different functional levels (also called business process levels in the context of business process modeling) in the enterprise or within the scope of the engagement. These levels are often represented as a pyramid, although the actual definition of the levels varies. As a result, the first step of functional or process analysis is to define the levels. In functional modeling, the pyramid is called an Enterprise Function Model, whereas in business process modeling it is called and Enterprise Process Model. </p>
+<p> Two slightly different representations are shown here. Both are equally valid and can be used interchangeably but which one to use must be decided for the enterprise once and for all. </p>
+<TABLE width="100%" role="presentation">
+  <TBODY>
+    <TR>
+      <TD align="left" valign="top"><div align="center"><img src="../../../ENV/010_COMMON_FILES/ENT_FP_MOD_PYRA.JPG" alt="Pyramid A Enterprise Function Model" width="483" height="391" title="Pyramid A Enterprise Function Model"></div></TD>
+      <TD align="left" valign="top"><div align="center"><br>
+              <img src="../../../ENV/010_COMMON_FILES/Business_Process_Model_Levels.gif" alt="Pyramid B Enterprise Function Model" width="518" height="357" title="Pyramid B Enterprise Function Model"></div></TD>
+    </TR>
+    <TR>
+      <TD align="left" valign="top"><p align="center"><b>Pyramid Model A</b></TD>
+      <TD align="left" valign="top"><p align="center"><b>Pyramid Model B </b></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p>&nbsp;</p>
+<table width="100%"  border="1">
+  <tr bgcolor="#CCCCCC">
+    <th width="26%" scope="col">Level</th>
+    <th width="50%" scope="col">Description</th>
+    <th width="12%" scope="col">Pyramid A </th>
+    <th width="12%" scope="col">Pyramid B </th>
+  </tr>
+  <tr valign="top">
+    <th width="26%" scope="row"><div align="left">Enterprise Level </div></th>
+    <td width="50%">The enterprise or top-level scoping boundary, always sits at the top. Each level defined underneath will increase in detail with respect to functional detail.<br>
+        <br>
+      This is the top level at which we model the business shows the inputs and outputs of the enterprise as a whole, and is created as part of the <a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_045_DEVELOP_ENTERPRISE_BUS_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">Enterprise Business Context Diagram (BA.045)</a> in Envision. For the system, we develop the <a href="../030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">System Context Diagram (RD.005)</a>, which also is a Level 0 view but in the context of the system to be developed. It shows the inputs and outputs of the system as a whole, including the actors responsible for the inputs, and those who receive the output.</td>
+    <td width="12%">Enterprise</td>
+    <td width="12%">Level 0: Industry </td>
+  </tr>
+  <tr valign="top">
+    <th width="26%" scope="row"><div align="left">Business Function / Enterprise Business Model Level </div></th>
+    <td width="50%">At this level, the models are at their highest level, showing the business functions of the enterprise, and the highest level of the enterprise business flows. These functions define the customer&rsquo;s business operations within the scope of your assignment. They are usually very similar within an industry.<br>
+        <br>
+      These functions are normally only defined with a high-level description and sometimes a few steps at the highest level.<br>
+      Typical examples at this level are:
+      <ul>
+        <li>Inventory Management</li>
+        <li>Service Management</li>
+      </ul>
+      Or as verbs:
+      <ul>
+        <li> Manage IT </li>
+        <li> Manage Financial Resources </li>
+        <li> Manage Customer Service </li>
+      </ul>
+      These high level business functions are sometimes decomposed into groups defining similar processes performed by the high-level business function. For instance:
+      <ul>
+        <li> Manage Payroll </li>
+        <li> Manage Taxes </li>
+        <li> Process Account Payable and Expenses </li>
+      </ul>
+      are all examples of children of the Manage IT described above. Again, descriptive information defining the family of processes should be sufficient at this level for detailing nodes.</td>
+    <td width="12%">Level 0: Business Functions</td>
+    <td width="12%">Level 1: Business Area </td>
+  </tr>
+  <tr valign="top">
+    <th width="26%" scope="row"><div align="left">Business Process Level</div></th>
+    <td width="50%">This level shows how the enterprise performs each of the level 1 functions, how it operates. At this level, a business will usually differentiate itself from competitors in the same industry.<br>
+        <br>
+      This level includes defining the roles and high-level functions performed by the process. Understand that it is not always necessary to have more than one child for each parent. This single child relationship between level 1 and 2 may be common initially.<br>
+      <br>
+      Some examples of processes are:
+      <ul>
+        <li>Manage Service Contracts </li>
+        <li> Perform Service </li>
+        <li>Expense reimbursement</li>
+    </ul></td>
+    <td width="12%">Level 1: Process Groups<br>
+      Level 2: Core Business Process</td>
+    <td width="12%">Level 2: Business Process</td>
+  </tr>
+  <tr valign="top">
+    <th width="26%" scope="row"><div align="left">Activity, Task, Procedural Process Level</div></th>
+    <td width="50%">At this level, you show how a business processes is performed and break it down into corresponding business activities, tasks or procedural processes.<br>
+        <br>
+      Business activities are the activities performed as part of a business process that may yet be broken down across several tasks. (Think transaction, rather than method here, where the transaction may be executed, as a unit, over several actors).<br>
+      <br>
+      Tasks are typically performed by a single actor (system or manual), but may involve many steps. Tasks are normally sub-components of activities.<br>
+      <br>
+      Procedural processes are more detailed versions of the higher level processes, including with various scenarios such as the exceptional flows. Procedural processes typically are completed within one sitting; that is when started, they should either be fully completed (with success or failure), or the procedure must be aborted completely.<br>
+      <br>
+      Example activities for the Expense Reimbursement business process:
+      <ul>
+        <li> Establish and communicate expense policy </li>
+        <li> Prepare expense request </li>
+        <li> Reimburse expense </li>
+      </ul>
+      Example tasks for the Reimburse Expense activity:
+      <ul>
+        <li> Verify expense request </li>
+        <li> Transfer funds </li>
+      </ul>
+      Example procedural processes for the Perform Service business process:
+      <ul>
+        <li> Register Service Request </li>
+        <li> Plan Service </li>
+        <li> Execute Service </li>
+        <li> Register Service Resolution Result </li>
+      </ul>
+      SOA Services can typically be identified at this level. Please review the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">Service Identification and Discovery</a> technique for more details about service identification.<br>
+      <br>
+      Use case analysis is a great way to represent nodes in this level when taking a purely functional approach, otherwise a business process can be modeled using the business process modeling notation (BPMN).</td>
+    <td width="12%">Level 3: Business Activity<br>
+      Level 4: Business Task</td>
+    <td width="12%">Level 3: Procedural</td>
+  </tr>
+  <tr valign="top">
+    <th width="26%" scope="row"><div align="left">Step Level</div></th>
+    <td width="50%">This level breaks down a business task or procedural process, into finer grained steps.<br>
+        <br>
+      This is the lowest level of detail necessary for functional modeling or business process modeling.<br>
+      <br>
+      This is typically not done as part of the <a href="../030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">Future Process Model (RD.011)</a>, but is rather described as the scenarios in the <a href="../030_TASK/RA_024_DEVELOP_USE_CASE_DETAILS_OVERVIEW.HTM" target="_blank">Use Case Specification (RA.024) </a>.<br>
+      <br>
+      Example steps for Verify Expense Request include:
+      <ul>
+        <li> Verify expense policy compliance </li>
+        <li> Check exchange rates </li>
+      </ul>
+      Example steps for Register Service Request include:
+      <ul>
+        <li> Identify Customer </li>
+        <li> Identify Customer Contract </li>
+        <li> Register Service Problem </li>
+      </ul>
+      This level is implementation specific and may include process integration points.</td>
+    <td width="12%">Level 5: Business Step</td>
+    <td width="12%">Level 4: Steps</td>
+  </tr>
+</table>
+<p>The following picture represents the levels based on Pyramid Model B: </p>
+<p align="center"><img src="../../010_COMMON_FILES/MODELS/BUSINESS_PROCESS_MODELS_DIAGRAM_EXAMPLE.gif" alt="Business Process Model Levels using Pyramid B" width="1044" height="654" title="Business Process Model Levels using Pyramid B"></p>
+<hr WIDTH="100%">
+<h4>Determine Modeling Techniques</h4>
+<p> To determine an improved future process, begin by working with business analysts and end users analyzing an &ldquo;as-Is&rdquo; process and capturing the issues and challenges facing this process, i.e., delays, disconnects, etc. A business process can be decomposed into several sub-processes, which have their own attributes, but also contribute to achieving the goal of the super-process. The analysis of business processes typically includes the mapping of processes and sub-processes down to activity level.</p>
+<p> It is often easier to first model the as-is process (if not already available), before thinking about the improvements. </p>
+<p> You could also start with doing a functional analysis of the enterprise in levels similar to the way it is described here. For each level, you could use a different modeling approach. </p>
+<h5>MODELING HIGHER LEVELS</h5>
+<p> For example a <a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#VACD" target="_blank">Value-Added Chain Diagram (VACD)</a> is typically used for levels up to business process (level 2). Other modeling approaches, such as BPMN (Business Process Modeling Notation) are better to use for modeling the level 3 and below. Alternatively, you could use UML activity diagrams. </p>
+<p> VACD (Value-Added Chain Diagrams) is a less formal approach as it has a rather informal notation standard that allows for deviations from &ldquo;text-book&rdquo; notation and inclusion of non-standardized symbols. BPMN (Business Process Modeling Notation) is standardized, as is UML activity diagramming. Because of its informal nature, VACD might be easier for business people to understand but tends to be less precise and as a result harder to map on analysis and design models. </p>
+<p>Below is an example of an Enterprise Business Process Model (aka Business Function Model) using value-chain diagram based on the APQC Process Classification Framework<sup>SM</sup> (PCF)<sup><a href="../../050_REFERENCE_FILES/OUM_REFERENCES.htm#PCF" target="_blank">28</a></sup>: </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/VAL_CHAIN_DIAGRAM.JPG" alt="Enterprise Business Process Model Example" width="610" height="336" title="Enterprise Business Process Model Example"> </p>
+<p align="left">Below is an example of the same diagram, detailed with business process groups: </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/VAL_CH_BUS_PROC.JPG" alt="Example Enterprise Business Process Model Detailed with Business Process Groups" width="748" height="577" title="Example Enterprise Business Process Model Detailed with Business Process Groups"></p>
+<h5 align="left">MODELING LOWER LEVELS</h5>
+<p align="left">To model the lower level business processes, you may choose to use BPMN, UML activity diagrams, or some other notation. </p>
+<p> BPMN is formalized to a level where there is a clear mapping to BPEL (Business Execution Process Language). For example, a tool such as the Oracle BPA Suite can do a mapping from BPMN to BPEL automatically (to some extent). However, the customer may already have standardized on a specific modeling approach. If so, consider using that approach in that it is well known to the customer. </p>
+<p> In case of BPMN or UML activity diagrams, the diagram shows the events (initial state), the steps and decision points as an actor performs them, and their sequence, by drawing flows between pairs of activities or between an activity and a decision point or join. When there are decision points that split a process into more directions, first identify the main flow before going into all the exceptions routes. </p>
+<p> An example of BPMN business process model with horizontal swimlanes is shown below: </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/BPMN.JPG" alt="Example BPMN Business Process Model with Horizontal Swimlanes" width="757" height="188" title="Example BPMN Business Process Model with Horizontal Swimlanes"></p>
+<h5>MODELING ALL THE LEVELS</h5>
+<p> A Function Model showing all the levels is usually represented as a tree. More details are found in the next section </p>
+<hr WIDTH="100%">
+<h4>Determine Enterprise Modeling Notations</h4>
+<p>Even when you have determined the modeling techniques that you will use, there may be different notations that may be used for the different type of models. You may choose to use standard notations, or the customer may have their own notations that should be used. Having decided on standard notations across the enterprise for the different model types, makes it easier to reuse models between projects whenever that would be appropriate. </p>
+<p>As an example, for the Function Model, you may also choose different notations. The example Function Model below provides a high-level Function Model (with little detail) for the THFC Corporation. The scope of the Function Model, in general, will match the business scope defined in the <a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_012_DEFINE_BUS_SCOPE_OVERVIEW.HTM" target="_blank">Business Scope (BA.012)</a> or may cover the whole enterprise, as shown in the following tree, based on the APQC Process Classification Framework<sup>SM</sup> (PCF)<sup><a href="../../050_REFERENCE_FILES/OUM_REFERENCES.htm#PCF" target="_blank">28</a></sup>. </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/FUNCT_MODEL_EX.JPG" alt="Example Function Model" width="609" height="408" title="Example Function Model"></p>
+<p>There are a number of finer grained notations that have been used in various industries to represent Function Models. The differences typically lie in the layout of the diagram as well as the format of the nodes. This choice of notation is not critical, as long as the rules identified in the next section are adhered to. In fact, a different representation that is commonly used for Function Models, which is somewhat more scalable than the hierarchical layout is the vertical tree representation (see below). </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/THFC.JPG" alt="Vertical Tree Representation Example Function Model" width="473" height="592" title="Vertical Tree Representation Example Function Model"></p>
+<p>The illustration above provides a different layout for the THFC Corporation provided earlier. This representation is very useful when tools such as an enterprise repository will be used to either mirror or represent data against this model. </p>
+<hr WIDTH="100%">
+<h4>Determine the Upper Level Functional or Process Models</h4>
+<p>When you have determined the modeling techniques and notations for the upper level models, you are ready to actually model the highest levels of the enterprise. An example is given when the Function Model technique has been chosen. </p>
+<h5>RULES THAT APPLY TO FUNCTION MODELS </h5>
+<p> Function models are trees and as such, the following rules apply to them: </p>
+<ul>
+  <li> Function Models have a fixed number of functional levels. However the detail incorporated within each level can vary. </li>
+  <li> Each decreasing level is finer grained with respect to functional representation when compared to the level(s) above. </li>
+  <li> Each node in the graph may have exactly one parent (excluding the root node, which has no parent). </li>
+  <li> Cycles are not allowed in the model. </li>
+  <li> A Function Model is navigated by narrowing functional granularity, and not by organization structure. </li>
+</ul>
+<p> In addition, each level in the Function Model has a specific designation with respect to functional granularity. </p>
+<p> The primary goal of the Function Model is to prevent duplicate functions from appearing in separate parts of the Function Model. The following would be an incorrect representation of a Function Model: </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/FUN_TREE1.JPG" alt="Example Incorrect Function Model Showing Duplicate Functions" width="625" height="342" title="Example Incorrect Function Model Showing Duplicate Functions"></p>
+<p> The flaw in the Function Model is that the &ldquo;organization&rdquo; of the business has been mixed into the model at the third row from the figure above. For instance Car Loans, Personal Loans, and Mortgages, are lines of business within the THFC Corporation, they are not functions of the business. The correct function at that level would be &ldquo;lending&rdquo;. This would result in the following model: </p>
+<p align="center"><img src="../../../ENV/010_COMMON_FILES/FUN_TREE2.JPG" alt="Example Correct Function Model Showing Shared Functions" width="625" height="340" title="Example Correct Function Model Showing Shared Functions"></p>
+<hr WIDTH="100%">
+<h4>Link Enterprise Requirements to Functions/Processes</h4>
+<p>When getting down to the requirements analysis (refer to the <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a> technique), groups of requirements can be attached at level 2 (Business Process) and below. Requirements encountered at a parent node need to be interpreted that they apply at the child levels (and grand child, and so on) and below. This is an especially useful method for scoping or establishing a hierarchy of requirements which can be disseminated into service candidates as well as ensuring complete coverage. It is also a useful way to broadcast non-functional requirements (rather than repeating them at every node in every child level). Further, this strategy can be used to document higher granular requirements prior to breaking them down in to finer grained requirements. </p>
+<h5>FUNCTIONAL MODELING AND SOA </h5>
+<p> A Function Model that prevents duplication of enterprise functionality across the model is one of the aspects that make it useful for application within SOA deployments. One of the major issues that the SOA strategy attempts to overcome is the duplication of critical business function across systems. In many cases this happens simply because there is a lack of visibility with respect to requirements and existing IT business function. In other cases the inter-departmental rivalries/differences are the cause. A Function Model that eliminates functional duplication and is scalable with respect to enterprise class data sizes is an ideal fit for supporting the service identification and discovery aspects of an SOA from a functional point of view. </p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>There are no templates available to assist with this technique.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/ER_020_DETERMINE_ENVISION_ENG_STRATEGY_OVERVIEW.HTM" target="_blank">ER.020 Determine Envision Engagement Strategy (Envision)</a></div></th>
+    <td>Review this technique as input into this task for a SOA Modeling Planning engagement.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/ER_030_SET_&_AGREE_PLAN_FOR_ENVISION_ENG_OVERVIEW.HTM" target="_blank">ER.030 - Set and Agree on Plan for Envision Engagement (Envision)</a></div></th>
+    <td>Review this technique as input into this task for a SOA Modeling Planning engagement. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model (Envision) </a></div></th>
+    <td>Use this technique for guidance on how what kind of levels should be used for Function or Process modeling, what kind of notations may be used and how the upper level models should be made. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/RD_011_DEVELOP_FUTURE_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.011 Develop Future Process Model </a></div></th>
+    <td>Use this technique for guidance on what kind of levels, and techniques should be used for this type of model. </td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.030 Develop Current Business Process Model</a></div></th>
+    <td>Use this technique for guidance on what kind of levels, and techniques should be used for this type of model. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>Use the following criteria to check the quality of this technique: </p>
+<ul>
+  <li>Is there a clear definition on what kind of functional or process levels should be used to model the enterprise? </li>
+  <li>Is there a clear statement on what kind of modeling techniques should be used for the different levels or situations?</li>
+  <li>Is it clear what kind of notation should be used for each modeling technique?</li>
+  <li>Is a high level model created in the modeling technique prescribed for the highest level, and according to the prescribed modeling notation?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

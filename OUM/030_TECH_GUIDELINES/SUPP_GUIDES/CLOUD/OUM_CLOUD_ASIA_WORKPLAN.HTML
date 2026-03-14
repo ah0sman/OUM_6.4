@@ -1,0 +1,894 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM_NOPAGENAV.DWT" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>CAS OUM WBS</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="88%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">CAS OUM (Cloud Application Services OUM)</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>Work Breakdown Structure</h2>
+<TABLE width="100%" BORDER title="Cloud Application Services Implementation Approach Work Breakdown Structure" summary="This table shows the work breakdown structure for the Cloud Application Services Implementation Approach. The column headings are Seq, ID, Task Name, Work Product and Predecessors.">
+  <TR BGCOLOR="#DFDFDF">
+    <TH NOWRAP scope="col">Seq</TH>
+    <TH NOWRAP ALIGN=left scope="col">ID</TH>
+    <TH NOWRAP ALIGN=left scope="col"><DIV STYLE="margin-left:4">Name</DIV></TH>
+    <TH NOWRAP ALIGN=left scope="col">Work Product</TH>
+    <TH NOWRAP ALIGN=left scope="col">Predecessors</TH>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>1</TD>
+    <TD ALIGN=left>OUM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:4"><B>OUM</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>2</TD>
+    <TD ALIGN=left>CAS OUM </TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:16"><B>CAS OUM (Cloud Application Services OUM) Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>3</TD>
+    <TD ALIGN=left>A</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:28"><B>Project Design</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>4</TD>
+    <TD ALIGN=left>A.TG.PSU</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Start Up</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>5</TD>
+    <TD ALIGN=left>A.PSU.RCSWB</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Review Contract, Scope, Workplan and Budget (Core)</DIV></TD>
+    <TD ALIGN=left>Reviewed Contract, Scope, Workplan and Budget</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>6</TD>
+    <TD ALIGN=left>A.PSU.RPAC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Review Project Approach with Customer and Confirm Customer Readiness (Core)</DIV></TD>
+    <TD ALIGN=left>Confirmed Customer Readiness</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>7</TD>
+    <TD ALIGN=left>A.PSU.EGSI</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Establish Governance and Supporting Infrastructure (Core)</DIV></TD>
+    <TD ALIGN=left>Project Management Plan and Established Project Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>8</TD>
+    <TD ALIGN=left>A.TG.TR</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare Project Team</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>9</TD>
+    <TD ALIGN=left>A.STM.050</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Customer Kickoff Meeting (Core)</DIV></TD>
+    <TD ALIGN=left>Kickoff Meeting</TD>
+    <TD ALIGN=left>7</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>10</TD>
+    <TD ALIGN=left>A.TR.050</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Train Project Team (Optional)</DIV></TD>
+    <TD ALIGN=left>Trained Project Team</TD>
+    <TD ALIGN=left>7</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>11</TD>
+    <TD ALIGN=left>A.WM.070</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Schedule Workshops (Core)</DIV></TD>
+    <TD ALIGN=left>Workshop Schedule</TD>
+    <TD ALIGN=left>9</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>12</TD>
+    <TD ALIGN=left>A.TG.FT</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Conduct Functional and Technical Design Workshops</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>13</TD>
+    <TD ALIGN=left>A.MC.040</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Functional Design Workshops (Core)</DIV></TD>
+    <TD ALIGN=left>Functional Design</TD>
+    <TD ALIGN=left>11</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>14</TD>
+    <TD ALIGN=left>A.DS.145</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Technical Design Workshops (Optional)</DIV></TD>
+    <TD ALIGN=left>Technical Designs</TD>
+    <TD ALIGN=left>11</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>15</TD>
+    <TD ALIGN=left>A.DS.160</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Design Reviews (Core)</DIV></TD>
+    <TD ALIGN=left>Approved Designs</TD>
+    <TD ALIGN=left>13,14</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>16</TD>
+    <TD ALIGN=left>A.TG.SP</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Security Planning</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>17</TD>
+    <TD ALIGN=left>A.MC.060</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Develop Security Strategy and Plan (Core)</DIV></TD>
+    <TD ALIGN=left>Security Strategy and Plan</TD>
+    <TD ALIGN=left>13</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>18</TD>
+    <TD ALIGN=left>A.TG.VP</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Validation Planning</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>19</TD>
+    <TD ALIGN=left>A.TE.010</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Define Validation Strategy and Plan (Core)</DIV></TD>
+    <TD ALIGN=left>Validation Strategy and Plan</TD>
+    <TD ALIGN=left>13,14</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>20</TD>
+    <TD ALIGN=left>A.TG.DO</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Documentation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>21</TD>
+    <TD ALIGN=left>A.DO.010</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Define Documentation Requirements and Strategy (Optional)</DIV></TD>
+    <TD ALIGN=left>Documentation Requirements and Strategy</TD>
+    <TD ALIGN=left>13</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>22</TD>
+    <TD ALIGN=left>A.TG.TA</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Technical Readiness Assessment Kickoff</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>23</TD>
+    <TD ALIGN=left>A.TA.010</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Technical Readiness Assessment Kickoff Meeting (Optional)</DIV></TD>
+    <TD ALIGN=left>Technical Readiness Assessment Project Plan</TD>
+    <TD ALIGN=left>6</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>24</TD>
+    <TD ALIGN=left>A.TG.IC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implementation Checkpoint</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>25</TD>
+    <TD ALIGN=left>A.WM.055.1</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Implementation Checkpoint (Core)</DIV></TD>
+    <TD ALIGN=left>Implementation Checkpoint Meeting / Approval to Proceed</TD>
+    <TD ALIGN=left>13,14,17,19</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>26</TD>
+    <TD ALIGN=left>A.TG.PM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>27</TD>
+    <TD ALIGN=left>A.PEC.MPE.1</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Project Execution (Core)</DIV></TD>
+    <TD ALIGN=left>Managed Project Assets</TD>
+    <TD ALIGN=left>7</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>28</TD>
+    <TD ALIGN=left>B</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:28"><B>Configure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>29</TD>
+    <TD ALIGN=left>B.TG.IF</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Initial Configuration</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>30</TD>
+    <TD ALIGN=left>B.MC.070.1</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Setup Applications (Core)</DIV></TD>
+    <TD ALIGN=left>Configured Applications</TD>
+    <TD ALIGN=left>25</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>31</TD>
+    <TD ALIGN=left>B.TE.025</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare Validation Scripts (Core)</DIV></TD>
+    <TD ALIGN=left>Validation Scripts</TD>
+    <TD ALIGN=left>30</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>32</TD>
+    <TD ALIGN=left>B.MC.080</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Configuration Validation Workshops (Core)</DIV></TD>
+    <TD ALIGN=left>Validated Configuration</TD>
+    <TD ALIGN=left>31</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>33</TD>
+    <TD ALIGN=left>B.MC.050</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Update Setup Documentation (Core)</DIV></TD>
+    <TD ALIGN=left>Setup Documentation</TD>
+    <TD ALIGN=left>32</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>34</TD>
+    <TD ALIGN=left>B.RD.011</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Update Business Process Model (Core)</DIV></TD>
+    <TD ALIGN=left>Future Process Model</TD>
+    <TD ALIGN=left>32</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>35</TD>
+    <TD ALIGN=left>B.TG.FC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Configuration Familiarization and Coaching</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>36</TD>
+    <TD ALIGN=left>B.MC.063</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Configuration Familiarization/Coaching Sessions (Core)</DIV></TD>
+    <TD ALIGN=left>Configuration Familiarization/Coaching Sessions</TD>
+    <TD ALIGN=left>32,33</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>37</TD>
+    <TD ALIGN=left>B.TG.DL</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Load and Validate Data - Configure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>38</TD>
+    <TD ALIGN=left>B.CV.027</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Perform Data Mapping (Optional)</DIV></TD>
+    <TD ALIGN=left>Data Mapping</TD>
+    <TD ALIGN=left>33</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>39</TD>
+    <TD ALIGN=left>B.CV.053</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare Data for Loading (Optional)</DIV></TD>
+    <TD ALIGN=left>Prepared Data</TD>
+    <TD ALIGN=left>32,38</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>40</TD>
+    <TD ALIGN=left>B.CV.065.1</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Load, Reconcile and Validate Data (Optional)</DIV></TD>
+    <TD ALIGN=left>Validated Data</TD>
+    <TD ALIGN=left>39</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>41</TD>
+    <TD ALIGN=left>B.TG.CL</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare and Load Content</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>42</TD>
+    <TD ALIGN=left>B.CV.026</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Content Strategy Session (Optional)</DIV></TD>
+    <TD ALIGN=left>Content Strategy</TD>
+    <TD ALIGN=left>25</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>43</TD>
+    <TD ALIGN=left>B.CV.066</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare and Load Content (Optional)</DIV></TD>
+    <TD ALIGN=left>Loaded Content</TD>
+    <TD ALIGN=left>42</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>44</TD>
+    <TD ALIGN=left>B.TG.IP</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implement Integration Packages</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>45</TD>
+    <TD ALIGN=left>B.IM.050.1</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Integration Packages - Oracle (Optional)</DIV></TD>
+    <TD ALIGN=left>Integration Components - Oracle</TD>
+    <TD ALIGN=left>38</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>46</TD>
+    <TD ALIGN=left>B.IM.050.2</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Integration Packages - Customer Systems (Optional)</DIV></TD>
+    <TD ALIGN=left>Integration Components - Customer Systems</TD>
+    <TD ALIGN=left>38</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>47</TD>
+    <TD ALIGN=left>B.TE.045</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Validate Integration Packages (Optional)</DIV></TD>
+    <TD ALIGN=left>Validated Integrations</TD>
+    <TD ALIGN=left>45,46</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>48</TD>
+    <TD ALIGN=left>B.TG.IE</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implement Extensions</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>49</TD>
+    <TD ALIGN=left>B.IM.050.3</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Extensions (Optional)</DIV></TD>
+    <TD ALIGN=left>Implemented Extensions</TD>
+    <TD ALIGN=left>32</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>50</TD>
+    <TD ALIGN=left>B.MC.070.2</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Extensible Items (Optional)</DIV></TD>
+    <TD ALIGN=left>Configured Extensible Items</TD>
+    <TD ALIGN=left>32</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>51</TD>
+    <TD ALIGN=left>B.MC.085</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare Reports (Optional)</DIV></TD>
+    <TD ALIGN=left>Developed Reports</TD>
+    <TD ALIGN=left>32</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>52</TD>
+    <TD ALIGN=left>B.TE.030</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Validate Extensions (Optional)</DIV></TD>
+    <TD ALIGN=left>QA Tested Extensions</TD>
+    <TD ALIGN=left>49,50,51</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>53</TD>
+    <TD ALIGN=left>B.TG.PC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare for Cutover</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>54</TD>
+    <TD ALIGN=left>B.TS.020</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Define Cutover Strategy (Core)</DIV></TD>
+    <TD ALIGN=left>Cutover Strategy</TD>
+    <TD ALIGN=left>52</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>55</TD>
+    <TD ALIGN=left>B.TS.040</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Design Production Support Infrastructure (Core)</DIV></TD>
+    <TD ALIGN=left>Production Support Infrastructure Design</TD>
+    <TD ALIGN=left>54</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>56</TD>
+    <TD ALIGN=left>B.TG.IS</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implement Security Plan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>57</TD>
+    <TD ALIGN=left>B.MC.070.3</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Security (Core)</DIV></TD>
+    <TD ALIGN=left>Implemented Security</TD>
+    <TD ALIGN=left>36</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>58</TD>
+    <TD ALIGN=left>B.TG.IC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implementation Checkpoint</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>59</TD>
+    <TD ALIGN=left>B.WM.055.2</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Implementation Checkpoint (Core)</DIV></TD>
+    <TD ALIGN=left>Implementation Checkpoint Meeting / Approval to Proceed</TD>
+    <TD ALIGN=left>32,40,47,54</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>60</TD>
+    <TD ALIGN=left>B.TG.PM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>61</TD>
+    <TD ALIGN=left>B.PEC.MPE.2</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Project Execution (Core)</DIV></TD>
+    <TD ALIGN=left>Managed Project Assets</TD>
+    <TD ALIGN=left>27</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>62</TD>
+    <TD ALIGN=left>C</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:28"><B>Validate</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>63</TD>
+    <TD ALIGN=left>C.TG.PR</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare for End-to-End Review</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>64</TD>
+    <TD ALIGN=left>C.MC.070.4</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Setup Applications (Core)</DIV></TD>
+    <TD ALIGN=left>Configured Applications</TD>
+    <TD ALIGN=left>59</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>65</TD>
+    <TD ALIGN=left>C.TE.027</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Update Validation Scripts (Core)</DIV></TD>
+    <TD ALIGN=left>Updated Validation Scripts</TD>
+    <TD ALIGN=left>64</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>66</TD>
+    <TD ALIGN=left>C.TE.105</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare Users for Validation (Core)</DIV></TD>
+    <TD ALIGN=left>Prepared Users</TD>
+    <TD ALIGN=left>64,65</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>67</TD>
+    <TD ALIGN=left>C.TG.DL</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Validate Data Load - Validate</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>68</TD>
+    <TD ALIGN=left>C.CV.065.2</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Load, Reconcile and Validate Data (Optional)</DIV></TD>
+    <TD ALIGN=left>Validated Data</TD>
+    <TD ALIGN=left>64</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>69</TD>
+    <TD ALIGN=left>C.TG.ER</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>End-to-End Review</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>70</TD>
+    <TD ALIGN=left>C.TE.070</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct End-to-End Review (Core)</DIV></TD>
+    <TD ALIGN=left>End-to-End Review Results</TD>
+    <TD ALIGN=left>68</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>71</TD>
+    <TD ALIGN=left>C.TG.DO</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Documentation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>72</TD>
+    <TD ALIGN=left>C.DO.070</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Publish User Guide (Job Aid) (Optional)</DIV></TD>
+    <TD ALIGN=left>User Guide</TD>
+    <TD ALIGN=left>70</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>73</TD>
+    <TD ALIGN=left>C.DO.075</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Publish Admin Guide (Optional)</DIV></TD>
+    <TD ALIGN=left>Admin Guide</TD>
+    <TD ALIGN=left>70</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>74</TD>
+    <TD ALIGN=left>C.TG.TR</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare for Training</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>75</TD>
+    <TD ALIGN=left>C.TR.080</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Prepare for Training (Optional)</DIV></TD>
+    <TD ALIGN=left>Training Preparations</TD>
+    <TD ALIGN=left>70</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>76</TD>
+    <TD ALIGN=left>C.TR.095</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Train-the-Trainer Workshops (Optional)</DIV></TD>
+    <TD ALIGN=left>Trained Trainers</TD>
+    <TD ALIGN=left>75</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>77</TD>
+    <TD ALIGN=left>C.TG.TA</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Execute Technical Readiness Assessment</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>78</TD>
+    <TD ALIGN=left>C.TA.125</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Execute Technical Readiness Assessment (Optional)</DIV></TD>
+    <TD ALIGN=left>Technical Readiness Assessment Recommendations</TD>
+    <TD ALIGN=left>25</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>79</TD>
+    <TD ALIGN=left>C.TG.IC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Implementation Checkpoint</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>80</TD>
+    <TD ALIGN=left>C.WM.055.3</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Implementation Checkpoint (Core)</DIV></TD>
+    <TD ALIGN=left>Implementation Checkpoint Meeting / Approval to Proceed</TD>
+    <TD ALIGN=left>68,70,76</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>81</TD>
+    <TD ALIGN=left>C.TG.PM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>82</TD>
+    <TD ALIGN=left>C.PEC.MPE.3</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Project Execution (Core)</DIV></TD>
+    <TD ALIGN=left>Managed Project Assets</TD>
+    <TD ALIGN=left>61</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>83</TD>
+    <TD ALIGN=left>D</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:28"><B>Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>84</TD>
+    <TD ALIGN=left>D.TG.PT</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Prepare for Transition</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>85</TD>
+    <TD ALIGN=left>D.TS.045</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Remove Test Data from Production (Optional)</DIV></TD>
+    <TD ALIGN=left>Clean Production Environment</TD>
+    <TD ALIGN=left>80</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>86</TD>
+    <TD ALIGN=left>D.TS.050</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Migrate Configuration to Production (Core)</DIV></TD>
+    <TD ALIGN=left>Configured Production Environment</TD>
+    <TD ALIGN=left>80</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>87</TD>
+    <TD ALIGN=left>D.TS.051</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Migrate Integrations and Extensions to Production (Optional)</DIV></TD>
+    <TD ALIGN=left>Integrations and Extensions in Production</TD>
+    <TD ALIGN=left>86</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>88</TD>
+    <TD ALIGN=left>D.CV.065.3</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Load, Reconcile and Validate Data Loads in Production (Optional)</DIV></TD>
+    <TD ALIGN=left>Validated Data</TD>
+    <TD ALIGN=left>86</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>89</TD>
+    <TD ALIGN=left>D.TG.FV</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Final Validation</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>90</TD>
+    <TD ALIGN=left>D.TE.120</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct Final Validation Review with Users and Stakeholders (Core)</DIV></TD>
+    <TD ALIGN=left>Validated Production Environment</TD>
+    <TD ALIGN=left>86,87,88</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>91</TD>
+    <TD ALIGN=left>D.TG.TR</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Training</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>92</TD>
+    <TD ALIGN=left>D.TR.100</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Conduct End-User Training (Optional)</DIV></TD>
+    <TD ALIGN=left>Skilled Users</TD>
+    <TD ALIGN=left>90</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>93</TD>
+    <TD ALIGN=left>D.TG.TS</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Transition to Production</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>94</TD>
+    <TD ALIGN=left>D.TS.052</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Implement Production Support Infrastructure (Core)</DIV></TD>
+    <TD ALIGN=left>Production Support Infrastructure</TD>
+    <TD ALIGN=left>90</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>95</TD>
+    <TD ALIGN=left>D.TS.058</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Verify Production and Operational Readiness (Core)</DIV></TD>
+    <TD ALIGN=left>Production Ready System</TD>
+    <TD ALIGN=left>94</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>96</TD>
+    <TD ALIGN=left>D.TS.060</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Begin Production Use (Core)</DIV></TD>
+    <TD ALIGN=left>System in Production</TD>
+    <TD ALIGN=left>95</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>97</TD>
+    <TD ALIGN=left>D.TG.IC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52"><B>Implementation Checkpoint</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>98</TD>
+    <TD ALIGN=left>D.WM.055.4</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:64">Conduct Implementation Checkpoint (Core)</DIV></TD>
+    <TD ALIGN=left>Implementation Checkpoint Meeting / Approval to Proceed</TD>
+    <TD ALIGN=left>7,95,96</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>99</TD>
+    <TD ALIGN=left>D.TG.PM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>100</TD>
+    <TD ALIGN=left>D.PEC.MPE.4</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Project Execution (Core)</DIV></TD>
+    <TD ALIGN=left>Managed Project Assets</TD>
+    <TD ALIGN=left>82</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>101</TD>
+    <TD ALIGN=left>E</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:28"><B>Realization</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>102</TD>
+    <TD ALIGN=left>E.TG.SP</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Stabilization</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>103</TD>
+    <TD ALIGN=left>E.PS.005</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Transition to Steady-State Operations (Core)</DIV></TD>
+    <TD ALIGN=left>Steady-State Operations</TD>
+    <TD ALIGN=left>98</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>104</TD>
+    <TD ALIGN=left>E.PS.065</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Post Go-Live Support (Core)</DIV></TD>
+    <TD ALIGN=left>Post Go-Live Support</TD>
+    <TD ALIGN=left>98</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>105</TD>
+    <TD ALIGN=left>E.TG.TC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Transition to Customer Relationship Manager</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>106</TD>
+    <TD ALIGN=left>E.PS.070</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Execute Handoff to Customer Relationship Manager (Optional)</DIV></TD>
+    <TD ALIGN=left>Customer Relationship Manager Handoff</TD>
+    <TD ALIGN=left>96</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>107</TD>
+    <TD ALIGN=left>E.TG.PM</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>108</TD>
+    <TD ALIGN=left>E.PEC.MPE.5</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Manage Project Execution (Core)</DIV></TD>
+    <TD ALIGN=left>Managed Project Assets</TD>
+    <TD ALIGN=left>100</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>109</TD>
+    <TD ALIGN=left>E.TG.PC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:40"><B>Project Closure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>110</TD>
+    <TD ALIGN=left>E.PC.GA</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Gain Acceptance (Core)</DIV></TD>
+    <TD ALIGN=left>Final Acceptance Certificate</TD>
+    <TD ALIGN=left>108</TD>
+  </TR>
+  <TR BGCOLOR="#FFFFFF" ALIGN=right>
+    <TD scope="row" ALIGN=center>111</TD>
+    <TD ALIGN=left>E.PC.CPC</TD>
+    <TD ALIGN=left><DIV STYLE="margin-left:52">Close Processes and Contract (Core)</DIV></TD>
+    <TD ALIGN=left>Closed Processes and Contract</TD>
+    <TD ALIGN=left>110</TD>
+  </TR>
+</TABLE>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><b><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </b></P>
+<P align="left"><b>    <a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,344 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>MC Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[MC] MAPPING AND CONFIGURATION</h2>
+<!--BeginProcessDesc--><p>In the Mapping and Configuration process, the goal is to create an acceptable and feasible configuration  (of COTS software) by mapping business requirements to standard features and functions. The configuration is refined through prototyping and validating  with users in preparation for system testing.</p>
+<p>To begin, the key business data structures and associated values are defined and established within a prototype environment. The business requirements are assessed and mapped to the standard application and system features. A prototype environment is updated with detailed setup parameters, and an iterative series of workshops are conducted in order to validate that the prototype meets the business requirements. Resolutions to any gaps between the business requirements and the standard application features and functions are defined, along with the documentation of detailed setup parameters.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/MC_Process.jpg" alt="Mapping and Configuration Process Flow Diagram" width="859" height="996" border="1"></p>
+<P><A
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The objective of  Mapping and Configuration is to create an acceptable and feasible prototype solution, that can be  validated, and then is well documented.</p>
+<p>  Depending on type of business that the customer is involved in, there will a number of key business data structures that must be defined. These business data structures will be foundational to how the business is run; examples include Multi-Organization Structure, Trading Community Architecture (TCA), Chart Of Accounts etc. Once defined, a representative subset of the business data structures and associated values should be established within the prototype environment in order to act as a foundation for further more detailed setup and configuration steps.</p>
+<p>  The  Mapping and Configuration process is closely related to the Business Requirements (RD) and the Requirements Analysis (RA) processes. Key outputs from these related processes include Future Process Models, Use Case Models and Supplemental Requirements. These key outputs are assessed and mapped to the standard features and functions that are available, and in scope, within the new system. Requirements that cannot be satisfied with standard features and functions are classified as gaps in data or functionality (i.e., Gaps), which will subsequently be assessed in terms of identifying a &ldquo;workaround&rdquo;, a business process change, or custom software extension.</p>
+<p>  The Prototype Environment is configured to support the mapped business requirements, and is refined through an iterative series of workshops designed to allow the customer and project team to progressively validate that the system will meet the in scope needs of the business.</p>
+<p>  Once the Configuration Prototype has reached a level of refinement that is close to the production needs of the customer and project team, the configuration and setup parameters are finalized and documented. </p>
+<p><A
+href="#TOP">Back to Top</A>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS</h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Requirements Analysis process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.010.1</div></th>
+    <td><a href="../030_TASK/MC_010_DEFINE_BUS_DATA_STRUCTURES_OVERVIEW.HTM" target="_blank">Define Business Data Structures </a></td>
+    <td>Business Data Structures </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.020</div></th>
+    <td><a href="../030_TASK/MC_020_DEFINE_BUS_DATA_STRUCTURE_SETUPS_OVERVIEW.HTM" target="_blank">Define Business Data Structure Setups</a></td>
+    <td> Business Data Structure Setups</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.090.1</div></th>
+    <td><a href="../030_TASK/MC_090_CONDUCT_REPORTING_FIT_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct Reporting Fit Analysis </a></td>
+    <td>Reporting Fit Analysis </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.010.2</div></th>
+    <td><a href="../030_TASK/MC_010_DEFINE_BUS_DATA_STRUCTURES_OVERVIEW.HTM" target="_blank">Define Business Data Structures </a></td>
+    <td>Business Data Structures </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.030</div></th>
+    <td><a href="../030_TASK/MC_030_MAP_BUSINESS_REQUIREMENTS_OVERVIEW.HTM" target="_blank">Map Business Requirements</a></td>
+    <td>Mapped Business Requirements </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.040</div></th>
+    <td><a href="../030_TASK/MC_040_GATHER_SETUP_INFORMATION_OVERVIEW.HTM" target="_blank">Gather Setup Information </a></td>
+    <td>Setup Information </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.050.1</div></th>
+    <td><a href="../030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">Define Application Setups</a></td>
+    <td>Application Setups</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.055</div></th>
+    <td><a href="../030_TASK/MC_055_DOCUMENT_APPL_CONFIG_CHANGES_OVERVIEW.HTM" target="_blank">Document Application Configuration Changes </a></td>
+    <td>Application Configuration Change Document </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.060</div></th>
+    <td><a href="../030_TASK/MC_060_DOCUMENT_FUNCTIONAL_SECURITY_OVERVIEW.HTM" target="_blank">Document Functional Security </a></td>
+    <td>Functional Security Setup </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.070</div></th>
+    <td><a href="../030_TASK/MC_070_PREPARE_CONFIG_PROTOTYPE_ENV_OVERVIEW.HTM" target="_blank">Prepare Configuration Prototype Environment </a></td>
+    <td>Configuration Prototype Environment </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.080</div></th>
+    <td><a href="../030_TASK/MC_080_CONDUCT_CONFIG_PROTOTYPE_WORKSHOP_OVERVIEW.HTM" target="_blank">Conduct Configuration Prototyping Workshop </a></td>
+    <td>Validated Configuration </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.090.2</div></th>
+    <td><a href="../030_TASK/MC_090_CONDUCT_REPORTING_FIT_ANALYSIS_OVERVIEW.HTM" target="_blank">Conduct Reporting Fit Analysis </a></td>
+    <td>Reporting Fit Analysis </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.100</div></th>
+    <td><a href="../030_TASK/MC_100_DEFINE_AND_ESTIMATE_APPL_EXT_OVERVIEW.HTM" target="_blank">Define and Estimate Application Extensions </a></td>
+    <td>Application Extension Definition and Estimates</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.110</div></th>
+    <td><a href="../030_TASK/MC_110_DEFINE_GAP_RESOLUTIONS_OVERVIEW.HTM" target="_blank">Define Gap Resolutions </a></td>
+    <td>Gap Resolutions </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">MC.050.1</div></th>
+    <td><a href="../030_TASK/MC_050_DEFINE_APPL_SETUPS_OVERVIEW.HTM" target="_blank">Define Application Setups</a></td>
+    <td>Application Setups</td>
+  </tr>
+</table>
+<P><A
+href="#TOP">Back to Top</A> </P>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Mapping and Configuration process are:</p>
+<ul>
+  <li>Identify key business data structures and associated values.</li>
+  <li>Map business requirements to standard features and functions. </li>
+  <li>Prepare and conduct prototype validation workshops. </li>
+  <li>Resolve gaps.</li>
+  <li>Document application setups.  </li>
+</ul>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Requirements Analysis process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">Role ID </th>
+    <th scope="col">Name</th>
+    <th scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application/Product Specialist </td>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. Provide knowledge and guidance regarding the functionality, capabilities and implementation strategies for the product(s) being implemented. Validate that the standard reports and forms, provided with the functionality being implemented, support the implementing organization&rsquo;s requirements. Assist in validating that the standard reports and forms, provided with the functionality being implemented, support the implementing organization&rsquo;s requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td><p>Conduct working sessions. Map detailed business requirements to the applications. Provide knowledge and guidance regarding the customer's existing business procedures, activities and functions and system access requirements. Provide assistance defining and estimating application extensions. Define gap resolutions. </p>    </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Determine and set up the database schema structure, create and set up database.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator</td>
+    <td>Set up the administration of security and associated privileges. Prepare parts of the application environment.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Provide input and advice on the architectural consequences of particular gaps and alternatives. Assist in validating that the standard reports and forms, provided with the functionality being implemented, support the implementing organization&rsquo;s requirements. Define and estimate application extensions. Define gap resolutions. </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Participate in working sessions and help identify setup parameters and setup values. Provide specific examples of business transaction forms, reports, data, etc. Provide information on the organization&rsquo;s reporting requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BLM</th>
+    <td>Business Line Manager </td>
+    <td>Provide specific examples of business rules and procedures. Provide assistance as needed during the Perform Gap Analysis activity. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager </td>
+    <td>Provide assistance as needed during Define and Estimate Application Extensions (MC.100).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member </td>
+    <td>Ensure that physical resources are in place in time, and that proper software licenses are obtained.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">PS</th>
+    <td>Project Sponsor </td>
+    <td>Provide assistance as needed during Define and Estimate Application Extensions (MC.100).</td>
+  </tr>
+</table>
+<p><A
+href="#TOP">Back to Top</A> </p>
+<p>
+<hr WIDTH="100%">
+<h3><A
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are:</p>
+<ul>
+  <li> effective and continuing sponsorship at a high level in the organization</li>
+  <li>involvement by representative samples of stakeholders during the prototype workshops</li>
+  <li>clear understanding of the difference between process and functions or business units</li>
+  <li>measurability of process performance and determination of key performance indications (KPIs) for business processes</li>
+  <li>availability of expertise in relevant application features and how the features are used to support business processes </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

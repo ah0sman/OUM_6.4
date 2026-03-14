@@ -1,0 +1,329 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DO Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[DO] DOCUMENTATION</h2>
+<!--BeginProcessDesc--><p>Quality documentation is a key factor in  the transition to production, gaining user acceptance, and maintaining the ongoing business process. The requirements and strategy for this process vary based upon project scope, technology, and requirements.</p>
+<p> For projects that include Oracle Application products, the Oracle Application manuals are the foundation of implementation documentation. The Documentation process will develop documentation to augment the standard Oracle Application products manuals with specific information about the organization's custom software extensions and specific business procedures.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/DO_Process.jpg" alt="Documentation Process Flow Diagram" width="710" height="807" border="1" title="Documentation Process Flow Diagram"></p>
+<P> <A 
+href="#TOP">Back to Top</A>&nbsp; </P>
+<hr WIDTH="100%">
+<h3 style="margin-bottom: 0;"><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p> Successful project documentation reflects the final applications system as it is approved for use. It is accurate, concise, and uses diagrams and charts to explain broad or complex concepts. It should be useful to both beginners and experienced users of the system and have a user-friendly tone that is neither too academic nor too technical.</p>
+<p>During the Inception Phase, a Documentation Requirements and Strategy (DO.010) is developed to drive this process.&nbsp; From that strategy, Documentation Standards and Procedures (DO.020) are developed to guide the documentation work products to be produced.</p>
+<h4 style="margin-top: 0; margin-bottom: 0;">Writing Standards</h4>
+<p style="margin-bottom: 0"> If you have a writing standards guide, follow it when writing any custom documentation. You can use other appropriate style guides as well.
+<h4>Prototypes</h4>
+<p> After you complete the Documentation Requirements and Strategy (DO.010) and define the Documentation Standards and Procedures (DO.020), create a prototype of each document. A prototype consists of a table of contents and a sample chapter. The first purpose for prototyping is to tangibly display your understanding of documentation requirements, standards, and procedures in terms of form and content. The second purpose is to set user expectations. Showing a tangible prototype is far more effective than discussing documentation.
+<h4>Parallel Work Effort</h4>
+<p> The project team should begin Documentation tasks whenever the appropriate prototype and the required documentation inputs have been approved. Several required documents may be worked on simultaneously.
+<p style="margin-bottom: 0;">
+<h4 style="margin-top: 0; margin-bottom: 0;"><span style="font-weight: bold">Previously Completed Materials</span></h4>
+<p style="margin-bottom: 0"> The documentation writers should build on the documents that have been completed during earlier implementation tasks. Earlier documents can be used as is, or portions can be incorporated as required.
+  
+<p style="margin-bottom: 0">The following sections can be included in both user and technical documentation.
+<h5>Table of Contents</h5>
+<p style="margin-bottom: 0">Generally, a table of contents is necessary for all documents that are over several pages and cover a variety of subtopics. If a user does not need to read the entire document from start to finish each time it is referenced, add subtopic headings and create a table of contents.
+<h5>Introduction</h5>
+<p style="margin-bottom: 0"> If the customization or subject area includes multiple forms, reports, or programs, consider beginning with an overview of the process explaining how the individual pieces relate to each other.
+<h5>Appendices</h5>
+<p> If detailed charts, diagrams, and examples are confusing or cause a loss of continuity in the text, put them in an appendix where they can be referenced.
+<h5>Glossary</h5>
+<p> Include any unfamiliar or confusing terms in the glossary. For example, the term FOB may not be familiar to all users, or the term demand may have a different meaning for each audience. Including these terms in the glossary removes doubt about their meaning.
+<p>The Glossary (RD.042) is a good source of terms that should be included in your Glossary. You may want to incorporate the Glossary (RD.042), in part or total, in some or all of the Documentation work products.
+<h5 style="margin-bottom: 0;">Index</h5>
+<p style="margin-bottom: 0"> If the documentation is more than a few pages, an index helps the user locate key topics or words.
+<h4>Types of Media</h4>
+<p style="margin-bottom: 0"> Documentation may be published in a number of electronic and published media.
+<h5>Printed Documentation</h5>
+<p style="margin-bottom: 0"> The documentation may be produced on printed pages. This has been the standard media in the past for publishing documentation. Some organizations may choose to go paperless&mdash;if they do, they may not allow any documents to be published in printed form.
+<h5>Portable Electronic Documents</h5>
+<p style="margin-bottom: 0"> The OUM documentation work product templates are based upon Microsoft Word.&nbsp; From the Microsoft Word documents, documentation work products may be produced as a portable electronic document using a format such as Adobe&rsquo;s Portable Document Format (pdf). These portable documents may be exchanged among users and read on a variety of computing environments using Adobe&rsquo;s Acrobat Reader. The key benefit to this approach is that a single publication activity yields a multitude of platforms in which the documents may be read.
+<h5>Web Pages</h5>
+<p style="margin-bottom: 0"> The documentation can be published on a web page and can be accessed via a web browser and an URL address.
+<h4>User Validation</h4>
+<p> Users should review documentation along with early test results for programs, reports, enhancements, and new forms.
+<h4>Testing Documentation</h4>
+<p>If it is to be a valuable resource, Documentation must accurately reflect the system. During Testing (TE), applicable documentation should be referenced by the testers, as it would be in production. If the documentation is unclear or outdated, appropriate changes must be made. Testing is not complete until the documentation is verified as correctly reflecting the new system.
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Documentation process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.010</div></th>
+    <td><a href="../030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank"><span class="style3">Define Documentation Requirements and Strategy</span></a></td>
+    <td><span class="style3">Documentation Requirements and Strategy</span></td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.020</div></th>
+    <td><a href="../030_TASK/DO_020_DEFINE_DOCU_STDS_AND_PROCEDURES_OVERVIEW.HTM" target="_blank"><span class="style3">Define Documentation Standards and Procedures </span></a></td>
+    <td><span class="style4">Documentation Standards and Procedures </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.040</div></th>
+    <td><a href="../030_TASK/DO_040_PREPARE_DOCU_ENVIRONMENT_OVERVIEW.HTM" target="_blank"><span class="style3">Prepare Documentation Environment </span></a></td>
+    <td><span class="style4">Documentation Environment </span></td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.060</div></th>
+    <td><a href="../030_TASK/DO_060_PUBLISH_USER_REFERENCE_MANUAL_OVERVIEW.HTM" target="_blank"><span class="style3">Publish User Reference Manual </span></a></td>
+    <td><span class="style4">User Reference Manual </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.070</div></th>
+    <td><a href="../030_TASK/DO_070_PUBLISH_USER_GUIDE_OVERVIEW.HTM" target="_blank"><span class="style3">Publish User Guide </span></a></td>
+    <td><span class="style4">User Guide </span></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.080</div></th>
+    <td><a href="../030_TASK/DO_080_PUBLISH_TECHNICAL_REF_MATERIAL_OVERVIEW.HTM" target="_blank"><span class="style3">Publish Technical Reference Material </span></a></td>
+    <td>Technical Reference Material </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.100</div></th>
+    <td><a href="../030_TASK/DO_100_PRODUCE_ONLINE_HELP_OVERVIEW.HTM" target="_blank"><span class="style3">Produce Online Help </span></a></td>
+    <td>Online Help</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Transition Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.110</div></th>
+    <td><a href="../030_TASK/DO_110_FINALIZE_DOCUMENTATION_OVERVIEW.HTM" target="_blank"><span class="style3">Finalize Documentation</span></a></td>
+    <td>Final Documentation Work Products </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p style="margin-bottom: 0;">The objectives of the Documentation process are:</p>
+<ul>
+  <li>Produce a reference that shows the users how to use application functionality (User Reference Manual - DO.060).</li>
+  <li>Produce a User Guide to show the users how to use the system (User Guide - DO.060) </li>
+  <li>Assemble the documents that describe the technical details of the application for the maintenance staff (Technical Reference Material - DO.080).</li>
+  <li>Produce Online Help (DO.100) </li>
+</ul>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Documentation process.  
+It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="13%" scope="col">Name</th>
+    <th width="84%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td><span class="style5"><span class="style4">Describe documentation needs and current documentation usage. Agree on documentation standards. </span>Assist with content for the User Reference Manual and User Guide. </span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Provide assistance in verifying the documentation is correct and complete. Provide material for the Technical Reference Material (DO.080). Provide assistance generating <span class="style2">Online Help from the User Guide (DO.070) and the User Reference Manual (DO.060). </span>Provide any final updates or changes for Documentation work products.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAD</th>
+    <td>System Administrator </td>
+    <td>Procure, install and test the Documentation Environment. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Provide assistance in verifying the documentation is correct and complete. Provide material for the Technical Reference Material (DO.080). Provide any final updates or changes for Documentation work products.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TW</th>
+    <td>Technical Writer </td>
+    <td><span class="style4">Write, edit, and review the various work products. Obtain agreement with users on the work products. Write, edit, and review the accompanying documentation for the Documentation Environment. Write, edit, and review the User Reference Manual. Design, gather material, organize, write, edit, and review the User Guide. Revise sections of the User Guide (DO.070) based on system test scenarios. Gather, organize, edit, and review the Technical Reference Material. <span class="style2">Generate or develop the Online Help from the User Guide (DO.070) and the User Reference Manual (DO.060). </span>Update Documentation work products with any final updates or changes. </span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">TE</th>
+    <td>Tester</td>
+    <td><span class="style4">Write, edit, and review the Documentation Requirements and Strategy when offshore input is utilized. </span></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Review the Online Help and provide feedback.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BLM</th>
+    <td>Business Line Manager </td>
+    <td><span class="style4">Assist in describing documentation needs and current documentation usage. Agree on documentation standards.</span></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Member</td>
+    <td>Provide input into developing the work product. Review the Online Help and provide feedback.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CSM</th>
+    <td>Customer Staff Member</td>
+    <td>Install the Documentation Environment and assist in testing.</td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

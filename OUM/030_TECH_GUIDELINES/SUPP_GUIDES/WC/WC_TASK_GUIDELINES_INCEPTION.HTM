@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WebCenter Task Guidelines - Inception</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">WebCenter Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#GBRIG">Gather Business Requirements - Inception Guidance</option>
+                            <option value="#GRG">Gather Solution Requirements Guidance</option>
+                            <option value="#CRG">Consolidate Solution Requirements Guidance</option>
+                            <option value="#GSPG">Gather Supporting Requirements Guidance</option>
+                            <option value="#TPTG">Train Project Team Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("RD");
+  Effect.BlindDown("RA");
+  Effect.BlindDown("AN");
+  Effect.BlindDown("DS");
+  Effect.BlindDown("IM");
+  Effect.BlindDown("TA");
+  Effect.BlindDown("CV");
+  Effect.BlindDown("DO");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("RD");
+  Effect.BlindUp("RA");
+  Effect.BlindUp("AN");
+  Effect.BlindUp("DS");
+  Effect.BlindUp("IM");
+  Effect.BlindUp("TA");
+  Effect.BlindUp("CV");
+  Effect.BlindUp("DO");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+        <table width="93" align="right">
+          <tr>
+            <td width="82"><p><a href="../../../OUM_HOME_WC.HTM" target="_blank"><br>
+                Back to View </a> </p></td>
+          </tr>
+        </table>
+<h2>WEBCENTER SUPPLEMENTAL TASK GUIDELINES - INCEPTION PHASE </h2>
+<p>This document contains OUM supplemental task guidance for WebCenter projects. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="100%" border=1 title="Supplemental Task Guidelines Index" summary="This table provides an index to the OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for activities.">
+  <tr bgcolor="#BEBEBE">
+    <th width="45%" height="26" scope="col">WebCenter - OUM Supplemental Task Guidelines (this document) <BR>
+        <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A></th>
+    <th width="43%" scope="col"><DIV align="center">OUM Task Overview <BR>
+    </DIV></th>
+  </TR>
+  <tbody>
+    <tr>
+      <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">A.ACT.GBRI Gather Business Requirements - Inception </div></th>
+    </tr>
+  <tbody id="RD">
+    <tr valign="top">
+      <td valign="top"><a href="#RD001">RD.001 Detail Business and System Objectives </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 Detail Business and System Objectives </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD005">RD.005 Create System Context Diagram </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">RD.005 Create System Context Diagram </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD065">RD.065 Develop Domain Model (Business Entities) </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model (Business Entities) </a></div></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">A.ACT.GR Gather Solution Requirements</div></th>
+  </tr>
+  <tbody id="RA">
+    <tr valign="top">
+      <td valign="top"><a href="#RD0421">RD.042.1 Develop Glossary </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">RD.042.1 Develop Glossary </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD0451">RD.045.1 Prioritize Requirements (MoSCoW) </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045.1 Prioritize Requirements (MoSCoW) </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD055">RD.055 Detail Supplemental Requirements</a></td>
+      <td><div align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM"
+				target="_blank">RD.055 Detail Supplemental Requirements</A></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD1301">RD.130.1 Develop Baseline Architecture Description </a></td>
+      <td><div align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM"
+				target="_blank">RD.130.1 Develop Baseline Architecture Description </A></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RA0231">RA.023.1 Develop Use Case Model </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023.1 Develop Use Case Model </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">A.ACT.CR Consolidate Solution Requirements </div></th>
+  </tr>
+  <tbody id="AN">
+    <tr valign="top">
+      <td valign="top"><a href="#RD1401">RD.140.1 Create Requirements Specification </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">RD.140.1 Create Requirements Specification </a></div></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#RD1401">RD.150.1 Review Requirements Specification </a></td>
+      <td><div align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">RD.150.1 Review Requirements Specification </a></div></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">A.ACT.GSP Gather Supporting Requirements </div></th>
+  </tr>
+  <tbody id="DS">
+    <tr valign="top">
+      <td valign="top"><a href="#TE0051">TE.005.1 Determine Testing Requirements </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005.1 Determine Testing Requirements </a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#TA010">TA.010 Conduct Technical Architecture Workshop</a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">TA.010 Conduct Technical Architecture Workshop</a></td>
+    </tr>
+    <tr valign="top">
+      <td valign="top"><a href="#DO010">DO.010 Define Documentation Requirements and Strategy </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">DO.010 Define Documentation Requirements and Strategy </a></td>
+    </tr>
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">A.ACT.TPT Train Project Team </div></th>
+  </tr>
+  <tbody id="IM">
+    <tr valign="top">
+      <td valign="top"><a href="#TR0101">TR.010.1 Define Training Strategy </a></td>
+      <td><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_010_DEFINE_TRAINING_STRATEGY_OVERVIEW.HTM" target="_blank">TR.010.1 Define Training Strategy </a></td>
+    </tr>
+  </tbody>
+</TABLE>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><a
+ name="GBRIG" id="GBRIG"></a>A.ACT.GBRI GATHER BUSINESS REQUIREMENTS - INCEPTION GUIDANCE </h3>
+<h4><a
+name=RD001 id="RD001"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_001_DETAIL_BUS_AND_SYSTEM_OBJECTIVES_OVERVIEW.HTM" target="_blank">RD.001 Detail Business and System Objectives</a> </h4>
+<h5>OVERVIEW</h5>
+<p>This is an extremely important task as it outlines the objectives for any project implementing WebCenter. Upon completion of this task, you should have identified all of the organization &rsquo;s business and system objectives relevant for your project.</p>
+<h5>APPROACH</h5>
+<p>This task should ideally be undertaken as a workshop involving the business, the IT department, and a solution architect. It may also be necessary to involve Project Management at some point in the workshop. Typically, this task could form part of a kick-off event where the business sponsor would provide their goal at the beginning of the workshop in order to get the participants focused. It is recommended that the workshop is undertaken over 2 days, with 1-2 days gap in between &ndash; this gap allows the workshop participants to gather additional information and react to topics discussed on the first day. In some cases, various participants may not agree on certain objectives therefore the workshop leader will need to ensure that such discussions should be kept to a minimum and then discussed outside of the workshop. Any decision made outside of the workshop must then be communicated to all workshop participants.</p>
+<p><b>Note:</b> Consider delivering task, Create System Context Diagram (RD.005) within the workshop. This allows the workshop participants to refer to the diagram when reviewing each objective.</p>
+<p> <b>Note:</b> It is recommended that the Glossary (RD.042) is completed prior to the workshop. This allows the workshop participants to refer to the definitions and terms when reviewing each objective. It may be necessary to update the Glossary within the workshop as new terms are identified.</p>
+<h6>Preparation</h6>
+<p>It is recommended that you request the business to provide a list of specific measurable objectives and ask them to return these to you in order to prepare the schedule for the workshop (not all information has to be completed). The number of objectives identified by the business will impact the length of the workshop and the time allocated to discuss each item. It is also recommended that you send out the workshop agenda and the initial list of objectives to each participant well in advance so that each participant is clear as to the goal of the workshop and what they need to provide.</p>
+<h5>WORK PRODUCT </h5>
+<p>The work product format can be any of those recommended within the OUM Method Pack, however, it is recommended to keep the list format simple and understandable. The recommended template for WebCenter is to use the MS Excel version with the following structure:</p>
+<ul>
+  <li> Tab 1: <b>Title Page</b></li>
+  <li>Tab 2: <b>Document Control</b>
+      <ul>
+        <li> Change Record</li>
+        <li>Reviewers</li>
+        <li> Approvers</li>
+      </ul>
+  </li>
+  <li> Tab 3: <b>Additional Information</b>
+      <ul>
+        <li> Relationship to other projects</li>
+        <li> Key drivers and selling points</li>
+      </ul>
+  </li>
+  <li> Tab 4: <b>Business Objectives</b>
+      <ul>
+        <li> List of business objectives</li>
+      </ul>
+  </li>
+  <li> Tab 5: <b>System Objectives</b>
+      <ul>
+        <li> List of system objectives (for formatting see below)</li>
+      </ul>
+  </li>
+</ul>
+<p>The formatting of the System Objectives (Tab 5) spreadsheet should clearly identify each objective and the associated information. This will aid in providing the project team with the required information and understanding project scope. The following table indicates the recommended columns for the spreadsheet:</p>
+<table border="1" title="Recommended Columns for System Objectives Spreadsheet" summary="This tables list the recommended columns for the Business and System Objectives Spreadsheet.  The column is listed in the first column with a description in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th width="124" scope="col"><div align="left">Column</div></th>
+    <th width="972" scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Group / Topic </div></th>
+    <td>This value is used to provide a grouping making it easier for the project team to locate a specific objective.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Objective ID </div></th>
+    <td>This value is essential so that project members can uniquely identify the objective. The value will ultimately be mapped to the requirements in the MoSCoW list (RD.045).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Objective</div></th>
+    <td>This value is the objective description and must be measurable &ndash; try to ensure that you meet the quality criteria set out in the RD.001 Method Pack guidelines.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Scope</div></th>
+    <td>This value can be used to identify in which part of the project the objective is related i.e. WebCenter Portal or WebCenter Content. This is an optional field and can be used for other purposes. This value can also identify if an objective is moved out-of-scope.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Source</div></th>
+    <td>This value identifies the source of the objective such as a specific department within the business. This is useful if you require further information about a specific objective.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Process</div></th>
+    <td>In some cases, the customer may have already mapped out the business processes. This value can be used to identify the related process providing more context.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Priority</div></th>
+    <td>This value is optional but very useful if the project team needs to provide early prioritization of their objectives. Further prioritization will still be required within the MoSCoW List (RD.045).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Delivery Method</div></th>
+    <td>In some cases, the solution architect may be able to provide an early indication as to whether the objective can be met out-of-the-box, or through customization. While this value is optional, it can help the business to decide the prioritization against other objectives.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Complexity</div></th>
+    <td>In some cases, the solution architect may be able to provide an early indication as to the complexity involved in delivering the objective. While this value is optional, it can help the business to decide the prioritization against other objectives.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Comments</div></th>
+    <td>This column can be used to provide additional information related to the objective, such as, outstanding decisions or further context.</td>
+  </tr>
+</table>
+<p><b>Note:</b> Try to ensure that each objective is numbered as they will be cross referenced within further documentation (i.e., the MoSCoW List). Also, please try to group the objectives into sensible groups to help locate the information at a later stage.</p>
+<p> <b>Note:</b> If a Statement of Work has been provided by the organization that responds to the requirements set out in this task, then this can be used as an input into the workshop.</p>
+<hr WIDTH="100%">
+<h4><a
+name=RD005 id="RD005"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_005_CREATE_SYSTEM_CONTEXT_DIAGRAM_OVERVIEW.HTM" target="_blank">RD.005 Create System Context Diagram</a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is recommended for all WebCenter projects as it provides the business and the project team with the context of the full system indicating the various inputs and outputs.</p>
+<h5>APPROACH</h5>
+<p>This task should be undertaken as early as possible within the project and reviewed on a regular basis. Ideally, this task should be undertaken prior to, or during, the Business and System Objectives (RD.001) workshop as it will allow the participants to refer to the system context while reviewing the system objectives. The work product of this task will form the basis of the Use Case Model (RA.023) and the MoSCoW List (RD.045) where further revisions may be necessary.</p>
+<h6>Preparation</h6>
+<p>Prepare a draft version of the System Context Diagram as soon as you have a basic understanding of the project scope. If you have scheduled an Business and System Objectives (RD.001) workshop, then it is recommended that you have a draft version of this document available in advance.</p>
+<h5>WORK PRODUCT </h5>
+<ul>
+  <li>Only document the input and output data on the lines to each actor, i.e., &lsquo;user id and password&rsquo; or &lsquo;search request&rsquo;.</li>
+  <li>The border of the &ldquo;system box&rdquo; in the middle is the scope of the project. Therefore, your system objectives must relate to what is inside the box, and not what is outside.</li>
+  <li>The actor/system interactions are represented by the information flows into and out of the system. The detailed functional requirements are detailed in use cases. </li>
+</ul>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RD005_EX.GIF" alt="WebCenter Content System Context Diagram Example" width="371" height="457" title="WebCenter Content System Context Diagram Example"></p>
+<p align="center"><b>WebCenter Content System Context Diagram Example</b></p>
+<hr WIDTH="100%">
+<h4><a
+name=RD065 id="RD065"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 (.1 and .2) Develop Domain Model (Business Entities)</a></h4>
+<h5>OVERVIEW</h5>
+<p>This task requires more than one iteration for WebCenter Content projects in order to capture the metadata and security information using class diagramming techniques.</p>
+<h5>APPROACH (WebCenter Content)</h5>
+<p>For the first iteration of this task in Inception, work with the project team to produce:</p>
+<ul>
+  <li>list of basic content objects (content types / content profiles) required for the project</li>
+  <li>foundation list of metadata (can be extended as the project progresses)</li>
+  <li>list of identified security roles (for users) and security groups (for content) - Typically, this is done in a second iteration of this task in Inception or early Elaboration. For the purposes of this supplemental guidance, iterations 1 and 2 will be in Inception. </li>
+</ul>
+<p>For the <a href="WC_TASK_GUIDELINES_ELABORATION.HTM#RD0653" target="_blank">third iteration of this task in Elaboration</a>, conduct a half day workshop involving the business and a product specialist. During the workshop:</p>
+<ul>
+  <li> Create high-level class diagrams to define the associated metadata for each of the basic content objects (content types / content profiles) to be considered in the system.</li>
+  <li> Create high-level diagrams to define the associated security groups and permissions for each identified security roles. </li>
+</ul>
+<p><b>Note:</b> It is typically not possible to identify all content types, metadata, security roles, or security groups prior to or during the workshop, however, once this task is started it is easier to refine these models as the project progresses.</p>
+<p><b>Note:</b> The resulting work products from this task will be used to generate the security and metadata model configuration within the <a href="WC_TASK_GUIDELINES_ELABORATION.HTM#MC0501" target="_blank">Application Setup Documents (DS.030)</a> . Therefore, it is important to undertake this task as early as possible.</p>
+<h5>Examples</h5>
+<p align="center"><b><img src="../../../010_COMMON_FILES/WC_RD065_EX1.JPG" alt="WebCenter Content &ndash; Metadata (1st Iteration)" width="254" height="233" title="WebCenter Content &ndash; Metadata (1st Iteration)"></b></p>
+<p align="center"><b>WebCenter Content &ndash; Metadata (1st Iteration)</b></p>
+<p align="center"><b><img src="../../../010_COMMON_FILES/WC_RD065_EX2.JPG" alt="WebCenter Content &ndash; Metadata (2nd Iteration)" width="534" height="304" title="WebCenter Content &ndash; Metadata (2nd Iteration)"></b></p>
+<p align="center"><b> WebCenter Content &ndash; Metadata (2nd Iteration)</b></p>
+<p>&nbsp;</p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RD065_EX3.JPG" alt="Example WebCenter Content &ndash; Security Model" width="579" height="340" title="Example WebCenter Content &ndash; Security Model"><br>
+    <b>WebCenter Content &ndash; Security</b></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a
+ name="GRG" id="GRG"></a>A.ACT.GR GATHER SOLUTION REQUIREMENTS GUIDANCE </h3>
+<h4><a
+name=RD0421 id="RD0421"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">RD.042.1 Develop Glossary</a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is highly recommended for all WebCenter projects. It is essential that a project Glossary be developed as it avoids misinterpretation of WebCenter and business terms.</p>
+<h5>WORK PRODUCT </h5>
+<p>It is recommended that the Glossary work product contains the following sections:</p>
+<ul>
+  <li><b>Project specific definitions and terms</b> - Provides the definitions and terms used specifically for the project.</li>
+  <li><b>Definitions and terms used in [Organization Name]</b> - Provides the definitions and terms used by the organization on a regular basis particularly within the business and IT.</li>
+  <li><b>Definitions and terms used in [Application]</b> - Provides the definitions and terms applicable to the WebCenter product(s).</li>
+  <li><b>Definitions and terms used in Oracle</b> - Provides the definitions and terms used by Oracle Consulting on a regular basis inclusive of OUM. </li>
+</ul>
+<p>Refer to the <a href="WC_TERMS.HTM" target="_blank">WebCenter Definitions and Terms</a> for a high-level WebCenter Glossary. </p>
+<p><b>Note:</b> It is recommended that this task is completed prior the Business and System Objectives (RD.001) workshop. This allows the workshop participants to refer to the Glossary when reviewing each objective. It may be necessary to update the Glossary within the workshop as new terms are identified.</p>
+<hr WIDTH="100%">
+<h4><a
+name=RD0451 id="RD0451"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045.1 Prioritize Requirements (MoSCoW)</a></h4>
+<h5>OVERVIEW</h5>
+<p>The MoSCoW List (RD.045) is one of the most important work products for any WebCenter project. It must identify all of the use cases (functional requirements) for the project and their prioritization. </p>
+<h5>APPROACH</h5>
+<p>First, you should take the completed Business and System Objectives (RD.001) work product and then convert the objectives into project requirements. You should find that one or more objectives will map to one requirement in the MoSCoW List (see Mapping Objectives to Use Cases table below). It is recommended that you record the Objective IDs for each use case to ensure that you have no gaps, i.e., you haven&rsquo;t missed any objectives.</p>
+<table border="1" title="Mapping Objectives to Use Cases" summary="This table lists objectives in the first column and the use case to which they are mapped in the second column, which in this example is the same use case for both example objectives.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Objective</th>
+    <th scope="col">Use Case </th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">The system will allow the full text searching of content, i.e., search of text within the content.</div></th>
+    <td rowspan="2">Search for Content </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">The system will provide search forms based on content type profiles.</div></th>
+  </tr>
+</table>
+<p>Once you have listed all of the functional requirements for the project, you should also capture the non-functional requirements (RD.055 - Detail Supplemental Requirements). This is essential to ensure that all project requirements are captured in one place.</p>
+<p>Finally, the list of requirements should be completed, reviewed, refined, and approved within a workshop involving the business, the IT department, and a solution architect.</p>
+<h5>WORK PRODUCT </h5>
+<p>The work product format can be any of those recommended in OUM; however, it is recommended to keep the list format simple and understandable. The recommended template for WebCenter is to use the MS Excel version with the following structure:</p>
+<ul>
+  <li> Tab 1: <b>Title Page</b></li>
+  <li>Tab 2: <b>General Instructions </b>(with content updates) </li>
+  <li>Tab 3: <b>Sheet Definitions </b>(with content updates) </li>
+  <li>Tab 4: <b>RD.045 MoSCoW List (highly recommended)</b>
+      <ul>
+        <li>List of Functional Requirements </li>
+      </ul>
+  </li>
+  <li> Tab 5: <b>RD.055 Supplemental Requirements (highly recommended) </b>
+      <ul>
+        <li>List of Non-Functional Requirements </li>
+      </ul>
+  </li>
+  <li> Tab 6: <b>RA.027 Rules Traceability (optional)</b>
+      <ul>
+        <li> List of Business Rules</li>
+      </ul>
+  </li>
+  <li> Tab 7: <b>TE.0xx Test Traceability (optional)</b>
+      <ul>
+        <li> List of Test Scripts</li>
+      </ul>
+  </li>
+</ul>
+<p>The formatting of the RD.045 MoSCoW List tab should clearly identify all functional requirements and the associated information. This will aid in providing the project team with the required prioritization and understanding project scope. The table below indicates the recommended columns for the spreadsheet:</p>
+<p>The formatting of the RD.055 Supplemental Requirements tab should clearly identify all non-functional requirements and the associated information. This will aid in providing the project team with the required prioritization and understanding project scope. The table below indicates the recommended columns for the spreadsheet:</p>
+<table width="100%"  border="1" title="Column Descriptions for the MoSCoW List and Supplemental Requirements" summary="This table lists the column for the tabs for the MoSCoW List and Supplemental Requirements in the first column followed by a description for the MoSCoW List in the second column and a description for the Supplemental Requirements in the third column.">
+  <tr bgcolor="#CCCCCC">
+    <th width="10%" scope="col"> Column</th>
+    <th width="45%" scope="col"><b>MoSCoW List (RD.045) </b><br>
+      Description</th>
+    <th width="45%" scope="col"><b>Supplemental Requirements (RD.055) </b><br>
+      Description</th>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>MoSCoW ID</b></div></th>
+    <td width="45%">This value is essential so that project members can uniquely identify the <b>functional requirement</b>.</td>
+    <td width="45%">This value is essential so that project members can uniquely identify the <b>non-functional requirement</b>.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Supplemental Type </b></div></th>
+    <td width="45%">This column is not used for the MoSCoW List. </td>
+    <td width="45%">This value is useful to inform the project team of the nature of the non-functional requirement, e.g., Usability, Supportability, Performance, Security, etc.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Requirement Name </b></div></th>
+    <td width="45%">This value is essential so that project members can identify the name of the functional requirement.</td>
+    <td width="45%">This value is essential so that project members can identify the name of the non-functional requirement.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Requirement Description </b></div></th>
+    <td width="45%">This value provides a brief description of the functional requirement.</td>
+    <td width="45%">This value is essential so that project members can identify the name of the non-functional requirement.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Gap<br>
+        (COTS/Custom) </b></div></th>
+    <td width="45%">This value identifies if the functional requirement <b>cannot</b> be delivered out of the box, i.e., the required functionality cannot immediately be delivered within the WebCenter product.</td>
+    <td width="45%">This value identifies if the non-functional requirement cannot be delivered out of the box, i.e., the required functionality cannot immediately be delivered within the WebCenter product.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Urgency<br>
+        (Business Criticality)</b></div></th>
+    <td width="45%">This value is provided by the business and identifies how urgent the functional requirement perceived to be &ndash; take care when assigning this value as it is common for the business to mark everything with high urgency. This value will form part of the priority analysis.</td>
+    <td width="45%">Column heading should only be <b>Urgency</b>. This value is provided by the project team and identifies how urgent the non-functional requirement perceived to be. This value will form part of the priority analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Complexity</b></div></th>
+    <td width="45%">This value identifies the complexity of the functional requirement as <b>estimated</b> by the solution architect. This value will form part of the priority analysis.</td>
+    <td width="45%">This value identifies the complexity of the non-functional requirement as <b>estimated</b> by the solution architect. This value will form part of the priority analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Delivery Estimation </b></div></th>
+    <td>This value identifies the delivery <b>estimation</b> for the functional requirement as provided by the solution architect. This value will form part of the priority analysis. </td>
+    <td>This value identifies the delivery <b>estimation</b> for the non-functional requirement as provided by the solution architect. This value will form part of the priority analysis. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Delivery Method </b></div></th>
+    <td>This value identifies the anticipated delivery method for the functional requirement as provided by the solution architect. This value will form part of the priority analysis. Recommended values are OOTB (out-of-the-box), Configuration, and Custom &ndash; please ensure that you define these values within the project glossary to avoid any confusion.</td>
+    <td> This value identifies the anticipated delivery method for the non-functional requirement as provided by the solution architect. This value will form part of the priority analysis. Recommended values are OOTB (out-of-the-box), Configuration, and Custom &ndash; please ensure that you define these values within the project glossary to avoid any confusion. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Risk / Impact</b></div></th>
+    <td>This value is provided by the project team (including the business) and identifies the risk to both the business and the project. This value will form part of the priority analysis.</td>
+    <td>This value is provided by the project team (including the business) and identifies the risk to both the business and the project. This value will form part of the priority analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Priority (M/S/C/W) </b></div></th>
+    <td><p>This value is essential to provide the prioritization of the functional requirement. Prioritization will help the project team to decide what has to be delivered first within the project.</p>
+        <p> The prioritization value is derived from the Urgency, Complexity, Estimation, Delivery Method, and Risk/Impact values. You may also use the associated business objective(s) priority as a guide.</p></td>
+    <td><p>This value is essential to provide the prioritization of the non-functional requirement. Prioritization will help the project team to decide what has to be delivered first within the project.</p>
+        <p> The prioritization value is derived from the Urgency, Complexity, Estimation, Delivery Method, and Risk/Impact values. You may also use the associated business objective(s) priority as a guide.</p></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Scope</b></div></th>
+    <td>This value can be used to identify in which part of the project the functional requirement is related, i.e., WebCenter Portal or WebCenter Content. This is an optional field and can be used for other purposes. It is recommended that out-of-scope requirements are removed from the MoSCoW List, i.e., do not use these column to mark as out-of-scope.</td>
+    <td>This value can be used to identify in which part of the project the non-functional requirement is related, i.e., WebCenter Portal or WebCenter Content. This is an optional field and can be used for other purposes. It is recommended that out-of-scope requirements are removed from the MoSCoW List, i.e., do not use these column to mark as out-of-scope.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Business Process</b></div></th>
+    <td>This value indicates the process associated with the functional requirement (optional).<br>
+        <br></td>
+    <td>This column is not used for the Supplemental Requirements. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Owner</b></div></th>
+    <td>This value is recommended for identifying the current owner of the functional requirement during the project. It can be used in conjunction with the Status, and Comments values.</td>
+    <td>This value is recommended for identifying the current owner of the non-functional requirement during the project. It can be used in conjunction with the Status, and Comments values.</td>
+  </tr>
+  <tr valign="top">
+    <th width="10%" scope="row"><div align="left"><b>Status</b></div></th>
+    <td width="45%">This value is recommended for identifying the current status of the non-functional requirement during the project. It can be used in conjunction with the Owner, and Comments values.</td>
+    <td width="45%">This value is recommended for identifying the current status of the non-functional requirement during the project. It can be used in conjunction with the Owner, and Comments values.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Comments</b></div></th>
+    <td>This value can be used to provide additional information related to the functional requirement such as decisions or open issues. It can be used in conjunction with the Status, and Comments values.</td>
+    <td>This value can be used to provide additional information related to the non-functional requirement such as decisions or open issues. It can be used in conjunction with the Status, and Comments values.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><b>Objective(s)</b></div></th>
+    <td>This value identifies the associated objective(s) for the functional requirement. The population of this value is highly recommended for traceability reasons.</td>
+    <td>This value identifies the associated objective(s) for the non-functional requirement. The population of this value is highly recommended for traceability reasons.</td>
+  </tr>
+</table>
+<p><b>Note:</b> As you can see from the table above, the recommended columns for both the MoSCoW and Supplemental lists are very similar. Therefore, it is typical for these to be merged into one single list or spreadsheet &ndash; with AutoFilter functionality enabled for filtering (available in MS Excel only).</p>
+<hr WIDTH="100%">
+<h4><a
+name=RD055 id="RD055"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_055_DETAIL_SUPP_REQS_OVERVIEW.HTM" target="_blank">RD.055 Detail Supplemental Requirements </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is one of the most important tasks for any WebCenter project. The objective is to identify all of the non-functional requirements for the project and their prioritization. </p>
+<h5>WORK PRODUCT</h5>
+<p>The format of the 'RD.055 Supplemental Requirements' tab or worksheet should clearly identify all non-functional requirements and the associated information. This aids the project team with prioritizing requirements and understanding project scope. </p>
+<p>Please see task, <a href="#RD0451"> Prioritize Requirements (MoSCoW) (RD.045)</a> for further information as both tasks should be developed in parallel.</p>
+<hr WIDTH="100%">
+<h4><a
+name=RD1301 id="RD1301"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_130_DEVELOP_BASELINE_ARCH_DESC_OVERVIEW.HTM" target="_blank">RD.130.1 Develop Baseline Architecture Description </a></h4>
+<h5>OVERVIEW</h5>
+<p>This task is optional for WebCenter projects; however, it can prove useful in the early stages of any project. It helps provide understanding of factors that will influence the architecture of the system. It also allows the opportunity to develop strategies to address the identified factors and, if a product specialist is available, this can ease concerns over certain product related factors.</p>
+<h5>APPROACH</h5>
+<p>This task should ideally be undertaken during the Inception phase as a half day workshop involving business analysts, a system architect and ideally a product specialist. The workshop should consist of the following activities: </p>
+<ul>
+  <li> Identify the project scope.</li>
+  <li> Identify the project overview.</li>
+  <li> Undertake project analysis focusing on the following areas:
+      <ul>
+        <li> Organizational Factors &ndash; Identify resource availability, skills, etc.</li>
+        <li> Technological Factors &ndash; Identify infrastructure limitations, standards, etc.</li>
+        <li> Product Factors &ndash; Identify performance, suitability concerns etc.</li>
+      </ul>
+  </li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>The standard OUM work product is suitable for WebCenter projects. Only complete the High-Level Software Architecture section if you have time or it is a requirement of the project. </p>
+<hr WIDTH="100%">
+<h4><A
+name=RA0231 id="RA0231"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/RA_023_DEVELOP_USE_CASE_MODEL_OVERVIEW.HTM" target="_blank">RA.023.1 Develop Use Case Model</a></h4>
+<h5>OVERVIEW</h5>
+<p>A Use Case Model (RA.023) should be created for all WebCenter projects that require customization, or enhancement to the system. </p>
+<h5>APPROACH</h5>
+<p>If the customer has provided a functional specification then that may be sufficient. It is recommended that the Use Case Model is created at the same time as the MoSCoW List as they are very closely linked. </p>
+<h5>WORK PRODUCT </h5>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_TG_RA-023.GIF" alt="Example Use Case Model for Content Management System" width="360" height="457" title="Example Use Case Model for Content Management System"></p>
+<p>The Use Case Model should show a structured representation of all of the project use cases with the gaps, within scope, identified as appropriate. Ensure that both the diagram and MS Word work product are completed. </p>
+<p>It is also very important to briefly describe the use cases and the actors within the provided OUM work product template. This will avoid much confusion when writing the use cases, and when reviewing the model in the requirements approval process.</p>
+<h6>Review</h6>
+<p>You should review this model in conjunction with the MoSCoW List (RD.045) in order to ensure that the all use cases are identified and have the correct relationship to each other. In some cases you may not identify all of the use cases at once, therefore the sign off/approval for the use cases, may come one iteration group at any time, or one package at any time. </p>
+<p><b>Note:</b> The use cases for Content Operations are system <a href="../../../020_METHOD_GUIDELINES/050_TECHNIQUE/USE_CASE_LEVELS.HTM" target="_blank">white box</a> use cases and have been broken down to a very low level of granularity. These use cases are already realized into the UCM software. As such their level of granularity is appropriate for possible GAP resolutions when customization is required. </p>
+<p><b>Note:</b> For custom development, OUM recommends that CRUD (Create, Read, Update, Delete) use cases be generalized into a single &lsquo;Maintain Content&rsquo; Use case, where the main success scenario is performing the &lsquo;Create Content&rsquo;. The &lsquo;Update Content&rsquo;, and the &lsquo;Delete Content&rsquo; use cases would include the &lsquo;Retrieve Content&rsquo;, and &lsquo;View Content&rsquo; steps. </p>
+<p>Whenever the individual scenarios become complex, or may require customization, OUM advocates breaking them out into separate use cases as depicted in the diagram. </p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<p></p>
+<hr WIDTH="100%">
+<h3><a
+ name="CRG" id="CRG"></a>A.ACT.CR CONSOLIDATE SOLUTION REQUIREMENTS GUIDANCE</h3>
+<h4><a
+name=RD1401 id="RD1401"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">RD.140.1 Create Requirements Specification</a><br>
+    <a
+name=RD1501 id="RD1501"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_150_REVIEW_REQS_SPECIFICATION_OVERVIEW.HTM" target="_blank">RD.150.1 Review Requirements Specification</a> </h4>
+<h5>OVERVIEW</h5>
+<p>The Requirements Specification is recommended for every WebCenter project as it captures all of the requirement information for the project. </p>
+<p><b>RD.140.1 - Create</b> - Consolidate all the requirements into a unique document: the Requirements Specification. This task is only required when it is necessary to have a formal review. it may also be necessary when you must provide it has a major milestone in early iterations of a project. The Requirements Specification can contain both functional and non-functional (i.e., supplemental) requirements.</p>
+<p><b>RD.150.1 - Review</b> - The goal of this task is to remove defects on the requirements via peer review.</p>
+<h5>WORK PRODUCT </h5>
+<p>The standard OUM work product template is sufficient for most WebCenter projects. The diagram below indicates the recommended work products in Inception that should be linked to or added to the Requirements Specification. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/WC_RD140_EX_INC.JPG" alt="Illustration of the OUM Work Products that can be included in the Requirements Specification" width="587" height="268" title="Illustration of the OUM Work Products that can be included in the Requirements Specification"></p>
+<p><b>Note:</b> The work products created in other requirement tasks do not need to be duplicated within this document; suitable links to the relevant documents should be placed into the appropriate sections, or insert the other documents as an object.</p>
+<p><b>Note: </b>Although seen as the best way of ensuring that everything is consolidated, inserting work products (children) into other work products (parents) can cause issues with document versioning and document approval. For example, if one of the inserted work products changes, then it will mean updating the revision of not only the child work product but also the parent. Approvers will not want to review a whole parent work product again purely because one of it child work products has changed. However, this can be avoided by identifying revision changes with the parent document. </p>
+<p><b>Note:</b> The requirements specification must be reviewed on a regular basis for all WebCenter projects, as it is common for requirements to change based on new decisions and design issues. Typically, it is recommended to review the requirements specification work product after creating and updating any of the child tasks identified within task RD.140. Refer to the <a href="WC_TASK_GUIDELINES_ELABORATION.HTM#RD1402" target="_blank">Elaboration phase iteration for this task</a> to see additional guidance. </p>
+<p> <a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a name="GSPG" id="GSPG"></a>A.ACT.GSP GATHER SUPPORTING REQUIREMENTS GUIDANCE</h3>
+<h4><a name="TE0051" id="TE0051"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TE_005_DETERMINE_TESTING_REQS_OVERVIEW.HTM" target="_blank">TE.005.1 Determine Testing Requirements</a></h4>
+<h5>OVERVIEW</h5>
+<p>In this task, all Testing Requirements for the WebCenter project are defined. This covers the requirements for all tests that should be performed in the project from unit testing to user acceptance testing. Refer to the <a href="WC_TASK_GUIDELINES_ELABORATION.HTM#TE0052" target="_blank">Elaboration phase iteration for this task</a> to see additional guidance. </p>
+<h5>APPROACH</h5>
+<p>Identify Testing Requirements from:</p>
+<ul>
+  <li>existing test plans and standards</li>
+  <li>testing objectives</li>
+</ul>
+<h5>WORK PRODUCT </h5>
+<p>It is not necessary to complete the OUM template for this task. You may wish to provide the Testing Requirements within the Supplemental Requirements (RD.055).</p>
+<hr WIDTH="100%">
+<h4><A
+name=TA010 id="TA010"></A><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">TA.010 Conduct Technical Architecture Workshop</a></h4>
+<h5>OVERVIEW</h5>
+<p>This is a core task on WebCenter projects. It is particularly important for projects that have contractually delegated the bulk of the technical architecture responsibility to technical resources (outside the project team) either within the enterprise or to a third-party provider. </p>
+<p>The workshop should be conducted as early in the project lifecycle as possible in order to make the enterprise aware of the expectations and requirements associated with their responsibility as well as to share leading practice approaches and experiences for WebCenter implementations.</p>
+<hr WIDTH="100%">
+<h4><a name="DO010" id="DO010"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/DO_010_DEFINE_DOCU_REQS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">DO.010 Define Documentation Requirements and Strategy </a></h4>
+<h5>OVERVIEW</h5>
+<p>The goal of this task is to outline the overall requirements for creating documentation and specify the work products to be produced. You also identify the strategy you will use in publishing project-specific documentation. </p>
+<p>This task is important for all WebCenter projects. It is not necessary to complete the OUM template for this task. You may wish to provide the requirements within the DO.010 tab of the MoSCoW List (RD.045). </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr align="left" WIDTH="100%">
+<h3 align="left"><a name="TPTG" id="TPTG"></a>A.ACT.TPT&nbsp;TRAIN PROJECT TEAM GUIDANCE</h3>
+<h4 align="left"><a name="TR0101" id="TR0101"></a><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_010_DEFINE_TRAINING_STRATEGY_OVERVIEW.HTM" target="_blank">TR.010.1 Define Training Strategy </a></h4>
+<h5 align="left">OVERVIEW</h5>
+<p>In this task, assess the education and training needs of the project team and user community and plan the delivery of the necessary training based on common areas of responsibility, interests, and skills. This training could be accomplished in classes, through online self-study training, or a combination of both. The types of training needed depend on the requirements of the WebCenter project.</p>
+<p>This task is executed in both the Inception and Elaboration phases:</p>
+<ul>
+  <li> The first iteration in the Inception phase addresses the education needs and training strategy for the project team.</li>
+  <li> The second iteration in the Elaboration phase adds the strategy for training the end-user community.<br>
+  </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

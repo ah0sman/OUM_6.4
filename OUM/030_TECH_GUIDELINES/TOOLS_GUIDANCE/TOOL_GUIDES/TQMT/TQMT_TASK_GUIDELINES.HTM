@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Testing and Quality Management Tools Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../../OUM_HOME.HTM"><img src="../../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../../CLOUD_HOME.htm"><img src="../../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Testing and Quality Management Tools Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TE">Testing (TE) Process Guidance</option>
+                            <option value="#PT">Performance Management (PT) Process Guidance</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("TE");
+  Effect.BlindDown("PT");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("TE");
+  Effect.BlindUp("PT");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+ eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<h2>TESTING AND QUALITY MANAGEMENT TOOLS SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This document contains OUM supplemental task guidance for Testing and Quality Management Tools. </p>
+<ul>
+  <li>The first column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The second column provides a link to the OUM Task Overview. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<TABLE width="100%" border=1 title="Supplemental Guide Index" summary="OUM tasks included in this supplemental guide.  The first column contains links to the actual guidance found in this document.  The second column contains links to the OUM Task Overviews.  The table has subheadings for processes.">
+  <TBODY>
+    <TR bgcolor="#BEBEBE">
+      <th scope="col" width="45%" height="26"><DIV align="center">Oracle Testing and Quality Management Tools - OUM Supplemental Task Guidelines (this document) <BR>
+              <A href="#" onclick="collapseSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'})">collapse table</A> | <A href="#" onclick="expandSOATaskGuidelines(); new Effect.Highlight(this, {startcolor: '#cccccc'});">expand table</A> </DIV></th>
+      <th scope="col" width="43%"><DIV align="center">OUM Task Overview <BR>
+      </DIV></th>
+    </tr>
+  <tbody id="PJM">
+  </tbody>
+  <tr>
+    <th scope="rowgroup" height="26" colspan="2" bgcolor="#CCCCCC"><div align="left">Testing</div></th>
+  </tr>
+  <tbody id="TE">
+    <TR valign="top">
+      <TD valign="top"><a href="#TE0251">TE.025.1 Create System Test Scenarios</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.1 Create System Test Scenarios</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE0202">TE.020.2 Develop Unit Test Scripts </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020.2 Develop Unit Test Scripts </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#TE0252">TE.025.2 Create System Test Scenarios</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.2 Create System Test Scenarios</a></TD>
+    </TR>
+  </tbody>
+  <TR>
+    <th scope="rowgroup" height="26" colspan="2" bgColor="#CCCCCC"><div align="left">Performance Management </div></th>
+  </TR>
+  <tbody id="PT">
+    <TR valign="top">
+      <TD valign="top"><a href="#PT050">PT.050 Design Performance Test Scripts and Programs </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_050_DESIGN_PERF_TEST_SCRIPTS_PGMS_OVERVIEW.HTM" target="_blank">PT.050 Design Performance Test Scripts and Programs </a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#PT070">PT.070 Build Performance Test Scripts and Programs</a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM" target="_blank">PT.070 Build Performance Test Scripts and Programs</a></TD>
+    </TR>
+    <TR valign="top">
+      <TD valign="top"><a href="#PT080">PT.080 Conduct Performance Test Dress Rehearsal </a></TD>
+      <TD><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_080_CONSTRUCT_PERF_TEST_ENVIRONMENT_AND_DATABASE_OVERVIEW.HTM" target="_blank">PT.080 Conduct Performance Test Dress Rehearsal </a></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=TE id="TE"></A></B>TESTING (TE) GUIDANCE</h3>
+<h4><a name="TE0251" id="TE0251"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.1 - Create System Test Scenarios</a> </h4>
+<p>The task of defining test plans, acceptance criteria, testing deliverables and processes for any software development effort may present many different and evolving challenges, from identifying applicable processes to maintaining those decisions over time. Using a tool to centralize that information is highly recommended. Oracle offers OTM (Oracle Test Management) as a centralized solution for your test requirements, deliverables and issue tracking.
+<p>By coordinating the testing process in a single, unified platform, Oracle<TT><SUP>&reg;</SUP></TT> Test Manager for Web Applications provides a comprehensive way to manage quality as a process throughout the Web application development lifecycle. Oracle Test Manager for Web Applications is tightly integrated with Oracle Functional Testing for Web Applications and Oracle Load Testing for Web Applications, maximizing the return on investment for your testing tools. It supports a process that consistently delivers high-quality, high-performance applications.</p>
+  <ul>
+    <li>The Requirements module allows testers to document and manage applications and test requirements before the testing process begins.</li>
+    <li>The Tests module enables users to create detailed test plans, including automated and manual test cases.</li>
+    <li>The Issues module allows testers and developers to capture and share issues found during the testing process, and then enables them to view issue status and gauge application readiness.</li>
+  </ul>
+  <p>OTM can be used as a tracking tool and can also be used to execute automated and manual tests. OTM also has the option to schedule automated tests which makes this repetitive task more reliable. </p>
+  <hr WIDTH="100%">
+  <h4><a name="TE0202" id="TE0202"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_020_DEVELOP_UNIT_TEST_SCRIPTS.HTM" target="_blank">TE.020.2 - Develop Unit Test Scripts </a> </h4>
+  <h5>JDeveloper &ndash; JUnit </h5>
+  <p>The de facto unit-testing framework for Java is JUnit (open source). You can plug JUnit easily into Oracle<TT><SUP>&reg;</SUP></TT> JDeveloper from the menu: Help -&gt; Check for Updates -&gt; check the JUnit Extension -&gt; next. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-1.PNG" alt="Screen Shot of Where to Plug JUnit into JDeveloper" width="576" height="349" title="Screen Shot of Where to Plug JUnit into JDeveloper"></p>
+  <p><br>
+  This will automatically download the JUnit plug-in files to your JDeveloper directory. JUnit can be used together with JDeveloper to test Java classes that run in a client JVM (Java Virtual Machine). Using the plug-in you can easily create unit test stubs for existing methods and create test suites for a set of existing unit tests. You can also create a set of reusable test fixtures. </p>
+  <h6>Creating a A JUnit Test Case</h6>
+  <p>Select the project or the particular case to be tested, -&gt; New to Open the New Gallery, in the categories tree, expand the General tab and select Unit Tests -&gt; Test Case</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-2.PNG" alt="Screen Shot of How to Create a JUnit Test Case" width="576" height="352" title="Screen Shot of How to Create a JUnit Test Case"></p>
+  <p align="left">Select the method to be tested form the wizard: </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-3.PNG" alt="Screen Shot of Select the Class to Test" width="576" height="360" title="Screen Shot of Select the Class to Test"></p>
+  <p align="left">Click next then the class and Finish. Once that is done the new class will be added to the application navigator. </p>
+  <p align="left"> Open the new test case (The Java Class that has just been created) and include the values that check the function of the code. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-4.PNG" alt="Screen Shot of How to Include Values to the New Test Case" width="581" height="378" title="Screen Shot of How to Include Values to the New Test Case"></p>
+  <h6 align="left">Running the Test Cases</h6>
+  <p>After running the program and checking that it does not display any errors, we can run the JUnit tests. Right click on the test case and click on Run: </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-5.PNG" alt="Screen Shot of Running the Test Case" width="576" height="346" title="Screen Shot of Running the Test Case"></p>
+  <p align="left"> JDeveloper will show the progress of the tests in the results window: </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-6.PNG" alt="Screen Shot of the Progress of the Tests" width="577" height="328" title="Screen Shot of the Progress of the Tests"></p>
+  <h6 align="left">Creating a Custom Test Fixture</h6>
+  <p align="left">Test Fixtures are used to create a fixed estate of a set of objects, the purpose of a test Fixture it to create a known environment where tests and results can be repeated. </p>
+  <p>Examples are: </p>
+  <ul>
+    <li>loading a database with a set of data</li>
+    <li> copying a known set of files</li>
+    <li>setting up mock objects</li>
+  </ul>
+  <p>Select the project or the particular case to be tested, -&gt; New to Open the New Gallery, in the categories tree, expand the General tab and select Unit Tests -&gt; Test Fixture, name the test and click OK. </p>
+  <h6>Running Multiple Test Cases</h6>
+  <p>When multiple tests need to be executed a Test Suite needs to be created, The JUnit Test Wizard has options to insert a main() method and call the TestRunner class which will open the test TestRunner log and display the test results. </p>
+  <p>Select the project or the particular case to be tested, -&gt; New to Open the New Gallery, in the categories tree, expand the General tab and select Unit Tests -&gt; Test Suite name the test and click OK. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-7.PNG" alt="Screen Shot of Running Multiple Test Cases" width="576" height="395" title="Screen Shot of Running Multiple Test Cases"></p>
+  <p align="left">Name the test set and select the classes that will be used during the test. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-8.PNG" alt="Screen Shot of How to Name the Test Set and Select the Classes" width="554" height="362" title="Screen Shot of How to Name the Test Set and Select the Classes"></p>
+  <p align="left">Right click the class and select Run to run the test, the results will displayed in the results pane of JDeveloper. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE020-9.PNG" alt="Screen Shot of Results of Running the Multiple Test Cases" width="576" height="253" title="Screen Shot of Results of Running the Multiple Test Cases"></p>
+  <hr WIDTH="100%">
+  <h4 align="left"><a name="TE0252" id="TE0252"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/TE_025_CREATE_SYSTEM_TEST_SCENARIOS_OVERVIEW.HTM" target="_blank">TE.025.2 - Create System Test Scenarios</a> </h4>
+  <p>OpenScript functional module is used to create functional tests scripts, using the functional module OpenScripts scripts will replay and validate user interactions with the application trough the browser, by clicking on links, buttons and validating content as well as application functionality.
+  <p>OpenScript is the next generation scripting platform for Oracle Application Testing Suite, which can create automated test scripts for load testing and functional testing.</p>
+  <p>Combines an intuitive graphical scripting interface with a powerful Java IDE (Integrated Development Environment) to create test scripts, providing much greater scripting flexibility while maintaining ease-of-use.</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-1.PNG" alt="OpenScript Welcome Page" width="576" height="384" title="OpenScript Welcome Page"></p>
+  <p> To create a functional test script select: File -&gt; New and Web under Functional Tests </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-2.PNG" alt="Screen Shot of How to Create a Functional Test Script" width="576" height="372" title="Screen Shot of How to Create a Functional Test Script"></p>
+  <p>Select workspace and name the script.</p>
+  <p> Start recording by clicking the record button. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-3.PNG" alt="Screen Shot of Record Button on Toolbar" width="452" height="62" title="Screen Shot of Record Button on Toolbar"></p>
+  <p>A browser will open, while interacting with the browser OpenScript will record the actions that are being performed.
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-4.PNG" alt="Screen Shot of Open Browser Interacting with OpenScript" width="840" height="447" title="Screen Shot of Open Browser Interacting with OpenScript">
+  <p>Once the script has been recorded, you will need to play it back. Click the playback button to execute the script.
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-5.PNG" alt="Screen Shot of Play button on Toolbar" width="452" height="62" title="Screen Shot of Play button on Toolbar"></p>
+  <p>Again the browser of your choice will open and the steps that you executed during recording will be reproduced. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-6.PNG" alt="Screen Shot of Open Browser Reproducing Steps Executed During Recording" width="871" height="388" title="Screen Shot of Open Browser Reproducing Steps Executed During Recording"></p>
+  <p>Once the steps have been reproduced a report will be generated to show the results. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-7.PNG" alt="Screen Shot of Report Produced Showing the Results" width="576" height="474" title="Screen Shot of Report Produced Showing the Results"></p>
+  <p><a href="#TOP">Back to Top</a></p>
+  <p>
+  <hr WIDTH="100%">
+  <h3 align="left"><a name="PT" id="PT"></a>PERFORMANCE MANAGEMENT (PT) PROCESS GUIDANCE</h3>
+  <h4><b><a
+name=PT050 id="PT050"></a></b><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_050_DESIGN_PERF_TEST_SCRIPTS_PGMS_OVERVIEW.HTM" target="_blank">PT.050 Design Performance Test Scripts and Programs <br>
+    </a><a name="PT070"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_070_BUILD_PERF_TEST_SCRIPTS_PROGRAMS_OVERVIEW.HTM" target="_blank">PT.070 Build Performance Test Scripts and Programs <br>
+  </a><a name="PT080"></a><a href="../../../../020_METHOD_GUIDELINES/030_TASK/PT_080_CONSTRUCT_PERF_TEST_ENVIRONMENT_AND_DATABASE_OVERVIEW.HTM" target="_blank">PT.080 Construct Performance Test Environment and Database </a></h4>
+  <h5>ORACLE LOAD TESTING</h5>
+  <p>Oracle<TT><SUP>&reg;</SUP></TT> Load Testing allows you to easily test the performance and scalability of your Web applications and Web services. Oracle Load not only stresses your application to simulate the impact of end-user workloads, but also enables rigorous validation. The integrated scripting platform cuts scripting time in half, eliminating weeks from a project&rsquo;s testing schedule. Oracle Load Testing is a component of Oracle Application Testing Suite, the centerpiece of the Oracle Enterprise Manager solution for comprehensive testing of packaged, Web and service-oriented architecture&ndash;based applications. </p>
+  <p>It is composed of two components: </p>
+  <ul>
+    <li>OpenScript - Used to record, edit and verify scripts. </li>
+    <li> OLT (Oracle Load Testing) - Used to reproduce multiple user interactions against the application.</li>
+  </ul>
+  <h6>OpenScript HTTP Module </h6>
+  <p>OpenScript HTTP module is used to record the HTTP traffic that a user is generating while interacting with a browser or another application that generates HTTP calls. Its function is to record that traffic and interpret it, so it can be reproduced exactly as if it was being done by a user. You will then use OpenScript to validate and add validations to the script. </p>
+  <h6>OpenScript Basic Module </h6>
+  <p>OpenScript can also be used to test other non HTTP protocols, such as an Oracle Database, SSH, and Telnet. </p>
+  <p>To do so OpenScript offers a basic module that can be expanded using Java, the code can be integrated with OpenScript methods to validate and report errors. </p>
+  <p>This script can later be called from OLT (Oracle Load Test) to generate load. </p>
+  <h6>OpenScript WebServices Module </h6>
+  <p>OpenScript can also be used to create scripts for WebServices, it does so by reproducing SOAP (Simple Object Access Protocol) calls. The scripts can then be edited, parameterized and validated. </p>
+  <h5>CREATING HTTP LOAD SCRIPTS </h5>
+  <p>We will use OpenScript to create these scripts; first we will select the Web/HTTP module to generate the script. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-1.PNG" alt="Screen Shot of Creating HTTP Load Scripts with OpenScript" width="576" height="500" title="Screen Shot of Creating HTTP Load Scripts with OpenScript"></p>
+  <p>Select next, enter a name and select the workspace where you want to store it. You will start recoding by clicking on the record button:</p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-3.PNG" alt="Screen Shot of Record Button on Toolbar" width="452" height="62" title="Screen Shot of Record Button on Toolbar"></p>
+  <p>After clicking on the icon your preferred browser will open, interact with the browser to record the HTTP transactions. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-3.PNG" alt="Screen Shot of Open Browser Interacting with OpenScript" width="888" height="532" title="Screen Shot of Open Browser Interacting with OpenScript"></p>
+  <h5>Validating HTTP Scripts </h5>
+  <p>Use OpenScript to correlate and validate your scripts. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-4.PNG" alt="Screen Shot of Using OpenScript to Correlate and Validate Scripts" width="576" height="276" title="Screen Shot of Using OpenScript to Correlate and Validate Scripts"></p>
+  <p>The above picture shows a parameter being substituted using correlation.</p>
+  <p>To play back the scripts in OpenScript use the Playback button. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/TE025-3.PNG" alt="Screen Shot of Playback Button on Toolbar" width="452" height="62" title="Screen Shot of Playback Button on Toolbar"></p>
+  <p>As the script plays back, the Details pane will display the contents received by the server. It will also report any HTTP errors and perform any user defined validations. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-5.PNG" alt="Screen Shot of Details Pane During Playback" width="576" height="386" title="Screen Shot of Details Pane During Playback"></p>
+  <p>Once scripts have been validated and verified that it is time to start generating load for the performance test, you will do so using OLT. </p>
+  <p>First you will select the desired scripts from OLT and build the scenario. Once you have defined the scenario you will add them to the autopilot. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-6.PNG" alt="Screen Shot of Selecting, Defining and Adding Scripts to the Autopilot" width="576" height="315" title="Screen Shot of Selecting, Defining and Adding Scripts to the Autopilot"></p>
+  <p> Once you have added the scenario to the autopilot, you can define how you would like to start and end the test, and user ramp up. You can also indicate if you would like to add any system metrics. </p>
+  <div align="center"><img src="../../../../010_COMMON_FILES/PT-7.PNG" alt="Screen Shot of Defining Start and End and User Ramp Up and System Metrics" width="583" height="388" title="Screen Shot of Defining Start and End and User Ramp Up and System Metrics"> </div>
+  <p>Click on the play button and name the session to start the test. As the test is running, you can see the VU (Virtual User) grid being updated.</p>
+  <div align="center"><img src="../../../../010_COMMON_FILES/PT-8.PNG" alt="Screen Shot of Running Test with UV Grid Being Assigned" width="576" height="341" title="Screen Shot of Running Test with UV Grid Being Assigned"> </div>
+  <p>The Run graphs can also be used to show the status of the application. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-9.PNG" alt="Screen Shot of Run Graphs Showing Application Status" width="576" height="372" title="Screen Shot of Run Graphs Showing Application Status"></p>
+  <p>Finally use the reports tabs to view any metrics and build custom reports. </p>
+  <p align="center"><img src="../../../../010_COMMON_FILES/PT-10.PNG" alt="Example Custom Report" width="576" height="456" title="Example Custom Report"></p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

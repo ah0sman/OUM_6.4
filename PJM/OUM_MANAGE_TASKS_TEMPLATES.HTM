@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Manage Processes, Tasks and Templates</title>
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../OUM/OUM_HOME.HTM"><img src="../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../OUM/CLOUD_HOME.htm"><img src="../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Manage Processes, Tasks and Templates</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="PJM_HOME.htm">MANAGE View</option>
+                    <option value="../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" id="CurrPageNav" accesskey="c" title="Current Page Navigation" onchange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#BT">[BT] Bid Transition</option>
+                            <option value="#SM">[SM] Scope Management</option>
+                            <option value="#FM">[FM] Financial Management</option>
+                            <option value="#WM">[WM] Work Management</option>
+                            <option value="#RKM">[RKM] Risk Management</option>
+                            <option value="#IPM">[IPM] Issue and Problem Management</option>
+                            <option value="#STM">[STM] Staff Management</option>
+                            <option value="#CMM">[CMM] Communication Management</option>
+                            <option value="#QM">[QM] Quality Management</option>
+                            <option value="#CM">[CM] Configuration Management</option>
+                            <option value="#IFM">[IFM] Infrastructure Management</option>
+                            <option value="#PCM">[PCM] Procurement Management</option>
+                            <option value="#OCHM">[OCHM] Orgnaizational Change Management</option>
+                            <option value="#MISC">Miscellaneous Manage Templates</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2><a name="BT" id="BT"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_BT_BID_TRANSITION.HTM" target="_blank" class="style1">[BT] Bid  Transition</a></h2>
+<table width="100%"  border="1" title="Bid Transition Tasks, Work Products and Templates" summary="This table provides links to the Bid Transition Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT010_REVIEW_AND_ANALYZE_BID_MATERIAL.HTM" target="_blank">BT.010 Review and Analyze Bid Material</a></div></th>
+    <td width="33%">Reviewed and Analyzed Bid Material </td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/BT010_REVIEWED_AND_ANALYZED_BID_MATERIAL.DOCX" target="_blank">Reviewed and Analyzed Bid Material</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT020_REVIEW_AND_CONFIRM_BUS_CASE.HTM" target="_blank">BT.020 Review and Confirm Business Case</a></div></th>
+    <td width="33%">Confirmed Business Case</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/BT020_CONFIRMED_BUSINESS_CASE.DOCX" target="_blank">Confirmed Business Case</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT030_IDENTIFY_PROJECT_STAKEHOLDERS.HTM" target="_blank">BT.030 Identify Project Stakeholders </a></div></th>
+    <td>Identified Project Stakeholders</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/BT030_IDENTIFIED_PROJECT_STAKEHOLDERS.XLSX" target="_blank">Identified Project Stakeholders</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT040_REVIEW_AND_ACCEPT_PROJECT_BUDGET.HTM" target="_blank">BT.040 Review and Accept Project Budget</a></div></th>
+    <td>Accepted Project Budget</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT050_REVIEW_CONTRACT_WITH_CUSTOMER.HTM" target="_blank">BT.050 Review Contract with Customer </a></div></th>
+    <td>Reviewed Contract</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX" target="_blank">Meeting Minutes</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT060_REVIEW_PROJECT_APPROACH_WITH_CUSTOMER.HTM" target="_blank">BT.060 Review Project Approach with Customer </a></div></th>
+    <td>Reviewed Project Approach</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX" target="_blank">Meeting Minutes</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/BT070_CREATE_PROJECT_MANAGEMENT_PLAN.HTM" target="_blank">BT.070 Create Project Management Plan </a></div></th>
+    <td>Project Management Plan </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.docx" target="_blank">Project Management Plan-Word</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/BT070_PROJECT_MANAGEMENT_PLAN.PPTX">Project Management Plan-PowerPoint</a>      <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/BT070_ABBREVIATED_PROJECT_MANAGEMENT_PLAN.pptx" target="_blank">Abbreviated Project Management Plan-PowerPoint</a>
+      <br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.pptx" target="_blank">PMP Resources-PowerPoint</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/PMP_RESOURCES.vsd" target="_blank">PMP Resources-Visio</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="SM" id="SM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_SM_SCOPE_MANAGEMENT.HTM" target="_blank" class="style1">[SM] Scope Management </a></h2>
+<table width="100%"  border="1" title="Scopw Management Tasks, Work Products and Templates" summary="This table provides links to the Scope Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM010_DEFINE_AND_CONFIRM_SCOPE.HTM" target="_blank">SM.010 Define and Confirm Scope</a></div></th>
+    <td width="33%">Validated Scope</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM020_DEVELOP_SCOPE_CHANGE_MANAGEMENT_PROCESSES.HTM" target="_blank">SM.020 Develop Scope Change Management Processes</a></div></th>
+    <td width="33%">Scope Change Management Processes</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM030_MANAGE_SCOPE.HTM" target="_blank">SM.030 Manage Scope </a></div></th>
+    <td>Managed Scope </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_FORM.DOCX" target="_blank">Change Request Form</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/SM030_CHANGE_REQUEST_LOG.XLSX" target="_blank">Change Request Log</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM040_MANAGE_ACCEPTANCE.HTM" target="_blank">SM.040 Manage Acceptance</a></div></th>
+    <td>Managed Acceptance</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CRITERIA.DOCX" target="_blank">Acceptance Criteria</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a> <br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM050_GAIN_ACCEPTANCE.HTM" target="_blank">SM.050 Gain Acceptance</a></div></th>
+    <td>Final Acceptance Certificate </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SM040_ACCEPTANCE_CERTIFICATE.DOCX" target="_blank">Acceptance Certificate</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/SM040_DELIVERY_NOTE.DOCX" target="_blank">Delivery Note</a>      <br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/SM050_PROJECT_ACCEPTANCE_REPORT.DOCX" target="_blank">Project Acceptance Report</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM060_CLOSE_SCOPE_MANAGEMENT.HTM" target="_blank">SM.060 Close Scope Management</a></div></th>
+    <td>Closed Scope Management </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SM060_SCOPE_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Scope Management Lessons Learned</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/SM070_IDENTIFY_FUTURE_SYSTEM_ENHANCEMENTS.HTM" target="_blank">SM.070 Identify Future System Enhancements </a></div></th>
+    <td>Future System Enhancements </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SM070_FUTURE_SYSTEM_ENHANCEMENTS.DOCX" target="_blank">Future System Enhancements</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="FM" id="FM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_FM_FINANCIAL_MANAGEMENT.HTM" target="_blank" class="style1">[FM] Financial Management </a></h2>
+<table width="100%"  border="1" title="Financial Management Tasks, Work Products and Templates" summary="This table provides links to the Financial Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/FM010_REFINE_PROJECT_BUDGET.HTM" target="_blank">FM.010 Refine Project Budget</a></div></th>
+    <td width="33%">Approved Project Budget</td>
+    <td width="33%">Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/FM020_DEVELOP_FINANCIAL_MANAGEMENT_PLAN.HTM" target="_blank">FM.020 Develop Financial Management Plan</a></div></th>
+    <td width="33%">Financial Management Plan</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/FM030_SET_UP_TIME_AND_EXPENSE_TRACKING.HTM" target="_blank">FM.030 Set Up Time and Expense Tracking</a></div></th>
+    <td>Time and Expense Tracking</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/FM030_EXPENSE_TRACKING_SPREADSHEET.XLSX" target="_blank">Expense Tracking Spreadsheet</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/FM030_PROJECT_TEAM_TIME_SHEET.XLSX" target="_blank">Project Team Time Sheet</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/FM040_MANAGE_PROJECT_FINANCES.HTM" target="_blank">FM.040 Manage Project Finances</a></div></th>
+    <td>Managed Project Finances</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/FM050_CLOSE_PROJECT_FINANCIALS.HTM" target="_blank">FM.050 Close Project Financials</a></div></th>
+    <td>Closed Project Financials</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/FM050_FINANCIAL_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Financial Management Lessons Learned</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="WM" id="WM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_WM_WORK_MANAGEMENT.HTM" target="_blank" class="style1">[WM] Work Management </a></h2>
+<table width="100%"  border="1" title="Work Management Tasks, Work Products and Templates" summary="This table provides links to the Work Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM010_DEVELOP_BASELINE_PROJECT_WORKPLAN.HTM" target="_blank">WM.010 Develop Baseline Project Workplan</a></div></th>
+    <td width="33%">Baseline Project Workplan</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/IMPLEMENTATION_PLAN.DOCX" target="_blank">Implementation Plan</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/ITERATION_PLAN_SUMMARY.DOCX" target="_blank">Iteration Plan Summary</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/OUM_PROJECT_WORKPLAN_FILES.ZIP" target="_blank">OUM Project Workplan</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/OUM_PRIMAVERA_PROJECT_WORKPLAN.PLAN" target="_blank">OUM Primavera Project Workplan</a> </td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM020_DEVELOP_WM_EXEC_AND_CONTROL_PROCESSES_AND_POLICY.HTM" target="_blank">WM.020 Develop Work Management Execution and Control Processes and Policies</a></div></th>
+    <td width="33%">Work Management Plan</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM030_MANAGE_PROJECT_WORKPLAN.HTM" target="_blank">WM.030 Manage Project Workplan</a></div></th>
+    <td>Project Workplan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/WM030_ASSIGNMENT_REQUEST.DOCX" target="_blank">Assignment Request</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/WM030_DELIVERABLE%20TRACKING.XLSX" target="_blank">Deliverable Tracking Spreadsheet</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/WM030_UNPLANNED_ACTIVITY_LOG.XLSX" target="_blank">Unplanned Activity Log</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/WM030_ITERATION_END_REPORT.DOCX" target="_blank">Iteration End Report</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM040_TRACK_SCHEDULE_PERFORMANCE.HTM" target="_blank">WM.040 Track Schedule Performance</a></div></th>
+    <td>Schedule Performance</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM060_CLOSE_WORK_MANAGEMENT.HTM" target="_blank">WM.060 Close Work Management</a></div></th>
+    <td>Closed Work Management</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/WM060_WORK_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Work Management Lessons Learned</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/WM070_SCHEDULE_WORKSHOPS.HTM" target="_blank">WM.070 Schedule Workshop(s)</a> </div></th>
+    <td>Workshop Schedule </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/WM-070_WORKSHOP_SCHEDULE.xlsx" target="_blank">Workshop Schedule</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="RKM" id="RKM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_RKM_RISK_MANAGEMENT.HTM" target="_blank" class="style1">[RKM] Risk Management</a></h2>
+<table width="100%"  border="1" title="Risk Management Tasks, Work Products and Templates" summary="This table provides links to the Risk Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM010_DEVELOP_RISK_MANAGEMENT_PLAN.HTM" target="_blank">RKM.010 Develop Risk Management Plan</a></div></th>
+    <td width="33%">Risk Management Plan</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM020_CONDUCT_BASELINE_RISK_ASSESSMENT.HTM" target="_blank">RKM.020 Conduct Baseline Risk Assessment</a></div></th>
+    <td width="33%">Baseline Risk Assessment</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan </a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM030_DEVELOP_RISK_MANAGEMENT_SYSTEM.HTM" target="_blank">RKM.030 Develop Risk Management System</a></div></th>
+    <td>Risk Management System</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_LOG.XLSX" target="_blank">Risk Log</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM040_MANAGE_RISK.HTM" target="_blank">RKM.040 Manage Risk </a></div></th>
+    <td>Managed Risk</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM050_MONITOR_AND_CONTROL_RISK.HTM" target="_blank">RKM.050 Monitor and Control Risk</a></div></th>
+    <td>Assessed Risk</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>      
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/RKM060_CONDUCT_POST_PRODUCTION_RISK_ASSESSMENT.HTM" target="_blank">RKM.060 Conduct Post-Production Risk Assessment</a></div></th>
+    <td>Post-Production Risk Assessment</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/RKM030_RISK_FORM.DOCX" target="_blank">Risk Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/RKM020_RISK_MITIGATION.DOCX" target="_blank">Risk Mitigation Plan</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RKM060_LESSONS_LEARNED.DOCX" target="_blank">Risk Management Lessons Learned</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="IPM" id="IPM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_IPM_ISSUE_AND_PROBLEM_MANAGEMENT.HTM" target="_blank" class="style1">[IPM] Issue and Problem Management </a></h2>
+<table width="100%"  border="1" title="Issue and Problem Management Tasks, Work Products and Templates" summary="This table provides links to the Issue and Problem Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IPM010_DEVELOP_ISSUE_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.010 Develop Issue Management Strategy</a></div></th>
+    <td width="33%">Issue Management Strategy</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IPM020_DEVELOP_PROBLEM_MANAGEMENT_STRATEGY.HTM" target="_blank">IPM.020 Develop Problem Management Strategy</a></div></th>
+    <td width="33%">Problem Management Strategy</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IPM030_DEVELOP_ISSUE_AND_PROBLEM_MANAGEMENT_SYSTEM.HTM" target="_blank">IPM.030 Develop Issue and Problem Management System</a></div></th>
+    <td>Issue and Problem Management System</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_FORM.DOCX" target="_blank">Issue Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_ISSUE_LOG.XLSX" target="_blank">Issue Log</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_REPORT_FORM.DOCX" target="_blank">Problem Form</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/IPM030_PROBLEM_LOG.XLSX">Problem Log</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/RISK_ISSUE_PROBLEM_LOG.XLSX" target="_blank">Risk/Issue/Problem Log</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IPM040_MANAGE_ISSUES_AND_PROBLEMS.HTM" target="_blank">IPM.040 Manage Issues and Problems</a></div></th>
+    <td>Managed Issues and Problems</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IPM050_PRODUCE_FINAL_ISSUE_AND_PROBLEM_REPORT_AND_CLOSE_LOGS.HTM" target="_blank">IPM.050 Produce Final Issue and Problem Report and Close Log(s)</a></div></th>
+    <td>Closed Issue and Problem Log</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/IPM050_ISSUE_AND_PROBLEM_MANAGEMENT_LESSONS_LEARNED.DOCX" target="_blank">Issue and Problem Management Lessons Learned</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="STM" id="STM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_STM_STAFF_MANAGEMENT.HTM" target="_blank" class="style1">[STM] Staff Management </a></h2>
+<table width="100%"  border="1" title="Staff Management Tasks, Work Products and Templates" summary="This table provides links to the Staff Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM010_PLAN_RESOURCE_REQUIREMENTS.HTM" target="_blank">STM.010 Plan Resource Requirements</a></div></th>
+    <td width="33%">Resource Plan</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/STM010_PROJECT_TEAM_ORGANIZATION_CHART.DOCX" target="_blank">Project Team Organization Chart</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/STM010_RESOURCE_PLAN.XLSX" target="_blank">Resource Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM020_DEVELOP_STAFF_MANAGEMENT_PLAN.HTM" target="_blank">STM.020 Develop Staff Management Plan</a></div></th>
+    <td width="33%">Staff Management Plan</td>
+    <td width="33%">Update the Project Management Plan<br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/STM020_STAFF_TRAINING_PLAN.DOCX" target="_blank">Staff Training Plan</a><br>      
+    <a href="040_TEMPLATES_AND_GUIDANCE/STM020_PROJECT_ROLES_AND_RESPONSIBILITIES.PPTX" target="_blank">Project Roles and Responsibilities Presentation</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM030_STAFF_PROJECT.HTM" target="_blank">STM.030 Staff Project </a></div></th>
+    <td>Staffed Project <br></td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM040_PREPARE_ORIENTATION_GUIDE.HTM" target="_blank">STM.040 Prepare Orientation Guide</a></div></th>
+    <td>Orientation Guide<br></td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/STM040_ORIENTATION_GUIDE.DOCX" target="_blank">Project Orientation Guide</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM050_CONDUCT_TEAM_ORIENTATION.HTM" target="_blank">STM.050 Conduct Team Orientation </a></div></th>
+    <td>Oriented Team </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/STM050_PROJECT_KICKOFF_PRESENTATION.PPTX" target="_blank">Project Kickoff Presentation</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM060_MANAGE_PROJECT_TEAM.HTM" target="_blank">STM.060 Manage Project Team</a></div></th>
+    <td>Managed Project Team<br></td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/STM060_INDIVIDUAL_STATUS_REPORT.DOCX" target="_blank">Individual Status Report</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/STM070_RELEASE_STAFF.HTM" target="_blank">STM.070 Release Staff</a></div></th>
+    <td>Released Staff</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="CMM" id="CMM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_CMM_COMMUNICATION_MANAGEMENT.HTM" target="_blank" class="style1">[CMM] Communication Management </a></h2>
+<table width="100%"  border="1" title="Communication Management Tasks, Work Products and Templates" summary="This table provides links to the Communication Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM010_CONDUCT_PROJECT_STAKEHOLDER_ANALYSIS.HTM" target="_blank">CMM.010 Conduct Project Stakeholder Analysis</a></div></th>
+    <td width="33%">Project Stakeholder Analysis</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/CMM010_PROJECT_STAKEHOLDER_ANALYSIS.XLSX" target="_blank">Project Stakeholder Analysis</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM020_DEVELOP_PROJ_TEAM_COMMUNICATION_PLAN.HTM" target="_blank">CMM.020 Develop Project Team Communication Plan</a></div></th>
+    <td width="33%">Project Team Communication Plan</td>
+    <td width="33%">Update the Project Management Plan<br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CMM020_CUSTOMER_PROFILE.DOCX" target="_blank">Customer Profile</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM030_MANAGE_PROJ_TEAM_COMMUNICATION.HTM" target="_blank">CMM.030 Manage Project Team Communication</a></div></th>
+    <td>Project Team Communication</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX" target="_blank">Meeting Minutes</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT_W_INST.DOCX" target="_blank">Weekly Project Status Report with Instructions</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_WEEKLY_PROJECT_STATUS_REPORT.DOCX" target="_blank">Weekly Project Status Report</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/CMM030_STEERING_COMMITTEE_PRESENTATION.pptx" target="_blank">Steering Committee Presentation</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM040_DOCUMENT_LESSONS_LEARNED.HTM" target="_blank">CMM.040 Document Lessons Learned</a></div></th>
+    <td>Lessons Learned</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM040_LESSONS_LEARNED.DOCX" target="_blank">Lessons Learned</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM050_TURN_OVER_PROJECT_DOCUMENTATION.HTM" target="_blank">CMM.050 Turn Over Project Documentation</a></div></th>
+    <td>Project Archives</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CMM060_SUBMIT_FINAL_REPORTS.HTM" target="_blank">CMM.060 Submit Final Reports</a></div></th>
+    <td>Final Reports </td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_CLOSURE.DOCX" target="_blank">Project Closure</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/CMM060_PROJECT_SUMMARY.DOCX" target="_blank">Project Summary</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="QM" id="QM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_QM_QUALITY_MANAGEMENT.HTM" target="_blank" class="style1">[QM] Quality Management </a></h2>
+<table width="100%"  border="1" title="Quality Management Tasks, Work Products and Templates" summary="This table provides links to the Quality Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM010_DEVELOP_QUALITY_MANAGEMENT_PLAN.HTM" target="_blank">QM.010 Develop Quality Management Plan</a></div></th>
+    <td width="33%">Quality Management Plan</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM020_DEVELOP_AND_DOC_QUALITY_CONTROL_REPORTING_PROCESS%20.HTM" target="_blank">QM.020 Develop and Document Quality Control and Reporting Process</a></div></th>
+    <td width="33%">Quality Control and Reporting Process</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_CONTROL_AND_REPORTING_PROCESS.DOCX">Quality Control and Reporting Process</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_MANAGEMENT_CHECKLIST.DOCX">Quality Control Checklist</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT.DOCX" target="_blank">Quality Review Report (Generic)</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM020_QUALITY_REVIEW_REPORT_CUSTOM.DOCX" target="_blank">Quality Review Report (Custom Development)</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM030_CONDUCT_PROJECT_TEAM_QUALITY_MANAGEMENT_ORIENTATION.HTM" target="_blank">QM.030 Conduct Project Team Quality Management Orientation</a></div></th>
+    <td>Project Team Quality Management Orientation</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/QM030_PROJECT_TEAM_QUALITY_MGT_ORIENTATION.PPTX" target="_blank">Project Team Quality Management Orientation Presentation</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM040_MANAGE_QUALITY_CONTROL.HTM" target="_blank">QM.040 Manage Quality Control</a></div></th>
+    <td>Quality Control</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_COMMENTS_LIST.DOCX" target="_blank">Review Comments List</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/QM040_REVIEW_LEADER_FORM.DOCX" target="_blank">Review Leader Form</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM050_PERFORM_QUALITY_ASSURANCE.HTM" target="_blank">QM.050 Perform Quality Assurance</a></div></th>
+    <td>Managed Quality Assurance</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_ACTION_FORM.DOCX" target="_blank">Audit Action Report</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM050_AUDIT_REPORT.DOCX" target="_blank">Audit Report</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/QM050_QUALITY_REPORT.DOCX" target="_blank">Quality Report</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/QM060_CONDUCT_POST_PRODUCTION_QUALITY_REVIEW.HTM" target="_blank">QM.060 Conduct Post-Production Quality Review </a></div></th>
+    <td>Post-Production Quality Review</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/QM060_CUSTOMER_SATISFACTION_REPORT.DOCX" target="_blank">Customer Satisfaction Report</a><br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/QM060_PROJECT_HEALTHCHECK_CHECKLIST.DOCX" target="_blank">Project Healthcheck Checklist</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/QM060_METRICS_REPORT.DOCX" target="_blank">Metrics Report</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="CM" id="CM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_CM_CONFIGURATION_MANAGEMENT.HTM" target="_blank" class="style1">[CM] Configuration Management </a></h2>
+<table width="100%"  border="1" title="Configuration Management Tasks, Work Products and Templates" summary="This table provides links to the Configuration Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM010_DEVELOP_CONFIG_MNGT_STRATEGY_AND_PROCESSES.HTM" target="_blank">CM.010 Develop Configuration Management Strategy and Processes</a></div></th>
+    <td width="33%">Configuration Management Plan and Processes</td>
+    <td width="33%">Update the Project Management Plan<br>
+      <a href="040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_INDEX.XLSX" target="_blank">Configuration Item Index</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/CM010_CONFIGURATION_ITEM_STATUS_RECORD.DOCX" target="_blank">Configuration Item Status Record</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM020_OBTAIN_CONFIGURATION_MANAGEMENT_TOOLS.HTM" target="_blank">CM.020 Obtain Configuration Management Tools</a></div></th>
+    <td width="33%">Configuration Management Tools</td>
+    <td width="33%">Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM030_CREATE_PROJECT_DOC_MANAGEMENT_PLAN.HTM" target="_blank">CM.030 Create Project Documentation Management Plan</a></div></th>
+    <td>Documentation Management Plan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENTATION_MANAGEMENT_PLAN.DOCX" target="_blank">Documentation Management Plan</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/CM030_DOCUMENT_INDEX_EXCEL.XLSX" target="_blank">Document Index-Excel</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM040_CREATE_AND_EXECUTE_SOFTWARE_CONFIGURATION_MGMT_PLAN.HTM" target="_blank">CM.040 Create and Execute Software Configuration Management Plan</a></div></th>
+    <td>Software Configuration Management Plan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM040_SOFTWARE_CONFIGURATION_MANAGEMENT_PLAN.DOCX" target="_blank">Software Configuration Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM050_CREATE_AND_EXECUTE_SOFTWARE_RELEASE_MGMT_PLAN.HTM" target="_blank">CM.050 Create and Execute Software Release Management Plan</a></div></th>
+    <td>Software Release Management Plan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM050_SOFTWARE_RELEASE_MANAGEMENT_PLAN.DOCX" target="_blank">Software Release Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM060_CREATE_AND_EXECUTE_ENV_AND_PATCH_MGMT_PLAN.HTM" target="_blank">CM.060 Create and Execute Environment and Patch Management Plan</a></div></th>
+    <td>Environment and Patch Management Plan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM060_ENVIRONMENT_AND_PATCH_MANAGEMENT_PLAN.DOCX" target="_blank">Environment and Patch Management Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM070_CREATE_AND_EXECUTE_CONFIGURATION_CONTROL_PLAN.HTM" target="_blank">CM.070 Create and Execute Configuration Control Plan</a></div></th>
+    <td>Configuration Management Control Plan</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM070_CONFIGURATION_MANAGEMENT_CONTROL_PLAN.DOCX" target="_blank">Configuration Management Control Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/CM080_CLOSE_CONFIGURATION_MANAGEMENT.HTM" target="_blank">CM.080 Close Configuration Management</a></div></th>
+    <td>Closed Configuration Management</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CM080_LESSONS_LEARNED.DOCX" target="_blank">Configuration Management Lessons Learned</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="IFM" id="IFM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_IFM_INFRASTRUCTURE_MANAGEMENT.HTM" target="_blank" class="style1">[IFM] Infrastructure Management </a></h2>
+<table width="100%"  border="1" title="Infrastructure Management Tasks, Work Products and Templates" summary="This table provides links to the Infrastructure Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IFM010_DEVELOP_INFRASTRUCTURE_MANAGEMENT_PLAN.HTM" target="_blank">IFM.010 Develop Infrastructure Management Plan</a></div></th>
+    <td width="33%">Infrastructure Management Plan</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IFM020_ESTABLISH_TEAM_WORK_ENVIRONMENT.HTM" target="_blank">IFM.020 Establish Team Work Environment</a></div></th>
+    <td width="33%">Team Work Environment</td>
+    <td width="33%">Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IFM030_ESTABLISH_TECHNICAL_INFRASTRUCTURE.HTM" target="_blank">IFM.030 Establish Technical Infrastructure</a></div></th>
+    <td>Established Technical Infrastructure</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/IFM030_PHYSICAL_RESOURCE_PLAN.DOCX" target="_blank">Physical Resource Plan</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IFM040_MANAGE_AND_MAINTAIN_INFRASTRUCTURE.HTM" target="_blank">IFM.040 Manage and Maintain Infrastructure</a></div></th>
+    <td>Maintained Infrastructure</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/IFM040_EQUIPMENT_FAULT_RECORD.DOCX" target="_blank">Equipment Fault Record</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/IFM050_CLOSE_INFRASTRUCTURE.HTM" target="_blank">IFM.050 Close Infrastructure</a></div></th>
+    <td>Closed Infrastructure</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="PCM" id="PCM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_PCM_PROCUREMENT_MANAGEMENT.HTM" target="_blank" class="style1">[PCM] Procurement Management</a></h2>
+<table width="100%"  border="1" title="Procurement Management Tasks, Work Products and Templates" summary="This table provides links to the Procurement Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/PCM010_DEVELOP_PROCUREMENT_STRATEGY_AND_PROCESS.HTM" target="_blank">PCM.010 Develop Procurement Strategy and Process</a></div></th>
+    <td width="33%">Procurement Strategy and Process</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/PCM020_PROCURE_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">PCM.020 Procure Goods and Contracted Services</a></div></th>
+    <td width="33%">Service Orders</td>
+    <td width="33%">Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/PCM030_ADMINISTER_PROCUREMENT_OF_GOODS_AND_CONTRACTED_SERVICES.HTM" target="_blank">PCM.030 Administer Procurement of Goods and Contracted Services</a></div></th>
+    <td>Managed Procurement of Goods and Services</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/PCM030_INCOMING_ITEM_RECORD.DOCX" target="_blank">Incoming Item Record</a><br>
+    <a href="040_TEMPLATES_AND_GUIDANCE/PCM030_REJECTION_NOTE.DOCX" target="_blank">Rejection Note</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/PCM040_CLOSE_CONTRACT.HTM" target="_blank">PCM.040 Close Contract</a></div></th>
+    <td>Closed Contract</td>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/PCM040_SUPPLIER_ASSESSMENT_RECORD.DOCX" target="_blank">Supplier Assessment Record</a></td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="OCHM" id="OCHM"></a><a href="020_METHOD_GUIDELINES/020_PROCESS/PJM_OCHM_ORGANIZATIONAL_CHANGE.HTM" target="_blank" class="style1">[OCHM] Organizational Change Management </a></h2>
+<table width="100%"  border="1" title="Organizational Change Management Tasks, Work Products and Templates" summary="This table provides links to the Organizational Change Management Task Overviews and templates, if available. It has columns for Task Overview, Work Product and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Task Overview</th>
+    <th width="33%" scope="col">Work Product</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/OCHM010_UNDERSTAND_ORGANIZATIONAL_CHANGE_MANAGEMENT_STRATEGY.HTM" target="_blank">OCHM.010 Understand Customer's Organizational Change Management Strategy</a></div></th>
+    <td width="33%">Customer's Organizational Change Management Strategy</td>
+    <td width="33%">Update the Project Management Plan</td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/OCHM020_IDENTIFY_CHANGE_MANAGEMENT_WARNING_SIGNS.HTM" target="_blank">OCHM.020 Identify Change Management Warning Signs</a></div></th>
+    <td width="33%">Change Management Warning Signs</td>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/OCHM020_CHANGE_MANAGEMENT_WARNING_SIGNS.DOCX" target="_blank">Change Management Warning Signs</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/OCHM030_EXECUTE_CHANGE_AND_COMMUNICATION_PLAN.HTM" target="_blank">OCHM.030 Execute Change and Communication Plan</a></div></th>
+    <td>Executed Change and Communication Plan</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="020_METHOD_GUIDELINES/030_TASK/OCHM040_ESTABLISH_FOLLOW_UP_PROCESS.HTM" target="_blank">OCHM.040 Establish Follow-Up Process</a></div></th>
+    <td>Follow-Up Process</td>
+    <td>Refer to the Task Overview for guidance.</td>
+  </tr>
+</table>
+<p><A href="#TOP">Back to Top</A> </p>
+<HR WIDTH="100%">
+<h2><a name="MISC" id="MISC"></a>Miscellaneous Manage Templates</h2>
+<table width="100%"  border="1" title="Miscellaneous Manage Templates" summary="This table provides links to miscellaneous Manage templates. It has columns for Generic Task and Template.">
+  <tr bgcolor="BEBEBE">
+    <th width="33%" scope="col">Usage</th>
+    <th width="33%" scope="col">Template</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Compile Phase End Report </div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/PHASE_END_REPORT.DOCX" target="_blank">Phase End Report</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Confirm Project Management Completeness</div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/PROJECT_MANAGEMENT_CHECKLIST.DOCX" target="_blank">Project Management Checklist</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Create Excel Project Document, Work Product or Deliverable</div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/OUM_GENERIC_EXCEL_TEMPLATE.XLSX" target="_blank">OUM Generic Excel Template</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left">Create Project Start Up Checklist </div></th>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/PROJECT_START_UP_CHECKLIST.DOCX" target="_blank">Project Start Up Checklist</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Create Service Level Agreement </div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/SERVICE_LEVEL_AGREEMENT.DOCX" target="_blank">Service Level Agreement</a></td>
+  </tr>
+  <tr valign="top">
+    <th width="33%" scope="row"><div align="left">Create Word Project Document, Work Product or Deliverable</div></th>
+    <td width="33%"><a href="040_TEMPLATES_AND_GUIDANCE/OUM_GENERIC_WORD_TEMPLATE.DOCX" target="_blank">OUM Generic Word Template</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Document Control and Reporting Procedure </div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CONTROL_AND_REPORTING_PROCEDURES.DOCX" target="_blank">Control and Reporting Procedures</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Draft Project Memo </div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/PROJECT_MEMO.DOCX" target="_blank">Project Memo</a></td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Record Meeting Agenda with Minutes </div></th>
+    <td><a href="040_TEMPLATES_AND_GUIDANCE/CMM030_MEETING_MINUTES.DOCX" target="_blank">Meeting Minutes</a></td>
+  </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

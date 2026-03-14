@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TA Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[TA] TECHNICAL ARCHITECTURE</h2>
+<!--BeginProcessDesc--><p>The goal of the Technical Architecture process is to design an information systems architecture to support and realize the business vision.&nbsp; The process takes the business and information systems requirements and develops a blueprint for deploying and configuring: </p>
+<ul>
+  <li> Oracle Products and EPM Solutions</li>
+  <li> Oracle, third party and custom applications</li>
+  <li> supporting application and web server environment integration and data distribution mechanisms between applications, servers, and sites hardware to support computing requirements, including both servers and desktop platforms, network and communication infrastructure</li>
+  <li> software, tools and processes to monitor and manage the technical architecture environment</li>
+</ul>
+<p> The tasks in the Technical Architecture process identify and document the requirements related to the establishment and maintenance of the application and technical infrastructure environment for the project. Processes and procedures required to implement, monitor and maintain the various environments are established and tested. </p>
+<p> The Technical Architecture process specifies elements of the technical infrastructure of the development project. It assumes that the business already has an information system strategy and that these elements fit within that strategy. There must be a sharp focus on the technical infrastructure in a OUM-based solution deployment project. By exposing its business systems to the Web, a business is exposing itself to unpredictable load levels and, sometimes, a hostile security environment. Therefore, the importance of the technical infrastructure cannot be overstated. </p>
+<p> It is highly advisable to perform a benchmarking exercise as early as possible to make sure the capacity, workload, failover, and security requirements of the system are fulfilled. Leaving this until later in the development significantly increases the risk level of the development. The process focuses on specifying the elements of the infrastructure during Elaboration, and on iteratively refining and constructing those elements during Construction. </p>
+<p> The Technical Architecture process is a critical project element, particularly for systems that have complex requirements.&nbsp; Examples of complex requirements include systems that will be deployed as public facing on the Internet, systems with high transaction volumes, systems with aggressive performance targets, systems with high availability requirements, or systems servicing user communities that are distributed geographically over large distances or a variety of time zones. If the project is implementing using software or technology that is not commonly in use or has been very recently released, the level of complexity is also more significant due to increased potential of encountering issues during the Implementation process. </p>
+<p> The requirements that drive Technical Architecture also impact Performance Management (PT) and the two processes are closely related.</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr width="100%">
+<h3><a name="ProcessFlow"
+ id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/TA_Process.jpg" alt="Technical Architecture Process FLow Diagram" width="710" height="731" border="1" title="Technical Architecture Process FLow Diagram"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a name="Approach"
+ id="Approach"></a>APPROACH</h3>
+<p>Depending on your project (e.g., large, complex, etc.), the project manager may designate a Technical Architecture team leader and/or team leaders for various other reasons that the project manager deems necessary. If the project manager designates team leaders, they are responsible for leading their team and reviewing the work products produced by their team. The team leader plans, directs, and monitors the day-to-day work of the team. The team leader assigns work packages to the team members and makes sure they understand the requirements. The team leader is responsible for building team cohesion, motivating the teams, and providing assistance and encouragement to the team members. Each team leader performs the final quality control and quality assurance for the team by reviewing all work products. The team leader also signs off on team work completion and quality. Work that is not up to quality standards is returned. Team leaders review work products from other teams when these work products may impact aspects of the system. The team leader reports the team's progress to the project manager. Refer to <a href="../../050_REFERENCE_FILES/PJM_FOR_OUM_GUIDE.HTM#USETL" target="_blank">Project Management in OUM</a> for additional information on team leaders. </p>
+<h4>Project Scale</h4>
+<p> The approach to the Technical Architecture may vary depending on the scale and scope of the project.&nbsp; If the Technical Architecture is part of a small, localized implementation of packaged software or an upgrade or enhancement to an existing application already in place,&nbsp; the technical and application architecture required to support the project may already be in place, or reference architectures may exist that simplify the work involved. </p>
+<p>On the opposite end of the spectrum, a large, complex implementation project may need a semi-autonomous architecture subproject to provide effective focus and control. </p>
+<p>In some cases, even though the application implementation is relatively small and references architectures are available, a significant portion of the architecture components may be unfamiliar to the customer. An example would the first implementation of an application using RAC or GRID within the enterprise or the first implementation of a Linux based system in an environment that was previously entirely mainframe.&nbsp; A technical architecture paradigm shift implies a significant change in existing process and procedure, and requires additional Technical Architecture effort.</p>
+<h4>Project Scope</h4>
+<p>There are two broad categories of architecture projects that differ greatly in scope.&nbsp; An enterprise level architecture will encompass all, or a major portion of, the important corporate information systems. This type of project may define the strategic direction for information systems and encompass multiple data centers, sites, or countries in a series of phases and often includes a technology stack upgrade or strategic change of hardware or software.&nbsp; An enterprise-level architecture typically must accommodate both new applications and existing legacy applications.&nbsp; This type of project covers the breadth of the enterprise and helps to set strategic IS Direction, but it may not get into detailed design of every component of every application or system. </p>
+<p>A site-level architecture project is narrower in scope than the enterprise-level architecture, but it may go into greater detail for the architecture components within scope. It deals with a single installation of key applications, or a localized set of system.&nbsp; While architectural tasks are still required, typically they implement following standards and strategies already been defined at the enterprise level.</p>
+<h4>Areas to Consider</h4>
+<p>A coherent and well designed information systems architecture is critical for the success of any implementation project.&nbsp; Typical issues to be considered include:</p>
+<ul>
+  <li>the best deployment strategy for the applications across servers, data centers, and business organizations</li>
+  <li>the high level configurations required to meet the various line of business requirements</li>
+  <li>interface requirements between applications and the most appropriate integration architecture to support them</li>
+  <li>selection, sizing and deployment of the hardware and network infrastructure </li>
+  <li>management tools, software and procedures that are needed to keep the system operating as intended</li>
+</ul>
+<p>A project that involves a replacement of a significant portion of legacy systems requires an architecture comprehensive enough to define the framework for the information systems vision and strategy of the the corporation.</p>
+<h4>Components of the Technical Architecture Process</h4>
+<p>Technical Architecture covers two major areas: <b>Application Architecture</b>, the deployment and configuration of applications across servers, hardware platforms and data centers, and <b>Technical Architecture</b>, the deployment, configuration and management of the hardware platform and network infrastructure. </p>
+<p>The <b>Application Architecture</b> portion of the process includes these key areas: </p>
+<ul>
+  <li>Application Deployment and Integration</li>
+  <li>Information Security and Control</li>
+  <li>Reporting and Information Access</li>
+  <li>Application Architecture </li>
+</ul>
+<p><b>Application Deployment and Integration</b> - Defining the applications deployment across different data centers and servers, together with the supporting databases is an important activity. The information flows between the deployed applications reveal the application integration points and interfaces that may be needed. </p>
+<p><b>Information Security and Control</b> - Information security and control is an increasingly critical topic that is often underestimated, particularly when deploying packaged applications. Flawed assumptions may exist, such as the idea that all necessary security is "built in", or that an application that is not publicly facing on the Internet does not have to be concerned about information security and controls. The security landscape is heavily influenced by government legislation, particularly in the areas of privacy and compliance, and the standard application features can only address a subset of the overall information security requirements.</p>
+<p><b>Reporting and Information Access</b> - Reporting and information access addresses the different types of reporting and information needs for the business, such as the operational reporting strategy, decision support strategy , ad hoc reporting, business intelligence, and analytical reporting. The strategy needs to take into account the physical data distribution in the business and the databases and applications within which the data is stored. </p>
+<p><b>Application Architecture</b> - Application architecture addresses the specific database and infrastructure configurations required to support the applications business requirements. Application requirements may have a direct effect on your application and technical architecture, influencing such items as application deployment, and database configurations such as data partitioning or language support.</p>
+<p>The <b>Technical Architecture</b> portion of the process includes the following key areas: </p>
+<ul>
+  <li>Server Configuration </li>
+  <li>Processing Configurations </li>
+  <li>Physical Database Design and use of Database Features </li>
+  <li>Platforms and Networks </li>
+  <li>System Availability Strategy </li>
+  <li> System Management Procedures and Tools </li>
+  <li> Integration Architecture Requirements </li>
+</ul>
+<p><b>Server Configuration</b> - This area covers the design of the optimal configuration of the company wide network of database and application servers. This also includes the review and definition of scaling and fault tolerance. </p>
+<p><b>Processing Configurations</b> - This area covers the various N-tier configurations for the separation of presentation, business logic, and data management processing within your applications. You have direct control over this for in-house developed applications, but packaged applications may require that you make choices regarding how you partition your processing. </p>
+<p><b>Physical Database Design and Use of Database Features</b> - This area includes the detailed layout of a database across file systems and disks and the use of the advanced database features such as multi-threaded server </p>
+<p><b>Platforms and Networks</b> - Platforms and networks constitute the technical infrastructure of the new system and must have the capacity to meet the technical requirements, performance requirements, transaction and user volumes anticipated at cutover and for some predetermined future period of time. </p>
+<p><b>System Availability Strategy</b> - This is the strategy defined to address the different types of planned and unplanned outages. Many different detailed techniques and tools exist to provide the system availability the business requires and to guard against the loss of critical data, but there are tradeoffs to consider when selecting the mechanisms and systems to adopt.</p>
+<p><b>Systems Management Procedures and Tools</b> - There are a wide variety of software tools that allow for monitoring and managing of the software, server hardware, and network aspects of the architecture. This strategy considers the selection of the appropriate tools from both Oracle and third party vendors and establishes the processes and procedures necessary to use the tools effectively.</p>
+<p><b>Integration Architecture Requirements</b> - Integration architecture defines the subsystems used to pass data between applications while maintaining the integrity of data and supporting delivery. Significant advances in technology have increased the capability of integration subsystems and many customers can benefit from the introduction of more advanced techniques in conjunction with the replacement of their legacy systems.&nbsp; </p>
+<h4>Division of Responsibilities and "Out of Scope" Issues</h4>
+<p>Most projects delegate at least some portion of the Technical Architecture work to customer staff or third parties. A common example is network architecture and administration.&nbsp; Depending on how scope of responsibilities have been divided, it is possible that a significant portion of the Technical Architecture task may be the responsibility of the customer or be assigned to a third party to perform.&nbsp; Regardless of who has the responsibility, the substantive work described in the TA series of core tasks must still be performed in order to establish a sound technical foundation for the implementation.</p>
+<p>In projects that delegate the bulk of responsibility for technical architecture to the customer, a Technical Architecture Workshop is the mechanism&nbsp; used to ensure the customer is aware of the expectations and requirements associated with Technical Architecture in the Oracle Unified Method as well as to share best practice approaches and experiences of other customers with them. The Workshop should familiarize the customer with the basic concepts, activities and tasks that make up the Technical Architecture process, the reference architectures most appropriate to the specific project implementation requirements, the processes and procedures required to effective manage and maintain the technical infrastructure, and the establishment of metrics and monitoring related to technical architecture and&nbsp; Service level Agreements (SLA).&nbsp; The Workshop also provides a mechanism to gather information on existing architecture standards or requirements that can be used to develop the Technical Architecture Requirements and Strategy document (TA.020 ). </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Technical Architecture process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Inception Phase </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TA.004</div></th>
+    <td><a href="../030_TASK/TA_004_PERFORM_TA_IMPACT_ANALYSIS_OVERVIEW.HTM" target="_blank">Perform Technical Architecture Impact Analysis </a></td>
+    <td>Technical Architecture Impact Analysis </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">TA.010</div></th>
+    <td><a href="../030_TASK/TA_010_CONDUCT_TECHNICAL_ARCHITECTURE_WORKSHOP.HTM" target="_blank">Conduct Technical Architecture Workshop</a></td>
+    <td>Technical Architecture Workshop Results</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.006</div></th>
+    <td><a href="../030_TASK/TA_006_DEFINE_TECHNICAL_PROTOTYPE_SUBPROJECTS_OVERVIEW.HTM" target="_blank">Define Technical Prototype Subprojects</a></td>
+    <td>Technical Prototype Approach</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.020</div></th>
+    <td><a href="../030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">Define Technical Architecture Requirements and Strategy </a></td>
+    <td>Technical Architecture Requirements and Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.030</div></th>
+    <td><a href="../030_TASK/TA_030_DEFINE_INTEGRATION_REQTS_AND_STRATEGY_OVERVIEW.HTM" target="_blank">Define Integration Requirements and Strategy </a></td>
+    <td>Integration Architecture Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.040</div></th>
+    <td><a href="../030_TASK/TA_040_DEFINE_REPORTING_AND_INFORMATION_ACCESS_STRATEGY_OVERVIEW.HTM" target="_blank">Define Reporting and Information Access Strategy </a></td>
+    <td>Reporting and Information Access Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.050</div></th>
+    <td><a href="../030_TASK/TA_050_DEFINE_DISASTER_RECOVERY_STRATEGY_OVERVIEW.HTM" target="_blank">Define Disaster Recovery Strategy</a></td>
+    <td>Disaster Recovery Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.060</div></th>
+    <td><a href="../030_TASK/TA_060_DEFINE_SYSTEM_OPER_AND_MGMT_STRATEGY_OVERVIEW.HTM" target="_blank">Define System Operations and Management Strategy </a></td>
+    <td>System Operations and Management Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.070</div></th>
+    <td><a href="../030_TASK/TA_070_DEFINE_INIT_ARCH_APPLICATION_MAPPING_OVERVIEW.HTM" target="_blank">Define Initial Architecture and Application Mapping </a></td>
+    <td>Initial Architecture and Application Mapping </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.080</div></th>
+    <td><a href="../030_TASK/TA_080_DEFINE_BACKUP_AND_RECOVERY_STRATEGY_OVERVIEW.HTM" target="_blank">Define Backup and Recovery Strategy</a></td>
+    <td>Backup and Recovery Strategy</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.090</div></th>
+    <td><a href="../030_TASK/TA_090_DEVELOP_SEC_AND_CONTROL_STRATEGY_OVERVIEW.HTM" target="_blank">Develop Security and Control Strategy</a></td>
+    <td> Security and Control Strategy</td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.100</div></th>
+    <td><a href="../030_TASK/TA_100_DEFINE_SYSTEM_MANAGEMENT_PROCEDURES_OVERVIEW.HTM" target="_blank">Define System Management Procedures </a></td>
+    <td>System Management Guide </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.110</div></th>
+    <td><a href="../030_TASK/TA_110_DEFINE_OPERATIONAL_TESTING_PLAN_OVERVIEW.HTM" target="_blank">Define Operational Testing Plan </a></td>
+    <td>Operational Testing Plan</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.120</div></th>
+    <td><a href="../030_TASK/TA_120_CONDUCT_OPERATIONAL_TESTING_OVERVIEW.HTM" target="_blank">Conduct Operational Testing</a></td>
+    <td>Operational Test Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.130</div></th>
+    <td><a href="../030_TASK/TA_130_CONDUCT_BACKUP_AND_RECOVERY_TEST_OVERVIEW.HTM" target="_blank">Conduct Backup and Recovery Test</a></td>
+    <td>Backup and Recovery Test Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.140</div></th>
+    <td><a href="../030_TASK/TA_140_CONDUCT_DISASTER_RECOVERY_TEST_OVERVIEW.HTM" target="_blank">Conduct Disaster Recovery Test</a></td>
+    <td>Disaster Recovery Test Results</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.150</div></th>
+    <td><a href="../030_TASK/TA_150_DEFINE_FINAL_PLATFORM_AND_NETWORK_ARCH_OVERVIEW.HTM" target="_blank">Define Final Platform and Network Architecture</a></td>
+    <td>Final Platform and Network Architecture</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TA.160</div></th>
+    <td><a href="../030_TASK/TA_160_DEFINE_SYSTEM_CAPACITY_PLAN_OVERVIEW.HTM" target="_blank">Define System Capacity Plan </a></td>
+    <td>System Capacity Plan</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a
+ name="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The objectives of the Technical Architecture process are:</p>
+<ul>
+  <li> Define the hardware, network and software components required for to support the application being implemented.</li>
+  <li> Provide an architecture that is consistent with the business&#8217; strategic direction.</li>
+  <li> Provide an infrastructure that supports the system at deployment and will be extensible and scalable to support the customer's future requirements.</li>
+  <li> Provide an architecture that supports the interfaces required to other systems.</li>
+  <li>Define and implement the management processes and procedures required to operate the technical architecture components.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a
+ name="KeyResp" id="KeyResp"></a>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process: </p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Technical Architecture process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="14%" scope="col">Name</th>
+    <th width="83%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application/Product Specialist </td>
+    <td>Provide knowledge and guidance regarding the functionality and capabilities of the product(s) being implemented. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>Participate in the Technical Architecture Workshop. Provide business requirements that could impact technical architecture. Review Architecture Requirements and Strategy in terms of satisfaction of business requirements. Assist in the process of requirement analysis and review them.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DBA</th>
+    <td>Database Administrator </td>
+    <td>Perform the activities of the operational test scenario, and gather and report results. Perform the activities of the backup and recovery test scenario, and gather and report results. Perform the activities of the disaster recovery test scenario, and gather and report results. Provide information relating to database processing and disk requirements.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Participate in the Technical Architecture Workshop. Participate in the process of requirement analysis. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">NE</th>
+    <td>Network Engineer </td>
+    <td>Provide the network requirements for the Architecture Requirements and Strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SAN</th>
+    <td>System Analyst </td>
+    <td>Participate in the Technical Architecture Workshop. Document Technical Architecture Requirements. Analyze the business requirements. Identify and document the Reporting and Information Access Strategy. Provide and assist in analyzing requirement related specifically to the business requirements and applications. Assist the system architect in providing information about the non-functional business requirements. Provide information regarding the structure of the new system. Provide information regarding the capacity planning scenarios.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td>Lead the Technical Architecture Workshop. Familiarize the customer with the goals and objectives of the workshop, assist in gathering technical architecture requirements. Obtain customer participation, set initial interview schedule, and get input from key users. Analyze, define and document Architecture Requirements and Strategy. Responsible for obtaining input on customer infrastructure, existing standards, policies and procedures. Review the Architecture Requirements and Strategy. Assist with gaining customer approval. Identify and document the Integration Architecture Strategy. Prepare the functional Integration requirements.&nbsp;Obtain and document the special considerations and technical assumptions. Review the Integration Architecture Strategy. Analyze the operational requirements. Produce the Disaster Recovery Strategy. Determine the operational requirements.&nbsp; Produce the System Operations and Management Strategy work product. Review the System Operations and Management Strategy and perform any negotiation required. Review architecture requirements and strategy and validate conceptual architecture. Develop the initial technical architecture.&nbsp; Conduct design review sessions and prepare the Initial Architecture and Application Mapping. Investigate the organization's backup strategy. Prepare the Backup and Recovery Strategy. Interview technical personnel to find the currently implemented security and control strategy. Interview the users to identify any special requirements. Interview the development team to ascertain more detail on the structure of the application. Prepare the Security and Control Strategy. Identify and document the system management procedures. Ensure that all relevant areas have been addressed within the operational scenario to be tested. Ensure that all necessary resources are available for operational testing. Ensure that all relevant areas have been addressed within the backup and recovery scenario to be tested. Ensure that all necessary resources are available for Backup and Recovery testing. Ensure that all relevant areas have been addressed within the disaster recovery scenario to be tested. Ensure that all necessary resources are available for disaster recovery testing. Review prior architectural work and identify any technical requirement updates required. Prepare the Final Platform and Network Architecture. Review previous capacity planning, architecture and volume documents.&nbsp; Work with hardware vendor to perform or validate capacity planning strategy. Prepare System Capacity Plan.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Participate in the Technical Architecture Workshop. Provide business expectations and requirements that may influence the Technical Architecture. Provide the business requirements related to Disaster Recovery.&nbsp; Review and approve the Disaster Recovery Strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CDA</th>
+    <td>Customer Data Administrator </td>
+    <td>Participate in the Technical Architecture Workshop. Identify existing procedures, standards, SLAs. Participate in the process of requirement analysis.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPM</th>
+    <td>Customer Project Manager</td>
+    <td>Coordinate the interview schedule for the workshop, assists in gathering technical requirements.&nbsp; Participate in the Technical Architecture Workshop. Facilitate review by customer IS staff. Approve Architecture Requirements and Strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">CPS</th>
+    <td>Customer Project Sponsor </td>
+    <td>Review and approve the Disaster Recovery Strategy.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">AU</th>
+    <td>Internal Auditor </td>
+    <td>Provide information about internal audit requirements. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">ISM</th>
+    <td>IS Manager </td>
+    <td>Review the Final Platform and Network Architecture and provide comments and approval.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">OS</th>
+    <td>IS Operations Staff </td>
+    <td>Participate in the Technical Architecture Workshop. Identify existing process, procedures, standards, SLAs. Participate in the process of requirement analysis. Provide information on existing standards, processes and procedures related to Disaster Recovery.&nbsp; Review and approve the Disaster Recovery Strategy. Provide and review the System Operations and Management Strategy.&nbsp; Indicate any aspects of the System Operations and Management Strategy, which are unacceptable. Negotiate acceptable service levels. Answer queries and provide information regarding the current user backup and recovery strategy. Review test results for completeness and success against measurable success criteria. Review test results for completeness and success against measurable success criteria. Review test results for completeness and success against measurable success criteria. Provide information regarding the current and future software and hardware and review options for the new system.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SS</th>
+    <td>IS Support Staff </td>
+    <td>Participate in the Technical Architecture Workshop. Participate in the process of requirement analysis. Provide existing guidelines, standards and technical architecture configuration.&nbsp; Review the Architecture Requirements and Strategy and provide feedback. Provide information on the current integration strategy, special considerations and technical assumptions, existing systems and current enterprise standards. Provide information on existing standards, processes and procedures related to Disaster Recovery.&nbsp; Review and approve the Disaster Recovery Strategy. Answer queries and provide information regarding the current and proposed options for the new system. Answer queries and provide information regarding operational requirements. Answer queries and provide information regarding the current security and control strategy. Provide information on existing processes and tools, standards, policies and procedures.&nbsp; Review and approve the procedure document and checklists. Review test results for completeness and success against measurable success criteria. Review test results for completeness and success against measurable success criteria. Review test results for completeness and success against measurable success criteria. Provide information regarding the current and future software and hardware and review options for the new system.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">NA</th>
+    <td>Network Administrator </td>
+    <td>Provide information relating to network configuration and capacity.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr width="100%">
+<h3><a
+ name="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p class="Default" style="margin-left: 0in; text-indent: 0in;">The critical success factors of this process are: </p>
+<ul>
+  <li>recognition of the importance of architecture as a key determinant of the success of the implemented applications and solution </li>
+  <li>alignment of the architecture design with the corporate business and information system vision and strategic direction</li>
+  <li>realistic evaluation of the capabilities and limitations of the technology to be used</li>
+  <li>experienced application and technical architects</li>
+  <li>balanced input of business and technical requirements driving the architecture design</li>
+  <li>knowledge and interaction with other processes and activities within or outside of the project that could impact the final production application or technical architecture or impose architectural requirements</li>
+</ul>
+<p class="Default" style="margin-left: 0in; text-indent: 0in;"><span
+ style="font-size: 10pt; font-family: Palatino; color: windowtext;"><span
+ style=""></span></span>Balanced input of business and technical requirements driving the architecture is an especially important success factor. The Technical Architecture process should not be considered to be a purely "technical exercise".&nbsp; This approach can may result in the business requirements becoming subservient to the technology.&nbsp; The Technical Architecture process should use the business requirements and functional mappings as the drivers for the optimal configuration of the applications being implemented, for the selection of hardware and network infrastructure supporting the application processing and for the tools, processes and procedures needed to manage the complete system.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

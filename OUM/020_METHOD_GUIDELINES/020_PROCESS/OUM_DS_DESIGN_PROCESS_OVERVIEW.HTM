@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>DS Process Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1>Process Overview</h1> 
+			    <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                          <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#ProcessFlow">Process Flow</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#TasksWP">Tasks and Work Products</option>
+                            <option value="#Objectives">Objectives</option>
+                            <option value="#KeyWP">Key Work Products</option>
+                            <option value="#KeyResp">Key Responsibilities</option>
+                            <option value="#CritSucFactors">Critical Success Factors</option>
+                          </select>
+                          <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>[DS] DESIGN</h2>
+<!--BeginProcessDesc--><p>In the Design process, the system is shaped and formed to meet all functional and supplemental requirements. This form is based on the architecture created and stabilized during the Analysis process. Thus, the work products produced during Analysis are an important input into this process. Design is the focus during the end of Elaboration phase and the beginning of Construction iterations. The major work products created in this process ultimately combine to form the Design Model that is used during the Implementation process. The Design Model can be used to visualize the implementation of the system. </p>
+<p>The main work product or output of this process is the Design Model. The Design Model represents a collection of all Design work products, as appropriate, resulting from the following tasks:</p>
+<ul>
+  <li>Design Software Components (DS.080)</li>
+  <li> Design Data (DS.090) </li>
+  <li>Design Behavior (DS.100) </li>
+  <li> Design Business Rules (DS.110) </li>
+  <li> Design Services (DS.120) </li>
+  <li> Design User Interface (DS.130) </li>
+  <li>Prepare Design Specification (DS.140)</li>
+  <li>Develop Database Design (DS.150) </li>
+</ul>
+<p>Ultimately, the Design Model includes an object model that describes the design realization of the use cases and design classes that detail the analysis classes outlined in the Analysis Model. In addition, the Architecture Description initially developed in the Business Requirements process (RD.130), and enhanced in both the Requirements Analysis (RA.035) and Analysis (AN.040) processes is enriched with the new Module and Execution Views (DS.040).</p><!--EndProcessDesc-->
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11">This process overview is written from the perspective of a Full Method View, utilizing ALL of the activities and tasks in this process. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Key Work Products and Tasks and Work Products sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"></p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<hr WIDTH="100%">
+<h3><a NAME="ProcessFlow" id="ProcessFlow"></a>PROCESS FLOW </h3>
+<p>This process flow for this process follows:</p>
+<p align="center"><img src="../../010_COMMON_FILES/DS_Process.jpg" alt="Design Process Flow Diagram" width="816" height="758" border="1" title="Design Process Flow Diagram"></p>
+<P> <A 
+href="#TOP">Back to Top</A>&nbsp; </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>The main goal of the Design Process is to detail the Design Model that will be used to implement the requirements.
+<p align="center"><img src="../../010_COMMON_FILES/DesignModel.gif" alt="Design Model Components" width="685" height="337" title="Design Model Components">
+<p>First, take the Architecture Description (RD.130/RA.035/AN.040) and complete the architectural design by adding the Design Properties and the Module and Execution Views (DS.040). The Module View corresponds to the Architectural View of the Design Model from UP, while the Execution View corresponds to the Architectural View of the Deployment Model.
+<p>The Architecture Description (DS.040) provides an outline for the Design Model and the architecture. When defining the Module View, the analysis classes, and packages are mapped to modules and layers depending on the chosen software platform technology. Here the architect addresses how the conceptual solution can be realized with today's software platforms technologies. On the other hand, the Execution View describes the structure of system in terms of runtime platform elements and captures how the Module View will be assigned to these platform elements. Before completing the Architecture Description, it is reviewed and defects and changes are recorded and may be fed back to the design as a following task.
+<p> In the Component Data Design (DS.090), and the Component Behavior Design (DS.100) tasks, we take the work from the Analysis process further. Although the tasks have a different focus (Analysis versus Design), the tasks are often done in parallel, or back and forth, with the tasks, Analyze Data (AN.050) and Analyze Behavior (AN.060). </p>
+<p>During Design, we move from a more generic model to a very specific design to determine the actual implementation of the requirement. The Component Data Design (DS.090) and Component Behavior Design (DS.100) describe how a specific use case will be realized, in terms of design classes and their objects. This also ensures traceability all the way to the Use Case Model (RA.023), via the Analysis Model. During these tasks, you will create MVC (Model/View/Controller) activity diagrams to fully design the use case's flow of events. The interaction diagrams you created in the Analysis Model are detailed to better specify message exchange among classes. Complex transaction processing is designed in sequence or collaboration diagrams. </p>
+<p> Each Use Case Realization contains behavioral requirements for each class or subsystem it embraces. These requirements are specified and integrated into each class as part of the User Interface Design (DS.120), and Design Software Components (DS.080) tasks.&nbsp; For each class, various aspects are considered, such as operations, attributes, relationships, methods and interfaces, states pertaining to the class, dependencies and implementation of non-functional requirements. The design is split into the design of entity classes, boundary classes and control classes. For entity classes, the database technology and persistent mechanisms play an important role in shaping the design of entity classes.&nbsp; This task is closely related to the activity related to the Develop Database Design (DS.150) task. The analysis boundary classes pass via a design process and will often result in several boundary design classes. Any existing Functional Prototypes (IM.010) are to be used as inputs to this step.&nbsp; The user interface boundary classes are specified in terms of the software development tool in which the user interface is to be developed.&nbsp; Depending on the architecture chosen for the project, the approach for designing boundary classes may differ. The control classes are responsible for coordinating, sequencing, transactions, and controlling of other objects. Again, depending on the mechanism chosen to support these classes, the approach used to transform analysis control classes in design control classes might differ.&nbsp; Finally, you will refine the state diagrams of complex classes that you created in the Analysis process, and possibly create new ones based on the needs highlighted during the Design process. </p>
+<p> When performing Develop Design Architecture Description (DS.040) task, you identify and optimize dependencies between components. Dependencies should be minimized wherever possible. Preferably, these dependencies should be with the interface of the component rather than the component itself. This ensures that the component may be substituted by another component that provides the same interface but a different internal design without affecting the dependent components. </p>
+<p> In parallel with the tasks above, you also develop the Logical Database Design (DS.150). In this task, you translate the Domain Model into a Logical Database Design, applying the rules and principles of relational systems design. You may choose between various approaches. For example, in a bottom down approach, the design of the entity classes is used to create the database. Alternatively, in a bottom up approach, the database is modeled in parallel with the design of the entity classes. The Logical Database Design is used to create the physical database. </p>
+<p>The output of these tasks is organized and combined to create a Design Model that is reviewed to discover defects before it is implemented. In an offshore project, this task is essential, since in many of the cases the implementation may be performed in an offshore environment by a different team of people than those who created the design Model. By discovering defects before the design model is shipped for implementation, rework is reduced and the productivity of the project as a whole is improved. On projects with a single, small team and short communication lines, and where the same team will perform the implementation, you may choose to skip this review. </p>
+<p style="margin-bottom: 0;">In the same way as for the Analysis process, the Design process is performed iteratively, both in the Elaboration and the Construction phase, adding more detail with each iteration. The iteration starts with the Analysis tasks, and continues with the Design tasks. At the end of each iteration in the Elaboration phase, the result is fed into a new Functional Prototype (IM.010) that is reviewed by the ambassador users. The feedback from the validation of the Functional Prototype (RA.085) is prioritized and fed into the next iteration of the process, or if it was the last iteration, into the Construction phase.</p>
+<p class="style1">In the Construction phase, the iteration continues with Implementation tasks that ensure that the components and database are created following the updated Analysis Model and Design Model. Finally, the iteration continues with Testing tasks before the result goes into the next iteration until the last iteration has been performed.</p>
+<p><span class="style7">*This process has <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#DS" target="_blank">Application Implementation supplemental process guidance</a>.</span></p>
+<p><A
+href="#TOP">Back to Top</A>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE </h3>
+<h4 class="style1">Application Implementations</h4>
+<p>This process has supplemental guidance that should be considered if you are doing an application implementation. Use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_SUPP_GUIDE.HTM" target="_blank">OUM Application Implementation Supplemental Guide</a> to access all application implementation supplemental information. You can also go directly to the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#DS" target="_blank">Design process supplemental guidance</a>.</p>
+<p><A 
+href="#TOP">Back to Top</A>&nbsp;
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS</h3>
+<p>The tasks and work products for this process are as follows: </p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks and work products for the OUM Design process.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each phase.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Elaboration Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.020</div></th>
+    <td><a href="../030_TASK/DS_020_DEFINE_APPL_EXTENSION_STRATEGY_OVERVIEW.HTM" target="_blank">Define Application Extension Strategy </a></td>
+    <td> Application Extension Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.035.1</div></th>
+    <td><a href="../030_TASK/DS_035_UPDATE_EXISTING_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Update Existing Design Specification</a></td>
+    <td>Updated Design Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.040.1</div></th>
+    <td><a href="../030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Design Architecture Description </a></td>
+    <td>Architecture Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.050</div></th>
+    <td><a href="../030_TASK/DS_050_DETERMINE_DESIGN_AND_BUILD_STANDARDS.HTM" target="_blank">Determine Design and Build Standards </a></td>
+    <td>Design and Build Standards </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.060</div></th>
+    <td><a href="../030_TASK/DS_060_DEFINE_BUS_RULES_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">Define Business Rules Implementation Strategy </a></td>
+    <td>Business Rules Implementation Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.070</div></th>
+    <td><a href="../030_TASK/DS_070_DEFINE_SOA_IMPLEMENTATION_STRATEGY_OVERVIEW.HTM" target="_blank">Define SOA Implementation Strategy </a></td>
+    <td>SOA Implementation Strategy </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.080.1</div></th>
+    <td><a href="../030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></td>
+    <td>Software Component Design</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.090.1</div></th>
+    <td><a href="../030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">Design Data </a></td>
+    <td>Component Data Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.100.1</div></th>
+    <td><a href="../030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">Design Behavior</a></td>
+    <td>Component Behavior Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.110.1</div></th>
+    <td><a href="../030_TASK/DS_110_DESIGN_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Design Business Rules </a></td>
+    <td>Business Rules Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.120.1</div></th>
+    <td><a href="../030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">Design Services </a></td>
+    <td>Service Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.130.1</div></th>
+    <td><a href="../030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Design User Interface </a></td>
+    <td>User Interface Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.140.1</div></th>
+    <td><a href="../030_TASK/DS_140_PREPARE_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Prepare Design Specification </a></td>
+    <td>Design Specification </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.150.1</div></th>
+    <td><a href="../030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></td>
+    <td>Logical Database Design&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.160.1</div></th>
+    <td><a href="../030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">Review Design Model </a></td>
+    <td>Reviewed Design Model </td>
+  </tr>
+  <tr>
+    <th colspan="3" bgcolor="#CCCCCC" scope="rowgroup"><div align="left">Construction Phase </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.035.2</div></th>
+    <td><a href="../030_TASK/DS_035_UPDATE_EXISTING_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Update Existing Design Specification</a></td>
+    <td>Updated Design Specification</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.040.2</div></th>
+    <td><a href="../030_TASK/DS_040_DEVELOP_DESIGN_ARCH_DESC_OVERVIEW.HTM" target="_blank">Develop Design Architecture Description </a></td>
+    <td>Architecture Description</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.080.2</div></th>
+    <td><a href="../030_TASK/DS_080_DESIGN_SOFTWARE_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Software Components</a></td>
+    <td>Software Component Design</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.090.2</div></th>
+    <td><a href="../030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">Design Data </a></td>
+    <td>Component Data Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.100.2</div></th>
+    <td><a href="../030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">Design Behavior</a></td>
+    <td>Component Behavior Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.110.2</div></th>
+    <td><a href="../030_TASK/DS_110_DESIGN_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Design Business Rules </a></td>
+    <td>Business Rules Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.120.2</div></th>
+    <td><a href="../030_TASK/DS_120_DESIGN_SERVICES_OVERVIEW.HTM" target="_blank">Design Services </a></td>
+    <td>Service Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.130.2</div></th>
+    <td><a href="../030_TASK/DS_130_DESIGN_USER_INTERFACE_OVERVIEW.HTM" target="_blank">Design User Interface </a></td>
+    <td>User Interface Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.140.2</div></th>
+    <td><a href="../030_TASK/DS_140_PREPARE_DESIGN_SPEC_OVERVIEW.HTM" target="_blank">Prepare Design Specification </a></td>
+    <td>Design Specification </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.150.2</div></th>
+    <td><a href="../030_TASK/DS_150_DEVELOP_DATABASE_DESIGN_OVERVIEW.HTM" target="_blank">Develop Database Design</a></td>
+    <td>Logical Database Design&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DS.160.2</div></th>
+    <td><a href="../030_TASK/DS_160_REVIEW_DESIGN_MODEL_OVERVIEW.HTM" target="_blank">Review Design Model </a></td>
+    <td>Reviewed Design Model </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=Objectives id="Objectives"></A>OBJECTIVES</h3>
+<p>The objectives of the Design process are:</p>
+<ul>
+  <li>Produce a design that meets the functional and supplemental requirements, within the given technical constraints.</li>
+  <li>Optimize the Logical Database Design to meet design standards and performance requirements. </li>
+  <li>Create an appropriate design for subsequent Implementation process activities by capturing requirements on individual subsystems, interfaces and classes. </li>
+  <li>Capture important interfaces between subsystems early. This is helpful information when discussing architecture and the interfaces can be used as a boundary and synchronization between development teams.</li>
+  <li>Define manageable pieces/partitions of implementation that may be handled by different (possibly concurrent) development teams. </li>
+</ul>
+<p><span class="style7">*This process has <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/AI/AI_PROCESS_GUIDELINES.HTM#DS" target="_blank">Application Implementation supplemental process guidance</a>.</span></p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp;
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyWP id="KeyWP"></A>KEY WORK PRODUCTS </h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=KeyResp id="KeyResp"></A>KEY RESPONSIBILITIES </h3>
+<p>The following roles are required to perform the tasks within this process:</p>
+<table width="100%"  border="1" title="Key Responsibilities" summary="This table lists all the roles that are used in the Design process.  It has columns for Role ID, Name and Responsibility with subheadings for Implementing Organization and Customer (User).">
+  <tr bgcolor="#BEBEBE">
+    <th width="3%" scope="col">Role ID </th>
+    <th width="16%" scope="col">Name</th>
+    <th width="81%" scope="col">Responsibility</th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Implementing Organization </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">APS</th>
+    <td>Application / Product Specialist</td>
+    <td>Provide knowledge and guidance regarding the functionality, capabilities and implementation strategies for the product(s) being implemented.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">BA</th>
+    <td>Business Analyst </td>
+    <td>  Provide assistance with Application Extension Strategy.  Define the Business Rules Implementation Strategy. Design the business rules.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DD</th>
+    <td>Database Designer</td>
+    <td>Develop all aspects of the data models for the system. Participate in the review of the Design Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DES</th>
+    <td>Designer</td>
+    <td>Define and maintain the responsibilities, attributes, relationships and special requirements of the classes making sure that each class fulfills its requirements.&nbsp; Analyze packages within which the classes are maintained. There may be several designers depending on the size of the project, each of which may be responsible for certain classes and packages assigned to them. You may want to use an object designer also. Define and maintain the responsibilities, attributes, relationships and special requirements of the classes making sure that each class fulfills its requirements. Responsible for the analysis of packages within which the classes are maintained. Responsible for the integrity of use cases as assigned. Ensure that all requirements are met and the diagrams, specifications and models are clear and precise. Design the services. Define major interfaces, navigation paths and widget details for each storyboard.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">DV</th>
+    <td>Developer</td>
+    <td>Participate in definition and review of the Module and Execution Views. Collect, produce and write Design and Build Standards. Review the design classes in order to assure that they are compatible with the architecture. Design the more complex packages and classes. Review the Component Data Design in order to assure that it is compatible with the architecture. This person is also responsible for designing the more complex packages and classes. Participate in definition of the Component Behavior Design. Design the most complex use cases. Review the Logical Database Design in order to assure that the Design Model is compatible with the Logical Database Design.&nbsp;Participate in the review of the Design Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">QM</th>
+    <td>Quality Manager </td>
+    <td>Participate in the review of the Design Model.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">SA</th>
+    <td>System Architect </td>
+    <td> Define Application Extension Strategy. Lead the development of Module and Execution of Views and update the Architecture Description. Participate in the definition and review of the Module and Execution Views to gain an understanding of the application and its architecture. Provide input on the technical constraints to which the Business Rules Implementation Strategy must adhere. Define the SOA Implementation Strategy. Participate in definition and review of the design classes to gain an understanding of the application and its architecture. Participate in definition and review of the Component Data Design to gain an understanding of the application and its architecture. Participate in definition review of the Component Behavior Design. Participate in the review of the Logical Database Design to gain an understanding of the application and its architecture. Participate in the review of the Design Model.</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Customer (User) </div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">KEY</th>
+    <td>Ambassador User </td>
+    <td>Provide feedback on the user interface prototypes. Participate in the review of the Design Model. </td>
+  </tr>
+</table>
+<p> <A 
+href="#TOP">Back to Top</A>&nbsp; </p>
+<p>
+<hr WIDTH="100%">
+<h3><A 
+name=CritSucFactors id="CritSucFactors"></A>CRITICAL SUCCESS FACTORS</h3>
+<p>The critical success factors of this process are:
+<ul>
+  <li><b>Flexible Design:</b> When going into more detail, new or changed requirements will be discovered, and in the future, new requirements will be desired. By having a design resilient for changes, the required effort, and thereby the total costs will be less when more detail, or changes have to be implemented. </li>
+  <li><b>Visible Dependencies:</b> For each change or new requirement, it is important to determine the impact on the change. This task is made easier by keeping visible dependencies, from the lowest level, all the way up to the Use Case Model. </li>
+  <li><b>Understanding of Supplemental Requirements:</b> During the Design process, there is a strong focus on the supplemental requirements. Therefore, it is important that these are properly understood in order to determine the proper impact on the design. </li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

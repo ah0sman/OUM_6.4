@@ -1,0 +1,842 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>SOA Governance Implementation Task Guidelines</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Service-Oriented Architecture (SOA) Governance Implementation Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#SGIA">SOA GI Analysis Guidance</option>
+                            <option value="#SGID">SOA GI Design Guidance</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--/010
+//<!--
+function expandSOATaskGuidelines()
+{
+  Effect.BlindDown("AN");
+  Effect.BlindDown("DS");
+}
+
+function collapseSOATaskGuidelines()
+{
+  Effect.BlindUp("AN");
+  Effect.BlindUp("DS");
+}
+
+function onLoad()
+{
+  // expanded by default
+}
+//-->
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</SCRIPT>
+<h2>SERVICE-ORIENTED ARCHITECTURE (SOA) GOVERNANCE IMPLEMENTATION SUPPLEMENTAL TASK GUIDELINES</h2>
+<p>This component contains OUM supplemental task guidance for SOA Governance Implementation.</p>
+<ul>
+  <li>The second column of the following table provides a complete list of all tasks in this document for which &quot;supplemental&quot; guidelines are provided as well as a quick link to the &quot;supplemental&quot; task guideline in this document.</li>
+  <li> The third column provides a link to the OUM Task Overview. </li>
+  <li>The last columnprovides a link to the associated template if one is available. </li>
+</ul>
+<p>The task guidelines in this document should be used to supplement the guidelines that appear in the OUM Task Overview.</p>
+<table width="100%" border title="SOA Governance Implementation Supplemental Index" summary="This table provides an index to the guidance and templates for this Supplemental Guide. The first column contains the OUM ID. The second column contains links to the actual guidance found in this document.  The third column contains links to the base OUM Guidance.  The last column contains links to the associated templates, if any.  If there are no templates for the associated task, this cell will refer to the task overview for guidance. ">
+  <tr scope="col" valign="middle" bgcolor="#BEBEBE">
+    <th width="10%" nowrap scope="col">OUM ID</th>
+    <th width="30%" scope="col">SOA Governance Implemention <br>
+      Supplemental Guidance </th>
+    <th width="30%" scope="col">OUM Guidance </th>
+    <th width="30%" scope="col">Template</th>
+  </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC">
+    <th width="10%" align=left nowrap scope="rowgroup">TG.SGIA</th>
+    <td width="30%" align=left><a href="#SGIA"><b>SOA Governance Implemenation Analysis </b></a></td>
+    <td width="30%" align=left><div> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">RD.012</th>
+      <td width="30%" align=left><a href="#RD012">Document Present and Future Organization Structures</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">Document Present and Future Organization Structures</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-012_PRESENT_AND_FUTURE_ORG_STRUCTURES.DOCX"
+				target="_blank">Present and Future Organization Structures</A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">TA.020.1</th>
+      <td align=left><a href="#TA0201">Define Technical Architecture Requirements and Strategy</a></td>
+      <td align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM"
+				target="_blank">Define Technical Architecture Requirements and Strategy</A></td>
+      <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TA/TA-020_TA_REQUIREMENTS_AND_STRATEGY.DOCX"
+				target="_blank">Technical Architecture Requirements and Strategy</A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">CV.010</th>
+      <td align=left><a href="#CV010">Define Data Acquisition and Conversion Requirements</a></td>
+      <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_010_DEFINE_DATA_ACQ_AND_CONVERSION_REQS_OVERVIEW.HTM" target="_blank">Define Data Acquisition and Conversion Requirements</a></td>
+      <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-010_DATA_ACQ_AND_CONVERSION_REQUIREMENTS.DOCX"
+				target="_blank">Data Acquisition and Conversion Requirements </A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">RD.065</th>
+      <td align=left><a href="#RD065">Develop Domain Model (Business Entities) </a></td>
+      <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">Develop Domain Model (Business Entities) </a></td>
+      <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-065_DOMAIN_MODEL.DOCX"
+				target="_blank">Domain Model </A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">RD.030</th>
+      <td width="30%" align=left><a href="#RD030">Develop Current Business Process Model </a></td>
+      <td width="30%" align=left><A
+        href="../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM"
+        target="_blank">Develop Current Business Process Model </A></td>
+      <td width="30%" align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-030_CURRENT_PROCESS_MODEL.DOCX" target="_blank">Current Process Model </a></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">RD.140</th>
+      <td align=left><a href="#RD140"> Create Requirements Specification</a></td>
+      <td align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM"
+				target="_blank"> Create Requirements Specification</A></td>
+      <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-140_REQUIREMENTS_SPECIFICATION.DOCX"
+				target="_blank">Requirements Specification</A></td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th align=left nowrap scope="row">RD.045</th>
+      <td align=left><a href="#RD045">Prioritize Requirements (MoSCoW)</a></td>
+      <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">Prioritize Requirements (MoSCoW)</a></td>
+      <td align=left><a href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.XLSX" target="_blank">MoSCoW List-Excel<br>
+        </a><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-045_MOSCOW_LIST.DOCX"
+				target="_blank">MoSCoW List-Word</A> <BR>
+        <A href="../../../040_TEMPLATES_AND_GUIDANCE/RD/GENERIC_WORKSHOP_NOTES.DOCX"
+				target="_blank">Generic Workshop Notes</A><BR>
+      <A href="../../../040_TEMPLATES_AND_GUIDANCE/RD/GENERIC_WORKSHOP_SCHEDULE.DOCX"
+				target="_blank">Generic Workshop Schedule and Workshop Preparation Notes</A>&nbsp;</td>
+    </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">RD.042</th>
+      <td width="30%" align=left><a href="#RD042">Develop Glossary</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">Develop Glossary</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/RD/RD-042_GLOSSARY.DOCX"
+				target="_blank">Glossary</A></td>
+    </tr>
+  <tr align=right valign="top" bgcolor="#CCCCCC">
+    <th width="10%" align=left nowrap scope="rowgroup">TG.SGID</th>
+    <td width="30%" align=left><a href="#SGID"><b>SOA Governance Implemenation Design </b></a></td>
+    <td width="30%" align=left><div> </div></td>
+    <td width="30%" align=left>&nbsp;</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">DS.090</th>
+    <td align=left><a href="#DS090">Design Data </a></td>
+    <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">Design Data </a></td>
+    <td align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">DS.100</th>
+    <td align=left><a href="#DS100">Design Behavior</a></td>
+    <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">Design Behavior</a></td>
+    <td align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">DS.110</th>
+    <td align=left><a href="#DS110">Design Business Rules </a></td>
+    <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_110_DESIGN_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">Design Business Rules </a></td>
+    <td align=left>Refer to the Task Overview for guidance.</td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">CV.040</th>
+    <td align=left><a href="#CV040">Design Conversion Components (Initial Load) </a></td>
+    <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">Design Conversion Components (Initial Load) </a></td>
+    <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/CV/CV-040_CONVERSION_COMPONENT_DESIGNS.DOCX"
+				target="_blank"> Conversion Component Designs (Initial Load) </A></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">TR.070</th>
+    <td align=left><a href="#TR070">Develop User Learning Plan</a></td>
+    <td align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_070_DEVELOP_USER_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">Develop User Learning Plan</a></td>
+    <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TR/TR-070_USER_LEARNING_PLAN.DOCX"
+				target="_blank">User Learning Plan</A></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">TR.080</th>
+    <td align=left><a href="#TR080">Develop User Learningware</a></td>
+    <td align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM"
+				target="_blank">Develop User Learningware</A></td>
+    <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TR/TR-080_USER_LEARNINGWARE.DOCX"
+				target="_blank">User Learningware</A></td>
+  </tr>
+  <tr align=right valign="top" bgcolor="#FFFFFF">
+    <th align=left nowrap scope="row">TA.020.2</th>
+    <td align=left><a href="#TA0202">Define Technical Architecture Requirements and Strategy</a></td>
+    <td align=left><A
+				href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM"
+				target="_blank">Define Technical Architecture Requirements and Strategy</A></td>
+    <td align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TA/TA-020_TA_REQUIREMENTS_AND_STRATEGY.DOCX"
+				target="_blank">Technical Architecture Requirements and Strategy</A></td>
+  </tr>
+    <tr align=right valign="top" bgcolor="#FFFFFF">
+      <th width="10%" align=left nowrap scope="row">TA.040</th>
+      <td width="30%" align=left><a href="#TA040">Define Reporting and Information Access Strategy</a></td>
+      <td width="30%" align=left><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_040_DEFINE_REPORTING_AND_INFORMATION_ACCESS_STRATEGY_OVERVIEW.HTM" target="_blank">Define Reporting and Information Access Strategy</a></td>
+      <td width="30%" align=left><A
+				href="../../../040_TEMPLATES_AND_GUIDANCE/TA/TA-040_REPORTING_AND_INFORMATION_ACCESS_STRATEGY.DOCX"
+				target="_blank">Reporting and Information Access Strategy </A></td>
+    </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3 class=HeadingBar><B><A
+name=SGIA id="SGIA"></A></B>TG.SGIA SOA GOVERNANCE IMPLEMENTATION ANALYSIS GUIDANCE</h3>
+<h4><B><A
+name=RD012 id="RD012"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_012_DOCUMENT_PRESENT_AND_FUTURE_ORG_STRUCTURES_OVERVIEW.HTM" target="_blank">RD.012 Document Present and Future Organization Structures</a></h4>
+<p>In this task, you focus on documenting present organization structures &ndash; that is, all departments, roles and external organizations involved in development processes of applications and integration middleware that relate to SOA Governance. If available, use the Enterprise Diagnostic Information (ER.040).</p>
+<p>For example, in an organization there may exist the following departments, roles and their responsibilities that relate to SOA Governance:</p>
+<ul>
+  <li> <b>Business Analysis Department (role: Business Analyst)</b>
+      <ul>
+        <li>Perform initial analysis of business demands.</li>
+        <li>Perform conceptual design describing a demand for a new or updated application functionality.</li>
+      </ul>
+  </li>
+  <li><b>Solution Architecture Department (role: Solution/Domain Architect)</b>
+      <ul>
+        <li>Owns majority of enterprise applications.</li>
+        <li>Perform conceptual design describing a demand for a new or updated application functionality.</li>
+        <li>Perform technical analysis and design of business requirements.</li>
+        <li>Define technical specification for implementation.</li>
+        <li>When a requirement includes an integration of two or more applications, a solution architect contacts the Integration Architecture team. </li>
+        <li>Decide on how to implement the requirement and who should implement it (such as, in-house development or development by an external supplier).</li>
+      </ul>
+  </li>
+  <li><b>Integration Architecture Department (role: Integration Architect) </b>
+      <ul>
+        <li>Own a service repository (such as repository built on an Excel spreadsheet).</li>
+        <li>Own platforms for SOA integration, develops the platform in-house or coordinates development with an external supplier.</li>
+        <li>Analyze integration for particular requirements, data models, assesses reusability of existing services.</li>
+        <li> Decide a style of the integration (such as, point-to-point or SOA) when developing new services.</li>
+        <li>Approve new integration functionalities.</li>
+      </ul>
+  </li>
+  <li><b>Enterprise Architecture Department (role: Enterprise Architect)</b>
+      <ul>
+        <li>Overview enterprise architecture design, data models and processes.</li>
+      </ul>
+  </li>
+  <li><b>Testing and Deployment Department (role: Tester)</b>
+      <ul>
+        <li>Review the implementation documentation.</li>
+        <li> Test the developed functionality.</li>
+        <li> Deploy the new functionality.</li>
+      </ul>
+  </li>
+  <li><b>External Supplier/Vendor (role: Developer, Architect, Consultant)</b>
+      <ul>
+        <li>Responsible for development of an application/integration.</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=TA0201 id="TA0201"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020.1 Define Technical Architecture Requirements and Strategy </a></h4>
+<p>In this task, you create a diagram of an overall high-level view of the organization&rsquo;s systems related to SOA Governance and an envisioned integration of SOA Governance tooling support. The purpose of this diagram is to gain an understanding of systems, applications or groups of applications that the SOA Governance should support. </p>
+<p>For example, document existing major integration platforms together with their main functions and connections, major applications that either provide or consume services, integration styles such as point-to-point or enterprise service bus integration, and any existing repositories such as for documents or any other assets (services/interfaces). Such repositories may be available either online (for example, existing enterprise repository or service registry such as UDDI) and off-line (that is, manual service repository such as wiki pages, files, spreadsheets, etc.). </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_TA020.JPG" alt="Example High-Level View of the Organization's Systems related to SOA Governance and an envisioned Integration of SOA Governance Tooling Support" width="901" height="476" title="Example High-Level View of the Organization's Systems related to SOA Governance and an envisioned Integration of SOA Governance Tooling Support"></p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=CV010 id="CV010"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_010_DEFINE_DATA_ACQ_AND_CONVERSION_REQS_OVERVIEW.HTM" target="_blank">CV.010 Define Data Acquisition and Conversion Requirements</a></h4>
+<p>In this task, you further analyze requirements for any existing sources of information that you previously documented in the Technical Architecture Requirements and Strategy (TA.020) and that provide or contain information the organization&rsquo;s assets. Take into account any existing middleware platforms and online or offline service repositories or registries. For example, identify a legacy repository in an Excel spreadsheet, existing middleware platform and a service registry with following requirements:</p>
+<ul>
+  <li>All information about services and applications from Excel repository should be migrated to the Enterprise Repository.</li>
+  <li>All existing services and related artifacts from middleware platforms should be harvested to the Enterprise Repository.</li>
+  <li>Information in the service registry should be synchronized with information in the Enterprise Repository.</li>
+</ul>
+<p>For each source of information, document:</p>
+<ul>
+  <li>Who is the owner of the data, such as, who is responsible for the overall repository and who is responsible for any portions of it or types of data that the repository holds.</li>
+  <li> How you can access the data, for example, in a file, using an API/service, or a database. Any permissions/credentials you need to have to access the data.</li>
+  <li> Validity of the information. If the information is not valid or is valid only partially, you need to figure out whether you can obtain an up-to-date information and how.</li>
+  <li> The frequency of change of the data.</li>
+  <li> The amount of the data.</li>
+  <li> The data formats such as XML, natural text or any proprietary format. </li>
+  <li> Any specific knowledge or tools/libraries you need to have to access the data programmatically. Programmatic access to the data is important for any conversion you later perform.</li>
+</ul>
+<p>For example, an organization may use an Excel spreadsheet with information about services and applications as follows:</p>
+<ul>
+  <li>The owner of the repository is the member of Integration Architecture department. </li>
+  <li> There are approximately 1,000 services and 200 applications available in the spreadsheet.</li>
+  <li>The owner irregularly sends an email to owners of applications (solution architects) and asks them to update the data about their applications and services.</li>
+  <li>The owner sometimes does not get a response from application owners thus not all data is up-to-date.</li>
+  <li>Since the data is in the Excel spreadsheet, you can export them to a variety of formats such as CSV. However, there are inconsistencies in the data and some data are in natural text not following strict rules.</li>
+  <li>There are open source libraries that you can use to access the Excel spreadsheet programmatically. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=RD065 id="RD065"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_065_DEVELOP_DOMAIN_MODEL_OVERVIEW.HTM" target="_blank">RD.065 Develop Domain Model </a></h4>
+<p>In this task, you analyze and document the existing Domain Model of the organization&rsquo;s SOA Governance assets. First, identify assets that the organization uses, such as, services, applications, environments, etc. For each asset, identify <i>meta data</i> that describe the asset and rules that define the integrity of the data. For example, in task CV.010 you discover that the organization uses an offline service repository in an Excel spreadsheet with information about services and applications that expose and/or consume services. Further, there is a Solution Architecture Department that owns every application, and there are rules that the owner of the repository must follow in order to keep the repository&rsquo;s data consistent. </p>
+<p>An example of meta data, rules and responsibilities for the service description follows. Note that this description reflects the current state of an example organization and is not necessarily the best practice for meta data description. There are two roles in this example, namely an application owner and a service owner. The application owner is a member of Solution Architecture Department (see the example in task RD.012) and the service owner is the application owner who owns the application that provides the respective service.</p>
+<ul>
+  <li><b>Service Name</b>
+      <ul>
+        <li>Application Owner assigns a service name when adding a new service.</li>
+        <li>Name is unique across all services in the repository. </li>
+        <li>Naming Convention is: APPNAME-IDENT where APPNAME is the name of the application that exposes the interface and IDENT is a unique identifier within the application. The identifier may be, for example, a data structure on which the service operates.</li>
+        <li>When the interface already exists in the list, its name cannot be changed. </li>
+      </ul>
+  </li>
+  <li><b> Application Provider &ndash; name of an application that provides the service</b>
+      <ul>
+        <li> Application owner also owns a service that the application provides. </li>
+        <li> Name is unique across all applications in the repository.</li>
+      </ul>
+  </li>
+  <li><b> Application Consumer &ndash; name of an application that consumes the service </b>
+      <ul>
+        <li>Service owner specifies the application that consumes the service. </li>
+        <li>Name is unique across all applications in the repository.</li>
+        <li> If there is more than one application consumer for the service, the application owner will add a new record (row) to the repository and copy the values of the service.</li>
+      </ul>
+  </li>
+  <li><b>Data Structures &ndash; data structures for input and output messages of the interface </b>
+      <ul>
+        <li> The application owner sets the name for the data structures.</li>
+        <li> Data structures are dependent on the application hence same data structures across multiple applications may not mean the data structures are the same.</li>
+      </ul>
+  </li>
+  <li><b>Transport &ndash; Protocol &ndash; low-level protocol for the communication with the interface </b>
+      <ul>
+        <li>The application owner sets the protocol that the service uses for communication. </li>
+        <li> In some cases the protocol may not be set, for example, when there are multiple protocols defined by an access mechanism.</li>
+      </ul>
+  </li>
+  <li><b> WSDL &ndash; URL address of the WSDL document</b>
+      <ul>
+        <li> The application owner sets the URL WSDL address.</li>
+        <li> If WSDL document exist, the application owner does not provide information about data structures and the transport. It is assumed that such information is available in the WSDL&rsquo;s interface, binding and service descriptions.</li>
+      </ul>
+  </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=RD030 id="RD030"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_030_DEVELOP_CURRENT_BUS_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">RD.030 Develop Current Business Process Model </a></h4>
+<p>In this task, you document existing process models that are related to SOA Governance. You are interested in software development processes that the organization uses for development of applications and their integrations. Such processes may produce assets that are of interest to SOA Governance such as services, applications, frameworks, environments, design-patterns etc. Moreover, there might be other processes directly related to the organization&rsquo;s current governance. For example, in task, Define Data Acquisition and Conversion Requirements (CV.010), you discovered that the organization uses an offline service repository and that a member of the Integration Architecture Department follows certain steps to make sure that the repository is up-to-date. In this task, you take into account the organization&rsquo;s structures from the Present and Future Organization Structures (RD.012) and the Domain Model (RD.065). </p>
+<h5><a name="RD030DEV"></a>Current Development Process Model Example</h5>
+<p>An organization could use the following process to manage development of applications and their integrations. Note that this example uses roles as described in the task, <a href="#RD012">Document Present and Future Organization Structures (RD.012)</a>.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_RD030.JPG" alt="Example Development Process Model to Manage Development of Applications and their Integrations" width="668" height="798" title="Example Development Process Model to Manage Development of Applications and their Integrations"></p>
+<p>Activities 1 through 14 are described below:</p>
+<table border="1" title="Activity Steps for Process Model Example" summary="This table describes each of the steps from the previous process model example.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">No.</th>
+    <th scope="col">Activity Name </th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row">1.</th>
+    <td>Demand Conceptual Specification </td>
+    <td>Business analyst performs initial analysis of a demand and produces a conceptual design.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">2.</th>
+    <td>Demand Technical Specification </td>
+    <td>Solution architect analyzes the initial documentation produced by the business analyst. The solution architect produces technical specification for the development that includes specification of interfaces/services and other assets in case of integration.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">3.</th>
+    <td>SOA Integration? </td>
+    <td>If the development involves integration of two or more applications and the solution architect decides to follow the SOA integration style, he/she contacts the Integration Architecture team. The solution architect may also choose to follow the point-to-point integration and communicate with owners of involved applications directly.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">4.</th>
+    <td>Check Repository for Reusability of Existing Services </td>
+    <td>Integration architect performs an analysis of a technical specification such as he/she checks existing assets in the service repository for their reusability.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">5.</th>
+    <td>Approve?</td>
+    <td>Integration architect approves or rejects the integration.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">6.</th>
+    <td>Approve?</td>
+    <td rowspan="2">The solution architect approves or rejects the demand.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">7.</th>
+    <td>Reject Demand </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">8.</th>
+    <td>Choose Supplier </td>
+    <td>The solution architect chooses a supplier for implementation (external company or in-house development).</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">9.</th>
+    <td>Develop</td>
+    <td>The solution architect monitors and checks the development.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">10.</th>
+    <td>Testing</td>
+    <td>When implementation is ready, the tester performs tests.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">11.</th>
+    <td>Tests Passed? </td>
+    <td>If tests fail, the tester requests reimplementation/fixing of any failed functionality (activity 9) otherwise it requests approval to deploy the integration.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">12.</th>
+    <td>Approve?</td>
+    <td>The integration architect approves or rejects the integration. When rejected, the development must correct any issues.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">13.</th>
+    <td>Deployment</td>
+    <td>The system administrator deploys the solution.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">14.</th>
+    <td>Monitor</td>
+    <td>Integration architect monitors the performance of integration.</td>
+  </tr>
+</table>
+<h5>Current Governance Process Example</h5>
+<p>An organization could use following process to make sure that information in an offline service repository in an Excel spreadsheet is up-to-date.</p>
+<ul>
+  <li>Repository owner extracts the list of services of an application from the latest version of the repository (the master repository) to the Excel spreadsheet and sends them by email to the owner of the application (the application owner). </li>
+  <li> Application owner checks the information about services, validate the information if not valid or up-to-date and/or adds new services that are not in the list. </li>
+  <li>Application owner contacts the repository owner if he/she wants to add a new protocol, transport or consuming application not in the list of protocols/applications. </li>
+  <li>Application owner sends the updated list back to the repository owner. </li>
+  <li>Repository owner checks for the overall consistency of the information provided &#8232;by the application owner and clarify any issues with him/her. </li>
+  <li>Repository owner updates the master repository with the updated information. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=RD140 id="RD140"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_140_CREATE_REQS_SPEC_OVERVIEW.HTM" target="_blank">RD.140 Create Requirements Specification </a></h4>
+<p>In this task, you document requirements for SOA Governance. Take into account issues that you encounter when documenting the following:</p>
+<ul>
+  <li>organizational structures in the the Present and Future Organization Structures (RD.012)</li>
+  <li>overall high-level view on the organization&rsquo;s systems related to SOA Governance and an envisioned integration of SOA Governance tooling support in the Technical Architecture Requirements and Strategy (TA.020)</li>
+  <li>Domain Model (RD.065)</li>
+  <li> Current Process Models (RD.030)</li>
+</ul>
+<p>By analyzing issues, you create a list of requirements. </p>
+<p> For example, you may encounter following issues:</p>
+<ul>
+  <li>There may be duplicate information in service metadata and WSDL description.</li>
+  <li> There is no versioning of services.</li>
+  <li> Solution architects may decide on an ad hoc basis about integration of applications as a response to a business requirement without involving the Integration Architecture team. As a result, they integrate applications in a point-to-point style and on an ad hoc basis.</li>
+  <li> There is no versioning of services. An update of a service may cause non-functioning integration with service&rsquo;s consumers.</li>
+  <li> The propagation of changes in services&rsquo; interfaces in the offline service repository is slow thus service consumers cannot react quickly on changes in the environment. </li>
+  <li> It is not clear under which conditions the integration is done in a point-to-point style and when the integration should follow the SOA approach.</li>
+  <li>It is not clear how stakeholders use and should use the offline service repository.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=RD045 id="RD045"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_045_PRIORITIZE_REQS_OVERVIEW.HTM" target="_blank">RD.045 Prioritize Requirements (MoSCoW) </a></h4>
+<p>In this task, you prioritize the requirements identified from the Data Acquisition and Conversion Requirements (CV,010) and the Requirements Specification (RD.140), using the MoSCoW technique. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=RD042 id="RD042"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/RD_042_DEVELOP_GLOSSARY_OVERVIEW.HTM" target="_blank">RD.042 Develop Glossary </a></h4>
+<p>The role of SOA Governance, among other things, is to establish an enterprise-wide understanding of concepts and terms that all SOA projects use. In this task, you develop this glossary. Start with the <a href="OUM_SOAGI_OVERVIEW.HTM#GL" target="_blank">Glossary</a> in the SOA Governance Implementation Overview.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<p>
+<hr WIDTH="100%">
+<h3><B><A
+name=SGID id="SGID"></A></B>TG.SGID SOA GOVERANCE IMPLEMENTATION DESIGN GUIDANCE </h3>
+<h4><B><A
+name=DS090 id="DS090"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_090_DESIGN_DATA_OVERVIEW.HTM" target="_blank">DS.090 Design Data </a></h4>
+<p>Typically, you implement SOA Governance support using an Enterprise Repository that already has pre-defined asset types that you can use out of the box. In addition, you may have the organization&rsquo;s legacy repository and its structures to describe services and applications.</p>
+<p> In this task, you design data structures for asset types, their relationships, categorizations of assets, various value lists, and users and roles.</p>
+<h5>Asset Types and Relationships</h5>
+<p>Design data structures for asset types that will include the organization&rsquo;s legacy repository and Enterprise Repository&rsquo;s out-of-the-box structures. As an input, use the Domain Model (RD.065) and the documentation for the Enterprise Repository describing the asset types it supports. Make sure to follow the Enterprise Repository&rsquo;s best practices for customizations.</p>
+<p> Depending on your Enterprise Repository, you may adopt certain rules. For example, when you develop structures for asset types, you take respective Enterprise Repository structures as a starting point and make any customizations to it when necessary. Before you create any such customizations, try to map specific structures to structures provided by the Enterprise Repository. This allows you to limit the level of customizations, which in turn may help you to manage future upgrades of the Enterprise Repository software to newer versions. </p>
+<p> As an example, you could create two asset types, namely Service and Application and two relationships as shown in the following figure. PP denotes a prefix you assign to the asset type that uniquely identifies the organization. This allows you to distinguish asset types that you customize with pre-defined asset types that you use out-of-the-box. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_DS090.JPG" alt="Example using two asset types, namely Service and Application and two relationships. PP denotes a prefix you assign to the asset type that uniquely identifies the organization. This allows you to distinguish asset types that you customize with pre-defined asset types that you use out-of-the-box. " width="626" height="91" title="Example using two asset types, namely Service and Application and two relationships. PP denotes a prefix you assign to the asset type that uniquely identifies the organization. This allows you to distinguish asset types that you customize with pre-defined asset types that you use out-of-the-box. "></p>
+<p>For every asset type, you should further specify structure. As noted above, take the Enterprise Repository structure as a starting point and add or remove specific properties according to your needs. Further, you should specify mapping rules to map from legacy repository&rsquo;s structures to the new structures.</p>
+<h5>Categorizations of Assets</h5>
+<p>In order to help Enterprise Repository&rsquo;s users to effectively search for assets, an Enterprise Repository typically provides a means to classify assets according to various &ldquo;views.&rdquo; For example, an Enterprise Repository may provide pre-defined views, such as, service layers that classify services according to client-server architectural view on the enterprise architecture, Line of Business (LOB) that classify assets based on the domain where assets operate (such as IT, financial, production, etc.). When designing categorization schemas for assets, you should start with pre-defined categorizations provided by the Enterprise Repository and add or modify any categorizations according to the organization&rsquo;s needs.</p>
+<p> One of the most important categorization schemas used to classify services are service layers. The following figure shows Oracle&rsquo;s  Enterprise Architecture Program (OEAP) that defines industry standards for service layers. </p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_DS090_GEAP.JPG" alt="This figure shows Oracle&rsquo;s Global Enterprise Architecture Program (GEAP) that defines industry standards for service layers. " width="570" height="360" title="This figure shows Oracle&rsquo;s Global Enterprise Architecture Program (GEAP) that defines industry standards for service layers. "></p>
+<p>When you convert service descriptions from legacy service repository, you should also specify how you map information from this repository to new service layers.</p>
+<p> When you migrate services from a legacy service repository, you may further specify rules that you apply when mapping information from this repository to new service layers. In other words, you should be able to identify available information in the legacy service repository to identify a service layer for services that you migrate. On the other hand, you may only be able to distinguish enterprise services and business activity services in your legacy service repository as there might not be any relevant information to distinguish between, for example, business activity services and presentation services. To illustrate, you could define following rules:</p>
+<ul>
+  <li>Any service provided by an application that represents an Enterprise Service Bus in your legacy service repository will be classified as the Business Activity Service.</li>
+  <li>When a service description contains information about the SOAP protocol and the providing application is not an Enterprise Service Bus, the service will be classified as service-enabled enterprise service. Otherwise, it will be classified as non-service enabled enterprise service.</li>
+</ul>
+<h5>Users and Roles</h5>
+<p>When you design asset types, you also specify users and their roles that define access rights for assets and responsibilities within the service lifecycle. Use the list of stakeholders from the Present and Future Organization Structures (RD.012) as a starting point for this task. </p>
+<p>Consider the following example. Depending on your Enterprise Repository capabilities, you could define the following roles and their access rights:</p>
+<ul>
+  <li><b>Registrar</b> &ndash; owner of the Enterprise Repository. The registrar has all view and edit rights in the Enterprise Repository &ndash; that is, to edit assets, asset types, their categorizations, as well as perform approval actions within the service. Typically, a member of the Integration Architecture Department has this role.</li>
+  <li><b>Advanced Submitter</b> &ndash; owner of an application. The advanced submitter has rights to view and edit assets; however, he/she cannot define the asset type structures. Typically, a member of the Solution Architecture Department has this role. </li>
+  <li> <b>Viewer</b> &ndash; read only role. Viewer can only view existing assets but cannot modify them. Typically, a member of the Business Analysis Department has this role. </li>
+</ul>
+<p>Moreover, your Enterprise Repository may allow you to define at least two explicit relationships between a user and an asset namely assign and subscribe, and you should define the meaning of those relationships. For example, you can specify following rules:</p>
+<ul>
+  <li> When a user is assigned to an asset, it means that he/she is responsible for the asset&rsquo;s content, its relationships to other assets, etc. By default, owners of assets (such as owners of applications) are assigned to these assets. Registrar can modify assignment to assets.</li>
+  <li>When a user is subscribed to an asset it means that he/she is generally interested in any changes in the asset&rsquo;s definition, description and usage. By default, a user who owns an application that consumes services is subscribed to those services. </li>
+</ul>
+<p>The following figure further illustrates the above rules:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_DS090_RULES.JPG" alt="This figure further illustrates the previously mentioned rules." width="604" height="463" title="This figure further illustrates the previously mentioned rules."><br>
+</p>
+<p align="left"><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=DS100 id="DS100"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_100_DESIGN_BEHAVIOR_OVERVIEW.HTM" target="_blank">DS.100 Design Behavior </a></h4>
+<p>In this task, you design the SOA Governance processes that may include the migration process and service lifecycle process. The goal of this task is to make sure that the organization&rsquo;s SOA Governance processes (i.e., processes you analyzed in task RD.030) are supported by the Enterprise Repository. </p>
+<p> The processes described herein use the following color conventions. </p>
+<ul>
+  <li><b>Gray</b> &ndash; built-in states and service lifecycle states</li>
+  <li> <b>Blue</b> &ndash; activities of the solution architect (Advanced Submitter role)</li>
+  <li><b>Red</b> &ndash; activities of the integration architect (Registrar role)</li>
+  <li><b>Cyan</b> &ndash; activities of the tester and the system administrator (Advanced Submitter role)</li>
+</ul>
+<h5>Service Lifecycle States and Enterprise Repository Support</h5>
+<p> When you design the service lifecycle process, use the development process from the Current Process Model (RD.030) as the input and define the states in which an asset can occur within this process. Using the development process example from <a href="#RD030DEV">RD.030</a> as the input, you could define the following service lifecycle states:</p>
+<table border="1" title="Service Lifecycle States" summary="Using the development process example from RD.030, this table defines the service lifecycle states.">
+  <tr bgcolor="#CCCCCC">
+    <th width="89" scope="col">State</th>
+    <th width="628" scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">A. Propose: </div></th>
+    <td>An asset has been submitted for review.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">B. Plan: </div></th>
+    <td>The proposed asset has been approved, the development is planned.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">C. Build: </div></th>
+    <td>The asset has been built.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">D. Test: </div></th>
+    <td>The asset has been tested.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">E. Release: </div></th>
+    <td>The development of the asset passed tests, the implementation was approved and the asset is released in the production environment.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">F. Retire:</div></th>
+    <td>The asset is retired and is no longer used. </td>
+  </tr>
+</table>
+<p>The Enterprise Repository should provide support for the service lifecycle process that uses the above states. For this purpose, the Enterprise Repository may use a built-in process for the asset management that may define built-in states as follows:</p>
+<ul>
+  <li><b>Unsubmitted</b> &ndash; The asset is under construction.</li>
+  <li><b>Submitted</b> &ndash; The asset was submitted and ready for review.</li>
+  <li><b>Accepted</b> &ndash; The asset was accepted and further work can be processed on the asset.</li>
+  <li><b>Registered</b> &ndash; The asset is valid and ready to be reused. </li>
+</ul>
+<p>Note that the built-in process of the Enterprise Repository cannot usually be customized. The goal of the Behavior Design for SOA Governance is to implement development processes with defined service lifecycle states and to use the Enterprise Repository built-in process to support the service lifecycle. </p>
+<h5><a name="DS100MP"></a>Migration Process</h5>
+<p>The goal of the migration process is to move all assets from the legacy repository to a fully fledged Enterprise Repository and to make sure that all assets are valid and up-to-date. You can use the Enterprise Repository built-in process to manage the migration process. The following figure shows an example of this process depicted as a Control State Diagram that defines the activities of the migration process together with the Enterprise Repository built-in states.</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_DS100.JPG" alt="This figure shows an example of the migration process depicted as a Control State Diagram that defines the activities of the migration process together with the Enterprise Repository built-in states." width="473" height="385" title="This figure shows an example of the migration process depicted as a Control State Diagram that defines the activities of the migration process together with the Enterprise Repository built-in states."></p>
+<p align="left">The following describes the activities in the above process:</p>
+<ul>
+  <li><b>Develop and Convert (administrator roles) (Activity 1):</b> The integration architect develops Enterprise Repository asset types and runs conversion utilities to convert assets from legacy repository to the new Enterprise Repository structures. All converted assets will get to the unsubmitted state in the Enterprise Repository. This means that all assets were converted and they are ready to be reviewed by asset owners. For details on the conversion, see the task, <a href="#CV040">Design Conversion Components (CV.040)</a>.</li>
+  <li><b>Resolve Conversion Errors (Advanced Submitter) (Activity 3):</b> The owner of the asset resolves all conversion warnings that were generated from the conversion (Activity 1). The owner further reviews the asset data. He/she may edit it, that is, update the data, add new information, delete any information or delete the asset. After that, he/she changes the asset&rsquo;s state to submitted. </li>
+  <li><b>Review (Registrar) (Activity 6):</b> The registrar reviews each asset in the submitted state. If the registrar agrees with all the information of the asset, he/she will perform following actions. If the asset service lifecycle state (customizable states) is other than &ldquo;Release,&rdquo; the registrar will set the asset&rsquo;s built-in state to &ldquo;accepted.&rdquo; If the state is &ldquo;Release,&rdquo; the registrar will set the asset&rsquo;s built-in state to &ldquo;registered.&rdquo; The service lifecycle process (see the next section) may follow up on this with an activity that corresponds to the asset state. </li>
+</ul>
+<h5>Service Lifecycle Process</h5>
+<p> The goal of the service lifecycle process is to manage the lifecycle of assets with help of the Enterprise Repository. In particular, you take the development process the Current Process Model (RD.030) as the input and you use the Enterprise Repository&rsquo;s built-in states and workflows to support this process.</p>
+<p>The following figure (and subsequent activity description) shows how the Enterprise Repository supports the development process example from <a href="#RD030DEV">RD.030</a>:</p>
+<p align="center"><img src="../../../010_COMMON_FILES/SOAGI_DS100_SLP.JPG" alt="This figure (and subsequent activity description) shows how the Enterprise Repository supports the development process example from RD.030." width="583" height="468" title="This figure (and subsequent activity description) shows how the Enterprise Repository supports the development process example from RD.030."></p>
+<ul>
+  <li><b>Discover (Activity 2):</b> The solution architect tries to discover assets that relate to the planned development. If they cannot find an asset for reuse and a new asset should be developed, the solution architect submits a proposal for the new asset to the Enterprise Repository. The solution architect should set the service lifecycle state to &ldquo;Planned&rdquo; and built-in state to &ldquo;submitted.&rdquo;</li>
+  <li><b>Review and Approve (Activity 5):</b> The integration architect reviews any proposed assets submitted by the solution architect and either rejects them (not shown in Figure) or approves them. When the integration architect approves the asset, they set the service lifecycle state to &ldquo;Plan&rdquo; and the built-in state to &ldquo;accepted.&rdquo; The asset can now be developed.</li>
+  <li><b>Develop (Activity 9):</b> The solution architect plans the development (such as, chooses the supplier, develops detail specification for implementation, etc.). When the Development team finishes building a solution, the solution architect should change the service lifecycle state to &ldquo;Build&rdquo; (transition 5) and pass the solution to testing (transition 6). The built-in state remains the same.</li>
+  <li><b>Test (Activities 10, 11):</b> The tester performs tests. If the tests pass, they change the service lifecycle state to &ldquo;Test&rdquo; (transitions 7, 8). The built-in state remains the same.</li>
+  <li><b>Review and Approve (Activity 12):</b> The integration architect approves the solution and related assets for deployment and sets the service lifecycle state to &ldquo;Release&rdquo; (transition 9). The integration architect also sets the built-in state to &ldquo;Registered.&rdquo;</li>
+  <li><b>Deploy (Activity 13):</b> The system administrator deploys the solution to the production environment.</li>
+  <li><b>Monitor (Activity 14):</b> The integration architect monitors the solution in the running environment.</li>
+  <li><b>Use (Activities 2, 9):</b> The solution architect and developers use assets when developing a new solution.</li>
+</ul>
+<h5>Valid Combinations of Service Lifecycle and Built-In States</h5>
+<p>When you design the service lifecycle process and the applicable Enterprise Repository support, you should clarify the valid combination of service lifecycle states and built-in states. The following table shows example combinations of states that may occur during the migration and service lifecycle processes. </p>
+<table border="1" title="Valid Combinations of Service Lifecycle and Built-In States" summary="The following table shows example combinations of states that may occur during the migration and service lifecycle processes. ">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col">Lifecycle State(s) </th>
+    <th scope="col">Built-In State </th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Propose</div></th>
+    <td>Submitted</td>
+    <td>Solution architect proposed as asset. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Plan</div></th>
+    <td>Accepted</td>
+    <td>The accepted asset by the registrar is being planned to be developed.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Build</div></th>
+    <td>Accepted</td>
+    <td>The accepted asset by the registrar was built. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Test</div></th>
+    <td>Accepted</td>
+    <td>The accepted asset by the registrar was tested. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Release</div></th>
+    <td>Registered</td>
+    <td>The asset was released and registered by the registrar.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Retire</div></th>
+    <td>Registered</td>
+    <td>The asset was retired; however, it can be reused. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Propose, Release</div></th>
+    <td>Accepted</td>
+    <td>This is an invalid combination of states. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Propose, Plan, Build, Test </div></th>
+    <td>Registered</td>
+    <td>This is an invalid combination of states. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Propose, Plan, Build, Test, Release, Retire </div></th>
+    <td>Unsubmitted</td>
+    <td>Asset created as a result of conversion. The asset awaits review by the asset owner. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Propose, Plan, Build, Test, Release, Retire </div></th>
+    <td>Submitted</td>
+    <td>Asset owner reviewed the asset after conversion. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=DS110 id="DS110"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/DS_110_DESIGN_BUSINESS_RULES_OVERVIEW.HTM" target="_blank">DS.110 Design Business Rules </a></h4>
+<p>When you design the Domain Model (RD.065) and processes around that model (RD.030), you should clarify the rules that determine your Enterprise Repository&rsquo;s consistent state. </p>
+<h5>Example Business Rules</h5>
+<p>Once again using the development process example from <a href="#RD030DEV">RD.030</a>, you could create the following business rules:</p>
+<blockquote>
+  <p>Every application must provide at least one service and vice-versa and all provided and consumed asset services must be of the type PP Service. </p>
+  <p>Every application must provide at least one service and vice-versa. </p>
+  <p>Every SOAP service must have a valid WSDL defined. Both the WSDL must be a valid URL and HTTP GET must obtain the WSDL document. </p>
+  <p>Every application must have a user responsible for it. The user comes from a department that owns the application. </p>
+</blockquote>
+<h5>Ensuring the Enterprise Repository's Consistent State</h5>
+<p>The way you implement the business rules depends on your Enterprise Repository technology. For example, an Enterprise Repository that allows you to develop a custom meta model for asset types may not directly enforce users to provide valid data. In particular, if a user does not know the data to provide for an asset description, the user is allowed to leave the data blank. Moreover, meta data structures in the Enterprise Repository may not allow you to define any hard cross-asset rules. For example, it might not be possible to define cardinality constraint rules between an application asset and a service asset such that the application must always provide at least one service (in this case, the structures may exist in the Enterprise Repository meta model thus such constraints cannot be enforced by means of the database cardinality constraints). </p>
+<p> Depending on your Enterprise Repository technology, you should determine how the business rules will be ensured. For example, you may create automated reports that check for the Enterprise Repository&rsquo;s consistency and generate warnings, or you use Enterprise Repository&rsquo;s extensions that allow you to automate and customize workflows.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=CV040 id="CV040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/CV_040_DESIGN_CONV_COMPONENTS_OVERVIEW.HTM" target="_blank">CV.040 Design Conversion Components </a></h4>
+<p>In this task, you design conversion components in order to populate the Enterprise Repository with existing assets available in the organization&rsquo;s environment. The conversion components should cover: </p>
+<ul>
+  <li> harvesting from existing middleware platforms, and</li>
+  <li>conversion of data in the legacy repository to the new Enterprise Repository.</li>
+</ul>
+<h5> Conversion </h5>
+<p>Define components and a process to perform conversion. This is where you describe the activity of the migration process (see task, <a href="#DS100MP">DS.100 Design Behavior &ndash; Migration Process</a>). When you design the components and the process, you should: </p>
+<ul>
+  <li> Break down the conversion to a number of components that you can run one by one. In this way, you can reduce the complexity of the whole conversion process as well as aid in resolving issues. </li>
+  <li> Design the components in a way that you meet a requirement of a &ldquo;continuous conversion,&rdquo; that is, you can always start the conversion process from the initial state or in any newly installed environment. This will help you to perform the whole conversion iteratively. Also, if you encounter any errors in mappings, conversion logic, etc., that may corrupt the target database; you will always be able to start the processes all over again from the initial state.</li>
+</ul>
+<p> Note that the conversion components are used to run a conversion process. Typically, you perform this process in conjunction with a development process of the Enterprise Repository database in which you design asset structures. Use Enterprise Repository tools to create such structures. You should then export the structures from the repository so that you can later use them in the conversion process as the structure for the target database. </p>
+<p> Consider designing the following conversion components:</p>
+<ul>
+  <li><b>Create Initial Database</b> &ndash; This component should delete all content of the Enterprise Repository database and create the initial one.</li>
+  <li> <b>Setup the Database</b> &ndash; This component will setup the database such as with user roles, default access rights, etc.</li>
+  <li><b>Import Structures</b> &ndash; This component should import the target database structures (exported from the Enterprise Repository development process).</li>
+  <li><b>Check the Database</b> &ndash; This component will check the target database for any rules that may be violated and generates warnings or errors (see task, <a href="#DS110">DS.110</a>).</li>
+  <li><b>Clean the Environment</b> &ndash; This component will clean the database for any unnecessary information, such as, events generated from the conversion, etc.</li>
+</ul>
+<p>As noted earlier, you may iteratively build the target database by performing development and conversion until you reach the state when all data from the legacy repository is converted to the Enterprise Repository. After that, perform the additional activities of the migration process as described in the <a href="#DS100MP">Migration Process section of task, Design Behavior (DS.100)</a>. </p>
+<h5>Harvesting</h5>
+<p>In this task you design components for harvesting of assets from running middleware in your environment. When you design components for harvesting, perform the following steps:</p>
+<blockquote>
+  <p>1. Reuse any components that your Enterprise Repository may provide as solution packs for harvesting of assets from supported middleware platforms.<br>
+    2. Develop new components, if necessary, or extend existing ones.<br>
+    3. Determine sources of information from which to harvest the assets, such as, version control repositories (e.g., SVN, CVS), middleware project files, running middleware&rsquo;s meta data databases, etc. <br>
+    4. Define configurations, including locations of sources, credentials that the harvester will use to connect to the source, a frequency of running the harvester, subsets of assets to be harvested, etc.</p>
+</blockquote>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=TR070 id="TR070"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_070_DEVELOP_USER_LEARNING_PLAN_OVERVIEW.HTM" target="_blank">TR.070 Develop User Learning Plan </a></h4>
+<p>SOA Governance should define all important structures and processes for effective governance of the SOA Implementation projects in the organization. However, it is important to note that in order to be successful and widely adopted in the organization; the processes must be implemented and followed by the appropriate departments and their staff members. The departments&rsquo; staff members should be trained on how to use the Enterprise Repository as well as in the Governance processes. </p>
+<p> When your SOA Governance Implementation project also uses Enterprise Repository to perform migration from the legacy repository to the new Enterprise Repository see (the <a href="#DS100MP">Migration Process section of task, Design Behavior (DS.100)</a>, it may be useful to plan at lest two training workshops as follows:</p>
+<h5>Workshop 1</h5>
+<p>In the first workshop, users should become familiar with the Enterprise Repository concepts, its specific structures and the processes developed for SOA Governance in your organization. The agenda for this workshop should cover following topics:</p>
+<ul>
+  <li> Welcome and Workshop Overview (15 minutes)</li>
+  <li> General Introduction to SOA Governance (60 minutes)</li>
+  <li> Lab 1: Basic Training with Enterprise Repository Tool (60 minutes)</li>
+  <li>Overview of the SOA Governance Project in the Organization (30 minutes)</li>
+  <li>Lab 2: Migration Process Training (60 minutes)</li>
+  <li> Conclusion, Next Steps</li>
+</ul>
+<p> The workshop should first give an introduction to SOA Governance in general, train staff members on the basics of the Enterprise Repository functionality. Further, the workshop should give details on the SOA Governance project in the organization, explain the major processes and then in detail show the migration process. Users should get hands-on training on how to work within the migration process to resolve the issues that occur during the migration. They should receive enough knowledge to be able to finish the process after the workshop.</p>
+<h5>Workshop 2 </h5>
+<p>In the second workshop, users should become familiar with service lifecycle process and train with a scenario in which they develop services, register them as assets and reuse them in development processes of applications. In addition, the trainer should verify whether users understood the migration process from Workshop 1 and discuss any issues they might have with the Enterprise Repository or any processes. </p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=TR080 id="TR080"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TR_080_DEVELOP_USER_LEARNINGWARE_OVERVIEW.HTM" target="_blank">TR.080 Develop User Learningware </a></h4>
+<p>In this task, you develop any learning materials for the workshops defined in task, <a href="#TR070">Develop User Training Plan (TR.070)</a>. The materials may include presentations and materials for labs as follows:</p>
+<ul>
+  <li>Presentation: Include a general introduction to SOA, SOA Governance, its position towards SOA, introduction to your Enterprise Repository technology and its main functionalities.</li>
+  <li>Presentation: Provide a specific implementation of the Enterprise Repository in the organization.</li>
+  <li>Lab: Provide a step-by-step description of activities for users to train the basic functionality of the Enterprise Repository technology.</li>
+  <li>Lab: Provide a step-by-step description of activities for users to train resolving migration issues. </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=TA0202 id="TA0202"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_020_DEFINE_TA_REQMTS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.020.2 Define Technical Architecture Requirements and Strategy </a></h4>
+<p>In this task, you should design the technical requirements, processes and technologies for the testing and production environments to run SOA Governance processes in the organization. </p>
+<p> When designing the Technical Architecture, consider the following points:</p>
+<ul>
+  <li>all components that are required to build the whole environment such as Application servers, Web server, Enterprise Repository application, database, reporting server, etc.</li>
+  <li>configuration of products, versions, installation paths, configurations of application server domains, configuration of Web servers</li>
+  <li>security configurations, such as, single sign-on, LDAP servers, etc.</li>
+  <li>application server endpoints where users can access applications, such as, administration console, main Enterprise Repository application console, Reporting server, etc. and credentials to access the system</li>
+  <li>backup and recovery strategy for Enterprise Repository data</li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h4><B><A
+name=TA040 id="TA040"></A></B><a href="../../../020_METHOD_GUIDELINES/030_TASK/TA_040_DEFINE_REPORTING_AND_INFORMATION_ACCESS_STRATEGY_OVERVIEW.HTM" target="_blank">TA.040 Define Reporting and Information Access Strategy </a></h4>
+<p>In this task, you define any reports required for SOA Governance. In particular, you may define two kinds of reports: operation reports and decisions support reports.</p>
+<p> <b>Operation reports</b> are required for daily operation of the business. They may also facilitate your migration processes and may include information on the number of warnings or errors generated from the migration process that need to be resolved by owners of assets. <b>Decision support reports</b>, on the other hand, facilitate the business through measurements and prediction of business performance. The Enterprise Repository may already include a set of pre-defined decision support and operational reports that you should further adjust to the organization`s needs.</p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

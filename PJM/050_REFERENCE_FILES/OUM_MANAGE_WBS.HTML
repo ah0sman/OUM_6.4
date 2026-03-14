@@ -1,0 +1,851 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM_NOPAGENAV.DWT" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Manage WBS</title>
+<!-- InstanceEndEditable -->
+<link href="../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../../OUM/OUM_HOME.HTM"><img src="../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../../OUM/CLOUD_HOME.htm"><img src="../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="88%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Manage Work Breakdown Structure</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<TABLE width="100%" BORDER title="Manage Work Breakdown Structure" summary="This table shows the work breakdown structure for Manage. The column headings are Seq, ID, Task Name, Work Product and Predecessors.">
+  <TR BGCOLOR="#CCCCCC">
+    <th scope="col" NOWRAP>Seq</th>
+    <TH scope="col" ALIGN=left NOWRAP>ID</TH>
+    <TH scope="col" ALIGN=left NOWRAP>Task Name</TH>
+    <TH scope="col" ALIGN=left NOWRAP>Work Product</TH>
+    <TH scope="col" ALIGN=left NOWRAP><b>Predecessors</b></TH>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>1</th>
+    <TD ALIGN=left><b>OUM</b></TD>
+    <TD ALIGN=left><DIV><B>Oracle Unified Method</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>2</th>
+    <TD ALIGN=left><b>MANAGE</b></TD>
+    <TD ALIGN=left><DIV><B>OUM - Manage Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>3</th>
+    <TD ALIGN=left><b>PS</b></TD>
+    <TD ALIGN=left><DIV><B>Project Start Up</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>4</th>
+    <TD ALIGN=left><b>PS.ACT.RBC</b></TD>
+    <TD ALIGN=left><DIV><B>Review Bid and Contract</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>5</th>
+    <TD ALIGN=left>PS.BT.010</TD>
+    <TD ALIGN=left><DIV>Review and Analyze Bid Material</DIV></TD>
+    <TD ALIGN=left>Reviewed and Analyzed Bid Material</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>6</th>
+    <TD ALIGN=left>PS.BT.020</TD>
+    <TD ALIGN=left><DIV>Review and Confirm Business Case</DIV></TD>
+    <TD ALIGN=left>Confirmed Business Case</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>7</th>
+    <TD ALIGN=left>PS.BT.030</TD>
+    <TD ALIGN=left><DIV>Identify Project Stakeholders</DIV></TD>
+    <TD ALIGN=left>Identified Project Stakeholders</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>8</th>
+    <TD ALIGN=left>PS.BT.040</TD>
+    <TD ALIGN=left><DIV>Review and Accept Project Budget</DIV></TD>
+    <TD ALIGN=left>Accepted Project Budget</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>9</th>
+    <TD ALIGN=left>PS.RKM .020</TD>
+    <TD ALIGN=left><DIV>Conduct Baseline Risk Assessment</DIV></TD>
+    <TD ALIGN=left>Baseline Risk Assessment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>10</th>
+    <TD ALIGN=left><b>PS.ACT.RPAC</b></TD>
+    <TD ALIGN=left><DIV><B>Review Project Assets with Customer </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>4</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>11</th>
+    <TD ALIGN=left>PS.BT.050</TD>
+    <TD ALIGN=left><DIV>Review Contract with Customer </DIV></TD>
+    <TD ALIGN=left>Reviewed Contract</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>12</th>
+    <TD ALIGN=left>PS.BT.060</TD>
+    <TD ALIGN=left><DIV>Review Project Approach with Customer </DIV></TD>
+    <TD ALIGN=left>Reviewed Project Approach</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>13</th>
+    <TD ALIGN=left>PS.BT.070.1</TD>
+    <TD ALIGN=left><DIV>Create Project Management Plan </DIV></TD>
+    <TD ALIGN=left>Project Management Plan </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>14</th>
+    <TD ALIGN=left><b>PS.ACT.VSSOS</b></TD>
+    <TD ALIGN=left><DIV><B>Validate Scope, Stakeholders and OCM Strategy</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>10</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>15</th>
+    <TD ALIGN=left>PS.SM.010</TD>
+    <TD ALIGN=left><DIV>Define and Confirm Scope</DIV></TD>
+    <TD ALIGN=left>Validated Scope</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>16</th>
+    <TD ALIGN=left>PS.CMM.010</TD>
+    <TD ALIGN=left><DIV>Conduct Project Stakeholder Analysis</DIV></TD>
+    <TD ALIGN=left>Project Stakeholder Analysis</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>17</th>
+    <TD ALIGN=left>PS.OCHM.010</TD>
+    <TD ALIGN=left><DIV>Understand Customer's Organizational Change Management Strategy</DIV></TD>
+    <TD ALIGN=left>Customer's Organizational Change Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>18</th>
+    <TD ALIGN=left><b>PS.ACT.DW</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>14</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>19</th>
+    <TD ALIGN=left>PS.WM.010</TD>
+    <TD ALIGN=left><DIV>Develop Baseline Project Workplan</DIV></TD>
+    <TD ALIGN=left>Baseline Project Workplan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>20</th>
+    <TD ALIGN=left><b>PS.ACT.DSPB</b></TD>
+    <TD ALIGN=left><DIV><B>Develop Staff Plan and Budget</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>14</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>21</th>
+    <TD ALIGN=left>PS.FM.010</TD>
+    <TD ALIGN=left><DIV>Refine Project Budget</DIV></TD>
+    <TD ALIGN=left>Approved Project Budget</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>22</th>
+    <TD ALIGN=left>PS.STM.010</TD>
+    <TD ALIGN=left><DIV>Plan Resource Requirements</DIV></TD>
+    <TD ALIGN=left>Resource Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>23</th>
+    <TD ALIGN=left>PS.STM.030</TD>
+    <TD ALIGN=left><DIV>Staff Project</DIV></TD>
+    <TD ALIGN=left>Staffed Project</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>24</th>
+    <TD ALIGN=left>PS.STM.040</TD>
+    <TD ALIGN=left><DIV>Prepare Orientation Guide(s)</DIV></TD>
+    <TD ALIGN=left>Orientation Guide</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>25</th>
+    <TD ALIGN=left><b>PS.ACT.EG</b></TD>
+    <TD ALIGN=left><DIV><B>Establish Governance </B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>18,20</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>26</th>
+    <TD ALIGN=left>PS.SM.020</TD>
+    <TD ALIGN=left><DIV>Develop Scope Change Management Processes</DIV></TD>
+    <TD ALIGN=left>Scope Change Management Procedures</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>27</th>
+    <TD ALIGN=left>PS.FM.020</TD>
+    <TD ALIGN=left><DIV>Develop Financial Management Plan</DIV></TD>
+    <TD ALIGN=left>Financial Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>28</th>
+    <TD ALIGN=left>PS.WM.020</TD>
+    <TD ALIGN=left><DIV>Develop Work Management Execution and Control Processes and Policies</DIV></TD>
+    <TD ALIGN=left>Work Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>29</th>
+    <TD ALIGN=left>PS.RKM.010</TD>
+    <TD ALIGN=left><DIV>Develop Risk Management Plan</DIV></TD>
+    <TD ALIGN=left>Risk Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>30</th>
+    <TD ALIGN=left>PS.IPM.010</TD>
+    <TD ALIGN=left><DIV>Develop Issue Management Strategy</DIV></TD>
+    <TD ALIGN=left>Issue Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>31</th>
+    <TD ALIGN=left>PS.IPM.020</TD>
+    <TD ALIGN=left><DIV>Develop Problem Management Strategy</DIV></TD>
+    <TD ALIGN=left>Problem Management Strategy</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>32</th>
+    <TD ALIGN=left>PS.STM.020</TD>
+    <TD ALIGN=left><DIV>Develop Staff Management Plan</DIV></TD>
+    <TD ALIGN=left>Staff Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>33</th>
+    <TD ALIGN=left>PS.CMM.020</TD>
+    <TD ALIGN=left><DIV>Develop Project Team Communication Plan</DIV></TD>
+    <TD ALIGN=left>Project Team Communication Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>34</th>
+    <TD ALIGN=left>PS.QM.010</TD>
+    <TD ALIGN=left><DIV>Develop Quality Management Plan</DIV></TD>
+    <TD ALIGN=left>Quality Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>35</th>
+    <TD ALIGN=left>PS.QM.020</TD>
+    <TD ALIGN=left><DIV>Develop and Document Quality Control and Reporting Process</DIV></TD>
+    <TD ALIGN=left>Quality Control and Reporting Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>36</th>
+    <TD ALIGN=left>PS.CM.010</TD>
+    <TD ALIGN=left><DIV>Develop Configuration Management Strategy and Processes</DIV></TD>
+    <TD ALIGN=left>Configuration Management Plan and Processes</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>37</th>
+    <TD ALIGN=left>PS.CM.030</TD>
+    <TD ALIGN=left><DIV>Create Project Documentation Management Plan</DIV></TD>
+    <TD ALIGN=left>Documentation Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>38</th>
+    <TD ALIGN=left>PS.IFM.010</TD>
+    <TD ALIGN=left><DIV>Develop Infrastructure Management Plan</DIV></TD>
+    <TD ALIGN=left>Infrastructure Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>39</th>
+    <TD ALIGN=left>PS.PCM.010</TD>
+    <TD ALIGN=left><DIV>Develop Procurement Strategy and Process</DIV></TD>
+    <TD ALIGN=left>Procurement Strategy and Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>40</th>
+    <TD ALIGN=left>PS.OCHM.020</TD>
+    <TD ALIGN=left><DIV>Identify Change Management Warning Signs</DIV></TD>
+    <TD ALIGN=left>Change Management Warning Signs</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>41</th>
+    <TD ALIGN=left>BT.070.2</TD>
+    <TD ALIGN=left>Create Project Management Plan </TD>
+    <TD><div align="left">Progect Management Plan </div></TD>
+    <TD ALIGN=left>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>42</th>
+    <TD ALIGN=left><b>PS.ACT.EPI</b></TD>
+    <TD ALIGN=left><DIV><B>Establish Project Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>18,20</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>43</th>
+    <TD ALIGN=left>PS.FM.030</TD>
+    <TD ALIGN=left><DIV>Set Up Time and Expense Tracking</DIV></TD>
+    <TD ALIGN=left>Time and Expense Tracking</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>44</th>
+    <TD ALIGN=left>PS.RKM.030</TD>
+    <TD ALIGN=left><DIV>Develop Risk Management System</DIV></TD>
+    <TD ALIGN=left>Risk Management System</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>45</th>
+    <TD ALIGN=left>PS.IPM.030</TD>
+    <TD ALIGN=left><DIV>Develop Issue and Problem Management System</DIV></TD>
+    <TD ALIGN=left>Issue and Problem Management System</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>46</th>
+    <TD ALIGN=left>PS.CM.020</TD>
+    <TD ALIGN=left><DIV>Obtain Configuration Management Tools</DIV></TD>
+    <TD ALIGN=left>Configuration Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>47</th>
+    <TD ALIGN=left>PS.IFM.020</TD>
+    <TD ALIGN=left><DIV>Establish Team Work Environment</DIV></TD>
+    <TD ALIGN=left>Team Work Environment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>48</th>
+    <TD ALIGN=left>PS.IFM.030</TD>
+    <TD ALIGN=left><DIV>Establish Technical Infrastructure</DIV></TD>
+    <TD ALIGN=left>Established Technical Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>49</th>
+    <TD ALIGN=left>PS.PCM.020</TD>
+    <TD ALIGN=left><DIV>Procure Goods and Contracted Services</DIV></TD>
+    <TD ALIGN=left>Service Orders</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>50</th>
+    <TD ALIGN=left><b>PEC</b></TD>
+    <TD ALIGN=left><DIV><B>Project Execution and Control</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>51</th>
+    <TD ALIGN=left><b>PEC.ACT.MSAA</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Scope, Acceptance and Approvals</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>52</th>
+    <TD ALIGN=left>PEC.SM.030</TD>
+    <TD ALIGN=left><DIV>Manage Scope</DIV></TD>
+    <TD ALIGN=left>Managed Scope</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>53</th>
+    <TD ALIGN=left>PEC.SM.040</TD>
+    <TD ALIGN=left><DIV>Manage Acceptance</DIV></TD>
+    <TD ALIGN=left>Managed Acceptance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>54</th>
+    <TD ALIGN=left><b>PEC.ACT.MPF</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Finances</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>55</th>
+    <TD ALIGN=left>PEC.FM.040</TD>
+    <TD ALIGN=left><DIV>Manage Project Financials</DIV></TD>
+    <TD ALIGN=left>Managed Project Finances</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>56</th>
+    <TD ALIGN=left><b>PEC.ACT.MPW</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Workplan</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>57</th>
+    <TD ALIGN=left>PEC.WM.030</TD>
+    <TD ALIGN=left><DIV>Manage Project Workplan</DIV></TD>
+    <TD ALIGN=left>Project Workplan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>58</th>
+    <TD ALIGN=left>PEC.WM.040</TD>
+    <TD ALIGN=left><DIV>Track Schedule Performance</DIV></TD>
+    <TD ALIGN=left>Scheduled Performance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>59</th>
+    <TD ALIGN=left>PEC.WM.070</TD>
+    <TD ALIGN=left><DIV>Schedule Workshop(s) </DIV></TD>
+    <TD ALIGN=left>Workshop Schedule </TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>60</th>
+    <TD ALIGN=left><b>PEC.ACT.MRIP</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Risks, Issues and Problems</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>61</th>
+    <TD ALIGN=left>PEC.RKM.040</TD>
+    <TD ALIGN=left><DIV>Manage Risk</DIV></TD>
+    <TD ALIGN=left>Managed Risk</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>62</th>
+    <TD ALIGN=left>PEC.RKM.050</TD>
+    <TD ALIGN=left><DIV>Monitor and Control Risk</DIV></TD>
+    <TD ALIGN=left>Assessed Risk</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>63</th>
+    <TD ALIGN=left>PEC.IPM.040</TD>
+    <TD ALIGN=left><DIV>Manage Issues and Problems</DIV></TD>
+    <TD ALIGN=left>Managed Issues and Problems</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>64</th>
+    <TD ALIGN=left><b>PEC.ACT.OMT</b></TD>
+    <TD ALIGN=left><DIV><B>Orient and Manage Team</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>65</th>
+    <TD ALIGN=left>PS.QM.030</TD>
+    <TD ALIGN=left><DIV>Conduct Project Team Quality Management Orientation</DIV></TD>
+    <TD ALIGN=left>Project Team Quality Management Orientation</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>66</th>
+    <TD ALIGN=left>PEC.STM.050</TD>
+    <TD ALIGN=left><DIV>Conduct Team Orientation(s)</DIV></TD>
+    <TD ALIGN=left>Oriented Team</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>67</th>
+    <TD ALIGN=left>PEC.STM.060</TD>
+    <TD ALIGN=left><DIV>Manage Project Team</DIV></TD>
+    <TD ALIGN=left>Managed Project Team</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>68</th>
+    <TD ALIGN=left><b>PEC.ACT.MCOP</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Communications and OCM Plans</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>69</th>
+    <TD ALIGN=left>PEC.CMM.030</TD>
+    <TD ALIGN=left><DIV>Manage Project Team Communication</DIV></TD>
+    <TD ALIGN=left>Managed Project Team Communication</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>70</th>
+    <TD ALIGN=left>PEC.OCHM.030</TD>
+    <TD ALIGN=left><DIV>Execute Change and Communication Plan</DIV></TD>
+    <TD ALIGN=left>Executed Change and Communication Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>71</th>
+    <TD ALIGN=left><b>PEC.ACT.MPQ</b></TD>
+    <TD ALIGN=left><DIV><B>Manage Project Quality</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>72</th>
+    <TD ALIGN=left>PEC.QM.040</TD>
+    <TD ALIGN=left><DIV>Manage Quality Control</DIV></TD>
+    <TD ALIGN=left>Quality Control</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>73</th>
+    <TD ALIGN=left>PEC.QM.050</TD>
+    <TD ALIGN=left><DIV>Perform Quality Assurance</DIV></TD>
+    <TD ALIGN=left>Managed Quality Assurance</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>74</th>
+    <TD ALIGN=left><b>PEC.ACT.CECRM</b></TD>
+    <TD ALIGN=left><DIV><B>Create and Execute Configuration and Release Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>75</th>
+    <TD ALIGN=left>PEC.CM.040</TD>
+    <TD ALIGN=left><DIV>Create and Execute Software Configuration Management Plan</DIV></TD>
+    <TD ALIGN=left>Software Configuration Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>76</th>
+    <TD ALIGN=left>PEC.CM.050</TD>
+    <TD ALIGN=left><DIV>Create and Execute Software Release Management Plan</DIV></TD>
+    <TD ALIGN=left>Software Release Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>77</th>
+    <TD ALIGN=left>PEC.CM.060</TD>
+    <TD ALIGN=left><DIV>Create and Execute Environment and Patch Management Plan</DIV></TD>
+    <TD ALIGN=left>Environment and Patch Management Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>78</th>
+    <TD ALIGN=left>PEC.CM.070</TD>
+    <TD ALIGN=left><DIV>Create and Execute Configuration Management Control Plan</DIV></TD>
+    <TD ALIGN=left>Configuration Management Control Plan</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>79</th>
+    <TD ALIGN=left><b>PEC.ACT.MMI</b></TD>
+    <TD ALIGN=left><DIV><B>Manage and Maintain Infrastructure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>80</th>
+    <TD ALIGN=left>PEC.IFM.040</TD>
+    <TD ALIGN=left><DIV>Manage and Maintain Infrastructure</DIV></TD>
+    <TD ALIGN=left>Maintained Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>81</th>
+    <TD ALIGN=left><b>PEC.ACT.APGCS</b></TD>
+    <TD ALIGN=left><DIV><B>Administer Procurement of Goods and Contracted Services</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>82</th>
+    <TD ALIGN=left>PEC.PCM.030</TD>
+    <TD ALIGN=left><DIV>Administer Procurement of Goods and Contracted Services</DIV></TD>
+    <TD ALIGN=left>Managed Procurement of Goods and Services</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>83</th>
+    <TD ALIGN=left><b>PC</b></TD>
+    <TD ALIGN=left><DIV><B>Project Closure</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>84</th>
+    <TD ALIGN=left><b>PC.ACT.GA</b></TD>
+    <TD ALIGN=left><DIV><B>Gain Acceptance</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>85</th>
+    <TD ALIGN=left>PC.SM.050</TD>
+    <TD ALIGN=left><DIV>Gain Acceptance</DIV></TD>
+    <TD ALIGN=left>Final Acceptance Certificate</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>86</th>
+    <TD ALIGN=left><b>PC.ACT.CPC</b></TD>
+    <TD ALIGN=left><DIV><B>Close Processes and Contract</B></DIV></TD>
+    <TD ALIGN=left>Closed Processes and Contract</TD>
+    <TD ALIGN=left><b>84</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>87</th>
+    <TD ALIGN=left>PC.SM.060</TD>
+    <TD ALIGN=left><DIV>Close Scope Management</DIV></TD>
+    <TD ALIGN=left>Closed Scope Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>88</th>
+    <TD ALIGN=left>PC.SM.070</TD>
+    <TD ALIGN=left><DIV>Identify Future System Enhancements</DIV></TD>
+    <TD ALIGN=left>Future System Enhancements</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>89</th>
+    <TD ALIGN=left>PC.FM.050</TD>
+    <TD ALIGN=left><DIV>Close Project Financials</DIV></TD>
+    <TD ALIGN=left>Closed Project Financials</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>90</th>
+    <TD ALIGN=left>PC.WM.060</TD>
+    <TD ALIGN=left><DIV>Close Work Management</DIV></TD>
+    <TD ALIGN=left>Closed Work Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>91</th>
+    <TD ALIGN=left>PC.RKM.060</TD>
+    <TD ALIGN=left><DIV>Conduct Post-Production Risk Assessment</DIV></TD>
+    <TD ALIGN=left>Post-Production Risk Assessment</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>92</th>
+    <TD ALIGN=left>PC.IPM.050</TD>
+    <TD ALIGN=left><DIV>Produce Final Issue and Problem Report and Close Log(s)</DIV></TD>
+    <TD ALIGN=left>Closed Issue and Problem Log</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>93</th>
+    <TD ALIGN=left>PC.STM.070</TD>
+    <TD ALIGN=left><DIV>Release Staff</DIV></TD>
+    <TD ALIGN=left>Released Staff</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>94</th>
+    <TD ALIGN=left>PC.CMM.060</TD>
+    <TD ALIGN=left><DIV>Submit Final Reports</DIV></TD>
+    <TD ALIGN=left>Final Reports</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>95</th>
+    <TD ALIGN=left>PC.QM.060</TD>
+    <TD ALIGN=left><DIV>Conduct Post Production Quality Review</DIV></TD>
+    <TD ALIGN=left>Post-Production Quality Review</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>96</th>
+    <TD ALIGN=left>PC.CM.080</TD>
+    <TD ALIGN=left><DIV>Close Configuration Management</DIV></TD>
+    <TD ALIGN=left>Closed Configuration Management</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>97</th>
+    <TD ALIGN=left>PC.IFM.050</TD>
+    <TD ALIGN=left><DIV>Close Infrastructure</DIV></TD>
+    <TD ALIGN=left>Closed Infrastructure</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>98</th>
+    <TD ALIGN=left>PC.PCM.040</TD>
+    <TD ALIGN=left><DIV>Close Contract</DIV></TD>
+    <TD ALIGN=left>Closed Contract</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>99</th>
+    <TD ALIGN=left>PC.OCHM.040</TD>
+    <TD ALIGN=left><DIV>Establish Follow-Up Process</DIV></TD>
+    <TD ALIGN=left>Follow-Up Process</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>100</th>
+    <TD ALIGN=left><b>PC.ACT.DLLAP</b></TD>
+    <TD ALIGN=left><DIV><B>Document Lessons Learned and Archive Project</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD ALIGN=left><b>84</b></TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>101</th>
+    <TD ALIGN=left>PC.CMM.040</TD>
+    <TD ALIGN=left><DIV>Document Lessons Learned</DIV></TD>
+    <TD ALIGN=left>Lessons Learned</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>102</th>
+    <TD ALIGN=left>PC.CMM.050</TD>
+    <TD ALIGN=left><DIV>Turn Over Project Documentation (Project Archives)</DIV></TD>
+    <TD ALIGN=left>Project Archives</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>103</th>
+    <TD ALIGN=left><b>PGM</b></TD>
+    <TD ALIGN=left><DIV><B>Program Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>104</th>
+    <TD ALIGN=left><b>PGM.ACT.PGM</b></TD>
+    <TD ALIGN=left><DIV><B>Perform PGM Program Management</B></DIV></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR ALIGN=right>
+    <th ALIGN=center>105</th>
+    <TD ALIGN=left>PGM.PMC.PGMSUM1</TD>
+    <TD ALIGN=left><DIV>Perform Program Management Activities</DIV></TD>
+    <TD ALIGN=left>Program Management Activities</TD>
+    <TD ALIGN=left><b>42</b></TD>
+  </TR>
+</TABLE>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><b><IMG src="../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </b></P>
+<P align="left"><b>    <a href="../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

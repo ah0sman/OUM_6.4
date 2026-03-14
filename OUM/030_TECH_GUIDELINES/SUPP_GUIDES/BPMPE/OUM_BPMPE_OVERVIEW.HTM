@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>BPM Project Engineering Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM_HOME.HTM"><img src="../../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../CLOUD_HOME.htm"><img src="../../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Business Process Management (BPM) Project Engineering Supplemental Guide</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM_HOME.HTM">Home</option>
+                    <option value="../../../020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#INTRO">Introduction</option>
+                            <option value="#WHEN">When to Use the BPM Project Engineering View</option>
+                            <option value="#OV">Overview</option>
+                            <option value="#WHATRELATE">What Other Views Relate?</option>
+                            <option value="#HOWOUM">How Does BPM PE Relate to OUM?</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+    <table width="93" align="right">
+      <tr>
+        <td width="85" height="34"><p><a href="../../../OUM_HOME_BPM_PROJECT_ENG.HTM" target="_blank"><br>
+            Back to View </a> </p></td>
+      </tr>
+    </table>
+<h2> BUSINESS PROCESS MANAGEMENT (BPM) PROJECT ENGINEERING OVERVIEW</h2>
+<h3><A 
+name=INTRO id="INTRO"></A>INTRODUCTION TO BUSINESS PROCESS ENGINEERING </h3>
+<p>Traditionally, business processes were described using loosely defined graphical artifacts with a usage that was limited to supporting business analysis discussions and requirements definition for software projects. Today a more rigorous business process modeling language can be applied with a graphical notation that is extended to include IT functions, making it executable by an IT system. Furthermore, the operation of the business process can be monitored and analyzed by the Business Process Management (BPM) System to help the business to identify opportunities to continuously improve business process performance. This can all be achieved with a minimal involvement from IT.</p>
+<p>The act of placing a business process under the control of a BPM system is called automation (not to be confused with automation of the 1990's which merely involved replacement of human tasks with computerized tasks). This view describes how OUM can be used for achieving automation and realizing the full potential of today's BPM. Automation has long been a goal of BPM, but until now the tools for making a business process executable have been fraught with IT constraints and technical intervention. Only recently has it become possible to take a business process model, make associations with human workflow and IT applications, and place the flow of these activities under the control of an automated system without the need for specialized coding effort to tie it all together. In combination with a Business Rules Management System (BRMS) and Service Oriented Architecture (SOA) modern enterprises can achieve the extremes of agility demanded by today's business environment. </p>
+<p>Performing business process automation must be guided by an appropriate method designed specifically for the key BPM stakeholders (primarily business specialists) that also aligns with current IT environments and practices. OUM&rsquo;s BPM view guides the implementation of business process automation and continuous improvement while supporting Enterprise Performance Management (EPM).</p>
+<h4>Benefits of using OUM </h4>
+<p>BPM in OUM supports an agile strategy that defines an iterative approach to Business Process Engineering highly suited for rapidly changing business environments (driven by market demands, mergers and acquisition, etc.) and continuous incremental business process improvement. So far we have talked in broad terms about the opportunities available from a modern BPM solution, but the need for a guiding method may not be so obvious. </p>
+<p>The following list outlines the benefit of using this view as a foundation to create a standard practice for business process implementation for a given organization.</p>
+<ul>
+  <li><b>Predictability</b> &#8212; By applying a consistent, proven approach to BPM engineering the results and the cost can be determined in advance with a high degree of confidence.</li>
+  <li> <b>Business Driven</b> &#8212; By identifying a range of well known business motivation artifacts as drivers for business process identification, and providing analytical feedback based on business-defined KPI&rsquo;s, BPM in OUM effectively ensures continuous alignment with business needs.</li>
+  <li> <b>Closing the Business - IT Gap</b> &#8212; OUM identifies stakeholder roles and their information exchanges at every step of the engineering process, ensuring effective business and IT collaboration.</li>
+  <li> <b>Process Identification</b> &#8212; OUM provides guidelines and tools for process computerization candidate analysis leading to clear justification and measurable objectives for the BPM engineering project. This approach is also applied to business rule and KPI identification.</li>
+  <li> <b>Traceability</b> &#8212; OUM captures the key decisions and associated business motivation artifacts to support impact analysis and enable traceability throughout the business process lifecycle.</li>
+  <li> <b>Measurable</b> &#8212; As with computerized business process itself, the BPM engineering process described in this view is self-monitoring, providing a feedback loop enabling continuous improvement.</li>
+  <li> <b>Ease of Integration with Existing Organization Methods (Adaptability)</b> &#8212; This view describes the incremental activities that are needed for a BPM project. Even though this supplemental guide is placed in the context of OUM, it may be used to extend any other existing, established method at the customer. In this way OUM can integrate with existing customer methods, avoiding the disruption otherwise caused by replacement of established methods and practices. In the supplemental guide, you will see specific guidelines on how a task preferably should be executed in or adapted to a BPM environment.</li>
+  <li> <b>Timely Evaluation of IT Assets Enables Effective Planning</b> &#8212; By predicting downstream integration requirements, gaps in the IT application landscape can be assessed and required enhancements can be specified and coordinated as part of an overall BPM program.</li>
+  <li> <b>Supports Complete BPM Lifecycle</b> &#8212; The full lifecycle of continuous improvement is described by the method providing a starting point for initial process computerization that merges seamlessly with a refinement procedure for continuous improvement.</li>
+  <li> <b>Clear Definition of Duties</b> &#8212; OUM defines roles that can be easily mapped to any customer's organization chart (potentially exposing gaps in the BPM team composition).</li>
+</ul>
+<h4>Background</h4>
+<p>Why do we need a separate view for the business driven activity of business process automation? IT organizations have become very adept at delivering reliable software engineering projects, although historically this was not the case. This change is due in part to the emergence and refinement of the project delivery methodologies that exist today. With an increased need for business and IT alignment and the enterprise scope of most BPM programs the lessons learned in traditional software engineering must be applied to BPM, and in this way be visualized through this separate view for BPM.</p>
+<p>Many software engineering methods that are used within IT tend to be inadequate for BPM because they: </p>
+<ul>
+  <li>are code-centric (BPM strives for an approach based on configuration, rather than coding),</li>
+  <li> are rarely model-driven,</li>
+  <li> lack the steps necessary to effectively capture business process,</li>
+  <li> overlook business Key Performance Indicators (instrumentation is typically an afterthought),</li>
+  <li> do not support continuous improvement (beyond the planned iterations of the project), and </li>
+  <li> lack vision beyond the scope of a single project.</li>
+</ul>
+<p>Within this view, we discuss which tasks are relevant for a BPM project, and how the tasks should be executed in a BPM environment. Such a view is necessary, because an effective method for BPM must address the inadequacies listed above, must support discovery of existing processes while encouraging cataloguing and linking of related assets, and must separate business concerns from technical concerns, while fostering business-IT cooperation. Part of that involves establishing a common language and understanding through techniques such as functional decomposition and process levels. Business automation cannot be specified in a single requirements hand-off (or be &ldquo;thrown over the wall to IT&rdquo;). Effective cooperation between business and IT is an absolute requirement, and an ongoing cycle of improvement as the process evolves, mandates a continuous dialogue. Ultimately BPM will put more control in the hands of business leadership and move IT further out of the equation. </p>
+<h4>Top-Down versus Bottom-Up</h4>
+<p>Historically, software projects were either driven by high-level business requirements (top-down) or by opportunities discovered in systems infrastructure and technological advancements (bottom-up). Today's software engineering methods often recommend the benefits of a compromise between &quot;top-down&quot; and &quot;bottom-up&quot;, commonly referred to as &quot;meet-in-the-middle&quot; approach. BPM however, must be business-driven and a corresponding strategic (top-down) approach is necessary for the success of any BPM project.</p>
+<p>A bottom-up approach, while still valuable in the supporting infrastructure projects (such as SOA Service engineering), is unable to anticipate the needs of the business or even adequately identify enterprise-wide business processes. Taking a bottom-up approach is likely to yield, at best, only technical orchestrations or, at worst, distorted, unrealistic business processes designed to meet the needs of the application systems, not the business.</p>
+<p>Business users should be free to express business processes in the way that will most benefit the business and its customers, unburdened by the constraints of technology. This mandates a top-down approach for business process engineering.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="WHEN" id="WHEN"></a>WHEN TO USE THE BPM PROJECT ENGINEERING VIEW</h3>
+<p>This view can be applied whenever OUM is used to deliver one or several BPM projects. This view introduces a discipline to effectively deliver composite business application projects in a BPM environment. The view encompasses the traditional analysis, design, implementation, and operational management and monitoring steps of software engineering, but addresses in particular the requirements specific to Business Process Engineering.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><a name="OV" id="OV"></a>BUSINESS PROCESS MANAGEMENT PROJECT ENGINEERING OVERVIEW </h3>
+<p align="center"><img src="../../../010_COMMON_FILES/BPM.GIF" alt="Iterative BPM Project Engineering Lifecycle" width="530" height="433" title="Iterative BPM Project Engineering Lifecycle"></p>
+<p>The figure above shows the iterative BPM Project Engineering Lifecycle that is used in the BPM Process Engineering practitioner guide found in the IT Strategies from Oracle (ITSO) guidelines and reference architectures library. This has been used as the starting point for this first version of the BPM Process Engineering view.</p>
+<table border="1" title="OUM BPM to ITSO BPM Reference" summary="This table lists the OUM BPM Process Engineering view areas in the first column and their corresponding ITSO BPM Process Engineering Practitioner Guide areas in the second column.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col" width="337"><b>OUM BPM Process Engineering View </b></th>
+    <th scope="col" width="444"><b>ITSO BPM Process Engineering Practitioner Guide </b></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Strategic Analysis and Business Process Selection</div></th>
+    <td>Selection</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Process Discovery and Definition </div></th>
+    <td>Definition</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Business Process Refinement</div></th>
+    <td>Refinement</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Technical Analysis and Business Process Design </div></th>
+    <td>Technical Analysis and Design </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Business Process Application Composition </div></th>
+    <td>Composition</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Integration Testing </div></th>
+    <td>Testing</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Deployment Planning </div></th>
+    <td>Deployment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Approval</div></th>
+    <td>Approval</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Commissioning</div></th>
+    <td>Commissioning</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Monitoring and Analysis </div></th>
+    <td>Monitoring</td>
+  </tr>
+</table>
+<h4>Strategic Analysis and Business Process Selection</h4>
+<p>Successful business process engineering ideally starts by taking business drivers from various potential sources of business motivation descriptions, including business plans, strategy maps, and associated value chains, etc. This approach enables us to identify core business processes and determine their business value alignment in the selection procedure. </p>
+<p>During Strategic Analysis and Business Process Selection, a comprehensive set of evaluation criteria is applied to select the business processes most suitable for automation, the processes we are going to automate are identified, and the business process automation project is initiated.</p>
+<p>This area is executed as part of Envision. When one or multiple processes have been selected for business process automation, one or multiple projects are identified in which they should be implemented. Typically, one project is identified for one core business process.</p>
+<h4> Process Discovery and Definition </h4>
+<p>During Process Discovery and Definition, we move into Implement, which means that it is executed in the context of a project. Here the selected business process is subjected to discovery, in which many participants collaborate to agree upon a model describing the next level of detail for the business process as it is in its current state (i.e., the &quot;as-is&quot; state). In practice you may not model the current state, but instead immediately start modeling the future process. This may be because there is no current process for example because the business is moving into a completely new business area, or with the purpose to prevent that the participants will not be able to think &ldquo;outside the box&rdquo; when the future process should be modeled.</p>
+<p>The process analyst applies further detail to the business process model, elaborating the model and resolving potential inconsistencies that can be resolved within the context of the project. </p>
+<p>This step also defines the project that supports the engineering activity for the business process (or processes). Project definition includes initial sizing of the effort involved in automating the process.</p>
+<p>Here the business process project transitions from identified to defined. In the defined state the major elements of the process have been captured. This includes the flow, its start and end events, business exception paths, the process participants and their interactions, the exchange of data between the process activities, and the interaction with external information sources and application functions.</p>
+<h4> Business Process Refinement </h4>
+<p>Business Process Refinement refers to the improved version of the business process, also known as the &quot;to-be&quot; state and this is where the process enters the cycle of continuous business process improvement. On entering the loop for the first time (from Process Discovery and Definition) changes should be kept to a level to strike a balance between the risk of over-ambitious change and demonstration of value through early wins. Subsequent iterations through the continuous improvement cycle bring greater intelligence about the business process and augmented simulation data from Monitoring and Analysis. New or changed business drivers may also be introduced during Business Process Refinement to accommodate changes in the business environment. </p>
+<p>During Business Process Refinement, the process model is enhanced with details of business rules, business requirements, and underlying application and information services that are expected to support the business process model.</p>
+<h4>Technical Analysis and Business Process Design </h4>
+<p>Technical Analysis and Business Process Design includes a feasibility analysis to ensure that the IT applications and systems are capable of supporting the automation as it is currently defined. A gap analysis is performed to specify requirements for extensions to existing IT capabilities needed to support the &ldquo;to-be&rdquo; business process model. </p>
+<p>Approved extensions or changes to current IT capabilities that were discovered during the gap analysis are to be developed and implemented outside the scope of this BPM view. It is assumed that these initiate software and service engineering projects separate from the current business process engineering project. The business process design describes the details of interfaces and the messages that flow between them, transactions and transaction boundaries, security constraints, and exception paths for system error events. On completion of this IT focused activity the business process is considered to be in the designed state.</p>
+<h4> Business Process Application Composition </h4>
+<p>During Business Process Application Composition, the technical steps necessary to make the business process model executable are completed. Implementation of the technical aspects of the business process include configuring business rules, Human Task definitions, and wiring Service Component Architecture (SCA) components to support integration and service orchestration requirements; User Interface (UI) applications may also be constructed. In this activity the business process advances its state from designed to composed.</p>
+<h4>Integration Testing </h4>
+<p> During Integration Testing, a white-box testing approach is used to ensure the technical integration between the process engine and the underlying application functions, information services, and various other external data and systems, performs appropriately.</p>
+<p>After a successful iteration of composition and integration testing, the business process enters the state of implemented.</p>
+<h4>Deployment Planning </h4>
+<p>Deployment Planning packages the composite business application and all its supporting software components and describes the procedures necessary to transfer it out of development. The package also includes operational procedures and end user documentation and training. The first target for the deployment package, prior to production deployment, is user acceptance and potentially, performance testing environments.</p>
+<p>Once a complete deployment package has been transferred out of development it is said to be deployed, or at least, deployment ready.</p>
+<h4>Approval</h4>
+<p> During Approval, the QA team plans and manages the end user and performance testing. This step is commonly called user acceptance testing (UAT).</p>
+<h4>Commissioning</h4>
+<p>Once approved by QA, the composite business process application moves into commissioning. This is where the business process transitions into full production operation and hence, the state changes to operational. The process is no longer undergoing testing, but is live in production. This live production state may, at first, be limited to small set of end users (i.e. a pilot or limited production release) during which, aspects of the business process other than its technical implementation may be examined.</p>
+<h4>Monitoring and Analysis </h4>
+<p>Monitoring and Analysis supports both Operational Administration and Management (OA&amp;M) of the business process in the production environment and business process improvement. The analysis of data gathered from predefined Key Performance Indicators (KPI&rsquo;s) provides critical information to the business analyst to support continuous improvement and continue the engineering lifecycle by re-entering the refinement step.</p>
+<p>The final state of the composite business process application, before re-starting the continuous improvement cycle is monitored.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=WHATRELATE id="WHATRELATE"></a></b>WHAT OTHER VIEWS RELATE TO THE BPM PROJECT ENGINEERING VIEW? </h3>
+<p>The <a href="../../../../ENV/OUM_HOME_SMP.HTM" target="_blank">SOA MODELING PLANNING</a> view is used to plan and model SOA in preparation for SOA implementation projects. SOA Modeling Planning is designed to prepare organizations to incorporate modeling into their service engineering process.</p>
+<p> The <a href="../../../../ENV/OUM_HOME_SEP.HTM" target="_blank">SOA ENGINEERING PLANNING</a> view should be used to help organizations to adjust or complement their project delivery methodology to support SOA execution.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr width="100%">
+<h3><b><a 
+name=HOWOUM id="HOWOUM"></a></b>HOW DOES BPM PROJECT ENGINEERING RELATE TO OUM? </h3>
+<p>See the <a href="../../../../OUM/OUM_HOME_BPM_PROJECT_ENG.HTM" target="_blank">BPM Project Engineering</a> view for applicable OUM tasks. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

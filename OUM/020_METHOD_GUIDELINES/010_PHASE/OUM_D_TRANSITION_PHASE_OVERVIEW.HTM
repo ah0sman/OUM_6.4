@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Transition Phase Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" -->
+            <h1>Phase Overview </h1>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+                        <select name="CurrPageNav" class="PageNavigation" accesskey="C" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                          <option value="#TOP" selected></option>
+                          <option value="#Objectives">Objectives</option>
+                          <option value="#Processes">Processes</option>
+                          <option value="#KeyWP">Key Work Products</option>
+                          <option value="#Tips">Tips and Techniques</option>
+                          <option value="#TasksWP">Tasks and Work Products</option>
+                          <option value="#Dependencies">Activity Flow Diagram</option>
+                          <option value="#Risk">Managing Risk</option>
+                          <option value="#CritSucFactors">Critical Success Factors</option>
+                        </select>
+              <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2> [D] TRANSITION</h2>
+<!--BeginPhaseDesc--><p>The goal of the Transition phase is to take the completed solution from installation onto the production system through the Acceptance Test to launch of the live application, open and ready for business. Validate that the system is tested systematically and is available for end users. During this phase, the new system is accepted by the customer organization, the organization is made ready for the new system, and the system is put into production and, if the new system replaces an old one, a smooth cutover to the new application is provided. The system has been found acceptable to operate in the user environment, but it may not be perfect. Minor enhancements may be developed and released after production starts. Also, planning is performed for the development of any remaining functionality, in a new increment.</p><!--EndPhaseDesc-->
+<p> The Transition phase can span several iterations, and includes testing the new system in preparation for release, and making minor adjustments based on user feedback. At this point in the lifecycle, user feedback should focus mainly on fine-tuning the product, configuration, installation, and usability issues. All the major structural issues should have been resolved earlier in the project lifecycle. </p>
+<p>The Transition phase finishes with the <a href="../040_ACTIVITY/DACTSIP_SYSTEM_IN_PROD_MST_SUMMARY.HTM" target="_blank">System in Production Milestone</a>. Review and be familiar with the objectives of this milestone before you begin this phase and make sure you have met these objectives before you move to the Production phase.</p>
+<p><img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> This phase overview is written from the perspective of a Full Method View, utilizing ALL of the processes, activities and tasks in this phase. Therefore, all of the following sections provide comprehensive information. If your project is utilizing a tailored approach (for example, Technology Full Lifecycle View, Application Implementation View, Middleware Architecture View), not everything in this overview may be appropriate for your project. Please keep this in mind, especially when reviewing the Prerequisites, Processes, Key Work Products, Tasks and Work Products and Task Dependencies sections. You should use OUM as a guideline for performing all types of information technology projects, but keep in mind that every project is different and that you need to adjust project activities according to each situation. Do not hesitate to add, remove, or rearrange tasks, but be sure to reflect these changes in your estimates and risk management planning. You should also consider the depth to which you address and complete each task based on the characteristics of your particular project or project increment. See <a href="../../050_REFERENCE_FILES/OUM_POST_INSTALLATION_POPUP.HTM" target="_blank">Oracle's Full Lifecycle Method for Deploying Oracle-Based Business Solutions</a> for further information on the scalability and adaptability of OUM.<img src="../../../010_SHARED_FILES/star.gif" alt="" width="11" height="11"> </p>
+<p><A href="#TOP">Back to Top</A></p>
+<hr WIDTH="100%">
+<h3><a NAME="Objectives" id="Objectives"></a>OBJECTIVES</h3>
+<p>The following is a list of the objectives of this phase:</p>
+<ul>
+  <li><b>Prepare users for Production.</b> Educate ambassador users in order to deliver the application properly to the rest of the organization for internal acceptance.</li>
+  <li> <b>Implement Production support infrastructure.</b> Establish the maintenance environment required for supporting and managing the site. Make adequate arrangements for application support and properly-trained staff members.</li>
+  <li><b>Deploy system into Production.</b> Ensure an application system which meets the performance requirements.</li>
+  <li><b>Obtain acceptance.</b> Gain acceptance of the project from the project sponsor.</li>
+</ul>
+<p>The <a href="../../040_TEMPLATES_AND_GUIDANCE/TRANSITION_SP_CHECKLIST.DOCX" target="_blank">Transition Phase / System in Production (SP) Milestone Checklist</a> is available to assist with determination of completeness for this phase.</p>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="Processes" id="Processes"></a>PROCESSES</h3>
+<p>The following processes are active in this phase:</p>
+<ul>
+  <li>Testing (TE)</li>
+  <li>Performance Management (PT)</li>
+  <li> Data Acquisition and Conversion (CV)</li>
+  <li>Documentation (DO) </li>
+  <li>Organizational Change Management (OCM) </li>
+  <li>Training (TR) </li>
+  <li>Transition (TS) </li>
+</ul>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="KeyWP" id="KeyWP"></a><a href="../../../010_SHARED_FILES/OUM_TERMS.HTM#KWP" target="_blank">KEY WORK PRODUCTS</a></h3>
+<p>Refer to <a href="../../050_REFERENCE_FILES/OUM_KEY_WORK_PRODUCTS.HTM#Transition" target="_blank">Key Work Products</a> for a complete list of key work products in OUM.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Tips" id="Tips"></a>TIPS AND TECHNIQUES </h3>
+<p>This section discusses the primary techniques that may be helpful in conducting the Transition phase. It also includes advice and commentary on each process.</p>
+<h4>Testing</h4>
+<p> During this phase, the development team supports the Acceptance Test as executed by the users. Typically, the version that goes into the Acceptance Test is called a beta version of the system. It is often that different users are involved in this testing compared to those that were involved during the project. However, it is important that the users that perform the Acceptance Test have been kept in the loop throughout the project, so that they are familiar with the system and know the decisions and choices that were made. This prevents the users from questioning the actual solution that has been agreed upon during earlier reviews during the project. The Acceptance Test Criteria should have been agreed upon at the start of the project, and will be part of the contract. You should motivate the customer to create test cases and scenarios to use in the Acceptance Test, including the expected outcomes. Preferably this should start in the earlier phases. Hopefully, this process will help uncover any discrepancies in understanding between the developer and customer organizations. It also helps picture what kind of expectations the users have for the various parts of the system, and provides some unexpected clarifications. Therefore, the earlier they start making these scenarios, the better, as the earlier discrepancies are discovered, the easier they can be corrected. Preferably, the Acceptance Test should be performed with actual converted data.
+<h4>Performance Management</h4>
+<p> During the Transition phase, you perform the actual Performance Test. The Performance Test is an iterative task, and may become quite labor-intensive and time-consuming when there are strict performance requirements. You need to tune the application, and may even need to rewrite code to fulfill the requirements. Therefore, it is important to have a focus on performance during the development of the components (also, see the Construction phase). If there are complex scenarios, you should consider using tools that are especially made for Performance Testing.
+  
+<h4>Data Acquisition and Conversion</h4>
+<p> Acceptance and validation of converted data is every bit as important as validating software. Usually data that is converted at the start of a new system is done by specialized software that ceases to be part of the ongoing system. Because this software mostly has no ongoing value, it often is not subject to the same quality standards as other system software components. The earlier you discuss and resolve data conversion issues, the earlier you can introduce converted data into the Testing process.
+<p> Review the Data Acquisition, Conversion and Data Quality Strategy (CV.020) created in the Elaboration phase. Agree to convert only data that will have an ongoing value to the business. Data fields in legacy systems often change meaning over time (without markers to indicate a change in use). This makes it difficult to automatically convert data without manual intervention, or data cleansing. It is difficult to estimate the extent of data cleansing needed until the Elaboration phase is complete, and sometimes not even until one iteration has been completed in the Construction phase (also, see the Construction phase).
+<p> In this phase, continue to convert the data. Test the correctness of converted data first, before making it available for use. Providing converted data with errors can cause problems that outweigh the benefits of providing early test data. If you have to convert data from legacy systems that include data where the data structure is very different from the data structure in new system, or that the old legacy data is difficult to understand, you probably will need to convert using an iterative process, where users with a good knowledge the old system are involved in verifying the data and testing the conversion programs.
+<h4>Documentation</h4>
+<p>During the Transition phase, minor revisions or changes to the software system may cause updates to any or all of the documentation work products.
+<h4>Organizational Change Management</h4>
+<p><span class="style1">Ongoing throughout the project, change and communication events targeted to specific audiences with the goal of mitigating identified risks and challenges are conducted. In addition, during Transition an IT Alignment is conducted and the HR Transition Plan prepared during Construction is implemented. </span></p>
+<h4>Training</h4>
+<p style="margin-bottom: 0">During Transition, you continue conducting user learning events. </p>
+<h4>Transition</h4>
+<p> A good maintenance and production environment planning task eases the system rollout. This task is technical in nature and typically involves the transfer of the operation of the new system from the project to the customer operations and maintenance staff. As the system is developed through a number of iterations, the project team already has experience in making components ready and installing them in some environment.
+<p> To take the new system into production is the single biggest decision that is made on a project. It can either be made with confidence or a &quot;hope for the best&quot; attitude. See the Construction phase for discussions on various approaches for going into production. A main goal of OUM is to provide a proven process for making this decision easily and confidently.
+<h4>Scrum</h4>
+<p>If you are using a Scrum approach, use the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM" target="_blank">Managing an OUM Project using Scrum</a> technique. You can also go directly to the <a href="../../../PJM/020_METHOD_GUIDELINES/050_TECHNIQUE/SCRUM.HTM#TRANS" target="_blank">Transition phase Scrum guidance</a> within this technique.</p>
+<p><a href="#TOP">Back to Top</a>
+<hr width="100%">
+<h3><A 
+name=TasksWP id="TasksWP"></A>TASKS AND WORK PRODUCTS </h3>
+<p>This phase includes the following tasks:</p>
+<table width="100%"  border="1" title="Tasks and Work Products" summary="This table lists the tasks (with links) and work products for the OUM Transition phase.  It is organized with Task ID, Task Name and Work Product columns with subheadings for each process.">
+  <tr bgcolor="#BEBEBE">
+    <th scope="col">ID</th>
+    <th scope="col">Task</th>
+    <th scope="col">Work Product </th>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Testing</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.105</div></th>
+    <td><a href="../030_TASK/TE_105_PREPARE_USERS_FOR_TESTING_OVERVIEW.HTM" target="_blank">Prepare Users for Testing </a></td>
+    <td>Prepared Users for Testing </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.110</div></th>
+    <td><a href="../030_TASK/TE_110_PREPARE_ACCEPTANCE_TEST_ENV_OVERVIEW.HTM" target="_blank">Prepare Acceptance Test Environment</a></td>
+    <td> Acceptance Test Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TE.120</div></th>
+    <td><a href="../030_TASK/TE_120_SUPPORT_ACCEPTANCE_TEST_OVERVIEW.HTM" target="_blank">Support Acceptance Test</a></td>
+    <td> Acceptance Test Results </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Performance Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.100</div></th>
+    <td><a href="../030_TASK/PT_100_EXECUTE_PERFORMANCE_TEST_OVERVIEW.HTM" target="_blank">Execute Performance Test</a></td>
+    <td> Performance Test Results </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">PT.110</div></th>
+    <td><a href="../030_TASK/PT_110_CREATE_PERFORMANCE_TEST_REPORT_OVERVIEW.HTM" target="_blank">Create Performance Test Report</a></td>
+    <td> Performance Test Report</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Data Acquisition and Conversion </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.064.2</div></th>
+    <td><A
+				href="../030_TASK/CV_064_INSTALL_CONV_COMPONENTS_OVERVIEW.HTM"
+				target="_blank">Install Conversion Components (Initial Load) </A> </td>
+    <td>Installed Conversion Components (Initial Load) </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.065.2</div></th>
+    <td><a href="../030_TASK/CV_065_CONVERT_AND_VERIFY_DATA_OVERVIEW.HTM" target="_blank"> Convert and Verify Data (Initial Load) </a> </td>
+    <td> Converted and Verified Data (Initial Load) &nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">CV.068.2</div></th>
+    <td><a href="../030_TASK/CV_068_CLEAN_DATA_OVERVIEW.HTM" target="_blank">Clean Data</a></td>
+    <td>Clean Legacy Data&nbsp;</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Documentation</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">DO.110</div></th>
+    <td><a href="../030_TASK/DO_110_FINALIZE_DOCUMENTATION_OVERVIEW.HTM" target="_blank"><span class="style3">Finalize Documentation</span></a></td>
+    <td>Final Documentation Work Products </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Organizational Change Management </div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.150.4</div></th>
+    <td><a href="../030_TASK/OCM_150_CONDUCT_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_OVERVIEW.HTM">Conduct Change Management Roadmap and Communication Campaign </a></td>
+    <td>Change Management Roadmap and Communication Events </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.155.3</div></th>
+    <td><a href="../030_TASK/OCM_155_MONITOR_CHG_MGMT_ROADMAP_COMM_CAMPAIGN_EFFECT_OVERVIEW.HTM" target="_blank">Monitor Change Management Roadmap and Communication Campaign Effectiveness</a></td>
+    <td>Change Management Roadmap and Communication Campaign Effectiveness Assessment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.220</div></th>
+    <td><a href="../030_TASK/OCM_220_PREPARE_ASSESSMENT_OF_IMPACT_ON_IT_GROUPS_OVERVIEW.HTM" target="_blank">Prepare Assessment of Impact on IT Groups </a></td>
+    <td>IT Alignment Diagnosis Grid </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">OCM.230</div></th>
+    <td><a href="../030_TASK/OCM_230_PREPARE_IT_TRANSITION_PLAN_OVERVIEW.HTM" target="_blank">Prepare IT Transition Plan</a></td>
+    <td>IT Transition Plan</td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Training</div></th>
+  </tr>
+  <th scope="row"><div align="left">TR.100.2</div></th>
+      <td><a href="../030_TASK/TR_100_CONDUCT_USER_LEARNING_EVENTS_OVERVIEW.HTM" target="_blank"><span class="style1">Conduct User Learning Events</span></a></td>
+      <td>Skilled Users </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <th colspan="3" scope="rowgroup"><div align="left">Transition</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.050</div></th>
+    <td><a href="../030_TASK/TS_050_PREPARE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">Prepare Production Environment</a></td>
+    <td> Production Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.052</div></th>
+    <td><a href="../030_TASK/TS_052_IMPLEMENT_PROD_SUPPORT_INFRASTRUCTURE_OVERVIEW.HTM" target="_blank">Implement Production Support Infrastructure </a></td>
+    <td>Production Support Infrastructure </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.054</div></th>
+    <td><a href="../030_TASK/TS_054_PERFORM_PRE_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Perform Pre-Upgrade Steps </a></td>
+    <td>Pre-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.055</div></th>
+    <td><a href="../030_TASK/TS_055_UPGRADE_PRODUCTION_ENV_OVERVIEW.HTM" target="_blank">Upgrade Production Environment </a></td>
+    <td>Upgraded Production Environment</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.056</div></th>
+    <td><a href="../030_TASK/TS_056_PERFORM_POST_UPGRADE_STEPS_OVERVIEW.HTM" target="_blank">Perform Post-Upgrade Steps </a></td>
+    <td>Post-Upgrade Checklist </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.057</div></th>
+    <td><a href="../030_TASK/TS_057_REVISE_APPLICATION_SETUPS_OVERVIEW.HTM" target="_blank">Revise Application Setups </a></td>
+    <td>Configured Applications </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.058</div></th>
+    <td><a href="../030_TASK/TS_058_VERIFY_PROD_READINESS_OVERVIEW.HTM" target="_blank">Verify Production Readiness </a></td>
+    <td>Production-Ready System </td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.060</div></th>
+    <td><a href="../030_TASK/TS_060_GO_PRODUCTION_OVERVIEW.HTM" target="_blank">Go Production</a></td>
+    <td>System In Production</td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">TS.070</div></th>
+    <td><a href="../030_TASK/TS_070_SHUT_DOWN_LEGACY_SYSTEM_OVERVIEW.HTM" target="_blank">Shut Down Legacy System</a></td>
+    <td>Legacy System Shut Down</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top </a> </p>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Dependencies" id="Dependencies"></a>ACTIVITY FLOW DIAGRAM</h3>
+<p align="center"><img src="../../010_COMMON_FILES/Trans_Act.Flow.jpg" alt="Transition Phase Activity Flow Diagram" width="964" height="443" title="Transition Phase Activity Flow Diagram"></p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Risk" id="Risk"></a>MANAGING RISK </h3>
+<p>The most likely areas of risk in the Transition phase are the following:
+<ul>
+  <li> <b>Disagreement on Problem Severity:</b> During the Acceptance Test, it is possible that the ambassador users will uncover problems not identified during system testing. Classification of the severity of these problems could impact the acceptance of the system. Is it essential that clear problem classifications and their impact on production are included as part of the contract and that these classifications be used to decide when the system is ready for production.</li>
+  <li><b>Unavailable or Poor Quality Production Data:</b> Often, the task of developing or providing production data is the responsibility of the customer or a third party engaged by the customer. Sample data, consistent with the production data, must be provided early in the Construction Phase and is required during system and validation testing. It is imperative that the customer or their designee understand their obligations to provide timely and appropriately cleansed production data on the schedule agreed to in the contract.</li>
+</ul>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="CritSucFactors" id="CritSucFactors"></a>CRITICAL SUCCESS FACTORS</h3>
+<p>These factors have been shown to be critical to the success of this phase:</p>
+<ul>
+  <li><b>Delivery and Installation of Production Hardware:</b> The delivery and installation of the production hardware must be successful and on time.</li>
+  <li><b>Technical Infrastructure: </b>The technical infrastructure, including all of the technical architecture, must be on target to support the actual data volumes and number of users. The success of internet-deployed businesses is critically dependent upon a reliable, high performance infrastructure. </li>
+  <li><b>User Commitment and Ownership:</b> The ambassador users&rsquo; commitment and sense of ownership is vital in this phase. If the ambassador users and advisor users are highly committed and have a strong sense of ownership, they will more easily accept the application.</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

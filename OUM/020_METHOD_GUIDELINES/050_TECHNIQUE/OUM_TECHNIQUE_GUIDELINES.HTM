@@ -1,0 +1,557 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM_NOPAGENAV.DWT" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Implement Task Technique Cross Reference</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+    <TD width="12%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"><br>
+    </a><a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="88%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1>OUM</h1>
+            </div></td>
+            <td colspan="2" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Implement Task - Technique  Cross Reference</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" --><p>The following table provides an index of tasks within OUM Implement where technique guidelines are available.</p>
+<p>PLEASE NOTE: </p>
+<ul>
+  <li> The links to these techniques may also be obtained by accessing the task guidance for an individual task. </li>
+  <li>There are many techniques available to accomplish development of OUM Artifacts, your project may have chosen a technique not listed here.</li>
+  <li>Task level technique guidance does not exist for ALL OUM tasks where a technique may be applied.</li>
+</ul>
+<table width="100%" border="1" title="Implement Task to Technique Cross Reference" summary="This table provides links to the techniques referenced in any Implement tasks. It is organized with ID, Task, Work Product and technique columns with subheadings for each Implement process.">
+  <tr valign="top" bgcolor="#BEBEBE">
+    <th scope="col" width="64"><div align="center">ID</div></th>
+    <th scope="col" width="340"><div align="center">Task</div></th>
+    <th scope="col" width="350" style="text-align: center;">Work Product </th>
+    <th scope="col" width="340"><div align="center">Technique</div></th>
+  </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Business Requirements (RD)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.001</th>
+      <td>Detail Business and System Objectives </td>
+      <td>Business and System Objectives </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.005</th>
+      <td>Create System Context Diagram </td>
+      <td>System Context Diagram </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.011</th>
+      <td>Develop Future Process Model </td>
+      <td>Future Process Model </td>
+      <td><a href="BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling<br>
+          </a><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a><br>
+          <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.012</th>
+      <td>Document Present and Future Organization Structures </td>
+      <td>Present and Future Organization Structures</td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.015</th>
+      <td>Determine KPI Collection and Reporting Strategy </td>
+      <td>Key Business Strategies and Objectives</td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.020</th>
+      <td>Obtain High-Level Business Descriptions </td>
+      <td>High-Level Business Descriptions </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management<br>
+          </a><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a><br>
+          <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.030</th>
+      <td>Develop Current Business Process Model </td>
+      <td>Current Process Model </td>
+      <td><a href="BUSINESS_PROCESS_MODELS.HTM" target="_blank">Functional or Process Modeling<br>
+      </a><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.034</th>
+      <td>Document Current Business Baseline Metrics </td>
+      <td>Current Business Baseline Metrics </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.045</th>
+      <td>Prioritize Requirements (MoSCoW)</td>
+      <td>MoSCoW List</td>
+      <td><a href="TWO_BY_TWO.HTM" target="_blank">2 x 2 Urgency Importance Matrix </a><br>
+              <a href="PAIR_CHOICE_PRIORITY.HTM" target="_blank">Pair-Choice Priority</a><br>
+              <a href="RISK_PORTFOLIO.HTM" target="_blank">Risk Portfolio Assessment </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.055</th>
+      <td>Detail Supplemental Requirements </td>
+      <td>Supplemental Requirements </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RD.065</th>
+      <td>Develop Domain Model (Business Entities) </td>
+      <td>Domain Model </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Requirements Analysis (RA)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.015</th>
+      <td>Develop Business Use Case Model </td>
+      <td>Business Use Case Model </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.019</th>
+      <td>Define Project Reference Architecture </td>
+      <td>Project Reference Architecture </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.023</th>
+      <td>Develop Use Case Model </td>
+      <td>Use Case Model </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank">Enterprise Requirements Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.024</th>
+      <td>Develop Use Case Details</td>
+      <td>Use Case Specification</td>
+      <td><a href="USE_CASE_LEVELS.HTM" target="_blank">Use Case Levels</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.025</th>
+      <td>Identify Candidate Services </td>
+      <td>Service Portfolio - Candidate Services </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.026</th>
+      <td>Populate Services Repository </td>
+      <td>Populated Services Repository </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.030</th>
+      <td>Validate Conceptual Prototype </td>
+      <td>Validated Conceptual Prototype </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">RA.035</th>
+      <td>Develop High-Level Software Architecture Description</td>
+      <td>High-Level Software Architecture Description</td>
+      <td><a href="TWO_BY_TWO.HTM" target="_blank">2 x 2 Urgency Importance Matrix </a><br>
+              <a href="PAIR_CHOICE_PRIORITY.HTM" target="_blank">Pair-Choice Priority</a><br>
+              <a href="RISK_PORTFOLIO.HTM" target="_blank">Risk Portfolio Assessment </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Mapping and Configuration (MC)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">MC.040</th>
+      <td>Gather Setup Information </td>
+      <td>Setup Information </td>
+      <td><a href="NOMINAL_GROUP.HTM" target="_blank">Nominal Group </a><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank"></a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">MC.050</th>
+      <td>Define Application Setups </td>
+      <td>Application Setup Documents</td>
+      <td><a href="NOMINAL_GROUP.HTM" target="_blank">Nominal Group </a><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/REQUIREMENTS_MANAGEMENT.HTM" target="_blank"></a></td>
+    </tr>
+     <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Analysis (AN)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">AN.080</th>
+      <td>Analyze Services </td>
+      <td>Service Portfolio - Proposed Services </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ID_DISCOVERY.HTM" target="_blank">SOA Service Identification and Discovery </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">AN.085</th>
+      <td>Define Service</td>
+      <td>Service Portfolio - Proposed Services </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a> <br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling</a> <br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DEFINITION.HTM" target="_blank">Service Definition</a> <br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Design (DS)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">DS.040</th>
+      <td>Develop Design Architecture Description </td>
+      <td>Architecture Description </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_BOUNDARY.HTM" target="_blank">SOA Service Boundary Analysis</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">DS.070</th>
+      <td>Define SOA Implementation Strategy </td>
+      <td>SOA Implementation Strategy </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DEFINITION.HTM" target="_blank">Service Definition</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SOA_RELEASE_PLANNING.HTM" target="_blank">SOA Release Planning</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">DS.120</th>
+      <td>Design Services </td>
+      <td>Service Design </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_DESIGN.HTM" target="_blank">Service Design </a>
+      </div></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">DS.160</th>
+      <td>Review Design Model </td>
+      <td>Reviewed Design Model </td>
+      <td><a href="REVIEW_INSPECTION.HTM" target="_blank">Review and Inspection (Peer Review) </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Implementation (IM)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">IM.050</th>
+      <td>Implement Components </td>
+      <td>Implemented Components </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_ARCHITECTURE.HTM" target="_blank">Service Architecture</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_MODELING.HTM" target="_blank">Service Modeling </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_IMPLEMENTATION.HTM" target="_blank">Service Implementation</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">IM.070</th>
+      <td>Assemble Components </td>
+      <td>Assembled Components </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Testing (TE)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.005</th>
+      <td>Determine Testing Requirements </td>
+      <td>Testing Requirements </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.010</th>
+      <td>Develop Testing Strategy </td>
+      <td>Testing Strategy </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.015</th>
+      <td>Develop Integration Test Plan </td>
+      <td>Integration Test Plan</td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.020</th>
+      <td>Develop Unit Test Scripts </td>
+      <td>Unit Test Scripts </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.025</th>
+      <td>Create System Test Scenarios </td>
+      <td>System Test Scenarios </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.030</th>
+      <td>Perform Unit Test </td>
+      <td>Unit-Tested Components </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.035</th>
+      <td>Create Integration Test Scenarios </td>
+      <td>Integration Test Scenarios </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/IT_ASSET_MANAGEMENT.HTM" target="_blank">IT Asset Management</a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.038</th>
+      <td>Prepare Integration Test Environment </td>
+      <td>Integration Test Environment </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.040</th>
+      <td>Perform Integration Test </td>
+      <td>Integration-Tested Components </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.050</th>
+      <td>Develop System Test Plan </td>
+      <td>System Test Plan </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.060</th>
+      <td>Prepare System Test Environment </td>
+      <td>System Test Environment </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TE.082</th>
+      <td>Develop Acceptance Test Plan </td>
+      <td>Acceptance Test Plan </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Performance Management(PT)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">PT.010</th>
+      <td>Conduct Performance Management Workshop </td>
+      <td>Performance Management Workshop Results </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">PT.030</th>
+      <td>Define Performance Testing Strategy </td>
+      <td>Performance Testing Strategy </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Technical Architecture (TA)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TA.010</th>
+      <td>Conduct Technical Architecture Workshop </td>
+      <td>Technical Architecture Workshop Results </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Organizational Change Management (OCM)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.020</th>
+      <td>Prepare for Executive Alignment Workshop </td>
+      <td>Executive Alignment Workshop Materials </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.030</th>
+      <td>Conduct  Executive Alignment Workshop </td>
+      <td>Executive Business Objectives and  Governance Rules </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.050</th>
+      <td>Prepare for Team-Building Workshop </td>
+      <td>Team-Building Workshop Materials </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.060</th>
+      <td>Conduct Team-Building Workshop </td>
+      <td>Cohesive Project Team</td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.070</th>
+      <td>Design Managers' Project Alignment Workshop</td>
+      <td>Managers' Project Alignment Workshop Materials </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.080</th>
+      <td>Conduct Managers' Project Alignment Workshop</td>
+      <td>Aligned Managers </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.090</th>
+      <td>Design Change Agent Workshop </td>
+      <td>Change Agent Workshop Materials </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.100</th>
+      <td>Conduct Change Agent Workshop </td>
+      <td>Enabled Change Agents</td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.200</th>
+      <td>Design Managers' Unit / Department Impact Workshop</td>
+      <td>Managers' Unit / Department Impact Workshop Materials </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">OCM.210</th>
+      <td>Conduct Managers' Unit / Department Impact Workshop</td>
+      <td>Enabled Managers</td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Training (TR)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TR.050</th>
+      <td>Conduct Project Team Learning Events</td>
+      <td>Skilled Project Team </td>
+      <td><a href="WORKSHOP%20TECHNIQUES%20HANDBOOK.PDF" target="_blank">Workshop Techniques Handbook </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Transition (TS)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TS.050</th>
+      <td>Prepare Production Environment </td>
+      <td>Production Environment </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></td>
+    </tr>
+    <tr valign="top">
+      <th scope="row">TS.060</th>
+      <td>Go Production</td>
+      <td>System in Production</td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle </a><br>
+              <a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></td>
+    </tr>
+    <tr bgcolor="#CCCCCC">
+      <th scope="rowgroup" colspan="4"><div align="left">Operations and Support (PS)</div></th>
+    </tr>
+    <tr valign="top">
+      <th scope="row">PS.060</th>
+      <td>Monitor and Respond to System Problems </td>
+      <td>Problem Log </td>
+      <td><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_PACKAGING_DEPLOYMENT.HTM" target="_blank">Service Packaging and Deployment </a></td>
+    </tr>
+</table>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><b><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </b></P>
+<P align="left"><b>    <a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Functional Project Identification Technique Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../../OUM/OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../../OUM/CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Technique Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../../OUM/050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../../OUM/OUM_HOME.HTM">Home</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../../OUM/050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../../OUM/030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../../OUM/OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../../../OUM/020_METHOD_GUIDELINES/020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#TR">Technique Results</option>
+                            <option value="#TSteps">Technique Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#Templates">Templates</option>
+                            <option value="#Usage">Technique Usage</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+                          </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>FUNCTIONAL PROJECT IDENTIFICATION</h2>
+<p> The purpose of this technique is to Identify Functional Projects and determine what projects will get the most out of an SOA approach.</p>
+<p> One of the most significant benefits of the Functional Project Identification process is that it allows all stakeholders involved to express their knowledge and to reach a common understanding of how the pieces of the enterprise communicate with one another and with outside entities. </p>
+<p>There are two approaches an organization may choose. The Strategic approach, is perhaps the most intensive, but is most likely to result in the best choice of projects. The Tactical approach is less intensive, but can provide reasonable accuracy with respect to project selection.</p>
+<p> <b>Note:</b> This technique makes heavy references to the <a href="../../../OUM/020_METHOD_GUIDELINES/050_TECHNIQUE/BUSINESS_PROCESS_MODELS.HTM" target="_blank"> Functional or Process Modeling</a> technique and assumes you have read and understood it.</p>
+<hr WIDTH="100%">
+<h3><a NAME="TR" id="TR"></a>TECHNIQUE RESULTS </h3>
+<p><b>List of Functional Projects</b> - The Functional Project Identification Technique is used to help identify projects that will benefit most from a SOA Approach.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr width="100%">
+<h3><a NAME="TSteps" id="TSteps"></a>TECHNIQUE STEPS </h3>
+<table width="100%"  border="1" id="TechSteps" title="Technique Steps" summary="This table lists the steps for completing the technique. The headings are No., Step, Component (if the step results in a Component), and Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col"> Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Choose the approach. </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" scope="rowgroup"><div align="center"></div>
+        <div align="left"><b>If you chose the strategic approach, do the following steps.</b></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Define Business Processes and Activities for Enterprise.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Select Project and Scope based on Motivation and Reuse.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th colspan="4" scope="rowgroup"><div align="center"></div>
+        <div align="left"><b>If you chose the tactical approach, do the following steps.</b></div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Select Candidate Projects.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Define Activities, Tasks and Steps for the selected projects.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row">4</th>
+    <td>Select Project and Scope based on Motivation and Reuse.</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<h4>Choose the Approach</h4>
+<p> This technique can be used when there is difficulty in choosing the approach. Choosing the approach, simply involves determining whether the enterprise is going to do any additional planning with respect to using functional modeling to assist with project identification. This can be beneficial, since the SOA approach involves some investment in making shared services. This investment can be mitigated by understanding what projects will get the most out of an SOA approach and help justify the expenditure. <br>
+    <br>
+  A <b>strategic approach</b> is the most lengthy, but will lead to the most accurate choice in projects and priorities.<br>
+  <br>
+  The<b> tactical approach</b> is less accurate but better than nothing at all. The pragmatic approach, assumes SOA to be the accepted IT strategy, and relies strictly on business priority to choose projects, rather than attempting to optimize the capabilities of the IT strategy (basically it will take longer to realize benefits of the SOA, but the priorities of the business will be met in the expected order). </p>
+<h5>Strategic Approach</h5>
+<blockquote>
+  <p><b> 1. Define business processes and activities for enterprise.</b></p>
+  <blockquote>
+    <p>In this case, all core business processes are identified for the enterprise and expanded in the Enterprise Functional or Process Model.<br>
+        <br>
+      All high-level activities for all core business processes are also documented into the functional model. This typically involves simply listing the activities involved in the process and detailing the flow between. </p>
+  </blockquote>
+  <p><b>2. Select project and scope based on motivation and reuse.</b></p>
+  <blockquote>
+    <p> See the section, <a href="#eval">Evaluate Motivation Alignment</a>, below for details for this step.<br>
+      In the case of SOA this approach allows to identify maximum reuse around identified functional areas. Business processes, or portions of business processes can be scoped into projects, ordered and executed to maximize the impact of the SOA approach.</p>
+  </blockquote>
+</blockquote>
+<h5> Tactical Approach</h5>
+<blockquote>
+  <p><b> 1. Select candidate projects.</b></p>
+  <blockquote>
+    <p>This is the first step of the tactical approach. Here, a set of target projects are selected, where functional modeling will be. The project set should be based on the enterprises current priorities and overall &lsquo;gut&rsquo; feel for overlapping functions. </p>
+  </blockquote>
+  <p><b>2. Define activities, tasks and steps for the selected projects.</b></p>
+  <blockquote>
+    <p>For the projects selected, Functional Modeling is performed specifically for the projects scope, not the entire enterprise, down to task level. If time permits, detailing down to step level is desirable. </p>
+  </blockquote>
+  <p><b>3. Select project and scope based on motivation and reuse.</b></p>
+  <blockquote>
+    <p>See &ldquo;Evaluate Motivation Alignment&rdquo; section below for details for this step.</p>
+    <p>In the case of SOA, the scope and order for project execution can be maximized based on reuse potential expected from understanding the functional overlap across the projects. Certain projects may be de-prioritized based on the activity and the lack of immediate SOA benefit. </p>
+  </blockquote>
+</blockquote>
+<h4> <a name="eval"></a>Evaluate Motivation Alignment</h4>
+<p> An enterprise may wish to address many aspects of its business together, but identifying which business processes or functions to address while at the same time supporting the goals and objectives of the enterprise is very important. There are many sophisticated methods for identifying which processes to focus on, such as utilizing business value based approaches. </p>
+<p>We recommend employing facilitated workshops to execute a functional model decomposition approach to populate a Business Process or Function value alignment tool within a workshop environment to assist with identifying the suitable business processes or functions on which to focus on: <br>
+  .</p>
+<p align="center"><img src="../../010_COMMON_FILES/Motivational_Alignment.jpg" alt="Example Motivation Alignment" width="922" height="487" title="Example Motivation Alignment"></p>
+<p><b>Customer (Enterprise Name):</b> Depending on the scope of the effort this could be the company name, department name, etc.</p>
+<p><b>Goal/Objectives/Key Initiatives:</b> The enterprises&rsquo; goals and objectives. These should be gathered from the enterprise&rsquo;s motivational model.</p>
+<p> <b>Program Strategy Goals/Objectives/Principles:</b> The goals, objectives and principles specific to the program, sponsor or initiative within which you are working.</p>
+<p><b>Business Process / Functions:</b> List of candidate business processes or functions that closely address enterprise goals, objectives, issues and SOA Goals.</p>
+<p><b>Rating:</b> Rate each process against the business objectives and program goals by assigning a value from 1 (process has little impact on business objective) to 5 (process has a very high impact on business objective)</p>
+<p><b>Value Alignment:</b> Calculate the rating totals for each business process. Two or three of the processes will stand out as having the greatest impact on the business.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES </h3>
+<p>The following templates and tools are available to assist with this technique: </p>
+<table width="100%"  border="1" id="TempsTools" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="left">Template File Name </div></th>
+    <th scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="FPID_VALUE_ASSESSMENT.PPTX" target="_blank">FPID_VALUE_ASSESSMENT.PPTX</a></div></th>
+    <td>MS POWERPOINT </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Usage" id="Usage"></a>TECHNIQUE USAGE </h3>
+<p> This technique is recommended for use in the following OUM tasks:</p>
+<table width="100%" border="1" title="Technique Usage" summary="This table lists the tasks that could benefit from using this technique.  The column headings are Task and Usage." >
+  <tr bgcolor="#CCCCCC">
+    <th width="40%" scope="col">Task</th>
+    <th width="60%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/BA_040_CREATE_ENTERPRISE_FUNCTION_OR_PROCESS_MODEL_OVERVIEW.HTM" target="_blank">BA.040 Create Enterprise Function or Process Model (Envision) </a></div></th>
+    <td>Use this technique to assist in the identification of projects.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/IP_040_IDENTIFY_CANDIDATE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.040 Identify Candidate Projects (Envision) </a></div></th>
+    <td>Use this technique to assist in prioritization.</td>
+  </tr>
+  <tr align="left" valign="top">
+    <th scope="row"><div align="left"><a href="../030_TASK/IP_050_PRIORITIZE_PROJECTS_OVERVIEW.HTM" target="_blank">IP.050 Prioritize Projects (Envisions)</a></div></th>
+    <td>Use this technique to assist in prioritization.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>QUALITY CRITERIA </h3>
+<p>This section is not yet available. </p>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>

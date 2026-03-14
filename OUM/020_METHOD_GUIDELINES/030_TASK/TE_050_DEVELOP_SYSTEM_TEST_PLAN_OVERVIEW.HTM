@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML lang="en"><!-- InstanceBegin template="/Templates/OUM.DWT" codeOutsideHTMLIsLocked="false" --><HEAD>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>TE.050 Task Overview</title>
+<!-- InstanceEndEditable -->
+<link href="../../../010_SHARED_FILES/OUM_Arial.css" rel="stylesheet" type="text/css">
+<link href="../../../010_SHARED_FILES/oum.css" rel="stylesheet" type="text/css">
+<SCRIPT src="../../../010_SHARED_FILES/js/prototype.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/scriptaculous.js?load=effects" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../010_SHARED_FILES/js/oum.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT language="JavaScript" type="text/JavaScript">
+//<!--
+function onLoad()
+{
+  showPicNav(false);
+  showOneTask(false);
+  Effect.BlindDown('DugTextNav', {duration: 2});
+  Effect.BlindUp('EnvTextNav', {duration: 2});
+  Effect.BlindUp('PjmTextNav', {duration: 2});
+  Effect.BlindUp('TextNav', {duration: 2});
+  return false;
+}
+//-->
+</SCRIPT>
+<style type="text/css">
+<!--
+.copyright {
+	color: #666666;
+	font-size: x-small;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+ <A name="TOP"></A>
+ <TABLE width="100%" border="1" role="presentation">
+	<TR border="0">
+
+    <TD width="13%" height="92" valign="top"><p><a href="../../OUM_HOME.HTM"><img src="../../../010_SHARED_FILES/Oracle_Unified_Method_485C.gif" alt="Go to OUM Home page" width="170" height="67" border="0" title="Go to OUM Home page"></a><br>
+      <a href="../../CLOUD_HOME.htm"><img src="../../../010_SHARED_FILES/SPCLOUDED.PNG" alt="Go to OUM Cloud Home page" width="223" height="111" border="0" title="Go to OUM Cloud Home page"></a></p>
+      </TD>
+		<TD width="87%" valign="top"><table width="100%" role="presentation">
+          <tr>
+            <td width="15%" nowrap><div align="center">
+              <h1 align="center">OUM</h1>
+            </div></td>
+            <td colspan="3" scope="col"><!-- InstanceBeginEditable name="PageName" --> <h1 align="left">Task Overview</h1> 
+            <!-- InstanceEndEditable --></td>
+          </tr>
+          <tr>
+            <td width="15%" nowrap><div align="center"><a href="../../050_REFERENCE_FILES/OUM_RESOURCES.HTM" target="_blank"
+							class="lbOn"><img src="../../../010_SHARED_FILES/Resources_Button.gif" alt="Go to Resources page"
+							width="86" height="29" border="0" title="Go to Resources page"></a></div></td>
+            <td><div align="center"><a href="../../050_REFERENCE_FILES/OUM_PDF_VIEW.PDF"
+							target="_blank"><img
+							src="../../../010_SHARED_FILES/PDF_View_Button.gif" alt="Go to OUM PDF View" width="86"
+							height="29" border="0" title="Go to OUM PDF View"></a></div></td>
+            <td><div align="center"><b>Method Navigation</b><br>
+                  <SELECT
+							name="MethodNav" class="MethodNavigation" accesskey="m" title="Method Navigation"
+							onChange="MM_jumpMenu('parent',this,1)">
+                    <option value="#TOP" selected></option>
+                    <option value="../../OUM_HOME.HTM">Home</option>
+                    <option value="../OUM_METHOD_OVERVIEW.HTM">Method Overview</option>
+                    <option value="../../050_REFERENCE_FILES/OUM_FULL_METHOD_WORKPLAN.HTML">OUM Full Method Work Breakdown Structure</option>
+                    <option value="../../030_TECH_GUIDELINES/OUM_SUPPLEMENTAL_GUIDANCE.HTM">Supplemental Guidance</option>
+                    <option value="../../../010_SHARED_FILES/OUM_ROLES.HTM">Project Roles</option>
+                    <option value="../../../010_SHARED_FILES/OUM_TERMS.HTM">Definitions/Terms</option>
+                    <option value="../../../PJM/PJM_HOME.htm">MANAGE View</option>
+                    <option value="../../../ENV/OUM_HOME_ENVISION.HTM">ENVISION View</option>
+                    <option value="../../OUM_HOME_IMPLEMENT.HTM">IMPLEMENT View</option>
+                    <option value="#TOP">== IMPLEMENT Phase Overviews ==</option>
+                    <option value="../010_PHASE/OUM_A_INCEPTION_PHASE_OVERVIEW.HTM">[A] Inception</option>
+                    <option value="../010_PHASE/OUM_B_ELABORATION_PHASE_OVERVIEW.HTM">[B] Elaboration</option>
+                    <option value="../010_PHASE/OUM_C_CONSTRUCTION_PHASE_OVERVIEW.HTM">[C] Construction</option>
+                    <option value="../010_PHASE/OUM_D_TRANSITION_PHASE_OVERVIEW.HTM">[D] Transition</option>
+                    <option value="../010_PHASE/OUM_E_PRODUCTION_PHASE_OVERVIEW.HTM">[E] Production</option>
+                    <option value="#TOP">== IMPLEMENT Process Overviews ==</option>
+                    <option value="../020_PROCESS/OUM_RD_BUSINESS_REQUIREMENTS_PROCESS_OVERVIEW.HTM">[RD] Business Requirements</option>
+                    <option value="../020_PROCESS/OUM_RA_REQUIREMENTS_ANALYSIS_PROCESS_OVERVIEW.HTM">[RA] Requirements Analysis</option>
+                    <option value="../020_PROCESS/OUM_MC_MAPPING_AND_CONFIGURATION_PROCESS_OVERVIEW.HTM">[MC] Mapping and Configuration</option>
+                    <option value="../020_PROCESS/OUM_AN_ANALYSIS_PROCESS_OVERVIEW.HTM">[AN] Analysis</option>
+                    <option value="../020_PROCESS/OUM_DS_DESIGN_PROCESS_OVERVIEW.HTM">[DS] Design</option>
+                    <option value="../020_PROCESS/OUM_IM_IMPLEMENTATION_PROCESS_OVERVIEW.HTM">[IM] Implementation</option>
+                    <option value="../020_PROCESS/OUM_TE_BUSINESS_TESTING_PROCESS_OVERVIEW.HTM">[TE] Testing</option>
+                    <option value="../020_PROCESS/OUM_PT_PERFORMANCE_MGMT_PROCESS_OVERVIEW.HTM">[PT] Performance Management</option>
+                    <option value="../020_PROCESS/OUM_TA_TECHNICAL_ARCHITECTURE_PROCESS_OVERVIEW.HTM">[TA] Technical Architecture</option>
+                    <option value="../020_PROCESS/OUM_CV_DATA_ACQUISITION_AND_CONVERSION_PROCESS_OVERVIEW.HTM">[CV] Data Acquisition and Conversion</option>
+                    <option value="../020_PROCESS/OUM_DO_DOCUMENTATION_PROCESS_OVERVIEW.HTM">[DO] Documentation</option>
+                    <option value="../020_PROCESS/OUM_OCM_ORG_CHANGE_MGMT_PROCESS_OVERVIEW.HTM">[OCM] Organizational Change Management</option>
+                    <option value="../020_PROCESS/OUM_TR_TRAINING_PROCESS_OVERVIEW.HTM">[TR] Training</option>
+                    <option value="../020_PROCESS/OUM_TS_TRANSITION_PROCESS_OVERVIEW.HTM">[TS] Transition</option>
+                    <option value="../020_PROCESS/OUM_PS_OPERATIONS_AND_SUPPORT_PROCESS_OVERVIEW.HTM">[PS] Operations and Support</option>
+                  </SELECT>
+            </div></td>
+            <td align="center"><b>Current Page Navigation</b><br>
+<!-- InstanceBeginEditable name="CurrPageNav" -->
+            <select name="CurrPageNav" class="PageNavigation" accesskey="c" title="Current Page Navigation" onChange="MM_jumpMenu('parent',this,1)">
+                            <option value="#TOP" selected></option>
+                            <option value="#Activity">Activity</option>
+                            <option value="#WP">Work Product</option>
+                            <option value="#TaskSteps">Task Steps</option>
+                            <option value="#Approach">Approach</option>
+                            <option value="#SG">Supplemental Guidance</option>
+                            <option value="#Roles">Method Roles</option>
+                            <option value="#Prerequisites">Prerequisites</option>
+                            <option value="#Techniques">Techniques</option>
+                            <option value="#Templates">Templates and Tools</option>
+                            <option value="#WPDetails">Work Product Details</option>
+                            <option value="#QualCrit">Quality Criteria</option>
+            </select>
+            <!-- InstanceEndEditable --></td>
+          </tr>
+        </table></TD>
+	</TR>
+</TABLE>
+<!-- InstanceBeginEditable name="Content" -->
+<h2>TE.050 - DEVELOP SYSTEM TEST PLAN</h2>
+<!--BeginDesc--><p>The purpose of  this task is to develop the System Test Plan, which you use as a guide to perform the system tests at the end of each iteration, as well as the full system test when all the iterations have been completed. This includes information about tester roles and responsibilities, test types, test data and test estimates and scheduling. </p>
+<p>The System Test Plan is produced iteratively along with the development iterations to ensure that the plan reflects what is actually developed through the iterations.</p><!--EndDesc-->
+<!--BeginAIDesc--><p>In a commercial off-the-shelf (COTS) application implementation, you develop the System Test Plan to use as a guide for testing the operation and integration of business system flows within the (COTS) application system, including the integration of application extensions. </p><!--EndAIDesc-->
+<hr WIDTH="100%">
+<h3><a name=Activity id=Activity></a>ACTIVITY</h3>
+<h4>TE.050.1</h4>
+<p><a href="../040_ACTIVITY/BACTDPS_DEFINE_PROJECT_STRATEGY.HTM" target="_blank">B.ACT.DPS Define Project Strategy </a></p>
+<h4>TE.050.2</h4>
+<p><a href="../040_ACTIVITY/CACTPTP_PERFORM_TEST_PLANNING.HTM" target="_blank">C.ACT.PTP Perform Test Planning </a></p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="WP" id="WP"></a>WORK PRODUCT</h3>
+<p><b>System Test Plan</b></p>
+<p>The work product includes all information necessary to plan, prepare for and conduct the System Test.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="TaskSteps" id="TaskSteps"></a>TASK STEPS</h3>
+<p>You should follow these steps:</p>
+<table width="100%"  border="1" id="TaskSteps" title="Task Steps" summary="This table lists the steps for completing the task.  The headings are No., Task Step, Component (if the step results in a Component), and Component Description.">
+  <tr bgcolor="#CCCCCC">
+    <th scope="col"><div align="center">No.</div></th>
+    <th scope="col">Task Step </th>
+    <th scope="col">Component</th>
+    <th scope="col">Component Description </th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">1</div></th>
+    <td>Review the Baseline Project Workplan (PJM.WM.010) to see how system testing activities have been planned, and the Quality Management Plan (PJM.QM.010) to review how quality will be ensured.</td>
+    <td>Introduction</td>
+    <td>Document any specifics related to these documents. Also include a reference to these documents.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">2</div></th>
+    <td>Review Testing Requirements (TE.005) and the Testing Strategy (TE.010) documents. The System Test plan should be within the boundaries provided by these documents.</td>
+    <td>Introduction</td>
+    <td>Document any specifics related to these documents. Also include a reference to these documents. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">3</div></th>
+    <td>Review the Domain Model (RD.065), the Use Case Model (RA.023), the Use Case Realization Analysis and Design documents (AN.110/DS.160) and the Conversion Components Designs (Initial Load) (CV.040).</td>
+    <td>None</td>
+    <td>Use these documents as a basis to identify and define logical test scripts as well as and test data requirements for each aspect.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">4</div></th>
+    <td>Determine System Test Scope.</td>
+    <td>System Test Scope</td>
+    <td>The System Test Scope describes the scope of the System test for the iterations and the Full System Test. The scope describes Test Types that should be performed during the various System Tests. It also lists the Test Items that should be tested as part of the System Tests, the Features that should be tested, and the Features that for some reason should not be tested . </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">5</div></th>
+    <td>Determine System Test Approach. </td>
+    <td>Approach</td>
+    <td>The Approach section includes the approach that you will use for the system tests. This should have been documented earlier in the Testing Strategy (TE.010). If you need to further detail the described approach do that in this section. Do <em>not</em> repeat the strategy as described in the Testing Strategy, but include a reference. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">6</div></th>
+    <td>Determine pass and fail criteria for test items.</td>
+    <td>Item Pass/Fail Criteria </td>
+    <td>The Item Pass/Fail Criteria provides the pass/fail criteria for a test.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">7</div></th>
+    <td>Determine System Test Work Products. </td>
+    <td>System Test Work Products </td>
+    <td>The System Test Work Products component describes what will be delivered as a result from the System Test. This should reflect the work product as described for the System Test (TE.050). </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">8</div></th>
+    <td>Determine Testing Tasks and Schedule.</td>
+    <td>System Test Schedule </td>
+    <td>The System Test Schedule component lists all the Testing tasks that should be performed as part of the System Test. It also includes a schedule for when the tasks should be performed. This should be inline with the overall project plan. If the project plan has sufficient details, do not repeat the content of the project plan. Instead refer to it. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">9</div></th>
+    <td>Determine detailed System Test Environment requirements. </td>
+    <td>Resources</td>
+    <td>The Environment Requirements section of the Resources component describes in detail the hardware and software requirements for the environment, including other kind of physical requirements needed to perform a proper system test. The Testing Strategy (TE.010) includes details for the required testing environments. If it contains sufficient level of detail, do not repeat the content, but include a reference. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">10</div></th>
+    <td>Determine System Test Responsibilities.</td>
+    <td>Resources</td>
+    <td>The Responsibilities section of the Resources component describes the roles that should be involved in the (Full) system test and their associated responsibilities. It also lists one or more persons that are responsible for the various test types.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">11</div></th>
+    <td>Determine staffing and training needs.</td>
+    <td>Resources</td>
+    <td>The Staffing and Training Needs section of the Resources component describes the required skills for system testing, and what the training needs are for those that should be involved in system testing. The Project Team Learning Plan (TR.020) should include this kind of information. If this is sufficient, do not repeat the content, but include a reference. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="center">12</div></th>
+    <td>Identify risks and related risk management.</td>
+    <td>Risk Management </td>
+    <td>The Risk Management component contains high-risk assumptions that relate to a successful completion of the system test. It also contains contingency plans for each. The Baseline Risk Assessment (PJM.RKM.040) includes identified risks. If any relate to the system tests, include a reference to the work product, rather than duplicating the content. The Risk Management component also contains suspension criteria and resumption requirements. Specify the criteria to suspend some or all of the tests, and the requirements to resume these tests. </td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="Approach" id="Approach"></a>APPROACH</h3>
+<p>In OUM, the goal of system testing is to verify that the system works as a whole, in a way that is consistent with what the users expect, and to detect inconsistencies and omissions between the partitions (including any from previous iterations). At this level, you should be able to concentrate on testing aspects of the application system that could not be tested earlier. System testing is not concerned with detailed exception handling and data testing, since these areas should have been adequately covered in component testing. System testing must make sure that: </p>
+<ul>
+  <li> data entered using some components is as expected by other components that use the same data </li>
+  <li>other links (e.g., between custom built components and commercial off-the-shelf application products) work as required </li>
+  <li> there is consistency of look and feel throughout</li>
+</ul>
+<p>Test plans and scripts should be reused in subsequent iterations whenever possible. </p>
+<h4>Scope of Testing </h4>
+<p>The scope of testing is described through a number of test types that will be performed during the various system tests, the test items that should be tested, and the features that should be tested. You should also list possible features that should not be tested, if they are expected to be tested. Include the reason why they should not be tested. </p>
+<p>All implemented requirements will be delivered into testing, and should be properly tested before it can be delivered as part of a new application. However, as both development and testing in most OUM projects will be timeboxed, it is important that also the testing process uses priorities to ensure that the most important components and scenarios are tested first. Therefore the test items should be prioritized. The priorities will in most situations be the same as for the implementation.</p>
+<p>System Testing should, at a minimum, cover all of the Must have and Should have requirements in the MoSCoW List. You should also plan to test and validate the Could have requirements if such requirements have been implemented. However, testing of the Could have requirements should be given a lower priority, but it must be ascertained that the implementation of any such requirements do not compromise data integrity or application stability. If there is insufficient time to test any of the Could have requirements, then the related components will not be delivered. </p>
+<h4>Test Types</h4>
+<p>You should identify the test types that are relevant for the various system tests. The test types could be all the possible types of tests to which the system will be subjected (functional and non-functional). They might vary dependent on in which phase and iteration the system test is performed. The test types you identify should reflect the requirements that have been defined for the project.&nbsp; </p>
+<p>Each system test type covers a class of technical, functional or non-functional requirements. Typical test types include the following: </p>
+<ul>
+  <li> business functionality &ndash; tested using scenarios derived from business use case and business process models </li>
+  <li> usability &ndash; consistency, ease of use, user efficiency </li>
+  <li> performance &ndash; response times (batch and online), volume, stress (load-testing) (part of Performance Testing process) </li>
+  <li> security and control &ndash; access permissions, data security, communications security </li>
+  <li> operability &ndash; tested using scenarios derived from operational procedures (part of Technical Architecture process) </li>
+  <li> conversion and data quality </li>
+  <li>coexistence testing</li>
+  <li>locking</li>
+  <li>job scheduling</li>
+  <li>middleware and connectivity</li>
+  <li>data load&nbsp; - manual, initial, simulated using scripted data</li>
+  <li>documentation (including help text) </li>
+</ul>
+<p>At the system level, some non-functional testing is performed. Performance testing is performed in the Performance Management process, operational testing, backup and recovery testing, and disaster recovery tests are preformed in the Technical Architecture process, but non-functional testing also includes other aspects such as for example maintenance testing and portability tests.</p>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE050" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Test Items</h4>
+<p>Identify the test items that should be included in the various system tests. You should do this to a level that is relevant for your project. As the actual test items (the actual implemented components and/or application(s) features) will vary during the iterations, it might be too much to document them all as part of the testing plan. Therefore, it might be better suitable to document the test items on another higher level, for example, functional/non-functional area, application, subsystem, module. A detailed list of the components included in the test could be produced from configuration control. </p>
+<h4>Features to be Tested</h4>
+<p>You should list all the features that should be tested as part of the system tests. Before a specific system test starts this should be a list of System Test Scenarios that should be performed. For system tests that will be performed during later iterations or phases, including the full system test, this is rather a listing of relevant Business Processes or Business Use Cases as it will not be necessary (or feasible) to list System Test Scenarios for later iterations. This means that for example, in the first version of the plan, you produce a list of system test scenarios that will be performed as part of the first iteration system test, but for the subsequent system tests, you will list the Business Processes/Business Use Cases that will be relevant for those iterations, phases and for the full system test as far as this is known. For each new version of the plan, new listings of System Test Scenarios will be included so that the listing is complete prior to the System Test for that specific iteration.</p>
+<p>Use case scenarios may often provide a good starting point to determine System Test Scenarios. Keep in mind that many use case scenarios may have many common aspects that easily could be covered by a single System Test Scenario. These use cases typically are implemented by the same components, or set of components. Do not describe an unnecessary amount of System Test Scenarios when one System Test Scenario can be used.</p>
+<p>You should also focus attention on system features that support the following: </p>
+<ul>
+  <li> labor intensive or complex business tasks </li>
+  <li> human-computer interaction </li>
+</ul>
+<p>Do not include features related to performance testing, as this is covered by the Performance Testing process.</p>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE050" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Features Not to be Tested </h4>
+<p>During the project, situations may occur that impacts which features should not be tested. If there are specific features or combination of features that should not be tested, but where it is expected that they should be tested, include a list. Also document the reason to why they should not be tested, so that it is easy to determine when the features may be tested. </p>
+<h4>Test Pass/Fail Criteria </h4>
+<p>For each test item determine the criteria that determines whether an item has passed or failed the system test. You should document this for each system test that should be performed. The criteria might vary depending on the iterations, as in an early iteration it is likely, and acceptable, that there are more errors than there should be at the end of the last iteration. </p>
+<h4>Test Roles and Responsibilities </h4>
+<p>You should allocate test roles and responsibilities to team members as appropriate. Where white-box (structural) testing is relevant, it should be performed by developers. During system testing and systems integration testing, however, most testing is black-box (functional), and this kind of testing can also be performed by user participants. Where testing is to be performed by anyone who is not a member of the core team, you need to make sure that they first receive an introduction to the project and to the system. You should also plan to deliver training in test techniques to those participants who have not tested computer systems before.</p>
+<p>Use the following to access <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE050" target="_blank">task-specific custom BI supplemental guidance</a>.</p>
+<h4>Integration of Partitions and Components </h4>
+<p>The importance and complexity of integration testing increases geometrically with the size of the project (as measured, for example, by the number of detailed requirements, or in terms of use case points). On larger projects, you should consider assigning a specialist team to integration tasks. You need to make sure that the integration of newly completed components does not destabilize previously released and integrated components. </p>
+<p>System integration is performed in three stages: </p>
+<ol>
+  <li> Low-level integration is performed in integration testing (TE.040).</li>
+  <li> Upper-level integration of partitions and other components is part of the system test (TE.070).</li>
+  <li> Integration with external systems is part of the systems integration test (TE.100).</li>
+</ol>
+<h4>Estimating and Scheduling </h4>
+<p>As early as possible, the project manager and lead tester should estimate and schedule the integration and testing tasks. Lower-level integration testing is performed within each implementation timebox as part of the integration tests. At levels above this task, system testing is usually performed in a timebox immediately following the implementation iteration. As the number of components increases, and as the components mature towards their final versions, integration testing shifts in focus from low-level interfaces to system testing (TE.070) and external interfaces (TE.100). Appropriate resources need to be deployed at each stage. </p>
+<p>Also keep in mind that testing is an iterative process. Usually plan for two iterations, with the first iteration requiring 65% of the total effort estimated, and the second 35%. For each test scenario, you should indicate the complexity to develop the test scenario (for example, Simple, Average and Complex) and use this as a basis for test scenario development. You should also estimate the duration it will take to perform each test scenario. Again, use the indication of Simple, Average and Complex. </p>
+<h4>Test Environment </h4>
+<p>You should establish this environment so that it is ready before the first system test during the Elaboration phase. Install appropriate test tools in the environment. For each iteration, the environment must be updated to reflect the content delivered up to that point of time. Make sure that support will be available, if possible on-site, during the busiest test periods. Describe the required environments in the Environment Needs part of the Resources component. </p>
+<p>You should detail the hardware/software requirements for the system test. Also consider the physical environment such as whiteboards, printers, and filing cabinets. You should specify this for each test source, staging and data warehouse environments. Also, consider the following:</p>
+<ul>
+  <li>Environment and data backup and restore</li>
+  <li> Security considerations if access to production data is required</li>
+  <li> Supporting software such as MS Office</li>
+</ul>
+<h4>Risk Management</h4>
+<p>Identify in what situations the system test or parts of a system test should be suspended, and what criteria should be met to restart the test if it has been suspended. This should put focus on important matters that must be in place to keep the system test going.</p>
+<p>There might also be other kind of risks related to the preparation and execution of the system test. Document risk that relate to a successful completion of the system test. Review the Baseline Risk Assessment (PJM.RKM.040) with identified risks. If it contains risks related to System Testing, include a reference to the document. </p>
+<h4>Project Learning </h4>
+<p>As the system tests are performed through a number of iterations, both in the Elaboration phase, and the Construction phase, you will gain experience on which aspects of the test work well and those that do not work well. This may depend on a number of aspects, such as, the experience of the project members, user dedication and the type of application. At the end of each iteration, plan to conduct a lessons learned workshop involving all test participants, preferably also including participants from development and configuration control.</p>
+<p>Adjust the testing approach based on the cumulative experience, and update the plan accordingly.</p>
+<p><a href="#TOP">Back to Top</a> </p>
+<hr WIDTH="100%">
+<h3><a NAME="SG" id="SG"></a>SUPPLEMENTAL GUIDANCE</h3>
+<h4> Business Intelligence (BI) </h4>
+<p>This task has supplemental guidance that should be considered if you are doing a custom Business Intelligence (BI) implementation. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/CUSTBI_TASK_GUIDELINES.HTM#TE050" target="_blank">task-specific custom BI supplemental guidance</a>. To access all BI supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BI/BI_SUPP_GUIDE.HTM" target="_blank">OUM BI Supplemental Guide</a>. </p>
+<h4>BPM Project Engineering </h4>
+<p>This task has supplemental guidance that should be considered if you are executing a service based on the BPM Project Engineering view. Use the following to access the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_TASK_GUIDELINES.HTM#TE050" target="_blank">task-specific supplemental guidance</a>. To access all BPM Project Engineering supplemental information, use the <a href="../../030_TECH_GUIDELINES/SUPP_GUIDES/BPMPE/BPMPE_SUPP_GUIDE.HTM" target="_blank">BPM Project Engineering Supplemental Guide</a>.</p>
+<P><a href="#TOP">Back to Top</a> </P>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Roles" id="Roles"></a>METHOD ROLES</h3>
+<p>This task involves the following method roles: </p>
+<table width="100%"  border="1" id="RolesResp" title="Roles and Responsibilities" summary="This table shows the OUM roles for this task along with their responsibility and percentage of effort.  It is organized with columns for Role, Responsibility and Percentage of Effort.">
+  <tr bgcolor="#CCCCCC">
+    <th width="24%" scope="col"><div align="left">Role</div></th>
+    <th width="70%" scope="col"><div align="left">Responsibility</div></th>
+    <th width="6%" scope="col"><div align="center">%</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Tester </div></th>
+    <td>Develop System Test Plan. For some projects, this may be a lead tester. </td>
+    <td><div align="center">100</div></td>
+  </tr>
+</table>
+<p>* Participation level not estimated.</p>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Prerequisites" id="Prerequisites"></a>PREREQUISITES</h3>
+<p>You need the following for this task: </p>
+<h4>TE.050.1</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="24%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="76%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Baseline Project Workplan (PJM.WM.010) <br>
+        Quality Management Plan (PJM.QM.010)</div></th>
+    <td>The Baseline Project Workplan should be used to see how system testing activities have been planned, and the Quality Management Plan to see how quality will be ensured, and how that is related to testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Baseline Risk Assessment (PJM.RKM.040) </div></th>
+    <td>The Baseline Risk Assessment may include risks specific to system testing.</td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Testing Strategy (TE.010) </div></th>
+    <td>The Testing Strategy should be used as input for how the system test should be performed. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Project Team Learning Plan (TR.020) </div></th>
+    <td>The Project Team Learning Plan should include any needs for education related to testing. This should be used as input to see whether any needs have not been identified specific to system testing. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Cutover Strategy (TS.020.1) </div></th>
+    <td>The initial Cutover Strategy provides a strategy that describes how the organization goes from the present system to the new application system. This should be taken into consideration when developing the System Test Plan. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Domain Model (RD.065)<br>
+        Use Case Model (RA.023)<br>
+        Reviewed Design Model (DS.160.1) </div></th>
+    <td>Use these work products to identify and define test types, test items and features to be tested. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Conversion Component Designs (CV.040.1) </div></th>
+    <td>Use the Conversion Component Designs (CV.040) to identify and define test types, test items and features to be tested.</td>
+  </tr>
+</table>
+<h4>TE.050.2</h4>
+<table width="100%"  border="1" id="Inputs" title="Prerequisites" summary="The Prerequisites table lists possible inputs for this task and provides a usage description.  It is organized with columns for Prerequisite and Usage.">
+  <tr bgcolor="CCCCCC">
+    <th width="24%" scope="col"><div align="left">Prerequisite</div></th>
+    <th width="76%" scope="col"><div align="left">Usage</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Testing Strategy (TE.010) </div></th>
+    <td>The Testing Strategy should be used as input for how the system test should be performed. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Cutover Strategy (TS.020.1) </div></th>
+    <td>The Cutover Strategy provides a strategy that describes how the organization goes from the present system to the new application system. This should be taken into consideration when developing the System Test Plan. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"> Domain Model (RD.065)<br>
+        Use Case Model (RA.023)<br>
+        Reviewed Design Model (DS.160.2) </div></th>
+    <td>Use these work products to identify and define test types, test items and features to be tested. </td>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left">Conversion Component Designs (CV.040.2)<br>
+        System Management Guide (TA.100)</div></th>
+    <td>Use the Conversion Component Designs (CV.040) as well as the System Management Guide (TA.100) to identify and define test types, test items and features to be tested.</td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<p>
+<hr WIDTH="100%">
+<h3><a NAME="Techniques" id="Techniques"></a>TECHNIQUES</h3>
+<p>The following techniques are available to assist with this task: </p>
+<table width="100%" border="1" id="Techniques" title="Techniques" summary="This table lists any techniques that can be used to complete this task with any relevant comments. It is organized with columns for Technique and Comments." >
+  <tr bgcolor="#CCCCCC">
+    <th width="24%" scope="col"><div align="left">Technique</div></th>
+    <th width="76%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_TESTING.HTM" target="_blank">Service Testing </a></div></th>
+    <td><div align="left">Use this technique to help you plan testing for services. </div></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left"><a href="../../../ENV/020_METHOD_GUIDELINES/050_TECHNIQUE/SERVICE_LIFECYCLE.HTM" target="_blank">SOA Service Lifecycle</a></div></th>
+    <td><div align="left">Use this technique to understand where service testing fits in the overall SOA service lifecycle. </div></td>
+  </tr>
+</table>
+<p><a href="#TOP">Back to Top</a>
+<hr WIDTH="100%">
+<h3><a NAME="Templates" id="Templates"></a>TEMPLATES AND TOOLS</h3>
+<p>The following templates and tools are available to assist with this task: </p>
+<table width="100%"  border="1" id="Templates" title="Templates" summary="This table lists any templates available for this task with any relevant comments. It is organized with columns for Template File Name and Comments.">
+  <tr bgcolor="#CCCCCC">
+    <th width="24%" scope="col"><div align="left">Template File Name </div></th>
+    <th width="76%" scope="col"><div align="left">Comments</div></th>
+  </tr>
+  <tr valign="top">
+    <th scope="row"><div align="left"><a href="../../040_TEMPLATES_AND_GUIDANCE/TE/TE-050_SYSTEM_TEST_PLAN.DOCX" target="_blank">TE-050_SYSTEM_TEST_PLAN.DOCX</a></div></th>
+    <td>MS WORD </td>
+  </tr>
+</table>
+<P><a href="#TOP">Back to Top</a> </P>
+<hr WIDTH="100%">
+<h3><a NAME="WPDetails" id="WPDetails"></a>WORK PRODUCT DETAILS</h3>
+<h4>Audience, Distribution and Usage </h4>
+<p> The System Test Plan is used in the following ways: </p>
+<ul>
+  <li> The lead tester uses the System Test Scope as the starting point for planning. </li>
+  <li> Testing members use the System Test Roles to understand their responsibilities. </li>
+  <li> Operations uses the Environment Requirements section for providing hardware and software. </li>
+  <li> Facilities uses the Environment Requirements section for space planning. </li>
+  <li> The project leader uses the Environment Requirements section for budgeting. </li>
+  <li> The project leader uses the scheduling results for overall planning and critical path analysis. </li>
+  <li> Testing members use the scheduling results as their detailed schedule. </li>
+  <li> The lead tester uses the schedule results for sequence and script development and testing status. </li>
+</ul>
+<p> Distribute the System Test Plan as follows: </p>
+<ul>
+  <li> to the project leader for review and inclusion in the appropriate phase end report </li>
+  <li> to the quality manager for judging the quality of the test plan </li>
+  <li> to the customer project manager to accept the components and agree on scope, detail, and quality of the system test </li>
+  <li> to any ambassador users, identified by the customer project manager or line managers, to accept the work product </li>
+</ul>
+<p><a href="#TOP">Back to Top</a></p>
+<hr WIDTH="100%">
+<h3><a NAME="QualCrit" id="QualCrit"></a>WORK PRODUCT QUALITY CRITERIA</h3>
+<p>Use the following criteria to check the quality of this work product: </p>
+<ul>
+  <li> Is the System Test Plan within the requirements and expectations of the Testing Strategy? </li>
+  <li> Has sufficient time been scheduled for system testing? </li>
+  <li>Have roles and responsibilities been clearly identified for testing?</li>
+  <li>Are test data requirements clearly stated?</li>
+  <li>Is the level of testing appropriate for the criticality of the system?</li>
+  <li>Are adequate resources (staff and time) estimated for testing the system?</li>
+  <li>Have all the scenarios specified in the requirement &ndash; both explicit and implicit, been converted into test conditions?</li>
+  <li>Has the test data set, if required, been generated appropriately?</li>
+  <li>Have the required negative scenarios been identified in the test conditions?</li>
+  <li>Have the steps been correctly given in appropriate sequence for each test scenario?</li>
+  <li>Have the Pass/Fail Criteria been identified correctly?</li>
+</ul>
+<!-- InstanceEndEditable --><P><A href="#TOP">Back to Top</A></P>
+<HR WIDTH="100%">
+<P align="left"><IMG src="../../../010_SHARED_FILES/oracle.gif" alt="Oracle Logo" width="103" height="16" title="Oracle Logo"> </P>
+<P align="left" class="copyright">  <b><a href="../../../010_SHARED_FILES/COPYRIGHT.HTM" target="_blank" class="copyright">Copyright &copy; 2006, 2016, Oracle and/or its affiliates. All rights reserved.</a></b></P>
+</BODY>
+<!-- InstanceEnd --></HTML>
