@@ -1,0 +1,504 @@
+/* ============================================================
+   ORACLE REDWOOD THEME
+   Oracle Unified Methodology (OUM) 6.4
+   Applied via @import in oum.css
+   ============================================================ */
+
+/* ============================================================
+   SECTION 1: DESIGN TOKENS (CSS Custom Properties)
+   ============================================================ */
+:root {
+  /* Brand Colors */
+  --redwood-oracle-red:      #C74634;
+  --redwood-brand-yellow:    #F1B13F;
+  --redwood-red-dark:        #A33929; /* hover/active state */
+
+  /* Neutral / Page */
+  --redwood-bg-page:         #F1EFED; /* Neutral 30 */
+  --redwood-surface:         #FFFFFF; /* Card / table surface */
+  --redwood-surface-alt:     #F7F5F3; /* Alternating row bg */
+
+  /* Slate Palette */
+  --redwood-slate-150:       #3C4545; /* Dark — nav, header bg, primary text */
+  --redwood-slate-100:       #697778; /* Medium — secondary text */
+  --redwood-slate-50:        #C2D4D4; /* Light — borders */
+
+  /* Typography */
+  --redwood-font:            "Oracle Sans", Arial, Helvetica, sans-serif;
+  --redwood-font-size-xs:    11px;
+  --redwood-font-size-sm:    12px;
+  --redwood-font-size-base:  14px;
+  --redwood-font-size-lg:    18px;
+  --redwood-font-size-xl:    22px;
+  --redwood-font-size-2xl:   28px;
+  --redwood-font-size-3xl:   34px;
+
+  /* Spacing (8px base unit) */
+  --redwood-space-1:         8px;
+  --redwood-space-2:         16px;
+  --redwood-space-3:         24px;
+  --redwood-space-4:         32px;
+  --redwood-space-6:         48px;
+
+  /* Surfaces & Elevation */
+  --redwood-shadow-card:     0 1px 4px rgba(60, 69, 69, 0.12);
+  --redwood-shadow-nav:      0 2px 8px rgba(60, 69, 69, 0.18);
+
+  /* Border Radius */
+  --redwood-radius-sm:       4px;
+  --redwood-radius-md:       6px;
+  --redwood-radius-lg:       8px;
+
+  /* Transitions */
+  --redwood-transition:      150ms ease-in-out;
+}
+
+/* ============================================================
+   SECTION 2: PAGE FOUNDATION
+   body selector wins over OUM_Arial.css (same specificity 0-0-1,
+   but oum.css loads after OUM_Arial.css so last-write wins)
+   ============================================================ */
+body {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  background-color: var(--redwood-bg-page);
+  background-image: url(https://static.oracle.com/cdn/apex/21.1.0/themes/theme_42/1.6/images/rw/textures/texture-2.png);
+  color: var(--redwood-slate-150);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Alias for Oracle APEX compatibility */
+.t-Body-main {
+  background-image: url(https://static.oracle.com/cdn/apex/21.1.0/themes/theme_42/1.6/images/rw/textures/texture-2.png);
+}
+
+/* Fixed 4px Oracle Red accent stripe at the very top of the viewport */
+body::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--redwood-oracle-red) 70%, var(--redwood-brand-yellow) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Ensure page content clears the fixed accent bar */
+body > table:first-of-type,
+body > a[name="TOP"] ~ table {
+  margin-top: 4px;
+}
+
+/* ============================================================
+   SECTION 3: TYPOGRAPHY
+   body hX gives specificity 0-0-2, beats OUM_Arial.css hX at 0-0-1
+   ============================================================ */
+body h1,
+body h2 {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-3xl);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--redwood-oracle-red);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: var(--redwood-space-2);
+}
+
+body h3 {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-xl);
+  font-weight: 600;
+  font-style: normal;
+  color: var(--redwood-slate-150);
+  border-left: 3px solid var(--redwood-oracle-red);
+  padding-left: var(--redwood-space-1);
+  margin-top: var(--redwood-space-3);
+  margin-bottom: var(--redwood-space-1);
+}
+
+body h4 {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-lg);
+  font-weight: 600;
+  font-style: normal;
+  color: var(--redwood-slate-150);
+  margin-top: var(--redwood-space-2);
+  margin-bottom: var(--redwood-space-1);
+}
+
+body h5 {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--redwood-slate-100);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-top: var(--redwood-space-2);
+  margin-bottom: var(--redwood-space-1);
+}
+
+body h6 {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-sm);
+  font-weight: 700;
+  font-style: normal;
+  color: var(--redwood-slate-100);
+  margin-top: var(--redwood-space-2);
+  margin-bottom: var(--redwood-space-1);
+}
+
+body p {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  font-style: normal;
+  font-weight: normal;
+  color: var(--redwood-slate-150);
+  line-height: 1.6;
+  margin-bottom: var(--redwood-space-1);
+}
+
+/* ============================================================
+   SECTION 4: LISTS
+   ============================================================ */
+body ul,
+body ol {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  color: var(--redwood-slate-150);
+  padding-left: var(--redwood-space-3);
+  margin-bottom: var(--redwood-space-2);
+  line-height: 1.6;
+}
+
+body li {
+  margin-bottom: 4px;
+}
+
+body ul li::marker {
+  color: var(--redwood-oracle-red);
+}
+
+/* ============================================================
+   SECTION 5: LINKS
+   ============================================================ */
+body a {
+  color: var(--redwood-oracle-red);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--redwood-transition),
+              border-bottom-color var(--redwood-transition);
+}
+
+body a:hover {
+  color: var(--redwood-red-dark);
+  border-bottom-color: var(--redwood-oracle-red);
+}
+
+body a:visited {
+  color: var(--redwood-slate-100);
+}
+
+/* lbOn — image button anchor (Resources, PDF links used on 797 pages) */
+.lbOn {
+  display: inline-block;
+  border-bottom: none;
+  border-radius: var(--redwood-radius-sm);
+  overflow: hidden;
+  transition: opacity var(--redwood-transition),
+              box-shadow var(--redwood-transition);
+}
+
+.lbOn:hover {
+  opacity: 0.88;
+  box-shadow: 0 2px 6px rgba(199, 70, 52, 0.28);
+  border-bottom: none;
+}
+
+/* ============================================================
+   SECTION 6: TABLE CELLS — GENERAL
+   body td/th gives specificity 0-0-2, beats OUM_Arial.css at 0-0-1
+   ============================================================ */
+body td {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  color: var(--redwood-slate-150);
+  vertical-align: top;
+  padding: var(--redwood-space-1);
+}
+
+body th {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-base);
+  font-weight: 600;
+  color: var(--redwood-slate-150);
+  background-color: var(--redwood-slate-50);
+  padding: var(--redwood-space-1);
+  border-bottom: 2px solid var(--redwood-oracle-red);
+}
+
+/* ============================================================
+   SECTION 7: HEADER BANNER
+   Every page opens with <TABLE width="100%" border="1" role="presentation">
+   Attribute selector [border="1"][role="presentation"] = specificity 0-2-1
+   No conflicts exist at this specificity level
+   ============================================================ */
+table[border="1"][role="presentation"] {
+  background-color: var(--redwood-slate-150);
+  border: none !important;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: var(--redwood-shadow-nav);
+}
+
+table[border="1"][role="presentation"] td,
+table[border="1"][role="presentation"] th {
+  background-color: var(--redwood-slate-150);
+  color: var(--redwood-surface);
+  border: none;
+  padding: var(--redwood-space-2);
+  vertical-align: middle;
+}
+
+table[border="1"][role="presentation"] td:first-child {
+  background-color: var(--redwood-slate-150);
+  padding: var(--redwood-space-1);
+  min-width: 180px;
+  vertical-align: top;
+}
+
+/* h1 inside the header banner becomes white */
+table[border="1"][role="presentation"] h1,
+table[border="1"][role="presentation"] h2 {
+  color: var(--redwood-surface);
+  border-left: none;
+  margin: 0;
+  font-size: var(--redwood-font-size-2xl);
+}
+
+/* Nested inner table (version/subtitle row) inside banner */
+table[border="1"][role="presentation"] table {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+table[border="1"][role="presentation"] table td,
+table[border="1"][role="presentation"] table th {
+  background-color: var(--redwood-slate-150);
+  color: var(--redwood-surface);
+  border: none;
+}
+
+/* ============================================================
+   SECTION 8: CONTENT TABLES (class="oum")
+   body table.oum = specificity 0-1-2, beats oum.css table.oum at 0-1-1
+   ============================================================ */
+body table.oum {
+  background-color: var(--redwood-surface);
+  border-collapse: collapse;
+  border: 1px solid var(--redwood-slate-50);
+  box-shadow: var(--redwood-shadow-card);
+  margin-bottom: var(--redwood-space-3);
+  width: 100%;
+  border-spacing: 0;
+}
+
+body table.oum th {
+  background-color: var(--redwood-slate-150);
+  color: var(--redwood-surface);
+  font-weight: 600;
+  font-size: var(--redwood-font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--redwood-space-1) var(--redwood-space-2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  border-bottom: 2px solid var(--redwood-oracle-red);
+}
+
+body table.oum td {
+  padding: var(--redwood-space-1) var(--redwood-space-2);
+  border: 1px solid var(--redwood-slate-50);
+  border-radius: 0;
+  font-size: var(--redwood-font-size-base);
+  color: var(--redwood-slate-150);
+  background-color: var(--redwood-surface);
+}
+
+body table.oum tr:nth-child(even) td {
+  background-color: var(--redwood-surface-alt);
+}
+
+body table.oum tr:hover td {
+  background-color: rgba(199, 70, 52, 0.04);
+}
+
+/* Inline bgcolor overrides — HTML presentational attributes require !important */
+body table[bgcolor="#CCCCCC"],
+body table[bgcolor="#cccccc"] {
+  background-color: var(--redwood-slate-150) !important;
+}
+
+body table[bgcolor="#CCCCCC"] td,
+body table[bgcolor="#CCCCCC"] th,
+body table[bgcolor="#cccccc"] td,
+body table[bgcolor="#cccccc"] th {
+  background-color: var(--redwood-slate-150);
+  color: var(--redwood-surface);
+}
+
+body tr[bgcolor="#BEBEBE"] td,
+body tr[bgcolor="#BEBEBE"] th,
+body tr[bgcolor="#bebebe"] td,
+body tr[bgcolor="#bebebe"] th {
+  background-color: var(--redwood-oracle-red) !important;
+  color: var(--redwood-surface) !important;
+  font-weight: 600;
+}
+
+/* ============================================================
+   SECTION 9: NAVIGATION SELECTS
+   .MethodNavigation, .MethodNavigation1, .PageNavigation
+   These are <select> elements; oum.css only sets width:280px (no conflicts)
+   ============================================================ */
+.MethodNavigation,
+.MethodNavigation1,
+.PageNavigation {
+  font-family: var(--redwood-font);
+  font-size: var(--redwood-font-size-sm);
+  color: var(--redwood-slate-150);
+  background-color: var(--redwood-surface);
+  border: 1px solid var(--redwood-slate-50);
+  border-radius: var(--redwood-radius-sm);
+  padding: 4px var(--redwood-space-1);
+  width: 280px;
+  cursor: pointer;
+  transition: border-color var(--redwood-transition),
+              box-shadow var(--redwood-transition);
+}
+
+.MethodNavigation:hover,
+.MethodNavigation1:hover,
+.PageNavigation:hover {
+  border-color: var(--redwood-oracle-red);
+}
+
+.MethodNavigation:focus,
+.MethodNavigation1:focus,
+.PageNavigation:focus {
+  outline: 2px solid var(--redwood-oracle-red);
+  outline-offset: 1px;
+  border-color: var(--redwood-oracle-red);
+  box-shadow: 0 0 0 3px rgba(199, 70, 52, 0.15);
+}
+
+/* ============================================================
+   SECTION 10: MISCELLANEOUS
+   ============================================================ */
+body hr {
+  border: none;
+  border-top: 1px solid var(--redwood-slate-50);
+  margin: var(--redwood-space-3) 0;
+}
+
+/* Copyright class (also defined inline per page — that wins, but this is a fallback) */
+.copyright {
+  color: var(--redwood-slate-100);
+  font-size: var(--redwood-font-size-xs);
+  font-family: var(--redwood-font);
+}
+
+/* Back to Top link */
+body a[href="#TOP"] {
+  display: inline-block;
+  font-size: var(--redwood-font-size-sm);
+  color: var(--redwood-slate-100);
+  border-bottom: none;
+  margin-top: var(--redwood-space-2);
+}
+
+body a[href="#TOP"]:hover {
+  color: var(--redwood-oracle-red);
+}
+
+/* ============================================================
+   SECTION 11: SCROLLBAR (WebKit)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--redwood-bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--redwood-slate-50);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--redwood-slate-100);
+}
+
+/* ============================================================
+   SECTION 12: PRINT STYLES
+   ============================================================ */
+@media print {
+  body::before {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 12px;
+  }
+
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    color: black;
+    border-left: none;
+    page-break-after: avoid;
+  }
+
+  body a {
+    color: black;
+    text-decoration: underline;
+    border-bottom: none;
+  }
+
+  table[border="1"][role="presentation"] {
+    background: white;
+    box-shadow: none;
+    border-bottom: 2px solid black !important;
+  }
+
+  table[border="1"][role="presentation"] td,
+  table[border="1"][role="presentation"] th {
+    background-color: white;
+    color: black;
+  }
+
+  table[border="1"][role="presentation"] h1,
+  table[border="1"][role="presentation"] h2 {
+    color: black;
+  }
+
+  body table.oum th {
+    background-color: #DDD;
+    color: black;
+  }
+}
